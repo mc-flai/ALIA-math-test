@@ -1,0 +1,17 @@
+Raonament: Per dividir el conjunt {1,2,3,4,5,6,7} en dos subconjunts de manera que la suma d'elements de cada subconjunt sigui la mateixa, hem de buscar tots els possibles subconjunts que compleixin aquesta condició.
+
+La suma del conjunt complet és 1+2+3+4+5+6+7 = 28. Per tant, la suma de cada subconjunt ha de ser 28/2 = 14.
+
+Comencem a explorar les possibles combinacions:
+
+- {1, 2, 3, 4, 5} i {6, 7} no funcionen, ja que la suma del primer subconjunt és 15 i la del segon és 13.
+- {1, 2, 3, 4} i {5, 6, 7} no funcionen, ja que la suma del primer subconjunt és 14 i la del segon és 18.
+- {1, 2, 3} i {4, 5, 6, 7} no funcionen, ja que la suma del primer subconjunt és 9 i la del segon és 25.
+- {1, 2, 4} i {3, 5, 6, 7} no funcionen, ja que la suma del primer subconjunt és 7 i la del segon és 21.
+- {1, 3, 4} i {2, 5, 6, 7} no funcionen, ja que la suma del primer subconjunt és 8 i la del segon és 20.
+- {1, 5, 6} i {2, 3, 4, 7} no funcionen, ja que la suma del primer subconjunt és 12 i la del segon és 16.
+- {1, 6, 7} i {2, 3, 4, 5} no funcionen, ja que la suma del primer subconjunt és 14 i la del segon és 14.
+
+Aquesta és la única combinació que funciona. Per tant, hi ha només una manera de dividir el conjunt {1,2,3,4,5,6,7} en dos subconjunts de manera que la suma d'elements de cada subconjunt sigui la mateixa.
+
+Resposta: A)

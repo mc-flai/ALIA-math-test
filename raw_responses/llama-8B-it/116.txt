@@ -1,0 +1,31 @@
+Raonament: L'expressió donada és una successió de quadrats decreixents, on cada terme és el quadrat d'un nombre decreixent de 2015 a 1. Per simplificar l'expressió, podem utilitzar la fórmula de diferència de quadrats:
+
+a² - b² = (a + b)(a - b)
+
+Aplicant aquesta fórmula a cada terme de l'expressió, obtenim:
+
+2015² - 2014² = (2015 + 2014)(2015 - 2014)
+2014² - 2013² = (2014 + 2013)(2014 - 2013)
+...
+3² - 2² = (3 + 2)(3 - 2)
+2² - 1² = (2 + 1)(2 - 1)
+
+Ara, podem observar que els factors comuns en cada terme són els nombres consecutius, que es cancellen entre si. Per exemple, en el primer terme, (2015 + 2014) es cancella amb (2014 - 2013) en el següent terme, deixant només (2015 - 2014). Això continua fins que només quedi el primer i el darrer terme.
+
+Per tant, l'expressió es simplifica a:
+
+(2015 - 1) + (2014 - 2) +... + (3 - 2) + (2 - 1)
+
+Aquesta és una successió aritmètica amb una diferència comuna de -1. La suma d'una successió aritmètica amb n termes és:
+
+Sn = n/2 * (a1 + an)
+
+On a1 és el primer terme i an és el darrer terme. En aquest cas, n = 2014 (perquè hi ha 2014 termes), a1 = 2014 i an = 1.
+
+Per tant, la suma és:
+
+S = 2014/2 * (2014 + 1)
+= 1007 * 2015
+= 2031120
+
+Resposta: D)

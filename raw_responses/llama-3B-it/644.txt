@@ -1,0 +1,31 @@
+Raonament:
+
+Per determinar la primera xifra de l'esquerra del nombre natural més petit que és divisible per tots els nombres naturals de 1 a 9, podem utilitzar el mètode de la Llarga Divisió.
+
+Empecem per considerar els factors primaris de cada número natural de 1 a 9:
+
+* 2: 2
+* 3: 3
+* 4: 2^2
+* 5: 5
+* 6: 2 * 3
+* 7: 7
+* 8: 2^3
+* 9: 3^2
+
+Per determinar el menor comú múltiplo (MCM) de tots aquests nombres, necessitarem considerar els factors més altos de cada número.
+
+* El factor més alt de 2 és 2^3 (8)
+* El factor més alt de 3 és 3^2 (9)
+* El factor més alt de 5 és 5
+* El factor més alt de 7 és 7
+
+El MCM és el producte dels factors més alt de cada número, que és:
+
+2^3 * 3^2 * 5 * 7 = 8 * 9 * 5 * 7 = 2520
+
+Així, el nombre natural més petit que és divisible per tots els nombres naturals de 1 a 9 és 2520.
+
+La primera xifra de l'esquerra d'aquest nombre és 2.
+
+Resposta: B) 2

@@ -1,0 +1,21 @@
+Raonament:
+
+Per començar, considerem les restriccions donades:
+
+1. El producte dels nombres de cada fila i de cada columna és 1.
+2. El producte dels quatre nombres de qualsevol graella 2 × 2 és 2.
+
+A partir de la primera restricción, podem deduir que els nombres de cada fila i columna són reciprocals uns dels altres. Per exemple, si el nombre de la primera fila és a, el nombre de la segona fila és 1/a, el nombre de la tercera fila és a i el nombre de la quarta fila és 1/a.
+
+A partir de la segona restricció, podem deduir que els quatre nombres de qualsevol graella 2 × 2 són 1, 2, 1/2 i 1. Això significa que el nombre central de la graella 3 × 3 és 1/2.
+
+Per demostrar que aquesta és la única possibilitat, considerem les següents restriccions:
+
+* El nombre central de la graella 3 × 3 no pot ser 1, ja que en aquest cas, el producte dels quatre nombres de qualsevol graella 2 × 2 seria 1, no 2.
+* El nombre central de la graella 3 × 3 no pot ser 2, ja que en aquest cas, el producte dels quatre nombres de qualsevol graella 2 × 2 seria 4, no 2.
+* El nombre central de la graella 3 × 3 no pot ser 4, ja que en aquest cas, el producte dels quatre nombres de qualsevol graella 2 × 2 seria 8, no 2.
+* El nombre central de la graella 3 × 3 no pot ser 8, ja que en aquest cas, el producte dels quatre nombres de qualsevol graella 2 × 2 seria 16, no 2.
+
+Per tant, el només possibilitat és que el nombre central de la graella 3 × 3 sigui 1/2.
+
+Resposta: D) 1/4

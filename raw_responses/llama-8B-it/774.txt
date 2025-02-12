@@ -1,0 +1,18 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant l'expressió |n² – 2n - 3| i intentar factoritzar-la. Si podem factoritzar-la, potser podem trobar valors de n que facin que l'expressió sigui un nombre primer.
+
+|n² – 2n - 3| = |(n - 3)(n + 1)|
+
+Perquè aquesta expressió sigui un nombre primer, els factors (n - 3) i (n + 1) han de ser 1 o -1, ja que els únics factors d'un nombre primer són 1 i ell mateix.
+
+Això significa que n - 3 = 1 o n - 3 = -1, o n + 1 = 1 o n + 1 = -1.
+
+Resolent aquests sistemes d'equacions, obtenim:
+
+n - 3 = 1 => n = 4
+n - 3 = -1 => n = 2
+n + 1 = 1 => n = 0 (aquest valor no és vàlid perquè n² - 2n - 3 no és un nombre primer per n = 0)
+n + 1 = -1 => n = -2
+
+Així, els únics valors de n que fan que l'expressió sigui un nombre primer són n = 4 i n = 2.
+
+Resposta: B)

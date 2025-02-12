@@ -1,0 +1,13 @@
+Raonament: Per resoldre aquest problema, hem de considerar les restriccions donades: els nombres veïns han de diferir en 1 o 2 unitats. Això significa que no podem posar nombres que estiguin massa lluny l'un de l'altre.
+
+Comencem per considerar les opcions donades. Si 5 i 6 són veïns, aleshores 4 i 3 també haurien de ser veïns, ja que 4 i 5 són veïns i 6 i 7 són veïns. Això no és possible, ja que 4 i 3 no difereixen en 1 o 2 unitats.
+
+Si 10 i 9 són veïns, aleshores 11 i 12 també haurien de ser veïns, ja que 10 i 11 són veïns. Això no és possible, ja que 11 i 12 difereixen en 1 unitat, però no en 2 unitats.
+
+Si 6 i 7 són veïns, aleshores 5 i 4 també haurien de ser veïns, ja que 6 i 5 són veïns. Això és possible, ja que 5 i 4 difereixen en 1 unitat.
+
+Si 8 i 10 són veïns, aleshores 7 i 9 també haurien de ser veïns, ja que 8 i 7 són veïns i 10 i 9 són veïns. Això no és possible, ja que 7 i 9 no difereixen en 1 o 2 unitats.
+
+Si 4 i 3 són veïns, aleshores 5 i 6 també haurien de ser veïns, ja que 4 i 5 són veïns. Això és possible, ja que 5 i 6 difereixen en 1 unitat.
+
+Resposta: E) 4 i 3

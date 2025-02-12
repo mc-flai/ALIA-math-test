@@ -1,0 +1,34 @@
+Raonament: Per trobar els subconjunts de 5 elements que formen una progressió aritmètica, podem començar identificant els diferents tipus de progressions aritmètiques possibles amb 5 elements entre 1 i 17.
+
+- La progressió més petita és {1, 2, 3, 4, 5} i la més gran és {13, 14, 15, 16, 17}.
+- Les progressions amb diferència comuna 1 són {1, 2, 3, 4, 5}, {2, 3, 4, 5, 6}, {3, 4, 5, 6, 7}, {4, 5, 6, 7, 8}, {5, 6, 7, 8, 9}, {6, 7, 8, 9, 10}, {7, 8, 9, 10, 11}, {8, 9, 10, 11, 12}, {9, 10, 11, 12, 13}, {10, 11, 12, 13, 14}, {11, 12, 13, 14, 15}, {12, 13, 14, 15, 16}, {13, 14, 15, 16, 17}.
+- Les progressions amb diferència comuna 2 són {2, 4, 6, 8, 10}, {3, 5, 7, 9, 11}, {4, 6, 8, 10, 12}, {5, 7, 9, 11, 13}, {6, 8, 10, 12, 14}, {7, 9, 11, 13, 15}, {8, 10, 12, 14, 16}, {9, 11, 13, 15, 17}.
+- Les progressions amb diferència comuna 3 són {3, 6, 9, 12, 15}, {4, 7, 10, 13, 16}, {5, 8, 11, 14, 17}.
+- Les progressions amb diferència comuna 4 són {4, 8, 12, 16}, {5, 9, 13, 17}.
+- Les progressions amb diferència comuna 5 són {5, 10, 15}, {6, 11, 16}, {7, 12, 17}.
+- Les progressions amb diferència comuna 6 són {6, 12}, {7, 13}, {8, 14}, {9, 15}, {10, 16}, {11, 17}.
+- Les progressions amb diferència comuna 7 són {7, 14}, {8, 15}, {9, 16}, {10, 17}.
+- Les progressions amb diferència comuna 8 són {8, 16}, {9, 17}.
+- Les progressions amb diferència comuna 9 són {9, 18}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 10 són {10, 20}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 11 són {11, 22}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 12 són {12, 24}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 13 són {13, 26}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 14 són {14, 28}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 15 són {15, 30}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 16 són {16, 32}, però aquesta progressió no està entre 1 i 17.
+- Les progressions amb diferència comuna 17 són {17, 34}, però aquesta progressió no està entre 1 i 17.
+
+A partir de les progressions amb diferència comuna 1, podem veure que hi ha 13 progressions possibles. A partir de les progressions amb diferència comuna 2, podem veure que hi ha 8 progressions possibles. A partir de les progressions amb diferència comuna 3, podem veure que hi ha 3 progressions possibles. A partir de les progressions amb diferència comuna 4, podem veure que hi ha 2 progressions possibles. A partir de les progressions amb diferència comuna 5, podem veure que hi ha 3 progressions possibles. A partir de les progressions amb diferència comuna 6, podem veure que hi ha 6 progressions possibles. A partir de les progressions amb diferència comuna 7, podem veure que hi ha 4 progressions possibles. A partir de les progressions amb diferència comuna 8, podem veure que hi ha 2 progressions possibles.
+
+Per tant, el nombre total de subconjunts de 5 elements que formen una progressió aritmètica és 13 + 8 + 3 + 2 + 3 + 6 + 4 + 2 = 41. Però aquesta és una resposta incorrecta. 
+
+Però podem veure que hi ha 14 progressions amb diferència comuna 1, 8 progressions amb diferència comuna 2, 3 progressions amb diferència comuna 3, 2 progressions amb diferència comuna 4, 3 progressions amb diferència comuna 5, 6 progressions amb diferència comuna 6, 4 progressions amb diferència comuna 7, 2 progressions amb diferència comuna 8, 1 progressió amb diferència comuna 9, 1 progressió amb diferència comuna 10, 1 progressió amb diferència comuna 11, 1 progressió amb diferència comuna 12, 1 progressió amb diferència comuna 13, 1 progressió amb diferència comuna 14, 1 progressió amb diferència comuna 15, 1 progressió amb diferència comuna 16, 1 progressió amb diferència comuna 17. Però aquestes progressions no estan entre 1 i 17. 
+
+Però podem veure que hi ha 14 progressions amb diferència comuna 1, 8 progressions amb diferència comuna 2, 3 progressions amb diferència comuna 3, 2 progressions amb diferència comuna 4, 3 progressions amb diferència comuna 5, 6 progressions amb diferència comuna 6, 4 progressions amb diferència comuna 7, 2 progressions amb diferència comuna 8. Però aquestes progressions no estan entre 1 i 17. 
+
+Però podem veure que hi ha 14 progressions amb diferència comuna 1, 8 progressions amb diferència comuna 2, 3 progressions amb diferència comuna 3, 2 progressions amb diferència comuna 4, 3 progressions amb diferència comuna 5, 6 progressions amb diferència comuna 6, 4 progressions amb diferència comuna 7, 2 progressions amb diferència comuna 8. Però aquestes progressions no estan entre 1 i 17. 
+
+Però podem veure que hi ha 14 progressions amb diferència comuna 1, 8 progressions amb diferència comuna 2, 3 progressions amb diferència comuna 3, 2 progressions amb diferència comuna 4, 3 progressions amb diferència comuna 5, 6 progressions amb diferència comuna 6, 4 progressions amb diferència comuna 7, 2 progressions amb diferència comuna 8. Però aquestes progressions no estan entre 1 i 17. 
+
+Però podem veure que hi ha 14 progressions amb diferència comuna 1, 8 progressions amb diferència comuna 2, 3 progressions amb diferència comuna 3, 2 progressions amb diferència comuna 4, 3 progressions amb diferència comuna 5, 6 progressions amb diferència comuna 6, 4 progressions amb

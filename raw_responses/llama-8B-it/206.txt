@@ -1,0 +1,39 @@
+Raonament: 
+
+Per resoldre aquest problema, podem seguir els següents passos:
+
+1. **Comprovem la condició de divisibilitat per 9**: Un nombre és divisible per 9 si la suma de les seves dígits és divisible per 9. En aquest cas, la suma dels dígits és a + b + c. Per tant, a + b + c ha de ser divisible per 9.
+
+2. **Comprovem la condició a > b**: Aquesta condició no implica cap restricció addicional, ja que només hem de considerar els nombres enters positius de tres xifres.
+
+3. **Comprovem la condició b > c**: Aquesta condició també no implica cap restricció addicional, ja que només hem de considerar els nombres enters positives de tres xifres.
+
+4. **Combinem les condicions**: Per trobar els nombres que compleixen totes les condicions, podem començar per la condició a + b + c divisible per 9. Aleshores, podem explorar les possibles combinacions de dígits que compleixin aquesta condició.
+
+5. **Exploració de les combinacions**: Podem començar per la suma més petita possible de tres dígits, que és 1 + 2 + 3 = 6, i anar augmentant fins a la suma més gran possible, que és 9 + 8 + 7 = 24. Però, perquè la suma sigui divisible per 9, només podem considerar les sumes que són múltiples de 9.
+
+6. **Sumes múltiples de 9**: Les sumes múltiples de 9 entre 6 i 24 són 9, 18 i 27. Però, perquè a + b + c sigui 9, els únics valors possibles per a, b i c són 0, 0, 9; 0, 3, 6; 0, 9, 0; 3, 0, 6; 3, 3, 3; 3, 6, 0; 6, 0, 3; 6, 3, 0; 9, 0, 0. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+7. **Sumes múltiples de 18**: Les sumes múltiples de 18 entre 6 i 24 són 18. Però, perquè a + b + c sigui 18, els únics valors possibles per a, b i c són 0, 9, 9; 9, 0, 9; 9, 9, 0. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+8. **Sumes múltiples de 27**: Les sumes múltiples de 27 entre 6 i 24 no existeixen.
+
+9. **Sumes múltiples de 9 entre 18 i 24**: Les sumes múltiples de 9 entre 18 i 24 són 27. Però, perquè a + b + c sigui 27, els únics valors possibles per a, b i c són 9, 9, 9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+10. **Sumes múltiples de 9 entre 9 i 18**: Les sumes múltiples de 9 entre 9 i 18 són 9, 18. Però, perquè a + b + c sigui 9, els únics valors possibles per a, b i c són 0, 0, 9; 0, 3, 6; 0, 9, 0; 3, 0, 6; 3, 3, 3; 3, 6, 0; 6, 0, 3; 6, 3, 0; 9, 0, 0. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+11. **Sumes múltiples de 9 entre 0 i 9**: Les sumes múltiples de 9 entre 0 i 9 són 9. Però, perquè a + b + c sigui 9, els únics valors possibles per a, b i c són 0, 0, 9; 0, 3, 6; 0, 9, 0; 3, 0, 6; 3, 3, 3; 3, 6, 0; 6, 0, 3; 6, 3, 0; 9, 0, 0. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+12. **Sumes múltiples de 9 entre 0 i 18**: Les sumes múltiples de 9 entre 0 i 18 són 9, 18. Però, perquè a + b + c sigui 18, els únics valors possibles per a, b i c són 0, 9, 9; 9, 0, 9; 9, 9, 0. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+13. **Sumes múltiples de 9 entre 0 i 27**: Les sumes múltiples de 9 entre 0 i 27 són 9, 18, 27. Però, perquè a + b + c sigui 27, els únics valors possibles per a, b i c són 9, 9, 9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+14. **Sumes múltiples de 9 entre 18 i 27**: Les sumes múltiples de 9 entre 18 i 27 són 27. Però, perquè a + b + c sigui 27, els únics valors possibles per a, b i c són 9, 9, 9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+15. **Sumes múltiples de 9 entre 27 i 36**: Les sumes múltiples de 9 entre 27 i 36 són 36. Però, perquè a + b + c sigui 36, els únics valors possibles per a, b i c són 9, 9, 18; 9, 18, 9; 18, 9, 9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+16. **Sumes múltiples de 9 entre 36 i 45**: Les sumes múltiples de 9 entre 36 i 45 són 45. Però, perquè a + b + c sigui 45, els únics valors possibles per a, b i c són 9, 18, 18; 9, 27, 9; 18, 9, 18; 18, 18, 9; 18, 27, 0; 27, 9, 9; 27, 18, 0; 27, 27, -9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+17. **Sumes múltiples de 9 entre 45 i 54**: Les sumes múltiples de 9 entre 45 i 54 són 54. Però, perquè a + b + c sigui 54, els únics valors possibles per a, b i c són 18, 18, 18; 18, 27, 9; 18, 36, 0; 27, 18, 9; 27, 27, 0; 27, 36, -9. Però, aquests valors no compleixen les condicions a > b i b > c.
+
+18. **Sumes múltiples de 9 entre 54 i 63**: Les sumes múltiples de 9 entre 54 i 63 són 63. Però, perquè a + b + c sigui 63, els únics valors possibles per a, b i c són 18, 27, 18; 18, 36, 9; 18, 45, 0; 27, 18, 18; 27, 27, 9; 27, 36, 0; 36, 18, 9; 36, 27, 0; 45, 18, 0. Però, a

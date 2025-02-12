@@ -1,0 +1,19 @@
+Raonament:
+
+Per determinar el nombre enter que has triat, podem utilitzar un mètode de divisió en parts iguals. El mètode més eficient per aquest problema és el mètode de "binària" o "divisió en parts iguals".
+
+Comencem per dividir el rang de nombres (1 a 15) en parts iguals. Podem dividir el rang en 2 parts: 1-7 i 8-15.
+
+A continuació, dividim cada part en dues parts més petites: 1-3 i 4-7, i 8-10 i 11-15.
+
+A continuació, dividim cada part en dues parts més petites: 1-2 i 3 i 4, i 5-7 i 8-10, i 11-12 i 13-15.
+
+A continuació, dividim cada part en dues parts més petites: 1 i 2, i 3 i 4, i 5 i 6, i 7 i 8, i 9 i 10, i 11 i 12, i 13 i 14, i 15.
+
+A partir d'aquesta divisió, podem determinar el nombre enter que has triat. Si has triat un nombre entre 1 i 7, podem preguntar si el nombre està entre 1 i 3 o si està entre 4 i 7. Si la resposta és "sí" a la primera pregunta, podem preguntar si el nombre està entre 1 i 2 o si està entre 3 i 4. Si la resposta és "sí" a la segona pregunta, podem determinar el nombre.
+
+Si has triat un nombre entre 8 i 15, podem seguir el mateix procés.
+
+Per això, el mínim nombre de preguntes amb què pots estar segur que podràs deduir quin és el teu nombre és 3.
+
+Resposta: C)

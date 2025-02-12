@@ -1,0 +1,29 @@
+Raonament: Per resoldre aquesta operació, podem simplificar-la utilitzant la propietat distributiva de la multiplicació sobre la suma. Això significa que podem expandir cada terme de la forma \(n(n+1)\) en \(n^2 + n\).
+
+Per exemple, el primer terme \(1 \cdot 2\) es pot expandir en \(1^2 + 1\), el segon terme \(2 \cdot 3\) es pot expandir en \(2^2 + 2\), i així successivament.
+
+Així, l'expressió original es pot reescriure com:
+
+\((1^2 + 1) + (2^2 + 2) + (3^2 + 3) + (4^2 + 4) + (5^2 + 5) + (6^2 + 6) + (7^2 + 7) + (8^2 + 8)\)
+
+A continuació, podem simplificar aquesta expressió sumant els termes quadrats i els termes lineals separatment:
+
+\(\sum_{n=1}^8 n^2 + \sum_{n=1}^8 n\)
+
+La suma dels quadrats dels nombres naturals des de 1 fins a n és donada per la fórmula \(\frac{n(n+1)(2n+1)}{6}\), i la suma dels nombres naturals des de 1 fins a n és donada per la fórmula \(\frac{n(n+1)}{2}\).
+
+Així, podem substituir aquests valors per n = 8:
+
+\(\frac{8(8+1)(2\cdot8+1)}{6} + \frac{8(8+1)}{2}\)
+
+Simplificant aquesta expressió, obtenim:
+
+\(\frac{8 \cdot 9 \cdot 17}{6} + \frac{8 \cdot 9}{2}\)
+
+\(\frac{1224}{6} + \frac{72}{2}\)
+
+\(204 + 36\)
+
+\(240\)
+
+Resposta: B)

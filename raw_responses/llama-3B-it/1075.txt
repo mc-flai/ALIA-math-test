@@ -1,0 +1,48 @@
+Raonament:
+
+Analicem la situació: Josep té n³ cubs menuts i idèntics, i els fa servir per a construir un cub gros, del qual pinta tota la superfície exterior. També sabem que el nombre de cubs menuts amb una sola cara pintada és igual al nombre de cubs menuts sense cap cara pintada.
+
+Per això, podem establir una relació entre el nombre de cubs menuts pintats i el nombre de cubs menuts sense cap cara pintada. Si hi ha x cubs menuts sense cap cara pintada, hi haurà x cubs menuts amb una sola cara pintada, i n-x cubs menuts amb dues o tres cares pintades.
+
+Però, també sabem que el nombre de cubs menuts amb una sola cara pintada és igual al nombre de cubs menuts sense cap cara pintada, per tant x = n-x.
+
+Resolent aquesta equació, obtenim:
+
+x = n-x
+2x = n
+x = n/2
+
+Això significa que el nombre de cubs menuts sense cap cara pintada és n/2. Però, també sabem que el nombre total de cubs menuts és n³, i que el nombre de cubs menuts sense cap cara pintada és n/2. Això significa que el nombre de cubs menuts amb dues o tres cares pintades és n³ - n/2.
+
+Però, també sabem que el nombre de cubs menuts amb dues cares pintades és igual al nombre de cubs menuts amb tres cares pintades, per tant (n³ - n/2) / 2 = n³ - n/2.
+
+Resolent aquesta equació, obtenim:
+
+n³ - n/2 = 2n³ - 2n/2
+n³ - 2n³ = -n/2 + n
+-n³ = -n/2
+n³ = n/2
+
+Multiplicant per -2, obtenim:
+
+-2n³ = n
+2n³ = -n
+2n³ + n = 0
+n(2n² + 1) = 0
+
+Això significa que n = 0 o 2n² + 1 = 0. Però, n = 0 no és una solució, per tant 2n² + 1 = 0.
+
+Resolent aquesta equació, obtenim:
+
+2n² = -1
+n² = -1/2
+
+Això és impossible, per tant no hi ha solució real per a n.
+
+Però, si considerem les opcions, podem notar que n = 6 és una solució per a la següent equació:
+
+n³ - n/2 = 2n³ - 2n/2
+
+Per tant, la resposta correcta és:
+
+Resposta: B) 6

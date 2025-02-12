@@ -1,0 +1,83 @@
+Raonament:
+
+Analicem la situació:
+
+* Hi ha 5 equips que s'han enfrontat uns a uns.
+* Cadascun d'ells s'ha enfrontat als altres quatre exactament una vegada.
+* Després de jugar tots els partits, els equips han obtingut 10, 7, 5, 4 i 1 punt.
+
+Anem a considerar les possibilitats:
+
+* Si tots els partits havien estat empatats, els equips haurien obtingut 1 punt cada un, però això no és possible perquè el punt màxim que han obtingut és 10.
+* Si un equip ha guanyat tots els seus partits, hauria obtingut 9 punts, però això no és possible perquè el punt màxim que han obtingut és 10.
+* Si un equip ha perdut tots els seus partits, hauria obtingut 0 punts, però això no és possible perquè el punt mínim que han obtingut és 1.
+
+Això significa que cada equip ha guanyat i perdut almenys un partit. Anem a considerar les possibilitats:
+
+* Si un equip ha guanyat un partit i ha perdut un altre, hauria obtingut 3 punts i 0 punts, respectivament.
+* Si un equip ha guanyat dos partits i ha perdut dos altres, hauria obtingut 6 punts i 0 punts, respectivament.
+* Si un equip ha guanyat tres partits i ha perdut dos altres, hauria obtingut 9 punts i 0 punts, respectivament.
+
+Anem a considerar les possibilitats per a cada equip:
+
+* L'equip que ha obtingut 10 punts ha guanyat tres partits i ha perdut dos altres. Això és possible si ha guanyat als equips que han obtingut 7, 5 i 4 punts.
+* L'equip que ha obtingut 7 punts ha guanyat dos partits i ha perdut tres altres. Això és possible si ha guanyat als equips que han obtingut 10, 5 i 4 punts.
+* L'equip que ha obtingut 5 punts ha guanyat un partit i ha perdut tres altres. Això és possible si ha guanyat als equips que han obtingut 10, 7 i 4 punts.
+* L'equip que ha obtingut 4 punts ha guanyat un partit i ha perdut tres altres. Això és possible si ha guanyat als equips que han obtingut 10, 7 i 1 punt.
+* L'equip que ha obtingut 1 punt ha guanyat un partit i ha perdut tres altres. Això és possible si ha guanyat als equips que han obtingut 10, 7 i 5 punts.
+
+Anem a considerar les possibilitats per als equips que han guanyat un partit:
+
+* L'equip que ha guanyat un partit ha obtingut 3 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat un partit ha perdut un altre partit. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han perdut un partit:
+
+* L'equip que ha perdut un partit ha obtingut 0 punts. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha perdut un partit ha guanyat un altre partit. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han guanyat dos partits:
+
+* L'equip que ha guanyat dos partits ha obtingut 6 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat dos partits ha perdut dos altres partits. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han guanyat tres partits:
+
+* L'equip que ha guanyat tres partits ha obtingut 9 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat tres partits ha perdut dos altres partits. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Després de considerar totes les possibilitats, podem conèixer que:
+
+* L'equip que ha obtingut 10 punts ha guanyat tres partits i ha perdut dos altres.
+* L'equip que ha obtingut 7 punts ha guanyat dos partits i ha perdut tres altres.
+* L'equip que ha obtingut 5 punts ha guanyat un partit i ha perdut tres altres.
+* L'equip que ha obtingut 4 punts ha guanyat un partit i ha perdut tres altres.
+* L'equip que ha obtingut 1 punt ha guanyat un partit i ha perdut tres altres.
+
+Això significa que cada equip ha guanyat i perdut almenys un partit. Anem a considerar les possibilitats per als equips que han guanyat un partit:
+
+* L'equip que ha guanyat un partit ha obtingut 3 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat un partit ha perdut un altre partit. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han perdut un partit:
+
+* L'equip que ha perdut un partit ha obtingut 0 punts. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha perdut un partit ha guanyat un altre partit. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han guanyat dos partits:
+
+* L'equip que ha guanyat dos partits ha obtingut 6 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat dos partits ha perdut dos altres partits. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Anem a considerar les possibilitats per als equips que han guanyat tres partits:
+
+* L'equip que ha guanyat tres partits ha obtingut 9 punts. Això és possible si ha guanyat als equips que han obtingut 10, 7, 5 o 4 punts.
+* L'equip que ha guanyat tres partits ha perdut dos altres partits. Això és possible si ha perdut als equips que han obtingut 10, 7, 5 o 4 punts.
+
+Després de considerar totes les possibilitats, podem conèixer que:
+
+* El partit entre l'equip que ha obtingut 10 punts i l'equip que ha obtingut 7 punts ha estat empatat.
+* El partit entre l'equip que ha obtingut 10 punts i l'equip que ha obtingut 5 punts ha estat empatat.
+* El partit entre l'equip que ha obtingut 10 punts i l'equip que ha obtingut 4 punts ha estat empatat.
+* El partit entre l'equip que ha obtingut 10 punts i l'equip que ha obtingut 1 punt ha estat empatat.
+* El partit entre l'equip que ha obting

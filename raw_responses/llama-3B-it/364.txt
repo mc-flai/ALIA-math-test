@@ -1,0 +1,15 @@
+Raonament:
+
+Per començar, hem de comprendre la condició que s'ha de satisfaur per un nombre natural: la suma dels seus dígits ha de ser divisible per 5. Aquesta condició és molt important per determinar la seqüència de nombres que buscamos.
+
+Anant per ordre creixent, podem observar que els nombres que satisfen aquesta condició són:
+
+5, 14, 19, 23, 28, 33, 38, 43, 48, 53, 58,...
+
+A continuació, podem observar que cada nombre que segue aquesta seqüència és 5 més que el precedent. Per exemple, 14 + 5 = 19, 19 + 5 = 24 (però 24 no és divisible per 5, però 23 és), 23 + 5 = 28, etc.
+
+Això significa que la diferència entre un nombre i el seu predecessor és sempre 5, excepte en el cas de 23, que és un exemple de "salt" en la seqüència.
+
+Per això, la mínima diferència entre un d'aquests nombres i el seu anterior és 5.
+
+Resposta: E) 5.

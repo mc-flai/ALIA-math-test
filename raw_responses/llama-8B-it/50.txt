@@ -1,0 +1,17 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el mètode de la taula de verificació. 
+
+1. Creem una taula amb les quatre posicions possibles (1r, 2n, 3r i 4t) i les quatre corredores (A, B, C i D).
+2. Anem analitzant les afirmacions de cada persona i les incorporarem a la taula.
+3. Com que cada persona ha tingut un encert i una errada, podem eliminar les opcions que no compleixin les afirmacions de totes les persones.
+
+- Anna diu: «Guanyarà A i B quedarà segona». Això significa que A ha de quedar en 1r lloc i B en 2n lloc.
+- Maria diu: «C quedarà segona i D quedarà quarta». Això significa que C ha de quedar en 2n lloc i D en 4t lloc.
+- Rosa diu: «A quedarà segona i D quedarà tercera». Això significa que A ha de quedar en 2n lloc i D en 3r lloc.
+
+Ara, podem veure que les afirmacions de les tres persones són contradictòries. Anna diu que A guanya i B quedarà segona, però Rosa diu que A quedarà segona i D quedarà tercera. A més, Maria diu que C quedarà segona i D quedarà quarta, però Rosa diu que D quedarà tercera.
+
+Però, si analitzem les afirmacions de les tres persones, podem veure que hi ha una possibilitat que compleixin totes les afirmacions. Si A quedarà en 3r lloc, B en 2n lloc, C en 1r lloc i D en 4t lloc, les afirmacions de les tres persones es compleixen.
+
+Resposta: C) ACDB

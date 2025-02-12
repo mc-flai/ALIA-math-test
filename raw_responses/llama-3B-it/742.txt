@@ -1,0 +1,21 @@
+Raonament:
+
+Un cub té 8 vèrtexs. Per cada vèrtex, podem dibuixar una línia que passa per tres vèrtexs. Això significa que podem dibuixar 8 línees que passen per tres vèrtexs. Però, aquestes línees també passen per quatre vèrtexs, ja que cada línia passa per tres vèrtexs i un altre vèrtex que està connectat als tres vèrtexs per la línia.
+
+Per calcular el nombre de plans que passen per tres vèrtexs, podem considerar que cada vèrtex està connectat a tres altres vèrtexs. Això significa que cada vèrtex està part de tres plans. Però, aquesta comptatge inclou plans que passen per quatre vèrtexs.
+
+Per calcular el nombre de plans que passen per quatre vèrtexs, podem considerar que cada vèrtex està part de tres plans. Això significa que cada vèrtex està part de tres plans que passen per quatre vèrtexs.
+
+Per calcular el nombre de plans que passen per tres vèrtexs i no per quatre, podem restar el nombre de plans que passen per quatre vèrtexs del nombre total de plans que passen per tres vèrtexs. El nombre total de plans que passen per tres vèrtexs és 8 (per cada vèrtex, podem dibuixar una línia que passa per tres vèrtexs). El nombre de plans que passen per quatre vèrtexs és 8 (per cada vèrtex, està part de tres plans que passen per quatre vèrtexs).
+
+Però, aquesta comptatge inclou plans que passen per quatre vèrtexs dos cops. Per exemple, si un plan passa per vèrtex A, B, C i D, aquest plan està part dels plans que passen per vèrtex A, B, C i A, B, C, D.
+
+Per calcular el nombre de plans que passen per quatre vèrtexs sense comptar-los dos cops, podem dividir el nombre total de plans que passen per quatre vèrtexs per 2. El nombre de plans que passen per quatre vèrtexs és 8, però aquesta comptatge inclou plans que passen per quatre vèrtexs dos cops. Per calcular el nombre real de plans que passen per quatre vèrtexs, podem dividir el nombre total per 2.
+
+El nombre de plans que passen per quatre vèrtexs és 8/2 = 4.
+
+Per calcular el nombre de plans que passen per tres vèrtexs i no per quatre, podem restar el nombre de plans que passen per quatre vèrtexs del nombre total de plans que passen per tres vèrtexs. El nombre total de plans que passen per tres vèrtexs és 8. El nombre de plans que passen per quatre vèrtexs és 4.
+
+El nombre de plans que passen per tres vèrtexs i no per quatre és 8 - 4 = 4.
+
+Resposta: C) 4.

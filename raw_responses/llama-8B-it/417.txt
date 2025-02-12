@@ -1,0 +1,12 @@
+Raonament: 
+
+Per resoldre aquest problema, podem seguir els següents passos:
+
+1. Calculem el nombre total de taronges en les 7 caixes que tenen exactament 130 taronges cadascuna: 7 caixes * 130 taronges/caixa = 910 taronges.
+2. Calculem el nombre total de taronges en els 7 conjunts de 6 caixes: cada conjunt té 6 caixes amb el mateix nombre de taronges, però no sabem quin és aquest nombre. Anomenem aquest nombre x. Aleshores, el nombre total de taronges en cada conjunt és 6x. Hi ha 7 conjunts, però no sabem si aquests conjunts tenen el mateix nombre de taronges o no. Però podem calcular el nombre total de taronges en tots els conjunts: 7 conjunts * 6x taronges/conjunt = 42x taronges.
+3. Sabem que cada caixa conté almenys 120 taronges i no més de 144. Això significa que el nombre de taronges en cada conjunt de 6 caixes ha de ser entre 120 i 144. Però també sabem que el nombre de taronges en cada conjunt ha de ser múltiple de 6 (perquè hi ha 6 caixes en cada conjunt). Això ens permet reduir les possibilitats: 120, 126, 132, 138 i 144 són els únics nombres entre 120 i 144 que són múltiples de 6. Però només podem triar un d'ells, perquè no podem tenir més de 7 conjunts amb el mateix nombre de taronges. Aleshores, triem el nombre que ens doni el nombre més gran de taronges en els conjunts: 144. Això significa que cada conjunt té 144 taronges, i el nombre total de taronges en tots els conjunts és 7 conjunts * 6 caixes/conjunt * 144 taronges/caixa = 7.224 taronges.
+4. Calculem el nombre total de taronges en totes les caixes: 910 taronges (en les 7 caixes amb 130 taronges) + 7.224 taronges (en els conjunts) = 8.134 taronges.
+5. Calculem el nombre total de caixes necessàries per carregar totes les taronges: 8.134 taronges / 120 taronges/caixa (perquè cada caixa conté almenys 120 taronges) = 67,77 caixes. Però no podem carregar fraccions de caixa, així que hem de carregar 68 caixes.
+6. Calculem el nombre de viatges necessaris per carregar totes les caixes: 68 caixes / 42 caixes/viatge = 1,62 viatges. Però no podem fer fraccions de viatge, així que hem de fer 2 viatges.
+
+Resposta: B)

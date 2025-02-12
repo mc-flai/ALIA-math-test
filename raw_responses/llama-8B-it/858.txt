@@ -1,0 +1,17 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant les opcions que tenim per moure's des del número 45 fins al número 200. Tenim tres opcions:
+
+1. Doblament: Podeu doblar el número anterior.
+2. Divisió per tres: Podeu dividir el número anterior per tres.
+3. Quadrat: Podeu prendre el quadrat del número anterior.
+
+El nostre objectiu és trobar el mínim nombre de passos necessaris per arribar de 45 a 200.
+
+Comencem analitzant les opcions:
+
+- Si doblem el 45, obtenim 90. Si doblem el 90, obtenim 180. Aleshores, si doblem el 180, obtenim 360, que és massa gran. Per tant, no podem arribar a 200 doblant el 45.
+- Si dividim el 45 per tres, obtenim 15. Si dividim el 15 per tres, obtenim 5. Si dividim el 5 per tres, obtenim 1. Aleshores, si doblem el 1, obtenim 2. Si doblem el 2, obtenim 4. Si doblem el 4, obtenim 8. Si doblem el 8, obtenim 16. Si doblem el 16, obtenim 32. Si doblem el 32, obtenim 64. Si doblem el 64, obtenim 128. Si doblem el 128, obtenim 256. Aleshores, si doblem el 256, obtenim 512, que és massa gran. Per tant, no podem arribar a 200 dividint el 45 per tres.
+- Si prenem el quadrat del 45, obtenim 2025, que és massa gran. Per tant, no podem arribar a 200 prenent el quadrat del 45.
+
+Però, si prenem el quadrat del 15, obtenim 225, que és massa gran. Però, si prenem el quadrat del 5, obtenim 25. Si doblem el 25, obtenim 50. Si doblem el 50, obtenim 100. Si doblem el 100, obtenim 200. Aleshores, si prenem el quadrat del 5, obtenim 25. Si doblem el 25, obtenim 50. Si doblem el 50, obtenim 100. Si doblem el 100, obtenim 200. Això ens dona un camí possible de 5 passos.
+
+Resposta: D)

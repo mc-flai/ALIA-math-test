@@ -1,0 +1,13 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant la condició donada: el nombre de tres xifres format per les tres primeres xifres és igual a 4 vegades el nombre de dues xifres format per les dues últimes xifres. Això significa que si tenim un nombre de cinc xifres, per exemple, abcde, llavors abc = 4 * de.
+
+Per simplificar la situació, podem expressar el nombre de cinc xifres com a 1000a + 100b + 10c + d + e, on a, b, c, d i e són les xifres del nombre. La condició anterior es pot expressar com a 100b + 10c + d = 4 * (d + e).
+
+A continuació, podem simplificar l'equació anterior per obtenir 100b + 10c + d = 4d + 4e, que es pot reorganitzar com a 100b + 10c - 3d = 4e.
+
+Per a cada valor de d (0 a 9), podem calcular el valor màxim de e que satisfà l'equació anterior. Per exemple, si d = 0, llavors 100b + 10c ≥ 0, però 4e ≥ 0, per tant e pot ser igual a 0. Si d = 1, llavors 100b + 10c ≥ 1, però 4e ≥ 4, per tant no hi ha cap valor de e que satisfà l'equació.
+
+Després de calcular els valors màxims de e per a cada valor de d, podem comptar el nombre de valors de d que tenen un valor màxim de e entre 0 i 9 (perquè e és una xifra). Aquests valors de d són els que satisfan la condició donada.
+
+Després de comptar els valors de d, podem calcular el nombre de nombres de cinc xifres que satisfan la condició donada. Aquests nombres són els que tenen les tres primeres xifres iguals a 4 vegades les dues últimes xifres.
+
+Resposta: D)

@@ -1,0 +1,11 @@
+Raonament: Per trobar el nombre de triangles equilàters que es poden dibuixar amb els vèrtexs d'un cub, podem començar analitzant les possibles combinacions de vèrtexs. Un triangle equilàter té tres vèrtexs, i per tant, necessitem triar tres vèrtexs del cub per formar un triangle equilàter.
+
+Un cub té 8 vèrtexs, i podem triar tres d'ells de diverses maneres. Però, per formar un triangle equilàter, els tres vèrtexs triats han de ser adjacents entre si. Això significa que no podem triar tres vèrtexs que estiguin en una mateixa cara del cub, ja que això no formaria un triangle equilàter.
+
+Hi ha 6 cares en un cub, i cada cara té 4 vèrtexs. Això significa que hi ha 6 conjunts de 4 vèrtexs, cadascun dels quals forma una cara del cub. Però, per formar un triangle equilàter, necessitem triar tres vèrtexs adjacents, i això no és possible amb els vèrtexs d'una sola cara.
+
+Ara, considerem les arestes del cub. Hi ha 12 arestes en un cub, i cada aresta connecta dos vèrtexs. Si triem un vèrtex i el seu veí immediat, podem formar un triangle equilàter amb aquests dos vèrtexs i el tercer vèrtex que està connectat amb ells per una aresta. Això significa que hi ha 12 conjunts de tres vèrtexs adjacents que formen un triangle equilàter.
+
+Per tant, el nombre de triangles equilàters que es poden dibuixar amb els vèrtexs d'un cub és 12.
+
+Resposta: C)

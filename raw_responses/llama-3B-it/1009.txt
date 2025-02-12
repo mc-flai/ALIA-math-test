@@ -1,0 +1,23 @@
+Raonament:
+
+Per resolver aquest problema, podem utilitzar una tècnica de sortejada seqüencial. Podem sortir un bol de cada color fins que no siguiem tres boles del mateix color.
+
+1. Sortem un bol grogues. Queden 49 boles grogues.
+2. Sortem un bol blanc. Queden 49 boles grogues i 9 boles blanques.
+3. Sortem un bol blanc. Queden 49 boles grogues, 8 boles blanques i 4 boles verds.
+4. Sortem un bol blanc. Queden 49 boles grogues, 7 boles blanques i 4 boles verds.
+5. Sortem un bol blanc. Queden 49 boles grogues, 6 boles blanques i 4 boles verds.
+6. Sortem un bol blanc. Queden 49 boles grogues, 5 boles blanques i 4 boles verds.
+7. Sortem un bol blanc. Queden 49 boles grogues, 4 boles blanques i 4 boles verds.
+8. Sortem un bol blanc. Queden 49 boles grogues, 3 boles blanques i 4 boles verds.
+9. Sortem un bol blanc. Queden 49 boles grogues, 2 boles blanques i 4 boles verds.
+10. Sortem un bol blanc. Queden 49 boles grogues, 1 bol blanc i 4 boles verds.
+11. Sortem un bol blanc. Queden 49 boles grogues, 0 boles blanques i 4 boles verds.
+12. Sortem un bol grogues. Queden 48 boles grogues i 4 boles verds.
+13. Sortem un bol grogues. Queden 47 boles grogues i 4 boles verds.
+14. Sortem un bol grogues. Queden 46 boles grogues i 4 boles verds.
+15. Sortem un bol grogues. Queden 45 boles grogues i 4 boles verds.
+
+Així, el màxim nombre de boles que podem sortir sense retornar-les a la bossa i sense sortir tres boles del mateix color consecutivament és 45.
+
+Resposta: D) 45

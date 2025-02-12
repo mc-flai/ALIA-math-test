@@ -1,0 +1,21 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el concepte de grafs i teoria de grafs. 
+
+Imaginem que les 24 persones són nodes d'un graf, i cada salutació és un arc entre dos nodes. 
+
+Quan cada persona saluda a totes les altres, estem creant un graf complet, on cada node està connectat amb tots els altres nodes. 
+
+El nombre de salutacions és igual al nombre d'arcs del graf, que és igual al nombre de nodes elegits 2 a 2, que és igual a C(24, 2) = 24 * 23 / 2 = 276.
+
+Però, aquesta és la quantitat de salutacions que es fan sense tenir en compte que cada salutació dura 30 segons. 
+
+Per trobar la quantitat total de temps que dura la reunió, hem de multiplicar el nombre de salutacions per la durada de cada salutació: 276 * 30 = 8280 segons.
+
+Per convertir aquest temps a minuts, dividim per 60: 8280 / 60 = 138 minuts.
+
+Per convertir aquest temps a hores, dividim per 60: 138 / 60 = 2,3 hores.
+
+Per tant, la resposta correcta és D) 2 h 18 min.
+
+Resposta: D)

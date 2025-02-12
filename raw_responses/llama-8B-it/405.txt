@@ -1,0 +1,43 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el concepte de combinacions i la teoria de grafs. 
+
+Suposem que tenim un conjunt S de n elements. Volem trobar 7 subconjunts de S de 3 elements cadascun, de manera que donats dos elements de S, existeix exactament un d'aquests subconjunts que conté aquests dos elements. 
+
+Això significa que cada parella d'elements de S està continguda en exactament un dels 7 subconjunts. 
+
+Podem representar aquesta situació com un graf, on cada element de S és un node i cada subconjunt és un arc que connecta els nodes que conté. 
+
+D'aquesta manera, cada arc connecta exactament dos nodes i no hi ha cap arc que connecti dos nodes que ja estan connectats per un altre arc. 
+
+Aquest graf és un graf bipartit, on els nodes es poden dividir en dues classes disjúnctes (els nodes de la primera classe i els nodes de la segona classe). 
+
+El nombre de nodes de la primera classe és igual al nombre de subconjunts (7), i el nombre de nodes de la segona classe és igual al nombre d'elements de S (n). 
+
+El nombre d'arcs és igual al nombre de parelles d'elements de S, que és n(n-1)/2. 
+
+D'altra banda, el nombre d'arcs és igual al nombre de subconjunts (7), ja que cada subconjunt és un arc que connecta dos nodes. 
+
+Així, tenim la següent equació:
+
+n(n-1)/2 = 7
+
+Resolent aquesta equació, obtenim:
+
+n^2 - n - 14 = 0
+
+Factoritzant la fórmula quadràtica, obtenim:
+
+(n - 7)(n + 2) = 0
+
+Això ens dona dues possibles solucions per a n: n = 7 o n = -2. 
+
+Però n no pot ser negatiu, ja que és el nombre d'elements d'un conjunt. 
+
+Així, la única solució possible és n = 7. 
+
+Però aquesta és una solució trivial, ja que si n = 7, llavors S té només 7 elements i no hi ha cap manera de formar 7 subconjunts de 3 elements cadascun de manera que cada parella d'elements estigui continguda en exactament un dels subconjunts. 
+
+Així, la resposta correcta és:
+
+Resposta: A) No podem trobar cap n així.

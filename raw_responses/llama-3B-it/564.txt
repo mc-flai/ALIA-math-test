@@ -1,0 +1,199 @@
+Raonament:
+
+Per calcular el nombre de rectes que podem formar unint almenys 2 punts dels 10, podem utilitzar la fórmula de combinatoria. El nombre de rectes que podem formar unint almenys 2 punts és igual al nombre de combinaris de 2 punts del total de 10 punts, més el nombre de combinaris de 3 punts del total de 10 punts, més el nombre de combinaris de 4 punts del total de 10 punts.
+
+El nombre de combinaris de 2 punts del total de 10 punts és:
+
+10C2 = 10! / (2! \* (10-2)!) = 45
+
+El nombre de combinaris de 3 punts del total de 10 punts és:
+
+10C3 = 10! / (3! \* (10-3)!) = 120
+
+El nombre de combinaris de 4 punts del total de 10 punts és:
+
+10C4 = 10! / (4! \* (10-4)!) = 210
+
+Però, aquestes quantitats inclouen les rectes que passen per les quatre punts en línia recta. Per això, cal subtrair el nombre de combinaris de 4 punts del total de 10 punts, que és:
+
+10C4 = 210
+
+Així, el nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+45 + 120 - 210 = -45
+
+Però, aquesta solució no és correcta, ja que no podem formar rectes que passin per quatre punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta i tres punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 = 10
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per quatre punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta i tres punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 + 1 = 11
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per cinc punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta, tres punts en línia recta i quatre punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per cinc punts en línia recta és:
+
+1
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 + 1 + 1 = 12
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per sis punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta, tres punts en línia recta, quatre punts en línia recta i cinc punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per cinc punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per sis punts en línia recta és:
+
+1
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 + 1 + 1 + 1 = 13
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per set punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta, tres punts en línia recta, quatre punts en línia recta, cinc punts en línia recta i sis punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per cinc punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per sis punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per set punts en línia recta és:
+
+1
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 + 1 + 1 + 1 + 1 = 14
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per vuit punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta, tres punts en línia recta, quatre punts en línia recta, cinc punts en línia recta, sis punts en línia recta i set punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per cinc punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per sis punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per set punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per vuit punts en línia recta és:
+
+1
+
+El nombre total de rectes que podem formar unint almenys 2 punts dels 10 punts és:
+
+6 + 4 + 1 + 1 + 1 + 1 + 1 = 15
+
+Però, aquesta solució no és correcta, ja que no considera les rectes que passen per nou punts en línia recta. Per això, cal considerar només les rectes que passen per dos punts en línia recta, tres punts en línia recta, quatre punts en línia recta, cinc punts en línia recta, sis punts en línia recta, set punts en línia recta i vuit punts en línia recta.
+
+El nombre de rectes que passen per dos punts en línia recta és:
+
+4C2 = 6
+
+El nombre de rectes que passen per tres punts en línia recta és:
+
+4C3 = 4
+
+El nombre de rectes que passen per quatre punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per cinc punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per sis punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per set punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per vuit punts en línia recta és:
+
+1
+
+El nombre de rectes que passen per nou punts en línia recta

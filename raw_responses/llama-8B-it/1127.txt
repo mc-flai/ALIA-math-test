@@ -1,0 +1,57 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar analitzant la condició donada: pq,rs és la mitjana entre pq i rs. Això significa que pq,rs = (pq + rs) / 2.
+
+Per simplificar l'equació, podem multiplicar tots dos costats per 2, obtenint:
+
+2pq,rs = pq + rs
+
+Ara, podem observar que pq,rs té una coma decimal entre la q i la r, mentre que pq i rs són nombres de dues xifres sense coma decimal. Això significa que pq,rs és un nombre de quatre xifres amb una coma decimal entre la q i la r.
+
+Per exemple, si pq = 12 i rs = 34, pq,rs = 12,34. En aquest cas, 2pq,rs = 2(12,34) = 24,68 i pq + rs = 12 + 34 = 46. Com que 24,68 no és igual a 46, aquest exemple no és vàlid.
+
+Però si pq = 12 i rs = 43, pq,rs = 12,43. En aquest cas, 2pq,rs = 2(12,43) = 24,86 i pq + rs = 12 + 43 = 55. Com que 24,86 no és igual a 55, aquest exemple tampoc no és vàlid.
+
+Però si pq = 13 i rs = 32, pq,rs = 13,32. En aquest cas, 2pq,rs = 2(13,32) = 26,64 i pq + rs = 13 + 32 = 45. Com que 26,64 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 14 i rs = 31, pq,rs = 14,31. En aquest cas, 2pq,rs = 2(14,31) = 28,62 i pq + rs = 14 + 31 = 45. Com que 28,62 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 15 i rs = 30, pq,rs = 15,30. En aquest cas, 2pq,rs = 2(15,30) = 30,60 i pq + rs = 15 + 30 = 45. Com que 30,60 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 16 i rs = 29, pq,rs = 16,29. En aquest cas, 2pq,rs = 2(16,29) = 32,58 i pq + rs = 16 + 29 = 45. Com que 32,58 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 17 i rs = 28, pq,rs = 17,28. En aquest cas, 2pq,rs = 2(17,28) = 34,56 i pq + rs = 17 + 28 = 45. Com que 34,56 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 18 i rs = 27, pq,rs = 18,27. En aquest cas, 2pq,rs = 2(18,27) = 36,54 i pq + rs = 18 + 27 = 45. Com que 36,54 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 19 i rs = 26, pq,rs = 19,26. En aquest cas, 2pq,rs = 2(19,26) = 38,52 i pq + rs = 19 + 26 = 45. Com que 38,52 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 20 i rs = 25, pq,rs = 20,25. En aquest cas, 2pq,rs = 2(20,25) = 40,50 i pq + rs = 20 + 25 = 45. Com que 40,50 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 21 i rs = 24, pq,rs = 21,24. En aquest cas, 2pq,rs = 2(21,24) = 42,48 i pq + rs = 21 + 24 = 45. Com que 42,48 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 22 i rs = 23, pq,rs = 22,23. En aquest cas, 2pq,rs = 2(22,23) = 44,46 i pq + rs = 22 + 23 = 45. Com que 44,46 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 23 i rs = 22, pq,rs = 23,22. En aquest cas, 2pq,rs = 2(23,22) = 46,44 i pq + rs = 23 + 22 = 45. Com que 46,44 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 24 i rs = 21, pq,rs = 24,21. En aquest cas, 2pq,rs = 2(24,21) = 48,42 i pq + rs = 24 + 21 = 45. Com que 48,42 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 25 i rs = 20, pq,rs = 25,20. En aquest cas, 2pq,rs = 2(25,20) = 50,40 i pq + rs = 25 + 20 = 45. Com que 50,40 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 26 i rs = 19, pq,rs = 26,19. En aquest cas, 2pq,rs = 2(26,19) = 52,38 i pq + rs = 26 + 19 = 45. Com que 52,38 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 27 i rs = 18, pq,rs = 27,18. En aquest cas, 2pq,rs = 2(27,18) = 54,36 i pq + rs = 27 + 18 = 45. Com que 54,36 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 28 i rs = 17, pq,rs = 28,17. En aquest cas, 2pq,rs = 2(28,17) = 56,34 i pq + rs = 28 + 17 = 45. Com que 56,34 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 29 i rs = 16, pq,rs = 29,16. En aquest cas, 2pq,rs = 2(29,16) = 58,32 i pq + rs = 29 + 16 = 45. Com que 58,32 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 30 i rs = 15, pq,rs = 30,15. En aquest cas, 2pq,rs = 2(30,15) = 60,30 i pq + rs = 30 + 15 = 45. Com que 60,30 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 31 i rs = 14, pq,rs = 31,14. En aquest cas, 2pq,rs = 2(31,14) = 62,28 i pq + rs = 31 + 14 = 45. Com que 62,28 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 32 i rs = 13, pq,rs = 32,13. En aquest cas, 2pq,rs = 2(32,13) = 64,26 i pq + rs = 32 + 13 = 45. Com que 64,26 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 33 i rs = 12, pq,rs = 33,12. En aquest cas, 2pq,rs = 2(33,12) = 66,24 i pq + rs = 33 + 12 = 45. Com que 66,24 no és igual a 45, aquest exemple tampoc no és vàlid.
+
+Però si pq = 

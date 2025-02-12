@@ -1,0 +1,35 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar considerant les possibles combinacions de longituds dels costats del triangle que sumen 21. 
+
+Un triangle amb longituds de costat a, b i c, satisfà la desigualtat a + b > c, a + c > b i b + c > a. 
+
+A més, perquè les longituds dels costats siguin nombres naturals, a, b i c han de ser nombres naturals. 
+
+Comencem a explorar les possibles combinacions de longituds dels costats que sumen 21:
+
+- a + b + c = 21, on a, b i c són nombres naturals.
+
+Podem començar amb a = 1, 2, 3,... i buscar combinacions de b i c que satisfacin a + b + c = 21 i les condicions de desigualtat.
+
+Després de provar diverses combinacions, podem observar que les úniques combinacions que satisfan les condicions són:
+
+- a = 6, b = 6, c = 9 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 7, b = 7, c = 7 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 8, b = 8, c = 5 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 9, b = 6, c = 6 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 10, b = 5, c = 6 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 11, b = 5, c = 5 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 12, b = 4, c = 5 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 13, b = 4, c = 4 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 14, b = 3, c = 4 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 15, b = 3, c = 3 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 16, b = 2, c = 3 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 17, b = 2, c = 2 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 18, b = 1, c = 2 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 19, b = 1, c = 1 (però no satisfà la condició de que les longituds dels costats siguin iguals o que una sigui divisible per l'altra)
+- a = 20, b = 1, c = 0 (però no és un triangle vàlid)
+
+Després de provar totes les combinacions possibles, no hi ha cap triangle amb longituds de costat que satisfacin les condicions donades.
+
+Resposta: A)

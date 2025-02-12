@@ -1,0 +1,26 @@
+Raonament:
+
+Per determinar el franqueig més gran que no es pot pagar amb segells de 6 i 7 euros, podem utilitzar un mètode de prova i error.
+
+Empecem per considerar els segells de 6 euros. Si volem pagar un valor de 6 euros o més, podem utilitzar un segell de 6 euros. Per això, el franqueig més petit que podem pagar amb segells de 6 euros és de 6 euros.
+
+A continuació, considerem els segells de 7 euros. Si volem pagar un valor de 7 euros o més, podem utilitzar un segell de 7 euros. Per això, el franqueig més petit que podem pagar amb segells de 7 euros és de 7 euros.
+
+Per determinar el franqueig més gran que no es pot pagar amb segells de 6 i 7 euros, volem trobar el franqueig més petit que no es pot pagar amb cap combinació de segells de 6 i 7 euros.
+
+Anant per ordre creixent, els segells de 6 euros i 7 euros poden ser utilitzats per pagar els següents franqueigs:
+
+* 6 euros (un segell de 6 euros)
+* 7 euros (un segell de 7 euros)
+* 8 euros (dos segells de 6 euros)
+* 9 euros (un segell de 7 euros i un segell de 6 euros)
+* 10 euros (dos segells de 7 euros)
+* 11 euros (dos segells de 6 euros i un segell de 7 euros)
+* 12 euros (tres segells de 6 euros)
+* 13 euros (dos segells de 7 euros i un segell de 6 euros)
+* 14 euros (dos segells de 7 euros i un segell de 6 euros)
+* 15 euros (tres segells de 7 euros)
+
+Per això, el franqueig més petit que no es pot pagar amb segells de 6 i 7 euros és de 15 euros.
+
+Resposta: A) 15

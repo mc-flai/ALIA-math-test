@@ -1,0 +1,44 @@
+Raonament: Per resoldre aquest problema, podem utilitzar la fórmula per calcular el nombre de diagonals d'un polígon regular. La fórmula és:
+
+Nombre de diagonals = n(n-3)/2
+
+on n és el nombre de costats del polígon.
+
+Sabem que la suma del nombre de costats i el nombre de diagonals és 28, per tant podem establir l'equació:
+
+n + n(n-3)/2 = 28
+
+Per simplificar l'equació, podem multiplicar tots dos costats per 2 per eliminar la fracció:
+
+2n + n(n-3) = 56
+
+Desenvolupem l'equació:
+
+2n + n^2 - 3n = 56
+
+Combina els termes similars:
+
+n^2 - n - 56 = 0
+
+Factoritzem la quadràtica:
+
+(n - 8)(n + 7) = 0
+
+Això ens dona dues possibles solucions per n:
+
+n - 8 = 0 --> n = 8
+n + 7 = 0 --> n = -7
+
+Com que el nombre de costats d'un polígon no pot ser negatiu, la solució és n = 8.
+
+Per verificar la resposta, podem calcular el nombre de diagonals per n = 8:
+
+Nombre de diagonals = 8(8-3)/2 = 20
+
+La suma del nombre de costats i el nombre de diagonals és:
+
+8 + 20 = 28
+
+Això coincideix amb la informació donada, per tant la resposta és correcta.
+
+Resposta: B)

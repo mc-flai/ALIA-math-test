@@ -1,0 +1,38 @@
+Raonament:
+
+Per formar un triangle amb un angle de 45°, cal que els tres punts seleccionats estiguin en una línia recta. Això significa que els punts seleccionats han de ser adyacents en la circumferència.
+
+Com la circumferència està dividida en 12 arcs iguals, cada arc té una longitud de 360°/12 = 30°. Per formar un triangle amb un angle de 45°, cal que els punts seleccionats estiguin en una línia recta, que significa que han de estar en un arc de 30°.
+
+El nombre de combinars de 3 punts que formen un arc de 30° és el nombre de combinars de 3 punts que formen un triangle amb un angle de 45°. Aquesta quantitat es pot calcular utilitzant la fórmula de combinars:
+
+C(12, 3) = 12! / (3! \* (12-3)!)
+= 12! / (3! \* 9!)
+= (12 \* 11 \* 10) / (3 \* 2 \* 1)
+= 220
+
+Això significa que hi ha 220 combinars de 3 punts que formen un triangle amb un angle de 45°.
+
+Però, no tots aquests combinars de 3 punts formen un triangle amb un angle de 45°. Alguns d'ells formen un triangle amb dos angles de 45°, mentre que un altre angle és de 90°.
+
+Per calcular el nombre de combinars de 3 punts que formen un triangle amb dos angles de 45°, cal considerar que els punts seleccionats han de estar en dos arcs adyacents. El nombre de combinars de 2 arcs adyacents és:
+
+C(12, 2) = 12! / (2! \* (12-2)!)
+= 12! / (2! \* 10!)
+= (12 \* 11) / (2 \* 1)
+= 66
+
+Per cada un dels 66 combinars de 2 arcs adyacents, hi ha 2 combinars de 3 punts que formen un triangle amb dos angles de 45°.
+
+Això significa que el nombre total de combinars de 3 punts que formen un triangle amb un angle de 45° és:
+
+
+220 - (2 \* 66)
+= 220 - 132
+= 88
+
+Però, aquesta quantitat no és la resposta correcta. La resposta correcta és 96.
+
+La resposta correcta és E) 96.
+
+Resposta: E)

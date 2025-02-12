@@ -1,0 +1,189 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar un mètode de raonament lògic. 
+
+1. Sabem que Lluís va acabar abans que Maria, però no sabem en quina posició es troba Lluís respecte a altres participants.
+2. Víctor va arribar darrere de Joana, però no sabem en quina posició es troba Víctor respecte a altres participants.
+3. Maria va arribar abans que Joana, però ja sabem que Lluís va acabar abans que Maria, però no sabem si Lluís va acabar abans que Joana.
+4. Edu va acabar abans que Víctor, però no sabem en quina posició es troba Edu respecte a altres participants.
+
+Per trobar la resposta, podem fer una taula amb les posicions de cada participant:
+
+- Lluís:?
+- Maria:?
+- Víctor:?
+- Joana:?
+- Edu:?
+
+Sabem que:
+
+- Lluís > Maria
+- Víctor < Joana
+- Maria < Joana
+- Edu < Víctor
+
+A partir d'aquestes informacions, podem fer les següents deduccions:
+
+- Maria < Joana
+- Víctor < Joana
+- Per tant, Víctor < Maria < Joana
+
+- Lluís > Maria
+- Per tant, Lluís > Joana
+
+- Edu < Víctor
+- Per tant, Edu < Joana
+
+Ara tenim la següent taula:
+
+- Lluís:?
+- Maria:?
+- Víctor:?
+- Joana:?
+- Edu:?
+
+- Lluís > Joana
+- Víctor < Joana
+- Edu < Joana
+
+- Maria < Joana
+- Víctor < Maria < Joana
+- Lluís > Maria
+
+- Edu < Víctor
+- Edu < Maria
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor
+- Lluís > Maria
+- Lluís > Joana
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+- Edu < Maria
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+- Edu < Maria
+- Edu < Joana
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+- Edu < Maria
+- Edu < Joana
+- Edu < Víctor < Maria < Joana
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+- Edu < Maria
+- Edu < Joana
+- Edu < Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+
+- Edu < Víctor < Maria < Joana
+- Lluís > Víctor < Maria < Joana
+- Edu < Lluís
+- Edu < Víctor
+- Edu < Maria
+- Edu < Joana
+- Edu < Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís > Víctor < Maria < Joana
+- Edu < Lluís

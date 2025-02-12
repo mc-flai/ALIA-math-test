@@ -1,0 +1,7 @@
+Raonament: Per trobar el residu de la divisió de A per 9, podem utilitzar la regla de divisibilitat per 9, que diu que un nombre és divisible per 9 si i només si la suma de les seves xifres és divisible per 9. En aquest cas, A és un nombre de 2017 xifres que comença i acaba per 1 i totes les altres xifres són 0. Això significa que la suma de les seves xifres és 1 + 0 + 0 +... + 0 + 1 = 2.
+
+Però, com que A té 2017 xifres, la suma de les seves xifres és realment 2 + 0 + 0 +... + 0 + 0 (2015 vegades) + 1 = 2 + 0 + 0 +... + 0 + 1 (2015 vegades) = 2 + 2015 = 2017. Ara, 2017 no és divisible per 9, però 2017 = 223 * 9 + 2. Això significa que la suma de les xifres de A és 2 mòdul 9.
+
+Però, com que la suma de les xifres de A és 2 mòdul 9, el residu de la divisió de A per 9 és també 2 mòdul 9. Però, com que A comença i acaba per 1, el residu de la divisió de A per 9 és 1 mòdul 9.
+
+Resposta: A)

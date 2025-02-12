@@ -1,0 +1,49 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar ordenant els pesos dels quatre paquets en ordre creixent, tal com es diu en la pregunta. Sabem que el tercer pesa 8 kg, però no sabem quins són els altres tres pesos. 
+
+Com que el pes total dels quatre paquets és de 20 kg, podem fer una taula amb les quatre columnes per representar els quatre paquets i les quatre files per representar els quatre pesos possibles. 
+
+|  | Paquet 1 | Paquet 2 | Paquet 3 | Paquet 4 |
+| --- | --- | --- | --- | --- |
+| Pes 1 |  |  |  |  |
+| Pes 2 |  |  |  |  |
+| Pes 3 |  |  | 8 |  |
+| Pes 4 |  |  |  |  |
+
+Com que no hi ha dos paquets que pesin igual, cada fila i cada columna només pot tenir un 1. 
+
+A partir d'aquesta informació, podem començar a omplir la taula. 
+
+|  | Paquet 1 | Paquet 2 | Paquet 3 | Paquet 4 |
+| --- | --- | --- | --- | --- |
+| Pes 1 | 1 |  |  |  |
+| Pes 2 |  | 2 |  |  |
+| Pes 3 |  |  | 8 |  |
+| Pes 4 |  |  |  |  |
+
+Ara, podem calcular el pes total de cada fila i columna per veure quin és el pes del segon paquet. 
+
+La suma de la primera fila és 1 + 2 + 8 + x = 20, on x és el pes del quart paquet. 
+
+La suma de la segona fila és 1 + 2 + 8 + x = 20, on x és el pes del quart paquet. 
+
+La suma de la tercera fila és 1 + 2 + 8 + x = 20, on x és el pes del quart paquet. 
+
+La suma de la quarta fila és 1 + 2 + 8 + x = 20, on x és el pes del quart paquet. 
+
+A partir d'aquestes equacions, podem veure que el pes del quart paquet és 20 - 1 - 2 - 8 = 9 kg. 
+
+Ara, podem calcular el pes del segon paquet. 
+
+La suma de la primera columna és 1 + 2 + 8 + 9 = 20. 
+
+La suma de la segona columna és 1 + 2 + 8 + 9 = 20. 
+
+La suma de la tercera columna és 1 + 2 + 8 + 9 = 20. 
+
+La suma de la quarta columna és 1 + 2 + 8 + 9 = 20. 
+
+A partir d'aquestes equacions, podem veure que el pes del segon paquet és 2 kg. 
+
+Resposta: A)

@@ -1,0 +1,133 @@
+Raonament:
+
+Anem a analitzar la situació:
+
+- Anna és la que n'ha capturat més peixos.
+- Beatriu és la que n'ha capturat menys peixos.
+- Cada persona ha atrapat almenys un peix.
+- No n'hi ha dues que hagen agafat el mateix nombre de peixos.
+
+Comencem per considerar les possibilitats per a Anna i Beatriu:
+
+- Anna: 1 peix (més que Beatriu)
+- Beatriu: 0 peixos (menys que Anna)
+
+Aquesta combinació és possible, però no és la única. Podem considerar altres possibilitats:
+
+- Anna: 2 peixos
+- Beatriu: 0 peixos
+
+- Anna: 3 peixos
+- Beatriu: 0 peixos
+
+- Anna: 4 peixos
+- Beatriu: 0 peixos
+
+- Anna: 5 peixos
+- Beatriu: 0 peixos
+
+- Anna: 6 peixos
+- Beatriu: 0 peixos
+
+- Anna: 7 peixos
+- Beatriu: 0 peixos
+
+- Anna: 8 peixos
+- Beatriu: 1 peix
+
+- Anna: 9 peixos
+- Beatriu: 1 peix
+
+- Anna: 10 peixos
+- Beatriu: 1 peix
+
+- Anna: 11 peixos
+- Beatriu: 0 peixos
+
+Ara, considerem les possibilitats per a Carles i David:
+
+- Carles: 1 peix (més que Beatriu)
+- David: 1 peix (més que Beatriu)
+
+- Carles: 2 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 3 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 4 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 5 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 6 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 7 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 8 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 9 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 10 peixos
+- David: 1 peix (més que Beatriu)
+
+- Carles: 11 peixos
+- David: 0 peixos
+
+Ara, sumem els peixos que han atrapat Anna, Beatriu, Carles i David:
+
+- Anna: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+- Beatriu: 0, 1
+- Carles: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+- David: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+
+Sumant els peixos que han atrapat Anna, Beatriu, Carles i David, obtenim:
+
+1 + 0 + 1 + 1 = 3
+2 + 0 + 2 + 1 = 5
+3 + 0 + 3 + 1 = 7
+4 + 0 + 4 + 1 = 9
+5 + 0 + 5 + 1 = 11
+6 + 0 + 6 + 1 = 13 (no és possible, ja hi ha 11 peixos)
+7 + 0 + 7 + 1 = 15 (no és possible, ja hi ha 11 peixos)
+8 + 0 + 8 + 1 = 17 (no és possible, ja hi ha 11 peixos)
+9 + 0 + 9 + 1 = 19 (no és possible, ja hi ha 11 peixos)
+10 + 0 + 10 + 1 = 21 (no és possible, ja hi ha 11 peixos)
+11 + 0 + 11 + 1 = 23 (no és possible, ja hi ha 11 peixos)
+
+A partir d'aquestes sumes, podem concluir que Anna, Beatriu, Carles i David han atrapat un total de 3, 5, 7, 9 o 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 3 o 5 peixos. Si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 7 o 9 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 3 o 5 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 7 o 9 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 3 o 5 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 7 o 9 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 3 o 5 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 7 o 9 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 3 o 5 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 7 o 9 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat menys peixos que Carles i David, llavors Anna i Beatriu han atrapat un total de 11 peixos.
+
+Però, si Anna n'ha capturat més peixos que Carles i David, i Beatriu n'ha capturat

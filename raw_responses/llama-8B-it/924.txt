@@ -1,0 +1,52 @@
+Raonament: Per trobar els triangles amb longituds de costats naturals i un perímetre de 20, podem començar assignant un valor a un dels costats. Per exemple, podem començar amb un costat de longitud 1. Aleshores, els altres dos costats sumarien 19. Però, per a un triangle, la suma dels dos costats més curts sempre ha de ser major que el tercer costat (segons el teorema de la desigualtat del triangle). Això significa que no podem tenir un costat de longitud 1.
+
+A continuació, podem assignar un costat de longitud 2. Aleshores, els altres dos costats sumarien 18. Però, com abans, la suma dels dos costats més curts sempre ha de ser major que el tercer costat, això no és possible.
+
+Assignant un costat de longitud 3, els altres dos costats sumarien 17. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 4, els altres dos costats sumarien 16. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 5, els altres dos costats sumarien 15. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 6, els altres dos costats sumarien 14. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 7, els altres dos costats sumarien 13. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 8, els altres dos costats sumarien 12. Aquesta és una possibilitat, ja que la suma dels dos costats més curts pot ser igual o menor que el tercer costat.
+
+Assignant un costat de longitud 9, els altres dos costats sumarien 11. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 10, els altres dos costats sumarien 10. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser igual al tercer costat.
+
+Assignant un costat de longitud 11, els altres dos costats sumarien 9. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 12, els altres dos costats sumarien 8. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 13, els altres dos costats sumarien 7. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 14, els altres dos costats sumarien 6. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 15, els altres dos costats sumarien 5. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 16, els altres dos costats sumarien 4. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 17, els altres dos costats sumarien 3. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 18, els altres dos costats sumarien 2. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Assignant un costat de longitud 19, els altres dos costats sumarien 1. Aquesta no és una possibilitat, ja que la suma dels dos costats més curts no pot ser menor que el tercer costat.
+
+Ara, podem començar a enumerar les possibles combinacions de costats:
+
+- 3, 6, 11 (perquè 3 + 6 > 11)
+- 4, 5, 11 (perquè 4 + 5 > 11)
+- 4, 6, 10 (perquè 4 + 6 > 10)
+- 5, 5, 10 (perquè 5 + 5 > 10)
+- 5, 6, 9 (perquè 5 + 6 > 9)
+- 6, 6, 8 (perquè 6 + 6 > 8)
+
+Però, com hem dit abans, els triangles amb costats de longituds respectives 3, 4, 5 i amb costats de longituds respectives 3, 5, 4 són iguals. Això significa que hem comptat alguns triangles amb costats iguals dues vegades. Per exemple, el triangle amb costats de longituds 3, 6, 11 és igual al triangle amb costats de longituds 6, 3, 11.
+
+Per tant, hem comptat 7 triangles diferents amb costats naturals i un perímetre de 20.
+
+Resposta: B)

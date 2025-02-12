@@ -1,0 +1,27 @@
+Raonament:
+
+Per aconseguir el valor mínim de la suma, volem assignar els nombres més petits possibles a les targetes vermelles i les targetes blaves. En aquest cas, els nombres més petits que podem assignar són 1 i 2.
+
+Podríem assignar les següents parelles:
+
+- Targeta vermella 1 i targeta blava 2
+- Targeta vermella 2 i targeta blava 1
+- Targeta vermella 3 i targeta blava 4
+- Targeta vermella 4 i targeta blava 3
+- Targeta vermella 5 i targeta blava 5
+
+Aquesta assignació és possible perquè cada targeta vermella i cada targeta blava apareix una vegada en cada parella.
+
+A continuació, calcularem el producte de cada parella:
+
+- Parella 1: 1 × 2 = 2
+- Parella 2: 2 × 1 = 2
+- Parella 3: 3 × 4 = 12
+- Parella 4: 4 × 3 = 12
+- Parella 5: 5 × 5 = 25
+
+Finalment, sumarem els productes:
+
+2 + 2 + 12 + 12 + 25 = 53
+
+Resposta: C) 53

@@ -1,0 +1,36 @@
+Raonament: 
+
+Per trobar el capicua més gran de tres xifres que és múltiple de 6, hem de considerar les següents condicions:
+
+1. El nombre és un capicua, per tant, té la forma aba.
+2. El nombre és múltiple de 6, per tant, és divisible per 2 i per 3.
+
+Per ser divisible per 2, el darrer dígits (b) ha de ser parell. Per ser divisible per 3, la suma dels tres dígits ha de ser divisible per 3.
+
+Com que el nombre és un capicua, la suma dels tres dígits és igual a 2a + b. Per trobar el capicua més gran, hem de començar amb el valor més gran possible per a i b.
+
+El valor més gran possible per a és 9, ja que és el darrer dígits possible en un nombre de tres xifres. El valor més gran possible per b és 8, ja que és el segon dígits possible en un nombre de tres xifres i ha de ser parell.
+
+Ara, calcularem la suma dels tres dígits per aquests valors:
+
+2a + b = 2(9) + 8 = 26
+
+Aquesta suma no és divisible per 3, per tant, no és un múltiple de 6. Hem de intentar amb valors més petits per a i b.
+
+El següent valor més gran possible per a és 8, i el següent valor més gran possible per b és 6.
+
+Ara, calcularem la suma dels tres dígits per aquests valors:
+
+2a + b = 2(8) + 6 = 22
+
+Aquesta suma no és divisible per 3, per tant, no és un múltiple de 6. Hem de intentar amb valors més petits per a i b.
+
+El següent valor més gran possible per a és 7, i el següent valor més gran possible per b és 4.
+
+Ara, calcularem la suma dels tres dígits per aquests valors:
+
+2a + b = 2(7) + 4 = 18
+
+Aquesta suma és divisible per 3, per tant, és un múltiple de 6. El capicua més gran de tres xifres que és múltiple de 6 és 964.
+
+Resposta: B)

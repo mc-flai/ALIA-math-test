@@ -1,0 +1,18 @@
+Raonament: Per resoldre aquest problema, cal analitzar les possibles combinacions de nombres que podrien formar un costat de l'octàgon. La suma de cada parell de nombres ha de ser un múltiple de 3. Això significa que les sumes possibles són 3, 6, 9, 12, 15, 18, 21 i 24.
+
+Com que hi ha 8 vèrtexs, hi ha 8 costats a l'octàgon. Per tant, la suma de les sumes dels costats ha de ser igual a la suma de tots els nombres del 1 al 12, que és 78. Això significa que la suma dels costats ha de ser 78.
+
+Per trobar les combinacions possibles, podem començar a partir de la suma més petita (3) i anar augmentant fins a la suma més gran (24). Les combinacions possibles són:
+
+- 3 = 1 + 2
+- 6 = 1 + 5, 2 + 4, 3 + 3 (però no podem repetir nombres, així que aquesta combinació no és vàlida)
+- 9 = 1 + 8, 2 + 7, 3 + 6, 4 + 5
+- 12 = 2 + 10, 3 + 9, 4 + 8, 5 + 7, 6 + 6 (però no podem repetir nombres, així que aquesta combinació no és vàlida)
+- 15 = 4 + 11, 5 + 10, 6 + 9, 7 + 8
+- 18 = 6 + 12, 7 + 11, 8 + 10, 9 + 9 (però no podem repetir nombres, així que aquesta combinació no és vàlida)
+- 21 = 8 + 13 (però no tenim el 13, així que aquesta combinació no és vàlida)
+- 24 = 12 + 12 (però no podem repetir nombres, així que aquesta combinació no és vàlida)
+
+Després d'anar analitzant les combinacions possibles, podem veure que els nombres que no han estat posats són els que no apareixen en cap de les combinacions. Aquests nombres són 3, 5, 7 i 9.
+
+Resposta: B)

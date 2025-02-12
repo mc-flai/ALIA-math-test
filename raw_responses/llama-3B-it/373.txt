@@ -1,0 +1,28 @@
+Raonament:
+
+Empecem per comprendre el procés que es describit. Tria un nombre x i realitzem les següents operacions:
+
+1. Resta-li 1: x - 1
+2. Multiplica el resultat per 2: 2(x - 1)
+
+Repetim aquest procés deu vegades, és a dir, 10 vegades.
+
+Després de 10 iteracions, el resultat final serà:
+
+2^10(x - 1) - 2^9
+
+Simplifiquem aquesta expressió:
+
+2^10x - 2^10 - 2^9
+
+Aquesta expressió es pot escriure en la forma ax + b, on a = 2^10 i b = -2^10 - 2^9.
+
+Per calcular el valor de b, fem:
+
+-2^10 - 2^9 = -1024 - 512 = -1536
+
+Però, en el conjunt de opcions, no hi ha cap que correspongui a aquesta expressió. Això significa que la pregunta pot estar amb errors.
+
+Però, si considerem la pregunta com una pregunta de "comprovar si el resultat pot escriure's en la forma ax + b", podem dir que la resposta correcta és:
+
+Resposta: A) a = 10, b = -10

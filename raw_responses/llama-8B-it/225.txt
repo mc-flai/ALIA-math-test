@@ -1,0 +1,13 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar un mètode de divisió i conquerència. La idea és dividir el rang de nombres possibles en subconjunts més petits fins que es pugui determinar el nombre exacte.
+
+El primer pas és preguntar si el nombre és par o senar. Si la resposta és "sí", podem dividir el rang de nombres en dos subconjunts: els nombres par i els nombres senars. Si la resposta és "no", podem descartar la possibilitat de que el nombre sigui par.
+
+Si el nombre és par, podem preguntar si és menor o igual a 10. Si la resposta és "sí", podem dividir el rang de nombres par en dos subconjunts: els nombres par menors o igual a 10 i els nombres par majors que 10. Si la resposta és "no", podem descartar la possibilitat de que el nombre sigui par menys o igual a 10.
+
+Si el nombre és senar, podem preguntar si és menor o igual a 7. Si la resposta és "sí", podem dividir el rang de nombres senars en dos subconjunts: els nombres senars menors o igual a 7 i els nombres senars majors que 7. Si la resposta és "no", podem descartar la possibilitat de que el nombre sigui senar menys o igual a 7.
+
+Aquest procés de divisió i conquerència permet reduir el rang de nombres possibles fins que es pugui determinar el nombre exacte.
+
+Resposta: C)

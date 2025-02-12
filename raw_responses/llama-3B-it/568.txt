@@ -1,0 +1,23 @@
+Raonament:
+
+Per començar, sabem que n > 1 és un nombre natural i que n^n = m.
+
+Volem saber a què és igual n^(n^(n+1)). Per això, podem reescriure l'expressió n^(n^(n+1)) en funció de m.
+
+Sabem que n^n = m, per tant, n^n = m.
+
+Agora, volgem reescriure n^(n^(n+1)) en funció de m. Podem fer-ho de la següent manera:
+
+n^(n^(n+1)) = n^(n^m)
+
+Per això, podem reescriure n^(n^(n+1)) en funció de m:
+
+n^(n^(n+1)) = n^(n^m) = (n^n)^n^m = m^(n^m)
+
+Però, sabem que n^n = m, per tant, n^m = m. Això significa que:
+
+n^(n^(n+1)) = m^(m)
+
+Per tant, la resposta correcta és:
+
+Resposta: C) m^(2m)

@@ -1,0 +1,9 @@
+Raonament: Per resoldre aquest problema, cal que sigui divisible per 4, 5 i 9. Per ser divisible per 4, la darrera xifra ha de ser divisible per 4. Per ser divisible per 5, la darrera xifra ha de ser 0 o 5. Per ser divisible per 9, la suma de les xifres ha de ser divisible per 9.
+
+Combinant aquests requisits, podem començar a explorar les possibilitats. La darrera xifra ha de ser 0 o 5 per ser divisible per 5. Si la darrera xifra és 0, la resta de les xifres han de sumar 0 per ser divisible per 9, però això és impossible. Per tant, la darrera xifra ha de ser 5.
+
+Ara, la resta de les xifres han de sumar 9 per ser divisible per 9. Si la resta de les xifres són 2 i 4, la suma és 6, que no és divisible per 9. Si la resta de les xifres són 3 i 6, la suma és 9, que és divisible per 9.
+
+Per tant, podem construir el nombre 24568, que és divisible per 4, 5 i 9. Aquest nombre té cinc xifres i la suma de les xifres X i Y és 2 + 8 = 10.
+
+Resposta: B)

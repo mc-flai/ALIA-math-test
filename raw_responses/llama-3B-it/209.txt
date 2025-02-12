@@ -1,0 +1,35 @@
+Raonament:
+
+Per començar, analitzem el numerador i el denominador de la fracció A.
+
+Numerador:
+El numerador està format per la suma de productes de tres nombres, amb un patró de increment de 5 en el primer terme, 10 en el segon terme i 15 en el tercer terme, etc. Podem escriure el numerador com a:
+
+(1·5·25) + (2·10·50) + (3·15·75) +... + (2016·(2016-1)·(2016-2))
+
+Denominador:
+El denominador està format per la suma de productes de tres nombres, amb un patró de increment de 2 en el primer terme, 4 en el segon terme i 8 en el tercer terme, etc. Podem escriure el denominador com a:
+
+(1·2·4) + (2·4·8) + (3·6·12) +... + (2016·(2016-1)·(2016-2))
+
+A continuació, observem que el numerador i el denominador tenen termes similars, però amb diferències en el segon terme. Podem simplificar la fracció A reorganitzant els termes del numerador i del denominador:
+
+A = ((1·5·25) - (2·10·50)) + ((3·15·75) - (4·20·100)) +... + ((2015·2010·2015) - (2016·2011·2016))
+
+A = (1·5·25 - 2·10·50) + (3·15·75 - 4·20·100) +... + (2015·2010·2015 - 2016·2011·2016)
+
+A = (1·5 - 2·10)·(25 - 50) + (3·15 - 4·20)·(75 - 100) +... + (2015·2010 - 2016·2011)·(2015 - 2016)
+
+A = (-5)·(-25) + (-5)·(-25) +... + (-1)·(-1)
+
+A = 125 + 125 +... + 1
+
+A = 125·2016
+
+A = 253,000
+
+A = (253/1)^(1/3)
+
+A = 6,25
+
+Resposta: B) 6,25

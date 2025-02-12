@@ -1,0 +1,68 @@
+Raonament:
+
+El problema indica que cada tres pàgines, el número corresponent s'ha saltat. Això significa que les pàgines estan numerades de manera que cada tres pàgines, el número de pàgina es incrementat en 3.
+
+Per exemple, si les pàgines 1, 2 i 3 estan numerades 1, 2 i 4, respectivament, les pàgines 4, 5 i 6 estan numerades 5, 6 i 8, respectivament.
+
+Per calcular el número de pàgina de la darrera pàgina, podem utilitzar la següent fórmula:
+
+núm. de pàgina = 3k + 1
+
+on k és el nombre de grups de tres pàgines.
+
+Sabem que el llibre té 89 pàgines, per tant:
+
+3k + 1 = 89
+
+Restant 1 de cada banda:
+
+3k = 88
+
+Dividint per 3:
+
+k = 88/3
+
+k = 29,33
+
+Però k no pot ser un nombre decimal, per tant hem de roundar-lo al nombre més proper. En aquest cas, k = 29.
+
+Agora, podem calcular el número de pàgina de la darrera pàgina:
+
+núm. de pàgina = 3k + 1
+= 3(29) + 1
+= 88 + 1
+= 89
+
+Però, com el llibre té 89 pàgines, la darrera pàgina no pot ser la 89è. El problema indica que cada tres pàgines, el número corresponent s'ha saltat, per tant la darrera pàgina és la 89è - 2 = 87è.
+
+Això significa que el llibre té 29 grups de tres pàgines, i la darrera pàgina és la 87è del 29è grup.
+
+Per calcular el número de pàgina de la darrera pàgina, podem utilitzar la següent fórmula:
+
+núm. de pàgina = 3k + 1
+
+on k és el nombre de grups de tres pàgines.
+
+Sabem que el llibre té 29 grups de tres pàgines, per tant:
+
+núm. de pàgina = 3(29) + 1
+= 87 + 1
+= 88
+
+Però, el problema indica que el llibre té 89 pàgines, per tant la darrera pàgina no pot ser la 88è. El problema indica que cada tres pàgines, el número corresponent s'ha saltat, per tant la darrera pàgina és la 88è - 1 = 87è.
+
+Això significa que el llibre té 29 grups de tres pàgines, i la darrera pàgina és la 87è del 29è grup.
+
+Per calcular el número de pàgina de la darrera pàgina, podem utilitzar la següent fórmula:
+
+núm. de pàgina = 3k + 2
+
+on k és el nombre de grups de tres pàgines.
+
+Sabem que el llibre té 29 grups de tres pàgines, per tant:
+
+núm. de pàgina = 3(29) + 2
+= 87 + 2
+= 89
+
+Resposta: La darrera pàgina és la 89è.

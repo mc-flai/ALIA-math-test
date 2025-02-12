@@ -1,0 +1,20 @@
+Raonament:
+
+Analicem les opinions de cada jugador:
+
+- \(A\) diu: "Ni \(C\) ni \(E\)"
+- \(B\) diu: "Ni \(C\) ni \(D\)"
+- \(C\) diu: "Millor \(A\) que \(B\), que \(D\) i que \(E\)"
+- \(D\) diu: "\(A\) o \(C\)"
+- \(E\) diu: "Millor \(C\) que \(B\) i millor \(A\) que \(D\)"
+
+Per determinar qui és el capità que tots estan d'acord a triar, hem de buscar qui és el candidat més acceptat per tots.
+
+- \(A\) i \(E\) estan d'acord en no triar \(C\) i \(E\), respectivament.
+- \(B\) i \(D\) estan d'acord en no triar \(C\) i \(D\), respectivament.
+- \(C\) diu que és millor que \(B\), \(D\) i \(E\), però \(B\) i \(D\) no estan d'acord en triar-lo.
+- \(D\) diu que és millor que \(A\) o \(C\), però \(A\) no està d'acord en triar-lo.
+
+A partir d'aquestes opinions, podem concluir que \(A\) i \(E\) estan d'acord en triar \(C\), ja que és millor que \(B\) i \(D\), i \(C\) és millor que \(B\) i \(D\).
+
+Resposta: C

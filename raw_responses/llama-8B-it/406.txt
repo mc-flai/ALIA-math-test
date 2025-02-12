@@ -1,0 +1,39 @@
+Raonament: 
+
+Per trobar el punt simètric d'un punt (x, y) respecte d'una recta y = mx, podem utilitzar la fórmula següent:
+
+x' = x + (y - mx) / (m^2 - 1)
+
+En aquest cas, el punt és (0, 2017) i la recta és y = mx. Substituint els valors, obtenim:
+
+x' = 0 + (2017 - m(0)) / (m^2 - 1)
+x' = 2017 / (m^2 - 1)
+
+Perquè el punt simètric sigui un punt de coordenades enteres, x' ha de ser un enter. Això significa que 2017 / (m^2 - 1) ha de ser un enter.
+
+El 2017 és un nombre primer, i perquè un nombre sigui divisible per un altre nombre, aquest altre nombre ha de ser un factor del primer nombre. Els factors del 2017 són 1, 7, 17, 119, 287, 2009 i 2017.
+
+Però, perquè m^2 - 1 sigui un factor del 2017, m^2 - 1 ha de ser un dels factors del 2017. Això significa que m^2 - 1 pot ser 1, 7, 17, 119, 287, 2009 o 2017.
+
+Però, m^2 - 1 no pot ser 1, ja que això implicaria que m = 0, i la recta y = mx seria la recta y = 0, que no és la mateixa que la recta y = mx per a m ≠ 0.
+
+Així, m^2 - 1 pot ser 7, 17, 119, 287, 2009 o 2017. Però, perquè m^2 - 1 sigui un dels valors anteriors, m ha de ser un dels valors següents:
+
+m^2 - 1 = 7 => m^2 = 8 => m = ±√8 = ±2√2 (no és un enter)
+m^2 - 1 = 17 => m^2 = 18 => m = ±√18 (no és un enter)
+m^2 - 1 = 119 => m^2 = 120 => m = ±√120 (no és un enter)
+m^2 - 1 = 287 => m^2 = 288 => m = ±√288 (no és un enter)
+m^2 - 1 = 2009 => m^2 = 2010 => m = ±√2010 (no és un enter)
+m^2 - 1 = 2017 => m^2 = 2018 => m = ±√2018 (no és un enter)
+
+Però, si m = ±2, m^2 - 1 = 3, i això és un dels factors del 2017.
+
+Així, hi ha dos valors possibles per a m: m = 2 i m = -2.
+
+Per tant, hi ha dos valors possibles per a m^2 - 1: m^2 - 1 = 3 i m^2 - 1 = 3.
+
+Així, hi ha dos valors possibles per a x': x' = 2017 / 3 = 673 i x' = 2017 / 3 = 673.
+
+Per tant, hi ha dos punts simètrics amb coordenades enteres: (0, 2017) i (673, 0).
+
+Resposta: B)

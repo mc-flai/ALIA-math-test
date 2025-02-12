@@ -1,0 +1,24 @@
+Raonament:
+
+Per calcular la probabilitat que la suma dels dos daus siga 3, hem de considerar tots els possibles resultats del llançament dels dos daus i comptar els que satisfan la condició.
+
+Un dau té 6 resultats possibles: 1, 2, 3, 4, 5 i 6.
+
+Quan llançamos dos daus, obtenem un total de 6 x 6 = 36 resultats possibles.
+
+A continuació, comptem els resultats que fan que la suma siga 3:
+
+- Si el dau 1 és 1, el dau 2 ha de ser 2, per a obtenir una suma de 3.
+- Si el dau 1 és 2, el dau 2 ha de ser 1, per a obtenir una suma de 3.
+- Si el dau 1 és 3, el dau 2 ha de ser 0, però no és possible ja que el dau 2 no té 0 com a resultat.
+- Si el dau 1 és 4, el dau 2 ha de ser -1, però no és possible ja que el dau 2 no té -1 com a resultat.
+- Si el dau 1 és 5, el dau 2 ha de ser -4, però no és possible ja que el dau 2 no té -4 com a resultat.
+- Si el dau 1 és 6, el dau 2 ha de ser -3, però no és possible ja que el dau 2 no té -3 com a resultat.
+
+A partir d'aquestes observacions, podem conèixer que només hi ha dos resultats que fan que la suma siga 3: (1, 2) i (2, 1).
+
+Per tant, la probabilitat que la suma siga 3 és el nombre de resultats que fan que la suma siga 3 dividit per el nombre total de resultats possibles, que és 2/36.
+
+La probabilitat que la suma siga 3 és 2/36, que es pot simplificar a 1/18.
+
+Resposta: B) 1/18.

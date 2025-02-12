@@ -1,0 +1,16 @@
+Raonament: Per calcular la xifra de les desenes del nombre $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$, podem començar observant que per a $n \ge 5$, $n!$ té almenys cinc factors, així que la seva xifra de les desenes és 0. Això és perquè quan multiplicem un nombre per 10, el seu darrer dígit és 0.
+
+Per tant, podem ignorar els termes $5! + \cdots + 2015!$ en la suma, ja que no contribueixen a la xifra de les desenes.
+
+A continuació, podem calcular la xifra de les desenes de $1! + 2! + 3! + 4!$:
+
+$1! = 1$
+$2! = 2$
+$3! = 6$
+$4! = 24$
+
+La suma és $1 + 2 + 6 + 24 = 33$. La xifra de les desenes de $33$ és $3$.
+
+Per tant, la xifra de les desenes del nombre $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$ és la mateixa que la xifra de les desenes de $1! + 2! + 3! + 4!$, que és $3$.
+
+Resposta: D)

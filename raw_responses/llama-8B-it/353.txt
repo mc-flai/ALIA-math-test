@@ -1,0 +1,23 @@
+Raonament: 
+
+Per resoldre aquest problema, hem de considerar les propietats de les divisió i les condicions donades. 
+
+- Si A és divisible per 5, llavors A pot ser igual a 5 o a algun múltiple de 5.
+- Si A és divisible per 11, llavors A pot ser igual a 11 o a algun múltiple de 11.
+- Si A és divisible per 55, llavors A pot ser igual a 55 o a algun múltiple de 55.
+- Si A és menor que 10, llavors A no pot ser igual a 55 ni a cap múltiple de 55.
+
+Com que dues de les afirmacions són vertaderes i les altres dues falses, hem de buscar les combinacions possibles de les afirmacions veritables. 
+
+- Si A és divisible per 5 i A és menor que 10, llavors A pot ser igual a 5.
+- Si A és divisible per 11 i A és menor que 10, llavors A no pot ser igual a 11 (perquè no és divisible per 5).
+- Si A és divisible per 55 i A és menor que 10, llavors A no pot ser igual a 55 (perquè no és divisible per 5).
+
+Per tant, les úniques combinacions possibles són:
+
+- A és divisible per 5 i A és menor que 10 (A = 5)
+- A és divisible per 11 i A és menor que 10 (A no és igual a 11, però no hi ha cap altre múltiple de 11 menor que 10 que sigui divisible per 5)
+
+Per tant, la resposta correcta és A) 5.
+
+Resposta: A)

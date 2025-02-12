@@ -1,0 +1,28 @@
+Raonament:
+
+Analicem el problema:
+
+* Una espelma cremarà en 4 hores
+* L'altra espelma cremarà en 5 hores
+* Querem que una espelma tinga el triple de longitud que l'altra
+
+Prim, cal determinar la velocitat a la qual cada espelma cremarà. Podem fer-ho calculant la longitud que cremarà cada espelma en 1 hora.
+
+* La primera espelma cremarà 1/4 de la seva longitud en 1 hora (1/4 de la longitud en 4 hores)
+* La segona espelma cremarà 1/5 de la seva longitud en 1 hora (1/5 de la longitud en 5 hores)
+
+Agora, suposem que la primera espelma cremarà x hores per aconseguir el triple de longitud de la segona espelma. En x hores, la primera espelma cremarà 1/4 de la seva longitud per hora, i la segona espelma cremarà 1/5 de la seva longitud per hora.
+
+La primera espelma cremarà el triple de longitud de la segona espelma, però no el doble, perquè la segona espelma cremarà més temps per aconseguir el doble de longitud. Així, la primera espelma cremarà 3/5 de la seva longitud en x hores.
+
+Podem establir una proporcionalitat per aconseguir la resposta:
+
+(1/4) * x = (3/5) * (5-x)
+
+Resolent aquesta equació, obtenim:
+
+x = 63/20
+
+Així, la primera espelma cremarà 63/20 hores per aconseguir el triple de longitud de la segona espelma.
+
+Resposta: C) 63/20

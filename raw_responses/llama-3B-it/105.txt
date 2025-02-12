@@ -1,0 +1,49 @@
+Raonament:
+
+Per aplicar una rotació de centre l'origen amb amplitud θ en un punt (x, y), cal utilitzar les següents fórmules:
+
+x' = x * cos(θ) - y * sin(θ)
+y' = x * sin(θ) + y * cos(θ)
+
+En aquest cas, el punt és (7, 2) i la rotació és de 45° en sentit antihorari. Però, per aplicar la fórmula, cal convertir la rotació a un angle positiu, que és 45° - 180° = -135°.
+
+A continuació, aplicarem les fórmules:
+
+x' = 7 * cos(-135°) - 2 * sin(-135°)
+y' = 7 * sin(-135°) + 2 * cos(-135°)
+
+Usant les propietats del sen i cos, sabem que cos(-θ) = cos(θ) i sin(-θ) = -sin(θ). Així, les fórmules es simplifiquen a:
+
+x' = 7 * cos(135°) + 2 * sin(135°)
+y' = -7 * sin(135°) + 2 * cos(135°)
+
+Usant les fórmules del sen i cos per angles de 45°, sabem que cos(135°) = -√2/2 i sin(135°) = √2/2. Així, les fórmules es simplifiquen a:
+
+x' = 7 * (-√2/2) + 2 * (√2/2)
+y' = -7 * (√2/2) + 2 * (-√2/2)
+
+Simplificant les expressions, obtenim:
+
+x' = -7√2/2 + √2
+y' = -7√2/2 - √2
+
+Combina els termes:
+
+x' = -7√2/2 + √2
+x' = (-7 + 2)√2/2
+x' = -5√2/2
+
+y' = -7√2/2 - √2
+y' = (-7 - 2)√2/2
+y' = -9√2/2
+
+Per tant, les coordenades del punt després de la rotació són:
+
+x' = -5√2/2
+y' = -9√2/2
+
+La resposta correcta és:
+
+C) (-⁵√²/₂, -²√²/₂)
+
+Resposta: C)

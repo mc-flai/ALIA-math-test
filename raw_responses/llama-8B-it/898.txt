@@ -1,0 +1,35 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el mètode de reculada. La idea és comptar el nombre de maneres en què Pere pot pujar l'escala de 8 esglaons, considerant que pot pujar alguns esglaons de dos en dos i els altres sempre tots d'un en un.
+
+Podem començar considerant que Pere pot pujar els 8 esglaons de la següent manera:
+
+- 8 esglaons de 1 en 1 (1 manera)
+- 7 esglaons de 1 en 1 i 1 esglaó de 2 en 2 (8 maneres)
+- 6 esglaons de 1 en 1 i 2 esglaons de 2 en 2 (6 maneres)
+- 5 esglaons de 1 en 1 i 3 esglaons de 2 en 2 (4 maneres)
+- 4 esglaons de 1 en 1 i 4 esglaons de 2 en 2 (1 manera)
+
+A continuació, podem considerar les següents possibilitats:
+
+- 7 esglaons de 1 en 1 i 1 esglaó de 2 en 2 i 1 esglaó de 1 en 1 (8 maneres)
+- 6 esglaons de 1 en 1 i 2 esglaons de 2 en 2 i 1 esglaó de 1 en 1 (6 maneres)
+- 5 esglaons de 1 en 1 i 3 esglaons de 2 en 2 i 1 esglaó de 1 en 1 (4 maneres)
+- 4 esglaons de 1 en 1 i 4 esglaons de 2 en 2 i 1 esglaó de 1 en 1 (1 manera)
+
+A continuació, podem considerar les següents possibilitats:
+
+- 6 esglaons de 1 en 1 i 2 esglaons de 2 en 2 i 2 esglaons de 1 en 1 (6 maneres)
+- 5 esglaons de 1 en 1 i 3 esglaons de 2 en 2 i 2 esglaons de 1 en 1 (4 maneres)
+- 4 esglaons de 1 en 1 i 4 esglaons de 2 en 2 i 2 esglaons de 1 en 1 (1 manera)
+
+A continuació, podem considerar les següents possibilitats:
+
+- 5 esglaons de 1 en 1 i 3 esglaons de 2 en 2 i 3 esglaons de 1 en 1 (4 maneres)
+- 4 esglaons de 1 en 1 i 4 esglaons de 2 en 2 i 3 esglaons de 1 en 1 (1 manera)
+
+A continuació, podem considerar les següents possibilitats:
+
+- 4 esglaons de 1 en 1 i 4 esglaons de 2 en 2 i 4 esglaons de 1 en 1 (1 manera)
+
+Sumant totes aquestes possibilitats, obtenim un total de 1 + 8 + 6 + 4 + 1 + 8 + 6 + 4 + 1 + 6 + 4 + 1 + 4 + 1 + 1 = 54.
+
+Resposta: E)

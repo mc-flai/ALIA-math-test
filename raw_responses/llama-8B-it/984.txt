@@ -1,0 +1,15 @@
+Raonament: Per determinar quin dels nombres no pot ser mai el més gran, hem de considerar la posició de les xifres i com podem ordenar-les per obtenir el nombre més gran possible.
+
+Quan tenim tres A, dues B i una C, el nombre més gran que podem obtenir és quan les xifres més grans (A) estan a la part esquerra i les xifres més petites (B i C) estan a la part dreta.
+
+Per exemple, si ordenem les xifres de manera que les tres A estiguin a la part esquerra, les dues B estiguin a la segona i tercera posició i la C estigui a la darrera posició, obtenim el nombre més gran possible.
+
+Ara, analitzem les opcions:
+
+- A) AAABBC: Aquesta és una possibilitat, ja que les tres A estan a la part esquerra i la C està a la darrera posició.
+- B) CAAABB: Aquesta no és una possibilitat, ja que la C està a la segona posició, però les dues B estan a la tercera i quarta posició, i les tres A estan a la part dreta. Això significa que les xifres més grans (A) no estan a la part esquerra, el que impedeix obtenir el nombre més gran possible.
+- C) BBAAAC: Aquesta és una possibilitat, ja que les dues B estan a la part esquerra i les tres A estan a la part dreta.
+- D) AAABCB: Aquesta és una possibilitat, ja que les tres A estan a la part esquerra i la C està a la segona posició després de les dues B.
+- E) AAACBB: Aquesta és una possibilitat, ja que les tres A estan a la part esquerra i les dues B estan a la part dreta.
+
+Resposta: B)

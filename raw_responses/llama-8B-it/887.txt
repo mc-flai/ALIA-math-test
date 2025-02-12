@@ -1,0 +1,9 @@
+Raonament: Per trobar el valor de C que fa que el resultat sigui el més petit possible, hem de considerar les restriccions donades. Tenim tres nombres de tres xifres i un de quatre xifres, i les lletres diferents representen dígits diferents, mentre que les lletres iguals representen el mateix dígit.
+
+Per minimitzar el resultat, volem que els nombres siguin el més petits possible. Comencem amb els nombres de tres xifres. El nombre més petit possible és 100, però això no és possible ja que no podem repetir cap dígit. El següent nombre més petit possible és 110, però això tampoc és possible per la mateixa raó. El següent nombre més petit possible és 120, que és possible.
+
+Ara, considerem el nombre de quatre xifres. El nombre més petit possible és 1000, però això no és possible ja que no podem repetir cap dígit. El següent nombre més petit possible és 1001, que és possible.
+
+Ara, hem de trobar el valor de C que fa que el resultat sigui el més petit possible. El resultat és la suma dels quatre nombres: 120 + 1001 + C + C (perquè els dos C són iguals). Per minimitzar el resultat, volem que C sigui el més petit possible. Com que C és un dígit, el més petit possible és 0.
+
+Resposta: A)

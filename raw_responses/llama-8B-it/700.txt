@@ -1,0 +1,5 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el concepte de matemàtiques combinatories anomenat "permutacions amb restriccions". Mònica vol entrar per una porta i sortir per una de diferent, el que significa que hi ha dues restriccions: no pot entrar i sortir per la mateixa porta, i no pot sortir per la porta per la qual va entrar.
+
+Per calcular el nombre de maneres diferents en què Mònica pot fer-ho, podem començar seleccionant la porta per la qual va entrar. Hi ha 5 portes possibles per entrar. Una vegada que ha entrat per una porta, només li queden 4 portes per sortir. Per tant, el nombre total de maneres diferents en què Mònica pot fer-ho és el nombre de portes per les quals pot entrar (5) multiplicat pel nombre de portes per les quals pot sortir (4), menys la porta per la qual va entrar i per la qual no pot sortir (1).
+
+Resposta: C) 16

@@ -1,0 +1,23 @@
+Raonament:
+
+Per determinar el nombre enter que has triat, podem utilitzar un mètode de divisió en parts iguals. El mètode més eficient per aquest problema és el mètode de binary search, que consisteix en dividir la zona de possibles nombres en dues parts iguals i preguntar si el nombre està en una de les parts.
+
+Comença per dividir la zona de possibles nombres en dues parts iguals: 1-15 i 16-30. Aquesta divisió no és exacta, però podem ajustar-la per aconseguir una divisió més precisa.
+
+Dividim la zona 1-15 en dues parts iguals: 1-7 i 8-15. Aquesta divisió és més precisa.
+
+A continuació, preguntam si el nombre està entre 1 i 7 o entre 8 i 15. Si la resposta és "sí", sabem que el nombre està entre 1 i 7. Si la resposta és "no", sabem que el nombre està entre 8 i 15.
+
+A continuació, repetim el procés amb la zona 1-7. Dividim la zona 1-7 en dues parts iguals: 1-3 i 4-7. Aquesta divisió és més precisa.
+
+A continuació, preguntam si el nombre està entre 1 i 3 o entre 4 i 7. Si la resposta és "sí", sabem que el nombre està entre 1 i 3. Si la resposta és "no", sabem que el nombre està entre 4 i 7.
+
+A continuació, repetim el procés amb la zona 1-3. Dividim la zona 1-3 en dues parts iguals: 1-2 i 3. Aquesta divisió és més precisa.
+
+A continuació, preguntam si el nombre està entre 1 i 2 o 3. Si la resposta és "sí", sabem que el nombre és 1 o 2. Si la resposta és "no", sabem que el nombre és 3.
+
+A continuació, preguntam si el nombre és 1 o 2. Si la resposta és "sí", sabem que el nombre és 1. Si la resposta és "no", sabem que el nombre és 2.
+
+Així, en un màxim de 4 preguntes, podem estar segurs que sabem el nombre que has triat.
+
+Resposta: C) 3

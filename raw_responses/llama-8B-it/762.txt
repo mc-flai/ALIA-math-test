@@ -1,0 +1,14 @@
+Raonament: 
+
+Per resoldre aquest problema, podem fer un anàlisi lògic de les condicions donades. 
+
+- Si Aleix no porta barret, aleshores Baltasar en porta.
+- Si Baltasar no porta barret, aleshores Carles en porta.
+
+Sabem que avui Carles no porta barret. Això significa que la segona condició no s'aplica, ja que si Baltasar no portés barret, Carles sí que el portaria. Per tant, la segona condició no és possible avui.
+
+Aleshores, si Baltasar no porta barret, la primera condició no s'aplica, ja que si Aleix no portés barret, Baltasar sí que el portaria. Per tant, la primera condició no és possible avui.
+
+Però si Baltasar porta barret, aleshores Aleix no porta barret (per la primera condició). I si Aleix no porta barret, aleshores Baltasar porta barret (per la primera condició). Això és un cicle sense fi, però sabem que Baltasar porta barret avui. Per tant, Aleix no porta barret avui.
+
+Resposta: B)

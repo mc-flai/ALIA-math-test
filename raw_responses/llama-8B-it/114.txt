@@ -1,0 +1,14 @@
+Raonament: Per resoldre aquest problema, podem utilitzar la següent estratègia:
+
+1. Comencem considerant tots els possibles resultats quan es treuen els dos tiquets. Hi ha 2015 opcions per al primer tiquet i 2014 opcions per al segon tiquet (ja que no es pot repetir el primer tiquet).
+2. Per calcular la probabilitat que el segon nombre siga més gran que el primer, podem comptar el nombre de resultats favorables (on el segon nombre és més gran que el primer) i dividir-lo per el nombre total de resultats possibles.
+3. Un mètode per comptar els resultats favorables és considerar que, per a cada primer tiquet, hi ha un nombre determinat de segons tiquets que són més grans. Per exemple, si el primer tiquet és 1, hi ha 2014 segons tiquets que són més grans. Si el primer tiquet és 2, hi ha 2013 segons tiquets que són més grans, i així successivament.
+4. Tanmateix, aquest mètode pot ser molt tediós. Una estratègia més fàcil és considerar que la probabilitat que el segon nombre siga més gran que el primer és igual a la probabilitat que el primer nombre siga més petit que el segon. Aquesta és una propietat de les distribucions binomials.
+5. Per calcular la probabilitat que el primer nombre siga més petit que el segon, podem considerar que hi ha 2015 opcions per al primer tiquet i 2014 opcions per al segon tiquet. La probabilitat que el primer nombre siga més petit que el segon és igual a la probabilitat que el primer nombre siga inferior o igual al segon nombre, menys la probabilitat que el primer nombre siga igual al segon nombre.
+6. La probabilitat que el primer nombre siga inferior o igual al segon nombre és igual a la probabilitat que el segon nombre siga superior o igual al primer nombre, que és igual a 1/2.
+7. La probabilitat que el primer nombre siga igual al segon nombre és igual a 1/2014, ja que hi ha 1 opció per al primer tiquet que és igual al segon tiquet i 2014 opcions per al segon tiquet.
+8. Per tant, la probabilitat que el primer nombre siga més petit que el segon és igual a 1/2 - 1/2014.
+9. Per calcular aquesta probabilitat, podem simplificar-la a 1007/2014.
+10. Per expressar aquesta probabilitat com un percentatge, podem dividir el numerador per el denominador i multiplicar per 100.
+
+Resposta: B)

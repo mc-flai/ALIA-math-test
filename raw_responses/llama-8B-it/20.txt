@@ -1,0 +1,16 @@
+Raonament: Per trobar el franqueig més gran que no es pot pagar amb segells de 6 i 7 euros, podem utilitzar el mètode de la "funció de valor màxim". Aquest mètode consisteix a trobar la funció de valor màxim que pot ser creada amb els segells disponibles.
+
+En aquest cas, podem crear les següents funcions de valor màxim:
+
+- 7 euros (un segell de 7 euros)
+- 13 euros (2 segells de 6 euros + 1 segell de 7 euros)
+- 20 euros (3 segells de 6 euros + 1 segell de 7 euros)
+- 27 euros (4 segells de 6 euros + 1 segell de 7 euros)
+- 34 euros (5 segells de 6 euros + 1 segell de 7 euros)
+- 41 euros (6 segells de 6 euros + 1 segell de 7 euros)
+
+A partir d'aquestes funcions de valor màxim, podem observar que no podem crear un valor màxim de 29 euros, ja que no podem crear un valor màxim de 28 euros (5 segells de 6 euros + 2 segells de 7 euros) i no podem crear un valor màxim de 30 euros (6 segells de 6 euros + 1 segell de 7 euros).
+
+Per tant, el franqueig més gran que no es pot pagar amb segells de 6 i 7 euros és 29 euros.
+
+Resposta: B)

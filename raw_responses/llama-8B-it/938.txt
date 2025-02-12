@@ -1,0 +1,11 @@
+Raonament: Per resoldre aquest problema, cal comprendre la relació entre els nombres i els seus factors de 10. El nombre 10 té dos factors: 2 i 5. Quan un nombre és una potència de 10, aleshores té un nombre determinat de factors de 2 i 5.
+
+En aquest cas, tenim el producte de quatre nombres: 2¹², 3¹³, 5¹⁵ i 7¹⁷. Per saber quant zeros acaba aquest producte, cal comptar quant factors de 10 hi ha en el producte.
+
+El nombre 2¹² té 12 factors de 2, però no té factors de 5. El nombre 5¹⁵ té 15 factors de 5, però no té factors de 2. El nombre 3¹³ i el nombre 7¹⁷ no tenen factors de 2 ni de 5.
+
+Per comptar els factors de 10, cal comptar el nombre mínim de factors de 2 i 5 que hi ha en el producte. En aquest cas, el nombre 2¹² té 12 factors de 2, però el nombre 5¹⁵ té 15 factors de 5. Per tant, el producte té 12 factors de 2 i 15 factors de 5, però només podem comptar fins a 12 factors de 10, ja que el nombre de factors de 2 és el més petit.
+
+Per tant, el producte 2¹² · 3¹³ · 5¹⁵ · 7¹⁷ té 12 factors de 10, i aleshores acaba amb 12 zeros.
+
+Resposta: A)

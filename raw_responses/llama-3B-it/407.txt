@@ -1,0 +1,31 @@
+Raonament:
+
+Per calcular la probabilitat que Judit guanyi el partit, hem de considerar les següents possibilitats:
+
+1. Judit guanya el primer set i el segon set.
+2. Judit guanya el primer set, però Susanna guanya el segon set.
+3. Susanna guanya el primer set, però Judit guanya el segon set.
+4. Susanna guanya els dos primers sets.
+
+Anem a analitzar cada possibilitat:
+
+1. Judit guanya el primer set i el segon set: la probabilitat que Judit guanyi el primer set és 0,6, i la probabilitat que guanyi el segon set és també 0,6. Per tant, la probabilitat que Judit guanyi els dos primers sets és 0,6 x 0,6 = 0,36.
+2. Judit guanya el primer set, però Susanna guanya el segon set: la probabilitat que Judit guanyi el primer set és 0,6, i la probabilitat que Susanna guanyi el segon set és 0,4 (1 - 0,6). Per tant, la probabilitat que Judit guanyi el primer set i Susanna el segon set és 0,6 x 0,4 = 0,24.
+3. Susanna guanya el primer set, però Judit guanya el segon set: la probabilitat que Susanna guanyi el primer set és 0,4, i la probabilitat que Judit guanyi el segon set és 0,6. Per tant, la probabilitat que Susanna guanyi el primer set i Judit el segon set és 0,4 x 0,6 = 0,24.
+4. Susanna guanya els dos primers sets: la probabilitat que Susanna guanyi el primer set és 0,4, i la probabilitat que guanyi el segon set és 0,4. Per tant, la probabilitat que Susanna guanyi els dos primers sets és 0,4 x 0,4 = 0,16.
+
+Agora, sumem les probabilitats de cada possibilitat per obtenir la probabilitat total que Judit guanyi el partit:
+
+0,36 + 0,24 + 0,24 + 0,16 = 0,8
+
+Però, aquesta és la probabilitat que Judit guanyi almenys un set. Per calcular la probabilitat que Judit guanyi el partit, hem de considerar que Judit guanya el partit si guanya dos sets, o si guanya tres sets.
+
+La probabilitat que Judit guanyi tres sets és la probabilitat que Judit guanyi el primer set, i la probabilitat que guanyi el segon set, i la probabilitat que guanyi el tercer set, que és 0,6 x 0,6 x 0,6 = 0,216.
+
+Ara, sumem les probabilitats de Judit guanyar dos sets i tres sets per obtenir la probabilitat total que Judit guanyi el partit:
+
+0,8 + 0,216 = 1,016
+
+Però, aquesta és la probabilitat que Judit guanyi el partit, i la probabilitat que un event tingui una probabilitat superior a 1 és impossible. Per tant, hem de considerar que la probabilitat que Judit guanyi el partit és la probabilitat que Judit guanyi dos sets, que és 0,36.
+
+Resposta: C) 0,648

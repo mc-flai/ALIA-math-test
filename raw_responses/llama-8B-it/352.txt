@@ -1,0 +1,23 @@
+Raonament: Per trobar el màxim comú divisor (MCD) de tots els nombres palindròmics de sis dígits, primer hem de comprendre què són aquests nombres. Un nombre palindròmic és un nombre que té la mateixa seqüència de dígits quan es llegeix de dreta a esquerra que quan es llegeix d'esquerra a dreta.
+
+Els nombres palindròmics de sis dígits tenen la forma abaaba, on a i b són dígits. Per exemple, 122121, 133131, 144144, etc.
+
+Per trobar el MCD de tots aquests nombres, podem començar observant que tots els nombres palindròmics de sis dígits són múltiples de 11, ja que la suma dels seus dígits és igual a 11 (a + b + a + b + a + b = 3a + 3b = 3(a + b)).
+
+A més, tots els nombres palindròmics de sis dígits són múltiples de 3, ja que la suma dels seus dígits és múltiple de 3.
+
+Per tant, el MCD de tots els nombres palindròmics de sis dígits ha de ser un divisor comú de 11 i 3, que és 1. No obstant això, aquesta resposta no està entre les opcions.
+
+Un altre aspecte a considerar és que tots els nombres palindròmics de sis dígits són múltiples de 11 i 3, però també són múltiples de 9, ja que la suma dels seus dígits és igual a 9 (a + b + a + b + a + b = 3(a + b) = 9).
+
+Per tant, el MCD de tots els nombres palindròmics de sis dígits ha de ser un divisor comú de 11, 3 i 9, que és 3. No obstant això, aquesta resposta no està entre les opcions.
+
+Un altre aspecte a considerar és que tots els nombres palindròmics de sis dígits són múltiples de 11, 3 i 7, ja que la suma dels seus dígits és igual a 11 (a + b + a + b + a + b = 3(a + b) = 11) i també són múltiples de 7.
+
+Per tant, el MCD de tots els nombres palindròmics de sis dígits ha de ser un divisor comú de 11, 3 i 7, que és 1. No obstant això, aquesta resposta no està entre les opcions.
+
+Un altre aspecte a considerar és que tots els nombres palindròmics de sis dígits són múltiples de 11, 3 i 11, ja que la suma dels seus dígits és igual a 11 (a + b + a + b + a + b = 3(a + b) = 11) i també són múltiples de 11.
+
+Per tant, el MCD de tots els nombres palindròmics de sis dígits ha de ser un divisor comú de 11, 3 i 11, que és 11.
+
+Resposta: E) 77

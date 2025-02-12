@@ -1,0 +1,44 @@
+Raonament:
+
+Per començar, analitzem la regla de canvi de Clara:
+
+- Si N és múltiple de 3, Clara disminueix una unitat.
+- Si el residu de dividir N entre 3 és 2, Clara disminueix 2 unitats.
+- Si el residu de dividir N entre 3 és 1, Clara augmenta 2 unitats.
+
+Comencem amb el nombre 10000.
+
+1. 10000 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10002.
+2. 10002 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10004.
+3. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+4. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+5. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+6. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+7. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+8. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+9. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+10. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+11. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+12. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+13. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+14. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+15. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+16. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+17. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+18. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+19. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+20. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+21. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+22. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+23. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+24. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+25. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+26. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+27. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+28. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+29. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+30. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+31. 10006 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10005.
+32. 10005 és múltiple de 3, però quan el dividim per 3, el residu és 0, no 1 o 2. Així que Clara disminueix una unitat, i el nou nombre és 10004.
+33. 10004 és múltiple de 3, però quan el dividim per 3, el residu és 1, no 0 o 2. Així que Clara augmenta 2 unitats, i el nou nombre és 10006.
+34. 10006 és múltiple de 3

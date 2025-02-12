@@ -1,0 +1,45 @@
+Raonament: Per determinar el nombre de polinomis de grau 5 amb coeficients 1 o -1 que tenen 1 com a arrel, podem utilitzar el teorema del factor. Segons aquest teorema, si un polinomi té un arrel r, llavors (x - r) és un factor del polinomi.
+
+En aquest cas, si 1 és una arrel del polinomi, llavors (x - 1) és un factor del polinomi. Perquè (x - 1) sigui un factor del polinomi, el polinomi ha de ser divisible per (x - 1).
+
+Un polinomi de grau 5 amb coeficients 1 o -1 té la forma:
+
+a5x^5 + a4x^4 + a3x^3 + a2x^2 + a1x + a0
+
+On a5, a4, a3, a2, a1 i a0 són coeficients que poden ser 1 o -1.
+
+Perquè (x - 1) sigui un factor del polinomi, el polinomi ha de ser igual a 0 quan x = 1. Això significa que:
+
+a5(1)^5 + a4(1)^4 + a3(1)^3 + a2(1)^2 + a1(1) + a0 = 0
+
+Simplificant l'expressió, obtenim:
+
+a5 + a4 + a3 + a2 + a1 + a0 = 0
+
+Ara, podem comptar el nombre de combinacions possibles de coeficients que satisfan aquesta equació. Hi ha 6 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^6 = 64 combinacions possibles de coeficients.
+
+No obstant això, no totes aquestes combinacions són vàlides. Per exemple, si a5 = -1 i a4 = 1, llavors a5 + a4 = -1 + 1 = 0, però a3 + a2 + a1 + a0 = 0 no és cert. Això significa que hi ha combinacions que no satisfan l'equació.
+
+Per comptar el nombre de combinacions vàlides, podem utilitzar el mètode de cas. Hi ha 6 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^6 = 64 combinacions possibles de coeficients.
+
+Però, si a5 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 + a4 + a3 + a2 + a1 + a0 = 0, i això significa que a4 + a3 + a2 + a1 + a0 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+De manera similar, si a4 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = a5 - 1 + a3 + a2 + a1 + a0 = 0, i això significa que a5 + a3 + a2 + a1 + a0 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+De manera similar, si a3 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = a5 + a4 - 1 + a2 + a1 + a0 = 0, i això significa que a5 + a4 + a2 + a1 + a0 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+De manera similar, si a2 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = a5 + a4 + a3 - 1 + a1 + a0 = 0, i això significa que a5 + a4 + a3 + a1 + a0 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+De manera similar, si a1 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = a5 + a4 + a3 + a2 - 1 + a0 = 0, i això significa que a5 + a4 + a3 + a2 + a0 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+De manera similar, si a0 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = a5 + a4 + a3 + a2 + a1 - 1 = 0, i això significa que a5 + a4 + a3 + a2 + a1 = 1. Hi ha 5 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^5 = 32 combinacions possibles de coeficients.
+
+Però, si a5 = -1 i a4 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 - 1 + a3 + a2 + a1 + a0 = 0, i això significa que a3 + a2 + a1 + a0 = 2. Hi ha 4 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^4 = 16 combinacions possibles de coeficients.
+
+De manera similar, si a5 = -1 i a3 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 + a4 - 1 + a2 + a1 + a0 = 0, i això significa que a4 + a2 + a1 + a0 = 2. Hi ha 4 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^4 = 16 combinacions possibles de coeficients.
+
+De manera similar, si a5 = -1 i a2 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 + a4 + a3 - 1 + a1 + a0 = 0, i això significa que a4 + a3 + a1 + a0 = 2. Hi ha 4 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^4 = 16 combinacions possibles de coeficients.
+
+De manera similar, si a5 = -1 i a1 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 + a4 + a3 + a2 - 1 + a0 = 0, i això significa que a4 + a3 + a2 + a0 = 2. Hi ha 4 coeficients que poden ser 1 o -1, i per a cada coeficient, hi ha 2 opcions possibles (1 o -1). Això significa que hi ha 2^4 = 16 combinacions possibles de coeficients.
+
+De manera similar, si a5 = -1 i a0 = -1, llavors a5 + a4 + a3 + a2 + a1 + a0 = -1 + a4 + a3 + a2 + a1 - 1 = 0, i això significa que a4

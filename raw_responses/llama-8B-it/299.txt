@@ -1,0 +1,31 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar analitzant les propietats del nombre natural N. Sabem que N és divisible per 99, el que significa que N és un múltip de 99. 
+
+99 es pot expressar com a 9 × 11, on 9 i 11 són nombres primers. Això significa que qualsevol múltip de 99 també serà un múltip de 9 i 11. 
+
+Per a un nombre ser divisible per 9, la suma de les seves xifres ha de ser divisible per 9. Per a un nombre ser divisible per 11, la resta entre la suma de les xifres dels llocs senars i la suma de les xifres dels llocs parells ha de ser divisible per 11. 
+
+Com que la suma de les xifres de N és un nombre imparell, podem deduir que N no pot ser un nombre de 3 xifres, ja que la suma de les xifres d'un nombre de 3 xifres sempre serà un nombre parell (0 o 9). 
+
+Això elimina l'opció A. 
+
+A continuació, podem analitzar les opcions restants. Si N és un nombre de 4 xifres, la suma de les seves xifres pot ser un nombre imparell, ja que hi ha moltes combinacions possibles de xifres que poden donar lloc a una suma imparell. 
+
+Per exemple, 1001 és un nombre de 4 xifres que és divisible per 99 i la suma de les seves xifres és 4, un nombre imparell. 
+
+Això fa que l'opció B sigui una possibilitat. 
+
+Per a les opcions C, D i E, podem demostrar que no són possibles. 
+
+Per exemple, si N és un nombre de 5 xifres, la suma de les seves xifres sempre serà un nombre parell (0 o 9), ja que la suma de les xifres dels llocs senars sempre serà igual a la suma de les xifres dels llocs parells. 
+
+De manera similar, si N és un nombre de 6 xifres, la suma de les seves xifres sempre serà un nombre parell (0 o 9), ja que la suma de les xifres dels llocs senars sempre serà igual a la suma de les xifres dels llocs parells. 
+
+Finalment, si N és un nombre de 8 xifres, la suma de les seves xifres sempre serà un nombre parell (0 o 9), ja que la suma de les xifres dels llocs senars sempre serà igual a la suma de les xifres dels llocs parells. 
+
+Això elimina les opcions C, D i E. 
+
+Per tant, la resposta correcta és l'opció B. 
+
+Resposta: B)

@@ -1,0 +1,45 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar assignant variables a les xifres de les centenes, les desenes i les unitats. Digui que la xifra de les centenes és "a", la de les desenes és "b" i la de les unitats és "c".
+
+El nombre ab0 té tres xifres, per tant, podem escriure el nombre com a "100a + 10b + c". 
+
+Segons la pregunta, el nombre ab0 és igual a la suma dels cubs de les seues xifres, per tant, podem escriure l'equació:
+
+100a + 10b + c = a^3 + b^3 + c^3
+
+Per simplificar l'equació, podem reorganitzar-la:
+
+99a + 9b = a^3 + b^3 + c^3 - c
+
+Per fer que l'equació sigui més tractable, podem intentar simplificar-la més. 
+
+Si c = 0, llavors l'equació esdevé:
+
+99a + 9b = a^3 + b^3
+
+Aquesta equació és difícil de resoldre directament, però podem intentar fer-ho amb alguns valors possibles de "a" i "b".
+
+Si a = 1, llavors l'equació esdevé:
+
+9b = 1 + b^3
+
+Resolent aquesta equació, obtenim b = 1.
+
+Si a = 2, llavors l'equació esdevé:
+
+18 + 9b = 8 + b^3
+
+Resolent aquesta equació, obtenim b = 3.
+
+Si a = 3, llavors l'equació esdevé:
+
+27 + 9b = 27 + b^3
+
+Resolent aquesta equació, obtenim b = 3.
+
+A partir d'aquests resultats, podem veure que quan a = 2 i b = 3, l'equació és veritat.
+
+Per tant, les xifres de les centenes, les desenes i les unitats del nombre ab0 són 2, 3 i 0, respectivament.
+
+Resposta: B)

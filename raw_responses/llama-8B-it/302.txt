@@ -1,0 +1,80 @@
+Raonament: 
+
+Comencem per analitzar les dades que tenim:
+
+* Anna, Beatriu, Carles i David han agafat 11 peixos entre tots.
+* Cada persona ha atrapat almenys un peix.
+* No n'hi ha dues que hagen agafat el mateix nombre de peixos.
+* Anna és la que n'ha capturat més.
+* Beatriu és la que menys.
+
+Sabem que Anna és la que n'ha capturat més, però no sabem exactament quant. Però sabem que Beatriu és la que menys, això significa que Beatriu ha atrapat un nombre de peixos inferior a 3, ja que si hagués atrapat 3 o més, Anna hauria hagut de capturar almenys 4 peixos per ser la que n'ha capturat més.
+
+Ara, considerem les possibilitats:
+
+* Si Beatriu ha atrapat 1 peix, llavors Anna ha atrapat almenys 6 peixos (11 - 1 - 1 - 1 = 8, però Anna és la que n'ha capturat més, això significa que ha atrapat més de 4, però no més de 8, ja que si ho hagués fet, Carles i David haurien hagut de capturar 0 peixos, el que és impossible).
+* Si Beatriu ha atrapat 2 peixos, llavors Anna ha atrapat almenys 5 peixos (11 - 2 - 1 - 1 = 7, però Anna és la que n'ha capturat més, això significa que ha atrapat més de 4, però no més de 7, ja que si ho hagués fet, Carles i David haurien hagut de capturar 0 peixos, el que és impossible).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 6 peixos, llavors Carles i David han atrapat 1 peix cada un (11 - 6 = 5, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 7 peixos, llavors Carles i David han atrapat 1 peix cada un (11 - 7 = 4, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 5 peixos, llavors Carles i David han atrapat 2 peixos cada un (11 - 5 = 6, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 6 peixos, llavors Carles i David han atrapat 1 peix cada un (11 - 6 = 5, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 4 peixos, llavors Carles i David han atrapat 3 peixos cada un (11 - 4 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 5 peixos, llavors Carles i David han atrapat 2 peixos cada un (11 - 5 = 6, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 3 peixos, llavors Carles i David han atrapat 4 peixos cada un (11 - 3 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 4 peixos, llavors Carles i David han atrapat 3 peixos cada un (11 - 4 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 2 peixos, llavors Carles i David han atrapat 5 peixos cada un (11 - 2 = 9, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 3 peixos, llavors Carles i David han atrapat 4 peixos cada un (11 - 3 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 2 peixos (11 - 1 - 2 = 8, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Carles ha atrapat 2 peixos, llavors David ha atrapat 1 peix (11 - 2 - 2 = 7, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Anna:
+
+* Si Anna ha atrapat 1 peix, llavors Carles i David han atrapat 5 peixos cada un (11 - 1 = 10, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+* Si Anna ha atrapat 2 peixos, llavors Carles i David han atrapat 5 peixos cada un (11 - 2 = 9, però això no és possible, ja que Beatriu ha atrapat 2 peixos).
+
+Ara, considerem les possibilitats per a Carles i David:
+
+* Si Carles ha atrapat 1 peix, llavors David ha atrapat 

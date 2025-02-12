@@ -1,0 +1,19 @@
+Raonament:
+
+Anem a analitzar la situació:
+
+- Hi ha 11 vagons en total.
+- Hi viatgen 350 passatgers en total.
+- En tres vagons consecutius, qualsevol és compten sempre exactament 99 passatgers.
+
+Aquesta informació ens diu que els tres vagons consecutius que compten 99 passatgers són els que tenen un nombre de vagó que sigui 99 més que el nombre del vagó anterior. Per exemple, si el primer vagó és el 1, els tres vagons consecutius són els 100, 101 i 102.
+
+Per calcular el nombre de passatgers en cada vagó, podem fer una sèrie de equacions:
+
+1. Si el primer vagó és el 1, els tres vagons consecutius són els 100, 101 i 102. El nombre total de passatgers en aquests tres vagons és 99 + 99 + 99 = 297.
+2. El nombre de passatgers en els tres vagons restants (4, 5 i 6) és 350 - 297 = 53.
+3. Per calcular el nombre de passatgers en el sisè vagó, podem dividir el nombre total de passatgers en els tres vagons restants per 3: 53 ÷ 3 = 17,33. Però, no podem tenir un nombre de passatgers fraccionari, per tant, el sisè vagó no pot tenir 17,33 passatgers.
+
+Aquesta informació no ens diu que el sisè vagó tingui 17 passatgers, però sí que tingui 17 passatgers més que el tercer vagó. El tercer vagó és el 4, per tant, el sisè vagó és el 7.
+
+Resposta: E) En el lloc número 7.

@@ -1,0 +1,27 @@
+Raonament: Per trobar el nombre de nombres diferents de quatre xifres que Rita pot formar, hem de considerar les restriccions que té per combinar les tres peces: 3, 5 i 3. 
+
+La primera xifra pot ser qualsevol de les quatre xifres disponibles (3, 3, 3 o 5). Això ens dona quatre opcions per a la primera xifra.
+
+Per a la segona xifra, ja no podem repetir la primera xifra, així que ens queden tres opcions (3, 3 o 5).
+
+Per a la tercera xifra, ja no podem repetir les dues primeres xifres, així que ens queden dos opcions (3 o 5).
+
+Per a la quarta xifra, ja no podem repetir les tres primeres xifres, així que només ens queda una opció (3 o 5).
+
+Però, si la primera xifra és 3, la quarta xifra també ha de ser 3, i si la primera xifra és 5, la quarta xifra també ha de ser 5. Això significa que només hi ha dues opcions per a la quarta xifra quan la primera xifra és 3 o 5.
+
+Per tant, el nombre total de nombres diferents de quatre xifres que Rita pot formar és el producte del nombre d'opcions per a cada xifra: 4 (opcions per a la primera xifra) * 3 (opcions per a la segona xifra) * 2 (opcions per a la tercera xifra) * 2 (opcions per a la quarta xifra) = 48.
+
+Però, aquesta és una sobreestimació, ja que hem comptat alguns nombres repetits. Per exemple, 3333 i 3333 són el mateix nombre. Per això, hem de dividir el nombre total per el nombre de repetits, que és 4 (perquè hi ha quatre 3).
+
+Per tant, el nombre total de nombres diferents de quatre xifres que Rita pot formar és 48/4 = 12. Però, aquesta encara és una sobreestimació, ja que hem comptat alguns nombres que no són vàlids (per exemple, 3553 no és vàlid perquè la segona xifra és 5 i la tercera xifra és 3, però la primera xifra és 3 i la quarta xifra és 3).
+
+Per això, hem de restar els nombres que no són vàlids. Hi ha quatre nombres que no són vàlids: 3553, 3553, 3553 i 3553.
+
+Per tant, el nombre total de nombres diferents de quatre xifres que Rita pot formar és 12 - 4 = 8. Però, aquesta encara és una sobreestimació, ja que hem comptat alguns nombres que no són vàlids (per exemple, 3353 no és vàlid perquè la segona xifra és 3 i la tercera xifra és 5, però la primera xifra és 3 i la quarta xifra és 3).
+
+Per això, hem de restar els nombres que no són vàlids. Hi ha quatre nombres que no són vàlids: 3353, 3353, 3353 i 3353.
+
+Per tant, el nombre total de nombres diferents de quatre xifres que Rita pot formar és 8 - 4 = 4.
+
+Resposta: B)

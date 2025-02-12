@@ -1,0 +1,17 @@
+Raonament:
+
+Per resoldre aquest problema, podem considerar la teoria de les gràfiques i la coloració de gràfics. En aquest context, un cub es pot representar com una gràfica plana amb 8 vèrtexs i 12 arestes.
+
+La regla de la coloració de gràfics estableix que si un grau d'una gràfica plana és imparell, és possible colorar-la amb un nombre finit de colors. En cas contrari, és necessari un nombre infinit de colors.
+
+En el cas del cub, cada vèrtex té un grau imparell (6 arestes), però també hi ha arestes que connecten dos vèrtexs. Això significa que alguns vèrtexs tenen un grau par (4 arestes) i altres un grau imparell (6 arestes).
+
+Per colorar els vèrtexs de manera que cada vèrtex i tots els vèrtexs units a ell per arestes tinguen diferents colors, podem utilitzar la següent estratègia:
+
+1. Assigna un color a un vèrtex amb grau imparell (6 arestes). Aquest color serà el color principal.
+2. Assigna un color diferent a cada vèrtex amb grau par (4 arestes). Aquest color serà el color secundari.
+3. Assigna un color diferent a cada vèrtex que no tingui color principal o secundari.
+
+Aquesta estratègia permet colorar els vèrtexs de manera que cada vèrtex i tots els vèrtexs units a ell per arestes tinguen diferents colors. El nombre de colors necessaris és, per tant, 3 (color principal, color secundari i un tercer color per als vèrtexs que no tingui color principal o secundari).
+
+Resposta: C) 5

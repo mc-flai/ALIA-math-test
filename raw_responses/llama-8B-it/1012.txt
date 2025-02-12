@@ -1,0 +1,15 @@
+Raonament: 
+
+Anem a analitzar el problema. Tenim dos rellotges: un que s'avança un minut cada hora i un altre que es retarda dos minuts cada hora. En un moment determinat, els posem tots dos en hora. Després d'una estona, els mirem i veiem que un marca les 11h del matí i l'altre les 12h del migdia.
+
+Per resoldre aquest problema, podem començar a analitzar les diferències entre els dos rellotges. El rellotge que s'avança marca un minut cada hora, mentre que el rellotge que es retarda marca dos minuts menys cada hora. Això significa que, en un període de 12 hores, el rellotge que s'avança hauria avançat 12 minuts, mentre que el rellotge que es retarda hauria estat retardat 24 minuts.
+
+Perquè els dos rellotges estiguin sincronitzats, la diferència entre ells ha de ser múltiplo de 12 minuts (perquè cada hora, el rellotge que s'avança marca un minut més i el rellotge que es retarda marca dos minuts menys). Això significa que la diferència entre els dos rellotges ha de ser múltiplo de 12 minuts.
+
+Ara, analitzem les opcions. Si els vam posar en hora a les 19.40 h, el rellotge que s'avança hauria avançat 40 minuts en 12 hores, mentre que el rellotge que es retarda hauria estat retardat 80 minuts. Això significa que la diferència entre els dos rellotges seria de 120 minuts, que és múltiplo de 12 minuts.
+
+Per verificar aquesta resposta, podem calcular la diferència entre els dos rellotges en funció de la posició actual. Si el rellotge que s'avança marca les 11h del matí, hauria avançat 11 hores des de les 19.40 h. Això significa que hauria avançat 11 minuts. Si el rellotge que es retarda marca les 12h del migdia, hauria estat retardat 12 hores des de les 19.40 h. Això significa que hauria estat retardat 24 minuts.
+
+La diferència entre els dos rellotges seria de 35 minuts (24 minuts - 11 minuts). Això és igual a 5 minuts per hora, que és múltiplo de 12 minuts. Això confirma que la resposta correcta és la que diu que els vam posar en hora a les 19.40 h.
+
+Resposta: B)

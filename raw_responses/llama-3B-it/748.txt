@@ -1,0 +1,26 @@
+Raonament:
+
+Per aquest problema, podem analitzar els nombres del conjunt i determinar quins tenen la propietat que, si en suprimim una xifra qualsevol, el nombre que en resulta és un divisor del nombre original.
+
+Primadament, podem notar que els nombres del conjunt són del 1000 al 1999, i que alguns d'ells tenen una xifra repetida (com 1001, 1111, etc.).
+
+Un altre aspecte important és que els nombres del conjunt són del 1000 al 1999, i que alguns d'ells tenen una xifra repetida (com 1001, 1111, etc.). Això significa que, si en suprimim una xifra, el nombre resultant pot ser un divisor del nombre original si i només si el nombre original és un múltiplicador de la xifra suprimida.
+
+Per exemple, si en suprimim la xifra del nombre 1001, el nombre resultant és 101, que és un divisor del nombre original. De manera similar, si en suprimim la xifra del nombre 1111, el nombre resultant és 11, que és un divisor del nombre original.
+
+Després de analitzar els nombres del conjunt, podem identificar alguns nombres que tenen la propietat que, si en suprimim una xifra qualsevol, el nombre que en resulta és un divisor del nombre original. Aquests nombres són:
+
+* 1001 (suprimir la xifra 1, resulta 101, que és un divisor del nombre original)
+* 1111 (suprimir la xifra 1, resulta 111, que és un divisor del nombre original)
+* 1221 (suprimir la xifra 2, resulta 121, que és un divisor del nombre original)
+* 1331 (suprimir la xifra 3, resulta 131, que és un divisor del nombre original)
+* 1441 (suprimir la xifra 4, resulta 141, que és un divisor del nombre original)
+* 1551 (suprimir la xifra 5, resulta 151, que és un divisor del nombre original)
+* 1661 (suprimir la xifra 6, resulta 161, que és un divisor del nombre original)
+* 1771 (suprimir la xifra 7, resulta 171, que és un divisor del nombre original)
+* 1881 (suprimir la xifra 8, resulta 181, que és un divisor del nombre original)
+* 1991 (suprimir la xifra 9, resulta 191, que és un divisor del nombre original)
+
+Això significa que hi ha 19 nombres del conjunt que tenen la propietat que, si en suprimim una xifra qualsevol, el nombre que en resulta és un divisor del nombre original.
+
+Resposta: D) 19

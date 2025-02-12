@@ -1,0 +1,37 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar dibuixant el rectangle i els dos triangles amb la diagonal. Llavors, podem inscriure els quadrats amb costats paral·lels als costats del rectangle. 
+
+Observem que la diagonal del rectangle és la hipotenusa del triangle rectangle format per la diagonal del rectangle i un costat del rectangle. Aquesta diagonal té una longitud de √(a² + b²).
+
+Ara, observem que la distància entre els vèrtexs del quadrat que es troben a l'interior del rectangle és igual a la diferència entre la longitud del costat del rectangle i la longitud del costat del quadrat. 
+
+Per trobar aquesta distància, podem utilitzar el teorema de Pitàgores en el triangle rectangle format per la diagonal del rectangle, un costat del rectangle i la distància entre els vèrtexs del quadrat. 
+
+La longitud del costat del quadrat és igual a la longitud del costat del rectangle menys la distància entre els vèrtexs del quadrat. 
+
+Això ens dona la següent equació:
+
+(a - x)² + b² = (a² + b²)
+
+on x és la distància entre els vèrtexs del quadrat.
+
+Resolent per x, obtenim:
+
+x = a² - b² / √(a² + b²)
+
+Però aquesta és la longitud de la diagonal del quadrat, no la distància entre els vèrtexs del quadrat. 
+
+Per trobar la distància entre els vèrtexs del quadrat, podem utilitzar el fet que la diagonal del quadrat és igual a la longitud del costat del quadrat multiplicada per √2. 
+
+Això ens dona la següent equació:
+
+x = (a - x)√2
+
+Resolent per x, obtenim:
+
+x = (a - b)√a² + b² / (a + b)
+
+Però aquesta és la resposta correcta.
+
+Resposta: B)

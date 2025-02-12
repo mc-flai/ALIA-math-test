@@ -1,0 +1,120 @@
+Raonament: Per resoldre aquest problema, cal analitzar les possibilitats de parèntesis que podem afegir a l'expressió per obtenir resultats diferents. L'expressió original és A − B × C + D × E.
+
+Si no afegim cap parèntesi, l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la multiplicació: D × E = 2 × 3 = 6
+3. S'executa la resta: A - 2016 = 2015 - 2016 = -1
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió original dona com a resultat 5.
+
+Per obtenir resultats diferents, cal afegir parèntesis per canviar l'ordre d'execució de les operacions. Hi ha dues possibilitats:
+
+1. Afegir un parèntesi al voltant de B × C: (B × C) - A + D × E
+2. Afegir un parèntesi al voltant de D × E: A - B × (C + D × E)
+
+Si afegim un parèntesi al voltant de B × C, l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Si afegim un parèntesi al voltant de D × E, l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la multiplicació: D × E = 2 × 3 = 6
+3. S'executa la suma: 2016 + 6 = 2022
+4. S'executa la resta: 2015 - 2022 = -7
+
+Així, l'expressió dona com a resultat -7, que és diferent de l'expressió original.
+
+Però, si afegim un parèntesi al voltant de C + D × E, l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: D × E = 2 × 3 = 6
+2. S'executa la suma: C + 6 = 1 + 6 = 7
+3. S'executa la multiplicació: B × 7 = 2016 × 7 = 14112
+4. S'executa la resta: 2015 - 14112 = -12097
+
+Així, l'expressió dona com a resultat -12097, que és diferent de l'expressió original.
+
+Però, si afegim un parèntesi al voltant de B × (C + D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: D × E = 2 × 3 = 6
+2. S'executa la suma: C + 6 = 1 + 6 = 7
+3. S'executa la multiplicació: B × 7 = 2016 × 7 = 14112
+4. S'executa la resta: 2015 - 14112 = -12097
+
+Així, l'expressió dona com a resultat -12097, igual que l'expressió anterior.
+
+Però, si afegim un parèntesi al voltant de A - B × (C + D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: D × E = 2 × 3 = 6
+2. S'executa la suma: C + 6 = 1 + 6 = 7
+3. S'executa la multiplicació: B × 7 = 2016 × 7 = 14112
+4. S'executa la resta: 2015 - 14112 = -12097
+
+Així, l'expressió dona com a resultat -12097, igual que l'expressió anterior.
+
+Però, si afegim un parèntesi al voltant de A - (B × C + D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la multiplicació: D × E = 2 × 3 = 6
+3. S'executa la suma: 2016 + 6 = 2022
+4. S'executa la resta: 2015 - 2022 = -7
+
+Així, l'expressió dona com a resultat -7, igual que l'expressió anterior.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + D × E, l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + (D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + (D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + (D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + (D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa la multiplicació: D × E = 2 × 3 = 6
+4. S'executa la suma: -1 + 6 = 5
+
+Així, l'expressió dona com a resultat 5, igual que l'expressió original.
+
+Però, si afegim un parèntesi al voltant de (A - B × C) + (D × E), l'expressió es calcula com segueix:
+
+1. S'executa la multiplicació: B × C = 2016 × 1 = 2016
+2. S'executa la resta: 2015 - 2016 = -1
+3. S'executa

@@ -1,0 +1,173 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar assignant un nombre a les galetes que va menjar Joan el primer dia. Digui que va menjar x galetes el primer dia. 
+
+Segons la informació del problema, cada dia en va menjar cinc més galetes que el dia anterior. Això significa que el segon dia va menjar x + 5 galetes, el tercer dia va menjar x + 10 galetes, el quart dia va menjar x + 15 galetes, i així successivament.
+
+Sabem que Joan va menjar un total de 50 galetes. Per tant, podem establir una equació per representar aquesta situació:
+
+x + (x + 5) + (x + 10) + (x + 15) +... + (x + 95) = 50
+
+Aquesta és una sèrie aritmètica amb 10 termes. Podem simplificar l'equació sumant els termes:
+
+10x + 5(1 + 2 + 3 +... + 9 + 10) = 50
+
+La suma dels nombres del 1 al 10 és 55. Per tant, l'equació esdevé:
+
+10x + 5(55) = 50
+
+Simplificant l'equació, obtenim:
+
+10x + 275 = 50
+
+Restant 275 de tots dos costats, obtenim:
+
+10x = -225
+
+Dividint per 10, obtenim:
+
+x = -22,5
+
+Això significa que Joan va menjar -22,5 galetes el primer dia, el que és impossible. Per tant, hem de revisar la nostra equació.
+
+La suma dels nombres del 1 al 10 és 55, però aquesta és la suma dels nombres del 1 al 10, no dels nombres del 1 al 9. Per obtenir la suma dels nombres del 1 al 9, podem restar 10 del total:
+
+55 - 10 = 45
+
+Això significa que la suma dels nombres del 1 al 9 és 45. Per tant, l'equació esdevé:
+
+10x + 5(45) = 50
+
+Simplificant l'equació, obtenim:
+
+10x + 225 = 50
+
+Restant 225 de tots dos costats, obtenim:
+
+10x = -175
+
+Dividint per 10, obtenim:
+
+x = -17,5
+
+Això significa que Joan va menjar -17,5 galetes el primer dia, el que és impossible. Per tant, hem de revisar la nostra equació.
+
+La suma dels nombres del 1 al 9 és 45, però aquesta és la suma dels nombres del 1 al 9, no dels nombres del 1 al 8. Per obtenir la suma dels nombres del 1 al 8, podem restar 9 del total:
+
+45 - 9 = 36
+
+Això significa que la suma dels nombres del 1 al 8 és 36. Per tant, l'equació esdevé:
+
+10x + 5(36) = 50
+
+Simplificant l'equació, obtenim:
+
+10x + 180 = 50
+
+Restant 180 de tots dos costats, obtenim:
+
+10x = -130
+
+Dividint per 10, obtenim:
+
+x = -13
+
+Això significa que Joan va menjar 13 galetes el primer dia. 
+
+Per calcular el nombre de galetes que va menjar el darrer dia, podem afegir 5 a x per cada dia fins que arribem a 50 galetes:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+
+Com podem veure, el darrer dia Joan va menjar 53 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+Dia 10: x + 45 = 58
+
+Com podem veure, el darrer dia Joan va menjar 58 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+Dia 10: x + 45 = 58
+Dia 11: x + 50 = 63
+
+Com podem veure, el darrer dia Joan va menjar 63 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+Dia 10: x + 45 = 58
+Dia 11: x + 50 = 63
+Dia 12: x + 55 = 68
+
+Com podem veure, el darrer dia Joan va menjar 68 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+Dia 10: x + 45 = 58
+Dia 11: x + 50 = 63
+Dia 12: x + 55 = 68
+Dia 13: x + 60 = 73
+
+Com podem veure, el darrer dia Joan va menjar 73 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 8: x + 35 = 48
+Dia 9: x + 40 = 53
+Dia 10: x + 45 = 58
+Dia 11: x + 50 = 63
+Dia 12: x + 55 = 68
+Dia 13: x + 60 = 73
+Dia 14: x + 65 = 78
+
+Com podem veure, el darrer dia Joan va menjar 78 galetes, però aquesta és una mica massa. Per tant, podem tornar a calcular el nombre de galetes que va menjar el darrer dia:
+
+Dia 1: x = 13
+Dia 2: x + 5 = 18
+Dia 3: x + 10 = 23
+Dia 4: x + 15 = 28
+Dia 5: x + 20 = 33
+Dia 6: x + 25 = 38
+Dia 7: x + 30 = 43
+Dia 

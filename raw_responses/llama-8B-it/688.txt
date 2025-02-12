@@ -1,0 +1,19 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar dividint el tren en blocs de cinc vagons adjacents, ja que aquests blocs tenen 199 passatgers en total. 
+
+Sabem que el tren té 18 vagons, però no podem dividir directament 18 per 5, ja que no ens dona un nombre enter de blocs. Però podem intentar dividir 18 per 5 i veure què passa:
+
+18 ÷ 5 = 3,6
+
+Això significa que tenim 3 blocs de 5 vagons i 3 vagons sobrants. 
+
+Els 3 blocs de 5 vagons tenen un total de 3 × 199 = 597 passatgers. 
+
+Aquests 597 passatgers deixen 700 - 597 = 103 passatgers per als 3 vagons sobrants. 
+
+Però, aquests 3 vagons sobrants són els dos vagons del mig del tren i un tercer vagó. 
+
+Per tant, els dos vagons del mig del tren tenen 103 passatgers.
+
+Resposta: E)

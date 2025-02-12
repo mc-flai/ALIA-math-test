@@ -1,0 +1,125 @@
+Raonament: Per resoldre aquest problema, podem analitzar les propietats dels nombres del conjunt {1000, 1001, 1002, 1003,..., 1998, 1999} i com es comporten quan es suprimeix una xifra qualsevol.
+
+Un nombre és divisible per un altre nombre si el seu últim dígit és divisible per aquell nombre. Per exemple, si un nombre acaba en 0, és divisible per 10.
+
+Els nombres del conjunt {1000, 1001, 1002, 1003,..., 1998, 1999} tenen les següents propietats:
+
+- Els nombres que acaben en 0 (1000, 1100, 1200,..., 1990) són divisibles per 10.
+- Els nombres que acaben en 1 (1001, 1101, 1201,..., 1991) són divisibles per 1.
+- Els nombres que acaben en 2 (1002, 1102, 1202,..., 1992) són divisibles per 2.
+- Els nombres que acaben en 3 (1003, 1103, 1203,..., 1993) són divisibles per 3.
+- Els nombres que acaben en 4 (1004, 1104, 1204,..., 1994) són divisibles per 4.
+- Els nombres que acaben en 5 (1005, 1105, 1205,..., 1995) són divisibles per 5.
+- Els nombres que acaben en 6 (1006, 1106, 1206,..., 1996) són divisibles per 6.
+- Els nombres que acaben en 7 (1007, 1107, 1207,..., 1997) són divisibles per 7.
+- Els nombres que acaben en 8 (1008, 1108, 1208,..., 1998) són divisibles per 8.
+- Els nombres que acaben en 9 (1009, 1109, 1209,..., 1999) són divisibles per 9.
+
+A més, els nombres que acaben en 00 (1000, 1100, 1200,..., 1900) són divisibles per 100.
+
+Per tant, els nombres que tenen la propietat que, si en suprimim una xifra qualsevol, el nombre que en resulta és un divisor del nombre original són:
+
+- 1000 (divisible per 10, 1, 2, 5 i 100)
+- 1001 (divisible per 1)
+- 1002 (divisible per 2)
+- 1003 (divisible per 3)
+- 1004 (divisible per 4)
+- 1005 (divisible per 5)
+- 1006 (divisible per 6)
+- 1007 (divisible per 7)
+- 1008 (divisible per 8)
+- 1009 (divisible per 9)
+- 1100 (divisible per 10, 1, 2, 5 i 100)
+- 1101 (divisible per 1)
+- 1102 (divisible per 2)
+- 1103 (divisible per 3)
+- 1104 (divisible per 4)
+- 1105 (divisible per 5)
+- 1106 (divisible per 6)
+- 1107 (divisible per 7)
+- 1108 (divisible per 8)
+- 1109 (divisible per 9)
+- 1200 (divisible per 10, 1, 2, 5 i 100)
+- 1201 (divisible per 1)
+- 1202 (divisible per 2)
+- 1203 (divisible per 3)
+- 1204 (divisible per 4)
+- 1205 (divisible per 5)
+- 1206 (divisible per 6)
+- 1207 (divisible per 7)
+- 1208 (divisible per 8)
+- 1209 (divisible per 9)
+- 1300 (divisible per 10, 1, 2, 5 i 100)
+- 1301 (divisible per 1)
+- 1302 (divisible per 2)
+- 1303 (divisible per 3)
+- 1304 (divisible per 4)
+- 1305 (divisible per 5)
+- 1306 (divisible per 6)
+- 1307 (divisible per 7)
+- 1308 (divisible per 8)
+- 1309 (divisible per 9)
+- 1400 (divisible per 10, 1, 2, 5 i 100)
+- 1401 (divisible per 1)
+- 1402 (divisible per 2)
+- 1403 (divisible per 3)
+- 1404 (divisible per 4)
+- 1405 (divisible per 5)
+- 1406 (divisible per 6)
+- 1407 (divisible per 7)
+- 1408 (divisible per 8)
+- 1409 (divisible per 9)
+- 1500 (divisible per 10, 1, 2, 5 i 100)
+- 1501 (divisible per 1)
+- 1502 (divisible per 2)
+- 1503 (divisible per 3)
+- 1504 (divisible per 4)
+- 1505 (divisible per 5)
+- 1506 (divisible per 6)
+- 1507 (divisible per 7)
+- 1508 (divisible per 8)
+- 1509 (divisible per 9)
+- 1600 (divisible per 10, 1, 2, 5 i 100)
+- 1601 (divisible per 1)
+- 1602 (divisible per 2)
+- 1603 (divisible per 3)
+- 1604 (divisible per 4)
+- 1605 (divisible per 5)
+- 1606 (divisible per 6)
+- 1607 (divisible per 7)
+- 1608 (divisible per 8)
+- 1609 (divisible per 9)
+- 1700 (divisible per 10, 1, 2, 5 i 100)
+- 1701 (divisible per 1)
+- 1702 (divisible per 2)
+- 1703 (divisible per 3)
+- 1704 (divisible per 4)
+- 1705 (divisible per 5)
+- 1706 (divisible per 6)
+- 1707 (divisible per 7)
+- 1708 (divisible per 8)
+- 1709 (divisible per 9)
+- 1800 (divisible per 10, 1, 2, 5 i 100)
+- 1801 (divisible per 1)
+- 1802 (divisible per 2)
+- 1803 (divisible per 3)
+- 1804 (divisible per 4)
+- 1805 (divisible per 5)
+- 1806 (divisible per 6)
+- 1807 (divisible per 7)
+- 1808 (divisible per 8)
+- 1809 (divisible per 9)
+- 1900 (divisible per 10, 1, 2, 5 i 100)
+- 1901 (divisible per 1)
+- 1902 (divisible per 2)
+- 1903 (divisible per 3)
+- 1904 (divisible per 4)
+- 1905 (divisible per 5)
+- 1906 (divisible per 6)
+- 1907 (divisible per 7)
+- 1908 (divisible per 8)
+- 1909 (divisible per 9)
+
+En total, hi ha 19 nombres que tenen la propietat que, si en suprimim una xifra qualsevol, el nombre que en resulta és un divisor del nombre original.
+
+Resposta: D)

@@ -1,0 +1,41 @@
+Raonament: Per resoldre aquest problema, podem començar per simplificar l'inequació donada. Multiplicant tots dos costats per 2xy, obtenim:
+
+2y + 2x >= xy
+
+A continuació, podem reorganitzar l'equació per obtenir:
+
+xy - 2x - 2y >= 0
+
+Per simplificar-ho més, podem sumar 4 a tots dos costats, obtenint:
+
+xy - 2x - 2y + 4 >= 4
+
+A continuació, podem factoritzar l'expressió:
+
+(x - 2)(y - 2) >= 4
+
+Ara, podem analitzar les possibles combinacions de nombres enters per x i y que compleixin aquesta inequació. Tenim que x > 2 i y > 2, i també que (x - 2)(y - 2) >= 4.
+
+Per trobar les parelles (x, y) que compleixin aquesta inequació, podem començar per x = 3 i y = 3. En aquest cas, (x - 2)(y - 2) = (3 - 2)(3 - 2) = 1, que no és >= 4. Per tant, aquesta parella no compleix l'inequació.
+
+A continuació, podem intentar x = 3 i y = 4. En aquest cas, (x - 2)(y - 2) = (3 - 2)(4 - 2) = 2, que no és >= 4. Per tant, aquesta parella no compleix l'inequació.
+
+Continuant així, podem intentar x = 3 i y = 5, x = 3 i y = 6, x = 4 i y = 3, x = 4 i y = 4, x = 4 i y = 5, x = 4 i y = 6, x = 5 i y = 3, x = 5 i y = 4, x = 5 i y = 5, x = 5 i y = 6, x = 6 i y = 3, x = 6 i y = 4, x = 6 i y = 5, x = 6 i y = 6.
+
+Després d'analitzar totes aquestes combinacions, podem veure que les úniques parelles que compleixen l'inequació són:
+
+- (3, 7)
+- (4, 3)
+- (4, 4)
+- (4, 5)
+- (4, 6)
+- (5, 4)
+- (5, 5)
+- (5, 6)
+- (6, 4)
+- (6, 5)
+- (6, 6)
+
+Per tant, hi ha 11 parelles que compleixen l'inequació.
+
+Resposta: E)

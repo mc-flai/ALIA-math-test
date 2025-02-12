@@ -1,0 +1,13 @@
+Raonament:
+
+Per determinar quants nombres enters n tenen la propietat que |n² – 2n - 3| és un nombre primer, podem analitzar la expressió |n² – 2n - 3| i determinar quan és un nombre primer.
+
+|n² – 2n - 3| = |(n - 3)(n + 1)|
+
+Per a que |(n - 3)(n + 1)| siga un nombre primer, els factors (n - 3) i (n + 1) deben ser 1 i el nombre primer que estan multipliquant.
+
+Això ocorre quan n = 2 o n = 4, però quan n = 3, |n² – 2n - 3| = |3² – 2*3 - 3| = |9 - 6 - 3| = |0| = 0, que no és un nombre primer.
+
+Per tant, només hi ha dos nombres enters n que satisfen la condició: n = 2 i n = 4.
+
+Resposta: B) 2

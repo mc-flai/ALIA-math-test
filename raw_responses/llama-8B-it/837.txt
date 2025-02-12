@@ -1,0 +1,10 @@
+Raonament: 
+
+Per resoldre aquest problema, podem dividir-lo en dos casos: 
+
+1.  Les dues medalles d'or estan juntes. En aquest cas, podem considerar les dues medalles d'or com una unitat única. Aleshores, tenim tres unitats a disposició: la unitat de les dues medalles d'or, la medalla de plata i la medalla de bronze. Aquestes tres unitats poden ser ordenades de 3! = 6 maneres diferents. Però, dins de la unitat de les dues medalles d'or, les dues medalles d'or poden ser intercanviades, així que tenim 2! = 2 maneres diferents d'ordenar les medalles d'or. Per tant, en aquest cas, hi ha un total de 6 x 2 = 12 maneres diferents d'ordenar les medalles.
+2.  Les dues medalles d'or no estan juntes. En aquest cas, les quatre medalles estan separades i podem ordenar-les de 4! = 24 maneres diferents. Però, això inclou les ordenacions en les quals les dues medalles d'or estan juntes, que ja hem comptat en el cas anterior. Per tant, en aquest cas, hi ha un total de 24 - 12 = 12 maneres diferents d'ordenar les medalles.
+
+Per tant, en total, hi ha 12 + 12 = 24 maneres diferents d'ordenar les medalles.
+
+Resposta: D)

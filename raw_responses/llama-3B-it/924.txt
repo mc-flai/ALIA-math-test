@@ -1,0 +1,68 @@
+Raonament:
+
+Per determinar el nombre de triangles diferents amb perímetre igual a 20, podem utilitzar la següent lògica:
+
+1. Un triangle amb costats de longituds a, b i c té perímetre P = a + b + c.
+2. Per a que un triangle sigui un triangle, les següents condicions han de ser satisfetes:
+   - a + b > c
+   - a + c > b
+   - b + c > a
+3. Per a que el perímetre siga igual a 20, a + b + c = 20.
+
+Considerem els casos possibles per a les longitudes dels costats:
+
+- Cas 1: a = 1, b = 1, c = 18 (no és possible, ja que 1 + 1 < 18)
+- Cas 2: a = 1, b = 2, c = 17 (no és possible, ja que 1 + 2 < 17)
+- Cas 3: a = 1, b = 3, c = 16 (no és possible, ja que 1 + 3 < 16)
+- Cas 4: a = 1, b = 4, c = 15 (no és possible, ja que 1 + 4 < 15)
+- Cas 5: a = 1, b = 5, c = 14 (no és possible, ja que 1 + 5 < 14)
+- Cas 6: a = 1, b = 6, c = 13 (no és possible, ja que 1 + 6 < 13)
+- Cas 7: a = 1, b = 7, c = 12 (no és possible, ja que 1 + 7 < 12)
+- Cas 8: a = 1, b = 8, c = 11 (no és possible, ja que 1 + 8 < 11)
+- Cas 9: a = 1, b = 9, c = 10 (no és possible, ja que 1 + 9 < 10)
+- Cas 10: a = 1, b = 10, c = 9 (no és possible, ja que 1 + 10 > 9)
+- Cas 11: a = 1, b = 11, c = 8 (no és possible, ja que 1 + 11 > 8)
+- Cas 12: a = 1, b = 12, c = 7 (no és possible, ja que 1 + 12 > 7)
+- Cas 13: a = 1, b = 13, c = 6 (no és possible, ja que 1 + 13 > 6)
+- Cas 14: a = 1, b = 14, c = 5 (no és possible, ja que 1 + 14 > 5)
+- Cas 15: a = 1, b = 15, c = 4 (no és possible, ja que 1 + 15 > 4)
+- Cas 16: a = 1, b = 16, c = 3 (no és possible, ja que 1 + 16 > 3)
+- Cas 17: a = 1, b = 17, c = 2 (no és possible, ja que 1 + 17 > 2)
+- Cas 18: a = 1, b = 18, c = 1 (no és possible, ja que 1 + 18 > 1)
+- Cas 19: a = 2, b = 2, c = 16 (no és possible, ja que 2 + 2 < 16)
+- Cas 20: a = 2, b = 3, c = 15 (no és possible, ja que 2 + 3 < 15)
+- Cas 21: a = 2, b = 4, c = 14 (no és possible, ja que 2 + 4 < 14)
+- Cas 22: a = 2, b = 5, c = 13 (no és possible, ja que 2 + 5 < 13)
+- Cas 23: a = 2, b = 6, c = 12 (no és possible, ja que 2 + 6 < 12)
+- Cas 24: a = 2, b = 7, c = 11 (no és possible, ja que 2 + 7 < 11)
+- Cas 25: a = 2, b = 8, c = 10 (no és possible, ja que 2 + 8 > 10)
+- Cas 26: a = 2, b = 9, c = 9 (no és possible, ja que 2 + 9 > 9)
+- Cas 27: a = 2, b = 10, c = 8 (no és possible, ja que 2 + 10 > 8)
+- Cas 28: a = 2, b = 11, c = 7 (no és possible, ja que 2 + 11 > 7)
+- Cas 29: a = 2, b = 12, c = 6 (no és possible, ja que 2 + 12 > 6)
+- Cas 30: a = 2, b = 13, c = 5 (no és possible, ja que 2 + 13 > 5)
+- Cas 31: a = 2, b = 14, c = 4 (no és possible, ja que 2 + 14 > 4)
+- Cas 32: a = 2, b = 15, c = 3 (no és possible, ja que 2 + 15 > 3)
+- Cas 33: a = 2, b = 16, c = 2 (no és possible, ja que 2 + 16 > 2)
+- Cas 34: a = 2, b = 17, c = 1 (no és possible, ja que 2 + 17 > 1)
+- Cas 35: a = 3, b = 3, c = 14 (no és possible, ja que 3 + 3 < 14)
+- Cas 36: a = 3, b = 4, c = 13 (no és possible, ja que 3 + 4 < 13)
+- Cas 37: a = 3, b = 5, c = 12 (no és possible, ja que 3 + 5 < 12)
+- Cas 38: a = 3, b = 6, c = 11 (no és possible, ja que 3 + 6 < 11)
+- Cas 39: a = 3, b = 7, c = 10 (no és possible, ja que 3 + 7 > 10)
+- Cas 40: a = 3, b = 8, c = 9 (no és possible, ja que 3 + 8 > 9)
+- Cas 41: a = 3, b = 9, c = 8 (no és possible, ja que 3 + 9 > 8)
+- Cas 42: a = 3, b = 10, c = 7 (no és possible, ja que 3 + 10 > 7)
+- Cas 43: a = 3, b = 11, c = 6 (no és possible, ja que 3 + 11 > 6)
+- Cas 44: a = 3, b = 12, c = 5 (no és possible, ja que 3 + 12 > 5)
+- Cas 45: a = 3, b = 13, c = 4 (no és possible, ja que 3 + 13 > 4)
+- Cas 46: a = 3, b = 14, c = 3 (no és possible, ja que 3 + 14 > 3)
+- Cas 47: a = 3, b = 15, c = 2 (no és possible, ja que 3 + 15 > 2)
+- Cas 48: a = 3, b = 16, c = 1 (no és possible, ja que 3 + 16 > 1)
+- Cas 49: a = 4, b = 4, c = 12 (no és possible, ja que 4 + 4 < 12)
+- Cas 50: a = 4, b = 5, c = 11 (no és possible, ja que 4 + 5 < 11)
+- Cas 51: a = 4, b = 6, c = 10 (no és possible, ja que 4 + 6 > 10)
+- Cas 52: a = 4, b = 7, c = 9 (no és possible, ja que 4 + 7 > 9)
+- Cas 53: a = 4, b = 8, c = 8 (no és possible, ja que 4 + 8 > 8)
+- Cas 54: a = 4, b = 9, c = 7 (no és possible, ja que 4 + 9 > 7)
+- Cas 55: a =

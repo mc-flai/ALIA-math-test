@@ -1,0 +1,29 @@
+Raonament: 
+
+Per resoldre aquest problema, podem fer servir un mètode de prova i error. 
+
+Suposem que N és el nombre de xics. 
+
+Segons la primera condició, quan hi ha N xics, no sobra cap poma. Això significa que el nombre total de pomes és divisible per N. 
+
+Segons la segona condició, quan hi ha N - 2 xics, tocaria una poma més a cadascú. Això significa que el nombre total de pomes és divisible per N - 2. 
+
+Segons la tercera condició, quan hi ha N - 3 xics, tocarien dues pomes més a cadascú. Això significa que el nombre total de pomes és divisible per N - 3. 
+
+Ara, podem fer servir un mètode de prova i error per trobar el valor de N. 
+
+Provaré amb les opcions donades:
+
+- Si N = 6, el nombre total de pomes seria 6k, on k és un nombre enter. Quan hi ha 6 xics, no sobra cap poma, però quan hi ha 4 xics, tocaria una poma més a cadascú, i quan hi ha 3 xics, tocarien dues pomes més a cadascú. Això és consistent amb les condicions donades.
+
+- Si N = 8, el nombre total de pomes seria 8k, on k és un nombre enter. Quan hi ha 8 xics, no sobra cap poma, però quan hi ha 6 xics, tocaria una poma més a cadascú, i quan hi ha 5 xics, tocarien dues pomes més a cadascú. Això no és consistent amb les condicions donades.
+
+- Si N = 9, el nombre total de pomes seria 9k, on k és un nombre enter. Quan hi ha 9 xics, no sobra cap poma, però quan hi ha 7 xics, tocaria una poma més a cadascú, i quan hi ha 6 xics, tocarien dues pomes més a cadascú. Això no és consistent amb les condicions donades.
+
+- Si N = 10, el nombre total de pomes seria 10k, on k és un nombre enter. Quan hi ha 10 xics, no sobra cap poma, però quan hi ha 8 xics, tocaria una poma més a cadascú, i quan hi ha 7 xics, tocarien dues pomes més a cadascú. Això no és consistent amb les condicions donades.
+
+- Si N = 12, el nombre total de pomes seria 12k, on k és un nombre enter. Quan hi ha 12 xics, no sobra cap poma, però quan hi ha 10 xics, tocaria una poma més a cadascú, i quan hi ha 9 xics, tocarien dues pomes més a cadascú. Això no és consistent amb les condicions donades.
+
+Per tant, el valor de N és 6.
+
+Resposta: A)

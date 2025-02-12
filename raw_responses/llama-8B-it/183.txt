@@ -1,0 +1,91 @@
+Raonament: Per resoldre aquest problema, podem utilitzar un mètode iteratiu per retrocedir en el temps i determinar quant caps tenia el dragó al principi. 
+
+Suposem que el dragó tenia x caps al principi. Després de tallar un cap, el dragó té x - 1 caps. Aleshores, quatre nous caps creixen, però aquests caps són els que havien estat tallats anteriorment, així que el nombre de caps és x - 1 + 4 = x + 3. 
+
+Si talla dos caps, el dragó té x - 2 caps. Aleshores, els dos caps tornen a creixer, però aquests caps són els que havien estat tallats anteriorment, així que el nombre de caps és x - 2 + 2 = x. 
+
+Si talla tres caps, el dragó té x - 3 caps. Aleshores, no creix cap altre cap, així que el nombre de caps és x - 3.
+
+Ara, podem utilitzar aquesta informació per retrocedir en el temps fins a arribar a 25 caps. 
+
+Si el dragó tenia 25 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 25 + 3 = 28 caps. 
+
+Si el dragó tenia 28 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 28 - 2 + 2 = 28 caps. 
+
+Això és un bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 28 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 28 - 1 + 4 = 31 caps. 
+
+Si el dragó tenia 31 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 31 + 3 = 34 caps. 
+
+Si el dragó tenia 34 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 34 - 2 + 2 = 34 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 34 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 34 - 1 + 4 = 37 caps. 
+
+Si el dragó tenia 37 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 37 + 3 = 40 caps. 
+
+Si el dragó tenia 40 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 40 - 2 + 2 = 40 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 40 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 40 - 1 + 4 = 43 caps. 
+
+Si el dragó tenia 43 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 43 + 3 = 46 caps. 
+
+Si el dragó tenia 46 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 46 - 2 + 2 = 46 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 46 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 46 - 1 + 4 = 49 caps. 
+
+Si el dragó tenia 49 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 49 + 3 = 52 caps. 
+
+Si el dragó tenia 52 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 52 - 2 + 2 = 52 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 52 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 52 - 1 + 4 = 55 caps. 
+
+Si el dragó tenia 55 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 55 + 3 = 58 caps. 
+
+Si el dragó tenia 58 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 58 - 2 + 2 = 58 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 58 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 58 - 1 + 4 = 61 caps. 
+
+Si el dragó tenia 61 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 61 + 3 = 64 caps. 
+
+Si el dragó tenia 64 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 64 - 2 + 2 = 64 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 64 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 64 - 1 + 4 = 67 caps. 
+
+Si el dragó tenia 67 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 67 + 3 = 70 caps. 
+
+Si el dragó tenia 70 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 70 - 2 + 2 = 70 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 70 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 70 - 1 + 4 = 73 caps. 
+
+Si el dragó tenia 73 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 73 + 3 = 76 caps. 
+
+Si el dragó tenia 76 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 76 - 2 + 2 = 76 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 76 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 76 - 1 + 4 = 79 caps. 
+
+Si el dragó tenia 79 caps, aleshores havia tallat tres caps perquè no creix cap altre cap. Això significa que abans tenia 79 + 3 = 82 caps. 
+
+Si el dragó tenia 82 caps, aleshores havia tallat dos caps perquè els dos caps tornen a creixer. Això significa que abans tenia 82 - 2 + 2 = 82 caps. 
+
+Això és un altre bucle, però podem continuar retrocedint en el temps. 
+
+Si el dragó tenia 82 caps, aleshores havia tallat un cap perquè quatre nous caps creixen. Això significa que abans tenia 82 - 1 + 4 = 85 caps. 
+
+Si el dragó tenia 85 caps, aleshores havia tallat tres

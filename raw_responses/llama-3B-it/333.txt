@@ -1,0 +1,21 @@
+Raonament:
+
+Per trobar el valor més gran possible de la fracció, vull considerar les restriccions donades:
+
+1. El numerador i el denominador són nombres enters positius.
+2. La suma dels quals és menor o igual a 103.
+3. La fracció és menor a 3.
+
+Empecem per considerar les opcions que tenen un denominador gran, ja que la fracció és menor a 3. Si el denominador fos 77, el numerador hauria de ser menor o igual a 77/3 = 25,4, però el numerador és un nombre enter, però 77+25=102, que és menor a 103, però 77+26=103, que és major a 103.
+
+Per tant, el denominador més gran possible és 77. A continuació, considerem les opcions amb denominador 77:
+
+- Opció A: 27/77. La suma dels quals és 104, que és major a 103.
+- Opció B: 26/77. La suma dels quals és 103, que és igual a 103.
+- Opció C: 25/76. La suma dels quals és 101, que és menor a 103.
+- Opció D: 25/77. La suma dels quals és 102, que és menor a 103.
+- Opció E: 26/75. La suma dels quals és 101, que és menor a 103.
+
+Per tant, la resposta correcta és:
+
+Resposta: B) 26/77

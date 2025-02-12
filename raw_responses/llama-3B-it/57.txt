@@ -1,0 +1,31 @@
+Raonament:
+
+Per determinar la probabilitat que c sigui un nombre parell, hem de analitzar les possibles sortides de la màquina per cada introducció.
+
+1. Introduïm el nombre 1 a la màquina i en surt a. Hi ha quatre possibles sortides:
+   - a = 1 + 2 = 3 (impar)
+   - a = 1 + 3 = 4 (parell)
+   - a = 1 × 2 = 2 (parell)
+   - a = 1 × 3 = 3 (impar)
+
+   Així, la probabilitat de sortir un nombre parell en aquesta etapa és 2/4 = 1/2.
+
+2. Introduïm a a la màquina i en surt b. Hi ha quatre possibles sortides:
+   - b = a + 2 = 3 + 2 = 5 (impar)
+   - b = a + 3 = 4 + 3 = 7 (impar)
+   - b = a × 2 = 2 × 2 = 4 (parell)
+   - b = a × 3 = 2 × 3 = 6 (parell)
+
+   Així, la probabilitat de sortir un nombre parell en aquesta etapa és 2/4 = 1/2.
+
+3. Introduïm b a la màquina i en surt c. Hi ha quatre possibles sortides:
+   - c = b + 2 = 4 + 2 = 6 (parell)
+   - c = b + 3 = 7 + 3 = 10 (parell)
+   - c = b × 2 = 6 × 2 = 12 (parell)
+   - c = b × 3 = 6 × 3 = 18 (impar)
+
+   Així, la probabilitat de sortir un nombre parell en aquesta etapa és 3/4.
+
+Per tant, la probabilitat que c sigui un nombre parell és 3/4.
+
+Resposta: C) 11/16

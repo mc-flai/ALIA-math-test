@@ -1,0 +1,31 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el mètode de la lògica deductiva. 
+
+La primera informació diu que el tresor és a Cabrera o a Sa Conillera. 
+
+La segona informació diu que el tresor és a Eivissa. 
+
+La tercera informació diu que el tresor és a Formentera. 
+
+La quarta informació diu que el tresor no és a Sa Conillera. 
+
+A partir d'aquestes informacions, podem fer les següents observacions:
+
+- Si el tresor és a Eivissa (informació 2), llavors no és a Cabrera (perquè la informació 1 diu que és a Cabrera o a Sa Conillera) i no és a Formentera (perquè la informació 3 diu que és a Formentera). Però la informació 4 diu que no és a Sa Conillera, però això no té cap relació amb les altres illes. 
+
+- Si el tresor és a Formentera (informació 3), llavors no és a Cabrera (perquè la informació 1 diu que és a Cabrera o a Sa Conillera) i no és a Eivissa (perquè la informació 2 diu que és a Eivissa). Però la informació 4 diu que no és a Sa Conillera, però això no té cap relació amb les altres illes.
+
+- Si el tresor és a Cabrera (informació 1), llavors no és a Eivissa (perquè la informació 2 diu que és a Eivissa) i no és a Formentera (perquè la informació 3 diu que és a Formentera). Però la informació 4 diu que no és a Sa Conillera, però això no té cap relació amb les altres illes.
+
+- Si el tresor és a Sa Conillera (informació 1), llavors no és a Eivissa (perquè la informació 2 diu que és a Eivissa) i no és a Formentera (perquè la informació 3 diu que és a Formentera). Però la informació 4 diu que no és a Sa Conillera, però això és contradictori amb la informació 1.
+
+A partir de les observacions anteriors, podem concloure que la informació 4 és la que ens dona la clau per resoldre el problema. Si el tresor no és a Sa Conillera, llavors la informació 1 és falsa, perquè diu que el tresor és a Cabrera o a Sa Conillera. Però si la informació 1 és falsa, llavors la informació 2 o la informació 3 també ha de ser falsa, perquè diuen que el tresor és a Eivissa o a Formentera, respectivament.
+
+Però si la informació 2 o la informació 3 és falsa, llavors la informació 4 és la que ens dona la clau per resoldre el problema. Si el tresor no és a Sa Conillera, llavors la informació 2 o la informació 3 ha de ser certa, perquè diuen que el tresor és a Eivissa o a Formentera, respectivament.
+
+Però si la informació 2 és certa, llavors el tresor és a Eivissa, i la informació 3 és falsa. Però si la informació 3 és certa, llavors el tresor és a Formentera, i la informació 2 és falsa.
+
+Per tant, la resposta correcta és la que diu que el tresor està enterrat a Eivissa.
+
+Resposta: B)

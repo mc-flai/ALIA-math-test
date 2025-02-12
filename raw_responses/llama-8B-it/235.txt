@@ -1,0 +1,61 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar substituint x = 0 a la primera equació f(x) = 2f(x + 1). Això ens dona f(0) = 2f(1).
+
+A continuació, podem substituir x = 1 a la primera equació, obtenint f(1) = 2f(2). Com que sabem que f(0) = 2f(1), podem substituir aquesta expressió per obtenir f(0) = 2(2f(2)), que es simplifica a f(0) = 4f(2).
+
+Ara, podem substituir x = 2 a la primera equació, obtenint f(2) = 2f(3). Com que sabem que f(0) = 4f(2), podem substituir aquesta expressió per obtenir f(0) = 4(2f(3)), que es simplifica a f(0) = 8f(3).
+
+Continuant aquest procés, podem observar que f(0) = 2^n f(n), on n és un enter positiu.
+
+Ara, podem substituir x = 0 i y = 2016 a la segona equació f(x + y) = f(x) · f(y), obtenint f(2016) = f(0) · f(2016).
+
+Com que sabem que f(0) = 2^n f(n), podem substituir aquesta expressió per obtenir f(2016) = 2^n f(n) · f(2016).
+
+Per simplificar, podem cancel·lar f(2016) dels dos costats de l'equació, obtenint 1 = 2^n f(n).
+
+Ara, podem substituir x = 2014 i y = 2 a la segona equació f(x + y) = f(x) · f(y), obtenint f(2016) = f(2014) · f(2).
+
+Com que sabem que f(2016) = 2^n f(n), podem substituir aquesta expressió per obtenir 2^n f(n) = f(2014) · f(2).
+
+Per simplificar, podem cancel·lar f(2) dels dos costats de l'equació, obtenint 2^n f(n) / f(2) = f(2014).
+
+Ara, podem substituir n = 2014 a l'expressió 1 = 2^n f(n), obtenint 1 = 2^2014 f(2014).
+
+Per simplificar, podem cancel·lar 2^2014 dels dos costats de l'equació, obtenint 1 / 2^2014 = f(2014).
+
+Finalment, podem substituir aquesta expressió per f(2014) a l'equació 2^n f(n) / f(2) = f(2014), obtenint 2^n f(n) / f(2) = 1 / 2^2014.
+
+Per simplificar, podem cancel·lar 2^n f(n) dels dos costats de l'equació, obtenint f(2) / 2^n f(n) = 1 / 2^2014.
+
+Ara, podem substituir n = 2014 a l'expressió f(0) = 2^n f(n), obtenint f(0) = 2^2014 f(2014).
+
+Com que sabem que f(0) = 2^n f(n), podem substituir aquesta expressió per obtenir 2^2014 f(2014) = 2^2014 f(2014).
+
+Per simplificar, podem cancel·lar 2^2014 f(2014) dels dos costats de l'equació, obtenint 1 = 1.
+
+Ara, podem substituir aquesta expressió per f(2) a l'equació f(2) / 2^n f(n) = 1 / 2^2014, obtenint f(2) / 2^n f(n) = 1 / 2^2014.
+
+Per simplificar, podem cancel·lar 2^n f(n) dels dos costats de l'equació, obtenint f(2) = 2^2014 / 2^n f(n).
+
+Ara, podem substituir n = 2014 a l'expressió f(0) = 2^n f(n), obtenint f(0) = 2^2014 f(2014).
+
+Com que sabem que f(0) = 2^n f(n), podem substituir aquesta expressió per obtenir 2^2014 f(2014) = 2^2014 f(2014).
+
+Per simplificar, podem cancel·lar 2^2014 f(2014) dels dos costats de l'equació, obtenint 1 = 1.
+
+Ara, podem substituir aquesta expressió per f(2) a l'equació f(2) = 2^2014 / 2^n f(n), obtenint f(2) = 2^2014 / 2^2014 f(2014).
+
+Per simplificar, podem cancel·lar 2^2014 dels dos costats de l'equació, obtenint f(2) = 1 / f(2014).
+
+Finalment, podem substituir aquesta expressió per f(2) a l'equació f(2016) = f(2014) · f(2), obtenint f(2016) = f(2014) · 1 / f(2014).
+
+Per simplificar, podem cancel·lar f(2014) dels dos costats de l'equació, obtenint f(2016) = 1.
+
+Ara, podem substituir aquesta expressió per f(2016) a l'equació f(2016) / f(2014) =?, obtenint 1 / f(2014) =?.
+
+Per simplificar, podem cancel·lar f(2014) dels dos costats de l'equació, obtenint 1 =?.
+
+La resposta és A) 1.
+
+Resposta: A) 

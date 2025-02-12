@@ -1,0 +1,132 @@
+Raonament: 
+
+Per trobar la quantitat màxima que Anna pot haver obtingut, hem de considerar les següents condicions:
+
+1. El nombre 1 ha aparegut més vegades que qualsevol altre nombre.
+2. Tots els nombres de l'1 al 6 han aparegut almenys una vegada.
+3. Anna ha tirat el dau 24 vegades.
+
+Per maximitzar la suma, volem que el nombre 1 aparegui el màxim possible de vegades. Com que cada nombre ha aparegut almenys una vegada, podem assignar un mínim de 1 a cada nombre. Això deixa 23 tirs restants per al nombre 1.
+
+Suposem que el nombre 1 apareix 10 vegades (el màxim possible, ja que hi ha 23 tirs restants). Això significa que els altres nombres (2, 3, 4, 5 i 6) apareixeran 1 vegada cada un.
+
+La suma màxima seria:
+
+(1 x 10) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 10 + 2 + 3 + 4 + 5 + 6
+= 30
+
+Però aquesta és la suma màxima per als 10 tirs del nombre 1. Per als 14 tirs restants, podem assignar el nombre 1 de manera que aparegui 7 vegades (el màxim possible) i els altres nombres apareguin 1 vegada cada un.
+
+La suma màxima per aquests 14 tirs seria:
+
+(1 x 7) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 7 + 2 + 3 + 4 + 5 + 6
+= 27
+
+Ara, sumem les dues sumes màximes:
+
+30 + 27
+= 57
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 12 vegades (el màxim possible, ja que hi ha 12 tirs restants). Això significa que els altres nombres (2, 3, 4, 5 i 6) apareixeran 1 vegada cada un.
+
+La suma màxima seria:
+
+(1 x 12) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 12 + 2 + 3 + 4 + 5 + 6
+= 32
+
+Però aquesta és la suma màxima per als 12 tirs del nombre 1. Per als 12 tirs restants, podem assignar el nombre 1 de manera que aparegui 6 vegades (el màxim possible) i els altres nombres apareguin 1 vegada cada un.
+
+La suma màxima per aquests 12 tirs seria:
+
+(1 x 6) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 6 + 2 + 3 + 4 + 5 + 6
+= 26
+
+Ara, sumem les dues sumes màximes:
+
+32 + 26
+= 58
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 15 vegades (el màxim possible, ja que hi ha 9 tirs restants). Això significa que els altres nombres (2, 3, 4, 5 i 6) apareixeran 1 vegada cada un.
+
+La suma màxima seria:
+
+(1 x 15) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 15 + 2 + 3 + 4 + 5 + 6
+= 35
+
+Però aquesta és la suma màxima per als 15 tirs del nombre 1. Per als 9 tirs restants, podem assignar el nombre 1 de manera que aparegui 5 vegades (el màxim possible) i els altres nombres apareguin 1 vegada cada un.
+
+La suma màxima per aquests 9 tirs seria:
+
+(1 x 5) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 5 + 2 + 3 + 4 + 5 + 6
+= 25
+
+Ara, sumem les dues sumes màximes:
+
+35 + 25
+= 60
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 18 vegades (el màxim possible, ja que hi ha 6 tirs restants). Això significa que els altres nombres (2, 3, 4, 5 i 6) apareixeran 1 vegada cada un.
+
+La suma màxima seria:
+
+(1 x 18) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 18 + 2 + 3 + 4 + 5 + 6
+= 38
+
+Però aquesta és la suma màxima per als 18 tirs del nombre 1. Per als 6 tirs restants, podem assignar el nombre 1 de manera que aparegui 4 vegades (el màxim possible) i els altres nombres apareguin 1 vegada cada un.
+
+La suma màxima per aquests 6 tirs seria:
+
+(1 x 4) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 4 + 2 + 3 + 4 + 5 + 6
+= 24
+
+Ara, sumem les dues sumes màximes:
+
+38 + 24
+= 62
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 21 vegades (el màxim possible, ja que hi ha 3 tirs restants). Això significa que els altres nombres (2, 3, 4, 5 i 6) apareixeran 1 vegada cada un.
+
+La suma màxima seria:
+
+(1 x 21) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 21 + 2 + 3 + 4 + 5 + 6
+= 41
+
+Però aquesta és la suma màxima per als 21 tirs del nombre 1. Per als 3 tirs restants, podem assignar el nombre 1 de manera que aparegui 3 vegades (el màxim possible) i els altres nombres apareguin 1 vegada cada un.
+
+La suma màxima per aquests 3 tirs seria:
+
+(1 x 3) + (2 x 1) + (3 x 1) + (4 x 1) + (5 x 1) + (6 x 1)
+= 3 + 2 + 3 + 4 + 5 + 6
+= 23
+
+Ara, sumem les dues sumes màximes:
+
+41 + 23
+= 64
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 24 vegades (el màxim possible). Això significa que els altres nombres (2, 3, 4, 5 i 6) no apareixeran.
+
+La suma màxima seria:
+
+(1 x 24)
+= 24
+
+Però aquesta és la suma màxima per als 24 tirs. Ara, sumem les dues sumes màximes:
+
+24 + 0
+= 24
+
+Però aquesta és la suma màxima per als 24 tirs. Però encara podem fer que el nombre 1 aparegui més vegades. Suposem que el nombre 1 apareix 25 vegades (el màxim possible). Això significa que els altres nombres (2, 3, 4, 5 i 6) no apareixeran.
+
+La suma màxima seria:
+
+(1

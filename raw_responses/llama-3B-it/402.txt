@@ -1,0 +1,17 @@
+Raonament:
+
+Per determinar el valor més gran de (N+M)/(N-M), podem analitzar la fórmula i les restriccions donades.
+
+Dades:
+- 51 ≤ N ≤ 101
+- 19 < M < 49
+
+Aquestes restriccions ens diuen que N és un nombre entretant 51 i 101, i M és un nombre entretant 19 i 49.
+
+La fórmula (N+M)/(N-M) es similar a la fórmula per calcular la mitjana aritmètica, però amb un signe negatiu en el denominador. Això significa que quan N és major que M, la fórmula tendeix a ser més gran, i quan N és menor que M, la fórmula tendeix a ser més petit.
+
+Per determinar el valor més gran de la fórmula, volem que N siga tan gran com possible, ja que és el numerador. El valor més petit de M és 20, però M no pot ser igual a 20, per tant, M pot ser 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 o 48.
+
+Però, si M és 48, N pot ser 100 i la fórmula serà (100+48)/(100-48) = 148/52 = 2,84615, que és el valor més gran possible.
+
+Resposta: D) 50

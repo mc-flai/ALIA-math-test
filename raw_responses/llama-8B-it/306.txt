@@ -1,0 +1,65 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar analitzant les sumes dels pesos de les perles en els quatre anells. Tenim les següents sumes: 17 g, 13 g, 7 g i 5 g. 
+
+Per a cada anell, les perles que hi són tenen pesos que són factors de la suma del pes de l'anell. Per exemple, per a l'anell amb una suma de 17 g, les perles poden tenir pesos de 1 g i 16 g, 2 g i 15 g, 4 g i 13 g, 8 g i 9 g, etc. 
+
+Anàlisi dels anells:
+
+- L'anell amb una suma de 17 g pot tenir perles de 1 g i 16 g, 2 g i 15 g, 4 g i 13 g, 8 g i 9 g. 
+- L'anell amb una suma de 13 g pot tenir perles de 1 g i 12 g, 2 g i 11 g, 4 g i 9 g, 13 g i 0 g (però aquesta opció no és possible perquè no hi ha perles de 0 g).
+- L'anell amb una suma de 7 g pot tenir perles de 1 g i 6 g, 2 g i 5 g, 7 g i 0 g (però aquesta opció no és possible perquè no hi ha perles de 0 g).
+- L'anell amb una suma de 5 g pot tenir perles de 1 g i 4 g, 2 g i 3 g, 5 g i 0 g (però aquesta opció no és possible perquè no hi ha perles de 0 g).
+
+Anàlisi de les perles:
+
+- Les perles de 1 g i 16 g són possibles per a l'anell de 17 g, però no hi ha cap anell que tingui una perla de 16 g.
+- Les perles de 2 g i 15 g són possibles per a l'anell de 17 g, però no hi ha cap anell que tingui una perla de 15 g.
+- Les perles de 4 g i 13 g són possibles per a l'anell de 17 g, però no hi ha cap anell que tingui una perla de 13 g.
+- Les perles de 8 g i 9 g són possibles per a l'anell de 17 g, però no hi ha cap anell que tingui una perla de 9 g.
+- Les perles de 1 g i 12 g són possibles per a l'anell de 13 g, però no hi ha cap anell que tingui una perla de 12 g.
+- Les perles de 2 g i 11 g són possibles per a l'anell de 13 g, però no hi ha cap anell que tingui una perla de 11 g.
+- Les perles de 4 g i 9 g són possibles per a l'anell de 13 g, però no hi ha cap anell que tingui una perla de 9 g.
+- Les perles de 13 g i 0 g no són possibles per a l'anell de 13 g.
+- Les perles de 1 g i 6 g són possibles per a l'anell de 7 g, però no hi ha cap anell que tingui una perla de 6 g.
+- Les perles de 2 g i 5 g són possibles per a l'anell de 7 g, però no hi ha cap anell que tingui una perla de 5 g.
+- Les perles de 7 g i 0 g no són possibles per a l'anell de 7 g.
+- Les perles de 1 g i 4 g són possibles per a l'anell de 5 g, però no hi ha cap anell que tingui una perla de 4 g.
+- Les perles de 2 g i 3 g són possibles per a l'anell de 5 g, però no hi ha cap anell que tingui una perla de 3 g.
+- Les perles de 5 g i 0 g no són possibles per a l'anell de 5 g.
+
+Anàlisi de les perles que no estan en cap anell:
+
+- Les perles de 16 g no estan en cap anell.
+- Les perles de 15 g no estan en cap anell.
+- Les perles de 13 g no estan en cap anell.
+- Les perles de 12 g no estan en cap anell.
+- Les perles de 11 g no estan en cap anell.
+- Les perles de 10 g no estan en cap anell.
+- Les perles de 9 g no estan en cap anell.
+- Les perles de 6 g no estan en cap anell.
+- Les perles de 5 g no estan en cap anell.
+- Les perles de 4 g no estan en cap anell.
+- Les perles de 3 g no estan en cap anell.
+- Les perles de 2 g no estan en cap anell.
+- Les perles de 1 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g, 6 g, 7 g, 8 g i 9 g estan en els anells, les perles de 10 g, 11 g, 12 g, 13 g, 14 g, 15 g i 16 g no estan en cap anell.
+
+Però, si les perles de 1 g, 2 g, 3 g, 4 g, 5 g,

@@ -1,0 +1,13 @@
+Raonament: Per trobar el valor més gran possible de la fracció, necessitem maximitzar el numerador i el denominador mentre que la suma dels quals és menor o igual a 103 i la fracció és menor a 3.
+
+Comencem per considerar la condició que la fracció és menor a 3. Això significa que el numerador dividit pel denominador és menor que 3. Per exemple, si el denominador és 4, el numerador no pot ser més gran que 2 (perquè 2/4 = 0,5, que és menor que 3).
+
+Ara, considerem la condició que la suma del numerador i el denominador és menor o igual a 103. Per maximitzar la fracció, volem que el numerador i el denominador siguin el més grans possible. Comencem per considerar el cas on el denominador és el més gran possible, que és 76 (perquè 76 + 27 = 103, que és la suma màxima possible).
+
+Si el denominador és 76, el numerador ha de ser 27 (perquè 76 + 27 = 103). Això dona la fracció 27/76, però aquesta fracció és igual a 3,5, que és major o igual a 3. Això no és acceptable.
+
+Ara, considerem el cas on el denominador és 77 (perquè 77 + 26 = 103). Si el denominador és 77, el numerador ha de ser 26 (perquè 77 + 26 = 103). Això dona la fracció 26/77, que és menor que 3.
+
+Per tant, el valor més gran possible de la fracció és 26/77.
+
+Resposta: B)

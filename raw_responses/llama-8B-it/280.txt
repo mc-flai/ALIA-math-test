@@ -1,0 +1,9 @@
+Raonament: Per calcular el nombre de zeros al final del producte, podem utilitzar la fórmula de Legendre, que estableix que el nombre de zeros finals en un producte de nombres consecutius és igual al nombre de parells de 5 en els factors del producte.
+
+En aquest cas, els factors del producte són els nombres del 1 al 20. Per trobar el nombre de parells de 5, podem comptar els factors que contenen un 5. Hi ha factors que contenen un 5: 5, 10, 15 i 20. Aquests factors contenen un total de 4 cincs.
+
+Però, també cal comptar els factors que contenen dos cincs, ja que aquests també contribueixen a un zero final. En aquest cas, el factor 10 conté dos cincs. Això significa que hi ha un parell de 5 addicional que contribueix a un zero final.
+
+Per tant, el nombre total de zeros finals és 4 (del 5, 15 i 20) + 1 (del 10) = 5.
+
+Resposta: E)

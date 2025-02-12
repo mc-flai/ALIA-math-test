@@ -1,0 +1,47 @@
+Raonament:
+
+Per resolver aquesta pregunta, podem començar analitzant la suma d'expressions que s'apresenta:
+
+1/n + 2/(n-1) + 3/(n-2) +... + (n-1)/2 + n/1 = 11, 15
+
+Aquesta suma sembla una progressió aritmètica, però no és exactament això. En comptes d'addir un terme constant, cada terme està format per un numerador que augmenta i un denominador que disminueix.
+
+Per simplificar la suma, podem intentar reescriure-la de manera que les fraccions estiguin més fàcils de manipular. Una forma d'ho fer és reescriure cada terme com una fracció amb un denominador comú.
+
+1/n = (n-1+1)/(n-1) = (n-1)/n + 1/n
+
+2/(n-1) = (2-1+1)/(n-1) = 2/n - 1/(n-1)
+
+3/(n-2) = (3-1+2)/(n-2) = 3/n - 2/(n-1) + 1/(n-2)
+
+En general, el terme k/n = (k-1+1)/(n-1) = k/n - (k-1)/(n-1) + (k-2)/(n-2) +... + 1/n
+
+Si sumem tots aquests termes, podem veure que la majoria dels termes cancelen-se:
+
+1/n + 2/(n-1) + 3/(n-2) +... + (n-1)/2 + n/1 = n/n + (1+2+...+(n-1))/n
+
+El numerador de la dreta és una progressió aritmètica, que es pot simplificar utilitzant la fórmula per la suma d'una progressió aritmètica:
+
+1+2+...+(n-1) = (n-1)n/2
+
+Així, la suma original es pot simplificar a:
+
+n/n + (n-1)n/2n = 1 + (n-1)/2
+
+Per això, la suma original es pot escriure com:
+
+1 + (n-1)/2 = 11, 15
+
+Aquesta equació es pot simplificar a:
+
+(n-1)/2 = 10, 14
+
+Multiplicant per 2, obtenim:
+
+n-1 = 20, 28
+
+Això significa que n = 21 o n = 29.
+
+Però, si n = 29, la suma original no seria igual a 11, 15. Per tant, la resposta correcta és n = 21.
+
+Resposta: A) 5

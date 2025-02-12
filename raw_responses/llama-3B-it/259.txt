@@ -1,0 +1,27 @@
+Raonament:
+
+Per determinar el valor total en cèntims de les monedes, hem de considerar les possibilitats de combinar monedes de 2 i 5 cèntims.
+
+- Si Dani té 21 monedes, el valor total en cèntims és igual a 2x + 5y, on x és el nombre de monedes de 2 cèntims i y és el nombre de monedes de 5 cèntims.
+
+- El valor total en cèntims ha de ser un nombre entir, per tant, 2x + 5y és un nombre entir.
+
+- També hem de considerar que el valor total en cèntims no pot ser negatiu, per tant, 2x + 5y ≥ 0.
+
+- Per a cada valor de y, podem calcular el valor de x que satisfà la condició 2x + 5y ≥ 0.
+
+- Per exemple, si y = 0, x ≥ 0. Si y = 1, x ≥ -5/2, que és un nombre entir, per tant x ≥ 0. Si y = 2, x ≥ -15/2, que és un nombre entir, per tant x ≥ 0.
+
+- Podem continuar aquesta lògica per cada valor de y fins a 21.
+
+- Després, podem calcular el valor total en cèntims per cada valor de y.
+
+- Després, podem comparar els valors totals en cèntims amb les opcions de resposta.
+
+- Després, podem determinar quin dels valors totals en cèntims no pot ser el valor total en cèntims de les monedes.
+
+- Després, podem determinar la resposta correcta.
+
+Després de calcular els valors totals en cèntims per cada valor de y, podem determinar que el valor total en cèntims que no pot ser el valor total en cèntims de les monedes és 81.
+
+Resposta: D)

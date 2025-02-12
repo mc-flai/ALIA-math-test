@@ -1,0 +1,31 @@
+Raonament: 
+
+Per resoldre aquest problema, cal calcular els volums de les dues esferes i dividir-los. 
+
+El volum d'una esfera es dona per la fórmula V = (4/3)πr³, on r és el radi de l'esfera.
+
+Per a l'esfera circumscrita en el cub, el radi és igual a la longitud del costat del cub, que anomenem s. Així, el volum de l'esfera circumscrita és:
+
+V_circumscrita = (4/3)πs³
+
+Per a l'esfera inscrita en el cub, el radi és igual a la longitud del costat del cub dividit per 2, ja que l'esfera està inscrita en el cub. Així, el volum de l'esfera inscrita és:
+
+V_inscrita = (4/3)π(s/2)³
+
+Per dividir els volums, podem simplificar la fórmula:
+
+V_circumscrita / V_inscrita = ((4/3)πs³) / ((4/3)π(s/2)³)
+
+Els termes (4/3)π es cancel·len, deixant-nos:
+
+V_circumscrita / V_inscrita = s³ / (s/2)³
+
+Simplificant més, obtenim:
+
+V_circumscrita / V_inscrita = s³ / (s³/8)
+
+V_circumscrita / V_inscrita = 8
+
+Però aquesta és la resposta en termes de s. Però la resposta és en termes de una constant. Per això, podem simplificar la resposta a 2√2.
+
+Resposta: D)

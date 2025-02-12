@@ -1,0 +1,33 @@
+Raonament:
+
+Per determinar la quantitat més gran de nombres bonics consecutius que podem trobar, em vaig enfocar en analitzar els possibles casos i limitar les possibilitats.
+
+Un nombre de tres xifres és bonic si la xifra central és més gran que la suma de les altres dues xifres. Em vaig preguntar-me quin és el límit màxim per a la xifra central, que és 9, ja que és la xifra més gran que podem tenir en un nombre de tres xifres.
+
+Em vaig començar per analitzar els casos possibles per a la xifra central:
+
+- Si la xifra central és 9, la suma de les altres dues xifres ha de ser menor o igual a 8. Les possibilitats més grans per a les altres dues xifres són 8 i 0, 7 i 1, 6 i 2, 5 i 3, 4 i 4. Això significa que podem tenir nombres bonics consecutius com 909, 970, 962, 953, 944.
+
+- Si la xifra central és 8, la suma de les altres dues xifres ha de ser menor o igual a 7. Les possibilitats més grans per a les altres dues xifres són 7 i 0, 6 i 1, 5 i 2, 4 i 3, 3 i 4. Això significa que podem tenir nombres bonics consecutius com 808, 761, 752, 744, 734.
+
+- Si la xifra central és 7, la suma de les altres dues xifres ha de ser menor o igual a 6. Les possibilitats més grans per a les altres dues xifres són 6 i 0, 5 i 1, 4 i 2, 3 i 3. Això significa que podem tenir nombres bonics consecutius com 707, 601, 521, 522.
+
+- Si la xifra central és 6, la suma de les altres dues xifres ha de ser menor o igual a 5. Les possibilitats més grans per a les altres dues xifres són 5 i 0, 4 i 1, 3 i 2. Això significa que podem tenir nombres bonics consecutius com 606, 541, 532.
+
+- Si la xifra central és 5, la suma de les altres dues xifres ha de ser menor o igual a 4. Les possibilitats més grans per a les altres dues xifres són 4 i 0, 3 i 1, 2 i 2. Això significa que podem tenir nombres bonics consecutius com 505, 431, 422.
+
+- Si la xifra central és 4, la suma de les altres dues xifres ha de ser menor o igual a 3. Les possibilitats més grans per a les altres dues xifres són 3 i 0, 2 i 1. Això significa que podem tenir nombres bonics consecutius com 404, 321.
+
+- Si la xifra central és 3, la suma de les altres dues xifres ha de ser menor o igual a 2. Les possibilitats més grans per a les altres dues xifres són 2 i 0, 1 i 1. Això significa que podem tenir nombres bonics consecutius com 303, 211.
+
+- Si la xifra central és 2, la suma de les altres dues xifres ha de ser menor o igual a 1. Les possibilitats més grans per a les altres dues xifres són 1 i 0. Això significa que podem tenir nombres bonics consecutius com 202.
+
+- Si la xifra central és 1, no podem tenir nombres bonics consecutius.
+
+Després, em vaig unir tots els nombres bonics consecutius que he trobat i els vaig ordenar de menor a major. Els nombres bonics consecutius que he trobat són:
+
+909, 970, 962, 953, 944, 808, 761, 752, 744, 734, 707, 601, 521, 522, 606, 541, 532, 505, 431, 422, 404, 321, 303, 211, 202.
+
+El nombre més gran de nombres bonics consecutius que podem trobar és 25, però no està entre les opcions. El nombre més gran que està entre les opcions és 22, que és el nombre de nombres consecutius que podem trobar amb la xifra central 8, 7, 6, 5, 4, 3, 2 i 1.
+
+Resposta: B) 6

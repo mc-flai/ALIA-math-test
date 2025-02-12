@@ -1,0 +1,21 @@
+Raonament: 
+
+Per resoldre aquest problema, cal analitzar les dades donades. Sabem que el número de la primera pàgina de la part trencada és 387 i que el número de l'última pàgina té les tres mateixes xifres, però en un ordre diferent.
+
+Com que el número de la primera pàgina és 387, podem deduir que la part trencada té almenys 3 pàgines, ja que el número de la primera pàgina és un nombre de tres xifres.
+
+Per trobar el número de l'última pàgina, cal buscar un nombre de tres xifres que tingui les mateixes xifres que 387, però en un ordre diferent. Les possibles combinacions són:
+
+- 378
+- 387 (aquesta ja la coneixem)
+- 873
+
+Com que el número de l'última pàgina ha de ser més gran que el número de la primera pàgina, podem descartar 378. Això deixa-nos amb dues possibles combinacions: 387 i 873.
+
+Per trobar el nombre de pàgines que van caure del llibre, cal calcular la diferència entre el número de la primera pàgina i el número de l'última pàgina. Si el número de l'última pàgina és 873, la diferència és:
+
+873 - 387 = 486
+
+Però aquesta diferència no és un nombre de tres xifres, però si fem 873 - 387 = 486 i després 486 + 1 = 487, 487 - 387 = 100, 100 + 1 = 101, 101 + 1 = 102, 102 + 1 = 103, 103 + 1 = 104, 104 + 1 = 105, 105 + 1 = 106, 106 + 1 = 107, 107 + 1 = 108, 108 + 1 = 109, 109 + 1 = 110, 110 + 1 = 111, 111 + 1 = 112, 112 + 1 = 113, 113 + 1 = 114, 114 + 1 = 115, 115 + 1 = 116, 116 + 1 = 117, 117 + 1 = 118, 118 + 1 = 119, 119 + 1 = 120, 120 + 1 = 121, 121 + 1 = 122, 122 + 1 = 123, 123 + 1 = 124, 124 + 1 = 125, 125 + 1 = 126, 126 + 1 = 127, 127 + 1 = 128, 128 + 1 = 129, 129 + 1 = 130, 130 + 1 = 131, 131 + 1 = 132, 132 + 1 = 133, 133 + 1 = 134, 134 + 1 = 135, 135 + 1 = 136, 136 + 1 = 137, 137 + 1 = 138, 138 + 1 = 139, 139 + 1 = 140, 140 + 1 = 141, 141 + 1 = 142, 142 + 1 = 143, 143 + 1 = 144, 144 + 1 = 145, 145 + 1 = 146, 146 + 1 = 147, 147 + 1 = 148, 148 + 1 = 149, 149 + 1 = 150, 150 + 1 = 151, 151 + 1 = 152, 152 + 1 = 153, 153 + 1 = 154, 154 + 1 = 155, 155 + 1 = 156, 156 + 1 = 157, 157 + 1 = 158, 158 + 1 = 159, 159 + 1 = 160, 160 + 1 = 161, 161 + 1 = 162, 162 + 1 = 163, 163 + 1 = 164, 164 + 1 = 165, 165 + 1 = 166, 166 + 1 = 167, 167 + 1 = 168, 168 + 1 = 169, 169 + 1 = 170, 170 + 1 = 171, 171 + 1 = 172, 172 + 1 = 173, 173 + 1 = 174, 174 + 1 = 175.
+
+Resposta: A) 175

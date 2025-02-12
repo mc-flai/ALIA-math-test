@@ -1,0 +1,25 @@
+Raonament:
+
+Per calcular la xifra de les unitats del nombre \(S\), podem utilitzar el mètode de la suma de les unitats de les seqüències aritmètiques.
+
+La suma de les unitats de la seqüència \(1^2, 2^2, 3^2, \ldots, n^2\) és igual a la suma dels resultats mòd 10 de cada terme. Això significa que podem calcular la suma dels resultats mòd 10 de cada terme i, a continuació, calcular la suma dels resultats mòd 10 de cada terme.
+
+Per calcular la suma dels resultats mòd 10 de cada terme, podem utilitzar la fórmula:
+
+$$\sum_{k=1}^{n} k^2 \equiv \frac{n(n+1)(2n+1)}{6} \pmod{10}$$
+
+A continuació, podem calcular la suma dels resultats mòd 10 de cada terme:
+
+$$\sum_{k=1}^{2017} k^2 \equiv \frac{2017(2018)(4035)}{6} \pmod{10}$$
+
+Per calcular el mòd 10, podem simplificar la expressió:
+
+$$\frac{2017(2018)(4035)}{6} \equiv \frac{7(18)(5)}{6} \pmod{10}$$
+
+A continuació, podem calcular el mòd 10:
+
+$$\frac{7(18)(5)}{6} \equiv 5 \pmod{10}$$
+
+Per tant, la xifra de les unitats del nombre \(S\) és 5.
+
+Resposta: B) 5

@@ -1,0 +1,82 @@
+Raonament: Per trobar el màxim valor possible de la suma de les mitjanes, hem de considerar les possibles disposicions dels nombres naturals del 1 al 9 en una fila. La suma de les mitjanes depèn de les mitjanes de cada parella de nombres veïns.
+
+Per obtenir el màxim valor possible, hem de disposar els nombres de manera que les mitjanes siguin el més grans possible. Això succeeix quan els nombres més grans estan junts i els nombres més petits estan junts.
+
+Per exemple, si disposem els nombres de la manera següent: 9, 8, 7, 6, 5, 4, 3, 2, 1, les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 8 i 7: (8 + 7) / 2 = 7,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 6 i 5: (6 + 5) / 2 = 5,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 4 i 3: (4 + 3) / 2 = 3,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 2 i 1: (2 + 1) / 2 = 1,5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 7,5 + 6,5 + 5,5 + 4,5 + 3,5 + 2,5 + 1,5 = 40
+
+Però podem fer una disposició millor: 9, 1, 8, 2, 7, 3, 6, 4, 5. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 1: (9 + 1) / 2 = 5
+- 8 i 2: (8 + 2) / 2 = 5
+- 7 i 3: (7 + 3) / 2 = 5
+- 6 i 4: (6 + 4) / 2 = 5
+- 5 i 9: (5 + 9) / 2 = 7
+
+Sumant totes les mitjanes, obtenim: 5 + 5 + 5 + 5 + 7 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada parella de nombres veïns serien:
+
+- 9 i 8: (9 + 8) / 2 = 8,5
+- 7 i 6: (7 + 6) / 2 = 6,5
+- 5 i 4: (5 + 4) / 2 = 4,5
+- 3 i 2: (3 + 2) / 2 = 2,5
+- 1 i 9: (1 + 9) / 2 = 5
+
+Sumant totes les mitjanes, obtenim: 8,5 + 6,5 + 4,5 + 2,5 + 5 = 27. Però podem fer una disposició millor: 9, 8, 7, 6, 5, 4, 3, 2, 1. Les mitjanes de cada pare

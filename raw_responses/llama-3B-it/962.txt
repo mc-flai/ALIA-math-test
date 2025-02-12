@@ -1,0 +1,35 @@
+Raonament:
+
+Per determinar quantes vegades hem de tirar un dau amb les cares numerades de l'1 al 6 per a estar segurs que algun dels nombres haurà eixut repetit, podem utilitzar el principi de probabilitat.
+
+Quan tiram un dau, hi ha 6 possibles resultats: 1, 2, 3, 4, 5 i 6. Els nombres 1 i 6 són els més probables de sortir, mentre els nombres 2, 3, 4 i 5 són menys probables.
+
+Per a calcular la probabilitat que algun dels nombres haurà eixut repetit, podem considerar el següent:
+
+* La probabilitat que el 1 no sorti és 5/6 (1 - 1/6).
+* La probabilitat que el 2 no sorti és 5/6 (1 - 1/6).
+* La probabilitat que el 3 no sorti és 5/6 (1 - 1/6).
+* La probabilitat que el 4 no sorti és 5/6 (1 - 1/6).
+* La probabilitat que el 5 no sorti és 5/6 (1 - 1/6).
+
+Per a que algun dels nombres haurà eixut repetit, cal que algun dels nombres sorti en algun dels tirs. La probabilitat que ningú no sorti és (5/6)^4, ja que hi ha 4 tirs.
+
+Per a calcular la probabilitat que algun dels nombres haurà eixut repetit, podem utilitzar la següent fórmula:
+
+1 - (5/6)^4
+
+Calculant aquesta fórmula, obtenim:
+
+1 - (5/6)^4 = 1 - 625/1296 ≈ 0,677
+
+Aquesta probabilitat indica que, en mitja centúria, aproximadament el 67,7% de les vegades que tiram un dau amb les cares numerades de l'1 al 6, algun dels nombres haurà eixut repetit.
+
+Per a estar segurs que algun dels nombres haurà eixut repetit, cal tirar el dau més de 4 vegades. Per a calcular quantes vegades cal tirar, podem dividir 1 per la probabilitat que ningú no sorti:
+
+1 / (5/6)^4 ≈ 1 / 0,677 ≈ 1,48
+
+Això significa que cal tirar el dau més de 1,48 vegades per a estar segurs que algun dels nombres haurà eixut repetit.
+
+La resposta més propera a aquesta quantitat és 2 vegades.
+
+Resposta: B) 6

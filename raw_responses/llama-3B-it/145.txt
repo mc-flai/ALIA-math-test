@@ -1,0 +1,56 @@
+Raonament:
+
+Per això, podem establir una relació entre el nombre de xics (N) i el nombre de pomes. Si hi haguera N - 2 xics, cadascú hauria una poma més, però no hi hauria pomes per a N - 3 xics. Això significa que el nombre de pomes és igual a N - 1.
+
+Per això, podem establir una equació:
+
+N - 1 = nombre de pomes
+
+També sabem que el nombre de pomes és igual al nombre de xics, però sense trencar-ne cap. Això significa que el nombre de pomes és un múltiplicador del nombre de xics.
+
+Per això, podem escriure:
+
+N - 1 = kN
+
+on k és un nombre enter.
+
+Resolent aquesta equació, obtenim:
+
+N - 1 = kN
+N - kN = 1
+N(1 - k) = 1
+N = 1 / (1 - k)
+
+Per això, k no pot ser igual a 1, perquè això faria que N fos infinit. Per això, k pot ser igual a 0, 2, 3, etc.
+
+Per això, podem provar les opcions:
+
+A) N = 6
+Si k = 0, N = 1 / (1 - 0) = 1 (no és possible)
+Si k = 2, N = 1 / (1 - 2) = -1 (no és possible)
+Si k = 3, N = 1 / (1 - 3) = -2 (no és possible)
+
+B) N = 8
+Si k = 0, N = 1 / (1 - 0) = 1 (no és possible)
+Si k = 2, N = 1 / (1 - 2) = -1 (no és possible)
+Si k = 3, N = 1 / (1 - 3) = -2 (no és possible)
+
+C) N = 9
+Si k = 0, N = 1 / (1 - 0) = 1 (no és possible)
+Si k = 2, N = 1 / (1 - 2) = -1 (no és possible)
+Si k = 3, N = 1 / (1 - 3) = -2 (no és possible)
+
+D) N = 10
+Si k = 0, N = 1 / (1 - 0) = 1 (no és possible)
+Si k = 2, N = 1 / (1 - 2) = -1 (no és possible)
+Si k = 3, N = 1 / (1 - 3) = -2 (no és possible)
+
+E) N = 12
+Si k = 0, N = 1 / (1 - 0) = 1 (no és possible)
+Si k = 2, N = 1 / (1 - 2) = -1 (no és possible)
+Si k = 3, N = 1 / (1 - 3) = -2 (no és possible)
+Si k = 4, N = 1 / (1 - 4) = 5 (possible)
+
+Per això, la resposta correcta és:
+
+Resposta: E) 12

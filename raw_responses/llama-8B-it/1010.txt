@@ -1,0 +1,67 @@
+Raonament: Per trobar la quantitat més gran de nombres bonics consecutius, podem començar analitzant les possibles combinacions de xifres que satisfan la condició donada. Un nombre de tres xifres té la forma abc, on a, b i c són les xifres.
+
+Perquè un nombre sigui bonic, la xifra central (b) ha de ser més gran que la suma de les altres dues xifres (a + c). Això significa que b > a + c.
+
+Comencem per considerar els casos possibles per a les xifres a i c. Poden ser de 0 a 9, però tenim que tenir en compte que a + c no pot ser massa gran, ja que b ha de ser més gran que aquesta suma.
+
+Un dels casos més fàcils és quan a i c són iguals. En aquest cas, b ha de ser igual a 2a + 2 per ser més gran que a + c. Però això no és possible perquè b només pot ser una xifra, mentre que 2a + 2 pot ser un nombre de dues xifres.
+
+Un altre cas és quan a és 0. En aquest cas, b ha de ser més gran que c. Però això no és possible perquè b només pot ser una xifra, mentre que c pot ser qualsevol xifra de 1 a 9.
+
+Un altre cas és quan c és 0. En aquest cas, b ha de ser més gran que a. Això és possible quan a és 1, 2 o 3, i b és 2, 3 o 4, respectivament.
+
+Ara, considerem el cas on a i c són diferents. En aquest cas, b ha de ser més gran que a + c. Però això no és possible perquè b només pot ser una xifra, mentre que a + c pot ser un nombre de dues xifres.
+
+Però, si a i c són 1 i 2, respectivament, i b és 4, aleshores b és més gran que a + c. Això és un exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 1, c és 2 i b és 5, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 1, c és 3 i b és 6, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 1, c és 4 i b és 7, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 1, c és 5 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 1, c és 6 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 2, c és 1 i b és 4, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 2, c és 2 i b és 5, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 2, c és 3 i b és 6, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 2, c és 4 i b és 7, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 2, c és 5 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 2, c és 6 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 3, c és 1 i b és 5, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 3, c és 2 i b és 6, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 3, c és 3 i b és 7, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 3, c és 4 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 3, c és 5 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 4, c és 1 i b és 6, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 4, c és 2 i b és 7, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 4, c és 3 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 4, c és 4 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 5, c és 1 i b és 7, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 5, c és 2 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Continuant aquest procés, podem trobar més exemples de nombres bonics. Per exemple, si a és 5, c és 3 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 6, c és 1 i b és 8, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Ara, podem continuar aquest procés per trobar més exemples de nombres bonics. Per exemple, si a és 6, c és 2 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre bonic.
+
+Però, si a és 7, c és 1 i b és 9, aleshores b és més gran que a + c. Això és un altre exemple de nombre

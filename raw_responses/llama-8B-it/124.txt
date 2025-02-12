@@ -1,0 +1,11 @@
+Raonament: Per calcular el nombre de triangles que es poden dibuixar amb tres punts, podem utilitzar el concepte de combinacions. Si tenim 7 punts i volem triar 3 d'ells per formar un triangle, podem fer-ho de la següent manera:
+
+1. Primer, triem 3 punts de la recta on hi ha 6 punts. Hi ha 6 punts a la recta, i podem triar 3 d'ells de manera que hi ha 6C3 = 20 maneres de fer-ho.
+2. Després, triem 3 punts de la resta de punts (1 punt fora de la recta). Hi ha 1 punt fora de la recta, i podem triar 3 d'ells de manera que hi ha 1C3 = 0 maneres de fer-ho (perquè no podem triar 3 punts fora de la recta).
+3. Finalment, triem 2 punts de la recta i 1 punt fora de la recta. Hi ha 6 punts a la recta, i podem triar 2 d'ells de manera que hi ha 6C2 = 15 maneres de fer-ho. També podem triar 1 punt fora de la recta de manera que hi ha 1C1 = 1 manera de fer-ho. Això dona un total de 15 x 1 = 15 maneres de fer-ho.
+
+Ara, sumem les maneres de fer-ho en els tres casos: 20 + 0 + 15 = 35. Però això és massa gran, perquè estem comptant alguns triangles dues vegades. Per exemple, si triem 3 punts de la recta, podem triar-los en diferents ordres, però això no forma triangles diferents. Per això, hem de dividir per 3! (6) per evitar comptar els triangles dues vegades.
+
+Això dona un total de 35 / 6 = 5,83. Però això no és un nombre enter, perquè no podem tenir un triangle amb fraccions de punts. Per això, hem de considerar que hi ha 5 triangles amb 3 punts de la recta i 1 punt fora de la recta, i 10 triangles amb 3 punts de la recta. Això dona un total de 5 + 10 = 15 triangles.
+
+Resposta: D)

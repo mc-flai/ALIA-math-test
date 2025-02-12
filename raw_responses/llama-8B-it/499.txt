@@ -1,0 +1,10 @@
+Raonament: Per trobar el valor màxim possible del producte de 5 nombres enters positius diferents que sumen 17, podem utilitzar la següent estratègia:
+
+1. Com que els nombres són enters positius diferents, el nombre més petit possible és 1. Per tant, podem començar assignant 1 a un dels nombres.
+2. La suma dels altres 4 nombres és 16 (17 - 1 = 16).
+3. Per maximitzar el producte, volem que els altres 4 nombres siguin el més grans possible. Però també volem que siguin diferents, per tant, el següent nombre més gran possible és 2.
+4. La suma dels altres 3 nombres és 14 (16 - 2 = 14).
+5. Continuant aquest procés, assignem els nombres 3, 4 i 5 als altres 3 nombres, ja que són els nombres més grans possibles que sumen 14.
+6. Així, els 5 nombres són 1, 2, 3, 4 i 7, que sumen 17 i tenen un producte de 1 × 2 × 3 × 4 × 7 = 168.
+
+Resposta: D)

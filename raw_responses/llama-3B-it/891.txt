@@ -1,0 +1,25 @@
+Raonament:
+
+Per aconseguir expressar 1362 com a suma de nombres cangurils, podem començar per observar que 1362 és un nombre parell. Això significa que podem dividir-lo per 2 i continuar processant el resultat fins que no sigui més que 1.
+
+1362 / 2 = 681
+681 / 2 = 340,5 (però no podem tenir decimals, per tant, hem de fer que 340,5 sigui un nombre entir, això podem fer-ho dividint 340 per 2 i sumant el resultat a 681)
+340 / 2 = 170
+170 / 2 = 85
+85 / 2 = 42,5 (però no podem tenir decimals, per tant, hem de fer que 42,5 sigui un nombre entir, això podem fer-ho dividint 42 per 2 i sumant el resultat a 85)
+42 / 2 = 21
+21 / 2 = 10,5 (però no podem tenir decimals, per tant, hem de fer que 10,5 sigui un nombre entir, això podem fer-ho dividint 10 per 2 i sumant el resultat a 21)
+10 / 2 = 5
+5 / 2 = 2,5 (però no podem tenir decimals, per tant, hem de fer que 2,5 sigui un nombre entir, això podem fer-ho dividint 2 per 2 i sumant el resultat a 5)
+2 / 2 = 1
+
+Agora, podem sumar els resultats per obtenir 1362:
+1362 = 2 + 5 + 10 + 21 + 42 + 85 + 170 + 340 + 681
+
+Però, aquesta suma no és la mínima possible. Podem observar que 1362 és un nombre que té un 3 com a darrer dígits, i que 3 és un nombre canguril. Podem reorganitzar la suma per eliminar alguns dels nombres més grans i reemplaçar-los per 3 fins a obtenir la suma mínima possible.
+
+1362 = 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3 + 3
+
+Això significa que necessitem 16 nombres cangurils per expressar 1362 com a suma de nombres cangurils.
+
+Resposta: B) 16

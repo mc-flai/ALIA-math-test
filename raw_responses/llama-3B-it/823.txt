@@ -1,0 +1,21 @@
+Raonament:
+
+Per resoldre aquest problema, podem analitzar les opcions i determinar quines són les millors.
+
+Primadament, considerem la circumferència i les restriccions. Els nombres veïns sempre han de diferir en 1 o 2 unitats. Això significa que si un nombre és 1 més que el seu veí, el seu veí següent ha de ser 2 més que el nombre anterior.
+
+Analicem les opcions:
+
+A) 5 i 6: Si 5 és veí de 6, 6 ha de ser veí de 7, 8 o 9. Però si 6 és veí de 7, 7 ha de ser veí de 8 o 9, i si 6 és veí de 8, 8 ha de ser veí de 9. Això no és possible, ja que 9 no és veí de cap nombre.
+
+B) 10 i 9: Si 10 és veí de 9, 9 ha de ser veí de 8 o 10. Però si 10 és veí de 9, 9 no pot ser veí de 8, ja que 8 no és veí de cap nombre.
+
+C) 6 i 7: Si 6 és veí de 7, 7 ha de ser veí de 8 o 9. Però si 6 és veí de 7, 7 no pot ser veí de 8, ja que 8 no és veí de cap nombre.
+
+D) 8 i 10: Si 8 és veí de 10, 10 ha de ser veí de 9 o 11. Però si 8 és veí de 10, 10 no pot ser veí de 9, ja que 9 no és veí de cap nombre.
+
+E) 4 i 3: Si 4 és veí de 3, 3 ha de ser veí de 2 o 4. Però si 4 és veí de 3, 3 no pot ser veí de 2, ja que 2 no és veí de cap nombre.
+
+Després d'analitzar les opcions, podem concluir que:
+
+Resposta: E) 4 i 3

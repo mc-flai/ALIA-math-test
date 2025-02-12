@@ -1,0 +1,157 @@
+Raonament: Per trobar el valor més gran de (N+M)/(N-M), podem començar analitzant la expressió. Aquesta expressió té la forma d'una fracció, on el numerador és la suma de N i M, i el denominador és la diferència entre N i M.
+
+Per maximitzar aquesta fracció, volem augmentar el numerador i reduir el denominador. Com que N és un nombre fix, el numerador està limitat per la suma de N i M. Però podem influir en el denominador, que és la diferència entre N i M.
+
+Com que 19 < M < 49, sabem que M és un nombre entre 19 i 49. I com que 51 ≤ N ≤ 101, sabem que N és un nombre entre 51 i 101.
+
+Per maximitzar la fracció, volem que la diferència entre N i M sigui la més petita possible. Això succeeix quan M és el més gran possible i N és el més petit possible, ja que això reduirà la diferència entre N i M.
+
+El valor més gran possible de M és 49, i el valor més petit possible de N és 51. Això dona una diferència de 2 entre N i M.
+
+Ara, podem calcular el valor de la fracció quan M = 49 i N = 51:
+
+(N+M)/(N-M) = (51+49)/(51-49) = 100/2 = 50
+
+Però aquesta no és una de les opcions. Però podem veure que quan M és més gran, la fracció també és més gran. Per exemple, si M = 48 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+48)/(51-48) = 99/3 = 33
+
+I si M = 47 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+47)/(51-47) = 98/4 = 24,5
+
+Però si M = 46 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+46)/(51-46) = 97/5 = 19,4
+
+I si M = 45 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+45)/(51-45) = 96/6 = 16
+
+Però si M = 44 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+44)/(51-44) = 95/7 = 13,57
+
+I si M = 43 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+43)/(51-43) = 94/8 = 11,75
+
+Però si M = 42 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+42)/(51-42) = 93/9 = 10,33
+
+Però si M = 41 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+41)/(51-41) = 92/10 = 9,2
+
+Però si M = 40 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+40)/(51-40) = 91/11 = 8,27
+
+Però si M = 39 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+39)/(51-39) = 90/12 = 7,5
+
+Però si M = 38 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+38)/(51-38) = 89/13 = 6,85
+
+Però si M = 37 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+37)/(51-37) = 88/14 = 6,29
+
+Però si M = 36 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+36)/(51-36) = 87/15 = 5,8
+
+Però si M = 35 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+35)/(51-35) = 86/16 = 5,375
+
+Però si M = 34 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+34)/(51-34) = 85/17 = 5
+
+Però si M = 33 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+33)/(51-33) = 84/18 = 4,67
+
+Però si M = 32 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+32)/(51-32) = 83/19 = 4,37
+
+Però si M = 31 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+31)/(51-31) = 82/20 = 4,1
+
+Però si M = 30 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+30)/(51-30) = 81/21 = 3,86
+
+Però si M = 29 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+29)/(51-29) = 80/22 = 3,64
+
+Però si M = 28 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+28)/(51-28) = 79/23 = 3,44
+
+Però si M = 27 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+27)/(51-27) = 78/24 = 3,25
+
+Però si M = 26 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+26)/(51-26) = 77/25 = 3,08
+
+Però si M = 25 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+25)/(51-25) = 76/26 = 2,92
+
+Però si M = 24 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+24)/(51-24) = 75/27 = 2,78
+
+Però si M = 23 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+23)/(51-23) = 74/28 = 2,64
+
+Però si M = 22 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+22)/(51-22) = 73/29 = 2,52
+
+Però si M = 21 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+21)/(51-21) = 72/30 = 2,4
+
+Però si M = 20 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+20)/(51-20) = 71/31 = 2,29
+
+Però si M = 19 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+19)/(51-19) = 70/32 = 2,19
+
+Però si M = 18 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+18)/(51-18) = 69/33 = 2,09
+
+Però si M = 17 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+17)/(51-17) = 68/34 = 2
+
+Però si M = 16 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+16)/(51-16) = 67/35 = 1,91
+
+Però si M = 15 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+15)/(51-15) = 66/36 = 1,83
+
+Però si M = 14 i N = 51, la fracció és:
+
+(N+M)/(N-M) = (51+14)/(51-14) = 65/37 = 1,76
+
+Però si M = 13 i N = 51, la fracció és:
+
+(N+M)/(N

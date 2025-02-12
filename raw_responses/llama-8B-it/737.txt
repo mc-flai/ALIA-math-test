@@ -1,0 +1,25 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el concepte de nombres enteros positius que són relativament primers. Un nombre enter és relativament primer si no té factors comuns amb un altre nombre enter, excepte 1.
+
+En aquest cas, volem distribuir 60 pomes i 60 peres en caixes de manera que totes les caixes tinguin el mateix nombre de pomes i no hi hagi dues caixes amb la mateixa quantitat de peres.
+
+Podem començar assignant un nombre de pomes a cada caixa. Per exemple, si assignem 1 pom a cada caixa, hi haurà 60 caixes amb 1 pom cada una. Però això no és possible, ja que no hi hauria cap caixa amb una quantitat de peres diferent.
+
+A continuació, podem assignar 2 pomes a cada caixa. En aquest cas, hi haurà 30 caixes amb 2 pomes cada una. Però això tampoc és possible, ja que no hi hauria cap caixa amb una quantitat de peres diferent.
+
+Continuant així, podem assignar 3 pomes a cada caixa, 4 pomes a cada caixa, etc. Fins que arribem a 60 pomes a cada caixa.
+
+Quan assignem 60 pomes a cada caixa, hi haurà 1 caixa amb 60 pomes. Però això no és possible, ja que no hi hauria cap caixa amb una quantitat de peres diferent.
+
+A continuació, podem assignar 59 pomes a cada caixa. En aquest cas, hi haurà 1 caixa amb 59 pomes i 1 caixa amb 1 pom. Però això no és possible, ja que no hi hauria cap caixa amb una quantitat de peres diferent.
+
+Continuant així, podem assignar 58 pomes a cada caixa, 57 pomes a cada caixa, etc. Fins que arribem a 1 pom a cada caixa.
+
+Quan assignem 1 pom a cada caixa, hi haurà 60 caixes amb 1 pom cada una. Però això no és possible, ja que no hi hauria cap caixa amb una quantitat de peres diferent.
+
+Però quan assignem 2 pomes a cada caixa, hi haurà 30 caixes amb 2 pomes cada una. I quan assignem 3 pomes a cada caixa, hi haurà 20 caixes amb 3 pomes cada una. I quan assignem 4 pomes a cada caixa, hi haurà 15 caixes amb 4 pomes cada una. I quan assignem 5 pomes a cada caixa, hi haurà 12 caixes amb 5 pomes cada una. I quan assignem 6 pomes a cada caixa, hi haurà 10 caixes amb 6 pomes cada una.
+
+Per tant, el nombre més gran de caixes que permet aquesta distribució és 10.
+
+Resposta: D)

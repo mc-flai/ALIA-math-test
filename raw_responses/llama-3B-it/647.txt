@@ -1,0 +1,41 @@
+Raonament:
+
+Per aquest problema, podem considerar que el nombre de tres xifres és de la forma 100a + 10b + c, on a, b i c són les xifres del nombre.
+
+La suma de les xifres és 26, per tant:
+
+a + b + c = 26
+
+També sabem que a, b i c són números enterals entre 0 i 9, però no podem ser 0, ja que el nombre és de tres xifres.
+
+Per això, podem considerar que a, b i c són números enterals entre 1 i 9.
+
+A continuació, podem provar les possibilitats:
+
+- Si a = 1, b + c = 25. No hi ha una solució per aquesta equació, ja que b i c no poden ser 9 i 16 al mateix temps.
+- Si a = 2, b + c = 24. No hi ha una solució per aquesta equació, ja que b i c no poden ser 8 i 16 al mateix temps.
+- Si a = 3, b + c = 23. No hi ha una solució per aquesta equació, ja que b i c no poden ser 7 i 16 al mateix temps.
+- Si a = 4, b + c = 22. No hi ha una solució per aquesta equació, ja que b i c no poden ser 6 i 16 al mateix temps.
+- Si a = 5, b + c = 21. No hi ha una solució per aquesta equació, ja que b i c no poden ser 5 i 16 al mateix temps.
+- Si a = 6, b + c = 20. No hi ha una solució per aquesta equació, ja que b i c no poden ser 4 i 16 al mateix temps.
+- Si a = 7, b + c = 19. No hi ha una solució per aquesta equació, ja que b i c no poden ser 3 i 16 al mateix temps.
+- Si a = 8, b + c = 18. No hi ha una solució per aquesta equació, ja que b i c no poden ser 2 i 16 al mateix temps.
+- Si a = 9, b + c = 17. No hi ha una solució per aquesta equació, ja que b i c no poden ser 1 i 16 al mateix temps.
+
+Per això, podem considerar que a = 9, b + c = 17.
+
+A continuació, podem provar les possibilitats:
+
+- Si b = 9, c = 8. El producte de les xifres és 9 * 9 * 8 = 648.
+- Si b = 8, c = 9. El producte de les xifres és 9 * 8 * 9 = 648.
+- Si b = 7, c = 10. No és possible, ja que c no pot ser 10.
+- Si b = 6, c = 11. No és possible, ja que c no pot ser 11.
+- Si b = 5, c = 12. No és possible, ja que c no pot ser 12.
+- Si b = 4, c = 13. No és possible, ja que c no pot ser 13.
+- Si b = 3, c = 14. No és possible, ja que c no pot ser 14.
+- Si b = 2, c = 15. No és possible, ja que c no pot ser 15.
+- Si b = 1, c = 16. No és possible, ja que c no pot ser 16.
+
+Per això, el producte de les xifres és 648.
+
+Resposta: D) 648.

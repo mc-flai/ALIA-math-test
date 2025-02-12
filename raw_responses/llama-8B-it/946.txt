@@ -1,0 +1,11 @@
+Raonament: Per trobar el centre del cub, podem utilitzar el fet que el centre del cub és el punt mitjà dels vèrtexs que formen la cara del cub. Com que els tres vèrtexs P, Q i R no estan en la mateixa cara, podem trobar el centre del cub considerant els vèrtexs que estan en les cares que comparteixen amb P, Q i R.
+
+Per exemple, si considerem la cara que comparteix P(3, 4, 1) i R(1, 6, 5), podem trobar el centre de aquesta cara. El centre de la cara és el punt mitjà dels vèrtexs P i R, que és ((3+1)/2, (4+6)/2, (1+5)/2) = (2, 5, 3).
+
+A continuació, podem considerar la cara que comparteix Q(5, 2, 9) i R(1, 6, 5). El centre de aquesta cara és el punt mitjà dels vèrtexs Q i R, que és ((5+1)/2, (2+6)/2, (9+5)/2) = (3, 4, 7).
+
+Finalment, podem considerar la cara que comparteix P(3, 4, 1) i Q(5, 2, 9). El centre de aquesta cara és el punt mitjà dels vèrtexs P i Q, que és ((3+5)/2, (4+2)/2, (1+9)/2) = (4, 3, 5).
+
+Ara, podem trobar el centre del cub considerant els centres de les cares que comparteixen els vèrtexs P, Q i R. El centre del cub és el punt mitjà dels centres de les cares, que és ((2+3+4)/3, (5+4+3)/3, (3+7+5)/3) = (3, 4, 5).
+
+Resposta: A)

@@ -1,0 +1,22 @@
+Raonament: Per trobar la suma de tots els divisors parells de 1000, primer hem de trobar tots els divisors de 1000. 1000 es pot factoritzar en 2^3 * 5^3. Això significa que tots els divisors de 1000 són de la forma 2^a * 5^b, on a pot anar de 0 a 3 i b pot anar de 0 a 3.
+
+Per trobar els divisors parells, hem de considerar només els casos on a és almenys 1, ja que els divisors parells són els que tenen almenys un factor de 2.
+
+Els divisors parells de 1000 són:
+- 2^1 * 5^0 = 2
+- 2^1 * 5^1 = 10
+- 2^1 * 5^2 = 50
+- 2^1 * 5^3 = 250
+- 2^2 * 5^0 = 4
+- 2^2 * 5^1 = 20
+- 2^2 * 5^2 = 100
+- 2^2 * 5^3 = 500
+- 2^3 * 5^0 = 8
+- 2^3 * 5^1 = 40
+- 2^3 * 5^2 = 200
+- 2^3 * 5^3 = 1000
+
+Ara, hem de sumar tots aquests divisors parells:
+2 + 10 + 50 + 250 + 4 + 20 + 100 + 500 + 8 + 40 + 200 + 1000 = 2184
+
+Resposta: C)

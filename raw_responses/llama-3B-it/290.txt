@@ -1,0 +1,17 @@
+Raonament:
+
+Per minimitzar el producte dels quatre nombres, volem minimitzar la suma dels quatre nombres, ja que el producte d'uns nombres positius augmenta quan augmenten els nombres.
+
+Si sumem 1 a \(a\), el producte dels quatre nombres serà \((a+1) \times b \times c \times d\). Això no és necessàriament el més petit possible, ja que podem haver un altre ordre dels nombres que minimitzarà el producte.
+
+Si sumem 1 a \(b\), el producte dels quatre nombres serà \(a \times (b+1) \times c \times d\). Això no és necessàriament el més petit possible, ja que podem haver un altre ordre dels nombres que minimitzarà el producte.
+
+Si sumem 1 a \(c\), el producte dels quatre nombres serà \(a \times b \times (c+1) \times d\). Això no és necessàriament el més petit possible, ja que podem haver un altre ordre dels nombres que minimitzarà el producte.
+
+Si sumem 1 a \(d\), el producte dels quatre nombres serà \(a \times b \times c \times (d+1)\). Això no és necessàriament el més petit possible, ja que podem haver un altre ordre dels nombres que minimitzarà el producte.
+
+Si sumem 1 a \(b\) o a \(c\), podem haver un altre ordre dels nombres que minimitzarà el producte, per exemple, si sumem 1 a \(b\), podem haver \(a < b < c < d\) i, per exemple, \(a < c < b < d\), i el producte serà \(a \times c \times b \times d\), que és menor que el producte original.
+
+Per tant, el nombre al qual hem de sumar-li 1 per minimitzar el producte dels quatre nombres és \(b\).
+
+Resposta: B)

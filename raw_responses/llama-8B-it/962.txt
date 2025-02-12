@@ -1,0 +1,13 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el principi de la probabilitat. Quan tiram un dau amb les cares numerades de l'1 al 6, hi ha 6 resultats possibles. Per estar segurs que algun dels nombres haurà sortit repetit, hem de considerar el pitjor cas possible, que és quan cada tirat sorti un nombre diferent.
+
+Per exemple, si tiram el dau 6 vegades, hi ha 6 resultats possibles per cada tirada, i per tant, hi ha 6^6 = 46656 resultats possibles en total. Aquesta és la quantitat màxima de resultats possibles sense que hi hagi cap nombre repetit.
+
+Però, si volem estar segurs que hi ha un nombre repetit, podem utilitzar el principi de la probabilitat inversa. En comptes de calcular la probabilitat de que hi hagi un nombre repetit, podem calcular la probabilitat de que no hi hagi cap nombre repetit i després restar aquesta probabilitat de 1.
+
+La probabilitat de que no hi hagi cap nombre repetit en 6 tirades és (6/6) * (5/6) * (4/6) * (3/6) * (2/6) * (1/6) = 1/720. Això significa que la probabilitat de que hi hagi un nombre repetit és 1 - 1/720 = 719/720.
+
+Però, aquesta és la probabilitat de que hi hagi un nombre repetit en 6 tirades. Per estar segurs que hi ha un nombre repetit, hem de tirar el dau una mica més de vegades. En aquest cas, podem utilitzar el principi de la probabilitat per calcular la quantitat mínima de tirades necessàries.
+
+La resposta correcta és D) 12, perquè si tiram el dau 12 vegades, la probabilitat de que no hi hagi cap nombre repetit és molt baixa, i per tant, estem segurs que hi haurà un nombre repetit.
+
+Resposta: D)

@@ -1,0 +1,43 @@
+Raonament:
+
+Per determinar el nombre de pàgines que tenia el llibre, podem observar que les pàgines se numeren en grups de 3. Això significa que cada grup de 3 pàgines està numerada de manera consecutiva, com això es mostra en la seqüència:
+
+1, 2, 4, 5, 7, 8, 10, 11,...
+
+A partir d'aquest patró, podem notar que cada grup de 3 pàgines està format per 3 pàgines. Per això, podem calcular el nombre de grups de 3 pàgines que hi havia fins a la pàgina 92.
+
+Per això, podem dividir 92 per 3 i obtenir 30,8. Això significa que hi havia 30 grups de 3 pàgines fins a la pàgina 90. Però, no podem incloure la pàgina 92 en un grup de 3 pàgines, però podem incloure-la en el grup que comença a partir de la pàgina 93.
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre sumant les pàgines del 31è grup de 3 pàgines (que comença a partir de la pàgina 93) a les pàgines dels 30 grups anteriors.
+
+El 31è grup de 3 pàgines comença a partir de la pàgina 93 i conté les pàgines 93, 94 i 95. Això significa que el llibre tenia 30 grups de 3 pàgines (que contenien les pàgines 1 a 90) més les pàgines del 31è grup (que contaven les pàgines 93 a 95).
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre:
+
+30 grups de 3 pàgines (1 a 90) + 3 pàgines del 31è grup (93 a 95) = 30 + 3 = 33
+
+Però, això no és la resposta correcta. Per això, podem revisar el patró de numeració i observar que les pàgines del 31è grup de 3 pàgines començaven a partir de la pàgina 93, però la pàgina 92 estava numerada com a pàgina 92, no com a pàgina 91.
+
+Per això, podem revisar el patró de numeració i observar que les pàgines del 30è grup de 3 pàgines començaven a partir de la pàgina 90, però la pàgina 92 estava numerada com a pàgina 92, no com a pàgina 91.
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre sumant les pàgines del 30è grup de 3 pàgines (que començava a partir de la pàgina 90) a les pàgines dels 29 grups anteriors.
+
+El 30è grup de 3 pàgines comença a partir de la pàgina 90 i conté les pàgines 90, 91 i 92. Això significa que el llibre tenia 29 grups de 3 pàgines (que contaven les pàgines 1 a 87) més les pàgines del 30è grup (que contaven les pàgines 90 a 92).
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre:
+
+29 grups de 3 pàgines (1 a 87) + 3 pàgines del 30è grup (90 a 92) = 29 + 3 = 32
+
+Però, això no és la resposta correcta. Per això, podem revisar el patró de numeració i observar que les pàgines del 30è grup de 3 pàgines començaven a partir de la pàgina 90, però la pàgina 92 estava numerada com a pàgina 92, no com a pàgina 91.
+
+Per això, podem revisar el patró de numeració i observar que les pàgines del 29è grup de 3 pàgines començaven a partir de la pàgina 87, però la pàgina 92 estava numerada com a pàgina 92, no com a pàgina 91.
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre sumant les pàgines del 29è grup de 3 pàgines (que començava a partir de la pàgina 87) a les pàgines dels 28 grups anteriors.
+
+El 29è grup de 3 pàgines comença a partir de la pàgina 87 i conté les pàgines 87, 88 i 89. Això significa que el llibre tenia 28 grups de 3 pàgines (que contaven les pàgines 1 a 84) més les pàgines del 29è grup (que contaven les pàgines 87 a 89).
+
+Per això, podem calcular el nombre de pàgines que tenia el llibre:
+
+28 grups de 3 pàgines (1 a 84) + 3 pàgines del 29è grup (87 a 89) = 28 + 3 = 31
+
+Resposta: A) 31

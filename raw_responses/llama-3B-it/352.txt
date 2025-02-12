@@ -1,0 +1,13 @@
+Raonament:
+
+Per trobar el màxim comú divisor (MCD) de tots els nombres palindròmics de sis dígits, em vaig enfocar en els propietats de les palindromes i en els factors comuns que podrien existir.
+
+Primadament, em vaig adonar que els nombres palindròmics de sis dígits tenen la forma ABCCBA, on A, B i C són digits. Aquesta forma simètrica suggeria que els nombres palindròmics de sis dígits són múltiples del nombre 111 (o 1011 en notació binària), ja que aquest és el número més petit que té una simetria similar.
+
+En segon lloc, em vaig adonar que els factors comuns de tots els nombres palindròmics de sis dígits són els factors del nombre 111. Els factors de 111 són 1, 3, 37 i 111.
+
+Per determinar el màxim comú divisor, em vaig enfocar en els factors més grans que podrien existir. En aquest cas, el factor més gran que podria existir és 37, ja que 111 és un múltiplic de 37.
+
+Per verificar la resposta, em vaig adonar que 37 és un factor comú de tots els nombres palindròmics de sis dígits. En efecte, els nombres palindròmics de sis dígits com 123321, 111111 i 909090 són tots múltiples de 37.
+
+Resposta: D) 37

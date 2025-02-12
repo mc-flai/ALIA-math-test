@@ -1,0 +1,11 @@
+Raonament:
+
+Per calcular el nombre de nombres de tres xifres que contenen com a mínim un dels tres dígits següents: 1, 2 o 3, podem considerar els següents casos:
+
+1. Noms de tres xifres que no contenen cap dels dígits 1, 2 o 3. En aquest cas, els possibles nombres de tres xifres són 0, 4, 5, 6, 7, 8 i 9. Per això, hi ha 7 opcions per cada dígits. Per tant, el nombre total de nombres de tres xifres que no contenen cap dels dígits 1, 2 o 3 és 7*7*7 = 343.
+
+2. Noms de tres xifres que contenen almenys un dels dígits 1, 2 o 3. Per això, podem calcular el nombre total de nombres de tres xifres i descomptar els casos que no contenen cap dels dígits 1, 2 o 3.
+
+El nombre total de nombres de tres xifres és 900 (0 a 9 per cada dígits). Per això, el nombre de nombres de tres xifres que contenen almenys un dels dígits 1, 2 o 3 és 900 - 343 = 557.
+
+Resposta: D) 557

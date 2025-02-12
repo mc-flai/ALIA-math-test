@@ -1,0 +1,21 @@
+Raonament: 
+
+Per trobar la probabilitat d'obtenir una puntuació de 6, primer hem de determinar tots els resultats possibles quan es llancen tres daus normals. Cada dau té 6 cares, així que el nombre total de resultats possibles és 6^3 = 216.
+
+Per obtenir una puntuació de 6, els tres daus han de sortir amb un total de 6 punts. Aquest és un problema de combinacions, ja que podem canviar l'ordre en què els daus sortiran, però el total de punts sempre serà 6.
+
+Les combinacions possibles per obtenir un total de 6 punts són:
+
+- 1+1+4 (3 maneres: 1+1+4, 1+4+1, 4+1+1)
+- 1+2+3 (6 maneres: 1+2+3, 1+3+2, 2+1+3, 2+3+1, 3+1+2, 3+2+1)
+- 2+2+2 (1 manera: 2+2+2)
+
+Això dona un total de 3 + 6 + 1 = 10 resultats possibles per obtenir una puntuació de 6.
+
+Per trobar la probabilitat, dividim el nombre de resultats possibles per obtenir una puntuació de 6 (10) pel nombre total de resultats possibles (216):
+
+Probabilitat = 10 / 216 = 5 / 108 = ¹⁰/(₆·₁₈)
+
+Però no hi ha la resposta ¹⁰/(₆·₁₈) entre les opcions. Però podem simplificar la resposta ¹⁰/(₆·₆·₆) a ¹⁰/(₆·₁₈) perquè 6*6*6 = 216 i ¹⁰/(₆·₁₈) = ¹⁰/(₆·₆·₆).
+
+Resposta: C)

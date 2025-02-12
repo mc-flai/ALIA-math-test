@@ -1,0 +1,17 @@
+Raonament: Per resoldre aquest problema, podem analitzar les possibles situacions en què podem dibuixar una línia recta que passi per un vèrtex de cada triangle i travessi almenys un d'ells.
+
+1. Si els dos triangles estan alineats, podem dibuixar una línia recta que passi per un vèrtex de cada triangle i travessi tots dos. Això és una situació possible.
+2. Si els dos triangles no estan alineats, podem dibuixar una línia recta que passi per un vèrtex de cada triangle i travessi un dels triangles. Això és una altra situació possible.
+3. També podem dibuixar una línia recta que passi per un vèrtex de cada triangle i travessi un dels triangles, però no tots dos. Això és una situació possible si els dos triangles no estan alineats.
+
+Però, si no hi ha 3 vèrtexs alineats, aleshores no podem dibuixar una línia recta que passi per tres vèrtexs alhora. Això elimina la possibilitat de dibuixar una línia recta que passi per tres vèrtexs alhora.
+
+Ara, podem comptar les possibles situacions:
+
+- Una línia recta que passi per un vèrtex de cada triangle i travessi tots dos (1 situació).
+- Una línia recta que passi per un vèrtex de cada triangle i travessi un dels triangles (4 situacions, ja que hi ha 4 vèrtexs que no estan alineats).
+- Una línia recta que passi per un vèrtex de cada triangle i travessi un dels triangles, però no tots dos (0 situacions, ja que no podem dibuixar una línia recta que passi per tres vèrtexs alhora).
+
+Per tant, el nombre total de situacions és 1 + 4 = 5.
+
+Resposta: C)

@@ -1,0 +1,36 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar el principi de la inclusió-exclusió. Aquest principi ens diu que per calcular el nombre total d'elements en un conjunt, podem sumar el nombre d'elements en cada subconjunt, però aleshores hem comptat els elements que pertanyen a més d'un subconjunt en massa. Per això, hem de restar el nombre d'elements que pertanyen a dos subconjunts i sumar el nombre d'elements que pertanyen a tots els subconjunts.
+
+En aquest cas, tenim tres subconjunts: llaunes pintades de blanc (B), llaunes pintades de blau (L) i llaunes pintades de verd (V). Sabem que:
+
+- Hi ha 25 llaunes pintades de blanc (B).
+- Hi ha 28 llaunes pintades de blau (L).
+- Hi ha 20 llaunes pintades de verd (V).
+- Hi ha 5 llaunes pintades de tots tres colors (B ∩ L ∩ V).
+
+Per calcular el nombre de llaunes pintades d'un sol color, podem utilitzar la fórmula:
+
+|B ∪ L ∪ V| = |B| + |L| + |V| - |B ∩ L| - |B ∩ V| - |L ∩ V| + |B ∩ L ∩ V|
+
+On |B ∪ L ∪ V| és el nombre total de llaunes pintades amb un, dos o tres colors.
+
+Però, per aquest problema, no ens interessa el nombre total de llaunes pintades amb un, dos o tres colors, sinó el nombre de llaunes pintades d'un sol color. Per això, podem utilitzar la següent fórmula:
+
+|B| + |L| + |V| - 3 × |B ∩ L ∩ V| = |B ∪ L ∪ V| - (|B ∩ L| + |B ∩ V| + |L ∩ V|)
+
+Però, no tenim les dades per calcular |B ∩ L|, |B ∩ V| i |L ∩ V|, però sabem que el nombre total de llaunes és 36 i que 5 llaunes tenen tots tres colors. Això significa que hi ha 36 - 5 = 31 llaunes que no tenen tots tres colors.
+
+Per calcular el nombre de llaunes pintades d'un sol color, podem utilitzar la següent fórmula:
+
+|B| + |L| + |V| - 3 × |B ∩ L ∩ V| = 31
+
+Substituint els valors coneguts, obtenim:
+
+25 + 28 + 20 - 3 × 5 = 31
+
+Però, aquesta fórmula no és vàlida, ja que està basada en la suposició que els llaunes pintats amb un sol color no són comptats en els subconjunts B, L i V. Però, aquesta suposició no és vàlida, ja que els llaunes pintats amb un sol color són comptats en els subconjunts B, L i V.
+
+Per això, no podem calcular el nombre de llaunes pintades d'un sol color amb les dades proporcionades.
+
+Resposta: E) No es pot saber amb eixe dades.

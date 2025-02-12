@@ -1,0 +1,21 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar fent un càlcul de la quantitat de passatgers que hi ha en els tres vagons consecutius on hi ha exactament 99 passatgers. 
+
+Si hi ha 99 passatgers en tres vagons consecutius, aleshores hi ha 99 passatgers en cada un dels tres vagons. 
+
+Ara, podem calcular la quantitat de passatgers que hi ha en tots els vagons menys els tres consecutius. 
+
+Hi ha 11 vagons en total, i si en tres d'ells hi ha 99 passatgers, aleshores en els altres 8 vagons hi ha 350 - 99 * 3 = 350 - 297 = 53 passatgers.
+
+Ara, podem calcular la quantitat de passatgers que hi ha en cada un dels vagons menys els tres consecutius. 
+
+Hi ha 53 passatgers en 8 vagons, aleshores hi ha 53 / 8 = 6,625 passatgers en cada un dels vagons menys els tres consecutius. 
+
+Però, no podem tenir 0,625 passatgers en un vagó, aleshores aleshores hi ha 6 passatgers en cada un dels vagons menys els tres consecutius.
+
+Ara, podem calcular la quantitat de passatgers que hi ha en el sisè vagó. 
+
+El sisè vagó és un dels vagons menys els tres consecutius, aleshores hi ha 6 passatgers en el sisè vagó.
+
+Resposta: E)

@@ -1,0 +1,15 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar assignant valors als quatre vèrtexs del quadrat. Com es diu que dos nombres connectats per un costat són múltiples l'un de l'altre, podem assignar valors que siguin múltiples entre si. Per exemple, si assignem el valor 1 a un vèrtex, el valor 2 pot anar al vèrtex connectat per un costat, el valor 3 al següent vèrtex connectat per un costat, i el valor 4 al vèrtex final connectat per un costat.
+
+Però, si dos nombres són als extrems de la mateixa diagonal, cap dels dos no és múltiple de l'altre. Això significa que els valors als extrems de la mateixa diagonal han de ser primers entre si. Per exemple, si assignem el valor 1 a un vèrtex, el valor 2 pot anar al vèrtex connectat per un costat, el valor 3 al següent vèrtex connectat per un costat, i el valor 5 al vèrtex final connectat per un costat.
+
+Per trobar la suma dels quatre nombres, podem sumar els valors assignats als quatre vèrtexs. En aquest cas, la suma seria 1 + 2 + 3 + 5 = 11. Però, aquesta suma no està entre les opcions de resposta.
+
+Per trobar la suma més petita possible, podem intentar assignar valors més petits als vèrtexs. Per exemple, si assignem el valor 1 a un vèrtex, el valor 2 pot anar al vèrtex connectat per un costat, el valor 3 al següent vèrtex connectat per un costat, i el valor 4 al vèrtex final connectat per un costat. En aquest cas, la suma seria 1 + 2 + 3 + 4 = 10. Però, aquesta suma no està entre les opcions de resposta.
+
+Per trobar la suma més petita possible, podem intentar assignar valors més petits als vèrtexs. Per exemple, si assignem el valor 1 a un vèrtex, el valor 2 pot anar al vèrtex connectat per un costat, el valor 3 al següent vèrtex connectat per un costat, i el valor 5 al vèrtex final connectat per un costat. En aquest cas, la suma seria 1 + 2 + 3 + 5 = 11. Però, aquesta suma no està entre les opcions de resposta.
+
+Per trobar la suma més petita possible, podem intentar assignar valors més petits als vèrtexs. Per exemple, si assignem el valor 1 a un vèrtex, el valor 2 pot anar al vèrtex connectat per un costat, el valor 4 al següent vèrtex connectat per un costat, i el valor 5 al vèrtex final connectat per un costat. En aquest cas, la suma seria 1 + 2 + 4 + 5 = 12.
+
+Resposta: A)

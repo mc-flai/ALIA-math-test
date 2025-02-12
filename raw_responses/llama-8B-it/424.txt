@@ -1,0 +1,9 @@
+Raonament: Per resoldre aquest problema, podem imaginar la pizza rodona com un cercle i els talls rectes com segments que creuem el cercle. Quan talla la pizza de costat a costat amb talls rectes, està creant segments que es creuen en els punts del cercle.
+
+El primer tall crea 2 segments. El següent tall crea 4 segments, ja que creua els 2 segments existents i crea 2 nous segments. El tercer tall crea 7 segments, ja que creua els 4 segments existents i crea 3 nous segments.
+
+Això és un exemple de seqüència aritmètica, on cada terme és la suma del terme anterior més un nou terme. En aquest cas, la seqüència és: 2, 4, 7,...
+
+Per tant, quan talla la pizza de costat a costat amb talls rectes tres vegades, podem aconseguir un màxim de 7 trossos.
+
+Resposta: A)

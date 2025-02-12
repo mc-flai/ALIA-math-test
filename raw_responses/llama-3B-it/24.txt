@@ -1,0 +1,21 @@
+Raonament:
+
+Per calcular les possibilitats d'apilar els 6 cilindres, podem utilitzar la teoria dels grups i la fórmula de les permutacions amb repetits.
+
+Primament, considerem els cilindres sense colors. Podem ordenar-los de 6! = 720 maneres.
+
+A continuació, considerem els colors. Podem agrupar els cilindres per colors:
+
+- 3 cilindres de color blau
+- 2 cilindres de color verd
+- 1 cilindre de color groc
+
+Aquestes agrupacions poden ordenar-se de 3! = 6 maneres (per als cilindres blaus), 2! = 2 maneres (per als cilindres verds) i 1! = 1 manera (per al cilindre groc).
+
+Per calcular les possibilitats d'apilar els cilindres, dividim el nombre total de permutacions (720) per el nombre de permutacions per color:
+
+720 / (6 × 2 × 1) = 720 / 12 = 60
+
+Així, hi ha 60 possibilitats diferents d'apilar els 6 cilindres considerant iguals dues construccions que mostren els mateixos colors en els mateixos llocs.
+
+Resposta: B) 60

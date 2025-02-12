@@ -1,0 +1,37 @@
+Raonament:
+
+Per determinar el nombre de dos xifres que va ser l'últim que Emma va escriure complet, cal calcular el nombre de nombres enters positius des de 1 fins a 2019 que tenen 2 xifres.
+
+El primer nombre enter amb 2 xifres és 10 i el darrer és 99. Per calcular el nombre de nombres enters amb 2 xifres, podem utilitzar la fórmula:
+
+(últim nombre - primer nombre) / 10 + 1
+
+En aquest cas, el primer nombre és 10 i el darrer és 99, però no inclouu 99, per tant, el darrer nombre és 98.
+
+(98 - 10) / 10 + 1 = 9
+
+Això significa que hi ha 9 nombres enters amb 2 xifres des de 10 fins a 98.
+
+Però, Emma va escriure 25 xifres, per tant, va escriure tots els nombres enters amb 2 xifres des de 10 fins a 98, i els 25 xifres que va escriure després van ser dels nombres enters amb 3 xifres.
+
+Per calcular el nombre de nombres enters amb 3 xifres, podem utilitzar la fórmula:
+
+(últim nombre - primer nombre) / 100 + 1
+
+En aquest cas, el primer nombre és 100 i el darrer és 999, però no inclouu 999, per tant, el darrer nombre és 998.
+
+(998 - 100) / 100 + 1 = 9
+
+Això significa que hi ha 9 nombres enters amb 3 xifres des de 100 fins a 998.
+
+Però, Emma va escriure 25 xifres després dels nombres enters amb 2 xifres, per tant, va escriure 25 - 9 = 16 nombres enters amb 3 xifres.
+
+Per calcular el darrer nombre enter amb 2 xifres que Emma va escriure, podem sumar els 16 nombres enters amb 3 xifres als 9 nombres enters amb 2 xifres:
+
+10 + 16 = 26
+
+Però, Emma va escriure 25 xifres després dels nombres enters amb 2 xifres, per tant, el darrer nombre enter amb 2 xifres que va escriure és el 25è nombre enter amb 2 xifres.
+
+El 25è nombre enter amb 2 xifres és 25.
+
+Resposta: E) 25.

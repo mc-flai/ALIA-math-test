@@ -1,0 +1,49 @@
+Raonament:
+
+Per començar, considerem els nombres de tres xifres que satisfen la condició. Podem representar aquests nombres com a $100a + 10b + c$, on $a$, $b$ i $c$ són digits.
+
+Si eliminem la primera xifra, obtenim el nombre $10b + c$, que és un quadrat perfecte. Això significa que $10b + c = n^2$ per alguna entera positiva $n$.
+
+Si eliminem l'última xifra, obtenim el nombre $100a + 10b$, que és un quadrat perfecte. Això significa que $100a + 10b = m^2$ per alguna entera positiva $m$.
+
+A partir de la primera equació, podem escriure $c = n^2 - 10b$. Substituïm aquesta expressió per a $c$ en la segona equació:
+
+$$100a + 10b = m^2 \quad \text{ i } \quad c = n^2 - 10b$$
+
+Simplifiquem la segona equació:
+
+$$100a + 10b = m^2 \quad \text{ i } \quad 100a = m^2 - 10b + 10b$$
+
+$$100a = m^2$$
+
+Això significa que $m^2$ és divisible per 100, i per tant, $m$ és divisible per 10.
+
+Per això, $m$ pot ser 10, 20, 30,..., 100. Per a cada valor de $m$, podem calcular $n$:
+
+- Per $m = 10$, $n = 1$
+- Per $m = 20$, $n = 2$
+- Per $m = 30$, $n = 3$
+- Per $m = 40$, $n = 4$
+- Per $m = 50$, $n = 5$
+- Per $m = 60$, $n = 6$
+- Per $m = 70$, $n = 7$
+- Per $m = 80$, $n = 8$
+- Per $m = 90$, $n = 9$
+- Per $m = 100$, $n = 10$
+
+Per a cada valor de $m$ i $n$, podem calcular $a$ i $b$:
+
+- Per $m = 10$, $n = 1$, $a = 1$ i $b = 0$
+- Per $m = 20$, $n = 2$, $a = 2$ i $b = 0$
+- Per $m = 30$, $n = 3$, $a = 3$ i $b = 0$
+- Per $m = 40$, $n = 4$, $a = 4$ i $b = 0$
+- Per $m = 50$, $n = 5$, $a = 5$ i $b = 0$
+- Per $m = 60$, $n = 6$, $a = 6$ i $b = 0$
+- Per $m = 70$, $n = 7$, $a = 7$ i $b = 0$
+- Per $m = 80$, $n = 8$, $a = 8$ i $b = 0$
+- Per $m = 90$, $n = 9$, $a = 9$ i $b = 0$
+- Per $m = 100$, $n = 10$, $a = 1$ i $b = 0$
+
+A partir d'aquestes calculacions, podem veure que hi ha 5 nombres de tres xifres que satisfen la condició: 101, 202, 303, 404 i 505.
+
+Resposta: D) 5

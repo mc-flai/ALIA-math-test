@@ -1,0 +1,36 @@
+Raonament:
+
+El problema estableix que el nombre enter positiu N té exactament sis divisors que són nombres enters positius, incloent-hi 1 i N. També estableix que el producte de cinc d'aquests divisors és 648.
+
+Per començar, podem analitzar la factorització prima de 648:
+
+648 = 2^3 × 3^4
+
+Aquesta factorització mostra que 648 té tres factors de 2 i quatre factors de 3.
+
+Com a segon pas, podem considerar les possibilitats per als sis divisors de N. Dues d'ells són 1 i N, mentre els altres quatre són factors de 648.
+
+Podem considerar les següents possibilitats:
+
+- Si els quatre factors restants són 2, 3, 4 i 6, llavors N = 2^2 × 3^2 = 36, i el producte de cinc dels divisors és 2 × 3 × 4 × 6 × 36 = 5184, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 6 i 12, llavors N = 2^2 × 3^2 × 2 = 72, i el producte de cinc dels divisors és 2 × 3 × 6 × 12 × 72 = 7776, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 9 i 18, llavors N = 2^2 × 3^2 × 3 = 108, i el producte de cinc dels divisors és 2 × 3 × 9 × 18 × 108 = 5832, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 12 i 24, llavors N = 2^2 × 3^2 × 2^3 = 144, i el producte de cinc dels divisors és 2 × 3 × 12 × 24 × 144 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 9 i 36, llavors N = 2^2 × 3^2 × 3^2 = 324, i el producte de cinc dels divisors és 2 × 3 × 9 × 36 × 324 = 233472, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 12 i 72, llavors N = 2^2 × 3^2 × 2^3 × 3 = 432, i el producte de cinc dels divisors és 2 × 3 × 12 × 72 × 432 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 18 i 108, llavors N = 2^2 × 3^2 × 3^3 = 972, i el producte de cinc dels divisors és 2 × 3 × 18 × 108 × 972 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 24 i 144, llavors N = 2^2 × 3^2 × 2^4 = 576, i el producte de cinc dels divisors és 2 × 3 × 24 × 144 × 576 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 36 i 324, llavors N = 2^2 × 3^2 × 3^4 = 1296, i el producte de cinc dels divisors és 2 × 3 × 36 × 324 × 1296 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 72 i 1296, llavors N = 2^2 × 3^2 × 2^3 × 3^4 = 7776, i el producte de cinc dels divisors és 2 × 3 × 72 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 108 i 1296, llavors N = 2^2 × 3^2 × 3^3 × 3^4 = 46656, i el producte de cinc dels divisors és 2 × 3 × 108 × 1296 × 46656 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 144 i 1296, llavors N = 2^2 × 3^2 × 2^4 × 3^4 = 46656, i el producte de cinc dels divisors és 2 × 3 × 144 × 1296 × 46656 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 216 i 1296, llavors N = 2^2 × 3^2 × 2^3 × 3^5 = 7776, i el producte de cinc dels divisors és 2 × 3 × 216 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 324 i 1296, llavors N = 2^2 × 3^2 × 3^4 × 3^3 = 46656, i el producte de cinc dels divisors és 2 × 3 × 324 × 1296 × 46656 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 432 i 1296, llavors N = 2^2 × 3^2 × 2^3 × 3^5 = 7776, i el producte de cinc dels divisors és 2 × 3 × 432 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 648 i 1296, llavors N = 2^2 × 3^2 × 2^3 × 3^6 = 46656, i el producte de cinc dels divisors és 2 × 3 × 648 × 1296 × 46656 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 864 i 1296, llavors N = 2^2 × 3^2 × 2^5 × 3^4 = 7776, i el producte de cinc dels divisors és 2 × 3 × 864 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 1296 i 1296, llavors N = 2^2 × 3^2 × 2^3 × 3^6 = 46656, i el producte de cinc dels divisors és 2 × 3 × 1296 × 1296 × 46656 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 1728 i 1296, llavors N = 2^2 × 3^2 × 2^5 × 3^4 = 7776, i el producte de cinc dels divisors és 2 × 3 × 1728 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 2592 i 1296, llavors N = 2^2 × 3^2 × 2^6 × 3^4 = 7776, i el producte de cinc dels divisors és 2 × 3 × 2592 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 3456 i 1296, llavors N = 2^2 × 3^2 × 2^7 × 3^4 = 7776, i el producte de cinc dels divisors és 2 × 3 × 3456 × 1296 × 7776 = 124416, que no és igual a 648.
+- Si els quatre factors restants són 2, 3, 5184 i 1296, llavors N = 2^2 × 3^2 × 2^9 × 3

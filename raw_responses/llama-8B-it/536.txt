@@ -1,0 +1,29 @@
+Raonament: Per resoldre aquest problema, podem començar manipulant l'equació donada $\frac{a}{b+1} + \frac{b}{a+1} = 1$. Per fer-ho més tractable, podem multiplicar tots dos costats per $(a+1)(b+1)$ per eliminar les fraccions. Això ens dona:
+
+$$a(a+1) + b(b+1) = (a+1)(b+1)$$
+
+Desenvolupant els productes, obtenim:
+
+$$a^2 + a + b^2 + b = ab + a + b + 1$$
+
+Combina els termes similars:
+
+$$a^2 - ab + b^2 + b - a - 1 = 0$$
+
+Aquesta és una equació quadràtica en $a$ i $b$. Però, per simplificar la resolució, podem intentar factoritzar-la. Després de alguns intents, podem escriure-la com:
+
+$$(a-b)^2 + (b-1) = 0$$
+
+Ara, podem resoldre per $(a-b)$:
+
+$$(a-b)^2 = - (b-1)$$
+
+Prendre la raíz quadrada de tots dos costats:
+
+$$a-b = \pm \sqrt{-(b-1)}$$
+
+Això implica que $a-b$ és igual a $\pm i\sqrt{b-1}$, on $i$ és la unitat imaginària. Això és un problema, ja que $a$ i $b$ són nombres reals, i no podem tenir una expressió que impliqui nombres complexes.
+
+Per tant, la nostra suposició inicial que l'equació $\frac{a}{b+1} + \frac{b}{a+1} = 1$ té solucions reals per a $a$ i $b$ és falsa. Això significa que no podem determinar els valors de l'expressió $\frac{a}{b} + \frac{b}{a} - ab$.
+
+Resposta: E)

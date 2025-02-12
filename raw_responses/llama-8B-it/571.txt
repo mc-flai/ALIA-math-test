@@ -1,0 +1,39 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar establint les igualtats donades:
+
+a + 2 = b - 2 
+b - 2 = c * 2 
+c * 2 = d : 2 
+
+Podem simplificar les igualtats:
+
+a + 2 = b - 2 
+b = a + 4 
+b - 2 = c * 2 
+c = (b - 2) / 2 
+c = ((a + 4) - 2) / 2 
+c = (a + 2) / 2 
+
+c * 2 = d : 2 
+d = c * 2 
+d = ((a + 2) / 2) * 2 
+d = a + 2 
+
+Ara tenim les expressions per a, b, c i d en termes de a:
+
+a = a 
+b = a + 4 
+c = (a + 2) / 2 
+d = a + 2 
+
+Per trobar el nombre més gran, podem comparar les expressions:
+
+- a és igual a si mateix, però no té cap relació amb els altres nombres.
+- b és a + 4, que és sempre més gran que a.
+- c és (a + 2) / 2, que és sempre menor o igual a a + 1.
+- d és a + 2, que és sempre menor o igual a a + 4.
+
+Per tant, el nombre més gran dels quatre nombres és b.
+
+Resposta: B)

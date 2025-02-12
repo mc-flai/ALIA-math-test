@@ -1,0 +1,31 @@
+Raonament: Per calcular el nombre de possibilitats d'apilar els 6 cilindres, podem utilitzar el concepte de permutacions amb repeticions. Tenim 6 cilindres en total, amb 3 cilindres de color blau, 2 cilindres de color verd i 1 cilindre de color groc. Per calcular el nombre de possibilitats, podem utilitzar la fórmula de permutacions amb repeticions:
+
+n! / (n1! * n2! *... * nk!)
+
+on n és el nombre total de cilindres (6 en aquest cas), i n1, n2,..., nk són els nombres de cilindres de cada color.
+
+En aquest cas, tenim:
+
+n = 6
+n1 = 3 (cilindres de color blau)
+n2 = 2 (cilindres de color verd)
+n3 = 1 (cilindre de color groc)
+
+Així, la fórmula esdevé:
+
+6! / (3! * 2! * 1!)
+
+Per calcular aquesta expressió, podem començar per calcular els factorials:
+
+6! = 6 * 5 * 4 * 3 * 2 * 1 = 720
+3! = 3 * 2 * 1 = 6
+2! = 2 * 1 = 2
+1! = 1
+
+Ara, podem substituir aquests valors a la fórmula:
+
+720 / (6 * 2 * 1) = 720 / 12 = 60
+
+Per tant, hi ha 60 possibilitats diferents d'apilar els 6 cilindres.
+
+Resposta: B)

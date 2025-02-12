@@ -1,0 +1,11 @@
+Raonament: Per determinar si un triangle pot ser construït amb tres longituds de segments, cal aplicar la desigualtat del triangle, que diu que la suma de les longituds de dos costats d'un triangle ha de ser major que la longitud del tercer costat. En altres paraules, si les longituds són a, b i c, llavors a + b > c, a + c > b i b + c > a.
+
+En aquest cas, hem de provar cada trio de longituds per veure si compleixen la desigualtat del triangle.
+
+- Trio (2,3,4): 2 + 3 > 4 (5 > 4), 2 + 4 > 3 (6 > 3), 3 + 4 > 2 (7 > 2). Aquest trio compleix la desigualtat del triangle.
+- Trio (5,2,8): 5 + 2 > 8 (7 > 8), 5 + 8 > 2 (13 > 2), 2 + 8 > 5 (10 > 5). Aquest trio no compleix la desigualtat del triangle.
+- Trio (10,1,10): 10 + 1 > 10 (11 > 10), 10 + 10 > 1 (20 > 1), 1 + 10 > 10 (11 > 10). Aquest trio compleix la desigualtat del triangle.
+- Trio (2,2,2): 2 + 2 > 2 (4 > 2), 2 + 2 > 2 (4 > 2), 2 + 2 > 2 (4 > 2). Aquest trio compleix la desigualtat del triangle.
+- Trio (38,17,23): 38 + 17 > 23 (55 > 23), 38 + 23 > 17 (61 > 17), 17 + 23 > 38 (40 > 38). Aquest trio compleix la desigualtat del triangle.
+
+Resposta: B)

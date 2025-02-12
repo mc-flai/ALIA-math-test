@@ -1,0 +1,90 @@
+Raonament:
+
+Per aquest problema, podem analitzar el problema de manera sistemàtica. 
+
+Considerem un nombre de cinc xifres format per les tres primeres xifres com a "abc" i les dues últimes xifres com a "de". 
+
+El nombre de tres xifres format per les tres primeres xifres és igual a 4 vegades el nombre de dues xifres format per les dues últimes xifres si i només si:
+
+abc = 4 * de
+
+Per això, podem escriure:
+
+100a + 10b + c = 4 * (10d + e)
+
+Simplificant, obtenim:
+
+100a + 10b + c = 40d + 4e
+
+Aquesta equació és verda si i només si:
+
+- 100a + 10b + c és divisible per 4
+- 40d + 4e és divisible per 100a + 10b + c
+
+Per això, podem analitzar les possibilitats següents:
+
+- Si a = 1, 100a = 100, que és divisible per 4. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si a = 2, 100a = 200, que és divisible per 4. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si a = 3, 100a = 300, que no és divisible per 4. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si a = 4, 100a = 400, que és divisible per 4. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si a = 5, 100a = 500, que no és divisible per 4. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si a = 6, 100a = 600, que no és divisible per 4. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si a = 7, 100a = 700, que no és divisible per 4. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si a = 8, 100a = 800, que és divisible per 4. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si a = 9, 100a = 900, que no és divisible per 4. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+
+En total, hi ha 3 casos en què a = 1, 2 o 8, i 2 casos en què a = 4 o 9. Per tant, hi ha 3 + 2 = 5 casos en què a és fix.
+
+Per a cada cas, podem analitzar les possibilitats següents:
+
+- Si a = 1, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si a = 2, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si a = 8, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si a = 4, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si a = 9, b i c no podem ser qualsevol nombre entre 0 i 9. Per tant, no hi ha possibilitats.
+
+En total, hi ha 100 + 100 + 100 + 100 = 400 possibilitats.
+
+Per això, el nombre total de nombres de cinc xifres que satisfen la condició és:
+
+400
+
+Però, aquesta solució no és correcta, ja que no considera les possibilitats de "de" que no són divisibles per 100a + 10b + c.
+
+Per això, podem analitzar les possibilitats de "de" que no són divisibles per 100a + 10b + c. 
+
+Per això, podem escriure:
+
+100a + 10b + c = 40d + 4e
+
+Simplificant, obtenim:
+
+100a + 10b + c - 40d = 4e
+
+Per això, podem analitzar les possibilitats següents:
+
+- Si d = 0, 100a + 10b + c - 40d = 4e, que és equivalent a 100a + 10b + c = 4e. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si d = 1, 100a + 10b + c - 40d = 4e, que és equivalent a 60a + 10b + c = 4e. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si d = 2, 100a + 10b + c - 40d = 4e, que és equivalent a 20a + 10b + c = 4e. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si d = 3, 100a + 10b + c - 40d = 4e, que és equivalent a -20a + 10b + c = 4e. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si d = 4, 100a + 10b + c - 40d = 4e, que és equivalent a -60a + 10b + c = 4e. Per tant, b i c podem ser qualsevol nombre entre 0 i 9.
+- Si d = 5, 100a + 10b + c - 40d = 4e, que és equivalent a -100a + 10b + c = 4e. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si d = 6, 100a + 10b + c - 40d = 4e, que és equivalent a -140a + 10b + c = 4e. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si d = 7, 100a + 10b + c - 40d = 4e, que és equivalent a -180a + 10b + c = 4e. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si d = 8, 100a + 10b + c - 40d = 4e, que és equivalent a -220a + 10b + c = 4e. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+- Si d = 9, 100a + 10b + c - 40d = 4e, que és equivalent a -260a + 10b + c = 4e. Per tant, b i c no podem ser qualsevol nombre entre 0 i 9.
+
+En total, hi ha 5 casos en què d és fix.
+
+Per a cada cas, podem analitzar les possibilitats següents:
+
+- Si d = 0, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si d = 1, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si d = 2, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si d = 3, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si d = 4, b i c podem ser qualsevol nombre entre 0 i 9. Per tant, hi ha 10 * 10 = 100 possibilitats.
+- Si d = 5, b i c no podem ser qualsevol nombre entre 0 i 9. Per tant, no hi ha possibilitats.
+- Si d = 6, b i c no podem ser qualsevol nombre entre 0 i 9. Per tant, no hi ha possibilitats.
+- Si d = 7, b i c no podem ser qualsevol nombre entre 0 i 9. Per tant, no hi ha possibilitats.
+- Si d = 8, b i c no podem ser qualsevol nombre entre 0 i 9. Per tant, no hi ha possibilitats.
+- Si d = 9,

@@ -1,0 +1,31 @@
+Raonament: 
+
+Per resoldre aquest problema, cal analitzar les condicions donades. Tots els participants comencen al mateix punt i fan salts de la mateixa llargada cada vegada. La pista circular té 400 metres de llargària i hi ha un forat de 75 cm de longitud.
+
+El primer pas és calcular la distància total que cada participant ha saltat en 10 voltes. Per fer-ho, podem multiplicar la llargada del salt per cada participant per 10.
+
+- Albert: 70 cm * 10 = 700 cm
+- Berta: 80 cm * 10 = 800 cm
+- Carles: 85 cm * 10 = 850 cm
+- David: 90 cm * 10 = 900 cm
+- Esther: 95 cm * 10 = 950 cm
+
+A continuació, podem calcular la distància màxima que cada participant pot recórrer sense caure al forat. Per fer-ho, podem restar la longitud del forat de la distància total recorreguda per cada participant.
+
+- Albert: 700 cm - 75 cm = 625 cm
+- Berta: 800 cm - 75 cm = 725 cm
+- Carles: 850 cm - 75 cm = 775 cm
+- David: 900 cm - 75 cm = 825 cm
+- Esther: 950 cm - 75 cm = 875 cm
+
+Però, per resoldre aquest problema, cal tenir en compte que la pista és circular i que la distància màxima que pot recórrer cada participant sense caure al forat és la distància màxima que pot recórrer sense que la suma de les longituds dels seus salts i la longitud del forat sigui superior a la llargària de la pista.
+
+- Albert: 625 cm + 75 cm = 700 cm (inferior a 400 m)
+- Berta: 725 cm + 75 cm = 800 cm (inferior a 400 m)
+- Carles: 775 cm + 75 cm = 850 cm (inferior a 400 m)
+- David: 825 cm + 75 cm = 900 cm (inferior a 400 m)
+- Esther: 875 cm + 75 cm = 950 cm (superior a 400 m)
+
+Per tant, la resposta correcta és la persona que ha recorregut una distància màxima superior a la llargària de la pista.
+
+Resposta: E)

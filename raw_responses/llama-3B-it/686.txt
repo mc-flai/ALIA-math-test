@@ -1,0 +1,101 @@
+Raonament:
+
+Anem a considerar el nombre de partides que es jugaran en el torneig. Cada jugador jugarà exactament una vegada contra tots els jugadors dels altres equips. Si hi ha n equips, cada jugador jugarà n-1 partides.
+
+El nombre total de partides jugarades serà igual al doble del nombre de partides que jugarà cada jugador, però dividit per 2, per no comptar les partides que jugarà cada jugador dos vegades (una vegada contra cada jugador de l'altre equip). Això es igual a:
+
+(2n-2) * n / 2
+
+Per simplificar, podem escriure:
+
+n(2n-2) / 2
+
+Aquesta expressió representa el nombre total de partides que es jugaran en el torneig.
+
+El problema estableix que no es possible jugar més de 250 partides en total. Podem establir una desigualtat per representar aquesta restricción:
+
+n(2n-2) / 2 ≤ 250
+
+Multiplicant per 2 per eliminar la fracció, obtenim:
+
+n(2n-2) ≤ 500
+
+Aquesta desigualtat representa la restricción que impossem el problema.
+
+Per trobar el màxim nombre d'equips que poden participar en el torneig, podem intentar trobar el màxim valor de n que satisfai aquesta desigualtat.
+
+Podem escriure la desigualtat com a:
+
+2n^2 - 2n - 500 ≤ 0
+
+Aquesta desigualtat és una desigualtat quadràtica. Podem factoritzar-la per obtenir:
+
+(2n + 25)(n - 20) ≤ 0
+
+Aquesta desigualtat és igual a zero quan:
+
+2n + 25 = 0 o n - 20 = 0
+
+Resolent aquestes equacions, obtenim:
+
+n = -12,5 o n = 20
+
+Però n no pot ser negatiu, per tant, el màxim valor de n és 20.
+
+Això significa que el màxim nombre d'equips que poden participar en el torneig és 20. No obstant això, aquesta resposta no està disponible en les options. Podem intentar provar amb n = 19:
+
+n(2n-2) / 2 = 19(2*19-2) / 2 = 19*34 = 646
+
+Aquesta resposta és major que 250, per tant, n = 19 no és una solució.
+
+Podem provar amb n = 18:
+
+n(2n-2) / 2 = 18(2*18-2) / 2 = 18*32 = 576
+
+Aquesta resposta és major que 250, per tant, n = 18 no és una solució.
+
+Podem provar amb n = 17:
+
+n(2n-2) / 2 = 17(2*17-2) / 2 = 17*30 = 510
+
+Aquesta resposta és major que 250, per tant, n = 17 no és una solució.
+
+Podem provar amb n = 16:
+
+n(2n-2) / 2 = 16(2*16-2) / 2 = 16*30 = 480
+
+Aquesta resposta és major que 250, per tant, n = 16 no és una solució.
+
+Podem provar amb n = 15:
+
+n(2n-2) / 2 = 15(2*15-2) / 2 = 15*28 = 420
+
+Aquesta resposta és major que 250, per tant, n = 15 no és una solució.
+
+Podem provar amb n = 14:
+
+n(2n-2) / 2 = 14(2*14-2) / 2 = 14*26 = 364
+
+Aquesta resposta és major que 250, per tant, n = 14 no és una solució.
+
+Podem provar amb n = 13:
+
+n(2n-2) / 2 = 13(2*13-2) / 2 = 13*24 = 312
+
+Aquesta resposta és major que 250, per tant, n = 13 no és una solució.
+
+Podem provar amb n = 12:
+
+n(2n-2) / 2 = 12(2*12-2) / 2 = 12*22 = 264
+
+Aquesta resposta és major que 250, per tant, n = 12 no és una solució.
+
+Podem provar amb n = 11:
+
+n(2n-2) / 2 = 11(2*11-2) / 2 = 11*20 = 220
+
+Aquesta resposta és menor que 250, per tant, n = 11 és una solució.
+
+La resposta correcta és:
+
+Resposta: A) 11

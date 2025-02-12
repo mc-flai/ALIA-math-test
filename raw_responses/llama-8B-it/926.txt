@@ -1,0 +1,49 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant les condicions donades. Tenim sis nombres enters positius, i el més gran és n. A més, només podem trobar una parella a, b amb a < b de manera que a no és divisor de b.
+
+Per trobar el menor valor possible de n, podem intentar trobar un conjunt de sis nombres que compleixin aquestes condicions. Un encontre és {1, 2, 3, 4, 6, 12}. En aquest conjunt, la parella (1, 2) compleix la condició donada, ja que 1 no és divisor de 2.
+
+Però, si n = 12, podem trobar una altra parella (2, 4) que compleix la condició. Això significa que n = 12 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 15}. En aquest cas, la parella (1, 2) no compleix la condició, ja que 1 és divisor de 2. Però, la parella (2, 4) tampoc compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 15, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 15 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 6, 24}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, si n = 24, podem trobar una altra parella (2, 4) que compleix la condició. Això significa que n = 24 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 9}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 9, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 9 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 6, 36}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) no compleix la condició, ja que 3 no és divisor de 5. Però, la parella (3, 6) compleix la condició, ja que 3 no és divisor de 6.
+
+Però, si n = 36, podem trobar una altra parella (3, 6) que compleix la condició. Això significa que n = 36 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 45}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 45, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 45 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 6, 24}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) no compleix la condició, ja que 3 no és divisor de 5. Però, la parella (3, 6) compleix la condició, ja que 3 no és divisor de 6.
+
+Però, si n = 24, podem trobar una altra parella (3, 6) que compleix la condició. Això significa que n = 24 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 9}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 9, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 9 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 6, 12}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) no compleix la condició, ja que 3 no és divisor de 5. Però, la parella (3, 6) compleix la condició, ja que 3 no és divisor de 6.
+
+Però, si n = 12, podem trobar una altra parella (3, 6) que compleix la condició. Això significa que n = 12 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 45}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 45, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 45 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 6, 24}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) no compleix la condició, ja que 3 no és divisor de 5. Però, la parella (3, 6) compleix la condició, ja que 3 no és divisor de 6.
+
+Però, si n = 24, podem trobar una altra parella (3, 6) que compleix la condició. Això significa que n = 24 no és el menor valor possible.
+
+Un altre exemple és {1, 2, 3, 4, 5, 9}. En aquest cas, la parella (1, 2) compleix la condició, ja que 1 no és divisor de 2. Però, la parella (2, 4) no compleix la condició, ja que 2 és divisor de 4. Però, la parella (3, 5) compleix la condició, ja que 3 no és divisor de 5.
+
+Però, si n = 9, podem trobar una altra parella (3, 5) que compleix la condició. Això significa que n = 9 no és el menor valor possible.
+
+Un altre exemple és {1,

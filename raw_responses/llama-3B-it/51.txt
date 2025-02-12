@@ -1,0 +1,29 @@
+Raonament:
+
+Per aquest problema, podem començar analitzant les propietats del perímetre del triangle. El perímetre d'un triangle és la suma de les longitudes dels seus costats. En aquest cas, el perímetre és de 21 units.
+
+La primera cosa que podem dir és que la suma de les longitudes dels costats d'un triangle sempre és major que la longitud del tercer costat (teorema de la desigualtat del triangle). Això significa que la suma de les longitudes dels dos costats més curts sempre ha de ser major que la longitud del tercer costat.
+
+A continuació, podem considerar les possibilitats de longituds dels costats que sumen 21 units. Podem començar per considerar les possibilitats més petites i anar-hi enfora.
+
+Una de les possibilitats més petites és que els tres costats tinguin una longitud de 1 unitat. En aquest cas, el perímetre seria de 3 units, no de 21 units, però això no és possible.
+
+Una altra possibilitat és que els tres costats tinguin una longitud de 7 units. En aquest cas, el perímetre seria de 21 units, però no hi ha manera de que dos costats siguin iguals o que un siga divisible per l'altre.
+
+Una altra possibilitat és que els tres costats tinguin una longitud de 6 i 7 i 8 units. En aquest cas, el perímetre seria de 21 units, i podem veure que el costat de 6 units és divisible per el costat de 3 units (no existeix un costat de 3 units, però si existís, el costat de 6 units seria divisible per ell).
+
+Una altra possibilitat és que els tres costats tinguin una longitud de 5 i 8 i 8 units. En aquest cas, el perímetre seria de 21 units, i podem veure que els costats de 5 units i 8 units són iguals.
+
+Una altra possibilitat és que els tres costats tinguin una longitud de 4 i 8 i 9 units. En aquest cas, el perímetre seria de 21 units, i podem veure que el costat de 4 units és divisible per el costat de 2 units (no existeix un costat de 2 units, però si existís, el costat de 4 units seria divisible per ell).
+
+Una altra possibilitat és que els tres costats tinguin una longitud de 3 i 9 i 9 units. En aquest cas, el perímetre seria de 21 units, i podem veure que els costats de 3 units i 9 units són iguals.
+
+Després de considerar aquestes possibilitats, podem conèixer que hi ha tres possibilitats que satisfan les condicions del problema: 
+
+- 5 i 8 i 8 units
+- 3 i 9 i 9 units
+- 7 i 7 i 7 units
+
+Per tant, la resposta correcta és:
+
+Resposta: D) 3

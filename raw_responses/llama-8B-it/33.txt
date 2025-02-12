@@ -1,0 +1,17 @@
+Raonament: 
+
+Per resoldre aquest problema, podem seguir els següents passos:
+
+1. Com que tres diumenges cauen en un dia amb nom parell, significa que el primer diumenge cau en un dia amb nom parell (2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28 o 30).
+2. Com que el primer diumenge cau en un dia amb nom parell, el segon diumenge també cau en un dia amb nom parell, però amb un nombre més gran (per exemple, si el primer diumenge cau en el 2, el segon diumenge cau en el 16).
+3. Com que el tercer diumenge cau en un dia amb nom parell, també ha de ser un nombre més gran que el segon diumenge (per exemple, si el segon diumenge cau en el 16, el tercer diumenge cau en el 30).
+4. Com que el tercer diumenge cau en el 30, el mes ha de tenir almenys 30 dies.
+5. El dia 20 és un nombre parell, però no és el dia amb nom parell que cau en el 30. Això significa que el dia 20 ha de ser un dia anterior al tercer diumenge.
+6. Com que el tercer diumenge cau en el 30, el segon diumenge cau en el 16 i el primer diumenge cau en el 2, el dia 20 ha de ser un dia entre el 16 i el 30.
+7. El dia 20 és un nombre parell, però no és el dia amb nom parell que cau en el 16. Això significa que el dia 20 ha de ser un dia posterior al 16.
+8. Com que el dia 20 és un nombre parell i és posterior al 16, el dia 20 ha de ser un dia posterior al 16 i anterior al 30.
+9. Els únics dies que compleixen aquesta condició són el 18, el 20 i el 22.
+10. Com que el dia 20 és un nombre parell, el dia 20 ha de ser un dia amb nom parell. Això significa que el dia 20 ha de ser un dia amb nom parell que no és el 18 ni el 22.
+11. El dia 20 és un nombre parell, però no és el dia amb nom parell que cau en el 18 ni el 22. Això significa que el dia 20 ha de ser el dia amb nom parell que cau en el 20.
+
+Resposta: D)

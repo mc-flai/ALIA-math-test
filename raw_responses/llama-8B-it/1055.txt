@@ -1,0 +1,19 @@
+Raonament: 
+
+Per resoldre aquest problema, podem utilitzar un mètode sistemàtic per enumerar totes les possibles combinacions de dos equips de 3 alumnes cadascun. 
+
+1. Primer, ordenem els alumnes per ordre d'edat, des del més gran al més petit. Suposem que els alumnes són A, B, C, D, E, F i G, on A és el més gran i G és el més petit.
+
+2. Per a cada alumne, podem seleccionar tres alumnes per formar el primer equip i els quatre alumnes restants per formar el segon equip. Això ens dona 7 combinacions possibles per a cada alumne.
+
+3. Però, no tots aquests equips compleixen la condició que la persona més gran del primer equip sigui més jove que la persona més jove del segon equip. 
+
+4. Per exemple, si el primer equip està format per A, B i C, i el segon equip està format per D, E, F i G, la persona més gran del primer equip (A) no és més jove que la persona més jove del segon equip (G).
+
+5. Per a cada alumne, podem comptar el nombre de combinacions que compleixen la condició. 
+
+6. Per exemple, si el primer equip està format per A, B i C, i el segon equip està format per D, E i F, la persona més gran del primer equip (A) és més jove que la persona més jove del segon equip (F).
+
+7. Després de comptar totes les combinacions per a cada alumne, podem sumar els resultats per obtenir el nombre total de combinacions que compleixen la condició.
+
+Resposta: E)

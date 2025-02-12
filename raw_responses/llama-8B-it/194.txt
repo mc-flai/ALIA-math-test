@@ -1,0 +1,15 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant la propietat donada: n/(20-n) és un nombre enter quadrat perfecte. Això significa que la fracció n/(20-n) es pot expressar com a un quadrat perfecte, és a dir, n/(20-n) = x^2, on x és un nombre enter.
+
+Per simplificar la fracció, podem intentar factoritzar el denominador (20-n). Si 20-n és un quadrat perfecte, llavors n/(20-n) també ho serà. Això és perquè si 20-n = y^2, on y és un nombre enter, llavors n/(20-n) = n/y^2.
+
+Ara, podem intentar trobar els valors de n que compleixen aquesta propietat. Comencem per n = 1. En aquest cas, 20-n = 19, que no és un quadrat perfecte. Per tant, n = 1 no és una solució.
+
+Prosegim amb n = 2. En aquest cas, 20-n = 18, que tampoc no és un quadrat perfecte. Per tant, n = 2 no és una solució.
+
+Continuant així, podem veure que els únics valors de n que compleixen la propietat són n = 0, n = 4, n = 8, n = 16 i n = 20. Aquests valors de n fan que 20-n sigui un quadrat perfecte, i per tant, n/(20-n) també ho és.
+
+Però, hem de tenir en compte que n = 0 i n = 20 no són solucions vàlides, ja que n/(20-n) no és definit per n = 0 i n = 20 no compleix la condició que n < 20.
+
+Per tant, les solucions vàlides són n = 4, n = 8 i n = 16. Aquests valors de n fan que 20-n sigui un quadrat perfecte, i per tant, n/(20-n) també ho és.
+
+Resposta: C)

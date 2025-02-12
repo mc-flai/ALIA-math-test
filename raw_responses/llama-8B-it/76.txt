@@ -1,0 +1,25 @@
+Raonament: 
+
+Per calcular la probabilitat que el nombre obtingut per Maria siga més gran que el resultat de Pere, primer hem de calcular totes les possibles combinacions de Maria i Pere.
+
+Maria pot triar els següents parells de nombres: (8,9), (8,10), (9,10). Pere pot triar els següents parells de nombres: (3,5), (3,6), (5,6).
+
+A continuació, hem de calcular la suma de Maria i el producte de Pere per a cada combinació:
+
+- Maria: (8,9) -> suma = 17, Pere: (3,5) -> producte = 15, Maria > Pere
+- Maria: (8,9) -> suma = 17, Pere: (3,6) -> producte = 18, Pere > Maria
+- Maria: (8,9) -> suma = 17, Pere: (5,6) -> producte = 30, Maria > Pere
+- Maria: (8,10) -> suma = 18, Pere: (3,5) -> producte = 15, Maria > Pere
+- Maria: (8,10) -> suma = 18, Pere: (3,6) -> producte = 18, Pere > Maria
+- Maria: (8,10) -> suma = 18, Pere: (5,6) -> producte = 30, Maria > Pere
+- Maria: (9,10) -> suma = 19, Pere: (3,5) -> producte = 15, Maria > Pere
+- Maria: (9,10) -> suma = 19, Pere: (3,6) -> producte = 18, Pere > Maria
+- Maria: (9,10) -> suma = 19, Pere: (5,6) -> producte = 30, Maria > Pere
+
+En total, hi ha 9 combinacions possibles. En 6 d'elles, el nombre obtingut per Maria és més gran que el resultat de Pere.
+
+Per tant, la probabilitat que el nombre obtingut per Maria siga més gran que el resultat de Pere és:
+
+6/9 = 2/3
+
+Resposta: E)

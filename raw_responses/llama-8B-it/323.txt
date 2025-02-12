@@ -1,0 +1,36 @@
+Raonament: Per resoldre aquest problema, podem utilitzar la fórmula de la suma dels angles interns d'un polígon, que és (k-2)*180, on k és el nombre de costats. 
+
+Sabem que cada angle interior és igual o bé a 90° o bé a 150°. Per tant, podem escriure dues equacions:
+
+(k-2)*180 = 90k (si tots els angles interns són 90°)
+(k-2)*180 = 150k (si tots els angles interns són 150°)
+
+Resolent la primera equació, obtenim:
+
+(k-2)*180 = 90k
+180k - 360 = 90k
+90k = 360
+k = 4
+
+Resolent la segona equació, obtenim:
+
+(k-2)*180 = 150k
+180k - 360 = 150k
+30k = 360
+k = 12
+
+Ara, podem comprovar si els valors de k són vàlids per a les opcions donades. 
+
+- Si k = 4, la suma dels angles interns és (4-2)*180 = 360, que és igual a 90*4. Això és vàlid.
+- Si k = 12, la suma dels angles interns és (12-2)*180 = 1800, que no és igual a 150*12. Això és invàlid.
+
+Per tant, el valor de k que no pot ser és 12, però no està entre les opcions donades. Però podem comprovar les altres opcions:
+
+- Si k = 6, la suma dels angles interns és (6-2)*180 = 720, que és igual a 90*6 + 90*6. Això és vàlid.
+- Si k = 8, la suma dels angles interns és (8-2)*180 = 1080, que és igual a 90*8 + 90*8. Això és vàlid.
+- Si k = 9, la suma dels angles interns és (9-2)*180 = 1260, que no és igual a 90*9 + 90*9. Això és invàlid.
+- Si k = 10, la suma dels angles interns és (10-2)*180 = 1440, que és igual a 90*10 + 90*10. Això és vàlid.
+
+Per tant, el valor de k que no pot ser és 9.
+
+Resposta: D)

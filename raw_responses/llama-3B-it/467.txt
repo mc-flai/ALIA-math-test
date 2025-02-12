@@ -1,0 +1,28 @@
+Raonament:
+
+Per començar, analitzem les condicions donades:
+
+1. n és un nombre de dos dígits: Això significa que n pot ser entre 10 i 99.
+2. n és parell: Això significa que n pot ser 10, 12, 14,..., 98.
+3. n és primer: Això significa que n no pot ser divisible per cap altre nombre excepte 1 i ell mateix.
+4. n és el quadrat d'un nombre enter: Això significa que n pot ser 1, 4, 9, 16, 25, 36, 49, 64 o 81.
+5. n és més gran que 50: Això significa que n pot ser 51, 64, 81.
+
+A partir de les condicions, podem eliminar alguns nombres:
+
+* Els primers 1, 4, 9, 16, 25, 36, 49 i 81 són els únics que satisfont les condicions 3 i 4.
+* Els nombres 64 i 81 són els únics que satisfont les condicions 4 i 5.
+* Els nombres 64 i 81 són els únics que satisfont les condicions 4 i 5, i també són primers (condició 3).
+
+Per això, n pot ser 64 o 81.
+
+A continuació, analitzem les xifres de n:
+
+* Si n és 64, la suma de les xifres és 6 + 4 = 10.
+* Si n és 81, la suma de les xifres és 8 + 1 = 9.
+
+Però, 9 no és una opció. Això significa que n no pot ser 81.
+
+Per tant, n és 64, i la suma de les xifres és 10.
+
+Resposta: A) 10.

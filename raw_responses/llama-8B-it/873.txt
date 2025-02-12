@@ -1,0 +1,22 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el concepte de combinacions amb repeticions. Dolors vol triar tres fruites de la cistella, però no hi ha restriccions sobre el tipus de fruites que pot triar. Això significa que pot triar tres taronges, tres pomes, tres peres, o qualsevol combinació de tres fruites diferents.
+
+Per calcular el nombre de combinacions possibles, podem començar per triar el primer fruit. Hi ha 6 tipus de fruites a triar (2 taronges, 3 pomes i 2 peres). Després, hi ha 5 fruites restants a triar per al segon lloc, i 4 fruites restants per al tercer lloc.
+
+Però, això és un problema de combinacions amb repeticions, perquè podem triar el mateix tipus de fruit més d'una vegada. Per exemple, podem triar tres taronges, tres pomes i tres peres. Per calcular el nombre de combinacions amb repeticions, podem utilitzar la fórmula:
+
+(6 + 3 - 1) * (5 + 3 - 1) * (4 + 3 - 1) / (3 - 1)!
+
+on (6 + 3 - 1) és el nombre de tipus de fruites (6) més el nombre de fruites que podem triar (3) menys 1 (per evitar comptar les combinacions amb 0 fruites).
+
+Però, aquesta fórmula és massa complicada per aquest problema. Una forma més senzilla de calcular el nombre de combinacions és considerar les següents possibilitats:
+
+- 3 taronges, 0 pomes i 0 peres
+- 2 taronges, 1 pom i 0 peres
+- 1 taromba, 2 pomes i 0 peres
+- 0 taronges, 3 pomes i 0 peres
+- 0 taronges, 2 pomes i 1 pera
+- 0 taronges, 1 pom i 2 peres
+
+Aquestes són totes les possibilitats de triar 3 fruites de la cistella. Per tant, el nombre de combinacions diferents és 6.
+
+Resposta: D)

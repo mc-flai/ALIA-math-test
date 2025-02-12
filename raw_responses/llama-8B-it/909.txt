@@ -1,0 +1,11 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el concepte de gràfics de Gomory-Hu. Tanmateix, en aquest cas, podem utilitzar un mètode més senzill.
+
+En una competició amb 16 equips, cada ronda és una eliminació, on cada equip juga contra un altre equip. Això significa que en cada ronda, hi ha la meitat d'equips que en la ronda anterior, ja que un equip és eliminat en cada partit.
+
+La primera ronda té 16 equips, però només hi ha 8 partits (ja que cada equip juga contra un altre equip). En la segona ronda, hi ha 8 equips, però només hi ha 4 partits. En la tercera ronda, hi ha 4 equips, però només hi ha 2 partits. Finalment, en la ronda final, hi ha 2 equips, però només hi ha 1 partit.
+
+Per calcular el nombre total de partits, podem sumar els partits de cada ronda:
+
+8 (primera ronda) + 4 (segona ronda) + 2 (tercera ronda) + 1 (ronda final) = 15
+
+Resposta: B)

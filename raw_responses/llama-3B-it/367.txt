@@ -1,0 +1,19 @@
+Raonament:
+
+Per calcular la probabilitat de que totes les preguntes siguen dels temes que l'estudiant ha estudiat, hem de considerar el nombre total de triades possibles i el nombre de triades que contenen només els temes que l'estudiant ha estudiat.
+
+El nombre total de triades possibles és el nombre de combinaris de 3 elements entre 10, que és:
+
+10C3 = 10! / (3! \* (10-3)!) = 120
+
+El nombre de triades que contenen només els temes que l'estudiant ha estudiat és el nombre de combinaris de 3 elements entre 5, que és:
+
+5C3 = 5! / (3! \* (5-3)!) = 10
+
+Així, la probabilitat de que totes les preguntes siguen dels temes que l'estudiant ha estudiat és:
+
+P = (Nombre de triades que contenen només els temes que l'estudiant ha estudiat) / (Nombre total de triades possibles)
+= 10/120
+= 1/12
+
+Resposta: A) 1/12

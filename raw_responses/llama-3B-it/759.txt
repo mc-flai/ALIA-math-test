@@ -1,0 +1,33 @@
+Raonament:
+
+Per determinar la potència més alta de 3 que és un divisor del nombre 7!+8!+9!, hem de analitzar els factors de cada terme.
+
+7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 2^4 × 3^2 × 5^1 × 7^1
+
+8! = 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 2^7 × 3^2 × 5^1 × 7^1
+
+9! = 9 × 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 2^7 × 3^4 × 5^1 × 7^1
+
+Agora, sumem els termes:
+
+7!+8!+9! = (2^4 × 3^2 × 5^1 × 7^1) + (2^7 × 3^2 × 5^1 × 7^1) + (2^7 × 3^4 × 5^1 × 7^1)
+
+Combinant els termes comuns, obtenim:
+
+7!+8!+9! = 2^7 × (3^2 + 3^4 + 3^4) × 5^1 × 7^1
+
+Simplificant més, obtenim:
+
+7!+8!+9! = 2^7 × (3^2 + 3^4 + 3^4) × 5^1 × 7^1
+= 2^7 × (9 + 81 + 81) × 5^1 × 7^1
+= 2^7 × 171 × 5^1 × 7^1
+
+Agora, analitzem els factors de 171:
+
+171 = 3^2 × 19
+
+Així, el nombre 7!+8!+9! té factors de 3^2, 5^1 i 7^1. Però, no tenim factors de 3^4 o més.
+
+Per tant, la potència més alta de 3 que és un divisor del nombre 7!+8!+9! és 3^2.
+
+Resposta: A) 3²

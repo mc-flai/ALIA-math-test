@@ -1,0 +1,22 @@
+Raonament:
+
+Per calcular el nombre de maneres diferents que Monica pot entrar per una porta i sortir per una de diferents, podem utilitzar la següent lògica:
+
+1. Hi ha 5 portes, i Monica pot entrar per qualsevol d'elles.
+2. Una vegada que Monica entra per una porta, hi ha 4 portes restants que pot sortir per.
+3. Per cada porta que Monica entra, hi ha 4 portes restants que pot sortir per (perquè no pot sortir per la mateixa porta que ha entrat).
+4. Per cada porta que Monica entra, hi ha 3 portes restants que pot sortir per (perquè no pot sortir per les dues portes que ha entrat i sortit).
+5. Per cada porta que Monica entra, hi ha 2 portes restants que pot sortir per (perquè no pot sortir per les tres portes que ha entrat i sortit).
+6. Per cada porta que Monica entra, hi ha 1 porta restant que pot sortir per (perquè no pot sortir per les quatre portes que ha entrat).
+
+A continuació, calcularem el nombre total de maneres diferents:
+
+* Si Monica entra per la porta 1, hi ha 4 portes restants que pot sortir per, i això pot fer-se de 4 maneres (per les portes 2, 3, 4 o 5).
+* Si Monica entra per la porta 2, hi ha 4 portes restants que pot sortir per, i això pot fer-se de 4 maneres (per les portes 1, 3, 4 o 5).
+* Si Monica entra per la porta 3, hi ha 4 portes restants que pot sortir per, i això pot fer-se de 4 maneres (per les portes 1, 2, 4 o 5).
+* Si Monica entra per la porta 4, hi ha 4 portes restants que pot sortir per, i això pot fer-se de 4 maneres (per les portes 1, 2, 3 o 5).
+* Si Monica entra per la porta 5, hi ha 4 portes restants que pot sortir per, i això pot fer-se de 4 maneres (per les portes 1, 2, 3 o 4).
+
+En total, Monica pot fer 4 + 4 + 4 + 4 + 4 = 20 maneres diferents.
+
+Resposta: B) 20

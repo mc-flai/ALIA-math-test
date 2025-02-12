@@ -1,0 +1,25 @@
+Raonament: Per resoldre aquest problema, podem utilitzar un mètode similar al que s'ha utilitzat per escriure el nombre 7 com a suma de 3 nombres imparells. La idea és trobar totes les combinacions possibles de 5 nombres imparells que sumin 13.
+
+Per començar, podem enumerar els nombres imparells que són menys o igual a 13: 1, 3, 5, 7, 9, 11 i 13. A continuació, podem intentar combinar aquests nombres per obtenir una suma de 13.
+
+Després d'enumerar totes les combinacions possibles, podem trobar les següents:
+
+- 1 + 1 + 1 + 1 + 9 = 13
+- 1 + 1 + 1 + 3 + 7 = 13
+- 1 + 1 + 5 + 5 + 1 = 13 (aquesta és la mateixa combinació que la anterior, però amb els nombres en un ordre diferent)
+- 1 + 3 + 3 + 3 + 3 = 13
+- 3 + 3 + 3 + 3 + 3 = 13 (aquesta és la mateixa combinació que la anterior, però amb tots els nombres iguals)
+
+Però, si tots els nombres són iguals, llavors hi ha una única combinació possible. Però, si hi ha nombres diferents, llavors hi ha diverses combinacions possibles. Per exemple, 1 + 1 + 1 + 3 + 7 és una combinació diferent de 1 + 1 + 3 + 3 + 5.
+
+Després d'enumerar totes les combinacions possibles, podem trobar que hi ha 5 combinacions diferents:
+
+- 1 + 1 + 1 + 1 + 9
+- 1 + 1 + 1 + 3 + 7
+- 1 + 1 + 5 + 5 + 1
+- 1 + 3 + 3 + 3 + 3
+- 3 + 3 + 3 + 3 + 3
+
+Per tant, hi ha 5 possibilitats d'escriure el 13 com a suma de 5 nombres imparells.
+
+Resposta: B)

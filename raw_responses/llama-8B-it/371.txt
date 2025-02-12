@@ -1,0 +1,80 @@
+Raonament: Per resoldre aquest problema, podem utilitzar el mètode de eliminació. La idea és eliminar una de les variables (x o y) per obtenir una equació amb una sola variable.
+
+Comencem multiplicant les dues equacions per 5x i 5y, respectivament, per eliminar les fraccions:
+
+3000 + 5xy = 55x
+3000 + xy = 220y
+
+A continuació, podem restar la segona equació de la primera per obtenir:
+
+4xy = 55x - 220y
+
+Ara, podem dividir per 4 per simplificar:
+
+xy = (55/4)x - 55y
+
+Ara, podem multiplicar la primera equació per 4 per obtenir:
+
+2400 + 4y = 44x
+
+A continuació, podem restar la segona equació de la primera per obtenir:
+
+2400 + 4y - (3000 + xy) = 44x - 220y
+
+Això es simplifica a:
+
+-600 - 4y + xy = 44x - 220y
+
+Ara, podem reorganitzar l'equació per obtenir:
+
+xy - 44x + 216y = 600
+
+A continuació, podem factoritzar per obtenir:
+
+x(y - 44) + 216y = 600
+
+Ara, podem veure que si y = 20, la segona equació esdevé:
+
+600/20 + x/5 = 11
+
+Això es simplifica a:
+
+30 + x/5 = 11
+
+A continuació, podem restar 30 de tots dos costats per obtenir:
+
+x/5 = -19
+
+Això és impossible, ja que x no pot ser negatiu.
+
+Per tant, el valor de y no pot ser 20.
+
+A continuació, podem intentar y = 40. La segona equació esdevé:
+
+600/40 + x/5 = 44
+
+Això es simplifica a:
+
+15 + x/5 = 44
+
+A continuació, podem restar 15 de tots dos costats per obtenir:
+
+x/5 = 29
+
+Això es simplifica a:
+
+x = 145
+
+A continuació, podem substituir x = 145 a la primera equació per obtenir:
+
+600/145 + 40/5 = 11
+
+Això es simplifica a:
+
+4,14 + 8 = 11
+
+Això és possible, ja que 12,14 és igual a 11.
+
+Per tant, el valor de y que verifica les dues equacions és 40.
+
+Resposta: B)

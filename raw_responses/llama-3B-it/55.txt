@@ -1,0 +1,56 @@
+Raonament:
+
+A partir de la desigualtat 0 < b < a, podem deduir que a² > b².
+
+També sabem que a² + b² = 6ab. Podem reorganitzar aquesta equació per obtenir:
+
+a² - 6ab + b² = 0
+
+Aquesta és una equació quadràtica en a, i podem factoritzar-la de la següent manera:
+
+(a - b)² = 0
+
+Això implica que a - b = 0, o a = b.
+
+Però si a = b, llavors la desigualtat 0 < b < a no és satisfeta. Això significa que la nostra suposició inicial de que a i b són nombres reals que compleixen 0 < b < a no és correcta.
+
+Però, si considerem la desigualtat a² + b² = 6ab, podem reorganitzar-la de la següent manera:
+
+a² - 6ab + b² = 0
+
+Aquesta equació quadràtica en a no té solucions reals per a a i b que compleixin 0 < b < a. Però, si considerem a i b com nombres compleixos, podem trobar solucions.
+
+En aquest cas, podem escriure a i b en forma polar:
+
+a = r1e^(iθ1)
+b = r2e^(iθ2)
+
+on r1 i r2 són els radi i θ1 i θ2 són les angles.
+
+Substituïm aquests valors en la desigualtat a² + b² = 6ab:
+
+r1²e^(2iθ1) + r2²e^(2iθ2) = 6r1r2e^(i(θ1+θ2))
+
+Simplifiquem i reorganitzem:
+
+r1² + r2² = 6r1r2
+
+Aquesta és una equació que satisfet les condicions de la pregunta.
+
+Per trobar la resposta, podem usar la fórmula de la suma i la diferència angles:
+
+cos(θ1 - θ2) = (a + b) / (a - b)
+sin(θ1 - θ2) = (a - b) / (a + b)
+
+Simplifiquem i reorganitzem:
+
+cos(θ1 - θ2) = 1
+sin(θ1 - θ2) = 0
+
+Aquestes són les condicions per a que (a + b) / (a - b) sigui igual a alguna de les opcions.
+
+En aquest cas, (a + b) / (a - b) = 1 / (cos(θ1 - θ2) - sin(θ1 - θ2)) = 1 / (√2 - 1).
+
+La resposta correcta és:
+
+Resposta: C) 1/(√2-1)

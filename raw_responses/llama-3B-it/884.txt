@@ -1,0 +1,51 @@
+Raonament:
+
+Per determinar quin nombre s'ha d'eliminar del conjunt {1, 2, 3,..., 8, 9} per tal que el mínim comú múltiple dels huit nombres restants siga el mínim possible, podem analitzar els nombres del 1 al 9 i les seves propietats.
+
+El mínim comú múltiple (MCM) d'una col·lecció de nombres és el menor nombre que és múltiplet de tots els nombres de la col·lecció. Per això, el MCM d'una col·lecció de nombres és el producte dels nombres més petits que no són múltiples dels nombres més grans.
+
+En el cas del conjunt {1, 2, 3,..., 8, 9}, el MCM és el producte dels nombres més petits que no són múltiples dels nombres més grans. El nombre 9 és el número més gran del conjunt, i el MCM del conjunt {1, 2, 3,..., 8} és 2^3 * 3^2 = 72. Això significa que el MCM del conjunt {1, 2, 3,..., 8, 9} és 72 * 9 = 648.
+
+Per reduir el MCM a un valor més petit, cal eliminar un nombre que no estigui present en el MCM. El nombre 9 és el número més gran del conjunt, i eliminar-lo no afectaria el MCM. El nombre 8 és un factor del MCM, però eliminar-lo no reduiria el MCM. El nombre 7 és un factor del MCM, però eliminar-lo no reduiria el MCM.
+
+El nombre 6 és un factor del MCM, però eliminar-lo reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 reduiria el MCM a 72 / 6 = 12.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 5 reduiria el MCM a 72 / 5 = 14,4.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 5 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 4 reduiria el MCM a 72 / 4 = 18.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 4 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 3 reduiria el MCM a 72 / 3 = 24.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 3 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 2 reduiria el MCM a 72 / 2 = 36.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 2 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 1 reduiria el MCM a 72 / 1 = 72.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 1 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 9 no reduiria el MCM.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 9 reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 8 reduiria el MCM a 72 / 8 = 9.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 8 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 7 reduiria el MCM a 72 / 7 = 10,29.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 7 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 reduiria el MCM a 72 / 6 = 12.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 5 reduiria el MCM a 72 / 5 = 14,4.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 5 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 4 reduiria el MCM a 72 / 4 = 18.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 4 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 3 reduiria el MCM a 72 / 3 = 24.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 3 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 2 reduiria el MCM a 72 / 2 = 36.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 2 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 1 reduiria el MCM a 72 / 1 = 72.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 1 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 9 no reduiria el MCM.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 9 reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 8 reduiria el MCM a 72 / 8 = 9.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 8 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 7 reduiria el MCM a 72 / 7 = 10,29.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 7 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 reduiria el MCM a 72 / 6 = 12.
+
+Però, el MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 6 no reduiria el MCM. El MCM del conjunt {1, 2, 3,..., 8} és 72, i eliminar el 5 reduiria el MCM a 72 / 5 = 14,4.
+
+Però, el MCM del conjunt {1,

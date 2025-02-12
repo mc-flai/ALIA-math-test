@@ -1,0 +1,13 @@
+Raonament:
+
+Per aquesta funció, podem deduir que f(0) = 1, ja que f(0 + 0) = f(0) · f(0) i f(0) = 2f(0 + 1) = 2f(1).
+
+A continuació, podem deduir que f(1) = 1/2, ja que f(0 + 1) = f(0) · f(1) i f(0) = 1.
+
+A continuació, podem deduir que f(2) = 1/4, ja que f(1 + 1) = f(1) · f(1) i f(1) = 1/2.
+
+En general, podem deduir que f(n) = 1/2^n per a tots els valors enter positius n.
+
+Per això, f(2016) / f(2014) = (1/2^2016) / (1/2^2014) = 2^2 = 4.
+
+Resposta: D) 3/2

@@ -1,0 +1,27 @@
+Raonament: Per resoldre aquest problema, podem començar per definir la condició que defineix els nombres primers "especialment amics". Segons la pregunta, tres nombres primers són "especialment amics" si el producte dels tres nombres és cinc vegades més gran que la seua suma.
+
+Podem representar aquests tres nombres primers com a p, q i r. Llavors, la condició es pot expressar com:
+
+pqr = 5(p + q + r)
+
+Per simplificar l'equació, podem dividir tots dos costats per pqr:
+
+1 = 5/pqr + 5/(pq) + 5/(pr) + 5/(qr)
+
+Ara, podem observar que 5/(pq), 5/(pr) i 5/(qr) són fraccions positives, ja que p, q i r són nombres primers. Per tant, la suma de les fraccions 5/(pq), 5/(pr) i 5/(qr) ha de ser menor o igual a 1, ja que la suma de tres fraccions positives no pot ser major que 1.
+
+Això implica que 5/(pq) + 5/(pr) + 5/(qr) ≤ 1
+
+Per simplificar encara més, podem multiplicar tots dos costats per pqpr:
+
+5q + 5p + 5r ≤ pqpr
+
+Ara, podem observar que pqpr és un producte de quatre nombres primers, que és sempre un nombre molt gran. Per exemple, si p = 2, q = 3 i r = 5, llavors pqpr = 120, que és un nombre molt gran.
+
+Per tant, la desigualtat 5q + 5p + 5r ≤ pqpr és sempre veritat per a nombres primers p, q i r.
+
+Ara, podem tornar a la condició original pqr = 5(p + q + r) i observar que és impossible que sigui veritat per a nombres primers p, q i r. Per exemple, si p = 2, q = 3 i r = 5, llavors pqr = 30 i 5(p + q + r) = 5(2 + 3 + 5) = 50, que no és igual a 30.
+
+Per tant, no hi ha cap grup de nombres primers que compleixi la condició de ser "especialment amics".
+
+Resposta: A)

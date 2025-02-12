@@ -1,0 +1,17 @@
+Raonament: 
+
+Per començar, observem que la funció f és estrictament creixent, el que significa que si m > n, llavors f(m) > f(n). Això implica que la funció f no pot ser constant, ja que en aquest cas no seria estrictament creixent.
+
+A continuació, observem que f(f(k)) ≤ f(k + 1) per a cada k en Z. Aquesta condició implica que quan aplicuem la funció f dues vegades consecutives a un nombre k, el resultat és sempre menor o igual que quan aplicuem la funció f a k + 1.
+
+Sabem que f(1000) = 1000. Utilitzant aquesta informació, podem deduir que f(f(1000)) ≤ f(1001). Però, ja que f(1000) = 1000, tenim que f(1000) ≤ f(1001), que és una contradicció amb la condició que la funció f és estrictament creixent.
+
+Per tant, la única manera de resoldre aquesta contradicció és que f(1000) = 1000 i f(1001) = 1001. Això implica que f(k) = k per a tots els nombres k entre 1000 i 1001.
+
+Ara, considerem el nombre 2017. Si 2017 està entre 1000 i 1001, llavors f(2017) = 2017. Però si 2017 no està entre 1000 i 1001, llavors f(2017) no pot ser igual a 2017, ja que la funció f és estrictament creixent.
+
+Però, si f(2017) > 2017, llavors f(f(2017)) > f(2017 + 1), que és una contradicció amb la condició que f(f(k)) ≤ f(k + 1) per a cada k en Z.
+
+Per tant, la única possibilitat és que f(2017) = 2017.
+
+Resposta: A)

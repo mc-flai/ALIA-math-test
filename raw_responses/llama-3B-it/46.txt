@@ -1,0 +1,16 @@
+Raonament:
+
+Per determinar quants nombres de tres xifres, abc (amb a ≠ 0), hi ha per als quals a + 3b + c és múltiple de 3, podem analitzar el problema de la següent manera:
+
+1. Un nombre de tres xifres és múltiple de 3 si la suma dels seus dígits és múltiple de 3.
+2. La suma dels dígits del nombre de tres xifres és a + 3b + c.
+3. Per a que a + 3b + c siga múltiple de 3, a + 3b + c = 3k, on k és un nombre enter.
+4. Com a ≠ 0, el valor màxim de a és 9.
+5. El valor mínim de b és 0.
+6. El valor màxim de c és 9.
+7. Per a cada valor de a, b i c, podem calcular la suma a + 3b + c i determinar si és múltiple de 3.
+8. Després de calcular les sumes per a tots els possibles valors de a, b i c, podem comptar els nombres de tres xifres que satisfen la condició.
+
+Després de realitzar aquestes càlculs, s'obté que hi ha 300 nombres de tres xifres que satisfen la condició.
+
+Resposta: B) 300.

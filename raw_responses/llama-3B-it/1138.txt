@@ -1,0 +1,51 @@
+Raonament:
+
+Per aquest problema, podem començar analitzant la equació donada: abcd = a³ + b³ + c³ + d³.
+
+Observem que el màxim valor possible per a cada variable (a, b, c, d) és 9, ja que són nombres de 4 dígits. Això significa que el màxim valor possible per a la suma a³ + b³ + c³ + d³ és:
+
+9³ + 9³ + 9³ + 9³ = 729 + 729 + 729 + 729 = 2916
+
+Això significa que el màxim valor possible per a abcd és 2916.
+
+Per això, podem començar probant els valors més petits possibles per a a, ja que el màxim valor possible per a abcd és 2916.
+
+Probem a = 1:
+
+1³ + b³ + c³ + d³ ≤ 1 + 729 + 729 + 729 = 2188 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 2:
+
+2³ + b³ + c³ + d³ ≤ 8 + 729 + 729 + 729 = 2865 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 3:
+
+3³ + b³ + c³ + d³ ≤ 27 + 729 + 729 + 729 = 3744 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 4:
+
+4³ + b³ + c³ + d³ ≤ 64 + 729 + 729 + 729 = 4632 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 5:
+
+5³ + b³ + c³ + d³ ≤ 125 + 729 + 729 + 729 = 5612 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 6:
+
+6³ + b³ + c³ + d³ ≤ 216 + 729 + 729 + 729 = 6603 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 7:
+
+7³ + b³ + c³ + d³ ≤ 343 + 729 + 729 + 729 = 7592 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 8:
+
+8³ + b³ + c³ + d³ ≤ 512 + 729 + 729 + 729 = 8589 (per això, abcd no pot ser un nombre de 4 dígits)
+
+Probem a = 9:
+
+9³ + b³ + c³ + d³ ≤ 729 + 729 + 729 + 729 = 2916 (per això, abcd pot ser un nombre de 4 dígits)
+
+Això significa que el valor correcte de a és 9.
+
+Resposta: E) 6.

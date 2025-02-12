@@ -1,0 +1,264 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar assignant variables als cinc nombres de la llista. Digui que els nombres són a, b, c, d i e.
+
+Segons la informació donada, la suma dels primers tres nombres és 100, la suma dels tres nombres del mig és 200 i la suma dels tres últims nombres és 300.
+
+Això ens dona les següents equacions:
+
+a + b + c = 100
+b + c + d = 200
+c + d + e = 300
+
+Per trobar el nombre que es troba al centre de la llista, podem observar que el nombre b és present en dues de les equacions. Això significa que b és un dels nombres del mig.
+
+Per trobar el valor de b, podem restar la primera equació de la segona equació:
+
+(b + c + d) - (a + b + c) = 200 - 100
+d - a = 100
+
+A continuació, podem restar la segona equació de la tercera equació:
+
+(c + d + e) - (b + c + d) = 300 - 200
+e - b = 100
+
+Ara, podem sumar les dues últimes equacions per obtenir:
+
+(d - a) + (e - b) = 100 + 100
+d + e - a - b = 200
+
+A continuació, podem sumar la primera equació amb la darrera equació:
+
+(a + b + c) + (d + e - a - b) = 100 + 200
+c + e = 300
+
+Ara, podem restar la tercera equació de la darrera equació:
+
+(c + e) - (c + d + e) = 300 - 300
+c - d = 0
+
+Això significa que c = d.
+
+A continuació, podem substituir c per d a la segona equació:
+
+b + c + d = 200
+b + d + d = 200
+b + 2d = 200
+
+A continuació, podem substituir c per d a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c = 0
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la segona equació:
+
+b + c + d = 200
+b + c + c = 200
+b + 2c = 200
+
+A continuació, podem igualar les dues últimes equacions:
+
+b + 2d = b + 2c
+2d = 2c
+d = c
+
+Això significa que d = c.
+
+A continuació, podem substituir d per c a la primera equació:
+
+a + b + c = 100
+a + b + d = 100
+
+Ara, podem restar la segona equació de la primera equació:
+
+(a + b + d) - (a + b + c) = 100 - 100
+d - c

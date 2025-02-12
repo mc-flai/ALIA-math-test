@@ -1,0 +1,20 @@
+Raonament:
+
+Per determinar si un triangle pot ser construït amb segments de longituds donades, cal seguir les següents regles:
+
+1. La suma de les dues més petites longitudes del triangle ha de ser major que la més gran longitud.
+2. La suma de les tres longitudes del triangle ha de ser major que la més gran longitud.
+
+Anant a analitzar les opcions:
+
+A) (2,3,4): La suma de les dues més petites longitudes (2+3=5) és major que la més gran longitud (4). La suma de les tres longitudes (2+3+4=9) és major que la més gran longitud (4). Per tant, aquest triangle pot ser construït.
+
+B) (5,2,8): La suma de les dues més petites longitudes (2+5=7) és menor que la més gran longitud (8). Per tant, aquest triangle no pot ser construït.
+
+C) (10,1,10): La suma de les dues més petites longitudes (1+10=11) és major que la més gran longitud (10). La suma de les tres longitudes (10+1+10=21) és major que la més gran longitud (10). Per tant, aquest triangle pot ser construït.
+
+D) (2,2,2): La suma de les dues més petites longitudes (2+2=4) és igual a la més gran longitud (2). Per tant, aquest triangle no pot ser construït.
+
+E) (38,17,23): La suma de les dues més petites longitudes (17+23=40) és major que la més gran longitud (38). La suma de les tres longitudes (38+17+23=78) és major que la més gran longitud (38). Per tant, aquest triangle pot ser construït.
+
+Resposta: B)

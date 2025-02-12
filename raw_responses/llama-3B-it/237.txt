@@ -1,0 +1,24 @@
+Raonament:
+
+Per aixecular aquest problema, podem analitzar la propietat curiosa que es descriu. Si el nombre M té una propietat curiosa, significa que quan enumerem d'esquerra a dreta el lloc de les xifres de 0 a 9, i en el lloc N hi haurà el dígit X, llavors M té tantes xifres N com X assenyale.
+
+Aquesta propietat curiosa implica que el nombre M és un nombre que contéix un total de 10 xifres, i que cada dígiti de 0 a 9 apareix en un lloc determinat (N) un total de la mateixa quantitat que el seu valor assenyal.
+
+Per exemple, si el lloc N és 3, el nombre M tindrà 3 zeros, 3 uns, 3 dos, 3 tres, etc.
+
+Per determinar quantes zeros té el nombre M, podem analitzar les possibilitats:
+
+- Si el lloc N és 0, el nombre M tindrà 0 zeros.
+- Si el lloc N és 1, el nombre M tindrà 1 zero.
+- Si el lloc N és 2, el nombre M tindrà 2 zeros.
+- Si el lloc N és 3, el nombre M tindrà 3 zeros.
+- Si el lloc N és 4, el nombre M tindrà 4 zeros.
+- Si el lloc N és 5, el nombre M tindrà 5 zeros.
+- Si el lloc N és 6, el nombre M tindrà 6 zeros.
+- Si el lloc N és 7, el nombre M tindrà 7 zeros.
+- Si el lloc N és 8, el nombre M tindrà 8 zeros.
+- Si el lloc N és 9, el nombre M tindrà 9 zeros.
+
+A partir d'aquestes possibilitats, podem conèixer que el nombre M té 8 zeros quan el lloc N és 8.
+
+Resposta: D) 5

@@ -1,0 +1,18 @@
+Raonament: Per resoldre aquest problema, podem començar analitzant les possibles combinacions de punts que formen un triangle amb un angle de 45°. Un triangle amb un angle de 45° es pot formar quan els tres punts estan equidistants entre si, o quan dos punts estan a la mateixa distància d'un tercer punt.
+
+En aquest cas, tenim 12 punts que divideixen la circumferència en 12 arcs iguals. Per formar un triangle amb un angle de 45°, podem seleccionar tres punts que estiguin equidistants entre si. Això es pot fer de dues maneres:
+
+1. Seleccionar tres punts consecutius: Hi ha 12 punts, i podem seleccionar tres punts consecutius de 12 maneres diferents (per exemple, punts 1, 2 i 3, punts 2, 3 i 4, etc.).
+2. Seleccionar tres punts que estiguin a la mateixa distància d'un tercer punt: Hi ha 12 punts, i podem seleccionar un tercer punt de 12 maneres diferents. Aleshores, podem seleccionar dos punts que estiguin a la mateixa distància d'aquest tercer punt. Hi ha 11 punts que no són el tercer punt seleccionat, i podem seleccionar dos punts de 11 maneres diferents. Però això no és una manera independent de seleccionar tres punts, ja que estem seleccionant dos punts que estiguin a la mateixa distància d'un tercer punt. Per tant, aquesta manera de seleccionar tres punts no és independent i no s'ha de comptar.
+
+Per tant, podem seleccionar tres punts consecutius de 12 maneres diferents. Això significa que hi ha 12 triangles amb un angle de 45° que es poden formar escollint tres punts consecutius.
+
+Però això no és tot. També podem seleccionar tres punts que estiguin equidistants entre si, però no siguin consecutius. Això es pot fer de 12 maneres diferents (per exemple, punts 1, 5 i 9, punts 2, 6 i 10, etc.). Però això és el mateix que seleccionar tres punts consecutius, però amb un desplaçament de 4 punts. Per tant, aquesta manera de seleccionar tres punts també s'ha de comptar.
+
+Per tant, hi ha 12 + 12 = 24 triangles amb un angle de 45° que es poden formar escollint tres punts consecutius. Però això no és tot. També podem seleccionar tres punts que estiguin equidistants entre si, però no siguin consecutius. Això es pot fer de 12 maneres diferents (per exemple, punts 1, 5 i 9, punts 2, 6 i 10, etc.). Però això és el mateix que seleccionar tres punts consecutius, però amb un desplaçament de 4 punts. Per tant, aquesta manera de seleccionar tres punts també s'ha de comptar.
+
+Per tant, hi ha 24 + 12 = 36 triangles amb un angle de 45° que es poden formar escollint tres punts consecutius o equidistants entre si. Però això no és tot. També podem seleccionar tres punts que estiguin equidistants entre si, però no siguin consecutius ni equidistants entre si. Això es pot fer de 12 maneres diferents (per exemple, punts 1, 6 i 11, punts 2, 7 i 12, etc.). Però això és el mateix que seleccionar tres punts consecutius, però amb un desplaçament de 5 punts. Per tant, aquesta manera de seleccionar tres punts també s'ha de comptar.
+
+Per tant, hi ha 36 + 12 = 48 triangles amb un angle de 45° que es poden formar escollint tres punts consecutius, equidistants entre si o amb un desplaçament de 5 punts.
+
+Resposta: A)

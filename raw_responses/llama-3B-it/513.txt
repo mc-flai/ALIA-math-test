@@ -1,0 +1,45 @@
+Raonament:
+
+Per determinar si els nombres següents són parells, podem analitzar la suma $n^{2018} + (n + 1)^{2017}$ per cada $n$.
+
+Si $n$ és par, llavors $n^{2018}$ és par i $(n + 1)^{2017}$ és impar, però $(n + 1)^{2017}$ és congruent a $-1$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $n^{2018} - 1$ mòdulo $4$, que és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$ mòdulo $4$. Però si $n$ és congruent a $2$ mòdulo $4$, llavors $n^{2018}$ és congruent a $2$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $-1$ mòdulo $4$, però $(n + 1)^{2017}$ és congruent a $3$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $2 + 3 = 5$ mòdulo $4$, que és congruent a $1$ mòdulo $4$.
+
+Si $n$ és impar, llavors $n^{2018}$ és congruent a $1$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $-1$ mòdulo $4$, però $(n + 1)^{2017}$ és congruent a $3$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1 + 3 = 4$ mòdulo $4$, que és congruent a $0$ mòdulo $4$.
+
+En resum, la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$ o $4$ mòdulo $4$, i és congruent a $1$ mòdulo $4$ si $n$ és congruent a $2$ mòdulo $4$. Però si $n$ és congruent a $1$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$.
+
+Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$, $1$, $4$ o $2$ mòdulo $4$. Però si $n$ és congruent a $3$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1$ mòdulo $4$.
+
+En resum, la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$, $1$, $4$ o $2$ mòdulo $4$, i és congruent a $1$ mòdulo $4$ si $n$ és congruent a $3$ mòdulo $4$.
+
+Però si $n$ és congruent a $0$ mòdulo $4$, llavors $n^{2018}$ és congruent a $0$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $1$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0 + 1 = 1$ mòdulo $4$.
+
+Però si $n$ és congruent a $1$ mòdulo $4$, llavors $n^{2018}$ és congruent a $1$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $0$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1 + 0 = 1$ mòdulo $4$.
+
+Però si $n$ és congruent a $4$ mòdulo $4$, llavors $n^{2018}$ és congruent a $0$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $1$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0 + 1 = 1$ mòdulo $4$.
+
+Però si $n$ és congruent a $2$ mòdulo $4$, llavors $n^{2018}$ és congruent a $0$ mòdulo $4$ i $(n + 1)^{2017}$ és congruent a $0$ mòdulo $4$. Això significa que la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0 + 0 = 0$ mòdulo $4$.
+
+En resum, la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$, $2$ o $4$ mòdulo $4$, i és congruent a $1$ mòdulo $4$ si $n$ és congruent a $1$ o $4$ mòdulo $4$.
+
+Però si $n$ és congruent a $3$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1$ mòdulo $4$.
+
+En resum, la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$, $2$ o $4$ mòdulo $4$, i és congruent a $1$ mòdulo $4$ si $n$ és congruent a $1$ o $3$ mòdulo $4$.
+
+Però si $n$ és congruent a $0$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$.
+
+Però si $n$ és congruent a $1$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1$ mòdulo $4$.
+
+Però si $n$ és congruent a $2$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$.
+
+Però si $n$ és congruent a $3$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1$ mòdulo $4$.
+
+En resum, la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$ si $n$ és congruent a $0$, $2$ o $4$ mòdulo $4$, i és congruent a $1$ mòdulo $4$ si $n$ és congruent a $1$ o $3$ mòdulo $4$.
+
+Però si $n$ és congruent a $0$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$.
+
+Però si $n$ és congruent a $1$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $1$ mòdulo $4$.
+
+Però si $n$ és congruent a $2$ mòdulo $4$, llavors la suma $n^{2018} + (n + 1)^{2017}$ és congruent a $0$ mòdulo $4$.
+
+Però

@@ -1,0 +1,11 @@
+Raonament: Per determinar si els nombres segueixen el patró $n^{2018} + (n + 1)^{2017}$ són parells, podem analitzar les propietats dels nombres parells i els nombres imparells.
+
+Un nombre és parell si és divisible per 2. Per a un nombre $n$, si $n$ és parell, llavors $n^{2018}$ també és parell, ja que la potència d'un nombre parell sempre és parell. Si $n$ és imparell, llavors $n^{2018}$ també és imparell.
+
+Ara, considerem el terme $(n + 1)^{2017}$. Si $n$ és parell, llavors $n + 1$ és imparell, i per tant $(n + 1)^{2017}$ és imparell. Si $n$ és imparell, llavors $n + 1$ és parell, i per tant $(n + 1)^{2017}$ és imparell.
+
+Ara, quan sumem $n^{2018}$ i $(n + 1)^{2017}$, podem observar que sempre hi ha un terme imparell i un terme parell. Per exemple, si $n$ és parell, llavors $n^{2018}$ és parell i $(n + 1)^{2017}$ és imparell, i la suma és imparell. Si $n$ és imparell, llavors $n^{2018}$ és imparell i $(n + 1)^{2017}$ és parell, i la suma és imparell.
+
+Per tant, cap dels nombres del patró $n^{2018} + (n + 1)^{2017}$ no és parell.
+
+Resposta: A) Cap

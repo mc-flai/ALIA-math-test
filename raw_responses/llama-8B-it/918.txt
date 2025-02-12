@@ -1,0 +1,162 @@
+Raonament: 
+
+Per resoldre aquest problema, podem començar utilitzant la informació donada sobre la successió numèrica. Sabem que cada nombre des del tercer en endavant és igual a la suma del doble de l'anterior i l'anterior d'aquest. Això es pot expressar com a aₙ = 2aₙ₋₁ + aₙ₋₂.
+
+Sabeu que el tercer nombre és 9, així que podem escriure a₃ = 9. També sabem que el sisé nombre és 128, així que podem escriure a₆ = 128.
+
+Per trobar el cinqué nombre, necessitem trobar a₄. Per fer-ho, podem utilitzar la fórmula aₙ = 2aₙ₋₁ + aₙ₋₂ i substituir n = 5.
+
+a₅ = 2a₄ + a₃
+a₅ = 2a₄ + 9
+
+També podem utilitzar la fórmula aₙ = 2aₙ₋₁ + aₙ₋₂ i substituir n = 4.
+
+a₄ = 2a₃ + a₂
+
+Sabem que a₃ = 9, però no sabem a₂. Per trobar a₂, podem utilitzar la fórmula aₙ = 2aₙ₋₁ + aₙ₋₂ i substituir n = 3.
+
+a₃ = 2a₂ + a₁
+
+Sabem que a₃ = 9, però no sabem a₁. Per trobar a₁, podem utilitzar la fórmula aₙ = 2aₙ₋₁ + aₙ₋₂ i substituir n = 2.
+
+a₂ = 2a₁ + a₀
+
+No sabem a₀, però podem utilitzar la fórmula aₙ = 2aₙ₋₁ + aₙ₋₂ i substituir n = 1.
+
+a₁ = 2a₀ + a₋₁
+
+No sabem a₋₁, però podem suposar que a₋₁ = 0, ja que no hi ha cap informació sobre aquest valor.
+
+a₁ = 2a₀
+
+Ara podem tornar a la equació a₂ = 2a₁ + a₀ i substituir a₁ = 2a₀.
+
+a₂ = 2(2a₀) + a₀
+a₂ = 4a₀ + a₀
+a₂ = 5a₀
+
+Ara podem tornar a la equació a₃ = 2a₂ + a₁ i substituir a₂ = 5a₀ i a₁ = 2a₀.
+
+a₃ = 2(5a₀) + 2a₀
+a₃ = 10a₀ + 2a₀
+a₃ = 12a₀
+
+Sabem que a₃ = 9, per tant podem igualar 12a₀ a 9 i resoldre per a₀.
+
+12a₀ = 9
+a₀ = 9/12
+a₀ = 3/4
+
+Ara podem tornar a la equació a₁ = 2a₀ i substituir a₀ = 3/4.
+
+a₁ = 2(3/4)
+a₁ = 3/2
+
+Ara podem tornar a la equació a₂ = 5a₀ i substituir a₀ = 3/4.
+
+a₂ = 5(3/4)
+a₂ = 15/4
+
+Ara podem tornar a la equació a₃ = 12a₀ i substituir a₀ = 3/4.
+
+a₃ = 12(3/4)
+a₃ = 9
+
+Ara podem tornar a la equació a₄ = 2a₃ + a₂ i substituir a₃ = 9 i a₂ = 15/4.
+
+a₄ = 2(9) + 15/4
+a₄ = 18 + 15/4
+a₄ = (72 + 15)/4
+a₄ = 87/4
+a₄ = 21,75
+
+Ara podem tornar a la equació a₅ = 2a₄ + a₃ i substituir a₄ = 21,75 i a₃ = 9.
+
+a₅ = 2(21,75) + 9
+a₅ = 43,5 + 9
+a₅ = 52,5
+
+Ara podem tornar a la equació a₆ = 2a₅ + a₄ i substituir a₅ = 52,5 i a₄ = 21,75.
+
+a₆ = 2(52,5) + 21,75
+a₆ = 105 + 21,75
+a₆ = 126,75
+
+Ara podem tornar a la equació a₆ = 128 i igualar 126,75 a 128.
+
+128 = 126,75
+
+Això no és possible, per tant hem de revisar les nostres equacions. 
+
+Ara podem tornar a la equació a₄ = 2a₃ + a₂ i substituir a₃ = 9 i a₂ = 5a₀.
+
+a₄ = 2(9) + 5a₀
+a₄ = 18 + 5a₀
+
+Ara podem tornar a la equació a₅ = 2a₄ + a₃ i substituir a₄ = 18 + 5a₀ i a₃ = 9.
+
+a₅ = 2(18 + 5a₀) + 9
+a₅ = 36 + 10a₀ + 9
+a₅ = 45 + 10a₀
+
+Ara podem tornar a la equació a₆ = 2a₅ + a₄ i substituir a₅ = 45 + 10a₀ i a₄ = 18 + 5a₀.
+
+a₆ = 2(45 + 10a₀) + 18 + 5a₀
+a₆ = 90 + 20a₀ + 18 + 5a₀
+a₆ = 108 + 25a₀
+
+Sabem que a₆ = 128, per tant podem igualar 108 + 25a₀ a 128 i resoldre per a₀.
+
+108 + 25a₀ = 128
+25a₀ = 20
+a₀ = 20/25
+a₀ = 4/5
+
+Ara podem tornar a la equació a₁ = 2a₀ i substituir a₀ = 4/5.
+
+a₁ = 2(4/5)
+a₁ = 8/5
+
+Ara podem tornar a la equació a₂ = 5a₀ i substituir a₀ = 4/5.
+
+a₂ = 5(4/5)
+a₂ = 4
+
+Ara podem tornar a la equació a₃ = 12a₀ i substituir a₀ = 4/5.
+
+a₃ = 12(4/5)
+a₃ = 48/5
+a₃ = 9,6
+
+Ara podem tornar a la equació a₄ = 2a₃ + a₂ i substituir a₃ = 9,6 i a₂ = 4.
+
+a₄ = 2(9,6) + 4
+a₄ = 19,2 + 4
+a₄ = 23,2
+
+Ara podem tornar a la equació a₅ = 2a₄ + a₃ i substituir a₄ = 23,2 i a₃ = 9,6.
+
+a₅ = 2(23,2) + 9,6
+a₅ = 46,4 + 9,6
+a₅ = 56
+
+Ara podem tornar a la equació a₆ = 2a₅ + a₄ i substituir a₅ = 56 i a₄ = 23,2.
+
+a₆ = 2(56) + 23,2
+a₆ = 112 + 23,2
+a₆ = 135,2
+
+Ara podem tornar a la equació a₆ = 128 i igualar 135,2 a 128.
+
+135,2 = 128
+
+Això no és possible, per tant hem de revisar les nostres equacions. 
+
+Ara podem tornar a la equació a₄ = 2a₃ + a₂ i substituir a₃ = 9 i a₂ = 2a₁ + a₀.
+
+a₄ = 2(9) + 2a₁ + a₀
+a₄ = 18 + 2a₁ + a₀
+
+Ara podem tornar a la equació a₅ = 2a₄ + a₃ i substituir a₄ = 18 + 2a₁ + a₀ i a₃ = 9.
+
+a₅ = 2(18 + 2a₁ +
