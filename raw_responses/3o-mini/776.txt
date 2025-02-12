@@ -1,0 +1,17 @@
+Raonament: Comencem amb a₁ = 49 i, seguint la fórmula, tenim a₂ = (4 + 9 + 1)² = 196. Continuant:
+ • a₃ = (1 + 9 + 6 + 1)² = (16 + 1?) → En realitat: suma de xifres de 196 = 1+9+6 = 16; afegim 1 i fem el quadrat: (16 + 1)² = 17² = 289.
+ • a₄ = suma de 289: 2+8+9 = 19; afegim 1 i fem el quadrat: (19 + 1)² = 20² = 400.
+ • a₅ = suma de 400: 4+0+0 = 4; afegim 1 i fem el quadrat: (4 + 1)² = 5² = 25.
+ • a₆ = suma de 25: 2+5 = 7; afegim 1 i fem el quadrat: (7 + 1)² = 8² = 64.
+ • a₇ = suma de 64: 6+4 = 10; afegim 1 i fem el quadrat: (10 + 1)² = 11² = 121.
+ • a₈ = torna a donar 25, ja que la suma de xifres de 121 és 1+2+1 = 4; afegim 1 i fem el quadrat: (4 + 1)² = 5² = 25.
+ 
+Observem que a partir d'a₅ es forma un cicle de període 3: 25, 64, 121, 25, 64, 121, etc.
+
+Per trobar a₍₂₀₁₉₎, considerem que el cicle comença en a₅. Cal calcular la posició dins del cicle per a n = 2019:
+ • Nombre d'elements des de a₅ a a₍₂₀₁₉₎ = 2019 - 5 = 2014.
+ • Dividim 2014 entre 3: 2014 mod 3 = 1 (ja que 3 × 671 = 2013 i 2014 - 2013 = 1).
+ 
+Així, la posició corresponent és el segon element del cicle (ja que la posició 0 és 25, 1 és 64 i 2 és 121). Per tant, a₍₂₀₁₉₎ = 64.
+
+Resposta: C)

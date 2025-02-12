@@ -1,0 +1,14 @@
+Raonament: Suposem que la tassa té una capacitat d'1 unitat. Inicialment, la tassa es comodona amb 0,5 unitats de llet i 0,5 unitats de cafè. Després, en beure'n la quarta part (0,25 unitats), es consumeixen 0,25·0,5 = 0,125 unitats de llet i igualment 0,125 unitats de cafè. Així, queden 0,375 unitats de llet i 0,375 unitats de cafè (total 0,75 unitats).
+
+A continuació, Laura omple la tassa amb 0,25 unitats de llet (ara la tassa torna a tenir 1 unitat). Així, la quantitat de llet passa a ser 0,375 + 0,25 = 0,625 i el cafè segueix sent 0,375. Quan remena i beu una altra quarta part (0,25 unitats), de manera proporcional s'extreuen 0,25·0,625 = 0,15625 unitats de llet i 0,25·0,375 = 0,09375 unitats de cafè. Així, al final d’aquest pas queden 0,625 – 0,15625 = 0,46875 unitats de llet i 0,375 – 0,09375 = 0,28125 unitats de cafè (total 0,75 unitats).
+
+Finalment, reposa la tassa amb 0,25 unitats més de llet, arribant a 1 unitat. La quantitat final de llet és 0,46875 + 0,25 = 0,71875 i la de cafè és 0,28125. El raonament ens demana la proporció de cafè respecte a la llet, que és:
+
+  Proporció = cafè / llet = 0,28125 / 0,71875
+
+Multipliquem numerador i denominador per 32 (ja que 0,03125 = 1/32) per obtenir nombres enters:
+  0,28125 · 32 = 9   i   0,71875 · 32 = 23
+
+Així, la proporció és 9/23.
+
+Resposta: D)

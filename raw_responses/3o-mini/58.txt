@@ -1,0 +1,22 @@
+Raonament: Sigui N el nombre natural acabat en 6, de manera que podem escriure N = 10·a + 6, on a representa les xifres restants. Si prenem el 6 (l’última xifra) i el col·loquem davant del nombre a, obtenim M = 6·10^(k) + a, on k és el nombre de xifres de a. Segons l’enunciat, M = 4N. Per tant:
+
+  6·10^(k) + a = 4·(10·a + 6) = 40·a + 24
+
+Aïllant a:
+  6·10^(k) – 24 = 39·a ⟹ a = (6·10^(k) – 24)/39 = [6(10^(k) – 4)]/39 = [2(10^(k) – 4)]/13
+
+Per a que a sigui un nombre enter, cal que (10^(k) – 4) sigui divisible per 13, és a dir, que 10^(k) ≡ 4 (mod 13). Provem amb k = 1, 2, 3, … fins a trobar-ne un:
+  k = 1: 10 ≡ 10 mod 13 (≠ 4)
+  k = 2: 100 ≡ 9 mod 13
+  k = 3: 1000 ≡ 12 mod 13
+  k = 4: 10000 ≡ 3 mod 13
+  k = 5: 100000 ≡ 4 mod 13
+
+Amb k = 5 tenim:
+  a = [2(100000 – 4)]/13 = 2·99996/13 = 199992/13 = 15384
+
+Per tant, N = 10·a + 6 = 10·15384 + 6 = 153846.
+
+La suma de les xifres de N és 1 + 5 + 3 + 8 + 4 + 6 = 27.
+
+Resposta: D)

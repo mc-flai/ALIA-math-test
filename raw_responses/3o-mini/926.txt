@@ -1,0 +1,18 @@
+Raonament: Per aconseguir que, amb sis nombres enters positius ordenats de manera creixent (anomenem-los x₁, x₂, …, x₆ amb x₆ = n), la majoria de les parelles (xᵢ, xⱼ) amb i < j tinguin la propietat que xᵢ divideix xⱼ, hem de triar els nombres de tal manera que, a excepció d’una única parella, cada nombre sigui factor de tots els nombres majors. Una idea natural és començar amb 1 (ja que 1 divideix qualsevol enter) i escollir els altres nombres de forma “en cadena” (cada nombre és múltiple del previ) per assegurar la divisibilitat.
+
+Però si tots són en progressió amb divisibilitat, totes les parelles compleixen la condició, cosa que no compleix la “única parella” amb fallada. Així, hem d’introduir just una excepció. Proposem per exemple la sèrie:
+
+  1, 2, 3, 6, 12, 24.
+
+Analisem les divisibilitats:
+ • 1 divideix tots.
+ • 2 divideix 6, 12 i 24.
+ • 3 divideix 6, 12 i 24.
+ • 6 divideix 12 i 24.
+ • 12 divideix 24.
+
+L’única excepció es dona amb la parella (2, 3) ja que 2 no divideix 3. Totes les altres parelles de nombres compleixen que el número menor divideix el major.
+
+Com que el major de la sèrie és 24 i és possible obtenir els requisits amb aquest valor, i atès que entre les opcions donades 24 és la més petita que compleix la condició, la resposta és 24.
+
+Resposta: C)

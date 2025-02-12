@@ -1,0 +1,28 @@
+Raonament: 
+Primer, com que el nombre té tres xifres i es pot escriure com N = abc amb a > b > c, això implica que els dígits seleccionats han de ser tres xifres diferents i, en la seva ordenació decreixent, el primer dígit (a) serà el més gran i, per tant, no pot ser 0. Així, per cada subconjunt de tres dígits (de l’1 al 9, i pot incloure el 0 en b o c) s’obté exactament un nombre que compleix a > b > c.
+
+D’altra banda, N ha de ser divisible per 9; això és equivalent a que la suma de les seves xifres, a+b+c, sigui divisible per 9. Com que el mínim possible de la suma per tres dígits és > 0 i el màxim (9+8+7=24) no arriba a 27, les úniques sumes possibles que són múltiples de 9 són 9 i 18.
+
+1. Sumes que donen 9. Cal trobar totes les combinacions de tres dígits que sumin 9:
+  • {0, 1, 8}: 0+1+8 = 9  → Nombre: 8,1,0.
+  • {0, 2, 7}: 0+2+7 = 9  → Nombre: 7,2,0.
+  • {0, 3, 6}: 0+3+6 = 9  → Nombre: 6,3,0.
+  • {0, 4, 5}: 0+4+5 = 9  → Nombre: 5,4,0.
+  • {1, 2, 6}: 1+2+6 = 9  → Nombre: 6,2,1.
+  • {1, 3, 5}: 1+3+5 = 9  → Nombre: 5,3,1.
+  • {2, 3, 4}: 2+3+4 = 9  → Nombre: 4,3,2.
+  Són 7 combinacions.
+
+2. Sumes que donen 18. Ara, les combinacions que sumen 18:
+  • {9, 8, 1}: 9+8+1 = 18  → Nombre: 9,8,1.
+  • {9, 7, 2}: 9+7+2 = 18  → Nombre: 9,7,2.
+  • {9, 6, 3}: 9+6+3 = 18  → Nombre: 9,6,3.
+  • {9, 5, 4}: 9+5+4 = 18  → Nombre: 9,5,4.
+  • {8, 7, 3}: 8+7+3 = 18  → Nombre: 8,7,3.
+  • {8, 6, 4}: 8+6+4 = 18  → Nombre: 8,6,4.
+  • {7, 6, 5}: 7+6+5 = 18  → Nombre: 7,6,5.
+  També són 7 combinacions.
+
+Sumant les dues parts: 7 + 7 = 14 nombres.
+
+Resposta: B)

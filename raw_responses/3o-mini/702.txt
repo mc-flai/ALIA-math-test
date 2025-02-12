@@ -1,0 +1,22 @@
+Raonament: Cal observar que l'última xifra de la quarta potència d'un enter només depèn de la seva última xifra. Comprovem per cadascun dels dígits 0 al 9:
+
+• Si la xifra és 0 → 0⁴ = 0 → acaba en 0.  
+• Si és 1 → 1⁴ = 1 → acaba en 1.  
+• Si és 2 → 2⁴ = 16 → acaba en 6.  
+• Si és 3 → 3⁴ = 81 → acaba en 1.  
+• Si és 4 → 4⁴ = 256 → acaba en 6.  
+• Si és 5 → 5⁴ = 625 → acaba en 5.  
+• Si és 6 → 6⁴ = 1296 → acaba en 6.  
+• Si és 7 → 7⁴ = 2401 → acaba en 1.  
+• Si és 8 → 8⁴ = 4096 → acaba en 6.  
+• Si és 9 → 9⁴ = 6561 → acaba en 1.
+
+Veiem que els enters que tenen com a últim dígit 0 o 5 donen potències que acaben en 0 o 5 respectivament, mentre que si l'últim dígit és 1, 2, 3, 4, 6, 7, 8 o 9 la quarta potència acaba en 1 o 6.
+
+Així, entre els 10 possibles últims xifres, 8 condicions (1, 2, 3, 4, 6, 7, 8, 9) donen un resultat amb 1 o 6 com a xifra de les unitats.
+
+Com que els enters de l'1 al 1000 es poden dividir en 100 blocs de 10, en cada bloc hi ha 8 números que compleixen la condició.
+
+Per tant, el nombre total és 100 blocs × 8 = 800.
+
+Resposta: B)

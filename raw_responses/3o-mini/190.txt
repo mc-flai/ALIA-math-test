@@ -1,0 +1,13 @@
+Raonament: El problema implica que, en numerar el llibre, s'han tret tots els nombres que són múltiplics de 3. Per tant, si en el bloc de nombres de l'1 en endavant, els números que es mantenen són aquells que no són múltiplics de 3, el nombre de números "estatus" fins a un número màxim R serà R – ⎣R/3⎦ (ja que ⎣R/3⎦ és la quantitat de nombres eliminats de l’1 a R). 
+
+Sabem que, físicament, el llibre té 88 pàgines. Així, hem de trobar el nombre R tal que el compte de números no múltiplos de 3 fins R sigui 88:
+  R – ⎣R/3⎦ = 88.
+
+Provem amb les opcions donades:
+ • Opció A: 130 → 130 – ⎣130/3⎦ = 130 – 43 = 87 (massa petit).
+ • Opció B: 131 → 131 – ⎣131/3⎦ = 131 – 43 = 88. 
+ • Les altres opcions donen nombres més grans.
+
+Per tant, la darrera pàgina, amb la numeració errònia, és la 131.
+
+Resposta: B)

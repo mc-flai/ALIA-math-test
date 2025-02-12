@@ -1,0 +1,17 @@
+Raonament:
+Cada nombre imparell pot expressar-se com 1 + 2·(un enter no negatiu). Sigui cada nombre = 1 + 2a, amb a ≥ 0. Per a 5 nombres imparells que sumen 13, tenim:
+  (1 + 2a₁) + (1 + 2a₂) + (1 + 2a₃) + (1 + 2a₄) + (1 + 2a₅) = 13.
+Això simplifica a 5 + 2(a₁ + a₂ + a₃ + a₄ + a₅) = 13, és a dir:
+  a₁ + a₂ + a₃ + a₄ + a₅ = 4.
+Els aᵢ són enters no negatius i, com que les sumes que es poden obtenir consideren l'ordre inexistent (el conjunt {1,1,5, …} és el mateix independent de l'ordre), hem de comptar les solucions distintes sense tenir en compte l'ordre. En altres paraules, hem de comptar les particions de 4 en 5 parts (ambi inclosos zeros) sense considerar diferents permutacions de les mateixes parts.
+
+Les particions de 4 (sense ordre) en fins a 5 parts (afegint zeros per completar) són:
+  1) 4 + 0 + 0 + 0 + 0  → aᵢ = {0,0,0,0,4}  → nombres imparells = {1,1,1,1,9}.
+  2) 3 + 1 + 0 + 0 + 0  → aᵢ = {0,0,0,1,3}  → nombres imparells = {1,1,1,3,7}.
+  3) 2 + 2 + 0 + 0 + 0  → aᵢ = {0,0,0,2,2}  → nombres imparells = {1,1,1,5,5}.
+  4) 2 + 1 + 1 + 0 + 0  → aᵢ = {0,0,1,1,2}  → nombres imparells = {1,1,3,3,5}.
+  5) 1 + 1 + 1 + 1 + 0  → aᵢ = {0,1,1,1,1}  → nombres imparells = {1,3,3,3,3}.
+
+Per tant, hi ha 5 possibilitats per expressar 13 com a suma de 5 nombres imparells.
+
+Resposta: B)

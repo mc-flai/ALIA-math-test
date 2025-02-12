@@ -1,0 +1,7 @@
+Raonament: 
+Observem que una casella quedarà sense pintar només si no es pinta per cap de les dues regles. Això és, la casella només no es pinta si la fila no ha estat pintada negre (és a dir, si el número de la fila és múltiple de 3) i la columna tampoc (és a dir, si el número de la columna és senar, ja que només es pinten les parelles). 
+Hi ha 33 files, dels quals només les que són múltiples de 3 no es pinten, i com 33/3 = 11, això vol dir que hi ha 11 files sense pintar. 
+Pel que fa a les columnes, tenim 21 columnes, i només es deixen sense pintar les senars. Com que la quantitat de nombres senars entre 1 i 21 és (21 + 1)/2 = 11, tenim 11 columnes senars. 
+Per tant, les caselles sense pintar són aquelles que es troben en una fila múltiple de 3 i en una columna senar, donant un total de 11 × 11 = 121 caselles.
+
+Resposta: B)

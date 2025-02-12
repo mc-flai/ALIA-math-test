@@ -1,0 +1,30 @@
+Raonament: Per trobar la diferència mínima possible entre dos nombres consecutius de la successió definida (nombres naturals la suma dels dígits dels quals és divisible per 5), hem de buscar si és possible que dos nombres consecutius (és a dir, separats per 1 unitat) compleixin aquesta propietat. Encara que els primers elements donats són 5, 14, 19, … i les diferències visibles són 9, 5, 4, 5, etc., això no exclou que, en algun moment, la diferència entre dos nombres consecutius d’aquesta successió pugui ser 1.
+
+Observem que si tenim un nombre n amb la propietat i considerem n + 1, volem que també aquest número compleixi que la suma dels seus dígits és divisible per 5. Anem a considerar el cas en què el nombre n acaba amb diversos 9. Suposem que n és de la forma: 
+  n = x·10⁴ + 9999,
+on x és un nombre natural que no acabi en 9 (per evitar carrers addicionals en la suma de dígits). En aquest cas:
+
+  S(n) = S(x) + 9 + 9 + 9 + 9 = S(x) + 36.
+  n + 1 = (x + 1)·10⁴,
+  S(n + 1) = S(x + 1).
+
+Perquè n i n + 1 siguin de la successió, hem de tenir:
+  S(x) + 36 ≡ 0 (mod 5)  i  S(x + 1) ≡ 0 (mod 5).
+
+Si, a més, en el càlcul de S(x + 1) no hi ha canvis addicionals deguts a portaats (és a dir, x no acaba en 9), llavors S(x + 1) = S(x) + 1. Per tant, per complir S(x + 1) ≡ 0 (mod 5) cal que:
+  S(x) + 1 ≡ 0 (mod 5) ⟹ S(x) ≡ 4 (mod 5).
+
+Comprovem ara la condició per S(n):
+  S(n) = S(x) + 36 ≡ 4 + 36 = 40 ≡ 0 (mod 5).
+
+Així, triant per exemple x = 4 (ja que S(4) = 4 i 4 no acaba en 9), obtenim:
+  n = 4·10⁴ + 9999 = 40000 + 9999 = 49999,
+  n + 1 = 50000.
+
+Comprovem:
+  S(49999) = 4 + 9 + 9 + 9 + 9 = 40 (divisible per 5) 
+  S(50000) = 5 + 0 + 0 + 0 + 0 = 5 (divisible per 5).
+
+La diferència entre n + 1 i n és 50000 − 49999 = 1, demostrant que és possible aconseguir una diferència de 1.
+
+Resposta: A)

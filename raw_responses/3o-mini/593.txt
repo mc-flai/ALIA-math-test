@@ -1,0 +1,15 @@
+Raonament: 
+Observem primer que el conjunt mínim de sis nombres enters positius i diferents és {1, 2, 3, 4, 5, 6} i té suma 21. Com que la suma ha de ser 24, hem d’afegir un total de 3 unitats a aquests nombres mantenint-los diferents.
+
+Una manera d’aconseguir-ho és partir del conjunt {1, 2, 3, 4, 5, 6} i “distribuir” les 3 unitats de manera que en obtenir un nou conjunt de sis nombres diferents amb suma 24.
+
+Per exemple:
+1) Augmentem el major element (6) en 3 unitats: obtenim {1, 2, 3, 4, 5, 9} (1+2+3+4+5+9 = 24). El seu producte és 1·2·3·4·5·9 = 1080.
+2) Augmentem el cinquè element en 1 (5 passa a 6) i el sisè en 2 (6 passa a 8): obtenim {1, 2, 3, 4, 6, 8} que suma 24 i el producte és 1·2·3·4·6·8 = 1152.
+3) Augmentem els últims tres elements en 1 cadascun: {1, 2, 3, 5, 6, 7} (1+2+3+5+6+7 = 24) amb producte 1·2·3·5·6·7 = 1260.
+
+S’ens pot demostrar que no hi ha altres conjunts de sis nombres enters positius diferents amb suma 24, atès que, no incloent el 1, la suma mínima augmenta massa (per exemple, {2, 3, 4, 5, 6, 7} suma 27). 
+
+Així, els tres conjunts possibles donen tres productes diferents: 1080, 1152 i 1260.
+
+Resposta: C)

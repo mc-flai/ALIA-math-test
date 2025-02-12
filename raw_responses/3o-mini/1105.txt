@@ -1,0 +1,20 @@
+Raonament: La idea és obtenir, a partir de la llista de l'1 al 25, un subconjunt S tal que el seu producte sigui un quadrat perfecte (condició necessària perquè es pugui dividir S en dos grups amb igual producte – ja que cada grup hauria de tenir producte igual a l'arrel quadrada del producte total). Comencem amb el producte de tots els nombres, és a dir, 25! i fem el càlcul dels exponents de cada primer amb la fòrmula de Legendre. S'observa que per alguns primers apareixen exponents imparell:
+
+ • 2: 22 (parell)
+ • 3: 10 (parell)
+ • 5: 6  (parell)
+ • 7: 3  (imparell)
+ • 11: 2 (parell)
+ • 13: 1 (imparell)
+ • 17: 1 (imparell)
+ • 19: 1 (imparell)
+ • 23: 1 (imparell)
+
+Els primers 7, 13, 17, 19 i 23 tenen un nombre imparell de factors en 25! i, per tant, si mantenim tots els nombres, el producte no serà un quadrat perfecte. Ara, cal observar què opcions tenim per “corregir” aquests exponents:
+
+ – Pel 13, 17, 19 i 23, cada nombre apareix únicament (per exemple, 13 només apareix a 13, 17 només a 17, etc.), així que no hi ha manera d'obtenir-ne dues còpies. Per tant, s’han de suprimir aquests nombres.
+ – Pel 7, aquest primer apareix en els nombres 7, 14 i 21, sumant un total de 3 aparicions (imparell). Per aconseguir una aparició parella, hem de treure exactament un (o tres) d’aquests nombres. Treure'n 1 és l'opció mínima.
+
+Així, la quantitat mínima de nombres que s’han d’esborrar és 4 (per 13, 17, 19 i 23) + 1 (per ajustar el 7) = 5.
+
+Resposta: B)

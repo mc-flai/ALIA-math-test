@@ -1,0 +1,9 @@
+Raonament: Volem trobar el nombre enter més petit (en valor numèric) que tingui 225 xifres i que la suma d’aquestes sigui 2019. Primer, valorem quantes xifres calen: cada xifra pot valre com a molt 9, de manera que amb n xifres la suma màxima és 9·n. Com 2019/9 ≈ 224,33, n ha de ser com a mínim 225 (ja que 9·224 = 2016, massa poc). 
+  
+Ara, observem que si fem un nombre amb 225 xifres totes iguals a 9, la suma seria 225·9 = 2025. Per aconseguir la suma 2019, hem de restar 2025 − 2019 = 6 a la suma total, cosa que podem fer disminuint una de les xifres: en comptes de 9, fem 9 − 6 = 3. Així, el nombre contindrà 224 xifres iguals a 9 i una xifra igual a 3.
+
+Per obtenir el nombre enter més petit amb aquesta combinació de xifres, hem de posicionar la xifra més petita (la 3) a l’extrem esquerre, ja que el pes de la xifra disminueix a mesura que anem cap a la dreta.
+
+Per tant, la primera (més a l’esquerra) xifra del nombre enter més petit amb suma de xifres 2019 és la 3.
+
+Resposta: B)

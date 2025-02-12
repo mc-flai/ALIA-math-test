@@ -1,0 +1,17 @@
+Raonament: Col·locam A a l'origen. Suposem que AB té longitud 1 i està sobre l'eix horitzontal, per tant B = (1, 0). Com que l’angle A és 27°, el costat AC fa un angle de 27° amb l’eix horitzontal, així que C = (cos 27°, sin 27°). El triangle ABC és isòsceles amb A = 27°, i B i C iguals, però per aquest càlcul només ens interessa la posició dels punts. 
+
+El punt D és el simètric de B respecte A, per tant, D = (–1, 0).
+
+Per trobar l’angle BCD, mirarem els vectors que surtin des del punt C:
+ CB = B – C = (1 – cos 27°, 0 – sin 27°)
+ CD = D – C = (–1 – cos 27°, 0 – sin 27°).
+
+Calcular el producte punt:
+ CB · CD = (1 – cos 27°)(–1 – cos 27°) + (– sin 27°)(– sin 27°)
+       = –(1 – cos 27°)(1 + cos 27°) + sin² 27°
+       = –(1 – cos² 27°) + sin² 27°
+       = –(sin² 27°) + sin² 27° = 0.
+
+El fet que el producte punt sigui zero implica que els vectors CB i CD són perpendiculars, per tant, l’angle BCD mesura 90°.
+
+Resposta: D)

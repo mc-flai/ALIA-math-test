@@ -1,0 +1,13 @@
+Raonament: Quan Bat surt de la cova, el rellotge marca les 20:20 (8:20 PM). Quan torna, estant penjat de cap per avall, l’aparença dels dígits canvia a causa de la rotació 180° d’un display de set segments. En general, la regla és que, en rotar, els dígits canvia de posició (la darrera passa a ser la primera, etc.) i es transformen seguint la correspondència:
+  0 → 0  1 → 1  2 → 2  5 → 5  6 → 9  8 → 8  9 → 6.
+Així, si suposem que el rellotge en la realitat (en orientació normal) marca “X Y : Z W” quan Bat torna, aleshores, vist de cap per avall, Bat llegirà “f(W) f(Z) : f(Y) f(X)” i, segons l’enunciat, aquesta lectura és “20:20”. 
+Per tant:
+  f(W) = 2   f(Z) = 0   f(Y) = 2   f(X) = 0.
+Utilitzant la correspondència, només és possible si:
+  W = 2   Z = 0   Y = 2   X = 0.
+Així, el rellotge real marcava “02:02” (2:02 AM). 
+
+Per trobar el temps que Bat ha estat fora, calculem la diferència entre el moment de sortida (20:20) i el de retorn (02:02). Com que s’ha passat la mitjanit, de 20:20 a 24:00 hi ha 3 hores i 40 minuts, i de 24:00 a 02:02 hi ha 2 hores i 2 minuts; sumant:
+  3 hores 40 min + 2 hores 2 min = 5 hores 42 minuts.
+
+Resposta: B)

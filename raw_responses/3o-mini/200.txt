@@ -1,0 +1,23 @@
+Raonament: Sigui m el nombre inicial, que és parell i no divisible per 4; llavors es pot escriure com m = 2p amb p senar. Considerem les iteracions:
+
+1) Partim de n₀ = 2p. El major divisor de 2p (excloent el mateix 2p) és p, per la qual cosa
+  n₁ = 2p + p = 3p.
+
+2) Per n₁ = 3p (senar), el major divisor és, en general, p (ja que els divisors possible són 1, 3, p i 3p, i p és el més gran per p > 1), així
+  n₂ = 3p + p = 4p.
+
+3) Ara n₂ = 4p és divisible per 4. Per nombres parells, el major divisor és n/2 (donat que el divisor més petit és 2). Per tant:
+  n₃ = 4p + (4p/2) = 4p + 2p = 6p.
+
+4) n₃ = 6p és parell però no divisible per 4 (ja que 6p = 2·3p amb 3p senar), pel que el seu major divisor és n₃/2 = 3p:
+  n₄ = 6p + 3p = 9p.
+
+5) n₄ = 9p és senar, i de nou el major divisor és, usualment, el resultat de dividir per el seu factor primer mínim (habitualment 3), és a dir, 9p/3 = 3p:
+  n₅ = 9p + 3p = 12p.
+
+6) Finalment, n₅ = 12p és divisible per 4 (ja que 12p = 4·(3p)), i el seu major divisor és n₅/2 = 6p:
+  n₆ = 12p + 6p = 18p.
+
+Notant que m = 2p, tenim n₆ = 18p = 9·(2p) = 9m.
+
+Resposta: D) 9m.

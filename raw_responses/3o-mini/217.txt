@@ -1,0 +1,13 @@
+Raonament: Observem que qualsevol nombre natural n es pot expressar com n = 9k + r, amb r en {0, 1, 2, …, 8}. Per estudiar els residus de n³ modul 9, basta amb considerar els casos r = 0, 1, 2, …, 8. Calculant:
+ • 0³ ≡ 0 (mod 9)
+ • 1³ ≡ 1 (mod 9)
+ • 2³ = 8 ≡ 8 (mod 9)
+ • 3³ = 27 ≡ 0 (mod 9)
+ • 4³ = 64, i 64 - 63 = 1, per tant, 4³ ≡ 1 (mod 9)
+ • 5³ = 125, i 125 - 117 = 8, per tant, 5³ ≡ 8 (mod 9)
+ • 6³ = 216 ≡ 0 (mod 9)
+ • 7³ = 343, i 343 - 342 = 1, per tant, 7³ ≡ 1 (mod 9)
+ • 8³ = 512, i 512 - 504 = 8, per tant, 8³ ≡ 8 (mod 9)
+Els únics residus que obtenim són 0, 1 i 8, és a dir, només 3 possibilitats diferents.
+
+Resposta: C)

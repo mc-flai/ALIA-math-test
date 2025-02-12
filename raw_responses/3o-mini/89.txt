@@ -1,0 +1,26 @@
+Raonament: Per calcular la xifra de les desenes de la suma, observem que per n! amb n ≥ 10, el factorial té almenys dos zero al final (ja que 10! = 3628800), de manera que aquests termes són múltipls de 100 i no contribueixen a la xifra de les desenes. Així, només cal calcular la suma dels factorials des de 1! fins a 9!.
+
+Càlcul pas a pas:  
+1! = 1  
+2! = 2  
+3! = 6  
+4! = 24  
+5! = 120  
+6! = 720  
+7! = 5040  
+8! = 40320  
+9! = 362880  
+
+Sumant-los:  
+1 + 2 = 3  
+3 + 6 = 9  
+9 + 24 = 33  
+33 + 120 = 153  
+153 + 720 = 873  
+873 + 5040 = 5913  
+5913 + 40320 = 46233  
+46233 + 362880 = 409113
+
+La xifra de les desenes del nombre 409113 és 1.
+
+Resposta: B)

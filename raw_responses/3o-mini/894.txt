@@ -1,0 +1,52 @@
+Raonament: Comencem expressant cada nombre de la graella com a potència de 2, és a dir, cada casella té el valor 2^(exponent). D'aquesta manera, per exemple, si a la casella de la primera fila i primera columna posem 2^(p), i així successivament, les condicions “el producte de cada fila i cada columna és 1” es tradueixen en que la suma dels exponents en cada fila i columna sigui 0, i la condició “el producte del 2×2 és 2” es tradueix en que la suma dels exponents del quadrat sigui 1 (ja que 2^(1) = 2). 
+
+Anem a definir la graella:
+
+  a  b  c  
+  d  e  f  
+  g  h  i  
+
+i posem:
+  a = 2^(p), b = 2^(q), c = 2^(r),
+  d = 2^(s), e = 2^(t), f = 2^(u),
+  g = 2^(v), h = 2^(w), i = 2^(x).
+
+Les condicions donen:
+
+1) Per cada fila:
+  p + q + r = 0,  s + t + u = 0,  v + w + x = 0.
+
+2) Per cada columna:
+  p + s + v = 0,  q + t + w = 0,  r + u + x = 0.
+
+3) Per cada quadrat 2×2 (les quatre possibles):
+  p + q + s + t = 1,  q + r + t + u = 1,  
+  s + t + v + w = 1,  t + u + w + x = 1.
+
+El nostre objectiu és trobar t (l’exponent associat a la casella central, e = 2^(t)). 
+
+Per simplificar, podem expressar algunes relacions. Per exemple, de la primera fila tenim p + q + r = 0, i del primer subgraella (p + q + s + t = 1) deduïm que s + t = 1 – (p + q) = 1 + r. De la segona fila, s + t + u = 0, per tant u = –(s + t) = –(1 + r).
+
+D’altra banda, de la segona subgraella (q + r + t + u = 1), substituïm u i obtenim:
+  q + r + t – (1 + r) = 1 ⟹ q + t = 2 ⟹ t = 2 – q.  (∗)
+
+També, de la segona columna: q + t + w = 0, per tant w = –(q + t) = –2. 
+
+De la tercera relació del 2×2 (s + t + v + w = 1) tenim:
+  s + t + v – 2 = 1 ⟹ s + t + v = 3.
+Ja hem trobat que s + t = 1 + r, així que:
+  1 + r + v = 3 ⟹ v = 2 – r.
+
+A més, de la primera columna: p + s + v = 0, per tant:
+  p + s = –v = r – 2.
+Però de la primera fila, p + q + r = 0, és a dir, p = –q – r. Substituint:
+  –q – r + s = r – 2 ⟹ s = q + 2r – 2.
+
+Utilitzant la segona fila, s + t + u = 0, tenim, com ja hem vist, u = –(s + t); i d’altra banda de la segona subgraella hem trobat u = –(1 + r). Així s’aconsegueix una relació consistent i, continuant amb la resta d’equacions similars i substitucions, es pot determinar que r = 1 i q = –2.
+
+Finalment, a partir de l’equació (∗) obtenim:
+  t = 2 – (–2) = 4.
+
+Així, la casella central, que té valor e = 2^(t), serà 2⁴ = 16.
+
+Resposta: A)

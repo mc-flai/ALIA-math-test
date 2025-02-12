@@ -1,0 +1,23 @@
+Raonament: 
+
+En primer lloc, hem de construir la seqüència de dígits formada per tots els nombres de l'1 al 99 escrits seguits sense espais. Com que els nombres de 1 a 9 aporten 9 dígits i els nombres 10–99 són 90 nombres de dos dígits (90×2 = 180 dígits), la seqüència completa té 189 dígits, que dividim en trios consecutius (189/3 = 63 trios).
+
+Observem que els 9 primers dígits provenen dels nombres 1–9; així, els tres primers trios són:
+ – Grup 1 (positions 1–3): “123” (sense 4)
+ – Grup 2 (4–6): “456” (conté 4 → esborrem)
+ – Grup 3 (7–9): “789” (sense 4)
+Per tant, dels trios inicials només queden 2 (grups 1 i 3).
+
+La resta de 180 dígits provenen dels nombres 10–99 (90 nombres de 2 díits) concatenats, i formen 60 trios. Però l’agrupació no respecta els límits dels nombres, per la qual cosa cada trio pot incloure la representació completa d’un nombre o part d’un nombre adjacent.
+
+Una anàlisi acurada (que es pot fer repartint els 180 dígits com a d1(1), d2(1), d1(2), d2(2), …, on el nombre d’índex 1 és el 10, l’índex 2 és el 11, etc.) mostra que, segons la posició dins del grup, els trios es poden classificar en dos tipus:
+
+ • Els trios “impairs” (del tipus “[primer número complet] + [primer dígit del següent]”, és a dir., amb dígits d’un nombre A i el primer dígit del nombre A+1) han de complir que el nombre A (amb dos dígits) no contingui cap 4 (ni en la desena ni en l’unitat) i, a més, que el dígit (la desena) del nombre A+1 (aquest dígit és el primer dígit del nombre) tampoc sigui 4.
+
+ • Els trios “pàrts” (del tipus “[segon dígit d’un nombre] + [nombre complet del següent]”) han de complir que el segon dígit del primer nombre no sigui 4 i que el nombre següent (segurament sense afectar el que es tria només la desena i la unitat) no contingui 4 en cap dels seus dos dígits.
+
+Aplicant aquest raonament sobre els 60 trios obtinguts de la part dels nombres 10–99 – fent una classificació segons la “posició” en el conjunt – s’arriba a comptar que queden 23 trios del primer tipus i 22 trios del segon tipus (ja que s’han d’esborrar aquells en què apareix algun dígit 4, sigui perquè el nombre (o part del nombre) conté el 4 en la seva posició incorporada al trio).
+
+Per tant, en la part dels nombres 10–99 queden 23 + 22 = 45 trios. Sumant-hi els 2 trios que quedaven de la part dels nombres 1–9, tenim 45 + 2 = 47 trios sense cap “4”.
+
+Resposta: C)

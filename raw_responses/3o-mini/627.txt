@@ -1,0 +1,25 @@
+Raonament: Sigui v₁, v₂, …, v₁₁ els números de passatgers dels vagons. Com que en qualsevol tres vagons consecutius se sumen 99 passatgers tenim:
+  v₁ + v₂ + v₃ = 99,
+  v₂ + v₃ + v₄ = 99,
+  v₃ + v₄ + v₅ = 99, etc.
+Restar la primera de la segona dona v₄ – v₁ = 0, és a dir, v₄ = v₁. De manera similar deduïm que:
+  v₁ = v₄ = v₇ = v₁₀  
+  v₂ = v₅ = v₈ = v₁₁  
+  v₃ = v₆ = v₉.
+Així, els 11 vagons es distribueixen en tres tipus: 
+ – Els vagons 1, 4, 7 i 10 tenen v₁ passatgers.
+ – Els vagons 2, 5, 8 i 11 tenen v₂ passatgers.
+ – Els vagons 3, 6 i 9 tenen v₃ passatgers.
+Tenim també que:
+  v₁ + v₂ + v₃ = 99  (la suma de tres consecutius)
+i la suma total de passatgers és:
+  4v₁ + 4v₂ + 3v₃ = 350.
+Multiplicant la primera equació per 3 obtenim:
+  3v₁ + 3v₂ + 3v₃ = 297.
+Resta:
+  (4v₁ + 4v₂ + 3v₃) − (3v₁ + 3v₂ + 3v₃) = 350 − 297 ⇒ v₁ + v₂ = 53.
+Per tant, de la primera equació, v₃ = 99 − (v₁ + v₂) = 99 − 53 = 46.
+Atès que el sisè vagó és v₆ i hem vist que v₆ = v₃, deduïm que al sisè vagó hi ha 46 passatgers.
+Ara, observant la repetició del patró: els vagons 3, 6 i 9 són del “terc” tipus, per tant la resposta correspon a “en el lloc número 3”.
+
+Resposta: C) En el lloc número 3

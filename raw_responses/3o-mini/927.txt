@@ -1,0 +1,22 @@
+Raonament: Primer, escrivim l’equació donada en forma equivalent. Tenim a^(2x) – b^(2x) – 2(ab)^x = 0. Observem que a^(2x) = (a^x)², b^(2x) = (b^x)² i (ab)^x = a^x·b^x. Així, l’equació es transforma en:
+
+  (a^x)² – (b^x)² – 2a^x·b^x = 0.
+
+Facilitem la notació definint A = a^x i B = b^x. L’equació es converteix en:
+  A² – B² – 2AB = 0.
+
+Per resoldre-la, dividim tot per B² (recordant que B > 0 perquè b > 1) i definim z = A/B, és a dir, z = (a^x)/(b^x) = (a/b)^x:
+  z² – 1 – 2z = 0  ⟹  z² – 2z – 1 = 0.
+
+Ara, resolem l’equació quadràtica:
+  z = [2 ± √(4 + 4)] / 2 = [2 ± √8] / 2 = 1 ± √2.
+
+Com z representa (a/b)^x i és positiu, descartem la solució negativa (1 – √2), quedant:
+  (a/b)^x = 1 + √2.
+
+Finalment, prenent logaritmes en ambdues bandes:
+  x·ln(a/b) = ln(1 + √2)  ⟹  x = ln(1 + √2) / ln(a/b).
+
+Així, la resposta correcta és la opció que indica x = (ln(√2 + 1)) / (ln(a/b)).
+
+Resposta: D)

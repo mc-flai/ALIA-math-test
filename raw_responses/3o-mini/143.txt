@@ -1,0 +1,20 @@
+Raonament: Volem trobar el nombre de 4 xifres amb xifres estrictament creixents (és a dir, cada xifra és més gran que la seva predecessor) que sigui múltiple de 6 i, dintre d’aquests, l’objectiu és l’únic que tingui un valor màxim.
+
+1. Primer, recordem que per ser múltiple de 6, el nombre ha de ser múltiple de 2 (última xifra pare) i de 3 (la suma de les xifres és divisible per 3).
+
+2. El nombre de 4 xifres més gran amb xifres en ordre creixent seria 6789. Però l’última xifra és 9 (senar), així que no és múltiple de 2.
+
+3. Busquem, llavors, candidates amb última xifra pare (entre 0, 2, 4, 6, 8). Per obtenir el nombre màxim, convé escollir la xifra de les unitats més gran possible, per tant d’entre els pare, el màxim és 8. Així, fixem d = 8.
+
+4. Ara hem de triar tres xifres diferents a l’esquerra, a, b i c, que siguin estrictament creixents i totes menors que 8. Per tal d’obtenir el màxim nombre possible amb d = 8, intuïtem que voldríem triar els dígits més grans possibles; en principi, la millor opció seria a = 5, b = 6, c = 7, el que donaria 5678. Però comprovem: la suma és 5+6+7+8 = 26, que no és divisible per 3.
+
+5. Busquem la següent opció en ordre descendent. Considerem canviar el primer dígit (per reduir la suma) mentre mantenim un nombre relativament elevat. Si provem amb a = 4, b = 5, c = 7, obtenim el nombre 4578. La suma és 4+5+7+8 = 24, que és divisible per 3, i l’última xifra 8 fa que el nombre sigui parell; per tant, 4578 és múltiple de 6.
+
+6. A més, comprovant altres combinacions possibles amb d = 8 (o amb un altre d parell), 4578 és el màxim que compleix tant l’ordre creixent com la divisibilitat per 6.
+
+Finalment, en el nombre 4578, les posicions són:
+  Milers: 4 Centenes: 5 Deuens: 7 Unitats: 8
+
+Per tant, la xifra de les centenes és 5.
+
+Resposta: C)

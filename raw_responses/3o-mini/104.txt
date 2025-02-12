@@ -1,0 +1,32 @@
+Raonament: Sigui a, b, c, d i e els cinc nombres en ordre creixent, de manera que tenim les 10 sumes: a+b, a+c, a+d, a+e, b+c, b+d, b+e, c+d, c+e i d+e. Observant les sumes donades, la més petita és 22 i la més gran és 124, per tant:
+
+  a + b = 22      d + e = 124
+
+La suma de totes les 10 sumes equival al 4*(a+b+c+d+e) (ja que cada nombre apareix en 4 sumes). Sumant totes les sumes:
+  22 + 48 + 50 + 55 + 57 + 83 + 89 + 91 + 117 + 124 = 736
+Llavors, a+b+c+d+e = 736/4 = 184.
+
+Ara, sumant a+b i d+e:
+  a + b + d + e = 22 + 124 = 146,
+de manera que:
+  c = 184 − 146 = 38.
+
+Considerem ara les sumes amb c. Els candidats naturalment apareixen entre les sumes donades:
+  a + c i b + c.
+Suposem que a + c = 48 (la segona suma més petita). Així:
+  a = 48 − 38 = 10  →  b = 22 − 10 = 12.
+Verifiquem: b + c = 12 + 38 = 50, que és una de les sumes donades.
+
+Ara, queden per determinar d i e amb d + e = 124. La següent suma mínima disponible és 55. Suposem que:
+  a + d = 55  →  d = 55 − 10 = 45.
+Llavors:
+  b + d = 12 + 45 = 57  i  c + d = 38 + 45 = 83, coincidint amb les sumes de la llista.
+Finalment, e = 124 − 45 = 79. Així:
+  a + e = 10 + 79 = 89,
+  b + e = 12 + 79 = 91,
+  c + e = 38 + 79 = 117,
+totes presents entre les sumes donades.
+
+Els cinc nombres són: 10, 12, 38, 45 i 79. El segon nombre més gran d’aquesta llista és 45.
+
+Resposta: A)

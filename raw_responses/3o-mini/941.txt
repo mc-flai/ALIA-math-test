@@ -1,0 +1,15 @@
+Raonament: El llibre té 630 pàgines i, com que el primer dia Robert n'ha llegit la tercera part, vol dir que ha llegit 630 ÷ 3 = 210 pàgines (de la pàgina 1 a la 210). L’endemà va continuar llegint a partir de la pàgina 211 i va llegir un cert nombre n de pàgines consecutives, de manera que la última pàgina llegida seria la 210 + n. La suma dels números de les pàgines llegides el segon dia és la suma d’una progressió aritmètica amb primer terme 211, últim terme (210+n) i n termes. Per tant, tenim:
+
+  n*(211 + (210 + n))/2 = 4410  ⟹  n*(421 + n)/2 = 4410.
+
+Multiplicant per 2:
+  n*(n + 421) = 8820.
+
+Busquem n enter tal que satisfaci aquesta equació. Provant amb n = 20:
+  20*(20 + 421) = 20*441 = 8820,
+que és cert. Així, n = 20.
+
+Per tant, el segon dia va llegir pàgines de la 211 a la 230 (20 pàgines). El total de pàgines llegides en dos dies és 210 + 20 = 230. Així, queden per llegir:
+  630 - 230 = 400 pàgines.
+
+Resposta: E)

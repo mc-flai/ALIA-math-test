@@ -1,0 +1,9 @@
+Raonament: Primer calculem la suma total del conjunt {1,2,3,4,5,6,7}, que és 28. Per dividir-lo en dos subconjunts amb suma igual, cada subconjunt ha de sumar 14. Per tant, hem de trobar totes les subconjunts de {1,2,3,4,5,6,7} que tinguin suma 14. 
+
+En fer aquest càlcul, trobem que hi ha 8 subconjunts que sumen 14:
+• De 3 elements: {1,6,7}, {2,5,7}, {3,4,7} i {3,5,6}.
+• De 4 elements: {1,2,4,7}, {1,2,5,6}, {1,3,4,6} i {2,3,4,5}.
+
+Cada cop que triem un subconjunt amb suma 14, el seu complement també suma 14. Però si comptem de totes dues maneres, cada partició es compta 2 vegades. Per tant, el nombre de maneres diferents de dividir el conjunt és 8÷2 = 4.
+
+Resposta: D)

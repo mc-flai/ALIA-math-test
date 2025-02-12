@@ -1,0 +1,21 @@
+Raonament: Cada moviment consisteix a girar 4 dels 6 gots, de manera que després de k moviments s’han girat un total de 4k vegades. Com que volem que cada got estigui girat un nombre imparell de vegades (per passar d’amunt a avall), hem de trobar el mínim k tal que es pugui distribuir les 4k girades entre els 6 gots de manera que cada got rebi un nombre imparell de girades (per exemple, 1 o 3). 
+
+Si fem 3 moviments, tenim 4·3 = 12 girades. Observem que podem distribuir aquestes 12 girades de manera que 3 gots es giren en els 3 moviments (3 girades cadascun) i els altres 3 apareguin en només 1 moviment (1 girada cadascun), ja que 3×3 + 3×1 = 9 + 3 = 12. 
+
+Una estratègia possible és la següent:
+ • Moviment 1: girar els gots 1, 2, 3 i 4.
+ • Moviment 2: girar els gots 1, 2, 5 i 6.
+ • Moviment 3: girar els gots 3, 4, 5 i 6.
+No obstant, en aquesta distribució, cada got apareix 2 vegades, així que hem de modificar l’enfocament. 
+
+La idea clau és aconseguir que 3 gots apareguin en els 3 moviments i 3 gots només en 1 moviment. Per exemple:
+ • Determinem un conjunt comú {1, 2, 3} que apareixerà en els 3 moviments.
+ • El tercer got addicional de cada moviment serà diferent: es pot fer el següent:
+  – Moviment 1: girar els gots 1, 2, 3 i 4.
+  – Moviment 2: girar els gots 1, 2, 3 i 5.
+  – Moviment 3: girar els gots 1, 2, 3 i 6.
+Així, els gots 1, 2 i 3 rebran 3 girades cadascun (3 és imparell) i els gots 4, 5 i 6 rebran 1 girada cadascun (1 és imparell). D’aquesta manera tots els 6 gots han estat girats un nombre imparell de vegades i per tant estan cap avall.
+
+Per tant, el nombre mínim de moviments necessaris és 3.
+
+Resposta: B)

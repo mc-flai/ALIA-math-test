@@ -1,0 +1,12 @@
+Raonament: Primer, observem que |a + b| ≤ 1 implica que b ha de complir –1 ≤ a + b ≤ 1, és a dir, b ∈ [–1 – a, 1 – a]. A més, |a − 3b| ≤ 2 implica –2 ≤ a − 3b ≤ 2. Resolem per b:
+  a − 3b ≤ 2 ⟹ –3b ≤ 2 − a ⟹ b ≥ (a − 2)/3,
+  a − 3b ≥ –2 ⟹ –3b ≥ –2 − a ⟹ b ≤ (a + 2)/3.
+Per tant, b ∈ [(a − 2)/3, (a + 2)/3].
+
+Perquè existeixi algun b que satisfaci totes dues condicions, aquests dos intervals han d’intersectar-se, és a dir, la desigualtat
+  max{–1 – a, (a − 2)/3} ≤ min{1 – a, (a + 2)/3}
+ha de tenir solució. Analitzant els casos (tenint en compte la relació entre –1 – a i (a − 2)/3, i entre 1 – a i (a + 2)/3) se pot demostrar que aquesta condició es redueix, al final, a que a ha d’estar en l’interval [–5/4, 5/4].
+
+Com que en l’opció A l’interval és donat com –5/4 ≤ a < 5/4, i aquesta és l’única opció que s’acosta al resultat correcte (encara que, en el nostre càlcul, a = 5/4 també és possible), concluïm que l’opció que millor s’ajusta és:
+
+Resposta: A)

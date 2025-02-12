@@ -1,0 +1,17 @@
+Raonament: Sigui k el nombre de cavallers entre els quatre habitants. Observeu que cada habitant contesta sobre els “altres tres”. Així, si un habitant és cavaller, la seva resposta ha de ser el nombre real de cavallers entre els altres, és a dir, k – 1, mentre que si és escuder (mentider), la seva resposta ha de ser diferent del nombre real de cavallers entre els altres (que serà k, ja que ell mateix no és cavaller).
+
+Anem a provar les possibles quantitats de cavallers:
+
+1) Si k = 0, tots són escuders. En aquest cas, la “verdadera” resposta per cada habitant seria 0, i com que han de mentir, poden contestar qualsevol nombre diferent de 0. La distribució donada – tres “un” i un “dos” – és completament acceptable, ja que ni 1 ni 2 són 0.
+
+2) Si k = 1, hi ha un únic cavaller. Per al cavaller, la resposta ha de ser 0 (ja que dels altres tres no n’hi ha cap cavaller), però entre les respostes no apareix el 0. A més, els escuders, la veritable xifra entre els altres seria 1 i haurien de contestar qualsevol nombre diferent de 1. Però les respostes donades són “un” i “dos”, i cap és 0. Així, k = 1 no encaixa.
+
+3) Si k = 2, els cavallers contaran 1 cavaller entre els altres i respondrien “un”. Així doncs, els dos cavallers donarien “un”. Pel costat dels dos escuders, en cada cas la veritable xifra entre els altres és 2, i havien de mentir, així que podrien contestar qualsevol nombre diferent de 2. La possibilitat que ambdós triïn “un” donaria quatre “un”, però en les respostes observades n’hi ha una “dos”. Si algun escuder contestés “dos”, aleshores hauria dit la veritat (ja que 2 seria la veritable xifra entre els altres per ell), cosa impossible. Per tant, k = 2 tampoc encaixa.
+
+4) Si k = 3, els cavallers haurien de contestar “dos” (pues cada cavaller veu els altres 2 cavallers), i l’escuder, que és l’únic, en veure 3, hauria de mentir responent qualsevol número diferent de 3. Així, s’esperarien tres “dos” i una altra xifra (possiblement “un”). Però les respostes donades són tres “un” i un “dos”, que és l’invers a l’esperat.
+
+5) Si k = 4, tots serien cavallers i cada un contestaria “tres”, que tampoc és la distribució donada.
+
+L’única possibilitat coherent és k = 0, perquè tots són escuders i, com que la veritable resposta hauria de ser 0 per a cadascun, respondre “un” o “dos” és mentir, la qual cosa compleix amb la condició dels escuders.
+
+Resposta: A) 0

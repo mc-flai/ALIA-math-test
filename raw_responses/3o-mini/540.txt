@@ -1,0 +1,5 @@
+Raonament: Al observar els nombres de la forma n2018 + (n + 1)2017, podem interpretar "n2018" com a n concatenat amb 2018, és a dir, n2018 = n·10000 + 2018, i de manera similar (n + 1)2017 = (n + 1)·10000 + 2017. Sumant-los obtenim:
+  T(n) = [n·10000 + 2018] + [(n + 1)·10000 + 2017] = (2n + 1)·10000 + (2018 + 2017) = (2n + 1)·10000 + 4035.
+Notem que (2n + 1)·10000 és múltiple de 2 (ja que 10000 és parell) i, per tant, és parell; en canvi, 4035 és imparell. La suma d’un nombre parell i un imparell sempre dóna un nombre imparell. Així, per a tot n els nombres resultants són imparells, i per tant cap d'ells pot ser parell.
+
+Resposta: A) Cap

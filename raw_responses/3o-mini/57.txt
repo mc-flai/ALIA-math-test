@@ -1,0 +1,34 @@
+Raonament: 
+
+La màquina té quatre operacions amb la mateixa probabilitat (1/4) i, observant com afecta la paritat:
+• Si introduïm x, les funcions són: x+2, x+3, 2·x i 3·x.
+• Notem que x+2 i 3·x mantenen la paritat de x, mentre que x+3 canvia la paritat (signe de x+3 = paritat contrària a x) i 2·x sempre dóna parell.
+
+Pas a pas:
+1. Comencem amb 1 (impair):
+ – Operacions sobre 1: 
+  • 1+2 = 3 (impair)
+  • 1+3 = 4 (parell)
+  • 2·1 = 2 (parell)
+  • 3·1 = 3 (impair)
+ La probabilitat que el resultat (a) sigui parell és 2/4 = 1/2.
+
+2. Obtenim a; ara b és la sortida amb a com a entrada:
+ Depenent de la paritat de a:
+ • Si a és impar (prob. 1/2) → resultats: amb les mateixes regles, P(b parell) = 1/2.
+ • Si a és parell (prob. 1/2) →: resultats: 
+  – a+2 (parell), a+3 (impair), 2·a (parell), 3·a (parell)
+  Donant P(b parell) = 3/4.
+ Així, la probabilitat total que b sigui parell és 
+  P(b parell) = (1/2)*(1/2) + (1/2)*(3/4) = 1/4 + 3/8 = 5/8.
+ I, per tant, P(b imparell) = 1 − 5/8 = 3/8.
+
+3. Ara obtenim c a partir de b:
+ • Si b és impar (3/8) → P(c parell) = 1/2.
+ • Si b és parell (5/8) → P(c parell) = 3/4.
+ La probabilitat total que c sigui parell és:
+  P(c parell) = (3/8)*(1/2) + (5/8)*(3/4) = 3/16 + 15/32 = (6/32 + 15/32) = 21/32.
+
+Per tant, la probabilitat que c sigui parell és 21/32.
+
+Resposta: A)

@@ -1,0 +1,12 @@
+Raonament: 
+Perquè N sigui divisible per 99, ha de ser divisible tant per 9 com per 11; a més, la suma de les seves xifres, degut a la divisibilitat per 9, serà un múltiple de 9 (és a dir, 9, 18, 27, …). Comencem observant que el primer múltiple de 99, és a dir, 99 mateix, té suma de xifres 9 + 9 = 18 (parell). De fet, molts dels múltiplos inicials (198, 297, …, 990, etc.) tenen suma de xifres igual a 18, que és parell.
+
+Volem trobar el menor múltiple de 99 que tingui una suma de xifres imparella. Així, hem de buscar el primer múltiple en què la suma de xifres sigui 9, 27, 45, …; donat que 9 no és possible en aquest cas (ja que el menor múltiple, 99, dona 18), la primera opció és quan la suma sigui 27.
+
+Provant amb els múltiples de 99, es comprova que:
+  99 × 110 = 10890 (suma: 1+0+8+9+0 = 18, parell),
+  99 × 111 = 10989 (suma: 1+0+9+8+9 = 27, imparella).
+
+Així, el menor N que compleix les propietats és 10989, que és un nombre de 5 xifres.
+
+Resposta: C)

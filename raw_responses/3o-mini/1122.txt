@@ -1,0 +1,15 @@
+Raonament: En un cub 3×3×3 la superfície total té 6·9 = 54 quadrats. Volem que 27 d’aquests quadrats (la meitat) siguin negres. Cada cub petit que contribueix a la superfície aporta tantes cares com la seva “exposició” segons la seva posició:
+
+ • Un cub en una cantonada té 3 cares visibles.
+ • Un cub en una aresta (sense ser cantonada) té 2 cares visibles.
+ • Un cub central d’una cara té 1 cara visible.
+ • Els cubs completament interns (sense exposició) no influeixen.
+
+L’estratègia per minimitzar el nombre de cubs negres és “pagar” la quantitat de quadrats negres mostrats amb aquells cubs que aporten el màxim nombre de cares, és a dir, preferir els de 3 cares. Però n’hi ha només 8 (les cantonades) i 8·3 = 24 < 27, per tant cal “completar” amb altres cubs. La solució òptima és:
+ • Utilitzar els 8 cubs negres a les cantonades (8·3 = 24 cares negres).
+ • Afegir un cub negre a una posició d’aresta (2 cares) i, a més, un cub negre en el centre d’una cara (1 cara),
+  de manera que s’obté 24 + 2 + 1 = 27 cares negres en total.
+
+Així, s’utilitzen 8 + 1 + 1 = 10 cubs negres en total. Com que 10 no figura entre les opcions (A) 14, B) 13, C) 12, D) 11), la resposta correcta és “Cap dels anteriors”.
+
+Resposta: E) Cap dels anteriors.

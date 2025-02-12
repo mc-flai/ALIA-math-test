@@ -1,0 +1,32 @@
+Raonament: Considerem que la bossa es defineix només pel tipus i quantitat de cada fruita, sense importar l'ordre. Definim variables:
+ • x = nombre de taronges (0 ≤ x ≤ 2),
+ • y = nombre de pomes (0 ≤ y ≤ 3),
+ • z = nombre de peres (0 ≤ z ≤ 2),
+amb la condició que x + y + z = 3.
+
+Anem analitzant les possibles solucions:
+
+1) Si x = 0, llavors y + z = 3.
+ • y = 3, z = 0  (valida, ja que 3 pomes estan disponibles).
+ • y = 2, z = 1  (valida: 2 pomes i 1 pera).
+ • y = 1, z = 2  (valida: 1 poma i 2 peres).
+ • y = 0, z = 3  (no és vàlid, ja que només 2 peres).
+
+Per tant, 3 combinacions.
+
+2) Si x = 1, llavors y + z = 2.
+ • y = 2, z = 0  (valida).
+ • y = 1, z = 1  (valida).
+ • y = 0, z = 2  (valida).
+
+Així, 3 combinacions.
+
+3) Si x = 2, llavors y + z = 1.
+ • y = 1, z = 0  (valida).
+ • y = 0, z = 1  (valida).
+
+Aquest cas dona 2 combinacions.
+
+Sumant totes les possibilitats: 3 + 3 + 2 = 8 combinacions diferents.
+
+Resposta: B)

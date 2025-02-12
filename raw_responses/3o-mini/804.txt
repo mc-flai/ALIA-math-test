@@ -1,0 +1,13 @@
+Raonament: Per aconseguir que la diferència entre dos nombres de quatre xifres formats amb els dígits 1, 2, 3, 4, 5, 6, 7 i 8 (sense repeticions) sigui la més petita possible, convé fer que els nombres siguin tan propers com es pot. Això implica que els dígits de la miler (la xifra més significativa) han de diferir el mínim possible, i després “compensar” amb les xifres de menor valor, fent que el nombre més gran (A) sigui tan petit com sigui possible i el nombre més petit (B) sigui tan gran com sigui possible amb els dígits restants.
+
+Una estratègia és triar els dígits de la miler consecutius. Per exemple, si escollim 5 per a A i 4 per a B, la contribució de la miler serà 5000 per A i 4000 per B. Per reduir la diferència, convé assignar a A les tres xifres menors disponibles en ordre creixent (per obtenir el menor nombre possible) i a B les tres xifres majors disponibles en ordre decreixent (per obtenir el major nombre possible).
+
+Aplicació:
+ • Després d’assignar 5 a A i 4 a B, els dígits restants són {1, 2, 3, 6, 7, 8}.
+ • Per A, triem les xifres més petites: 1, 2 i 3. Col·locades en ordre, A = 5 1 2 3, és a dir, 5123.
+ • Per B, triem les xifres més grans: 8, 7 i 6. En ordre decreixent, B = 4 8 7 6, és a dir, 4876.
+ • La diferència és: 5123 − 4876 = 247.
+
+Aquesta configuració dona la diferència més petita possible, que és 247.
+
+Resposta: B)

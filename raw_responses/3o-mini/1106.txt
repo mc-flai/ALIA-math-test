@@ -1,0 +1,15 @@
+Raonament:  
+La circumferència es divideix en 20 arcs iguals, així que cada arc té 18°. Si dos punts estan separats per k arcs, l’angle central és 18k°. La longitud de la corda que uneix aquests punts és 2R·sin(9k°).  
+Perquè la corda sigui més llarga que el radi (R), cal que:  
+  2R·sin(9k°) > R ⟹ sin(9k°) > ½.  
+Com que sin(30°) = ½ i la funció sin és creixent per angles de 0° fins a 90°, es necessita que:  
+  9k° > 30° ⟹ k ≥ 4.  
+D’altra banda, la corda ha de ser més curta que el diàmetre (2R), i la corda és igual al diàmetre quan:  
+  2R·sin(9k°) = 2R ⟹ sin(9k°) = 1 ⟹ 9k° = 90° ⟹ k = 10,  
+la qual cosa no està permesa. 
+
+Per tant, els k vàlids són 4, 5, 6, 7, 8 i 9.  
+En una circumferència amb 20 punts, si k és diferent de 10 (el diàmetre), hi ha 20 cordes per cada valor de k. Així tenim un total de:  
+  6 × 20 = 120 cordes.  
+
+Resposta: C)
