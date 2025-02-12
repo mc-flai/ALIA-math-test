@@ -1,0 +1,10 @@
+Raonament: Sigui A el nombre inicial i B = A + 9 el nombre que apareix nou kilòmetres més tard. Tant A com B són nombres de 6 xifres formats només pels dígits 1 i 2. Analitzem la suma A + 9 dígit a dígit (com a suma habitual amb llevament):
+
+1. Considerem primer la xifra de les unitats (última xifra). Si A té a la darrera xifra un 1, aleshores 1 + 9 = 10: donaria 0 en la unitat, però 0 no està entre 1 i 2. Per tant, la darrera xifra de A ha de ser obligatòriament 2.
+2. Aleshores, amb la darrera xifra 2 es té: 2 + 9 = 11, de manera que la nova xifra és 1 i hi ha un llevament de 1.
+3. Passant a la penúltima xifra, que anomenarem “e”, tenim e + 1 (llevament). Perquè la xifra resultant només pugui ser 1 o 2, i tenint en compte que si e = 2, 2 + 1 = 3 (prohibit), l’única opció és e = 1 (ja que 1 + 1 = 2, permès). A més, en aquest cas no hi ha més llevament.
+4. Amb els dos últims dígits fixats (de A haurem de tenir …, 1, 2), les primeres 4 xifres (anomenem-les a, b, c i d) es mantenen sense llevament (ja que el llevament s’ha cancel·lat en la penúltima xifra) i poden ser lliurement 1 o 2. Així, cada una té 2 possibilitats.
+
+Per tant, el nombre d’opcions per a A és 2⁴ = 16. Així, hi ha 16 nombres de 6 xifres formats només pels dígits 1 i 2 que, en sumar-los 9, donen un altre nombre en la mateixa classe.
+
+Resposta: C)

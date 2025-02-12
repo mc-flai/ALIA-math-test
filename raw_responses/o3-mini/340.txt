@@ -1,0 +1,11 @@
+Raonament: Sigui la successió de boletes amb els nombres, on cada nombre és la suma dels nombres de les boletes que li són veïnes. Si denotem per a₁, a₂, ... aₙ els nombres disposats en cercle, la condició ve donant, per exemple, a₂ = a₁ + a₃. Comencem amb els valors donats:
+ • a₁ = 1 i a₂ = 2.
+ • A la boleta 2: 2 = 1 + a₃ → a₃ = 1.
+ • A la boleta 3: 1 = 2 + a₄ → a₄ = -1.
+ • A la boleta 4: -1 = 1 + a₅ → a₅ = -2.
+ • A la boleta 5: -2 = -1 + a₆ → a₆ = -1.
+ • A la boleta 6: -1 = a₅ + a₇ → -1 = (-2) + a₇ → a₇ = 1.
+ • A la boleta 7: 1 = a₆ + a₈ → 1 = (-1) + a₈ → a₈ = 2.
+Observem que després de sis boletes, els valors es repeteixen (1, 2, 1, -1, -2, -1, ...). Així, per tancar el collar de manera que cada boleta compleixi la condició, s’obté un cicle mínim de 6 boletes.
+
+Resposta: D)

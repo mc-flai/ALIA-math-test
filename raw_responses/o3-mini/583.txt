@@ -1,0 +1,15 @@
+Raonament: La suma dels nombres del 1 al n és igual a n(n + 1)/2. Busquem un n tal que aquesta suma sigui un nombre de tres xifres amb totes les xifres iguals, és a dir, un dels nombres 111, 222, …, 999. Notem que aquests nombres es poden escriure com 111·d on d varia de 1 a 9. Per tant tenim:
+
+  n(n + 1)/2 = 111·d ⟹ n(n + 1) = 222·d.
+
+Hem de trobar un d per al qual l'equació n(n + 1) = 222·d tingui solució sencer. Provant successivament, observem que per d = 6 tenim:
+  n(n + 1) = 222·6 = 1332.
+Així, l’equació esdevé:
+  n² + n − 1332 = 0.
+Calcular el discriminant:
+  Δ = 1² + 4·1332 = 1 + 5328 = 5329.
+Notem que 73² = 5329, per tant el discriminant és un quadrat perfecte. La solució positiva és:
+  n = (−1 + 73) / 2 = 72 / 2 = 36.
+Així, n = 36 és la quantitat de nombres de la suma.
+
+Resposta: B)

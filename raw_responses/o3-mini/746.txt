@@ -1,0 +1,35 @@
+Raonament: 
+Per tal que el producte dels nombres restants sigui un quadrat perfecte, tots els exponents dels nombres primers en la seva descomposició han de ser parells. En començar amb el conjunt {10, 20, 30, 40, 50, 60, 70, 80, 90}, hem de comprovar la descomposició en factors primers de cada element:
+
+  10 = 2·5  
+  20 = 2²·5  
+  30 = 2·3·5  
+  40 = 2³·5  
+  50 = 2·5²  
+  60 = 2²·3·5  
+  70 = 2·5·7  
+  80 = 2⁴·5  
+  90 = 2·3²·5  
+
+Si multipliquem tots, obtenim que el producte general té, entre altres, els exponents següents:
+  • Prime 2: suma 1+2+1+3+1+2+1+4+1 = 16 (parell).
+  • Prime 3: 1 (de 30) + 1 (de 60) + 2 (de 90) = 4 (parell).
+  • Prime 5: cada nombre aporta almenys 1; la suma és 10 (parell).
+  • Prime 7: només 70 aporta 7¹, per tant: 1 (senar).
+
+Notem que l’exponent de 7 és imparell, la qual cosa impedeix que el producte sigui un quadrat perfecte. A més, com 70 és l’únic nombre que conté 7, hem de suprimir-lo obligatòriament per eliminar aquest factor extra.
+
+Un cop eliminat 70, la descomposició del producte dels nombres restants queda amb:
+  • Prime 2: 16 – 1 = 15 (imparell).
+  • Prime 5: 10 – 1 = 9 (imparell).
+  • Prime 3: 4 (continua parell).
+  • Prime 7: 1 – 1 = 0 (parell).
+
+Ara, les potències de 2 i 5 són imparells. Per corregir-ho, hem de suprimir algun altre nombre que contribueixi amb un nombre imparell d'exponents tant per 2 com per 5 (sense alterar la paritat de 3). Per exemple, el 10, que té 2¹·5¹, és una opció adequada:
+  – Eliminar 10 reduirà l’exponent de 2 a 15 – 1 = 14 (parell) i el de 5 a 9 – 1 = 8 (parell), sense afectar els altres primers.
+
+Així, suprimint 70 i 10, el producte dels elements restants tindrà tots els exponents parells, convertint-lo en un quadrat perfecte. 
+
+Per tant, la quantitat mínima de nombres a suprimir és 2.
+
+Resposta: B)

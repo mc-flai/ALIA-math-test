@@ -1,0 +1,10 @@
+Raonament: 
+Els nombres a, b i c són de tres xifres (entre 100 i 999) i, addicionalment, cada un té la primera i la darrera xifra igual (per exemple, 181, 363, 727, etc.). A més, se’'ns diu que b = 2a + 1 i c = 2b + 1. Primer, observem que a ha de ser prou petit perquè b = 2a + 1 i c = 2b+1 també siguin de tres xifres. Com que b ≤ 999, tenim 2a + 1 ≤ 999, o sigui, a ≤ 499. A més, a té forma “pqp” (on p és la centena i l’unitat, i q la de les desenes). Així, a = 101·p + 10·q, amb p ∈ {1,…,9} però, degut a que a ≤ 499, p només pot ser 1, 2, 3 o 4.
+
+En analitzar cada p, trobem que:
+– Per p = 1, a varia entre 101 i 199. Es calcula b = 2a + 1 = 202·1 + 20·q + 1 = 203 + 20·q. Per b també ha de tenir la forma “rqr” (primer i darrera xifra igual). Probdant els valors de q de 0 a 9 es veu que només per q que donin b amb centena i unitat iguals es compleixen les condicions. Comproveu, per exemple, que amb q = 8, a = 101 + 80 = 181; aleshores b = 2·181 + 1 = 363 (3 i 3, compleix) i c = 2·363 + 1 = 727 (7 i 7, compleix). De la mateixa manera, amb q = 9, a = 101 + 90 = 191; b = 383 (3 i 3) i c = 767 (7 i 7). 
+– Per p = 2 i superiors, o bé b no compleix que tingui primera i darrera xifra igual, o bé c excedeix 999, la qual cosa no és permesa.
+
+Així doncs, únicament per p = 1 tenim solucions vàlides i n’hi ha dues, corresponents a q = 8 i q = 9 (a = 181 i a = 191).
+
+Resposta: C)

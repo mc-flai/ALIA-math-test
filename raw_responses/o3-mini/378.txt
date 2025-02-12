@@ -1,0 +1,16 @@
+Raonament: Sigui N el nombre de sis xifres acabat en 4. El podem expressar com N = 10·m + 4, on m és un nombre de 5 xifres. Quan movem el 4 al principi, el nou nombre és 4·10⁵ + m. Tenim la condició que aquest nombre és 4 vegades N, és a dir:
+
+  4·10⁵ + m = 4·(10·m + 4).
+
+Desenvolupem l'equació:
+  400000 + m = 40m + 16  →  400000 − 16 = 40m − m  →  399984 = 39m.
+
+Dividint, obtenim:
+  m = 399984 / 39 = 10256.
+
+Llavors, el nombre original és:
+  N = 10·10256 + 4 = 102564.
+
+Els dígits de N són 1, 0, 2, 5, 6, 4; per tant, el tercer dígit és el 2.
+
+Resposta: C)

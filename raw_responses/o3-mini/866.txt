@@ -1,0 +1,14 @@
+Raonament: Representem el número de tres xifres com a M = 100a + 10b + c, amb a ≠ 0. Si eliminem la primera xifra obtenim el nombre formt per les dues últimes xifres, N₁ = 10b + c, i si eliminem l’última obtindrem el nombre format per a i b, N₂ = 10a + b. La exigència és que N₁ i N₂ siguin quadrats perfectes.
+
+Observem que N₂, essent un nombre de dues xifres amb a ≠ 0, ha de ser un quadrat perfecte de dues xifres. Aquests són: 16, 25, 36, 49, 64, 81.
+Per cada possiblement, tenim:
+ • Si N₂ = 16, aleshores a = 1 i b = 6. Cal trobar c tal que N₁ = 10·6 + c sigui un quadrat perfecte. Comprovem que 60 + 4 = 64 és quadrat perfecte → M = 164.
+ • Si N₂ = 25, a = 2 i b = 5. Llavors N₁ = 50 + c ha de ser quadrat perfecte. Cap valor de c (entre 0 i 9) compleix 50 + c ∈ {16, 25, 36, 49, 64, 81}.
+ • Si N₂ = 36, a = 3 i b = 6. N₁ = 60 + c. Veiem que 60 + 4 = 64 → M = 364.
+ • Si N₂ = 49, a = 4 i b = 9. N₁ = 90 + c. No hi ha valor de c (0 ≤ c ≤ 9) tal que 90 + c sigui un dels quadrats {16, 25, 36, 49, 64, 81}.
+ • Si N₂ = 64, a = 6 i b = 4. N₁ = 40 + c, i 40 + 9 = 49 → M = 649.
+ • Si N₂ = 81, a = 8 i b = 1. N₁ = 10 + c, i 10 + 6 = 16 → M = 816.
+
+Tot seguit, dels casos analitzats, els números és: 164, 364, 649 i 816. Per tant, hi ha 4 números.
+
+Resposta: C)

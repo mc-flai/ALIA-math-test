@@ -1,0 +1,10 @@
+Raonament: Cada nombre obtingut en aplicar el procediment és de la forma 6^a · 10^b, on a i b són nombres enters no negatius. Això vol dir que el nombre resultant és 6^a · 10^b = (2·3)^a · (2·5)^b = 2^(a+b) · 3^a · 5^b. Per tant, l'exponent de 2 sempre serà la suma dels exponents de 3 i 5, és a dir, exponent de 2 = exponent de 3 + exponent de 5. Revisem cada opció:
+ A) 2^100 · 3^20 · 5^80 → 20 + 80 = 100. És possible.
+ B) 2^90 · 3^20 · 5^80 → 20 + 80 = 100, però l'exponent de 2 és 90. No compleix la condició.
+ C) 2^90 · 3^20 · 5^70 → 20 + 70 = 90. És possible.
+ D) 2^110 · 3^80 · 5^30 → 80 + 30 = 110. És possible.
+ E) 2^50 · 5^50 → 0 + 50 = 50 (ja que l'exponent de 3 és 0). És possible.
+
+Per tant, l'opció que no pot haver-se obtingut és la B).
+
+Resposta: B)

@@ -1,0 +1,3 @@
+Raonament: Sigui n el nombre d'equips. Com que cada equip té 3 jugadors i cada jugador juga una única partida contra cada jugador dels altres equips, per cada parella d'equips es disputen 3·3 = 9 partides. El nombre total de partides és, per tant, 9 per cada parella d’equips, és a dir, 9·C(n,2) = 9·(n(n – 1)/2). Hem de complir la desigualtat 9n(n – 1)/2 ≤ 250. Multiplicant per 2 tenim 9n(n – 1) ≤ 500, o equivalent a n(n – 1) ≤ 500/9 ≈ 55,56. Provant amb n = 8 obtenim 8·7 = 56, que supera lleugerament el límit, mentre que amb n = 7 obtenim 7·6 = 42, que està dins del límit. Per tant, com a màxim poden participar 7 equips.
+
+Resposta: E)

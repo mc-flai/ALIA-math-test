@@ -1,0 +1,17 @@
+Raonament: Hi ha 6! = 720 paraules, ordenades alfabèticament. Fixem les lletres en ordre: A, C, G, N, R, U. Per trobar la paraula en la posició 537, resta 1 per indexar des de zero (537 – 1 = 536). 
+
+1) Fixem la primera lletra: cada lletra inicial dona 5! = 120 paraules. Dividim 536 ÷ 120 = 4 amb residu 56. L'índex 4 en [A, C, G, N, R, U] correspon a R. 
+
+2) Ara queden les lletres: [A, C, G, N, U]. Cada opció de segona lletra dóna 4! = 24 paraules. Dividim 56 ÷ 24 = 2 amb residu 8. L'índex 2 en [A, C, G, N, U] és G.
+
+3) Llistar les restants: [A, C, N, U]. Cada opció per la tercera lletra representa 3! = 6 paraules. Dividim 8 ÷ 6 = 1 amb residu 2. L'índex 1 en [A, C, N, U] és C.
+
+4) Ara queden: [A, N, U]. Per la quarta lletra, amb 2! = 2 paraules per cada lletra, fem 2 ÷ 2 = 1 amb residu 0. L'índex 1 en [A, N, U] és N.
+
+5) Queden: [A, U]. Cada lletra conté 1! = 1 paraula. Dividim 0 ÷ 1 = 0, per tant, la cinquena lletra és l'índex 0 de [A, U]: A.
+
+6) L'única lletra que queda és U.
+
+La paraula obtinguda és R G C N A U, que correspon a l'opció E.
+
+Resposta: E)

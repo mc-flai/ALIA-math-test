@@ -1,0 +1,12 @@
+Raonament: Els 12 números es poden classificar segons el seu residu mòdul 3. tenim:
+ • Residus 0: 3, 6, 9, 12.
+ • Residus 1: 1, 4, 7, 10.
+ • Residus 2: 2, 5, 8, 11.
+Perquè la suma de cada parell adjacent (que determina un costat de l’octàgon) sigui múltiple de 3, els dos nombres han de complir que la seva suma mod3 sigui 0. Això succeeix si són:
+ – Dos nombres de residu 0 (p. ex. 0 + 0 = 0),
+ – Un nombre de residu 1 i un d residu 2 (1 + 2 = 3, que és 0 mod 3).
+Ara bé, si es posés algun 0, notem que qualsevol nombre amb residu 0 només podria estar adjacent a un altre 0 (ja que 0 + 1 = 1 i 0 + 2 = 2, que no són múltipls de 3). Així, si incloguéssim algun 0, tots els veïns haurien de ser 0, i per connexió, tots els vèrtexs haurien de tenir residu 0. Però només hi ha 4 números de residu 0, i volem col·locar 8 números.
+Per tant, no s'han d’utilitzar números de residu 0 i els 8 vèrtexs s’han d’omplir amb els 4 números de residu 1 i els 4 de residu 2, col·locats alternant-los per assegurar que cada costat connecta un 1 amb un 2.
+Per tant, els 4 números que no s’utilitzen (dels 12) són els de residu 0: 3, 6, 9 i 12.
+
+Resposta: E) 3, 6, 9, 12

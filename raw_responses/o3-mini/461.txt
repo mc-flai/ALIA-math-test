@@ -1,0 +1,14 @@
+Raonament: Cada nombre imparell es pot escriure com a 2·x + 1 amb x ≥ 0. Si tenim cinc nombres imparells a, b, c, d i e tal que a + b + c + d + e = 13, podem escriure cada nombre com 2·x_i + 1. Així, la suma es transforma en: 2·(x₁+x₂+x₃+x₄+x₅) + 5 = 13; per tant, x₁+x₂+x₃+x₄+x₅ = 4.
+
+Tot i que utilitzar la fórmula de “stars and bars” donaria 70 solucions en nombres no negatius si consideréssim l'ordre, en aquest problema les sumes es consideren iguals independentment de l'ordre dels sumands. Així, hem de trobar totes les solucions distintes (com multisets) de x₁+x₂+x₃+x₄+x₅ = 4, que equival al nombre de particions del 4 en com a mès 5 parts (afegint zeros si cal).
+
+Les particions de 4 (prenent en compte que les parts són sense ordre) són:
+1) 4 + 0 + 0 + 0 + 0  
+2) 3 + 1 + 0 + 0 + 0  
+3) 2 + 2 + 0 + 0 + 0  
+4) 2 + 1 + 1 + 0 + 0  
+5) 1 + 1 + 1 + 1 + 0  
+
+Cada partició correspon a una possibilitat única d'expressar 13 com a suma de 5 nombres imparells (ja que, revertint la substitució, cada x_i dona un nombre imparell 2·x_i+1). 
+
+Resposta: B)

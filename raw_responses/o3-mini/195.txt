@@ -1,0 +1,40 @@
+Raonament:
+Observem que tots els nombres són múltiples de 4 i que podem associar a cada nombre la seva posició en la successió (1º=4, 2º=8, 3º=12, …). Com que 1000 = 4·250, 1000 és el 250è terme.
+
+Pel que fa a la disposició en zig-zaga en quatre files, podem reconstruir la seqüència de files segons l'ordre d’escriptura:
+ • El primer “diagonal” (de baixen) és: 1º → fila 1, 2º → fila 2, 3º → fila 3, 4º → fila 4.
+ • El segon “diagonal” (pujant) és: 5è → fila 3, 6è → fila 2, 7è → fila 1.
+ • El tercer “diagonal” (baixant) és: 8è → fila 2, 9è → fila 3, 10è → fila 4.
+ • El quart “diagonal” (pujant) és: 11è → fila 3, 12è → fila 2, 13è → fila 1.
+ • I així successivament.
+
+Així doncs, a partir del primer terme, la seqüència de files dels termes és:
+ Terme 1: fila 1
+ Terme 2: fila 2
+ Terme 3: fila 3
+ Terme 4: fila 4
+ Terme 5: fila 3
+ Terme 6: fila 2
+ Terme 7: fila 1
+ Terme 8: fila 2
+ Terme 9: fila 3
+ Terme 10: fila 4
+ Terme 11: fila 3
+ Terme 12: fila 2
+ Terme 13: fila 1
+ …
+
+Veiem que, per a partir del terme 2, el patró s'anima cíclicament amb període 6:
+ Si definim m = (posició – 1) mod 6, tenim la correspondència:
+  m = 0 → fila 1
+  m = 1 → fila 2
+  m = 2 → fila 3
+  m = 3 → fila 4
+  m = 4 → fila 3
+  m = 5 → fila 2
+
+Ara, per al 250è terme:
+ Calculem m = (250 – 1) mod 6 = 249 mod 6.
+ Com 6·41 = 246, 249 − 246 = 3; per tant m = 3, que correspon a la fila 4.
+
+Resposta: D) fila 4.

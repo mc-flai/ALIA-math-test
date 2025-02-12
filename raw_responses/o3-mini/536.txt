@@ -1,0 +1,43 @@
+Raonament: Comencem observant que l’equació donada
+
+  a/(b+1) + b/(a+1) = 1
+
+ens obliga, en multiplicar en creuat per (a+1)(b+1) (tenint en compte que a+1≠0 i b+1≠0), a que
+
+  a(a+1) + b(b+1) = (a+1)(b+1).
+
+Desenvolupant els dos costats trobem:
+
+  a² + a + b² + b = ab + a + b + 1        [ja que (a+1)(b+1)= ab+a+b+1].
+
+Cancel·lant els termes comuns a + b, obtenim:
+
+  a² + b² = ab + 1 ⟹ a² + b² – ab = 1.       (1)
+
+L’expressió que volem estudiar és
+
+  (a/b) + (b/a) – ab.
+
+Observem que
+  a/b + b/a = (a² + b²)/ab.
+Per tant, fent servir (1) tenim
+
+  (a/b)+(b/a) – ab = (a²+b²)/ab – ab = (ab+1)/ab – ab
+              = 1 + (1/ab) – ab.       (2)
+
+Ara bé, la família de solucions de (1) depèn de la signatura de a i b. Perquè els termes donats en els quocients siguin ben definits i per “usualitat” en aquests problemes s’entén que els nombres reals involucrats són positius, “suponem” que a>0 i b>0. En aquest cas podem aplicar la desigualtat entre la mitjana aritmètica i la mitjana geomètrica a a² i b²:
+
+  a² + b² ≥ 2ab.
+  Però (1) diu que a² + b² = ab + 1,
+  la qual cosa implica:
+   ab + 1 ≥ 2ab ⟹ 1 ≥ ab.
+D’altra banda, per a que la desigualtat d’AM–GM s’hi aconsegueixi amb igualtat, cal que a² = b², és a dir, que a = b. Substituint a = b en (1) s’obté:
+
+  a² + a² – a·a = 1 ⟹ a² = 1 ⟹ a = 1 (ja que a>0).
+Per tant, a = b = 1. Llavors, en (2) es té que
+
+  (a/b)+(b/a) – ab = 1 + 1/1 – 1 = 1.
+
+Així, sota la suposició natural que a i b són reals positius (la qual cosa també garanteix que els denominadors a+1 i b+1 siguin diferents de zero) es conclou que l’expressió donada sempre val 1.
+
+Resposta: C) És igual a 1.

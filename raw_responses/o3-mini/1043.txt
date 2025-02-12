@@ -1,0 +1,11 @@
+Raonament: Comencem observant que, a l’hora de passar la pilota, cada estudiant la transmet a qui està 6 llocs a la dreta. Això es pot interpretar com a avançar 6 places en un cercle de 50 estudiants, és a dir, sumar 6 en aritmètica modular amb mòdul 50. La successió de passaments bull amb el pas 6. Per determinar quants estudiants reben la pilota, calculem la llargada del cicle generat pel salt 6. Aquesta llargada és igual a 50 dividit per la màxima comú divisor de 50 i 6, és a dir, 50 / gcd(50, 6).
+
+Calculem gcd(50, 6):		
+  50 = 2 × 25, 6 = 2 × 3, així que gcd(50, 6) = 2.
+La llargada del cicle serà 50 / 2 = 25.
+
+Això vol dir que, si per exemple Frida és la punt de partida del cicle, només els 25 estudiants d’aquest cicle, inclosa ella, rebran la pilota, encara que el cicle es repeteixi (Frida rep la pilota 100 vegades, amb iteracions completes del cicle).
+
+Per tant, els 50 estudiants es divideixen en 2 grups de 25. Els 25 del cicle de Frida reben la pilota i els altres 25 mai la reben.
+
+Resposta: D)

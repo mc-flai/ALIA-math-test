@@ -1,0 +1,19 @@
+Raonament: Sigui x el nombre inicial de pomes que rep cada xic, ja que el total de pomes és N·x. Segons el problema, si es reparteixen entre N – 2 xics, cada un rep x + 1 pomes, per tant el total és (N – 2)(x + 1), i tenim:
+  N·x = (N – 2)(x + 1).
+Explicant:
+  N·x = (N – 2)x + (N – 2) ⟹ N·x – (N – 2)x = N – 2 ⟹ 2x = N – 2 ⟹ x = (N – 2)/2.
+
+De manera similar, si es reparteixen entre N – 3 xics, cada un rep x + 2 pomes, i el total és (N – 3)(x + 2). Així:
+  N·x = (N – 3)(x + 2).
+Substituïm x = (N – 2)/2:
+  N·((N – 2)/2) = (N – 3)((N – 2)/2 + 2).
+Observem que ((N – 2)/2 + 2) = (N – 2 + 4)/2 = (N + 2)/2, per la qual cosa:
+  N(N – 2)/2 = (N – 3)(N + 2)/2.
+Multiplicant per 2 es té:
+  N(N – 2) = (N – 3)(N + 2).
+Desenvolupant cada costat:
+  N² – 2N = N² – N – 6.
+Simplificant:
+  N² – 2N – (N² – N – 6) = 0 ⟹ –N + 6 = 0 ⟹ N = 6.
+
+Resposta: A)

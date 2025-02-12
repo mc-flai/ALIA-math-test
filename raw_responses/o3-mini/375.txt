@@ -1,0 +1,18 @@
+Raonament: Primer cal notar que:
+ – a és múltiple de 1 (condició trivial).
+ – a + 1 és múltiple de 2, la qual cosa es tradueix com a ≡ -1 (mod 2), o equivalentment, a ≡ 1 (mod 2).
+ – a + 2 és múltiple de 3, és a dir, a ≡ -2 (mod 3) i com -2 ≡ 1 (mod 3) tenim a ≡ 1 (mod 3).
+ – a + 3 és múltiple de 4, així que a ≡ -3 (mod 4), i com -3 ≡ 1 (mod 4) obtenim a ≡ 1 (mod 4).
+ – a + 4 és múltiple de 5, és a dir, a ≡ -4 (mod 5), i com -4 ≡ 1 (mod 5) tenim a ≡ 1 (mod 5).
+
+Per tant, per totes aquestes condicions s’hi arriba a que a ≡ 1 tant en mod 2, 3, 4 com 5. Això implica que a = 60k + 1, on 60 és el mínim comú múltiple de 2, 3, 4 i 5, i k és un enter.
+
+Ara, observem la darrera condició:
+ – a + 5 no sigui múltiple de 6.
+Però per a = 60k + 1 tenim:
+ a + 5 = 60k + 6 = 6(10k + 1),
+la qual cosa mostra que a + 5 és sempre múltiple de 6 per a qualsevol valor enter de k.
+
+Com que qualsevol a que compleixi les primeres condicions donaria com a resultat que a + 5 fos múltiple de 6, resulta impossible trobar cap nombre a que compleixi totes les condicions plantejades.
+
+Resposta: A)

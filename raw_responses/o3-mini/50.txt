@@ -1,0 +1,28 @@
+Raonament: 
+Analitzem cadascuna de les opcions donades comparant les posicions dels corredors amb les prediccions de cada persona, tenint present que cadascuna ha d’acertar una de les dues parts i fallar l’altra.
+
+• En l'opció A) ABCD (A guanya, B segona, C tercera, D quarta):
+ – Anna diu: “Guanyarà A” (cert) i “B quedarà segona” (cert). Però això fa 2 encerts (no és vàlid).
+ Per tant, l'opció A no compleix la condició.
+
+• En l'opció B) ABDC (A guanya, B segona, D tercera, C quarta):
+ – Anna diu: “Guanyarà A” (cert) i “B quedarà segona” (cert). Novament 2 encerts.
+ Per tant, l'opció B tampoc és vàlida.
+
+• En l'opció C) ACDB (A guanya, C segona, D tercera, B quarta):
+ – Anna diu: “Guanyarà A” (cert) i “B quedarà segona” (fals, ja que B és quarta). (1 encert, 1 error).
+ – Maria diu: “C quedarà segona” (cert) i “D quedarà quarta” (fals, ja que D és tercera). (1 encert, 1 error).
+ – Rosa diu: “A quedarà segona” (fals, ja que A guanya) i “D quedarà tercera” (cert). (1 encert, 1 error).
+ Cadascuna té exactament un encert i un error. Aquesta opció compleix les condicions.
+
+• En l'opció D) BADC (B guanya, A segona, D tercera, C quarta):
+ – Anna diu: “Guanyarà A” (fals, ja que A és segona) i “B quedarà segona” (fals, ja que B guanya). (0 encerts)
+ Això fa que no es compleixi la condició.
+ 
+• En l'opció E) DCBA (D guanya, C segona, B tercera, A quarta):
+ – Anna diu: “Guanyarà A” (fals) i “B quedarà segona” (fals, ja que B és tercera). (0 encerts)
+ Tampoc compleix la condició.
+
+Per tant, la classificació que satisfà que cadascuna hagi tingut un encert i un error és la opció C) ACDB.
+
+Resposta: C)

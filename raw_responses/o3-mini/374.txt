@@ -1,0 +1,30 @@
+Raonament: Quan es fa la mitjana de cada parella de nombres consecutius i es suma, el càlcul és el següent. Sigui la seqüència a₁, a₂, …, a₉ (percussa de 1 a 9 en algun ordre). La suma de les mitjanes dels parells consecutius és:
+
+  S = (a₁ + a₂)/2 + (a₂ + a₃)/2 + … + (a₈ + a₉)/2.
+
+Això es pot reescriure com:
+
+  S = ½[(a₁ + a₂) + (a₂ + a₃) + … + (a₈ + a₉)].
+
+Observant els sumands, notem que els nombres a₂ fins a a₈ apareixen dues vegades cada un, mentre que els extrems a₁ i a₉ apareixen només una vegada. Per tant, tenim:
+
+  S = ½[(a₁ + a₉) + 2(a₂ + … + a₈)].
+
+Com que la suma total dels nombres de 1 a 9 és 45, tenim:
+
+  a₂ + … + a₈ = 45 − (a₁ + a₉).
+
+Així,
+
+  S = ½[(a₁ + a₉) + 2(45 − (a₁ + a₉))]
+    = ½[(a₁ + a₉) + 90 − 2(a₁ + a₉)]
+    = ½[90 − (a₁ + a₉)]
+    = 45 − ½(a₁ + a₉).
+
+Per maximitzar S, hem de minimitzar (a₁ + a₉); és a dir, han de ser els dos nombres més petits disponibles, que són 1 i 2 (recordant que no es poden repetir). Així, el menor a₁ + a₉ és 1 + 2 = 3.
+
+Així, la suma màxima és:
+
+  S = 45 − ½(3) = 45 − 1.5 = 43.5.
+
+Resposta: D)

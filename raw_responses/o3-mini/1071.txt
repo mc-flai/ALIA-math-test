@@ -1,0 +1,21 @@
+Raonament: Sigui T el total de punts. Sabem que Laura, que va anotar el mínim, va aconseguir 3/20 de T i Gemma, la màxima, 1/5 de T (que és equivalent a 4/20 de T). Suposem que hi ha “n” jugadores que han anotat, i que a més de Laura i Gemma, hi ha n – 2 jugadores que han obtingut punts compresos entre 3/20 i 1/5 de T. La suma total dels punts marcats és:
+
+  T = (3/20 T [Laura] + 1/5 T [Gemma]) + punts dels altres jugadores
+  T = (3/20 + 4/20)T + punts dels altres = (7/20)T + punts dels altres
+
+Per tant, els punts de les altres jugadores sumen:
+  T – (7/20)T = (13/20)T
+
+Si cada una d’aquestes n – 2 jugadores, que van anotar, va aconseguir com a mínim 3/20 de T, aleshores:
+  (n – 2)·(3/20 T) ≤ (13/20 T)
+  (n – 2) ≤ 13/3 ≈ 4,33        [1]
+
+D’altra banda, cada jugadora no podia superar 1/5 (4/20) de T, per això, si cada una d’aquestes jugadores anés al màxim:
+  (n – 2)·(1/5 T) ≥ (13/20 T)
+  (n – 2) ≥ (13/20)/(1/5) = 13/4 = 3,25     [2]
+
+Com n – 2 ha de ser un nombre enter, [2] ens diu que n – 2 ≥ 4 → n ≥ 6, i [1] ens diu que n – 2 ≤ 4,33 → n – 2 ≤ 4, donant així n ≤ 6.
+
+Per tant, n – 2 = 4 i n = 6.
+
+Resposta: B)

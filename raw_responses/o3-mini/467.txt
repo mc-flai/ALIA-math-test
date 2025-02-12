@@ -1,0 +1,12 @@
+Raonament: Hem de trobar un nombre n que compleixi exactament quatre de les cinc condicions següents: (1) ser de dos dígits, (2) ser parell, (3) ser primer, (4) ser el quadrat d’un enter i (5) ser més gran que 50. Cal analitzar les possibilitats. Si n fos primer i el quadrat d’un nombre, això seria impossible, ja que els quadrats (a excepció del 1 i el 4) són compostos, i a més el 2, l'únic primer parell, no té dues xifres. L’única via consistent és suposar que n compleix les condicions 1, 2, 4 i 5 (és a dir, és de dos dígits, parell, quadrat d’un enter i més gran que 50) i que falla la condició 3 (ser primer).
+
+Dels quadrats d’enter de dos dígits tenim: 16, 25, 36, 49, 64 i 81. D’entre ells només els parells són 16, 36 i 64, i han de ser majors que 50. D’aquests, només 64 compleix perquè 16 i 36 són menors o iguals a 50 (és a dir, 36 no compleix la condició 5 i 16 tampoc). Així, n = 64 compleix:
+  (1) És un nombre de dos dígits.
+  (2) És parell.
+  (4) És el quadrat (8²).
+  (5) És més gran que 50.
+I falla la condició (3) de ser primer.
+
+La suma de les xifres de 64 és 6 + 4 = 10.
+
+Resposta: A)

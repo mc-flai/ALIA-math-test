@@ -1,0 +1,6 @@
+Raonament: Per trobar el nombre de 3 xifres amb la suma dels dígits igual a 8, hem de distribuir el 8 entre les tres xifres tenint en compte que la centena no pot ser 0. 
+– Per al nombre més petit, volem que el dígit de la centena sigui el més petit possible (és a dir, 1) i que els dígits de les desenes i les unitats siguin els més petits possible però arribant a la suma total de 8. Si la centena és 1, la suma de les altres dues ha de ser 7. Per minimitzar el nombre, assignem el menor valor possible al dígit de la desenes, que és 0, i l’altra xifra serà 7. Així obtenim 107.
+– Pel nombre més gran, volem que el dígit de la centena sigui el més gran possible. Si provem amb 9, la suma que falta per a les altres dues dígits seria 8 – 9 = –1, cosa impossible. Per tant, el màxim valor per la centena és 8. Amb la centena com a 8, la suma restant és 0, i per tant els dígits de desenes i unitats han de ser 0, obtenint així 800.
+Finalment, la suma dels dos nombres és: 107 + 800 = 907.
+
+Resposta: B)

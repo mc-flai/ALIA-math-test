@@ -1,0 +1,24 @@
+Raonament: Els nombres de dues xifres tenen una xifra de les desenes (a, de 1 a 9) i una de les unitats (b, de 0 a 9). Hem de buscar aquells nombres que siguin múltiples de 3 i en què la diferència absoluta entre a i b sigui 3, és a dir, |a – b| = 3.
+
+Dividim en dos casos:
+
+1. Cas on a – b = 3 (és a dir, b = a – 3):
+   - a = 3 → b = 0 → 30 (30 és múltiple de 3)
+   - a = 4 → b = 1 → 41 (4+1=5, no múltiple de 3)
+   - a = 5 → b = 2 → 52 (5+2=7, no)
+   - a = 6 → b = 3 → 63 (6+3=9, múltiple de 3)
+   - a = 7 → b = 4 → 74 (7+4=11, no)
+   - a = 8 → b = 5 → 85 (8+5=13, no)
+   - a = 9 → b = 6 → 96 (9+6=15, múltiple de 3)
+
+2. Cas on b – a = 3 (és a dir, b = a + 3):
+   - a = 1 → b = 4 → 14 (1+4=5, no)
+   - a = 2 → b = 5 → 25 (2+5=7, no)
+   - a = 3 → b = 6 → 36 (3+6=9, múltiple de 3)
+   - a = 4 → b = 7 → 47 (4+7=11, no)
+   - a = 5 → b = 8 → 58 (5+8=13, no)
+   - a = 6 → b = 9 → 69 (6+9=15, múltiple de 3)
+
+Els nombres que compleixen les condicions són: 30, 63, 96, 36 i 69. Així, hi ha 5 nombres.
+
+Resposta: D)

@@ -1,0 +1,3 @@
+Raonament: Sigui a, b i c els pesos dels cangurs en ordre creixent, de manera que a < b < c i a + b + c = 97. Per maximitzar a, hem de minimitzar b i c; per tant, prenem b com el mínim possible just superior a a, és a dir, b = a + 1, i c = 97 – a – (a + 1) = 96 – 2a. A més, com hem de tenir c > b, es compleix que 96 – 2a > a + 1, el qual simplificat dóna 96 > 3a + 1, o sigui, 3a < 95 i finalment a < 31.666… Per tant, a màxim pot ser 31 kg. Comprovem: si a = 31, aleshores b = 32 i c = 97 – 31 – 32 = 34, i efectivament tenim 31 < 32 < 34 i la suma és 97. Així, el pes màxim possible del cangur més lleuger és de 31 kg.
+
+Resposta: C)

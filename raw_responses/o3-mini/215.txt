@@ -1,0 +1,39 @@
+Raonament: Primer, hem de considerar els nombres de dues xifres (de 10 a 99) que compleixen dues condicions: ser múltiple de 3 (és a dir, la suma de les seues xifres és divisible per 3) i tenir la diferència absoluta entre les seues xifres igual a 3. Es pot dividir el problema en dues situacions:
+
+1) Quan la xifra de les desenes menys la xifra de les unitats és 3. Sigui el nombre 10·T + U amb T – U = 3. Assumint T ∈ {1, …, 9} i U ∈ {0, …, 9}, tenim T = U + 3. Així, U pot anar de 0 a 6. Els pares possibles són:
+  (3,0) → 30,
+  (4,1) → 41,
+  (5,2) → 52,
+  (6,3) → 63,
+  (7,4) → 74,
+  (8,5) → 85,
+  (9,6) → 96.
+D’entre aquests, comprovem quins són múltiples de 3 (la suma de les xifres ha de ser divisible per 3):
+  30: 3+0=3 → Sí,
+  41: 4+1=5 → No,
+  52: 5+2=7 → No,
+  63: 6+3=9 → Sí,
+  74: 7+4=11 → No,
+  85: 8+5=13 → No,
+  96: 9+6=15 → Sí.
+Així tenim: 30, 63 i 96.
+
+2) Quan la xifra de les unitats menys la xifra de les desenes és 3. És a dir, U – T = 3 o T = U – 3, cosa equivalent a definir U = T + 3 amb T entre 1 i 6 (perquè si T=0, el nombre no és de dues xifres). Els pares possibles són:
+  (1,4) → 14,
+  (2,5) → 25,
+  (3,6) → 36,
+  (4,7) → 47,
+  (5,8) → 58,
+  (6,9) → 69.
+Ara comprovem:
+  14: 1+4=5 → No,
+  25: 2+5=7 → No,
+  36: 3+6=9 → Sí,
+  47: 4+7=11 → No,
+  58: 5+8=13 → No,
+  69: 6+9=15 → Sí.
+Així aconseguim: 36 i 69.
+
+Finalment, sumant tots els nombres que compleixen les dues condicions, tenim: 30, 63, 96, 36 i 69, és a dir, 5 nombres.
+
+Resposta: D)

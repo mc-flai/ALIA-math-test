@@ -1,0 +1,50 @@
+Raonament: Pensem la construcció del cub de 3 × 3 × 3, format per 27 cubs petits. La superfície gran té 6 cares amb 9 quadrats cadascuna, per un total de 54 quadrats visibles; se’ls vol distribuir igualment, 18 quadrats negres, 18 grisos i 18 blancs.
+
+Els cubs petits ocupen posicions en la construcció segons el nombre de cares que mostren:
+ • Cúners: 8 cubs, que mostren 3 cares.
+ • Cúbers d’resta de les vores (arestes): 12 cubs, 2 cares.
+ • Centres de cares (cara pla): 6 cubs, 1 cara.
+ • Interior: 1 cub, 0 cares.
+
+Suposem que Júlia utilitza un cert nombre de cubs negres i, degut a què cada cub és d’una única tonalitat, si en un cub negre el col·loquem en una posició que mostra k cares pot contribuir k cares negres visibles. Sigui, per als cubs negres, que s’assignen a les posicions de la gran construcció:
+ – a: nombre de cubs negres en els cúners (cada un aporta 3 cares).
+ – b: nombre de cubs negres en posicions d’arestes (2 cares visibles).
+ – c: nombre de cubs negres en centres de cares (1 cara visible).
+ – d: nombre de cubs negres a la posició interior (0 cares).
+
+Així, el nombre total de cubs negres emprats és x = a + b + c + d i, essent totes les cares negres visibles, hem de tenir:
+  3a + 2b + c = 18.
+
+L’objectiu és determinar, entre totes les formes d’omplir aquesta equació (sent, evidentment, que cada “tipus de posició” té una màxima disponibilitat: 8 per a a, 12 per a b, 6 per a c i 1 per a d), els valors mínim i màxim possibles de x i, finalment, calcular M – m.
+
+Observem que d, que no aporta cares negres, és “lliure” d’assignar; per aconseguir el màxim nombre total de cubs negres, convé “afegir-ne” si és possible, i per aconseguir el mínim, convé no emprar-ne cap extra.
+
+Notem que la contribució visible dels cubs negres només depèn de a, b i c, i que la suma a + b + c = S està relacionada amb l’equació:
+  3a + 2b + c = 18 ⟹ c = 18 – 3a – 2b.
+D’aquesta forma, S = a + b + (18 – 3a – 2b) = 18 – 2a – b.
+
+Per maximitzar x = S + d, volem que S sigui tan gran com sigui possible. Com que d es pot sumar 1 (ja que només hi ha una posició interior) quan convé, convé maximitzar S subjecte als límits de cada posició.
+
+Analitzem el màxim possible de S:
+ • Per obtenir S = 18 – 2a – b màxim hem de fer 2a + b mínim.
+ • A més, hem de respectar que c = 18 – 3a – 2b ≤ 6, ja que només hi ha 6 posicions per als centres de cares.
+  • 18 – 3a – 2b ≤ 6 ⟹ 3a + 2b ≥ 12.
+ • I, per a tenir c ≥ 0, cal 3a + 2b ≤ 18.
+  ⟹ 3a + 2b ∈ [12, 18].
+
+Si prenem a = 0, aleshores 2b ∈ [12, 18] ⟹ b pot ser com a mínim 6 (per 2×6 = 12). Amb a = 0 i b = 6, obtenim c = 18 – 0 – 12 = 6. Així:
+  S = 0 + 6 + 6 = 12.
+Aprofitem la posició interior assignant un cub negre (d = 1), i tenim el nombre total de cubs negres: x = 12 + 1 = 13.
+Per tant, el màxim possible M = 13.
+
+Ara, per minimitzar x = a + b + c + d (intentant fer-ne servir el menor nombre possible), volem fer S = 18 – 2a – b tan petit com sigui possible (és a dir, maximitzar 2a + b). Tenint en compte que 3a + 2b ≤ 18 i que els límits de les posicions ens donen restriccions, trobem que una forma de “concentrar” la contribució necessària (18 cares negres visibles) és col·locar molts cubs negres a posicions on aporten 3 cares.
+ • Si prenem, per exemple, a = 6, i intentem emprar 0 cubs negres en posicions d’arestes i centres, tenim:
+  3×6 + 2×0 + 0 = 18, complint l’equació.
+Llavors, S = 6 + 0 + 0 = 6. És preferible, per minimitzar el total, no utilitzar cap cub negre extra en la posició interior (d = 0). Per tant, el mínim possible m = 6.
+
+Finalment, la diferència entre el màxim i el mínim és:
+  M – m = 13 – 6 = 7.
+
+Per tant,
+
+Resposta: D)

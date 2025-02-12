@@ -1,0 +1,9 @@
+Raonament: Perquè K · N sigui un cub perfecte, hem de fer que els exponents dels primers en la descomposició de K · N siguin múltiples de 3. Tenim N = 2¹ · 3⁴ · 5².
+
+ • Per al primer 2: l'exponent és 1. Necessitem afegir a K un factor 2^a tal que 1 + a sigui divisible per 3. Així, a = 2 (perquè 1 + 2 = 3).
+ • Per al primer 3: l'exponent és 4. Necessitem afegir 3^b amb 4 + b múltiple de 3. Com 4 mod 3 = 1, b ha de ser 2 (ja que 4 + 2 = 6, múltiple de 3).
+ • Per al primer 5: l'exponent és 2. Necessitem afegir 5^c amb 2 + c divisible per 3. Aquí c = 1 (2 + 1 = 3).
+
+Així, K = 2² · 3² · 5 = 4 · 9 · 5 = 180.
+
+Resposta: E)

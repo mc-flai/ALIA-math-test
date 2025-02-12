@@ -1,0 +1,13 @@
+Raonament: Primer, col·loquem el quadrat i l'etiquetatge dels seus vèrtexs en el sentit de les agulles del rellotge. Per exemple, podem assumir que el quadrat té A = (0,0), B = (0,1), C = (1,1) i D = (1,0). Per construir el triangle equilàter amb vèrtexs A, E i C, també en sentit de les agulles, prenem la base AC (de (0,0) a (1,1)). Hi ha dues possibles posicions per al tercer vèrtex; escollim aquella que en recórrer A → E → C dóna una orientació horària. Rotant el vector AC 60° en sentit horari (és a dir, sumant 60° a l’angle de 45° ens dóna 105° respecte a l’eix x, però amb signe adequat per aconseguir l’orientació horària) obtenim:
+  E = A + |AC|(cos 105°, sin 105°) ≈ (0,0) + (√2·(–0,2588, 0,9659)) ≈ (–0,366, 1,366).
+
+Ara, volem trobar l’angle CBE, amb vèrtex B = (0,1) i costats BC i BE. Calculem els vectors:
+  BC = C – B = (1 – 0, 1 – 1) = (1, 0),
+  BE = E – B = (–0,366 – 0, 1,366 – 1) = (–0,366, 0,366).
+
+L’angle entre aquests vectors es troba amb la fórmula del producte escalar:
+  cos(θ) = (BC · BE)/(‖BC‖‖BE‖) = (1·(–0,366) + 0·0,366)/(1·√((–0,366)²+(0,366)²))
+       = –0,366 / (√(0,134+0,134)) = –0,366 / (√0,268) = –0,366/0,5177 ≈ –0,7071.
+Aquest valor correspon a un angle de 135°.
+
+Resposta: C)

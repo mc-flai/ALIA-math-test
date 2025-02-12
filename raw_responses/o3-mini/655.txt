@@ -1,0 +1,28 @@
+Raonament: Sigui a, b, i c els nombre de passatgers als vagons 1, 2, i 3, respectivament. Com que en cada tres vagons consecutius hi ha 99 passatgers, tenim que a + b + c = 99. Dado que el patró es repeteix cada tres vagons, la distribució és:
+
+ • Vagó 1: a  
+ • Vagó 2: b  
+ • Vagó 3: c  
+ • Vagó 4: a  
+ • Vagó 5: b  
+ • Vagó 6: c  
+ • Vagó 7: a  
+ • Vagó 8: b  
+ • Vagó 9: c  
+ • Vagó 10: a  
+ • Vagó 11: b  
+
+Així, el total de passatgers és 4a + 4b + 3c = 350.  
+Substituïm a + b = (a + b + c) − c = 99 − c.  
+Observem que 4a + 4b = 4(a + b), per tant:
+
+ 4(a + b) + 3c = 350  
+ 4(99 − c) + 3c = 350  
+ 396 − 4c + 3c = 350  
+ 396 − c = 350  
+ c = 396 − 350  
+ c = 46
+
+El sisè vagó conté c passatgers, és a dir, 46 passatgers.
+
+Resposta: D)

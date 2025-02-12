@@ -1,0 +1,30 @@
+Raonament: Comencem expressant el problema matemàticament. Sigui x el nombre de monedes de 50 cèntims, y el nombre de monedes d’1 euro i z el nombre de monedes de 2 euros. La suma total és:
+
+  0,50·x + 1·y + 2·z = 100
+
+Multiplicant per 2 per eliminar decimals, obtenim:
+
+  x + 2y + 4z = 200
+
+Ara, fixem un valor de z, que pot variar des de 0 fins a 50 (ja que 4z ≤ 200). Per cada z, l’equació es redueix a:
+
+  x + 2y = 200 − 4z
+
+Per a cada valor de z, x i y han de ser enters no negatius i, per cada possible y (amb y compresa entre 0 i (200 − 4z)/2), x es determina com x = (200 − 4z) − 2y. Així, el nombre de solucions per a cada z és:
+
+  (200 − 4z)/2 + 1 = 100 − 2z + 1 = 101 − 2z
+
+Per obtenir el total de combinacions, sumem per tots els possibles valors de z (de 0 a 50):
+
+  Total = Σ (de z = 0 a 50) (101 − 2z)
+
+Observem que aquesta suma és la suma dels 51 primers termes d’una progressió aritmètica que comença en 101 i decreix de 2 en 2. La suma d’aquesta progressió és:
+
+  Total = (51/2) · (primer terme + últim terme)
+      = (51/2) · (101 + [101 − 2·50])
+      = (51/2) · (101 + (101 − 100))
+      = (51/2) · (101 + 1)
+      = (51/2) · 102
+      = 51 · 51 = 2601
+
+Resposta: C)

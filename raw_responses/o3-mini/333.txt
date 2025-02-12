@@ -1,0 +1,19 @@
+Raonament: 
+Suposem que la fracció és a/b (amb a i b enters positius) i que compleix:
+  1) a + b ≤ 103 
+  2) a/b < 3.
+Per assolir el valor més gran de a/b, volem que a sigui el màxim possible en relació a b sense que a/b arribi a 3. És a dir, per a cada b, el màxim enter que pot prendre a és 3b – 1 (ja que amb 3b, tindríem a/b = 3, cosa que no es permet).
+
+Ara llavors la suma serà:
+  a + b = (3b – 1) + b = 4b – 1.
+Com que 4b – 1 ≤ 103, tenim:
+  4b ≤ 104 ⟹ b ≤ 26.
+Per obtenir la fracció més gran, escollim el valor màxim possible per b, és a dir b = 26. Llavors:
+  a = 3·26 – 1 = 78 – 1 = 77,
+i la fracció és 77/26, que efectivament és menor que 3 (ja que 77 < 78).
+
+Observa que entre les opcions donades la notació és, per exemple, “26/77”. Si interpretem una opció com “26/77” com la fracció on el 26 és el denominador i el 77 és el numerador (és a dir, la notació “x/y” de les opcions s'ha d'invertir per obtenir a/b), veiem que 26/77 representa exactament la fracció 77/26.
+
+Per tant, la opció que correspon és la B).
+
+Resposta: B).

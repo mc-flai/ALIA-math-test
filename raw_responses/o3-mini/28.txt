@@ -1,0 +1,16 @@
+Raonament: Anomenem A, B, S i T les quantitats de caramels que tenen Andreu, Bernat, Susanna i Teresa, respectivament. Segons l'enunciat tenim:
+1) T > S.
+2) A + B = S + T (els xics junts tenen tants com les xiques).
+3) A + T < B + S (Andreu i Teresa junts tenen menys que Bernat i Susanna).
+
+Partim de la (3): 
+  A + T < B + S ⟹ A < B + S – T.
+Però, com T > S, S – T és un nombre negatiu, així que es dedueix que A < B (és a dir, Andreu té menys caramels que Bernat agregant també una quantitat negatiu).
+
+Ara, de la (2) podem expressar A com: 
+  A = S + T – B.
+Com que T < B (perquè si suposem el contrari s’arriba a una contradicció en la desigualtat (3)), tenim que S + T – B < S, i per tant:
+  A < S.
+Així, s'arriba a la conclusió que Andreu té menys caramels que Susanna.
+
+Resposta: C)

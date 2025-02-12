@@ -1,0 +1,24 @@
+Raonament: Plantegem que n/(20 – n) = k² on k és un enter (recordem que els quadrats perfectes són nombres de la forma k² amb k ≥ 0). En multipliar, tenim n = k²·(20 – n) i, aïllant n, ens queda:
+  n + k²·n = 20k²  ⟹  n(1 + k²) = 20k²  ⟹  n = (20k²)/(k² + 1).
+
+Perquè n sigui enter, el denominador k² + 1 ha de dividir 20k². Observem que:
+  20k² = 20(k² + 1) – 20,
+de manera que k² + 1 divideix 20k² si i només si divideix 20. Així doncs, k² + 1 ha de ser un divisor de 20. Els divisors de 20 són: 1, 2, 4, 5, 10 i 20.
+
+Analitzem quines possibilitats donen un k enter:
+  • Si k² + 1 = 1  ⟹ k² = 0  ⟹ k = 0.
+  • Si k² + 1 = 2  ⟹ k² = 1  ⟹ k = 1 (o k = –1, però el quadrat és el mateix).
+  • Si k² + 1 = 4  ⟹ k² = 3  ⟹ k no enter.
+  • Si k² + 1 = 5  ⟹ k² = 4  ⟹ k = 2.
+  • Si k² + 1 = 10  ⟹ k² = 9  ⟹ k = 3.
+  • Si k² + 1 = 20  ⟹ k² = 19  ⟹ k no enter.
+
+Així, els únics valors vàlids són k = 0, 1, 2 i 3. Substituint a n = (20k²)/(k² + 1):
+  • Per k = 0: n = 20·0/(0 + 1) = 0.
+  • Per k = 1: n = 20·1/(1 + 1) = 20/2 = 10.
+  • Per k = 2: n = 20·4/(4 + 1) = 80/5 = 16.
+  • Per k = 3: n = 20·9/(9 + 1) = 180/10 = 18.
+
+Per tant, hi ha 4 nombres enters (n = 0, 10, 16, 18) que compleixen la propietat.
+
+Resposta: D)

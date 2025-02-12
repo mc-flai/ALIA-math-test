@@ -1,0 +1,28 @@
+Analitzem el problema amb dues possibles interpretacions, i en acabar triem la que correspon habitualment en aquest tipus d’enunciat.
+
+Suposem que tenim un nombre de quatre xifres entre 1000 i 1999, que podem escriure com 
+  N = 1 a b c  (amb a, b, c dígits, i possiblement a = 0). 
+Si “suprimim una xifra qualsevol” interpretem que, quina sigui la xifra que escollim (és a dir, per a qualsevol de les quatre posicions) el nombre obtingut divideix N, aleshores hem de requerir que es compleixin simultàniament les quatre condicions següents:
+  R₁ = 100a + 10b + c  (obtenim eliminant la primera xifra),
+  R₂ = 100 + 10b + c  (eli. la segona),
+  R₃ = 100 + 10a + c  (eli. la tercera),
+  R₄ = 100 + 10a + b  (eli. la quarta),
+amb la propietat que Rᵢ divideix N, per i = 1,2,3,4.
+
+Observem primer que com que
+  N = 1000 + 100a + 10b + c = 1000 + R₁,
+la condició R₁ | N implica que R₁ | (N – R₁) = 1000. És a dir, R₁ (que és el nombre format per les tres últimes xifres – considerant que si té “zeros inicials” s’interpretin com el nombre habitual) ha de ser un divisor positiu de 1000. Tot pat de 1000 = 2³·5³ té 16 divisors; si excloem el mateix 1000 (ja que com a nombre de tres xifres no s’obté) ens queden 15 possibilitats. Però resultarà que, després d’imposar també que R₂, R₃ i R₄ divideixin N, només sobreviuen els casos que corresponen a N = 1000 + R₁ amb R₁ = 100, 200 i 500. (Per exemple, si N = 1010, amb R₁ = 010 = 10, tot i que 10 divideix 1000, es comprova que eliminant la segona xifra s’aconsegueix 110 i 1010/110 no és enter.) 
+
+En resum, s’arriba a la conclusió que els únics nombres per als quals, sigui quina xifra es suprimeixi, el nombre resultant divideix N són:
+  1100, 1200 i 1500.
+
+Així, si interpretem “suprimim una xifra qualsevol” com “per a qualsevol elecció de la xifra que suprimim”, hem trobat 3 nombres.
+
+Ara bé, les opcions de resposta són:
+  A) 5 B) 9 C) 14 D) 19 E) Cap.
+Com que 3 no figura entre les opcions, la resposta correcta és “Cap” (opció E).
+
+Raonament: 
+Hem representat N com 1 a b c i hem considerat les quatre xifres expulsades, obtenint els nombres R₁, R₂, R₃ i R₄. La condició sobre R₁ ens obliga a tenir R₁ | 1000, i després, analitzant les altres condicions, es comprova (per càlculs detallats) que només per N = 1100, 1200 i 1500 es compleix que cadascun dels Rᵢ divideix N. Com que 3 no coincideix amb cap de les opcions donades, la resposta correcta és “Cap”.
+
+Resposta: E) Cap.

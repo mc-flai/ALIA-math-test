@@ -1,0 +1,21 @@
+Raonament: 
+
+Primer, per trobar el valor més gran possible de X, hem de pensar que X³ ha de ser com a màxim 2020 menys el mínim que poden sumar Y² i Z, ja que Y i Z són enters positius. Com que el menor valor per a Y és 1 (amb Y² = 1) i el menor per a Z és 1, obtenim que la suma mínima de Y² + Z és 2. Per tant, X³ ≤ 2020 – 2 = 2018. 
+
+Els cubs dels nombres positius són: 
+  1³ = 1, 
+  2³ = 8, …, 
+  12³ = 1728, 
+  13³ = 2197. 
+
+Obs: 13³ excedeix 2018, per tant el màxim X possible és 12.
+
+Amb X=12, substituïm en la igualtat:
+  12³ + Y² + Z = 2020 ⟹ 1728 + Y² + Z = 2020 ⟹ Y² + Z = 292.
+
+Ara, Toni vol trobar el valor més gran possible de Y. Per maximitzar Y, volem Y² que sigui tan gran com sigui possible sense fer Z no positiu. Com que Z ≥ 1, tenim Y² ≤ 292 – 1 = 291. El quadrat més gran menor o igual a 291 és 289 (ja que 17² = 289, mentre que 18² = 324 > 291). Per tant, Y = 17.
+
+Finalment, substituïm Y a Y² + Z = 292:
+  289 + Z = 292 ⟹ Z = 292 – 289 = 3.
+
+Resposta: E)

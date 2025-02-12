@@ -1,0 +1,7 @@
+Raonament: Primer, observem que 20! té molts factors de 2. En concret, el nombre d’aparicions del factor 2 en 20! és 18 (per la fórmula de Legendre: [20/2] + [20/4] + [20/8] + [20/16] = 10 + 5 + 2 + 1), així que 20! és divisible per 2¹⁸, i per tant, en particular és divisible per 2⁹ (és a dir, per 512). Així, 20! ≡ 0 mod 512.
+
+Després, calculem 520 mod 512. Com 520 = 512 + 8, tenim que 520 ≡ 8 mod 512.
+
+Per tant, sumant-ho: 20! + 520 ≡ 0 + 8 = 8 mod 512.
+
+Resposta: B)

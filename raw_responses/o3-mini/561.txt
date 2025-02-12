@@ -1,0 +1,10 @@
+Raonament: Primer, calculem 2^16 – 1 = 65535. Factoritzant, observem que 2^16 – 1 = (2^8 – 1)(2^8 + 1) = 255 · 257, i 255 es descompon en 3 · 5 · 17. Així, la factorizació completa és 65535 = 3 · 5 · 17 · 257. Tots els divisors són productes d'una selecció d’aquests factors. Enumerant els divisors que tenen dues xifres (és a dir, entre 10 i 99), obtenim: 
+
+• 17 (només el factor 17)  
+• 3·5 = 15  
+• 3·17 = 51  
+• 5·17 = 85  
+
+Per tant, hi ha 4 divisors de dues xifres.
+
+Resposta: D)

@@ -1,0 +1,22 @@
+Raonament: Sigui L la distància entre A i B, la velocitat de Baldiri v i la d'Ariadna 3v, per tant L = 4v·15 (ja que 15 mins és el temps en què, movent-se amb velocitats 3v i v en direccions oposades, han recorregut la distància L). Així, L = 60v. Assignant v = 1 per simplificar (L = 60), la trajectòria d’Ariadna és de A (0) a B (60) a 3 unitats/min, i la de Baldiri és de B (60) a A (0) a 1 unitat/min.
+
+A la primera trobada (t = 15 min):
+ Ariadna recorre 3·15 = 45 unitats,
+ Baldiri recorre 15 unitats (des de 60 cap a 0),
+i es troben a la posició 45.
+
+Després, Ariadna continua cap a B, encara pendent de recórrer 15 unitats, que fa en 15/3 = 5 minuts (arriba a B als 20 min i gira immediatament). Baldiri continua cap a A fins a arribar-hi als 60 min i després torna cap a B. Fent les corresponents expressions, per a t compresos entre 20 i 60 min, les posicions són:
+ Ariadna (des de B a A): x_A = 60 – 3·(t – 20),
+ Baldiri (encara en trajecte de B cap a A): x_B = 45 – 1·(t – 15).
+
+Igualem per trobar el moment de trobada:
+ 60 – 3(t – 20) = 45 – (t – 15)
+ => 60 – 3t + 60 = 45 – t + 15
+ => 120 – 3t = 60 – t
+ => 120 – 60 = 3t – t
+ => 60 = 2t
+ => t = 30.
+
+Per tant, la segona trobada té lloc a les 30 minuts.
+
+Resposta: C)

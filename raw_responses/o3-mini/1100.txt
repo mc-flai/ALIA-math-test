@@ -1,0 +1,41 @@
+Raonament: Sabem que Carles alterna dies de veritat i de mentida. Analitzem primer els requisits que imposen les afirmacions:
+
+• A) “Vaig mentir ahir i demà mentiré.”  
+ – Si s’expressa amb la veritat en un dia de veritat, aleshores ahir i demà són dies de mentida – és coherent amb l’alternança.
+ – Si es diu en un dia de mentida, aleshores la afirmació, sent falsa, concorda amb que els dies adjacents no seguirin el patró “ahir mentia i demà mentirà”.  
+ Per tant, A pot dir-se en ambdós casos.
+
+• B) “Hui dic la veritat i demà diré la veritat.”  
+ – Si es diu amb la veritat, el primer fragment seria cert, però el segon no, ja que en un dia de veritat el de demà serà de mentida (per alternança).  
+ – En canvi, si es diu en un dia de mentida, “hoy dic la veritat” és fals i “demà diré la veritat” serà cert (ja que en un dia de mentida, el següent és de veritat), resultant en “fals i cert” i, per tant, la afirmació completa és falsa, com exigeix el mode de mentida.  
+ Així B només pot dir-se en dies de mentida.
+
+• C) “2024 és divisible per 11.”  
+ La divisibilitat és una veritat matemàtica (2024 = 11·184, és exacta). Així, si es diu en un dia de veritat és coherent, però en un dia de mentida la seva veracitat impediria que el digués perquè hauria de fer una afirmació falsa. Així, C només podria ser dita en un dia de veritat.
+
+• D) “Ahir era dimecres.”  
+ – Dit amb veritat requereix que efectivament ahir fos dimecres (és a dir, avui sigui dijous).  
+ – Dit amb mentida requereix que ahir no fos dimecres.  
+ Així D és viable en ambdós casos, amb la condició puntual sobre el dia.
+
+• E) “Demà serà dissabte.”  
+ – Dit amb veritat implica que demà sigui dissabte (és a dir, avui és divendres).  
+ – Dit amb mentida implica que demà no sigui dissabte.  
+ Per tant, E també és viable depenent del dia.
+
+Ara, per resoldre el problema tenim en compte que Carles, en un determinat dia, va fer exactament 4 de les 5 afirmacions. Mirem en quins dies podria ocórrer això segons el seu patró de veritat/mentida:
+
+1) Suposem que el dia és de veritat.  
+ • A i C es podrien dir (són coherents amb la veritat).  
+ • D o E, si es diuen amb veritat, imposen restriccions estrictes (per exemple, D implica que avui és dijous i E que avui és divendres).  
+ • B ja no pot dir-se en un dia de veritat.  
+ Com a màxim, en un dia de veritat es podrien dir A, C i (o D o E), sumant 3 afirmacions: no arribem a 4.
+
+2) Suposem que el dia és de mentida.  
+ • A, B, D i E són coherents si es diuen amb mentida (amb D i E imposant que, respectivament, ahir no fos dimecres i demà no sigui dissabte).  
+ • C no pot dir-se en un dia de mentida, ja que és cert i hauria de ser fals per ser dita en un dia de mentida.  
+ Així, en un dia de mentida es poden dir exactament 4 afirmacions: A, B, D i E.
+
+Per tant, en la situació coherent (on es van fer 4 afirmacions) Carles no pot haver fet la afirmació C.
+
+Resposta: C)

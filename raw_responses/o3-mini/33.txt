@@ -1,0 +1,3 @@
+Raonament: Si en el mes hi ha tres diumenges amb número parell, hem de buscar la posició que fa que, sumant 7 dies per cada diumenge, exactament tres d’aquests siguin parells. Suposem que el primer diumenge és el dia 2 del mes. Això vol dir que els diumenges seran el dia 2, 9, 16, 23 i 30 – dels quals 2, 16 i 30 són parells (3 diumenges en total). Aquesta situació és coherent si el mes comença per dissabte (ja que el dia 1 és dissabte i el diumenge cau el dia 2). Ara, calculant el dia de la setmana del dia 20: si el dia 1 és dissabte, el dia 20 serà 19 dies després, i 19 mod 7 és 5, passant des de dissabte (0) → diumenge (1) → dilluns (2) → dimarts (3) → dimecres (4) → dijous (5). Per tant, el dia 20 cau en dijous.
+
+Resposta: D)

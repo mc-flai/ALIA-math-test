@@ -1,0 +1,15 @@
+Raonament: L'equació donada és (x² - 4x + 5)^(x² + x - 30) = 1. Per una potència a^b = 1 amb a ∈ ℝ, es compleixen generalment tres casos:
+1) Si la base a = 1, aleshores 1^b = 1 per a qualsevol exponent. Per tant, resolem x² - 4x + 5 = 1. Això ens porta a:
+  x² - 4x + 5 = 1 ⟹ x² - 4x + 4 = 0 ⟹ (x - 2)² = 0 ⟹ x = 2.
+2) Si l'exponent b = 0, aleshores a⁰ = 1 sempre que a ≠ 0. Resolem x² + x - 30 = 0:
+  x² + x - 30 = 0 ⟹ x = [ -1 ± √(1 + 120) ] / 2 ⟹ x = ( -1 ± 11 )/2, 
+  donant x = 5 i x = -6. Verifiquem que la base no sigui zero:
+   Per x = 5: 5² - 4·5 + 5 = 25 - 20 + 5 = 10 ≠ 0.
+   Per x = -6: (-6)² - 4·(-6) + 5 = 36 + 24 + 5 = 65 ≠ 0.
+3) També es podria considerar el cas en què la base a = -1 i l'exponent b sigui un enter parell: x² - 4x + 5 = -1. Però resolem:
+  x² - 4x + 5 = -1 ⟹ x² - 4x + 6 = 0, 
+  i el seu discriminant és 16 - 24 = -8, per tant no té solucions reals.
+
+Les solucions reals obtigudes són x = 2, x = 5 i x = -6, és a dir, tres solucions.
+
+Resposta: B)

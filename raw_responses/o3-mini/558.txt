@@ -1,0 +1,12 @@
+Raonament: Una progressió aritmètica de 5 elements dins del conjunt {1, 2, …, 17} té la forma {a, a+d, a+2d, a+3d, a+4d} amb a ≥ 1 i d > 0. Perquè tots els termes estiguin dins del conjunt, cal que a + 4d ≤ 17. 
+
+Per cada possible valor de d, calculem els valors admissibles d'a:
+• Per d = 1: a + 4 ≤ 17 → a ≤ 13. Així, hi ha 13 possibilitats (a = 1, 2, …, 13).
+• Per d = 2: a + 8 ≤ 17 → a ≤ 9. Així, hi ha 9 possibilitats.
+• Per d = 3: a + 12 ≤ 17 → a ≤ 5. Així, hi ha 5 possibilitats.
+• Per d = 4: a + 16 ≤ 17 → a ≤ 1. Així, hi ha 1 possibilitat.
+• Per d ≥ 5: a + 4d > 17 per a mínim a = 1, per tant, no hi ha solució.
+
+Sumant les possibilitats: 13 + 9 + 5 + 1 = 28.
+
+Resposta: E)

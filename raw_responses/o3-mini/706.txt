@@ -1,0 +1,33 @@
+Raonament: Provem cadascuna de les quatre illes com a possible ubicació del tresor i comprovem quantes de les afirmacions serien certes en cada cas, ja que només una ha de ser certa.
+
+• Si el tresor està a Cabrera:
+  1) “El tresor és a Cabrera o a Sa Conillera” → Cert (ja que és a Cabrera).
+  2) “El tresor és a Eivissa” → Fals.
+  3) “El tresor és a Formentera” → Fals.
+  4) “El tresor no és a Sa Conillera” → Cert (ja que no és a Sa Conillera).
+  Resultat: 2 afirmacions certes. No compleix la condició.
+
+• Si el tresor està a Sa Conillera:
+  1) “El tresor és a Cabrera o a Sa Conillera” → Cert (perquè és a Sa Conillera).
+  2) “El tresor és a Eivissa” → Fals.
+  3) “El tresor és a Formentera” → Fals.
+  4) “El tresor no és a Sa Conillera” → Fals (ja que en realitat és a Sa Conillera).
+  Resultat: 1 afirmació certa.
+
+• Si el tresor està a Eivissa:
+  1) “El tresor és a Cabrera o a Sa Conillera” → Fals.
+  2) “El tresor és a Eivissa” → Cert.
+  3) “El tresor és a Formentera” → Fals.
+  4) “El tresor no és a Sa Conillera” → Cert.
+  Resultat: 2 afirmacions certes.
+
+• Si el tresor està a Formentera:
+  1) “El tresor és a Cabrera o a Sa Conillera” → Fals.
+  2) “El tresor és a Eivissa” → Fals.
+  3) “El tresor és a Formentera” → Cert.
+  4) “El tresor no és a Sa Conillera” → Cert.
+  Resultat: 2 afirmacions certes.
+
+Només amb Sa Conillera obtenim exactament una afirmació certa.
+
+Resposta: D) Sa Conillera.

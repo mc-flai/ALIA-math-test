@@ -1,0 +1,10 @@
+Raonament: Cada dia el pingüí reparteix 12 peixos: 7 a la primer cria que troba i 5 a l’altra. Tot i això, no sempre la mateixa cria és la que rep els 7; per això, considerem que durant d dies una de les cries pot haver rebut 7 peixos en uns dies i 5 peixos en els altres. Sigui d el nombre de dies totals i a el nombre de dies en què aquesta cria va rebre 7 peixos. Llavors, el total de peixos d’aquesta cria serà 7a + 5(d – a) = 5d + 2a. Se’ns diu que aquest total és 44, és a dir:
+
+  5d + 2a = 44
+
+Busquem solucions naturals compatibles amb el fet que, en cada dia, l’altra cria rep l’assignació contrària. Provant amb d = 8:
+  5·8 + 2a = 40 + 2a = 44  ⟹  2a = 4  ⟹  a = 2
+
+Així, en 8 dies, aquesta cria va rebre 7 peixos en 2 dies i 5 peixos en 6 dies (2*7 + 6*5 = 14 + 30 = 44). Llavors, l’altra cria va rebre 5 peixos en els 2 dies (on l’altra tenia 5) i 7 peixos en els 6 dies en què la primera tenia 5, per un total de: 2*5 + 6*7 = 10 + 42 = 52 peixos.
+
+Resposta: D)

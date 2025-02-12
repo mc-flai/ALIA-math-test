@@ -1,0 +1,10 @@
+Raonament: Per trobar el nombre mínim amb el producte de les xifres igual a 2^2024, observem que només podem usar dígits que aportin factors 2. Els dígits vàlids són 2 (que aporta 2¹), 4 (que aporta 2²) i 8 (que aporta 2³). Per reduir el nombre de xifres del nombre, volem maximitzar l’exponent de 2 per cada xifra, per tant hem de fer servir tantes 8 com sigui possible. 
+
+Si designem per c el nombre de 8 (cada 8 aporta 3 factors de 2) i per b el nombre de 4 (cada 4 aporta 2 factors), tenim que:
+  3c + 2b = 2024.
+
+Per maximitzar c, primer triem c = 674, ja que 674·3 = 2022. Aleshores, encara ens falten 2024 – 2022 = 2 factors, que podem obtenir amb una única xifra 4 (ja que 4 = 2²). 
+
+D’aquesta manera, el nombre estarà format per 674 vegades l’8 i 1 vegada el 4, sumant un total de 674 + 1 = 675 xifres. Si ordenem les xifres de forma creixent (col·locant el 4 a l’inici per aconseguir el menor nombre possible), obtenim el nombre més menut.
+
+Resposta: C)

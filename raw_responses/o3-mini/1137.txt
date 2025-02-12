@@ -1,0 +1,21 @@
+Raonament: Comencem observant que els 12 punts divideixen la circumferència en 12 arcs iguals de 30°. Segons el teorema de l’angle inscrit, un angle d’un triangle inscrit serà de 45° si i només si l’arc interceptat pel costat oposat a aquest angle té amplitud de 90° (ja que 45° = 90°⁄2). Així, necessitem que entre dos dels vèrtexs del triangle la separació (pròpiament, la longitud del menor arc que uneix aquests dos punts) sigui de 90° – és a dir, que aquests punts estiguin separats en 3 intervals (3 × 30° = 90°).
+
+Ara pensem de la següent forma: 
+1. Si fixem una “corda” amb els seus extrems separats per 3 passos (per exemple, els punts numerats i i i+3, amb els índexs considerats mod 12), llavors aquesta corda defineix dos arcs: el menor de 90° i el major de 270°. 
+2. En qualsevol triangle que tingui aquesta corda com a costat, l’angle inscrit en el vèrtex que no pertany al costat serà de 45° si el vèrtex cau a l’arc major (ja que l’angle inscrit és la meitat de 90°). 
+3. Dels 12 punts, la corda ja uneix 2 punts, i els punts situats en l’arc menor (entre aquests dos punts) són els dos punts interiors; per tant, els 12 – 4 = 8 punts restants cauen a l’arc major. Així, cada corda de longitud “3 passos” determina 8 triangles amb algun angle de 45°.
+
+Quant a quantes cordes hi ha que uneixen dos punts separats per 3 intervals? Com que la circumferència és simètrica, cada punt pot ser l’extrem inicial d’una corda que va al punt amb índex +3, i per tant hi ha 12 cordes (contant mod 12, i evitant duplicats).
+
+Si comptéssim així, obtenim 12 × 8 = 96 “assignacions” d’angle de 45 – és a dir, cada vegada que triem una corda de separació 3 i un tercer punt al costat correcte, s’obté que en aquell triangle un angle és de 45°.
+
+Tanmateix, fixem que pot ser que un mateix triangle tingui més d’un angle de 45. En efecte, un triangle pot tenir dos angles de 45° (cas que les altres dues costats, per les seves cordes, també tinguin la separació de 3 passos). Es veu que això succeeix exactament quan el triangle té la partició de la circumferència en arcs de 90°, 90° i 180° – o, en termes de passos, en 3, 3 i 6. Com les circumferències estan dividides en 12 parts iguals, n’hi ha exactament 12 (una per cada rotació).
+
+L’enfocament anterior comptava cadascun d’aquests triangles dues vegades (un cop per cada corda que forma un angle de 45°). Sigui X el nombre de triangles que tenen exactament un angle de 45° i Y el nombre de triangles que tenen dos angles de 45° (sabem que Y = 12). La comptabilització per corda dóna:
+
+  X + 2Y = 96  ⟹  X = 96 − 2·12 = 96 − 24 = 72.
+
+Per tant, el nombre total de triangles amb almenys un angle de 45° és:
+  X + Y = 72 + 12 = 84.
+
+Resposta: D)

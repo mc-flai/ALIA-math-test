@@ -1,0 +1,21 @@
+Raonament: Com que Magí agafa cada dia el mateix número d’autobús i el compara amb el número de la data del dia, pensarem en dues situacions consecutives. Suposem que en un dia qualsevol la data del dia és “d” i observa que el número d’autobús (constant) és una unitat més gran que “d”, és a dir:
+
+  Número d’autobús = d + 1.
+
+Ara, el dia anterior, la data era “d – 1”. Però ell s’adona que, ahir, el número de l’autobús era “més menut” (és a dir, inferior) que el número de la data d’aquell dia; és a dir:
+
+  Número d’autobús < d – 1.
+
+Si combinem les dues expressions tindríem:
+  d + 1 < d – 1,
+la qual cosa no té sentit si es comparen nombres dins del mateix mes.
+
+L’enigma es resol si pensem en un canvi de mes. Imagineu que el dia en què Magí ha vist que el número d’autobús és una unitat més gran que la data és el 1r d’un mes. Llavors:
+  Data = 1 ⟹ Número d’autobús = 1 + 1 = 2.
+El dia anterior no seria el 0 d’aquest mes, sinó l’últim dia del mes anterior (per exemple, 31 o 30, segons el mes). Així, ahir el número de la data era molt més alt (com 31) que el número 2 de l’autobús. És a dir, ahir:
+  2 < 31,
+que compleix que el número d’autobús era “més menut” que la data.
+
+Així, tot té sentit si el número d’autobús és 2.
+
+Resposta: B)

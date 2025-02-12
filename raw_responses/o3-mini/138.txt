@@ -1,0 +1,21 @@
+Raonament: Observem que cada carta té la forma 3 + 5k, on k és un enter des de 0 fins a 13. Si triem m cartes amb índexs k₁, k₂, …, kₘ la suma serà:
+
+  S = m·3 + 5·(k₁ + k₂ + … + kₘ).
+
+Perquè S = 100, hem de tenir:
+  3m + 5·(k₁ + k₂ + … + kₘ) = 100  →  5·(k₁ + … + kₘ) = 100 − 3m.
+
+Això implica que 100 − 3m ha de ser múltiple de 5. Com que 100 és múltiple de 5, 3m també ho ha de ser; i com 3 i 5 són coprims, m ha de ser múltiple de 5. La mínima opció positiva és m = 5.
+
+Verifiquem que amb 5 cartes és possible. Amb m = 5 tenim:
+  5·(k₁ + … + k₅) = 100 − 15 = 85  →  k₁ + … + k₅ = 17.
+
+Per exemple, podem escollir els índexs 0, 1, 2, 3 i 11 (ja que 0 + 1 + 2 + 3 + 11 = 17). Les cartes corresponents són:
+
+  3, 8, 13, 18 i 58,
+
+i la seva suma és 3 + 8 + 13 + 18 + 58 = 100.
+
+Per tant, la quantitat mínima de cartes és 5.
+
+Resposta: D)

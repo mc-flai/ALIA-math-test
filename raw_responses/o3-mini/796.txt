@@ -1,0 +1,21 @@
+Raonament: Representem el número "29a031" com a 290031 + 1000a. Multipliquem aquest nombre per 342, és a dir, el producte serà 342 × (290031 + 1000a) = 290031×342 + 342000a. Calcular 290031×342 dona 99.190.602, per tant el producte total és 99.190.602 + 342.000a. Aquest resultat ha de coincidir amb el número "100900b02", que podem expressar com 100.900.000 + 100·b + 2, és a dir, 100.900.002 + 100b.
+
+Igualant les dues expressions:
+  99.190.602 + 342.000a = 100.900.002 + 100b
+
+Restem 99.190.602 a ambdues bandes:
+  342.000a = 1.709.400 + 100b
+
+Dividim per 100:
+  3420a = 17.094 + b
+
+Despejant b:
+  b = 3420a − 17.094
+
+Com a i b són dígits (de 0 a 9), provem el valor adient. Si a = 5:
+  b = 3420×5 − 17.094 = 17.100 − 17.094 = 6
+La qual cosa és admissible.
+
+Finalment, a + b = 5 + 6 = 11.
+
+Resposta: E)

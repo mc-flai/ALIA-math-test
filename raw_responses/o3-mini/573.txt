@@ -1,0 +1,19 @@
+Raonament: Volem saber quantes vegades hem de doblar la manta, que té dimensions 220 × 240 cm, de manera que després dels doblegaments es pugui guardar en el calaix de 55 × 40 cm (tenint en compte que podem girar la manta). Quan pleguem per la meitat una de les dimensions, aquesta es divideix per 2 en cada doblegament.
+
+Analitzem dues possibilitats d'assignació (ja que es poden girar):
+
+Opció 1: Posem que la mida de 220 cm, plegada a, ha de ser ≤55 cm i la mida de 240 cm, plegada a, ha de ser ≤40 cm.
+• Per a 220 cm: volem 220/2^a ≤ 55. Com 220/55 = 4, cal que 2^a ≥ 4, així que a ≥ 2 (2 plegaments donen 220/4 = 55).
+• Per a 240 cm: volem 240/2^b ≤ 40. Com 240/40 = 6, cal que 2^b ≥ 6; ja que 2^2 = 4 i 2^3 = 8, necessitem b ≥ 3 (3 plegaments donen 240/8 = 30).
+El nombre total de plegaments és 2 + 3 = 5.
+
+Opció 2: Posem que la mida de 220 cm, plegada a, ha de ser ≤40 cm i la mida de 240 cm, plegada a, ha de ser ≤55 cm.
+• Per a 220 cm: 220/2^a ≤ 40 implica que 2^a ≥ 5.5, així que a ≥ 3 (2^3 = 8).
+• Per a 240 cm: 240/2^b ≤ 55 implica que 2^b ≥ 240/55 ≈ 4.36, així que b també ha de ser ≥ 3.
+El nombre total de plegaments és 3 + 3 = 6.
+
+Comparant ambdues opcions, la mínima quantitat és 5 plegaments (Opció 1).
+
+Per tant, la manta es pot obtenir en 5 doblegaments i entrarà en un calaix de 55 × 40 cm.
+
+Resposta: D)

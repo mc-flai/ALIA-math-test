@@ -1,0 +1,12 @@
+Raonament: Sigui que el rectangle conté m quadradets per un costat i n quadradets per l'altre costat (m, n ≥ 3). Els quadradets interiors que no toquen cap costat serien els que queden quan es retira la franja de quadradets púnt per tot el contorn, és a dir, (m – 2)·(n – 2). Ens indiquen que aquest nombre és 16, així doncs:
+
+  (m – 2)·(n – 2) = 16.
+
+Recorrent les possibles descomposicions de 16 en dos factors positius, tenim:
+  • (1, 16) → m = 3 i n = 18 (o viceversa), que donen un total de 3·18 = 54 quadradets.
+  • (2, 8) → m = 4 i n = 10, total de 4·10 = 40 quadradets.
+  • (4, 4) → m = 6 i n = 6, total de 6·6 = 36 quadradets.
+
+Com volem el màxim nombre total possible, triem la primera opció, que dóna 54 quadradets.
+
+Resposta: D)

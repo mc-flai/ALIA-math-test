@@ -1,0 +1,23 @@
+Raonament: 
+
+Identifiquem els cercles de centre cada vèrtex de l'hexagon – en total 6 cercles de radi 1 (ja que cada vèrtex està a 1 cm del centre de la circumferència que passa per tots els vèrtexs). Un punt del pla que estigui a 1 cm de dos vèrtexs és exactament la intersecció de dos d’aquests cercles.
+
+Comencem observant que, com el hexagon és regular, la distància entre el center del hexagon (origen) i cada vèrtex és 1 cm. Per tant, el punt (0,0) està a 1 cm de cada vèrtex i, per tant, és intersecció de tots els cercles.
+
+Ara analitzem les interseccions entre cercles segons la distància entre els centres (vèrtexs):
+
+1. Vèrtexs consecutius (costats de l’hexagon): La distància entre dos vèrtexs consecutius és 1 cm. Els cercles de radi 1 i centres separats 1 cm es tallen en dos punts. Però comprovem que (0,0) – el centre – és un d’aquests punts, ja que per simetria, el centre està tant a 1 cm del primer com del segon vèrtex. Així, cada parell de vèrtexs consecutius aporta (a més del centre ja comptat) un punt addicional. Tenim 6 costats, doncs 6 punts nous.
+
+2. Vèrtexs que separa un altre vèrtex (és a dir, vèrtexos separats 2 a l’ordre circular): La distància entre aquests vèrtexs és, per fórmules de corba, √3 (aprox. 1,732 cm), que és menor que 2. Per tant, els cercles també s’intersequen en 2 punts. Novament, per simetria el centre (0,0) és una d’aquestes interseccions, i per cada parell obtenim un únic altre punt diferent del centre. Hi ha 6 parells d’aquest tipus, aportant 6 punts nous.
+
+3. Vèrtexs oposats (separats 3 a l’ordre circular): La distància entre ells és exactament 2 cm, per tant els cercles es tangent externament en un únic punt, que resulta ser, per la simetria, el centre (0,0), ja comptat.
+
+Agrupant les troballes:
+ – El centre (0,0): 1 punt.
+ – De vèrtexs consecutius: 6 punts.
+ – De vèrtexs separats per un altre: 6 punts.
+ – Els vèrtexs oposats no afegeixen nous punts.
+
+Per tant, en total tenim 1 + 6 + 6 = 13 punts.
+
+Resposta: D)
