@@ -1,3 +1,0 @@
-Raonament: Primer observem que f és estrictament creixent, per tant si f(f(k)) ≤ f(k+1) aleshores, aplicant la monotonia de f podem concloure que f(k) ≤ k+1, per a tot k en Z. A més f(1000)=1000. Suposem que existeix algun enter on f no sigui la funció identitat. Sigui a el primer enter tal que f(a) ≠ a. Tenint en compte la creixença estricta i el fet que per tots els enters inferiors f(n)= n, la única possibilitat seria f(a)= a+1. Però llavors, per la creixença stricta i la restricció f(n) ≤ n+1, es forçaria que f(n)= n+1 per a tot n ≥ a. Així, en particular, f(1000)= 1001, cosa que contradiu f(1000)= 1000. Per tant, no pot existir tal desviació i hem de tenir f(n)= n per a tot enter n.
-
-Resposta: A)

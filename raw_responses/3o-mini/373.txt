@@ -1,7 +1,0 @@
-Raonament: Definim la funció f(x) = 2(x – 1) = 2x – 2 i apliquem aquesta funció de forma iterativa. Després d'una iteració, tenim f(x) = 2x – 2. Si suposem que després d'n iteracions el resultat es pot expressar com fⁿ(x) = aₙ·x + bₙ, aleshores després d'una altra iteració tindrem fⁿ⁺¹(x) = 2(aₙ·x + bₙ – 1) = 2aₙ·x + 2bₙ – 2, i per tant aₙ₊₁ = 2aₙ i bₙ₊₁ = 2bₙ – 2.
-
-Amb a₀ = 1 i b₀ = 0, obtenim que:
- • aₙ = 2ⁿ, així que per n = 10, a = 2¹⁰ = 1024.
- • El recursiu per b és bₙ₊₁ = 2bₙ – 2. Es pot demostrar que bₙ = –2(2ⁿ – 1). Per n = 10: b = –2(1024 – 1) = –2·1023 = –2046.
-
-Resposta: E)

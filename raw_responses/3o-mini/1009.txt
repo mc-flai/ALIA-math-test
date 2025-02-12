@@ -1,6 +1,0 @@
-Raonament:  
-Per evitar extreure tres boles consecutives del mateix color, en particular per la abundància de boles grogues que sumen 50, hem de distribuir-les en el recorregut separant cada bloc de groga amb boles d’un altre color (les de blanques o verdes).  
-Concretament, si agafem G el nombre total de boles no grogues (10 blanques + 4 verdes = 14), podem dividir la seqüència en G + 1 segments possibles en què inserir boles grogues sense arribar a tenir més de dues consecutives. Així, el màxim de boles grogues que podem extreure és 2 × (G + 1) = 2 × 15 = 30.  
-Sumant aquestes 30 boles grogues i les 14 boles d’altres colors, obtenim un total de 30 + 14 = 44 boles extretes.  
-
-Resposta: C)

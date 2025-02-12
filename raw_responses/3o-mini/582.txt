@@ -1,8 +1,0 @@
-Raonament: Comencem observant que, si un nombre N té exactament sis divisors, N pot tenir la forma p²·q (amb p i q nombres primers diferents) o bé ser una potència de primer de la forma p⁵. Cal tenir en compte que el producte de tots els divisors d’un nombre és N^(nombre de divisors/2), així que en aquest cas el producte de tots els sis divisors serà N³. Si el producte de cinc d’aquests divisors és 648, aleshores, si l’omitem el divisor d, tenim:
-  N³/d = 648  ⟹  d = N³/648.
-  
-Provem amb la forma N = p²·q. Una elecció natural és p = 3 i q = 2, ja que 3 i 2 són primers. Així, N = 3²·2 = 9·2 = 18. Els divisors de 18 són: 1, 2, 3, 6, 9 i 18. El producte total és 18³ = 5832. Si omitem el divisor 9, el producte de la resta és 5832/9 = 648, que és exactament el que es demana. 
-
-Per tant, l’altre divisor que no s’ha inclòs en el producte és el 9.
-
-Resposta: C)

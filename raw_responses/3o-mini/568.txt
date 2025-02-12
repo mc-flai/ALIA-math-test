@@ -1,9 +1,0 @@
-Raonament: Comencem amb la relació donada: nⁿ = m. Volem calcular n^(n^(n+1)). Primer observem que n^(n+1) és igual a nⁿ · n, és a dir, n^(n+1) = m · n. D'aquesta manera podem reescriure l'expressió com n^(n^(n+1)) = n^(m·n).
-
-Ara, expressem n en termes de m. De la relació m = nⁿ, resulta que n = m^(1/n). Substituïm aquesta expressió dins de la potència:
-
-  n^(m·n) = (m^(1/n))^(m·n) = m^(m·n/n) = m^m.
-
-Per tant, n^(n^(n+1)) és igual a m^m, que correspon a l'opció D).
-
-Resposta: D)

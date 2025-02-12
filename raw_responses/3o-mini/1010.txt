@@ -1,7 +1,0 @@
-Raonament: Considerem un nombre de tres xifres amb les xifres a, b, c (amb a entre 1 i 9, i b i c entre 0 i 9) i definim com "bonic" aquell que compleix b > a + c. Notem que quan es mantenen fixes les xifres de les centenes i de les desenes (a i b) els nombres augmenten de manera consecutiva quan només varia la xifra de les unitats (c). Perquè el nombre siga bonic, hem de tenir c < b – a. Així, per uns valors donats de a i b (amb b > a) tenim precisament b – a nombres consecutius (des de c = 0 fins a c = b – a – 1) que són bonics.
-
-Observem que per tal d’obtenir la major quantitat de nombres consecutius, volem maximitzar b – a. Si fixem b = 9 (la màxima xifra possible) i a el valor mínim possible, a = 1, obtenim 9 – 1 = 8 nombres consecutius. Concretament, només el bloc format pel nombre 190 (c = 0) fins a 197 (c = 7) compleix la propietat, ja que per a cada nombre tenim:
-  9 > 1 + c (per c = 0, 1, …, 7)
-i són 8 nombres consecutius. Si posem altres valors de a o b, el nombre d’elements consecutius seria menor.
-
-Resposta: C)
