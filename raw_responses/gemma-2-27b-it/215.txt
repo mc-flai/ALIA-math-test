@@ -1,0 +1,27 @@
+## Raonament:
+
+1. **Múltiples de 3:** Un nombre és múltiple de 3 si la suma de les seves xifres és múltiple de 3.
+
+2. **Diferència de xifres:** La diferència absoluta de les xifres ha de ser 3. Això significa que podem tenir les combinacions: (x, x+3) o (x, x-3).
+
+3. **Combinar les condicions:** Devem trobar els nombres de dues xifres que compleixin ambdues condicions.
+
+4. **Provar les combinacions:**
+
+    * **(x, x+3):**
+        * Si x = 1, el nombre seria 14 (no múltiple de 3)
+        * Si x = 2, el nombre seria 25 (no múltiple de 3)
+        * Si x = 3, el nombre seria 36 (múltiple de 3)
+        * Si x = 4, el nombre seria 47 (no múltiple de 3)
+        * ... i així successivament.
+
+    * **(x, x-3):**
+        * Si x = 7, el nombre seria 74 (no múltiple de 3)
+        * Si x = 8, el nombre seria 85 (no múltiple de 3)
+        * Si x = 9, el nombre seria 96 (múltiple de 3)
+
+5. **Resultat:** Els únics nombres de dues xifres que compleixen ambdues condicions són 36 i 96.
+
+## Resposta:
+
+B) 2

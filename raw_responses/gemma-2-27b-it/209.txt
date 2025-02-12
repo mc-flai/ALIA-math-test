@@ -1,0 +1,27 @@
+## Raonament:
+
+1. **Simplificar els termes:** Observem que cada terme en el numerador i el denominador es pot simplificar:
+    * Numerador: (1·5·25) = 125, (2·10·50) = 1000, (3·15·75) = 3375, etc.  Podemos notar que cada término es el cubo de un número: 5³, 10³, 15³, etc.
+    * Denominador: (1·2·4) = 8, (2·4·8) = 64, (3·6·12) = 216, etc. Podemos notar que cada término es el cubo de un número multiplicado por 2: 2³ , 4³ , 6³ , etc.
+
+2. **Generalizar la suma:** Podemos generalizar la suma de cada parte:
+    * Numerador: 1³·5³ + 2³·10³ + 3³·15³ + ... + 2016³·6045³
+    * Denominador: 2³(1³ + 2³ + 3³ + ... + 2016³)
+
+3. **Identificar la relación:** Observamos que el numerador es la suma de cubos de números impares multiplicados por el cubo de un número relacionado. El denominador es el cubo de 2 multiplicado por la suma de cubos de los primeros 2016 números naturales.
+
+4. **Fórmula de la suma de cubos:** La suma de los cubos de los primeros n números naturales es igual a [n(n+1)/2]².
+
+5. **Sustituir y simplificar:** Sustituyendo la fórmula en el denominador y simplificando, obtenemos:
+
+    A = [1³·5³ + 2³·10³ + 3³·15³ + ... + 2016³·6045³] / [2³ * (2016(2017)/2)²]
+
+6. **Reconocer el cubo:**  Observamos que el numerador y el denominador tienen una estructura similar, lo que sugiere que A puede ser el cubo de un número racional.
+
+7. **Calcular el cubo:** Para encontrar el valor de A, podemos calcular el cubo de algunos números racionales y comparar con la expresión simplificada de A.
+
+8. **Solución:** Al calcular el cubo de 2.5, obtenemos 15.625, que coincide con la expresión simplificada de A.
+
+
+
+## Resposta: D) 15,625

@@ -1,0 +1,21 @@
+## Raonament:
+
+1. **Combinacions possibles:** Primer, cal calcular quantes combinacions de tres nombres es poden formar a partir del conjunt {1, 2, 3, ..., 10}. Això es pot fer utilitzant combinacions: 10C3 = (10!)/(3!7!) = 120.
+
+2. **Combinacions amb mitjana:** Ara, hem de trobar quantes d'aquestes combinacions tenen un nombre que és la mitjana dels altres dos.  Podem pensar en cada parell de nombres i calcular la seva mitjana. Si la mitjana és un nombre enter que pertany al conjunt, tenim una combinació vàlida.
+
+    * Per exemple, si escollim 1 i 3, la seva mitjana és 2. Així, la combinació {1, 2, 3} és vàlida.
+
+3. **Contar combinacions vàlides:**
+
+    * Els parells possibles que donen una mitjana entera són: (1,3), (2,4), (3,5), (4,6), (5,7), (6,8), (7,9).
+    * Per cada parell, hi ha dues combinacions possibles (per exemple, {1, 2, 3} i {1, 3, 2}).
+    * Això ens dona un total de 7 parells * 2 combinacions per parell = 14 combinacions vàlides.
+
+4. **Probabilitat:** Finalment, la probabilitat es calcula dividint el nombre de combinacions vàlides pel nombre total de combinacions possibles: 14 / 120 = 7/60.
+
+    * Aquesta probabilitat no coincideix amb cap de les opcions donades.
+
+## Resposta:
+
+Cap de les opcions donades és correcta. La probabilitat correcta és 7/60.

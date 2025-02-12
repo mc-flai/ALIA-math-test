@@ -1,0 +1,22 @@
+## Raonament:
+
+Per determinar qui no cau al forat, cal calcular la distància que recorre cada persona en 10 voltes i veure si aquesta distància és múltiple de la longitud del seu salt. Si ho és, caurà al forat.
+
+* **Longitud de la pista:** 400 metres
+* **Longitud del forat:** 75 cm = 0.75 metres
+
+1. **Calculem la distància que recorre cada persona en 10 voltes:** 400 metres/volta * 10 voltes = 4000 metres
+
+2. **Convertim la distància a centímetres:** 4000 metres * 100 cm/metre = 400.000 cm
+
+3. **Dividim la distància total per la longitud del salt de cada persona:**
+
+    * Albert: 400.000 cm / 70 cm/salt = 5714.28 salts (no és un nombre enter)
+    * Berta: 400.000 cm / 80 cm/salt = 5000 salts
+    * Carles: 400.000 cm / 85 cm/salt = 4705.88 salts (no és un nombre enter)
+    * David: 400.000 cm / 90 cm/salt = 4444.44 salts (no és un nombre enter)
+    * Esther: 400.000 cm / 95 cm/salt = 4210.53 salts (no és un nombre enter)
+
+4. **Només Berta recorre una distància que és un múltiple exacte del seu salt.** Això significa que caurà al forat cada 80 cm, i després de 10 voltes, haurà caigut al forat exactament.
+
+## Resposta: B) Berta

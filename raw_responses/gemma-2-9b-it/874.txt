@@ -1,0 +1,17 @@
+Raonament: 
+
+Un triangle equilàter està format per tres vèrtexs que estan a la mateixa distància.  En un cub, hi ha 8 vèrtexs. Per a formar un triangle equilàter, necessitem seleccionar 3 vèrtexs del cub.  
+
+* **Com podem seleccionar 3 vèrtexs d'un conjunt de 8?**  Aquesta és una combinació, ja que l'ordre en què seleccionem els vèrtexs no importa.  La fórmula per calcular el nombre de combinacions de *n* objectes presa *r* a la vegada és: nCr = n! / (r! * (n-r)!).
+
+* **Aplicant la fórmula:** En aquest cas, n = 8 (vèrtexs del cub) i r = 3 (vèrtexs del triangle).  
+
+   8C3 = 8! / (3! * 5!) = (8 * 7 * 6) / (3 * 2 * 1) = 56
+
+* **No tots els triangles seleccionats seran equilàters:**  Cal comprovar si els triangles formats per les combinacions de 3 vèrtexs són equilàters.  
+
+Resposta: **E) Un altre resultat** 
+
+Tot i que hi ha 56 combinacions possibles de 3 vèrtexs, no tots formen triangles equilàters.  Cal un càlcul més detallat per determinar el nombre exacte de triangles equilàters. 
+
+

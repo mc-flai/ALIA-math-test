@@ -1,0 +1,19 @@
+## Raonament:
+
+Observem el patró $n^{2018} + (n + 1)^{2017}$. Per determinar si un nombre és parell o senar, només cal mirar la paritat de cada sumand.
+
+* **Si *n* és parell:**
+    * $n^{2018}$ serà parell (un nombre parell elevat a qualsevol potència és parell).
+    * $(n + 1)^{2017}$ serà senar (un nombre senar elevat a qualsevol potència senar és senar).
+    * La suma d'un nombre parell i un nombre senar és senar.
+
+* **Si *n* és senar:**
+    * $n^{2018}$ serà senar.
+    * $(n + 1)^{2017}$ serà parell.
+    * La suma d'un nombre senar i un nombre parell és senar.
+
+En tots els casos, el resultat de la suma $n^{2018} + (n + 1)^{2017}$ serà **senar**.
+
+## Resposta:
+
+A) Cap

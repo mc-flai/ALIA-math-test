@@ -1,0 +1,11 @@
+## Raonament:
+
+Els zeros al final d'un factorial provenen de les parelles de 2 i 5 en la seva descomposició en factors primers. Com que hi ha molts més factors 2 que 5 en els nombres naturals, només hem de comptar els factors 5.
+
+* **Grups de 5:** Cada múltiple de 5 aporta un factor 5. Hi ha 20 múltiples de 5 entre 1 i 100 (5, 10, 15... 100).
+* **Grups de 25:** Cada múltiple de 25 aporta un factor 5 addicional (ja que 25 = 5 * 5). Hi ha 4 múltiples de 25 entre 1 i 100 (25, 50, 75, 100).
+* **Grups de 125:** No hi ha múltiples de 125 entre 1 i 100.
+
+En total, 100! té 20 + 4 = 24 factors 5, i per tant, **24 zeros** al final.
+
+## Resposta: D) 24

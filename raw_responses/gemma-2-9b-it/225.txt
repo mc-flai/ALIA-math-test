@@ -1,0 +1,19 @@
+Raonament:
+
+Per deduir el nombre entre 1 i 15 amb la menor quantitat de preguntes, podem utilitzar una estratègia de bisecció. 
+
+* **Primera pregunta:**  Pregunta si el nombre pertany al conjunt {1, 2, 3, 4, 5, 6, 7, 8}. Si la resposta és sí, el nombre es troba en la primera meitat. Si la resposta és no, el nombre es troba en la segona meitat.
+* **Segona pregunta:**  Segons la resposta de la primera pregunta, divideix el conjunt restant a la meitat i pregunta si el nombre pertany a aquest nou conjunt.
+* **Repetir:** Continua dividint el conjunt restant a la meitat i preguntant fins que quedi només un nombre.
+
+En cada pregunta, elimines la meitat dels nombres possibles. 
+
+* **Logaritmo:** El nombre de preguntes necessàries per reduir un conjunt de *n* elements a un sol element és log₂(n).
+
+En aquest cas, n = 15.  log₂(15) és aproximadament 3.8.
+
+* **Rondatge:** Com que només podem fer preguntes completes, necessitem un nombre sencer de preguntes. Per tant, necessitem un mínim de **4 preguntes**.
+
+
+
+Resposta: D) 4 

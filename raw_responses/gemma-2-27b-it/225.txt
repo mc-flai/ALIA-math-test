@@ -1,0 +1,13 @@
+## Raonament:
+
+Podem resoldre aquest problema utilitzant l'estratègia de la dicotomia. En cada pregunta, dividirem el conjunt de nombres possibles per la meitat.
+
+1. **Pregunta 1:** Preguntarem si el nombre és menor o igual que 7. Això ens deixa amb dos conjunts possibles: {1, 2, 3, 4, 5, 6, 7} o {8, 9, 10, 11, 12, 13, 14, 15}.
+
+2. **Pregunta 2:** Independentment de la resposta a la primera pregunta, podem dividir el conjunt restant per la meitat amb una nova pregunta. Per exemple, si el nombre és menor o igual que 7, preguntarem si és menor o igual que 3. Si el nombre és major que 7, preguntarem si és menor o igual que 11.
+
+3. **Pregunta 3:** Continuarem dividint el conjunt restant per la meitat fins a quedar amb un sol nombre possible.
+
+Com a màxim, necessitem 4 preguntes per reduir el conjunt de 15 nombres a un sol nombre.
+
+## Resposta: D) 4

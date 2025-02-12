@@ -1,0 +1,23 @@
+## Raonament:
+
+1. **Analitzem el cub gros:** Un cub amb costat 'n' té n³ cubs menuts a l'interior.
+
+2. **Cubs amb una cara pintada:** Aquests cubs es troben a la superfície del cub gros, excepte els de les arestes i els vèrtexs.
+
+3. **Cubs sense cap cara pintada:** Aquests cubs es troben a l'interior del cub gros.
+
+4. **Relació entre els cubs:** El problema ens diu que el nombre de cubs amb una cara pintada és igual al nombre de cubs sense cap cara pintada.
+
+5. **Fórmula:**
+
+    * Cubs amb una cara pintada: 6n² - 12n + 8 (6 cares del cub gros, menys 12 arestes, més 8 vèrtexs)
+    * Cubs sense cap cara pintada: n³ - (6n² - 12n + 8)
+
+6. **Igualem les expressions:** n³ - (6n² - 12n + 8) = 6n² - 12n + 8
+
+7. **Simplifiquem i resolem l'equació:** n³ - 6n² + 12n - 8 = 6n² - 12n + 8
+                                         n³ - 12n² + 24n - 16 = 0
+
+8. **Trobar la solució:** Provem amb les opcions donades. Només n = 4 satisfà l'equació.
+
+## Resposta: A) 4

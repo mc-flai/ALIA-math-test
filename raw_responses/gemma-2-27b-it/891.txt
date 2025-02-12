@@ -1,0 +1,33 @@
+## Raonament:
+
+1. **Analitzem els cangurils:** Els cangurils segueixen un patró: 1, 3, 13, 31, 131... Cada canguril es forma prenent el canguril anterior i concatenant-li un 1.
+
+2. **Descomposició de 1362:** Per trobar la mínima quantitat de sumands, volem utilitzar els cangurils més grans possibles.
+
+3. **Cangurils útils:** Els cangurils que podem utilitzar per a descompondre 1362 són: 131, 31, 13, 3, 1.
+
+4. **Suma:**
+
+* 131 + 31 + 13 + 3 + 1 = 179
+* 1362 / 179 ≈ 7.6
+
+* Això significa que podem utilitzar set vegades la suma 179 per aproximar-nos a 1362.
+
+5. **Ajust:**
+
+* 7 * 179 = 1253
+* 1362 - 1253 = 109
+
+* Ara necessitem trobar la manera de sumar 109 amb cangurils.
+
+6. **Cangurils restants:**
+
+* 109 = 31 + 31 + 31 + 13 + 3
+
+7. **Total de sumands:**
+
+* 7 (sumes de 179) + 4 (cangurils restants) = 11
+
+## Resposta:
+
+E) No pot ser (La mínima quantitat de sumands necessaris és 11, que no és cap de les opcions)

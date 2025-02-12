@@ -1,0 +1,25 @@
+Raonament:
+
+Aquesta operació es pot simplificar agrupant els termes parell i senar:
+
+* **Termes parells:** 2 + 4 + 6 +... + 2016 
+* **Termes senars:** 1 + 3 + 5 +... + 2015
+
+Observem que els termes parells formen una progressió aritmètica amb la primera terme 2, la diferència comú 2 i el terme final 2016.  Els termes senars també formen una progressió aritmètica amb la primera terme 1, la diferència comú 2 i el terme final 2015.
+
+Podem calcular la suma de cada progressió aritmètica:
+
+* **Suma dels termes parells:** (n/2) * (primer terme + últim terme)
+   *  n = (2016 - 2)/2 + 1 = 1008
+   *  Suma = (1008/2) * (2 + 2016) = 504 * 2018 = 1018032
+* **Suma dels termes senars:** (n/2) * (primer terme + últim terme)
+   * n = (2015 - 1)/2 + 1 = 1008
+   * Suma = (1008/2) * (1 + 2015) = 504 * 2016 = 1018032
+
+Finalment, la suma de tota l'operació és:
+
+1 - 2 + 3 - 4 +... + 2015 - 2016 = Suma dels termes senars - Suma dels termes parells = 1018032 - 1018032 = 0
+
+Resposta: C) 0 
+
+

@@ -1,0 +1,15 @@
+## Raonament:
+
+Per trobar la quantitat més gran de nombres bonics consecutius, hem de buscar una seqüència on la xifra central sigui la més gran possible i que alhora permeti que les xifres adjacents augmentin en 1 per mantenir la consecutivitat.
+
+* **Considerem el cas màxim:** La xifra central més gran possible és 9.
+
+* **Límit superior:** Perquè el nombre sigui bonic, la suma de les altres dues xifres ha de ser menor que 9. El cas màxim seria 8 (7+1).
+
+* **Seqüència:** Això ens permet construir la seqüència: 179, 289, 399, 409, 519, 629, 739.
+
+* **Límit inferior:** Observem que no podem continuar augmentant les xifres laterals per mantenir la condició de "bonic".
+
+## Resposta:
+
+D) 7

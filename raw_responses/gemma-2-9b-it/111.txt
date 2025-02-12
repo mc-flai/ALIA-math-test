@@ -1,0 +1,38 @@
+Raonament: 
+
+Per descobrir la base b, hem de convertir la suma a base 10 i després convertir el producte a base 10. Això ens permetrà igualar les expressions i trobar b.
+
+* **Convertim 14₆ a base 10:** 
+   14₆ = (1 * b¹) + (4 * b⁰) = b + 4
+
+* **Convertim 25₆ a base 10:**
+   25₆ = (2 * b¹) + (5 * b⁰) = 2b + 5
+
+* **Convertim 416₆ a base 10:**
+   416₆ = (4 * b²) + (1 * b¹) + (6 * b⁰) = 4b² + b + 6
+
+Ara, podem igualar la multiplicació en base b amb la suma en base 10:
+
+(b + 4) * (2b + 5) = 4b² + b + 6
+
+Desenvolupant l'equació:
+
+2b² + 5b + 8b + 20 = 4b² + b + 6
+
+2b² - 12b - 14 = 0
+
+Dividint per 2:
+
+b² - 6b - 7 = 0
+
+Factoritzant:
+
+(b - 7)(b + 1) = 0
+
+Això ens dona dues possibles solucions: b = 7 o b = -1.
+
+Com que la base d'un sistema numèric ha de ser positiva, la resposta correcta és b = 7.
+
+Resposta: A) 7 
+
+

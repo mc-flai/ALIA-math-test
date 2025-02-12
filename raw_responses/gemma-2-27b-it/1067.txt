@@ -1,0 +1,30 @@
+## Raonament:
+
+Sigui 'x' el nombre de curses que Martí va córrer el primer any.
+
+* **Segon any:** Va córrer més curses que el primer any, per tant, més que 'x'.
+* **Tercer any:** Va córrer més curses que el segon any, per tant, més que 'x' + (un nombre positiu).
+* **Quart any:** Va córrer més curses que el tercer any, per tant, més que 'x' + (un nombre positiu) + (un nombre positiu).
+* **Cinquè any:** Va córrer el triple de curses que el primer any, per tant, 3x.
+
+Sabem que en total va córrer 31 curses en cinc anys. Per tant, podem plantejar la següent equació:
+
+x + (x + a) + (x + b) + (x + c) + 3x = 31
+
+On 'a', 'b' i 'c' són nombres positius que representen el increment de curses cada any.
+
+Simplificant l'equació:
+
+6x + a + b + c = 31
+
+Com que 'a', 'b' i 'c' són nombres positius, el valor mínim de 'x' per a que la suma sigui 31 és 5.
+
+Si x = 5, llavors:
+
+30 + a + b + c = 31
+
+Per tant, a + b + c = 1.
+
+Això significa que el quart any (x + a + b + c) va córrer 5 + 1 = 6 curses.
+
+## Resposta: A) 6

@@ -1,0 +1,37 @@
+## Raonament:
+
+Per a que el segon nombre sigui més gran que el primer, hi ha dues coses que han de passar:
+
+1. **El primer nombre ha de ser menor que 2015.** Si el primer nombre és 2015, no hi ha cap nombre més gran que pugui sortir.
+2. **El segon nombre ha de ser un dels nombres superiors al primer.**
+
+Considerem tots els possibles casos:
+
+* **Si el primer nombre és 1:** Hi ha 2014 nombres més grans que 1.
+* **Si el primer nombre és 2:** Hi ha 2013 nombres més grans que 2.
+* **I així successivament...**
+
+En general, si el primer nombre és *n*, hi ha 2015 - *n* nombres més grans que *n*.
+
+Per tant, la probabilitat que el segon nombre sigui més gran que el primer depèn del primer nombre que surt.
+
+Però, com que el primer nombre es tria aleatòriament, tots els nombres tenen la mateixa probabilitat de sortir.
+
+Així, podem calcular la probabilitat mitjana que el segon nombre sigui més gran que el primer:
+
+* **Probabilitat total de casos possibles:** 2015 * 2014 (perquè per a cada primer nombre, hi ha 2014 possibles segons nombres).
+* **Probabilitat total de casos favorables:** 1*2014 + 2*2013 + 3*2012 + ... + 2014*1.
+
+Calcular aquesta suma directament és complicat. Però podem notar que és simètrica. Si invertim l'ordre de la suma, obtenim el mateix resultat:
+
+* 1*2014 + 2*2013 + 3*2012 + ... + 2014*1 = 2014*1 + 2013*2 + 2012*3 + ... + 1*2014
+
+Per tant, la probabilitat total de casos favorables és la meitat de la suma de tots els productes possibles:
+
+* (1*2014 + 2*2013 + 3*2012 + ... + 2014*1) / 2 = (2015 * 2014) / 2
+
+La probabilitat que el segon nombre sigui més gran que el primer és:
+
+* [(2015 * 2014) / 2] / (2015 * 2014) = 1/2 = 50%
+
+## Resposta: B) El 50%

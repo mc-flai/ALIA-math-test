@@ -1,0 +1,23 @@
+## Raonament:
+
+Per maximitzar el nombre de boles que podem treure sense repetir tres del mateix color consecutives, hem de seguir una estratègia que alterni els colors el màxim possible.
+
+1. **Inici:** Podem començar treient una bola de qualsevol color.
+
+2. **Segona bola:** La segona bola ha de ser d'un color diferent a la primera.
+
+3. **Tercera bola:** La tercera bola ha de ser d'un color diferent a la segona.
+
+4. **Quarta bola:** En aquest punt, ens trobem amb un dilema. Si les tres primeres boles eren de colors diferents, podem treure qualsevol de les tres opcions. Si dues de les tres primeres boles eren del mateix color, només podem treure una bola del color restant.
+
+A partir d'aquí, la estratègia es repeteix: intentar alternar colors el màxim possible, tenint en compte que no podem treure tres boles del mateix color consecutives.
+
+**Observació:** La quantitat de boles de cada color limita el nombre màxim de boles que podem treure.
+
+## Resposta:
+
+**D) 45**
+
+**Explicació:**
+
+Seguint la estratègia descrita, podem treure un màxim de 15 boles grogues, 10 blanques i 10 verdes, sumant un total de 35 boles. A partir d'aquí, ja no podem garantir que no sortiran tres boles del mateix color consecutives.

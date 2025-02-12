@@ -1,0 +1,29 @@
+## Raonament:
+
+1. **El problema:**  Estem fent una sèrie de passos repetits amb un nombre x.  
+2. **El procés:** 
+    *  **Resta 1:**  A cada pas, fem x - 1.
+    *  **Multiplica per 2:**  El resultat de la resta (x - 1) es multiplica per 2.
+3. **Repetir deu vegades:**  Fem aquest procés deu vegades consecutives.
+4. **Escriure com ax + b:**  El resultat final de la sèrie de passos serà un coeficient (a) i un terme constant (b).
+
+## Resposta:
+
+**Resposta: E) a = 1024, b = -2046**
+
+**Raonament:**
+
+* **Primer pas:** x - 1 = 1024
+* **Segon pas:** 2 * (1024 - 1) = 2048
+* **Tercer pas:** x - 1 = 2048
+* **Quaternari pas:** 2 * (2048 - 1) = 4096
+* **Cinquè pas:** x - 1 = 4096
+* **Sisè pas:** 2 * (4096 - 1) = 8192
+* **Setè pas:** x - 1 = 8192
+* **Octav pas:** 2 * (8192 - 1) = 16384
+* **Nava pas:** x - 1 = 16384
+* **Decimò pas:** 2 * (16384 - 1) = 32768
+
+**Observació:**  Aquestes operacions es poden fer amb un programa o un calculator per obtenir el valor de a i b. 
+
+

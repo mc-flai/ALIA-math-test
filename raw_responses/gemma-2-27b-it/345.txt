@@ -1,0 +1,22 @@
+## Raonament:
+
+Observem que el producte A conté parelles de factors que es cancel·len:
+
+* (2017 - 1) i (1 - 2017)
+* (2016 - 2) i (2 - 2016)
+* (2015 - 3) i (3 - 2015)
+* ...
+
+En general, (n - (2017-n)) i ((2017-n) - n) es cancel·len per a cada n entre 1 i 1009.
+
+Això deixa només un factor:
+
+A = (2017 - 1)(2016 - 2)(2015 - 3) . . . (3 - 2015)(2 - 2016)(1 - 2017) = (-1) * (-2) * (-3) * ... * (-1009)
+
+Que és equivalent a:
+
+A = (-1)^1009 * 1 * 2 * 3 * ... * 1009 = -1009!
+
+## Resposta:
+
+E) A = -(1009!)^2

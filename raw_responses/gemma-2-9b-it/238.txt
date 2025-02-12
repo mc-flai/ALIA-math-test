@@ -1,0 +1,20 @@
+Raonament:
+
+Per tornar a l'origen, el robot ha de fer un moviment igual i oposat en ambdues direccions.  
+
+* **Moviment horitzontal:** El dau vermell té 2 possibilitats per fer un moviment cap a la dreta (parell) i 2 per fer un moviment cap a l'esquerra (senar). 
+* **Moviment vertical:** El dau blau té 2 possibilitats per fer un moviment cap amunt (parell) i 2 per fer un moviment cap avall (senar).
+
+Per tornar a l'origen, necessitem que el moviment horitzontal i el vertical siguin oposats.  
+
+* **Casos favorables:**
+    * Dau vermell parell, dau blau senar (dreta, avall)
+    * Dau vermell senar, dau blau parell (esquerra, amunt)
+
+* **Casos possibles:** Cada dau té 2 possibilitats, per tant, hi ha 2 * 2 = 4 casos possibles.
+
+La probabilitat de tornar a l'origen és el nombre de casos favorables dividit pel nombre de casos possibles: 2 / 4 = 1/2.
+
+Resposta: A) 1/2 
+
+

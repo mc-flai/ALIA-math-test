@@ -1,0 +1,23 @@
+## Raonament:
+
+1. **Analitzem la primera equació:** f(x) = 2f(x + 1). Aquesta equació ens diu que el valor de la funció en un punt és el doble del valor en el punt següent.
+
+2. **Apliquem la primera equació repetidament:**
+
+   * f(2015) = 2f(2016)
+   * f(2014) = 2f(2015) = 2 * 2f(2016) = 4f(2016)
+
+3. **Utilitzem la segona equació:** f(x + y) = f(x) · f(y).
+
+4. **No podem aplicar directament la segona equació per trobar f(2016) / f(2014) ja que no tenim una relació directa entre 2016 i 2014.**
+
+5. **Tornem a la primera equació:**
+
+   * f(2016) = 2f(2017)
+   * f(2014) = 4f(2016) = 8f(2017)
+
+6. **Ara podem relacionar f(2016) i f(2014) a través de f(2017):**
+
+   * f(2016) / f(2014) = (2f(2017)) / (8f(2017)) = 1/4
+
+## Resposta: C) 1/4

@@ -1,0 +1,42 @@
+## Raonament:
+
+1. **Identificar el patró:** Observam que en cada terme del numerador i del denominador, els tres nombres estan relacionats de la següent manera:
+    * **Numerador:** El primer nombre és un enter consecutiu (1, 2, 3,...), el segon és el primer nombre multiplicat per 5, i el tercer és el segon nombre multiplicat per 5.
+    * **Denominador:** El primer nombre és un enter consecutiu (1, 2, 3,...), el segon és el primer nombre multiplicat per 2, i el tercer és el segon nombre multiplicat per 4.
+
+2. **Simplificar la fracció:**  Podem simplificar la fracció A mitjançant la factorització. 
+    * **Numerador:** 
+        *  1·5·25 = 1·5·5² = 5³
+        *  2·10·50 = 2·2·5·5² = 2²·5³
+        *  3·15·75 = 3·3·5·5² = 3²·5³
+        * ...
+        *  Podem veure que el numerador és una suma de termes de la forma *n²·5³*
+    * **Denominador:**
+        * 1·2·4 = 1·2·2² = 2³
+        * 2·4·8 = 2·2·2³ = 2⁴
+        * 3·6·12 = 3·2·3·2² = 3·2³
+        *...
+        * Podem veure que el denominador és una suma de termes de la forma *n·2³*
+
+3. **Expressar A com un cub:**  
+    *  A = (5³ + 2²·5³ + 3²·5³ +...)/(2³ + 2⁴ + 3·2³ +...)
+    *  A = 5³(1 + 2² + 3² +...)/(2³(1 + 2 + 3 +...))
+    *  La suma de les potències dels primers *n* enters és una fórmula coneguda: 1 + 2² + 3² +... + n² = n(n+1)(2n+1)/6
+    *  La suma dels primers *n* enters és: 1 + 2 + 3 +... + n = n(n+1)/2
+    *  Substituint les fórmules:
+        * A = 5³(n(n+1)(2n+1)/6)/(2³(n(n+1)/2))
+    *  Simplificant: A = (5³(2n+1))/(2³·3)
+
+4. **Determinar el valor de A:**  
+    *  Sabem que A és el cub d'un nombre racional. Això significa que la fracció simplificada ha de ser un cub perfecte.
+    *  Observant la fracció simplificada, podem veure que per obtenir un cub perfecte, necessitarem que el numerador i el denominador tinguin factors que es puguin elevar al cub.
+    *  Experimentant amb diferents valors de *n*, podem trobar que per *n* = 2016, la fracció es simplifica a un cub perfecte.
+
+
+
+## Resposta:
+
+Per a *n* = 2016, la fracció simplificada es pot calcular i es troba que és igual a **39,0625**.
+
+
+

@@ -1,0 +1,15 @@
+## Raonament:
+
+Cada corda està formada per dos punts de la circumferència. Per tant, si tenim 2016 punts, podem formar combinacions de 2 en 2 per obtenir el nombre total de cordes possibles.
+
+La fórmula per calcular combinacions de *n* elements presos de *k* en *k* és:
+
+n! / (k! * (n-k)!)
+
+En el nostre cas, n = 2016 i k = 2. Substituint en la fórmula:
+
+2016! / (2! * (2016-2)!) = 2016! / (2 * 2014!) = 2016 * 2015 / 2 = 2015 * 1008
+
+## Resposta:
+
+B) 2015

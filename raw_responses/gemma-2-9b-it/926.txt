@@ -1,0 +1,19 @@
+Raonament:
+
+Per a que només hi hagi una parella (a, b) que compleixi la condició, els nombres han de ser prou petits per evitar que hi hagi moltes parelles possibles. 
+
+* **Considerem els divisors:** Si un nombre té molts divisors, és més probable que hi hagi dues parelles (a, b) on a no és divisor de b. 
+* **Nombres primers:** Els nombres primers només tenen dos divisors: 1 i ells mateixos. Això significa que si tenim un nombre primer, no hi ha cap altra parella que compleixi la condició.
+
+Per tant, busquem el menor valor de n que tingui un nombre de divisors limitat.
+
+* **Opció A) 9:** 9 = 3 x 3, té divisors 1, 3 i 9. Podria haver-hi més d'una parella que compleixi la condició.
+* **Opció B) 12:** 12 = 2 x 2 x 3, té divisors 1, 2, 3, 4, 6 i 12. Podria haver-hi més d'una parella que compleixi la condició.
+* **Opció C) 24:** 24 = 2 x 2 x 2 x 3, té divisors 1, 2, 3, 4, 6, 8, 12 i 24. Podria haver-hi més d'una parella que compleixi la condició.
+* **Opció D) 36:** 36 = 2 x 2 x 3 x 3, té divisors 1, 2, 3, 4, 6, 9, 12, 18 i 36. Podria haver-hi més d'una parella que compleixi la condició.
+* **Opció E) 45:** 45 = 3 x 3 x 5, té divisors 1, 3, 5, 9, 15 i 45. Podria haver-hi més d'una parella que compleixi la condició.
+
+Observant les opcions, sembla que cap d'elles garanteix que només hi hagi una parella (a, b) que compleixi la condició. 
+
+
+Resposta: No hi ha una resposta correcta entre les opcions proporcionades. 

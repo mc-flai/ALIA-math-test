@@ -1,0 +1,29 @@
+Raonament:
+
+1. **Distància que recorre el cangur A:** El cangur A salta 6 m per salt. Per saber la distància que ha recorregut, necessitem saber quants salts ha fet. 
+2. **Distància que recorre el cangur B:** El cangur B salta 1 m, 2 m, 3 m, etc. Aquesta és una sèrie aritmètica. La fórmula per calcular la suma dels primers *n* termes d'una sèrie aritmètica és: S = (n/2) * (a + l), on S és la suma, n és el nombre de termes, a és el primer terme i l és l'últim terme.
+3. **Igualar les distàncies:** Per saber quan el cangur B agafarà al cangur A, hem de igualar les distàncies que han recorregut.
+
+**Per a resoldre el problema, necessitem un mètode iteratiu:**
+
+* **Suposem que el cangur B ha fet *n* salts.**
+* **Calculem la distància recorreguda per el cangur B:** S = (n/2) * (1 + n)
+* **Calculem la distància recorreguda per el cangur A:** 6 * n
+* **Igualem les distàncies:** (n/2) * (1 + n) = 6 * n
+* **Resolvim l'equació per *n*.**
+
+**Resolvent l'equació:**
+
+(n/2) * (1 + n) = 6 * n
+n/2 + n²/2 = 6n
+n² + n - 12n = 0
+n² - 11n = 0
+n(n - 11) = 0
+
+Això ens dona dues solucions: n = 0 o n = 11. 
+
+* n = 0 no té sentit en aquest context, ja que el cangur B ha de fer almenys un salt.
+
+**Per tant, el cangur B ha de fer 11 salts per agafar al cangur A.**
+
+Resposta: C) 11

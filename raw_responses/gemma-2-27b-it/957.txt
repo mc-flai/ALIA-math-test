@@ -1,0 +1,19 @@
+## Raonament:
+
+1. **Selecció del vèrtex:** Primer, hem de triar un vèrtex d'un dels triangles. Tenim 6 opcions per a fer-ho.
+
+2. **Línia que travessa:** Una vegada seleccionat un vèrtex, la línia ha de passar per un vèrtex de l'altre triangle.  Tenim 3 opcions per a triar aquest segon vèrtex.
+
+3. **Intersecció:** La línia ha de travessar almenys un dels triangles. Això significa que no podem triar els vèrtexs de manera que la línia passi per un costat de cada triangle sense intersectar-los.
+
+4. **Combinacions:** Per tant, tenim 6 opcions per al primer vèrtex i 3 opcions per al segon, donant un total de 6 * 3 = 18 combinacions possibles.
+
+5. **Repetició:** No obstant això, hem comptat cada línia dues vegades (una vegada per cada ordre en què seleccionem els vèrtexs). Per tant, hem de dividir el nombre de combinacions per 2.
+
+6. **Resultat:** 18 / 2 = 9.
+
+## Resposta:
+
+E) Entre 2 i 6, depenent de com estiguen dibuixats. 
+
+**Nota:** La resposta correcta no es troba entre les opcions donades. El nombre de línies possibles depèn de la disposició dels triangles. En alguns casos, podrien haver-hi menys de 9 línies possibles si la disposició dels triangles limita les opcions.

@@ -1,0 +1,31 @@
+## Raonament:
+
+Observem que la suma de squares de nombres consecutius té una estructura especial.  
+
+* **Primer terme:** 1² = 1
+* **Segona part:** 2² = 4
+* **Tercera part:** 3² = 9
+* **Quarta part:** 4² = 16
+* **...**
+
+Cada terme és el quadre de l'índex del nombre. 
+
+Per tant, per a la suma de squares de 1 a 2017, podem escriure:
+
+S = 1² + 2² + 3² +... + 2017²
+
+Per a la suma de squares de 1 a 2017, podem utilitzar la fórmula:
+
+S = (n * (n + 1) * (2n + 1)) / 6
+
+on n = 2017
+
+Substituint n = 2017, obtenim:
+
+S = (2017 * (2017 + 1) * (2 * 2017 + 1)) / 6
+
+S = (2017 * 2018 * 4037) / 6
+
+S = 4037 * 2018 * 336.5
+
+**Resposta:**  La resposta correcta és **C) 6**. 

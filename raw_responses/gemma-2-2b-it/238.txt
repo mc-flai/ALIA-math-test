@@ -1,0 +1,33 @@
+## Raonament:
+
+1. **Definir les possibles situacions:** El robot pot estar a 4 punts diferents:
+    * **Dreta:**  El robot ha avançat una unitat cap a la dreta.
+    * **Esquerra:** El robot ha avançat una unitat cap a l'esquerra.
+    * **Avall:** El robot ha avançat una unitat cap avall.
+    * **Darrere:** El robot ha avançat una unitat cap a l'origen.
+
+2. **Analitzar les possibles combinacions:**
+    * **Dau vermell parell:** Avança a la dreta.
+    * **Dau vermell senar:** Avança a l'esquerra.
+    * **Dau blau parell:** Avança cap avall.
+    * **Dau blau senar:** Avança cap amunt.
+
+3. **Calcular les probabilitats:**
+    * **Probabilitat de la situació dreta:** 1/2 (perquè el dau vermell és parell).
+    * **Probabilitat de la situació esquerra:** 1/2 (perquè el dau vermell és senar).
+    * **Probabilitat de la situació avall:** 1/2 (perquè el dau blau és parell).
+    * **Probabilitat de la situació amunt:** 1/2 (perquè el dau blau és senar).
+
+4. **Analitzar les possibilitats de tornar a l'origen:**
+    * **Combinació 1:**  Dreta, Dreta -> Avançar a la dreta.
+    * **Combinació 2:**  Esquerra, Esquerra -> Avançar a l'esquerra.
+    * **Combinació 3:**  Avall, Avall -> Avançar a l'esquerra.
+    * **Combinació 4:**  Amunt, Amunt -> Avançar a l'esquerra.
+
+5. **Calcular la probabilitat de tornar a l'origen:**
+    * La probabilitat de tornar a l'origen és la suma de les probabilitats de cada combinació.
+
+
+## Resposta:
+
+**E) 1/4** 

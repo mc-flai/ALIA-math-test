@@ -1,0 +1,17 @@
+## Raonament:
+
+El mínim comú múltiple (mcm) és el menor número que és múltiple de tots els números d'un conjunt. Per minimitzar el mcm, volem eliminar el nombre que té els factors primers més "grans" o "raros".
+
+* **Analitzem les opcions:**
+
+    * Eliminar el 9: El mcm dels restants serà múltiple de 3, però no de 9.
+    * Eliminar el 8: El mcm dels restants serà múltiple de 2, 3, 5, i 7.
+    * Eliminar el 7: El mcm dels restants serà múltiple de 2, 3, 5, i 8.
+    * Eliminar el 6: El mcm dels restants serà múltiple de 2, 3, 5, 7, i 8.
+    * Eliminar el 5: El mcm dels restants serà múltiple de 2, 3, 4, 6, 7, 8, i 9.
+
+* **Conclusió:**
+
+Eliminar el 9 farà que el mcm dels restants sigui el més petit possible, ja que només haurà de ser múltiple de 2, 3, 4, 5, 6, 7 i 8.
+
+## Resposta: A) 9

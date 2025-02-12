@@ -1,0 +1,18 @@
+## Raonament:
+
+Per a que el nombre canviï després de 9 km, el nombre inicial ha de ser tal que, sumant 9 a la última xifra, es produïsca un "portament" (una suma major que 9) que afecti a la següent xifra.
+
+Considerem les possibles configuracions de les últimes dues xifres del nombre inicial:
+
+* **11:** Sumant 9, obtenim 20. La última xifra canvia a 0 i la penúltima a 2.
+* **12:** Sumant 9, obtenim 21. La última xifra canvia a 1 i la penúltima a 2.
+* **21:** Sumant 9, obtenim 30. La última xifra canvia a 0 i la penúltima a 3 (que no és vàlid, ja que només podem usar 1 i 2).
+* **22:** Sumant 9, obtenim 31. La última xifra canvia a 1 i la penúltima a 3 (que no és vàlid).
+
+Per tant, les úniques configuracions possibles per a les últimes dues xifres són 11 i 12.
+
+Per a cada una d'aquestes configuracions, les quatre xifres restants del nombre inicial poden ser qualsevol combinació de 1s i 2s. Això ens dona 2^4 = 16 possibilitats per a cada configuració.
+
+En total, hi ha 16 + 16 = **32** nombres possibles.
+
+## Resposta: E) 32

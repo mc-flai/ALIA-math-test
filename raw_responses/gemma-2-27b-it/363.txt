@@ -1,0 +1,39 @@
+## Raonament:
+
+1. **Definim variables:**
+    *  `x`: proporció de xics
+    *  `y`: proporció de xiques
+
+2. **Sabem que:**
+    * `x + y = 1` (la suma de les proporcions és 100%)
+    * `15 = (17x + 12y) / (x + y)` (l'edat mitjana general és la suma de les edats de tots els estudiants dividida pel nombre total d'estudiants)
+
+3. **Substituïm `x + y` per 1 en la segona equació:**
+    * `15 = (17x + 12y) / 1`
+    * `15 = 17x + 12y`
+
+4. **Resolguem el sistema d'equacions:**
+    * Tenim dues equacions:
+        * `x + y = 1`
+        * `15 = 17x + 12y`
+    * Podem resoldre per substitució o eliminació. En aquest cas, resoldrem per substitució:
+        * Des de `x + y = 1`, obtenim `x = 1 - y`
+        * Substituïm `x` en la segona equació: `15 = 17(1 - y) + 12y`
+        * Simplifiquem i resolem per `y`:
+            * `15 = 17 - 17y + 12y`
+            * `-2 = -5y`
+            * `y = 0.4`
+        * Substituïm `y` en `x = 1 - y`:
+            * `x = 1 - 0.4`
+            * `x = 0.6`
+
+5. **Interpretem els resultats:**
+    * `x = 0.6` significa que el 60% dels estudiants són xics.
+    * `y = 0.4` significa que el 40% dels estudiants són xiques.
+
+6. **Expressem la proporció com a ratio:**
+    * La proporció entre xics i xiques és 60:40, que simplificada és 3:2.
+
+
+
+## Resposta: A) 3:2

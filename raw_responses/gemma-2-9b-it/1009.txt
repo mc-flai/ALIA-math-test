@@ -1,0 +1,18 @@
+Raonament:
+
+Aquest problema es pot resoldre utilitzant una combinació de raonament i consideracions sobre els patrons. 
+
+* **Començem amb un exemple:** Si treiem una bola groga, la següent pot ser blanca o verde. Si treiem una bola blanca, la següent pot ser groga o verde. I si treiem una bola verde, la següent pot ser groga o blanca. 
+
+* **El problema:** El problema ens diu que no podem treure tres boles del mateix color seguides. Això significa que sempre haurem de alternar colors.
+
+* **Maximitzar el nombre de boles:** Per maximitzar el nombre de boles que podem treure, volem assegurar-nos que sempre estem alternant colors. 
+
+* **Patrons:** Observant els patrons, podem veure que la manera més efectiva de maximitzar el nombre de boles és començar amb una bola de cada color, i després alternar entre els colors.
+
+* **Limitacions:** La limitació és que no podem treure tres boles del mateix color seguides. Això significa que si treiem tres boles grogues seguides, haurem de treure una bola blanca o verde per evitar trencar la regla.
+
+* **Calculant el màxim:**  Seguint aquest raonament, podem calcular el màxim nombre de boles que podem treure.
+
+
+Resposta: **C) 44** 

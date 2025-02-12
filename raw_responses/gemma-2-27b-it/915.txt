@@ -1,0 +1,19 @@
+## Raonament:
+
+Per resoldre aquest problema, hem de tenir en compte com es distribueixen les xifres en la numeració de les pàgines:
+
+* **Pàgines del 1 al 9:** Necessiten 9 xifres (1, 2, 3... 9).
+* **Pàgines del 10 al 99:** Necessiten 90 pàgines * 2 xifres/pàgina = 180 xifres.
+* **Pàgines del 100 en endavant:** Cada pàgina té 3 xifres.
+
+Comencem provant amb el nombre de pàgines que tindrien 231 xifres si totes les pàgines fossin de 3 xifres: 231 xifres / 3 xifres/pàgina = 77 pàgines.
+
+Això significa que el llibre té almenys 100 pàgines (100 + 77 = 177) i que les primeres 100 pàgines ja utilitzen 189 xifres (9 + 180).
+
+Per tant, ens falten 231 - 189 = 42 xifres per a les pàgines restants. Aquestes 42 xifres corresponen a 14 pàgines (42 xifres / 3 xifres/pàgina = 14 pàgines).
+
+En total, el llibre té 100 + 14 = **114 pàgines**.
+
+## Resposta:
+
+Cap de les opcions proporcionades és correcta. El llibre té 114 pàgines.

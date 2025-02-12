@@ -1,0 +1,17 @@
+Raonament:
+
+1. **Analitzem la informació:** Sabem que la part trencada comença a la pàgina 387 i que l'última pàgina té les mateixes xifres que la primera, però en ordre diferent. Això significa que l'última pàgina ha de ser un nombre format per les xifres 3, 8 i 7.
+
+2. **Trobem les possibles últimes pàgines:**  Les permutacions possibles de les xifres 3, 8 i 7 són: 378, 387, 738, 783, 837 i 873.
+
+3. **Eliminem les opcions impossibles:**  La primera pàgina és 387, per tant, l'última pàgina no pot ser 387.
+
+4. **Calculem el nombre de fulls:**  El nombre de fulls trencats és la diferència entre l'última pàgina i la primera pàgina + 1 (perquè comptem la primera pàgina).  
+
+    * Per exemple, si l'última pàgina fos 738, el nombre de fulls trencats seria 738 - 387 + 1 = 352.
+
+5. **Comparació amb les opcions:**  Calculeu el nombre de fulls per a cada permutació possible de les xifres 3, 8 i 7 i compareu-ho amb les opcions de resposta.
+
+
+
+Resposta: E) 352 

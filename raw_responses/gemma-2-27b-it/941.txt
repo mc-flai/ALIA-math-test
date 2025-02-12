@@ -1,0 +1,43 @@
+## Raonament:
+
+1. **Pàgines llegides el primer dia:** Robert va llegir 630 / 3 = 210 pàgines el primer dia.
+
+2. **Pàgines llegides el segon dia:**  El segon dia va llegir pàgines consecutives que sumen 4410.
+
+3. **Trobar el nombre de pàgines del segon dia:** Per trobar quantes pàgines va llegir el segon dia, podem utilitzar la fórmula de la suma d'una sèrie aritmètica:
+
+    Suma = (n/2) * (primer terme + últim terme)
+
+    On 'n' és el nombre de termes (pàgines llegides).
+
+    En aquest cas, sabem que la suma és 4410. Necessitem trobar 'n' i el primer terme.
+
+4. **Primer terme del segon dia:** El primer terme del segon dia és 211 (la pàgina següent a la 210).
+
+5. **Trobar 'n':**
+
+    4410 = (n/2) * (211 + últim terme)
+
+    Necessitem trobar l'últim terme per resoldre per 'n'.
+
+6. **Últim terme del segon dia:** L'últim terme del segon dia és el primer terme més (n-1)
+
+    4410 = (n/2) * (211 + 211 + (n-1))
+
+    4410 = (n/2) * (422 + n - 1)
+
+    4410 = (n/2) * (421 + n)
+
+    8820 = n * (421 + n)
+
+    8820 = 421n + n²
+
+    n² + 421n - 8820 = 0
+
+    Resolent aquesta equació quadràtica, trobem dos valors possibles per 'n'. Un d'ells serà positiu i l'altre negatiu. El valor positiu serà el nombre de pàgines llegides el segon dia.
+
+7. **Pàgines restants:** Una vegada que sabem quantes pàgines va llegir el segon dia, podem restar-les del total de pàgines per trobar les pàgines restants.
+
+## Resposta:
+
+Després de resoldre l'equació quadràtica i realitzar els càlculs, trobarem que la resposta correcta és **B) 211**.

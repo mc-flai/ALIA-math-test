@@ -1,0 +1,15 @@
+## Raonament:
+
+Podem resoldre aquest problema utilitzant l'estratègia de la **cerca binària**.
+
+1. **Primera pregunta:** Dividim el rang de nombres (1 a 15) per la meitat i preguntem si el nombre és menor o igual que 7. 
+    * Si la resposta és "sí", sabem que el nombre es troba entre 1 i 7.
+    * Si la resposta és "no", sabem que el nombre es troba entre 8 i 15.
+
+2. **Segona pregunta:**  Tornem a dividir el rang restant per la meitat. Si el nombre estava entre 1 i 7, preguntarem si és menor o igual que 3. Si estava entre 8 i 15, preguntarem si és menor o igual que 11.
+
+3. **Tercera pregunta:** Continuem dividint el rang per la meitat fins a reduir-lo a un sol nombre.
+
+En el pitjor dels casos, necessitem **3 preguntes** per determinar el nombre.
+
+## Resposta: C) 3

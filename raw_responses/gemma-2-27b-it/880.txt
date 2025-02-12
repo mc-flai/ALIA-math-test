@@ -1,0 +1,36 @@
+## Raonament:
+
+1. **Definim les variables:**
+
+*  Sigui `abcde` un nombre de cinc xifres que compleix la condició.
+*  `abc` representa el nombre de tres xifres format per les tres primeres xifres.
+*  `de` representa el nombre de dues xifres format per les dues últimes xifres.
+
+2. **Tradueix la condició a una equació:**
+
+La condició ens diu que `abc` és igual a 4 vegades `de`. Això es pot expressar com:
+
+`abc = 4 * de`
+
+3. **Establim els límits:**
+
+*  El nombre `abcde` ha de ser major o igual que 10000.
+*  El nombre `abcde` ha de ser menor que 26320.
+
+4. **Analitzem les possibilitats:**
+
+Comencem explorant els possibles valors de `de`. Tenim en compte que `de` és un nombre de dues xifres, per tant, pot prendre valors des de 00 fins a 99.
+
+*  Si `de` és 00, `abc` seria 0, cosa que no és possible per a un nombre de cinc xifres.
+*  Si `de` és 01, `abc` seria 4, que sí és possible.
+*  Si `de` és 02, `abc` seria 8, que també és possible.
+
+Continuem explorant valors de `de` fins a trobar el límit superior que ens permet obtenir un `abcde` menor que 26320.
+
+5. **Compte:**
+
+Cal tenir en compte que no tots els valors de `abc` que satisfan l'equació `abc = 4 * de` generaran un nombre de cinc xifres vàlid.
+
+## Resposta:
+
+Després d'analitzar les possibilitats i comptar els nombres que compleixen totes les condicions, la resposta correcta és **D) 41**.

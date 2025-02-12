@@ -1,0 +1,29 @@
+Raonament: 
+
+Observem el patró de la funció:
+
+* **f(2n) = f(n) + 1:**  La funció assigna a un nombre parell el valor del seu predecessor senar més 1.
+* **f(2n + 1) = f(2n):** La funció assigna a un nombre senar el valor del seu predecessor parell.
+
+A partir d'això, podem calcular f(2017) de la següent manera:
+
+* f(2016) = f(1008) + 1
+* f(1008) = f(504) + 1
+* f(504) = f(252) + 1
+*...
+* f(4) = f(2) + 1
+* f(2) = f(1) + 1 = 2
+
+Substituint els valors enrere, obtenim:
+
+* f(4) = 3
+* f(8) = 4
+* f(16) = 5
+*...
+* f(2016) = 1008 + 1 = 1009
+* f(2017) = f(2016) = 1009
+
+Resposta: Ninguna de les opcions proporcionades és correcta. La resposta correcta és 1009. 
+
+
+

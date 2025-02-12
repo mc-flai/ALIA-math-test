@@ -1,0 +1,19 @@
+## Raonament:
+
+Perquè n/(20-n) sigui un nombre enter quadrat perfecte, el numerador (n) ha de ser divisible per el quadrat d'un enter, i el denominador (20-n) també ha de ser divisible per el quadrat d'un enter.
+
+Podem començar provant valors per a n i veure si compleixen la condició.
+
+* **Si n = 0:** 0/(20-0) = 0, que és un quadrat perfecte.
+* **Si n = 1:** 1/(20-1) = 1/19, que no és un quadrat perfecte.
+* **Si n = 4:** 4/(20-4) = 4/16 = 1/4, que no és un quadrat perfecte.
+* **Si n = 9:** 9/(20-9) = 9/11, que no és un quadrat perfecte.
+* **Si n = 16:** 16/(20-16) = 16/4 = 4, que és un quadrat perfecte.
+
+Observem que a mesura que n augmenta, el denominador (20-n) disminueix. Això limita les possibilitats de trobar més solucions.
+
+## Resposta:
+
+**B) 2** 
+
+Hi ha dos nombres enters que compleixen la propietat: n = 0 i n = 16.

@@ -1,0 +1,27 @@
+Raonament:
+
+El problema ens diu que les pàgines es van numerar saltant-se tres. Això significa que per cada pàgina que veiem, hi ha dues pàgines que estan "ocultes". 
+
+Per trobar el nombre real de pàgines, podem seguir aquestes passos:
+
+1. **Identificar el patró:** Les pàgines numerades segueixen un patró: 1, 4, 7, 10... Aquest patró augmenta en 3.
+
+2. **Trobar la posició de la pàgina 92:**  La pàgina 92 és la última pàgina numerada.
+
+3. **Calcular el nombre de pàgines "ocultes":**  Com que cada pàgina numerada té dues "ocultes", el nombre total de pàgines és el doble de les pàgines numerades.
+
+4. **Calcular el nombre total de pàgines:**  Per trobar el nombre total de pàgines, podem dividir el número de pàgines numerades entre 3 i sumar 1.
+
+Resposta: 
+
+Per calcular el nombre de pàgines numerades, podem usar la fórmula:
+
+(Última pàgina numerada - 1) / 3 + 1 = (92 - 1) / 3 + 1 = 91 / 3 + 1 = 30.33 + 1 = 31.33
+
+Com que no podem tenir una fracció de pàgina, arremondarem cap amunt a 32.
+
+Però, com que cada pàgina numerada té dues "ocultes", el nombre total de pàgines és el doble: 32 * 2 = 64.
+
+
+
+ 

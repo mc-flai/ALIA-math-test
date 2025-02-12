@@ -1,0 +1,17 @@
+## Raonament:
+
+1. **Possibilitats per cada dígit:** Per a cada un dels quatre dígits d'un nombre de quatre xifres, tenim quatre opcions (1, 2, 3 o 4).
+
+2. **Nombre total de combinacions:** Com que no podem repetir dígits, el nombre total de combinacions possibles és 4 * 3 * 2 * 1 = 24.
+
+3. **Suma de cada dígit:** Cada dígit (1, 2, 3 i 4) apareixerà 6 vegades en la posició de les unitats, 6 vegades en la posició de les desenes, 6 vegades en la posició de les centenes i 6 vegades en la posició de les milers.
+
+4. **Càlcul de la suma:**
+    * Suma de les unitats: (1 + 2 + 3 + 4) * 6 = 60
+    * Suma de les desenes: (1 + 2 + 3 + 4) * 6 * 10 = 600
+    * Suma de les centenes: (1 + 2 + 3 + 4) * 6 * 100 = 6000
+    * Suma de les milers: (1 + 2 + 3 + 4) * 6 * 1000 = 60000
+
+5. **Suma total:** 60 + 600 + 6000 + 60000 = 66660
+
+## Resposta: A) 66660

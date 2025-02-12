@@ -1,0 +1,26 @@
+## Raonament:
+
+Per entendre la resposta, hem de veure com es comporta el nombre $10^n + 1$ respecte a 11. 
+
+* **Observació:**  El nombre 11 és un nombre primer. Això significa que si un nombre és divisible per 11, ha de ser divisible per 11 i per 1. 
+* **Teorema de Fermat:**  El teorema de Fermat afirma que per a qualsevol nombre primer *p* i per a qualsevol nombre natural *a*, la expressió $a^p - a$ és divisible per *p*. 
+* **Aplicació:**  En el nostre cas, podem aplicar el teorema de Fermat a la nostra expressió $10^n + 1$. 
+* **Simplificació:**  Si $10^n + 1$ és un múltiple de 11, significa que $10^n + 1$ ha de ser divisible per 11. Això implica que $10^n$ ha de ser congruent a 1 (mod 11). 
+
+**Analitzant les opcions:**
+
+* **A) n = 2m:**  Si $n = 2m$, llavors $10^n = 10^{2m} = (10^2)^m = 100^m$.  Per tant, $10^n + 1$ seria congruent a $100^m + 1$ (mod 11).  Però, $100^m$ és congruent a $1$ (mod 11) per la definició de congruència. 
+* **B) n = 2m + 1:**  Si $n = 2m + 1$, llavors $10^n = 10^{2m + 1} = (10^2)^m \cdot 10$.  Per tant, $10^n + 1$ seria congruent a $100^m \cdot 10 + 1$ (mod 11).  Però, $100^m \cdot 10$ és congruent a $0$ (mod 11). 
+* **C) n = 4m:**  Si $n = 4m$, llavors $10^n = 10^{4m} = (10^4)^m$.  Per tant, $10^n + 1$ seria congruent a $1000^m + 1$ (mod 11).  Però, $1000^m$ és congruent a $1$ (mod 11). 
+* **D) n = 4m + 1:**  Si $n = 4m + 1$, llavors $10^n = 10^{4m + 1} = (10^4)^m \cdot 10$.  Per tant, $10^n + 1$ seria congruent a $1000^m \cdot 10 + 1$ (mod 11).  Però, $1000^m \cdot 10$ és congruent a $0$ (mod 11). 
+* **E) n = 4m + 2:**  Si $n = 4m + 2$, llavors $10^n = 10^{4m + 2} = (10^4)^m \cdot 100$.  Per tant, $10^n + 1$ seria congruent a $1000^m \cdot 100 + 1$ (mod 11).  Però, $1000^m \cdot 100$ és congruent a $0$ (mod 11). 
+
+**Conclusió:**
+
+La única opció que s'adapta a la nostra conclusió és la **B) n = 2m + 1**. 
+
+
+
+## Resposta:
+
+**B) n = 2m + 1** 

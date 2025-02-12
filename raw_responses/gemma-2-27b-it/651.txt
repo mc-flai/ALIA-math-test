@@ -1,0 +1,27 @@
+## Raonament:
+
+Sigui la xifra que hem llevat "x" i el nombre de tres xifres "abc" (on a, b i c representen les xifres).
+
+* El nombre original seria 100a + 10b + c.
+* Després de llevar la primera xifra, el nombre resultant seria 10b + c.
+* Sabem que (10b + c) * 7 = 100a + 10b + c
+
+Simplificant l'equació:
+
+70b + 7c = 100a + 10b + c
+
+60b + 6c = 100a
+
+30b + 3c = 50a
+
+Com que a, b i c són xifres, el valor màxim de 30b + 3c és 27 + 27 = 54. Per tant, el valor de "a" ha de ser 1 (ja que 54 és menor que 50 * 2).
+
+Ara podem provar les opcions de resposta per trobar la que compleix l'equació:
+
+* **Si x = 1:** 30b + 3c = 50, no hi ha solució entera per b i c.
+* **Si x = 2:** 30b + 3c = 50, no hi ha solució entera per b i c.
+* **Si x = 3:** 30b + 3c = 50, no hi ha solució entera per b i c.
+* **Si x = 4:** 30b + 3c = 50, no hi ha solució entera per b i c.
+* **Si x = 5:** 30b + 3c = 50, podem trobar una solució: b = 1 i c = 0.
+
+## Resposta: E) 5

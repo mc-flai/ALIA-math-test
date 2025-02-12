@@ -1,0 +1,24 @@
+## Raonament:
+
+Per determinar si una suma o resta resulta en un nombre imparell, hem de considerar la paritat dels números que intervenen:
+
+* **Parell + Parell = Parell**
+* **Imparell + Imparell = Parell**
+* **Parell + Imparell = Imparell**
+* **Parell - Parell = Parell**
+* **Imparell - Imparell = Parell**
+* **Parell - Imparell = Imparell**
+
+En el cas de la multiplicació, si **almenys un** dels factors és imparell, el resultat serà imparell.
+
+Analitzem cada opció:
+
+* **A) 2025 + 2024 + 2023:** 2025 és imparell, 2024 és parell, 2023 és imparell. Imparell + Parell + Imparell = Imparell.
+* **B) 2025 – 2024 + 2023:** 2025 és imparell, 2024 és parell, 2023 és imparell. Imparell - Parell + Imparell = Imparell.
+* **C) 2025 × 2024 × 2023:** 2025 és imparell, per tant el resultat serà imparell.
+* **D) 2025 + 2024 – 2023:** 2025 és imparell, 2024 és parell, 2023 és imparell. Imparell + Parell - Imparell = Parell.
+* **E) 2025 + 2024 × 2023:** 2024 i 2023 són parells, la seva multiplicació serà parell. Imparell + Parell = Imparell.
+
+## Resposta:
+
+A), B), C) i E)

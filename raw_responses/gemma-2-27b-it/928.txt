@@ -1,0 +1,28 @@
+## Raonament:
+
+1. **Analitzem la funció:** La funció f(xy) = f(x + y) ens diu que el resultat de la funció aplicada al producte de dos enters és igual al resultat de la funció aplicada a la suma dels mateixos enters.
+
+2. **Utilitzem la informació donada:** Sabem que f(9) = 18.
+
+3. **Trobem un patró:**
+
+    * f(9 * 2) = f(9 + 9) => f(18) = f(18) (no ens aporta informació nova)
+    * f(9 * 3) = f(9 + 9 + 9) => f(27) = f(27) (no ens aporta informació nova)
+    * ...
+
+4. **Descomponem 2020:** Observem que 2020 es pot expressar com 9 * 224 + 4.
+
+5. **Apliquem la funció:**
+
+    * f(2020) = f(9 * 224 + 4) = f(9 * 224) * f(4) 
+    * Com que f(9) = 18, podem deduir que f(9 * 224) = f(9)^224 = 18^224
+
+6. **Calculem f(4):**
+
+    * f(4) = f(9 - 5) = f(9) / f(5)
+
+7. **No podem determinar f(5):** No tenim informació suficient per calcular f(5).
+
+## Resposta:
+
+E) un altre

@@ -1,0 +1,38 @@
+## Raonament:
+
+1. **Factorització:** Observem que l'equació es pot factoritzar.  Podem escriure-la com:
+   (aˣ - bˣ) - 2(ab)ˣ = 0
+
+2. **Identitat de la diferència de quadrats:**  La part (aˣ - bˣ) recorda a la identitat de la diferència de quadrats: a² - b² = (a + b)(a - b).  En aquest cas, podem aplicar-la amb a = aˣ i b = bˣ:
+   (aˣ + bˣ)(aˣ - bˣ) - 2(ab)ˣ = 0
+
+3. **Substitució:**  Per simplificar, podem fer una substitució:
+   *  u = aˣ
+   *  v = bˣ
+
+   L'equació esdevé:
+   (u + v)(u - v) - 2uv = 0
+
+4. **Desenvolupament:** Desenvolupant l'equació:
+   u² - v² - 2uv = 0
+   u² - 2uv - v² = 0
+
+5. **Solució per u:**  Aquesta equació és una equació quadràtica en u.  Podem resoldre-la per u utilitzant la fórmula quadràtica:
+   u = (2v ± √(4v² + 4v²)) / 2
+   u = v ± √(2v²)
+   u = v ± √2 * v
+
+6. **Substitució inversa:**  Ara substituïm de nou u = aˣ i v = bˣ:
+   aˣ = bˣ ± √2 * bˣ
+
+7. **Solució per x:**  Podem aïllar x en cada cas:
+   *  aˣ = bˣ (1 + √2)  =>  x = ln(b(1 + √2)) / ln(a)
+   *  aˣ = bˣ (1 - √2)  =>  x = ln(b(1 - √2)) / ln(a)
+
+8. **Anàlisi de les opcions:**  Observant les opcions de resposta, la solució més adequada és la que inclou (√2) al numerador.  
+
+
+## Resposta: B) (√2/ln(b))ln(a) 
+
+
+

@@ -1,0 +1,25 @@
+## Raonament:
+
+1. **Considerem els casos:**
+
+* **Cas 1: 5 veïns:** Si un passatger té exactament 5 veïns, significa que viatja en un vagó amb 5 altres passatgers (un total de 6 passatgers en el vagó).
+
+* **Cas 2: 10 veïns:** Si un passatger té exactament 10 veïns, significa que viatja en un vagó amb 4 altres passatgers (un total de 5 passatgers en el vagó) i els 6 passatgers dels vagons adjacents també són veïns.
+
+2. **Analitzem les possibilitats:**
+
+* No podem tenir només passatgers amb 5 veïns, ja que això implicaria que tots els vagons tenen 6 passatgers, i no hi hauria prou passatgers per a que tots tinguin 5 veïns.
+
+* Per tant, ha d'haver almenys un passatger amb 10 veïns.
+
+3. **Construïm una solució possible:**
+
+* Si un passatger té 10 veïns, el seu vagó i els dos vagons adjacents han de tenir 5 passatgers cadascun. Això fa un total de 15 passatgers.
+
+4. **Verifiquem la solució:**
+
+* En aquesta configuració, tots els passatgers tenen exactament 5 o 10 veïns.
+
+## Resposta:
+
+B) 15

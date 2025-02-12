@@ -1,0 +1,31 @@
+Raonament:
+
+1. **Analitzem les condicions:** Sabem que a, b i c són nombres de tres xifres amb la primera i la tercera xifra iguals. Això significa que podem escriure els nombres de la següent manera:
+    * a = 100*x + y + 100*y + x = 101*x + 100*y
+    * b = 100*z + y + 100*y + z = 101*z + 100*y
+    * c = 100*w + y + 100*y + w = 101*w + 100*y
+
+2. **Substituïm les relacions entre a, b i c:**
+    * b = 2a + 1  => 101*z + 100*y = 2*(101*x + 100*y) + 1
+    * c = 2b + 1 => 101*w + 100*y = 2*(101*z + 100*y) + 1
+
+3. **Simplificam les equacions:**
+    * 101*z + 100*y = 202*x + 200*y + 1
+    * 101*w + 100*y = 202*z + 200*y + 1
+
+4. **Analitzem les variables:**
+    * x, y, z i w són nombres enters.
+    * 100 ≤ a, b, c ≤ 999, per tant 1 ≤ x, z, w ≤ 9.
+    * La variable y pot variar entre 0 i 9.
+
+5. **Buscarem solucions:**
+    * A partir de les equacions simplificades, podem intentar trobar valors possibles per x, y, z i w que compleixin les condicions. 
+    * Notem que les equacions impliquen relacions entre els nombres, i que la variable y apareix en totes dues. Això ens pot ajudar a restringir les possibilitats.
+
+6. **Compte les solucions:**
+    * Una vegada que hàgim trobat totes les solucions possibles per a x, y, z i w, podem comptar quants valors diferents pot prendre el nombre a.
+
+Resposta: 
+
+
+**Nota:** El procés de trobar les solucions pot ser un poc laboriós, però seguint els passos anteriors i fent proves, es poden trobar les solucions possibles. 

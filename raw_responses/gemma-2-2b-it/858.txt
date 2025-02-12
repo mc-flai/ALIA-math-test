@@ -1,0 +1,24 @@
+## Raonament:
+
+Per aconseguir arribar de 45 a 200 en el mínim nombre de passos, hem de tenir en compte les següents consideracions:
+
+* **Doblar:**  Doblar el número anterior sempre pot augmentar el valor, però no sempre és el més eficient.
+* **Dividir per tres:** Dividir per tres pot reduir el valor, però no sempre és el més eficient.
+* **Quadrat:**  El quadrat pot augmentar o reduir el valor, però no sempre és el més eficient.
+
+Per aconseguir arribar a 200, hem de tenir en compte la combinació de les tres operacions. 
+
+**El procés de raonament:**
+
+1. **45:**  Comencem amb el número 45.
+2. **90:** Doblar el 45 (45 * 2 = 90)
+3. **270:** Dividir per tres el 90 (90 / 3 = 30) i el 30 * 9 = 270
+4. **810:** Doblar el 270 (270 * 2 = 540)
+5. **2160:** Dividir per tres el 540 (540 / 3 = 180) i el 180 * 12 = 2160
+
+**Observació:**  A partir d'aquest punt, podem veure que el procés de multiplicar per 2 o 3 o el quadrat no és el més eficient per aconseguir arribar a 200.
+
+
+## Resposta:
+
+**E) 4** 

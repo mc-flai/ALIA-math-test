@@ -1,0 +1,27 @@
+## Raonament:
+
+1. **Convertir a base 10:** Per poder operar amb les bases, primer convertim els nombres a base 10. Recordem que un nombre en base b es representa com:
+
+   aₙbⁿ + aₙ₋₁bⁿ⁻¹ + ... + a₁b¹ + a₀b⁰
+
+   * 14₆ = (1 * 6¹) + (4 * 6⁰) = 6 + 4 = 10
+   * 25₆ = (2 * 6¹) + (5 * 6⁰) = 12 + 5 = 17
+   * 416₆ = (4 * 6²) + (1 * 6¹) + (6 * 6⁰) = 144 + 6 + 6 = 156
+
+2. **Multiplicar en base 10:** Multiplicamos los números en base 10:
+
+   10 * 17 = 170
+
+3. **Convertir el resultado a base b:** Ahora debemos encontrar la base b que al multiplicar 14₆ y 25₆ nos dé 170. Para ello, probaremos con las opciones:
+
+   * **Opción A) b = 7:** 14₇ * 25₇ = 11 * 18 = 198 (no es 170)
+   * **Opción B) b = 8:** 14₈ * 25₈ = 12 * 21 = 252 (no es 170)
+   * **Opción C) b = 9:** 14₉ * 25₉ = 13 * 22 = 286 (no es 170)
+   * **Opción D) b = 12:** 14₁₂ * 25₁₂ = 16 * 29 = 464 (no es 170)
+   * **Opción E) b = 14:** 14₁₄ * 25₁₄ = 18 * 33 = 594 (no es 170)
+
+   Ninguna de las opciones anteriores funciona. Esto significa que el estudiante se ha equivocado en el cálculo o en la escritura de los números.
+
+## Resposta:
+
+Ninguna de las opciones es correcta.

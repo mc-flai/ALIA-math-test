@@ -1,0 +1,19 @@
+## Raonament:
+
+1. **Comencem amb la informació donada:** Sabem que f és estrictament creixent, el que significa que si un nombre és més gran que un altre, la seva imatge per f també serà més gran.
+
+2. **Analitzem la segona propietat:** f(f(k)) ≤ f(k + 1). Això ens diu que la imatge de la imatge d'un nombre k és menor o igual que la imatge del seu successor.
+
+3. **Considerem f(1000) = 1000:** A partir d'aquí, podem aplicar les propietats de f per trobar valors successius.
+
+4. **Aplicació de les propietats:**
+
+    * f(f(1000)) = f(1000) = 1000, ja que f(1000) = 1000.
+    * f(1001) ≥ f(f(1000)) = 1000, per la segona propietat.
+    * Com que f és estrictament creixent, f(1001) > f(1000) = 1000.
+
+5. **Conclusió:** Hem demostrat que f(1001) > 1000. Per tant, podem continuar aplicant aquest raonament per a valors successius de k, i veure que f(k) serà sempre major que k per a k > 1000.
+
+## Resposta:
+
+**C) f(2017) > 2017**

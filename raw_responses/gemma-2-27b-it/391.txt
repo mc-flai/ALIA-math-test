@@ -1,0 +1,19 @@
+## Raonament:
+
+Per trobar triangles amb perímetre 12, podem utilitzar la desigualtat triangular: la suma de les longituds de qualsevol dos costats d'un triangle ha de ser major que la longitud del tercer costat.
+
+1. **Començarem amb el costat més gran possible:** El costat més gran pot ser, com a màxim, 6 (ja que 6 + 6 = 12, i no podem tenir dos costats iguals al perímetre).
+
+2. **Considerem els casos possibles:**
+
+    * **Si el costat més gran és 6:** Els altres dos costats han de sumar 6. Les úniques combinacions possibles són (1, 5), (2, 4), (3, 3).
+    * **Si el costat més gran és 5:** Els altres dos costats han de sumar 7. L'única combinació possible és (3, 4).
+    * **Si el costat més gran és 4:** Els altres dos costats han de sumar 8. No hi ha combinacions possibles de nombres naturals que compleixin aquesta condició.
+
+3. **Eliminem els casos repetits:** Observem que (3, 4) apareix en dos casos.
+
+4. **Comptem les combinacions vàlides:** En total, tenim 3 combinacions de costats que compleixen les condicions: (1, 5, 6), (2, 4, 6) i (3, 4, 5).
+
+## Resposta:
+
+C) 3

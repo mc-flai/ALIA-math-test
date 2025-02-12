@@ -1,0 +1,32 @@
+Raonament:
+
+Si 141 dividit per *n* deixa un residu de 15, podem escriure això matemàticament com:
+
+141 = *k* * *n* + 15
+
+on *k* és un nombre enter.  
+
+Reordenant la fórmula, obtenim:
+
+141 - 15 = *k* * *n*
+126 = *k* * *n*
+
+Això significa que *n* és un divisor de 126.  Per trobar la suma de tots els divisors de 126, podem factoritzar 126:
+
+126 = 2 * 3² * 7
+
+Els divisors de 126 són totes les combinacions possibles dels seus factors primers.  Per trobar-los, podem considerar les potències de cada factor primer:
+
+* 2: pot ser 2⁰ o 2¹
+* 3: pot ser 3⁰, 3¹ o 3²
+* 7: pot ser 7⁰ o 7¹
+
+Combinant aquests, obtenim tots els divisors de 126:
+
+1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63, 126
+
+La suma d'aquests divisors és 364.
+
+Resposta: Ninguna de les opcions proporcionades és correcta. La suma dels divisors de 126 és 364. 
+
+

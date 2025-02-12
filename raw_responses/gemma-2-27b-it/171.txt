@@ -1,0 +1,37 @@
+## Raonament:
+
+1. **Caselles pintades per files:**
+    * Hi ha 33 files, i cada 3 files una no es pinta (33 / 3 = 11 files sense pintar).
+    * Per tant, es pinten 33 - 11 = 22 files.
+    * Cada fila té 21 caselles, per tant es pinten 22 * 21 = 462 caselles per les files.
+
+2. **Caselles pintades per columnes:**
+    * Hi ha 21 columnes, i la meitat es pinten (21 / 2 = 10.5, arrodonim a 10 columnes pintades).
+    * Cada columna té 33 caselles, per tant es pinten 10 * 33 = 330 caselles per les columnes.
+
+3. **Caselles pintades en total:**
+    * S'han pintat 462 + 330 = 792 caselles.
+
+4. **Caselles sense pintar:**
+    * La quadrícula té 21 * 33 = 693 caselles en total.
+    * Per tant, queden sense pintar 693 - 792 = -99 caselles.
+
+5. **Error en el càlcul:**
+
+    * El resultat negatiu indica un error en el càlcul. Això es deu a que hem comptat dues vegades les caselles que estan en una fila que no es pinta i en una columna que es pinta.
+
+6. **Solució correcta:**
+
+    * Per corregir l'error, hem de restar les caselles pintades dues vegades. 
+    * Calcular quantes caselles estan en files no pintades i columnes pintades. 
+    * Aquestes caselles es troben en les 11 files no pintades i les 10 columnes pintades.
+    * En total, hi ha 11 * 10 = 110 caselles pintades dues vegades.
+
+7. **Caselles sense pintar final:**
+
+    * Caselles sense pintar = Caselles totals - Caselles pintades + Caselles pintades dues vegades
+    * Caselles sense pintar = 693 - 792 + 110 = **11**
+
+## Resposta:
+
+Cap de les opcions proporcionades és correcta. La resposta correcta és **11**.

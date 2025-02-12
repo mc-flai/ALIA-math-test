@@ -1,0 +1,22 @@
+Raonament: 
+
+Calcularem els primers termes de la successió per veure si hi ha un patró:
+
+* a₂ = a₁/a₀ = 10/4 = 5/2
+* a₃ = a₂/a₁ = (5/2)/10 = 1/4
+* a₄ = a₃/a₂ = (1/4)/(5/2) = 1/10
+* a₅ = a₄/a₃ = (1/10)/(1/4) = 2/5
+
+Observam que la successió es repeteix: 5/2, 1/4, 1/10, 2/5...
+
+La longitud d'aquesta repetició és 4.  Per saber el valor de a₂₀₁₅, dividim l'índex 2015 entre la longitud de la repetició (4):
+
+2015 ÷ 4 = 503 remainder 3
+
+El quocient (503) ens indica que la successió es repeteix 503 vegades completament. El residu (3) ens indica que el terme a₂₀₁₅ correspon al tercer terme de la repetició.
+
+Per tant, a₂₀₁₅ = 1/4.
+
+Resposta: D) 
+
+

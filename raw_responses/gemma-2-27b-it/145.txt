@@ -1,0 +1,67 @@
+## Raonament:
+
+Sigui **P** el nombre total de pomes.
+
+* **Situació 1:** N xics es reparteixen les pomes: P / N = pomes per nen (sense sobrar)
+* **Situació 2:** N - 2 xics es reparteixen les pomes: P / (N - 2) = pomes per nen + 1
+* **Situació 3:** N - 3 xics es reparteixen les pomes: P / (N - 3) = pomes per nen + 2
+
+A partir d'aquestes equacions, podem plantejar un sistema d'equacions per resoldre el valor de N.
+
+1. **Des del enunciat, podem expressar les equacions de la següent manera:**
+
+   * P = N * (Pomes per nen)
+   * P = (N - 2) * (Pomes per nen + 1)
+   * P = (N - 3) * (Pomes per nen + 2)
+
+2. **Substituint la primera equació en les segones:**
+
+   * N * (Pomes per nen) = (N - 2) * (Pomes per nen + 1)
+   * N * (Pomes per nen) = (N - 3) * (Pomes per nen + 2)
+
+3. **Simplificant les equacions:**
+
+   * N * (Pomes per nen) = N * (Pomes per nen) + N - 2 * (Pomes per nen) - 2
+   * N * (Pomes per nen) = N * (Pomes per nen) + 2N - 6 * (Pomes per nen) - 6
+
+4. **Cancel·lant termes comuns:**
+
+   * N - 2 * (Pomes per nen) - 2 = 0
+   * 2N - 6 * (Pomes per nen) - 6 = 0
+
+5. **Resolent el sistema d'equacions:**
+
+   * De la primera equació, obtenim: N = 2 * (Pomes per nen) + 2
+   * Substituint en la segona equació: 2 * (2 * (Pomes per nen) + 2) - 6 * (Pomes per nen) - 6 = 0
+   * Simplificant: 4 * (Pomes per nen) + 4 - 6 * (Pomes per nen) - 6 = 0
+   * -2 * (Pomes per nen) - 2 = 0
+   * -2 * (Pomes per nen) = 2
+   * (Pomes per nen) = -1
+
+   Com que no podem tenir un nombre negatiu de pomes per nen, hem de revisar les nostres suposicions.
+
+6. **Revisant les opcions de resposta:**
+
+   * Provem amb N = 6:
+
+     * Si hi ha 6 xics, i cada nen rep 5 pomes, el total de pomes seria 30.
+     * Si hi ha 4 xics, cada nen rebriria 7 pomes i 5 pomes sobrarien.
+     * Si hi ha 3 xics, cada nen rebriria 10 pomes i 0 pomes sobrarien.
+
+   * Provem amb N = 8:
+
+     * Si hi ha 8 xics, i cada nen rep 4 pomes, el total de pomes seria 32.
+     * Si hi ha 6 xics, cada nen rebriria 5 pomes i 2 pomes sobrarien.
+     * Si hi ha 5 xics, cada nen rebriria 6 pomes i 2 pomes sobrarien.
+
+   * Provem amb N = 9:
+
+     * Si hi ha 9 xics, i cada nen rep 3 pomes i 3 pomes sobrarien.
+     * Si hi ha 7 xics, cada nen rebriria 4 pomes i 5 pomes sobrarien.
+     * Si hi ha 6 xics, cada nen rebriria 5 pomes i 2 pomes sobrarien.
+
+   * Provem amb N = 10:
+
+     * Si hi ha 10 xics, i cada nen rep 3 pomes, el total de pomes seria 30.
+     * Si hi ha 8 xics, cada nen rebriria 3 pomes i 6 pomes sobrarien.
+     * Si hi ha 7 xics, cada nen rebriria 4 pomes i

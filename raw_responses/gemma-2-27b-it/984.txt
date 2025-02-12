@@ -1,0 +1,17 @@
+## Raonament:
+
+Per obtenir el nombre més gran possible, volem que les xifres més grans (les A) ocupin les posicions més significatives. 
+
+Analitzem les opcions:
+
+* **A) AAABBC:** Les tres A estan al principi, maximitzant el valor.
+* **B) CAAABB:**  Té una A al principi, cosa que limita el valor màxim.
+* **C) BBAAAC:**  Té una B al principi, cosa que limita el valor màxim encara més que l'opció B.
+* **D) AAABCB:**  Les tres A estan al principi, però la C al mig limita el valor.
+* **E) AAACBB:**  Les tres A estan al principi, però la C al mig limita el valor.
+
+**Conclusió:** Les opcions B, C, D i E tenen una A en una posició menys significativa que les opcions A, limitant el valor màxim possible.
+
+## Resposta:
+
+B) CAAABB

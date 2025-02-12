@@ -1,0 +1,10 @@
+## Raonament:
+
+* **Entenc el problema:** El problema ens pregunta sobre el residu de la divisió de N² per 12, sabent que N es divideix per 6 amb un residu de 5.
+* **Observació:**  El residu de la divisió de N per 6 és 5, per tant, N pot ser escrit com a 6k + 5 on k és un enter.
+* **Aplicació:**  Si N es pot escriure com 6k + 5, podem substituir N² per (6k + 5)²:
+    * (6k + 5)² = 36k² + 60k + 25
+* **Simplificació:**  Observem que 36k² i 60k són multiples de 12.  Per tant, el residu de la divisió de N² per 12 és el residu de 25 per 12.
+* **Resolció:**  25 dividit per 12 té un residu de **1**.
+
+## Resposta: A) 1 

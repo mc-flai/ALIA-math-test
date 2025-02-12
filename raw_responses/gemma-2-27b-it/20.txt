@@ -1,0 +1,25 @@
+## Raonament:
+
+Aquest problema es resol utilitzant el concepte de la "suma de Frobenius". La suma de Frobenius és el problema de trobar el major nombre natural que no es pot expressar com a suma lineal no negativa de nombres enters donats.
+
+En aquest cas, els nostres nombres enters donats són 6 i 7. Podem començar a construir tots els possibles franqueigs:
+
+* 6
+* 7
+* 12 (6 + 6)
+* 13 (6 + 7)
+* 18 (6 + 6 + 6)
+* 19 (6 + 6 + 7)
+* 24 (6 + 6 + 6 + 6)
+* 25 (6 + 6 + 6 + 7)
+* 30 (6 + 6 + 6 + 6 + 6)
+* 31 (6 + 6 + 6 + 6 + 7)
+* 36 (6 + 6 + 6 + 6 + 6 + 6)
+
+... i així successivament.
+
+Observem que podem obtenir tots els nombres a partir de 6 en endavant, sumant múltiples de 6 i 7. Per tant, el franqueig més gran que no es pot pagar és el nombre just abans de poder formar el següent franqueig amb 6 i 7.
+
+En aquest cas, el franqueig més gran que no es pot pagar és **29**.
+
+## Resposta: B) 29

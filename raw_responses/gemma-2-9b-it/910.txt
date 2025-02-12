@@ -1,0 +1,25 @@
+Raonament:
+
+Per trobar el màxim nombre de persones que poden beneficiar-se de la promoció, hem de calcular el valor de 'n' que fa que el descompte per a un grup de 'n' persones sigui igual al preu de 4 entrades.
+
+* El preu normal de 4 entrades és 4 * 4 = 16.
+* El descompte per a un grup de 'n' persones és de 'n%'
+* Això significa que el preu per a un grup de 'n' persones seria 4 - (4 * n/100)
+
+Per tant, hem de resoldre la següent equació:
+
+4 - (4 * n/100) = 16
+
+Resolent per 'n':
+
+* - (4 * n/100) = 12
+* -n/25 = 3
+* n = -75
+
+Com que 'n' no pot ser negatiu, hem de considerar el límit superior del descompte. El màxim descompte que es pot aplicar és del 100%, en aquest cas, el preu per a un grup de 'n' persones seria 0.
+
+Per tant, el màxim nombre de persones que poden beneficiar-se de la promoció és el nombre de persones que permet un descompte del 100%, que és 100.
+
+Resposta: E) 100 
+
+

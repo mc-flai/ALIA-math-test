@@ -1,0 +1,13 @@
+## Raonament:
+
+1. **Combinacions:** Cada corda es forma connectant dos dels vint punts. Per tant, el nombre total de cordes possibles seria la combinació de 20 elements presos de 2 en 2, que es calcula com 20! / (2! * 18!) = 190.
+
+2. **Cordes massa curtes:** Les cordes que connecten punts adjacents tenen la longitud del radi.  Hi ha 20 cordes d'aquesta longitud.
+
+3. **Cordes massa llargues:** La corda que passa pel diàmetre connecta dos punts diametralment oposats. Hi ha 20 cordes d'aquesta longitud.
+
+4. **Restar les cordes no vàlides:** Per trobar el nombre de cordes que compleixen la condició (més llargues que el radi però més curtes que el diàmetre), restem les cordes massa curtes i massa llargues del nombre total de cordes: 190 - 20 - 20 = 150.
+
+## Resposta:
+
+**E) 160**

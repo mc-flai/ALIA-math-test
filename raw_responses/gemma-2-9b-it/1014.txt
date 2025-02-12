@@ -1,0 +1,21 @@
+Raonament:
+
+Imaginem un hexàgon regular amb els seus vèrtexs etiquetats A, B, C, D, E i F. 
+
+* Si volem trobar els punts que estan a 1 cm de dos vèrtexs, pensem en els dos vèrtexs com a centres de dos cercles amb radi de 1 cm. 
+* Els punts que estan a 1 cm de dos vèrtexs seran els punts que pertanyen a la intersecció d'aquests dos cercles.
+* La intersecció de dos cercles amb el mateix radi que tenen els seus centres a una distància igual a la longitud d'un costat de l'hexàgon, formarà un cercle més petit.
+* Aquest cercle més petit tindrà un diàmetre igual a la longitud d'un costat de l'hexàgon.
+* Per tant, cada parell de vèrtexs de l'hexàgon tindrà 6 punts en la intersecció dels seus cercles amb radi de 1 cm.
+
+* Però, hem de tenir en compte que no volem comptar els punts que estan a la intersecció de més de dos cercles.
+
+* Per tant, el nombre total de punts que compleixen la condició serà 6 * 6 = 36.
+
+* Però, hem de dividir per 2 perquè hem comptat cada punt dues vegades (una per cada parell de vèrtexs).
+
+* Finalment, el nombre total de punts és 36 / 2 = 18.
+
+
+
+Resposta: Ninguna de les opcions proporcionades és correcta. La resposta correcta és 18.

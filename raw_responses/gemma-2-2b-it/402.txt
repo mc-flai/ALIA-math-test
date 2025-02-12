@@ -1,0 +1,25 @@
+## Raonament:
+
+Per a maximitzar el valor de la expressió (N+M)/(N-M), volem maximitzar el denominador (N-M) i minimitzar el numerador (N+M). 
+
+* **Maximitzant el denominador:**  Per a maximitzar (N-M), necessitem que N sigui el màxim possible i M el mínim possible. 
+* **Minimitzant el numerador:** Per a minimitzar (N+M), necessitem que N sigui el mínim possible i M el màxim possible.
+
+Amb les restriccions de 51 ≤ N ≤ 101 i 19 ≤ M ≤ 49, podem observar:
+
+* **N:** El valor més gran possible és 101.
+* **M:** El valor més petit possible és 19.
+
+**Combinant:**
+
+* **N = 101:**  (N+M)/(N-M) = (101 + 19)/(101 - 19) = 120/82 = 1.47
+* **M = 49:** (N+M)/(N-M) = (101 + 49)/(101 - 49) = 150/52 = 2.88
+
+**Conclusió:**
+
+Amb N = 101 i M = 49, la expressió (N+M)/(N-M) té el valor més gran.
+
+
+## Resposta: 
+
+**C) 40** 

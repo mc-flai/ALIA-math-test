@@ -1,0 +1,31 @@
+Raonament:
+
+Observar la successió i calcular els primers termes:
+
+* a₀ = 1
+* a₁ = 2
+* a₂ = a₁ + (a₀)² = 2 + 1² = 3
+* a₃ = a₂ + (a₁)² = 3 + 2² = 7
+* a₄ = a₃ + (a₂)² = 7 + 3² = 16
+* a₅ = a₄ + (a₃)² = 16 + 7² = 65
+
+Veiem que els residus de la divisió entera per 7 segueixen un patró:
+
+* a₀ % 7 = 1
+* a₁ % 7 = 2
+* a₂ % 7 = 3
+* a₃ % 7 = 0
+* a₄ % 7 = 2
+* a₅ % 7 = 1
+
+El patró es repeteix cada 6 termes.
+
+Per saber el residu de a₂₀₁ per 7, cal calcular el residu de 201 entre 6:
+
+201 % 6 = 3
+
+Això significa que a₂₀₁ tindrà el mateix residu que a₃ quan es divideix per 7, que és **0**.
+
+Resposta: A) 0 
+
+

@@ -1,0 +1,22 @@
+## Raonament:
+
+1. **Calcular el nombre de diputats per cada partit:**
+    * 10% de 300 diputats = 30 diputats
+    * 20% de 300 diputats = 60 diputats
+    * 25% de 300 diputats = 75 diputats
+    * 45% de 300 diputats = 135 diputats
+
+2. **Com a mínim, cada partit tindrà una dona i un home alternant-se:**
+
+    * En cada partit, el nombre mínim de dones serà la meitat del nombre total de diputats del partit.
+
+3. **Calcular el nombre mínim de dones per cada partit:**
+    * 30 diputats / 2 = 15 dones
+    * 60 diputats / 2 = 30 dones
+    * 75 diputats / 2 = 37.5 (arrodonim a 37 dones, ja que no podem tenir mig diputat)
+    * 135 diputats / 2 = 67.5 (arrodonim a 67 dones)
+
+4. **Sumar el nombre mínim de dones de tots els partits:**
+    * 15 + 30 + 37 + 67 = 149 dones
+
+## Resposta: C) 149

@@ -1,0 +1,22 @@
+Raonament:
+
+* **Càlcul de partides per equip:** Un equip de 3 jugadors jugarà 3 * 2 = 6 partides contra cada altre equip.
+* **Càlcul de partides totals:** Si hi ha 'n' equips, cada equip jugarà 6*(n-1) partides. 
+* **Equació:**  El nombre total de partides és igual a la suma de partides per equip: 6*(n-1)*n = 250
+* **Solució:** Simplificarem l'equació i la resolvem per 'n'. 
+
+6n² - 6n - 250 = 0
+
+Podem utilitzar la fórmula quadràtica per trobar les solucions de 'n'.  
+
+n = (-b ± √(b² - 4ac)) / 2a
+
+On a = 6, b = -6, i c = -250.
+
+Resolent la fórmula, obtindrem dues solucions per 'n'.  La solució que sigui un nombre enter positiu serà el nombre màxim d'equips que poden participar.
+
+Resposta:  
+
+(Calcula les solucions de la fórmula quadràtica i selecciona la resposta correcta entre les opcions A, B, C, D o E). 
+
+

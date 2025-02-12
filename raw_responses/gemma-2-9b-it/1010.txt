@@ -1,0 +1,19 @@
+Raonament: 
+
+Per trobar la quantitat màxima de nombres bonics consecutius, hem de buscar un patró. 
+
+* **Considerem els nombres de tres xifres:** Els nombres de tres xifres van des del 100 al 999.
+* **La xifra central:** La xifra central d'un nombre de tres xifres pot ser qualsevol xifra del 0 al 9.
+* **La suma de les altres dues xifres:** La suma de les altres dues xifres pot variar entre 0 i 18.
+
+Perquè un nombre sigui "bonic", la xifra central ha de ser més gran que la suma de les altres dues xifres. Això significa que la xifra central ha de ser almenys 10.
+
+* **Patró:**  Com que la xifra central ha de ser almenys 10, els nombres bonics consecutius començaran amb 100, 200, 300, etc.  
+
+* **Limitació:**  La xifra central màxima és 9, per tant, només podem tenir nombres bonics fins al 900.
+
+* **Nombres bonics consecutius:**  Podem tenir nombres bonics consecutius fins al 900, però la quantitat màxima de nombres bonics consecutius que podem trobar és 8 (100, 200, 300, 400, 500, 600, 700, 800).
+
+
+
+Resposta: C) 8

@@ -1,0 +1,17 @@
+## Raonament:
+
+Un nombre parell és aquell que és divisible per 2. Per determinar si un nombre de la forma n2018 + (n + 1)2017 és parell, podem analitzar la paritat de cada terme per separat:
+
+* **n2018:** La paritat d'un nombre elevat a una potència depèn de la paritat de la base. Si n és parell, n2018 serà parell. Si n és imparell, n2018 serà imparell.
+
+* **(n + 1)2017:** De la mateixa manera, si n + 1 és parell, (n + 1)2017 serà parell. Si n + 1 és imparell, (n + 1)2017 serà imparell.
+
+Ara, observem la successió:
+
+* Quan n és parell, n + 1 és imparell, i viceversa.
+
+Per tant, en cada parell de termes consecutius de la successió, un terme serà parell i l'altre imparell. La suma d'un nombre parell i un nombre imparell sempre és un nombre imparell.
+
+## Resposta:
+
+A) Cap

@@ -1,0 +1,14 @@
+## Raonament:
+
+* **Combinacions:** Per formar un triangle, necessitem triar 3 punts entre els 7 disponibles. 
+* **Fórmula de combinacions:** La quantitat de maneres de triar 3 elements d'un conjunt de 7 es calcula amb la fórmula de combinacions: ₇C₃ = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 * 1) = 35.
+
+* **Punt especial:**  Com que 6 punts estan en una recta, no podem formar triangles amb 3 d'aquests punts. 
+
+* **Restar casos no vàlids:** Per tant, hem de restar del total de combinacions els casos on els 3 punts es troben en la recta.
+
+* **Casos no vàlids:**  Com que tenim 6 punts en la recta, hi ha ₆C₃ = 6! / (3! * 3!) = (6 * 5 * 4) / (3 * 2 * 1) = 20 maneres de triar 3 punts d'aquesta recta.
+
+* **Resultat final:**  El nombre total de triangles que es poden dibuixar és 35 - 20 = 15.
+
+## Resposta: D) 15

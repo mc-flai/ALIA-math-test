@@ -1,0 +1,17 @@
+## Raonament:
+
+1. **Múltiples de 6:** Un nombre és múltiple de 6 si és múltiple de 2 i de 3.
+
+2. **Múltiple de 2:** Un nombre és múltiple de 2 si la seva última xifra és parella.
+
+3. **Múltiple de 3:** Un nombre és múltiple de 3 si la suma de les seves xifres és múltiple de 3.
+
+4. **Xifres augmentants:**  Necessitem un nombre de 4 xifres on les xifres augmenten d'esquerra a dreta.
+
+5. **Maximitzar:** Volem el nombre més gran possible que compleixi totes les condicions.
+
+Considerant aquests punts, podem començar provant xifres per a la posició de les milers. Com volem el nombre més gran, començarem per 7.
+
+* Si la xifra de les milers és 7, les xifres restants han de ser 8, 9 i un nombre parell per ser múltiple de 2. La suma 7+8+9 = 24, que és múltiple de 3. Per tant, el nombre 7896 compleix totes les condicions.
+
+## Resposta: A) 7

@@ -1,0 +1,19 @@
+## Raonament:
+
+1. **Definició del problema:**  Necessitem trobar el valor de 'n' que, quan dividim 141 per 'n', resulta en un residu de 15.  En altres paraules, podem escriure la condició: 
+   141 = n * k + 15, on 'k' és un enter.
+
+2. **Simplificació:**  Per simplificar la equació, podem reescriure-la com:
+   141 - 15 = n * k
+   126 = n * k
+
+3. **Identificar els factors:**  Per trobar els valors de 'n', hem de buscar factors de 126 que siguin positius i que, al multiplicar-los per un altre enter, donin 126.  Els factors de 126 són: 1, 2, 3, 6, 9, 14, 21, 42, 73, 126.
+
+4. **Encontrar la solució:**  Observem que 126 = 6 * 21.  Per tant, n = 6.
+
+5. **Verificació:**  Per comprovar si n = 6 és la solució, podem dividir 141 per 6: 141 / 6 = 23.5.  El residu de la divisió és 15.
+
+
+## Resposta:
+
+**Resposta: E) 270** 

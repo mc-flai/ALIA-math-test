@@ -1,0 +1,34 @@
+## Raonament:
+
+Per resoldre aquest problema, podem utilitzar una combinació de lògica i prova i error.
+
+1. **Límits:** Sabem que el perímetre és 20. Això significa que la suma de les longituds dels tres costats ha de ser 20.
+
+2. **Desigualtat triangular:**  En qualsevol triangle, la suma de les longituds de dos costats ha de ser sempre major que la longitud del tercer costat.
+
+3. **Nombres naturals:** Les longituds dels costats han de ser nombres naturals positius.
+
+4. **Combinacions:** Comencem a provar combinacions de nombres naturals que sumin 20, tenint en compte la desigualtat triangular.
+
+5. **Eliminació de duplicats:** Recordem que triangles amb els costats en ordre diferent es consideren iguals.
+
+**Seguint aquest procés, les combinacions possibles són:**
+
+* 1, 6, 13 (no compleix la desigualtat triangular)
+* 2, 5, 13 (no compleix la desigualtat triangular)
+* 2, 6, 12 (no compleix la desigualtat triangular)
+* 3, 4, 13 (no compleix la desigualtat triangular)
+* 3, 5, 12 (no compleix la desigualtat triangular)
+* 3, 6, 11
+* 3, 7, 10
+* 4, 5, 11
+* 4, 6, 10
+* 5, 5, 10
+* 5, 6, 9
+* 6, 6, 8
+
+## Resposta:
+
+**C) 8** 
+
+Hi ha 8 triangles diferents que compleixen les condicions.

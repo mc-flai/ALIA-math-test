@@ -1,0 +1,14 @@
+## Raonament:
+
+1. **Combinacions de dígits:**  Comencem per pensar en quantes combinacions de tres xifres tenim.  Cada xifra pot ser 0, 1, 2 o 3. Això significa que tenim 4 opcions per a cada xifra. 
+
+2. **Considerar els dígits:**  Per a cada xifra, tenim que tenir en compte si la xifra és 1, 2 o 3. 
+
+3. **Càlcul:**  Per a cada xifra, tenim 3 opcions (1, 2 o 3).  Per tant, per a cada xifra, tenim 3 x 3 x 3 = 27 combinacions.
+
+4. **Eliminació de duplicats:**  No podem tenir la mateixa xifra en cada combinació. Això significa que la resposta final haurà de tenir en compte quantes combinacions de tres xifres tenim amb un dels tres dígits (1, 2 o 3).
+
+
+## Resposta:
+
+**Resposta: E) 606** 

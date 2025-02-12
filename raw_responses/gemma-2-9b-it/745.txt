@@ -1,0 +1,19 @@
+Raonament:
+
+Per minimitzar la suma, volem que els nombres en els vèrtexs siguin el més petits possible.  Considerem les restriccions:
+
+* **Costats:** Si dos nombres estan connectats per un costat, un és múltiple de l'altre. Això significa que podem tenir parells com (1, 2), (2, 4), (3, 6), etc.
+* **Diagonals:** Si dos nombres estan als extrems d'una diagonal, cap dels dos no és múltiple de l'altre. Això ens dona més flexibilitat per triar nombres primers o que no siguin fàcilment multiplicables.
+
+Per minimitzar la suma, començarem amb el nombre més petit possible en un dels vèrtexs.  
+
+* **Vèrtex 1:**  Posar 1.
+* **Vèrtex 2 (connectat per costat):**  Perquè sigui múltiple de 1, posarem 2.
+* **Vèrtex 3 (diagonal):**  Perquè no sigui múltiple de 1 o 2, podem posar 3.
+* **Vèrtex 4 (connectat per costat):**  Perquè sigui múltiple de 3, posarem 6.
+
+La suma dels quatre nombres és 1 + 2 + 3 + 6 = 12.
+
+Resposta: A) 12 
+
+

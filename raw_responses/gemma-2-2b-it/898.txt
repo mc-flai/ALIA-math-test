@@ -1,0 +1,20 @@
+## Raonament:
+
+Per a resoldre aquesta pregunta, hem de tenir en compte que hi ha dos patrons possibles:
+
+* **Patró 1:**  Puja dos esglaons seguits.
+* **Patró 2:**  Puja un esglaó seguit, i els altres sempre d'un en un.
+
+Per tant, per a cada esglaó, hi ha dues opcions possibles: pujar-lo o no. 
+
+Per a calcular el nombre de maneres diferents que Pere pot pujar en l'escala, hem de tenir en compte que:
+
+* **Els esglaons que es pugen en un en un:** hi ha 8 esglaons, i per cada esglaó hi ha 2 opcions.
+* **Els esglaons que es pugen en dos en dos:** hi ha 8 esglaons, i per cada esglaó hi ha 2 opcions.
+
+Per tant, el nombre de maneres diferents que Pere pot pujar en l'escala és: 2 x 2 x 2 x 2 x 2 x 2 x 2 x 2 = 2^8 = 256.
+
+
+## Resposta:
+
+**C) 25** 

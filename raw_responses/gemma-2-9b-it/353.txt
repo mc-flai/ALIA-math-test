@@ -1,0 +1,21 @@
+Raonament:
+
+* **Divisibilitat per 55:** Si un nombre és divisible per 55, és divisible tant per 5 com per 11. Això significa que si la afirmació "A és divisible per 55" és verdadera, les afirmacions "A és divisible per 5" i "A és divisible per 11" també ho són.
+
+* **Menor que 10:**  Aquest criteri limita les possibilitats.
+
+Considerem les combinacions possibles:
+
+* **Veritat: 55, Fals: 5, 11:**  Si A és divisible per 55, també ho seria per 5 i 11. Això no és possible ja que A ha de ser menor que 10.
+
+* **Veritat: 5, 11, Fals: 55:**  Si A és divisible per 5 i 11, també ho seria per 55. Això és possible.
+
+* **Veritat: 5, Fals: 11, 55:**  Si A és divisible per 5, pot ser divisible per 55, però no per 11. Això és possible.
+
+* **Veritat: 11, Fals: 5, 55:**  Si A és divisible per 11, pot ser divisible per 55, però no per 5. Això és possible.
+
+
+Resposta: 
+No hi ha una resposta única correcta, ja que hi ha diverses opcions possibles per a A. 
+
+

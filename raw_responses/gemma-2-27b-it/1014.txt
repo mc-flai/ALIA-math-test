@@ -1,0 +1,21 @@
+## Raonament:
+
+1. **Visualitza l'hexàgon:** Imagina un hexàgon regular amb tots els seus costats mesurant 1 cm.
+
+2. **Considera dos vèrtexs:**  Selecciona dos vèrtexs adjacents de l'hexàgon.
+
+3. **Circumferència:**  Tots els punts que estan a 1 cm de distància d'aquests dos vèrtexs formen una circumferència amb un radi de 1 cm i amb centre en el punt mitjà del segment que uneix els dos vèrtexs.
+
+4. **Intersecció:** Aquesta circumferència intersectarà dos costats de l'hexàgon.
+
+5. **Punts d'intersecció:** Els punts d'intersecció entre la circumferència i els costats de l'hexàgon són els punts que busquem. Cada intersecció dona un punt.
+
+6. **Total de punts:** Com la circumferència intersecta dos costats, hi haurà **dos** punts que compleixen la condició.
+
+7. **Repetició:**  Si repetim el procés per cada parell de vèrtexs adjacents de l'hexàgon, trobarem dos punts per cada parell.
+
+8. **Total de parells:** Un hexàgon té 6 vèrtexs, per tant, hi ha 6 parells de vèrtexs adjacents.
+
+9. **Càlcul final:** En total, hi haurà 6 parells * 2 punts per parell = **12** punts que compleixen la condició.
+
+## Resposta: C) 12

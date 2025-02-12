@@ -1,0 +1,33 @@
+## Raonament:
+
+Per trobar el centre del cub, hem de trobar el punt mitjà de tots els seus vèrtex.  
+
+1. **En un cub, els vèrtex estan disposats en una estructura regular.**  
+2. **El centre del cub és el punt que trobem al centre de la seva estructura.** 
+3. **Per trobar el centre, podem utilitzar la mitjana de les coordenades de tots els vèrtex.** 
+
+Per tant, per trobar el centre del cub, podem calcular la mitjana de les coordenades de cada vèrtex. 
+
+**Calcul de la mitjana:**
+
+* **Mitjana de coordenades:** (x1 + x2 + x3) / 3, (y1 + y2 + y3) / 3, (z1 + z2 + z3) / 3
+
+**Aplicació a cada vèrtex:**
+
+* **P(3, 4, 1):** (3 + 5 + 1) / 3, (4 + 2 + 9) / 3, (1 + 6 + 5) / 3
+* **Q(5, 2, 9):** (5 + 5 + 1) / 3, (2 + 2 + 9) / 3, (9 + 6 + 5) / 3
+* **R(1, 6, 5):** (1 + 5 + 1) / 3, (6 + 2 + 5) / 3, (5 + 6 + 5) / 3
+
+**Calcular la mitjana de cada vèrtex:**
+
+* **P:** (9 / 3, 15 / 3, 12 / 3) = (3, 5, 4)
+* **Q:** (11 / 3, 19 / 3, 20 / 3)
+* **R:** (7 / 3, 13 / 3, 16 / 3)
+
+**En resum:**
+
+* **El centre del cub és el punt mitjà de tots els vèrtex.** 
+* **El centre del cub és el punt (4, 3, 5).**
+
+
+## Resposta: A) A(4,3,5) 

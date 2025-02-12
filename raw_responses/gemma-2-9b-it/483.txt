@@ -1,0 +1,28 @@
+Raonament:
+
+Sigui el nombre de dos dígits $10a + b$, on $a$ és el dígito de les desenes i $b$ és el dígito de les unitats.  
+
+Segons el problema, tenim la següent equació:
+
+$$10a + b = 4(a + b)$$
+
+Desenvolupant l'equació:
+
+$$10a + b = 4a + 4b$$
+
+$$6a = 3b$$
+
+$$2a = b$$
+
+Això significa que el dígito de les unitats ($b$) és el doble del dígito de les desenes ($a$).  
+
+Els possibles valors per a $a$ són 1, 2, 3,..., 4 (perquè $a$ ha de ser un dígito de dos dígits).  Per cada valor de $a$, podem calcular el valor corresponent de $b$.
+
+* Si $a = 1$, llavors $b = 2$.
+* Si $a = 2$, llavors $b = 4$.
+* Si $a = 3$, llavors $b = 6$.
+* Si $a = 4$, llavors $b = 8$.
+
+Per tant, hi ha **4** nombres de dos dígits que compleixen la condició.
+
+Resposta: D) 4

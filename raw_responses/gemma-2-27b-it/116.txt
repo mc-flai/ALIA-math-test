@@ -1,0 +1,35 @@
+## Raonament:
+
+Podem resoldre aquest problema observant un patró en la diferència de quadrats:
+
+* a² - b² = (a + b)(a - b)
+
+Aplicant això a la nostra expressió, podem agrupar els termes:
+
+(2015² - 2014²) + (2013² - 2012²) + ... + (3² - 2²) + 1²
+
+Que es converteix en:
+
+(2015 + 2014)(2015 - 2014) + (2013 + 2012)(2013 - 2012) + ... + (3 + 2)(3 - 2) + 1²
+
+Simplificant:
+
+(4029)(1) + (4025)(1) + ... + (5)(1) + 1²
+
+Això suma tots els nombres senars des de 1 fins a 4029, més 1. La suma dels primers n nombres senars és n². Per tant:
+
+1² + 3² + 5² + ... + 4029² = 4029²/4 + 1²
+
+= 4029²/4 + 1
+
+= (2014.5)² + 1
+
+= 2016² - 1/4 + 1
+
+= 2016² - 1/4 + 4/4
+
+= 2016² + 3/4
+
+Com que no tenim opcions amb fraccions, la resposta més propera és:
+
+## Resposta: B) 2016² - 1

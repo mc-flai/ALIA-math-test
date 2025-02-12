@@ -1,0 +1,33 @@
+## Raonament:
+
+Per resoldre aquest problema, cal analitzar les possibles combinacions que porten a un nombre parell final (c). 
+
+**1. Casos possibles per a 'a':**
+
+* Si a = 1 + 2 = 3, llavors 'a' és senar.
+* Si a = 1 + 3 = 4, llavors 'a' és parell.
+* Si a = 1 * 2 = 2, llavors 'a' és parell.
+* Si a = 1 * 3 = 3, llavors 'a' és senar.
+
+**2. Casos possibles per a 'b' i 'c' segons 'a':**
+
+* **Si 'a' és senar:** Perquè 'c' sigui parell, 'b' ha de ser parell (ja que parell * qualsevol = parell). La probabilitat que 'b' sigui parell donat que 'a' és senar és 1/2 (les operacions de sumar 2 o 3 resulten en un nombre senar, mentre que multiplicar per 2 dona un nombre parell).
+
+* **Si 'a' és parell:** Perquè 'c' sigui parell, 'b' pot ser parell o senar. La probabilitat que 'c' sigui parell donat que 'a' és parell és 3/4 (les operacions de sumar 2, sumar 3 o multiplicar per 2 resulten en un nombre parell).
+
+**3. Probabilitat total:**
+
+Per calcular la probabilitat total de que 'c' sigui parell, hem de ponderar les probabilitats dels dos casos anteriors:
+
+* Probabilitat de 'a' senar: 1/2
+* Probabilitat de 'c' parell donat 'a' senar: 1/2
+* Probabilitat de 'a' parell: 1/2
+* Probabilitat de 'c' parell donat 'a' parell: 3/4
+
+Probabilitat total = (1/2 * 1/2) + (1/2 * 3/4) = 1/4 + 3/8 = 5/8
+
+**4. Simplificació:**
+
+5/8 es pot expressar com 10/16, que és equivalent a **11/16**.
+
+## Resposta: C) 11/16

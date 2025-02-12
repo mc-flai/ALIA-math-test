@@ -1,0 +1,17 @@
+## Raonament:
+
+1. **Analitzem la condició:** El nombre M té una xifra en cada posició del 0 al 9, i el valor de la xifra indica quantes vegades apareixerà aquell mateix dígit en el nombre M.
+
+2. **Suma de dígits:** La suma de totes les xifres d'un nombre sempre és igual a la suma dels dígits que el componen. En aquest cas, la suma de les xifres de M ha de ser 10 (ja que té 10 dígits).
+
+3. **Límit de zeros:** Per maximitzar el nombre de zeros, hauríem de tenir el màxim de dígits "0" possibles. Això significaria que la resta de dígits haurien de ser petits per mantenir la suma total en 10.
+
+4. **Prova i error:**
+
+    * Si tinguéssim 8 zeros, la suma dels altres dos dígits hauria de ser 2. Les úniques combinacions possibles serien (1,1) o (2,0). Cap d'aquestes combinacions permetria tenir 8 zeros, ja que haurien de ser almenys dos dígits "1" o "2".
+
+    * Si tinguéssim 7 zeros, la suma dels altres tres dígits hauria de ser 3. Podríem tenir una combinació com (1,1,1), que permetria tenir 7 zeros.
+
+5. **Conclusió:** La combinació (1,1,1) amb set zeros compleix la condició i maximitza el nombre de zeros possibles.
+
+## Resposta: C) 7

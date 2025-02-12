@@ -1,0 +1,30 @@
+## Raonament:
+
+1. **Entenc la definició de la funció:** La funció f(n) té una estructura específica que depèn del valor de n. 
+    * Per a nombres parells (2n), la funció assumeix el valor de la funció f(n) + 1.
+    * Per a nombres impares (2n + 1), la funció assumeix el valor de la funció f(2n).
+
+2. **Aplica la definició a 2017:**  
+    * 2017 és un nombre parell. Per tant, f(2017) = f(1008) + 1.
+    * Per a f(1008), cal aplicar la definició per a nombres parells. 
+
+3. **Continuem aplicant la definició:**  
+    *  f(1008) = f(504) + 1.
+    *  f(504) = f(252) + 1.
+    *  f(252) = f(126) + 1.
+    *  f(126) = f(63) + 1.
+    *  f(63) = f(31) + 1.
+    *  f(31) = f(15) + 1.
+    *  f(15) = f(7) + 1.
+    *  f(7) = f(3) + 1.
+    *  f(3) = f(1) + 1.
+
+4. **Llegim la funció f(1):**  f(1) = 1.
+
+5. **Finalment, f(2017):**  
+    *  f(2017) = f(1008) + 1 = f(504) + 1 + 1 = f(252) + 1 + 1 + 1 = f(126) + 1 + 1 + 1 + 1 = f(63) + 1 + 1 + 1 + 1 + 1 = f(31) + 1 + 1 + 1 + 1 + 1 + 1 = f(15) + 1 + 1 + 1 + 1 + 1 + 1 + 1 = f(7) + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = f(3) + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = f(1) + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 = 12
+
+**Resposta:** La resposta correcta és **E) 12**.
+
+
+

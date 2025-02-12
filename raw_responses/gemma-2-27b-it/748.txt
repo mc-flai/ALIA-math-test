@@ -1,0 +1,34 @@
+## Raonament:
+
+Per resoldre aquest problema, hem de buscar patrons i provar alguns exemples. 
+
+* **Divisibilitat per 2:** Els nombres parells sempre seran divisibles per 2. Si suprimim la xifra de les unitats d'un nombre parell, el nombre resultant també serà parell i, per tant, divisor del nombre original.
+
+* **Divisibilitat per 5:** Els nombres que acaben en 0 o 5 són divisibles per 5. Si suprimim la xifra de les unitats d'aquests nombres, el nombre resultant serà divisible per 5.
+
+* **Divisibilitat per 11:** La divisibilitat per 11 té una regla més complexa: la diferència entre la suma de les xifres en posicions parells i la suma de les xifres en posicions senars ha de ser múltiple de 11.
+
+Comencem provant alguns exemples dins del rang donat:
+
+* **1001:** Si suprimim el '1', obtenim 100, que no és divisor de 1001.
+* **1002:** Si suprimim el '2', obtenim 100, que és divisor de 1002.
+* **1010:** Si suprimim el '0', obtenim 101, que no és divisor de 1010.
+* **1100:** Si suprimim el '0', obtenim 110, que és divisor de 1100.
+
+Observant aquests exemples, podem veure que els nombres que compleixen la condició tenen una estructura específica:
+
+* **Nombres parells:** Si suprimim la xifra de les unitats, el nombre resultant sempre serà divisor.
+* **Nombres divisibles per 5:** Si suprimim la xifra de les unitats, el nombre resultant sempre serà divisor.
+
+Ara, cal comptar quants nombres del conjunt compleixen aquestes condicions.
+
+* **Nombres parells:** Hi ha 500 nombres parells entre 1000 i 1999.
+* **Nombres divisibles per 5:** Hi ha 200 nombres divisibles per 5 entre 1000 i 1999.
+
+Notem que alguns nombres apareixen en ambdues categories (els nombres divisibles per 10). Per evitar comptar-los dues vegades, hem de restar la quantitat de nombres divisibles per 10:
+
+* **Nombres divisibles per 10:** Hi ha 100 nombres divisibles per 10 entre 1000 i 1999.
+
+Per tant, el nombre total de nombres que compleixen la condició és: 500 + 200 - 100 = **600**.
+
+## Resposta: E) Cap

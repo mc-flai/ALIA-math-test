@@ -1,0 +1,26 @@
+## Raonament:
+
+Per resoldre aquest problema, hem de pensar en com es construiria un diccionari d'aquest llenguatge alienígena. 
+
+1. **Ordre alfabètic:** Les paraules estarien ordenades alfabèticament, començant per les que tenen "A" al principi, seguides per les que tenen "C", i així successivament.
+
+2. **Permutacions:** Per a cada lletra inicial, hi ha 5! (5 factorial) permutacions possibles per a les lletres restants. 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+3. **Càlcul:**
+
+    * Les paraules que comencen per "A" ocupen els primers 120 llocs.
+    * Les paraules que comencen per "C" ocupen els llocs del 121 al 240.
+    * Les paraules que comencen per "G" ocupen els llocs del 241 al 360.
+    * Les paraules que comencen per "N" ocupen els llocs del 361 al 480.
+    * Les paraules que comencen per "R" ocupen els llocs del 481 al 600.
+
+4. **Localització:** El lloc 537 es troba entre les paraules que comencen per "R". Per tant, la paraula que ocupa el lloc 537 comença per "R".
+
+5. **Residu:** Per trobar la paraula específica, hem de calcular el residu de (537 - 481) / 120 = 0.525. Aquest residu ens indica que la paraula és la 0.525 * 120 = 63a paraula que comença per "R".
+
+6. **Combinació:** Per trobar la combinació específica, podem utilitzar una calculadora de permutacions o fer-ho manualment. La 63a permutació de les lletres restants (A, C, G, N, U) després de "R" és "RGCNAU".
+
+## Resposta: E) RGCNAU 
+
+
+

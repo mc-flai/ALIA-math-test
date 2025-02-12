@@ -1,0 +1,19 @@
+## Raonament:
+
+1. **Partides per equip:** Cada equip juga contra tots els altres equips. Si hi ha *n* equips, cada equip juga *n-1* partides.
+
+2. **Partides totals:** Com que cada partida involucra dos equips, el nombre total de partides és la meitat del producte de *n* (nombre d'equips) i *n-1* (partides per equip). Això es pot expressar com: (n * (n-1)) / 2
+
+3. **Límit de partides:** Sabem que el nombre total de partides no pot superar les 250. Per tant, tenim la desigualtat: (n * (n-1)) / 2 ≤ 250
+
+4. **Resoldre la desigualtat:** Multiplicant ambdós costats per 2 i reordenant, obtenim: n² - n ≤ 500.
+
+5. **Trobar el màxim n:** Hem de trobar el major valor enter de *n* que satisfaci la desigualtat. Podem provar valors successius:
+    * Si n = 23, 23² - 23 = 506 (massa gran)
+    * Si n = 22, 22² - 22 = 462 (satisfà la desigualtat)
+
+## Resposta:
+
+**Resposta: B) 10** 
+
+El màxim nombre d'equips que poden participar en el torneig és 22.

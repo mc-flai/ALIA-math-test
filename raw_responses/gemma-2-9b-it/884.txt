@@ -1,0 +1,17 @@
+Raonament: 
+
+El mínim comú múltiple (MCM) d'un conjunt de nombres és el menor nombre que és múltiple de tots els nombres del conjunt.  Per minimitzar el MCM, volem minimitzar el nombre de factors primers diferents que apareixen en els nombres del conjunt.
+
+Observem que el conjunt {1, 2, 3,..., 8, 9} ja conté molts factors primers diferents: 2, 3, i 5.  
+
+* Eliminar el 9 no afecta la presència dels factors primers 2 i 3.
+* Eliminar el 8 elimina el factor primer 2, però no afecta els factors primers 3 i 5.
+* Eliminar el 7 no afecta la presència dels factors primers 2, 3 i 5.
+* Eliminar el 6 elimina els factors primers 2 i 3.
+* Eliminar el 5 elimina el factor primer 5.
+
+Per tant, eliminar el **6 (D)** és la millor opció per minimitzar el MCM, ja que elimina dos factors primers diferents.
+
+Resposta: D) 6 
+
+

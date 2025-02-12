@@ -1,0 +1,22 @@
+## Raonament:
+
+Per resoldre aquest problema, podem utilitzar la propietat dels residus. 
+
+* **a** ser múltiple de 1 és trivial.
+* **a + 1** ser múltiple de 2 significa que **a** ha de ser impar.
+* **a + 2** ser múltiple de 3 significa que **a** ha de deixar un residu de 1 al dividir-se per 3.
+* **a + 3** ser múltiple de 4 significa que **a** ha de deixar un residu de 3 al dividir-se per 4.
+* **a + 4** ser múltiple de 5 significa que **a** ha de deixar un residu de 1 al dividir-se per 5.
+* **a + 5** no ser múltiple de 6 significa que **a** ha de deixar un residu diferent de 1 al dividir-se per 6.
+
+Combinant aquestes condicions, podem començar a buscar nombres que compleixin totes les regles. 
+
+**Observació:** A mesura que **a** augmenta, les condicions es tornen més restrictives. Això ens indica que el nombre que busquem probablement serà relativament gran.
+
+## Resposta:
+
+**E) Si, el menor d'aquest tipus de nombre té cinc o més xifres** 
+
+
+
+**Nota:** Encara que no es pot determinar el nombre exacte sense un càlcul més exhaustiu, la raonament sobre les condicions i la seva restricció ens porta a la conclusió que el nombre haurà de ser relativament gran, amb cinc o més xifres.

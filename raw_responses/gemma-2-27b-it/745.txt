@@ -1,0 +1,18 @@
+## Raonament:
+
+1. **Múltiples en costats:** Si dos nombres estan connectats per un costat, un ha de ser múltiple de l'altre. Per minimitzar la suma, volem que el nombre més petit sigui el divisor i el més gran el múltiple.
+
+2. **No múltiples en diagonals:** Dos nombres als extrems d'una diagonal no poden ser múltiples l'un de l'altre. Això significa que no podem tenir dos nombres consecutius (com 2 i 4) en diagonals oposades.
+
+3. **Minimitzar:** Per minimitzar la suma, intentem utilitzar nombres primers o nombres petits amb pocs divisors.
+
+4. **Prova i error:**
+
+    * Si posem 1 en un vèrtex, l'altre vèrtex connectat ha de ser un múltiple de 1, per exemple, 2.
+    * Els altres dos vèrtexs no poden ser múltiples de 1 ni de 2. Podem provar amb 3 i 6.
+
+    * Això ens dona una suma de 1 + 2 + 3 + 6 = 12.
+
+5. **Verificació:** No podem obtenir una suma menor que 12, ja que necessitem almenys un nombre parell i un nombre múltiple d'aquest parell en costats adjacents.
+
+## Resposta: A) 12

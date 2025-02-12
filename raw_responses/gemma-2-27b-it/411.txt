@@ -1,0 +1,53 @@
+## Raonament:
+
+1. **Identificar un patró:** Observem que A és un nombre format per 2017 dígits 9. Això ens recorda a la fórmula per a la suma dels primers n termes d'una sèrie geomètrica:
+
+   a(1 - r^n) / (1 - r)
+
+   on 'a' és el primer terme, 'r' és la raó i 'n' és el nombre de termes.
+
+2. **Aplicar la fórmula:** En el nostre cas, podem pensar en A com a la suma d'una sèrie geomètrica on:
+
+   * a = 9
+   * r = 10 (cada dígit 9 representa 10^0, 10^1, 10^2, etc.)
+   * n = 2017
+
+3. **Calcular A:**
+
+   A = 9 (1 - 10^2017) / (1 - 10) = 9 (1 - 10^2017) / (-9) = 10^2017 - 1
+
+4. **Calcular A²:**
+
+   A² = (10^2017 - 1)²
+
+5. **Suma de dígits:**
+
+   Per trobar la suma de dígits de A², podem utilitzar la identitat:
+
+   (a - b)² = a² - 2ab + b²
+
+   En el nostre cas, a = 10^2017 i b = 1. Per tant:
+
+   A² = (10^2017)² - 2(10^2017) + 1
+
+   La suma de dígits de A² serà la mateixa que la suma de dígits de (10^2017)² menys 2.
+
+6. **Simplificació:**
+
+   (10^2017)² té una suma de dígits igual a 1 (ja que només té un dígit 1). Per tant, la suma de dígits de A² és 1 - 2 = -1.
+
+7. **Considerar el resultat:**
+
+   Com que la suma de dígits no pot ser negativa, hem de revisar el nostre raonament. L'error es troba en assumir que la suma de dígits de (10^2017)² és 1. En realitat, serà un nombre molt gran.
+
+8. **Solució alternativa:**
+
+   Una manera més senzilla de resoldre el problema és calcular A² directament i sumar els seus dígits. No obstant això, aquest càlcul és molt complex per fer-lo a mà.
+
+9. **Conclusió:**
+
+   Sense eines de càlcul avançades, és difícil determinar la suma exacta de dígits de A².
+
+## Resposta:
+
+No es pot determinar la resposta amb les eines disponibles.

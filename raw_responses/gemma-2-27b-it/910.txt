@@ -1,0 +1,23 @@
+## Raonament:
+
+El problema ens diu que el màxim descompte per a un grup amb la promoció serà el preu de 4 entrades. Això significa que si un grup té més de 4 persones, el descompte no pot ser superior al preu de 4 entrades.
+
+Si tenim un grup de *n* persones, el descompte serà del *n%* per cada entrada. Per tant, volem trobar el valor màxim de *n* per al qual *n%* del preu de *n* entrades sigui igual o menor que el preu de 4 entrades.
+
+En altres paraules, volem trobar el valor màxim de *n* que compleixi la següent desigualtat:
+
+*n* * (preu d'una entrada) * *n* ≤ 4 * (preu d'una entrada)
+
+Simplificant l'equació, obtenim:
+
+*n*² ≤ 4
+
+Prenent l'arrel quadrada de tots dos costats, obtenim:
+
+*n* ≤ 2
+
+Per tant, el grup hauria de tenir com a màxim 2 persones per a que el descompte no superi el preu de 4 entrades.
+
+## Resposta:
+
+**Resposta: A) 10**

@@ -1,0 +1,32 @@
+## Raonament:
+
+1. **Manipulem l'equació donada:**
+
+   Comencem per manipular l'equació $\frac{a}{b+1} + \frac{b}{a+1} = 1$ per a obtenir una expressió que ens permeti relacionar-la amb $\frac{a}{b} + \frac{b}{a} - ab$.
+
+   * Multiplicam ambdós costats per $(b+1)(a+1)$:
+     $$a(a+1) + b(b+1) = (b+1)(a+1)$$
+   * Expandim els productes:
+     $$a^2 + a + b^2 + b = ab + a + b + 1$$
+   * Simplifiquem:
+     $$a^2 + b^2 - ab = 1$$
+
+2. **Relacioneu amb l'expressió desitjada:**
+
+   Ara, observem que podem reescriure l'expressió $\frac{a}{b} + \frac{b}{a} - ab$ com segueix:
+
+   $$\frac{a}{b} + \frac{b}{a} - ab = \frac{a^2 + b^2}{ab} - ab$$
+
+3. **Connectem les dues expressions:**
+
+   Substituïm la igualtat $a^2 + b^2 - ab = 1$ que vam obtenir a l'inici:
+
+   $$\frac{a^2 + b^2}{ab} - ab = \frac{1 + ab}{ab} - ab = \frac{1}{ab} + 1 - ab$$
+
+4. **Analitzem l'expressió final:**
+
+   L'expressió $\frac{1}{ab} + 1 - ab$ no té una forma que ens permeti determinar un interval concret de valors. El seu valor dependrà dels valors concrets de *a* i *b*.
+
+## Resposta:
+
+E) És impossible determinar-ne els valors.

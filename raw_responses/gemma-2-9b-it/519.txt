@@ -1,0 +1,17 @@
+Raonament:
+
+1. **Distància que recorre el cangur A:** El cangur A salta 6 m per salt. Per saber la distància que ha recorregut, necessitem saber quants salts ha fet. 
+2. **Distància que recorre el cangur B:** El cangur B salta una distància incrementada amb cada salt (1 m, 2 m, 3 m, etc.). Per saber la distància que ha recorregut, necessitem sumar les distàncies de tots els salts fins al moment que el cangur B agafa al cangur A.
+3. **Igualar les distàncies:** Per saber quan el cangur B agafa al cangur A, necessitem igualar les distàncies recorregudes per ambdós cangurs.
+
+**Per a fer-ho de forma més eficient, podem utilitzar una aproximació:**
+
+* **Observació:** El cangur B està augmentant la distància del seu salt en 1 m cada vegada. Això significa que la distància que recorre el cangur B es pot aproximar a la fórmula de la suma d'una sèrie aritmètica: 1 + 2 + 3 +... + n = n(n+1)/2.
+* **Comparació:**  Podem comparar la distància recorreguda per el cangur A (6n, on n és el nombre de salts) amb la distància recorreguda per el cangur B (n(n+1)/2) i buscar el valor de n que satisfaci l'equació.
+
+**Resposta:**
+
+La resposta correcta és **C) 11**. 
+
+
+

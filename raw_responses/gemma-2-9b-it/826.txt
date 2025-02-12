@@ -1,0 +1,51 @@
+Raonament:
+
+Sigui la llista de nombres:  a, b, c, d, e
+
+* Sabem que a + b + c = 100
+* Sabem que b + c + d = 200
+* Sabem que c + d + e = 300
+
+Per trobar el nombre al centre (que és el valor de 'c'), podem sumar les tres equacions:
+
+(a + b + c) + (b + c + d) + (c + d + e) = 100 + 200 + 300
+
+Simplificant:
+
+a + 2b + 3c + 2d + e = 600
+
+Observem que 'c' apareix tres vegades en aquesta suma.  Per obtenir el valor de 'c', podem manipular les equacions inicials.  
+
+Sumant la primera i la segona equació:
+
+(a + b + c) + (b + c + d) = 100 + 200
+
+a + 2b + 2c + d = 300
+
+Restant aquesta equació de la tercera equació:
+
+(c + d + e) - (a + 2b + 2c + d) = 300 - 300
+
+e - a - 2b - c = 0
+
+e = a + 2b + c
+
+Ara podem substituir 'e' en la suma inicial:
+
+a + 2b + 3c + 2d + (a + 2b + c) = 600
+
+2a + 4b + 4c + 2d = 600
+
+a + 2b + 2c + d = 300
+
+Com que ja tenim l'equació a + 2b + 2c + d = 300, podem substituir-la en la suma inicial:
+
+300 = 300
+
+Això ens mostra que les equacions són consistents i que podem trobar el valor de 'c'.  
+
+Però, per simplificar, podem observar que la suma dels tres nombres al mig (b + c + d) és 200.  
+
+Resposta:  No hi ha prou informació per determinar el nombre al centre de la llista. 
+
+

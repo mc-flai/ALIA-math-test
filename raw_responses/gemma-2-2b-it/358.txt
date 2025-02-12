@@ -1,0 +1,29 @@
+## Raonament:
+
+Per a que el producte (a(a + 1)(a + 2)) sigui un múltiple de 84, cal que el producte sigui divisible per 84. Per tant, cal buscar els valors de 'a' que, quan s'afegeixen els factors, donen un resultat que sigui divisible per 84.
+
+1. **Divisibilitat per 84:**  84 = 2 x 2 x 3 x 7. Per tant, per a que un nombre sigui divisible per 84, ha de ser divisible per 2, 3 i 7.
+
+2. **Analitzant els factors:**  
+    *  A(a + 1)(a + 2) és un nombre parell, ja que a(a + 1) és un nombre parell.
+    *  Per tant, per a que el producte sigui divisible per 2, ha de ser un nombre parell.
+
+3. **Com a primer pas, podem buscar els valors de 'a' que són parells:**
+    *  A = 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24
+
+4. **Per a cada valor de 'a', podem calcular el producte (a(a + 1)(a + 2)) i veure si és divisible per 84:**
+    *  Per exemple, per a a = 2, el producte és 2(3)(4) = 24, que no és divisible per 84.
+    *  Per a a = 4, el producte és 4(5)(6) = 120, que sí és divisible per 84.
+
+5. **Continuem amb els altres valors de 'a':**
+    *  Per a a = 6, el producte és 6(7)(8) = 336, que sí és divisible per 84.
+    *  Per a a = 8, el producte és 8(9)(10) = 720, que sí és divisible per 84.
+    *  I així successivament.
+
+6. **Finalment, podem identificar els valors de 'a' que donen un producte divisible per 84:**
+    *  A = 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24
+
+7. **Com a resposta, podem identificar que hi ha 11 valors de 'a' que donen un producte divisible per 84.**
+
+
+## Resposta: E) 6 

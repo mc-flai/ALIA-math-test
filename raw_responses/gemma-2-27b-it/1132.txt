@@ -1,0 +1,25 @@
+## Raonament:
+
+Sigui 'n' el nombre de daus que té l'Agnès.
+
+* **Probabilitat de que només isca un 12:**  Per a que això passi, un dau ha de ser 12 i els altres (n-1) daus han de ser diferents de 12. La probabilitat d'això és: (1/12) * (11/12)^(n-1)
+
+* **Probabilitat de que no n'isca cap 12:** La probabilitat que un dau no sigui 12 és 11/12. Per a que cap dau sigui 12, tots els 'n' daus han de ser diferents de 12. La probabilitat d'això és: (11/12)^n
+
+Segons el problema, aquestes dues probabilitats són iguals:
+
+(1/12) * (11/12)^(n-1) = (11/12)^n
+
+Simplificant l'equació:
+
+(11/12)^(n-1) = 11 * (11/12)^(n-1)
+
+Dividint ambdós costats per (11/12)^(n-1) (que no és zero):
+
+1 = 11
+
+Aquesta equació no té solució. Això significa que no hi ha cap nombre de daus que compleixi la condició del problema.
+
+## Resposta:
+
+No hi ha una resposta correcta entre les opcions donades.

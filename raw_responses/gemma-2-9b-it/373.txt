@@ -1,0 +1,23 @@
+## Raonament:
+
+1. **Definim x:**  Comencem amb un nombre arbitrari, x.
+
+2. **Operacions iteratives:**
+    * **Primera iteració:** 
+        * Resta 1 a x: x - 1
+        * Multiplica per 2: 2(x - 1) = 2x - 2
+    * **Segona iteració:**
+        * Resta 1 al resultat anterior: (2x - 2) - 1 = 2x - 3
+        * Multiplica per 2: 2(2x - 3) = 4x - 6
+    * **Continuem així:** Observarem un patró en els resultats. El coeficient de x (a) es duplicarà a cada iteració, mentre que el terme constant (b) disminuirà en 2 a cada iteració.
+
+3. **Patró general:**
+    * Després de 10 iteracions, el resultat tindrà la forma: 2^10 * x - 2^10 + 2
+    * Simplificant: 1024x - 1024
+
+4. **Comparació amb les opcions:**
+    * Veiem que la resposta correcta és **E) a = 1024, b = -1024**.
+
+
+
+## Resposta: E)

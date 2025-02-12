@@ -1,0 +1,13 @@
+Raonament:
+
+* **Factorial:** Primer, recordem que 20! (20 factorial) és el producte de tots els nombres enters positius des de 1 fins a 20. Això significa que 20! conté molts factors de 2.
+* **Potència de 2:**  2^9 és igual a 512. 
+* **Residu:** El problema ens demana el residu de la divisió de (20! + 520) entre 512. En altres paraules, volem saber quina part de (20! + 520) queda després de dividir-la per 512 el nombre de vegades que sigui possible.
+
+* **Simplificació:**  Com que 20! té molts factors de 2, és molt probable que 20! sigui divisible per 512 (2^9). Això significa que el residu de la divisió de 20! entre 512 probablement serà 0.
+
+* **Residuo final:**  Per tant, el residu de la divisió de (20! + 520) entre 512 serà el mateix que el residu de la divisió de 520 entre 512.  520 dividit per 512 és 1 amb un residu de 8.
+
+
+
+Resposta: B) 8

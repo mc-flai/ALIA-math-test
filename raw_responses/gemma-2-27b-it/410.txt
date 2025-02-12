@@ -1,0 +1,29 @@
+## Raonament:
+
+Encara que calcular a₂₀₁ directament seria molt laboriós, podem buscar patrons en la successió per simplificar el problema. Observem els primers termes:
+
+* a₀ = 1
+* a₁ = 2
+* a₂ = 1 + 2² = 5
+* a₃ = 5 + 5² = 30
+* a₄ = 30 + 30² = 930
+
+Notem que els termes de la successió creixen molt ràpidament.  
+
+Per trobar el residu de la divisió per 7, podem utilitzar la propietat que el residu de la suma és la suma dels residus. Això significa que si trobem el residu de cada terme aₙ dividit per 7, podem sumar-los i trobar el residu de la suma total.
+
+Calculem els residus dels primers termes:
+
+* a₀ % 7 = 1
+* a₁ % 7 = 2
+* a₂ % 7 = 5
+* a₃ % 7 = 2 (30 % 7 = 2)
+* a₄ % 7 = 0 (930 % 7 = 0)
+
+Observem que a partir d'a₄, tots els termes seran múltiples de 7, per tant el seu residu serà 0.
+
+Per tant, el residu de a₂₀₁ dividit per 7 serà la suma dels residus dels primers termes fins a a₂₀₀.
+
+## Resposta:
+
+**A) 0**

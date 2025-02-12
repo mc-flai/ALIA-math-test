@@ -1,0 +1,25 @@
+## Raonament:
+
+Aquest problema es resol utilitzant el concepte de permutacions amb repetició. Tenim 6 cilindres, però no tots són únics. 
+
+* Tenim 3 cilindres blaus (idèntics entre si).
+* Tenim 2 cilindres verds (idèntics entre si).
+* Tenim 1 cilindre groc (únic).
+
+La fórmula per calcular permutacions amb repetició és:
+
+n! / (n1! * n2! *... * nk!)
+
+On:
+
+* n és el nombre total d'elements (6 cilindres).
+* n1, n2,..., nk són el nombre de repeticions de cada element (3 blaus, 2 verds, 1 groc).
+
+Aplicant la fórmula:
+
+6! / (3! * 2! * 1!) = 720 / (6 * 2 * 1) = 60
+
+## Resposta: B) 60 
+
+
+

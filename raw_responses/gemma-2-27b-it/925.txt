@@ -1,0 +1,38 @@
+## Raonament:
+
+Per resoldre aquest problema, hem d'analitzar el patró que segueix Clara en modificar el nombre. 
+
+* **Múltiple de 3:** Si el nombre és múltiple de 3, disminueix 1.
+* **Residu 2:** Si el residu de dividir entre 3 és 2, disminueix 2.
+* **Residu 1:** Si el residu de dividir entre 3 és 1, augmenta 2.
+
+Observem que les operacions de Clara tenen un impacte en el residu del nombre quan es divideix entre 3:
+
+* Disminuir 1 no canvia el residu.
+* Disminuir 2 canvia el residu de 2 a 0 (múltiple de 3) o de 1 a 2.
+* Augmentar 2 canvia el residu de 1 a 0 (múltiple de 3) o de 2 a 1.
+
+Per tant, el residu del nombre canvia cíclicament entre 0, 1 i 2.
+
+Comencem amb 10000. El residu de 10000 dividit entre 3 és 1.
+
+* **Pas 1:** Clara augmenta 2, obtenint 10002 (residuo 2).
+* **Pas 2:** Clara disminueix 2, obtenint 10000 (residuo 1).
+
+Observem que el residu torna a ser 1. A partir d'aquí, el patró es repetirà cada dos passos.
+
+Com que 2020 és un nombre parell, després de 2020 passos, el residu del nombre serà el mateix que el residu inicial, que és 1.
+
+Per trobar el nombre final, podem utilitzar la fórmula:
+
+Nombre final = Nombre inicial + (Nombre de passos / 2) * (Variació del residu)
+
+En aquest cas:
+
+Nombre final = 10000 + (2020 / 2) * 2 = 10000 + 2020 = 12020
+
+Ara, hem de tenir en compte que la fórmula anterior només ens dona el nombre si el residu inicial és 0. Com que el residu inicial és 1, hem de restar 1 al resultat:
+
+Nombre final = 12020 - 1 = 12019
+
+**Resposta:** Cap de les opcions proporcionades és correcta. El nombre final és 12019.

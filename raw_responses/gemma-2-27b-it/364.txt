@@ -1,0 +1,19 @@
+## Raonament:
+
+Per trobar la mínima diferència, hem de buscar patrons en la seqüència. 
+
+* **Unitats:** Els nombres que acaben en 5 sempre tindran la suma de dígits divisible per 5. Això significa que la diferència mínima possible entre dos nombres consecutius serà la diferència entre un nombre que acaba en 5 i el següent nombre que també acaba en 5.
+
+* **Exemple:** 5 i 14. La diferència és de 9.
+
+* **Minimitzant la diferència:** Per minimitzar la diferència, volem que el segon nombre sigui el més petit possible. Això passa quan el segon nombre és el següent múltiple de 10 després del primer.
+
+* **Exemple:** 5 i 15. La diferència és de 10.
+
+* **Ajustant per la condició:**  El nombre 15 no compleix la condició de tenir la suma de dígits divisible per 5. El següent nombre que compleix la condició és 14.
+
+* **Conclusió:** La mínima diferència entre dos nombres consecutius en la seqüència és 9.
+
+## Resposta:
+
+Cap de les opcions proporcionades és correcta. La mínima diferència possible és 9.

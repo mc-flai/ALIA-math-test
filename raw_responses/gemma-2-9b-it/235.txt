@@ -1,0 +1,33 @@
+Raonament:
+
+1. **Utilitzem la segona propietat per calcular f(2016) / f(2014):**
+
+   f(2016) / f(2014) = f(2014 + 2) / f(2014) = f(2014) * f(2) / f(2014) = f(2)
+
+2. **Utilitzem la primera propietat per calcular f(2):**
+
+   f(2) = 2 * f(2 + 1) = 2 * f(3)
+
+3. **Utilitzem la primera propietat de nou per calcular f(3):**
+
+   f(3) = 2 * f(3 + 1) = 2 * f(4)
+
+4. **Continuem utilitzant la primera propietat:**
+
+   f(4) = 2 * f(4 + 1) = 2 * f(5)
+   f(5) = 2 * f(5 + 1) = 2 * f(6)
+  ...
+
+5. **Veiem un patró:**
+
+   f(2) = 2 * f(3) = 2 * 2 * f(4) = 2 * 2 * 2 * f(5) =... = 2^n * f(n+2)
+
+6. **Per trobar f(2), necessitem un valor inicial.**  No tenim una condició inicial explícita per a f(x).  
+
+**Conclusió:**
+
+Sense una condició inicial per a f(x), no podem determinar el valor exacte de f(2) i, per tant, no podem determinar el valor de f(2016) / f(2014). 
+
+
+
+Resposta: No es pot determinar. 

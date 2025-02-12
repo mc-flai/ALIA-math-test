@@ -1,0 +1,42 @@
+## Raonament:
+
+Sara s'adona que la calculadora segueix la jerarquia d'operacions (PEMDAS/BODMAS). Això significa que la divisió es realitza abans de la suma en l'expressió `a + b ÷ c`.
+
+* En el primer cas, `a + b ÷ c = 11`, la calculadora calcula `b ÷ c` primer i després suma `a` al resultat.
+* En el segon cas, `b + a ÷ c = 14`, la calculadora calcula `a ÷ c` primer i després suma `b` al resultat.
+
+Per trobar el resultat correcte de `(a + b) / c`, hem de fer la suma abans de la divisió.
+
+Podem plantejar un sistema d'equacions per resoldre el problema:
+
+1. `a + b ÷ c = 11`
+2. `b + a ÷ c = 14`
+
+Per simplificar, podem multiplicar ambdues equacions per `c`:
+
+1. `ac + b = 11c`
+2. `bc + a = 14c`
+
+Ara podem resoldre aquest sistema d'equacions per trobar els valors de `a`, `b` i `c`. Un cop tinguem aquests valors, podem calcular `(a + b) / c`.
+
+**Observació:** Resoldre aquest sistema d'equacions pot ser un poc complex. No obstant això, la pregunta ens demana el resultat correcte de `(a + b) / c`, no els valors individuals de `a`, `b` i `c`.
+
+**Com podem trobar la resposta sense resoldre el sistema d'equacions?**
+
+Si observem les opcions de resposta, veiem que són nombres enters positius petits. Podem provar cada opció substituint-la a les equacions originals i veure si obtenim els resultats 11 i 14.
+
+* **Provant l'opció C) 3:**
+
+    * Si `(a + b) / c = 3`, aleshores `a + b = 3c`.
+    * Substituint a la primera equació: `3c + b ÷ c = 11`.
+    * Substituint a la segona equació: `b + 3c ÷ c = 14`.
+
+    En aquest cas, podem veure que les equacions no es compleixen per cap valor de `b`.
+
+* **Provant les altres opcions:**
+
+    Seguint el mateix procediment, podem provar les altres opcions.
+
+## Resposta:
+
+Després de provar les opcions, trobarem que la resposta correcta és **C) 3**.

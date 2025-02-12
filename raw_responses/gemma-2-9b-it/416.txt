@@ -1,0 +1,25 @@
+Raonament:
+
+1. **Analitzem la propietat f(f(k)) ≤ f(k + 1):**  
+   Aquesta propietat ens diu que aplicar la funció f dues vegades a un nombre k sempre dona com a resultat un valor menor o igual que el nombre que s'obté sumant 1 a k.
+
+2. **Considerem f(1000) = 1000:**
+   Sabem que f(1000) és igual a 1000.
+
+3. **Aplicació repetida de la propietat:**
+   *  f(f(1000)) ≤ f(1001)
+   *  f(1000) ≤ f(1001)  (perquè f(1000) = 1000)
+   *  1000 ≤ f(1001)
+
+4. **Conclusió:**
+   Com que f és estrictament creixent, i 1000 ≤ f(1001),  ent llavors f(1001) ha de ser major que 1000.  
+
+5. **Extrapolant:**
+   Seguint aquest raonament, podem veure que f(k) serà sempre major que k per a qualsevol k ≥ 1000.
+
+6. **Resposta per a f(2017):**
+   Per tant, f(2017) ha de ser major que 2017.
+
+
+
+Resposta: C) f(2017) > 2017

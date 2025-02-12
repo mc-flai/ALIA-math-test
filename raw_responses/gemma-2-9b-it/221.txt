@@ -1,0 +1,17 @@
+Raonament: 
+
+No podem determinar el valor exacte de AC + BD amb la informació proporcionada. 
+
+Aquí està el perquè:
+
+* **Ordre indeterminat:** Sabem les distàncies entre els punts, però no el seu ordre en la recta. Podria ser A-B-C-D, o B-A-C-D, o qualsevol altra combinació.
+* **Múltiples possibilitats:**  Per a cada ordre possible, AC i BD tindrien valors diferents. 
+
+Per exemple, si A-B-C-D, llavors AC = AB + BC = 13 + 11 = 24 i BD = BC + CD = 11 + 14 = 25.
+
+Si B-A-C-D, llavors AC = AB + BC = 13 + 11 = 24 i BD = BA + AD = 13 + 12 = 25.
+
+Com veiem, la suma AC + BD seria 49 en el primer cas i 49 en el segon.
+
+
+Resposta: E) No hi ha prou informació per a decidir-ho. 

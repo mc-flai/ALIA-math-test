@@ -1,0 +1,21 @@
+## Raonament:
+
+1. **Estructura dels nombres:** Els nombres a, b i c tenen la forma "aba", "bcb" i "cdc" respectivament, on a, b, c són dígits entre 1 i 9.
+
+2. **Relació entre els nombres:** Sabem que b = 2a + 1 i c = 2b + 1.
+
+3. **Substitució:** Substituïm b en l'equació de c: c = 2(2a + 1) + 1 = 4a + 3.
+
+4. **Límits:** Els nombres a, b i c han de ser entre 100 i 999. Això limita els valors possibles de a.
+
+5. **Provar valors:** Comencem provant valors de a des de 1 fins a 9 i veiem si compleixen les condicions:
+
+    * Si a = 1, b = 3 i c = 7. Tots tres nombres compleixen les condicions.
+    * Si a = 2, b = 5 i c = 11. c no és un nombre de tres xifres.
+    * Per a valors de a superiors a 2, b i c seran sempre més grans que 999.
+
+## Resposta:
+
+**C) 2** 
+
+Només hi ha dos valors possibles per a "a": 1.

@@ -1,0 +1,14 @@
+Raonament:
+
+Per trobar el nombre amb el mínim nombre de preguntes, volem dividir l'espai de nombres possible de manera eficient.  
+
+* **Primera pregunta:** Podem preguntar si el nombre pertany al conjunt {1, 2, 3, 4, 5, 6, 7, 8}. Això ens permet descartar la meitat dels nombres possibles (8 nombres).
+
+* **Segona pregunta:**  Si la resposta a la primera pregunta és "no", podem preguntar si el nombre pertany al conjunt {9, 10, 11, 12, 13, 14, 15}. Això ens permet descartar altre 7 nombres.
+
+* **Tercera pregunta:**  En aquest punt, només hi ha 1 o 2 nombres possibles.  Podem preguntar si el nombre pertany al conjunt {1, 2} o {9, 10} (o qualsevol altra combinació que ens permeti descartar un nombre).
+
+* **Quarta pregunta:**  Si la resposta a la tercera pregunta és "no", ja sabem el nombre.
+
+
+Resposta: C) 3 

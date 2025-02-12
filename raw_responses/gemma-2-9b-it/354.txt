@@ -1,0 +1,23 @@
+Raonament:
+
+1. **Identificar els divisors parells:** Els divisors parells de 1000 són tots els nombres que divideixen 1000 i que són parells. 
+
+2. **Factoritzar 1000:**  1000 = 2³ * 5³
+
+3. **Construir els divisors parells:** Per obtenir un divisor parell, necessitem almenys un factor 2.  Podem tenir de 2⁰ a 2³ (que són 1, 2, 4, 8) i de 5⁰ a 5³ (que són 1, 5, 25, 125).  Combinant-los, obtenim tots els divisors parells de 1000.
+
+4. **Sumar els divisors parells:**  Calculem la suma de tots els divisors parells obtinguts.
+
+Resposta:  
+
+Per a calcular la suma de manera més eficient, podem utilitzar la fórmula:
+
+Suma de divisors parells = (2⁰ + 2¹ + 2² + 2³) * (5⁰ + 5¹ + 5² + 5³)
+
+Suma de divisors parells = (1 + 2 + 4 + 8) * (1 + 5 + 25 + 125)
+
+Suma de divisors parells = 15 * 156 = **2340**
+
+
+
+ 

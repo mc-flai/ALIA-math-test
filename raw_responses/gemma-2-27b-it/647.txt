@@ -1,0 +1,21 @@
+## Raonament:
+
+1. **Considerem les xifres:** Un nombre de tres xifres es pot representar com abc, on a, b i c són les seves xifres.
+
+2. **Suma de les xifres:** Sabem que a + b + c = 26.
+
+3. **Producte de les xifres:** Volem trobar a * b * c.
+
+4. **Provar les opcions:** Comencem provant les opcions de resposta.
+
+    * A) 12: No hi ha tres xifres que sumin 26 i tinguin un producte de 12.
+    * B) 26: No hi ha tres xifres que sumin 26 i tinguin un producte de 26.
+    * C) 81: No hi ha tres xifres que sumin 26 i tinguin un producte de 81.
+    * D) 648: No hi ha tres xifres que sumin 26 i tinguin un producte de 648.
+    * E) 729: 7 + 2 + 9 = 18. No suma 26.
+
+5. **Buscar combinacions:** Com que cap de les opcions anteriors funciona, necessitem buscar combinacions de tres xifres que sumin 26.
+
+6. **Solució:** Després de provar diferents combinacions, trobem que 9 + 8 + 9 = 26. El producte d'aquestes xifres és 9 * 8 * 9 = 648.
+
+## Resposta: D) 648

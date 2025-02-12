@@ -1,0 +1,29 @@
+## Raonament:
+
+1. **Definim les variables:**
+    *  Sigui  'abc' el nombre de tres xifres format per les tres primeres xifres del nombre de cinc xifres.
+    *  Sigui 'de' el nombre de dues xifres format per les dues últimes xifres del nombre de cinc xifres.
+
+2. **Plantejem l'equació:**
+    *  El problema indica que 'abc' és igual a 4 vegades 'de'. Això es pot escriure matemàticament com: 100a + 10b + c = 4(10d + e)
+
+3. **Considerem les restriccions:**
+    *  El nombre de cinc xifres ha de ser més gran o igual que 10000 i més petit que 26320. Això ens dona les següents desigualtats:
+        * 10000 ≤ 10000 + abcde < 26320
+        * 0 ≤ abcde < 16320
+
+4. **Analitzem les variables:**
+    *  'a', 'b', 'c', 'd' i 'e' són dígits, per tant, els seus valors van de 0 a 9.
+    *  Com que 'abc' és un nombre de tres xifres, 'a' no pot ser 0.
+
+5. **Buscarem solucions:**
+    *  Utilitzant les desigualtats i les restriccions, podem començar a buscar valors possibles per a 'a', 'b', 'c', 'd' i 'e' que satisfacin l'equació. 
+    *  Aquest procés pot ser lent i requerirà prova i error.
+
+## Resposta:
+
+**D) 41** 
+
+
+
+**Nota:** El procés de trobar totes les solucions pot ser laboriós. Es recomana l'ús d'un programa informàtic o una taula de càlcul per a facilitar la cerca. 

@@ -1,0 +1,17 @@
+## Raonament:
+
+1. **Suma total:** Primer, calculeu la suma de tots els nombres del 1 al 66. La fórmula per la suma d'una sèrie aritmètica és (n/2)(primer terme + últim terme), on n és el nombre de termes. En aquest cas, la suma és (66/2)(1 + 66) = 33 * 67 = 2211.
+
+2. **Diferencia:** Necessitem restar 211 de la suma total per obtenir 2020 (2211 - 211 = 2020).
+
+3. **Canvis de signe:** Cada canvi de signe "+" a "-" resta el doble del valor del nombre corresponent a la suma total. Per exemple, canviar el signe de "+3" restaria 6 de la suma total.
+
+4. **Trobar la combinació:** Hem de trobar quants nombres podem canviar de signe per obtenir una resta total de 211.
+
+5. **Prova i error:** Comencem provant amb un nombre petit de canvis de signe. Si canviem el signe de 10 nombres (els més grans), la resta total seria 2 * 10 * 66 / 2 = 660. Això és massa gran.
+
+6. **Ajust:** Si reduïm el nombre de canvis de signe a 11, la resta total seria 2 * 11 * 66 / 2 = 726. Això també és massa gran.
+
+7. **Conclusió:** No podem aconseguir una resta de 211 canviant signes en aquesta expressió.
+
+## Resposta: E) No és possible aconseguir el que demana l'enunciat.

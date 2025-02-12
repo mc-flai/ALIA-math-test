@@ -1,0 +1,38 @@
+## Raonament:
+
+Per trobar les combinacions possibles, podem pensar en les diferents opcions per a cada fruita:
+
+* **Taronges:** Dolors pot prendre 0, 1 o 2 taronges.
+* **Pomes:** Dolors pot prendre 0, 1, 2 o 3 pomes.
+* **Peres:** Dolors pot prendre 0, 1 o 2 peres.
+
+Però no totes les combinacions són possibles. Per exemple, no pot prendre 3 taronges, 3 pomes i 2 peres alhora, ja que només hi ha 2 taronges a la cistella.
+
+Per calcular les combinacions vàlides, podem utilitzar la fórmula de combinacions:
+
+nCr = n! / (r! * (n-r)!)
+
+on:
+
+* n = nombre total d'elements (en aquest cas, 3 tipus de fruita)
+* r = nombre d'elements que es trien (en aquest cas, 3 fruites)
+
+En aquest cas, tenim 3 tipus de fruita i volem triar 3.
+
+3C3 = 3! / (3! * (3-3)!) = 1
+
+Això significa que només hi ha una combinació possible de triar 3 fruites del mateix tipus.
+
+Ara, hem de considerar les combinacions on es trien fruites de diferents tipus. Per fer-ho, podem pensar en les diferents combinacions possibles de quantitats de cada tipus de fruita:
+
+* **2 taronges, 1 poma:** 1 combinació possible
+* **2 pomes, 1 taronja:** 1 combinació possible
+* **2 peres, 1 taronja:** 1 combinació possible
+* **2 peres, 1 poma:** 1 combinació possible
+* **1 taronja, 1 poma, 1 pera:** 1 combinació possible
+
+En total, tenim 1 + 1 + 1 + 1 + 1 = 5 combinacions possibles.
+
+Sumant la combinació on es trien 3 fruites del mateix tipus, obtenim un total de 1 + 5 = 6 combinacions possibles.
+
+## Resposta: D) 6

@@ -1,0 +1,17 @@
+Raonament: 
+
+Observem que un nombre és parell si i només si és divisible per 2.  Analitzem el patró $n^{2018} + (n + 1)^{2017}$:
+
+* **n²⁰¹⁸:**  Si *n* és parell, $n^{2018}$ també és parell. Si *n* és senar, $n^{2018}$ també és senar.
+* **(n + 1)²⁰¹⁷:** Si *n* és parell, (n + 1) és senar, i per tant $(n + 1)^{2017}$ és senar. Si *n* és senar, (n + 1) és parell, i per tant $(n + 1)^{2017}$ és parell.
+
+Per tant, la suma $n^{2018} + (n + 1)^{2017}$ serà:
+
+* **Parella + Senar = Senar** si *n* és parell.
+* **Senar + Parell = Parell** si *n* és senar.
+
+Com que el patró alterna entre nombres parells i senars, la meitat dels nombres seguiran el patró seran parells.
+
+Resposta: B) La meitat 
+
+

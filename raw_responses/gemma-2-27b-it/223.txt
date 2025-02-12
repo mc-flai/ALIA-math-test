@@ -1,0 +1,40 @@
+## Raonament:
+
+Sigui **P** el nombre total de pomes.
+
+* **Situació 1:** Si hi ha **N** xiquets, cadascun rep **P/N** pomes.
+
+* **Situació 2:** Si hi ha **N-2** xiquets, cadascun rep **P/(N-2)** pomes, i sabem que això és una poma més que en la situació 1:  **P/(N-2) = P/N + 1**
+
+* **Situació 3:** Si hi ha **N-3** xiquets, cadascun rep **P/(N-3)** pomes, i sabem que això són dues pomes més que en la situació 1: **P/(N-3) = P/N + 2**
+
+Ara tenim un sistema d'equacions amb dues incògnites (P i N) que podem resoldre:
+
+1. **Simplifiquem les equacions:**
+    * Equació 1: P*N = P*(N-2) + N*(N-2)
+    * Equació 2: P*N = P*(N-3) + 2*N*(N-3)
+
+2. **Desenvolupem les equacions:**
+    * Equació 1: P*N = P*N - 2P + N² - 2N
+    * Equació 2: P*N = P*N - 3P + 2N² - 6N
+
+3. **Simplifiquem les equacions:**
+    * Equació 1: 2P = N² - 2N
+    * Equació 2: 3P = 2N² - 6N
+
+4. **Resolent per P en l'equació 1:**
+    * P = (N² - 2N)/2
+
+5. **Substituïm P en l'equació 2:**
+    * 3*(N² - 2N)/2 = 2N² - 6N
+
+6. **Simplifiquem i resolem per N:**
+    * 3N² - 6N = 4N² - 12N
+    * N² - 6N = 0
+    * N*(N - 6) = 0
+
+7. **Les solucions possibles són N = 0 o N = 6.**
+
+Com que no pot haver-hi 0 xiquets, la resposta correcta és **N = 6**.
+
+## Resposta: A) 6

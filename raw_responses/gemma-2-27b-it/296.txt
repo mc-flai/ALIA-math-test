@@ -1,0 +1,44 @@
+## Raonament:
+
+Per trobar la xifra de les unitats de \(S\), només necessitem considerar la xifra de les unitats de cada quadrat individual. 
+
+Observem el patró de les xifres de les unitats dels quadrats dels primers nombres naturals:
+
+* \(1^2 = 1\)
+* \(2^2 = 4\)
+* \(3^2 = 9\)
+* \(4^2 = 16\)
+* \(5^2 = 25\)
+* \(6^2 = 36\)
+* \(7^2 = 49\)
+* \(8^2 = 64\)
+* \(9^2 = 81\)
+* \(10^2 = 100\)
+
+Notem que la xifra de les unitats es repeteix en un cicle de 10: 1, 4, 9, 6, 5, 6, 9, 4, 1, 0.
+
+Per saber la xifra de les unitats de \(2017^2\), dividim 2017 per 10 i mirem el residu:
+
+\(2017 \div 10 = 201 \text{ residu } 7\)
+
+Un residu de 7 significa que la xifra de les unitats de \(2017^2\) és la setena xifra del nostre cicle, que és **9**.
+
+Ara, per trobar la xifra de les unitats de \(S\), sumem les xifres de les unitats de tots els quadrats des de \(1^2\) fins a \(2017^2\).
+
+La suma de les xifres de les unitats del cicle (1, 4, 9, 6, 5, 6, 9, 4, 1, 0) és 44.
+
+Com que el cicle té 10 nombres, per cada grup de 10 quadrats consecutius, la suma de les xifres de les unitats serà 44.
+
+Dividim 2017 per 10: \(2017 \div 10 = 201 \text{ residu } 7\).
+
+Això significa que hi ha 201 grups complets de 10 quadrats, i ens queden 7 quadrats més.
+
+La suma de les xifres de les unitats dels primers 2010 quadrats (201 grups de 10) serà \(201 \times 44 = 8844\).
+
+La suma de les xifres de les unitats dels 7 quadrats restants serà la suma de les xifres de les unitats dels quadrats des de \(2011^2\) fins a \(2017^2\), que podem calcular directament.
+
+Finalment, sumem la xifra de les unitats de la suma dels primers 2010 quadrats amb la xifra de les unitats de la suma dels 7 quadrats restants. La xifra de les unitats d'aquesta suma final serà la xifra de les unitats de \(S\).
+
+## Resposta:
+
+C) 6

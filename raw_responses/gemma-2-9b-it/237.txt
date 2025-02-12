@@ -1,0 +1,22 @@
+Raonament:
+
+Analitzem la propietat del nombre M:
+
+* **Lloc 0:** Si en el lloc 0 hi ha un dígit X, M tindrà X zeros.
+* **Lloc 1:** Si en el lloc 1 hi ha un dígit X, M tindrà X un.
+* **...**
+* **Lloc 9:** Si en el lloc 9 hi ha un dígit X, M tindrà X nou.
+
+Però, tenim un límit: el nombre M només pot tenir 10 xifres. Això significa que la suma de tots els zeros, uns, dos, tres, etc., que apareixen en M ha de ser igual a 10.
+
+Considerem els casos possibles:
+
+* **Si hi ha molts zeros:** Si hi ha molts zeros, la suma dels altres dígits ha de ser molt alta per compensar. Això és improbable ja que els dígits només van del 0 al 9.
+
+* **Si hi ha pocs zeros:** Si hi ha pocs zeros, la suma dels altres dígits serà més baixa. Això és més probable.
+
+Per tant, la resposta ha de ser una opció amb un nombre relativament baix de zeros.
+
+Resposta: **E) 4** 
+
+

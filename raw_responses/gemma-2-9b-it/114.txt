@@ -1,0 +1,21 @@
+## Raonament:
+
+Per calcular la probabilitat, podem pensar en el nombre de casos favorables (segona extracció més gran que la primera) i el nombre total de casos possibles.
+
+* **Casos possibles:**  Hi ha 2015 opcions per a la primera extracció i 2014 per a la segona (perquè no es reemplaça el primer). Això dona un total de 2015 * 2014 casos possibles.
+
+* **Casos favorables:**  Per a cada número que extraiem primer, hi ha 2014 - i números més grans que podem treure a continuació.  Però, no podem sumar directament 2014 + 2013 +... + 1, ja que això compta els casos múltiples vegades. 
+
+Una manera més elegant de calcular els casos favorables és usar combinatòries.  El nombre de combinacions de 2 números entre 2015 és: 2015C2 = (2015 * 2014) / (2 * 1) = 2031105.  
+
+* **Probabilitat:** La probabilitat és el nombre de casos favorables dividit pel nombre total de casos possibles:
+
+(2014 * 2013) / (2015 * 2014) = 2013 / 2015 = 0.9995
+
+* **Percentatge:** Multiplicam per 100 per obtenir el percentatge: 0.9995 * 100 = 99.95%
+
+
+
+## Resposta:
+
+A) Més del 50% 

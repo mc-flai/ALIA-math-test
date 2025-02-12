@@ -1,0 +1,27 @@
+Raonament: 
+
+Un quadrat perfecte és el resultat de multiplicar un nombre per si mateix. Perquè el producte dels elements restants sigui un quadrat perfecte, necessitarem que la factorització prima de aquest producte tingui exponents parells per a tots els seus factors primers.
+
+Observem que el conjunt donat conté molts nombres parells. Si suprimim un nombre parell, el producte dels elements restants també serà parell. Per tant, per obtenir un quadrat perfecte, necessitem suprimir un nombre parell per a cada factor prim que aparegui en la factorització dels nombres del conjunt.
+
+Analitzem la factorització dels nombres del conjunt:
+
+* 10 = 2 x 5
+* 20 = 2 x 2 x 5
+* 30 = 2 x 3 x 5
+* 40 = 2 x 2 x 2 x 5
+* 50 = 2 x 5 x 5
+* 60 = 2 x 2 x 3 x 5
+* 70 = 2 x 5 x 7
+* 80 = 2 x 2 x 2 x 2 x 5
+* 90 = 2 x 3 x 3 x 5
+
+Veiem que els factors primers que apareixen són 2, 3 i 5. Per obtenir un quadrat perfecte, necessitem suprimir un nombre parell per a cada un d'aquests factors.
+
+* Per a 2, necessitem suprimir almenys 2 nombres parells (20, 40, 60, 80).
+* Per a 3, necessitem suprimir almenys 1 nombre que conté 3 (30, 60, 90).
+* Per a 5, necessitem suprimir almenys 1 nombre que conté 5 (10, 20, 30, 50, 60, 70, 80, 90).
+
+Per tant, la quantitat mínima de nombres que podem suprimir és 4 (20, 40, 60, 80).
+
+Resposta: D) 4

@@ -1,0 +1,19 @@
+## Raonament:
+
+Per trobar el menor valor de *n*, volem maximitzar els divisors possibles entre els sis nombres. Si tots els nombres menors que *n* fossin divisors d'aquest, no podríem trobar una parella que compleixi la condició.
+
+* **Considerem el cas on *n* és un nombre primer:** En aquest cas, tots els nombres menors que *n* no serien divisors seus. Això satisfà la condició, però volem el menor *n* possible.
+
+* **Comprovem els nombres primers més petits:** 2, 3, 5, 7...
+
+* **Si *n* = 7:** Podríem tenir la seqüència 1, 2, 3, 4, 5, 7. La parella (4, 7) no compleix la condició ja que 4 no és divisor de 7.
+
+* **Si *n* = 5:** No podem trobar una seqüència que compleixi la condició.
+
+* **Si *n* = 3:** Tampoc podem trobar una seqüència que compleixi la condició.
+
+* **Si *n* = 2:** Tampoc podem trobar una seqüència que compleixi la condició.
+
+Per tant, el menor valor possible de *n* és 7.
+
+## Resposta: A) 9

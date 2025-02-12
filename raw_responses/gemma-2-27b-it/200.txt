@@ -1,0 +1,13 @@
+## Raonament:
+
+1. **Analitzem el primer pas:** Com que *m* és parell però no divisible per 4, el seu major divisor diferent de *m* és *m/2*. Per tant, després de la primera iteració, el robot retornarà *m + m/2 = (3/2)m*.
+
+2. **Iteracions successives:** En cada iteració, el robot suma al nombre actual el seu major divisor diferent d'ell mateix.  
+
+3. **Patró:** Observem que el major divisor d'un nombre parell (que no sigui divisible per 4) sempre serà la meitat del nombre. Així, en cada iteració, el nombre es multiplica per (3/2).
+
+4. **Sis iteracions:** Després de sis iteracions, el nombre haurà estat multiplicat per (3/2) sis vegades: (3/2)^6 * m
+
+5. **Simplificació:** (3/2)^6 = 729/64. Per tant, el nombre final serà (729/64) * m = **(9m * 81) / (2 * 32)**
+
+## Resposta: B) 81m/32

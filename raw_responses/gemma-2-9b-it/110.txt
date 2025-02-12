@@ -1,0 +1,22 @@
+Raonament: 
+
+Per descobrir l'edat del professor, hem de determinar quants enters positius més petits que 101 són divisibles pel quadrat d'un nombre natural més gran que 1.
+
+* **Quadrats de nombres naturals més grans que 1:**  Els quadrats que ens interessen són 4 (2²), 9 (3²), 16 (4²), 25 (5²), 36 (6²), 49 (7²), 64 (8²), 81 (9²), 100 (10²).
+
+* **Nombres divisibles pels quadrats:**  A partir d'aquí, podem identificar els nombres més petits que 101 que són divisibles per cada quadrat:
+    * 4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100
+    * 9: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99
+    * 16: 16, 32, 48, 64, 80, 96
+    * 25: 25, 50, 75, 100
+    * 36: 36, 72, 108 (108 > 101, no comptem)
+    * 49: 49, 98 (98 > 101, no comptem)
+    * 64: 64, 128 (128 > 101, no comptem)
+    * 81: 81, 162 (162 > 101, no comptem)
+    * 100: 100
+
+* **Contar els nombres:** Si comptem tots els nombres que hem trobat, obtenim un total de **42**.
+
+
+
+Resposta: B)

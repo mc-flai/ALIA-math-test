@@ -1,0 +1,26 @@
+## Raonament:
+
+1. **Entenent el problema:** Busquem nombres positius (n) on el seu divisor més gran (excepte el mateix n) sigui n-6.
+
+2. **Relació divisor-dividendo:**  Si n-6 és el divisor més gran de n, significa que n és divisible per n-6.
+
+3. **Expressant la divisió:** Això es pot expressar com: n = (n-6) * k, on k és un nombre enter positiu.
+
+4. **Resolent per n:** Despejant n, obtenim: n = k*n - 6k.
+
+5. **Simplificant:**  6k = n(k-1).
+
+6. **Analitzant la igualtat:** Perquè la igualtat sigui verdadera, n ha de ser un divisor de 6k.
+
+7. **Possibles valors de k:** Com que n és positiu, k també ha de ser positiu. Els divisors de 6 són 1, 2, 3, 6.
+
+8. **Calculant n:**
+
+    * Si k = 1, n = 0 (no és positiu)
+    * Si k = 2, n = 12
+    * Si k = 3, n = 18
+    * Si k = 6, n = 36
+
+## Resposta:
+
+C) 3

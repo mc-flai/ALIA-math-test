@@ -1,0 +1,30 @@
+## Raonament:
+
+Sigui N un nombre de *n* dígits. La suma dels dígits de N es pot representar com *S(N)*. El problema ens diu que:
+
+*S(N) = 3 * S(N + 1)*
+
+Per a que la suma dels dígits de N sigui la més petita possible, N hauria de ser el nombre més petit possible que compleixi la condició. 
+
+Comencem considerant nombres petits:
+
+* Si N = 1, S(N) = 1 i S(N+1) = 2. No compleix la condició.
+* Si N = 2, S(N) = 2 i S(N+1) = 3. No compleix la condició.
+* Si N = 3, S(N) = 3 i S(N+1) = 4. No compleix la condició.
+* Si N = 9, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+
+Observem que a mesura que N augmenta, la diferència entre S(N) i S(N+1) es fa més petita. Això suggereix que la solució serà un nombre amb dígits petits.
+
+* Si N = 12, S(N) = 3 i S(N+1) = 4. No compleix la condició.
+* Si N = 18, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+* Si N = 27, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+
+Continuem explorant nombres amb dígits petits.
+
+* Si N = 36, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+* Si N = 45, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+* Si N = 54, S(N) = 9 i S(N+1) = 10. No compleix la condició.
+
+Observant els resultats, podem veure que la suma més petita possible dels dígits de N és **9**.
+
+## Resposta: B) 9

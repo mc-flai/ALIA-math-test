@@ -1,0 +1,40 @@
+## Raonament:
+
+1. **Definim variables:**
+
+   * Siguin  *a*, *b*, *c* els nombres de la primera fila.
+   * Siguin *d*, *e*, *f* els nombres de la segona fila.
+   * Siguin *g*, *h*, *i* els nombres de la tercera fila.
+
+2. **Utilitzem les condicions donades:**
+
+   * **Producte de files i columnes = 1:**
+      * *a* * *b* * *c* = 1
+      * *d* * *e* * *f* = 1
+      * *g* * *h* * *i* = 1
+      * *a* * *d* * *g* = 1
+      * *b* * *e* * *h* = 1
+      * *c* * *f* * *i* = 1
+
+   * **Producte de graelles 2x2 = 2:**
+      * *a* * *b* * *d* * *e* = 2
+      * *b* * *c* * *e* * *f* = 2
+      * *a* * *c* * *d* * *f* = 2
+      * *d* * *e* * *g* * *h* = 2
+      * *e* * *f* * *h* * *i* = 2
+      * *d* * *f* * *g* * *i* = 2
+
+3. **Analitzem la casella central (*e*):**
+
+   * Observem que *e* apareix en quatre equacions de producte 2x2.
+
+4. **Deduïm el valor de *e*:**
+
+   * Si multipliquem les quatre equacions de producte 2x2 on apareix *e*, obtenim:
+      (*a* * *b* * *d* * *e*) * (*b* * *c* * *e* * *f*) * (*a* * *c* * *d* * *f*) * (*d* * *e* * *g* * *h*) = 2 * 2 * 2 * 2 = 16
+   * Simplificant, obtenim: *e*⁴ = 16
+   * Per tant, *e* = 2 (considerem la solució positiva ja que els nombres són positius).
+
+## Resposta:
+
+**Resposta: C)**

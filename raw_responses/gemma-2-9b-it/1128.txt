@@ -1,0 +1,27 @@
+## Raonament:
+
+1. **Definim variables:**
+    *  `x`: el temps en hores que han d'estar cremant les espelmes.
+
+2. **Expressam la longitud restant de cada espelma en funció de `x`:**
+    * Espelma 1: 4 - (x/4)  (La espelma que crema en 4 hores es consumeix a un ritme de 1/4 de la seva longitud per hora)
+    * Espelma 2: 5 - (x/5)  (La espelma que crema en 5 hores es consumeix a un ritme de 1/5 de la seva longitud per hora)
+
+3. **Establim la relació entre les longituds:**
+    *  Volem que la longitud de la espelma 2 (la que crema més lentament) sigui el triple de la longitud de la espelma 1 quan acabi el temps `x`. Això es pot expressar com:
+        * 5 - (x/5) = 3 * (4 - (x/4))
+
+4. **Resolvim l'equació:**
+    * 5 - (x/5) = 12 - (3x/4)
+    * (3x/4) - (x/5) = 7
+    * (15x - 4x) / 20 = 7
+    * 11x / 20 = 7
+    * 11x = 140
+    * x = 140/11
+
+5. **Simplificació:**
+    * x = 40/11
+
+
+
+## Resposta: A) 40/11 

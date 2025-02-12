@@ -1,0 +1,19 @@
+## Raonament:
+
+Per determinar quan $10^n + 1$ és un múltiple de 11, podem utilitzar la propietat de la divisibilitat per 11. Un nombre és divisible per 11 si la diferència entre la suma de les seves xifres en posicions parells i la suma de les seves xifres en posicions senars és múltiple de 11.
+
+* **Analitzem $10^n$:**
+
+    * Quan *n* és parell, $10^n$ té només un dígit diferent de zero (un 1 a la dreta) i la resta són zeros. La suma de les xifres en posicions parells serà 1 i la suma de les xifres en posicions senars serà 0. La diferència serà 1.
+    * Quan *n* és senar, $10^n$ té un 0 a la dreta i la resta són zeros. La suma de les xifres en posicions parells serà 0 i la suma de les xifres en posicions senars serà 1. La diferència serà -1.
+
+* **Analitzem $10^n + 1$:**
+
+    * Quan *n* és parell, la diferència entre les sumes de les xifres de $10^n + 1$ serà 1 + 1 = 2.
+    * Quan *n* és senar, la diferència entre les sumes de les xifres de $10^n + 1$ serà -1 + 1 = 0.
+
+Només quan *n* és parell, la diferència entre les sumes de les xifres de $10^n + 1$ no és múltiple de 11.
+
+## Resposta:
+
+**B) $n = 2m + 1$**

@@ -1,0 +1,34 @@
+## Raonament:
+
+Perquè el producte de K · N sigui un cub perfecte, cada factor primer en la descomposició en factors primers de K · N ha de tenir un exponent múltiple de 3.
+
+1. **Descomposició de N:**
+
+   N = 5² · 3⁴ · 2
+
+2. **Exponents necessaris:**
+
+   * 5: Necessita un exponent de 0, 3 o 6 (múltiples de 3).
+   * 3: Necessita un exponent de 3 (ja que 3⁴ ja és un exponent múltiple de 3).
+   * 2: Necessita un exponent de 0, 3 o 6 (múltiples de 3).
+
+3. **Trobar K:**
+
+   Per obtenir els exponents necessaris, K ha de tenir els següents factors primers:
+
+   * 5⁰, 5³ o 5⁶
+   * 2⁰, 2³ o 2⁶
+
+4. **Menor valor de K:**
+
+   El menor valor de K que compleix aquestes condicions és K = 5⁰ · 2³ = 8.
+
+5. **Verificació:**
+
+   K · N = 8 · 5² · 3⁴ · 2 = 2³ · 5² · 3⁴ · 2 = 2⁶ · 3⁴ · 5² = (2³ · 3² · 5)²
+
+   Com podem veure, K · N és un cub perfecte.
+
+## Resposta:
+
+**A) 9** (Aquesta opció no és correcta, la resposta correcta és 8, que no apareix entre les opcions)

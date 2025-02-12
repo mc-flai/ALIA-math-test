@@ -1,0 +1,30 @@
+## Raonament:
+
+Per resoldre el problema, hem de trobar quan la suma dels salts del cangur B supera la distància que ha recorregut el cangur A.
+
+* **Cangur A:** Salta 6 metres per cada salt.
+* **Cangur B:** La suma dels seus salts forma una sèrie aritmètica: 1 + 2 + 3 + ...
+
+Per trobar quan el cangur B agafarà el cangur A, hem de calcular la suma dels primers *n* termes de la sèrie aritmètica del cangur B i veure quan aquesta suma supera la distància recorreguda pel cangur A.
+
+La fórmula per la suma d'una sèrie aritmètica és: S = (n/2) * (a + l), on:
+
+* S = suma dels termes
+* n = nombre de termes
+* a = primer terme
+* l = últim terme
+
+En aquest cas, a = 1 i l = n (ja que l'últim terme és igual al nombre de salts).
+
+**Calculem la suma dels salts del cangur B per a diferents valors de n:**
+
+* n = 5: S = (5/2) * (1 + 5) = 15
+* n = 6: S = (6/2) * (1 + 6) = 21
+* n = 7: S = (7/2) * (1 + 7) = 28
+* n = 8: S = (8/2) * (1 + 8) = 36
+* n = 9: S = (9/2) * (1 + 9) = 45
+* n = 10: S = (10/2) * (1 + 10) = 55
+
+Veiem que quan el cangur B fa **10 salts**, la suma dels seus salts (55 metres) supera la distància recorreguda pel cangur A (60 metres).
+
+## Resposta: B) 10

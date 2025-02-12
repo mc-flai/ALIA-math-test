@@ -1,0 +1,16 @@
+Raonament: 
+
+* **Cada triangle té 3 vèrtexs.**
+* **Volem dibuixar una línia recta que passi per un vèrtex de cada triangle.** Això significa que necessitem seleccionar un vèrtex de cada triangle.
+* **Hi ha 3 opcions per a cada triangle.**
+
+Per tant, per trobar el nombre total de maneres de dibuixar la línia recta, multiplicam el nombre d'opcions per cada triangle: 3 * 3 = 9.
+
+No obstant això, aquest càlcul inclou les combinacions que no travessen cap triangle. Per a cada triangle, hi ha una combinació que passa per dos dels seus vèrtexs i no travessa el triangle. Això significa que hi ha 2 combinacions que no ens interessen.
+
+Finalment, restam les combinacions no desitjades del total: 9 - 2 = 7.
+
+Resposta: E) Entre 2 i 6, depenent de com estiguen dibuixats. 
+
+
+**Nota:** La resposta E) és la més precisa ja que el problema no especifica la posició dels triangles. 

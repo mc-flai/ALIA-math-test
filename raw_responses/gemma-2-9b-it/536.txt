@@ -1,0 +1,54 @@
+Raonament:
+
+1. **Simplificació de l'equació inicial:**
+   Comencem per simplificar l'equació donada:
+   
+   ```
+   a/(b+1) + b/(a+1) = 1
+   ```
+   
+   Multiplicam tots els termes per (b+1)(a+1) per eliminar els denominadors:
+   
+   ```
+   a(a+1) + b(b+1) = (b+1)(a+1)
+   ```
+   
+   Desenvolupant:
+   
+   ```
+   a^2 + a + b^2 + b = ab + a + b + 1
+   ```
+   
+   Simplificant:
+   
+   ```
+   a^2 + b^2 - ab = 1
+   ```
+
+2. **Relació amb l'expressió avaluar:**
+   Observem que l'expressió que volem avaluar és:
+   
+   ```
+   a/b + b/a - ab
+   ```
+   
+   Si multipliquem el numerador i denominador de cada terme per *ab*, obtenim:
+   
+   ```
+   (a^2 + b^2 - ab) / ab
+   ```
+   
+   
+
+3. **Conclusió:**
+   
+   A partir de la relació entre l'equació inicial i l'expressió avaluar, podem veure que:
+   
+   ```
+   a/b + b/a - ab = (a^2 + b^2 - ab) / ab = 1 / ab
+   ```
+   
+   Com que no tenim informació sobre els valors de *a* i *b*, no podem determinar el valor exacte de 1/ab. 
+
+
+Resposta: E) És impossible determinar-ne els valors.

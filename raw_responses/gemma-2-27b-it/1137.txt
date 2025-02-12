@@ -1,0 +1,20 @@
+## Raonament:
+
+1. **Triangles amb un angle de 45°:** Per formar un triangle amb un angle de 45°, necessitem que dos dels seus vèrtexs estiguin separats per un arc de 90° (ja que 90°/2 = 45°).
+
+2. **Combinacions possibles:**
+
+   * Tenim 12 punts, per tant, hi ha 12 opcions per al primer vèrtex.
+   * Per al segon vèrtex, tenim 6 opcions, ja que ha d'estar separada del primer per un arc de 90°.
+   * El tercer vèrtex queda determinat automàticament per la posició dels dos primers.
+
+3. **Evitar repeticions:** Hem de tenir en compte que cada triangle es pot formar de diferents maneres (per exemple, triant els vèrtexs en ordre A-B-C o C-A-B). Per evitar comptar el mateix triangle diverses vegades, dividim el nombre total de combinacions per 3! (3 factorial, que és 3*2*1 = 6).
+
+4. **Càlcul:**
+
+   * Combinacions totals: 12 * 6 = 72
+   * Triangles únics: 72 / 6 = 12
+
+## Resposta:
+
+La resposta correcta és **C) 72**.

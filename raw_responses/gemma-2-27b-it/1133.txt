@@ -1,0 +1,26 @@
+## Raonament:
+
+1. **Substitució estratègica:** Per trobar la suma dels coeficients d'un polinomi, podem substituir `x = 1`. Això simplifica el càlcul.
+
+2. **Aplicar la relació:** Substituïm `x = 1` a la relació donada:
+   `p(1 + 1) = 1² − 1 + 2 · p(6)`
+   `p(2) = 1 − 1 + 2 · p(6)`
+   `p(2) = 2 · p(6)`
+
+3. **Repetir la substitució:** Substituïm `x = 2` a la relació original:
+   `p(2 + 1) = 2² − 2 + 2 · p(6)`
+   `p(3) = 4 − 2 + 2 · p(6)`
+   `p(3) = 2 + 2 · p(6)`
+
+4. **Patró:** Observem que podem generalitzar el patró:
+   `p(n) = (n - 1) + 2 · p(6)`
+
+5. **Suma dels coeficients:** Per trobar la suma dels coeficients, substituïm `x = 1` a la fórmula general:
+   `p(1) = (1 - 1) + 2 · p(6)`
+   `p(1) = 2 · p(6)`
+
+6. **Conclusió:** La suma dels coeficients de `p` és igual a `2 · p(6)`. No podem determinar el valor exacte sense més informació sobre `p(6)`.
+
+## Resposta:
+
+E) Cap de les anteriors

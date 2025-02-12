@@ -1,0 +1,16 @@
+Raonament: 
+
+1. **Palindròmics de sis dígits:** Un nombre palindròmic de sis dígits té la forma ABBAAB, on A i B són dígits.
+
+2. **Faktors comuns:**  Per trobar el màxim comú divisor (MCD), hem de considerar els factors comuns a tots els nombres palindròmics de sis dígits.
+
+3. **Estructura:**  Observem que tots els nombres palindròmics de sis dígits tenen els dígits A i B repetits. Això significa que tots els nombres palindròmics de sis dígits són múltiples de (A-B) i (A+B).
+
+4. **Màxim divisor:**  El MCD ha de ser el producte dels factors comuns més grans.  Com que tots els nombres palindròmics de sis dígits comparteixen (A-B) i (A+B) com a factors, el MCD ha de ser un divisor de (A-B) i (A+B).
+
+5. **Limitacions:**  Els dígits A i B van de 0 a 9.  Per tant, la diferència (A-B) i la suma (A+B) no poden ser massa grans.  
+
+6. **Anàlisi:**  Analitzant les opcions, la única que pot ser el MCD de tots els nombres palindròmics de sis dígits és **9**.
+
+
+Resposta: C) 9

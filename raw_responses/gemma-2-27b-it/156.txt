@@ -1,0 +1,21 @@
+## Raonament:
+
+1. **Representem el nombre N:** Un nombre de dues xifres es pot representar com 10*x + y, on x és la xifra de les desenes i y la xifra de les unitats.
+
+2. **Plantejem l'equació:** Sabem que el quocient de N entre la suma de les seves xifres és 8. Això es tradueix en l'equació:
+
+(10*x + y) / (x + y) = 8
+
+3. **Simplifiquem l'equació:** Multiplicant ambdós costats per (x + y) obtenim:
+
+10*x + y = 8*(x + y)
+
+4. **Resolvem per y:**
+
+10*x + y = 8*x + 8*y
+2*x = 7*y
+x = (7/2)*y
+
+5. **Analitzem les possibles solucions:**  Com que x ha de ser un nombre enter entre 0 i 9, l'única solució possible per a y és 2 (ja que 7/2 * 2 = 7).
+
+## Resposta: B) 2

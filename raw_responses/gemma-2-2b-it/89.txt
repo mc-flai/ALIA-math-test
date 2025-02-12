@@ -1,0 +1,37 @@
+## Raonament:
+
+El problema ens pregunta per calcular la xifra de les desenes del nombre $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$.  
+
+Per a resoldre aquest problema, podem utilitzar la següent idea:
+
+* **Factorització de factorial:**  Cada factorial (n!) es pot factoritzar en productes de nombres naturals. 
+* **Observació de la xifra de les desenes:**  Observar com la xifra de les desenes de cada factorial es relaciona amb el seu valor.
+
+**Aplicació:**
+
+1. **Factorització de factorial:**  
+   * 1! = 1
+   * 2! = 2 * 1 = 2
+   * 3! = 3 * 2 * 1 = 6
+   * 4! = 4 * 3 * 2 * 1 = 24
+   * 5! = 5 * 4 * 3 * 2 * 1 = 120
+   *...
+
+2. **Observació de la xifra de les desenes:**  
+   *  Cada factorial comença amb un 1, 2, 6, 24, 120,...  
+   *  Observar que la xifra de les desenes de cada factorial es pot calcular a partir de la xifra de les desenes del factorial anterior.
+
+3. **Suma de factorials:**  
+   *  Sumar tots els factorials, no ens interessa el valor exacte, sinó la xifra de les desenes.
+
+**Conclusió:**
+
+*  La xifra de les desenes del nombre $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$  serà la suma de les xifres de les desenes de tots els factorials. 
+*  Per tant, la resposta es pot obtenir a partir de la suma de les xifres de les desenes de tots els factorials.
+
+
+**Resposta:**  
+
+No es pot calcular la xifra de les desenes del nombre $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$  a partir de la suma de les xifres de les desenes de tots els factorials. 
+
+

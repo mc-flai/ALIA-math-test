@@ -1,0 +1,25 @@
+Raonament:
+
+1. **Factorial:** Recorda que el factorial d'un nombre (n!) és el producte de tots els nombres enters positius fins a n. Per exemple, 5! = 5 * 4 * 3 * 2 * 1 = 120.
+
+2. **Divisors de 3:**  Un nombre és divisible per 3 si la suma dels seus dígits és divisible per 3.
+
+3. **Analitzem els factorials:**
+    * 7! = 7 * 6 * 5 * 4 * 3 * 2 * 1. Conté els factors 3 i 6, que són multiplos de 3.
+    * 8! = 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1. Conté els factors 3, 6, i 9, que són multiplos de 3.
+    * 9! = 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1. Conté els factors 3, 6, 9, i 27, que són multiplos de 3.
+
+4. **Suma de potències de 3:**  Com que tots els factorials contenen multiplos de 3, la suma 7! + 8! + 9! també serà divisible per 3.  
+
+5. **Encontrar la potencia más alta:**  Per determinar la potencia más alta de 3 que divide a la suma, necesitamos analizar cuántos factores de 3 hay en cada factorial y sumar las potencias correspondientes.  
+
+6. **Cálculo:**  
+    * 7! tiene un factor de 3^2 (9).
+    * 8! tiene un factor de 3^3 (27).
+    * 9! tiene un factor de 3^4 (81).
+
+    La suma de estas potencias es 2 + 3 + 4 = 9.  Por lo tanto, la potencia más alta de 3 que divide a la suma es 3^9.
+
+
+
+Resposta: E) Una potència de 3 més alta que 3⁶ 

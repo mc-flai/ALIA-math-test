@@ -1,0 +1,33 @@
+Raonament:
+
+* Sigui 'x' el nombre de galetes que Joan va menjar el primer dia.
+* El segon dia va menjar 'x + 5' galetes.
+* El tercer dia va menjar 'x + 10' galetes.
+* I així successivament.
+
+Sabem que en total va menjar 50 galetes, per tant:
+x + (x + 5) + (x + 10) +...  = 50
+
+Aquesta és una sèrie aritmètica. Per resoldre-la, podem utilitzar la fórmula:
+
+Suma = (nombre de termes / 2) * (primer terme + últim terme)
+
+Per trobar el nombre de termes, podem utilitzar la fórmula:
+
+últim terme = primer terme + (nombre de termes - 1) * diferència
+
+En aquest cas:
+
+* Primer terme = x
+* Últim terme = x + (n-1)*5 (on 'n' és el nombre de dies)
+* Diferència = 5
+
+Substituint aquests valors a la fórmula de la suma, obtenim:
+
+50 = (n/2) * (x + x + (n-1)*5)
+
+Per trobar 'n' i 'x', necessitem més informació. 
+
+Resposta: No es pot determinar la resposta amb la informació proporcionada. 
+
+

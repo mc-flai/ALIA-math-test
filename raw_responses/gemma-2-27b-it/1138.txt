@@ -1,0 +1,19 @@
+## Raonament:
+
+Per resoldre aquest problema, hem de provar cada opció com a valor possible de 'a' i veure si podem trobar valors per 'b', 'c' i 'd' que satisfacin l'equació.
+
+* **Considerem les magnituds:** Els cubs de nombres petits (1, 2, 3...) creixen relativament lentament. Per tant, si 'a' és massa gran, la suma dels cubs de 'b', 'c' i 'd' no serà prou gran per igualar el cub de 'a'.
+
+* **Comencem per provar 'a' = 2:** 2³ = 8. Per tant, necessitem trobar valors per 'b', 'c' i 'd' que sumin 8 quan es cuben. Això no és possible amb dígits entre 0 i 9.
+
+* **Proveu 'a' = 3:** 3³ = 27. De nou, és difícil trobar una combinació de dígits que sumin 27 quan es cuben.
+
+* **Proveu 'a' = 4:** 4³ = 64.  
+
+* **Proveu 'a' = 5:** 5³ = 125.
+
+* **Proveu 'a' = 6:** 6³ = 216.
+
+Observant les magnituds dels cubs, veiem que només 'a' = 4 té un cub (64) que podria ser la suma dels cubs de tres dígits més petits.
+
+## Resposta: C) 4

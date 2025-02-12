@@ -1,0 +1,13 @@
+## Raonament:
+
+1. **Posicions:** Com que els cavallers estan asseguts en una taula rodona, cada cavaller té dos veïns.
+
+2. **Amics i enemics:** Cada cavaller és amic de tots els cavallers que no són els seus veïns immediats.
+
+3. **Parelles amics:** Per tant, per a cada cavaller, podem comptar quantes parelles d'amics podem formar. Si hi ha 'n' cavallers, cada cavaller té 'n-2' amics.
+
+4. **Evitar repeticions:** Hem de tenir en compte que si comptem les parelles d'amics per a cada cavaller, estem comptant cada parella dues vegades (una vegada per cada membre de la parella). Per tant, hem de dividir el resultat per 2.
+
+5. **Càlcul:** En aquest cas, tenim 6 cavallers. Per tant, cada cavaller té 4 amics. Si multipliquem 6 cavallers per 4 amics per cavaller, obtenim 24 parelles. Dividint per 2 per evitar repeticions, obtenim 12 parelles.
+
+## Resposta: D) 12

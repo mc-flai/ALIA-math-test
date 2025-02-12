@@ -1,0 +1,22 @@
+Raonament:
+
+Aquest problema es pot resoldre utilitzant el concepte de permutacions amb repetició. 
+
+* Tenim 6 cilindres en total.
+* No tots els cilindres són diferents, ja que hi ha repetició de colors.
+
+Per calcular el nombre de possibilitats d'apilar els cilindres, seguim els següents passos:
+
+1. **Si tots els cilindres fossin diferents**, hauríem de calcular el nombre de permutacions de 6 objectes, que seria 6! (6 factorial) = 6*5*4*3*2*1 = 720.
+
+2. **Com que hi ha repetició de colors**, hem de corregir la nostra resposta. Dividirem el resultat de la permutació de 6 objectes entre el factorial del nombre de repeticions de cada color.
+
+* Hi ha 3 cilindres blaus, per tant dividirem per 3! (3 factorial) = 3*2*1 = 6.
+* Hi ha 2 cilindres verds, per tant dividirem per 2! (2 factorial) = 2*1 = 2.
+* Hi ha 1 cilindre groc, per tant dividirem per 1! (1 factorial) = 1.
+
+3. **Finalment, el càlcul serà:** 720 / (6 * 2 * 1) = 720 / 12 = 60.
+
+
+
+Resposta: B) 60

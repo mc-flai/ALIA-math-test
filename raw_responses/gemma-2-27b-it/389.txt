@@ -1,0 +1,26 @@
+## Raonament:
+
+Podem resoldre aquest problema utilitzant un diagrama de Venn o simplement amb lògica.
+
+* **Sigui "D" el conjunt de llibres de detectius, "G" el conjunt de guies de viatge i "C" el conjunt de llibres de ciència ficció.**
+
+* **Sabem que:**
+    * 3 no són de detectius:  |G ∪ C| = 3
+    * 4 no són guies de viatge: |D ∪ C| = 4
+    * 5 no són de ciència ficció: |D ∪ G| = 5
+
+* **Si sumem les tres expressions, comptem cada llibre que no pertany a cap categoria diverses vegades.** Per exemple, un llibre que no és de detectius ni de ciència ficció (només guia de viatge) s'hauria de comptar dues vegades.
+
+* **Per evitar comptar-los dues vegades, podem utilitzar la següent fórmula:**
+
+Total de llibres = |D ∪ G ∪ C| = |D| + |G| + |C| - |D ∩ G| - |D ∩ C| - |G ∩ C| + |D ∩ G ∩ C|
+
+* **No tenim informació sobre la intersecció de categories, per tant assumirem que no hi ha llibres que pertanyin a dues categories alhora.** Això simplifica la fórmula:
+
+Total de llibres = |D| + |G| + |C|
+
+* **Substituint els valors que coneixem:**
+
+Total de llibres = 3 + 4 + 5 = 12
+
+## Resposta: B) 12

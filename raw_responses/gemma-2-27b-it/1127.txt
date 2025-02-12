@@ -1,0 +1,37 @@
+## Raonament:
+
+1. **Definim les variables:**
+    *  `pq` representa el nombre de dues xifres format per les xifres `p` i `q`.
+    *  `rs` representa el nombre de dues xifres format per les xifres `r` i `s`.
+    *  `pq,rs` representa el nombre decimal format per les xifres `p`, `q`, `r` i `s`.
+
+2. **Plantejem l'equació:**
+    El problema ens diu que `pq,rs` és la mitjana entre `pq` i `rs`. Matemàticament, això es pot expressar com:
+
+    `pq,rs = (pq + rs) / 2`
+
+3. **Convertim a nombres decimals:**
+    * `pq,rs` = `pq + rs / 100`
+
+4. **Substituïm i resolguem:**
+    `pq + rs / 100 = (pq + rs) / 2`
+
+    Multiplicant ambdós costats per 100:
+    `100pq + 100rs = 50pq + 50rs`
+
+    Simplificant:
+    `50pq = 50rs`
+    `pq = rs`
+
+    Aquesta equació ens diu que el nombre de dues xifres `pq` és igual al nombre de dues xifres `rs`.
+
+5. **Trobem la suma dels dígits:**
+    Com que `pq = rs`, podem assumir que `p = r` i `q = s`. Per tant, la suma dels dígits de N (`pqrs`) serà:
+
+    `p + q + r + s = p + q + p + q = 2p + 2q`
+
+    Com no tenim més informació, no podem determinar el valor exacte de `p` i `q`.
+
+## Resposta:
+
+No es pot determinar la suma dels dígits de N amb la informació proporcionada.

@@ -1,0 +1,15 @@
+## Raonament:
+
+1. **Factorització:** Primer, cal factoritzar 2^16 - 1. Recordem la identitat algebraica: a^n - b^n = (a - b)(a^(n-1) + a^(n-2)b + ... + ab^(n-2) + b^(n-1)). Aplicant-la amb a = 2 i b = 1, obtenim:
+
+   2^16 - 1 = (2 - 1)(2^15 + 2^14 + ... + 2 + 1) = (2^15 + 2^14 + ... + 2 + 1)
+
+2. **Suma de termes d'una progressió geomètrica:** El terme entre parèntesis és la suma dels primers 16 termes d'una progressió geomètrica amb primer terme 1 i raó 2. La fórmula per la suma d'una progressió geomètrica és: S = a(1 - r^n) / (1 - r), on S és la suma, a el primer terme, r la raó i n el nombre de termes.
+
+   En aquest cas, S = (1 * (1 - 2^16)) / (1 - 2) = (1 - 65536) / (-1) = 65535
+
+3. **Divisors:** 65535 és un nombre senar, per tant, tots els seus divisors són senars. Per trobar el nombre de divisors, cal factoritzar 65535. 65535 és divisible per 5, ja que acaba en 5. 65535 / 5 = 13107, que és un nombre primer.
+
+   Per tant, la factorització de 65535 és 5 * 13107. Un nombre té (e1 + 1)(e2 + 1)...(en + 1) divisors, on e1, e2, ..., en són els exponents dels seus factors primers. En aquest cas, 65535 té (1 + 1)(1 + 1) = 4 divisors.
+
+## Resposta: D) 4

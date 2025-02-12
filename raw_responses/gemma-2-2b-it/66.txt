@@ -1,0 +1,13 @@
+## Raonament:
+
+1. **Factorització:**  Primer, podem factoritzar el nombre $2^9 = 512$. 
+
+2. **Divisió de 20!:**  Ara, hem de veure si $20!$ és divisible per 512.  Per fer-ho, podem dividir $20!$ per 2, i veure si el resultat és divisible per 512. 
+
+3. **Simplificació:**  Per simplificar la divisió, podem utilitzar la propietat que $n! \equiv 0 \pmod{2^k}$ si $n$ és parell.  Per tant, $20! \equiv 0 \pmod{2^9}$
+
+4. **Suma:**  Finalment, podem sumar $520$ a $20!$, i veure si el resultat és divisible per $2^9$.
+
+## Resposta:
+
+**Resposta: E) 512** 

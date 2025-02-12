@@ -1,0 +1,39 @@
+## Raonament:
+
+1. **Representació:** Si N té n dígits, podem representar-lo com:
+
+   N = aₙaₙ₋₁...a₂a₁6, on aᵢ representa cada dígit.
+
+2. **M:** Quan esborrem el 6 i el posem al principi, obtenim M:
+
+   M = 6aₙaₙ₋₁...a₂a₁
+
+3. **Relació:** Sabem que M = 4N. Substituint les representacions de N i M:
+
+   6aₙaₙ₋₁...a₂a₁ = 4(aₙaₙ₋₁...a₂a₁6)
+
+4. **Simplificació:** Dividint ambdós costats per 2:
+
+   3aₙaₙ₋₁...a₂a₁ = 2(aₙaₙ₋₁...a₂a₁6)
+
+5. **Anàlisi:** Observem que el costat esquerre és un nombre sencer, mentre que el costat dret és parell. Per tant, aₙ (el primer dígit de N) ha de ser parell.
+
+6. **Prova i Error:** Comencem provant amb aₙ = 2. Si aₙ = 2, la relació esdevé:
+
+   32aₙ₋₁...a₂a₁ = 2(2aₙ₋₁...a₂a₁6)
+
+   Simplificant:
+
+   16aₙ₋₁...a₂a₁ = 2aₙ₋₁...a₂a₁6
+
+   8aₙ₋₁...a₂a₁ = aₙ₋₁...a₂a₁6
+
+   Perquè aquesta igualtat es compleixi, aₙ₋₁...a₂a₁ ha de ser divisible per 8.
+
+7. **Solució:** El nombre més petit que compleix aquestes condicions és N = 246.
+
+8. **Suma de dígits:** La suma de dígits de 246 és 2 + 4 + 6 = 12.
+
+## Resposta:
+
+Aquesta pregunta no té cap de les opcions de resposta com a solució correcta. La suma de dígits del nombre N més petit que compleix l'enunciat és 12.

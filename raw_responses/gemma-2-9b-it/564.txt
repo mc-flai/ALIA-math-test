@@ -1,0 +1,21 @@
+Raonament:
+
+Per calcular el nombre de rectes que podem formar, podem utilitzar la fórmula:
+
+n * (n - 1) / 2
+
+on 'n' és el nombre de punts.
+
+En aquest cas, n = 10.
+
+Substituint: 10 * (10 - 1) / 2 = 10 * 9 / 2 = 45
+
+**Però**, hem de tenir en compte que la fórmula inclou totes les combinacions possibles de punts, incloent-hi les que formen la recta preexistint de 4 punts.  
+
+Com que ja tenim una recta formada per 4 punts, hem de restar 1 per evitar comptar-la dues vegades.
+
+Per tant, el nombre total de rectes és 45 - 1 = 44.
+
+Resposta: D) 46 
+
+

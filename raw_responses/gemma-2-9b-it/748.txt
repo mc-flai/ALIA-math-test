@@ -1,0 +1,17 @@
+## Raonament:
+
+Un nombre és divisible per un altre si la seva divisió per aquest altre resulta en un nombre enter sense restes.  
+
+Analitzem les xifres possibles a suprimir:
+
+* **Centena:** Si suprimim la centena, el nombre resultant ha de ser un divisor del nombre original. Això només és possible si la centena és 1 (1000, 1001, 1002...). En aquest cas, el nombre resultant seria un nombre de dues xifres, i per ser divisor del original, hauria de ser un divisor de 100. 
+* **Dezena:** Si suprimim la dezena, el nombre resultant ha de ser un divisor del nombre original. Això només és possible si la dezena és 0 (1000, 1001, 1002...). En aquest cas, el nombre resultant seria un nombre de tres xifres, i per ser divisor del original, hauria de ser un divisor de 100.
+* **Unitat:** Si suprimim la unitat, el nombre resultant ha de ser un divisor del nombre original. Això només és possible si la unitat és 0 (1000, 1001, 1002...). En aquest cas, el nombre resultant seria un nombre de tres xifres, i per ser divisor del original, hauria de ser un divisor de 100.
+
+Observant els divisors de 100 (1, 2, 4, 5, 10, 20, 25, 50, 100), podem identificar els nombres del conjunt que compleixen la condició.
+
+## Resposta:
+
+C) 14 
+
+

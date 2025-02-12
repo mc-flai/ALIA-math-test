@@ -1,0 +1,18 @@
+## Raonament:
+
+Aquest problema es refereix a permutacions amb repetició. Sara té 5 cubs en total, però 3 són rojos i 2 són blancs. Per calcular el nombre de torres diferents que pot construir, hem de tenir en compte que intercanviar dos cubs del mateix color no canvia la torre.
+
+La fórmula per calcular permutacions amb repetició és:
+
+n! / (r1! * r2! * ... * rk!)
+
+On:
+
+* n és el nombre total d'elements (5 cubs)
+* r1, r2, ..., rk són el nombre de repeticions de cada element (3 cubs rojos i 2 cubs blancs)
+
+Aplicant la fórmula:
+
+5! / (3! * 2!) = 120 / (6 * 2) = 10
+
+## Resposta: D) 10

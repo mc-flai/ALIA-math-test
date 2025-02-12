@@ -1,0 +1,15 @@
+Raonament: 
+
+Cada parella de punts de la circumferència defineix una corda única. Per tant, per trobar el nombre màxim de cordes, hem de calcular el nombre de combinacions possibles de 2 punts entre els 2016 punts.
+
+Aquesta combinació es pot calcular amb la fórmula: n! / (r! * (n-r)!), on n és el nombre total d'elements (2016 punts) i r és el nombre d'elements que es trien a la vegada (2 punts).
+
+En aquest cas: 2016! / (2! * (2016-2)!) = 2016! / (2 * 2014!) = 2016 * 2015 / 2 = 2031120
+
+Però, aquest càlcul inclou cordes que van des del punt 1 al punt 2 i del punt 2 al punt 1, que són la mateixa corda. Per tant, hem de dividir el resultat per 2.
+
+Finalment, el nombre màxim de cordes sense intersecció és: 2031120 / 2 = 1015560.
+
+Resposta: Ninguna de les opcions proporcionades és correcta. La resposta correcta és 1015560. 
+
+

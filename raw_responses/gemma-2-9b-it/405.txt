@@ -1,0 +1,24 @@
+Raonament:
+
+* **Cada subconjunt de 3 elements defineix una parella d'elements:**  Si tenim un subconjunt {a, b, c}, això significa que la parella {a, b} està associada a aquest subconjunt.
+
+* **Exactament un subconjunt per parella:** La pregunta diu que per a cada parella d'elements de S, hi ha exactament un subconjunt que els conté.
+
+* **Nombre de parelles:**  Un conjunt amb *n* elements té  n*(n-1)/2 parelles d'elements possibles.
+
+* **Relació entre parelles i subconjunts:**  Perquè hi hagi exactament un subconjunt per cada parella, necessitem 7 subconjunts, i per tant, 7 parelles d'elements.
+
+* **Equació:**  n*(n-1)/2 = 7
+
+Resolent aquesta equació, obtenim:
+* n*(n-1) = 14
+* n² - n - 14 = 0
+* (n-4)(n+3) = 0
+
+Això ens dona dues solucions possibles: n = 4 o n = -3.
+
+* **Solució viable:**  Com que el nombre d'elements d'un conjunt no pot ser negatiu, la solució viable és n = 4.
+
+
+
+Resposta: A) No podem trobar cap n així. 

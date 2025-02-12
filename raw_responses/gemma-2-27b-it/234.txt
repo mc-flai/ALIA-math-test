@@ -1,0 +1,37 @@
+## Raonament:
+
+Podem resoldre aquesta suma utilitzant una tècnica de manipulació algebraica. 
+
+1. **Racionalitzem el denominador de cada fracció:**
+
+   Per exemple, per la primera fracció:
+
+   ```
+   1/(√2 + √1) = (1/(√2 + √1)) * ((√2 - √1)/(√2 - √1)) 
+                = (√2 - √1) / (2 - 1)
+                = √2 - √1
+   ```
+
+   Farem el mateix per a totes les fraccions de la suma.
+
+2. **Observem el patró:**
+
+   Al racionalitzar cada fracció, obtenim una diferència de dos arrels consecutives:
+
+   * 1/(√2 + √1) = √2 - √1
+   * 1/(√3 + √2) = √3 - √2
+   * 1/(√4 + √3) = √4 - √3
+   * ...
+   * 1/(√2016 + √2015) = √2016 - √2015
+
+3. **Simplifiquem la suma:**
+
+   Al sumar totes les fraccions, els termes intermedis es cancel·len:
+
+   (√2 - √1) + (√3 - √2) + (√4 - √3) + ... + (√2016 - √2015) = √2016 - √1
+
+4. **Resultat:**
+
+   Per tant, el valor de la suma és √2016 - 1.
+
+## Resposta: E) √2016 - 1

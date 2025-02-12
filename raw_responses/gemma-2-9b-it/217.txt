@@ -1,0 +1,32 @@
+Raonament:
+
+Per trobar els possibles residus, podem utilitzar el teorema de Euler. El teorema de Euler diu que si *a* i *n* són dos nombres naturals coprimers, llavors:
+
+a<sup>φ(n)</sup> ≡ 1 (mod n)
+
+on φ(n) és la funció totient de Euler, que compte el nombre de nombres naturals menors que *n* que són coprimers amb *n*.
+
+En el nostre cas, *n* = 9 i *a* és un nombre natural.  φ(9) = 6 (perquè els nombres coprimers amb 9 menors que 9 són 1, 2, 4, 5, 7, i 8).
+
+Per tant, per a qualsevol nombre natural *a*:
+
+a<sup>6</sup> ≡ 1 (mod 9)
+
+Això significa que quan elevem un nombre natural al cub (a<sup>3</sup>) i el dividim per 9, el residu sempre serà un dels 6 possibles residus que obtenim quan elevem els nombres de 1 a 9 al cub i els dividim per 9.
+
+Calculant els residus:
+
+* 1<sup>3</sup> ≡ 1 (mod 9)
+* 2<sup>3</sup> ≡ 8 (mod 9)
+* 3<sup>3</sup> ≡ 0 (mod 9)
+* 4<sup>3</sup> ≡ 1 (mod 9)
+* 5<sup>3</sup> ≡ 5 (mod 9)
+* 6<sup>3</sup> ≡ 0 (mod 9)
+* 7<sup>3</sup> ≡ 8 (mod 9)
+* 8<sup>3</sup> ≡ 1 (mod 9)
+* 9<sup>3</sup> ≡ 0 (mod 9)
+
+Com veiem, hi ha 3 residus diferents: 0, 1 i 8.
+
+
+Resposta: C) 3

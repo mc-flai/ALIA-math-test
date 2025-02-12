@@ -1,0 +1,12 @@
+## Raonament:
+
+1. **Analitzem les cartes:** Les cartes van augmentant de 5 en 5. 
+2. **Busquem combinacions:** Per arribar a 100, necessitem trobar cartes que sumin aquest valor. Com que les cartes augmenten de 5 en 5, podem provar combinacions sumant les cartes més grans.
+3. **Prova i error:**
+    * Si prenem la carta 68, necessitem 32 més (100-68=32). No hi ha cap combinació de cartes que sumi exactament 32.
+    * Si prenem les cartes 68 i 33, necessitem 1 (100-68-33=1). No hi ha cap carta amb el valor 1.
+    * Si prenem les cartes 68, 33 i 3, la suma és 104, que és massa gran.
+
+4. **Conclusió:** No podem obtenir una suma exacta de 100 amb les cartes disponibles.
+
+## Resposta: E) És impossible fer-ho.

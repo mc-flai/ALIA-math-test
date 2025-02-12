@@ -1,0 +1,20 @@
+## Raonament:
+
+1. **Visualitza un cub:** Imagina un cub normal.
+
+2. **Identifica els vèrtexs:** Un cub té 8 vèrtexs (punts de cantonada).
+
+3. **Plans possibles:** Per cada grup de tres vèrtexs no colineals (que no estan en la mateixa recta), podem dibuixar un pla únic que passi per ells.
+
+4. **Excepcions:** Si els tres vèrtexs estan en la mateixa cara del cub, el pla passarà per quatre vèrtexs (tots els d'aquella cara).
+
+5. **Compta els plans:**
+
+    * Hi ha 4 cares en un cub.
+    * Cada cara té 4 vèrtexs, però només podem triar 3 per formar un pla.
+    * Això ens dona 4 cares * 4 combinacions de 3 vèrtexs = 16 plans.
+    * Però, 4 d'aquests plans passaran per quatre vèrtexs (els de cada cara).
+
+    * Per tant, hi ha 16 - 4 = 12 plans que passen per tres vèrtexs però no per quatre.
+
+## Resposta: E) 12

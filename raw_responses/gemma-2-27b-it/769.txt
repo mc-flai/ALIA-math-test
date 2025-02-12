@@ -1,0 +1,15 @@
+## Raonament:
+
+1. **Factorització de 1024:** 1024 es pot factoritzar com 2¹⁰.
+
+2. **Divisors de 1024:** Els divisors de 1024 es formen combinant les potències de 2 des de 2⁰ fins a 2¹⁰. Hi ha 11 divisors en total (2⁰, 2¹, 2², ..., 2¹⁰).
+
+3. **Suma dels divisors (a):** La suma dels divisors es pot calcular com segueix: (2⁰ + 2¹ + 2² + ... + 2¹⁰) = (2¹¹ - 1) / (2 - 1) = 2047
+
+4. **Producte dels divisors (b):** El producte dels divisors es pot calcular com segueix: (2⁰ * 2¹ * 2² * ... * 2¹⁰) = 2⁰ * 2¹ * 2² * ... * 2¹⁰ = 2^(0+1+2+...+10) = 2⁵⁵
+
+5. **Comparació:** Ara tenim a = 2047 i b = 2⁵⁵. Observem que 2047 = 2¹¹ - 1.
+
+6. **Conclusió:** Per tant, (a - 1)⁵ = (2¹¹ - 2)⁵ = 2⁵⁵ = b.
+
+## Resposta: A)

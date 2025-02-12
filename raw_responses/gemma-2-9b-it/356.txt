@@ -1,0 +1,26 @@
+Raonament: 
+
+Per trobar el nombre de guanyadors, necessitem saber quantes persones van resoldre el tercer i quart problema.  No podem sumar directament el nombre de persones que van resoldre el tercer (70) i el quart (60) problema, perquè això comptabilitzaria dues vegades les persones que van resoldre ambdós problemes.
+
+Per solucionar això, podem utilitzar el principi d'exclusió-inclussió:
+
+* **Total:** 100 participants
+* **Primer problema:** 90
+* **Segon problema:** 80
+* **Tercer problema:** 70
+* **Quart problema:** 60
+
+Per trobar el nombre de guanyadors (aquells que van resoldre el tercer i quart problema), podem seguir els passos següents:
+
+1. **Suma total:** 90 + 80 + 70 + 60 = 300
+2. **Resta els que van resoldre més d'un problema:** 300 - 90 - 80 - 70 - 60 = -100. 
+3. **Suma els que van resoldre dos problemes:** 90 + 80 + 70 + 60 - 100 = 100
+4. **Resta els que van resoldre tres problemes:** 100 - 90 - 80 - 70 - 60 = -100
+5. **Suma els que van resoldre quatre problemes:** 100 - 90 - 80 - 70 - 60 = -100
+
+Com que el resultat és negatiu, significa que hem comptabilitzat algunes persones dues vegades. Això és impossible, ja que cap participant va resoldre els quatre problemes.
+
+Per tant, la resposta correcta és **E) Impossible de determinar**.
+
+
+

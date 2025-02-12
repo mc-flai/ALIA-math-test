@@ -1,0 +1,17 @@
+## Raonament:
+
+Per determinar el nombre de pàgines, hem de considerar que cada pàgina necessita almenys un dígit per a la seva numeració. 
+
+* **Pàgines d'1 a 9:** Requereixen 9 dígits.
+* **Pàgines del 10 al 99:** Requereixen 90 pàgines * 2 dígits/pàgina = 180 dígits.
+* **Pàgines del 100 al 999:** Requereixen 900 pàgines * 3 dígits/pàgina = 2700 dígits.
+
+Ara, cal trobar quantes pàgines de quatre dígits podem numerar amb la resta de dígits disponibles:
+
+* **Dígits restants:** 11381 - 9 - 180 - 2700 = 8492
+
+* **Pàgines de quatre dígits:** 8492 dígits / 4 dígits/pàgina = 2123 pàgines.
+
+* **Total de pàgines:** 9 + 90 + 900 + 2123 = **3122**
+
+## Resposta: B) 3122

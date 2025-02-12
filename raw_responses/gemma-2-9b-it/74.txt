@@ -1,0 +1,26 @@
+Raonament:
+
+1. **Observació:**  Observem que $10^1 + 1 = 11$, que és un múltiple de 11. 
+
+2. **Patrón:**  Anem explorant més valors de *n*:
+    * $10^2 + 1 = 101$ (no és múltiple de 11)
+    * $10^3 + 1 = 1001$ (no és múltiple de 11)
+    * $10^4 + 1 = 10001$ (no és múltiple de 11)
+    * $10^5 + 1 = 100001$ (no és múltiple de 11)
+
+3. **Anàlisi:**  No sembla que hi hagi un patró clar per a tots els valors de *n*.  
+
+4. **Resolució:**  Podem intentar expressar $10^n$ en termes de potències de 10 que siguin congruents amb 1 o -1 modulo 11. 
+    * $10^2 \equiv 1 \pmod{11}$
+
+5. **Aplicació:**  Utilitzant la congruència anterior:
+    * $10^n + 1 \equiv (10^2)^{m} + 1 \equiv 1^{m} + 1 \equiv 2 \pmod{11}$  (si *n* és parell)
+
+    * $10^n + 1 \equiv (10^2)^{m} \cdot 10 + 1 \equiv 1^{m} \cdot 10 + 1 \equiv 11 \equiv 0 \pmod{11}$ (si *n* és impar)
+
+    
+
+Resposta:  **A) n = 2m**  (perquè $10^n + 1$ serà un múltiple de 11)
+
+
+

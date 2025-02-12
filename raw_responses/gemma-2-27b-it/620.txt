@@ -1,0 +1,15 @@
+## Raonament:
+
+Per resoldre aquest problema, podem pensar en el problema de la ordenació de llibres com un problema de permutacions. 
+
+* **Permutació:** Una permutació és una ordenació específica d'elements d'un conjunt. En aquest cas, els nostres elements són els llibres del 1 al 9.
+
+* **Distància de Hamming:** La distància de Hamming entre dues permutacions és el nombre mínim d'intercanvis necessaris per transformar una permutació en l'altra.
+
+En el nostre cas, volem saber la distància de Hamming entre la permutació desordenada inicial i la permutació ordenada (1, 2, 3, ..., 9).
+
+Existeix un teorema que afirma que la distància de Hamming entre dues permutacions qualssevol d'n elements és com a màxim n/2.
+
+En el nostre cas, tenim 9 llibres, per tant la distància de Hamming màxima és 9/2 = 4.5. Com que només podem fer intercanvis enters, el nombre mínim d'intercanvis necessaris serà 5.
+
+**Resposta:** D) 10
