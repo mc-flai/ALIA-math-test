@@ -1,0 +1,45 @@
+<think>
+Sara inicia con 16 fitxes blaves. Puede convertir 3 fitxes blancas en 1 fitxa roja, lo que le permite obtener más fitzas verdes a través de la conversión de 2 fitzas rojas en 5 fitzas verdes.
+
+Para maximizar las fitzas verdes, Sara debe priorizar convertir las fitzas blaves en rojas y luego estas en verdes. Primero, determinaré cuántas conversiones de blanca a roja puede realizar con 16 fitzes blaves. Luego calcularé cómo esas fitzas rojas se convierten en verdes.
+
+Finalmente, consideraré si quedan fitzas blancas suficientes para una conversión adicional que pueda maximizar aún más las fitzas verdes.
+</think>
+
+**Raonament:**
+
+Sara comença amb 16 fitxes blaves. Les regles de conversió són:
+
+1. **3 fitxes blaves → 1 fitxa roja**
+2. **2 fitxes roges → 5 fitxes verdes**
+
+El objectiu és maximitzar la quantitat de fitxes verdes.
+
+**Passos:**
+
+1. **Convertir les fitxes blaves en roges:**
+   - Sara pot convertir 3 fitxes blaves per obtenir 1 fitxa roja.
+   - Amb 16 fitxes blaves, el número màxim de conversões és:
+     \[
+     \left\lfloor \frac{16}{3} \right\rfloor = 5 \text{ conversões}
+     \]
+     Cada conversió dona 1 fitxa roja, això resulta en 5 fitxes roges.
+
+2. **Utilitzar les fitxes roges per obtenir fitxes verdes:**
+   - Amb 5 fitxes roges, pot convertir:
+     \[
+     \left\lfloor \frac{5}{2} \right\rfloor = 2 \text{ conversões}
+     \]
+     Cada conversió dona 5 fitxes verdes, això resulta en \(2 \times 5 = 10\) fitxes verdes.
+
+3. **Restes:**
+   - Després de fer 5 conversões (3x5=15 fitxes blaves usades), Sara té:
+     \[
+     16 - 15 = 1 \text{ fitxa blanca restant}
+     \]
+     Aquesta fitxa no és suficient per fer cap altra conversió.
+
+**Conclusió:**
+La quantitat màxima de fitxes verdes que Sara pot obtindre és **10**.
+
+**Resposta:** B) 10

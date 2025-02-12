@@ -1,0 +1,105 @@
+<think>
+Primero, identifico que se necesita encontrar el valor de 3a² + 4b² + 2a + 3b + 1 donde a y b son las soluciones de la ecuación cuadrática x² + x − 7 = 0.
+
+Recuerdo que para una ecuación cuadrática general de la forma ax² + bx + c = 0, la suma de las raíces es -b/a y el producto es c/a. En este caso, la suma de las soluciones a + b será igual a -1/1 = -1, y el producto ab será -7/1 = -7.
+
+Luego, para calcular 3a² + 4b² + 2a + 3b + 1, intento expresarlo en términos de las sumas y productos ya conocidos. Sé que a² y b² pueden ser manejados utilizando las identidades cuadráticas y las relaciones entre raíces.
+
+Finalmente, reorganizo la expresión para encontrar que se puede expresar en función de (a + b) y ab, lo que me permite calcular el valor final sin necesidad de encontrar los valores individuales de a y b.
+</think>
+
+**Raonament:**
+
+1. **Identificar las raíces:**  
+   Dado la ecuación cuadrática \( x^2 + x - 7 = 0 \), sabemos que sus soluciones son \( a \) y \( b \).
+
+2. **Aplicar relaciones entre raíces:**  
+   Por la fórmula de las raíces de una ecuación cuadrática, tenemos:
+   \[
+   a + b = -\frac{1}{1} = -1
+   \]
+   \[
+   ab = \frac{-7}{1} = -7
+   \]
+
+3. **Calcular \( 3a^2 + 4b^2 \):**  
+   Usando las identidades:
+   \[
+   a^2 + b^2 = (a + b)^2 - 2ab = (-1)^2 - 2(-7) = 1 + 14 = 15
+   \]
+   Luego,
+   \[
+   3a^2 + 4b^2 = 3(a^2) + 4(b^2)
+   \]
+   Para encontrar este valor, notamos que:
+   \[
+   a^2 = (a)^2,\quad b^2 = (b)^2
+   \]
+   Sin embargo, sin conocer los valores exactos de \( a \) y \( b \), usaremos las relaciones anteriores para simplificar.
+
+4. **Reexpresar la expresión:**  
+   Consideramos que:
+   \[
+   3a^2 + 4b^2 + 2a + 3b + 1
+   \]
+   Podemos reorganizar los términos cuadráticos y lineales:
+   \[
+   = 3a^2 + 2a + 4b^2 + 3b + 1
+   \]
+   Factorizamos parcialmente:
+   \[
+   = a(3a + 2) + b(4b + 3) + 1
+   \]
+
+5. **Sustituir \( a^2 \) y \( b^2 \):**  
+   Sabemos que:
+   \[
+   a^2 = -a -7\quad (\text{desde } x^2 = -x +7)
+   \]
+   \[
+   b^2 = -b -7
+   \]
+   Sustituimos en la expresión:
+   \[
+   3(-a -7) + 4(-b -7) + 2a + 3b +1
+   \]
+   Simplificamos:
+   \[
+   -3a -21 -4b -28 + 2a + 3b +1 = (-3a + 2a) + (-4b + 3b) + (-21 -28 +1)
+   \]
+   \[
+   = -a - b -48
+   \]
+
+6. **Aplicar la suma \( a + b = -1 \):**  
+   Entonces:
+   \[
+   - (a + b) -48 = -(-1) -48 = 1 -48 = -47
+   \]
+   
+   Parece que hubo un error en el cálculo. Revisando los pasos, me doy cuenta de que quizás debió usarse una técnica diferente para manipular la expresión cuadrática.
+
+   **Otra APPROACH:**
+   
+   Consideramos directamente la expresión \( 3a^2 +4b^2 +2a +3b +1 \).
+
+   Usando \( a^2 = -a +7 \) y \( b^2 = -b +7 \), remplazamos:
+   \[
+   3(-a +7) +4(-b +7) +2a +3b +1
+   \]
+   Simplificamos:
+   \[
+   -3a +21 -4b +28 +2a +3b +1 = (-3a +2a) + (-4b +3b) + (21 +28 +1)
+   \]
+   \[
+   = -a - b +50
+   \]
+
+   Ahora, usando \( a + b = -1 \), tenemos:
+   \[
+   - (a + b) +50 = -(-1) +50 = 1 +50 = 51
+   \]
+
+**Resposta:**
+
+\boxed{B}

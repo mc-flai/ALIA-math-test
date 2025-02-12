@@ -1,0 +1,31 @@
+<think>
+Para resolver este problema, necesitamos determinar la expresión general del número entero n para que 10^n + 1 sea un múltiplo de 11.
+
+Conocemos que un número es divisible por 11 si la diferencia entre la suma de sus dígitos en posiciones pares y la suma de sus dígitos en posiciones impares es un múltiplo de 11 (incluyendo cero).
+
+Considerando 10^n + 1:
+- Para n = 1: 10^1 + 1 = 11, que es divisible por 11.
+- Para n = 2: 10^2 + 1 = 101, que no es divisible por 11 ya que 1 - 0 + 1 = 2, y 2 no es múltiplo de 11.
+- Para n = 3: 10^3 + 1 = 1001, que es divisible por 11.
+
+Observamos un patrón donde cuando n es impar (1, 3), 10^n + 1 es divisible por 11, y cuando n es par (2), no lo es. Por lo tanto, la expresión general de n debe ser de la forma 2m + 1.
+</think>
+
+Raonament:  
+Per determinar quina expressió general del nombre \( n \) fa que \( 10^n + 1 \) siga divisible per 11, podem utilitzar la regla de divisibilitat per 11. Aquesta regla estableix que un nombre és divisible per 11 si la diferència entre la suma dels digits en positions pares i la suma dels digits en posicions impares és múltiple de 11 (incluent zero).
+
+Considerem el número \( 10^n + 1 \):
+
+- Per \( n = 1 \):  
+  \( 10^1 + 1 = 11 \), que és divisible per 11.
+
+- Per \( n = 2 \):  
+  \( 10^2 + 1 = 101 \). La suma dels digits en posicions pares (0) menys la suma dels digits en posicions impares (1 + 1) = 0 - 2 = -2, que no és múltiple de 11.
+
+- Per \( n = 3 \):  
+  \( 10^3 + 1 = 1001 \). La suma dels digits en posicions pares (0 + 1) menys la suma dels digits en posicions impares (1 + 0) = 1 - 1 = 0, que és múltiple de 11.
+
+A partir d'aquestes observacions, podem deduir que \( 10^n + 1 \) és divisible per 11 quan \( n \) és un nombre ímmir (de la forma \( 2m + 1 \)), on \( m \) és un enter.
+
+Resposta:  
+\boxed{B}

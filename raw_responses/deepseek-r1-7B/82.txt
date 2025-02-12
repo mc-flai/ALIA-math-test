@@ -1,0 +1,32 @@
+<think>
+Primero, necesito encontrar todos los números enteros positivos menores que 2015 que son divisibles por 2, 3 y 5. Para esto, sé que un número divisible simultáneamente por estos tres es necesario que sea divisible por su producto, es decir, por el MCM (mínimo común múltiplo) de 2, 3 y 5.
+
+Calculando el MCM de 2, 3 y 5:
+- El MCM de 2 y 3 es 6.
+- Luego, el MCM de 6 y 5 es 30.
+Así que, cualquier número divisible por 30 también será divisible por 2, 3 y 5.
+
+Ahora, necesito determinar cuántos múltiplos de 30 hay menores que 2015. Para esto, divido 2014 (ya que los números tienen que ser menores que 2015) por 30.
+ 
+Hago la división: 2014 ÷ 30 = 67.133...
+Como solo quiero enteros, tomo el entero parte de la división, que es 67.
+
+Por lo tanto, hay 67 números enteros positivos menores que 2015 que son divisibles por 2, 3 y 5.
+</think>
+
+**Raonament:**
+
+Per trobar els nombres enters positius més menuts que 2015 que són divisibles per 2, 3 i 5, hem de determinar quants múltiples del MCM (mínim comú múltiple) d'aquests nombres hi ha. 
+
+- El MCM de 2, 3 i 5 és 30.
+- Ara calculem quants múltiples de 30 són menors que 2015.
+
+Dividim 2014 (ya que els números han de ser més menuts que 2015) entre 30:
+
+\[
+\frac{2014}{30} = 67,133...
+\]
+
+Com que volem solament els enters, arrodonim per abaix a 67. 
+
+**Resposta:** B) 67

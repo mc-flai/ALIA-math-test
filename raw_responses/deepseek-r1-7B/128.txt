@@ -1,0 +1,44 @@
+<think>
+Primero, factorizo N para expresarlo con exponentes. 
+
+N = 5² · 3⁴ · 2¹.
+
+Para que K·N sea un cub perfecto, los exponentes de cada primo en la factorización de K·N deben ser múltiplos de 3.
+
+Analizo cada primo por separado:
+
+- El 5 está elevado al 2. Para llegar a múltiplo de 3, necesito sumarle 1 (ya que 2 + 1 = 3).
+- El 3 está elevado al 4. Al sumarle 2 exponentes, se convierte en 6, que es múltiplo de 3.
+- El 2 está elevado al 1. Necesito sumarle 2 para que sea 3.
+
+Por lo tanto, K debe ser 5¹ · 3² · 2² = 5·9·4 = 180.
+</think>
+
+**Raonament:**
+
+Per fer que \( K \cdot N \) siga un cub perfecte, tots els exponents de la factorització primaria han de ser múltiples de 3.
+
+Donat que:
+\[
+N = 5^2 \cdot 3^4 \cdot 2
+\]
+
+Analitzem cada base:
+
+- **Base 5:** Exponent actual: 2. Per ferlo múltiple de 3, cal afegir 1 (2 + 1 = 3).
+  
+- **Base 3:** Exponent actual: 4. Per ferlo múltiple de 3, cal afegir 2 (4 + 2 = 6).
+  
+- **Base 2:** Exponent actual: 1. Per ferlo múltiple de 3, cal afegir 2 (1 + 2 = 3).
+
+Així, \( K \) ha de contenir:
+\[
+K = 5^1 \cdot 3^2 \cdot 2^2
+\]
+Calculant el valor:
+\[
+K = 5 \cdot 9 \cdot 4 = 180
+\]
+
+**Resposta:**
+\boxed{E) 180}

@@ -1,0 +1,53 @@
+<think>
+Primero, entiendo que el profesor me está pidiendo calcular cuántos enteros positivos menores que 101 son divisibles por el cuadrado de un número natural mayor que 1. La respuesta a esta pregunta revelará su edad.
+
+Para abordar este problema, sé que necesito identificar números que sean divisibles por al menos un cuadrado perfecto (es decir, \( n^2 \) donde \( n > 1 \)). Esto implica buscar números que tengan factores cuadrados en su descomposición prima.
+
+Primero, determinaré los cuadrados perfectos menores que 101, ya que cualquier número mayor al cuadrado de 10 (que es 100) no servirá para dividir a un entero menor que 101. Los cuadrados considerados serán \( 2^2 = 4 \), \( 3^2 = 9 \), \( 5^2 = 25 \), \( 7^2 = 49 \) y \( 11^2 = 121 \), pero ya que 121 es mayor que 100, me centraré en los anteriores.
+
+Luego, usaré el método de la criba para contar cuántos números menores que 101 son divisibles por estos cuadrados. Empezaré contando los múltiplos de cada cuadrado y luego restaré aquellos que han sido contados en más de una ocasión para evitar la sobrecontación.
+
+1. **Múltiplos de 4**: Hay \( \lfloor \frac{100}{4} \rfloor = 25 \) números.
+2. **Múltiplos de 9**: Hay \( \lfloor \frac{100}{9} \rfloor = 11 \) números.
+3. **Múltiplos de 25**: Hay \( \lfloor \frac{100}{25} \rfloor = 4 \) números.
+4. **Múltiplos de 49**: Hay \( \lfloor \frac{100}{49} \rfloor = 2 \) números.
+
+Ahora, debo restar los casos donde un número es divisible por más de un cuadrado perfecto para no sobrecontar:
+
+- **Números divisibles por ambos 4 y 9 (LCM=36)**: \( \lfloor \frac{100}{36} \rfloor = 2 \).
+- **Números divisibles por ambos 4 y 25 (LCM=100)**: \( \lfloor \frac{100}{100} \rfloor = 1 \).
+- **Números divisibles por ambos 4 y 49 (LCM=196)**: Ninguno, ya que 196 > 100.
+- **Números divisibles por ambos 9 y 25 (LCM=225)**: Ninguno, ya que 225 > 100.
+- **Números divisibles por ambos 9 y 49 (LCM=441)**: Ninguno, ya que 441 > 100.
+- **Números divisibles por ambos 25 y 49 (LCM=1225)**: Ninguno, ya que 1225 > 100.
+
+Finalmente, sumo los múltiplos iniciales y resto las superposiciones:
+
+\( 25 + 11 + 4 + 2 - 2 - 1 = 39 \).
+
+Por lo tanto, el profesor tiene 39 años.
+</think>
+
+Raonament:  
+Per determinar quants enters positius menors que 101 són divisibles pel quadrat d'un nombre natural més gran que 1, hem de considerar tots els cuadrats perfectes \( n^2 \) on \( n > 1 \) i \( n^2 < 101 \). Aquests cuadrats són 4 (\(2^2\)), 9 (\(3^2\)), 25 (\(5^2\)), 49 (\(7^2\)).
+
+Utilitzant el mètode de la criba per comptar els múltiples:
+
+1. **Múltiples de 4**: \( \lfloor \frac{100}{4} \rfloor = 25 \)
+2. **Múltiples de 9**: \( \lfloor \frac{100}{9} \rfloor = 11 \)
+3. **Múltiples de 25**: \( \lfloor \frac{100}{25} \rfloor = 4 \)
+4. **Múltiples de 49**: \( \lfloor \frac{100}{49} \rfloor = 2 \)
+
+Sumant estes: \( 25 + 11 + 4 + 2 = 42 \).
+
+Ahora, restem els casos on un nombre és múltiple de més d'un quadrat perfect:
+
+- **Múltiples comuns a 4 i 9 (LCM=36)**: \( \lfloor \frac{100}{36} \rfloor = 2 \)
+- **Múltiples comuns a 4 i 25 (LCM=100)**: \( \lfloor \frac{100}{100} \rfloor = 1 \)
+
+Restant estes de la suma anterior: \( 42 - 2 - 1 = 39 \).
+
+La resposta correcta és E) 39.
+
+Resposta:  
+E)

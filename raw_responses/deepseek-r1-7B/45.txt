@@ -1,0 +1,56 @@
+<think>
+Primero, identifico que hay seis amigos repartiendo libros y cada uno toma una fracción del total o lo que queda después de las demás. Necesito determinar quién obtuvo más libros.
+
+Comienzo con el total de libros, digamos T. Antoni recoge 1/5 de T, es decir, (1/5)T. Esto deja 4/5 de T restante.
+
+Luego, Bernat toma 1/6 de lo que queda después de Antoni. Lo que queda es (4/5)T, así que Bernat recoge (1/6)*(4/5)T = (4/30)T ≈ 0.1333T.
+
+Después, Carles toma 1/3 del restante. El que queda ahora es (4/5 - 4/30)T = (20/30 - 4/30)T = (16/30)T. Entonces, Carles recoge (1/3)*(16/30)T = (16/90)T ≈ 0.1778T.
+
+Luego, David toma 1/4 de lo que queda después de Carles. El restante es (16/30 - 16/90)T = (48/90 - 16/90)T = (32/90)T. Así que David recoge (1/4)*(32/90)T = (8/90)T ≈ 0.0889T.
+
+Finalmente, Enric y Ferran se reparten lo que queda después de David. Lo que falta es 32/90 - 8/90 = 24/90 T = (12/45)T. Cada uno obtiene la mitad, es decir, (12/45)/2 = (6/45)T ≈ 0.1333T.
+
+Comparando las cantidades:
+- Antoni: ~0.2T
+- Bernat: ~0.1333T
+- Carles: ~0.1778T
+- David: ~0.0889T
+- Enric y Ferran: ~0.1333T
+
+Claramente, Antoni obtuvo la mayor cantidad de libros.
+</think>
+
+Raonament:
+
+Siguin T el total de llibres.
+
+1. **Antoni** recull 1/5 del total:
+   - Llibres que recull: (1/5) * T
+   - Queden: T - (1/5)T = (4/5)T
+
+2. **Bernat** recull 1/6 dels queden:
+   - Llibres que recull: (1/6) * (4/5)T = (4/30)T
+   - Queden: (4/5)T - (4/30)T = (24/30 - 4/30)T = (20/30)T = (2/3)T
+
+3. **Carles** recull 1/3 dels queden:
+   - Llibres que recull: (1/3) * (2/3)T = (2/9)T
+   - Queden: (2/3)T - (2/9)T = (6/9 - 2/9)T = (4/9)T
+
+4. **David** recull 1/4 dels queden:
+   - Llibres que recull: (1/4) * (4/9)T = (1/9)T
+   - Queden: (4/9)T - (1/9)T = (3/9)T = (1/3)T
+
+5. **Enric i Ferran** es reparteixen a parts iguals els queden:
+   - Llibres que recullen cada un: (1/2) * (1/3)T = (1/6)T
+
+Comparant les quantitats:
+- Antoni: 1/5T ≈ 0,2T
+- Bernat: 4/30T ≈ 0,133T
+- Carles: 2/9T ≈ 0,222T
+- David: 1/9T ≈ 0,111T
+- Enric i Ferran: 1/6T ≈ 0,167T
+
+El més que ha obtingut ha estat **Carles** amb una quantitat de llibres superior a la dels altres.
+
+Resposta: C) Carles

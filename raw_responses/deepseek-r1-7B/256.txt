@@ -1,0 +1,108 @@
+<think>
+Primero, definiré las variables necesarias para representar la situación. Supongamos que el primer autobús transporta \( x \) niñitos. Dado que hay un total de 99 niñitos repartidos en tres autobuses, los otros dos autobuses transportarán un total de \( 99 - x \) niñitos.
+
+Luego, se menciona que si 3 niñitos del primer autobús se trasladan al tercer autobús, los tres autobuses tendrán la misma cantidad de niñitos. Antes del traslado, el primer autobús tendrá \( x - 3 \) niñitos y el tercer autobús tendrá \( (99 - x) + 3 = 102 - x \) niñitos.
+
+Al establecer que los tres autobuses tienen la misma cantidad después del traslado, obtenemos la ecuación:
+\[ x - 3 = y \]
+\[ 102 - x = y \]
+
+Resolviendo estas ecuaciones, igualamos \( x - 3 \) y \( 102 - x \):
+\[ x - 3 = 102 - x \]
+\[ 2x = 105 \]
+\[ x = 52.5 \]
+
+Como el número de niñitos no puede ser fraccionario, reviso mis pasos y me doy cuenta de que quizás he cometido un error en la interpretación del problema.
+
+Reintentando, considero que los autobuses inicialmente tienen \( a \), \( b \) y \( c \) niñitos respectivamente. Sabemos que:
+\[ a + b + c = 99 \]
+Después de trasladar 3 niñitos:
+\[ a - 3 = b = c + 3 \]
+
+Estableciendo las relaciones:
+\[ a - 3 = b \]
+\[ b = c + 3 \]
+
+Sustituyendo \( b = c + 3 \) en la primera ecuación:
+\[ a - 3 = c + 3 \]
+\[ a = c + 6 \]
+
+Ahora, sumando las tres partes:
+\[ (c + 6) + (c + 3) + c = 99 \]
+\[ 3c + 9 = 99 \]
+\[ 3c = 90 \]
+\[ c = 30 \]
+
+Entonces, \( a = 30 + 6 = 36 \). Por lo tanto, el primer autobús transporta 36 niñitos.
+</think>
+
+Raonament: 
+Vamos a resolver el problema paso a paso.
+
+1. **Definir Variables**:
+   - Sea \( x \) el número de xiquets en el primer autobús.
+   - Los otros dos autobuses tienen un total de \( 99 - x \) xiquets.
+
+2. **Reparto Actual**:
+   - Primer autobús: \( x \)
+   - Segundo autobús: \( y \)
+   - Tercer autobús: \( z = 99 - x - y \)
+
+3. **Traslado de Xiquets**:
+   - Se trasladan 3 xiquets del primer autobús al tercer autobús.
+   - Nuevo reparto:
+     - Primer autobús: \( x - 3 \)
+     - Segundo autobús: \( y \)
+     - Tercer autobús: \( z + 3 = (99 - x - y) + 3 \)
+
+4. **Condicional**:
+   - Después del traslado, los tres autobuses tienen el mismo número de xiquets.
+   - Por lo tanto:
+     \[
+     x - 3 = y = (99 - x - y) + 3
+     \]
+
+5. **Resolver las Ecuaciones**:
+   - De \( x - 3 = y \), obtenemos \( y = x - 3 \).
+   - Sustituyendo en la segunda parte de la condición:
+     \[
+     x - 3 = (99 - x - (x - 3)) + 3
+     \]
+     Simplificando:
+     \[
+     x - 3 = (99 - x - x + 3) + 3 \\
+     x - 3 = 102 - 2x \\
+     3x = 105 \\
+     x = 35
+     \]
+   - Sin embargo, observamos que \( x = 35 \) no coincide con las opciones dadas. Revisando los cálculos, nos damos cuenta de que el enfoque inicial fue incorrecto.
+
+6. **Reinicio Correcto**:
+   - Vamos a considerar que los autobuses tengan \( a \), \( b \) y \( c \) xiquets respectivamente.
+   - Sabemos que \( a + b + c = 99 \).
+   - Después de trasladar 3 xiquets del primer al tercer autobús:
+     \[
+     a - 3 = b = c + 3
+     \]
+   - Estableciendo relaciones:
+     \[
+     a - 3 = b \\
+     b = c + 3
+     \]
+   - Sustituyendo \( b = c + 3 \) en la primera ecuación:
+     \[
+     a - 3 = c + 3 \\
+     a = c + 6
+     \]
+   - Sumando las tres partes:
+     \[
+     a + b + c = (c + 6) + (c + 3) + c = 3c + 9 = 99 \\
+     3c = 90 \\
+     c = 30
+     \]
+   - Por lo tanto, \( a = 30 + 6 = 36 \).
+
+7. **Conclusión**:
+   - El primer autobús transporta 36 xiquets.
+
+Resposta: C) 36

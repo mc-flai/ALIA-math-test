@@ -1,0 +1,37 @@
+<think>
+Primero, entiendo que n es un número natural mayor que 1 y que se define m como n elevado a sí mismo, es decir, \( m = n^n \).
+
+Ahora, necesito encontrar a qué equivale \( n^{n^{n+1}} \). Para simplificar esto, intentaré expresar la parte exponencial en términos de m.
+
+Sé que \( n^{n} = m \), por lo que puedo reescribir \( n^{n+1} \) como \( n^n \cdot n \), que es igual a \( m \cdot n \).
+
+Luego, el exponente total se convierte en \( n^{m \cdot n} \). Puedo expresar esto como \( (n^n)^{m} \), lo cual simplifica a \( m^m \) porque \( n^n = m \).
+
+Por lo tanto, \( n^{n^{n+1}} \) es igual a \( m^m \).
+</think>
+
+**Raonament:**
+
+Sabem que \( n > 1 \) és un nombre natural i que \( m = n^n \). Volem calcular \( n^{n^{n+1}} \).
+
+Empezam per descomposar l'exponent:
+
+\[
+n^{n^{n+1}} = n^{(n \cdot (n + 1))}
+\]
+
+Però podem expressar \( n^{n} \) com \( m \), i llavors:
+
+\[
+n^{n+1} = n^n \cdot n = m \cdot n
+\]
+
+Ara, substituïm a l'exponent original:
+
+\[
+n^{n^{n+1}} = n^{(m \cdot n)} = (n^n)^{m} = m^m
+\]
+
+**Resposta:**
+
+E) \( m^{m} \)

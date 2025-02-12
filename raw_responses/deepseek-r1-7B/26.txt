@@ -1,0 +1,196 @@
+<think>
+Bueno, voy a intentar resolver esta suma que me han dado. La pregunta es: ¿Cuál es el valor de \(1 + 2 - 3 - 4 + 5 + 6 - 7 - 8 + 9 + 10 - 11 - 12 + \cdots - 2015\)?
+
+Primero, observo que la secuencia de operaciones no es uniforme. Parece que hay un patrón en los signos: comienza con dos números positivos, seguidos de dos negativos, y así sucesivamente. Es decir, el signo cambia cada dos términos.
+
+Para entender mejor el problema, intentaré identificar la estructura del patrón:
+
+- \(1 + 2 - 3 - 4 + 5 + 6 - 7 - 8 + 9 + 10 - \ldots - 2015\)
+
+Noto que los términos positivos vienen en pares, seguidos de dos términos negativos. Por ejemplo:
+
+- \(1 + 2\) son positivos,
+- luego \( -3 -4\),
+- después \(+5 +6\),
+- y así sucesivamente.
+
+Así que cada grupo consta de cuatro términos: dos positivos, dos negativos. Existe un error en mi primera observación; no es exactamente dos positivos y dos negativos, sino que el signo se repite dos veces consecutivamente, alternando entre positivo y negativo.
+
+Ahora, para organizar mejor la suma, intentaré agrupar los términos de manera que cada grupo consista en cuatro números: dos positivos y dos negativos. Sin embargo, debo verificar cómo termina la secuencia, ya que el último término es -2015.
+
+Primero, determinaré cuántos términos hay en total hasta 2015. Claramente, son 2015 términos. Luego, necesito ver cómo estos se agrupan.
+
+Cada "cuadrilla" consiste en dos operaciones positivas y dos negativas, es decir, un total de cuatro números. Por ejemplo:
+
+- \( (1 + 2) - (3 + 4)\)
+- \(+ (5 + 6) - (7 +8)\)
+- Y así sucesivamente.
+
+Entonces, cada grupo de cuatro términos se suma de la siguiente manera:
+
+\[
+(4n - 3) + (4n - 2) - (4n - 1) - 4n
+\]
+
+Simplificando esta expresión:
+
+\[
+= [ (4n - 3) + (4n - 2) ] - [ (4n - 1) + 4n ]
+\]
+\[
+= (8n -5) - (8n -1)
+\]
+\[
+= 8n -5 -8n +1
+\]
+\[
+= (-4)
+\]
+
+Así, cada grupo de cuatro términos suma -4.
+
+Ahora, necesito determinar cuántas tales "cuadrillas" hay en la secuencia hasta el término 2015.
+
+Total de términos: 2015.
+
+Cada "cuadrilla" tiene 4 términos. Por lo tanto, el número total de "cuadrillas" completas es \( \lfloor \frac{2015}{4} \rfloor = 503 \) cuadrillas completas, ya que \(503 \times 4 = 2012\). Esto deja dos términos restantes: 2013 y 2014, seguidos del término 2015.
+
+Ahora, evaluemos la suma de las 503 cuadrillas completas:
+
+Cada cuadrilla suma -4, así que \(503 \times (-4) = -2012\).
+
+Luego, consideramos los términos restantes: 2013 y 2014. Dado el patrón de signos, después de las cuadrillas completas, vienen:
+
+- +2013 +2014 -2015
+
+Pero es importante verificar si estos dos términos (2013 y 2014) siguen la misma secuencia. Observando el patrón original:
+
+- Términos 1,2: +
+- Términos 3,4: -
+- Términos 5,6: +
+- Términos 7,8: -
+- Y así sucesivamente.
+
+Así que los términos en posiciones impares (1,3,5,...) comienzan con '+' y alternan. Pero más detalladamente:
+
+- Posición 1: +
+- Posición 2: +
+- Posición 3: -
+- Posición 4: -
+- Posición 5: +
+- Posición 6: +
+- etc.
+
+Entonces, el signo depende del grupo al que pertenezca. Dado que 2012 es un múltiplo de 4 (2012 = 4*503), el término 2013 es el primero de la siguiente cuadrilla, que debería ser positivo, y 2014 es el segundo de esa cuadrilla, también positivo. Sin embargo, el término 2015 es el tercero, que debería ser negativo.
+
+Pero en realidad, el término 2015 no está en una cuadrilla completa; es el último término, que solo aparece como -2015.
+
+Por lo tanto, los términos restantes son:
+
++2013 +2014 -2015
+
+Sumando estos tres términos:
+
+2013 + 2014 = 4027
+
+Luego, 4027 - 2015 = 2012
+
+Ahora, sumando este resultado a la suma de las cuadrillas completas:
+
+-2012 (de las cuadrillas) + 2012 (de los términos restantes) = 0.
+
+Pero esto no coincide con las opciones dadas. Quizás cometí un error en la determinación de los signos de los últimos términos.
+
+Revisando nuevamente: Total de términos es 2015, y 4*503=2012. Los términos restantes son 2013, 2014, 2015.
+
+Ahora, el signo del término 2013 depende de su posición en la secuencia. Observando que:
+
+- Término 1: +
+- Término 2: +
+- Término 3: -
+- Término 4: -
+- Término 5: +
+- Término 6: +
+- Y así.
+
+Dado que 2013 = 4*503 +1, pertenece al grupo 504. Dado el patrón, el primer término de un grupo es positivo, y los siguientes dos son negativos. Por lo tanto:
+
+- Término 2013: +
+- Término 2014: -
+- Término 2015: -
+
+Pero en la secuencia original termina con -2015, lo que sugiere que quizás solo el último término es negativo. Sin embargo, esto podría contradecir el patrón.
+
+Otra manera de verlo es considerar que el signo se repite dos veces positivo y luego dos veces negativo. Entonces:
+
+- Grupos: 1+2-3-4+5+6-7-8+...
+- Cada grupo tiene dos '+', seguidos de dos '-'.
+
+Entonces, para determinar el signo de los términos restantes:
+
+Término 2013: pertenece alGrupo 504. Dado que 2013 = 4*503 +1, es el primer término del grupo 504, que debería ser '+'.
+
+Término 2014: segundo término del grupo 504, también '+'? No, porque después de dos '+', vienen dos '-'.
+
+Es decir:
+
+Grupo 1: 1+2-3-4
+
+Grupo 2:5+6-7-8
+
+...
+
+Grupo n: (4n-3)+ (4n-2) - (4n-1) -4n
+
+Por lo tanto, grupo 504: términos 4*503 +1=2013; 4*503+2=2014; 4*503+3=2015; 4*503+4=2016.
+
+Pero solo hasta 2015 hay en el problema. Entonces:
+
+Grupo 504: 2013 +, 2014 +, 2015 -, y 2016 -, pero 2016 no está incluido.
+
+Así que los términos restantes son 2013 y 2014 (ambos '+'), y 2015 ('-').
+
+Sumando:
+
++2013 +2014 -2015 = 2013 +2014 = 4027; 4027 -2015=2012
+
+Ahora, suma total:
+
+Cuadrillas completas: 503*(-4)= -2012
+
+Suma de términos restantes: +2012
+
+Total: -2012 +2012 = 0
+
+Pero en las opciones no hay 0. Revisando las opciones: A) -1 B) 0 C)1 D)2 E)-3
+
+B) 0 está incluido.
+
+Sin embargo, me pregunto si el último término se considera solo un '-', o si quizás los términos restantes son solo dos términos.
+
+Es decir, total de términos: 4*503=2012. Luego, vienen 2013,2014,2015: tres términos más.
+
+Pero en el patrón, cada grupo tiene dos '+', seguidos de dos '-'. Entonces:
+
+ Grupo 504: 2013+,2014+,2015-,2016-
+
+ Pero solo hasta 2015.
+
+Así que la suma restante es +2013+2014-2015=2012
+
+Suma total:
+
+Cuadrillas completas: -2012
+
+Suma restante:+2012
+
+Total: 0
+
+Por lo tanto, la respuesta sería B) 0.
+
+ Pero revisando de nuevo: si hubo 503 cuadrillas, cada una con dos '+', dos '-', y luego tres términos más. Tal vez el cálculo es correcto.
+</think>
+
+La suma total de los términos es igual a cero. Por lo tanto, la respuesta es:
+
+$\boxed{B}$

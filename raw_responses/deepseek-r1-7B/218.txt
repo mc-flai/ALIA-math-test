@@ -1,0 +1,87 @@
+<think>
+Primero, identifico las ecuaciones dadas:
+
+x²y z³ = 7³ ... (1)
+
+x y² = 7⁹ ... (2)
+
+Quiero encontrar xyz.
+
+Para esto, intentaré expresar x, y y z en términos de potencias de 7. Supongamos que x = 7^a, y = 7^b, z = 7^c, donde a, b, c son exponentes enteros.
+
+Sustituyendo en la ecuación (2):
+
+(7^a) * (7^b)^2 = 7^(a + 2b) = 7⁹
+
+Por lo tanto:
+
+a + 2b = 9 ... (A)
+
+Ahora, sustituimos x y z en la ecuación (1):
+
+(7^a)^2 * (7^b) * (7^c)^3 = 7^(2a + b + 3c) = 7³
+
+Por lo tanto:
+
+2a + b + 3c = 3 ... (B)
+
+Tenemos dos ecuaciones: (A) y (B):
+
+1. a + 2b = 9
+2. 2a + b + 3c = 3
+
+Quiero resolver para a, b, c.
+
+Primero, despejo 'a' de la primera ecuación:
+
+a = 9 - 2b
+
+Sustituyo en la segunda ecuación:
+
+2*(9 - 2b) + b + 3c = 3
+
+18 - 4b + b + 3c = 3
+
+Simplifico:
+
+-3b + 3c = -15
+
+Divido ambos lados por 3:
+
+-b + c = -5 => c = b -5
+
+Ahora, para encontrar xyz, necesito calcular x * y * z.
+
+x = 7^a = 7^(9 - 2b)
+
+y = 7^b
+
+z = 7^(b - 5)
+
+Multiplicando:
+
+xyz = 7^(9 - 2b) * 7^b * 7^(b -5) = 7^( (9 - 2b) + b + (b -5) ) = 7^(9 -2b + b + b -5) = 7^(4)
+
+Por lo tanto, xyz = 7⁴.
+</think>
+
+Raonament:  
+Donat que \( x^2 y z^3 = 7^3 \) i \( xy^2 = 7^9 \), volem determinar el valor de \( xyz \).  
+
+Supossem que \( x = 7^a \), \( y = 7^b \) i \( z = 7^c \), on \( a, b, c \) són exponents enters. Substituïnt en les equacions:  
+1. \( (7^a)^2 \cdot 7^b \cdot (7^c)^3 = 7^{2a + b + 3c} = 7^3 \)  
+   Per tant, \( 2a + b + 3c = 3 \).  
+
+2. \( 7^a \cdot (7^b)^2 = 7^{a + 2b} = 7^9 \)  
+   Per tant, \( a + 2b = 9 \).  
+
+Resolviendo el sistema:  
+- Despejant \( a \) de la segona equació: \( a = 9 - 2b \).  
+- Substituïnt en la primera equació: \( 2(9 - 2b) + b + 3c = 3 \), simplificant obtim \( c = b - 5 \).  
+
+Finalment, calculant \( xyz = 7^a \cdot 7^b \cdot 7^c = 7^{a + b + c} \). Substituïnt \( a = 9 - 2b \) i \( c = b - 5 \), obtim:  
+\( a + b + c = (9 - 2b) + b + (b - 5) = 4 \).  
+
+Per tant, \( xyz = 7^4 \).
+
+Resposta: A) \( 7^4 \)

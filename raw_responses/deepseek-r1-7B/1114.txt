@@ -1,0 +1,45 @@
+<think>
+Primero, observo que la expresión dada es suma de cuatro veces 16¹⁵. Esto significa que puedo simplificarla como 4 × 16¹⁵.
+
+Sé que 16 es igual a 2⁴, por lo que reescribo 16¹⁵ como (2⁴)¹⁵ = 2^(4×15) = 2^60. Ahora la expresión se convierte en 4 × 2^60.
+
+Además, 4 es igual a 2². Sustituyendo esto, obtengo 2² × 2^60. Al multiplicar potencias con la misma base, sumo los exponentes: 2^(2+60) = 2^62.
+
+Ahora, quiero expresar 2^62 en términos de 4. Dado que 4 es 2², convierto 2^62 a (2²)^31 = 4^31. Por lo tanto, la suma de los cuatro términos originales equivale a 4³¹.
+</think>
+
+**Raonament:**
+
+La expressió donada és \(16^{15} + 16^{15} + 16^{15} + 16^{15}\). Observem que hi ha quatre termes iguals, per tant, podem simplificar-la com:
+
+\[
+4 \times 16^{15}
+\]
+
+Sabem que \(16\) és igual a \(2^4\), de manera que:
+
+\[
+16^{15} = (2^4)^{15} = 2^{4 \times 15} = 2^{60}
+\]
+
+Substituïm a l'expressió original:
+
+\[
+4 \times 2^{60}
+\]
+
+També sabem que \(4\) és igual a \(2^2\), per磴ues:
+
+\[
+2^2 \times 2^{60} = 2^{2 + 60} = 2^{62}
+\]
+
+Finalment, volvem a expressar \(2^{62}\) en termes de \(4\):
+
+\[
+2^{62} = (2^2)^{31} = 4^{31}
+\]
+
+**Resposta:**
+
+B) \(4^{31}\)

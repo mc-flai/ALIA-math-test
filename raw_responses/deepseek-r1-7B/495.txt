@@ -1,0 +1,72 @@
+<think>
+Primero, identifico las variables relevantes del problema. Supongamos que en la clase hay un número desconocido de niños (xics) y niñas (xiques). Vamos a llamar \( b \) al número de niños y \( g \) al número de niñas.
+
+Según el enunciado, la mitad de los niños y una tercera parte de las niñas han participado en la competición. Esto significa que el número de participantes es:
+\[
+\frac{b}{2} + \frac{g}{3}
+\]
+Y sabemos que este total es igual a 12, por lo que establecemos la ecuación:
+\[
+\frac{b}{2} + \frac{g}{3} = 12
+\]
+
+Además, el problema menciona que en la clase hay tantos niños como niñas no han participado. Esto significa que el número de niños que no participaron es igual al número de niñas que no participaron. Los niños que no participaron son \( b - \frac{b}{2} = \frac{b}{2} \) y las niñas que no participaron son \( g - \frac{g}{3} = \frac{2g}{3} \). Por lo tanto, establecemos otra ecuación:
+\[
+\frac{b}{2} = \frac{2g}{3}
+\]
+
+Con las dos ecuaciones que tenemos, resolvemos para encontrar los valores de \( b \) y \( g \):
+1. De la segunda ecuación, despejamos \( b \) en términos de \( g \):
+\[
+b = \frac{4g}{3}
+\]
+2. Sustituimos este valor de \( b \) en la primera ecuación:
+\[
+\frac{\frac{4g}{3}}{2} + \frac{g}{3} = 12
+\]
+Simplificando, obtenemos:
+\[
+\frac{2g}{3} + \frac{g}{3} = \frac{3g}{3} = g = 12
+\]
+Así que \( g = 12 \). Sustituimos de vuelta en la expresión para \( b \):
+\[
+b = \frac{4 \times 12}{3} = 16
+\]
+
+Por lo tanto, el total de estudiantes en la clase es:
+\[
+b + g = 16 + 12 = 28
+\]
+</think>
+
+**Raonament:**
+
+Sia \( b \) el nombre d'Home i \( g \) el nombre de dones.
+
+1. La meitat dels homes han participat: \( \frac{b}{2} \).
+2. Una tercera part de les dones han participat: \( \frac{g}{3} \).
+3. En total, 12 alumnes han participat:
+   \[
+   \frac{b}{2} + \frac{g}{3} = 12
+   \]
+4. El nombre d'home que no ha participat és \( b - \frac{b}{2} = \frac{b}{2} \).
+5. El nombre de dones que no ha participat és \( g - \frac{g}{3} = \frac{2g}{3} \).
+6. Segons la condició, \( \frac{b}{2} = \frac{2g}{3} \).
+
+Despejant:
+\[
+b = \frac{4g}{3}
+\]
+
+Substituint en l'equació 3:
+\[
+\frac{\frac{4g}{3}}{2} + \frac{g}{3} = 12 \\
+\frac{2g}{3} + \frac{g}{3} = 12 \\
+g = 12
+\]
+
+Entonces, \( b = \frac{4 \times 12}{3} = 16 \).
+
+Total d'estudiants: \( 16 + 12 = 28 \).
+
+**Resposta:** D) 28

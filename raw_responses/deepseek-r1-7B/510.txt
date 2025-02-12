@@ -1,0 +1,33 @@
+<think>
+Primero, identifico que necesito encontrar los números enteros de tres dígitos. Esto significa que el número debe estar entre 100 y 999.
+
+Luego, considero la condición de que la suma de sus dígitos sea igual a 8. Por lo tanto, si represento al número como ABC (donde A, B y C son dígitos), se cumple que A + B + C = 8.
+
+Para encontrar el número más pequeño, quiero minimizar los valores de A, B y C. Dado que A no puede ser cero (ya que es un número de tres dígitos), el valor mínimo de A es 1. Siendo así, la suma de B + C será 7. Para minimizar el número entero, también quiero minimizar B, lo que implica maximizar C. Sin embargo, al igualar a B = 0 y C = 7, obtenemos el número más pequeño posible: 107.
+
+Ahora, para encontrar el número más grande que cumple con las mismas condiciones, busco maximizar A, B y C. Maximizar A implica que A sea lo mayor posible sin que la suma de los dígitos exceda 8. Si A = 8, entonces B + C = 0, lo que significa que el número más grande es 800.
+
+Finalmente, sumo estos dos números: 107 + 800 = 907.
+</think>
+
+**Raonament:**
+
+Necessitem trobar els nombres enters de tres xifres més grans i més petits on la suma dels seus dígits és 8.
+
+1. **Nombre més petit:**
+   - El nombre ha de ser el més petit possible, per tant volem que les xifres són tan petites com possible.
+   - Com el primer dígit (centena) no pot ser zero, la mínima centena és 1.
+   - Perquè la suma dels dígits siga 8, si centena = 1, llavors les decimals sumen 7 (8 - 1).
+   - El nombre més petit es logra quan les desenes són zero i les unitats són 7: 107.
+
+2. **Nombre més gran:**
+   - Aquí volem que el nombre siga el més gran possible.
+   - Maximitzem la centena, això vol dir centena = 8 (perquè 8 + 0 + 0 = 8).
+   - Per tant, el nombre més gran és 800.
+
+3. **Suma dels dos nombres:**
+   - 107 + 800 = 907.
+
+**Resposta: B) 907**
+
+\boxed{B}

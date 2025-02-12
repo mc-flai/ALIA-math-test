@@ -1,0 +1,46 @@
+<think>
+El problema planteado es identificar cuántos polinomios de grado 5 con coeficientes 1 o -1 tienen 1 como raíz.
+
+Primero, considerar que si 1 es una raíz del polinomio P(x), entonces al evaluar P(1) el resultado debe ser cero.
+
+Dado que los coeficientes son solo 1 o -1, y el grado del polinomio es 5, se tiene la forma general:
+
+P(x) = a₅x⁵ + a₄x⁴ + a₃x³ + a₂x² + a₁x + a₀
+
+Donde cada coeficiente aᵢ pertenece al conjunto {1, -1}.
+
+Al evaluar P(1):
+
+P(1) = a₅(1)⁵ + a₄(1)⁴ + a₃(1)³ + a₂(1)² + a₁(1) + a₀ = a₅ + a₄ + a₃ + a₂ + a₁ + a₀
+
+Para que P(1) = 0, la suma de los coeficientes debe ser cero. Es decir:
+
+a₅ + a₄ + a₃ + a₂ + a₁ + a₀ = 0
+
+Cada coeficiente es 1 o -1, por lo que se puede considerar que hay tres coeficientes positivos y tres coeficientes negativos, ya que 3*(1) + 3*(-1) = 0.
+
+Ahora, se trata de determinar cuántas combinaciones de coeficientes cumplen con esta condición. Es decir, necesitamos calcular el número de maneras en que se pueden seleccionar tres coeficientes positivos (1) y dos coeficientes negativos (-1), ya que el grado del polinomio es 5.
+
+El coeficiente constante a₀ también debe ser considerado. Sin embargo, al observar la ecuación:
+
+a₅ + a₄ + a₃ + a₂ + a₁ + a₀ = 0
+
+Está implícito que el término independiente a₀ también está incluido en esta suma.
+
+Dado que los coeficientes son de grado 5, el polinomio tiene exactamente 6 términos (desde x⁵ hasta la constante). Por lo tanto, necesitamos seleccionar tres coeficientes positivos y dos coeficientes negativos para que su suma sea cero. Sin embargo, es importante notar que la variable a₀ también debe ser considerada en esta selección.
+
+El número total de combinaciones posibles donde se eligen 3 coeficientes positivos (1) y 2 coeficientes negativos (-1), teniendo en cuenta los 6 términos, es dado por el coeficiente binomial C(5,2), ya que elegimos 2 posiciones para los -1 en los primeros 5 coeficientes (a₅ a a₁). Sin embargo, también debemos considerar la posibilidad de que a₀ sea negativo o positivo.
+
+Después de una reconsideración, se concluye que el número correcto de combinaciones es C(6,3) = 20. Esto corresponde al número de maneras en que se pueden seleccionar 3 coeficientes positivos (1) y 3 coeficientes negativos (-1), sumando exactamente a cero.
+
+Por lo tanto, el total de polinomios de grado 5 con coeficientes 1 o -1 que tienen 1 como raíz es 20.
+</think>
+
+Raonament:
+Per tenir 1 com a arrel d'un polinomi P(x) de grau 5 amb coeficients 1 o -1, necessàriament ha de ser que la suma dels coeficients del polinomi sigui zero. Això és degut a que si x=1 es una arrel, llavors P(1)=0.
+
+Un polinomi de grau 5 tindrà 6 termes (desde x⁵ fins a la constant). Cada coeficient pot ser 1 o -1. Per la suma total dels coeficients a ser zero, necessitarem que el nombre de 1's i -1's es comprove que 3*1 + 3*(-1) = 0.
+
+Aquesta condició implica que necessitem 3 coeficients iguals a 1 i 3 iguals a -1. El nombre total de combinacions possible és el número de vegades que podem posar 3 1's en 6 llocs, que és C(6,3)=20.
+
+Resposta: D) 20

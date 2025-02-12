@@ -1,0 +1,73 @@
+<think>
+Okay, so Empar wants to color the vertices of a cube such that each vertex and all its adjacent vertices have different colors. Hmm, let me think about this step by step.
+
+First, I know that a cube has 8 vertices and each vertex is connected to three others via edges. So, each vertex has three neighbors. The question is essentially asking for the minimum number of colors needed so that no two connected vertices share the same color. This sounds like a graph coloring problem.
+
+In graph theory, the minimum number of colors needed to color a graph so that no two adjacent vertices have the same color is called the chromatic number. For a cube, which is a type of graph known as Q3 (the 3-dimensional hypercube), I need to figure out its chromatic number.
+
+I remember that cubes are bipartite graphs because they don't contain any odd-length cycles. In bipartite graphs, you can divide the vertices into two sets where each edge connects a vertex from one set to the other. This means the chromatic number for a bipartite graph is 2. But wait, does this apply here?
+
+Wait, but if I try to color the cube with just two colors, say black and white, alternating on each layer... Let me visualize it. Imagine the top face of the cube: if I color one corner black, the adjacent corners must be white, then the next set black again. But in a cube, each vertex is connected to three others, so coloring alternately might not work because each node has an odd number of connections. Or does it?
+
+Wait no, actually, in a cube, each vertex is part of cycles that are even-length. For example, the top face is a square (4 vertices), which is even. So the cube can indeed be divided into two sets where edges only go between sets, making it bipartite and thus 2-colorable.
+
+But wait, I might be confusing this with something else. Let me check: a cube's graph is bipartite because all its cycles are of even length. Yes, for instance, the top face is a cycle of 4 nodes, which is even. Therefore, the cube is bipartite and can be colored with two colors.
+
+But wait another thought—when I look at the cube's vertices, each vertex has three edges. If it were a tree, two colors would suffice, but since it contains cycles, does that affect the chromatic number? No, because if all cycles are even, bipartition is possible.
+
+So, perhaps Empar can color the cube with just 2 colors. But I'm not sure because in some cases, higher dimensions or more complex graphs require more colors. Wait, but for a cube, which is 3-regular (each vertex has degree 3), and being bipartite, it should still be 2-colorable.
+
+Wait another angle: think of the cube's dual graph, which is an octahedron. The octahedron is also bipartite because all its faces are even-sided triangles? No, wait, no—the octahedron has triangular faces, which are odd cycles, so it's not bipartite. But that might be a different case.
+
+Wait, perhaps I'm overcomplicating. Let me think of the cube itself. If I try to color it with two colors:
+
+- Assign color A to one vertex.
+- Its three neighbors must be color B.
+- Each neighbor is connected to other vertices which are color A again.
+But since each vertex in a cube has exactly three edges, and we're using only two colors, maybe that's not enough because the cube requires more than two colors?
+
+Wait no, wait. Let me try to actually assign colors. Let's pick a corner (vertex) as A. The three vertices connected to it must be B. Now, each of those Bs is connected to other vertices besides the original A. For example, take one B vertex; it's connected to two other vertices besides A. Those two should not be color B because they are adjacent to B, so they have to be color A.
+
+But wait, then those two As would be connected through another edge? Let me visualize this. If I have a cube:
+
+Imagine the top face: vertices 1 (A), 2, 3, 4.
+
+Vertex 1 is connected to 2, 3, and let's say vertex 5 below.
+
+If 1 is A, then 2,3,5 must be B.
+
+Now, take vertex 2. It's connected to 1(A), 3(B), and another vertex (maybe 6). Since 2 is B, the other connected vertices can't be B. So 6 has to be A.
+
+Similarly, vertex 3 is connected to 1(A), 4(?), and maybe vertex7. But wait, 3 is B, so 4 and 7 must be A.
+
+Wait, but then looking at the connections:
+
+- Vertex 4 is on top face connected to 3(B) and perhaps 8.
+So if 4 is A, then 8 must be B because it's connected to 4(A).
+
+Now let's look at the bottom layer. Let me list all vertices with colors:
+
+Top layer:
+1: A
+2: B
+3: B
+4: A
+
+Bottom layer (connected below each top vertex):
+5: B (connected to 1)
+6: A (connected to 2)
+7: A (connected to 3)
+8: B (connected to 4)
+
+Now, check the connections between bottom and other vertices:
+
+- Vertex 5 (B) is connected to 1(A), and maybe also to 6 and 8. Wait, in a cube, each top vertex connects to one below it, so perhaps 5 is connected only to 1, 6, and 8? Or wait, no—the connections might be more complex.
+
+Wait, perhaps I'm making this too complicated. Let me think again: the cube's graph can indeed be colored with two colors because it's bipartite. The key is that in a bipartite graph, you don't have any odd-length cycles, which allows for a 2-coloring where no adjacent nodes share the same color.
+
+Therefore, the minimum number of colors needed is 2. So the correct answer should be A) 2.
+</think>
+
+Raonament: El cub és un grauC3, que és bipartit perquè tots els seus ciclos són de longitud parella. En una grauC bipartida, es poden colorir els vèrtexs amb dos colors alternats sense que cap vèrtex tinga el mateix color que els adjacents. Per tant, només es necessiten 2 colors.
+
+Resposta: A)

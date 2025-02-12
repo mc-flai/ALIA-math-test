@@ -1,0 +1,19 @@
+<think>
+Bueno, intento resolver este problema paso a paso. Primero, entiendo que la mosca comienza en Borriana y vuela hasta Londres pasando por París, lo que supone una distancia total de 2500 km. Sin embargo, el dato clave es su velocidad, que dobla cada metro recorrido.
+
+La velocidad inicial de la mosca es vo = 1 m/s. Cada vez que viaja un metro, su velocidad se duplica. Es decir, al finalizar el primer metro, su velocidad será 2 m/s; después del segundo metro, 4 m/s, y así sucesivamente.
+
+Primero, necesito calcular cuánto tiempo tarda la mosca en recorrer cada metro, considerando que su velocidad aumenta continuamente. Al principio, cuando la velocidad es baja, el tiempo por metro será alto, pero a medida que avanza, la velocidad aumenta exponencialmente, lo que reduce el tiempo por cada metro subsiguiente.
+
+Para estimar el tiempo total, puedo considerar que la suma de los tiempos por cada metro forma una serie geométrica. La suma de una serie geométrica con un factor de multiplicación superior a 1 diverge, lo que sugiere que el tiempo necesario para recorrer todos los metros tendería hacia infinito.
+
+Aunque es tentador calcular la suma de los tiempos individualmente, especialmente considerando que la velocidad aumenta dramaticamente, en realidad, debido a la naturaleza exponencial del incremento de la velocidad, la mosca no logrará completar el viaje en un tiempo finito. Por lo tanto, la conclusión es que nunca llegará a Londres ni siquiera a París.
+
+Finalmente, basándome en esta deducción, la respuesta correcta es E) La mosca no arribarà mai a Londres, ni tan sols a París.
+</think>
+
+Raonament:  
+La mosca inicia su viaje con una velocidad de 1 m/s y dobla su velocidad cada metro recorrido. Aunque inicialmente avanza lentamente, la velocidad aumenta exponencialmente. Sin embargo, el tiempo requerido para recorrer cada metro también disminuye, lo que podría sugerir que la mosca acaba pronto si no se considera que el incremento de velocidad es continuo. Al analizar detenidamente, aunque la velocidad crece rápidamente, el tiempo total necesario para cubrir 2500 km resultaría en un valor infinito debido a la naturaleza exponencial del problema.
+
+Resposta:  
+E) La mosca no arribarà mai a Londres, ni tan sols a París.

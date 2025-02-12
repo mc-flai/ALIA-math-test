@@ -1,0 +1,29 @@
+<think>
+El prisma es coneix com un políedre formado per dues bases congruent i parells, connectades per rectangles. La quantitat de cares d'un prisma està relacionada amb el número de lados que té la base.
+
+Si el prisma té 2018 cares, aquest númembre inclúe les dues bases i totes les caras laterals. Per tant, si restam les dues bases als 2018 tots els elements, queden 2016 cares laterals, que són rectangles.
+
+Cada cara lateral es correspon a un lòbe de la base, és a dir, el nombre de vèrtexs coincideix amb el nombre de llados de la base. D'aquesta manera, si hi ha 2016 caras laterals, les bases han de ser polígons de 2016 llados.
+
+Un polígon de n llados té n vèrtexs. Per tant, cada base té 2016 vèrtexs i totalment hi ha 4032 vèrtexs (2 × 2016).
+
+Aquest nombre coincideix amb l'opció D) 4032.
+</think>
+
+**Raonament:**
+
+Un prisma es defineix com un políedre que té dues bases congruent i paralles, connectades per rectangles. El número total de cares (caras) d'un prisma està format pelles dues bases i les caras laterals.
+
+Si el prisma té 2018 cares:
+
+- Les dues bases són parts del compte general de cares.
+- Per tant, les caras laterales sumen 2018 - 2 = 2016 cares.
+
+Cada cara lateral d'un prisma és un rectangle que connecta dos vèrtexs consecutius de les dues bases. Això implica que el número de vèrtexs en cada base és igual al número de caras laterales, ya que cada lòbe (o llado) de la base està connectat a un altre vèrtex per una cara lateral.
+
+Dient això:
+
+- El prisma té dues bases, caduna amb 2016 vèrtexs.
+- Per tant, el total de vèrtexs és \( 2 \times 2016 = 4032 \).
+
+**Resposta: D) 4032**

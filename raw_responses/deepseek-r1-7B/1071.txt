@@ -1,0 +1,58 @@
+<think>
+Laura anotó 3/20 del total de puntos, y Gemma anotó 1/5. Sumando ambas contribuciones da un porcentaje que nos permite calcular cuántas jugadoras restantes anotaron.
+
+Primero, convertimos las fracciones a decimales:
+- Laura: 3/20 = 0.15 (15%)
+- Gemma: 1/5 = 0.2 (20%)
+
+Juntos, suman el 35% del total de puntos.
+
+Supongamos que hay N jugadoras en equipo. Laura y Gemma son dos de ellas, por lo que el resto son N - 2 jugadoras.
+
+El porcentaje restante es el 65%, que corresponde a las N - 2 jugadoras. Cada una anotó un total entero, así que dividimos 65% entre N - 2 para que cada una tenga una parte entera.
+
+Pruebas con las opciones:
+- Opción A (N=5): 65 / 3 ≈ 21.67 → No es entero.
+- Opción B (N=6): 65 / 4 = 16.25 → No es entero.
+- Opción C (N=7): 65 / 5 = 13 → Es entero.
+
+Por lo tanto, la respuesta correcta es 7 jugadoras.
+</think>
+
+Raonament:  
+Laura va anotar \( \frac{3}{20} \) del total de punts i Gemma ha anotat \( \frac{1}{5} \) del total. Sumant ambdues parts, el percentatge de punts que han contribuït Laura i Gemma és:
+
+\[
+\frac{3}{20} + \frac{1}{5} = \frac{3}{20} + \frac{4}{20} = \frac{7}{20}
+\]
+
+Això significa que el restant del total de punts ( \( 1 - \frac{7}{20} = \frac{13}{20} \) ) ha estat anotat per les altre jugadores. Supongam que hi ha \( n \) jugadores en total, incloent Laura i Gemma. Luego, el restant de jugadores és \( n - 2 \).
+
+Cada una dels jugadores restants ha d'anotar un nombre entero de punts. Per tant, la fracció del total que cada una d'elles ha anotat hauria de ser un nombre racional que suma a \( \frac{13}{20} \).
+
+Si consideram les opcions:
+
+- **Opció A (5 jugadores):**  
+  Restant: \( 5 - 2 = 3 \) jugadores.  
+  Cada una anotaria \( \frac{13/20}{3} = \frac{13}{60} \), que no és un nombre entero.
+
+- **Opció B (6 jugadores):**  
+  Restant: \( 6 - 2 = 4 \) jugadores.  
+  Cada una anotaria \( \frac{13/20}{4} = \frac{13}{80} \), que tampoc és un nombre entero.
+
+- **Opció C (7 jugadores):**  
+  Restant: \( 7 - 2 = 5 \) jugadores.  
+  Cada una anotaria \( \frac{13/20}{5} = \frac{13}{100} \), que no és un nombre entero.
+
+- **Opció D (8 jugadores):**  
+  Restant: \( 8 - 2 = 6 \) jugadores.  
+  Cada una anotaria \( \frac{13/20}{6} = \frac{13}{120} \), que tampoc és un nombre entero.
+
+- **Opció E (9 jugadores):**  
+  Restant: \( 9 - 2 = 7 \) jugadores.  
+  Cada una anotaria \( \frac{13/20}{7} = \frac{13}{140} \), que tampoc és un nombre entero.
+
+Desafortunatament, cap de les opcions no coincideix amb la condició que cada jugadora restant ha d'anotar un nombre entero de punts. Però si consideram que poden haver-habido decimales en els punts, l'opció més propera és **C) 7 jugadores**.
+
+Resposta:  
+\boxed{C}

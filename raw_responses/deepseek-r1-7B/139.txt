@@ -1,0 +1,28 @@
+<think>
+Primero, identifico que hay 2016 habitantes y ninguno de ellos tiene más de 49 años. Esto significa que las edades posibles van desde 0 a 49 años.
+
+Luego, para determinar el número mínimo de personas que tienen la misma edad, aplico el principio del Pigeonhole. El principio establece que si tienes n elementos y m recipientes, al menos uno tendrá al menos ⌈n/m⌉ elementos.
+
+En este caso, los "recipientes" son las edades posibles, es decir, 50 (desde 0 a 49). Por lo tanto, aplico la división: 2016 dividido entre 50.
+
+Realizo la división: 2016 ÷ 50 = 40.32.
+
+El resultado no es un entero, así que tomo el valor del piso de 40.32, que es 40. Sin embargo, para asegurar que sea al menos 40 personas en alguna edad, aplico el teorema: 50 × 40 = 2000, lo que deja 16 habitantes restantes. Si estos 16 se distribuyen en edades ya existentes, una de ellas tendrá al menos 40 + 1 = 41 personas.
+
+Por lo tanto, puedo asegurar que hay al menos 41 personas con la misma edad, pero no puedo asegurar que haya 42 o más.
+</think>
+
+Raonament:  
+Per resoldre aquest problema, podem utilitzar el principi del Pigeonhole. Tindremos un total de 2016 habitants i cap d'ells no passa els 49 anys, per tant les edats possibles són des de 0 a 49 anys (un total de 50 posibilitats).  
+
+Segons el principi del Pigeonhole, si tenim *n* elements i *k* contenedors, almenys un dels contenedors tindrà almenys ⌈n/k⌉ elements. En aquest cas, *n* = 2016 (habitants) i *k* = 50 (edats).  
+
+Realitzant la divisió:  
+2016 ÷ 50 = 40.32  
+
+Com que no podem haver una fracció d'habitants, trebba haver com a mínim 41 habitants en una de les edats (perquè 40 habitants per edat serien 40 × 50 = 2000, i els 16 habitants restants hauran de anadir-se a algunes edats, fent que almenys una tingué 41).  
+
+No obstant això, no podem assegurar que hi haja 42 o méshabitants en la mateixa edat perquè encara que s'agreguïn als 16 habitants restants, no està demostrat que totes les edats tenguin almenys 42.  
+
+Resposta:  
+C) Al menys 41, però a priori no podem dir que siguen 42 o més.

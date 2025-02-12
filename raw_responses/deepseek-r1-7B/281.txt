@@ -1,0 +1,46 @@
+<think>
+Para resolver este problema, primero identifico que necesitamos encontrar todos los números de tres cifras donde el producto de sus dígitos es igual a 9.
+
+Luego, considero que un número de tres cifras tiene la forma ABC, donde A es la centena, B la decena y C la unidad. Sabemos que A no puede ser cero.
+
+Me concentro en los posibles valores de A, B y C que cumplan con el producto A × B × C = 9.
+
+Después, listo todas las combinaciones de dígitos que multiplican a 9:
+
+1. (1, 1, 9)
+2. (1, 3, 3)
+3. (1, 9, 1)
+4. (3, 1, 3)
+5. (3, 3, 1)
+6. (9, 1, 1)
+
+Finalmente, verifico cuántas de estas combinaciones forman números de tres cifras válidos y concluyo que hay un total de 6 números.
+</think>
+
+**Raonament:**
+
+Per resoldre la pregunta, hem de determinar quants nombres de 3 xifres tenen el producte de totes les xifres igual a 9. Un nombre de 3 xifres pot ser representat com \( ABC \), on \( A \) és l'xifra de les centenes, \( B \) la de les desenes i \( C \) la de les unitats. Com que \( A \) no pots ser zero (perquè altrament no seria un nombre de 3 xifres), hem de considerar combinacions on \( A \times B \times C = 9 \).
+
+El producte 9 pot ser obtingut des dels següents factors:
+
+1. \( 1 \times 1 \times 9 = 9 \)
+2. \( 1 \times 3 \times 3 = 9 \)
+3. \( 1 \times 9 \times 1 = 9 \)
+4. \( 3 \times 1 \times 3 = 9 \)
+5. \( 3 \times 3 \times 1 = 9 \)
+6. \( 9 \times 1 \times 1 = 9 \)
+
+Ara, considerant que \( A \) no pots ser zero, hem de formar tots els posibles nombres \( ABC \) usant les combinacions anteriors:
+
+- \( 119 \)
+- \( 133 \)
+- \( 191 \)
+- \( 313 \)
+- \( 331 \)
+- \( 911 \)
+
+Això dona un total de **6** nombres que complaten les condicions.
+
+**Resposta:**
+
+\boxed{E}

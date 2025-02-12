@@ -1,0 +1,42 @@
+<think>
+Primero, reconozco que tengo una expresión exponencial con base 2 y un logaritmo en la parte del exponente. La expresión es \(2^{\log_4 9}\).
+
+Sé que los logaritmos y las potencias se pueden manipular utilizando propiedades de los exponentes y cambios de base. Quiero simplificar esta expresión para calcular su valor.
+
+Recuerdo que \(\log_b a = \frac{\ln a}{\ln b}\), por lo que puedo reescribir \(\log_4 9\) como \(\frac{\ln 9}{\ln 4}\).
+
+Entonces, la expresión original se convierte en \(2^{\frac{\ln 9}{\ln 4}}\).
+
+Noto que \(4 = 2^2\), así que \(\ln 4 = \ln (2^2) = 2 \ln 2\). Sustituyo esto en la expresión, obteniendo \(2^{\frac{\ln 9}{2 \ln 2}}\).
+
+Sé que \(2^{\frac{1}{2} \cdot \frac{\ln 9}{\ln 2}} = (2^{\frac{\ln 9}{\ln 2}})^{\frac{1}{2}}\). Y \(2^{\frac{\ln 9}{\ln 2}}\) es igual a \(9\), porque cualquier número elevado al logaritmo base de ese número da el argumento del logaritmo.
+
+Por lo tanto, \( (9)^{\frac{1}{2}} = \sqrt{9} = 3 \).
+
+Así que, el valor de la expresión es 3.
+</think>
+
+**Raonament:**
+
+La expressió donada és \(2^{\log_4 9}\). Per simplificar aquesta expressió, podem fer servir les propietats dels logaritmes i exponents.
+
+1. **Canvi de base del logaritme:**  
+   \[
+   \log_4 9 = \frac{\log_2 9}{\log_2 4}
+   \]  
+   Sabem que \(\log_2 4 = 2\) (des de \(2^2 = 4\)), i que \(\log_2 9 = \log_2 (3^2) = 2 \cdot \log_2 3\).
+
+2. **Sustitució en la expressió:**  
+   \[
+   2^{\log_4 9} = 2^{\frac{2 \cdot \log_2 3}{2}} = 2^{\log_2 3}
+   \]
+
+3. **Aplicació de la propietat exponencial:**  
+   Sabem que \(a^{\log_a b} = b\). En aquest cas, \(a = 2\) i \(b = 3\), per tant:
+   \[
+   2^{\log_2 3} = 3
+   \]
+
+**Resposta:**
+
+B) 3

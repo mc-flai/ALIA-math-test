@@ -1,0 +1,93 @@
+<think>
+Vamos a resolver este problema paso a paso. Primero, identificaremos los datos proporcionados y utilizaremos el principio de inclusión-exclusión para determinar cuántas llaunes están pintadas con un solo color.
+
+Conocemos que Maria tiene 36 llaunes en total. Cada una puede tener uno, dos o tres colores: blanco, azul o verde. Los datos específicos son:
+
+- 25 llaunes son blancos.
+- 28 son azules.
+- 20 son verdes.
+- 5 llaunes tienen los tres colores.
+
+Necesitamos encontrar cuántas llaunes están pintadas con solo un color. Para esto, utilizaremos el principio de inclusión-exclusión.
+
+Primero, calculamos la suma total de las llaunes considerando todas las combinaciones de colores:
+
+Total = (B) + (A) + (V) - (BA) - (BV) - (AV) + (BAV)
+
+Aquí, B es blanco, A es azul, V es verde, BA son los que tienen ambos blanco y azul, BV son los que tienen blanco y verde, AV son los que tienen azul y verde, y BAV son los que tienen los tres colores.
+
+Sustituyendo los valores conocidos:
+
+36 = 25 + 28 + 20 - (BA + BV + AV) + 5
+
+Calculamos la suma de las individualidades:
+
+25 + 28 + 20 = 73
+
+Entonces:
+
+36 = 73 - (BA + BV + AV) + 5
+36 = 78 - (BA + BV + AV)
+
+Despejando:
+
+(BA + BV + AV) = 78 - 36 = 42
+
+Ahora, sumamos los que tienen exactamente dos colores y los que tienen todos los tres. Pero necesitamos encontrar las llaunes con solo un color.
+
+El total de llaunes pintadas con un solo color es:
+
+B_solo + A_solo + V_solo = B + A + V - 2*(BA + BV + AV) + 3*BAV
+
+Sustituyendo los valores:
+
+= 25 + 28 + 20 - 2*42 + 3*5
+= 73 - 84 + 15
+= 4
+
+Por lo tanto, hay 4 llaunes pintadas con solo un color.
+</think>
+
+Raonament: 
+
+Per resoldre el problema, utilitzarem el principle d'inclusió-exclusió. Sabem que Maria té 36 llaunes en total, amb colores blanc (B), blau (A) i verd (V). Les quantitats són:
+
+- B = 25
+- A = 28
+- V = 20
+- Tres colors (BAV) = 5
+
+El primer pass és calcular la suma total de les llaunes tenides en compte les superposicions:
+
+Total = B + A + V - (BA + BV + AV) + BAV
+
+Substituïm els valors coneguts:
+
+36 = 25 + 28 + 20 - (BA + BV + AV) + 5
+
+Calculant la suma individual:
+
+25 + 28 + 20 = 73
+
+Per tant,
+
+36 = 73 - (BA + BV + AV) + 5  
+36 = 78 - (BA + BV + AV)
+
+Rearranzem:
+
+(BA + BV + AV) = 78 - 36 = 42
+
+Ara, volem trobar quants llaunes tenen un sol color. Això és:
+
+B_solo + A_solo + V_solo = B + A + V - 2*(BA + BV + AV) + 3*BAV
+
+Substituïm els valors:
+
+= 25 + 28 + 20 - 2*42 + 3*5  
+= 73 - 84 + 15  
+= 4
+
+Assí, Maria té 4 llaunes pintades d'un sol color.
+
+Resposta: B) 4

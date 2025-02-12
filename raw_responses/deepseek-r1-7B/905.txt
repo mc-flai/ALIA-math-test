@@ -1,0 +1,53 @@
+<think>
+Primero, identifico que necesito calcular la última dígito no cero del número resultante de multiplicar 2⁵⁷ por 3⁴ por 5⁵³ y por 4.
+
+Sé que el último dígito no cero se relaciona con las propiedades modulo 10, pero tengo que eliminar los factores de 10 para evitar que me confundan. Los factores de 10 provienen de la multiplicación de 2 y 5, por lo que contaré cuántos pares (2,5) hay en cada exponente.
+
+Voy a analizar cada parte del producto:
+
+- **2⁵⁷**: Tiene 57 factores de 2.
+- **3⁴**: No contribuye a factores de 10, así que lo dejaré para el final.
+- **5⁵³**: Tiene 53 factores de 5.
+- **4**: Es igual a 2², por lo que agrega otros 2 factores de 2.
+
+Sumando los factores de 2: 57 + 2 = 59.
+Los factores de 5 son 53. Como hay más factores de 2 que de 5, el número de pares (2,5) será igual al número de 5s disponibles, es decir, 53.
+
+Estos 53 pares forman 10⁵³, que me dan 53 ceros al final del número. Sin embargo, solo necesito el último dígito no cero, por lo que considero el producto sin estos factores de 10.
+
+Ahora, elimino los 53 factores de 2 y 5 y me concentro en el resto:
+
+- **2⁵⁷** / 2⁵³ = 2⁴
+- **5⁵³** ya no está presente debido a la división.
+- **4** es 2², así que lo integro en la potencia de 2.
+
+Multiplicando los restantes factores: 2⁴ * 3⁴. 
+
+Calculo 2⁴ = 16 y 3⁴ = 81. Luego multiplico 16 por 81, obteniendo 1296. El último dígito no cero de 1296 es 6.
+
+Finalmente, entre las opciones dadas, el dígito correspondiente es D) 6.
+</think>
+
+**Raonament:**  
+Per determinar l'última xifra no nulla del nombre resultant de la multiplicació 2⁵⁷ · 3⁴ · 5⁵³ · 4, hem de treure tots els factors de 10 (que són productes de 2 i 5) ja que aquests determinen les xifres finals zeros. Després, calcularem el residu modular respecte a 10 per obtenir l'última xifra no nulla.
+
+1. **Eliminar els factors redundants:**
+   - El nombre 4 pot ser expressat com 2².
+   - Per tant, el producte total es convierteix en 2⁵⁷ · 3⁴ · 5⁵³ · 2² = 2^(57+2) · 3⁴ · 5⁵³ = 2^59 · 3⁴ · 5^53.
+
+2. **Treure els factors de 10:**
+   - Un factor de 10 es forma d'un 2 i un 5.
+   - Hi ha més factors de 2 que de 5 (59 factors de 2 vs 53 factors de 5), per donc, treurem 53 pares de (2,5) que donen 10^53. Què queda:
+     - Factors restants: 2^(59-53) = 2^6.
+     - Els altres termes: 3⁴.
+
+3. **Calcular el producte dels factors restants:**
+   - 2^6 = 64
+   - 3^4 = 81
+   - Producte: 64 · 81
+
+4. **Obtenir l'última xifra no nulla:**
+   - 64 · 81 = 5184
+   - La darrera xifra no nulla de 5184 és 4.
+
+**Resposta:** C) 4

@@ -1,0 +1,46 @@
+<think>
+Primero, identifico que hay 20 puntos marcados en una circunferencia, lo que divide a la misma en 20 arcos iguales. Necesito determinar cuántas cordas se pueden dibujar conectando pares de estos puntos, donde cada cuerda cumple con las condiciones de ser más larga que el radio del círculo pero más corta que su diámetro.
+
+Para ello, entiendo que la longitud de una cuerda depende del número de espacios (arcs) entre los dos puntos conectados. En un círculo con 20 divisiones iguales, el arco entre dos puntos consecutivos corresponde a un ángulo central de 18 grados.
+
+Sé que la longitud de una cuerda está dada por la fórmula \( L = 2r \sin\left(\frac{\theta}{2}\right) \), donde \( r \) es el radio y \( \theta \) es el ángulo central en radianes. Sin embargo, para este problema, no necesito calcular las longitudes exactas, sino más bien determinar cuántos pares de puntos dan lugar a ángulos que hagan que la cuerda cumpla con las condiciones dadas.
+
+Considero que el radio del círculo es \( r \) y el diámetro es \( 2r \). Por lo tanto, una cuerda será más larga que el radio pero más corta que el diámetro si su longitud está entre \( r \) y \( 2r \).
+
+Para determinar los ángulos correspondientes a estos rangos de longitudes, reescribo las desigualdades:
+
+1. \( L > r \): \( 2r \sin\left(\frac{\theta}{2}\right) > r \Rightarrow \sin\left(\frac{\theta}{2}\right) > \frac{1}{2} \Rightarrow \frac{\theta}{2} > 30^\circ \Rightarrow \theta > 60^\circ \).
+   
+2. \( L < 2r \): \( 2r \sin\left(\frac{\theta}{2}\right) < 2r \Rightarrow \sin\left(\frac{\theta}{2}\right) < 1 \). Esto siempre es verdadero para ángulos entre \( 0^\circ \) y \( 180^\circ \).
+
+Dado que los arcos son iguales, cada arco mide 18 grados. Por lo tanto, necesito encontrar todos los pares de puntos donde el número de espacios (arcs) entre ellos corresponde a ángulos mayores que 60 grados pero menores que 180 grados.
+
+Cada punto tiene un total de 19 posibles pares con otros puntos. Sin embargo, debido a la simetría del círculo, considero solo los pares donde el número de espacios es menor que 10 (ya que más allá de 10, se repiten las distancias).
+
+Calculo cuántos ángulos cumplen con \( 60^\circ < \theta < 180^\circ \):
+
+- Ángulo correspondiente a 60 grados: \( k = \frac{60}{18} = 3.333 \). Dado que el número de espacios debe ser entero, \( k = 4 \) arcos corresponden a 72 grados.
+- Ángulo correspondiente a 180 grados: \( k = 10 \) arcos.
+
+Por lo tanto, los ángulos aceptables son aquellos con 4, 5, 6, 7, 8, 9 espacios entre los puntos. Esto suma un total de 6 posibles distancias.
+
+Finalmente, calculo el número total de pares:
+
+- Para cada punto, hay 19 posibles conexiones.
+- Excluyo las distancias que no cumplen con las condiciones (distancias menores o iguales a 3 y mayor a 10).
+- Por lo tanto, para cada punto, hay 6 distancias aceptables.
+
+El número total de cordas sería \( \frac{20 \times 19}{2} = 190 \) en general. Sin embargo, solo consideramos las que cumplen con las condiciones: 6 por punto multiplicado por 20 y dividido por 2 para evitar duplicaciones.
+
+Finalmente, \( 20 \times (k=4 \text{ a } k=9) = 20 \times 6 = 120 \).
+</think>
+
+Raonament:
+- Hay 20 puntos en la circunferencia, que dividen el círculo en arcos iguales de 18 grados.
+- La longitud de una cuerda depende del número de espacios entre los dos puntos conectados.
+- Para que una cuerda sea más larga que el radio pero más corta que el diámetro, su ángulo central debe estar entre 60 y 180 grados.
+- Esto corresponde a pares de puntos separados por 4, 5, 6, 7, 8 o 9 arcos.
+- Cada punto tiene 6 posibles pares que cumplen con esta condición.
+- El total de cordas es \( \frac{20 \times 19}{2} = 190 \), pero solo 6 por cada punto son válidas, resultando en 120 cordas.
+
+Resposta: C) 120

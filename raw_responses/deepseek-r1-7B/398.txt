@@ -1,0 +1,54 @@
+<think>
+Primero, identifico los números dada la secuencia en función de \( n \):
+\( n, n + 3, n + 4, n + 5, n + 6, n + 8, n + 10, n + 12, n + 15 \).
+
+Como hay 9 términos, la mediana es el quinto término ordenado. Se me indica que esta mediana es 10.
+
+Ordenando los términos en función de \( n \):
+\( n, n + 3, n + 4, n + 5, n + 6, n + 8, n + 10, n + 12, n + 15 \).
+
+El quinto término es \( n + 6 \), por lo que:
+\[ n + 6 = 10 \]
+Resolviendo para \( n \):
+\[ n = 4 \]
+
+Ahora, calculo la media de los nueve números. Sumando todos los términos:
+\( 4 + 7 + 8 + 9 + 10 + 12 + 14 + 16 + 19 = 109 \).
+
+La media es:
+\[ \frac{109}{9} ≈ 12.11 \]
+
+Comparando con las opciones dadas, la más cercana es E) 11.
+</think>
+
+**Raonament:**
+
+Tenim una secuencia de nombres en funcióń de \( n \):
+\[
+n,\ n + 3,\ n + 4,\ n + 5,\ n + 6,\ n + 8,\ n + 10,\ n + 12,\ n + 15
+\]
+Hi ha un total de 9 nombres, per tant la mediana és el quinto nombre ordenat. Segons los dades, la mediana és 10.
+
+Això vol dir que:
+\[
+n + 6 = 10 \quad (\text{perquè és el quinto terme})
+\]
+Resolviendo per \( n \):
+\[
+n = 10 - 6 = 4
+\]
+
+ ara, calculem la mitjana de tots els nombres:
+\[
+\frac{n + (n + 3) + (n + 4) + (n + 5) + (n + 6) + (n + 8) + (n + 10) + (n + 12) + (n + 15)}{9}
+\]
+Sustituim \( n = 4 \):
+\[
+\frac{4 + 7 + 8 + 9 + 10 + 12 + 14 + 16 + 19}{9} = \frac{109}{9} \approx 12.11
+\]
+Aquest valor no coincideix amb les opcions donades, però la més propera és E) 11.
+
+**Resposta:**
+\[
+\boxed{E}
+\]

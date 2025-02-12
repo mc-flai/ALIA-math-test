@@ -1,0 +1,68 @@
+<think>
+Primero, identifico que hay dos relojes con diferentes problemas: uno se adelanta un minuto cada hora y otro se retrasa dos minutos cada hora.
+
+Ambos relojes fueron ajustados a la misma hora inicial. Después de cierto tiempo, el primero marca 11h del matí (de mañana) y el segundo muestra 12h del migdia (mediodía).
+
+Calculo la diferencia horaria entre los dos relojes. En una hora, el primero adelanta 1 minuto y el segundo retrocede 2 minutos, lo que suma una diferencia de 3 minutos por hora.
+
+Determino cuántas horas transcurren para que la diferencia total alcance 1 hora (60 minutos). Dividindo 60 minutos entre 3 minutos por hora, obtenemos 20 horas.
+
+Sumando estas 20 horas al momento en el que ambos relojes estaban sincronizados, deduzco que fue a las 15:40 horas.
+</think>
+
+Raonament:
+
+1. **Entendiendo los problemas de los relojes:**
+   - Reloj A: Se adelanta 1 minuto cada hora.
+   - Reloj B: Se retrasa 2 minutos cada hora.
+
+2. **Configuración inicial:**
+   - Ambos relojes se ponen en la misma hora, digamos a las H0.
+
+3. **Diferencia por hora transcurrida:**
+   - Cada hora, Reloj A avanza 1 minuto.
+   - Cada hora, Reloj B retrocede 2 minutos.
+   - Diferencia total por hora = 1 + 2 = 3 minutos (Reloj A está adelantado).
+
+4. **Hora observada:**
+   - Reloj A muestra las 11h del matí (amanecer).
+   - Reloj B muestra las 12h del migdia (mediodía).
+   
+5. **Calculando la diferencia total:**
+   - Entre las 11h y las 12h hay una diferencia de 60 minutos.
+   - Como Reloj A está adelantado, la diferencia es 60 minutos.
+
+6. **Determinando el tiempo transcurrido (t):**
+   - Diferencia por hora = 3 minutos.
+   - Tiempo total = 60 minutos / 3 minutos/hora = 20 horas.
+
+7. **Calculando H0:**
+   - Si después de 20 horas, Reloj A muestra las 11h y Reloj B las 12h:
+     - Rebobinando 20 horas desde la hora observada.
+     -Hora en que se pusieron en hora = 12h (mediodía) - 4 horas = 8 AM? No, esto no coincide. Mejor calcular de otra manera.
+
+   **Otra aproximación:**
+   - Al cabo de t horas:
+     - Reloj A mostrará H0 + t + t*1 minuto.
+     - Reloj B mostrará H0 + t - t*2 minutos.
+   - Diferencia = (t + t) - (-2t) = 3t minutos.
+   - Necesitamos que la diferencia sea 60 minutos:
+     - 3t = 60 → t = 20 horas.
+
+8. **Hora inicial H0:**
+   - Si Reloj A muestra 11h y Reloj B 12h después de 20 horas, H0 fue:
+     - Reloj A: 11h - 20h = -9h → 15h en el formato de 24 horas.
+     - Reloj B: 12h - 20h = -8h → 16h en el formato de 24 horas.
+
+   **Nota:** Existe una discrepancia en las calculaciones. Para resolver esto, consideremos que ambos relojes deben coincidir en H0. Luego, sumando las diferencias:
+
+   - Reloj A avanza 1 minuto/hora → 20h × 1 = 20 minutos.
+   - Reloj B retrocede 2 minutos/hora → 20h × (-2) = -40 minutos.
+   
+   La diferencia total es 60 minutos (Reloj A - Reloj B). Esto coincide con la diferencia observada.
+
+9. **Hora inicial:**
+   - Si después de 20 horas, el reloj que retrocede muestra las 12h del mediodía, la hora inicial fue:
+     - H0 = 12h - 20h + 48h (puesolvemos al día anterior) = 15:40 horas.
+
+Resposta: C) A les 15.40 h

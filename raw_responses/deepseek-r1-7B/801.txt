@@ -1,0 +1,24 @@
+<think>
+Primero, observo que el cucut toca un número creciente de veces según las horas. Noto que:
+
+- A las 1 en punto, toca 1 vez.
+- A las 2 en punto, toca 3 veces.
+- A las 3 en punto, toca 6 veces.
+
+Estos números (1, 3, 6) corresponden a la suma de los primeros números naturales: 1, 1+2=3, 1+2+3=6. Es decir, para la hora `n`, el cucut toca la suma de los enteros del 1 al n.
+
+Entonces, para calcular las veces que tocará a las 8 en punto, sumo los números desde 1 hasta 8:
+
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36
+
+Por lo tanto, el cucut tocará 36 veces.
+</think>
+
+Raonament:  
+El cucut del rellotge toca de manera incremental a mes d'ora. Per cada hora `n`, el cucut toca la suma de les primeres `n` unitats:  
+1 (a las 1), 1 + 2 = 3 (a las 2), 1 + 2 + 3 = 6 (a las 3), etc.  
+
+Per calcular-ho a las 8 en punt, sumem totes les unitats des de 1 fins a 8:  
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36 vegades.
+
+Resposta: D) 36 vegades

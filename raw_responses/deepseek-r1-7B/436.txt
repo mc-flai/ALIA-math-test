@@ -1,0 +1,40 @@
+<think>
+Primero, identifico que se me pide calcular el dígito de las centenas del producto 1×2×3×4×5×6×7×8×9×10. Es decir, necesito encontrar la tercera cifra a partir de la derecha en este producto.
+
+Sé que multiplicar números consecutivos puede resultar en un número muy grande, así que en lugar de calcular el producto completo, me centraré en determinar las últimas tres cifras del resultado para obtener el dígito de las centenas.
+
+Para ello, noto que desde 5! (120) en adelante, los factoriales incluyen al menos dos factores de 5 y suficientes factores de 2 para formar múltiplos de 10. Esto significa que a partir de 5!, el producto termina con por lo menos dos ceros.
+
+Sin embargo, necesito considerar las centenas, es decir, la tercera cifra. Para esto, calcularé el producto módulo 1000, ya que me interesa solo el final del número.
+
+Voy a multiplicar los números uno por uno y almaceno el resultado modulo 1000 para simplificar los cálculos:
+
+1 × 2 = 2  
+2 × 3 = 6  
+6 × 4 = 24  
+24 × 5 = 120  
+120 × 6 = 720  
+720 × 7 = 5040 → 5040 mod 1000 = 40  
+40 × 8 = 320  
+320 × 9 = 2880 → 2880 mod 1000 = 880  
+880 × 10 = 8800 → 8800 mod 1000 = 800
+
+Después de realizar todas las multiplicaciones y reducir modulo 1000, el resultado es 800. Por lo tanto, la tercera cifra a partir de la derecha es 8.
+</think>
+
+Raonament: 
+Per calcular el dígit de les centenes del producte 1 × 2 × 3 × 4 × 5 × 6 × 7 × 8 × 9 × 10, hem de determinar què és el producte total i desprès observar la tercera cifra des de l'extrem dret (les centenes). El producte total de tots aquests números consecutius es coneix com un factorial de 10 (!10), que és un nombre molt gran. Per facilitar, calculem el producte pas a pas:
+
+1 × 2 = 2  
+2 × 3 = 6  
+6 × 4 = 24  
+24 × 5 = 120  
+120 × 6 = 720  
+720 × 7 = 5040  
+5040 × 8 = 40320  
+40320 × 9 = 362880  
+362880 × 10 = 3628800  
+
+El producte final és 3.628.800. Observant aquest nombre, les centenes estan representades per el dígit "8".
+
+Resposta: E) 8

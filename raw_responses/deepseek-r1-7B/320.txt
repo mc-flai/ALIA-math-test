@@ -1,0 +1,55 @@
+<think>
+Primero, analizo las condiciones dadas para determinar los valores de X y Y en el número 24X8Y.
+
+Para que el número sea divisible por 5, la última cifra Y debe ser 0 o 5. 
+
+Luego, considero la divisibilidad por 4, que requiere que las últimas dos cifras formen un número divisible entre 4. Dado que Y puede ser 0 o 5, analizo ambas opciones para determinar qué valor de Y y correspondiente X cumplen con esta condición.
+
+Finalmente, verifico la divisibilidad por 9, lo cual implica que la suma total de las cifras del número debe ser un múltiplo de 9. Utilizo las posibles combinaciones de X y Y para calcular cuál de ellas cumple con todas las condiciones simultáneamente.
+</think>
+
+**Raonament:**
+
+El problema consiste en substituir les lletres X i Y per xifres numèriques a l'efecte que el nombre 24X8Y siga divisible per 4, 5 i 9. Per arribar a la solució, seguiremos els passos següents:
+
+1. **Divisiabilitat per 5:**  
+   Un nombre és divisible per 5 si la seva darrera xifra (Y) és 0 o 5.
+
+2. **Divisiabilitat per 4:**  
+   Un nombre és divisible per 4 si les dues xifres finals formen un nombre divisible per 4. Dado que Y es 0 o 5, analitzem cada cas:
+   
+   - **Cas 1:** Y = 0  
+     En aquest cas, les dues xifres finals són 8Y = 80.  
+     80 ÷ 4 = 20 (enter). Això funciona.
+   
+   - **Cas 2:** Y = 5  
+     Les dues xifres finals són 8Y = 85.  
+     85 ÷ 4 = 21,25 (no entero). No funciona.
+
+3. **Divisiabilitat per 9:**  
+   Un nombre és divisible per 9 si la suma de les seves xifres és un múltiple de 9.  
+   Sumant les xifres del nombre 24X8Y:  
+   2 + 4 + X + 8 + Y = 14 + X + Y.  
+   Aquesta suma ha de ser divisible per 9.
+
+   - Desconocemos el valor d'X, pero sabem que Y = 0 (desde l'anterior pas).
+   
+   - Substituïndolas, la suma es 14 + X + 0 = 14 + X.  
+     Per fer que aquesta suma siga divisible per 9, 14 + X ha de ser igual a 18 (el primer múltiple de 9 mayor que 14).  
+     Així, X = 4.
+
+4. **Confirmació:**  
+   - Y = 0; X = 4.  
+   - El nombre resultant és 24480.
+   
+   Verificam les condicions:
+   - ÷5: Última xifra 0 ⇒ òk.
+   - ÷4: 80 ÷ 4 = 20 ⇒ òk.
+   - ÷9: Suma = 2 + 4 + 4 + 8 + 0 = 18, que és divisible per 9 ⇒ òk.
+
+5. **Càlcul de X + Y:**  
+   X = 4; Y = 0 ⇒ X + Y = 4 + 0 = 4.
+
+**Resposta:**
+
+\boxed{E}

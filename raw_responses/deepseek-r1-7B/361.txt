@@ -1,0 +1,49 @@
+<think>
+Primero, sabemos que la razón entre los dos enteros es 3:2. Esto significa que si tomamos un entero múltiplo común, digamos 3k y 2k, donde k es un número entero.
+
+Luego, necesitamos encontrar el mínimo comú multiple (MCM) de estos dos números y su máximo comú divisor (MCD).
+
+El MCM de 3k y 2k se calcula multiplicando los números y dividiendo por su MCD. Primero, determinemos el MCD de 3k y 2k.
+
+Como 3 y 2 son primos, su MCD es 1. Por lo tanto, MCD(3k, 2k) = k * MCD(3, 2) = k * 1 = k.
+
+Ahora, el MCM de 3k y 2k se calcula así:
+MCM(3k, 2k) = (3k * 2k) / MCD(3k, 2k) = (6k²) / k = 6k.
+
+Conociendo que MCM es 6k y MCD es k, la razón entre el MCM y el MCD será:
+MCM : MCD = 6k : k = 6:1.
+
+Por lo tanto, la relación pedida es 6 a 1.
+</think>
+
+**Raonament:**
+
+Sabiendo que la raó entre dos enters és 3:2, podem representar els dos enters com \(3k\) i \(2k\),其中 \(k\) és un enter positiu.
+
+- **Màxim Comú Divisor (MCD):**
+  
+  El MCD de \(3k\) i \(2k\) es calcula multiplicant els dos enters per el MCD dels coeficients, ja que \(3\) i \(2\) són primers:
+  
+  \[
+  \text{MCD}(3k, 2k) = k \times \text{MCD}(3, 2) = k \times 1 = k
+  \]
+
+- **Mínim Comú Múltiple (MCM):**
+  
+  El MCM de \(3k\) i \(2k\) es calcula multiplicant els dos enters i dividint per el MCD:
+  
+  \[
+  \text{MCM}(3k, 2k) = \frac{3k \times 2k}{\text{MCD}(3k, 2k)} = \frac{6k^2}{k} = 6k
+  \]
+
+- **Raó entre MCM i MCD:**
+  
+  La raó entre el MCM (\(6k\)) i el MCD (\(k\)) és:
+  
+  \[
+  \frac{\text{MCM}}{\text{MCD}} = \frac{6k}{k} = 6
+  \]
+
+**Resposta:**
+
+D) 6

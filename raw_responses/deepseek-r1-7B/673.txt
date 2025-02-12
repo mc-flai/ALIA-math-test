@@ -1,0 +1,21 @@
+<think>
+Primero, calculo cuántos tiros Joana ha acertado en los primeros 20 intentos. Como su porcentaje de acierto es del 55%, multiplico 20 por el 55% para obtener la cantidad de tiros acertados.
+
+Luego, después de lanzar 5 tiros más, el total de tiros realizados es de 25. El porcentaje de acierto aumenta al 56%, lo que significa que ahora ha acertado un 56% de los 25 tiros totales. Calculo cuántos tiros ha acertado en total después de estos 5 lanzamientos adicionales.
+
+Finalmente, para determinar cuántos de esos últimos 5 tiros ha acertado, resto el número de aciertos totales después de 25 tiros del número de aciertos que tenía después de los 20 tiros iniciales.
+</think>
+
+**Raonament:**
+
+Joana ha fet 20 tirs i ha encertat un percentatge del 55%, que vol dir:
+\[ \text{Acers en 20 tirs} = 20 \times 0.55 = 11 \]
+
+Després d' altri 5 tirs, el total de tirs fet és \(20 + 5 = 25\). El percentatge d'encert ha augmentat al 56%, per tant:
+\[ \text{Acers en 25 tirs} = 25 \times 0.56 = 14 \]
+
+Per calcular quant ha encertat en els darrers 5 tirs, restem els acers iniciaus després de 20 tirs del total després de 25 tirs:
+\[ \text{Acers en 5 tirs finals} = 14 - 11 = 3 \]
+
+**Resposta:**
+\boxed{C)}

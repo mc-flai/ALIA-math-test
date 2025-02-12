@@ -1,0 +1,303 @@
+<think>
+Primero, entiendo que en 1955, la edad del matemático era igual a la suma de los dígitos del año en que nació. Necesito determinar cuál es ese año de nacimiento.
+
+Vamos a definir:
+- Año de nacimiento: X
+- Edad en 1955: E = 1955 - X
+
+Según el problema, E = suma de los dígitos de X. La suma de los dígitos de un año se obtiene sumando cada uno de sus dígitos.
+
+Entonces, tengo la ecuación:
+1955 - X = suma_dígitos(X)
+
+Para resolver esto, probaré años X alrededor de 1955 y calcularé si cumple con la condición.
+
+Supongamos que el año de nacimiento es 1896. Calculo:
+Suma_dígitos(1896) = 1 + 8 + 9 + 6 = 24
+Edad en 1955: 1955 - 1896 = 59
+
+24 ≠ 59, así que no es correcto.
+
+Ahora probemos con X=1900:
+Suma_dígitos(1900) = 1 + 9 + 0 + 0 = 10
+Edad en 1955: 55
+
+10 ≠ 55, tampoco es correcto.
+
+Probemos con X=1872:
+Suma_dígitos(1872) = 1 + 8 + 7 + 2 = 18
+Edad en 1955: 1955 - 1872 = 83
+
+18 ≠ 83, no coincide.
+
+Ahora probemos X=1884:
+Suma_dígitos(1884) = 1 + 8 + 8 + 4 = 21
+Edad en 1955: 71
+
+21 ≠ 71, sigue sin coincidir.
+
+Probemos X=1926:
+Suma_dígitos(1926) = 1 + 9 + 2 + 6 = 18
+Edad en 1955: 29
+
+18 ≠ 29, no es correcto.
+
+Ahora probemos X=1935:
+Suma_dígitos(1935) = 1 + 9 + 3 + 5 = 18
+Edad en 1955: 20
+
+No coincide.
+
+Probemos con X=1944:
+Suma_dígitos(1944) = 1 + 9 + 4 + 4 = 18
+Edad en 1955: 11
+
+18 ≠ 11, no es correcto.
+
+Ahora probemos X=1860:
+Suma_dígitos(1860) = 1 + 8 + 6 + 0 = 15
+Edad en 1955: 95
+
+15 ≠ 95, no coincide.
+
+Probemos X=1854:
+Suma_dígitos(1854) = 1 + 8 + 5 + 4 = 18
+Edad en 1955: 101
+
+18 ≠ 101, no es correcto.
+
+Ahora probemos X=1863:
+Suma_dígitos(1863) = 1 + 8 + 6 + 3 = 18
+Edad en 1955: 92
+
+No coincide.
+
+Probemos X=1870:
+Suma_dígitos(1870) = 1 + 8 + 7 + 0 = 16
+Edad en 1955: 85
+
+16 ≠ 85, no es correcto.
+
+Ahora probemos X=1882:
+Suma_dígitos(1882) = 1 + 8 + 8 + 2 = 19
+Edad en 1955: 73
+
+19 ≠ 73, no coincide.
+
+Probemos X=1890:
+Suma_dígitos(1890) = 1 + 8 + 9 + 0 = 18
+Edad en 1955: 65
+
+18 ≠ 65, no es correcto.
+
+Ahora probemos X=1902:
+Suma_dígitos(1902) = 1 + 9 + 0 + 2 = 12
+Edad en 1955: 53
+
+12 ≠ 53, no coincide.
+
+Probemos X=1911:
+Suma_dígitos(1911) = 1 + 9 + 1 + 1 = 12
+Edad en 1955: 44
+
+12 ≠ 44, no es correcto.
+
+Ahora probemos X=1920:
+Suma_dígitos(1920) = 1 + 9 + 2 + 0 = 12
+Edad en 1955: 35
+
+12 ≠ 35, no coincide.
+
+Probemos X=1929:
+Suma_dígitos(1929) = 1 + 9 + 2 + 9 = 21
+Edad en 1955: 26
+
+21 ≠ 26, no es correcto.
+
+Ahora probemos X=1938:
+Suma_dígitos(1938) = 1 + 9 + 3 + 8 = 21
+Edad en 1955: 17
+
+No coincide.
+
+Probemos X=1947:
+Suma_dígitos(1947) = 1 + 9 + 4 + 7 = 21
+Edad en 1955: 8
+
+No es correcto.
+
+Ahora probemos X=1950:
+Suma_dígitos(1950) = 1 + 9 + 5 + 0 = 15
+Edad en 1955: 5
+
+15 ≠ 5, no coincide.
+
+Probemos X=1842:
+Suma_dígitos(1842) = 1 + 8 + 4 + 2 = 15
+Edad en 1955: 113
+
+No es correcto.
+
+Ahora probemos X=1794:
+Suma_dígitos(1794) = 1 + 7 + 9 + 4 = 21
+Edad en 1955: 161
+
+21 ≠ 161, no coincide.
+
+Probemos X=1803:
+Suma_dígitos(1803) = 1 + 8 + 0 + 3 = 12
+Edad en 1955: 152
+
+No es correcto.
+
+Ahora probemos X=1812:
+Suma_dígitos(1812) = 1 + 8 + 1 + 2 = 12
+Edad en 1955: 143
+
+12 ≠ 143, no coincide.
+
+Probemos X=1821:
+Suma_dígitos(1821) = 1 + 8 + 2 + 1 = 12
+Edad en 1955: 134
+
+No es correcto.
+
+Ahora probemos X=1830:
+Suma_dígitos(1830) = 1 + 8 + 3 + 0 = 12
+Edad en 1955: 125
+
+12 ≠ 125, no coincide.
+
+Probemos X=1839:
+Suma_dígitos(1839) = 1 + 8 + 3 + 9 = 21
+Edad en 1955: 116
+
+No es correcto.
+
+Ahora probemos X=1848:
+Suma_dígitos(1848) = 1 + 8 + 4 + 8 = 21
+Edad en 1955: 107
+
+No coincide.
+
+Probemos X=1857:
+Suma_dígitos(1857) = 1 + 8 + 5 + 7 = 21
+Edad en 1955: 98
+
+21 ≠ 98, no es correcto.
+
+Ahora probemos X=1866:
+Suma_dígitos(1866) = 1 + 8 + 6 + 6 = 21
+Edad en 1955: 89
+
+No coincide.
+
+Probemos X=1875:
+Suma_dígitos(1875) = 1 + 8 + 7 + 5 = 21
+Edad en 1955: 80
+
+No es correcto.
+
+Ahora probemos X=1884:
+Suma_dígitos(1884) = 1 + 8 + 8 + 4 = 21
+Edad en 1955: 71
+
+21 ≠ 71, no coincide.
+
+Probemos X=1893:
+Suma_dígitos(1893) = 1 + 8 + 9 + 3 = 21
+Edad en 1955: 62
+
+No es correcto.
+
+Ahora probemos X=1902:
+Ya probamos, no coincide.
+
+Probemos X=1911:
+Ya probamos.
+
+Ahora me doy cuenta de que quizás mi enfoque está mal. En lugar de probar tantos años, tal vez debería formular una ecuación.
+
+Deja que el año de nacimiento sea N. Entonces, 1955 - N = suma de dígitos de N.
+
+Esto es: 1955 - N = sum_digits(N).
+
+Vamos a reescribir la ecuación:
+
+N + sum_digits(N) = 1955
+
+Ahora, necesitamos encontrar un entero N tal que al sumarle su suma de dígitos da 1955.
+
+Esto es similar a un problema de números congruentes y posiblemente se puede resolver mediante módulos.
+
+Conocemos que la suma de los dígitos de un número N es congruente con el número modulo 9. Es decir, sum_digits(N) ≡ N mod 9.
+
+Por lo tanto:
+
+N + sum_digits(N) ≡ N + (N mod 9) ≡ 1955 mod 9
+
+Calculamos 1955 mod 9:
+
+Sumamos los dígitos de 1955: 1+9+5+5=20; 2+0=2. Entonces, 1955 ≡ 2 mod 9.
+
+Por lo tanto,
+
+N + (N mod 9) ≡ 2 mod 9
+
+Vamos a considerar posibles valores de N mod 9.
+
+Supongamos que N ≡ k mod 9, donde k es entre 0 y 8.
+
+Entonces,
+
+N + sum_digits(N) ≡ N + k ≡ (m) mod 9, donde m es N + sum_digits(N).
+
+Pero ya sabemos que m ≡ 2 mod 9. Por lo tanto:
+
+k + (m ≡ 2 mod 9) → pero no estoy seguro si esto me ayuda directamente.
+
+Otra manera: N + sum_digits(N) ≡ 2 mod 9
+
+Esto implica que 2N + sum_digits(N) - N ≡ 2 mod 9, lo cual quizás no me aporta mucha información.
+
+Pero tal vez sería útil estimar un rango para N. Dado que 1955 es el año de la fecha, y supongamos que naciste en algún momento antes de 1955, digamos alrededor de los años 1800-1955.
+
+Supongamos que N está entre, digamos, 1700 y 1955.
+
+Entonces sum_digits(N) varía generalmente de, digamos, 1+7+0+0=8 a 1+9+5+5=20.
+
+Así que sum_digits(N) está en un rango de 8 a 20.
+
+Por lo tanto, N = 1955 - sum_digits(N). Dado que sum_digits(N) es entre 8 y 20, N será entre 1955-20=1935 y 1955-8=1947.
+
+Así que N está en el rango de 1935 a 1947. Ahora podemos probar cada año en este rango para ver si cumple con la condición.
+
+Vamos a construir una tabla:
+
+Año | Suma_dígitos(N) | Año + suma = ?
+-----|-----------------|------------
+1935 | 1+9+3+5=18 | 1935+18=1953
+1936 | 1+9+3+6=19 | 1936+19=1955 ✔️
+
+Ah, ya encontramos una coincidencia: 1936 + 19 = 1955.
+
+Pero para asegurarnos de que no haya más soluciones, continuemos:
+
+1937 | 1+9+3+7=20 | 1937+20=1957
+1938 | 1+9+3+8=21 | 1938+21=1959
+1939 | 1+9+3+9=22 | 1939+22=1961
+1940 | 1+9+4+0=14 | 1940+14=1954
+1941 | 1+9+4+1=15 | 1941+15=1956
+1942 | 1+9+4+2=16 | 1942+16=1958
+1943 | 1+9+4+3=17 | 1943+17=1960
+1944 | 1+9+4+4=18 | 1944+18=1962
+1945 | 1+9+4+5=19 | 1945+19=1964
+1946 | 1+9+4+6=20 | 1946+20=1966
+1947 | 1+9+4+7=21 | 1947+21=1968
+
+Observamos que solo el año 1936 cumple con la condición de que Año + suma_dígitos(Año) = 1955.
+
+Por lo tanto, la persona nació en 1936.
+</think>
+
+La persona nació en \boxed{1936}.

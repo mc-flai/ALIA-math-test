@@ -1,0 +1,71 @@
+<think>
+Vamos abordar el problema paso a paso.
+
+**Dado:** El polinomio \( f \) cumple que \( f(x^2 + 1) = x^4 + 4x^2 \).
+
+**Objetivo:** Determinar \( f(x^2 - 1) \).
+
+**Paso 1: Encontrar la expresión general de \( f(y) \).**
+
+Primero, necesitamos expresar \( f \) en términos de una variable nueva para simplificar. Sean \( y = x^2 + 1 \). Entonces:
+
+\( y = x^2 + 1 \)
+
+Despejando \( x^2 \):
+
+\( x^2 = y - 1 \)
+
+Sustituimos este valor en la expresión dada de \( f(y) \):
+
+\( f(y) = (x)^4 + 4(x)^2 = (x^2)^2 + 4x^2 = (y - 1)^2 + 4(y - 1) \)
+
+Expandingremos:
+
+\( f(y) = y^2 - 2y + 1 + 4y - 4 = y^2 + 2y - 3 \)
+
+**Paso 2: Calcular \( f(x^2 - 1) \).**
+
+Ahora, sustituimos \( y = x^2 - 1 \) en la expresión de \( f(y) \):
+
+\( f(x^2 - 1) = (x^2 - 1)^2 + 2(x^2 - 1) - 3 \)
+
+Expandiendo los términos:
+
+\( = x^4 - 2x^2 + 1 + 2x^2 - 2 - 3 \)
+
+Simplificando:
+
+\( = x^4 - 4 \)
+</think>
+
+**Raonament:**
+
+Per determinar \( f(x^2 - 1) \), primerament hem de trobar la forma del polinomi \( f(y) \). Sabem que \( f(x^2 + 1) = x^4 + 4x^2 \).
+
+Fem el canvi de variable següent: deixem \( y = x^2 + 1 \), llavors:
+
+\[
+y - 1 = x^2
+\]
+
+Substituïm a la funció:
+
+\[
+f(y) = (y - 1)^2 + 4(y - 1) = y^2 - 2y + 1 + 4y - 4 = y^2 + 2y - 3
+\]
+
+ ara, substituïm \( y = x^2 - 1 \):
+
+\[
+f(x^2 - 1) = (x^2 - 1)^2 + 2(x^2 - 1) - 3
+\]
+
+Expandingremos i simplificarem:
+
+\[
+= x^4 - 2x^2 + 1 + 2x^2 - 2 - 3 = x^4 - 4
+\]
+
+**Resposta:**
+
+D

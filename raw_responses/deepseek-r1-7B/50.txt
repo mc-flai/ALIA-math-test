@@ -1,0 +1,132 @@
+<think>
+Okay, let's try to figure this out step by step. So, we have Anna, Maria, and Rosa making bets on the results of a race with four runners: A, B, C, and D. Each of them has one correct prediction and one wrong. We need to find out which possible ranking is correct based on their statements.
+
+First, let's list down each person's predictions:
+
+- **Anna**: A will win (1st place) and B will be second.
+- **Maria**: C will be second and D will be fourth.
+- **Rosa**: A will be second and D will be third.
+
+Each of them has one correct and one incorrect prediction. So, for each person, exactly one of their two statements is true, and the other is false.
+
+Our goal is to find a ranking (out of options A) ABCD, B) ABDC, C) ACDB, D) BADC, E) DCBA) where all three predictions from Anna, Maria, and Rosa each have one correct and one wrong statement.
+
+Let's go through each option one by one.
+
+**Option A: ABCD**
+
+- **Anna**: Says A wins (correct as A is 1st) and B is second. In this case, A is first but B is second, so both her statements are correct. But she should have only one correct prediction. So this can't be the right option.
+
+**Option B: ABDC**
+
+- **Anna**: A wins (correct) and B is second (incorrect because in ABDC, B is third). Wait, no: In ABDC, positions are:
+
+1st: A
+2nd: B? No, wait. ABDC would mean A first, B second, D third, C fourth.
+
+Wait, hold on, I think I made a mistake here. Let me clarify the options properly.
+
+Each option represents the order from first to fourth. So, for example:
+
+A) ABCD: A is 1st, B 2nd, C 3rd, D 4th.
+B) ABDC: A 1st, B 2nd, D 3rd, C 4th.
+C) ACDB: A 1st, C 2nd, D 3rd, B 4th.
+D) BADC: B 1st, A 2nd, D 3rd, C 4th.
+E) DCBA: D 1st, C 2nd, B 3rd, A 4th.
+
+Wait, I think I misread the positions earlier. Let's redo this more carefully.
+
+Starting with Option B: ABDC.
+
+Anna's predictions:
+- A wins (correct as A is first).
+- B is second (correct because in ABDC, B is second). So Anna has both correct, which can't be. So option B is invalid.
+
+**Option C: ACDB**
+
+Positions:
+
+1st: A
+2nd: C
+3rd: D
+4th: B
+
+Now let's check each person's predictions.
+
+- **Anna**: Says A wins (correct) and B is second (incorrect because B is fourth). So Anna has one correct, one wrong. Good.
+- **Maria**: Says C is second (correct as per ACDB) and D is fourth (incorrect, since D is third in this case). So Maria has one correct, one wrong. Good.
+- **Rosa**: Says A is second (incorrect because A is first) and D is third (correct as per ACDB). So Rosa also has one correct, one wrong. Perfect.
+
+So all three have exactly one correct and one wrong prediction. This seems promising. But let's check the other options to be sure.
+
+**Option D: BADC**
+
+Positions:
+
+1st: B
+2nd: A
+3rd: D
+4th: C
+
+Checking each person:
+
+- **Anna**: Says A wins (incorrect, as B is first) and B second (incorrect because B is first). So Anna has both wrong. Not acceptable.
+
+So option D is out.
+
+**Option E: DCBA**
+
+Positions:
+
+1st: D
+2nd: C
+3rd: B
+4th: A
+
+Checking each person:
+
+- **Anna**: Says A wins (incorrect, D is first) and B second (incorrect, B is third). Both wrong for Anna. Not acceptable.
+
+So option E is out.
+
+**Option A: ABCD**
+
+Positions:
+
+1st: A
+2nd: B
+3rd: C
+4th: D
+
+Checking each person:
+
+- **Anna**: A wins (correct) and B second (correct). Both correct, which can't be.
+  
+Thus, only option C satisfies all conditions.
+
+Wait, but let's double-check Option C again to make sure I didn't miss anything.
+
+In ACDB:
+
+1st: A
+2nd: C
+3rd: D
+4th: B
+
+Anna: Correct (A wins), wrong (B is not second). Good.
+Maria: Correct (C second), wrong (D is third, not fourth). Good.
+Rosa: Wrong (A isn't second), correct (D third). Perfect.
+
+Yes, this works. So the answer should be option C) ACDB.
+</think>
+
+The correct ranking must satisfy that each of Anna, Maria, and Rosa has exactly one correct prediction. By analyzing each option:
+
+- **Option A** fails because Anna's both predictions are correct.
+- **Option B** also fails as Anna is correct on both counts.
+- **Option C** works perfectly: Anna (A wins, B not second), Maria (C second, D not fourth), Rosa (D third, A not second) each have one correct and one wrong.
+- **Options D and E** fail because Anna or others get both predictions wrong.
+
+Raonament: Each option was analyzed to check if it meets the condition that each person has exactly one correct prediction. Only option C satisfies all conditions.
+
+Resposta: C) ACDB

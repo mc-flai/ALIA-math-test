@@ -1,0 +1,33 @@
+<think>
+Primero, identifico que la cuadrícula tiene 21 columnas numeradas del 1 al 21 y 33 filas numeradas del 1 al 33. Esto significa que el total de casillas es 21 multiplicado por 33, lo que da 693 casillas.
+
+Ahora, necesito determinar cuántas casillas se pintan de negro. Hay dos condiciones para pintar una casilla:
+
+1. **Pintar filas no múltiples de 3:** 
+   - Primero, calculo cuántas filas son múltiplos de 3. Dado que hay 33 filas, el número de filas que son múltiplas de 3 es 33 dividido entre 3, lo que da 11 filas.
+   - Por lo tanto, las filas no pintadas son 33 menos 11, es decir, 22 filas. Cada una de estas filas tiene 21 casillas, por lo que el total de casillas pintadas por esta condición es 22 * 21 = 462.
+
+2. **Pintar columnas pares:** 
+   - Hay 21 columnas numeradas del 1 al 21. Las columnas pares son las 10 y 11 (ya que 21/2 es 10,5, redondeando hacia arriba). Por lo tanto, hay 10 columnas pares.
+   - Cada una de estas columnas tiene 33 casillas, por lo que el total de casillas pintadas en las columnas pares es 10 * 33 = 330.
+
+Sin embargo, he notado que he contado dos veces la intersección entre las filas no múltiples de 3 y las columnas pares. Es decir, hay ciertas casillas que cumplen ambas condiciones y por lo tanto han sido pintadas en ambos pasos. Necesito desdoblar esta superposición para evitar duplicar el conteo.
+
+- Las filas no múltiples de 3 son 22, como ya calculé.
+- De estas 22 filas, las que intersectan con columnas pares serán pintadas en ambas condiciones. Es decir, para cada una de las 10 columnas pares, hay 22 casillas pintadas (una por fila).
+- Por lo tanto, el número total de casillas que cumplen ambas condiciones es 10 * 22 = 220.
+
+Ahora, aplico el原理 de inclusión-exclusión para calcular el total de casillas pintadas:
+
+Total pintado = Casillas pintadas por filas no múltiples de 3 + Casillas pintadas por columnas pares - Casillas que cumplen ambas condiciones
+Total pintado = 462 + 330 - 220 = 572
+
+Finalmente, para obtener las casillas sin pintar, resto el total pintado del total de casillas:
+
+Casillas sin pintar = Total casillas - Total pintado
+Casillas sin pintar = 693 - 572 = 121
+</think>
+
+Raonament: La cuadrícula té 21 columnes i 33 files, fent un total de 21 × 33 = 693 caselles. Pintem les caselles que pertenecen a files no múltiples de 3 (hay 22 files) o a columnes pares (hay 10 columnes). Els totals pintats són, respectivament, 22 × 21 = 462 i 10 × 33 = 330. Però, hem d'eliminar les caselles que es pinte per ambas condicions (10 × 22 = 220), aplicant el principi d'inclusió-exclusió: 462 + 330 - 220 = 572. Així, les caselles sense pintar són 693 - 572 = 121.
+
+Resposta: B) 121

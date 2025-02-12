@@ -1,0 +1,49 @@
+<think>
+El producte 1·2·3·4·5·6·7·8·9·10 és el factorial de 10, denotat com 10!.
+
+Per determinar el número de zeros al final del producte, he de comptar quants vegades hi ha un factor de 10 a la descomposició en factors primaris del 10!.
+
+Un factor de 10 es descompone en 2 i 5. Per tant, necessito comptar el nombre d'ocasions que els factors 2 i 5 apareixen en el producte.
+
+Tot vegada hi ha més factors de 2 que de 5, ja que els nombres pares contribueixen a l'aumunt de 2s. Però la quantitat de 5s determinarà el número final de zeros.
+
+Utilitzo una fórmula per calcular el nombre de vegades que un primer p apareix en el factorial n!: S = ∑_{k=1}^{∞} ⌊n / p^k⌋
+
+Aplicant aquesta fórmula per als factors 5:
+
+- ⌊10/5⌋ = 2
+- ⌊10/25⌋ = 0 (des que 25 > 10)
+
+Sumant els resultats, obtémo-ho 2 vegades que el factor 5 apareix en 10!.
+
+Dado que hi ha més factors de 2 que de 5, el número de zeros al final del producte és igual al nombre d'ocasions que el factor 5 apareix, que és 2.
+
+Per tant, el producte 1·2·3·4·5·6·7·8·9·10 acaba amb dos zeros.
+</think>
+
+**Raonament:**
+
+El producte de tots els enters del 1 al 10 es coneix com el factorial de 10, denotat com 10!. Per determinar quants zeros hi ha al final d'aquest producte, hem de comptar quants vegades aquests zeros apareixen. Un zero al final d'un nombre resulta del fet que aquest número és divisible per 10. A la vegà, un 10 es descompone en factors primers com 2 i 5 (es a dir, 10 = 2 × 5). 
+
+Per tant, el número de zeros al final del producte està determinat pel menor nombre d'ocasions que els factors 2 i 5 apareixen en la descomposició en factors primers del 10!. Usualment, hi ha més factors de 2 que de 5 en un factorial, ja que els nombres pares contribueixen a l'aumunt de 2s. Però la quantitat de 5s determinarà el número final de zeros.
+
+Per calcular quantes vegades apareix un factor p en n!, utilitzem la fórmula:
+
+\[ S = \sum_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor \]
+
+On:
+- \( n = 10 \) (els vuitanta)
+- \( p = 5 \) (per determinar el nombre de vegades que apareix 5 en la descomposició)
+
+Calculant per a p=5:
+
+\[ \left\lfloor \frac{10}{5} \right\rfloor = 2 \]
+\[ \left\lfloor \frac{10}{25} \right\rfloor = 0 \]
+
+Sumant els resultats, obtenim \( 2 + 0 = 2 \) vegades que el factor 5 apareix en 10!. 
+
+Dado que hi ha més factors de 2 que de 5, el número de zeros al final del producte és igual al nombre d'ocasions que el factor 5 apareix, que és 2.
+
+**Resposta:**
+
+\boxed{B) 2}

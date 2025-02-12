@@ -1,0 +1,65 @@
+<think>
+Bueno, tengo que resolver esta suma: 1/(√2 + √1) + 1/(√3 + √2) + 1/(√4 + √3) + ... + 1/(√2016 + √2015). Y hay que elegir entre las opciones dadas. Vamos a ver cómo puedo abordar este problema.
+
+Primero, noto que cada término de la suma tiene la forma 1/(√(n+1) + √n), donde n comienza en 1 y termina en 2015. Entonces, hay 2015 términos en total, pero no importa ahora cuántos haya.
+
+El denominador de cada término es una suma de raíces cuadradas consecutivas: √(n+1) + √n. Quisiera simplificar cada uno de estos términos para ver si la suma se simplifica de alguna manera.
+
+Recuerdo que a menudo, cuando hay sumas en el denominador con raíces cuadradas, es útil racionalizar el denominador. Racinalización significa eliminar las raíces del denominador multiplicando numerador y denominador por una expresión conjugada.
+
+Así que, para cada término 1/(√(n+1) + √n), si multiplico numerator y denominator por (√(n+1) - √n), obtendré:
+
+[1 * (√(n+1) - √n)] / [(√(n+1) + √n)(√(n+1) - √n)]
+
+El denominador ahora es una diferencia de cuadrados: (a + b)(a - b) = a² - b². Aplicando esto:
+
+Denominador = (√(n+1))² - (√n)² = (n+1) - n = 1
+
+Entonces, cada término simplificado es [(√(n+1) - √n)] / 1 = √(n+1) - √n.
+
+Wow, eso simplifica muchísimo el problema. Por lo tanto, la suma original se convierte en una serie telescópica:
+
+Suma = [ (√2 - √1 ) + (√3 - √2) + (√4 - √3) + ... + (√2016 - √2015) ]
+
+En una serie telescópica, la mayoría de los términos se cancelan. Observo que:
+
+- El primer término es √2 - √1
+- El segundo es √3 - √2
+- El tercero es √4 - √3
+- ...
+- El último término es √2016 - √2015
+
+Cuando sumamos todos estos, cada negativo se cancela con el siguiente positivo:
+
+(√2 - √1) + (√3 - √2) = √3 - √1
+Luego, sumar (√4 - √3): √4 - √1
+Continúa así hasta que solo queden los primeros y últimos términos.
+
+Después de todo el sumatorio, casi todos se aniquilan excepto el último término positivo y el primero negativo. Por lo tanto:
+
+Suma total = √2016 - √1
+
+Simplificando √1 es 1, por lo que la suma resultante es √2016 - 1.
+
+Ahora veo las opciones de respuesta:
+
+A) √2015 + 1
+B) √2016 + √2
+C) √2016
+D) √2016 - √2
+E) √2016 - 1
+
+Entonces, la respuesta correcta es E) √2016 - 1.
+
+Pero para asegurarme, reviso los pasos:
+
+1. Cada término racionalizado correctamente: Sí.
+2. La suma telescópica resultante: Correcto, cada intermediario se cancela.
+3. Resultado final: Sí, √2016 - 1.
+
+No veo errores en el razonamiento, así que estoy seguro de que la respuesta es E.
+</think>
+
+Raonament: Cada término de la suma se racionaliza multiplicando por la conjugada del denominador, lo que simplifica cada término a √(n+1) - √n. Al sumar estos términos, forma una serie telescópica donde todos los términos intermedios se cancelan, dejando solo el último término positivo y el primero negativo. El resultado final es √2016 - 1.
+
+Resposta: E) √2016 - 1

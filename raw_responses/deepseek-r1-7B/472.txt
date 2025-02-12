@@ -1,0 +1,26 @@
+<think>
+Primero, Joan tiene un total de 100 tarjetas numeradas del 1 al 100. Busca formar pares donde cada pareja suma exactamente 50.
+
+Para determinar cuántas parejas se pueden formar, considero que cada número tiene un único complementario que sumado a él da 50. Por ejemplo, el número 1 necesita al 49 para sumar 50, el 2 al 48, y así sucesivamente.
+
+Como hay 100 números, intenté dividir la cantidad total de números por dos, ya que cada pareja consume dos números diferentes. Al hacerlo, me di cuenta de que 100 dividido entre 2 es igual a 50. Sin embargo, al analizar detenidamente, noto que el número 50 no tiene un complementario dentro del rango de 1 a 100 que sumado a él dé exactamente 50, ya que necesitaría ser cero, que no existe en las tarjetas.
+
+Esto significa que una de las posibles parejas se convierte en imposible. Por lo tanto, de las 50 parejas teóricas, una no se puede formar. Al restar esta imposibilidad, llego a que la cantidad total de parejas viables es de 49.
+</think>
+
+**Raonament:**
+
+Joan té un conjunt de 100 cartes numerades del 1 al 100. Busca formar parelles on cada parella suma exactament 50.
+
+Per fer això, considerem què pares de nombres sumen 50:
+- El 1 s'ha de posar amb el 49 (1 + 49 = 50)
+- El 2 s'ha de posar amb el 48 (2 + 48 = 50)
+- ...
+- Això es manté fins als parells:
+  - El 24 s'ha de posar amb el 26 (24 + 26 = 50)
+  
+Notem que el 25 no té un complementari dins del rànge 1-100 perquè 25 + 25 = 50, però Joan no pot utilitzar la mateixa carta dos cops. A més, el 50 tampoc no te complementari dins el rànge.
+
+Per tant, hi ha un total de 49 parelles posibles (des del 1+49 fins al 24+26), ja que el 25 i el 50 no formen cap parella valida.
+
+**Resposta: D) 49**

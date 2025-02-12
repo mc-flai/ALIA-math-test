@@ -1,0 +1,44 @@
+<think>
+Pere salió de su casa y caminó durante la mañana hasta llegar a una fuente después de varias horas. Luego descansó durante una hora y regresó a casa. Estaba cansado, por lo que hizo el camino de vuelta más lentamente. Cada hora recorrió una distancia que era, en promedio, un quinto más corta que en el viaje de ida. Como resultado, necesitó una hora más para hacer el camino de regreso que para el de ida.
+
+Quiero determinar cuántas horas estuvo Pere fuera de casa, desde que salió hasta que volvió.
+</think>
+
+Raonament:
+
+1. **Definir Variables:**
+   - Sea \( v \) la velocidad media de ida (en km/h).
+   - La velocidad de regreso es entonces \( \frac{4}{5}v \) (ya que es un quinto más lenta).
+
+2. **Distancia Recorrida:**
+   - Sea \( d \) la distancia desde casa hasta la fuente.
+   - Tiempo de ida: \( t = \frac{d}{v} \).
+   - Tiempo de regreso: \( t' = \frac{d}{\frac{4}{5}v} = \frac{5d}{4v} \).
+
+3. **Relación entre los Tiempos:**
+   - Según el problema, \( t' = t + 1 \).
+   - Sustituyendo las expresiones de \( t \) y \( t' \):
+     \[
+     \frac{5d}{4v} = \frac{d}{v} + 1
+     \]
+
+4. **Resolver la Ecuación:**
+   - Multiplicar ambos lados por \( 4v \) para eliminar denominadores:
+     \[
+     5d = 4d + 4v
+     \]
+   - Simplificar:
+     \[
+     d = 4v
+     \]
+
+5. **Calcular el Tiempo de Ida:**
+   - \( t = \frac{d}{v} = \frac{4v}{v} = 4 \) horas.
+
+6. **Tiempo Total fuera de Casa:**
+   - Tiempo de ida: 4 horas.
+   - Descanso: 1 hora.
+   - Tiempo de regreso: \( t' = t + 1 = 5 \) horas.
+   - **Total:** \( 4 + 1 + 5 = 10 \) horas.
+
+Resposta: E)

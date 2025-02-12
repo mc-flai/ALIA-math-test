@@ -1,0 +1,32 @@
+<think>
+Para resolver este problema, primero identifico que Sara tiene un total de 5 cubos: 3 rojos y 2 blancos. Quiero saber cuántas torres diferentes puede construir con todos ellos.
+
+Considero que una torre se compone de una secuencia ordenada de estos cubos. Sin embargo, los cubos del mismo color son indistinguibles entre sí. Por lo tanto, no hay que considerar permutaciones de los cubos que solo cambien el orden de los mismos colores.
+
+El número total de arreglos posibles sin considerar las repeticiones es 5!, que es 120. Sin embargo, debido a que hay repeticiones en los colores, debo dividir por el factorial del número de cubos de cada color para eliminar las permutaciones redundantes.
+
+Calculo:
+
+Total de arreglos = 5! / (3! * 2!) = 120 / (6 * 2) = 10
+
+Por lo tanto, Sara puede construir 10 torres diferentes.
+</think>
+
+Raonament: Sara té un total de 5 cubs (3 rojos i 2 blancos). Per calcular quantes torres diferents pots construir, utilitzem la fórmula per comptar les permutations de multituds:
+
+\[
+\frac{n!}{n_1! \cdot n_2! \cdot \ldots \cdot n_k!}
+\]
+
+On:
+- \( n = 5 \) (total de cubs)
+- \( n_1 = 3 \) (cubs rojos)
+- \( n_2 = 2 \) (cubs blancos)
+
+Això dona:
+
+\[
+\frac{5!}{3! \cdot 2!} = \frac{120}{6 \cdot 2} = 10
+\]
+
+Resposta: D) 10

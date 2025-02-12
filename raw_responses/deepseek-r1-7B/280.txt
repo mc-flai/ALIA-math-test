@@ -1,0 +1,24 @@
+<think>
+Primero, entiendo que para determinar cuántos ceros tiene al final un número, debo calcular cómo muchos factores 10 contiene ese número. Un factor de 10 se obtiene multiplicando 2 y 5.
+
+Luego, observo que en la multiplicación de los números del 1 al 20, hay más números pares que números múltiplos de 5. Por lo tanto, el número de ceros está limitado por el número de veces que aparece el factor 5.
+
+Decido contar cuántos múltiplos de 5 hay en el rango del 1 al 20. Los múltiplos de 5 son 5, 10, 15 y 20, lo que da un total de 4 veces.
+
+También considero si alguno de estos números es múltiplo de 25, ya que eso aportaría dos factores de 5. Sin embargo, en este caso, ninguno de los números cumple esta condición, por lo que cada múltiplo de 5 solo contribuye un factor de 5.
+
+Finalmente, concluyo que el número total de ceros al final del producto es 4.
+</think>
+
+Raonament: Per determinar quants zeros hi ha al final del producte \(1 \cdot 2 \cdot 3 \cdot \ldots \cdot 20\), hem de comptar quants vegades pots dividi el nombre resultant per 10. Cada vegada que podem fer aquesta divisió, obtenim un zero més al final.
+
+Un factor de 10 es compon de dos i un cinc (2 × 5). En la multiplicació successiva, hi ha més factors de 2 que de 5, per tant, el nombre de zeros està limitat pel nombre de vegades que apareix el factor 5.
+
+Vam comptar les divisions enteres per 5 en el producte:
+
+1. Divisió per 5: \( \left\lfloor \frac{20}{5} \right\rfloor = 4 \)
+2. Divisió per 25 (per fer compte dels múltiples de 25 que poden contribuir un segon factor de 5): \( \left\lfloor \frac{20}{25} \right\rfloor = 0 \)
+
+Això suma un total de 4 vegades.
+
+Resposta: D) 4

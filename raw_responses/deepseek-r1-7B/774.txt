@@ -1,0 +1,299 @@
+<think>
+Primero, necesito entender qué se me está preguntando. La pregunta es: ¿Cuántos números enteros n tienen la propiedad de que |n² – 2n -3| es un número primo? Y las opciones son A)1, B)2, C)3, D)4, E)Infinitos.
+
+Voy a empezar por analizar la expresión |n² – 2n -3|. Quiero que el valor absoluto de esta expresión sea un número primo. Recuerdo que los números primos son enteros mayores que 1 que tienen exactamente dos divisores positivos: 1 y ellos mismos.
+
+Así que, mi objetivo es encontrar todos los enteros n para los cuales |n² – 2n -3| es primo.
+
+Primero, intentaré simplificar la expresión n² - 2n -3. Podría factorizarla:
+
+n² - 2n -3 = (n - 3)(n + 1)
+
+Ahora, la expresión se convierte en |(n - 3)(n + 1)|.
+
+Dado que es un valor absoluto, no importa si el producto es positivo o negativo; lo importante es su magnitud. Quiero que este valor sea primo.
+
+Recordemos que los números primos son positivos y mayores que 1. Por lo tanto, |(n -3)(n +1)| debe ser un número primo p > 1.
+
+Es decir:
+
+|(n - 3)(n + 1)| = p
+
+Dado que p es primo, la factorización de p solo puede ser 1 * p o p * 1. Además, p es positivo, así que debemos considerar los factores positivos y negativos, pero al estar dentro del valor absoluto, solo necesitamos preocuparnos por la magnitud.
+
+Entonces, |(n -3)(n +1)| = p
+
+Esto implica que (n - 3)(n +1) es igual a ±p. Pero, como p es primo y positivo, el producto (n-3)(n+1) debe ser igual a p o -p.
+
+Sin embargo, ya consideramos el valor absoluto, así que en realidad, solo necesitamos que |(n-3)(n+1)| = p, donde p es primo.
+
+Ahora, observo que n es entero, por lo que (n - 3) y (n +1) son enteros consecutivos si consideramos n como variable entera. Pero no exactamente consecutivos; la diferencia entre ellos es 4: (n+1) - (n-3) = 4.
+
+Pero, sin importar, lo importante es que ambos factores son enteros y su producto en valor absoluto es primo. Sabemos que para un número primo p, sus únicos divisores son 1, -1, p y -p. Por lo tanto, el producto (n-3)(n+1) debe ser igual a ±1 o ±p.
+
+Pero p es un número primo positivo, así que consideramos:
+
+(n -3)(n +1) = 1
+(n -3)(n +1) = -1
+(n -3)(n +1) = p
+(n -3)(n +1) = -p
+
+Voy a resolver cada caso por separado.
+
+**Caso 1: (n -3)(n +1) = 1**
+
+Esto implica que los factores son 1 y 1, o -1 y -1, pero considerando que la multiplicación dé 1. Pero también podría ser un producto de números enteros cuyo producto sea 1.
+
+Posibles pares:
+
+1 * 1 = 1
+(-1) * (-1) = 1
+
+También se puede tener 1 * 1 o (-1)*(-1), pero no hay otros enteros cuyo producto sea 1 aparte de ±1.
+
+Así que, igualamos:
+
+(n -3) = 1 y (n +1) = 1
+O bien:
+(n -3) = -1 y (n +1) = -1
+
+Primera sub-caso:
+
+n -3 = 1 => n =4
+Y n +1 =1 => n=0
+
+Pero n no puede ser simultáneamente 4 y 0. Esto implica que no hay solución en este sub-caso.
+
+Segunda sub-caso:
+
+n -3 = -1 => n=2
+Y n +1=-1 =>n=-2
+
+De nuevo, n no es al mismo tiempo 2 y -2. No hay solución en este caso.
+
+**Caso 2: (n -3)(n +1) = -1**
+
+Similarmente, los factores serán enteros cuyo producto sea -1.
+
+Posibles pares:
+
+1 * (-1) = -1
+(-1)*1= -1
+
+Así que:
+
+Sub-caso 1:
+(n-3)=1 y (n+1)=-1
+
+Primero: n-3=1 =>n=4
+Y n+1=-1 =>n=-2
+Inconsistente, no hay solución.
+
+Sub-caso2:
+(n -3)=-1 y (n +1)=1
+
+Entonces:
+
+n -3 =-1 =>n=2
+Y n +1=1=>n=0
+También inconsistente. No soluciones.
+
+**Caso 3: (n -3)(n +1) = p**
+
+Aquí, p es un primo positivo. Dado que los factores son enteros y su producto es p, y p es primo, uno de ellos debe ser ±1 y el otro ±p.
+
+Esto porque los únicos divisores de p son 1, -1, p y -p.
+
+Así que consideramos las posibles asignaciones:
+
+Posibilidad 1:
+n -3 = 1
+n +1 = p
+
+Entonces, n=4. Sustituimos en la segunda ecuación: 4+1=p =>p=5, que es primo.
+
+Posibilidad 2:
+n -3 = -1
+n +1 = -p
+
+n=2; luego 2+1=-p => p=-3, pero p debe ser positivo, así que rechazamos este caso.
+
+Posibilidad 3:
+n -3 = p
+n +1 =1
+
+Esto da n=0. Sustituimos en la primera ecuación: 0-3=p=>p=-3, rechazado.
+
+Posibilidad4:
+n -3 = -p
+n +1 =-1
+
+n=-2; sustituimos en primera ecuación: (-2)-3 = -5 = -p => p=5, que es primo.
+
+Así que de este caso obtenemos n=4 y n=-2.
+
+**Caso 4: (n -3)(n +1) = -p**
+
+Similarmente, p es un primo positivo, así que el producto es negativo. Uno de los factores será positivo y otro negativo.
+
+Posibilidad 1:
+n-3=1
+n+1=-p
+
+n=4; 4+1=-p =>5=-p =>p=-5, rechazamos.
+
+Posibilidad2:
+n -3 =-1
+n +1=p
+
+n=2; 2+1=3=p. P=3 es primo.
+
+Posibilidad3:
+n -3=p
+n +1=-1
+
+n=0; 0-3=p =>p=-3, rechazamos.
+
+Posibilidad4:
+n -3 =-p
+n +1=1
+
+n=-2; (-2)+1=-1≠1. No válido.
+
+Así que de este caso obtenemos n=2.
+
+Ahora, consolidando las soluciones:
+
+De Caso 3: n=4 y n=-2.
+
+De Caso 4: n=2.
+
+También, reviso si hay más posibilidades.
+
+¿Hay más valores de n?
+
+Vamos a probar con n=0,1,5,6, etc., verificando si |n² -2n -3| es primo.
+
+Por ejemplo:
+
+n=0: |0 -0 -3|=3, que es primo. Ahora, noto que en mi anterior razonamiento no obtuve n=0 como solución, así que tal vez me equivoqué.
+
+Revisaré.
+
+En Caso 3:
+
+Posibilidad3:
+n-3=p
+n+1=1
+
+n=0; n-3=-3=p =>p=-3. Rechazamos.
+
+Pero |n² -2n -3|=|0 -0 -3|=3, que es primo.
+
+Entonces, quizás me he perdido una solución. Probablemente, porque no consideré todos los posibles factores.
+
+Re-evaluando Caso 3 y 4:
+
+En lugar de limitarme a factores ±1 y ±p, tal vez n-3 y n+1 pueden ser pares enteros que multiplican a p.
+
+Pero como p es primo, sus únicos divisores son ±1 y ±p.
+
+Así que si (n -3)(n +1)=p o =-p.
+
+Cuando (n-3)(n+1)=p:
+
+Tal que n-3=1 y n+1=p =>n=4, p=5
+
+o n-3=-1 y n+1=-p =>n=2, p=-3 (rechazado)
+
+o n-3=p y n+1=1 =>n=0,p=-3(rechazado)
+
+o n-3=-p y n +1=-1=>n=-2,p=5
+
+Ahora, considerando que (n-3)(n+1)=p, p>0.
+
+Cuando n=0: |(0)^2 -2*0 -3|=3 es primo. Aunque en la factorización hubiese obtenido p=-3, que no es positivo, pero la expresión original sin embargo da 3, así que quizás n=0 también es una solución.
+
+Es decir, n-3 y n+1 podrían ser factores de p, pero posiblemente sin que p sea negativo.
+
+Entonces, tal vez n -3 = a, n +1 = b, con a*b=p o a*b=-p. Y p es positivo.
+
+Ahora, si tomo n=0:
+
+(n-3)= -3
+
+(n+1)=1
+
+(-3)*1=-3≠p (ya que p positivo)
+
+Pero |(n)^2 - 2n -3|=|0 -0 -3|=3 es primo. Ahora, por lo tanto, no se puede obtener directamente de los factores, pero n=0 también produce un valor primo.
+
+Esto implica quizás que debemos considerar n tales que |(n-3)(n+1)| es un número primo positivo.
+
+Así, para cualquier n, (n -3)(n +1)=k, y |k| debe ser primo.
+
+Entonces, busquemos todos los enteros n para los cuales |(n-3)(n+1)| es primo.
+
+Para esto, necesitamos que el producto sea ±primo. Pero como p es positivo, considerar (n -3)(n +1)=±p.
+
+Ahora, enumeremos posibles n:
+
+Pruebe n=-2: (-5)*(-1)=5, que es primo. |(n-3)(n+1)|=|(−5)(−1)|=5.
+
+n=-1: (−4)*(0)=0 no es primo.
+
+n=0: (−3)*(1)=−3, |-3|=3 primo.
+
+n=1: (−2)*2= -4 no.
+
+n=2: (-1)*3= -3, |−3|=3.
+
+n=3: 0*4=0 no.
+
+n=4:1*5=5.
+
+n=5:2*6=12 no.
+
+n=-3: (−6)*(−2)=12 no.
+
+n=-4:(−7)*(-3)=21 no.
+
+n= -5: (-8)*(-4)=32 no.
+
+Así que los n para los cuales |(n -3)(n +1)| es primo son:
+
+n=-2, |-5*(-1)|=5
+
+n=-1:0, no.
+
+n=0:|-3*1|=3
+
+n=2:|−1*3|=3
+
+n=4:|1*5|=5
+
+Y n=-2, 0,2,4 son las soluciones.
+
+Ahora, en mi anterior razonamiento solo obtuve n=-2,2,4. Faltaba n=0.
+
+Entonces, la conclusión es que los enteros n son -2,0,2,4.
+
+Vamos a confirmar:
+
+n=-2: |(−2)^2 -2*(−2) -3|=|4 +4 -3|=5, primo.
+
+n=0: |0 - 0 -3|=3, primo.
+
+n=2: |4 -4 -3|=|-3|=3, primo.
+
+n=4: |16 -8 -3|=5, primo.
+
+Así que hay cuatro soluciones: n=-2,0,2,4.
+
+Ahora, el profesor preguntó "cuáles son los enteros", así que la respuesta es estos cuatro números.
+</think>
+
+Los enteros \( n \) que satisfacen la condición son \(-2\), \(0\), \(2\), y \(4\).
+
+**Respuesta Final:**
+\boxed{-2}, \boxed{0}, \boxed{2}, y \boxed{4}

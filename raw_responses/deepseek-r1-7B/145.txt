@@ -1,0 +1,168 @@
+<think>
+Primero, definimos las variables. Sea \( N \) el número de niñas y \( P \) el número total de manzanas.
+
+Sabemos que:
+1. Las \( N \) niñas repartieron las manzanas sin sobrar: \( P = kN \), donde \( k \) es la cantidad de manzanas por niña.
+2. Si hubiera sido \( N - 2 \) niñas, cada una recibiría \( k + 1 \) manzanas: \( P = (k + 1)(N - 2) \).
+3. Si hubiera sido \( N - 3 \) niñas, cada una recibiría \( k + 2 \) manzanas: \( P = (k + 2)(N - 3) \).
+
+Establecemos las ecuaciones:
+1. \( kN = (k + 1)(N - 2) \)
+2. \( kN = (k + 2)(N - 3) \)
+
+Despejamos \( k \) de ambas ecuaciones y igualizamos:
+\( N = (N - 2)(k + 1) \) y \( N = (N - 3)(k + 2) \).
+
+Sustituimos \( k = \frac{P}{N} \) en las ecuaciones y simplificamos para encontrar \( N = 10 \).
+</think>
+
+**Raonament:**
+
+Vam a resoldre el problema pas a pass.
+
+1. **Definim les variables:**
+   - \( N \): Nombre de xics.
+   - \( P \): Total de pomes.
+
+2. **Segons les condicions donades:**
+   - Si hi ha \( N \) xics, les pomes es repartiren exactament sense sobrar: 
+     \[ P = kN \]
+     on \( k \) és el nombre de pomes per xica.
+   
+   - Si hi haguera \( N - 2 \) xics, cadascú tocaria una poma més:
+     \[ P = (k + 1)(N - 2) \]
+   
+   - Si hi haguera \( N - 3 \) xics, cadascú tocaria dues pomes més:
+     \[ P = (k + 2)(N - 3) \]
+
+3. **Equacionem:**
+   - De les dues primeres equacions:
+     \[
+     kN = (k + 1)(N - 2)
+     \]
+     Expanding:
+     \[
+     kN = k(N - 2) + (N - 2)
+     \]
+     \[
+     kN = kN - 2k + N - 2
+     \]
+     Simplificant:
+     \[
+     0 = -2k + N - 2 \quad \Rightarrow \quad N = 2k + 2 \quad (1)
+     \]
+
+   - De les dues darreres equacions:
+     \[
+     kN = (k + 2)(N - 3)
+     \]
+     Expanding:
+     \[
+     kN = k(N - 3) + 2(N - 3)
+     \]
+     \[
+     kN = kN - 3k + 2N - 6
+     \]
+     Simplificant:
+     \[
+     0 = -3k + 2N - 6 \quad \Rightarrow \quad 3k = 2N - 6 \quad (2)
+     \]
+
+4. **Substituim \( N \) de (1) en (2):**
+   \[
+   3k = 2(2k + 2) - 6
+   \]
+   \[
+   3k = 4k + 4 - 6
+   \]
+   \[
+   3k = 4k - 2
+   \]
+   \[
+   k = 2
+   \]
+
+5. **Calculim \( N \) usant (1):**
+   \[
+   N = 2(2) + 2 = 6
+   \]
+
+   Però, observem que si \( N = 6 \), al substituïr en les equacions originals no satisfa tots els condicionals. Així, cal revisar els càlculs.
+
+6. **Revisant els càlculs:**
+   - En la segona equació:
+     \[
+     3k = 2N - 6
+     \]
+     Substituïm \( N = 2k + 2 \):
+     \[
+     3k = 2(2k + 2) - 6
+     \]
+     \[
+     3k = 4k + 4 - 6
+     \]
+     \[
+     3k = 4k - 2
+     \]
+     \[
+     k = 2
+     \]
+   - En aquest cas, \( N = 2(2) + 2 = 6 \), però no compleix les condicions d'origen. Per tant, hi ha un error en els càlculs.
+
+7. **Torna't a intentar:**
+   - Asumim que \( P = kN \).
+   - Segon la segona condició:
+     \[
+     P = (k + 1)(N - 2)
+     \]
+     Igualant:
+     \[
+     kN = (k + 1)(N - 2)
+     \]
+     \[
+     kN = kN - 2k + N - 2
+     \]
+     \[
+     0 = -2k + N - 2 \quad \Rightarrow \quad N = 2k + 2 \quad (1)
+     \]
+
+   - Segon la tercera condició:
+     \[
+     P = (k + 2)(N - 3)
+     \]
+     Igualant:
+     \[
+     kN = (k + 2)(N - 3)
+     \]
+     \[
+     kN = k(N - 3) + 2(N - 3)
+     \]
+     \[
+     kN = kN - 3k + 2N - 6
+     \]
+     \[
+     0 = -3k + 2N - 6 \quad \Rightarrow \quad 3k = 2N - 6 \quad (2)
+     \]
+
+   - Substituim \( N = 2k + 2 \) en (2):
+     \[
+     3k = 2(2k + 2) - 6
+     \]
+     \[
+     3k = 4k + 4 - 6
+     \]
+     \[
+     3k = 4k - 2
+     \]
+     \[
+     k = 2
+     \]
+   - Entonces, \( N = 2(2) + 2 = 6 \). Però, comprovant:
+     - Si hi ha 6 xics: cadascú toca \( 12 / 6 = 2 \) pomes.
+     - Si hi haguera 4 xics: cadascú tocaria \( 12 / 4 = 3 \), que és una més, com cal.
+     - Si hi haguera 3 xics: cadascú tocaria \( 12 / 3 = 4 \), que són dues pomes més. 
+   Per tant, la solució correcta és \( N = 6 \).
+
+**Resposta:**
+
+\boxed{A) 6}

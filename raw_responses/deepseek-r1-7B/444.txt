@@ -1,0 +1,85 @@
+<think>
+El rellotge electrónico muestra horas y minutos en formato de 24 horas, es decir, HH:MM. Queremos determinar cuántos minutos veremos exactamente 3 ceros durante un período de 24 horas.
+
+Primero, identifiquemos todas las posiciones donde pueden aparecer los ceros:
+
+1. **Horas (HH):**
+   - Las horas van de 00 a 23.
+   - Los valores de HH que contienen al menos dos dígitos ceros son: 00, 10, 20.
+
+2. **Minutos (MM):**
+   - Los minutos van de 00 a 59.
+   - Los valores de MM que contienen exactamente un cero son los números del 00 al 09 y del 20 al 29, excepto los que ya tienen dos ceros.
+
+Luego, combinarémos las horas y minutos para obtener instancias donde el total de ceros es exactamente tres. Esto ocurrirá en los siguientes casos:
+
+- **Horas con dos ceros (HH = 00, 10, 20):**
+  - Para cada una de estas horas, necesitamos que MM contenga un solo cero.
+  
+  - Por ejemplo:
+    - 00:xx
+      - xx debe tener un solo cero. Esto ocurre en los minutos del 00 al 09 y del 20 al 29, es decir, 10 valores (00, 01,..., 09, 20, 21, ..., 29).
+      - Sin embargo, 00:00 tiene dos ceros en HH y dos en MM, lo que suma cuatro ceros. Por lo tanto, debemos excluir 00:00.
+      - Total de minutos para 00:Xx con exactamente un cero en MM: 10 - 1 = 9 minutos.
+
+    - 10:xx y 20:xx
+      - Similar a 00:xx, pero HH tiene dos ceros. Para cada una de estas horas:
+        - xx debe tener un solo cero.
+        - Excluyendo los casos donde MM es 00 (que sumaría tres ceros), tenemos 10 minutos por hora.
+
+- **Horas sin ceros (HH = 01, 02,..., 23):**
+  - En este caso, para que el total de ceros sea exactamente tres, los HH deben aportar dos ceros y MM uno. Sin embargo, las horas en este rango no tienen dos ceros.
+  
+  - Por lo tanto, no hay contribución a la cuenta de ceros adicionales.
+
+Finalmente, sumando todas las instancias donde se cumplen las condiciones:
+
+- Horas con dos ceros:
+  - 00:Xx (9 minutos)
+  - 10:Xx y 20:Xx (10 minutos cada una → total 20 minutos)
+
+Total de minutos: 9 + 20 = 29 minutos.
+</think>
+
+Raonament:
+
+Per resoldre el problema, hem d'analitzar quánder vegades veurem exactament tres zeros en l'hora i els minuts. Un rellotge electronic mostra les hores i minuts en format HH:MM, on HH va de 00 a 23 i MM va de 00 a 59.
+
+1. **Identificar quánder vegades hi ha ceros en les hores (HH):**
+   - Les hores que tenen zeros són:
+     - 00: dos zeros
+     - 10: un zero
+     - 20: un zero
+
+2. **Identificar quánder vegades hi ha ceros en els minuts (MM):**
+   - Els minuts que tenen un zero són del 00 al 09 i del 20 al 29, tots excepte el 00 (que ara sumaria quattro zeros). Això fa 10+10=20 opcions per a MM.
+
+3. **Combinar les hores i els minuts per tenir exactament tres zeros:**
+   - Per a l'hora 00: pots tenir els minuts del 00 al 09 i del 20 al 29, però excluint el 00 (que donaria quattro zeros). Això fa 19 opcions.
+   - Per a les hores 10 i 20: pots tenir els minuts del 00 al 09 i del 20 al 29, tots. Això fa 20 opcions per cada hora.
+
+   En total:
+   - Hora 00: 19
+   - Horas 10 i 20: 20 cada una
+   Sumant-ho, obtenim 19 + 20 + 20 = 59 minuts. però això no coincideix amb les opcions donades.
+
+4. **Revisar l'error en el càlcul anterior:**
+   - Realitzem un càlculo més detallat:
+     - Hora 00: els minuts del 01 al 09 i del 20 al 29 (excluint 00) = 9 + 10 = 19
+     - Horas 10 i 20: els minuts del 00 al 09 i del 20 al 29, tots. Això fa 10 + 10 = 20 per hora.
+   Sumant-ho, obtenim 19 + 20 + 20 = 59. Això encara no coincideix amb les opcions donades.
+
+5. **Obrir un nou enfoque:**
+   - Observem que només hi ha ceros als minuts quan els dos digits son zeros o uns.
+   - Per tenir exactament tres zeros, consideram:
+     - Dos zeros en HH i un zero en MM.
+     - Un zero en HH i dos zeros en MM.
+
+6. **Calcul correcte:**
+   - Hores amb dos zeros (00): 1 hra
+     - Minuts que hi han un zero: 20 (des de 00, 01,...,09,20,21,...,29)
+   - Hores amb un zero (10,20): 2 hores
+     - Minuts que hi han dos zeros: 1 minut (00)
+   Total de minuts = (1 hra * 20) + (2 hores * 1) = 22
+
+Resposta: C) 22

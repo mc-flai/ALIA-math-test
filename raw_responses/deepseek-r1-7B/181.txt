@@ -1,0 +1,49 @@
+<think>
+Primero, identifico que hay 5 equipos en el torneo y cada uno juega contra los otros cuatro, lo que suma un total de 10 partidos. En estos partidos, se otorgan puntos: 3 al ganador, 0 al perdedor, y 1 punto para cada equipo si hay empate.
+
+Sumando todos los puntos obtenidos por los equipos, el total es 10 + 7 + 5 + 4 + 1 = 27 puntos. Si no hubiera habido empates, el total de puntos debería ser un múltiplo de 3 (puesto que cada victoria aporta 3 puntos). Sin embargo, 27 no es divisible por 3 sin considerar empates.
+
+Calculo la diferencia: 27 - 24 = 3. Cada empate reduce el total de puntos en 1, ya que en lugar de otorgar 3 puntos (1 al ganador y 0 al perdedor), se otorgan 2 puntos (1 a cada equipo). Por lo tanto, necesitan 3 partidos empatados para reducir los puntos en 3.
+
+Por lo tanto, hay 3 partidos que terminaron en empate.
+</think>
+
+**Raonament:**
+
+1. **Total de partits jugats:**  
+   Hi ha 5 equips i cadascun s'ha enfrontat als altres quatre, una vegada cada. Per calcular el total de partits, usam la fórmula de combinar dos equips alhora:  
+   \[
+   \binom{5}{2} = 10
+   \]  
+   Els partits totals son 10.
+
+2. **Punts assignats en un partit:**  
+   - Si un equip guanya, pots 3 punts al guanyador i 0 als perdedors.  
+   - En cas d'empat, cadascun obtingue 1 punt.  
+
+3. **Total de punts possible sense empat:**  
+   Sense cap empate, tots els partits tenen un guanyador i un perdedor, així que el total de punts serà:  
+   \[
+   10 \text{ partits} \times 3 \text{ punts por partit} = 30 \text{ punts}
+   \]
+
+4. **Total de punts realitzats:**  
+   els equips han obtingut en total:  
+   \[
+   10 + 7 + 5 + 4 + 1 = 27 \text{ punts}
+   \]  
+
+5. **Diferència dels punts:**  
+   \[
+   30 - 27 = 3 \text{ punts menys}
+   \]  
+   Cada empate fa que hi hagi 1 punt menys en total (en un partit sense empate, els guanyador obté 3 punts; en cas d'empat, els dos equips obté 1 punt cada, totallitant 2 punts).  
+
+6. **Calcul de partits empatats:**  
+   La diferència de 3 punts vol dir que hi hán 3 partits que han acabat en empate:  
+   \[
+   3 \text{ punts menys} ÷ 1 \text{ punt per empate} = 3 \text{ empats}
+   \]  
+
+**Resposta:**  
+\boxed{A}

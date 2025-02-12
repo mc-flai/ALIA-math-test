@@ -1,0 +1,61 @@
+<think>
+El capicúa más grande de tres cifras es 999, pero necesito que sea múltiplo de 6. Un número es múltiplo de 6 si es divisible por 2 y 3.
+
+Primero, reviso la divisibilidad por 2: el último dígito debe ser par (0, 2, 4, 6, 8).
+
+Luego, la divisibilidad por 3 implica que la suma de los dígitos debe ser múltiplo de 3.
+
+Busco el capicúa más grande posible que cumpla con ambas condiciones.
+
+Empezaré desde 999 y disminuiré en pasos de 11 para mantener la estructura aba, revisando las condiciones de divisibilidad.
+</think>
+
+**Raonament:**
+
+Un capicua de tres xifres és un nombre de la forma `aba`, on els dígits a i b poden ser iguals o diferents. Per exemple, 121, 343, etc.
+
+El problema consisteix en trobar el capicua més gran de tres xifres que siga múltiple de 6 i després sumar les seues tres xifres.
+
+**Passos per arribar a la solució:**
+
+1. **Entendre què és un múltiple de 6:** Un nombre es considerat múltiple de 6 si:
+   - És divisible per 2 (la suma dels dígits és par).
+   - És divisible per 3 (la suma dels dígits és múltiplo de 3).
+
+2. **Identifico els capicues de tres xifres:** Un capicua de tres xifres té la forma `aba`, on:
+   - a és el primer i tercer dígits.
+   - b és el segon dígits.
+
+   Exemples: 101, 111, 121, ..., 999.
+
+3. **Busco el capicua més gran de tres xifres que siga múltiple de 6:**
+   
+   - Comencem des d el nombre més gran (999) i anul·lo capicues en ordre descendent.
+   - Verifico si cada capicua és múltiple de 6:
+     - **Divisibilitat per 2:** La suma dels dígits `a + b + a = 2a + b` ha de ser par.
+     - **Divisibilitat per 3:** La suma `2a + b` ha de ser múltiplo de 3.
+
+   - Passo a pass:
+     - 999: `2*9 + 9 = 27`. 27 ÷ 3 = 9 → divisible per 3. 27 ÷ 2 = 13,5 → no divisible per 2.
+     - 989: `2*9 + 8 = 26`. 26 ÷ 2 = 13 → divisible per 2. 26 ÷ 3 ≈ 8,666 → no divisible per 3.
+     - 979: `2*9 + 7 = 25`. 25 ÷ 2 = 12,5 → no divisible per 2.
+     - ...
+     - 949: `2*9 + 4 = 22`. 22 ÷ 2 = 11 → divisible per 2. 22 ÷ 3 ≈ 7,333 → no divisible per 3.
+     - ...
+     - **909:** `2*9 + 0 = 18`. 18 ÷ 2 = 9 → divisible per 2. 18 ÷ 3 = 6 → divisible per 3.
+
+   Doncs, 909 és el capicua més gran de tres xifres que és múltiple de 6.
+
+4. **Sumo les seues tres xifres:**
+   
+   - a = 9
+   - b = 0
+   - suma = 9 + 0 + 9 = 18
+
+**Resposta:**
+
+La suma dels dígits del capicua més gran de tres xifres que és múltiple de 6 és **18**.
+
+A resposta correcta és:
+
+**B) 18**

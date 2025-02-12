@@ -1,0 +1,28 @@
+<think>
+Primero, identifico los datos proporcionados en el problema. Hay 14 xiques y 12 xics en la clase, lo que suma un total de 26 alumnos.
+
+Luego, se nos pide escoger la mitad del alumnado para salir de la clase. La mitad de 26 es 13, ya que 26 dividido por 2 resulta en 13.
+
+Ahora, quiero determinar el número mínimo de xiques que podemos asegurar que saldrán. Esto implica considerar la peor de las casuísticas, donde se maximiza el número de xics seleccionados para salir.
+
+Dado que hay 12 xics, es teóricamente posible que todos ellos sean los elegidos en los 13 cuplotes asignados. Sin embargo, como solo hay 12 xics, al menos uno de los cuplotes debe ser un xique.
+
+Por lo tanto, el número mínimo asegurado de xiques que saldrán es 1.
+</think>
+
+**Raonament:**
+
+Per resoldre aquest problema, considerem les dades fornides:
+
+- Total d' alumnes = 14 xiques + 12 xics = 26 alumnes.
+- La meitat del alumnat és 26 / 2 = 13 alumnes.
+
+El problema consisteix en determinar el mínim nombre de xiques que podem assegurar que surtiran, independentment de com es seleccionin els 13 alumnes.
+
+Per trobar aquest mínim, considerem la casuística extrema on es vol maximitzar el nombre de xics que poden sortir. 
+
+- El màxim nombre de xics que pot haver en les 13 persones és 12 (tot el grup de xics).
+- Per tant, almenys un dels 13 han de ser xiques per completar el total de 13.
+
+**Resposta:**
+\boxed{E}

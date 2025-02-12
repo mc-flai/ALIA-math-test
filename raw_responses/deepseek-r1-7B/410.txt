@@ -1,0 +1,69 @@
+<think>
+Bueno, voy a intentar resolver este problema. Primero, leí que se define una sucesión de enteros con las reglas a₀ = 1, a₁ = 2, y para n ≥ 0, a_{n+2} = a_n + (a_{n+1})². Y la pregunta es: ¿Cuál es el residuo al dividir a_{2019} por 7? Las opciones son A) 0, B) 1, C) 2, D) 5, E) 6.
+
+Hmm, parece que los términos de esta sucesión crecen muy rápido, así que calcular a_{2019} directamente es imposible. Probablemente haya una forma cíclica o periódica cuando se toma el modulo 7. Es decir, los residuos al dividir por 7 se repiten después de un cierto número de términos.
+
+Voy a intentar calcular algunos términos iniciales modulo 7 para ver si surge algún patrón.
+
+Comenzamos con:
+a₀ = 1 → a₀ mod 7 = 1
+a₁ = 2 → a₁ mod 7 = 2
+
+Ahora, calculamos los siguientes términos usando la fórmula dada y tomando modulo 7 en cada paso:
+
+a₂ = a₀ + (a₁)² = 1 + (2)² = 1 + 4 = 5 → a₂ mod 7 = 5
+a₃ = a₁ + (a₂)² = 2 + (5)² = 2 + 25 = 27 → 27 mod 7 es 6 (ya que 7*3=21, 27-21=6)
+a₄ = a₂ + (a₃)² = 5 + (6)² = 5 + 36 = 41 → 41 mod 7: 7*5=35, 41-35=6
+a₅ = a₃ + (a₄)² = 6 + (6)² = 6 + 36 = 42 → 42 mod 7 es 0
+a₆ = a₄ + (a₅)² = 6 + (0)² = 6 + 0 = 6 → 6 mod 7 = 6
+a₇ = a₅ + (a₆)² = 0 + (6)² = 0 + 36 = 36 → 36 mod 7: 7*5=35, 36-35=1
+a₈ = a₆ + (a₇)² = 6 + (1)² = 6 + 1 = 7 → 7 mod 7 = 0
+a₉ = a₇ + (a₈)² = 1 + (0)² = 1 + 0 = 1 → 1 mod 7 = 1
+a₁₀ = a₈ + (a₉)² = 0 + (1)² = 0 + 1 = 1 → 1 mod 7 = 1
+a₁₁ = a₉ + (a₁₀)² = 1 + (1)² = 1 + 1 = 2 → 2 mod 7 = 2
+
+Ahora, observo los residuos que he obtenido:
+n : 0,1,2,3,4,5,6,7,8,9,10,11
+a_n mod7:1,2,5,6,6,0,6,1,0,1,1,2
+
+Comparando aₙ mod7 con a₀,a₁,a₂,... parece que los residuos comienzan a repetirse desde n=9. Por ejemplo:
+a₉ mod7 = 1 (mismo que a₀)
+a₁₀ mod7 = 1 (mismo que a₁)
+a₁₁ mod7 = 2 (mismo que a₂)
+
+Está surgiendo un ciclo de longitud 6, posiblemente. Vamos a ver si continúa:
+a₁₂ = a_{10} + (a_{11})² mod7 = 1 + (2)² = 1 +4=5 → 5 mod7
+a₁₃ = a_{11} + (a_{12})² mod7 =2 +5²=2+25=27→6 mod7
+a₁₄ = a_{12} + (a_{13})² mod7=5 +6²=5+36=41→6 mod7
+a₁₅ = a_{13} + (a_{14})² mod7=6 +6²=6+36=42→0 mod7
+a₁₆ = a_{14} + (a_{15})² mod7=6 +0²=6+0=6→6 mod7
+a₁₇ = a_{15} + (a_{16})² mod7=0 +6²=0+36=36→1 mod7
+a₁₈ = a_{16} + (a_{17})² mod7=6 +1²=6+1=7→0 mod7
+a₁₉ = a_{17} + (a_{18})² mod7=1 +0²=1+0=1→1 mod7
+a₂₀ = a_{18} + (a_{19})² mod7=0 +1²=0+1=1→1 mod7
+a₂₁ = a_{20} + (a_{21})²? No, mejor calcular a₂₁ = a_{19} + (a_{20})² mod7=1 +1²=1+1=2→2 mod7
+
+Comparando con los iniciales:
+a₉=1, a₁₀=1, a₁₁=2,... y verificamos que coincide con a₀, a₁, etc. Parece que el ciclo se repite cada 6 términos, es decir, la periodicidad es de 6.
+
+Entonces, para encontrar a_{2019} mod7, primero determino cuál posición en el ciclo ocupa 2019. Dado que el ciclo comienza desde n=0 con periodo 6, calculamos 2019 mod6.
+
+Calculamos: 2019 ÷6 es igual a 336 *6 = 2016, con un sobrante de 3 (2019 - 2016=3). Así que 2019 ≡3 mod6. Entonces, el residuo de a_{2019} al dividir por7 es igual al del término en la posición 3 del ciclo.
+
+Mirando los términos iniciales:
+Posiciones: 0→1, 1→2, 2→5, 3→6
+
+Por lo tanto, a_{2019} mod7=6.
+
+Pero reviso mis cálculos. En el paso de a₇ a a₈:
+
+a₇=1, a₈=a₆ + (a₇)^2 =6 +1^2=7→0 mod7
+a₉=a₇ + (a₈)^2=1 +0=1
+Y así sucesivamente.
+
+Sí, parece que el ciclo es 1,2,5,6,6,0 y luego se repite. Entonces, para n≡3 mod6, el valor es6.
+</think>
+
+Raonament: Calculando los términos iniciales de la sucesión modulo7, observamos un patrón periódico con período 6: [1,2,5,6,6,0]. Al calcular a_{2019} mod7, determinamos que 2019 ≡3 mod6, por lo que el residuo es igual al del término en la posición 3 del ciclo, que es6.
+
+**Resposta:** $\boxed{6}$

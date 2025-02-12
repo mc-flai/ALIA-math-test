@@ -1,0 +1,52 @@
+<think>
+Primero, identifiquemos los datos del problema. Hay cinco amigos, y cada uno porta un cierto número de magdalenas. En total, al inicio, suman M magdalenas.
+
+Cada amigo da una magdalena a los otros cuatro amigos. Por lo tanto, cada uno dona 4 magdalenas en total (una a cada uno de los demás). Como hay cinco amigos, el total de magdalenas dadas es 5 * 4 = 20 magdalenas.
+
+Después de esto, cada amigo come todas las magdalenas que ha recibido. Antes de recibir, tenían M magdalenas en total. Luego, cada uno recibe 4 magdalenas (uno de cada amigo), por lo que al final, el número total de magdalenas es M - 20 (las dadas) + 0 (pues las comen).
+
+Sin embargo, el problema menciona que el nombre total de magdalenas "va baixar a la meitat". Esto significa que después de las donaciones y comidas, el total de magdalenas es la mitad del inicial.
+
+Así que establecemos la ecuación:
+M - 20 = (1/2) * M
+
+Resolviendo esta ecuación:
+Multiplicamos ambos lados por 2 para eliminar la fracción:
+2(M - 20) = M
+2M - 40 = M
+Restamos M de ambos lados:
+2M - M - 40 = 0 → M - 40 = 0
+Por lo tanto, M = 40.
+
+Luego verificamos:
+- Total inicial: 40 magdalenas.
+- Cada uno da 4, total dado: 5 * 4 = 20.
+- Magdalenas restantes: 40 - 20 = 20.
+- La mitad del total inicial es 20, lo que coincide con el dato.
+
+Por lo tanto, la respuesta correcta es D) 40.
+</think>
+
+**Raonament:**  
+Cinquè amics, cadascun porta \( x \) magdalenes. El nombre total al començar és \( 5x \).  
+Cada un dona una magdalena a los altres 4, per tant cada un dona 4 magdalens en total.  
+Total donat: \( 5 \times 4 = 20 \) magdalenes.  
+
+Desprès de la donació, el nombre total de magdalenes és:  
+\( 5x - 20 \).  
+
+Cada un menja totes les magdalenes rebotes. Com cada un ha rebut 4 magdalens (un de cadascun dels altres), no queden magdalens rebotes, per tant el nombre total final és zero? Això no coincideix amb el problema que diu que el total baixa a la meitat.  
+
+Podeu haver interpretat incorrectament el problem. Segur que "cada un dona una magdalena als altres", així cada un dona 4 magdalens, i en total s'han donat \( 5 \times 4 = 20 \) magdalens.  
+
+Per tant:  
+Total initial - total donat = mitad del total initial.  
+\( 5x - 20 = \frac{1}{2} \times 5x \).  
+Multiplicà per 2:  
+\( 10x - 40 = 5x \)  
+\( 5x = 40 \)  
+\( x = 8 \)  
+
+Cada un porta 8 magdalens, total inicial \( 5 \times 8 = 40 \).  
+
+**Resposta:** D) 40

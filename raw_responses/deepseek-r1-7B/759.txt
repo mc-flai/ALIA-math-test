@@ -1,0 +1,90 @@
+<think>
+Bueno, hoy tengo que resolver un problema matemático. El enunciado es sobre calcular la potencia más alta de 3 que divide al número 7! + 8! + 9!. Las opciones son A) 3², B) 3⁴, C) 3⁵, D) 3⁶ y E) Una potencia de 3 más alta que 3⁶.
+
+Primero, entiendo que 7!, 8! y 9! son factoriales. Los factoriales son el producto de todos los enteros positivos hasta ese número. Por ejemplo, 7! = 7×6×5×4×3×2×1, y así para los demás.
+
+El problema me pide sumar estos tres factoriales: 7! + 8! + 9!, y luego determinar la máxima potencia de 3 que divide a este resultado. Es decir, quiero encontrar el exponente máximo k tal que 3^k divide a 7! + 8! + 9!.
+
+Para abordar este problema, creo que es mejor factorizar cada término individualmente para ver cuántas veces aparece el factor 3 en cada uno, y luego sumarlas. Pero primero, noto que 7!, 8! y 9! son términos consecutivos de factoriales.
+
+Primero, veamos cómo se relacionan estos números:
+
+- 8! = 8 × 7!
+- 9! = 9 × 8 × 7!
+
+Es decir, 9! = 9×8×7!. Podemos expresar cada término en términos de 7! para simplificar la suma.
+
+Entonces, 7! + 8! + 9! = 7! + 8×7! + 9×8×7!.
+
+Factorizando 7!, tendremos:
+
+= 7! × (1 + 8 + 9×8).
+
+Ahora, calculamos lo que está dentro del paréntesis.
+
+Primero, 9×8 = 72. Luego, sumamos: 1 + 8 = 9; 9 + 72 = 81.
+
+Así que la suma se convierte en:
+
+= 7! × 81.
+
+Y 81 es 3^4, ya que 3×3×3×3 = 81.
+
+Ahora, el problema reduce a encontrar la potencia de 3 en 7! × 3^4.
+
+Para esto, necesitamos determinar cuántas veces aparece 3 en 7! y luego sumarlo con las potencias adicionales de 3 que ya tenemos multiplicadas.
+
+Recuerda que para encontrar la exponente k tal que 3^k divide a un número n!, usamos la fórmula:
+
+k = ⌊n/3⌋ + ⌊n/9⌋ + ⌊n/27⌋ + ... hasta que el divisor supera a n.
+
+Aplicando esto a 7!:
+
+- ⌊7/3⌋ = 2 (ya que 3×2=6 ≤7)
+- ⌊7/9⌋ = 0, ya que 9 >7
+- Sumamos: 2 + 0 = 2. Así, 7! tiene dos factores de 3.
+
+Entonces, el total de factores de 3 en 7! es 2.
+
+Ahora, multiplicando por 81, que es 3^4, sumamos esas potencias:
+
+Total de exponentes de 3 = 2 (de 7!) + 4 = 6.
+
+Es decir, el número total de veces que 3 aparece en la factorización del producto 7! ×81 es 6. Por lo tanto, la máxima potencia de 3 que divide a 7!+8!+9! es 3^6.
+
+Ahora, reviso las opciones:
+
+A) 3²
+
+B) 3⁴
+
+C) 3⁵
+
+D) 3⁶
+
+E) Potencia más alta que 3⁶.
+
+Claramente, la respuesta correcta es D) 3⁶.
+</think>
+
+Raonament: 
+
+Per calcular la potència més alta de 3 que divide a 7! + 8! + 9!, primer factoritzem cada terme:
+
+- 8! = 8 × 7!
+- 9! = 9 × 8 × 7!
+
+Això permet expressar la suma com:
+\[7! \times (1 + 8 + 72) = 7! \times 81\]
+
+Després, factoritzem 81 com \(3^4\). A continuació, comptem els factors de 3 en 7!:
+
+- Els divisions succesius per 3 són: ⌊7/3⌋ = 2 i ⌊7/9⌋ = 0.
+- Sumant, obtim 2 factors de 3 en 7!.
+
+Finalment, la totalitat de factors de 3 es:
+\[2 + 4 = 6\]
+
+Assí, la potència més alta de 3 que divide a 7! + 8! + 9! és \(3^6\).
+
+Resposta: D) 3⁶

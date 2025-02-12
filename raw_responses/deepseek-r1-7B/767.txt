@@ -1,0 +1,56 @@
+<think>
+Primero, observo que la expresión dada es un radical anidado (nested radical) que se repite varias veces. Decido abordarlo de manera incremental, evaluando cada capa del radical paso a paso.
+
+Comienzo con el interior más profundo: √20. Calculando su valor, obtenemos aproximadamente 4,472.
+
+Luego, tomo esta raíz y la sumo con 20, lo que da 24,472. A continuación, calculo la raíz cuadrada de este resultado, resultando en aproximadamente 4,947.
+
+Repetimos el proceso: sumamos 20 a 4,947 para obtener 24,947 y tomamos su raíz cuadrada, lo que nos da alrededor de 4,993.
+
+Continuando con este método, sumo 20 a 4,993 para obtener 24,993. La raíz cuadrada de este valor es aproximadamente 4,998.
+
+Finalmente, sumo 20 a 4,998, obteniendo 24,998. Calculando su raíz cuadrada, obtengo un valor que se acerca a 5.
+
+Dado que 5 es la parte entera del número resultante, concluyo que la respuesta correcta es B) 5.
+</think>
+
+**Raonament:**
+
+La pregunta consiste en calcular la part entera de la segona raíz cuadrada anidada:
+
+\[
+\sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20}}}}}
+\]
+
+Podem resoldre'l pas a pas, comprovant cada passatge.
+
+1. **Calcularem primer la part més interior:**
+   \[
+   \sqrt{20} \approx 4,472
+   \]
+   
+2. **Sumam a 20 i calculem la raíz segona vegada:**
+   \[
+   \sqrt{20 + 4,472} = \sqrt{24,472} \approx 4,947
+   \]
+   
+3. **Continuam amb la suma a 20 i calculem la raíz tercera vegada:**
+   \[
+   \sqrt{20 + 4,947} = \sqrt{24,947} \approx 4,993
+   \]
+   
+4. **Sumam a 20 i calculem la raíz quarta vegada:**
+   \[
+   \sqrt{20 + 4,993} = \sqrt{24,993} \approx 4,998
+   \]
+   
+5. **Finalment, sumam a 20 i calculem la raíz final:**
+   \[
+   \sqrt{20 + 4,998} = \sqrt{24,998} \approx 4,999,9
+   \]
+   
+La part entera d'aquest número és **5**.
+
+**Resposta:**
+
+\boxed{B) 5}

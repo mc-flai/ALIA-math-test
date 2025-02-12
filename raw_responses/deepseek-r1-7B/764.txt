@@ -1,0 +1,154 @@
+<think>
+Para resolver este problema, primero necesito entender lo que se me está preguntando. Busco determinar cuántos números positivos \( n \) cumplen con la condición de que su mayor divisor exclusivo de \( n \) es igual a \( n - 6 \).
+
+Sé que el mayor divisor exclusivo de un número \( n \), usualmente denotado como \( d(n) \), es el número más grande que divide a \( n \) sin ser \( n \) mismo. En este caso, la condición es:
+
+\[
+d(n) = n - 6
+\]
+
+Esto implica que \( n - 6 \) debe ser un divisor de \( n \). Matemáticamente, esto significa que:
+
+\[
+n - 6 \mid n
+\]
+
+Para explorar esta relación, puedo expresarla como una división. Si \( n - 6 \) divide a \( n \), entonces existirá un entero \( k \) tal que:
+
+\[
+n = k(n - 6)
+\]
+
+Sin embargo, esto no parece muy útil directamente. En su lugar, considero la relación de divisibilidad:
+
+\[
+\frac{n}{n - 6} = k
+\]
+
+Dado que \( n \) y \( n - 6 \) son enteros positivos, \( k \) también debe ser un entero positivo mayor que 1 (ya que si \( k = 1 \), entonces \( n = n - 6 \), lo cual no es posible). 
+
+Reescribo la ecuación para resolver \( n \):
+
+\[
+n = (k)(n - 6)
+\]
+
+Expandingo:
+
+\[
+n = kn - 6k
+\]
+
+Luego, rearrango términos:
+
+\[
+n - kn = -6k \\
+n(1 - k) = -6k \\
+n(k - 1) = 6k \\
+n = \frac{6k}{k - 1}
+\]
+
+Ahora, \( n \) debe ser un entero positivo, lo que significa que \( \frac{6k}{k - 1} \) también debe ser entero. Para esto, el denominador \( k - 1 \) debe dividir al numerador \( 6k \).
+
+Exploro los posibles valores enteros de \( k \) que satisfagan esta condición:
+
+1. **\( k = 2 \):**
+   \[
+   n = \frac{6 \times 2}{2 - 1} = \frac{12}{1} = 12
+   \]
+   Verifico si cumple \( d(12) = 12 - 6 = 6 \). Los divisores de 12 son 1, 2, 3, 4, 6, 12. El mayor divisor exclusivo es 6, lo cual coincide con la condición.
+
+2. **\( k = 3 \):**
+   \[
+   n = \frac{6 \times 3}{3 - 1} = \frac{18}{2} = 9
+   \]
+   Verifico \( d(9) = 9 - 6 = 3 \). Los divisores de 9 son 1, 3, 9. El mayor divisor exclusivo es 3, que cumple con la condición.
+
+3. **\( k = 4 \):**
+   \[
+   n = \frac{6 \times 4}{4 - 1} = \frac{24}{3} = 8
+   \]
+   Verifico \( d(8) = 8 - 6 = 2 \). Los divisores de 8 son 1, 2, 4, 8. El mayor divisor exclusivo es 4, que no coincide con 2. Por lo tanto, este valor no cumple la condición.
+
+Continuo probando valores de \( k \) hasta que ya no sean viables:
+
+- **\( k = 5 \):**
+  \[
+  n = \frac{6 \times 5}{5 - 1} = \frac{30}{4} = 7.5
+  \]
+  No es entero, así que lo descarto.
+
+- **\( k = 6 \):**
+  \[
+  n = \frac{6 \times 6}{6 - 1} = \frac{36}{5} = 7.2
+  \]
+  Tampoco es entero.
+
+Al observar los resultados, solo \( k = 2 \) y \( k = 3 \) generan valores enteros de \( n \) que cumplen con la condición dada. Por lo tanto, existen dos números positivos \( n \) que satisfacen la relación \( d(n) = n - 6 \).
+</think>
+
+**Raonament:**
+
+Buscamos determinar cuántos enteros positivos \( n \) cumplen con que su mayor divisor exclusivo es \( n - 6 \). Denotemos este mayor divisor exclusivo como \( d(n) \), por lo que la condición se convierte en:
+
+\[
+d(n) = n - 6
+\]
+
+Sabemos que \( d(n) \) es el número entero más grande menor que \( n \) que divide a \( n \). Por lo tanto, si \( d(n) = n - 6 \), entonces \( n - 6 \) debe ser un divisor de \( n \). Esto implica:
+
+\[
+n - 6 \mid n
+\]
+
+Esto significa que existirá algún entero positivo \( k \) tal que:
+
+\[
+n = k(n - 6)
+\]
+
+Rearrangiendo la ecuación, tenemos:
+
+\[
+n = kn - 6k \\
+n - kn = -6k \\
+n(1 - k) = -6k \\
+n(k - 1) = 6k \\
+n = \frac{6k}{k - 1}
+\]
+
+Para que \( n \) sea un entero positivo, \( \frac{6k}{k - 1} \) debe ser entero. Exploramos los posibles valores de \( k \):
+
+- **\( k = 2 \):**
+  \[
+  n = \frac{6 \times 2}{2 - 1} = 12
+  \]
+  Verificamos: Los divisores de 12 son 1, 2, 3, 4, 6, 12. El mayor divisor exclusivo es 6, que coincide con \( 12 - 6 = 6 \).
+
+- **\( k = 3 \):**
+  \[
+  n = \frac{6 \times 3}{3 - 1} = 9
+  \]
+  Verificamos: Los divisores de 9 son 1, 3, 9. El mayor divisor exclusivo es 3, que coincide con \( 9 - 6 = 3 \).
+
+- **\( k = 4 \):**
+  \[
+  n = \frac{6 \times 4}{4 - 1} = 8
+  \]
+  Verificamos: Los divisores de 8 son 1, 2, 4, 8. El mayor divisor exclusivo es 4, que NO coincide con \( 8 - 6 = 2 \).
+
+- **\( k = 5 \):**
+  \[
+  n = \frac{6 \times 5}{5 - 1} = 7.5
+  \]
+  No es entero.
+
+- **\( k = 6 \):**
+  \[
+  n = \frac{6 \times 6}{6 - 1} = 7.2
+  \]
+  Tampoco es entero.
+
+Continuando con valores mayores de \( k \) produce números no enteros para \( n \). Por lo tanto, los únicos valores de \( n \) que cumplen la condición son 9 y 12.
+
+**Resposta: B)**

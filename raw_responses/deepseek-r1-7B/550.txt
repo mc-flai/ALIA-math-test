@@ -1,0 +1,36 @@
+<think>
+Primero, identifico los datos proporcionados en el problema:
+
+- Total de alumnos que participan en el equipo de fútbol pero no en el taller de teatro: 19.
+- Total de alumnos que participan en el taller de teatro: 13.
+- De estos 13, 5 también juegan en el equipo de fútbol.
+
+Esto significa que hay una superposición entre los dos grupos: 5 alumnos están en ambos talleres.
+
+Para encontrar el número total de alumnos en la clase, aplico el principio de inclusión-exclusión:
+
+Total = Fútbol + Teatro - Ambos
+
+Sustituyendo los valores:
+
+Total = 19 (solo fútbol) + 8 (solo teatro) + 5 (ambos) = 32 alumnos.
+
+Por lo tanto, el número total de alumnos en la clase es 32.
+</think>
+
+**Raonament:**
+
+- **Dades proporcionades:**
+  - Número d'alumnes que participen en l'equip de futbol pero no en el taller de teatre: 19
+  - Número d'alumnes que participen en el taller de teatre: 13
+    - D'ells, 5 també juguen a futbol
+
+- **Calculament dels alumnes únics en cada activitat:**
+  - Alumnes únicament en fútbol: 19 (ja s'inclouen els que no estan al teatre)
+  - Alumnes únicament en teatre: 13 - 5 = 8
+
+- **Aplicació de la regla d'incorporació-exclusió:**
+  - Total d'alumnes = alumnes en fútbol + alumnes en teatre - alumnes en ambdós
+  - Total = 19 (fútbol) + 8 (teatre únic) + 5 (ambdós) = **32**
+
+**Resposta: D) 32**

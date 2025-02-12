@@ -1,0 +1,54 @@
+<think>
+Primero, entiendo que hay n³ cubos pequeños idénticos. Se usan para construir un cubo grande y se pintan todas las superficies externas.
+
+Necesito encontrar el valor de n sabiendo que el número de cubos con una sola cara pintada es igual al número de cubos sin ninguna cara pintada.
+
+Para ello, analizo cómo los cubos pequeños quedan ubicados en el cubo grande:
+
+1. **Cubos sin cara pintada (interiores):** Están completamente protegidos por capas externas. Su cantidad depende del volumen del cubo interior, que es de longitud (n-2) en cada dimensión. Por lo tanto, la cantidad total de estos cubos es (n - 2)³.
+
+2. **Cubos con una sola cara pintada:** Están ubicados en las caras exteriores pero no en los bordes ni las esquinas. Cada cara del cubo grande tiene un centro de (n-2)² cubos, y hay 6 caras. Así que el total es 6 × (n - 2)².
+
+Según el problema, estos dos números son iguales:
+
+(n - 2)³ = 6 × (n - 2)²
+
+Simplifico la ecuación dividiendo ambos lados por (n - 2)² (suponiendo que n ≠ 2):
+
+n - 2 = 6
+
+Entonces, n = 8.
+
+Verificando con n=8:
+
+- Cubos interiores: (8-2)³ = 6³ = 216
+- Cubos con una cara pintada: 6 × (8-2)² = 6 × 36 = 216
+
+Ambas cantidades son iguales, confirmando que n=8 es la solución correcta.
+</think>
+
+**Raonament:**  
+Per resoldre el problema, hem de calcular quants cubos petits tenen una sola cara pintada i quants no tenen cap cara pintada en un cubo gran de mida **n × n × n**.  
+
+1. **Cubos sense cap cara pintada (interiors):**  
+   Estes cubos estan completament protegits pel reste del cubo, formant una malla interior de mida **(n - 2) × (n - 2) × (n - 2)**.  
+   Cantidad: \((n - 2)^3\).
+
+2. **Cubos amb una sola cara pintada:**  
+   Estes cubos estan en el centre dels costats del cubo gran, però no a les esquinas ni als bords. Per cada carà són \((n - 2)^2\) cubos, i hi ha 6 cares.  
+   Cantidad: \(6 × (n - 2)^2\).
+
+Segons el problema, la quantitat de cubos amb una sola cara pintada és igual a la de cubos sense cap cara pintada:  
+\[
+(n - 2)^3 = 6 × (n - 2)^2
+\]  
+Dividim amбós costats per \((n - 2)^2\) (suponiendo que \(n ≠ 2\)):  
+\[
+n - 2 = 6
+\]  
+Entons,  
+\[
+n = 8
+\]
+
+**Resposta:** D) 8

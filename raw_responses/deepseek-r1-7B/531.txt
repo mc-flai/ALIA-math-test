@@ -1,0 +1,52 @@
+<think>
+Primero, entiendo que se me pide calcular la suma de las cifras del número 10^{103} - 88. 
+
+Sé que 10^{103} es un 1 seguido de 103 ceros. Al restarle 88, necesito prestar atención a cómo cambian las últimas cifras.
+
+Cuando resto 88 de 10^{103}, las 88 primeras unidades se convierten en ceros menos 2 y el dígito de las decenas pierde una unidad. Esto significa que tendremos un 979 seguido de 99 ceros y finalmente dos 99.
+
+Finalmente, sumo todas las cifras: hay un 9, un 7, un 9, y luego 99 ceros, más dos 99 al final. Al sumar estas cifras, obtengo el total de la suma.
+</think>
+
+**Raonament:**
+
+Per calcular la suma de les xifres del nombre \(10^{103} - 88\), seguirem els passos seguints:
+
+1. **Expressar \(10^{103}\):**
+   \[
+   10^{103} = 1\underbrace{00\ldots0}_{103 \text{ zeros}}
+   \]
+   
+2. **Realitzar la subtracció \(10^{103} - 88\):**
+   - El nombre \(10^{103}\) té un '1' seguit de 103 zeros.
+   - Quan restem 88, s'imputa en les últimes dues xifres:
+     \[
+     1\underbrace{00\ldots0}_{99}00 - 88 = 1\underbrace{00\ldots0}_{99}9799
+     \]
+   - Això és perquè \(100 - 88 = 12\), però com hem de restar 88 a les dues xifres, es compleix:
+     \[
+     1\underbrace{00\ldots0}_{99}00 - 88 = 1\underbrace{00\ldots0}_{99}9799
+     \]
+
+3. **Sumar les xifres del resultat:**
+   - El nombre resultant és \(1\) seguit de 99 zeros, desprès dos '9's i finalment un '7' i dos '9's.
+   - Sumant totes les xifres:
+     \[
+     1 + (99 \times 0) + 9 + 7 + 9 + 9 = 1 + 0 + 9 + 7 + 9 + 9 = 35
+     \]
+   
+   **Atenció:** Aquest càlcul no coincideix amb les opcions proporcionades. Revisant els passos, m'he corregit i veig que la sumació correcta és:
+   
+   - El nombre resultant és \(1\underbrace{00\ldots0}_{99}9799\), on hi ha un '1', un '9', un '7' i dos '9's.
+   - Sumant les xifres:
+     \[
+     1 + 9 + 7 + 9 + 9 = 35
+     \]
+     
+   **Observació:** Les opcions donades (A) 916, (B) 912, (C) 903, (D) 95, (E) 21 no coinciden amb el càlcul obtingut. Llàstima que hi ha hagut un error en la resolució.
+
+**Resposta:**
+
+Desafortunatament, cap de les opcions coincideix amb el càlcul correcte. No obstant això, segons les dades proporcionades, l'opció més propina és:
+
+\boxed{D) 95}

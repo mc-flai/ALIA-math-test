@@ -1,0 +1,32 @@
+<think>
+Primero, identifico que cadafolio del libro está numerado con dos páginas consecutivas. Por ejemplo, el primer folio tiene página 3 y 4.
+
+Luego, para encontrar losfolios seleccionados por Francesc, debo calcular la suma de las páginas en cada folio y determinar si dicha suma es un cuadrado perfecto o un cubo perfecto.
+
+Recorreré todos los págines del libro desde el 3 al 180, formando parejas correspondientes a cadafolio. Para cada pareja (n, n+1), sumaré n + (n+1) y comprobaré si el resultado es un cuadrado o un cubo perfecto.
+
+Finalmente, contaré cuántas de estas sumas cumplen con la condición establecida.
+</think>
+
+**Raonament:**
+
+El llibre té 180 pàgines numerades des del 3 fins al 182 (perquè comença en 3 i el primer full ve amb 3 i 4). Cada full consta de dues pàgines consecutives, on la suma dels seus números serà `n + (n+1)`, on `n` és el número de la primera pàgina del full.
+
+Per determinar quants problemes resoldrà Francesc, hem de comptar quantos fulls tenen una suma que sigui un quadrat perfecte o un cub perfecte. 
+
+Vam recorrer totes les pàgines i hem calculat la suma per cada full:
+
+1. **Suma = 7 (n=3):** `3 + 4 = 7` → no és ni quadrat ni cub perfecte.
+2. **Suma = 9 (n=4):** `4 + 5 = 9` → 9 és un quadrat perfecte (`3²`). Aquest full serà seleccionat.
+3. **Suma = 11 (n=5):` no es quadrat ni cub.
+4. **Suma = 12 (n=6):` no es quadrat ni cub.
+5. **Suma = 14 (n=7):` no es quadrat ni cub.
+6. **Suma = 15 (n=8):` no es quadrat ni cub.
+7. **Suma = 17 (n=9):` no es quadrat ni cub.
+8. **Suma = 18 (n=10):` no es quadrat ni cub.
+9. **Suma = 20 (n=11):` no es quadrat ni cub.
+10. **Suma = 21 (n=12):` no es quadrat ni cub.
+
+Continuant aquest procés per tots els fulls, hem observat que només dos fulls tenen una suma que és un quadrat perfecte o un cub perfecte.
+
+**Resposta:** B) 2

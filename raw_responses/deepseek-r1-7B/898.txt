@@ -1,0 +1,40 @@
+<think>
+Primero, identifico que el problema se trata de encontrar las diferentes maneras en que Pere puede subir una escalera de 8 peldaños. Él puede subir dos peldaños a la vez o uno solo.
+
+Entonces, considero que cada paso lo define como un movimiento de 1 o 2 peldaños. Esto me recuerda al problema clásico de las escaleras y el conteo de caminos, que generalmente se resuelve utilizando la secuencia de Fibonacci.
+
+Decido modelar el problema con una secuencia similar a Fibonacci, donde F(n) es el número de maneras de subir n peldaños. Sabemos que:
+- F(1) = 1 (solo un paso)
+- F(2) = 2 (puedo hacer dos pasos de 1 o uno de 2)
+
+Para escalas más grandes, cada F(n) se calcula como F(n-1) + F(n-2), ya que para cada peldaño n, Pere puede haber llegado al peldaño n-1 y luego dé un paso de 1, o al peldaño n-2 y dé un paso de 2.
+
+Calculando los valores necesarios:
+- F(3) = F(2) + F(1) = 2 + 1 = 3
+- F(4) = F(3) + F(2) = 3 + 2 = 5
+- F(5) = F(4) + F(3) = 5 + 3 = 8
+- F(6) = F(5) + F(4) = 8 + 5 = 13
+- F(7) = F(6) + F(5) = 13 + 8 = 21
+- F(8) = F(7) + F(6) = 21 + 13 = 34
+
+Finalmente, concluyo que el número de maneras diferentes es 34.
+</think>
+
+Raonament:  
+El problema consiste en calcular las diferentes maneras en que Pere puede subir una escalera de 8 peldaños, donde puede subir dos peldaños a la vez o uno solo. Este tipo de problemas se resuelve utilizando una secuencia similar a la de Fibonacci, ya que cada paso depende de los pasos anteriores.
+
+La fórmula para calcular el número de maneras es:  
+F(n) = F(n-1) + F(n-2),  
+donde F(1) = 1 y F(2) = 2.
+
+Calculando los valores necesarios:
+- F(3) = F(2) + F(1) = 2 + 1 = 3
+- F(4) = F(3) + F(2) = 3 + 2 = 5
+- F(5) = F(4) + F(3) = 5 + 3 = 8
+- F(6) = F(5) + F(4) = 8 + 5 = 13
+- F(7) = F(6) + F(5) = 13 + 8 = 21
+- F(8) = F(7) + F(6) = 21 + 13 = 34
+
+Por lo tanto, el número de maneras diferentes en que Pere puede subir la escalera es **34**.
+
+Resposta: D)

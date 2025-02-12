@@ -1,0 +1,63 @@
+<think>
+Primero, identifico que se me dan dos ecuaciones con las variables w y x:
+
+1. \( w + x = 3 \)
+2. \( \frac{1}{w} + \frac{1}{x} = 1 \)
+
+Quiero encontrar el valor de \( \frac{x}{w} + \frac{w}{x} \).
+
+Sé que \( \frac{x}{w} + \frac{w}{x} \) se puede expresar como \( \frac{x^2 + w^2}{wx} \). Entonces, si puedo encontrar \( x^2 + w^2 \) y \( wx \), podré calcular el valor deseado.
+
+Parto de la primera ecuación:
+
+\( w + x = 3 \)
+
+Siendo \( (w + x)^2 = w^2 + 2wx + x^2 \), reescribo la ecuación cuadrática:
+
+\( 9 = w^2 + 2wx + x^2 \)
+
+Luego, de la segunda ecuación:
+
+\( \frac{1}{w} + \frac{1}{x} = 1 \)
+
+Convierto esto en una expresión común denominador:
+
+\( \frac{x + w}{wx} = 1 \) → \( w + x = wx \)
+
+Sustituyendo \( w + x = 3 \):
+
+\( 3 = wx \) → \( wx = 3 \)
+
+Ahora, retorno a la ecuación cuadrática:
+
+\( 9 = w^2 + 2(3) + x^2 \) → \( 9 = w^2 + 6 + x^2 \) → \( w^2 + x^2 = 3 \)
+
+Finalmente, calculo:
+
+\( \frac{x}{w} + \frac{w}{x} = \frac{x^2 + w^2}{wx} = \frac{3}{3} = 1 \)
+</think>
+
+Raonament:  
+Sabem que \( w + x = 3 \) i \( \frac{1}{w} + \frac{1}{x} = 1 \).  
+Podemos expressar \( \frac{x}{w} + \frac{w}{x} \) com \( \frac{x^2 + w^2}{wx} \).  
+
+Per trobar \( x^2 + w^2 \), fem servir la segona ecuació:  
+\[
+\frac{1}{w} + \frac{1}{x} = 1 \implies \frac{w + x}{wx} = 1
+\]  
+Ja que \( w + x = 3 \), substituïm:  
+\[
+\frac{3}{wx} = 1 \implies wx = 3
+\]  
+
+ ara, calculem \( (w + x)^2 \):  
+\[
+(w + x)^2 = w^2 + 2wx + x^2 \implies 9 = w^2 + 6 + x^2 \implies w^2 + x^2 = 3
+\]  
+
+Finalment, substituïm en la nostra expressió original:  
+\[
+\frac{x^2 + w^2}{wx} = \frac{3}{3} = 1
+\]
+
+Resposta: \( \boxed{B} \)

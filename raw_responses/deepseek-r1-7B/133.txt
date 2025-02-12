@@ -1,0 +1,27 @@
+<think>
+Primero, entiendo que se me pide calcular la suma de las cifras del número 10¹⁰¹ menos 9. 
+
+Sé que 10¹⁰¹ es un 1 seguido de 101 ceros. Al restarle 9, el último dígito pasará de 0 a 1, y los 100 dígitos anteriores serán 9, excepto el primer dígito que será 9 en lugar de 0.
+
+Entonces, el número resultante tendrá un 9 seguido de 100 dígitos 9 y finalmente un 1. Al sumar todas sus cifras, serán 9 multiplicado por 101 y luego sumando 1 más.
+
+Calculo que la suma total será 900 + 1 = 901.
+</think>
+
+**Raonament:**
+
+El nombre en qüestió és \(10^{101} - 9\). 
+
+- \(10^{101}\) és un número que consisteix en un **1 seguit de 101 zeros**. 
+- Quan restem 9 a aquest nombre, convertim el darrer zero en un **1** i tots els altres digits finals (els 100 primers zeros) en **9**. 
+
+Així doncs, \(10^{101} - 9\) es restringeix a un número que comença amb un **9**, seguit de **100 nines** i finalitzant amb un **1**. 
+
+- La suma de les xifres d'aquest nombre és: 
+  \[
+  9 + (100 \times 9) + 1 = 9 + 900 + 1 = 901
+  \]
+
+**Resposta:**
+
+\boxed{B)

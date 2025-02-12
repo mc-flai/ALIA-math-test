@@ -1,0 +1,40 @@
+<think>
+Primero, identifico que necesito calcular el producto 20182019 × 20192018 y luego determinar el residuo al dividirlo por 9.
+
+Recuerdo que un método eficiente para encontrar el residuo modulo 9 es sumar los dígitos de cada número hasta obtener un único dígito. Esto se debe a que 10 ≡ 1 mod 9, por lo que cualquier número N es congruente con la suma de sus dígitos modulo 9.
+
+Calculo el residuo de 20182019:
+Sumo los dígitos: 2 + 0 + 1 + 8 + 2 + 0 + 1 + 9 = 23.
+Luego, sumo 2 + 3 = 5. Así que 20182019 ≡ 5 mod 9.
+
+Calculo el residuo de 20192018:
+Sumo los dígitos: 2 + 0 + 1 + 9 + 2 + 0 + 1 + 8 = 23.
+Luego, sumo 2 + 3 = 5. Así que 20192018 ≡ 5 mod 9.
+
+Multiplico los residuos: 5 × 5 = 25.
+Ahora, encuentro el residuo de 25 modulo 9:
+25 ÷ 9 = 2 con resto 7. Por lo tanto, 25 ≡ 7 mod 9.
+
+El residuo final es 7.
+</think>
+
+**Raonament:**
+
+Per calcular el producte \(20182019 \times 20192018\) i determinar el residu quan el dividim per 9, pots fer-ho mitjançant la propietat modular. La regla del 9 estableix que un nombre és congruent mòdulo 9 amb la suma de seus dígits.
+
+1. **Calcular \(20182019 \mod 9\):**
+   - Suma els dígits: \(2 + 0 + 1 + 8 + 2 + 0 + 1 + 9 = 23\).
+   - Suma els resultats: \(2 + 3 = 5\).
+   - Per tant, \(20182019 \equiv 5 \mod 9\).
+
+2. **Calcular \(20192018 \mod 9\):**
+   - Suma els dígits: \(2 + 0 + 1 + 9 + 2 + 0 + 1 + 8 = 23\).
+   - Suma els resultats: \(2 + 3 = 5\).
+   - Per tant, \(20192018 \equiv 5 \mod 9\).
+
+3. **Multiplicar els dos residus:**
+   - \(5 \times 5 = 25\).
+   - Calcula el residu de \(25\) mòdulo \(9\): 
+     - \(25 \div 9 = 2\) amb un residu de \(7\).
+
+**Resposta:** D) 7

@@ -1,0 +1,25 @@
+<think>
+Josep tiene cuatro medallas: dos de oro, una de plata y una de bronce. Quiere colocarlas en una vitrina, una al costado de la otra, siguiendo las indicaciones de cuál campionato ganó cada una (Europa o Mundo). Además, las dos medallas de oro siempre deben estar juntas.
+
+Para resolver este problema, primero considero que hay cuatro posiciones para colocar las medallas. Sin embargo, hay una restricción: las dos medallas de oro deben colocarse lado a lado. Esto reduce las opciones disponibles ya que estas dos no se pueden separar.
+
+Considero a las medallas de oro como un solo elemento que ocupa dos posiciones consecutivas. Por lo tanto, tenemos tres elementos principales para ordenar: el par de oros, la plata y el bronce.
+
+Calculando las permutaciones de estos tres elementos, obtenemos 3! = 6 formas diferentes de ordenarlas. Sin embargo, dentro del par de oros, las dos medallas son indistiguibles en términos de color, pero cada una proviene de un campionato diferente (Europa y Mundo). Por lo tanto, necesitamos considerar que el par de oros puede estar ordenado de dos maneras diferentes: oro1 primero y oro2 después, o viceversa.
+
+Multiplicando las permutaciones principales por las posibles configuraciones del par de oros, obtenemos 6 * 2 = 12 formas diferentes de colocar las medallas en la vitrina.
+</think>
+
+Raonament:
+
+Josep té quatre medalles: una d'or (ganyada als campionats d'Europa), una d'or (ganyada als campionats del món), una de plata i una de bronze. Les dues medalles d'or han de posar-se juntes, però les altres dos medalles poden posarse en qualsevol ordre.
+
+Per a calcular el nombre total d'ordenacions:
+
+1. Considera les dues medalles d'or com un sol element que ocupa dos espais consecutius.
+2. Així, tenim tres elements per ordenar: (OR, OR), plata i bronze.
+3. Els elements poden ser ordenats de 3! = 6 maneres.
+4. Per cada una d'aquestes maneres, les dues medalles d'or poden estàть en dos ordres diferents (una abans que l'altra o viceversa).
+5. Així, el nombre total d'ordenacions és 6 * 2 = 12.
+
+Resposta: C) 12

@@ -1,0 +1,59 @@
+<think>
+Voy a intentar resolver este problema paso a paso.
+
+Primero, entiendo que se nos da una sucesión definida de manera recursiva. Los términos iniciales son a₀ = 4 y a₁ = 10. Además, para n ≥ 1, cada término siguiente está definido como la división del término anterior entre el término dos posiciones atrás. Es decir, a_{n+1} = a_n / a_{n-1}.
+
+Quiero encontrar el valor de a₂₀₁₅. Antes que nada, es probable que esta sucesión presente un comportamiento periódico, es decir, que los términos se repitan en ciertos intervalos. Para descubrir si esto ocurre y determinar la periodicidad, calcularé几个初始项 para observar si surge una patrón.
+
+Comenzaré calculando los primeros términos:
+
+- a₀ = 4
+- a₁ = 10
+
+Ahora, aplico la fórmula recursiva para encontrar a₂:
+a₂ = a₁ / a₀ = 10 / 4 = 2.5 o 5/2.
+
+Luego, a₃ se calcula con a₂ y a₁:
+a₃ = a₂ / a₁ = (5/2) / 10 = (5/2) * (1/10) = 5/20 = 1/4.
+
+Continuando, a₄ = a₃ / a₂ = (1/4) / (5/2) = (1/4) * (2/5) = 2/20 = 1/10.
+
+Después, a₅ = a₄ / a₃ = (1/10) / (1/4) = (1/10) * 4 = 4/10 = 2/5.
+
+Ahora, a₆ = a₅ / a₄ = (2/5) / (1/10) = (2/5) * 10 = 20/5 = 4.
+
+Continuando con a₇: a₇ = a₆ / a₅ = 4 / (2/5) = 4 * (5/2) = 20/2 = 10.
+
+Noto que a₇ vuelve a ser 10, igual que a₁. Y a₆ es 4, igual que a₀. Esto sugiere que la sucesión comienza a repetirse desde aquí. Es decir, los términos de a₀ y a₁ se repiten en a₆ y a₇ respectivamente.
+
+Para confirmar la periodicidad, observemos los siguientes términos:
+- a₈ = a₇ / a₆ = 10 / 4 = 5/2 (igual que a₂)
+- a₉ = a₈ / a₇ = (5/2) / 10 = 1/4 (igual que a₃)
+- a₁₀ = a₉ / a₈ = (1/4) / (5/2) = 1/10 (igual que a₄)
+
+Y así continúa. Por lo tanto, la sucesión es periódica con un período de 6 términos.
+
+Ahora, para encontrar a₂₀₁₅, necesitamos determinar qué posición ocupa el término 2015 en este ciclo de 6 términos. Para esto, calculo el resto de la división de 2015 por 6.
+
+Dividimos 2015 entre 6:
+
+- 6 * 335 = 2010
+- 2015 - 2010 = 5
+
+Así que 2015 ≡ 5 mod 6. Esto significa que a₂₀₁₅ es igual a a₅, ya que el sexto término (a₆) coincide con a₀ y el ciclo vuelve a empezar.
+
+Y de los cálculos anteriores sabemos que a₅ = 2/5.
+
+Revisando las opciones dadas:
+A) 5/2
+B) 2/5
+C) 4
+D) 1/4
+E) 1/10
+
+La respuesta correcta es B) 2/5.
+</think>
+
+Raonament: Calculamos several inicial terms de la successió per descobrir que és periòdica amb un període de 6. Luego, determinà què posició ocupa el terme a₂₀₁₅ en aquesta seqüència i vam observar que coincideix amb a₅.
+
+Resposta: B) 2/5

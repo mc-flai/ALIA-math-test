@@ -1,0 +1,66 @@
+<think>
+Primero, noto que se nos dan cuatro números racionales a, b, c y d, y todas las expresiones a = b + 1, a = c + 2, a = d + 3 son iguales. Además, también sabemos que esta igualdad es igual a a + b + c + d + 4.
+
+Voy a llamar este valor común S, lo que significa que:
+a = b + 1
+a = c + 2
+a = d + 3
+y también S = a + b + c + d + 4
+
+Sabiendo que a = S, puedo expresar b, c y d en términos de S:
+b = S - 1
+c = S - 2
+d = S - 3
+
+Ahora, sustituyo estos valores en la ecuación del total:
+S = S + (S - 1) + (S - 2) + (S - 3) + 4
+
+Simplifico la suma:
+S = 4S - 6 + 4
+S = 4S - 2
+
+Despejo S:
+-3S = -2
+S = 2/3
+
+Finalmente, a + b + c + d es igual a 4S menos 6, lo que da:
+a + b + c + d = 4*(2/3) - 6 = -10/3
+</think>
+
+Raonament:
+
+Siguin \( S \) el valor comúm per als quatro expressions donades:
+
+\[
+a = b + 1 = c + 2 = d + 3 = a + b + c + d + 4 = S
+\]
+
+A partir de les equacions,podem expressar:
+\[
+b = S - 1 \\
+c = S - 2 \\
+d = S - 3 
+\]
+
+Sumant-los tots:
+\[
+a + b + c + d = a + (S - 1) + (S - 2) + (S - 3)
+\]
+Però sabem que \( a = S \), donc:
+\[
+S = S + (S - 1) + (S - 2) + (S - 3) + 4
+\]
+Simplificant:
+\[
+S = 4S - 6 + 4 \\
+-3S = -2 \\
+S = \frac{2}{3}
+\]
+
+Entonces, la suma \( a + b + c + d \) es:
+\[
+a + b + c + d = S + (S - 1) + (S - 2) + (S - 3) = 4S - 6 \\
+= 4 \cdot \frac{2}{3} - 6 = \frac{8}{3} - 6 = \frac{8 - 18}{3} = -\frac{10}{3}
+\]
+
+Resposta: C) \( -\dfrac{10}{3} \)

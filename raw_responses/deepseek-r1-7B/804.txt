@@ -1,0 +1,298 @@
+<think>
+Okay, so I've got this math problem here that I need to solve. It says that using each of the digits 1 through 8 exactly once, we have to form two four-digit natural numbers such that their difference is as small as possible. Then, among the options given (A) 124, B) 247, C) 358, D) 643, E) 1357, I need to find out which one is the smallest possible difference.
+
+First, let me make sure I understand the problem correctly. We're given digits 1 to 8, each used exactly once across both numbers. So we'll have two four-digit numbers, like ABCD and WXYZ, where A, B, C, D, W, X, Y, Z are all distinct digits from 1 to 8.
+
+The goal is to minimize the absolute difference between these two numbers: |ABCD - WXYZ|. We need to arrange the digits so that this difference is as small as possible. Then, among the options provided, choose the correct one.
+
+I think a good starting point would be to realize that to minimize the difference between two numbers, they should be as close to each other as possible. So ideally, we want both numbers to be around the same value, maybe similar thousands and hundreds digits.
+
+Since we have four-digit numbers, the thousands digit contributes the most to the overall number. Therefore, if I can make the thousands digits of both numbers as close as possible, that would help minimize their difference. However, since each digit must be used only once, the two thousands digits will have to be different. So maybe 4 and 5? That's a small gap.
+
+Wait, but using 1,2,3,4 for one number and 5,6,7,8 for another might make the numbers too far apart. Alternatively, perhaps interleaving higher and lower digits in each number could bring them closer together.
+
+Let me think: if I split the digits into two groups where one group has slightly higher digits and the other has slightly lower, but arranged so that when combined, the numbers are as close as possible.
+
+Another approach is to consider that for two four-digit numbers using all digits 1-8 once, their difference will be minimized when the thousands digits are consecutive. For example, one number starts with 4 and the other with 5. That way, the thousands place contributes only a difference of 1000, but since we can't have overlapping digits, perhaps we need to adjust.
+
+Wait, actually, if we use 4 and 5 as the thousands digits, that might be ideal because their difference is just 1 in the thousands place. Let's see: number A starts with 4, number B starts with 5. Then, for the hundreds digit, we want them to be as close as possible too.
+
+So, after using 4 and 5, what digits are left? The remaining digits would be 1,2,3,6,7,8. So perhaps assign the next highest available to each number to keep them close. For example:
+
+Number A: 4 _ _ _
+Number B: 5 _ _ _
+
+Next, let's look at the hundreds place. To make these as close as possible, after 4 and 5, maybe we can give the higher remaining digit to number A's hundreds place and a lower one to number B's? Or vice versa.
+
+Wait, actually, if number A has a lower thousands digit (4), then to bring it up closer to 5000, its other digits should be as high as possible. Conversely, number B with the higher thousands digit (5) can have lower digits in the subsequent places to make the overall numbers closer.
+
+So perhaps:
+
+Number A: 4 _ _ _
+We want this to be as large as possible without using too high digits, so let's use the next highest available digits for its hundreds place. After 4 and 5 are used in thousands, remaining digits are 1,2,3,6,7,8.
+
+So maybe assign number A: 4 8 _ _, since 8 is the largest remaining digit. Then number B would have 5 as thousands and perhaps 7 next? Or wait, if I do that, let's see:
+
+Number A: 48xx
+Number B: 57xx
+
+But then their difference is 900 something, which might not be optimal.
+
+Wait, maybe instead of using the largest remaining digit for number A, we should balance it. Let me think again. Since number A starts with 4, to make it as large as possible, the hundreds place should be as high as possible. So let's give it 8 in the hundreds: Number A: 48xx.
+
+Then number B would have 5 _ _ _, and since 8 is used, the next available digit for number B could be 7, but wait, we can't use digits that are already used. Wait no, each digit is used only once across both numbers. So if I assign 8 to number A's hundreds place, then number B cannot have 8 in any place.
+
+Wait, let me correct that: all digits from 1-8 must be used exactly once across both numbers. So if I use a digit in one number, it can't be used in the other.
+
+So starting again:
+
+Thousands digits: Assign 4 and 5 to the two numbers.
+
+Number A: 4 _ _ _
+Number B: 5 _ _ _
+
+Remaining digits: 1,2,3,6,7,8.
+
+Now, we need to assign these six digits into the hundreds, tens, and units places of both numbers. Each number has three more digits, so each will get three digits from this pool.
+
+To minimize their difference, it's better if the higher remaining digits are distributed between the two numbers in such a way that they balance out.
+
+So for Number A (starting with 4), which is lower than B starting with 5, we might want to give it higher digits in the hundreds place so that number A becomes as large as possible. Similarly, for number B, perhaps give it lower digits beyond thousands to keep it from being too high.
+
+Wait, but if Number A's hundreds digit is high and Number B's hundreds digit is low, that could make their difference smaller.
+
+Alternatively, maybe assign the next highest digit to each alternately.
+
+Let me try assigning:
+
+For Number A: 4 in thousands, then let's take the next two highest digits for its hundreds and tens places. So from remaining digits 1,2,3,6,7,8: the highest is 8, then 7, but wait, we can't give both to number A because they are used once each.
+
+Wait no, each digit is used only once in total across both numbers, so if I assign 8 to Number A's hundreds place, then Number B cannot use 8 anywhere. Similarly for other digits.
+
+So perhaps:
+
+Number A: 4 (thousands), 8 (hundreds), 7 (tens), ?
+
+Then remaining digits would be 1,2,3,6. Wait no, if we assign 8 and 7 to number A, then Number B has to use the rest.
+
+Wait let's try:
+
+Number A: 4 _ _ _
+
+We want it as high as possible, so assign highest available digits in each place. So hundreds:8, tens:7, units:6. So Number A would be 4876.
+
+Then Number B uses remaining digits 1,2,3,5 (but wait, 5 is already used as thousands digit? No, no: the digits are 1,2,3,5, but wait, 5 was used in thousands place of number B. Wait I'm getting confused.
+
+Wait, initial assignment:
+
+Number A: thousands=4
+
+Number B: thousands=5
+
+Remaining digits:1,2,3,6,7,8.
+
+So Number A needs to have three more digits from these six, and Number B also needs three.
+
+If we make Number A as high as possible, it would be 4876 (using 4,8,7,6). Then Number B would be 5123. But wait, let's check the digits used:
+
+Number A: 4,8,7,6 → uses 4,6,7,8
+
+Number B: 5,1,2,3 → uses 1,2,3,5
+
+So yes, all digits from 1-8 are used exactly once.
+
+Now let's compute the difference between Number A (4876) and Number B (5123):
+
+Wait, wait a second. If Number A is 4876 and Number B is 5123, then Number B is larger because it starts with 5 in thousands vs. 4.
+
+So their difference would be 5123 - 4876 = let's compute that:
+
+5123
+-4876
+=?
+
+Subtracting step by step:
+
+Starting from the units place:
+3 - 6: can't do, borrow.
+13 -6 =7
+
+Tens place: 2 becomes 1 after borrowing. 1 -7? Can't do, borrow again.
+So 11 -7 =4
+
+Hundreds place: 0 (since we've borrowed twice) becomes 9 after borrowing. 9 -8=1
+
+Thousands place:5-4=1.
+
+Wait that's not right because Number B is 5xxx and A is 4xxx, so it's actually:
+
+Number B (5123) minus Number A (4876):
+
+5123
+-4876
+=247
+
+But wait, according to this, the difference would be 247.
+
+But let me verify:
+
+Starting from units: 3 -6 → borrow, so 13-6=7. Next digit: 2 becomes 1 after borrowing. Then 1-7 can't do, so borrow again. Now it's 11-7=4. Next digit: the hundreds place was originally 0 (since Number B has 1 in tens and 5 in thousands), but wait this is getting confusing.
+
+Wait maybe I should compute it directly:
+
+Number A =4876
+
+Number B=5123
+
+Difference:5123 -4876=?
+
+Compute step by step:
+
+Units digit:3-6 → borrow, so 13-6=7. Write down 7.
+
+Tens digit:2 becomes 1 after borrowing. Then 1-7? Can't do, borrow again. So it's 11-7=4. Write down 4.
+
+Hundreds digit:0 (from Number B) was reduced to 9 after previous borrow. Now subtract 8 from that 9: 9-8=1. Write down 1.
+
+Thousands digit:5 becomes 4 after borrowing. Then 4-4=0.
+
+Wait, so the difference would be 247? Let me check with another method:
+
+Number A is 4876
+
+Number B is 5123
+
+Compute 5123 -4876:
+
+Subtract thousands: 5-4=1
+
+Then hundreds:1-8 → can't do, borrow. So it's like (5000+100) - (4000+800)= 100 more than that.
+
+Wait this is getting too confusing; let me calculate the actual difference:
+
+5123
+-4876
+=247
+
+Yes, because 4876 +247 = 5123 (since 4876+200=5076, then +47=5123).
+
+But wait, is there a way to make the difference even smaller?
+
+What if we assign digits differently.
+
+Suppose Number A has thousands digit=4, and for its hundreds digit, we take the lowest available digit instead of the highest, so that Number B can have higher digits beyond its thousands place.
+
+Wait, but if I do that, Number A becomes smaller, making Number B's difference larger. Wait no: to minimize the difference between 4xxx and5xxx, ideally, we want Number A as high as possible and Number B as low as possible.
+
+So in order to make Number A higher, assign it the highest remaining digits beyond thousands place.
+
+So that would be:
+
+Number A:4 (thousands),8 (hundreds),7(tens),6(units)=4876
+
+Number B:5 (thousands),1,2,3=5123
+
+Difference is 247, as computed.
+
+Is there a way to get a smaller difference?
+
+Let's try another allocation. Suppose Number A takes the three highest digits for its lower places, but Number B takes some high digits too, so that their overall numbers are closer.
+
+Wait, what if:
+
+Number A:4 (thousands),8,7,5 → Wait no, 5 is already used in thousands place of Number B.
+
+Wait, remaining digits after assigning 4 and5 as thousands digits:1,2,3,6,7,8.
+
+So for Number A, assign the next three highest digits:8,7,6. So Number A=4876
+
+Number B gets the lowest available digits:1,2,3, so Number B=5123 as before.
+
+Difference 247.
+
+Alternatively, what if we give Number B some higher digits and take some away from Number A?
+
+For example:
+
+Suppose Number A takes 4 (thousands),8,6,5 → but wait, 5 is already used in thousands place of Number B. So can't do that.
+
+Wait, actually, the remaining digits are1,2,3,6,7,8.
+
+If we give Number B higher digits after its thousands place, let's see:
+
+Number A:4, and then take three lowest digits:1,2,3 → 4123
+
+Number B:5, and then take highest remaining digits:8,7,6→5876
+
+Now compute difference:5876 -4123=1753. That's way larger.
+
+Wait that's worse because now Number A is smaller and Number B is much larger.
+
+Alternatively, perhaps giving both numbers balanced higher digits.
+
+Number A:4 (thousands),7,8,6→4786
+
+Number B:5 (thousands),1,2,3→5123
+
+Difference:5123-4786=337.
+
+Wait that's better than 247? No, wait 337 is larger difference than 247. So worse.
+
+Wait no, wait, it's the other way around. Wait, I think when Number A is higher and B lower, their difference becomes smaller.
+
+In first case:4876 and5123 → difference247
+
+Second case:4786 vs 5123→difference337, which is bigger.
+
+So initial allocation was better.
+
+Wait another option:
+
+Number A:4 (thousands),8,6, something. Wait remaining digits are1,2,3,6,7,8.
+
+If we assign Number A as486X, where X could be 3 or something else.
+
+Wait no, better to maximize Number A beyond thousands digit.
+
+So 4-8-7-6 is the highest possible for A:4876
+
+Then B gets5123, difference247.
+
+Is that minimal?
+
+Alternatively:
+
+What if we make Number A=49xx and Number B=50xx? But we don't have a9 digit. The digits we can use are 1,2,3,6,7,8.
+
+So maximum for Number A beyond thousands place is 876.
+
+Wait unless we can rearrange the digits to make A as high as possible and B as low as possible.
+
+Yes, which gives difference of247.
+
+Is that the minimal?
+
+Alternatively, let's try:
+
+Number A:4 (thousands),8,6,7 → but that would be same as 4876 if you arrange in descending order. So it's already covered.
+
+Wait another approach: can we make Number B just a little higher than Number A? Wait no, because the thousands digits are fixed at4 and5 respectively. So Number B will always be higher by1000 plus whatever.
+
+So to minimize the difference between 4xxx and5xxx, you need to make4xxx as high as possible (close to5000) and5xxx as low as possible.
+
+Thus, maximizing Number A beyond thousands digit:
+
+Number A:4876
+
+Number B:5123
+
+Difference=247.
+
+Alternatively, is there a way for Number A to be higher than4876? Like49xx. But since the digits available are up to8, the maximum beyond thousands place is 8, so4876 is as high as it can go.
+
+Therefore, the minimal difference possible is247.
+</think>
+
+The minimum difference achievable between the two numbers formed by the digits {1,2,3,4,5,6,7,8} with one number starting with 4 and the other with 5 is 247. This occurs when the first number (starting with 4) is as large as possible and the second number (starting with 5) is as small as possible.
+
+$\boxed{247}$

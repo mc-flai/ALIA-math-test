@@ -1,0 +1,19 @@
+<think>
+Para resolver el problema, primero identifico que lanzar dos dados es un evento con dos resultados independientes. Quiero calcular la probabilidad de obtener exactamente un 6.
+
+Conozco que la probabilidad de obtener un 6 en un solo dado es 1/6, y la de no obtenerlo es 5/6.
+
+Dado que los lanzamientos son independientes, multiplico las probabilidades para cada caso deseado. Por lo tanto, la probabilidad será (1/6) * (5/6), lo que da 5/36.
+
+Finalmente, verifico las opciones y veo que la respuesta correcta es C.
+</think>
+
+Raonament: 
+Quan llancem dos daus, cada dau té una probabilitat de 1/6 d'obtinger un 6 i una probabilitat de 5/6 de no obtenir un 6. Per calcular la probabilitat d'obtenir exactament un 6 en els dos lances, considerem les dues possibilitats:
+1. El primer dau és 6 i el segon no.
+2. El primer dau no és 6 i el segon sí.
+
+La probabilitat per cada cas és (1/6) * (5/6). Sumant ambas possibilities:
+(1/6)*(5/6) + (5/6)*(1/6) = 2*(5/36) = 5/18.
+
+Resposta: E) 5/18

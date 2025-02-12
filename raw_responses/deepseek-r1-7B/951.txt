@@ -1,0 +1,233 @@
+<think>
+Bueno, tengo que resolver este sistema de ecuaciones:
+
+|x| + |y| = 1
+
+x² - y² = 1
+
+Voy a empezar analizando cada ecuación por separado.
+
+Primero, la primera ecuación es |x| + |y| = 1. Esto representa una figura geométrica. Sabemos que la suma de los valores absolutos de x e y es igual a un número constante, lo cual es conocido como un "diamante" o una "rho". En este caso, con 1, las coordenadas (x,y) que satisfacen esta ecuación forman un cuadrado con vertices en (1,0), (-1,0), (0,1), y (0,-1). Es decir, es la figura de un diamante centrado en el origen con sus vértices a una distancia de 1 de los ejes.
+
+Ahora, la segunda ecuación es x² - y² = 1. Esto es una hipérbola estándar que abrese en dirección horizontal. La forma general de una hipérbola similar es (x²/a²) - (y²/b²) = 1, donde a=1 y b=1 en este caso.
+
+Ahora, para encontrar las soluciones comunes al sistema, necesitamos encontrar los puntos que se encuentren en la intersección de estos dos gráficos: el diamante y la hipérbola.
+
+Para resolver el sistema, intentaré despejar variables e introducir substituciones.
+
+Primero, noto que la primera ecuación involucra |x| + |y|. Puede ser útil considerar los diferentes cuadrantes debido a las propiedades de los valores absolutos. Sin embargo, dada la simetría de ambas ecuaciones, quizás sea suficiente analizar el primer cuadrante y luego multiplicar las soluciones por 4, teniendo en cuenta las posibles simetrías.
+
+Sin embargo, tal vez sería mejor considerar variables sin los modulos para simplificar. Supongamos que x ≥ 0 y y ≥ 0, es decir, nos centramos en el primer cuadrante. En este caso, la primera ecuación se convierte en x + y = 1.
+
+Ahora, con x + y = 1 y x² - y² = 1.
+
+Noto que x² - y² se puede factorizar como (x - y)(x + y). Y ya sabemos que x + y = 1. Por lo tanto:
+
+(x - y)(1) = 1
+
+Simplificando, x - y = 1.
+
+Ahora tengo el sistema en primer cuadrante:
+
+x + y = 1
+
+x - y = 1
+
+Podemos resolver este sistema de ecuaciones lineales sumando las dos ecuaciones:
+
+( x + y ) + (x - y) = 1 + 1 → 2x = 2 ⇒ x=1.
+
+Sustituyendo x=1 en la primera ecuación: 1 + y =1 ⇒ y=0.
+
+Ahora, comprobamos si estos valores satisfacen las originales. x=1, y=0:
+
+|x| + |y| = 1 + 0 = 1 ✓
+
+x² - y² = 1 - 0 =1 ✓
+
+Así que (1,0) es una solución.
+
+Pero ya que consideramos solo el primer cuadrante, debemos explorar las posibles soluciones en los otros cuadrantes para asegurar que no hayamos perdido soluciones.
+
+Sin embargo, al observar la hipérbola x² - y²=1, vemos que sus ramas se encuentran en los cuadrandos I y IV. Por lo tanto, no habrá intersección con el diamante en los cuadrantes II y III, ya que allí x es negativo y |x| + |y|=1 implica que |x| ≤1.
+
+Ahora, consideremos la rama de la hipérbola en el primer cuadrante. Acabamos de encontrar (1,0). Pero quizás hay más soluciones. Vamos a ver.
+
+Pero observo que x=1, y=0 ya está en el borde del diamante, ya que |x| + |y|=1. En este punto, la hipérbola también pasa por (1,0), como vimos.
+
+Ahora, consideremos si hay más intersecciones en el primer cuadrante.
+
+Tomamos x ≥ 0, y ≥ 0, con x + y =1, y x² - y²=1.
+
+Al resolver obtenemos solo una solución: x=1, y=0. No más.
+
+Ahora, consideremos la rama de la hipérbola en el cuarto cuadrante (x positivo, y negativo). En este caso, |y| = -y ya que y es negativo. La primera ecuación se convierte en x + (-y) =1 ⇒ x - y=1.
+
+Y la segunda ecuación依然是 x² - y² = 1.
+
+Similar a lo anterior:
+
+x² - y² = (x - y)(x + y)=1
+
+Pero ahora, x - y=1 y x + y=? 
+
+En el cuarto cuadrante, y es negativo, por lo que |y| = -y. Y la primera ecuación es |x| + |y|=x + (-y)=x - y=1.
+
+Así que, similarmente:
+
+(x - y) = 1
+
+Y (x - y)(x + y) =1 ⇒ 1*(x+y)=1 ⇒ x + y =1.
+
+Ahora, el sistema en cuarto cuadrante es:
+
+x - y =1
+
+x + y=1
+
+Sumando las ecuaciones: 2x=2⇒x=1. Sustituyendo en x + y=1⇒1 + y=1⇒y=0.
+
+Pero en este caso, y=0 no es negativo, por lo que no pertenece al cuarto cuadrante. Por lo tanto, la única solución en el primer cuadrante es (1,0), y en el cuarto no hay soluciones ya que y=0 no está en el cuarto.
+
+Ahora, consideremos las ramas de la hipérbola abriendo a la izquierda. Es decir, x negativo.
+
+La ecuación de la hipérbola es x² - y²=1. Si x es negativo, |x| = -x.
+
+Consideremos el segundo cuadrante (x negativo, y positivo). La primera ecuación: |x| + |y|= (-x) + y=1.
+
+Y la hipérbola: x² - y²=1.
+
+Similar a lo anterior:
+
+(-x) + y =1
+
+x² - y²=1
+
+Podemos expresar x² - y²=(x - y)(x + y)=1
+
+Pero no está claro, quizás debamos resolver el sistema:
+
+-x + y =1 ⇒ y = x +1
+
+Sustituimos en la hipérbola: x² - (x+1)^2=1.
+
+Calculamos:
+
+x² - (x² + 2x +1) =1
+
+x² -x² -2x -1=1⇒-2x -1=1⇒-2x=2⇒x=-1.
+
+Entonces, x=-1. Sustituyendo en y =x+1 ⇒y=-1 +1=0.
+
+Así que obtenemos (-1, 0).
+
+Comprobamos:
+
+|x| + |y|=|-1| + |0|=1+0=1 ✓
+
+x² - y²=1 -0=1 ✓
+
+Entonces, (-1,0) es otra solución.
+
+Pero en el segundo cuadrante, y es positivo. En este caso, y=0 no pertenece al eje; ya que y=0 se considera en el eje XY, no en los cuadrantes propiamente dichos.
+
+Ahora, consideremos el tercer cuadrante (x negativo, y negativo). La primera ecuación: |x| + |y|= (-x) + (-y)= -x - y=1.
+
+Y la hipérbola x² - y²=1.
+
+Entonces, tendremos:
+
+- x - y =1
+
+x² - y²=1
+
+Similar a lo anterior, factorizamos x² - y²=(x - y)(x + y)=1
+
+Pero no sabemos cómo expresar esto. Probablemente, mejor despejar variables.
+
+De -x - y=1 ⇒x + y =-1.
+
+Y la hipérbola: (x - y)(x + y)=1⇒(x - y)*(-1)=1⇒x - y=-1
+
+Así que el sistema es:
+
+x + y=-1
+
+x - y=-1
+
+Sumamos las ecuaciones:
+
+2x =-2 ⇒x= -1.
+
+Sustituimos x=-1 en x + y=-1⇒-1 + y=-1⇒y=0.
+
+Entonces, obtenemos (-1,0) de nuevo. Y como anteriormente, y=0 no está en el tercer cuadrante.
+
+Por lo tanto, las soluciones son (1,0) y (-1,0).
+
+Ahora, consideremos si hay más soluciones en los ejes.
+
+En la hipérbola x² - y²=1, los vértices están en (±1, 0). En la elipse |x| + |y|=1, los puntos donde se intersectan son posiblemente solo estos dos puntos.
+
+Para confirmar, si consideramos que la curva de |x| + |y|=1 es una forma octogonal con vértices en (1,0), (-1,0), (0,1), y (0,-1). Y la hipérbola x² - y²=1 solo intersecta con los ejes x en (±1,0). En las intersecciones de las curvas, probablemente solo sean estos dos puntos.
+
+Por lo tanto, las soluciones son (1,0) y (-1,0).
+
+**Final Answer**
+The points of intersection are \boxed{(1, 0)} and \boxed{(-1, 0)}.
+</think>
+
+To find the points of intersection between the curves \( |x| + |y| = 1 \) and \( x^2 - y^2 = 1 \), we analyze each quadrant separately.
+
+1. **First Quadrant ( \( x \geq 0 \), \( y \geq 0 \) )**:
+   - The equation becomes \( x + y = 1 \).
+   - Substituting \( y = 1 - x \) into the hyperbola equation \( x^2 - y^2 = 1 \):
+     \[
+     x^2 - (1 - x)^2 = 1
+     \]
+     Simplifying:
+     \[
+     x^2 - (1 - 2x + x^2) = 1 \implies 2x - 1 = 1 \implies x = 1
+     \]
+     Substituting \( x = 1 \) back, we get \( y = 0 \). Thus, the point is \( (1, 0) \).
+
+2. **Fourth Quadrant ( \( x \geq 0 \), \( y \leq 0 \) )**:
+   - The equation becomes \( x - y = 1 \).
+   - Substituting \( y = x - 1 \) into the hyperbola equation \( x^2 - y^2 = 1 \):
+     \[
+     x^2 - (x - 1)^2 = 1
+     \]
+     Simplifying:
+     \[
+     x^2 - (x^2 - 2x + 1) = 1 \implies 2x - 1 = 1 \implies x = 1
+     \]
+     Substituting \( x = 1 \) back, we get \( y = 0 \). However, since \( y = 0 \) is not in the fourth quadrant, there are no new solutions here.
+
+3. **Second Quadrant ( \( x \leq 0 \), \( y \geq 0 \) )**:
+   - The equation becomes \( -x + y = 1 \).
+   - Substituting \( y = x + 1 \) into the hyperbola equation \( x^2 - y^2 = 1 \):
+     \[
+     x^2 - (x + 1)^2 = 1
+     \]
+     Simplifying:
+     \[
+     x^2 - (x^2 + 2x + 1) = 1 \implies -2x - 1 = 1 \implies x = -1
+     \]
+     Substituting \( x = -1 \) back, we get \( y = 0 \). Thus, the point is \( (-1, 0) \).
+
+4. **Third Quadrant ( \( x \leq 0 \), \( y \leq 0 \) )**:
+   - The equation becomes \( -x - y = 1 \).
+   - Substituting \( y = -x - 1 \) into the hyperbola equation \( x^2 - y^2 = 1 \):
+     \[
+     x^2 - (-x - 1)^2 = 1
+     \]
+     Simplifying:
+     \[
+     x^2 - (x^2 + 2x + 1) = 1 \implies -2x - 1 = 1 \implies x = -1
+     \]
+     Substituting \( x = -1 \) back, we get \( y = 0 \). However, since \( y = 0 \) is not in the third quadrant, there are no new solutions here.
+
+After checking all quadrants, the points of intersection are found to be \( (1, 0) \) and \( (-1, 0) \).
+
+### Final Answer
+The points of intersection are \boxed{(1, 0)} and \boxed{(-1, 0)}.

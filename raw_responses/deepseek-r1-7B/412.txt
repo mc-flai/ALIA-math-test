@@ -1,0 +1,107 @@
+<think>
+Vamos ver, tengo que resolver este problema donde se me dan dos condiciones:
+
+1. \( a + b + c = 100 \)
+2. \( \frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} = 0.1 \)
+
+Y debo encontrar el valor de la expresión: \( \frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} \).
+
+Primero, intentaré simplificar las condiciones y ver si puedo relacionarlas con la expresión que se me pide.
+
+Sabiendo que \( a + b + c = 100 \), podemos deducir que:
+
+- \( a + b = 100 - c \)
+- \( b + c = 100 - a \)
+- \( a + c = 100 - b \)
+
+Esto nos permite reescribir la segunda condición:
+
+\( \frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b} = 0.1 \)
+
+Ahora, consideremos la expresión que necesitamos encontrar:
+
+\( S = \frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} \)
+
+Sustituyendo los valores de \( a + b \), \( b + c \) y \( c + a \):
+
+\( S = \frac{c}{100 - c} + \frac{a}{100 - a} + \frac{b}{100 - b} \)
+
+Observo que cada término de esta suma tiene la forma \( \frac{x}{100 - x} \) donde \( x \) es una variable diferente en cada caso. Si sumamos todos estos términos, necesitamos encontrar un modo de relacionarlo con las condiciones dadas.
+
+Recuerdo que:
+
+\( \frac{c}{100 - c} = \frac{(100 - (100 - c))}{100 - c} = \frac{100}{100 - c} - 1 \)
+
+Aplicando esto a cada término de la suma \( S \):
+
+\( S = \left( \frac{100}{100 - c} - 1 \right) + \left( \frac{100}{100 - a} - 1 \right) + \left( \frac{100}{100 - b} - 1 \right) \)
+
+Simplificando:
+
+\( S = 100\left( \frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b} \right) - 3 \)
+
+Sabemos de la segunda condición que \( \frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b} = 0.1 \), por lo que:
+
+\( S = 100 \times 0.1 - 3 = 10 - 3 = 7 \)
+
+Así, el valor de la expresión es 7.
+</think>
+
+Raonament:  
+Sabem que \( a + b + c = 100 \), per tant:  
+\( a + b = 100 - c \),  
+\( b + c = 100 - a \),  
+\( c + a = 100 - b \).  
+
+La segona condició dóna:  
+\[ \frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} = 0,1 \]  
+Substituïnt les expressions equivalents:  
+\[ \frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b} = 0,1 \].  
+
+La expressió que cal càlular és:  
+\[ S = \frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} \].  
+
+Substituïnt les expressions equivalents:  
+\[ S = \frac{c}{100 - c} + \frac{a}{100 - a} + \frac{b}{100 - b} \].  
+
+Podem observar que:  
+\[ \frac{x}{100 - x} = 1 - \frac{100}{100 - x} \]  
+per a \( x = a, b, c \).  
+
+Per tant:  
+\[ S = \left(1 - \frac{100}{100 - c}\right) + \left(1 - \frac{100}{100 - a}\right) + \left(1 - \frac{100}{100 - b}\right) \].  
+
+Simplificant:  
+\[ S = 3 - 100\left(\frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b}\right) \].  
+
+Sabem que \( \frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b} = 0,1 \), per tant:  
+\[ S = 3 - 100 \times 0,1 = 3 - 10 = -7 \].  
+
+Pero aquest resultat no coincideix amb les opcions donades. Revisant els passos, observem que hi ha un error en la transformació de \( \frac{x}{100 - x} \). La correcta transformació és:  
+\[ \frac{x}{100 - x} = 1 + \frac{100}{x - 100} \].  
+
+Treu que:  
+\[ S = 3 + 100\left(\frac{1}{100 - c} + \frac{1}{100 - a} + \frac{1}{100 - b}\right) \].  
+
+Doncs:  
+\[ S = 3 + 100 \times 0,1 = 3 + 10 = 13 \].  
+
+Aquest resultat tampoc coincideix amb les opcions. Reanàlitzem l'expressió original:  
+\[ S = \frac{c}{100 - c} + \frac{a}{100 - a} + \frac{b}{100 - b} \].  
+
+Observem que si \( a + b + c = 100 \), llavors \( 100 - a = b + c \), etc. Per tant:  
+\[ S = \frac{c}{b + c} + \frac{a}{a + c} + \frac{b}{a + b} \].  
+
+Notem que cada terme és de la forma \( \frac{x}{x + y} \). Si sumam tots tres termes, observem que:  
+\[ S = 1 - \frac{b}{a + b} + 1 - \frac{c}{b + c} + 1 - \frac{a}{a + c} \].  
+
+Treu que:  
+\[ S = 3 - \left(\frac{a}{a + c} + \frac{b}{a + b} + \frac{c}{b + c}\right) \].  
+
+Però això no simplifica directament. Probablement, la solució consisteix en notar que:  
+\[ S = (a + b + c) \times 0,1 = 100 \times 0,1 = 10 \].  
+
+Desafortunatament, aquest mètode també no dona un resultat correcte. Després de revisar multiples vegades, la solució corretta és:  
+\[ S = 7 \].
+
+Resposta: D)

@@ -1,0 +1,14 @@
+<think>
+Primero, identifico que hay 2015 tiquets numerados del 1 al 2015 en la caja. Se extraen dos tiquets de manera aleatoria sin reemplazo.
+
+Luego, considero todos los posibles pares de números que se pueden seleccionar. El primer tiquet puede ser cualquier número, y el segundo también será otro número distinto del primero.
+
+Para calcular la probabilidad de que el segundo número sea mayor que el primero, noto que en cada par (a, b), hay tres casos: a > b, a < b o a = b. Sin embargo, dado que los números son únicos, a y b no pueden ser iguales, por lo que solo consideramos las primeras dos posibilidades.
+
+Esto significa que la probabilidad de que el segundo número sea mayor es igual a la probabilidad de que el primero sea menor que el segundo. Dado que hay tantos pares donde el segundo es mayor como los que son menores, y sin casos de empate (ya que no se reemplaza), la probabilidad es del 50%.
+</think>
+
+Raonament: 
+Quan s'extrauen dos tiquets sense reemplaçament d'una caixa amb tiquets numerats des d'1 fins a N, la probabilitat que el segon nombre siga més gran que el primer és la mateixa que la probabilitat que el segon siga menys gran que el primer. Això és perquè en tots els pares de tiquets (a, b), hi ha un cas on a > b i un cas on a < b, sense tenir en compte les coincidències (que no poden passar en aquest cas). Donc, la probabilitat que el segon nombre siga més gran que el primer és del 50%.
+
+Resposta: B) El 50%

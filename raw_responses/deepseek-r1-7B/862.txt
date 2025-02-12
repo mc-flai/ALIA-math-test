@@ -1,0 +1,135 @@
+<think>
+Voy a intentar resolver este problema paso a paso. Primero, identificaré las informacións que se dan y lo que se问我需要找什么。
+
+Sé que hoy es el cumpleaños de Maria y su hermano Joan. Necesito encontrar la edad de Joan.
+
+Primero, analizo las oraciones:
+
+1. Cuando nació Joan, la edad de Maria era un tercio de la edad que tenía la madre entonces.
+2. Hoy, la edad de Maria es la mitad de la edad actual de la madre.
+
+Voy a asignar variables para representar sus edades.
+
+Supongamos:
+- M_actual: Edad de Maria hoy.
+- J_hoy: Edad de Joan hoy (lo que quiero encontrar).
+- Madre_actual: Edad de la madre hoy.
+- x años atrás, nació Joan. En ese momento, Maria tenía M_actual - x años y la madre tenía Madre_actual - x años.
+
+Según el primer dato:
+Cuando Joan nació (hace x años), la edad de Maria era un tercio de la de su madre en ese momento.
+Así que: M_actual - x = (1/3)(Madre_actual - x)  --> Ecuación 1
+
+El segundo dato dice que hoy, la edad de Maria es la mitad de la de la madre:
+M_actual = (1/2) Madre_actual  --> Ecuación 2
+
+Voy a resolver estas ecuaciones.
+
+Primero, de la Ecuación 2, expreso Madre_actual en términos de M_actual:
+Madre_actual = 2 * M_actual
+
+Ahora sustituyo esto en Ecuación 1:
+M_actual - x = (1/3)(2*M_actual - x)
+Multiplico ambos lados por 3 para eliminar la fracción:
+3*(M_actual - x) = 2*M_actual - x
+3M_actual - 3x = 2M_actual - x
+Resto 2M_actual a ambos lados:
+M_actual - 3x = -x
+Sumo 3x a ambos lados:
+M_actual = 2x
+
+Ahora, debo encontrar J_hoy. Joan nació hace x años, así que su edad hoy es x.
+
+Pero también sabemos que Maria ahora tiene M_actual y que cuando Joan nació, Maria tenía M_actual - x = (1/3)(Madre_actual - x). Sustituyendo Madre_actual por 2*M_actual:
+
+M_actual - x = (1/3)(2M_actual - x)
+Multiplicando:
+3(M_actual - x) = 2M_actual - x
+3M_actual - 3x = 2M_actual - x
+M_actual = 2x
+
+Entonces, M_actual es igual a 2x. Es decir, x = M_actual / 2.
+
+La edad de Joan es x, que es la mitad de la edad actual de Maria.
+
+Ahora, reviso las opciones:
+A) Tercio de la de Maria.
+B) 6
+C) 10
+D) Mitad de la de Maria
+E) Ninguna
+
+De acuerdo con mi deducción, Joan tiene x años, que es la mitad de M_actual. Por lo tanto, la respuesta correcta es D.
+
+Sin embargo, reviso si las edades son enteras y razonables. Si supongo que M_actual es 10, entonces x =5, Joan tendría 5, pero no está en las opciones.
+
+Si M_actual es 6, x=3, Joan tendría 3 años, tampoco en las opciones.
+
+Pero seguramente hay un error en mis cálculos. Vuelvo a ver.
+
+En Ecuación 1:
+
+M_actual - x = (1/3)(2*M_actual -x)
+
+Multiplicando:
+3(M_actual - x) = 2M_actual -x
+3M_actual -3x =2M_actual -x
+3M_actual -2M_actual = -x +3x
+M_actual= 2x
+
+Así que M_actual es 2x, Joan es x años.
+
+Si Maria ahora tiene M_actual = 10 años, entonces x=5. Joan tendría 5 años, no en las opciones.
+
+Si Maria tiene M_actual =6, x=3, Joan 3 años: tampoco en las opciones.
+
+Pero veo que quizás el error está en la interpretación de cuándo nació Joan. Quizás no es hace x años, sino que ambos cumplen hoy, por lo tanto, Joan y Maria nacieron en el mismo año? No, probablemente tienen edades diferentes.
+
+Reviso: Si Maria ahora tiene M_actual, cuando Joan nació, Maria tenía M_actual - x = (1/3)(Madre entonces). Y Madre_actual = 2*M_actual.
+
+Entonces, M_actual -x = (1/3)(2M_actual -x)
+
+Multiplicando:
+3(M_actual -x) = 2M_actual -x
+3M_actual -3x=2M_actual -x
+3M_actual-2M_actual= -x+3x
+M_actual=2x
+
+Así que M_actual=2x, Joan es x.
+
+Si Maria ahora tiene 10 años (opción C), entonces Joan tendría5 años. No está en las opciones. Si Maria tiene6 años, Joan 3 años.
+
+No veo una de las opciones coincidir, excepto si consideramos que quizás M_actual=6, Joan 3, pero no hay 3 como opción.
+
+Reviso: quizás me equivoqué al relacionar x con la edad actual. Quizás x es la diferencia en años entre Maria y Joan, pero ambos cumplen hoy. Entonces, si Joan nació hace x años, Maria nació hace x + d años, donde d es la diferencia en edad.
+
+Pero no, ambos celebran hoy su cumpleaños, así que probablemente tienen la misma fecha de nacimiento o diferencias menores.
+
+Me doy cuenta de que quizás mi enfoque está complicado. Intento otro método:
+
+Supongamos que Madre_actual = 2*M_actual (desde M_actual = (1/2) Madre_actual).
+
+Cuando Joan nació, madre tenía Madre_actual - x, y Maria tenía M_actual -x = (1/3)(Madre_actual -x)
+
+Sustituyendo Madre_actual=2M_actual:
+
+M_actual -x = (1/3)(2M_actual -x)
+Multiplicar:
+3(M_actual -x)=2M_actual -x
+3M_actual-3x=2M_actual -x
+3M_actual -2M_actual = 3x -x
+M_actual=x*2
+
+Así, M_actual=2x --> x=M_actual/2.
+
+Joan ahora tiene x años, que es la mitad de Maria.
+
+Por lo tanto, Joan's age is half of Maria's current age. Verifico las opciones: D) es "La meitat de l'edat de Maria", así que la respuesta es D.
+</think>
+
+Raonament:
+- Establezco variables para las edades actuales y pasadas.
+- Uso las relaciones dadas para formar ecuaciones.
+- Resuelvo las ecuaciones para encontrar que la edad de Joan es la mitad de la de Maria.
+
+Resposta: D) La meitat de l'edat de Maria

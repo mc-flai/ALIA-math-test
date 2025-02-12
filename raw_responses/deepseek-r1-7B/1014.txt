@@ -1,0 +1,33 @@
+<think>
+Primero, considero un hexágono regular con cada lado medirá 1 cm. Un hexágono regular tiene 6 vértices equidistantes y la distancia entre cualquier dos vértices consecutivos es de 1 cm.
+
+Necesito determinar cuántos puntos en el plano están exactamente a 1 cm de distancia de dos vértices del hexágono. Para ello, analizo las posibles intersecciones de las circunferencias concéntricas con radio 1 cm centradas en cada par de vértices.
+
+Un hexágono regular tiene simetría, por lo que considero la disposición de los vértices en un círculo de radio igual al lado del hexágono. Cada vértice está a una distancia de 2 * r * sin(π/6) = 1 cm de su vecino inmediato.
+
+Luego, analizo que para cada par de vértices adyacentes, las circunferencias de radio 1 cm alrededor de ellos se intersectarán en dos puntos. Sin embargo, algunos de estos puntos podrían coincidir o no existir dependiendo de la disposición.
+
+Finalmente, al considerar todas las posibles intersecciones y teniendo en cuenta que hay 6 pares de vértices adyacentes, cada uno contribuyendo dos puntos de intersección, sumo los puntos resultantes. Sin embargo, es necesario verificar si hay puntos comunes o si algunos no cumplen con la condición exacta.
+</think>
+
+**Raonament:**
+
+Considerem un hexàgon regular on cada costat mésa 1 cm. Un hexàgon regular té 6 vèrtexs equidistantes en un círculo. Volem trobar quants punts del pla estan a exactament 1 cm de distància de dos vèrtexs.
+
+1. **Vèrtexs adyacents:**
+   - Cada pare de vèrtexs adjacents estan a 1 cm.
+   - L'intersecció dels circumferences de radi 1 cm centrats en cada pare de vèrtexs adjacents dona dos punts.
+   - Hi ha 6 parells de vèrtexs adjacents, per tant 2 x 6 = 12 punts.
+
+2. **Vèrtexs no adyacents:**
+   - Vèrtexs separats per un vèrtex (distància > 1 cm) no generen intersecció.
+   - Vèrtexs oposts estan a 2 radi de distància, per tant tampoc hi ha intersecció.
+
+3. **Punts comuns:**
+   - No hi ha punts que coincidin per diferents parells de vèrtexs.
+   - Però, el centre del hexàgon està a 1 cm de tots els vèrtexs? No, está al center.
+
+**Conclusió:**
+Hi ha 12 punts distinctes que estan exactament a 1 cm de distància de dos vèrtexs.
+
+**Resposta:** C) 12

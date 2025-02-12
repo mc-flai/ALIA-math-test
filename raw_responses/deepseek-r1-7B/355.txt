@@ -1,0 +1,106 @@
+<think>
+Voy a intentar resolver la ecuación dada para encontrar las parejas (x, y) de números enteros que satisfagan xy + 4x -13 = x².
+
+Primero, reorganizaré la ecuación para expresar y en términos de x. Esto me permitirá ver cómo varía y con respecto a x y luego buscar posibles valores enteros.
+
+Empezando con la ecuación:
+xy + 4x -13 = x²
+
+Soy consciente de que debo despejar y para poder analizar las posibilidades. Para ello, moveré los términos que no contienen y al otro lado de la ecuación.
+
+Así, restaré 4x y sumaré 13 a ambos lados:
+xy = x² - 4x + 13
+
+Ahora, para despejar y, dividiré ambos lados por x (suponiendo que x no es cero, ya que si x fuera cero, estaríamos dividiendo por cero):
+y = (x² - 4x + 13) / x
+
+Simplify this further:
+y = x - 4 + (13/x)
+
+Ahora, para que y sea un número entero, (13/x) también debe ser un entero. Esto implica que x debe ser un divisor de 13.
+
+Recuerdo los divisores de 13 son: ±1, ±13.
+
+Voy a considerar cada uno de estos valores de x para encontrar el correspondiente y:
+
+1. **x = 1**:
+   y = (1) -4 + (13/1) = 1 -4 +13 = 10
+   Por lo tanto, una pareja es (1, 10).
+
+2. **x = -1**:
+   y = (-1) -4 + (13/(-1)) = -1 -4 -13 = -18
+   Otra pareja es (-1, -18).
+
+3. **x = 13**:
+   y = (169) -4*13 +13/13 = 169 -52 +1 = 118
+   Pero rehazamos la división directamente:
+   y = 13 -4 +1 = 10
+   Pareja: (13, 10).
+
+4. **x = -13**:
+   y = (-169) -4*(-13) +13/(-13) = -169 +52 -1 = -118
+   Otra pareja: (-13, -118).
+
+Ahora, verifico si hay más posibles valores de x. 13 es un número primo, por lo que sus únicos divisores son ±1 y ±13. Por lo tanto, no hay más valores enteros de x que hagan (13/x) entero.
+
+Finalmente, he encontrado cuatro parejas enteras (x, y):
+(1, 10), (-1, -18), (13, 10), (-13, -118).
+
+Sin embargo, reviso si hay posibilidad de que x sea cero. Si x=0, la ecuación original se convierte en:
+0*y +0 -13 = 0 → -13=0, lo cual es imposible. Por lo tanto, x no puede ser cero.
+
+Así que, las soluciones son las cuatro parejas mencionadas.
+</think>
+
+Raonament: 
+
+Per resoldre l'equació xy + 4x - 13 = x² i trobar les parells (x, y) de nombres enters que en satisfan, procedim com següent:
+
+1. **Reorganitzar l'equació**: 
+   Empezamos reescribiendo la ecuación per despejar y:
+   \[
+   xy + 4x - 13 = x² \\
+   xy = x² - 4x + 13
+   \]
+   
+2. **Expressar y en funció de x**:
+   Dividim ambos costats per x (a condició que x ≠ 0):
+   \[
+   y = \frac{x² - 4x + 13}{x} \\
+   y = x - 4 + \frac{13}{x}
+   \]
+   
+3. **Determinar els valors enteros de x**:
+   Perquè y siga un nombre entero, (13/x) també ha de ser un enter. Això implica que x ha de ser un divisor de 13.
+   
+   Els divisors de 13 són: ±1 i ±13.
+
+4. **Calcular y per a cadascun dels valors de x**:
+   - **x = 1**: 
+     \[
+     y = 1 - 4 + \frac{13}{1} = 10 \\
+     Parella: (1, 10)
+     \]
+     
+   - **x = -1**: 
+     \[
+     y = -1 - 4 + \frac{13}{-1} = -18 \\
+     Parella: (-1, -18)
+     \]
+   
+   - **x = 13**: 
+     \[
+     y = 13 - 4 + \frac{13}{13} = 10 \\
+     Parella: (13, 10)
+     \]
+   
+   - **x = -13**: 
+     \[
+     y = -13 - 4 + \frac{13}{-13} = -118 \\
+     Parella: (-13, -118)
+     \]
+
+5. **Conclusió**:
+   Han sositúades quatro parells enteres (x, y) que satisfan l'equació.
+
+Resposta: E) 4

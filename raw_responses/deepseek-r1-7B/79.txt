@@ -1,0 +1,31 @@
+<think>
+Primero, entiendo que el problema consiste en determinar cuántos ceros tiene 100! después del último dígito no nulo. Sé que los ceros se generan al final de un número debido a la multiplicación de 2 y 5, ya que 2×5=10, y cada vez que ocurre esto, aparece un cero adicional.
+
+Para calcular el número de ceros en 100!, necesito contar cuántas veces se pueden formar pares de números 2 y 5 en los factores de 100!. Sin embargo, generalmente hay más factores de 2 que de 5, por lo que el número de ceros será determinado por el número de veces que aparece el factor 5.
+
+Para contar los factores de 5 en 100!, divido 100 entre 5 y luego tomo la parte entera del cociente. Esto me da:
+100 ÷ 5 = 20
+Luego, como también hay números que son múltiplos de 25 (que aportan dos factores de 5), divido 100 entre 25:
+100 ÷ 25 = 4
+Y sumo estos resultados: 20 + 4 = 24.
+
+Por lo tanto, hay 24 ceros al final de 100! después del último dígito no nulo.
+</think>
+
+**Raonament:**  
+Per determinar el nombre de zeros que hi ha després de la darrera xifra diferent de zero en 100!, hem de comptar quantes vegades apareix el factor 5 en els factors de 100!. Aquest és el passo a passo:
+
+1. **Dividir 100 per 5:**  
+   \( \frac{100}{5} = 20 \)  
+   Aquesta suma dóna el nombre inicial de vegades que apareix 5.
+
+2. **Considerar els múltiples de 25 (des que cada 25 conté dos factors de 5):**  
+   \( \frac{100}{25} = 4 \)  
+   Aquesta suma dóna el nombre adicional de vegades que apareix 5.
+
+3. **Sumar els resultats:**  
+   \( 20 + 4 = 24 \)
+
+Aleshores, hi ha **24 zeros** després de la darrera xifra diferent de zero en 100!.
+
+**Resposta:** D) 24

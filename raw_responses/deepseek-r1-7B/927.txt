@@ -1,0 +1,129 @@
+<think>
+Okay, let's try to solve this problem step by step. The equation given is a²ˣ – b²ˣ – 2(ab)ˣ = 0. Hmm, that looks a bit complicated, but maybe I can find a substitution or some way to simplify it.
+
+First, I notice that each term has an exponent of x. Maybe if I let y = (a/b)^x, since both a and b are greater than 1. Let me see how that helps. 
+
+Wait, actually, looking closer: a²ˣ is the same as (a²)^x, right? And similarly, b²ˣ is (b²)^x. Also, the middle term is 2(ab)^x. Maybe I can express all terms with base ab or something related.
+
+Let me rewrite each term:
+
+- a²ˣ = (a^2)^x
+- b²ˣ = (b^2)^x
+- 2(ab)^x
+
+Hmm, but if I factor something out or find a common substitution... Let's see. Maybe let t = (ab)^x. Then, how do the other terms relate to that?
+
+Wait, since a and b are positive numbers greater than 1, perhaps I can express a^x in terms of ab^x or vice versa. Alternatively, maybe taking logarithms would help later on.
+
+Alternatively, noticing that a² = (a)^2 and b² = (b)^2, so maybe express everything in terms of (a/b). Let me try setting k = a/b. Then, since a > b, k is greater than 1 because both are greater than 1.
+
+So if I let t = (a/b)^x, which would be k^x. But wait, another way: If I set u = (a/b)^x, then:
+
+But perhaps a better substitution is to consider y = (ab)^x. Let me see:
+
+Wait, the terms are a²ˣ, b²ˣ, and 2(ab)^x.
+
+Let me think about expressing all of them in terms of (ab). 
+
+So, a^2 x can be written as (a^2)^x, which is ((a)(a))^x = (a^x)^2. Similarly for b: b²ˣ = (b^x)^2.
+
+Also, 2(ab)^x is just 2 times (ab)^x.
+
+So the equation becomes:
+
+(a^x)^2 - (b^x)^2 - 2(ab)^x = 0
+
+Hmm, that's interesting. Let me denote t = a^x and s = b^x. Then, since ab is a*b, we have (ab)^x = (a^x)(b^x) = t*s.
+
+So substituting into the equation:
+
+t² - s² - 2ts = 0
+
+This simplifies to t² - s² - 2ts = 0. Let me rearrange terms:
+
+t² - 2ts - s² = 0
+
+Hmm, this is a quadratic in t or s? Maybe let's treat it as a quadratic equation in t.
+
+So, we can write it as t² - (2s)t - s² = 0.
+
+Using the quadratic formula to solve for t:
+
+t = [2s ± sqrt((2s)^2 + 4s²)] / 2
+
+Calculating discriminant: (2s)^2 + 4s² = 4s² + 4s² = 8s².
+
+So, sqrt(8s²) = s*sqrt(8) = 2s*sqrt(2).
+
+Thus,
+
+t = [2s ± 2s√2] / 2 = s (1 ± √2)
+
+Since t and s are both positive (as a, b >1 and x is real), we need to see which sign makes sense.
+
+If I take the positive sign:
+
+t = s(1 + √2) → Since t = a^x and s = b^x, this would mean:
+
+a^x = (1 + √2) * b^x
+
+Divide both sides by b^x:
+
+(a/b)^x = 1 + √2
+
+Which is positive, so that's valid.
+
+Alternatively, the negative sign gives t = s(1 - √2). But since 1 - √2 is approximately 1 - 1.414 ≈ -0.414, which is negative. Since a^x and b^x are positive, this would mean t is negative, which can't be true. So we discard the negative sign.
+
+So, only (a/b)^x = 1 + √2 is valid.
+
+Now, take natural logarithm on both sides:
+
+ln((a/b)^x) = ln(1 + √2)
+
+Using log power rule: x * ln(a/b) = ln(1 + √2)
+
+Therefore,
+
+x = ln(1 + √2) / ln(a/b)
+
+Wait, let me check the options given. The options are:
+
+A) 1 / (ln(a/b))
+
+B) √2 / (ln(a/b))
+
+C) ln(a/b)
+
+D) (ln(√2 + 1)) / (ln(a/b))
+
+E) (ln(√2 - 1)) / ln(ab)
+
+So, I got x = ln(√2 +1)/ln(a/b), which is option D.
+
+Wait, but let me double-check because sometimes substitutions can have errors. Let me go through the steps again quickly:
+
+Original equation: a²ˣ – b²ˣ – 2(ab)ˣ =0
+
+Let t= a^x, s=b^x, so equation becomes t² - s² -2ts=0 → (t - s)^2 - 4ts=0? Wait no, that's not the right way. Alternatively, it's t² - s² -2ts=0.
+
+Which is t² -2ts -s² =0
+
+Treating as quadratic in t: t² - 2s t -s² =0
+
+Solutions:
+
+t=(2s ± sqrt(4s² +4s²))/2= [2s ± sqrt(8s²)]/2 = s*(1±√2)
+
+So, yes, positive solution is t=s*(1+√2). Then,
+
+a^x / b^x = (1 + √2) → x ln(a/b)=ln(1+√2), so x=ln(1+√2)/ln(a/b).
+
+Yes, that's correct. So the answer should be D.
+</think>
+
+The given equation can be transformed by substituting variables and recognizing a quadratic form. Solving this leads to x being expressed as ln(√2 + 1) divided by ln(a/b), which corresponds to option D.
+
+Raonament: By letting t = a^x and s = b^x, the original equation simplifies to a quadratic in terms of t and s. Solving this quadratic yields t = s(1 + √2). Taking logarithms then gives x as ln(√2 + 1) / ln(a/b).
+
+Resposta: D) (ln(√2 + 1)) / (ln(a/b))

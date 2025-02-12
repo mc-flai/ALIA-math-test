@@ -1,0 +1,63 @@
+<think>
+Primero, identifico que Cris conduce desde P a Q y Roc desde Q a P, ambos en velocidades constantes. Ambos salen a las 10 de la mañana.
+
+Cris tarda 60 minutos (1 hora) en hacer el viaje completo, mientras que Roc tarda 90 minutos (1.5 horas). Necesito calcular cuándo se encontrarán.
+
+Definiré la distancia entre P y Q como D. La velocidad de Cris será Vc = D / 60, y la de Roc, Vr = D / 90.
+
+Cuando salen al mismo tiempo, sus distancias recorridas hasta el encuentro sumarán D. Si t es el tiempo en minutos que pasan antes de encontrarse:
+
+Vc * t + Vr * t = D
+
+Sustituyendo las velocidades:
+
+(D/60)*t + (D/90)*t = D
+
+Factorizo D y simplifico:
+
+t*(1/60 + 1/90) = 1
+
+Calculo el sumando de fracciones:
+
+MCM de 60 y 90 es 180, por lo que 3/180 + 2/180 = 5/180 = 1/36.
+
+Entonces t*(1/36) = 1 → t = 36 minutos.
+
+Sumando 36 minutos a las 10:00, el encuentro será a las 10:36. Por lo tanto, la respuesta es D.
+</think>
+
+Raonament:
+Cris i Roc surten simultàniament des de P i Q respectivament cap a Q i P. Amb tots dos en velocitats constants, es necessari calcular quan temps passarà fins que els dos s'encuentren.
+
+1. **Velocitats:**
+   - Cris tarda 60 minuts per fer el recorregut complet (P a Q), així que sa velocitat és \( V_C = \frac{D}{60} \) on D és la distància entre P i Q.
+   - Roc tarda 90 minuts per fer el recorregut complet (Q a P), així que sa velocitat és \( V_R = \frac{D}{90} \).
+
+2. **Temps fins al encuentre:**
+  quan surten alhora, ambdós estan recorrendo la mateixa distància pero en sentitud oposta. La suma de les distàncies que han recorregut quan es creuen serà igual a D.
+
+3. **Ecuació:**
+   \[
+   V_C \cdot t + V_R \cdot t = D
+   \]
+   Substituïm les velocitats:
+   \[
+   \left( \frac{D}{60} \right) t + \left( \frac{D}{90} \right) t = D
+   \]
+   Factoritzem D:
+   \[
+   D \left( \frac{t}{60} + \frac{t}{90} \right) = D
+   \]
+   Divideixm per D (suposant D ≠ 0):
+   \[
+   \frac{t}{60} + \frac{t}{90} = 1
+   \]
+   Calculam la suma de fraccions:
+   \[
+   \frac{3t}{180} + \frac{2t}{180} = 1 \Rightarrow \frac{5t}{180} = 1 \Rightarrow t = \frac{180}{5} = 36 \text{ minuts}
+   \]
+
+4. **Hora d'encuentre:**
+   surtan a les 10:00, i en 36 minuts es creuen a les 10:36.
+
+Resposta: D) A les 10.36

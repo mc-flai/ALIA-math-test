@@ -1,0 +1,45 @@
+<think>
+Primero, identifico que el producto actual de las edades de Tor y Tur es 2² · 3³ · 11.
+
+A un año futuro, ambos aumentarán su edad en 1, por lo que el nuevo producto será (Tor+1) × (Tur+1).
+
+Necesito determinar cuál de las opciones no dividirá este nuevo producto. Analizo cada opción:
+
+- **Opción A) 18**: Factoriza en 2·3². Verifico si el producto futuro tendrá estos factores.
+- **Opción B) 5**: Es un primo, reviso si 5 divide al producto futuro.
+- **Opción C) 6**: Factoriza en 2·3. Reviso su presencia.
+- **Opción D) 22**: Se compone de 2·11. Verifico.
+- **Opción E) 37**: Es un primo, reviso si figura en los factores.
+
+Finalmente, concluyo que 5 no es un factor del producto futuro, por lo que la respuesta es B.
+</think>
+
+**Raonament:**
+
+Actualment, el producte de les edats de Tor i Tur és \(2^2 \cdot 3^3 \cdot 11\). A més d'un any, ambdúes tortugues augmentaran l'edat en un any, per tant, el producte es transformarà en:
+
+\[
+(Tor + 1) \times (Tur + 1)
+\]
+
+Per determinar quina de les opcions no serà divisible pel producte futur, analitzem les factors primals de cada opció:
+
+- **A) 18**: \(2 \cdot 3^2\)  
+  - Es possible que el producte futur tinga aquests factors.
+  
+- **B) 5**:  
+  - El 5 no és un factor del producte actual, ni tampoc s'augmentant les edats en un any. Això implica que 5 no dividirà el producte futur.
+
+- **C) 6**: \(2 \cdot 3\)  
+  - Sí que serà divisible per 6, ja que hi ha factors 2 i 3.
+
+- **D) 22**: \(2 \cdot 11\)  
+  - Tampoc es descartaria que no ho siga, depèn dels valors exactes.
+
+- **E) 37**:  
+  - 37 és un nombre primer, i ni Tor ni Tur tenen edat actualment relacionada amb aquest número.
+
+Després d'analitzar, la opció B (5) no serà divisible pel producte futur.
+
+**Resposta:**
+\boxed{B}

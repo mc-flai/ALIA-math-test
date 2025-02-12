@@ -1,0 +1,55 @@
+<think>
+Para resolver este problema, primero identifico que f es una función real definida para todos los números reales. La función se define mediante f(2x + 1) = 4x² + 14x.
+
+Quiero encontrar la suma de las soluciones reales de la ecuación f(x) = 0. Para esto, primero necesito expresar f en términos de su variable independiente, que es x. 
+
+Sustituyo u por 2x + 1 para despejar x: u = 2x + 1 implica x = (u - 1)/2.
+
+Luego reescribo la función en términos de u:
+f(u) = 4*((u - 1)/2)² + 14*((u - 1)/2).
+
+Simplificando, obtengo:
+f(u) = (u² - 2u + 1) + 7u - 7 = u² + 5u - 6.
+
+Establezco la ecuación f(u) = 0:
+u² + 5u - 6 = 0.
+
+Utilizo la fórmula cuadrática para encontrar las raíces:
+u = [-5 ± sqrt(25 + 24)]/2 = [-5 ± 7]/2.
+
+Esto da como soluciones u1 = 1 y u2 = -6. La suma de estas soluciones es 1 + (-6) = -5.
+</think>
+
+Raonament:
+  
+Per determinar la funció \( f \), procedim com següent:
+
+1. **Expressar \( f(2x + 1) = 4x^2 + 14x \):**  
+   Definim \( u = 2x + 1 \). Despejant \( x \), obtenim \( x = \frac{u - 1}{2} \).
+
+2. **Substituir \( x \) en la funció:**  
+   Remplaçant \( x \) a la expressió de la funció, obtemos:  
+   \[
+   f(u) = 4\left(\frac{u - 1}{2}\right)^2 + 14\left(\frac{u - 1}{2}\right)
+   \]  
+   Simplificant, això es converteix en:  
+   \[
+   f(u) = (u^2 - 2u + 1) + 7u - 7 = u^2 + 5u - 6
+   \]
+
+3. **Resoldre \( f(u) = 0 \):**  
+   La ecuació \( u^2 + 5u - 6 = 0 \) té solucions:  
+   \[
+   u = \frac{-5 \pm \sqrt{25 + 24}}{2} = \frac{-5 \pm 7}{2}
+   \]  
+   Les solucions són \( u_1 = 1 \) i \( u_2 = -6 \).
+
+4. **Sumar les solucions:**  
+   La suma de les solucions reals és:  
+   \[
+   1 + (-6) = -5
+   \]
+
+Resposta:
+  
+B) -5

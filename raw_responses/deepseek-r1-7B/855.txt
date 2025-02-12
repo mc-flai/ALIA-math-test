@@ -1,0 +1,46 @@
+<think>
+Primero, identifico los participantes: Ariadna, Berta, Caterina, Diana y Elena. Al comienzo, siguen el orden ABCDE.
+
+La fila avanza hacia las puertas una por una. Cuando se acercan a la primera puerta:
+
+1. La primera atleta de la fila (Ariadna) abre la puerta.
+2. Las demás pasan por ella.
+3. Ariadna toma el último lugar de la fila, quedando orden ABCDE -> BCDEA.
+
+Repetimos este proceso para cada una de las 8 puertas:
+
+Puerta 1: Opened by A → Fila: B C D E A
+Puerta 2: Opened by B → Fila: C D E A B
+Puerta 3: Opened by C → Fila: D E A B C
+Puerta 4: Opened by D → Fila: E A B C D
+Puerta 5: Opened by E → Fila: A B C D E (volvió a su orden inicial)
+Puerta 6: Opened by A
+Puerta 7: Opened by B
+Puerta 8: Opened by C
+
+Después de abrir las ocho puertas, la que abre la última es Caterina.
+</think>
+
+Raonament:
+
+La seqüència d'atletes és Ariadna (A), Berta (B), Caterina (C), Diana (D) i Elena (E). Al començar, són en l'ordre ABCDE.
+
+Quan la fila arriba a una porta:
+1. La primera atleta de la fila obre la porta.
+2. Les altres passen per la porta.
+3. La atleta que va obrat pasa al final de la fila.
+
+Repetim aquest procés per cada una de les 8 portes:
+
+- Porta 1: A obre → Fila: B C D E A
+- Porta 2: B obre → Fila: C D E A B
+- Porta 3: C obre → Fila: D E A B C
+- Porta 4: D obre → Fila: E A B C D
+- Porta 5: E obre → Fila: A B C D E (vuelve a l'ordre inicial)
+- Porta 6: A obre → Fila: B C D E A
+- Porta 7: B obre → Fila: C D E A B
+- Porta 8: C obre → Fila: D E A B C
+
+A la darrera porta, Caterina (C) és qui obre.
+
+Resposta: C) Caterina

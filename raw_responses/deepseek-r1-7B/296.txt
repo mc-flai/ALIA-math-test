@@ -1,0 +1,63 @@
+<think>
+Para determinar la cifra de las unidades del número \( S = 1^2 + 2^2 + 3^2 + \cdots + 2017^2 \), seguimos estos pasos:
+
+1. **Identificar la Fórmula para la Suma de Cuadrados**:
+   La suma de los cuadrados de los primeros \( n \) números naturales se puede calcular utilizando la fórmula:
+   \[
+   S = \frac{n(n + 1)(2n + 1)}{6}
+   \]
+   
+2. **Aplicar la Fórmula**:
+   Dado que \( n = 2017 \), sustituimos este valor en la fórmula:
+   \[
+   S = \frac{2017 \times 2018 \times 4035}{6}
+   \]
+   
+3. **Simplificar los Factores**:
+   Observamos que \( 2018 \) es divisible por \( 2 \), y \( 4035 \) es divisible por \( 5 \). Por lo tanto, el denominador \( 6 \) se puede cancelar con estos factores.
+   
+4. **Calcular el Producto**:
+   Multiplicamos los números restantes para obtener un resultado exacto o identificamos patrones en las unidades.
+
+5. **Analizar las Unidades**:
+   Dado que estamos interesados solo en la cifra de las unidades, nos centramos en cómo los últimos dígitos de cada término afectan al último dígito final de \( S \).
+   
+6. **Considerar el Módulo 10**:
+   Calculamos \( S \) modulo \( 10 \) para determinar la cifra de las unidades sin necesidad de calcular todo el número.
+</think>
+
+Raonament: 
+
+Per trobar la xifra de les unitats del nombre \( S = 1^2 + 2^2 + 3^2 + \cdots + 2017^2 \), utilitzarem la fórmula per la suma de quadrats:
+
+\[
+S = \frac{n(n + 1)(2n + 1)}{6}
+\]
+
+On \( n = 2017 \). Substituim \( n \) en la fórmula:
+
+\[
+S = \frac{2017 \times 2018 \times 4035}{6}
+\]
+
+Notem que \( 2018 \) és divisible per \( 2 \) i \( 4035 \) és divisible per \( 5 \). Això simplifica l'expressió:
+
+\[
+S = \frac{2017 \times (2 \times 1009) \times (5 \times 807)}{6} = 2017 \times 1009 \times 807
+\]
+
+Calculant mòdulo \( 10 \), busquem la xifra de les unitats:
+
+- \( 2017 \mod 10 = 7 \)
+- \( 1009 \mod 10 = 9 \)
+- \( 807 \mod 10 = 7 \)
+
+Multiplicant aquests resultats mòdulo \( 10 \):
+
+\[
+7 \times 9 \times 7 = 441 \mod 10 = 1
+\]
+
+Luego, la xifra de les unitats és **1**.
+
+Resposta: D)

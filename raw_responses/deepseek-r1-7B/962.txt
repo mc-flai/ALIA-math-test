@@ -1,0 +1,33 @@
+<think>
+Para responder correctamente a la pregunta, primero identifiquemos lo que se nos está pidiendo.
+
+La pregunta en cuestión es: "Quantes vegades hem de tirar un dau amb les cares numerades de l'1 al 6 per a estar segurs que algun dels nombres haurà eixit repetit?" Traducido al español, significa: "¿Cuántas veces debemos lanzar un dado con las caras numeradas del 1 al 6 para asegurarnos de que algún número salga repetido?"
+
+Esto es un problema clásico en matemáticas conocido como el Principio del Palomaro o también llamado teorema dels taons en catalán. El principio básico es que si tienes n contenedores y lanzas n+1 objetos, al menos uno de los contenedores debe contener más de un objeto.
+
+En este caso, los "contenedores" son las caras del dado, numeradas del 1 al 6, lo que nos da n = 6. Los "objetos" son las lanzadas del dado. Para asegurarnos de que al menos un número salga repetido, debemos lanzar el dado suficientemente veces para que no haya manera de que todos los resultados sean únicos.
+
+Por lo tanto, si lanzamos el dado 6 veces, es posible que cada número salga exactamente una vez (sin repeticiones). Sin embargo, al lanzar por séptima vez, ya no podemos asegurar que ese séptimo resultado sea un número que aún no haya salido. Por lo contrario, debido a que solo hay 6 posibles resultados, uno de ellos必须 se repita.
+
+Por ejemplo:
+- Lanzamientos del 1 al 6: cada número puede salir una vez.
+- Al lanzar por séptima vez, necesariamente alguno de los números del 1 al 6 ya había salido en las anteriores lanzadas.
+
+Es importante notar que esta es una situación garantizada; es decir, con siete lanzamientos siempre habrá una repetición. Con menos lanzamientos (como seis), no hay garantía de repetición, ya que los números podrían ser todos diferentes.
+
+Conclusión: Necesitamos lanzar el dado 7 veces para asegurarnos de que al menos un número salga repetido.
+</think>
+
+Raonament: 
+
+La pregunta plantea determinar cuántas veces se debe lanzar un dado con caras numeradas del 1 al 6 para asegurar que algún número salga repetido. Para resolver esto, aplicamos el Principio del Palomaro (también conocido como teorema de los taons). Este principio establece que si tienes \( n \) recipientes y lanzas \( n+1 \) objetos, al menos uno de los recipientes contendrá más de un objeto.
+
+En este caso:
+- Los "recipientes" son las caras del dado, numeradas del 1 al 6 (lo que implica \( n = 6 \)).
+- Los "objetos" son los lanzamientos del dado.
+
+Si lanzamos el dado 6 veces, es posible que cada número salga exactamente una vez sin repeticiones. Sin embargo, al lanzar por séptima vez (\( n + 1 = 7 \)), no podemos evitar que algún número se repita, ya que solo hay 6 posibles resultados.
+
+Por lo tanto, necesitamos lanzar el dado **7 veces** para asegurarnos de que al menos un número salga repetido.
+
+Resposta: C)

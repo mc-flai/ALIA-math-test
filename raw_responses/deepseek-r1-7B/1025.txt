@@ -1,0 +1,58 @@
+<think>
+Okay, let's try to figure out who will take the pear. So there are five fruits in the bowl: an apple, banana, pear, orange, and kiwi. Five people—Pol, Bruno, Lluís, Pina, and Eva—are each supposed to take one fruit they like.
+
+First, I'll list out each person's preferences:
+
+- Pol likes apples.
+- Bruno likes apples, pears, oranges, kiwis.
+- Lluís likes bananas, pears, oranges, kiwis.
+- Pina likes apples and bananas.
+- Eva likes apples and pears.
+
+We need to assign each fruit to a person such that everyone gets a fruit they like, and each person gets exactly one. The key is to find out who must take the pear based on these constraints.
+
+Let's start by looking at Pol since he only likes apples. So Pol must take the apple because if anyone else takes it, he won't have any other options. Therefore, Pol will get the apple. That means the apple is taken, so others can't have it anymore.
+
+Next, Pina likes apples and bananas. Since the apple is already taken by Pol, Pina has to take a banana. So Pina gets the banana.
+
+Now, Eva likes apples and pears. The apple is gone, so Eva must take the pear. But wait, let's check if that's possible without conflicting with others' choices. Let me see if someone else might also need the pear.
+
+Bruno likes apples, pears, oranges, kiwis. Since the apple is taken, he can choose from pear, orange, or kiwi.
+
+Lluís likes bananas, pears, oranges, kiwis. But Pina took the banana, so Lluís has pear, orange, or kiwi left.
+
+If Eva takes the pear, then Bruno and Lluís would have to pick from orange and kiwi. Let's see if that works.
+
+So assigning:
+
+- Pol: apple
+- Pina: banana
+- Eva: pear
+
+That leaves Bruno and Lluís with orange and kiwi. Both of them like oranges and kiwis, so either can take those without conflict.
+
+Alternatively, what if Eva doesn't take the pear? Let's consider that scenario. If Eva didn't take the pear, she would have to take an apple, but apples are already taken by Pol. So no, Eva must take the pear because that's the only fruit left she likes.
+
+Wait a minute, let me double-check. After assigning apple to Pol and banana to Pina, the remaining fruits are pear, orange, and kiwi. Now, who else can take these?
+
+Bruno can take any of pear, orange, or kiwi.
+Lluís can take any of pear, orange, or kiwi.
+Eva only likes apples and pears; since apple is gone, Eva must take the pear.
+
+So yes, Eva has to take the pear because she's the only one who specifically needs it. Therefore, Eva takes the pear, leaving Bruno and Lluís to share orange and kiwi. They can each take one of those without any issues.
+
+Wait, but let me make sure there's no other constraint. For example, is there a scenario where another person might have to take the pear instead? Let's think: If Eva didn't take the pear, she wouldn't be able to take anything because her only options are gone. So she must take the pear.
+
+So yes, Eva will get the pear.
+</think>
+
+Raonament: 
+
+1. Pol solo agrada la poma, per tant ha de prendre la poma.
+2. Pina agrada la poma i el plàtan, però com la poma ja va ser agafada per Pol, Pina ha de prendre el plàtan.
+3. Eva agrada la poma i la pera, però com la poma ja no està disponible, Eva ha de prendre la pera.
+4. Bruno i Lluís poden prendre les fruites restants (l'orange i el kiwi) sense cap problem.
+
+Per tant, Eva ha de prendre la pera.
+
+Resposta: E

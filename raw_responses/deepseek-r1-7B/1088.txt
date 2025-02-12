@@ -1,0 +1,47 @@
+<think>
+Primero, identifico que se necesita encontrar dos números primos cuya suma sea 40, ya que el perímetro del rectángulo es igual a la suma de los dos lados multiplicada por 2. Sin embargo, simplificando, cada lado suma 20.
+
+Luego, listo todos los pares de números primos que suman 20:
+- 3 y 17 (3+17=20)
+- 7 y 13 (7+13=20)
+
+Ahora, calculo el área para cada par:
+- Para 3 y 17: 3*17 = 51 m²
+- Para 7 y 13: 7*13 = 91 m²
+
+Comparando los resultados, 91 es mayor que 51. Por lo tanto, la máxima área posible es 91 m².
+</think>
+
+**Raonament:**
+
+Andreu vol envoltar una parcel·la rectangular amb un perímetre de 40 metres, on les longituds dels costats són nombres primers. El perímetre d'una figura rectangular es calcula com la suma de tots els costats, és a dir:
+
+\[
+2 \times (\text{largo} + \text{ancho}) = 40 \, \text{m}
+\]
+
+Dividint les dues parts:
+\[
+\text{largo} + \text{ancho} = 20
+\]
+
+ ara, necessitem dos nombres primers que sumin 20. els pares de nombres primers que cumplen aquesta condició son:
+
+- 3 i 17 (3 + 17 = 20)
+- 7 i 13 (7 + 13 = 20)
+
+ ara, calculem l'àrea per cada pare:
+ 
+1. **Pare 3 i 17:**
+\[
+\text{Àrea} = 3 \times 17 = 51 \, \text{m²}
+\]
+   
+2. **Pare 7 i 13:**
+\[
+\text{Àrea} = 7 \times 13 = 91 \, \text{m²}
+\]
+
+Comparant les dues àrees, la màxima àrea que pot tindre la parcel·la és de **91 m²**.
+
+**Resposta:** C) 91 m²

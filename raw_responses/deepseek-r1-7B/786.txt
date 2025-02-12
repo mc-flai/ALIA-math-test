@@ -1,0 +1,52 @@
+<think>
+Primero, identifico que los años del siglo XXI corresponden a los años desde 2001 hasta 2100.
+
+Luego, necesito calcular la suma de dígitos para cada año y determinar cuántos cumplen con la condición de que dicha suma sea igual a 4.
+
+Para ello, analizo los posibles combinaciones de dígitos en las cuatro posiciones (miles, centenas, decenas y unidades) que suman 4. Por ejemplo:
+
+- Años como 2003 (2+0+0+3=5), pero no cumple.
+- Años como 2011 (2+0+1+1=4), este sí cumple.
+
+Repetiré este proceso para todos los años en el rango especificado, contando cuántos cumplen con la condición.
+
+Finalmente, determinaré cuál de las opciones dadas coincide con el número total de años que cumplen con la suma de dígitos igual a 4.
+</think>
+
+**Raonament:**
+
+El sigle XXI abarca els anys des del 2001 fins al 2100. Volem saber quantos anys d'aquest període tenen una suma de dígits igual a 4.
+
+1. **Any format**: Cada any pot ser representat com un número de four digits: \(ABCD\), on:
+   - \(A = 2\) (pàra el sigle XXI)
+   - \(B, C, D\) poden prendre valors des del 0 fins al 9.
+
+2. **Suma de dígits**: La condició és que \(A + B + C + D = 4\). Substituïnt \(A = 2\), la equació es convierteix en:
+   \[
+   2 + B + C + D = 4 \implies B + C + D = 2
+   \]
+   
+3. **Possibles combinacions**: Busquemos totes les combinacions de \(B, C, D\) on la suma siga 2. Aquestes són:
+   - (0, 0, 2)
+   - (0, 1, 1)
+   - (0, 2, 0)
+   - (1, 0, 1)
+   - (1, 1, 0)
+   - (2, 0, 0)
+
+4. **Anys corresponents**:
+   - **(0, 0, 2)**: Any 2002
+   - **(0, 1, 1)**: Any 2011
+   - **(0, 2, 0)**: Any 2020
+   - **(1, 0, 1)**: Any 2101
+   - **(1, 1, 0)**: Any 2110
+   - **(2, 0, 0)**: Any 2200 (però aquest està fora del sigle XXI, que acaba en 2100)
+
+5. **Conclusió**: Dels anys trobats, només els segents pertanyen al sigle XXI:
+   - 2002
+   - 2011
+   - 2020
+
+**Resposta:**
+
+C) 3

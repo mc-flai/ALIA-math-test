@@ -1,0 +1,53 @@
+<think>
+Primero, identifico los datos proporcionados en el problema:
+
+- El 6 de abril de 2016 es un día importante para la familia Serra. En esa fecha:
+    - El padre cumple 30 años.
+    - La suma de las edades de sus tres hijas es de 15 años.
+
+Necesito determinar en qué año, por primera vez, la suma de las edades de las hijas será mayor que la edad del padre.
+
+Para ello, analizo cómo evolucionan las edades con los años:
+
+- Cada año que pasa, el padre gana un año de edad.
+- Por otro lado, cada hija también gana un año cada año, por lo que en total, las tres juntas ganan 3 años anuales.
+
+Esto significa que la suma de las edades de las hijas aumenta a razón de 3 años por año, mientras que la del padre solo aumenta 1 año por año.
+
+Determino la diferencia actual entre la suma de las hijas y el padre:
+
+- En 2016:
+    - Suma de hijas: 15 años.
+    - Edad del padre: 30 años.
+    - Diferencia: 15 - 30 = -15 años (la suma de las hijas es 15 años menor que el padre).
+
+Calculo cómo esta diferencia cambiará con los años. Cada año, la suma de las hijas aumenta en 3 años y la del padre solo en 1, por lo que la diferencia se reduce en 2 años anuales.
+
+Quiero encontrar el primer año en que esta diferencia pase de negativa a positiva. Es decir, cuando la suma de las hijas sea mayor que la del padre.
+
+Establezco una ecuación para calcular cuántos años después de 2016 necesitarán pasar para que la suma de las hijas supere la edad del padre:
+
+- Sea x el número de años posteriores a 2016.
+- En ese momento:
+    - Suma de hijas = 15 + 3x
+    - Edad del padre = 30 + x
+- Queremos que 15 + 3x > 30 + x
+
+Resuelvo la desigualdad:
+
+15 + 3x > 30 + x  
+3x - x > 30 - 15  
+2x > 15  
+x > 7.5
+
+Como x representa años completos, necesitamos que x sea al menos 8 años después de 2016.
+
+Sumando 8 años a 2016 obtenemos el año 2024.
+
+Por lo tanto, en 2024 será el primer año en que la suma de las edades de las hijas supere la edad del padre.
+</think>
+
+Raonament:  
+El 6 d'abril de 2016, el pare té 30 anys i les seues filles tenen una suma total de 15 anys. Cada any que passa, el pare gana un any més, mentre que cada filla juga un any més, fent que la suma total de les edats de les fills creixi en 3 anys per any. Per tant, la brecha entre la suma de les edats de les filles i l'edat del pare disminueix en 2 anys cada any (3 - 1). Calculant quants anys calen per que aquesta brecha pase de negativa a positiva, es veu que el primer any on la suma total de les filles superarà l'edat del pare serà 2024.
+
+Resposta: D) 2024

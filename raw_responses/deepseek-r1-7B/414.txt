@@ -1,0 +1,15 @@
+<think>
+Voy a intentar resolver este problema paso a paso. Primero, entiendo que tenemos tres rectas paralelas diferentes en un plano y un punto P sobre una de ellas. Quieren saber cuántos triángulos equiláteros existen con un vértice en P y los otros dos en las otras dos rectas.
+
+Empezaré visualizando la situación: tres rectas paralelas, digamos horizontalmente para simplificar. Tomemos una de ellas como la base, donde está situado el punto P. Las otras dos rectas están a ciertas distancias de esta base.
+
+Ahora, para formar un triángulo equilátero con vértices en P y en las demás rectas, necesitamos que los otros dos vértices estén en las respectivas rectas y que las distancias entre ellos sean iguales. Imagino que cada par de rectas puede proporcionar dos posibles puntos para construir el triángulo, uno a cada lado del punto P.
+
+Considero que por cada par de rectas, existen hasta dos soluciones: una a un lado del eje y otra al otro lado, lo que permitiría formar dos triángulos equiláteros diferentes. Por lo tanto, con tres rectas, habría más de dos posibilidades.
+
+Finalmente, concluyo que en casi todos los casos hay al menos dos triángulos equiláteros, y en algunos casos especiales, puede haber más.
+</think>
+
+Raonament: Considerem tres rectes paral·leles r1, r2 i r3, situades a distàncies successives. Un punt P està sobre r1. Per construir un triangle equilàter, necessitam que dos altres punts Q i R es trobin sobre r2 i r3 respectivament, de manera que PQ = PR = QR. A causa de la simetria, per a cada parella de rectes (r1,r2) i (r2,r3), hi poden ser dues solucions: una a cada costat del eix perpendicular a les rectes. Per tant, en total hi ha almenys dues solucions.
+
+Resposta: E) 2 en tot cas.

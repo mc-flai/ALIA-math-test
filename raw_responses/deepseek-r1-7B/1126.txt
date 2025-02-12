@@ -1,0 +1,39 @@
+<think>
+Primero, identifico que necesitamos encontrar el número de números de tres dígitos que contienen al menos uno de los dígitos 1, 2 o 3.
+
+Luego, considero calcular la cantidad total de números de tres dígitos y restar aquellos que no contienen ninguno de estos dígitos. Esto se basa en el principio de inclusión-exclusión.
+
+El rango de los números de tres dígitos es del 100 al 999, lo que da un total de 900 números.
+
+Ahora, calculo cuántos de estos números no tienen ninguno de los dígitos 1, 2 o 3. Para cada posición (centenas, decenas y unidades), determino las opciones disponibles:
+
+- Centenas: No pueden ser 1, 2 o 3, por lo que hay 7 opciones (4,5,6,7,8,9).
+- Decenas: Excluimos 1,2,3, dejando 7 dígitos (0,4,5,6,7,8,9).
+- Unidades: Similar a decenas, también hay 7 opciones.
+
+Multiplicando las opciones posibles: 7 * 7 * 7 = 343 números que no contienen 1,2 o 3.
+
+Finalmente, resto este valor del total de números de tres dígitos para obtener los que sí tienen al menos uno de estos dígitos:
+900 - 343 = 557.
+</think>
+
+**Raonament:**
+
+Per trobar quants nombres de tres xifres contenen com a mínim un dels digits 1, 2 o 3, podem utilitzar el mètode de la contraposita. 
+
+1. **Total d' nombres de tres xifres:**  
+   Els nombres de tres xifres van des de 100 fins a 999, per tant hi ha un total de 900 nombres (999 - 100 + 1).
+
+2. **Nombres que NO contenen cap dels digits 1, 2 o 3:**  
+   - La primera xifra (centena) pots ser qualsevol digit menys 1, 2 o 3. Hi ha 7 opcions: {4,5,6,7,8,9}.  
+   - Les dues xifres restants (dècenes i unitats) pots ser qualsevol digit menys 1, 2 o 3, incluïnt el 0. Hi ha 7 opcions per cada una: {0,4,5,6,7,8,9}.  
+
+   Per tant, el nombre total de nombres que NO contenen cap dels digits 1, 2 o 3 és:  
+   \(7 \times 7 \times 7 = 343\).
+
+3. **Nombres que contenen com a mínim un dels digits 1, 2 o 3:**  
+   Restem els nombres que NO contenen cap dels digits 1, 2 o 3 del total d'nombres de tres xifres:  
+   \(900 - 343 = 557\).
+
+**Resposta:**  
+D) 557

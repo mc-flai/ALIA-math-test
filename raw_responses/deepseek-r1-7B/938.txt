@@ -1,0 +1,21 @@
+<think>
+Primero, para determinar el número de ceros que tiene al final un número, es necesario calcular cuántas veces se puede dividir ese número por 10. Cada vez que el número contiene un factor de 10, que es equivalente a 2 multiplicado por 5, se agrega un cero.
+
+Dado el producto \(2^{12} \cdot 3^{13} \cdot 5^{15} \cdot 7^{17}\), los factores determinantes para la cantidad de ceros son los exponentes de 2 y 5. En este caso, el exponente de 2 es 12 y el de 5 es 15.
+
+Para encontrar la cantidad máxima de veces que se puede formar el factor 10, tomamos el mínimo de los dos exponentes: min(12, 15) = 12. Por lo tanto, el número tiene 12 ceros al final.
+</think>
+
+**Raonament:**
+
+Per determinar en quants zeros acaba un nombre, hem d'encapsellar quantes vegades es pot factoritzar per 10. Cada vegada que hi ha un 10 com a factor, aixs'hi ha un zero a l'extrem final.
+
+Un nombre de la forma \(2^a \cdot 5^b\) pot ser factoritzat en 10s quantes vegades el menor exponent ente \(a\) i \(b\). Això és perquè \(10 = 2 \times 5\).
+
+Dada l'expressió donada:  
+\(2^{12} \cdot 3^{13} \cdot 5^{15} \cdot 7^{17}\),  
+
+els exponents de 2 i 5 són respectivament 12 i 15. Per tant, el nombre d'zeros a l'extrem final està donat per el menor d'aquests dos valors:  
+\(\min(12, 15) = 12\).
+
+**Resposta:** A) 12

@@ -1,0 +1,88 @@
+<think>
+Primero, leemos el problema detenidamente. Tienes 60 pomares y 60 peras que quieres colocar en cajas con las siguientes condiciones:
+
+1. **Cada caja debe tener la misma cantidad de pomares**.
+2. **No dos cajas pueden tener la misma cantidad de peras**.
+
+Necesitamos encontrar el número máximo de cajas que cumplen estas condiciones.
+
+### PASO 1: Determinar los posibles números de pomares por caja
+
+Como hay 60 pomares en total y queremos distribuirlos uniformemente en las cajas, el número de pomares por caja (p) debe ser un divisor de 60. Los divisores de 60 son:
+
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+- 10
+- 12
+- 15
+- 20
+- 30
+- 60
+
+Estos son los posibles números de pomares que pueden colocarse en cada caja.
+
+### PASO 2: Determinar las posibles distribuciones de peras
+
+Ahora, consideremos las peras. Hay 60 peras y queremos que la cantidad de peras en cada caja sea única. Además, el número de peras por caja (k) debe ser un entero positivo.
+
+Si hay **m** cajas, necesitamos que los números de peras sean **m números enteros positivos y todos diferentes**.
+
+La suma mínima de estos números es la suma de los primeros m números naturales:
+
+\[
+\text{Suma mínima} = 1 + 2 + 3 + \dots + m = \frac{m(m + 1)}{2}
+\]
+
+Esta suma no debe exceder el total de peras, que es 60. Por lo tanto:
+
+\[
+\frac{m(m + 1)}{2} \leq 60
+\]
+
+### PASO 3: Resolver la desigualdad para encontrar m
+
+Multiplicamos ambos lados por 2 para eliminar el denominador:
+
+\[
+m(m + 1) \leq 120
+\]
+
+Ahora, resolvemos la ecuación cuadrática:
+
+\[
+m^2 + m - 120 = 0
+\]
+
+Utilizamos la fórmula cuadrática para encontrar las raíces:
+
+\[
+m = \frac{-1 \pm \sqrt{1 + 480}}{2} = \frac{-1 \pm \sqrt{481}}{2}
+\]
+
+Calculando la raíz cuadrada de 481, aproximadamente 21.93.
+
+Entonces:
+
+\[
+m = \frac{-1 + 21.93}{2} \approx 10.46
+\]
+
+Since m debe ser un entero positivo, el máximo posible es **10**.
+
+### PASO 4: Verificar con los divisores de pomares
+
+Recall que el número de cajas también debe ser compatible con la distribución de pomares, es decir, el número de cajas (m) debe dividir 60.
+
+De los posibles valores de m (1, 2, 3, ..., 10), el **mayor divisor de 60 menor o igual a 10 es 10**.
+
+Por lo tanto, el máximo número de cajas es 10.
+</think>
+
+Raonament:  
+Per distribuir 60 pomes i 60 peres en caixes amb les condicions donades, hem d'assignar un mateix nombre de pomes a cada caja i diferents quantitats de peres. El mèxim nombre de caixes es limitat per la distribució de peres, ja que han de ser totes distinctes. La suma màxima possible de peres sense repetir es 1+2+3+…+m ≤ 60. Resolvendo aquesta equació, majeu m=10. A més, 10 és un divisor de 60 (pomes), per tant no hi ha problema.
+
+Resposta: D) 10

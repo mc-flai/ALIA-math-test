@@ -1,0 +1,69 @@
+<think>
+Primero, necesito organizar la información proporcionada. Hay cuatro puntos en una línea recta: A, B, C y D. Las distancias entre ellos son:
+
+- Entre A y B: 1 cm.
+- Entre B y C: 2 cm.
+- Entre C y D: 3 cm.
+- Entre D y A: 4 cm.
+
+Quiero determinar cuáles de los cuatro puntos son los extremos, es decir, las puntas más alejadas en la línea recta. Los extremos serán el punto más a la izquierda y el más a la derecha.
+
+Para visualizar esto, intentaré colocar los puntos en una recta numérica. Supongamos que A está en posición 0. Entonces:
+
+- B está a 1 cm de A, así que B está en 1.
+- C está a 2 cm de B, lo que sitúa a C en 3 (ya que 1 + 2 = 3).
+- D está a 3 cm de C, lo que lo coloca en 6 (3 + 3 = 6).
+
+Ahora, también sabemos que la distancia entre D y A es 4 cm. Si D está en 6 y A en 0, la distancia entre ellos es 6 cm, no 4 cm como se menciona. Esto contradice los datos proporcionados.
+
+Para resolver esta discrepancia, quizás el orden de los puntos no es A-B-C-D. Podría ser diferente. Intentemos otro orden:
+
+Supongamos que el orden es B-A-C-D.
+
+- B está en 0.
+- A está a 1 cm de B, así que A está en -1 (ya que la distancia entre B y A es 1 cm).
+- C está a 2 cm de B. Si B está en 0, C está en 2.
+- D está a 3 cm de C, lo que sitúa a D en 5.
+
+Ahora, la distancia entre D (-1) y A (en -1) es |D - A| = |-1 - 5| = 6 cm, no 4 cm. De nuevo hay una contradicción.
+
+Intentemos otro orden: C-B-A-D.
+
+- C está en 0.
+- B está a 2 cm de C, así que B está en -2.
+- A está a 1 cm de B, lo que coloca a A en -3 (distancia entre B y A es |A - B| = |-3 - (-2)| = 1 cm).
+- D está a 3 cm de A, así que D está en 0.
+
+Ahora, la distancia entre D (0) y C (también 0) es cero, lo cual no cumple con los 4 cm requeridos. 
+
+Intentemos otro orden: D-C-B-A.
+
+- D está en 0.
+- C está a 3 cm de D, así que C está en -3.
+- B está a 2 cm de C, lo que coloca a B en -5 (distancia |B - C| = |-5 - (-3)| = 2 cm).
+- A está a 1 cm de B, por lo que A está en -6.
+
+La distancia entre D (0) y A (-6) es 6 cm, no 4 cm. 
+
+Finalmente, probemos el orden A-B-D-C.
+
+- A está en 0.
+- B está a 1 cm de A, así que B está en 1.
+- D está a 4 cm de A (distancia entre D y A), por lo que D podría estar en 4 o -4. Pero ya hay un punto C que separa B y D con 2 cm, así que probemos D en 5.
+
+La distancia entre B (1) y D (5) es 4 cm, pero se dice que la distancia entre C y D es 3 cm. Necesitamos insertar C de manera que B-C sea 2 cm. Si B está en 1 y C está a 2 cm de B, podría estar en 3 o -1.
+
+Si C está en 3:
+
+- Distancia entre C (3) y D (5) es 2 cm, pero se necesita 3 cm. No funciona.
+
+Si C está en -1:
+
+- Distancia entre C (-1) y D (4) es 5 cm, lo cual tampoco cumple con la necesidad de 3 cm.
+
+Parece que ningún orden satisface todas las distancias dadas simultáneamente. Por lo tanto, es imposible determinar los extremos ya que no se pueden colocar los puntos sin violar alguna de las distancias especificadas.
+</think>
+
+Raonament: Al intentar organizar los puntos en una recta numérica con las distancias dadas, resulta imposible encontrar un orden que cumpla simultáneamente todas las condiciones de distancia. Cada intento para colocar los puntos de manera coherente termina contradiciendo al menos una de las distancias especificadas (es decir, la distancia entre D y A siempre resulta ser 6 cm en lugar de 4 cm). Por lo tanto, no es posible determinar cuáles son los dos extremos sin violar las distancias dadas.
+
+Resposta: E) És impossible saber-ho.

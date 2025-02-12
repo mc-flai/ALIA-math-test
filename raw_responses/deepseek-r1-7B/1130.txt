@@ -1,0 +1,73 @@
+<think>
+Bueno, tengo que resolver este problema donde Guillem y Iolanda resuelven ecuaciones cuadráticas con coeficientes enteros diferentes y no nulos. Además, sus ecuaciones tienen una raíz en común. Debo determinar qué afirmación siempre es correcta entre las opciones A) a E).
+
+Primero, entiendo que Guillem tiene la ecuación ax² + bx + c = 0 y Iolanda tiene bx² + ax + c = 0. Los coeficientes a, b, c son enteros diferentes y no nulos.
+
+Supongamos que k es la raíz común de ambas ecuaciones. Entonces:
+
+1. Para Guillem: ak² + bk + c = 0
+2. Para Iolanda: bk² + ak + c = 0
+
+Esto me da dos ecuaciones con las cuales puedo operar.
+
+Si restamos las dos ecuaciones, obtengo:
+(ak² + bk + c) - (bk² + ak + c) = 0
+=> a k² - b k² + b k - a k = 0
+Factorizo:
+k²(a - b) + k(b - a) = 0
+Puedo factorizar más:
+(k² - k)(a - b) = 0
+
+Ahora, hay dos posibilidades: 
+- (a - b) = 0 o
+- k² - k = 0.
+
+Pero sabemos que a ≠ b, ya que son coeficientes diferentes. Por lo tanto, no puede ser a - b = 0. Así que la otra opción es:
+k² - k = 0 => k(k - 1) = 0
+Entonces k=0 o k=1.
+
+Ahora veo que las posibles soluciones comunes son 0 o 1.
+
+Reviso las opciones:
+
+A) La solución en común ha de ser 0. 
+Pero k también podría ser 1, así que no es siempre cero.
+
+B) La ecuación ax² + bx + c = 0 tiene exactamente una solución real.
+No necesariamente; depende del discriminante. Si la raíz k=0 o k=1, pero no sé si hay más soluciones.
+
+C) a > 0 
+No tengo información sobre los signos de a, b, c. Son solo enteros diferentes y no nulos.
+
+D) b < 0
+Igualmente, no hay info suficiente.
+
+E) a + b + c = 0
+Si k=0 es raíz de la ecuación ax² + bx +c=0, entonces a*0 + b*0 + c = c=0. Pero c no es nulo, por lo que k no puede ser 0. Por lo tanto, k=1.
+
+Sustituyo k=1 en la ecuación de Guillem:
+a(1)^2 + b(1) + c = a + b + c = 0
+Así, a + b + c = 0 es siempre cierto si k=1 es raíz. 
+
+Por lo tanto, la afirmación correcta es E.
+</think>
+
+Raonament: 
+Supongamos que k es una raíz común. Entonces, de las ecuaciones de Guillem y Iolanda obtenemos:
+
+ak² + bk + c = 0  
+bk² + ak + c = 0  
+
+Restando ambas ecuaciones:
+(a - b)k² + (b - a)k = 0  
+Factorizamos: (a - b)(k² - k) = 0  
+
+Dado que a ≠ b, se tiene k(k - 1) = 0 ⇒ k=0 o k=1. 
+
+Si k=0:
+Ecuación de Guillem: c=0 → Contradictorio, pues c≠0.
+
+Si k=1:
+a + b + c = 0 → Afirmación E es siempre cierta.
+
+Resposta: E)

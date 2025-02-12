@@ -1,0 +1,38 @@
+<think>
+El problema pide determinar cuántos números enteros de dos cifras, es decir en el interval [10, 99], son múltiplos de 3 y el valor absoluto de la diferencia entre sus cifras es 3. 
+
+Para resolver esto, seguimos los siguientes pasos:
+
+1. **Identificar todos los números de dos cifras que son múltiplos de 3:** Los números de dos cifras van desde 10 hasta 99. Un número es múltiplo de 3 si la suma de sus dígitos es divisible por 3.
+
+2. **Considerar la condición de la diferencia absoluta de las cifras igual a 3:** Para cada número que cumpla con ser múltiplo de 3, verificamos si la diferencia entre la primera y la segunda cifra es exactamente 3.
+
+3. **Revisar números específicos:** Analizamos números como 12 (diferencia 1), 21 (diferencia 9), 30 (diferencia 3), etc., verificando cuáles cumplen ambas condiciones.
+
+4. **Contabilizar los números que cumplen con las dos condiciones:** Tras revisar cada número, determinamos cuántos de ellos cumplen ser múltiplos de 3 y tener una diferencia absoluta de 3 entre sus cifras.
+</think>
+
+Raonament:
+
+Per resoldre el problema, hem de trobar tots els nombres enters de dues xifres (desde 10 fins 99) que són múltiples de 3 i per què la diferència absoluta entre les seues xifres és 3.
+
+1. **Criteri 1: Múltiples de 3**  
+   Un nombre és múltiple de 3 si la suma de les seves xifres és divisible per 3. Per exemple:
+   - 12: 1 + 2 = 3, que és divisible per 3.
+   - 21: 2 + 1 = 3, que és divisible per 3.
+
+2. **Criteri 2: Diferència absoluta de les xifres**  
+   La diferència absoluta entre les dues xifres del nombre ha de ser 3. Per exemple:
+   - 12: |1 - 2| = 1 (no cumpleix).
+   - 21: |2 - 1| = 1 (no cumpleix).
+
+3. **Candidats finals**  
+   Després d'analitzar tots els nombres, hem identificat que els següents nombres complen amb els dos criteris:
+   - 30: |3 - 0| = 3 i 3 + 0 = 3 (divisible per 3).
+   - 63: |6 - 3| = 3 i 6 + 3 = 9 (divisible per 3).
+
+En total, hi ha **2** nombres que complen amb les condicions.
+
+Resposta:
+
+\boxed{A}

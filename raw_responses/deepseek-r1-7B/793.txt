@@ -1,0 +1,205 @@
+<think>
+Okay, so I have this problem where I need to use the digits 4, 5, 6, and 7 without repeating any of them to create two numbers. The goal is to make their product as large as possible. Hmm, let me think about how to approach this.
+
+First off, I know that to maximize the product of two numbers, both numbers should be as close in value as possible. That's because when you multiply two numbers with a fixed sum, their product is maximized when they're equal or as close as possible. So, in this case, since we're using digits 4,5,6,7, the total of these digits is 22 (4+5+6+7). But wait, no, actually, that's if we were making a sum, but here it's about forming two numbers. Let me clarify.
+
+I need to split the four digits into two numbers. Each digit must be used exactly once, so each number will have two digits. Wait, hold on, because 4 digits can make two two-digit numbers or one three-digit and another single-digit? No, wait, no, the problem says "construïm dos nombres," which is Spanish for "construct two numbers." So, probably using all four digits without repetition. But it doesn't specify whether they have to be two-digit numbers or if they can be more. Hmm.
+
+Wait, looking back at the options given: A) 4524 B) 4578 C) 4810 D) 4800 E) Another answer. All these are four-digit numbers, which suggests that perhaps we're supposed to create two two-digit numbers and then multiply them together, but in the options, they show a single four-digit number as the product. Wait, no, actually, no—the question says "el producte més gran possible," so the product should be the largest possible value.
+
+Wait, maybe I'm misunderstanding. Let me re-read the question: "Utilitzant únicament les xifres 4,5,6 i7 (sense repetir-ne cap) construïm dos nombres amb el producte més gran possible." So, using only the digits 4,5,6,7 without repeating any to construct two numbers with the largest possible product. So, we have four digits, each used once, forming two numbers. Each number can be one or two digits? Or do they both have to be two-digit numbers?
+
+Wait, let me think again. Since there are four digits, if I make two two-digit numbers, that uses all four digits. Alternatively, I could make a three-digit and a single-digit number, but that might not yield the largest product.
+
+But looking at the options provided: A) 4524 B) 4578 C) 4810 D) 4800 E) Another answer. These are all four-digit numbers. Wait, no, actually, these are likely showing the product, but that's not possible because products would be larger than four digits. For example, multiplying two two-digit numbers gives a maximum of three digits (99*99=9801), which is four digits if you include thousands. So maybe in this case, the product could be up to around 76*75=5700 or something like that.
+
+Wait, but looking at option D) 4800 and C) 4810. These are plausible products. Let me check what combinations can give these products.
+
+But perhaps I should approach this systematically.
+
+Firstly, the digits available are 4,5,6,7.
+
+I need to form two numbers using each digit exactly once, and then compute their product, aiming for the maximum.
+
+The key is to distribute the digits in such a way that both numbers are as large as possible, but also considering that higher digits in the tens place contribute more than those in the ones place. So, probably, we should aim to make the two numbers as balanced as possible because their product will be larger when they're closer in value.
+
+So, let's consider all possible two-digit combinations and calculate their products.
+
+But first, since there are four digits, making two two-digit numbers is necessary.
+
+Possible options for arranging the digits:
+
+We have to choose which digits go into each number. Let me list out the possibilities.
+
+Option 1: Assign the highest digits to the tens place of both numbers.
+
+So, assign 7 and 6 as the tens digits, then assign 5 and 4 as the ones digits.
+
+Numbers would be 75 and 64.
+
+Product is 75 * 64. Let me calculate that: 70*60=4200, 70*4=280, 5*60=300, 5*4=20; adding up 4200+280=4480, +300=4780, +20=4800. So product is 4800.
+
+Option 2: Assign 7 and 6 as the tens digits but swap the ones digits.
+
+Wait, no, in option1 we used 5 and 4 in the ones place for 75 and 64.
+
+Another possibility: making one number larger by giving it a higher digit. Let's try:
+
+Option 2: Assign 76 and 54.
+
+Product is 76*54. Calculating that: 70*50=3500, 70*4=280, 6*50=300, 6*4=24; total is 3500+280=3780 +300=4080 +24=4104. That's lower than 4800.
+
+Option3: Assign 74 and 65.
+
+Product: 74*65. Let me compute: 70*60=4200, 70*5=350, 4*60=240, 4*5=20; total is 4200+350=4550 +240=4790 +20=4810. So that's higher than 4800.
+
+Wait, so this product is 4810, which is option C.
+
+But wait, let me verify: 74 * 65.
+
+Let me do it step by step:
+
+First, multiply 74*60=4440.
+
+Then 74*5=370.
+
+Adding them together gives 4440+370=4810. Yes, correct.
+
+So that's higher than the previous one.
+
+Another option: Assigning the digits as 75 and 64 gave 4800.
+
+Assigning 74 and 65 gives 4810, which is better.
+
+Is there a way to get even a larger product?
+
+Let me see other combinations:
+
+What about numbers like 75 and 64: we already did that (4800).
+
+Another combination: 76 and 54: 4104 as above.
+
+What about 73... wait, no, digits are only 4,5,6,7. So I can't have 73 because we don't have a digit 3.
+
+Wait, let's try another approach: perhaps making one number as large as possible and the other as small as possible? But that would not maximize the product.
+
+But to check, for instance:
+
+Assigning 76 and 54 gives lower product (as above). So that seems worse.
+
+What about assigning 75 and 46?
+
+Calculating 75*46: 70*40=2800, 70*6=420, 5*40=200, 5*6=30; total is 2800+420=3220 +200=3420 +30=3450. That's way lower.
+
+Alternatively, assigning 74 and 56: 74*56=?
+
+Calculate: 70*50=3500, 70*6=420, 4*50=200, 4*6=24. Total is 3500+420=3920 +200=4120 +24=4144.
+
+Still lower than 4810.
+
+Wait, another idea: What if we make the numbers with digits arranged differently? Like, perhaps not starting with highest in both tens places. Maybe putting a slightly lower digit in one number's tens place to balance the overall product.
+
+But wait, I think that in terms of maximizing the product of two numbers given fixed digits, it's best when the numbers are as close as possible.
+
+In this case, 74 and 65 sum up to 139, while 75 and 64 sum up to 139 as well. So both pairs have same sum.
+
+But in reality, since 74*65=4810 vs 75*64=4800, the pair that is closer together gives a slightly higher product, which seems counterintuitive because 74 and 65 are not equally close? Wait:
+
+Wait no, 75-64=11.
+
+And 74-65=9. So actually, they're both within the same ballpark.
+
+But the exact calculation shows that 74*65 is better.
+
+So perhaps, in this case, arranging the digits such that one number gets a slightly lower digit but overall the pair is more balanced gives a better product.
+
+Alternatively, let me see all possible two-digit numbers we can make from these four digits:
+
+Possible two-digit numbers are: 45, 46, 47, 54, 56, 57, 64, 65, 67, 74, 75, 76.
+
+Now, we need to choose two of them without overlapping digits.
+
+So let me list all possible pairs:
+
+1. (75, 64) Product=4800
+2. (74, 65)=4810
+3. (76,54)=4104
+4. (75,64)=same as first
+5. (74,56)=4144
+6. (75,46)=?
+
+Wait, no, we cannot have 46 because that would require using digit 4 and 6, but in the other number we have to use remaining digits, which are 5 and 7.
+
+Wait, perhaps a better approach is:
+
+List all unique pairs where each pair uses all four digits without repetition.
+
+So possible pairs:
+
+- (75,64), sum=139
+- (74,65)=sum=139
+- (76,54)=sum=130
+- (75,46)=sum=121? Wait no, because 75 uses 7 and5, then remaining digits are 4 and6, so the other number is 46 or 64.
+
+Wait, perhaps I'm confusing myself.
+
+Alternatively, let me think of all possible two-digit numbers from the four digits:
+
+Digits:4,5,6,7
+
+Possible two-digit numbers using these digits without repetition:
+
+45,46,47,54,56,57,64,65,67,74,75,76.
+
+Now, we need to pick two such numbers that together use all four digits once each. So the pairs are combinations where their digits don't overlap.
+
+So let's list them:
+
+1. 45 and 76: sum=45+76=121
+   Product: 45*76=3420
+
+2. 46 and75: sum=46+75=121
+   Product=46*75=3450
+
+3. 47 and56: sum=47+56=103
+   Product=47*56=2632
+
+4. 54 and76: sum=54+76=130
+   Product=54*76=4104
+
+5. 56 and74:sum=56+74=130
+   Product=56*74=4144
+
+6. 57 and46: sum=57+46=103
+   Product=57*46=2622
+
+7. 64 and75:sum=64+75=139
+   Product=64*75=4800
+
+8. 65 and74:sum=65+74=139
+   Product=65*74=4810
+
+9. 67 and54:sum=67+54=121
+   Product=67*54=3618
+
+So, from these pairs, the highest product is either pair 7 or 8: (64,75)=4800 and (65,74)=4810.
+
+Thus, the maximum product possible is 4810.
+
+Therefore, arranging the digits to form 65 and 74 gives a higher product than forming 75 and 64.
+
+Hence, the answer is \boxed{4810}.
+</think>
+
+To determine the maximum product of two two-digit numbers formed from the digits 4, 5, 6, and 7 without repetition, we need to consider all possible pairs of two-digit numbers that use each digit exactly once. 
+
+We start by listing all possible two-digit numbers that can be formed using these digits: 45, 46, 47, 54, 56, 57, 64, 65, 67, 74, 75, and 76. 
+
+Next, we need to find pairs of these numbers that use all four digits without repetition and calculate their products:
+
+1. **Pair (75, 64)**: Product = \(75 \times 64 = 4800\)
+2. **Pair (74, 65)**: Product = \(74 \times 65 = 4810\)
+
+After evaluating all possible pairs, we find that the pair (74, 65) yields the highest product of 4810.
+
+Thus, the maximum product is \(\boxed{4810}\).

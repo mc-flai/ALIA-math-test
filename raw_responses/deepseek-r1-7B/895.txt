@@ -1,0 +1,70 @@
+<think>
+Vamos abordar este problema paso a paso. Primero, debemos entender lo que se nos está pidiendo.
+
+El enunciado es: "¿Cuál es el número máximo posible de los signos '+' que pueden aparecer en la expresión 1 + 2 + 3 + 4 + ... +64 +65 + 66 que podemos cambiar por signos '-' para que el resultado de la nueva expresión sea 2020?"
+
+Opciones: A) 1, B) 2, C) 10, D) 11, E) No es posible conseguir lo que pide el enunciado.
+
+Primero, calculamos la suma total original de los números del 1 al 66. La fórmula para la suma de los primeros n números naturales es n(n + 1)/2. En este caso:
+
+Suma_total = 66 * 67 / 2 = (66*67)/2
+
+Calculamos 66*67:
+- 60*67 = 4020
+- 6*67 = 402
+Total: 4020 + 402 = 4422
+
+Ahora, Suma_total = 4422 / 2 = 2211.
+
+El objetivo es que al cambiar algunos '+' por '-', el resultado sea 2020. Es decir:
+
+Suma_final = 2020 = Suma_total - 2 * Suma_de_los_números_cambiados
+
+Esto se origina porque cada número cambiado de '+' a '-' reduce la suma total en dos veces ese número (ya que pasó de sumar a restar).
+
+Así, podemos establecer:
+
+2020 = 2211 - 2 * Suma_de_los_números_cambiados
+
+Rearrancemos:
+
+2 * Suma_de_los_números_cambiados = 2211 - 2020 = 191
+
+Entonces, Suma_de_los_números_cambiados = 191 / 2 = 95.5
+
+Pero la suma de números enteros no puede resultar en un decimal como 95.5. Esto implica que es imposible conseguir una suma final de 2020 con los cambios solicitados.
+
+Por lo tanto, la respuesta correcta es E) No es posible conseguir lo que pide el enunciado.
+</think>
+
+Raonament:
+
+1. **Calculo de la suma total original:**
+   - La suma de los números del 1 al 66 se calcula con la fórmula \( \frac{n(n + 1)}{2} \).
+   - Donde \( n = 66 \), por lo que:
+     \[
+     Suma\_total = \frac{66 \times 67}{2} = \frac{4422}{2} = 2211
+     \]
+
+2. **Determinar la suma necesaria para lograr 2020:**
+   - Queremos que al cambiar algunos signos '+' por '-', el resultado final sea 2020.
+   - Cada número cambiado de '+' a '-' reduce la suma total en dos veces ese número, ya que pasó de sumar a restar.
+   - Por lo tanto:
+     \[
+     2020 = Suma\_total - 2 \times Suma\_de\_los\_números\_cambiados
+     \]
+     \[
+     2020 = 2211 - 2 \times Suma\_de\_los\_números\_cambiados
+     \]
+     \[
+     2 \times Suma\_de\_los\_números\_cambiados = 2211 - 2020 = 191
+     \]
+     \[
+     Suma\_de\_los\_números\_cambiados = \frac{191}{2} = 95.5
+     \]
+
+3. **Análisis de la suma resultante:**
+   - La suma \( 95.5 \) no es un número entero, lo que implica que es imposible conseguir una suma final de 2020 con los cambios solicitados.
+   - Por lo tanto, no es posible lograr el resultado deseado.
+
+Resposta: E) No és possible aconseguir el que demana l'enunciat.

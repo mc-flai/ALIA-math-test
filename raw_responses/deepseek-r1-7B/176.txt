@@ -1,0 +1,50 @@
+<think>
+Para resolver este problema, primero identifico las ecuaciones dadas:
+
+U + V = 1
+
+y 
+
+U² + V² = 2.
+
+Quiero encontrar U⁴ + V⁴. Sé que puedo expresar U⁴ + V⁴ en términos de (U²)² + (V²)², y recordando que (a + b)² = a² + 2ab + b², entonces:
+
+(U² + V²)² = U⁴ + 2U²V² + V⁴.
+
+Despejo U⁴ + V⁴:
+
+U⁴ + V⁴ = (U² + V²)² - 2U²V².
+
+Ya sé que U² + V² = 2, así que su cuadrado es 4. Ahora necesito encontrar U²V².
+
+Sabemos que (U + V)² = U² + 2UV + V². Dado que U + V = 1 y U² + V² = 2:
+
+1² = 2 + 2UV → 1 - 2 = 2UV → UV = -0.5.
+
+Entonces, U²V² = (UV)² = (-0.5)² = 0.25.
+
+Ahora substituyo en la expresión de U⁴ + V⁴:
+
+U⁴ + V⁴ = 4 - 2*(0.25) = 4 - 0.5 = 3.5.
+</think>
+
+Raonament:  
+Sabem que U + V = 1 i U² + V² = 2. Per calcular U⁴ + V⁴, podem fer-ho mitjançant l'identitat:
+
+U⁴ + V⁴ = (U²)² + (V²)² = (U² + V²)² - 2(UV)².
+
+Dado que U² + V² = 2, calculem el valor de UV. Sabem que:
+
+(U + V)² = U² + 2UV + V²  
+1² = 2 + 2UV  
+1 = 2 + 2UV  
+-1 = 2UV  
+UV = -0.5
+
+ ara, calculem (U² + V²)² i 2(UV)²:  
+(U² + V²)² = 2² = 4  
+2(UV)² = 2*(-0.5)² = 2*(0.25) = 0.5  
+
+ per tant, U⁴ + V⁴ = 4 - 0.5 = 3.5.
+
+Resposta: E) 3,5

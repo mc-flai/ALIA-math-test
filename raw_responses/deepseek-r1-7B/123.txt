@@ -1,0 +1,63 @@
+<think>
+Primero, identifico que necesitamos encontrar todos los números enteros de tres cifras. Un número de tres cifras se puede representar como ABC, donde A es la centena, B es la decena y C es la unidad.
+
+La suma de las cifras debe ser igual a 3, es decir, A + B + C = 3.
+
+Sabemos que A no puede ser cero porque se trata de un número de tres cifras, por lo que A debe ser al menos 1.
+
+Ahora, analizamos los posibles valores para A:
+
+1. **A = 1**: Entonces B + C = 2.
+   - Los pares (B, C) que cumplen son:
+     - (0, 2)
+     - (1, 1)
+     - (2, 0)
+   - Esto da 3 números: 102, 111, 120.
+
+2. **A = 2**: Entonces B + C = 1.
+   - Los pares (B, C) que cumplen son:
+     - (0, 1)
+     - (1, 0)
+   - Esto da 2 números: 201, 210.
+
+3. **A = 3**: Entonces B + C = 0.
+   - El único par es (0, 0).
+   - Esto da 1 número: 300.
+
+Sumando todas las posibilidades, tenemos un total de 6 números enteros de tres cifras que cumplen la condición.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, hem de determinar quants nombres enters de tres xifres compleixen que la suma de les seues tres xifres és igual a 3. Un nombre de tres xifres pot ser representat com \(ABC\), on \(A\) és la xifra de les centenes, \(B\) és la xifra de les decimals i \(C\) és la xifra unitària. La condició impuesta és que:
+
+\[ A + B + C = 3 \]
+
+Dado que \(ABC\) és un nombre de tres xifres, \(A\) no pot ser zero (\(A \geq 1\)). Per tant, hem de considerar les possibles combinacions de \(A\), \(B\) i \(C\) que satisfairen la condició anterior.
+
+1. **Cas quan \(A = 1\):**
+   - La suma de \(B + C = 2\).
+   - Les posibles combinacions son:
+     - \( (0, 2) \rightarrow 102 \)
+     - \( (1, 1) \rightarrow 111 \)
+     - \( (2, 0) \rightarrow 120 \)
+   - En total: 3 nombres.
+
+2. **Cas quan \(A = 2\):**
+   - La suma de \(B + C = 1\).
+   - Les posibles combinacions son:
+     - \( (0, 1) \rightarrow 201 \)
+     - \( (1, 0) \rightarrow 210 \)
+   - En total: 2 nombres.
+
+3. **Cas quan \(A = 3\):**
+   - La suma de \(B + C = 0\).
+   - La única combinació possible és:
+     - \( (0, 0) \rightarrow 300 \)
+   - En total: 1 nombre.
+
+Sumant tots els casos, obtenim un total de 6 nombres que compleixen la condició.
+
+**Resposta:**
+
+\boxed{D}

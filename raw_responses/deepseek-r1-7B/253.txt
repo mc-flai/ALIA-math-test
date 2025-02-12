@@ -1,0 +1,27 @@
+<think>
+El problema consiste en encontrar el número más grande y el más pequeño de tres dígitos cuya suma de dígitos sea igual a 8, y luego calcular la suma de estos dos números.
+
+Para obtener el número más grande:
+- El primer dígito (centena) debe ser lo mayor posible.
+- Dado que la suma total de los dígitos es 8, asignamos el máximo valor al primer dígito sin exceder la suma restante. Así, el primer dígito será 8, y los segundos y terceros serán 0.
+
+Para obtener el número más pequeño:
+- El primer dígito (centena) debe ser lo menor posible.
+- Asignamos el valor mínimo al primer dígito que permita que la suma de los dos dígitos restantes también cumpla con la condición de sumar a 8. El primer dígito será 1, y los segundos y terceros dígitos serán 0 y 7 respectivamente.
+
+Sumando ambos números:
+808 + 107 = 915
+</think>
+
+Raonament:
+
+Per obtenir el més gran nombre de tres xifres amb suma de xifres igual a 8, fem que les primeres xifres siguin tan grans com possible. Això dona el nombre 808.
+
+Per obtenir el més petit nombre de tres xifres amb la mateixa condició, fem que les primeres xifres siguin tan petites com possible, obtingent el nombre 107.
+
+Sumant aquests dos nombres:
+$$
+808 + 107 = 915
+$$
+
+Resposta: C) 916

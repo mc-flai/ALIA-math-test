@@ -1,0 +1,51 @@
+<think>
+Primero, observo que hay nueve términos iguales en la suma, cada uno siendo \(9^n\). Por lo tanto, puedo simplificar la expresión sumando estos términos:
+
+\(9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n = 9 \times 9^n = 9^{n+1}\)
+
+Luego, esta suma es igual a \(3^{2016}\). Sabemos que \(9\) puede expresarse como \(3^2\), por lo que:
+
+\(9^{n+1} = (3^2)^{n+1} = 3^{2(n+1)}\)
+
+Ahora, establezco la ecuación con las bases iguales:
+
+\(3^{2(n+1)} = 3^{2016}\)
+
+Dado que las bases son iguales, los exponentes deben ser iguales:
+
+\(2(n + 1) = 2016\)
+
+Solving for \(n\):
+
+\(2n + 2 = 2016\)
+
+Resto 2 de ambos lados:
+
+\(2n = 2014\)
+
+Divido por 2:
+
+\(n = 1007\)
+</think>
+
+Raonament:
+  
+  - Observa que hi ha 9 termes iguals, cadascun \(9^n\), en la suma. Això es pot simplificar com \(9 \times 9^n = 9^{n+1}\).
+  
+  - L'equació donada és \(9^{n+1} = 3^{2016}\). Com que \(9 = 3^2\), podem reescriure això com \((3^2)^{n+1} = 3^{2(n+1)}\).
+  
+  - Ara, tenim \(3^{2(n+1)} = 3^{2016}\). Des que les bases són iguals, els exponents han de ser iguals:
+    
+    \[
+    2(n + 1) = 2016
+    \]
+    
+  - Resolent per a \(n\):
+    
+    \[
+    2n + 2 = 2016 \\
+    2n = 2014 \\
+    n = 1007
+    \]
+  
+  Resposta: E) 1007

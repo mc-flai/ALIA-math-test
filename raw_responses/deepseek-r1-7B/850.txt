@@ -1,0 +1,55 @@
+<think>
+Voy a empezar resumiendo los datos que tengo:
+
+- Alba y Bernat juntos tienen 5 €.
+- Cris y David juntos tienen 6 €.
+- Alba y Cris juntos tienen 7 €.
+
+Quiero encontrar cuánto dinero tienen entre Bernat y David. 
+
+Primero, asignaré variables a cada persona para representar la cantidad de dinero que tiene:
+- A = dinero que tiene Alba
+- B = dinero que tiene Bernat
+- C = dinero que tiene Cris
+- D = dinero que tiene David
+
+Ahora, traduciré las oraciones al sistema de ecuaciones:
+
+1. A + B = 5 (Alba y Bernat tienen 5 €)
+2. C + D = 6 (Cris y David tienen 6 €)
+3. A + C = 7 (Alba y Cris tienen 7 €)
+
+Mi objetivo es encontrar B + D.
+
+Para ello, primero intentaré expresar A en términos de B usando la primera ecuación:
+A = 5 - B
+
+Luego, substituiré este valor de A en la tercera ecuación:
+(5 - B) + C = 7
+C = 7 - (5 - B)
+C = 2 + B
+
+Ahora tengo una expresión para C en términos de B. Lo usaré en la segunda ecuación:
+C + D = 6
+(2 + B) + D = 6
+D = 6 - (2 + B)
+D = 4 - B
+
+Finalmente, sumaré B y D:
+B + D = B + (4 - B) = 4
+
+Por lo tanto, Bernat y David tienen juntos 4 €.
+</think>
+
+Raonament: 
+- Asignamos variables a cada persona: A (Alba), B (Bernat), C (Cris), D (David).
+- Traducimos las oraciones al sistema de ecuaciones:
+  - A + B = 5
+  - C + D = 6
+  - A + C = 7
+- Expresamos A en términos de B: A = 5 - B.
+- Sustituimos este valor en la tercera ecuación para obtener C = 2 + B.
+- Usando el valor de C en la segunda ecuación, obtenemos D = 4 - B.
+- Sumamos B y D: B + D = B + (4 - B) = 4.
+
+Resposta: E) 4

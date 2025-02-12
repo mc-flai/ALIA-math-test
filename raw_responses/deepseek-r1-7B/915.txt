@@ -1,0 +1,57 @@
+<think>
+Primero, entiendo que necesito calcular cuántas páginas tiene un libro si se han utilizado exactamente 231 dígitos al numerar las páginas.
+
+Sé que los números de las páginas cambian en la cantidad de dígitos según el rango:
+- Las páginas del 1 al 9 son singulares (1 dígito).
+- Las páginas del 10 al 99 son binarias (2 dígitos).
+- A partir de la página 100, los números tienen 3 dígitos.
+
+Voy a calcular cuántos dígitos se usan en cada rango para no exceder los 231 dígitos totales.
+
+Primero, considero las páginas del 1 al 9:
+- Hay 9 páginas.
+- Cada una usa 1 dígito.
+- Total de dígitos: 9 * 1 = 9.
+
+Después, las páginas del 10 al 99:
+- Hay 90 páginas (desde 10 hasta 99).
+- Cada una usa 2 dígitos.
+- Total de dígitos: 90 * 2 = 180.
+
+Ahora, sumo los dígitos usados en estos dos rangos:
+- 9 (del 1 al 9) + 180 (del 10 al 99) = 189 dígitos.
+
+El total de dígitos disponibles es 231, así que reste el consumo hasta ahora para ver cuánto queda para las páginas con 3 dígitos:
+- 231 - 189 = 42 dígitos restantes.
+
+Cada página a partir de la 100 usa 3 dígitos, así que divido los dígitos restantes por 3 para ver cuántas páginas más hay:
+- 42 / 3 = 14 páginas.
+
+Finalmente, sumo las páginas de los rangos anteriores con las nuevas páginas:
+- 9 (del 1 al 9) + 90 (del 10 al 99) + 14 = 113 páginas.
+</think>
+
+Raonament:  
+Per determinar quants pàgines té el llibre, hem de calcular la quantitat total d'xifres utilitzades en numerar les pàgines.  
+
+- **Pàgines del 1 al 9**: Aquestes pàgines contenen 1 xifre cada una i hi ha 9 pàgines.  
+  Total de xifres: \(9 \times 1 = 9\) xifres.  
+
+- **Pàgines del 10 al 99**: Aquestes pàgines contienen 2 xifres cada una i hi ha \(99 - 10 + 1 = 90\) pàgines.  
+  Total de xifres: \(90 \times 2 = 180\) xifres.  
+
+- **Total d'xifres utilitzades en els dos rangos anteriors**:  
+  \(9 + 180 = 189\) xifres.  
+
+- **Restant d'xifres per als pàgines de 3 xifres**:  
+  Total d'xifres disponibles: 231  
+  Xifres restants: \(231 - 189 = 42\) xifres.  
+
+- **Pàgines que contenen 3 xifres (des de la pàgina 100)**: Cada una d'aquestes pàgines utilitza 3 xifres.  
+  Quantitat de pàgines: \(42 \div 3 = 14\) pàgines.  
+
+- **Total de pàgines del llibre**:  
+  Pàgines del 1 al 9 + Pàgines del 10 al 99 + Pàgines del 100 enllat:  
+  \(9 + 90 + 14 = 113\) pàgines.  
+
+Resposta: B) 113

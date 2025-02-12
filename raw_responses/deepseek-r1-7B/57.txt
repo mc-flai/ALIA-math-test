@@ -1,0 +1,114 @@
+<think>
+Bueno, voy a intentar resolver este problema paso a paso. Primero, entiendo que tenemos una máquina transformadora que recibe un número y puede aplicar cuatro operaciones con las mismas probabilidades: sumarle 2, sumarle 3, multiplicarlo por 2 o multiplicarlo por 3. Cada operación tiene una probabilidad de 1/4.
+
+Empezamos introduciendo el número 1 en la máquina y obtenemos un número a. Luego introducimos a para obtener b, y finalmente introducimos b para obtener c. Queremos calcular la probabilidad de que c sea un número par.
+
+Primero, analizaré las posibles salidas de cada paso.
+
+**Paso 1: Obtención de 'a' dari 1**
+
+Cuando introducimos 1 en la máquina:
+
+- Sumarle 2: 1 + 2 = 3
+- Sumarle 3: 1 + 3 = 4
+- Multiplicarlo por 2: 1 * 2 = 2
+- Multiplicarlo por 3: 1 * 3 = 3
+
+Así, los posibles valores de 'a' son 3, 4, 2 y 3. Observo que 4 y 2 son pares, mientras que 3 es impar (y se repite dos veces). Por lo tanto, la probabilidad de que 'a' sea par es 2/4 = 1/2, y de ser impar también 1/2.
+
+**Paso 2: Obtención de 'b' dari 'a'**
+
+Ahora dependiendo del valor de 'a', cada uno tiene diferentes posibles transformaciones:
+
+1. **Si a = 2 (que ocurre con probabilidad 1/4):**
+   - Sumarle 2: 2 + 2 = 4
+   - Sumarle 3: 2 + 3 = 5
+   - Multiplicarlo por 2: 2 * 2 = 4
+   - Multiplicarlo por 3: 2 * 3 = 6
+   Los posibles 'b' son 4,5,4,6. Entre ellos:
+     - Números pares: 4,4,6 → 3/4 de probabilidad.
+     - Impar: 5 → 1/4.
+
+2. **Si a = 3 (ocurre con probabilidad 2/4 = 1/2):**
+   - Sumarle 2: 3 + 2 = 5
+   - Sumarle 3: 3 + 3 = 6
+   - Multiplicarlo por 2: 3 * 2 = 6
+   - Multiplicarlo por 3: 3 * 3 = 9
+   Los posibles 'b' son 5,6,6,9.
+     - Números pares: 6,6 → 2/4 = 1/2.
+     - Impar: 5,9 → 2/4 = 1/2.
+
+3. **Si a = 4 (ocurre con probabilidad 1/4):**
+   - Sumarle 2: 4 + 2 = 6
+   - Sumarle 3: 4 + 3 = 7
+   - Multiplicarlo por 2: 4 * 2 = 8
+   - Multiplicarlo por 3: 4 * 3 = 12
+   Los posibles 'b' son 6,7,8,12.
+     - Números pares: 6,8,12 → 3/4.
+     - Impar:7 → 1/4.
+
+Ahora, calculamos la probabilidad total de que 'b' sea par considerando todas las probabilidades condicionadas:
+
+P(b par) = P(a=2)*P(b par|a=2) + P(a=3)*P(b par|a=3) + P(a=4)*P(b par|a=4)
+          = (1/4)*(3/4) + (1/2)*(1/2) + (1/4)*(3/4)
+          = 3/16 + 1/4 + 3/16
+          = 3/16 + 4/16 + 3/16
+          = 10/16 = 5/8
+
+**Paso 3: Obtención de 'c' dari 'b'**
+
+Ahora, dependiendo de si 'b' es par o impar:
+
+1. **Si b es par (ocurre con probabilidad 5/8):**
+   - Cada operación aplicada a un número par dará:
+     - Sumarle 2: par + 2 = par
+     - Sumarle 3: par + 3 = impar
+     - Multiplicarlo por 2: par * 2 = par
+     - Multiplicarlo por 3: par * 3 = par si el original era par (ya es par, pero multiplicado por 3 mantiene la paridad solo si multiplicación no introduce impariedad). Pero 3*even=even? Sí, porque 3*2k=6k que es par.
+     - Entonces, de las cuatro opciones:
+       - Operaciones que dan par: sumarle 2, multiplicar por 2, multiplicar por 3 → 3 operaciones
+       - Sumanle 3 da impar → 1 operación
+   - Por lo tanto, probabilidad de que c sea par dada que b es par:
+     P(c par | b par) = 3/4
+
+2. **Si b es impar (ocurre con probabilidad 3/8):**
+   - Cada operación aplicada a un número impar da:
+     - Sumarle 2: impar + 2 = impar
+     - Sumarle 3: impar + 3 = par
+     - Multiplicarlo por 2: impar * 2 = par
+     - Multiplicarlo por 3: impar * 3 = impar (pues 3*impar es impar)
+   - Entonces, de las cuatro opciones:
+     - Operaciones que dan par: sumarle 3 y multiplicar por 2 → 2 operaciones
+     - Sumarle 2 y multiplicar por 3 dan impares → 2 operaciones
+   - Por lo tanto, probabilidad de que c sea par dada que b es impar:
+     P(c par | b impar) = 2/4 = 1/2
+
+Ahora, calculamos la probabilidad total de que c sea par:
+
+P(c par) = P(b par)*P(c par|b par) + P(b impar)*P(c par|b impar)
+          = (5/8)*(3/4) + (3/8)*(1/2)
+          = 15/32 + 3/16
+          = 15/32 + 6/32
+          = 21/32
+
+Por lo tanto, la probabilidad de que c sea un número par es 21/32.
+</think>
+
+Raonament: 
+
+- **Obtención de 'a' dari 1:** Los posibles valores son 3,4,2,3. La mitad son pares (4 y 2) y la otra mitad impares (3,3). Así que P(a par)=1/2.
+
+- **Obtención de 'b' dari 'a':** 
+  - Si a=2 (probabilidad 1/4), b puede ser 4,5,4,6. La probabilidad de que b sea par es 3/4.
+  - Si a=3 (probabilidad 1/2), b puede ser 5,6,6,9. La probabilidad de que b sea par es 1/2.
+  - Si a=4 (probabilidad 1/4), b puede ser 6,7,8,12. La probabilidad de que b sea par es 3/4.
+  
+  Sumando: P(b par) = (1/4)*(3/4) + (1/2)*(1/2) + (1/4)*(3/4) = 5/8.
+
+- **Obtención de 'c' dari 'b':** 
+  - Si b es par (probabilidad 5/8), c será par en 3/4 de los casos.
+  - Si b es impar (probabilidad 3/8), c será par en 1/2 de los casos.
+
+  Por lo tanto, P(c par) = (5/8)*(3/4) + (3/8)*(1/2) = 15/32 + 6/32 = 21/32.
+
+**Rta:** \boxed{\dfrac{21}{32}}

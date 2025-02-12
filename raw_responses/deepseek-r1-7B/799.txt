@@ -1,0 +1,57 @@
+<think>
+Primero, identifico que necesitamos dividir el conjunto {1,2,3,4,5,6,7} en dos subconjuntos con la misma suma.
+
+Calculo la suma total del conjunto sumando los elementos: 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. 
+
+Dado que necesitamos que las dos partes tengan la misma suma, comprobamos si 28 es un número par. Como 28 / 2 = 14, cada subconjunto debe sumar 14.
+
+Ahora, buscamos todas las posibles combinaciones de números en el conjunto que sumen exactamente 14. 
+
+Identifico varias opciones:
+- {7,5,2} suma a 14.
+- {6,5,3} también suma a 14.
+- {7,6,1} y {5,4,3,2} son otras combinaciones posibles.
+
+Finalmente, determino que hay cuatro maneras diferentes de dividir el conjunto cumpliendo la condición, por lo que la respuesta correcta es D).
+</think>
+
+**Raonament:**
+
+El problema consiste en dividir el conjunt {1,2,3,4,5,6,7} en dos subconjunts tals que la suma d'elements de cada un sigui igual. 
+
+Com primer pass, calcularem la suma total del conjunt:
+\[
+1 + 2 + 3 + 4 + 5 + 6 + 7 = 28
+\]
+Perquè els dos subconjunts han de tenir la mateixa suma, cada subconjunt ha de sumar:
+\[
+\frac{28}{2} = 14
+\]
+
+El repte ara és trobar totes les posibles maneres de formar un subconjunt que sumi 14. Farem una llista de possibles combinacions:
+
+1. **{7,5,2}:** 
+   \[
+   7 + 5 + 2 = 14
+   \]
+   
+2. **{6,5,3}:**
+   \[
+   6 + 5 + 3 = 14
+   \]
+   
+3. **{7,6,1}:**
+   \[
+   7 + 6 + 1 = 14
+   \]
+   
+4. **{5,4,3,2}:**
+   \[
+   5 + 4 + 3 + 2 = 14
+   \]
+
+Aquestes són les quatre maneres de dividir el conjunt en dos subconjunts tals que la suma d'elements de cada un sigui igual. 
+
+**Resposta:**
+
+\boxed{D}

@@ -1,0 +1,32 @@
+<think>
+Primero, identifico que "a" es el nombre cuyo cuadrado es igual a 2020^20. Esto significa que a = sqrt(2020^20).
+
+Sabiendo que la raíz cuadrada de una potencia se puede expresar como 2020^(n/2), en este caso, n=20, por lo que a = 2020^(10).
+
+Luego, necesito multiplicar "a" por el cubo de 2020^19. El cubo se puede expresar como 2020^(3*19) = 2020^57.
+
+Finalmente, al multiplicar a * (2020^19)^3, que es 2020^10 * 2020^57, sumo los exponentes: 10 + 57 = 67. Por lo tanto, el resultado es 2020^67.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, seguiremos els passos següents:
+
+1. **Entendre l'enunciat:**
+   - Busquem un nombre *a* tal que \( a^2 = 2020^{20} \).
+   - Aquest *a* s'ha de multiplicar pel cub del nombre \( 2020^{19} \).
+
+2. **Calcula el valor de *a*:**
+   - Si \( a^2 = 2020^{20} \), llavors \( a = \sqrt{2020^{20}} \).
+   - Utilitzant les propietats dels exponents, \( \sqrt{2020^{20}} = (2020^{20})^{1/2} = 2020^{10} \).
+
+3. **Calcula el cub de \( 2020^{19} \):**
+   - El cub del nombre \( 2020^{19} \) és \( (2020^{19})^3 = 2020^{57} \).
+
+4. **Multiplica els dos resultats:**
+   - \( a \times (2020^{19})^3 = 2020^{10} \times 2020^{57} \).
+   -quan multipliquem potències de base igual, sumem els exponents: \( 10 + 57 = 67 \).
+   - Per tant, el resultat és \( 2020^{67} \).
+
+**Resposta:**  
+\boxed{B) 2020^{67}}

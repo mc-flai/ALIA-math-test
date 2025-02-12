@@ -1,0 +1,62 @@
+<think>
+Primero, observo que hay nueve términos iguales, cada uno es 9^n. Por lo tanto, puedo sumar estos términos multiplicando 9^n por 9.
+
+Luego, la suma total se convierte en 9 * (9^n), lo cual es igual a 3²⁰¹⁶. Sabemos que 9 es igual a 3², así que reescribo la expresión como 3² * (3^{2n}).
+
+Al multiplicar las potencias de base 3, sumo los exponentes: 3^{2 + 2n}. Ahora tengo 3^{2 + 2n} = 3²⁰¹⁶.
+
+Para que las bases sean iguales y las potencias también, igualo los exponentes: 2 + 2n = 2016. Resolviendo para n, resto 2 de ambos lados: 2n = 2014, luego divido por 2: n = 1007.
+
+Revisando las opciones dadas, la respuesta correcta es E) 1007.
+</think>
+
+**Raonament:**
+
+El problema consiste en encontrar el valor de \( n \) que satisface la ecuación:
+
+\[
+9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n + 9^n = 3^{2016}
+\]
+
+Primero, observamos que hay nueve términos iguales de \( 9^n \). Por lo tanto, podemos simplificar la suma izquierda multiplicando \( 9^n \) por 9:
+
+\[
+9 \times 9^n
+\]
+
+Sabemos que \( 9 = 3^2 \), así que reescribimos la expresión como:
+
+\[
+3^2 \times (3^{2n})
+\]
+
+Al multiplicar potencias con la misma base, sumamos los exponentes:
+
+\[
+3^{2 + 2n}
+\]
+
+Ahora, igualamos esta expresión a \( 3^{2016} \):
+
+\[
+3^{2 + 2n} = 3^{2016}
+\]
+
+Dado que las bases son iguales (\( 3 \)), los exponentes deben ser iguales:
+
+\[
+2 + 2n = 2016
+\]
+
+Resolvemos para \( n \):
+
+\[
+2n = 2016 - 2 \\
+2n = 2014 \\
+n = \frac{2014}{2} \\
+n = 1007
+\]
+
+**Resposta:**
+
+E) 1007

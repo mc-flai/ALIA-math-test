@@ -1,0 +1,20 @@
+<think>
+Primero, identifico que hay 2016 habitantes en un pueblo y ninguno de ellos tiene más de 49 años. Esto significa que las edades posibles van desde 0 a 49 años, totalizando 50 posibilidades diferentes.
+
+Luego, para determinar el número mínimo de personas que tienen la misma edad, aplico el principio del Pigeonhole (Palomar). Según este principio, si se distribuyen n objetos en m recipientes, al menos uno de los recipientes contendrá al menos ⌈n/m⌉ objetos.
+
+En este caso, n son 2016 habitantes y m son las 50 edades posibles. Divido 2016 entre 50, lo que da 40.32. Al redondear hacia arriba, obtenemos 41. Esto significa que al menos 41 personas tienen la misma edad.
+
+Ahora, reviso las opciones y veo que la opción C) menciona "Al menos 41, pero a priori no podemos asegurar que sean 42 o más". Esto coincide con lo que he calculado.
+</think>
+
+Raonament:  
+Utilitzem el principi del Pigeonhole per determinar quants habitants tenen la mateixa edat. Hi ha 2016 habitants i cap d'ells no té més de 49 anys, això vol dir que les edats poden ser des de 0 a 49, un total de 50 posibles edats diferents.
+
+Segons el principi del Pigeonhole, si tenim n elements i m "contenedors", al menys un contenedor tindrà ⎡n/m⎤ elements. En aquest cas, n = 2016 habitants i m = 50 edats:
+
+Almenys ⌈2016 / 50⌉ = ⌈40.32⌉ = 41 habitants tenen la mateixa edat.
+
+Això vol dir que podem assegurar que al menys 41 habitants tenen la mateixa edat, però no podem assegurar que hi hagin 42 o més sense més informació.
+
+Resposta: **C) Al menys 41, però a priori no podemos dir que siguen 42 o més.**

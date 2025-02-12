@@ -1,0 +1,47 @@
+<think>
+Primero, identifico las letras de la palabra "CANGUR". Son 6 letras,其中 hay 2 vocales: 'A' y 'U', y 4 consonantes.
+
+Quiero calcular el número total de maneras de ordenar las letras sin que las dos vocales queden juntas. 
+
+El método que seguiré es:
+
+1. **Calcular el número total de permutaciones sin restricciones**: 
+   Esto se hace considerando las repeticiones de las letras. Observo que en "CANGUR" no hay letras repetidas, así que el total será 6! = 720.
+
+2. **Calcular el número de permutaciones donde las vocales están juntas**:
+   Para esto, trataré a las dos vocales como una única entidad o bloque. Entonces, tengo:
+   
+   - El bloque "AU" o "UA": 2! = 2 maneras.
+   
+   - Ahora, considero al bloque como una sola letra junto con las 4 consonantes: en total, 5 elementos que se pueden ordenar de 5! = 120 maneras.
+   
+   Por lo tanto, el número de permutaciones donde las vocales están juntas es 2! × 5! = 2 × 120 = 240.
+
+3. **Determinar las permutaciones deseadas**:
+   Esto se obtiene restando las permutaciones con vocales juntas del total de permutaciones.
+   
+   Es decir: 720 (total) - 240 (vocales juntas) = 480.
+
+Finalmente, comparo el resultado con las opciones dadas y veo que coincide con la opción E) 480.
+</think>
+
+**Raonament:**  
+Per calcular les maneres de posar les lletres de "CANGUR" sense que les dues vocals queden juntes, procedimós als següents passos:
+
+1. **Total de permutacions sense restriccions**:  
+   La paraula té 6 lletres, tots únics, així que el total de permutacions és \(6! = 720\).
+
+2. **Permutacions on les dues vocals estan juntes**:  
+   Tractam les dues vocals ("A" i "U") com una unió singular. Aquesta unió es pot posar en 2 ordres (`AU` o `UA`). La unió, juntament amb les 4 consonants, forma 5 elements que poden ser permutats de \(5!\) maneres:  
+   \[
+   2! \times 5! = 2 \times 120 = 240
+   \]
+
+3. **Permutacions desidues**:  
+   Restaurem el total sense les permutacions on estan juntes:  
+   \[
+   720 - 240 = 480
+   \]
+
+**Resposta:**  
+\boxed{E}

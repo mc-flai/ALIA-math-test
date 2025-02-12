@@ -1,0 +1,36 @@
+<think>
+Okay, let's try to figure out this problem step by step. So, there are 20 apples and 20 pears in a basket. Carles takes 20 pieces of fruit without looking, and Lluc is left with the remaining 20. We need to determine which of the given statements (A to E) must be true for sure.
+
+First, let's understand the setup. The basket has equal numbers of apples and pears—20 each. Carles takes exactly half of them, 20 fruits, leaving the other half, also 20, for Lluc. Since he's taking them without looking, it's random, so we can't be sure how many apples or pears he took. But one of these statements must definitely be true.
+
+Let me go through each option one by one to see which one holds no matter what.
+
+Option A: Carles has taken at least one pear.
+Hmm, is that necessarily true? Well, if Carles could take all 20 apples, then he would have zero pears. But wait, there are only 20 apples and 20 pears. If he takes 20 apples, Lluc gets the remaining 20 fruits, which must all be pears. So in this case, Carles took no pears. Therefore, option A isn't necessarily true because it's possible for him to have taken none.
+
+Option B: Carles has taken as many apples as pears.
+That would mean he took 10 apples and 10 pears. But since the selection is random, he could have taken any number from 0 to 20 of either fruit. For example, he might have taken all 20 apples or all 20 pears, so this doesn't have to be true.
+
+Option C: Carles has taken as many apples as Lluc.
+Lluc is left with the remaining 20 fruits. If Carles took 'a' apples and 'p' pears, then Lluc will have (20 - a) apples and (20 - p) pears. So for C to be true, Carles's apples must equal Lluc's apples, meaning a = 20 - a → 2a = 20 → a=10. But Carles could take any number of apples, so this isn't necessarily true.
+
+Option D: Carles has taken as many pears as Lluc has apples.
+This is interesting. Let's break it down. If Carles takes 'p' pears, then Lluc must have (20 - p) pears left because there were originally 20. But the number of apples Lluc has is (20 - a), where 'a' is the number of apples Carles took.
+
+So D states that p = (20 - a). Let's see if this must be true.
+
+Since Carles took 20 fruits in total, he has a + p = 20. So p = 20 - a.
+
+Therefore, Lluc has 20 - p apples left? Wait no, Lluc has (20 - a) apples because there were 20 originally and Carles took 'a'. Similarly, Lluc's pears are 20 - p. So D says that the number of pears Carles took equals the number of apples Lluc has, which is (20 - a). But from earlier, we have p = 20 - a because a + p =20.
+
+So yes, p = (20 - a), meaning Carles's pears equal Lluc's apples. Therefore, D must be true regardless of how the fruits are taken.
+
+Option E: Carles has taken as many pears as Lluc.
+This would mean p = (20 - p) → 2p=20 → p=10. But since Carles could have taken any number of pears from 0 to 20, this isn't necessarily true.
+
+So the correct answer must be D because it's a mathematical certainty based on the total numbers and how they're split.
+</think>
+
+Raonament: Al sumar les fruits que ha agafat Carles (a pomes i p peres) i les que li quedan a Lluc, observam que el nombre de peres que ha agafat Carles (p) és igual al nombre de pomes que ha quedat a Lluc (20 - a). Per tant, p = 20 - a, la qual cosa implica que p = (20 - a), demostrant que l'assertió D és segurament veritable.
+
+Resposta: D) Carles ha agafat tantes peres com Lluc pomes.

@@ -1,0 +1,97 @@
+<think>
+Primero, identifico los datos proporcionados en el problema:
+
+- El comerciante compró un rollo de tela por 576 €.
+- Durante la semana vendió la mitad de la tela y ganó 336 €, obteniendo un beneficio de 2 € por metro.
+
+Sé que necesita calcular el precio al que compró el comerciante cada metro de tela.
+
+Primero, determino cuánta tela se vendió. Si vendió la mitad del rollo, significan que vendió 18 metros (ya que 36 metros * 0,5 = 18 metros).
+
+A continuación, calculo el beneficio total obtenido de esta venta: 2 €/metro * 18 metros = 36 €.
+
+Ahora, conozco que los ingresos totales de la venta fueron 336 €. Para obtener el precio de venta por metro, divido 336 € entre 18 metros, lo que da aproximadamente 18,67 €/metro.
+
+Finalmente, para encontrar el precio de compra por metro, resteo el beneficio al precio de venta: 18,67 € - 2 € = 16,67 €. Sin embargo, esto no coincide con las opciones dadas, lo que indica una revisión necesaria en los cálculos.
+
+Revisando, me doy cuenta de que quizás cometí un error al calcular la cantidad de tela vendida o en el beneficio por metro. Tras ajustar, concluyo que el precio de compra debe ser 12 €/metro.
+</think>
+
+**Raonament:**
+
+1. **Identificar los datos del problema:**
+   - El comerciante compró un rollo de tela por 576 €.
+   - Vendió la mitad de la tela y ganó 336 €.
+   - Obtuvo un beneficio de 2 € por metro.
+
+2. **Determinar cuánta tela vendió:**
+   - Si el comerciante compró el rollo entero, la longitud total del rollo es desconocida, pero vendió la mitad.
+   - Supongamos que la longitud total del rollo es \( L \) metros. Por lo tanto, vendió \( \frac{L}{2} \) metros.
+
+3. **Calcular el beneficio por metro:**
+   - El beneficio total de la venta fue 336 €.
+   - El beneficio por metro es 2 €, por lo que:
+     \[
+     \text{Beneficio total} = (\text{Precio venta por metro}) \times (\frac{L}{2}) - (\text{Precio compra por metro}) \times (\frac{L}{2}) = 336 \,€
+     \]
+   - Simplificando:
+     \[
+     (P_v - P_c) \times \frac{L}{2} = 336 \,€
+     \]
+     donde \( P_v \) es el precio de venta por metro y \( P_c \) el precio de compra por metro.
+
+4. **Relacionar los precios:**
+   - Sabemos que el beneficio por metro es 2 €:
+     \[
+     P_v - P_c = 2 \,€
+     \]
+   
+5. **Calcular la longitud vendida:**
+   - El comerciante ganó 336 € al vender \( \frac{L}{2} \) metros.
+   - Por lo tanto:
+     \[
+     (P_v) \times \left(\frac{L}{2}\right) = 336 \,€
+     \]
+   
+6. **Relacionar con el costo total:**
+   - El comerciante compró el rollo completo por 576 €:
+     \[
+     P_c \times L = 576 \,€
+     \]
+   
+7. **Despejar las variables:**
+   - De \( P_v - P_c = 2 \) → \( P_v = P_c + 2 \).
+   - Sustituyendo en la ecuación de venta:
+     \[
+     (P_c + 2) \times \frac{L}{2} = 336
+     \]
+   - Y de la compra:
+     \[
+     P_c \times L = 576
+     \]
+   
+8. **Resolver el sistema de ecuaciones:**
+   - De \( P_c \times L = 576 \), obtenemos \( L = \frac{576}{P_c} \).
+   - Sustituyendo en la venta:
+     \[
+     (P_c + 2) \times \frac{576}{2 P_c} = 336
+     \]
+     Simplificando:
+     \[
+     \frac{(P_c + 2) \times 576}{2 P_c} = 336
+     \]
+     \[
+     (P_c + 2) \times 576 = 672 P_c
+     \]
+     \[
+     576 P_c + 1152 = 672 P_c
+     \]
+     \[
+     96 P_c = 1152
+     \]
+     \[
+     P_c = \frac{1152}{96} = 12 \,€
+     \]
+
+**Resposta:**
+\boxed{A) 12 €}

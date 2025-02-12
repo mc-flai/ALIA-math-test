@@ -1,0 +1,42 @@
+<think>
+Primero, identifico que un cub tiene 8 vértices. Quiero encontrar cuántos triángulos equiláteros puedo formar usando estos vértices como vertices.
+
+Recuerdo que en un cub, hay aristas de dos tipos: las aristas principales (que conectan vértices adyacentes) y las diagonales espaciales (que conectan vértices opuestos a través del interior del cubo).
+
+Para formar un triángulo equilátero, los tres lados deben tener la misma longitud. En el cubo, las aristas principales tienen longitud 'a', mientras que las diagonales de las caras tienen longitud √2 * a y las diagonales espaciales tienen longitud √3 * a.
+
+Voy a considerar cada tipo de segmento:
+
+1. **Aristas principales (longitud 'a'):**
+   - Cada arista principal forma una cara del cubo, que es un cuadrado. En un cuadrado, no se pueden formar triángulos equiláteros porque los ángulos son de 90 grados y no hay suficientes para formar un triángulo con todos los lados iguales.
+
+2. **Diagonales de las caras (longitud √2 * a):**
+   - Si tomo tres vértices que forman una diagonal de una cara, verifico si pueden formar un triángulo equilátero. Sin embargo, al observar el cubo, veo que estos segmentos no forman ángulosiguales necesarios para un triángulo equilátero.
+
+3. **Diagonales espaciales (longitud √3 * a):**
+   - Las diagonales espaciales son las más largas y conectan vértices opuestos del cubo. Si tomo tres de estos segmentos, verifico si forman un triángulo equilátero.
+   - Al analizar geométricamente, descubro que cada trio de vértices que forman una diagonal espacial efectivamente forma un triángulo equilátero con todos los lados iguales a √3 * a.
+
+Finalmente, cuento la cantidad de estos triángulos. Dado que el cubo tiene 4 diagonales principales (cada par opuesto de vértices conecta una diagonal), pero necesitamos triplets específicos para formar los triángulos equiláteros. Tras un análisis detallado, determino que hay exactamente 8 triángulos equiláteros que cumplen con los requisitos.
+</think>
+
+Raonament:
+Per resoldre el problema, hem de determinar quants triangles equilàters podem formar utilitzant els vèrtexs d'un cub. Un cub té 8 vèrtexs, i un triangle equilàter requereix tres punts distints que estan a la mateixa distància mutua.
+
+1. **Vèrtexs del cub**: Hi ha 8 vèrtexs en total.
+2. **Distàncies entre vèrtexs**:
+   - Distància directa (arestes del cub): Entre dos vèrtexs adyacents, la distància és 1 unitat (supongem que el cub té arista de longitud 1).
+   - Diagonals de les cares: La distància entre dos vèrtexs que es troben a diagonales d'una mateixa cara és √2.
+   - Diagonals del cub: La distància més llarga, entre dos vèrtexs opposits, és √3.
+
+Un triangle equilàter requereix que totes les seves aristes tenguin la mateixa longitud. Això implica que els tres punts han de formar una geometria on tots els lados són iguals.
+
+- **Triangles amb arestes directes del cub**: No hi ha triangles equilàters formats per arestes directes, ja que un cub té cares quadrades i les distàncies entre vèrtexs adyacents no permeten formar triángulos equilàters.
+  
+- **Triangles amb diagonals de cares**: Si considerem vèrtexs separats per diagonals de cares (distància √2), tampoc hi ha triangles equilàters, ja que aquesta distància no coincideix en tots els punts necessaris.
+
+- **Triangles amb diagonals del cub**: Les diagonals del cub connecten vèrtexs opposits. Però encara, aquests punts no forman triángulos equilàters directament.
+
+Però, considerem que un triangle equilàter pot ser inscrit dins d'un cub de manera que els seus vèrtices coincidin amb vèrtexs del cub. Un cop identificats aquestos punts, observem que hi ha 8 triangles equilàters possibles.
+
+Resposta: B) 8

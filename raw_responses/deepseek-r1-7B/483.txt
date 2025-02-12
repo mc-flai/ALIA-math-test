@@ -1,0 +1,77 @@
+<think>
+Voy a empezar resolviendo el problema paso a paso. Necesito encontrar cuántos números enteros positivos de dos dígitos cumplen que son 4 veces la suma de sus dígitos.
+
+Primero, representaré un número de dos dígitos como 10a + b, donde a es el dígito de las decenas (entre 1 y 9) y b es el dígito de las unidades (entre 0 y 9).
+
+El problema establece que el número es igual a 4 veces la suma de sus dígitos. Por lo tanto, tengo la ecuación:
+
+10a + b = 4(a + b)
+
+Simplificando esta ecuación:
+
+10a + b = 4a + 4b
+
+Resto 4a y 4b de ambos lados para aislar las variables:
+
+10a - 4a + b - 4b = 0  
+6a - 3b = 0
+
+Divido la ecuación por 3 para simplificar:
+
+2a - b = 0
+
+Esto significa que b = 2a.
+
+Ahora, considero los posibles valores de a y b teniendo en cuenta que a es un dígito del 1 al 9 y b es del 0 al 9.
+
+Sustituyendo b = 2a en las restricciones:
+
+- Si a = 1 → b = 2
+- Si a = 2 → b = 4
+- Si a = 3 → b = 6
+- Si a = 4 → b = 8
+
+Si intento a = 5, entonces b = 10, lo cual no es un dígito válido. Por lo tanto, los valores posibles son a = 1, 2, 3, 4.
+
+Estos dan lugar a los números:
+
+- 12
+- 24
+- 36
+- 48
+
+Finalmente, verifico que estos números cumplen con la condición:
+- 12 ÷ (1 + 2) = 4 ✔️
+- 24 ÷ (2 + 4) = 4 ✔️
+- 36 ÷ (3 + 6) = 4 ✔️
+- 48 ÷ (4 + 8) = 4 ✔️
+
+Por lo tanto, hay 4 números que cumplen con la condición.
+</think>
+
+Raonament:  
+Per resoldre el problema, considerem què vol dir que un nombre de dos dígits compleix que és 4 vegades la suma dels seus dígits. Representem el nombre com \(10a + b\), on \(a\) és el dígit de les decenes (entre 1 i 9) i \(b\) és el dígit de les unitats (entre 0 i 9). Llavors, la condició es pot expressar com:
+
+\[
+10a + b = 4(a + b)
+\]
+
+Simplificant l'equació:
+
+\[
+10a + b = 4a + 4b \\
+10a - 4a = 4b - b \\
+6a = 3b \\
+2a = b
+\]
+
+Aquesta equació mostra que \(b\) ha de ser el doble de \(a\). Ara, considerem les possibles valors d'a i b:
+
+- Si \(a = 1\), llavors \(b = 2\) → nombre: 12  
+- Si \(a = 2\), llavors \(b = 4\) → nombre: 24  
+- Si \(a = 3\), llavors \(b = 6\) → nombre: 36  
+- Si \(a = 4\), llavors \(b = 8\) → nombre: 48  
+
+Si tentem \(a = 5\), llavors \(b = 10\), el qual no és un dígit valid. Per tant, hi ha 4 nombres que compleixen la condició.
+
+Resposta: D) 4

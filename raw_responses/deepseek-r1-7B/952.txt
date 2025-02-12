@@ -1,0 +1,38 @@
+<think>
+Primero, identifico que necesitamos determinar cuántos números positivos y negativos hay en el conjunto para obtener 522 multiplicaciones que den un número negativo.
+
+Sé que una multiplicación da negativo si uno de los factores es positivo y el otro es negativo. Por lo tanto, si designo:
+- \( p \) como la cantidad de números positivos,
+- \( n \) como la cantidad de números negativos,
+
+el número total de multiplicaciones negativas será \( p \times n = 522 \).
+
+También sabemos que el total de números en el conjunto es 50, por lo que:
+\[ p + n = 50 \]
+
+Esto nos da un sistema de ecuaciones que necesitamos resolver para encontrar posibles valores de \( p \) y \( n \). 
+
+Después de analizar las opciones proporcionadas, verifico si los valores enteros de \( p \) y \( n \) satisfacen ambas ecuaciones. Si no hay soluciones enteras, la respuesta será que no es posible determinarlo.
+</think>
+
+**Raonament:**
+
+Supongamos que en el conjunt hi ha \( p \) nombres positius i \( n \) nombres negatius. El total de multiplicacions que donen un nombre negatiu és igual a la producte del nombre de positius i negatius, ja que només una multiplicaació entre un positiu i un negatiu dona negatiu.
+
+Així, tenim:
+\[ p \times n = 522 \]
+\[ p + n = 50 \]
+
+Treballant amb aquestes equacions, podrem substiture una en l'altra. Per exemple, des de la segona equació, \( p = 50 - n \). Substituïm en la primera:
+\[ (50 - n) \times n = 522 \]
+\[ 50n - n^2 = 522 \]
+\[ n^2 - 50n + 522 = 0 \]
+
+Calculant el discriminant:
+\[ D = (-50)^2 - 4 \times 1 \times 522 = 2500 - 2088 = 412 \]
+\[ \sqrt{412} \] no és un nombre entero, per tant les solucions \( n \) no són enters.
+
+D'aquí no podem determinar exactament quantos negatius i positius hi ha en el conjunt. Per consequència, tampoc sabem quants zeros hi ha.
+
+**Resposta:**
+\boxed{E}

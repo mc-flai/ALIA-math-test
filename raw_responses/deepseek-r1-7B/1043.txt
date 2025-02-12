@@ -1,0 +1,60 @@
+<think>
+Primero, entiendo que hay 50 estudiantes sentados en un círculo. La pelota se pasa de manera que cada vez que un estudiante la recibe, la pasa a la persona que está seis asientos más a la derecha.
+
+Quiero determinar cuántos estudiantes nunca han recibido la pelota si Frida ha recibido la pelota 100 veces durante el juego.
+
+Sé que en un círculo de 50 personas, pasar la pelota seis asientos a la derecha equivale a avanzar 6 posiciones. Sin embargo, debido al formato circular, realmente estamos considerando una pasada modular, es decir, cada paso avanza 6 mod 50 posiciones.
+
+Para ver quiénes pueden recibir la pelota, analizo el movimiento de la misma:
+
+1. **Identificación del patrón:**
+   - Si los estudiantes están numerados del 0 al 49 en el círculo, y cada vez que se pasa la pelota avanzamos 6 posiciones.
+   - Entonces, los estudiantes que pueden recibir la pelota son aquellos cuya posición es congruente con la inicial de Frida modulo el número de pasos, es decir, modulo 50.
+
+2. **Determinación del estudiante inicial:**
+   - Supongamos que Frida está sentada en la posición 0.
+   - Cada vez que recibe la pelota, la pasa a (posición actual + 6) mod 50.
+
+3. **Calculo de quiénes pueden recibir la pelota:**
+   - Los estudiantes que son accesibles desde la posición 0 con pasos de 6 serán los que cumplan la condición de posiciones congruentes a 0 mod gcd(6,50).
+   - Calculo el máximo común divisor (gcd) de 6 y 50:
+     \[
+     \text{gcd}(6,50) = 2
+     \]
+   - Esto significa que solo los estudiantes en posiciones pares recibirán la pelota.
+
+4. **Cantidad de estudiantes accesibles:**
+   - En un círculo de 50 estudiantes, con pasos de 6 (que comparten un gcd de 2 con 50), existen 50 / 2 = 25 estudiantes que son accesibles.
+   
+5. **Implicación para Frida:**
+   - Si Frida ha recibido la pelota 100 veces, eso implica que la pelota ha circulado suficientemente para cubrir a todos los estudiantes accesibles.
+   - Sin embargo, no mencionan si hay un estudiante inicial diferente o quién comienza el juego. Suponiendo que Frida es uno de los accesibles.
+
+6. **Estudiantes que nunca han recibido la pelota:**
+   - Si solo 25 estudiantes son accesibles (los pares) y 100 recepciones significan que se ha pasado la pelota muchas veces, pero si el juego terminó sin cubrir a todos los accesibles.
+   
+   Pero reconsidero: si hay 25 accesibles y Frida es una de ellas, si la pelota circula suficientemente, Frida habría recibido la pelota 100 veces en el contexto de que cada 50/2 = 25 pasos cada estudiante accesible recibe la pelota una vez.
+
+   Pero quizás hay más a considerar: la cantidad de estudiantes sin recibir la pelota depende de cuántos no son accesibles. Si el gcd es 2, hay 25 accesibles y 25 inaccesibles.
+
+   Sin embargo, Frida ha recibido 100 veces, lo que implica que la pelota se ha pasado al menos 100 veces. Cada paso avanza 6, por lo que el número total de pasos es 100 (cada vez que Frida recibe).
+
+   Pero quizás hay una mala interpretación.
+
+   Otra forma: el número de estudiantes que no han recibido la pelota es 50 - 25 = 25, pero veo que las opciones incluyen D) 25. Sin embargo, Frida ha recibido 100 veces, lo cual sugiere que quizás hay más.
+
+   Pero me doy cuenta de un error: si el patrón es de paso 6 en 50 estudiantes, y gcd(6,50)=2, entonces hay 2 estaciones (clases) en las que los estudiantes son accesibles. Es decir, estudiantes en posiciones congruentes a 0 mod 2.
+
+   Por lo tanto, hay 25 estudiantes que pueden recibir la pelota, y 25 que no.
+
+   Si Frida es una de las 25 que sí han recibido, el número de estudiantes que nunca han recibido es 25. Sin embargo, veo que en las opciones está D) 25.
+
+   Pero también es posible que si la pelota se pasa 100 veces, y cada estudiante accesible recibe la pelota tantas veces como el coeficiente de pasos. Pero lo importante es cuántos nunca han recibido, independientemente del número de veces.
+
+   Luego, concluyo que 25 estudiantes no han recibido la pelota.
+</think>
+
+Raonament:  
+En un círculo de 50 estudiantes, al pasar una pelota saltando 6 asientos cada vez, el movimiento se basa en pasos modulares. El máximo común divisor (gcd) de 6 y 50 es 2, lo que significa que solo los estudiantes en posiciones pares recibirán la pelota. Como hay 50 estudiantes, 25 serán accesibles y 25 no. Aunque Frida ha recibido la pelota 100 veces, el número de estudiantes que nunca han recibido la pelota es 25.
+
+Resposta: D) 25

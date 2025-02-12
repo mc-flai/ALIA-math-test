@@ -1,0 +1,26 @@
+<think>
+Primero, identifico que Pere necesita escribir todos los números de dos cifras que suman 2019.
+
+Luego, considero que un número de dos cifras se compone de la decena y la unidad. Por lo tanto, si el primer dígito es D y el segundo es U, el valor del número será 10*D + U.
+
+Después, planteo la ecuación: 10*D + U = 2019.
+
+Al resolver esta ecuación, noto que D debe ser un entero entre 1 y 9 (ya que es una cifra de dos dígitos), y U también debe ser un entero entre 0 y 9.
+
+Sin embargo, al analizar 10*D + U = 2019, me doy cuenta de que D tendría que ser 201.9, lo cual no es posible ya que D debe ser una sola cifra (de 1 a 9). 
+
+Esto significa que no hay números de dos cifras cuya suma sea 2019.
+
+Por consiguiente, Pere no escribió ninguno de estos números.
+</think>
+
+Raonament:  
+Pere ha d'escriure tots els nombres de dos xifres (del 10 al 99) on la suma dels dos xifres iguala el nombre 2019. Però, com podem observar:
+
+- Un nombre de dos xifres es pot representar com 10 × D + U,其中 D és la dècena (del 1 al 9) i U és l'unitat (del 0 al 9).
+- La condició es que D + U = 2019.  
+- Però D i U són digits individualment, per tant, la suma màxima possible de D + U és 9 + 9 = 18, que és molt menor que 2019.
+
+Aixídoncs, no hi ha cap nombre de dos xifres que compleixi aquesta condició. Per tant, Pere hauria escrit zero nombres.
+
+Resposta: A) 4

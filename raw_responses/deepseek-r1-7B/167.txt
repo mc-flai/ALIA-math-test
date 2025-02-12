@@ -1,0 +1,53 @@
+<think>
+Para resolver este problema, debemos encontrar todos los triángulos rectángulos con área 36 y ambos catetos son enteros.
+
+Primero, recordemos que en un triángulo rectángulo, el área se calcula como (base * altura)/2. Aquí, base y altura son los dos catetos.
+
+Así, si llamamos a y b a los catetos enteros, tenemos la ecuación:
+
+(a * b) / 2 = 36
+=> a * b = 72
+
+Ahora, necesitamos encontrar todas las parejas de números enteros positivos (a, b) tales que su producto es 72. Además, debemos considerar solo aquellos pares donde a ≤ b para evitar duplicaciones.
+
+Factoricemos 72:
+
+1 * 72
+2 * 36
+3 * 24
+4 * 18
+6 * 12
+8 * 9
+
+Esto nos da 6 parejas diferentes de enteros positivos. Cada pareja corresponde a un triángulo rectángulo distinto con área 36.
+
+Por lo tanto, hay \boxed{D} triángulos rectángulos que cumplen los requisitos.
+</think>
+
+Raonament: 
+
+Per trobar tots els triangles rectangles amb àrea 36 i catets enters, utilitzem la fórmula de l'àrea d'un triangle rectangle:
+
+\[
+\text{Àrea} = \frac{a \times b}{2} 
+\]
+
+On \( a \) i \( b \) són els dos catets. Donat que l'àrea és 36, tenim:
+
+\[
+\frac{a \times b}{2} = 36 \\
+\Rightarrow a \times b = 72
+\]
+
+Ahora busquem tots els pares de nombres enters \( (a, b) \) tals que \( a \times b = 72 \) i \( a \leq b \). Les pareles són:
+
+- \( (1, 72) \)
+- \( (2, 36) \)
+- \( (3, 24) \)
+- \( (4, 18) \)
+- \( (6, 12) \)
+- \( (8, 9) \)
+
+Esto n' da un total de **6 pareles**, cada una representant un triangle rectangle distínt.
+
+Resposta: D)

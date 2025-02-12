@@ -1,0 +1,76 @@
+<think>
+Primero, entiendo que necesito encontrar todas las parejas de números enteros (x, y) donde ambos son mayores que 2 y satisfacen la desigualdad 1/x + 1/y ≥ 1/2.
+
+Para simplificar, puedo considerar que x ≤ y para evitar contar las mismas parejas en orden distinto. Esto significa que x puede ser igual o menor que y, lo que reduce el número de casos a considerar.
+
+Luego, reorganizo la desigualdad: 1/y ≥ 1/2 - 1/x. Al simplificar esto, obtengo y ≤ (2x)/(x - 2). Dado que x > 2, x - 2 es positivo, lo que asegura que el denominador no sea cero.
+
+Después, procedo a analizar diferentes valores de x:
+
+- Para x = 3: La desigualdad se convierte en y ≤ (6)/(1) = 6. Los posibles y son 3, 4, 5, 6.
+- Para x = 4: y ≤ (8)/(2) = 4. Los posibles y son 4.
+- Para x = 5: y ≤ (10)/(3), lo que redondeando hacia abajo da y = 3.
+- Para x = 6: y ≤ (12)/(4) = 3, pero ya consideré x=3, por lo que no agrego más.
+
+Finalmente, sumo las posibles parejas y obtengo un total de 5 parejas.
+</think>
+
+**Raonament:**
+
+Queremos encontrar todas las parejas enteras \((x, y)\) con \(x > 2\) y \(y > 2\) que satisfacen la desigualdad:
+
+\[
+\frac{1}{x} + \frac{1}{y} \geq \frac{1}{2}
+\]
+
+Primero, reorganizamos la desigualdad:
+
+\[
+\frac{1}{y} \geq \frac{1}{2} - \frac{1}{x}
+\]
+
+Simplificando, obtenemos:
+
+\[
+\frac{1}{y} \geq \frac{x - 2}{2x} \quad \Rightarrow \quad y \leq \frac{2x}{x - 2}
+\]
+
+Ahora, consideramos diferentes valores de \(x\) mayores que 2 y calculamos los correspondientes \(y\) enteros que satisfacen la condición.
+
+1. **Cuando \(x = 3\):**
+   \[
+   y \leq \frac{6}{1} = 6
+   \]
+   Los posibles valores de \(y\) son \(3, 4, 5, 6\).
+
+2. **Cuando \(x = 4\):**
+   \[
+   y \leq \frac{8}{2} = 4
+   \]
+   El posible valor de \(y\) es \(4\).
+
+3. **Cuando \(x = 5\):**
+   \[
+   y \leq \frac{10}{3} \approx 3.33
+   \]
+   Dado que \(y > 2\), el posible valor entero es \(3\).
+
+4. **Cuando \(x = 6\):**
+   \[
+   y \leq \frac{12}{4} = 3
+   \]
+   El posible valor de \(y\) es \(3\). Sin embargo, ya consideramos este caso para \(x=5\), por lo que no contamos duplicados.
+
+Sumando las posibles parejas:
+
+- \( (3, 3) \)
+- \( (3, 4) \)
+- \( (3, 5) \)
+- \( (3, 6) \)
+- \( (4, 4) \)
+
+En total, hay **5** parejas que cumplen la condición.
+
+**Resposta:**
+
+\boxed{B) 5}

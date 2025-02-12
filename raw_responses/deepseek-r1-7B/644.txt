@@ -1,0 +1,31 @@
+<think>
+Para resolver este problema, primero identifico que se necesita encontrar el número natural más pequeño divisible por todos los números del 1 al 9. Esto significa que el número debe ser el menos común múltiplo (LCM) de esta secuencia.
+
+Calculo el LCM considerando los factores primos máximos:
+- El 2 aparece como 2³ en 8.
+- El 3 aparece como 3² en 9.
+- Los números 5 y 7 no tienen factores comunes, así que se usan tal cual.
+
+Multiplicando estos factores obtengo el LCM: 2³ × 3² × 5 × 7 = 8 × 9 × 5 × 7 = 2520.
+
+Finalmente, observo que la primera cifra de 2520 es el 2.
+</think>
+
+**Raonament:**  
+Per trobar el nombre natural més xicotet que és divisible per tots els nombres naturals de l'1 al 9, hem de calcular el mínim comú múltiple (LCM) d'aquests números. 
+
+- El LCM dels números del 1 al 9 es calcula considerant els factors primers més elevats presents en aquestes posiciones:
+  - \(2^3\) (des de 8)
+  - \(3^2\) (des de 9)
+  - \(5\) (des d'5)
+  - \(7\) (des de 7)
+
+Multiplicant aquests factors obtenim:
+\[
+2^3 \times 3^2 \times 5 \times 7 = 8 \times 9 \times 5 \times 7 = 2520
+\]
+
+El primer dígir de l'esquerra del nombre 2520 és **2**.
+
+**Resposta:**  
+B) 2

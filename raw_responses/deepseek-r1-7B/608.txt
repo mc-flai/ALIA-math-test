@@ -1,0 +1,29 @@
+<think>
+Primero, necesito calcular cuántas cifras Emma ha escrito al llegar a 25 dígitos. Los números del 1 al 9 son singulares, es decir, cada uno ocupa una sola cifra. Esto significa que los primeros 9 números (del 1 al 9) ocupan 9 cifras.
+
+Luego, considero los números de dos cifras, que van desde el 10 hasta el 99. Cada uno de estos números ocupa dos dígitos. Si Emma ha escrito un total de 25 cifras y ya usó 9 en los primeros números, le quedan 25 - 9 = 16 cifras para los números de dos dígitos.
+
+Cada número de dos dígitos consume 2 cifras. Por lo tanto, la cantidad de números que puede escribir con las 16 restantes es 16 / 2 = 8 números. 
+
+Si comienzo contando desde el 10 como el primer número de dos cifras, el octavo número será el 17 (ya que 10 + 7 = 17). Por lo tanto, el último número de dos dígitos que Emma ha escrito completando las 25 cifras es el 17.
+</think>
+
+Raonament: 
+Emma volia escriure tots els nombres enters positius des del 1 fins al 2019 sense deixar-se'n cap. Primer, calcularem quantas xifres hi ha en total fins a un determinat nombre.
+
+- Noms del 1 al 9: 9 noms, cada nom té 1 xifra. Total de xifres = 9 × 1 = 9 xifres.
+- Noms del 10 al 99: Hi ha 90 noms (desde 10 fins a 99), cada nom té 2 xifres. Total de xifres = 90 × 2 = 180 xifres.
+
+Però Emma només va escriure 25 xifres abans de descansar. Per tant, calcularem quants noms ha pogut escriure amb aquestes 25 xifres:
+
+- Primera part (noms del 1 al 9): 9 noms, 9 xifres.
+- Resta: 25 - 9 = 16 xifres. Cada nom dels següents (desde 10) ocupa 2 xifres.
+
+Luego, quantitat de noms de dos xifres que ha pogut escriure:
+16 / 2 = 8 noms.
+
+El primer nom de dos xifres és 10. Per tant, els noms de dos xifres que va escriure són del 10 fins al 17 (desde 10, sumant 8 noms: 10, 11, 12, ..., 17).
+
+Per tant, el últim nom completament escrit és **17**.
+
+Resposta: B) 17

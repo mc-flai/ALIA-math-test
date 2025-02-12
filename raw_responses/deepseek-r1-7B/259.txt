@@ -1,0 +1,57 @@
+<think>
+Primero, identifico que Dani tiene 21 monedas en total, y cada una es de 2 o 5 cêntimos. Necesito determinar cuál de los valores propuestos no puede ser el total.
+
+Definiré variables:
+- Sea x la cantidad de monedas de 2 cêntimos.
+- Sea y la cantidad de monedas de 5 cêntimos.
+
+Entonces, tengo las siguientes ecuaciones:
+1. \(x + y = 21\) (suma de monedas)
+2. \(2x + 5y = T\) (total en cêntimos)
+
+Eliminando x de ambas ecuaciones:
+Multiplico la primera por 2: \(2x + 2y = 42\).
+Resto de la segunda ecuación: \(3y = T - 42\).
+Por lo tanto, \(T = 42 + 3y\).
+
+Dado que y debe ser un entero no negativo, analizo los posibles valores de y:
+- Si y=0 → T=42
+- Si y=1 → T=45
+- Si y=2 → T=48
+- Si y=3 → T=51
+- ...
+Noto que T siempre será 3 más un múltiplo de 3, es decir, T ≡ 0 mod 3.
+
+Reviso las opciones:
+A) 45 → divisible por 3 (correcto)
+B) 60 → divisible por 3 (correcto)
+C) 70 → 70 ÷ 3 = 23.333… (no entero, incorrecto)
+D) 81 → divisible por 3 (correcto)
+E) 102 → divisible por 3 (correcto)
+
+Por lo tanto, el valor que no es posible es 70.
+</think>
+
+Raonament:  
+Dani té 21 monedes, cada una és de 2 o 5 cèntims. Definim variables:  
+- \( x \) = nombre de monedes de 2 cèntims  
+- \( y \) = nombre de monedes de 5 cèntims  
+
+Tenemos les equacions:  
+1. \( x + y = 21 \)  
+2. \( 2x + 5y = T \) (on \( T \) és el total en cèntims)  
+
+Eliminant \( x \):  
+Multiplicant l'equació 1 per 2: \( 2x + 2y = 42 \).  
+Restant de l'equació 2: \( 3y = T - 42 \), llavors \( T = 42 + 3y \).  
+
+Per tant, \( T \) ha de ser un multiple de 3 més 42. Anàlitzem les opcions:  
+- A) 45 → 45 - 42 = 3 → òd a 3*1 ✔️  
+- B) 60 → 60 - 42 = 18 → òd a 3*6 ✔️  
+- C) 70 → 70 - 42 = 28, que no és multiple de 3 ❌  
+- D) 81 → 81 - 42 = 39 → òd a 3*13 ✔️  
+- E) 102 → 102 - 42 = 60 → òd a 3*20 ✔️  
+
+La opció C) 70 no pot ser el total.  
+
+Resposta: C)

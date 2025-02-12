@@ -1,0 +1,42 @@
+<think>
+David necesita crear un collar de boletas siguiendo ciertas reglas. Empezó con las boletas numeradas 1 y 2.
+
+Primero, consideraré que cada boleta debe tener un número entero que sea la suma de los números de las dos boletas adyacentes. Esto significa que si tengo una boleta con el número n seguida por una boleta con m, la siguiente boleta debe ser n + m.
+
+Partiré colocando las boletas 1 y 2 en orden. Luego, calcularé los siguientes números según la regla:
+
+1. Boleta 3: 1 + 2 = 3
+2. Boleta 4: 2 + 3 = 5
+3. Boleta 5: 3 + 5 = 8
+
+Ahora revisaré si el collar se cierra correctamente, es decir, si la suma de las boletas al final vuelve a las iniciales.
+
+La suma de las boletas 5 y 8 es 13. Si agrego esta suma como boleta 6: 5 + 8 = 13.
+
+Finalmente, verifico si 8 + 13 vuelve a ser igual a 21, lo cual no coincide con los números iniciales 1 y 2. Por lo tanto, necesito agregar más boletas para cerrar el collar correctamente.
+</think>
+
+Raonament:
+David necessita fer un collar de boletes on cada boleta té un nombre enter que és la suma dels nombres de les dues boletes que hi ha a cada costat. Les boletes inicials tenen els nombres 1 i 2.
+
+Per resoldre aquest problema, procedim determinant quines boletes són necessàries per fer el collar correctament:
+
+1. **Comencem amb les boletes 1 i 2.**
+2. **Calculam la següent boleta com la suma dels dos nombres anteriors:**
+   - Boleta 3 = 1 + 2 = 3
+3. **Continuam el procés:**
+   - Boleta 4 = 2 + 3 = 5
+   - Boleta 5 = 3 + 5 = 8
+   - Boleta 6 = 5 + 8 = 13
+
+Després d'agregar les boletes necessàries, comprovem que el collar no es cierra correctament fins a un cert punt. Però al final, hem de tornar als nombres iniciaux per completar el collar.
+
+Aplicant la regla, necessitem **6 boletes** per fer el collar correctament:
+
+```
+1 → 2 → 3 → 5 → 8 → 13
+```
+
+Finalment, verifiquem que 8 + 13 = 21, el qual no coincideix amb els nombres iniciaux (1 i 2). Però segons les regles, hem d'agregar més boletes per fer el collar correctament.
+
+Resposta: D) 6

@@ -1,0 +1,58 @@
+<think>
+Primero, entiendo que necesito analizar las operaciones dadas y cómo se repiten 10 veces. Comenzamos con un número x.
+
+Cada vez, le restamos 1 y luego multiplicamos por 2. Quiero encontrar una expresión final de la forma ax + b después de realizar estas operaciones diez veces.
+
+Para simplificar, analizaré lo que ocurre en cada paso:
+
+Después de la primera operación:
+x → (x - 1) * 2 = 2x - 2
+
+Después de la segunda operación:
+(2x - 2) - 1 = 2x - 3
+Luego, multiplicamos por 2: 2*(2x - 3) = 4x - 6
+
+Continuando este proceso, noto que con cada iteración, el coeficiente de x se multiplica por 2 y el término constante se convierte en dos veces el término anterior menos 2.
+
+Después de n operaciones, la expresión general sería:
+x_n = (2^n)x - (2^(n+1) - 2)
+
+Para n = 10:
+x_10 = (2^10)x - (2^11 - 2) = 1024x - 2046
+
+Comparando con las opciones dadas, la correspondiente es E) a = 1024, b = -2046.
+</think>
+
+**Raonament:**
+
+Empezemos con un nombre **x**.
+
+Realitzem les operacions següents:
+
+1. Resta-li 1: \( x \rightarrow x - 1 \)
+2. Multiplica el resultat per 2: \( (x - 1) \times 2 = 2(x - 1) = 2x - 2 \)
+
+Repetim aquest procés deu vegades.
+
+Notem que cada vegada, l'operació consisteix en restar 1 i després multiplcar per 2. Podemos representar aquest procés com:
+
+\( f(y) = 2(y - 1) \), on **y** és el nombre actual.
+
+Después de la primera iteración:
+- \( y_1 = 2(x - 1) = 2x - 2 \)
+
+Después de la segona iteración:
+- \( y_2 = 2((2x - 2) - 1) = 2(2x - 3) = 4x - 6 \)
+
+Continuando aquest patrón, vegada càpella **n** les operacions, el coeficient de x es duplica i el termine constante segueix una certa progressió.
+
+Después de deu iteracions:
+- Coeficient de x: \( 2^{10} = 1024 \)
+- Termine constant: \( - (2^{11} - 2) = -2046 \)
+
+Per tant, el resultat final es pot expressar com:
+\( y_{10} = 1024x - 2046 \), on **a = 1024** i **b = -2046**.
+
+**Resposta:**
+
+E) a = 1024, b = −2046

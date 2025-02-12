@@ -1,0 +1,462 @@
+<think>
+Okay, so I've got this problem here about Ada, Boi, Clara, Dora, and Enric. They all reunite for a party, and only the people who already know each other greeted each other by shaking hands exactly once. The information given is:
+
+- Ada gave 1 handshake.
+- Boi gave 2 handshakes.
+- Clara gave 3 handshakes.
+- Dora gave 4 handshakes.
+
+And the question is: How many handshakes did Enric give? The options are A)1, B)2, C)3, D)4, E)5.
+
+Alright, let's break this down. First, I need to figure out how many people there are in total. Ada, Boi, Clara, Dora, and Enric make five people in total. So, each person can potentially shake hands with four others (since you don't shake your own hand).
+
+But wait, the key point here is that only those who already knew each other shook hands once. So it's about mutual acquaintances before the party. That means if two people didn't know each other beforehand, they wouldn't have shaken hands at the party.
+
+Now, thinking in terms of graph theory, this can be modeled as a graph where each person is a node, and an edge exists between two nodes if they knew each other before (and hence shook hands). The number of handshakes each person made corresponds to their degree in the graph—how many edges are connected to them.
+
+So, Ada has 1 handshake (degree 1), Boi has 2 (degree 2), Clara has 3 (degree 3), Dora has 4 (degree 4). Enric's number is unknown; let's denote it as E. 
+
+I remember that in any graph, the sum of all degrees equals twice the number of edges because each edge contributes to two nodes' degrees. So the total degree is 2E, where E is the number of edges.
+
+Let's calculate the total degree from the known values:
+
+Ada: 1
+Boi: 2
+Clara:3
+Dora:4
+Enric: E
+
+Total sum = 1 + 2 + 3 + 4 + E = 10 + E
+
+But this must equal twice the number of edges, so 10 + E = 2 * (number of edges). Also, since there are five people, the maximum possible number of handshakes would be C(5,2) = 10. But not all might have happened because only existing acquaintances shook hands.
+
+Wait, but maybe I'm overcomplicating it. Alternatively, perhaps we can model this as a graph where each handshake corresponds to an acquaintance, so the sum of degrees must be even, as each edge contributes two to the total degree count.
+
+So let's compute:
+
+Total degrees = 1 + 2 + 3 + 4 + E = 10 + E
+
+Since 10 is already even, adding E should result in another even number because the total sum of degrees must be even (as it's twice the edges). Therefore, E must be even.
+
+Looking at the options, Enric could have shaken hands either 2 or 4 times since those are the only even numbers given except for option B) and D).
+
+Wait, but let me think again. Alternatively, perhaps I should consider that the sum of degrees is equal to twice the number of edges in the graph.
+
+But maybe a better approach is to look at each person's degree and see if we can figure out Enric's based on who might have shaken hands with whom.
+
+Let me list the people: Ada (A), Boi (B), Clara (C), Dora (D), Enric (E).
+
+Each of them has a certain number of acquaintances:
+
+- A: 1 acquaintance
+- B: 2 acquaintances
+- C:3
+- D:4
+
+So, Dora knows four people. Since there are five people in total, she must know everyone except herself. So Dora knows A, B, C, and Enric.
+
+Wait no, because if she knew everyone else, that would be four others. But wait, in a group of five, each person can only shake hands with the other four, but only those they already knew.
+
+So, if Dora has shaken hands four times, that means she knows all four others except herself. Therefore, Dora must have shaken hands with A, B, C, and E. So Enric is definitely one of her acquaintances because otherwise, Dora's handshake count would be less than 4.
+
+Wait, but let me check that again. If Dora has 4 handshakes, she must have shaken hands with all four others. Therefore:
+
+- D knows A: Yes.
+- D knows B: Yes.
+- D knows C: Yes.
+- D knows E: Yes.
+
+So Enric (E) definitely shook hands with Dora once. Now let's see the other people.
+
+Ada only shook hands once, which must have been with Dora because Dora is the only one who could have known Ada. So A's one handshake is with D.
+
+Wait no, that can't be right because if Ada had only shaken hands once, and since Dora knows everyone, including Ada, then Ada's single handshake would be with Dora. That makes sense.
+
+So:
+
+A has 1 handshake: with D.
+
+B has 2 handshakes: So B must have shaken hands with two people. But who? Since Dora is known to everyone except herself, so B knows D, and maybe another person.
+
+Similarly, C has 3 handshakes, so she knows three people. She would know D, perhaps, and two others.
+
+E's number of handshakes is what we're trying to find.
+
+Let me try to list each person's acquaintances:
+
+- A: only D (1 handshake)
+- B: D plus one more (since he has 2 handshakes). So B must have shaken hands with D and someone else. The options are C or E.
+Wait, but if B had shaken hands with two people: D and perhaps E.
+
+Similarly, Clara has 3 handshakes. She knows D for sure because Dora knows everyone except herself. Then she needs two more acquaintances from the remaining people: A, B, E, and Enric.
+
+But Ada only has one handshake (with D), so C can't have shaken hands with Ada. So C's three handshakes would be with D, plus two others among B, E.
+
+Wait, but let's consider each person:
+
+A: 1 handshake → D
+
+B: 2 handshakes → D and someone else. Let's say B shook hands with D and Enric (E). Then B has 2 handshakes.
+
+C:3 handshakes → D plus two others. So she could have shaken hands with B and E, making it three. Alternatively, maybe with B and another person.
+
+But wait, let's check if that adds up correctly.
+
+If C has three handshakes:
+
+- With D (as everyone knows D)
+- With B
+- And with E
+
+So that's three.
+
+Now Enric's handshakes: Let's see who he has shaken hands with. He shook hands with D for sure because Dora knows everyone, so E→D is a handshake. Then, if B shook hands with E, and C also shook hands with E, then E would have at least 3 handshakes (with D, B, and C). But wait, let's check.
+
+Wait, no. Let me try to structure this more clearly.
+
+Each person can be represented as a node with their degree:
+
+- A:1
+- B:2
+- C:3
+- D:4
+- E:?
+
+We know that D has 4 handshakes, meaning she shook hands with everyone else (A, B, C, E). So each of these four people must have shaken hands with D.
+
+So, A's single handshake is with D. Therefore, A only knows D.
+
+B has two handshakes: one with D and another. Since A doesn't know anyone except D, B cannot have shaken hands with A (because that would require mutual acquaintance, but A only knew D). So B must have shaken hands with D and someone else among C or E.
+
+Similarly, C has three handshakes: she knows D, so needs two more. These could be from shaking hands with B and E, perhaps.
+
+Now, let's count the total degrees again.
+
+Sum of degrees = 1 (A) + 2 (B) +3 (C)+4(D)+E = 10 + E
+
+This sum must equal twice the number of edges because each edge is counted twice. So 10 + E should be an even number, meaning E must be even.
+
+Possible E values: 0, 2, etc., but let's see.
+
+But considering that D knows everyone except herself, so E has at least one handshake (with D). So E can't have zero handshakes. Therefore, E ≥1.
+
+So E is either 1, 3, or maybe more.
+
+Wait, but let me think again about each person's connections.
+
+A: Only connected to D → degree 1
+
+B: Connected to D and someone else (either C or E) → degree 2.
+
+C: Connected to D plus two others. So she must have two more connections.
+
+E is connected to D for sure, so at least one connection.
+
+Let me try constructing the edges:
+
+D is connected to A, B, C, E → four connections.
+
+A is only connected to D.
+
+B needs another connection besides D: let's say with C. Then B's connections are D and C.
+
+But then C would have connections with D, B, and someone else (maybe E). So that's three connections for C.
+
+E would be connected to D, and perhaps to B or C.
+
+Wait, but if E is connected only to D, his degree would be 1. But let's see if that works.
+
+So:
+
+Edges:
+
+- A-D
+- B-D, B-C
+- C-D, C-B (but wait, that's two edges from C; needs one more)
+Wait, maybe I'm complicating it.
+
+Alternative approach: Let's model the connections as a graph.
+
+Nodes: A, B, C, D, E
+
+Edges:
+
+- D is connected to everyone else → 4 edges.
+
+Now:
+
+A only has connection with D → edge A-D.
+
+B has two edges: must be D and someone else. Let's say B-C and B-E? Wait no, because if B had two connections, one is with D, the other could be with C or E.
+
+Wait, let me clarify:
+
+Each person's degree must match their given handshake count.
+
+So:
+
+A:1 → connected only to D.
+
+B:2 → connected to D and someone else (either C or E).
+
+C:3 → connected to D plus two others. So after D, she needs connections with two more people.
+
+D:4 → connected to everyone.
+
+E:? Let's determine this.
+
+So let me try:
+
+- B is connected to D and E → so B has handshakes with D and E.
+
+Then, C needs three connections: D plus two more. Since A only has one connection (to D), C can't connect to A. So C could connect to B and E, but wait, if C connects to both B and E, then:
+
+- C is connected to D, B, E → that's three handshakes.
+
+Now E's connections: he is connected to D, B, and C → so degree 3 for E.
+
+So let's tally the degrees:
+
+A:1 (connected only to D)
+
+B:2 (D and E)
+
+C:3 (D, B, E)
+
+D:4 (A, B, C, E)
+
+E:3 (D, B, C)
+
+Now sum of degrees = 1+2+3+4+3=13.
+
+But the sum must be even because it's twice the number of edges. So this is a problem because 13 is odd.
+
+Hmm, that suggests an inconsistency in our model. Therefore, there must be a mistake in assigning connections.
+
+Let me try another approach.
+
+Since A has only one connection (to D), B needs two connections: D and someone else. Let's say B connects to C. So:
+
+- B's connections: D and C → degree 2.
+
+Now C's connections are D, B, and maybe E → so degree 3.
+
+E's connections: must be connected to D, but perhaps also to someone else.
+
+So:
+
+Edges:
+
+A-D
+
+B-D
+
+C-D
+
+C-B
+
+C-E?
+
+Then E would have connections with D and C → degree 2. But let's check the degrees:
+
+A:1
+
+B:2 (D and C)
+
+C:3 (D, B, E)
+
+E:2 (D and C)
+
+D:4 (A, B, C, E)
+
+Sum of degrees =1+2+3+4+2=12 → which is even. So 12/2=6 edges.
+
+So this works:
+
+Edges are:
+
+A-D
+
+B-D
+
+C-D
+
+B-C
+
+C-E
+
+D-E
+
+Wait no: D is connected to E, but if C is also connected to E, then E has two connections: D and C → degree 2.
+
+But let's list all edges:
+
+1. A-D
+
+2. B-D
+
+3. C-D
+
+4. B-C
+
+5. C-E
+
+6. D-E
+
+So in this case:
+
+A: [D] → 1
+
+B: [D, C] → 2
+
+C: [D, B, E] → 3
+
+E: [D, C] → 2
+
+D: [A, B, C, E] →4
+
+Yes, that works. Sum is 1+2+3+4+2=12, which is even.
+
+But in this model, E has degree 2. So the answer would be E had two handshakes.
+
+Wait, but earlier I thought E was connected to D and B as well. But let's make sure.
+
+In this configuration:
+
+- E is connected only to C and D → so degree 2.
+
+Is that acceptable? Let me check the constraints.
+
+Each person's handshake count:
+
+A:1
+
+B:2
+
+C:3
+
+D:4
+
+E:2
+
+Which matches all given counts. So in this case, E has two handshakes.
+
+But I'm not sure if there are other possible configurations where E could have a different number of handshakes.
+
+Wait, let's see. Another possibility is:
+
+B connects to D and E → so B's degree 2.
+
+C needs three connections: D, and perhaps two others. But A only has one connection, so C can't connect to A. So C must connect to someone else besides D.
+
+If B connects to E, then C could also connect to E. Then:
+
+Edges would be:
+
+A-D
+
+B-D
+
+B-E
+
+C-D
+
+C-E
+
+D-E (is this necessary? Wait, in this case, if E is connected to B and C, that's two connections. So D doesn't need to connect to E unless necessary.
+
+Wait no: D must have four connections: A, B, C, and someone else. If we don't connect D to E, then D only has three connections (A, B, C), which is insufficient because he needs four handshakes.
+
+Therefore, in this model:
+
+Edges:
+
+1. A-D
+
+2. B-D
+
+3. B-E
+
+4. C-D
+
+5. C-E
+
+6. D-E
+
+So now E's connections are with B, C, and D → degree 3.
+
+Let me check degrees:
+
+A:1 (D)
+
+B:2 (D, E)
+
+C:3 (D, E)
+
+E:3 (D, B, C)
+
+D:4 (A, B, C, E)
+
+Sum of degrees:1+2+3+4+3=13 → which is odd. Therefore, impossible.
+
+So this configuration doesn't work because the sum is 13, not even.
+
+Therefore, the only valid configuration is when E has degree 2.
+
+Thus, E had two handshakes.
+</think>
+
+E had two handshakes at the party. 
+
+Step-by-Step Explanation:
+
+We need to determine how many people each person shook hands with based on the given information and deduce E's handshake count.
+
+1. **Total People:** There are five people: A, B, C, D, and E.
+
+2. **Handshake Counts:**
+   - A shook hands with 1 person.
+   - B shook hands with 2 people.
+   - C shook hands with 3 people.
+   - D shook hands with 4 people.
+   - E's handshake count is unknown but needs to be determined.
+
+3. **Understanding Handshakes as a Graph:**
+   Each person is a node, and each handshake is an edge connecting two nodes. The degree of each node (number of edges) corresponds to the number of handshakes.
+
+4. **D's Connections:**
+   - D shook hands with 4 people, which means D must be connected to everyone else except possibly oneself (but since it's a party, self-handshake isn't considered). So D is connected to A, B, C, and E.
+
+5. **A's Connection:**
+   - A only shook hands once, so A must have shaken hands with D (as D is connected to everyone).
+
+6. **B's Connections:**
+   - B has two handshakes. Since B can't shake hands with oneself, possible connections are among the other four people, but considering D already, B could have shaken hands with D and one other person.
+
+7. **C's Connections:**
+   - C shook hands three times. Connected to D (as everyone is), so needs two more connections from the remaining three people (A, B, E). But A only has one connection (to D), so C can't shake hands with A. Thus, C must have shaken hands with B and E.
+
+8. **E's Connections:**
+   - E must be connected to D as per D's four connections.
+   - From C's three handshakes, E is also connected to C.
+   - Additionally, since B has two handshakes, one is with D, the other could be with E or C.
+
+9. **Analyzing Possible Connections:**
+   - If B shakes hands with E, then E would have connections with D, C, and B → three handshakes.
+   - However, this leads to an odd sum of degrees (1+2+3+4+3=13), which is impossible because the total degree must be even in any graph.
+
+10. **Adjusting Connections:**
+    - To make the total degree even, B's second handshake must not be with E but perhaps with C.
+    - Thus, B shakes hands with D and C → two connections.
+    - Then, C has handshakes with D, B, and E → three connections (satisfies C's count).
+    - E is connected to D and C → two connections.
+
+11. **Verifying Total Degrees:**
+    - A: 1
+    - B: 2
+    - C: 3
+    - D: 4
+    - E: 2
+    - Sum = 1+2+3+4+2 = 12, which is even. This configuration works.
+
+**Answer:** E shook hands with two people at the party.

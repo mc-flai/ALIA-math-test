@@ -1,0 +1,82 @@
+<think>
+Voy a intentar resolver este problema paso a paso. Primero, entiendo que necesito encontrar cuántos números enteros en el conjunto {1000, 1001, ..., 1999} tienen la propiedad de que si suprimo una cifra cualquiera del número, el resultado es un divisor del número original.
+
+Para empezar, consideremos un número de cuatro dígitos, digamos ABCD. Al suprimir una cifra, podemos obtener números de tres dígitos. Por ejemplo:
+
+- Si suprimimos A, obtenemos BCD.
+- Si suprimimos B, obtenemos ACD.
+- Si suprimimos C, obtenemos ABD.
+- Si suprimimos D, obtenemos ABC.
+
+Cada uno de estos resultados debe ser un divisor del número original ABCD. Es decir:
+
+1. BCD | ABCD
+2. ACD | ABCD
+3. ABD | ABCD
+4. ABC | ABCD
+
+Vamos a analizar cada una de estas condiciones.
+
+**1. Suprimimos la primera cifra (A):**
+El número resultante es BCD. Tenemos que verificar si BCD divide a ABCD.
+
+Notemos que ABCD = 1000*A + BCD. Entonces:
+
+ABCD / BCD = (1000*A)/BCD + 1
+
+Para que BCD sea un divisor de ABCD, (1000*A) debe ser divisible por BCD. Es decir, BCD | 1000*A.
+
+Esto implica que BCD divide a 1000*A. Consideremos A como una variable que puede ser del 1 al 9 (ya que el número original es de 1000 a 1999).
+
+**2. Suprimimos la segunda cifra (B):**
+El número resultante es ACD. Similarmente, ACD debe dividir a ABCD.
+
+ABCD = 100*A + 10*B + C + D
+ACD = 100*A + 10*C + D
+
+Entonces:
+
+ABCD / ACD = (100*A + 10*B)/ (100*A + 10*C + D) + (C + D)/(100*A + 10*C + D)
+
+Para que ACD divida a ABCD, el cociente debe ser entero.
+
+**3. Suprimimos la tercera cifra (C):**
+El número resultante es ABD.
+
+ABCD = 1000*A + 100*B + 10*C + D
+ABD = 1000*A + 10*B + D
+
+Entonces:
+
+ABCD / ABD = (100*B)/ABD + C*10/ABD + D/(ABD)
+
+Para que ABD divida a ABCD, el cociente debe ser entero.
+
+**4. Suprimimos la cuarta cifra (D):**
+El número resultante es ABC.
+
+ABCD / ABC = (1000*A + 10*B + C)/ABC + D/ABC
+
+Similarmente, para que ABC divida a ABCD, el cociente debe ser entero.
+
+Ahora, notemos que las condiciones pueden ser muy restrictivas. En particular, consideremos que al suprimir la primera cifra (A), obtenemos BCD, y BCD divide a 1000*A + BCD.
+
+Entonces:
+
+ABCD = 1000*A + BCD
+=> ABCD / BCD = 1 + (1000*A)/BCD
+
+Esto implica que (1000*A) debe ser divisible por BCD. Dado que A es del 1 al 9, y BCD es un número de tres dígitos entre 0 y 999.
+
+Si consideramos el valor máximo de BCD = 999, y A=1:
+
+(1000*1) / 999 ≈ 1.001, que no es entero. Por lo tanto, no hay números en lazo 1000-1999 que cumplan esta condición.
+
+Es decir, al suprimir cualquier dígito del número original, el cociente no será entero. Por lo tanto, no existen números en el rango dado con la propiedad solicitada.
+</think>
+
+Raonament: 
+
+Para cada número del conjunto {1000, 1001, ..., 1999}, se requiere que al suprimir cualquier una de sus cuatro cifras, el número resultante sea un divisor del original. Analizando las condiciones matemáticas, se determina que no existen números en este rango que cumplan con todas las restricciones impuestas por la divisibilidad necesaria.
+
+Resposta: E) Cap

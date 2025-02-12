@@ -1,0 +1,114 @@
+<think>
+Primero, identifico los datos del problema:
+
+- **Ariadna** viaja de A a B y luego inmediatamente regresa a A.
+- **Baldiri** viaja de B a A y luego inmediatamente regresa a B.
+- Ambos comienzan a la misma hora.
+- La velocidad de Ariadna es el triple que la de Baldiri.
+- Se encuentran por primera vez 15 minutos después de comenzar.
+
+El objetivo es encontrar cuánto tiempo después se encontrarán por segunda vez.
+
+**Paso 1: Definir Variables**
+
+- Sea \( v \) la velocidad de Baldiri. Entonces, la velocidad de Ariadna será \( 3v \).
+- Sea \( D \) la distancia entre los puntos A y B.
+- Sea \( t_1 = 15 \) minutos el tiempo hasta el primer encuentro.
+
+**Paso 2: Posición al Primer Encuentro**
+
+Cuando se encuentran por primera vez, la suma de las distancias recorridas por ambos es igual a \( D \).
+
+La distancia recorrida por Ariadna en \( t_1 \) minutos:
+\[ \text{Distancia}_A = 3v \times \frac{t_1}{60} \]
+
+La distancia recorrida por Baldiri en \( t_1 \) minutos:
+\[ \text{Distancia}_B = v \times \frac{t_1}{60} \]
+
+Sumando ambas distancias:
+\[ 3v \times \frac{t_1}{60} + v \times \frac{t_1}{60} = D \]
+\[ (4v) \times \frac{t_1}{60} = D \]
+\[ \frac{4v t_1}{60} = D \]
+
+Sustituyendo \( t_1 = 15 \):
+\[ \frac{4v \times 15}{60} = D \]
+\[ \frac{60v}{60} = D \]
+\[ v = D \]
+
+**Paso 3: Movimientosposteriores al Primer Encuentro**
+
+Después del primer encuentro, ambos continúan viajando:
+
+- **Ariadna** llegó a B y ya retornó, mientras que **Baldiri** llegó a A y retornó. Para cuando se encuentren de nuevo, habrán completado un ciclo adicional.
+
+Cada vez que Ariadna hace un viaje completo (A → B → A) tarda:
+\[ \text{Tiempo}_A = 2 \times \frac{D}{3v} \]
+
+Y Baldiri tarda en hacer su viaje completo (B → A → B):
+\[ \text{Tiempo}_B = 2 \times \frac{D}{v} \]
+
+La relación de tiempos es:
+\[ \frac{\text{Tiempo}_A}{\text{Tiempo}_B} = \frac{2 \times \frac{D}{3v}}{2 \times \frac{D}{v}} = \frac{1}{3} \]
+Esto significa que Ariadna completa su viaje 3 veces más rápido que Baldiri.
+
+**Paso 4: Encuentro Sucesivo**
+
+El primer encuentro ocurre después de 15 minutos. Para el segundo encuentro, necesitan recorrer la distancia total de \( 3D \) en total (después del primer encuentro):
+
+\[ (3v + v) \times t_2 = 3D \]
+\[ 4v \times t_2 = 3D \]
+
+Sustituyendo \( D = v \):
+\[ 4v \times t_2 = 3v \]
+\[ t_2 = \frac{3}{4} \text{ horas} = 45 \text{ minutos} \]
+
+Sin embargo, esto no considera que ya se han encontrado una vez. Por lo tanto, el tiempo total hasta el segundo encuentro es:
+
+15 minutos + 45 minutos = 60 minutos.
+
+Pero revisando, el error está en la interpretación de las distancias posteriores al primer encuentro. Un enfoque correcto es considerar que después del primer encuentro, necesitan cubrir 3D (Ariadna viaja a B y regresa, Baldiri viaja a B y regresa), lo que reduce el tiempo total.
+
+Finalmente, el segundo encuentro ocurrirá 45 minutos después del inicio.
+</think>
+
+Raonament: 
+
+1. **Definir Variables:**
+   - Velocidad de Baldiri: \( v \)
+   - Velocidad de Ariadna: \( 3v \) (dado que es el triple)
+   - Distancia entre A y B: \( D \)
+   - Tiempo hasta el primer encuentro: \( t_1 = 15 \) minutos
+
+2. **Posición al Primer Encuentro:**
+   - Ariadna viaja de A a B en \( \frac{D}{3v} \) horas.
+   - Baldiri viaja de B a A en \( \frac{D}{v} \) horas.
+   - Al encontrarse, la suma de las distancias recorridas es \( D \):
+     \[
+     3v \times t_1 + v \times t_1 = D
+     \]
+     \[
+     4v \times t_1 = D
+     \]
+     Sustituyendo \( t_1 = 0.25 \) horas (15 minutos):
+     \[
+     4v \times 0.25 = D \Rightarrow v = D
+     \]
+
+3. **Tiempo Hasta el Segundo Encuentro:**
+   - Después del primer encuentro, ambos continúan viajando.
+   - Ariadna llega a B y regresa a A, mientras Baldiri llega a A y regresa a B.
+   - Para encontrarse de nuevo, necesitan cubrir una distancia total de \( 3D \):
+     \[
+     (3v + v) \times t_2 = 3D
+     \]
+     \[
+     4v \times t_2 = 3D
+     \]
+     Sustituyendo \( D = v \):
+     \[
+     4v \times t_2 = 3v \Rightarrow t_2 = \frac{3}{4} \text{ horas} = 45 \text{ minutos}
+     \]
+
+   - El segundo encuentro ocurre **45 minutos después del inicio**.
+
+Resposta: E) 45 min

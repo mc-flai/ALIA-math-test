@@ -1,0 +1,117 @@
+<think>
+Bueno, voy a intentar resolver este problema. Veamos lo que se nos pide.
+
+Tengo dos ecuaciones:
+
+1. 2017 + x = y²
+2. 2017 + y = x²
+
+Y necesito encontrar el producto xy. Las opciones son números negativos, excepto una que es positiva, así que posiblemente el producto será negativo.
+
+Primero, intentaré expresar las variables en términos de una sola variable para resolverlas. Supongo que podría restar o igualar las ecuaciones, pero no está claro. Vamos a ver:
+
+Toma la primera ecuación: 2017 + x = y²
+y la segunda: 2017 + y = x²
+
+Si reescribo ambas, obtengo:
+x = y² - 2017
+y = x² - 2017
+
+Ahora, podemos sustituir una en la otra. Sustituyo x de la primera ecuación en la segunda:
+
+y = (y² - 2017)² - 2017
+
+Wow, esto se complica un poco. Vamos a expandirlo.
+
+Primero, (y² - 2017)² es igual a y⁴ - 2*2017*y² + (2017)².
+
+Entonces:
+y = y⁴ - 4034*y² + 2017² - 2017
+
+Luego, pasamos todo a un lado para formar una ecuación polinomial:
+
+y⁴ - 4034*y² + (2017² - 2017) - y = 0
+
+Simplifymos los términos constantes. Primero calculo 2017²:
+
+2017 * 2017: Pues, 2000² es 4,000,000. 17*2000*2 = 68,000. Y 17²=289. Sumando: 4,000,000 + 68,000 + 289 = 4,068,289.
+
+Entonces, 2017² - 2017 es 4,068,289 - 2017 = 4,066,272.
+
+Así que la ecuación se convierte en:
+
+y⁴ - 4034*y² + 4,066,272 - y = 0
+
+Está complicada. Tal vez haya una mejor manera de abordar el problema sin llegar a cuarto grado.
+
+Volvamos a las dos ecuaciones originales:
+
+1. x = y² - 2017
+2. y = x² - 2017
+
+Si reemplazamos x en la segunda ecuación, obtenemos:
+
+y = (y² - 2017)² - 2017
+
+Que es lo mismo que antes.
+
+Otra idea: Podemos restar las dos ecuaciones originales para ver si se simplifican.
+
+(2017 + x) - (2017 + y) = y² - x²
+Simplificando:
+x - y = y² - x²
+
+Y noto que y² - x² es igual a (y - x)(y + x). Por lo tanto:
+
+x - y = -(x - y)(x + y)
+
+Si x ≠ y, podemos dividir ambos lados por (x - y), obteniendo:
+
+1 = -(x + y)
+
+Así que:
+
+x + y = -1
+
+Ahora, esto es útil. Tenemos x + y = -1.
+
+Sabiendo que, podemos encontrar xy.
+
+Pero para ello, quizás usemos las ecuaciones originales.
+
+También sabemos de x + y = -1, podremos encontrar xy si usamos las ecuaciones dadas.
+
+Volvamos a las ecuaciones:
+
+2017 + x = y²
+2017 + y = x²
+
+Sumamos ambas ecuaciones:
+
+(2017 + x) + (2017 + y) = y² + x²
+Simplificando:
+4034 + (x + y) = x² + y²
+
+Pero ya sabemos que x + y = -1, así que reemplazamos:
+
+4034 + (-1) = x² + y² → 4033 = x² + y²
+
+Ahora, queremos encontrar xy. Sabemos que (x + y)^2 = x² + 2xy + y².
+
+Sustituyendo lo que tenemos:
+
+(-1)^2 = x² + y² + 2xy
+1 = 4033 + 2xy
+
+Entonces,
+
+2xy = 1 - 4033 = -4032
+
+Así que xy = -4032 / 2 = -2016.
+
+Revisando las opciones, B) es -2016. Pues ya está.
+</think>
+
+Raonament: Desprès de manipular les equacions donades, hem arribat a que x + y = -1. Usant aquesta informació en conjunt amb les equacions iniciales, hem pogut calcular el producte xy, obtenciendo -2016.
+
+Resposta: B)

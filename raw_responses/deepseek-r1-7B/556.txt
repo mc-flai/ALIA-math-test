@@ -1,0 +1,58 @@
+<think>
+Vamos abordar el problema paso a paso. Primero, identifico que se nos habla de un polígono regular, lo que significa que todos sus lados y ángulos son iguales. La suma del número de costats (lados) y el número de diagonales es 28. Nuestro objetivo es determinar cuántos vértices tiene el polígono.
+
+Sé que en un polígono con \( n \) vértices, el número de lados también es \( n \), ya que cada vértice está conectado a dos lados consecutivos.
+
+Para calcular el número de diagonales en un polígono regular, utilizo la fórmula:
+\[
+\text{Número de diagonales} = \frac{n(n - 3)}{2}
+\]
+Está formula se origina porque cada vértice puede conectarse con \( n - 3 \) otros vértices para formar una diagonal (excluyendo el vértice mismo y sus dos vecinos directos).
+
+Según el problema, la suma del número de lados y diagonales es 28:
+\[
+n + \frac{n(n - 3)}{2} = 28
+\]
+Para resolver esta ecuación, primero elimino el denominador multiplicando ambos lados por 2:
+\[
+2n + n(n - 3) = 56
+\]
+Luego expando y simplifico:
+\[
+n^2 - n - 56 = 0
+\]
+Resuelvo esta ecuación cuadrática utilizando la fórmula cuadrática o por factorización. Al final, determino que \( n = 8 \) es la solución viable.
+</think>
+
+**Raonament:**
+
+Considere un polígon regular amb \( n \) vèrtexs. Sabem que el nombre de costats és igual al nombre de vèrtexs, així que hi ha \( n \) costats.
+
+El nombre de diagonals en un polígon regular es donat per la fórmula:
+
+\[
+\text{Nombre de diagonals} = \frac{n(n - 3)}{2}
+\]
+
+Segons el problema, la suma del nombre de costats i el nombre de diagonals és 28. Per tant, tenim l'equació:
+
+\[
+n + \frac{n(n - 3)}{2} = 28
+\]
+
+Multiplicem ambo les parts per 2 per eliminar el denominador:
+
+\[
+2n + n(n - 3) = 56
+\]
+
+Expanding i simplificant:
+
+\[
+n^2 - n - 56 = 0
+\]
+
+Resolvendo la equació quadràtica, trobem que \( n = 8 \) és la soluciò correcta.
+
+**Resposta:**
+\boxed{B}

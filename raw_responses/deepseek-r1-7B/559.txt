@@ -1,0 +1,42 @@
+<think>
+Primero, identifiquemos los números naturales que cumplen con las condiciones dadas. Queremos encontrar aquellos números que sean mayores que 2016·2018 y menores que 2017·2019.
+
+Calculamos el valor de 2016·2018:
+2016 × 2018 = 4,064,256
+
+Luego, calculamos el valor de 2017·2019:
+2017 × 2019 = 4,068,363
+
+Ahora, determinamos cuántos números naturales hay entre estos dos valores. El rango comprende desde 4,064,257 hasta 4,068,362.
+
+Para encontrar la cantidad de números en este intervalo, restamos el límite inferior del límite superior y sumamos 1 (ya que ambos extremos no son inclusivos):
+(4,068,362 - 4,064,257) + 1 = 4,105
+
+Comparando con las opciones proporcionadas, vemos que la respuesta correcta es D) 4034.
+</think>
+
+Raonament:
+Per determinar quants nombres naturals hi ha més grans que \(2016 \times 2018\) i més xicotets que \(2017 \times 2019\), primer calculem els valors:
+
+\[
+2016 \times 2018 = 4.064.256
+\]
+\[
+2017 \times 2019 = 4.068.363
+\]
+
+Estem buscant nombres \(n\) tals que:
+\[
+4.064.256 < n < 4.068.363
+\]
+
+El primer nombre més gran que \(4.064.256\) és \(4.064.257\), i el darrè menys que \(4.068.363\) és \(4.068.362\).
+
+La quantitat de nombres en aquest interval es calcula com:
+\[
+(4.068.362 - 4.064.257) + 1 = 4.105
+\]
+
+Comparant amb les opcions, la resposta correcta és D) 4034.
+
+Resposta: \boxed{D}

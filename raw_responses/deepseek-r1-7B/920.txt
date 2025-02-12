@@ -1,0 +1,73 @@
+<think>
+Vamos a resolver este problema paso a paso. Primero, intentaré entender lo que se está preguntando.
+
+La situación es que el Hotel Gran Cangur antes de 2020 ofrecía solo habitaciones triples (3 camas) y cuádruples (4 camas). Durante su reconstrucción, todas las habitaciones fueron convertidas en dobles (2 camas). Antes de la reconstrucción, el hotel podía albergar a 500 personas. Después de la reconstrucción, ahora puede albergar solo a 300 personas.
+
+Necesitamos determinar cuántas habitaciones cuádruples había antes de la reconstrucción.
+
+Voy a definir variables para representar las cantidades desconocidas:
+
+- Sea \( x \) el número de habitaciones triples.
+- Sea \( y \) el número de habitaciones cuádruples.
+
+Entonces, antes de la reconstrucción, el total de habitaciones era \( x + y \).
+
+Cada habitación triple alberga 3 personas y cada habitación cuádruple alberga 4 personas. Por lo tanto, la capacidad total del hotel antes de la reconstrucción es:
+
+\( 3x + 4y = 500 \) ... (1)
+
+Después de la reconstrucción, todas las habitaciones triples se convirtieron en dobles y también las cuádruples. Supongo que esto significa que cada habitación triple pasó a ser una doble, y lo mismo para las cuádruples, pero no estoy seguro. Pero el texto dice que "totes les habitacions van ser reconvertides a dobles", lo que probablemente significa que todas las habitaciones originales (triple y cuádruple) se convirtieron en habitaciones dobles.
+
+Así que, el número total de habitaciones después de la reconstrucción es el mismo \( x + y \), pero ahora cada una alberga 2 personas. Por lo tanto, la capacidad ahora es:
+
+\( 2(x + y) = 300 \)
+
+Esto simplifica a:
+
+\( x + y = 150 \) ... (2)
+
+Ahora tenemos dos ecuaciones:
+
+1. \( 3x + 4y = 500 \)
+2. \( x + y = 150 \)
+
+Puedo resolver este sistema de ecuaciones. De la ecuación (2), podemos expresar \( x \) en términos de \( y \):
+
+\( x = 150 - y \)
+
+Sustituyendo esto en la ecuación (1):
+
+\( 3(150 - y) + 4y = 500 \)
+
+Calculando:
+
+\( 450 - 3y + 4y = 500 \)
+\( 450 + y = 500 \)
+\( y = 50 \)
+
+Así, el número de habitaciones cuádruples antes de la reconstrucción era 50.
+</think>
+
+Raonament: 
+Per resoldre aquest problema, hem de determinar el nombre d'habitacions quàdruples abans de la reconstrucció de l'hotel. Sabem que abans de 2020, l'hotel Gran Cangur solament oferia habitacions triples i quàdruples, i que podia allotjar 500 persones. Durant la reconstrucció, totes les habitacions van ser convertides en dobles, i ara pots allotjar 300 persones.
+
+Definim:
+- \( x \) com el nombre d'habitacions triples.
+- \( y \) com el nombre d'habitacions quàdruples.
+
+La primera ecuació tindrà l'expressió següent basant-se en la capacitat abans de la reconstrucció:
+\[ 3x + 4y = 500 \]
+
+Després de la reconstrucció, totes les habitacions són dobles, i el nombre total d'habitacions no ha canviat:
+\[ 2(x + y) = 300 \]
+Simplificant, obtem:
+\[ x + y = 150 \]
+
+Resolent aquest sistema d'ecuacions:
+\[ x = 150 - y \]
+Substituint a la primera ecuació:
+\[ 3(150 - y) + 4y = 500 \]
+\[ 450 - 3y + 4y = 500 \]
+\[ y = 50 \]
+
+Resposta: B) 50

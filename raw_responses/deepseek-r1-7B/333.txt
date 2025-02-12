@@ -1,0 +1,46 @@
+<think>
+Primero, entiendo que necesito encontrar una fracción i/d tal que i + d ≤ 103 y i < 3d. Además, quiero maximizar la fracción.
+
+Sé que para maximizar i/d con la suma fija de i + d, es mejor acercar i a d. Sin embargo, debido a las restricciones, no siempre será posible que i sea tan cercano a d como querría.
+
+Voy a probar valores de d comenzando desde el máximo posible para ver cuál cumple con i + d ≤ 103 y i < 3d, y al mismo tiempo maximiza la fracción.
+
+Comenzaré con d = 77. Entonces i debe ser menor que 3*77 = 231, pero también i ≤ 103 - 77 = 26. La fracción más grande posible sería 26/77.
+
+Reviso las opciones y veo que 26/77 es una de ellas (opción B). Verifico si existen fracciones mayores con d menores, pero al analizar, no hay un d que permita una i mayor que 26 sin violar las sumas o las restricciones. Por lo tanto, la mejor opción es B) 26/77.
+</think>
+
+Raonament: 
+
+Per trobar el valor més gran possible de la fracció \( \frac{i}{d} \), sotenim que \( i + d \leq 103 \) i \( \frac{i}{d} < 3 \). Busquemos les pareles (i, d) que complaten aquests condicionals i maximitzem la fracció.
+
+Podem observar que per maximizar \( \frac{i}{d} \), volem que \( i \) sigui tan gran com possible i \( d \) tan petit com possible. No obstant això, hem de complir \( i < 3d \).
+
+Anàlisis:
+
+- **Opció A: 27/77**
+  - Suma: 27 + 77 = 104 > 103
+  - No complieix la condició sum \( \leq 103 \)
+
+- **Opció B: 26/77**
+  - Suma: 26 + 77 = 103 \( \leq 103 \)
+  - Verificació de fracció: \( 26 < 3*77 = 231 \) ✔️
+
+- **Opció C: 25/76**
+  - Suma: 25 + 76 = 101 \( \leq 103 \)
+  - Fracció: \( 25 < 3*76 = 228 \) ✔️
+  - Menor que 26/77
+
+- **Opció D: 25/77**
+  - Suma: 25 + 77 = 102 \( \leq 103 \)
+  - Fracció: \( 25 < 3*77 = 231 \) ✔️
+  - Menor que 26/77
+
+- **Opció E: 26/75**
+  - Suma: 26 + 75 = 101 \( \leq 103 \)
+  - Fracció: \( 26 < 3*75 = 225 \) ✔️
+  - Menor que 26/77
+
+Després d'analitzar, la fracció més gran possible que complaeix tots els condicionals és **26/77**.
+
+Resposta: B

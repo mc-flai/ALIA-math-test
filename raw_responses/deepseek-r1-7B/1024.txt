@@ -1,0 +1,36 @@
+<think>
+Primero, identifico los dígitos disponibles en las peces: 3, 5 y tres más 3s, lo que nos da un total de cuatro dígitos.
+
+Luego, considero que algunos de estos dígitos son iguales (tres 3s), por lo que necesito tener en cuenta las combinaciones que no generen números repetitivos.
+
+Para formar números de cuatro dígitos, analizo cuántas veces puedo colocar el 5 en diferentes posiciones y combinarlo con los 3s restantes, teniendo en cuenta las repeticiones.
+
+Calculo las permutaciones totales sin considerar las repeticiones y luego ajusto por la multiplicación de factores que compensan las coincidencias de dígitos iguales.
+
+Finalmente, sumo las combinaciones válidas para obtener el número total de números diferentes que se pueden formar.
+</think>
+
+**Raonament:**
+
+Rita dispose de les peces 3, 5, 3 i 3. Per formar un nombre de quatre xifres, ha de combinar aquests dígitos sense repetir l'ordre exacte. Com que hi ha tres 3s i un 5, hem de tenir en compte les posibles combinacions úniques.
+
+1. **Ordena les peces:**
+   - Les peces son 3, 5, 3, 3.
+   
+2. **Identifica els dígitos únics:**
+   - Hi ha dos dígitos únics: 3 i 5.
+   
+3. **Calcula les permutacions totales:**
+   - Sense cap restricció, el nombre de permutacions serà \( \frac{4!}{3!} = 4 \). Aquest compte considera totes les posibles ordenacions, tenint en compte que hi ha tres 3s iguals.
+   
+4. **Enumerar les combinacions úniques:**
+   - 5333
+   - 3533
+   - 3353
+   - 3335
+   
+Aquestes són totes les posibles combinacions úniques de quatre xifres que Rita pot formar amb les peces donades.
+
+**Resposta:**
+
+\boxed{B}

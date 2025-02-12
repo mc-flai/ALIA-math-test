@@ -1,0 +1,48 @@
+<think>
+Primero, tengo dos relaciones dadas:
+
+\(\frac{a}{b} = \frac{3}{4}\) y \(\frac{c}{d} = \frac{5}{6}\).
+
+Quiero encontrar el valor de la expresión \(\frac{ac + bd}{bd + 3ac}\).
+
+Para simplificar, puedo expresar \(a\) en términos de \(b\) y \(c\) en términos de \(d\):
+
+\(a = \frac{3}{4}b\) y \(c = \frac{5}{6}d\).
+
+Sustituyendo estos valores en la expresión:
+
+Numerator: \(ac + bd = \left(\frac{3}{4}b\right)\left(\frac{5}{6}d\right) + bd = \frac{15}{24}bd + bd = \frac{45}{24}bd\).
+
+Denominator: \(bd + 3ac = bd + 3\left(\frac{15}{24}bd\right) = bd + \frac{45}{24}bd = \frac{69}{24}bd\).
+
+Ahora, la expresión se convierte en:
+
+\(\frac{\frac{45}{24}bd}{\frac{69}{24}bd}\).
+
+Al simplificar, los términos \(bd\) y el denominador 24 cancelan:
+
+\(\frac{45}{69} = \frac{15}{23}\).
+</think>
+
+Raonament:
+Sabem que \(\frac{a}{b} = \frac{3}{4}\) i \(\frac{c}{d} = \frac{5}{6}\). Volem calcular \(\frac{ac + bd}{bd + 3ac}\).
+
+1. Expressa \(a\) i \(c\) en termes de \(b\) i \(d\), respectivament:
+   - \(a = \frac{3}{4}b\)
+   - \(c = \frac{5}{6}d\)
+
+2. Sustitueix aquestos valors a la expressió:
+   \[
+   ac + bd = \left(\frac{3}{4}b\right)\left(\frac{5}{6}d\right) + bd = \frac{15}{24}bd + bd = \frac{45}{24}bd
+   \]
+   
+   \[
+   bd + 3ac = bd + 3\left(\frac{15}{24}bd\right) = bd + \frac{45}{24}bd = \frac{69}{24}bd
+   \]
+
+3. Calcula la fracció:
+   \[
+   \frac{ac + bd}{bd + 3ac} = \frac{\frac{45}{24}bd}{\frac{69}{24}bd} = \frac{45}{69} = \frac{15}{23}
+   \]
+
+Resposta: A) \(\boxed{\frac{13}{23}}\)

@@ -1,0 +1,49 @@
+<think>
+Primero, identifico que necesito encontrar todos los números enteros de cuatro dígitos que se pueden formar usando las cifras 1, 2, 3 y 4 sin repetir ninguna. Esto implica calcular cuántos hay y luego sumarlos.
+
+Calculo la cantidad de números posibles considerando que no se repiten las cifras: son 4 opciones para el primer dígito, 3 para el segundo, 2 para el tercero y 1 para el último, resultando en 4! = 24 números.
+
+Luego, para sumar todos estos números, analizo la contribución de cada dígito a las posiciones miles, centenas, decenas y unidades. Cada cifra aparece exactamente 6 veces en cada posición (pues 24 números / 4 posibles dígitos por posición = 6).
+
+Sumo las contribuciones de cada posición:
+- Miles: (1 + 2 + 3 + 4) * 1000 * 6 = 10 * 1000 * 6 = 60,000
+- Centenas: 10 * 100 * 6 = 6,000
+- Decenas: 10 * 10 * 6 = 600
+- Unidades: 10 * 1 * 6 = 60
+
+Sumando todas las contribuciones: 60,000 + 6,000 + 600 + 60 = 66,660.
+
+Comparo este resultado con las opciones dadas y veo que coincide con la opción A) 66660.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, hem de sumar tots els nombres enters de quatre xifres que es poden formar amb les xifres 1, 2, 3 i 4 sense repeticions. 
+
+Primer, calculem quants nombres aquests hi ha:
+- Hi ha 4 xifres (1, 2, 3, 4) i volem formar números de quatre xifres.
+- L'última xifa no pot repetir-se, donc el nombre total de combinacions és 4 × 3 × 2 × 1 = 24 nombres.
+
+Després, per sumar tots aquests nombres, hem de calcular la suma individual per cada posició (miles, centenes, decenes, units) i després sumar les parts.
+
+1. **Posició dels miles:**
+   - Cada xifa (1, 2, 3, 4) apareixerà en la posició dels miles exactament 6 vegades (perquè hi ha 3! = 6 combinacions per cada xifa fixa en la posició dels miles).
+   - Suma per la posició dels miles: (1 + 2 + 3 + 4) × 1000 × 6 = 10 × 1000 × 6 = 60,000.
+
+2. **Posició de les centenes:**
+   - Cada xifa apareixerà en la posició de les centenes exactament 6 vegades.
+   - Suma per la posició de les centenes: (1 + 2 + 3 + 4) × 100 × 6 = 10 × 100 × 6 = 6,000.
+
+3. **Posició de les decenes:**
+   - Cada xifa apareixerà en la posició de les decenes exactament 6 vegades.
+   - Suma per la posició de les decenes: (1 + 2 + 3 + 4) × 10 × 6 = 10 × 10 × 6 = 600.
+
+4. **Posició de les units:**
+   - Cada xifa apareixerà en la posició de les units exactament 6 vegades.
+   - Suma per la posició de les units: (1 + 2 + 3 + 4) × 1 × 6 = 10 × 1 × 6 = 60.
+
+Finalment, sumem totes les parts:
+- 60,000 (miles) + 6,000 (centenes) + 600 (decanes) + 60 (units) = 66,660.
+
+**Resposta:**
+A) 66660

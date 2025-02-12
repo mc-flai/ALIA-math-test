@@ -1,0 +1,169 @@
+<think>
+Okay, let's try to figure out this problem. So Dani is writing digits in a specific pattern: first increasing from 0 to 9, then decreasing back down, and repeating this cycle over and over. The sequence goes like 012345678987654321012345678987654321... and so on. We need to find out what the last digit is after Dani writes a total of 2018 digits.
+
+Hmm, let's break this down step by step. First, I should probably figure out the length of one complete cycle of this pattern. The increasing part goes from 0 up to 9, which is 10 digits (including both 0 and 9). Then, the decreasing part starts from 8 down to 0 because if we already wrote 9, going back would start at 8. Wait, no, actually, looking at the given sequence, after 9 it goes to 8, then 7, all the way down to 1, and then back up again? Wait, no, let me check.
+
+Wait, in the example provided: 012345678987654321... So starting from 0, going up to 9 (digits 0-9), then coming back down starting at 8, because we've already used 9. Wait no, the sequence after 9 is 8, so it goes 0,1,2,...,9,8,7,...,1. So from 9 back down to 1, which is 9 digits (from 8 down to 1). Let's count: from 0 up to 9 is 10 digits, then from 8 down to 1 is 8 digits. Wait no, because from 8 down to 1 is 8 numbers but since we include both ends, it's actually 8-1 +1 = 8 digits? No, wait: 8,7,6,5,4,3,2,1 – that's 8 digits. So the increasing part has 10 digits (including 0 and 9), and the decreasing part after that is from 8 down to 1, which is 8 digits. Wait no, because in the given sequence it's 012345678987654321... So after 9 comes 8, then 7, etc., down to 1, and then presumably back up again? Or does it go all the way back to 0?
+
+Wait, let me clarify. The initial sequence is 0123456789876543210123... So after 9 comes 8, then 7, down to 1, and then the next digit is 0 again? Or does it go back up starting from 1?
+
+Wait no, in the sequence given: 012345678987654321012345... So after 9 comes 8, then 7,... down to 1, and then next is 0 again? Or does it start going up again from 1?
+
+Wait, looking at the sequence: ...4321012345678987654321... So after reaching 1, the next digit is 0, then starts increasing again. Wait no, in the initial part of the problem statement, it says first cap avant (forward), then cap enrere (backward), and so on. So each cycle is forward from 0 to 9, then backward from 8 down to 1? Or does it go all the way back to 0?
+
+Wait, I think I need to clarify the exact pattern.
+
+Let me read again: Dani writes digits first increasing order cap avant (forward), so starting from 0 up to 9. Then cap enrere (backward), which would be decreasing. So after reaching 9, the next digits are 8,7,... down to 0? Or does it stop at 1?
+
+Wait, looking back at the problem statement: "primer cap avant, després cap enrere, després cap avant i després cap enrere". So each cycle is forward and then backward.
+
+In the example given: 012345678987654321012345... So from 0 to 9 (10 digits), then from 8 down to 1 (which is 8 digits), because after 9 comes 8, then 7,... down to 1. Then again forward from 0 up.
+
+So each full cycle consists of 10 (forward) + 8 (backward) = 18 digits? Wait no, wait:
+
+Wait the sequence given is 012345678987654321012345... So let's count how many digits are in one full cycle before it repeats.
+
+Forward: 0-9 → 10 digits
+
+Backward: After 9, the next digits are 8,7,...,1. That's from 8 down to 1, which is 8 digits.
+
+So each complete forward-backward cycle is 10 + 8 = 18 digits.
+
+Wait, but looking at the given sequence: after the first 0-9 (digits 0-9), it goes 8-7-...-1, then back to 0? Or does it go up again from 0?
+
+In the example provided, it's written as 012345678987654321012345..., so after 9 comes 8, then 7,... down to 1, and then back to 0. So in that case, the backward part is from 8 down to 1 (8 digits), making each cycle 10 + 8 = 18 digits.
+
+Wait no, because when you go forward again after reaching 1, you would start at 0 again, right? But looking at the sequence: ...432101234567...
+
+So yes, after reaching 1, it goes back to 0 and then starts increasing again. So each cycle is from 0 up to 9 (10 digits) and then down from 8 to 1 (8 digits), totaling 18 digits per cycle.
+
+Wait but let me recount: 0-9 is 10 digits, then 8-1 is 8 digits. Then the next cycle starts with 0 again? So yes, each full cycle is 18 digits.
+
+So now, we have a total of 2018 digits written by Dani. We need to find out what's the last digit, i.e., the 2018th digit.
+
+First, let's determine how many complete cycles there are in 2018 digits and then see where the remaining digits fall.
+
+Each cycle is 18 digits long. So we can divide 2018 by 18 to find out how many full cycles fit into 2018 digits and what the remainder is, which will tell us the position in the next (incomplete) cycle.
+
+Let me compute 2018 ÷ 18.
+
+First, let's calculate 18 × 112 = 2016. Because 18 × 100 = 1800; 18 × 12 = 216 → 1800 + 216 = 2016.
+
+So 18 × 112 = 2016 digits.
+
+That means after writing 112 full cycles, Dani has written 2016 digits. Then there are 2018 - 2016 = 2 more digits to write.
+
+Therefore, the last digit is the second digit of the next cycle.
+
+So now we need to figure out what those first two digits in a new cycle are.
+
+Each cycle starts with 0, then increases up to 9, so the first 10 digits are 0-9. Then from 8 down to 1 (digits 11-18).
+
+Wait no: Wait, each full cycle is forward (10 digits) + backward (8 digits), total 18.
+
+So in the next cycle after the 2016th digit, Dani starts again with 0, then writes up to 9. So the first 10 digits of the new cycle are 0,1,2,3,4,5,6,7,8,9.
+
+Therefore, the first digit is 0 (digit 2017), and the second digit is 1 (digit 2018). Therefore, the last digit written is 1.
+
+Wait, but let me confirm:
+
+Wait, in each cycle, the digits are as follows:
+
+Cycle 1: digits 1-18
+
+Digit positions 1-10: 0,1,2,3,4,5,6,7,8,9
+
+Positions 11-18:8,7,6,5,4,3,2,1
+
+Similarly, Cycle 2: digits 19-36:
+
+Positions 19-28:0,1,...,9
+
+Positions 29-36:8,7,...,1
+
+So yes, each cycle starts with a forward count from 0 to 9 (positions n*18 +1 to n*18 +10) and then backward from 8 to 1 (n*18+11 to n*18 +18).
+
+Therefore, in the cycle after 2016 digits (which is 112 cycles), the next two digits are:
+
+Position 2017: first digit of the new cycle → 0
+
+Position 2018: second digit → 1
+
+So the last digit is 1.
+
+Wait, but let me think again: in each forward pass, it's 0 to 9; then backward from 8 to 1. So for the next two digits after 2016, the first is 0 and the second is 1.
+
+Yes, that seems correct.
+
+But wait a minute—let me check with smaller numbers.
+
+Suppose we have 1 cycle (18 digits):
+
+Digits: 0,1,2,3,4,5,6,7,8,9,8,7,6,5,4,3,2,1
+
+Wait, that's 18 digits. So the last digit of a full cycle is 1.
+
+Then the next cycle starts with 0 again.
+
+So positions:
+
+1:0
+
+2:1
+
+...
+
+10:9
+
+11:8
+
+12:7
+
+...
+
+18:1
+
+Yes.
+
+Therefore, each cycle starts at 0 and ends at 1. So if we have a remainder of 2 digits after 2016, the last digit is 1.
+
+Wait, no, wait:
+
+After 2016 digits (which is multiple of 18), the next digit is position 2017: first digit of cycle → 0
+
+Position 2018: second digit →1.
+
+So yes, the last digit is 1.
+
+Alternatively, perhaps I should think differently:
+
+Let me compute the remainder when 2018 is divided by 18. So 2018 ÷ 18 = ?
+
+As above, 18 × 112 = 2016
+
+So 2018 - 2016 = 2.
+
+Thus, remainder is 2.
+
+Therefore, the digit at position 2018 corresponds to the second digit in the cycle.
+
+Since each cycle starts with 0, then the digits go: 0 (1st), 1 (2nd), so yes, the second digit is 1. So the answer should be 1.
+
+Wait a moment—let me make sure that my calculation of remainder is correct.
+
+In modular arithmetic, when we have N = quotient × divisor + remainder, where 0 ≤ remainder < divisor.
+
+So 2018 divided by 18:
+
+Divide 2018 by 18.
+
+We know that 18 × 112 = 2016. So subtracting, 2018 -2016=2. Therefore, remainder is 2.
+
+So the position within the cycle is 2nd digit, which is 1.
+
+Therefore, yes, the last digit is 1.
+
+Thus, I think the answer should be 1.
+</think>
+
+The last digit written is \boxed{1}.

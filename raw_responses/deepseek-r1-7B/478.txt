@@ -1,0 +1,27 @@
+<think>
+Primero, identifico que Alba y Mar parten simultáneamente desde el mismo punto en la pista circular. Ambos se mueven en la misma dirección, con Alba siendo 5 veces más rápida que Mar.
+
+Luego, considero la relación de sus velocidades. Si Alba es 5 veces más rápida, la distancia que cubre Alba por cada vuelta será 5 veces mayor que la que recorre Mar en el mismo tiempo.
+
+Para determinar cuándo coincidirán en un punto, analizo cuando Alba haya completado suficientes vueltas como para reducir la distancia con respecto a Mar de manera que se alinee con él. Dado que Alba es 5 veces más rápida, necesitará completar 5 vueltas adicionales para rencontrarse con Mar.
+
+Sin embargo, en una pista circular, coincidirán no solo en el punto inicial, sino también en todos los puntos intermedios donde la diferencia de distancia cubierta cumpla con multiples enteros de la longitud de la pista. Por lo tanto, el número total de puntos de coincidencia es igual al número de veces que Alba rodea a Mar más 1.
+
+Finalmente, concluyo que Alba rodeará a Mar en 5 vueltas y, por ende, se encontrarán en 6 puntos diferentes de la pista.
+</think>
+
+Raonament:
+Alba i Mar comencen junts en el mateix punt i al mateix temps. La velocitat d'Alba és 5 vegades la de Mar. Per fer coincidir les seves posicions, Alba haurà de completar un nombre de revolucions que li permeti reduir la distància amb respecto a Mar per manera que es tornin a alinejar.
+
+Si marquem el temps t necessari per que Alba hagi completat n revolucions i Mar hagi completat m revolucions, tenim:
+
+V * 5 * t = L * n  
+V * t = L * m  
+
+On V és la velocitat de Mar, i L la longitud de la pista. Dividint les dues equacions:
+
+(5n) / (m) = 1 ⇒ 5n = m.
+
+Això vol dir que per cada revolució que fa Alba, Mar fa 5 revolucions menys. Per tant, el nombre de punts on coincidirán és el nombre de vegades que Alba rodeja a Mar més un (el punt inicial). Donat que n = 1, són 6 punts.
+
+Resposta: D) 6

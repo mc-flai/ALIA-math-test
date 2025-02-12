@@ -1,0 +1,93 @@
+<think>
+Primero, reconozco que los números están representados en base b. Así que, 14_b, 25_b y 416_b son los números involucrados.
+
+Para facilitar la multiplicación, decido convertir estos números de base b a decimal (base 10). 
+
+Calculo el valor decimal de cada número:
+- 14_b = 1*b + 4
+- 25_b = 2*b + 5
+- 416_b = 4*b² + 1*b + 6
+
+Luego, multiplico los primeros dos números en base 10:
+(1*b + 4) * (2*b + 5)
+
+Después de expandir la multiplicación, obtengo una expresión algebraica que igualo al valor decimal de 416_b.
+
+A continuación, resuelvo la ecuación resultante para encontrar el valor de b. Al comparar los términos semejantes y simplificar, determino que b debe ser 9.
+</think>
+
+**Raonament:**
+
+El estudiant ha escrit l'expressió en base b:
+
+\[
+14_b \times 25_b = 416_b
+\]
+
+Per resoldre aquesta equació, primer converteixm tots els nombres a base 10.
+
+- \(14_b = 1 \times b + 4 = b + 4\)
+- \(25_b = 2 \times b + 5 = 2b + 5\)
+- \(416_b = 4 \times b^2 + 1 \times b + 6 = 4b^2 + b + 6\)
+
+Ara, multiplicam els dos primers nombres convertits a base 10:
+
+\[
+(b + 4) \times (2b + 5)
+\]
+
+Expanding the product:
+
+\[
+= b \times 2b + b \times 5 + 4 \times 2b + 4 \times 5
+\]
+\[
+= 2b^2 + 5b + 8b + 20
+\]
+\[
+= 2b^2 + 13b + 20
+\]
+
+Aquest producte s'ha de fer igual a \(4b^2 + b + 6\):
+
+\[
+2b^2 + 13b + 20 = 4b^2 + b + 6
+\]
+
+Menoscanant tots els termes del costat dret:
+
+\[
+0 = 2b^2 - 12b - 14
+\]
+
+Dividim la equació per 2 per simplificar:
+
+\[
+0 = b^2 - 6b - 7
+\]
+
+Resolvem aquesta ecuació quadràtica mitjançant la fórmula general:
+
+\[
+b = \frac{6 \pm \sqrt{(6)^2 + 4 \times 1 \times 7}}{2}
+\]
+\[
+= \frac{6 \pm \sqrt{36 + 28}}{2}
+\]
+\[
+= \frac{6 \pm \sqrt{64}}{2}
+\]
+\[
+= \frac{6 \pm 8}{2}
+\]
+
+Ara, calculam els valors de b:
+
+- \(b = \frac{6 + 8}{2} = \frac{14}{2} = 7\)
+- \(b = \frac{6 - 8}{2} = \frac{-2}{2} = -1\)
+
+Pero, com una base no pot ser negativa ni zero, elegim b = 7.
+
+**Resposta:**
+
+A) 7

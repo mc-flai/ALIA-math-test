@@ -1,0 +1,41 @@
+<think>
+Para resolver este problema, necesitamos determinar cuántos números capicua existen con 2 o 3 dígitos. Un número capicua es aquel que se lee igual al revés que al derecho.
+
+**Números de dos dígitos:**
+- Los números de dos dígitos van del 10 al 99.
+- Para formar un número capicua de dos dígitos, el primer dígito (las decenas) debe ser igual al segundo dígito (las unidades).
+- Por ejemplo, 11, 22, ..., 99.
+- Hay 9 números capicua de dos dígitos.
+
+**Números de tres dígitos:**
+- Los números de tres dígitos van del 100 al 999.
+- Para formar un número capicua de tres dígitos, el primer dígito (las centenas) debe ser igual al tercer dígito (las unidades).
+- El segundo dígito (las decenas) puede ser cualquier dígito del 0 al 9.
+- Por ejemplo, 101, 111, ..., 999.
+- Hay 9 opciones para el primer y tercer dígito, y 10 para el dígito del medio. En total, hay 9 × 10 = 90 números capicua de tres dígitos.
+
+**Total:**
+- Sumando los números capicua de dos y tres dígitos, obtenemos 9 + 90 = 99.
+</think>
+
+Raonament:
+
+Per calcular els nombres capicua de 2 o 3 dígits, procedim separadament per a cadascun dels grups:
+
+1. **Nombres de 2 dígits:**
+   - Un nombre de 2 dígits es pot representar com \( \overline{ab} \), on \( a \) és el primer dígit (de les desenes) i \( b \) és el segon dígit (de les unitats).
+   - Per ser capicua, \( a = b \).
+   - Les opcions per \( a \) són del 1 al 9 (pues un nombre de dos dígits no pot començar amb 0), i per \( b \) ha de ser igual a \( a \).
+   - Total de nombres capicua de dos dígits: 9.
+
+2. **Nombres de 3 dígits:**
+   - Un nombre de 3 dígits es pot representar com \( \overline{abc} \), on \( a \) és el primer dígit (de les centenes), \( b \) el segon (de les desenes) i \( c \) el tercer (de les unitats).
+   - Per ser capicua, \( a = c \) i \( b \) pots ser qualsevol.
+   - Les opcions per \( a \) són del 1 al 9, per \( b \) del 0 al 9 i per \( c \) ha de ser igual a \( a \).
+   - Total de nombres capicua de tres dígits: \( 9 \times 10 = 90 \).
+
+3. **Total:**
+   - Sumant els dos resultats, obtenim \( 9 + 90 = 99 \) nombres capicua en total.
+
+Resposta:
+\boxed{D}

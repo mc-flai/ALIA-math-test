@@ -1,0 +1,46 @@
+<think>
+Para resolver este problema, primero identifico que Cristina colocó 8 cartas en los vértices de un octágono. Necesito determinar cuáles son las 4 cartas que no usó, sabiendo que la suma de cada par de números adyacentes es múltiplo de 3.
+
+Paso 1: Clasificar los números de lados 1 al 12 según su resto modulo 3. Esto nos da tres categorías:
+- Resto 0: 3, 6, 9, 12
+- Resto 1: 1, 4, 7, 10
+- Resto 2: 2, 5, 8, 11
+
+Paso 2: Considerar las posibles combinaciones de restos que sumen un múltiplo de 3. Las combinaciones posibles son:
+- 0 y 0 (pues 0 + 0 = 0 mod 3)
+- 1 y 2 (pues 1 + 2 = 0 mod 3)
+
+Paso 3: Analizar la estructura del octágono, que es un polígono regular con cada vértice conectado a dos adyacentes. Para que la suma de los números en cada lado sea múltiple de 3, el octágono debe tener una secuencia alternada de restos 0 y 0, o bien de 1 y 2.
+
+Sin embargo, dada que hay 8 vértices (un número par), es imposible alternar constantemente entre restos 1 y 2 sin que se repita al final. Por lo tanto, la única manera viable es que todos los números en el octágono tengan un resto de 0 modulo 3.
+
+Paso 4: Cristina usó 8 cartas con restos 0. Las disponibles son 3, 6, 9 y 12, pero solo hay 4 de ellas. Esto implica que no puede colocar todas las cartas en el octágono, por lo que debe omitir algunas.
+
+Revisando las opciones, la respuesta correcta es la que contiene los números con restos 0: 3, 6, 9 y 12.
+</think>
+
+Raonament:
+Cristina ha de posar huit cartes en un octàgon de manera que cada parell de nombres adyacents sumin  un múltiple de 3. Per això, hem de classificar els nombres del 1 al 12 segons el seu restidu quan s'obtingue dividint per 3.
+
+- Nombres amb rest 0: 3, 6, 9, 12
+- Nombres amb rest 1: 1, 4, 7, 10
+- Nombres amb rest 2: 2, 5, 8, 11
+
+Per la suma de dos nombres a ser múltiple de 3, els pares han de tenir:
+- Rest 0 + Rest 0
+- Rest 1 + Rest 2
+
+Dada que un octàgon té huit vèrtexs adjacents alternants, no es poden combinar constantment rest 1 i rest 2 sense repetir. Per tant, els huit nombres posats han de ser tots del tipus rest 0.
+
+Cristina ha usat huits cartes numerades 3, 6, 9 i 12, ja que són les úniques que deuen formar la suma múltiple de 3. Les cartes no posades són les d'altres categories: 1, 2, 4, 5, 7, 8, 10, 11 i 12.
+
+Mirant les opcions:
+- A) 1, 4, 7, 10 (rests 1)
+- B) 3, 5, 7, 9
+- C) 1, 2, 11, 12
+- D) 5, 6, 7, 8
+- E) 3, 6, 9, 12
+
+L'opció correcta és A), ja que les cartes no posades són aquelles amb rest 1.
+
+Resposta: A)

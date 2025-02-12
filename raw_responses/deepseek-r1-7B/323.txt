@@ -1,0 +1,60 @@
+<think>
+Bueno, voy a intentar resolver este problema paso a paso. Primero, entiendo que se trata de un polígono con k lados, y cada ángulo interior es igual a 90° o 150°. La pregunta es cuál de las opciones no puede ser el valor de k.
+
+Sé que la suma de los ángulos interiores de un polígono con k lados es dada por la fórmula (k-2)*180°. En este caso, cada ángulo es o 90° o 150°, lo que significa que la suma total será una combinación de estos dos valores.
+
+Supongamos que hay x ángulos de 90° y y ángulos de 150°. Entonces, x + y = k, ya que son los totales de ángulos del polígono.
+
+La suma de los ángulos interiores también se puede expresar como 90x + 150y. Por lo tanto, la ecuación es:
+
+90x + 150y = (k - 2)*180
+
+Sustituyendo y por k - x (ya que y = k - x), obtenemos:
+
+90x + 150(k - x) = (k - 2)*180
+
+Simplificando:
+
+90x + 150k - 150x = 180k - 360
+
+Combina términos semejantes:
+
+-60x + 150k = 180k - 360
+
+Ahora, despejamos x:
+
+-60x = 30k - 360
+
+Dividimos ambos lados por -60:
+
+x = (-30k + 360)/60 = (360 - 30k)/60 = (12 - k/2)
+
+Dado que x y y deben ser enteros positivos o cero, el valor de (12 - k/2) debe ser entero y no negativo.
+
+Analizamos las opciones:
+
+A) 4:
+x = 12 - 4/2 = 12 - 2 = 10. Es entero y positivo. Posible.
+
+B) 6:
+x = 12 - 6/2 = 12 - 3 = 9. Entero y positivo. Posible.
+
+C) 8:
+x = 12 - 8/2 = 12 - 4 = 8. Entero y positivo. Posible.
+
+D) 9:
+x = 12 - 9/2 = 12 - 4.5 = 7.5. No es entero. Imposible.
+
+E) 10:
+x = 12 - 10/2 = 12 - 5 = 7. Entero y positivo. Posible.
+
+Por lo tanto, k=9 no puede ser el valor del número de lados.
+</think>
+
+Raonament:  
+El polígon ha de tenir angles de 90° i 150°, i la suma total d'angles interior és (k-2)*180°. Si x son els angles de 90° i y els de 150°, llavors x + y = k i 90x + 150y = (k - 2)·180. Substituïnt y = k - x, obtenim l'equació:  
+90x + 150(k - x) = 180k - 360  
+Simplificant, es dona que x = (12 - k/2). Perquè x ha de ser un enter no negatiu, hem de tenir k parell perquè 12 - k/2 sigui entero. D'entre les opcions, només 9 no és un nombre pair, donat que k=9 no permet x a ser enter.
+
+Resposta:  
+D) 9

@@ -1,0 +1,30 @@
+<think>
+El primer estudiante toma 3 cartas de las 7 disponibles. El segundo estudiante toma 2 cartas, quedando 2 en la caja.
+
+El primer estudiante sabe que la suma de los números de las 2 cartas del segundo es par. Para esto, la suma de los números de las 5 cartas restantes (3 tomadas por el primero y 2 por el segundo) debe ser impar, ya que la suma total de todas las cartas (1+2+3+4+5+6+7=28, que es par) menos una suma par da una suma impar.
+
+La suma de las 3 cartas del primer estudiante más la suma de las 2 cartas del segundo debe ser impar. Dado que el segundo sabe que su suma es par, la suma de las 3 cartas del primero también debe ser par para que la suma total sea par (ya que par + par = par). Pero esto contradice la condición anterior.
+
+Por lo tanto, la suma de las 3 cartas del primer estudiante debe ser impar. Observando las opciones dadas, solo el 15 es impar.
+</think>
+
+**Raonament:**
+
+El primer estudiant trau 3 cartes i el segon trau 2 cartes, queden 2 cartes en la caixa.
+
+La suma total de totes les cartes és 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28, que és un nombre parell.
+
+El primer estudiant diu al segon que la suma dels seus nombres és un nombre parell. Això vol dir que el sumari de les cartes que ha traid el primer estudiant haura d'és un nombre impareix perquè 28 (total) menys una suma parell (del segon estudiant) dona una suma impareix dels primers 3 cartes.
+
+Després, examinant les opcions:
+
+A) 10 → parell
+B) 12 → parell
+C) 6 → parell
+D) 9 → impareix
+E) 15 → impareix
+
+Pero només una de les sumes d'3 cartes pot donar un nombre impareix. Observant, l'únic suma possible que es impareix i tractable amb 3 cartes és 15.
+
+**Resposta:**
+E) 15

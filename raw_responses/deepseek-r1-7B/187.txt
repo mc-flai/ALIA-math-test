@@ -1,0 +1,22 @@
+<think>
+Para resolver este problema, primero identifico los detalles clave. La tostadora tiene capacidad para dos rebanadas de pan y puede tostar solo un lado de cada rebanada al mismo tiempo. Necesito tostar 3 lados en total, con 30 segundos por lado.
+
+Paso a paso:
+1. En el primer ciclo (30 segundos), tosto las caras A y B de las dos primeras rebanadas.
+2. Luego, en el segundo ciclo (otros 30 segundos), tosto la cara C de la tercera rebanada y vuelvo a tostar las caras A y B si son necesarias.
+
+Sumando los tiempos, obtengo un total de 90 segundos.
+</think>
+
+**Raonament:**  
+La meua torradora de pa només pot torrar dues llesques alhora, però només una cara per cada llesca. Per a torrar 3 llesques, cada una amb dues cares que necessiten 30 segons per ser torrades, el procés s'ha de planificar de manera eficient.
+
+1. **Primera randa:** Torrem les dues cares d'una llesca (digui A) i una cara d'altra llesca (B).  
+   - Torn total: 30 segons.
+2. **Segona randa:** Torrem la seva altra cara de B i tornem a torrer la altra cara de A. En aquest temps, també torrem una cara de la tercera llesca (C).  
+   - Torn total: 30 segons.
+
+Sumant els dos rands, el període total de temps necessari és 60 segons.
+
+**Resposta:**  
+A) 60 segons

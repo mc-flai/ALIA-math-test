@@ -1,0 +1,52 @@
+<think>
+Primero, identifico que los dígitos impares son 1, 3, 5, 7 y 9. Necesito formar todos los números de tres cifras utilizando solo estos dígitos.
+
+Calculo cuántos números se pueden formar en total:
+- Hay 5 opciones para la primera cifra.
+- 5 opciones para la segunda.
+- 5 opciones para la tercera.
+
+El número total de combinaciones posibles es 5 × 5 × 5 = 125 números.
+
+Luego, analizo las posiciones de cada dígito:
+- **Casa de centenas:** Cada dígito impar aparece en esta posición 5 × 5 = 25 veces.
+- **Casa de decenas:** Igualmente, cada dígito impar aparece 25 veces.
+- **Casa de unidades:** También, cada dígito impar aparece 25 veces.
+
+Calculo la suma total para cada posición:
+- **Suma de centenas:** (1 + 3 + 5 + 7 + 9) × 25 = 25 × 25 = 625. Luego, multiplicado por 100 da 62 500.
+- **Suma de decenas:** Igual a centenas pero por 10: 25 × 25 × 10 = 6 250.
+- **Suma de unidades:** Igual a centenas pero por 1: 25 × 25 = 625.
+
+Finalmente, sumo todas las partes:
+62 500 (centenas) + 6 250 (decenas) + 625 (unidades) = 69 375.
+</think>
+
+**Raonament:**
+
+Per a resoldre el problema, hem de calcular la suma de tots els nombres de tres xifres que es poden formar utilitzant només digits imparells. Les xifres imparells són 1, 3, 5, 7 i 9.
+
+1. **Total de nombres posibles:**
+   - Hi ha 5 opcions per a la primera xifra (centenes).
+   - 5 opcions per a la segona xifra (dècenes).
+   - 5 opcions per a la tercera xifra (unitats).
+   
+   Per tant, el total de nombres posibles és \(5 \times 5 \times 5 = 125\) nombres.
+
+2. **Suma de totes les posicions:**
+   - **Centenes:** Cada digit impar apareixerà en la posició de centenes \((\text{resto}) = 5 \times 5 = 25\) vegades.
+     - Suma per centenes: \( (1 + 3 + 5 + 7 + 9) \times 25 = 25 \times 25 = 625 \).
+   - **Dècenes:** Igualment, cada digit impar apareixerà en la posició de dècenes \(25\) vegades.
+     - Suma per dècenes: \( (1 + 3 + 5 + 7 + 9) \times 25 = 25 \times 25 = 625 \).
+   - **Unitats:** Igualment, cada digit impar apareixerà en la posició de unitats \(25\) vegades.
+     - Suma per unitats: \( (1 + 3 + 5 + 7 + 9) \times 25 = 25 \times 25 = 625 \).
+
+3. **Total suma:**
+   - La suma total serà:
+     \[
+     625 \, (\text{centenes}) \times 100 + 625 \, (\text{dècenes}) \times 10 + 625 \, (\text{unitats}) \times 1 = 62500 + 6250 + 625 = 69375
+     \]
+
+**Resposta:**
+
+\boxed{A) 69375}

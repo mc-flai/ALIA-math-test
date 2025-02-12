@@ -1,0 +1,56 @@
+<think>
+Para resolver este problema, primero identifico que Josep tiene n³ cubos menudos idénticos. Estos se usan para construir un cubo grande del cual se pinta toda la superficie exterior.
+
+Luego, considero los tipos de cubos menudos en función de las caras pintadas:
+- Cubos con tres caras pintadas (ubicados en las esquinas).
+- Cubos con dos caras pintadas (ubicados en los bordes).
+- Cubos con una cara pintada (ubicados en las caras).
+- Cubos sin ninguna cara pintada (ubicados en el interior).
+
+Según el problema, el número de cubos con una sola cara pintada es igual al número de cubos sin cap cara pintada. Esto me permite establecer una ecuación.
+
+Después, desarrollo la fórmula para calcular cada tipo de cubo:
+- Cubos con tres caras: 8 (constante).
+- Cubos con dos caras: 12(n - 2).
+- Cubos con una cara: 6(n - 2)².
+- Cubos sin pintura: (n - 2)³.
+
+Establezco la igualdad entre cubos con una cara y sin pintura:
+6(n - 2)² = (n - 2)³
+
+Simplifico la ecuación para encontrar n:
+6 = n - 2
+n = 8
+</think>
+
+**Raonament:**
+
+1. **Identificar los tipos de cubos menudos en función del número de caras pintadas:**
+   - Cubos con tres caras pintadas:ubicados en las esquinas del cubo grande.
+     - Cantidad: \(8\) (independientemente del valor de \(n\)).
+   - Cubos con dos caras pintadas:ubicados en los bordes.
+     - Cantidad: \(12(n - 2)\).
+   - Cubos con una cara pintada:ubicados en las caras.
+     - Cantidad: \(6(n - 2)^2\).
+   - Cubos sin ninguna cara pintada:ubicados en el interior.
+     - Cantidad: \((n - 2)^3\).
+
+2. **Plantear la condición dada:**
+   - Según el problema, el número de cubos con una sola cara pintada es igual al número de cubos sin pintura:
+     \[
+     6(n - 2)^2 = (n - 2)^3
+     \]
+
+3. **Resolver la ecuación:**
+   - Simplificar dividiendo ambos lados por \((n - 2)^2\) (suponiendo \(n ≠ 2\)):
+     \[
+     6 = n - 2
+     \]
+   - Resolver para \(n\):
+     \[
+     n = 8
+     \]
+
+**Resposta:**
+
+D) 8

@@ -1,0 +1,45 @@
+<think>
+Primero, entiendo que Agnès tiene varios dados de 12 caras numeradas del 1 al 12. Cuando se lanzan todos losdados al mismo tiempo, la probabilidad de que solo salga un 12 es igual a la probabilidad de que no salga ninguno.
+
+Voy a definir n como el número de dados que tiene Agnès.
+
+Para cada dado, la probabilidad de que salga un 12 es 1/12, y la probabilidad de que no salga un 12 es 11/12.
+
+La probabilidad de que exactamente uno de los n dados muestre un 12 se calcula usando el coeficiente binomial:
+
+P(exactamente 1 doce) = C(n, 1) * (1/12)^1 * (11/12)^(n-1)
+
+Por otro lado, la probabilidad de que ninguno de los n dados salga 12 es:
+
+P(ningún doce) = (11/12)^n
+
+Según el problema, estas probabilidades son iguales:
+
+C(n, 1) * (1/12) * (11/12)^(n-1) = (11/12)^n
+
+Simplifico la ecuación:
+
+C(n, 1) * (1/12) = (11/12)
+
+C(n, 1) es igual a n, por lo que:
+
+n * (1/12) = (11/12)
+
+Multiplicando ambos lados por 12 para eliminar el denominador:
+
+n = 11
+
+Por lo tanto, Agnès tiene 11 dados.
+</think>
+
+**Raonament:**
+
+La probabilitat que només isca un 12 quan soteniu n daus es C(n, 1) * (1/12) * (11/12)^{n-1}. La probabilitat que no isqui cap és (11/12)^n. Equivocant aquests valors:
+
+C(n, 1) * (1/12) = (11/12)
+
+N * (1/12) = 11/12 ⇒ N = 11
+
+**Resposta:**
+
+D)

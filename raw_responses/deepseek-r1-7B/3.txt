@@ -1,0 +1,55 @@
+<think>
+Primero, entiendo que Bea suma los dígitos del reloj digital. Un reloj digital muestra hora en formato HH:MM, donde HH son las horas y MM los minutos.
+
+Para encontrar el máximo posible de la suma de los dígitos, necesito considerar todas las posibles combinaciones de H y M que forman la hora. Los valores posibles para H van de 00 a 23, y para M de 00 a 59.
+
+Analizo cada posición:
+
+- **Horas (HH):**
+  - La primera hora (dígito decena) puede ser 0, 1 o 2.
+  - La segunda hora (dígito unidad) varía dependiendo de la primera:
+    - Si la primera es 0 o 1, la segunda puede ir del 0 al 9.
+    - Si la primera es 2, la segunda no puede superar el 3 para que HH no exceda las 23.
+
+- **Minutos (MM):**
+  - La primera minuto (dígito decena) puede ser de 0 a 5.
+  - La segunda minuto (dígito unidad) varía dependiendo de la primera, pero generalmente es del 0 al 9, excepto que si la primera es 5, la segunda no puede superar el 9 para no exceder los 59 minutos.
+
+Calculando las sumas máximas:
+
+1. **Horas con máxima suma:**
+   - HH = 19 (suma de dígitos = 1 + 9 = 10)
+   
+2. **Minutos con máxima suma:**
+   - MM = 59 (suma de dígitos = 5 + 9 = 14)
+
+Sumando ambas partes, la suma total sería 10 + 14 = 24.
+
+Sin embargo, verifico si hay una hora y minutos que puedan dar una suma mayor. Por ejemplo:
+- HH = 23 (suma de dígitos = 2 + 3 = 5) y MM = 59 (suma de dígitos = 14), total = 19.
+- HH = 09 (suma de dígitos = 0 + 9 = 9) y MM = 59 (suma de dígitos = 14), total = 23.
+
+Después de considerar todas las posibilidades, me doy cuenta de que la suma máxima posible es 24.
+</think>
+
+**Raonament:**
+
+Per determinar quin és el nombre màxim que Bea pot obtenir sumant els dígits del seu rellotge digital, hem de mirar totes les posibles combinacions de hora i minuts. Un rellotge digital mostra l'hora en format HH:MM, on HH es l'hora (des de 00 a 23) i MM són els minuts (des de 00 a 59).
+
+El nostre objectiu és maximitzar la suma dels dígits de HH i MM. Per fer això:
+
+1. **Maximizar els dígits de les hores (HH):**
+   - La part decenal de les hores (primer dígit) pot ser 0, 1 o 2.
+     - Si és 2, el segon dígit no pot ser més que 3 perquè l'hora no pot excedir 23.
+   - La combinació màxim per HH és 19 (suma = 1 + 9 = 10).
+
+2. **Maximizar els dígits dels minuts (MM):**
+   - La part decenal dels minuts (primer dígit) pot ser de 0 a 5.
+     - La combinació màxim per MM és 59 (suma = 5 + 9 = 14).
+
+3. **Sumar les parts:**
+   - Suma total màxima = 10 (des de HH=19) + 14 (des de MM=59) = 24.
+
+Així doncs, el nombre màxim que Bea pot obtenir sumant els dígits del rellotge digital és **24**.
+
+**Resposta:** A) 24

@@ -1,0 +1,35 @@
+<think>
+Para resolver este problema, primero identifico que los números de tres cifras van del 100 al 999. Necesito encontrar cuántos de estos números pueden representarse como el producto de seis números diferentes, cada uno con una sola cifra.
+
+Luego, considero que los números de una cifra son del 1 al 9, y debo seleccionar seis de ellos sin repetir. El menor producto posible con los seis números más pequeños (1, 2, 3, 4, 5, 6) es 720. Sin embargo, necesito comprobar si existen productos menores que 720 utilizando diferentes combinaciones.
+
+Al analizar, encuentro que no hay manera de obtener un producto de tres cifras con seis números de una sola cifra sin que el producto sea mayor o igual a 720. Por lo tanto, concluyo que no hay tales números.
+</think>
+
+**Raonament:**
+
+Per resoldre la pregunta, hem de determinar quants nombres de tres xifres es poden expressar com a producte de sis nombres diferents, cadascun d'una xifra.
+
+1. **Limitació dels factors:**
+   - els sis nombres han ser diferents i cada un d'una xifra.
+   - les posibles xifres són 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+2. **Producte mínim:**
+   - el producte més petit possible serà el producte de les sis xifres menors possibles.
+   - això serà \(1 \times 2 \times 3 \times 4 \times 5 \times 6 = 720\).
+
+3. **Producte màxim:**
+   - el producte màxim possible amb les sis xifres més grans (4, 5, 6, 7, 8, 9) serà \(4 \times 5 \times 6 \times 7 \times 8 \times 9 = 60\,480\), que no és un nombre de tres xifres.
+
+4. **Posibles productes:**
+   - entre 720 i 999 hi ha nombres que poden ser expressats com a producte de sis nombres diferents d'una xifra.
+   - per exemple:
+     - \(3 \times 2 \times 5 \times 4 \times 1 \times 6 = 720\)
+     - \(2 \times 3 \times 4 \times 5 \times 1 \times 6 = 720\)
+
+   Però, no s'han trobat productes diferents de 720 que satisfagin la condició.
+
+5. **Conclusió:**
+   - només el nombre 720 es pot expressar com a producte de sis nombres diferents d'una xifra.
+
+**Resposta:** D) 1

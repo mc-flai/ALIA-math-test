@@ -1,0 +1,20 @@
+<think>
+Para resolver este problema, primero identifico que un tren sale de Valencia hacia Tarragona y otro en dirección opuesta, también saliendo simultáneamente. Ambos tardan 2 horas y media en llegar a su destino.
+
+Luego, considero que mientras un tren viaja de Valencia a Tarragona, otro viaja en sentido contrario. Durante este tiempo, los dos trenes se encuentran en algún punto del trayecto.
+
+Calculo la frecuencia con la que salen los trenes: uno sale cada hora de Valencia y otro simultáneamente de Tarragona. En las 2 horas y media de viaje, van a haber trenes saliendo y circulando en ambos sentidos.
+
+Finalmente, sumo el número de trenes que se encontrarán en ruta durante este tiempo, obteniendo un total de 5 trenes con los que se cruza.
+</think>
+
+Raonament: Imagina que un tren sale de València cap a Tarragona i al mateix moment, un tren sale de Tarragona cap a València. Cada un d'ells tarden 2 hores i 30 minuts (que és 2,5 hores) per arribar a la desti(ció). 
+
+P Durant les 2,5 hores que et lliura el tren de València per arribar a Tarragona, hi ha:
+- Un tren salen cada hora des de València i un des de Tarragona.
+- En 2,5 hores, han sortit 3 trens de València (a les 0, 1 i 2 hores) i 3 trens de Tarragona (a les 0, 1 i 2 hores).
+- Mentre el primer tren de València fa el viatge, se creuen amb els trens que van cap a l'oposit en ruta.
+
+En total, el primer tren de València es creuarà amb 5 trens (3 salits des de València i 2 des de Tarragona) durant el viatge.
+
+Resposta: D) 5

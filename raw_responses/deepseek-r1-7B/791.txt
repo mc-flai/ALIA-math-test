@@ -1,0 +1,46 @@
+<think>
+Primero, identifico los trios de longitudes proporcionados en las opciones. Necesito determinar cuál no cumple con el teorema que establece que la suma de dos lados debe ser mayor que el tercero.
+
+Para cada trio:
+- **A) (2,3,4):** 2 + 3 > 4; 2 + 4 > 3; 3 + 4 > 2. Cumple.
+- **B) (5,2,8):** 5 + 2 = 7 < 8. No cumple.
+- **C) (10,1,10):** 10 + 1 > 10; 10 + 10 > 1. Cumple.
+- **D) (2,2,2):** Todas las sumas son iguales y superiores a cada lado. Cumple.
+- **E) (38,17,23):** 17 + 23 = 40 > 38; las demás sumas también cumplen.
+
+El triángulo no se puede construir con el trio B porque la suma de los dos lados más pequeños es igual al tercer lado, lo que no satisface la condición.
+</think>
+
+**Raonament:**
+Per determinar quin trio de longituds no permet formar un triangle, utilitzem el **Teorema de les desenes**: en un triangle, la suma de qualsevol dos lados ha de ser major que el tercer llado. Analitzem cada opcio:
+
+- **A) (2, 3, 4):**
+  - 2 + 3 > 4 → 5 > 4 ✓
+  - 2 + 4 > 3 → 6 > 3 ✓
+  - 3 + 4 > 2 → 7 > 2 ✓
+  
+- **B) (5, 2, 8):**
+  - 5 + 2 = 7 < 8 ✗ (no cumple)
+  - 5 + 8 > 2 ✓
+  - 2 + 8 > 5 ✓
+  
+  Aquest trio no permet formar un triangle.
+
+- **C) (10, 1, 10):**
+  - 10 + 1 > 10 → 11 > 10 ✓
+  - 10 + 10 > 1 → 20 > 1 ✓
+  
+- **D) (2, 2, 2):**
+  - 2 + 2 > 2 ✓
+  - 2 + 2 > 2 ✓
+  - 2 + 2 > 2 ✓
+  
+- **E) (38, 17, 23):**
+  - 38 + 17 > 23 → 55 > 23 ✓
+  - 38 + 23 > 17 → 61 > 17 ✓
+  - 17 + 23 > 38 → 40 > 38 ✓
+
+El trio **B) (5, 2, 8)** no permet formar un triangle.
+
+**Resposta:**
+\boxed{B}

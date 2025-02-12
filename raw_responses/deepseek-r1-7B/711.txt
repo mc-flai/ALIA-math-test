@@ -1,0 +1,50 @@
+<think>
+Primero, identifico que "aaabbbb" es un número de siete dígitos donde "a" se repite tres veces y "b" cuatro veces. El problema indica que la suma de estos siete dígitos es igual al número de dos dígitos "ab".
+
+Luego, represento matemáticamente esta relación: 3a + 4b = 10a + b.
+
+Simplificando la ecuación, obtengo:
+3a + 4b = 10a + b
+4b - b = 10a - 3a
+3b = 7a
+
+Finalmente, busco valores enteros de "a" y "b" que cumplan con esta relación. Al probar diferentes opciones, encuentro que cuando a=3 y b=7, la ecuación se satisface:
+3*7 = 7*3
+21 = 21
+
+Por lo tanto, la suma de a + b es 10.
+</think>
+
+Raonament:  
+El nombre "aaabbbb" té 7 xifres on hi ha 3 vegades la xifra \( a \) i 4 vegades la xifra \( b \). La suma d'aquestes xifres és igual al nombre de dues xifres "ab". Per tant, podem establir l'equació:
+
+\[
+3a + 4b = 10a + b
+\]
+
+Simplificant l'equació:
+
+\[
+3a + 4b = 10a + b \\
+4b - b = 10a - 3a \\
+3b = 7a \\
+b = \frac{7}{3}a
+\]
+
+Des que \( a \) i \( b \) han de ser xifres enteres (des de 0 a 9), el valor de \( a \) ha de ser un múltiple de 3 per tal que \( b \) sigui entero. Prova different valors:
+
+- Si \( a = 3 \):
+  \[
+  b = \frac{7}{3} \times 3 = 7
+  \]
+  
+  Luego, comproba la condició original:
+  \[
+  3a + 4b = 3(3) + 4(7) = 9 + 28 = 37 \\
+  ab = 10(3) + 7 = 37
+  \]
+  
+  La condició es complí, per tant \( a = 3 \) i \( b = 7 \).  
+  Sumant \( a + b = 3 + 7 = 10 \).
+
+Resposta: **C)**

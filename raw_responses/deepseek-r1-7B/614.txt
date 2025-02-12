@@ -1,0 +1,44 @@
+<think>
+Primero, identifico las cantidades iniciales y las tasas de pérdida de agua en cada depósito.
+
+El primer depósito tiene 100 litros y pierde agua a una velocidad de 1 litro por hora. Por lo tanto, la cantidad de agua después de t horas será:
+100 - 1*t
+
+El segundo depósito contiene 120 litros y pierde agua a una tasa de 3 litros por hora. Así que, la cantidad de agua restante después de t horas será:
+120 - 3*t
+
+Quiero encontrar el tiempo t en el que ambas cantidades sean iguales. Por lo tanto, igualo las expresiones:
+100 - t = 120 - 3t
+
+Solving for t:
+
+Añado 3t a ambos lados para eliminar la variable del lado derecho:
+100 + 2t = 120
+
+Luego resto 100 de ambos lados:
+2t = 20
+
+Finalmente, divido por 2:
+t = 10 horas
+</think>
+
+Raonament:  
+Per determinar quants anys han de passar fins que els dos dipòsits continguen la mateixa quantitat d'aigua, podem establir les equacions següents:
+
+- Dipòsit 1: Cantidad inicial = 100 litres, perd = 1 litre/hora.  
+  Quantitat restant després de t hores: \(100 - 1 \times t\).
+
+- Dipòsit 2: Cantidad inicial = 120 litres, perd = 3 litres/hora.  
+  Quantitat restant després de t hores: \(120 - 3 \times t\).
+
+Volem que les dues quantitats siguin iguals:  
+\(100 - t = 120 - 3t\)  
+
+Resolent l'equació:  
+- Sumem \(3t\) a ambdós costats: \(100 + 2t = 120\).  
+- Restem 100 deambdós costats: \(2t = 20\).  
+- Dividim per 2: \(t = 10\).
+
+Per tant, han de passar **10 hores**.
+
+Resposta: C) 10

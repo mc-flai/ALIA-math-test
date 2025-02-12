@@ -1,0 +1,55 @@
+<think>
+Primero, identifico los datos proporcionados en el problema:
+
+- Hay 15 personas en total, distribuidas en cuatro equipos: A, B, C y D.
+- Cada equipo tiene al menos dos miembros.
+- Los números de participantes en cada equipo son diferentes.
+- La suma de los participantes de A y B es 7.
+- La suma de los participantes de A y D es 9.
+
+Voy a definir variables para los equipos:
+- \( A \) = número de miembros en equipo A
+- \( B \) = número de miembros en equipo B
+- \( C \) = número de miembros en equipo C
+- \( D \) = número de miembros en equipo D
+
+Conocemos que:
+1. \( A + B = 7 \)
+2. \( A + D = 9 \)
+3. \( A + B + C + D = 15 \)
+
+Primero, resto las ecuaciones 1 y 2 para eliminar A:
+\( (A + D) - (A + B) = 9 - 7 \)
+\( D - B = 2 \)
+Por lo tanto, \( D = B + 2 \)
+
+Sabiendo que cada equipo tiene al menos dos miembros y los números son diferentes, asigno valores posibles a A y B que cumplan \( A + B = 7 \). Las opciones viables son:
+- Si \( A = 3 \), entonces \( B = 4 \)
+- Si \( A = 2 \), entonces \( B = 5 \)
+
+Considerando que D debe ser mayor que B (ya que \( D = B + 2 \)), verifico las posibles combinaciones:
+
+**Caso 1: \( A = 3 \) y \( B = 4 \)**
+- \( D = 4 + 2 = 6 \)
+- Sumando: \( 3 + 4 + C + 6 = 15 \) → \( C = 2 \)
+
+**Caso 2: \( A = 2 \) y \( B = 5 \)**
+- \( D = 5 + 2 = 7 \)
+- Sumando: \( 2 + 5 + C + 7 = 15 \) → \( C = 1 \), pero C debe tener al menos 2 miembros.
+
+Por lo tanto, la única solución viable es el primer caso, donde \( C = 2 \).
+</think>
+
+**Raonament:**  
+- Definim les variables per als equips: A, B, C i D.  
+- Sabem que A + B = 7 i A + D = 9.  
+- Sumant tothom, obtenim A + B + C + D = 15.  
+- Substituim les ecuacions pereliminar variables i obtim D - B = 2.  
+- Assignem valors a A i B que compleixin les condicions (A ≥ 2, B ≥ 2, diferents).  
+- Verifiquem les combinacions possible:  
+  - Si A=3, llavors B=4, i D=6. Sumant, C=2.  
+  - Si A=2, llavors B=5, i D=7. Sumant, C=1 (no compleix la condició).  
+- La solució vàlida és C=2.
+
+**Resposta:**  
+A) 2

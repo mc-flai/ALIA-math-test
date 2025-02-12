@@ -1,0 +1,56 @@
+<think>
+Primero, identifico que la ecuación dada es log_n(2^n) = n/4. Quiero encontrar el valor de n entre las opciones proporcionadas.
+
+Recuerdo que logaritmo en base n de 2^n se puede simplificar utilizando propiedades de los logaritmos. Aplico la propiedad log_b(a^c) = c*log_b(a), por lo que la expresión se convierte en n * log_n(2).
+
+Luego, esta multiplicación me da n/4. Es decir, n * log_n(2) = n/4.
+
+Divido ambos lados de la ecuación por n (asumiendo que n ≠ 0), lo que simplifica a log_n(2) = 1/4.
+
+Ahora, transformo el logaritmo en una expresión exponencial: 2 = n^(1/4). Esto significa que n es el cuarto poder de 2, es decir, n = 2^4.
+
+Calculando, 2 elevado a la cuarta potencia es 16. Por lo tanto, el valor de n es 16.
+</think>
+
+**Raonament:**
+
+La equació donada és:
+
+\[
+\log_n (2^n) = \frac{n}{4}
+\]
+
+Per resoldre aquesta ecuació, podem fer els passos següents:
+
+1. **Simplificar el logaritmo:**  
+   Sabem que \(\log_b(a^c) = c \cdot \log_b(a)\). Aplicant això, la nostra equació es convierteix en:
+   
+   \[
+   n \cdot \log_n(2) = \frac{n}{4}
+   \]
+
+2. **Dividir per \(n\):**  
+   Suposant que \(n \neq 0\), dividim ambds costats de l'equació per \(n\):
+   
+   \[
+   \log_n(2) = \frac{1}{4}
+   \]
+
+3. **Transformar el logaritmo en una potència:**  
+   La definició del logaritmo digueix que si \(\log_b(a) = c\), llavors \(b^c = a\). Aplicant això:
+   
+   \[
+   n^{1/4} = 2
+   \]
+
+4. **Eleva ambds costats a la potència 4 per resoldre \(n\):**  
+   
+   \[
+   (n^{1/4})^4 = 2^4 \implies n = 16
+   \]
+
+Així, el valor de \(n\) és **16**.
+
+**Resposta:**
+
+D) 16

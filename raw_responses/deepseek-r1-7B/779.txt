@@ -1,0 +1,46 @@
+<think>
+Primero, identifico que necesito realizar la resta de dos números decimales: 11,11 menos 1,111.
+
+Para facilitar esta operación, convierto ambos números a la misma cantidad de decimales agregando un cero a 11,11, transformándolo en 11,110. Ahora, tengo:
+
+11,110
+-1,111
+---------
+
+Realizo la resta posición por posición:
+
+- **Primera posición decimal (las milésimas):** 0 - 1 no es posible, así que borro 1 de las centésimas y le sumo 10. Ahora tengo 11,100.
+- **Segunda posición:** Tras el ajuste anterior, resto 0 - 1. Repito el mismo procedimiento: borro 1 de las décimas y le sumo 10, obteniendo 11,000.
+
+Continúo con las restas en las posiciones decimales:
+
+- **Centésimas:** 1 (después del ajuste) - 1 = 0.
+- **Décimas:** 0 (después del ajuste) - 1. Borro 1 de las unidades y le sumo 10, obteniendo 9 en las décimas.
+
+Finalmente, resto las unidades:
+
+- **Unidades:** 0 (después de los ajustes) - 1 = 9.
+
+Al finalizar, obtengo el resultado: 9,999.
+</think>
+
+**Raonament:**
+
+Per resoldre l'operació `11,11 - 1,111`, seguirem els passos següents:
+
+1. **Convertir a decimals comuns:**
+   - `11,11` pots ser escrit com `11,110` per fer coincidir el nombre de decimals.
+   - `1,111` és ja en format decimal.
+
+2. **Realitzar la resta:**
+   ```
+     11,110
+   -  1,111
+   ==========
+      9,999
+   ```
+
+3. **Comparació amb les opcions proporcionades:**
+   - La resposta obtinguda és `9,999`, que coincideix amb l'opció D.
+
+**Resposta:** D) 9,999

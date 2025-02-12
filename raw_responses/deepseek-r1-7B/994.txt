@@ -1,0 +1,54 @@
+<think>
+Primero, reviso cada operación para determinar si su resultado es impar. 
+
+Para la opción A) 2025 + 2024 + 2023:
+- 2025 es impar.
+- 2024 y 2023 son par e impar respectivamente.
+- Sumando estos números, el resultado final será impar.
+
+Para la opción B) 2025 – 2024 + 2023:
+- Realizo las operaciones en orden de izquierda a derecha.
+- 2025 - 2024 = 1 (impulso).
+- Luego, 1 + 2023 = 2024 (par).
+
+Para la opción C) 2025 × 2024 × 2023:
+- Multiplicando números pares y impares.
+- 2024 es par, por lo que el producto será par.
+
+Para la opción D) 2025 + 2024 – 2023:
+- Sumo 2025 y 2024: 4049 (impulso).
+- Luego resto 2023: 4049 - 2023 = 2026 (par).
+
+Para la opción E) 2025 + 2024 × 2023:
+- Primero multiplico 2024 por 2023, ambos impares, lo que da un producto impar.
+- Luego sumo a 2025: 2025 + (2024×2023) será par.
+
+Finalmente, solo la operación A) produce un número impar.
+</think>
+
+**Raonament:**  
+Vam a analitzar cada opció per veure quina operació resulta en un nombre imparell:
+
+- **Opció A)** \( 2025 + 2024 + 2023 \)  
+  - \( 2025 \) és parell? No, és imparell.  
+  - \( 2024 \) és parell? Sí.  
+  - \( 2023 \) és parell? No, és imparell.  
+  - Sumem els nombres: \( 2025 + 2024 = 4049 \) (imparell), llavors \( 4049 + 2023 = 6072 \).  
+  **Wait, això no és correcte.**  
+  - Correctament: \( 2025 + 2024 = 4049 \) (imparell), llavors \( 4049 + 2023 = 6072 \). Aquesta suma finalment és **parell**.  
+
+- **Opció B)** \( 2025 - 2024 + 2023 \)  
+  - \( 2025 - 2024 = 1 \) (imparell), llavors \( 1 + 2023 = 2024 \). Aquesta suma finalment és **parell**.  
+
+- **Opció C)** \( 2025 × 2024 × 2023 \)  
+  - Multiplicació d'impair (2025), parell (2024) i impair (2023).  
+  - Un cop que multipliquem un nombre parell, el producte final és **parell**.  
+
+- **Opció D)** \( 2025 + 2024 - 2023 \)  
+  - \( 2025 + 2024 = 4049 \) (imparell), llavors \( 4049 - 2023 = 2026 \). Aquesta suma finalment és **parell**.  
+
+- **Opció E)** \( 2025 + 2024 × 2023 \)  
+  - Primero, multiplicació: \( 2024 × 2023 = 2024×2023 \).  
+  - Com 2024 és parell, el producte serà **parell**. Llavors \( 2025 + \text{producte parell} \) serà **impair** (perquè 2025 és imparell i sumar un parell a un imparell dóna un imparell).  
+
+**Resposta:** E

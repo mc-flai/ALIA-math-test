@@ -1,0 +1,35 @@
+<think>
+Primero, entiendo que el número x deja un residuo 3 al ser dividido por 6. Esto significa que x se puede expresar como x = 6k + 3, donde k es algún número entero.
+
+Luego, multiplico x por 3 para obtener 3x: 3x = 3*(6k + 3) = 18k + 9.
+
+Ahora, quiero dividir 3x entre 6 y encontrar el residuo. Observo que 18k es divisible exactamente por 6, ya que 18 es múltiplo de 6.
+
+Así, la expresión se reduce a (18k)/6 + 9/6 = 3k + 1 con un residuo adicional de 3.
+
+Por lo tanto, el residuo al dividir 3x por 6 es 3.
+</think>
+
+**Raonament:**
+
+Quan el nombre enter positiu \( x \) es divideix per 6, el residu és 3. Això vol dir que pot expressar-se com:
+\[
+x = 6k + 3
+\]
+其中 \( k \) és un enter.
+
+Volem trobar quin és el residu quan dividim \( 3x \) per 6. Substituïm \( x \) en la expressió:
+\[
+3x = 3(6k + 3) = 18k + 9
+\]
+
+Dividim aquesta suma entre 6:
+\[
+\frac{18k + 9}{6} = 3k + 1 + \frac{3}{6}
+\]
+El termes \( 3k + 1 \) es poden dividir exactament per 6, però el \( \frac{3}{6} \) dona un residu de 3.
+
+**Resposta:**
+\[
+\boxed{B)
+}

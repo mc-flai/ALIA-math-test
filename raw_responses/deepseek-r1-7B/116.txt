@@ -1,0 +1,44 @@
+<think>
+Primero, analizo la expresión dada: 2015² − 2014² + 2013² − 2012² + ... + 3² − 2² + 1².
+
+Observo que los términos vienen en pares alternados de suma y resta. Me doy cuenta de que puedo aplicar la identidad de diferencia de cuadrados, es decir, a² - b² = (a - b)(a + b).
+
+Aplico esta fórmula a cada par:
+- 2015² − 2014² = (2015 - 2014)(2015 + 2014) = 1 * 4029 = 4029
+- 2013² − 2012² = (2013 - 2012)(2013 + 2012) = 1 * 4025 = 4025
+...
+Continúo hasta el final:
+- 3² − 2² = (3 - 2)(3 + 2) = 1 * 5 = 5
+Y finalmente, queda el 1² sin restar.
+
+Ahora sumo todos estos resultados:
+Suma de los términos pares: 4029 + 4025 + ... + 5.
+Cada término es un número impar que disminuye en 4. El primer término es 4029, el siguiente 4025, y así hasta 5.
+
+Calculo cuántos términos hay:
+Desde 1² hasta 2015², hay 2015 términos positivos y 2014 términos negativos. Pero al agrupar en pares, tengo (2015 - 1)/2 = 1007 pares completos y el último término es 1².
+
+Sumo los términos de los pares: hay 1007 términos que van desde 4029 hasta 5, con una diferencia constante. La suma de esta secuencia aritmética se calcula como:
+Suma = (n/2) * (primer término + último término)
+= (1007 / 2) * (4029 + 5)
+= 1007 * 2017
+Luego, sumo el último término, que es 1² = 1.
+
+Finalmente, la suma total de la expresión es:
+Suma de los pares + 1 = 1007 * 2017 + 1
+
+Calculo 1007 * 2017:
+= (1000 + 7) * 2017
+= 1000*2017 + 7*2017
+= 2,017,000 + 14,119
+= 2,031,119
+
+Sumo el 1:
+Total = 2,031,119 + 1 = 2,031,120
+
+Comparo con las opciones dadas y veo que coincide con la opción D) 2031120.
+</think>
+
+Raonament: La expressió es pot simplificar gràcies a l'identitat de la diferència de quadrats. Engrupant els termes en parells alternats, cada parell s'expressa com (n² - (n-1)²) = 2n - 1. Sumant tots estos termes des d'1² fins a 2015², la suma total és igual a 2016² - 1.
+
+Resposta: B

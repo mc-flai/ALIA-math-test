@@ -1,0 +1,21 @@
+<think>
+Primero, identifico que necesito encontrar números naturales cuya suma de dígitos es divisible por 5. Empiezo listando algunos ejemplos en orden creciente: 5, 14, 19, 23, etc.
+
+Luego, calculo las diferencias entre cada número y el anterior para ver cuál es la mínima diferencia posible. Observo que la diferencia más pequeña inicialmente es de 1 (entre 5 y 6, pero 6 no cumple la condición). Sin embargo, al analizar números mayores, noto que hay saltos de 4, como entre 23 y 28.
+
+Me doy cuenta de que aunque initialmente las diferencias pueden ser menores, conforme los números aumentan, es probable que surjan diferencias más grandes. Pero al revisar detenidamente, me aseguro de que la mínima diferencia constatada en la secuencia es de 4.
+</think>
+
+Raonament: 
+Per resoldre el problema, hem de considerar tots els nombres naturals dont la suma dels dígits és divisible per 5 i observar quines diferències poden aparèixer entre un nombre i el seu predecessor en aquesta seqüència. 
+
+Comença'ls primer few nombres que complen la condició són 5, 14, 19, 23, 28, etc. Observant les diferències entre aquests nombres:
+- Diferència entre 5 i l'inexistent nombre anterior: No aplica.
+- Diferència entre 14 i 5: 9
+- Diferència entre 19 i 14: 5
+- Diferència entre 23 i 19: 4
+- Diferència entre 28 i 23: 5
+
+De les diferències observades, la mínima diferencia és de 4.
+
+Resposta: D)

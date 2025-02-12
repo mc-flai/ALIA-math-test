@@ -1,0 +1,59 @@
+<think>
+Primero, entiendo que los cubos fabricados en la fábrica tienen un volumen que está entre 0.1 m³ y 1 m³, es decir, desde 10 litros hasta 1000 litros.
+
+La longitud de cada arista del cubo debe expresarse en centímetros completos, lo que significa que el lado del cubo (a) debe ser un entero positivo en cm. Entonces, el volumen V = a³, donde "a" se mide en centímetros.
+
+Para convertir los volúmenes de metros cúbicos a centímetros cúbicos:
+- 0.1 m³ = 100,000 cm³
+- 1 m³ = 1,000,000 cm³
+
+Esto significa que "a" debe satisfacer:
+√[3]{100,000} ≤ a ≤ √[3]{1,000,000}
+
+Calculando las raíces cúbicas:
+- √[3]{100,000} ≈ 46.415 cm
+- √[3]{1,000,000} = 100 cm
+
+Por lo tanto, "a" debe ser un entero entre 47 y 100 inclusive.
+
+Ahora contamos las posibles longitudes de arista:
+100 - 47 + 1 = 54
+
+Sin embargo, noto que el volumen mínimo es 1 dm³ = 1,000 cm³. Calculando la longitud del lado correspondiente:
+√[3]{1,000} = 10 cm
+
+Entonces, "a" debe estar entre 10 y 100 inclusive.
+
+Ahora recalcular el conteo:
+100 - 10 + 1 = 91
+
+Por lo tanto, hay 91 tamaños posibles.
+</think>
+
+Raonament:  
+- **Volumen de los cubos:** Los cubos fabricados en la fábrica tienen un volumen que oscila entre el decímetro cúbico (0.1 m³) y el metro cúbico (1 m³).  
+- **Longitud del arista:** La longitud de cada arista se expresa en centímetros enteros completos, es decir, la longitud "a" debe ser un entero positivo.  
+- **Conversión de unidades:**  
+  - 0.1 m³ = 100,000 cm³  
+  - 1 m³ = 1,000,000 cm³  
+- **Condición para "a":** El volumen V = a³ debe satisfacer:  
+  \[
+  100,000 \leq a^3 \leq 1,000,000
+  \]  
+  - Calculando las raíces cúbicas:  
+    \[
+    \sqrt[3]{100,000} \approx 46.415 \quad \text{y} \quad \sqrt[3]{1,000,000} = 100
+    \]  
+  - Por lo tanto, "a" debe ser un entero entre 47 y 100 inclusive.  
+- **Cuenta de posibles longitudes:**  
+  \[
+  100 - 47 + 1 = 54
+  \]  
+  Sin embargo, notamos que el volumen mínimo es 1 dm³ (1,000 cm³), lo que corresponde a "a" = 10 cm.  
+- **Revisión del rango:**  
+  - Ahora consideramos que "a" puede ser desde 10 cm hasta 100 cm inclusive:  
+    \[
+    100 - 10 + 1 = 91
+    \]  
+
+**Resposta:** D) 91

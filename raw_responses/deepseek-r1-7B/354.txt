@@ -1,0 +1,26 @@
+<think>
+Para encontrar la suma de todos los divisores pares de 1000, primero factorizo 1000 en sus factores primos. La descomposición prima de 1000 es \(2^3 \times 5^3\).
+
+Luego, considero que un divisor par debe contener al menos una copia del factor 2. Por lo tanto, los divisores pares de 1000 son aquellos que se pueden expresar como \(2^k \times 5^m\), donde \(k\) puede ser 1, 2 o 3, y \(m\) puede ser 0, 1, 2 o 3.
+
+Para calcular la suma total de estos divisores, utilizo la fórmula de la suma de divisores. La suma de los divisores pares será el producto de la suma de las potencias de 2 (desde \(2^1\) hasta \(2^3\)) y la suma de las potencias de 5 (desde \(5^0\) hasta \(5^3\)).
+
+Calculando cada parte:
+- Suma de las potencias de 2: \(2 + 4 + 8 = 14\)
+- Suma de las potencias de 5: \(1 + 5 + 25 + 125 = 156\)
+
+Multiplicando ambos resultados, obtengo la suma total de los divisores pares:
+\(14 \times 156 = 2184\)
+</think>
+
+Raonament:
+
+Per calcular la suma de tots els divisors parells de 1000, primer factoritzem 1000 en els seus factors primers:
+\[ 1000 = 2^3 \times 5^3 \]
+
+Els divisors parells són aquellos que contenen almenys un factor de 2. Així, les potències possibles del 2 són \(2^1\), \(2^2\) i \(2^3\). Per a cada una d'aquestes, considerem totes les potències del 5 (desde \(5^0\) fins \(5^3\)).
+
+La suma total de tots els divisors parells es calcula com:
+\[ (2 + 4 + 8) \times (1 + 5 + 25 + 125) = 14 \times 156 = 2184 \]
+
+Resposta: C) 2184

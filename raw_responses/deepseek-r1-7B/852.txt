@@ -1,0 +1,94 @@
+<think>
+Para resolver este problema, primero necesito entender lo que se está preguntando. Susanna hizo un pastís en forma de rectángulo y le realizó 7 tajos. Cada tajo va de un lado a otro del pastís y es paralelo a uno de los lados del mismo.
+
+Mi objetivo es determinar cuántos trozos de pastís no es posible que le queden después de realizar estos 7 cortes.
+
+Recuerdo que hay una fórmula para calcular el número máximo de regiones en las que se puede dividir un rectángulo con 'n' cortes paralelos a los lados. La fórmula es similar a la de planos en 3D, pero en este caso estamos en dos dimensiones.
+
+La fórmula para calcular el número máximo de regiones (trozos) después de 'm' cortes paralelos a uno de los lados y 'n' cortes paralelos al otro lado es:
+
+N_total = m * n + 1
+
+Sin embargo, en este problema, todos los cortes son paralelos a uno de los lados, lo que significa que están organizados en filas o columnas.
+
+Supongamos que Susanna hace 'k' cortes en una dirección y 'l' cortes en la otra dirección. Entonces:
+
+Total de regiones = (k + 1) * (l + 1)
+
+Y sabemos que k + l = 7, ya que ha hecho 7 cortes en total.
+
+Queremos maximizar el número de regiones, lo cual ocurre cuando los cortes se distribuyen de manera que maximicen la multiplicación de (k+1) y (l+1).
+
+Para maximizar (k + 1)(l + 1), con k + l =7:
+
+Intentemos valores enteros para k y l.
+
+Si k=3, l=4: (3+1)*(4+1)=4*5=20
+
+Si k=4,l=3: (4+1)*(3+1)=5*4=20
+
+Si k=2,l=5: (2+1)*(5+1)=3*6=18
+
+k=5,l=2: Similar a lo anterior, 18
+
+k=1,l=6: 2*7=14
+
+k=6,l=1: 7*2=14
+
+k=0,l=7: 1*8=8
+
+Y viceversa.
+
+Por lo tanto, el número máximo de regiones es 20, y el mínimo es 8.
+
+El problema pregunta cuántos trozos NO ES POSIBLE que le queden. Es decir, hay que buscar un valor que no esté entre 8 y 20 inclusive.
+
+Las opciones son: A)8, B)12, C)14, D)18, E)20
+
+Vemos que 8,12,14,18,20 están cubiertos. Pero, en realidad, no todos los números entre 8 y 20 son posibles.
+
+Por ejemplo:
+
+Con k=3,l=4: 20
+
+k=2,l=5:18
+
+k=4,l=3:20 (no aporta nuevo)
+
+k=1,l=6:14
+
+k=5,l=2:18
+
+k=6,l=1:14
+
+k=7,l=0:8
+
+Entonces los posibles números son 8,14,18,20.
+
+Es decir, 12 no es posible porque no hay distribución de k y l que dé 12 regiones con 7 cortes.
+
+Verifico:
+
+Si quieres obtener 12 regiones, necesitarías (k+1)(l+1)=12. Con k+l=7.
+
+Entonces resolver: (k+1)(8 -k) =12
+
+Expandimos: 8(k +1) -k(k +1) =12 → 8k +8 -k² -k =12
+
+Simplifico:
+
+-k² +7k +8=12 → -k² +7k -4=0 → k² -7k +4=0
+
+Discriminante: 49 -16=33. Raíces: (7 ±√33)/2, no enteras.
+
+Por lo tanto, no hay enteros k y l que sumen 7 y cumplan que (k+1)(l+1)=12.
+
+Por lo tanto, 12 es un número imposible.
+</think>
+
+Raonament:  
+Per calcular el nombre màxim de regions on es poden dividir un rectangle amb tallades paralles als costats, utilitzem la fórmula:  
+N_total = (k + 1) * (l + 1), on k + l = 7.  
+El màxim es logra quan k=3 i l=4, donant N_total=20. Els valors possibles són 8, 14, 18 i 20. El 12 no és possible.
+
+Resposta: B) 12 trossos

@@ -1,0 +1,35 @@
+<think>
+Primero, identifico que el número es de tres cifras, lo que significa que puede representarse como ABC, donde A, B y C son las cifras en las posiciones centenas, decenas y unidades respectivamente.
+
+Sé que la suma de sus cifras es 26, es decir:
+A + B + C = 26
+
+Dado que cada cifra debe ser un número entero entre 0 y 9 (excepto A que no puede ser 0), busco combinaciones de números que cumplan esta condición.
+
+Exploro diferentes valores para A. Al probar A=9, la suma restante para B + C es 17. Buscando pares de decenas y unidades que sumen 17, encuentro que (8 y 9) funcionan ya que 8 + 9 = 17.
+
+Por lo tanto, el número es 989.
+
+Finalmente, calculo el producto de sus cifras:
+9 × 8 × 9 = 648.
+</think>
+
+**Raonament:**
+
+Et pots imaginar que hi ha un nombre de tres xifres, per exemple, ABC, on A, B i C són les seves xifres. La suma d'aquestes xifres és 26:
+
+A + B + C = 26
+
+Per trobar el producte de les xifres (A × B × C), hem de descobrir quines valors poden tenir A, B i C. Sabem que cada una des xifres d'un nombre de tres xifres pot ser entre 0 i 9, excepte la primera xifa (A), que no pot ser 0.
+
+Empezant per A=9:
+
+- Si A = 9:
+  - B + C = 26 - 9 = 17
+  - Les possible combinacions son:
+    - B=8 i C=9 → producte = 9 × 8 × 9 = 648
+    - B=9 i C=8 → producte = 9 × 9 × 8 = 648
+
+Per tant, el producte de les xifres és 648.
+
+**Resposta: D) 648**

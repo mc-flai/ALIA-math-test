@@ -1,0 +1,18 @@
+<think>
+Primero, identifico que hay un total de 5 amigas: Eva, Carla, Andrea, Irene y Roser.
+
+Eva siempre se sienta a la izquierda de la mesa, lo que fija su posición. Esto reduce el problema a ordenar a las otras 4 amigas en los asientos restantes.
+
+Sin embargo, hay una condición adicional: Eva es zurda, lo que implica que solo se puede sentar en un lado específico de la mesa, dejando al otro costado para las demás chicas. Esto sugiere que el problema no solo se trata de ordenar a las 4 amigas, sino también de considerar cómo se distribuyen en ambos lados de la mesa.
+
+Asumo que hay dos lados: izquierdo y derecho. Eva ya ocupa un asiento en el lateral izquierdo, por lo que el otro asiento del lado izquierdo debe quedar vacío o ser ocupado solo por Eva. Sin embargo, esto no es claro. Si consideramos que Eva se sienta en el extremo izquierdo, los otros pueden distribuirse en los asientos restantes.
+
+Si hay un total de 5 asientos y Eva ocupa uno fijo, quedan 4 asientos para las otras 4 chicas. Sin restricciones adicionales, el número de formas sería 4! = 24. Sin embargo, debido a que Eva es zurda y siempre se sienta en su lado izquierdo, podría influir en la distribución de las demás.
+
+Si suponemos que Eva está fija en un asiento determinado, el problema reduce a ordenar a las otras 4 amigas en los restantes 4 asientos. El número de formas sería 4! = 24, lo que corresponde a la opción D.
+</think>
+
+Raonament:  
+Eva és una de les 5 amigues i sempre se sienta al costat esquerre de la taula, fixant una part de la posició. Les restes 4 amigues (Carla, Andrea, Irene i Roser) poden ser arranjades en qualsevol ordre a les 4 posicions restants. El nombre total de formes diferents és el producte dels possibles arranjos, que és 4! = 24.
+
+Resposta: D) 24

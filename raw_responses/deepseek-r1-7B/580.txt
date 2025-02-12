@@ -1,0 +1,41 @@
+<think>
+Primero, sabemos que al dividir N por 6 deja un residuo de 5. Esto significa que N puede ser expresado como 6k + 5, donde k es un entero.
+
+Luego, calculamos N²: (6k + 5)² = 36k² + 60k + 25. Ahora, dividimos este resultado por 12.
+
+Observamos que:
+- 36k² es divisible por 12.
+- 60k también es divisible por 12.
+- El término restante es 25.
+
+Al dividir 25 entre 12, el residuo es 1.
+
+Por lo tanto, el residuo al dividir N² por 12 es 1.
+</think>
+
+Raonament:
+
+1. **Entendimiento inicial:**
+   - Un nombre enter positiu \( N \) quan es divideix per 6 deixa un residu de 5.
+   - Això significa que \( N \) pot ser expressat com \( N = 6k + 5 \), on \( k \) és un enter.
+
+2. **Calcular \( N^2 \):**
+   \[
+   N^2 = (6k + 5)^2 = 36k^2 + 60k + 25
+   \]
+
+3. **Dividir \( N^2 \) per 12:**
+   - Observem que:
+     - \( 36k^2 \) és divisible per 12.
+     - \( 60k \) també és divisible per 12.
+     - El tercer terme, 25, quan es divideix per 12, deixa un residu de 1 (descomposició: \( 12 \times 2 = 24 \), restant 1).
+
+   - Per tant:
+     \[
+     N^2 \mod 12 = 25 \mod 12 = 1
+     \]
+
+4. **Conclusió:**
+   - El residu quan \( N^2 \) es divideix per 12 és 1.
+
+Resposta: A) 1

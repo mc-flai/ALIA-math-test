@@ -1,0 +1,48 @@
+<think>
+Bueno, tengo que resolver este problema que me pide encontrar el máximo común divisor (MCD) de todos los números palindrómicos de seis dígitos. Primero, debo entender bien qué son los números palindrómicos y cómo se construyen.
+
+Un número palindrómico es aquel que se lee igual de izquierda a derecha y viceversa. En el caso de un número de seis dígitos, la estructura será abccba, donde 'a' no puede ser cero porque se trata de un número de seis dígitos.
+
+Entonces, un número palindrómico de seis dígitos se puede representar como:
+\[ N = 100000a + 10000b + 1000c + 100c + 10b + a \]
+Simplificando esta expresión, obtengo:
+\[ N = a(100001) + b(10010) + c(1100) \]
+
+Ahora, para encontrar el MCD de todos estos números, debo identificar un factor común en todas las posibles combinaciones de 'a', 'b' y 'c'. Observo que cada término dentro de N tiene factores comunes:
+
+- 100001 se puede factorizar como 101 × 9901.
+- 10010 es igual a 10 × 1001, y 1001 se descompone en 7 × 11 × 13.
+- 1100 es 100 × 11.
+
+Además, noto que 1001 tiene factores 7, 11 y 13. Esto sugiere que 7, 11 y posiblemente 13 podrían ser divisores comunes de todos los números palindrómicos de seis dígitos.
+
+Para confirmar si 11 es un divisor común, observo que en la expresión simplificada:
+\[ N = a \times 100001 + b \times 10010 + c \times 1100 \]
+Cada término incluye al menos un factor de 11. Por ejemplo:
+- 100001 es divisible por 11 (ya que 100001 ÷ 11 = 9091).
+- 10010 es igual a 10 × 1001, y 1001 es divisible por 11.
+- 1100 es claramente divisible por 11.
+
+Esto me hace pensar que 11 es un factor común de todos los números palindrómicos de seis dígitos. Ahora, necesito verificar si hay un divisor mayor que 11 que sea común a todos estos números.
+
+Considerando los valores extremos, como el número más pequeño (100001) y el más grande (999999), ambos son divisibles por 11:
+- 100001 ÷ 11 = 9091
+- 999999 ÷ 11 = 90909
+
+Esto sugiere que 11 es un divisor común. Sin embargo, ¿hay un número mayor que 11 que también los divida? Probablemente no, ya que si analizamos números específicos:
+- 123321 ÷ 11 = 11211 (exactamente)
+- Si intento dividir por 7: 100001 ÷ 7 ≈ 14285.85, lo cual no es entero.
+- Dividir por 13: 100001 ÷ 13 ≈ 7692.38, tampoco entero.
+
+Esto me indica que 11 es el máximo divisor común de todos los números palindrómicos de seis dígitos.
+</think>
+
+**Raonament:**  
+Un nombre palindròmic de sis dígits té la forma abccba, on a ≠ 0. Aquest tipus de nombres pot ser expressat com \( N = 100001a + 10010b + 1100c \). Observant els termes, tots contenen el factor 11. Per exemple:
+- \( 100001 = 9091 × 11 \)
+- \( 10010 = 910 × 11 \)
+- \( 1100 = 100 × 11 \)
+
+Això vol dir que tots els nombres palindròmics de sis dígits són divisibles per 11. No hi ha un divisor més gran comú, com 7 o 9, ja que no tothom està divisible per ells.
+
+**Resposta:** D) 11

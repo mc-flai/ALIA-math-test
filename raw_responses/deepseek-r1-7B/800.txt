@@ -1,0 +1,43 @@
+<think>
+Primero, identifico que los autobuses salen a las 8:00 AM y cada uno tiene un tiempo de recorrido distinto: 20 minutos, 30 minutos y 24 minutos. 
+
+Necesito encontrar el momento en que todos los conductores vuelvan a coincidir en la estación por primera vez después de las 8:00 AM.
+
+Para ello, calculo cuándo cada autobús regresa a la estación:
+
+- El primer autobús tarda 20 minutos, por lo que vuelve a las 8:20.
+- El segundo autobús tarda 30 minutos, retornando a las 8:30.
+- El tercer autobús tarda 24 minutos, regresando a las 8:24.
+
+Ahora, busco el menor tiempo común en el que todos estén presentes. Comparo los tiempos de retorno:
+
+- A las 8:20 solo está el primer autobús.
+- A las 8:30 están el segundo autobús y el tercer autobús ha regresado desde hace 9 minutos.
+
+El momento en que coinciden todos por primera vez es a las 8:30 AM, lo cual corresponde a la opción B.
+</think>
+
+**Raonament:**  
+Per determinar quan tornaran a veure els tres conductors dels autobusos per primera vegada després de les 8 h del matí, hem de calcular el temps que cada un demora a completar una volta i luego buscar el mínim múltiple comú (MCM) d'aquests temps. Això ens dirà quan tothom estigué al mateixa hora abans que tornin a coincidir.
+
+- El primer autobús tarda **20 minuts**.
+- El segon autobús tarda **30 minuts**.
+- El tercer autobús tarda **24 minuts**.
+
+Calculant el MCM de 20, 30 i 24:
+
+1. **Factorització en primers:**
+   - 20 = 2² × 5
+   - 30 = 2 × 3 × 5
+   - 24 = 2³ × 3
+
+2. **MCM = producte dels factors primes elevats a la major potència que hi apareixen:**
+   - MCM = 2³ × 3 × 5 = 8 × 3 × 5 = 120 minuts.
+
+3. **Convertint minuts a hores:**
+   - 120 minuts = 2 hores.
+
+Per tant, els conductors se tornarán a veure després de **2 hores** des de les 8:00 h del matí, que serà a les **10:00 h del matí**.
+
+**Resposta:**  
+B) A les 10.00 del matí

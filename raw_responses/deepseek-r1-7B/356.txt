@@ -1,0 +1,122 @@
+<think>
+Okay, so I have this problem about the Mathematics Olympiad. There are 100 participants who had to solve 4 problems. The numbers of people who solved each problem are given: 90 for the first, 80 for the second, 70 for the third, and 60 for the fourth. But no one solved all four problems. Only those who solved both the third and fourth problems are declared winners. I need to figure out how many winners there were.
+
+Let me break this down step by step. First, it's a problem involving sets and their overlaps because we're dealing with participants solving different numbers of problems. Since each participant attempted all four problems but didn't necessarily solve them all, the key here is to find how many people solved both the third and fourth problems.
+
+I remember something about the principle of inclusion-exclusion in set theory, which might help here. But I'm not sure if that's directly applicable since we don't have information about overlaps between each pair or group of problems. Instead, maybe another approach would be better.
+
+The problem states that no one solved all four problems. So, the maximum number of problems any participant could have solved is three. That might complicate things because it limits how people can overlap in solving different problems.
+
+But wait, we specifically need to find those who solved both the third and fourth problems. Let's denote:
+
+- A: participants who solved problem 1 (90)
+- B: participants who solved problem 2 (80)
+- C: participants who solved problem 3 (70)
+- D: participants who solved problem 4 (60)
+
+We need to find the number of people in both C and D, which is |C ∩ D|. 
+
+However, we don't have direct information about this intersection. But since each participant didn't solve all four problems, it means that for any participant, they can't be in all A, B, C, D at the same time.
+
+I'm wondering if there's a way to calculate |C ∩ D| using the given data. Maybe by considering the maximum possible overlaps or some other constraints.
+
+Alternatively, maybe we can think about how many people didn't solve certain problems and see if that helps.
+
+Wait, another approach: since each participant solved at least one problem (assuming they attempted all but couldn't have solved none because they attempted all four), but actually, no, the problem doesn't specify whether everyone solved at least one problem. Hmm, but given that 90 people solved the first problem alone, it's possible some didn't solve any, but I think in Olympiads, participants usually attempt problems, so maybe they all tried them, but didn't necessarily solve.
+
+But regardless, focusing back on what we need: |C ∩ D|.
+
+Is there a way to find this intersection without more data? Let's see. We have the total number of participants as 100. Each problem was solved by a certain number of people:
+
+- A =90
+- B=80
+- C=70
+- D=60
+
+We know that no one solved all four, so each participant could have solved up to three problems.
+
+But without knowing how the solving overlaps between these sets, it's tricky. Maybe we can consider the maximum possible overlap for |C ∩ D|.
+
+Wait, another thought: Since each person can solve at most 3 problems, but perhaps some constraints on the total number of solutions might help. Let me calculate the total number of solved problems across all participants:
+
+Total solved = A + B + C + D = 90 +80+70+60= 300.
+
+Since there are 100 participants and each could have contributed up to 3 solves, the maximum possible total is 100*3=300. So, in this case, total solved is exactly 300, which means every participant solved exactly three problems.
+
+Ah! That's an important point. Because if everyone solved exactly three problems, then each person skipped exactly one problem.
+
+Now, knowing that, we can figure out how many people solved each problem and thus find overlaps.
+
+Wait, let me think again: If total solves are 300 and participants are 100, each participant must have solved exactly 3 problems (since 100*3=300). So no one skipped more than one problem because that would require some to solve fewer than three, which isn't the case here.
+
+So, each participant skipped exactly one problem. Therefore, for each problem, the number of people who didn't solve it is equal to the total participants minus those who solved it:
+
+- Problem 1: 100 -90=10 people didn't solve
+- Problem 2: 100 -80=20 didn't solve
+- Problem3:100-70=30 didn't solve
+- Problem4:100-60=40 didn't solve
+
+Since each participant skipped exactly one problem, the number of people who skipped a particular problem is equal to how many times that problem was skipped. Now, we need to find how many participants skipped neither problem 3 nor problem 4 because winners are those who solved both 3 and 4.
+
+Wait, no. Winners are those who solved both C and D. So they didn't skip either C or D. But since each person skips exactly one problem, the people who solved both C and D must have skipped either A or B.
+
+So, let me see: The number of people who solved C is 70, but some of them might have skipped other problems. Similarly for D=60.
+
+But to find |C ∩ D|, we need those participants who solved both C and D, meaning they didn't skip either C or D. Since each person skips exactly one problem, the ones who are in C ∩ D must have skipped either A or B.
+
+So, how many people skipped A: 10 (they couldn't have skipped anything else because they're only skipping A). Similarly, those who skipped B:20.
+
+Therefore, the participants who solved both C and D must be equal to the number of people who didn't skip C and didn't skip D. Since each person skips exactly one problem, the ones in C ∩ D must have skipped either A or B. So:
+
+Total people who solved C:70 = (people who skipped A) + (people who skipped neither A nor C). Wait, maybe that's not the right approach.
+
+Wait another angle: The number of participants who solved both C and D is equal to the total participants minus those who skipped C or skipped D. But since each person skips exactly one problem, we can think about:
+
+The number of people who didn't skip C is 70 (they solved it), and similarly, those who didn't skip D is 60.
+
+But wait, this might not directly help because overlaps can occur beyond that.
+
+Alternatively, since each person skips exactly one problem, the participants can be partitioned into four groups based on which single problem they skipped:
+
+- Skipped A:10
+- Skipped B:20
+- Skipped C:30
+- Skipped D:40
+
+These add up to 100 (10+20+30+40=100), so that checks out.
+
+Now, the participants who skipped A are 10. These people solved B, C, and D. Similarly:
+
+- Skipped A: Solved B, C, D → count=10
+- Skipped B: Solved A, C, D →20
+- Skipped C: Solved A,B,D →30
+- Skipped D: Solved A,B,C→40
+
+So, the participants who solved both C and D are those in the groups that skipped either A or B. That is:
+
+Skipped A:10 (solved B,C,D) → so they have C and D.
+
+Skipped B:20 (solved A,C,D) → also have C and D.
+
+So total participants who solved both C and D are 10 + 20 =30.
+
+Wait, but let me check. If I sum these two groups, do I get the correct number? Because when you skip A, you have B,C,D; when you skip B, you have A,C,D. So in both cases, they have C and D solved. The ones who skipped C or D would not be counted.
+
+Therefore, the number of winners is 30.
+
+Looking back at the numbers:
+
+Total people skipping A:10, which are part of C and D solvers.
+
+Skipping B:20, also part of C and D solvers.
+
+So total is 30. These people solved both C and D, hence they are the winners.
+
+Wait another way to check: The number of people who skipped C or D is 30+40=70. So the ones who didn't skip C or D would be 100-70=30, which matches our previous result.
+
+Yes, that seems correct. Therefore, the answer should be 30.
+</think>
+
+The number of winners is determined by finding participants who solved both problem sets C and D. Since each participant skipped exactly one problem, those who skipped either A or B must have solved C and D. Summing these groups (10 + 20) gives us 30 winners.
+
+$\boxed{30}$

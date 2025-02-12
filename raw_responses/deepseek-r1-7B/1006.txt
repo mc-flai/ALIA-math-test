@@ -1,0 +1,111 @@
+<think>
+Bueno, voy a intentar resolver este problema paso a paso. Primero, vamos a entender lo que se nos está preguntando.
+
+Tres piratas han hablado sobre las riquezas de su amigo Barbaroja. Cada uno ha dicho la verdad acerca de una cosa (monedas o diamantes) y ha mentido en la otra. Sus declaraciones son:
+
+- Pirata 1: 8 monedas y 6 diamantes.
+- Pirata 2: 7 monedas y 4 diamantes.
+- Pirata 3: 7 monedas y 7 diamantes.
+
+Necesitamos determinar cuál es la suma total de monedas y diamantes que tiene Barbaroja.
+
+Primero, consideremos que cada pirata dice una verdad y una mentira. Es decir, para cada uno de ellos, una de las declaraciones (monedas o diamantes) es correcta y la otra es falsa.
+
+Vamos a analizar las posibles combinaciones de monedas y diamantes.
+
+Primero, observemos las declaraciones de las monedas:
+
+- Pirata 1 dice 8.
+- Pirata 2 dice 7.
+- Pirata 3 dice 7.
+
+Las declaraciones de diamantes son:
+
+- Pirata 1: 6.
+- Pirata 2: 4.
+- Pirata 3: 7.
+
+Notemos que dos piratas (2 y 3) dicen 7 monedas. Si Barbaroja tuviera 7 monedas, entonces Pirata 2 y Pirata 3 estaban diciendo la verdad acerca de las monedas, lo cual no es posible porque cada uno debe mentir en una cosa y decir la verdad en otra. Por lo tanto, al menos uno de ellos está mintiendo sobre las monedas.
+
+Por el contrario, si Barbaroja tuviera 8 monedas, Pirata 1 diría la verdad, y Piratas 2 y 3 estaban mintiendo, lo cual es posible ya que cada uno puede mentir en una cosa.
+
+Otra posibilidad es que Barbaroja tenga 7 monedas. En ese caso, Piratas 2 y 3 están diciendo la verdad sobre las monedas, pero eso significaría que ambos están mintiendo sobre los diamantes, lo cual no es posible ya que cada pirata debe mentir en una cosa.
+
+Así que, descartando 7 monedas como imposible (porque dos piratas estaban diciendo la verdad), y considerando que 8 monedas son posibles, vayamos por el supuesto de que Barbaroja tiene 8 monedas.
+
+Ahora, analicemos los diamantes. Pirata 1 dice 6, Pirata 2 dice 4, y Pirata 3 dice 7.
+
+Si Barbaroja tuviera 6 diamantes, entonces Pirata 1 diría la verdad, y Piratas 2 y 3 estaban mintiendo. Pero si Barbaroja tiene 8 monedas, Pirata 1 ya dijo la verdad sobre las monedas, lo cual no es posible porque cada pirata debe mentir en una cosa.
+
+Por lo tanto, Barbaroja no puede tener 6 diamantes.
+
+Si tuviera 4 diamantes, Pirata 2 diría la verdad, y Piratas 1 y 3 estaban mintiendo. Pero, si Barbaroja tiene 8 monedas, Pirato 1 ya dijo la verdad en las monedas, lo cual no es permitido.
+
+Por lo tanto, tampoco puede tener 4 diamantes.
+
+Ahora, consideremos que Barbaroja tenga 7 diamantes. En este caso, Pirata 3 diría la verdad sobre los diamantes y mentiría sobre las monedas (diciendo 7 en lugar de 8). 
+
+Entonces:
+
+- Pirata 1 dice 8 monedas (mentira) y 6 diamantes (mentida).
+- Pirata 2 dice 7 monedas (verdad) y 4 diamantes (mentira).
+- Pirata 3 dice 7 monedas (mentira, ya que Barbaroja tiene 8) y 7 diamantes (verdad).
+
+Pero en este caso, Pirata 1 está mintiendo sobre ambas cosas. Eso no es posible, ya que cada pirata debe mentir en una cosa.
+
+Entonces, quizás nuestra suposición de 8 monedas no es correcta. Volvamos a reconsiderar.
+
+Si Barbaroja no tiene 7 ni 8 monedas, ¿cuántas podría tener? Vamos a considerar que la cantidad de monedas sea diferente a 7 y 8, digamos X.
+
+Ahora, analicemos cada pirata:
+
+- Pirata 1 dice M=8 y D=6. Si M=X, entonces D≠6; si D=X, M≠8.
+- Pirata 2 dice M=7 y D=4. Similarmente, o M o D es correcto.
+- Pirata 3 dice M=7 y D=7. O bien M o D es correcto.
+
+Supongamos que Barbaroja tiene M monedas y D diamantes.
+
+Cada pirata debe tener exactamente una verdad y una mentira.
+
+Entonces:
+
+Pirata1: (M=8) xor (D=6)
+Pirata2: (M=7) xor (D=4)
+Pirata3: (M=7) xor (D=7)
+
+Queremos encontrar M y D tales que para cada pirata, exactamente una de sus declaraciones es verdadera.
+
+Intentemos resolver esto como un sistema lógico.
+
+Posibles valores de M:
+
+De Pirata1: M=8 o D=6
+
+Pirata2: M=7 o D=4
+
+Pirata3: M=7 o D=7
+
+Supongamos que M=7. Entonces, Pirata1 dice M=8 (falso), por lo tanto, D=6 debe ser verdad. Pero si D=6, entonces Pirata2 dice D=4 (falso) y M=7 (verdadero). Pero Pirata3 dice M=7 (verdadero) y D=7 (falso). En este caso:
+
+- Pirata1: Falso en M=8, Verdadero en D=6
+- Pirata2: Verdadero en M=7, Falso en D=4
+- Pirata3: Verdadero en M=7, Falso en D=7
+
+Pero Pirata1 dice D=6 y Pirata2 dice D=4. Si Barbaroja tuviera 6 diamantes, Pirata1 diría la verdad y Pirata2 mentiría. Sin embargo, esto funcionaría si M=7.
+
+Espera: Si M=7 y D=6:
+
+- Pirata1: M=8 (F), D=6 (V) → cumple
+- Pirata2: M=7 (V), D=4 (F) → cumple
+- Pirata3: M=7 (V), D=7 (F) → cumple
+
+Sí, esto funciona. Cada pirata dice una verdad y una mentira.
+
+Así que Barbaroja tendría 7 monedas y 6 diamantes, lo que suma 13.
+
+Ahora, revisemos las opciones: Opciones son A)11, B)14, C)13, D)12, E)15. La suma es M+D=7+6=13 → Opción C.
+</think>
+
+Raonament: Anàlitzeu les declaracions dels pirates per determinar quines són les monedes i diamants correctes. Observant que cada pirate ha mentit en una cosa i ha dicha la veritat en l'altra, dedueixem que Barbaroja té 7 monedes i 6 diamants, totals sumant 13.
+
+Resposta: C) 13

@@ -1,0 +1,23 @@
+<think>
+Para resolver este problema, primero identifico que A es un número de 2017 dígitos que comienza y termina con el dígito 1, y todos los demás dígitos son 0. 
+
+Sé que para encontrar el residuo de la división de un número por 9, se puede calcular la suma de sus dígitos y luego dividir esa suma entre 9.
+
+Sumando los dígitos de A: hay dos 1s (en las primeras y últimas posiciones) y el resto son 0s. Por lo tanto, la suma total de los dígitos es 2.
+
+Al dividir 2 entre 9, el residuo es 2.
+</think>
+
+Raonament:
+El nombre A té 2017 xifres, comença i acaba per 1, i les restants xifres són 0. Per calcular el residu de la divisió de A per 9, utilitzem la regla de que el residu d'un nombre quan es divideix per 9 és igual a la suma dels seus dígitos mòdulo 9.
+
+La suma dels dígitos d'A:
+- Primer i ùltim xifre: 1 + 1 = 2
+- Les restants 2015 xifres són 0, per la qual cosa no contribueixen a la suma.
+
+Per tant, la suma total dels dígitos és 2. 
+
+El residu quan es divideix 2 entre 9 és 2, ja que:
+\[ 2 \mod 9 = 2 \]
+
+Resposta: B)

@@ -1,0 +1,63 @@
+<think>
+Para resolver este problema, primero identifico que los pesos de los tres cangrejos son números enteros y todos diferentes. La suma total es 97 kg.
+
+Quiero maximizar el peso del cangur más ligero, por lo que asignaré el menor posible a los otros dos. Los menores enteros positivos son 1 kg y 2 kg.
+
+Sumando estos dos, obtengo 3 kg. Resto este valor de la suma total: 97 - 3 = 94 kg.
+
+Por lo tanto, el peso máximo del cangur más ligero es 94 kg.
+</think>
+
+**Raonament:**
+
+El problema consiste en determinar quin és el pes màxim que pot tenir el cangur més lleuger si tres cangurs pesen un nombre enter de quilos diferents i la suma dels seus pesos és 97 kg.
+
+Per maximitzar el pes del cangur més lleuger, hem de minimitzar els pesos dels dos cangurs restants. Com que els pesos han de ser enters i diferents, els valors més baixos possibles són:
+
+- Primer cangur: 1 kg
+- Segon cangur: 2 kg
+
+Sumant aquests dos pesos, obtenim:
+\[ 1 + 2 = 3 \, \text{kg} \]
+
+Restant aquest valor de la suma total dels tres pesos (97 kg), obtingrem el pes màxim del tercer cangur:
+\[ 97 - 3 = 94 \, \text{kg} \]
+
+No obstant això, observem que 94 kg no coincideix amb cap de les opcions donades. Aquesta dissonància sugereix un error en el procés. Reanalitzant, si volem que tots els pesos siguin diferents i enters, i busquemos el màxim per al més lleuger, l'arrel consisteix en distribuir els pesos de manera que el cangur més lleuger tinga un pes tan gran com possible sense superar el total.
+
+Revisant les opcions donades (A) 1 kg, (B) 30 kg, (C) 31 kg, (D) 32 kg, (E) 33 kg, i considerant que els pesos han de ser diferents, la combinació vàlia és:
+- Cangur 1: 33 kg
+- Cangur 2: 32 kg
+- Cangur 3: 31 kg
+
+Sumant aquests pesos:
+\[ 33 + 32 + 31 = 96 \, \text{kg} \]
+
+Això no arribà a 97 kg. Per tant, ajustem un dels pesos:
+- Cangur 1: 34 kg
+- Cangur 2: 33 kg
+- Cangur 3: 30 kg
+
+Sumant:
+\[ 34 + 33 + 30 = 97 \, \text{kg} \]
+
+Aquesta distribució valdria i el cangur més lleuger és 30 kg, però no està en les opcions. Reesmarrillant, la correcta combinació és:
+- Cangur 1: 32 kg
+- Cangur 2: 33 kg
+- Cangur 3: 32 kg
+
+Sumant:
+\[ 32 + 33 + 32 = 97 \, \text{kg} \]
+
+Però els pesos no poden ser iguals. Finalment, la solució correcta és:
+- Cangur 1: 30 kg
+- Cangur 2: 31 kg
+- Cangur 3: 36 kg
+
+Sumant:
+\[ 30 + 31 + 36 = 97 \, \text{kg} \]
+
+Aquí el cangur més lleuger és 30 kg, que coincideix amb l'opció B.
+
+**Resposta:**  
+\boxed{B) 30 kg}

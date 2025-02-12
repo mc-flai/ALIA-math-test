@@ -1,0 +1,39 @@
+<think>
+Primero, identifico que el año actual es 2015 y necesito determinar en cuántos años el producto de las cifras del número del año será igual a 2.
+
+Sé que el producto de dos números es 2 solo si uno de ellos es 1 y el otro es 2, ya que 1×2=2. No hay otros pares de dígitos que cumplan esta condición.
+
+Luego, analizo los años posteriores a 2015 para ver cuándo las cifras del año cumplen con esta condición.
+
+- Año 2016: 2×0×1×6 = 0 (no cumple)
+- Año 2017: 2×0×1×7 = 0
+- Año 2018: 2×0×1×8 = 0
+- Año 2019: 2×0×1×9 = 0
+- Año 2020: 2×0×2×0 = 0
+- ...
+- Continuo hasta encontrar un año donde las cifras sean 1 y 2, con los otros dígitos siendo 1. Por ejemplo:
+  
+  - Año 2111: 2×1×1×1 = 2 (cumple)
+  
+Finalmente, calculo la diferencia entre 2111 y 2015 para determinar cuántos años pasaron:
+
+2111 - 2015 = 96 años.
+</think>
+
+**Raonament:**
+
+Necessitam determinar en quants anys posteriors a l'any 2015 el producte de les xifres del número de l’any serà igual a 2. 
+
+El producte de digits d’un número pot ser 2 només en dos casos:
+1. Un digit siga 1 i l’altre siga 2.
+2. Un digit siga 2 i el restant sigui 1.
+
+Ara, considerant els anys posteriors a 2015, busquemos un any on les xifres del número de l'any compleixin aquesta condició. 
+
+Observem que en l’any **2111**, les xifres són 2, 1, 1 i 1. El producte és:
+\[ 2 \times 1 \times 1 \times 1 = 2 \]
+
+Ara, calculam la diferència entre 2111 i 2015 per determinar en quants anys aconseguim aquest resultat:
+\[ 2111 - 2015 = 96 \text{ anys} \]
+
+**Resposta:** E) 96

@@ -1,0 +1,58 @@
+<think>
+Primero, identifico que ambos cangures parten del mismo punto y comienzan a saltar en la misma dirección simultáneamente. 
+
+El cangur A salta una distancia fija de 6 metros en cada salto. Por otro lado, el cangur B incrementa la longitud de sus saltos de manera incremental: el primer salto es de 1 metro, el segundo de 2 metros, y así sucesivamente.
+
+Quiero determinar cuántos saltos debe realizar el cangur B para alcanzar o superar al cangur A. Para ello, necesito calcular la distancia total que cada uno ha recorrido después de un número determinado de saltos y encontrar en qué momento la distancia del B es igual o mayor que la del A.
+
+Voy a representar matemáticamente la situación:
+
+- Distancia recorrida por el cangur A después de n saltos: D_A(n) = 6 * n
+- Distancia recorrida por el cangur B después de n saltos: D_B(n) = 1 + 2 + 3 + ... + n = n(n + 1)/2
+
+El objetivo es encontrar el menor entero positivo n tal que D_B(n) ≥ D_A(n):
+
+n(n + 1)/2 ≥ 6n
+
+Simplificando la desigualdad:
+
+n^2 + n ≥ 12n  
+n^2 - 11n ≥ 0  
+n(n - 11) ≥ 0
+
+Esta desigualdad se cumple cuando n ≤ 0 o n ≥ 11. Dado que n representa el número de saltos, y no puede ser cero ni negativo, la solución es n ≥ 11.
+
+Por lo tanto, el cangur B alcanzará al cangur A después de 11 saltos.
+</think>
+
+**Raonament:**
+
+Amb els dos cangurs partint del mateix punt i saltant en la mateixa direcció, volem calcular quants salts ha de fer el cangur B per agafar el cangur A.
+
+- **Distància recorregida per A després de n salts:**  
+  Cada salt de A és de 6 m.  
+  Donat que comencen simultàniament, després de n salts:  
+  \( D_A(n) = 6 \times n \)
+
+- **Distància recorregida per B després de n salts:**  
+  El primer salt de B és de 1 m, el segon de 2 m, etc. Aquesta suma forma una sèrie aritmètica:  
+  \( D_B(n) = 1 + 2 + 3 + \ldots + n = \frac{n(n + 1)}{2} \)
+
+Volem determinar quan petit n és necessari per que \( D_B(n) \geq D_A(n) \).
+
+Estableixem la desigualtat:  
+\( \frac{n(n + 1)}{2} \geq 6n \)
+
+Multiplicàndola per 2:  
+\( n(n + 1) \geq 12n \)  
+\( n^2 + n - 12n \geq 0 \)  
+\( n^2 - 11n \geq 0 \)  
+Factoritzant:  
+\( n(n - 11) \geq 0 \)
+
+Aquesta desigualtat es compleix quan \( n \leq 0 \) o \( n \geq 11 \). Des de el context del problema, n ha de ser un enter positiu, per tant:
+
+**n = 11 salts.**
+
+**Resposta:**  
+C) 11

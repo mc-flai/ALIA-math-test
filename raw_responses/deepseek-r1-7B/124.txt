@@ -1,0 +1,34 @@
+<think>
+Primero, sé que para formar un triángulo necesito seleccionar tres puntos no colineales. Tenemos 7 puntos en total.
+
+De estos 7 puntos, 6 están alineados en una misma recta. Por lo tanto, cualquier selección de tres puntos que incluyan a estos 6 siempre resultará en un triángulo degenerado (una línea recta) y no contará como triángulo válido.
+
+Para calcular el número total de triángulos posibles, primero calculo todas las combinaciones de tres puntos sin considerar su alineación. Luego resto las combinaciones que involucran a los 6 puntos colineales.
+
+El cálculo es el siguiente:
+- Combinaciones totales: C(7,3) = 35
+- Combinaciones degeneradas: C(6,3) = 20
+
+Finalmente, resto las combinaciones degeneradas de las totales para obtener los triángulos válidos.
+</think>
+
+**Raonament:**
+
+Per determinar quantos triangles es poden dibuixar amb tres dels set punts donats, tenim en compte que:
+
+1. **Total de combinacions posibles:**  
+   El número total de formes possible per tripla de punts és el nombre combinatori C(7,3), que calcula les maneres d'escollir 3 punts fora de 7.  
+   $$C(7,3) = \frac{7!}{3!(7-3)!} = 35$$
+
+2. **Triangles degenerats (punts alineats):**  
+   Si tots els punts estan en una mateixa recta, qualsevol tripla de punts aquests no formarà un triangle propiament dit, sinó una lògica lineal. En aquest cas, hi ha 6 punts que estan alineats.  
+   El número d'aquestes combinacions degenerades és C(6,3):  
+   $$C(6,3) = \frac{6!}{3!(6-3)!} = 20$$
+
+3. **Triangles valides:**  
+   Per tant, el nombre de triangles vàlids es dona restant els triangles degenerats del total:  
+   $$Total\ of triangles = Total combinations - Degenerate triangles$$  
+   $$= 35 - 20 = 15$$
+
+**Resposta:**  
+\boxed{D}

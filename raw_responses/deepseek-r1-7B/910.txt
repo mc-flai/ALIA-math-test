@@ -1,0 +1,77 @@
+<think>
+Vamos abordar este problema paso a paso.
+
+El gimnasio ha establecido una promoción para grupos de amigos. Según la oferta, un grupo de n amigos obtiene un descuento del n% en cada entrada. Sin embargo, hay una condición: el máximo descuento total por grupo no debe superar el precio normal de 4 entradas.
+
+Necesitamos determinar el tamaño máximo del grupo para que esta promoción sea viable.
+
+1. **Entender los términos:**
+   - Descuento por persona: n%.
+   - Precio normal de una entrada: Supongamos que es \$P.
+   -Precio total sin descuento para un grupo de n personas: n * P.
+   
+2. **Calcular el precio con descuento:**
+   El precio total con el descuento sería:
+   \[
+   \text{Precio con descuento} = n \times P \times (1 - \frac{n}{100})
+   \]
+   
+3. **Condición del promedio:**
+   Según la oferta, el precio total con descuento no debe superar el precio de 4 entradas:
+   \[
+   n \times P \times (1 - \frac{n}{100}) \leq 4P
+   \]
+   
+4. **Simplificar la ecuación:**
+   Podemos eliminar P de ambos lados (asumiendo que P > 0):
+   \[
+   n \times (1 - \frac{n}{100}) \leq 4
+   \]
+   
+5. **Reformular la desigualdad:**
+   Expandimos:
+   \[
+   n - \frac{n^2}{100} \leq 4
+   \]
+   
+6. **Ordenar los términos:**
+   \[
+   \frac{n^2}{100} - n + 4 \geq 0
+   \]
+   
+7. **Resolver la ecuación cuadrática:**
+   Multiplicamos ambos lados por 100 para eliminar el denominador:
+   \[
+   n^2 - 100n + 400 = 0
+   \]
+   
+8. **Aplicar la fórmula cuadrática:**
+   \[
+   n = \frac{100 \pm \sqrt{(100)^2 - 4 \times 1 \times 400}}{2}
+   \]
+   \[
+   n = \frac{100 \pm \sqrt{10000 - 1600}}{2} = \frac{100 \pm \sqrt{8400}}{2} \approx \frac{100 \pm 91.65}{2}
+   \]
+   
+9. **Determinar las raíces:**
+   - n₁ ≈ (100 + 91.65)/2 ≈ 95.83
+   - n₂ ≈ (100 - 91.65)/2 ≈ 4.17
+   
+10. **Interpretar las raíces:**
+    La ecuación cuadrática se cumple cuando n ≤ 4.17 o n ≥ 95.83.
+    
+    Sin embargo, en el contexto del problema, n no puede ser mayor que 100 (ya que es una de las opciones). Por lo tanto, el límite superior para n es 100.
+
+Por lo tanto, el tamaño máximo del grupo es de 100 personas.
+</think>
+
+Raonament: 
+
+El gimnàs ofereix un descompte del n% per a grups de n amics. El màxim descompte total no pot superar el preu de 4 entrades. Aquesta condició implica que:
+
+- Si n = 10, el descompte és 10%, i el preu total amb descompte serà 90% del preu normal per persona. Amb 10 persones, el preu total serà 9P, què és menor que 4P.
+- Si n = 20, el descompte és 20%, i el preu total amb descompte serà 80% del preu normal per persona. Amb 20 persones, el preu total serà 16P, què és major que 4P.
+
+Això mostra que hi ha un límit en el nombre de persones que poden formar un grup sense superar el preu de 4 entrades.
+
+Resposta: E)

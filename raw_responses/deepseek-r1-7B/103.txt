@@ -1,0 +1,40 @@
+<think>
+Primero, identifico que hay tres dados normales, lo que significa que cada uno tiene 6 caras numeradas del 1 al 6. La suma total de los puntos más baja es 3 (cuando todos sacan 1), y la más alta es 18 (cuando todos sacan 6).
+
+Necesito calcular la probabilidad de obtener una suma de 6 con los tres dados. Para eso, primero determino cuántas combinaciones de los tres números en los dados suman exactamente 6.
+
+Luego, considero que el orden importa, ya que cada dado pertenece a una persona diferente, por lo que las secuencias diferentes son resultados distintos.
+
+Finalmente, calculo la probabilidad dividiendo el número de combinaciones favorables entre el total de posibles resultados, que es 6^3.
+</think>
+
+Raonament:  
+Per calcular la probabilitat d'obtenir una puntuació de 6 amb tres daus normals (cada dau pot sortar un nombre del 1 al 6), hem de determinar quants resultats sumen exactament 6 i després dividir aquest número pel total de possibles resultats.
+
+1. **Total de posibles resultats:**  
+   Cada dau té 6 caras, i hi ha tres daus, per tant el nombre total de combinacions és \(6 \times 6 \times 6 = 6^3 = 216\).
+
+2. **Nombre de combinacions que sumen 6:**  
+   Busquemos totes les tripletes (a, b, c) on \(a + b + c = 6\) i cada un dels números està en l'interval [1, 6]. Aquestes són:
+   - (1, 1, 4)
+   - (1, 2, 3)
+   - (1, 3, 2)
+   - (1, 4, 1)
+   - (2, 1, 3)
+   - (2, 2, 2)
+   - (2, 3, 1)
+   - (3, 1, 2)
+   - (3, 2, 1)
+   - (4, 1, 1)
+
+   En total, hi ha **10** combinacions que sumen exactament 6.
+
+3. **Probabilitat:**  
+   La probabilitat és el nombre de combinacions favorables dividit pel total de combinacions:
+   \[
+   \text{Probabilitat} = \frac{10}{216} = \frac{10}{6^3}
+   \]
+
+Per tant, la resposta correcta és:
+
+Resposta: C) \( \frac{10}{6^3} \)

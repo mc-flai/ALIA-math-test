@@ -1,0 +1,62 @@
+<think>
+Primero, necesito calcular cuántos dígitos tiene el número formado concatenando los números enteros desde 1 hasta 2017.
+
+Voy a dividir el problema por rangos de números para facilitar la cuenta:
+
+1. **Números de 1 dígito (1-9):**
+   Hay 9 números, cada uno con 1 dígito.
+   
+2. **Números de 2 dígitos (10-99):**
+   Hay 90 números (desde 10 hasta 99), cada uno con 2 dígitos.
+   
+3. **Números de 3 dígitos (100-999):**
+   Hay 900 números, cada uno con 3 dígitos.
+   
+4. **Números de 4 dígitos (1000-2017):**
+   Calculo cuántos números hay desde 1000 hasta 2017:
+   \[
+   2017 - 1000 + 1 = 1018 \text{ números}
+   \]
+   Cada uno tiene 4 dígitos.
+
+Ahora, sumo los dígitos de cada rango:
+
+- **Total para 1 dígito:** \(9 \times 1 = 9\) dígitos
+- **Total para 2 dígitos:** \(90 \times 2 = 180\) dígitos
+- **Total para 3 dígitos:** \(900 \times 3 = 2700\) dígitos
+- **Total para 4 dígitos:** \(1018 \times 4 = 4072\) dígitos
+
+Sumando todos estos:
+\[
+9 + 180 + 2700 + 4072 = 6961 \text{ dígitos}
+\]
+</think>
+
+**Raonament:**
+
+Per calcular quants dígits té el nombre obtingut concatenant tots els nombres enters des de 1 fins a 2017, seguirem els passos seguintes:
+
+1. **Determinar la quantitat de dígits per rang de nombres:**
+   - **Nombres de 1 dígito (1-9):** Hi ha 9 nombres, cadascun amb 1 dígit.
+     \[
+     9 \times 1 = 9 \text{ dígits}
+     \]
+   - **Nombres de 2 dígits (10-99):** Hi ha 90 nombres, cadascun amb 2 dígits.
+     \[
+     90 \times 2 = 180 \text{ dígits}
+     \]
+   - **Nombres de 3 dígits (100-999):** Hi ha 900 nombres, cadascun amb 3 dígits.
+     \[
+     900 \times 3 = 2700 \text{ dígits}
+     \]
+   - **Nombres de 4 dígits (1000-2017):** Hi ha \(2017 - 1000 + 1 = 1018\) nombres, cadascun amb 4 dígits.
+     \[
+     1018 \times 4 = 4072 \text{ dígits}
+     \]
+
+2. **Sumar tots els dígits:**
+   \[
+   9 + 180 + 2700 + 4072 = 6961 \text{ dígits}
+   \]
+
+**Resposta:** D) 6961

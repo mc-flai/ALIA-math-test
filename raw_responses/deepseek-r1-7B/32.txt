@@ -1,0 +1,30 @@
+<think>
+Primero, recuerdo que el área de un triángulo rectángulo se calcula multiplicando los dos catetos y luego dividiendo por 2. Es decir, Área = (cateto1 * cateto2) / 2.
+
+Supongamos que los catetos originales son a y b. Entonces, el área inicial es (a*b)/2.
+
+Ahora, aumentamos un 20% el primer cateto: nuevo valor será a*1.20 = 1.2a.
+
+Por otro lado, disminuimos un 20% el segundo cateto: nuevo valor será b*0.80 = 0.8b.
+
+Calculando el área con los nuevos valores: (1.2a * 0.8b)/2 = (0.96ab)/2.
+
+Comparando con el área original (a*b)/2, vemos que el área nuevo es 0.96 veces el área original, lo que significa una disminución del 4%.
+</think>
+
+Raonament: 
+Considerem dos catets d'un triangle rectangle inicials amb longituds \( a \) i \( b \). L'àrea inicial és:
+\[ \text{Àrea}_\text{inicial} = \frac{a \cdot b}{2} \]
+
+Després de l'augment i la disminució dels catets, els nous valors són:
+- Nou catet1: \( a_{\text{nou}} = a + 0.20a = 1.20a \)
+- Nou catet2: \( b_{\text{nou}} = b - 0.20b = 0.80b \)
+
+L'àrea del triangle amb els nous valors és:
+\[ \text{Àrea}_\text{nova} = \frac{1.20a \cdot 0.80b}{2} = \frac{0.96ab}{2} \]
+
+Comparant les dues àrees:
+\[ \frac{0.96ab}{2} = 0.96 \times \frac{ab}{2} \]
+Això vol dir que l'àrea ha disminuït en un 4% (des de 100% a 96%).
+
+Resposta: D) Disminueix en un 4%.

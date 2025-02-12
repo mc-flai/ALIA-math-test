@@ -1,0 +1,48 @@
+<think>
+Primero, identifico los colores y las cantidades de bolas disponibles en la bolsa: 50 verdes (V), 10 blancas (B), y 4 azules (A). El objetivo es extraer el máximo número de bolas sin tener tres de color相同 consecutivas.
+
+Para evitar tener tres en línea, debo alternar los colores cuidadosamente. Considero que las bolas verdes son la mayoría, por lo que intentaré distribuirlas de manera que no haya más de dos seguidas.
+
+Utilizo una estrategia de intercalación:
+- Coloco las bolas verdes de manera alternada con otras colores para romper las secuencias largas.
+- Dado que hay pocas bolas blancas y azules, estas servirán para intercalar entre las verdes.
+
+Cálculo la distribución posible:
+- Si uso 45 bolas verdes, necesito insertar al menos una bola de otro color después de dos verdes. Con 10 bolas blancas y 4 azules, suman 14 bolas para intercalar.
+- Esto permite formar secuencias como VV B VV A VV..., lo que evita tres en línea.
+
+Sumando las verdes usadas (45) con las intercalares (10 + 4 = 14), obtenemos un total de 59 bolas. Sin embargo, esto excede la cantidad total disponible (64). Reviso mis cálculos y me doy cuenta del error en la suma.
+
+Corrijo:
+- Si utilizo 45 verdes y 10 blancas, ya se supera el límite de extracción, por lo que ajusto a 45 verdes + 9 intercalares (usando las 10 blancas y 4 azules adecuadamente).
+
+Finalmente, determino que la máxima cantidad sin tres en línea es 44 bolas.
+</think>
+
+Raonament: 
+
+Per resoldre el problema, hem de maximitzar el nombre de boles treidors sense que hi hagin tres seguides del mateix color. La bossa conté 50 grogues (V), 10 blanques (B) i 4 verdes (A). 
+
+Un approach és alternar els colors per evitar tres seguides del mateix color. La seqüència optimà serà:
+
+- Alternem V, B, A, V, B, A,... però aquesta seqüència no pot durar molt perquè hi ha més grogues que altres colors.
+
+Un altre approach és posar dos boles del mateix color seguits i després un bol d'un altre color. Per exemple: VV B, VV A, VV B, etc.
+
+Donat que les verdes són les més en quantitat (50), hem de distribuirlas sense crear seqüències de tres seguides. La seqüència màxim possible és:
+
+- Utilitzar 45 grogues (V) i alternar amb altres colors per evitar tres seguides.
+
+Sumant això, el màxim nombre de boles que podem extreure és 45 verdes + 10 blanques + 4 verdes = 62. Perè, hi ha una limitació: no pots tenir més de dues grogues seguides.
+
+Revisant, la seqüència correcta és:
+
+(VV B VV A) x 9 = 18 boles
++ (VV B VV A) x 1 = 6 boles
+Total: 24 boles
+
+Aquest no sembleu correcte. Un approach millorament estructurat és usar dues verdes seguides i després una blanca o una verde alternada.
+
+Finalment, el màxim nombre de boles que podem treure sense tret en cap moment tres seguides del mateix color és 45 + 10 + 4 = 62? No, perquè hi ha una limitació. La correcta resposta és 44.
+
+Resposta: C)

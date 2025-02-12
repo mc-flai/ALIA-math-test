@@ -1,0 +1,29 @@
+<think>
+Primero, entiendo que hay 14 números enteros positivos y todos son diferentes. Su media es 12, lo que significa que la suma total de estos números es 14 multiplicado por 12, es decir, 168.
+
+Quiero encontrar el valor máximo posible del número más grande en esta lista. Para maximizar un número, los demás números deben ser minimizados, ya que el promedio está fijo.
+
+Como todos los números son positivos y diferentes, el menor valor posible para el primer número es 1, luego 2, 3, y así sucesivamente hasta el decimocuarto número. Sumando estos dieciséis números menores: 1 + 2 + 3 + ... + 13 = (13 × 14) / 2 = 91.
+
+Luego, la suma de los 13 números más pequeños es 91. Resto esta suma de la suma total para obtener el valor máximo del número más grande: 168 - 91 = 77.
+</think>
+
+**Raonament:**
+
+- Sabem que hi ha 14 nombres enters positius i diferents, i la mitjana és 12. Per tant, la suma total dels 14 nombres és \(14 \times 12 = 168\).
+
+- Per trobar el màxim valor possible del més gran nombre, hem de minimitzar els altres nombres. Com que els nombres han de ser enters positius i diferents, el menors valors possibles per a tots els altres 13 nombres són: \(1, 2, 3, \dots, 13\).
+
+- La suma d'aquests 13 nombres és:
+  
+  \[
+  1 + 2 + 3 + \dots + 13 = \frac{13 \times 14}{2} = 91
+  \]
+
+- Per tant, el màxim valor possible del més gran nombre és:
+  
+  \[
+  168 - 91 = 77
+  \]
+
+**Resposta:** D) 77

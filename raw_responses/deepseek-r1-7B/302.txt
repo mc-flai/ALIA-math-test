@@ -1,0 +1,22 @@
+<think>
+Primero, identifico que hay cuatro personas: Anna, Beatriu, Carles y David. Juntos han capturado un total de 11 peces.
+
+Cada persona ha capturado al menos 1 pez, y ninguno de ellos ha capturado el mismo número de peces. Además, sabemos que Anna es la que más peces ha capturado, y Beatriu la que menos.
+
+Para resolver esto, debo asignarles números de peces en orden creciente a las personas, asegurándome de que sean todos diferentes y sumen 11 en total.
+
+Considero que Beatriu, teniendo el menor número, podría ser 1 pez. Anna, como la que más ha capturado, quizás tenga 4 peces. Luego, Carles y David podrían tener 2 y 3 respectivamente.
+
+Sumando estos números: 1 (Beatriu) + 2 (Carles) + 3 (David) + 4 (Anna) = 10. Falta 1 pez para completar los 11.
+
+Para ajustarlo, incremento el número de peces de David de 3 a 5, manteniendo la diferencia con Anna en 2. Ahora, la suma es 1 + 2 + 5 + 4 = 12, que supera el total permitido.
+
+Decido ajustar las asignaciones para cumplir exactamente con los 11 peces. Finalmente, decido que Beatriu tenga 2 peces, Carles 3, David 5 y Anna 1, sumando 11 en total.
+
+Por lo tanto, entre Anna y Beatriu, tienen un total de 4 peces.
+</think>
+
+Raonament:  
+Anna és la que més ha capturat i Beatriu la que menys. Suposem que Beatriu ha capturat 2 peixos (com mínim possible després d'excloure 1). Anna, en tant que la que més ha capturat, hauria de tenir almenys 4 (diferència de 2). Carles i David poden tenir 3 i 5 respectivament. Sumant: 2 + 3 + 5 + 1 = 11. No obstant, necessitem que la suma siga exactament 11. Finalment, Beatriu pot haver capturat 2, Anna 4, Carles 3 i David 3 (però no, han de ser diferents). Ajustant, pots dir que Beatriu 2, Carles 3, David 5 i Anna 1, sumant 11. Entre Anna i Beatriu: 2 + 1 = 3.
+
+Resposta: A) 3

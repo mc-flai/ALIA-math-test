@@ -1,0 +1,52 @@
+<think>
+Bueno, voy a intentar resolver este problema paso a paso. Primero, entiendo que hay dos esferas de mercurio con superficies cada de 2 mm² y las une para formar una sola esfera. Quiero saber cuál será la superficie de esta nueva esfera.
+
+Recuerdo que la superficie de una esfera está dada por la fórmula S = 4πr², donde r es el radio. Si hay dos esferas con la misma superficie, cada una tiene S = 2 mm².
+
+Primero, calculo el volumen de cada pequeña esfera. Sabemos que el volumen V de una esfera se puede expresar en términos de su superficie: V = (S)^(3/2)/(6√π). Sustituyendo S = 2 mm², obtenemos V = 2^(3/2)/(6√π).
+
+Al unir las dos esferas, el volumen total será el doble de uno: V_total = 2 * [2^(3/2)/(6√π)] = 2^(5/2)/(6√π).
+
+Ahora, necesito encontrar el radio de la nueva esfera. Sabemos que V_total = (4/3)πR³, donde R es el radio de la gran esfera. Igualando los volúmenes:
+
+(4/3)πR³ = 2^(5/2)/(6√π)
+
+Despejo R³:
+
+R³ = [2^(5/2)/(6√π)] * (3/(4π)) = 2^(5/2) * 3 / (24 π^(3/2))
+
+Simplifico: R³ = 2^(5/2 - 1) * 3 / (24 π^(3/2)) )= 2^(3/2) * 3 / (24 π^(3/2)) )
+
+R³ = (3√2)/(24 π^(3/2)) ) = √2/(8 π^(3/2))
+
+Entonces, R = [√2/(8 π^(3/2))]^(1/3) = [√2]^(1/3) / [8^(1/3) π].
+
+Simplifico 8^(1/3) = 2, y [√2]^(1/3) = 2^(1/6). Entonces R = 2^(1/6)/(2π).
+
+Ahora, calculo la superficie de la gran esfera: S_total = 4πR².
+
+Sustituyo R:
+
+S_total = 4π * [ (2^(1/6))/(2π) ]² = 4π * [ 2^(1/3) ) / (4 π²) ]
+
+Simplifico: 4π * 2^(1/3)/(4 π²) )= 2^(1/3)/π
+
+Pero veo que esto no coincide con las opciones, así que quizás cometí un error. Volviendo, perhaps debería considerar que al combinar los volúmenes, el radio de la gran esfera es proporcional a (V_total / π)^(1/3), y luego la superficie es 4πR².
+
+Otra manera: si cada esfera pequeña tiene volumen V = k*S^(3/2), donde k es una constante, sumando los volúmenes para obtener el volumen total de la gran esfera. Luego, relaciono el volumen total con su superficie.
+
+Sin embargo, quizás hay un enfoque más simple. Sabemos que al juntar dos esferas idénticas, el radio de la nueva esfera será R = r * (2)^(1/3), ya que el volumen se duplica y el volumen es proporcional a r³.
+
+Así, S_total = 4πR² = 4π*(r*(2)^(1/3))² = 4π*r²*(2)^(2/3)
+
+Pero la superficie original de una esfera pequeña es S = 4πr² = 2 mm². Por lo tanto, r² = 2/(4π). Sustituyo en la fórmula de S_total:
+
+S_total = 2 * (2)^(2/3) = 2^(1 + 2/3) = 2^(5/3) mm².
+
+Ahora, reviso las opciones: E es 2^(5/3), que coincide.
+</think>
+
+Raonament:
+Al unir dues esferes idèntiques de mercuri, el volumen total de la nova esfera és el doble del volumen individual. Sabent que el volumen d'una esfera està relacionat amb la seva superfície a través de V = (S)^(3/2)/(6√π), i tenint en compte que les dues esferes petites tenen una superfície de 2 mm² cada, el volum total de la nova esfera serà proporcional a (2)^(5/2). Aleshores, utilitzant la fórmula de la superfície d'una esfera, S = 4πR², i relacionant-ho amb el volum, arribem a que la superfície de la nova esfera és 2^(5/3) mm².
+
+Resposta: E) 2⁵⁄³ mm²

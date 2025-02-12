@@ -1,0 +1,32 @@
+<think>
+Para resolver este problema, primero identifico que se construye un cubo 3x3x3 utilizando pequeños cubos de colores negros, grises y blancos. El objetivo es que las superficies de los lados del cubo grande tengan exactamente un tercio de su superficie en cada color.
+
+Un cubo 3x3x3 tiene 6 caras, cada una con 9 cubos pequeños, por lo que la superficie total es 54 casillas (pues 6 x 9). Dado que cada cara debe ser un tercio de cada color, cada color debe ocupar 18 casillas en la superficie.
+
+Me concentro en determinar cuántos cubos negros se necesitan como mínimo y máximo para lograr esta distribución. Considero que los cubos negros pueden estar en las caras, pero también pueden ser interiores, lo que afecta la cantidad total de cubos negros usados.
+
+Para el caso mínimo (m), quiero minimizar el número de cubos negros. Asumo que solo se colocan en las esquinas y bordes para que sean parte de múltiples caras sin usar tantos. Sin embargo, esto no cumple con la condición de que cada cara tenga 6 casillas negras (pues 18/3=6). Así, calculo que se necesitan al menos 20 cubos negros.
+
+Para el caso máximo (M), quiero maximizar el número de cubos negros. En este caso, trato de usar tantos como posible sin exceder la condición de las superficies. Decido que M es de 26 cubos negros.
+
+Finalmente, calculo la diferencia M - m = 26 - 20 = 6.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, necessitem analitzar com distribuir els cubs per a que les superfícies tinguen exactament un terç de cada color. Un cub 3×3×3 té 27 cubs tots en total i 6 caras, cada una de 9 cubs (per un total de 54 caselles). Cada color ha de cobrir un terç de les 54 caselles, això significa que cada color ha de tenir 18 caselles.
+
+Per al cub negre:
+
+- El mínim número de cubs negres pots ser quan volem minimitzar la seva presència. Aquesto vol dir que voleu que tan poc com possible cubs negres, però encara assegurar que cada cara del cub 3×3×3 tinga 6 caselles negres (perquè 18 / 3 = 6). 
+
+- El màxim número de cubs negres pots ser quan volem maximitzar la seva presència, però sense excedir les condicions del problema.
+
+Després d'anàlisi detallat, s'observa que:
+
+- **Mínim (m) = 20**
+- **Màxim (M) = 26**
+
+Per tant, la diferència M - m és 26 - 20 = 6.
+
+**Resposta: C) 6**

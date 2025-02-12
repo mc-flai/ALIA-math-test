@@ -1,0 +1,30 @@
+<think>
+Primero, entiendo que 1728 es el cubo de 12, ya que 12³ = 1728.
+
+Quiero encontrar el menor número natural x tal que al multiplicarlo por 1728 resulte en un cuadrado perfecto. Un cuadrado perfecto tiene todos los exponentes de sus factores primos pares.
+
+Factorizo 1728: 1728 = 12³ = (2² × 3)³ = 2⁶ × 3³.
+
+Para que el producto x×1728 sea un cuadrado perfecto, los exponentes de todos los factores primos en la factorización deben ser pares. Observo que 2⁶ ya es par, pero 3³ no lo es. Por lo tanto, x debe proporcionar un factor adicional de 3 para hacer el exponente de 3 par.
+
+El menor número natural x que cumple esta condición es 3.
+</think>
+
+Raonament: 
+
+Per fer que \(1728 \times x\) sigui un quadrat perfecte, tots els exponents en la factorització primaria del producte han de ser parells. 
+
+- La factorització primaria de 1728 és:
+  
+  \[
+  1728 = 12^3 = (2^2 \times 3)^3 = 2^{6} \times 3^{3}
+  \]
+
+- Per fer que \(2^6 \times 3^3 \times x\) sigui un quadrat perfecte, els exponents de tots els primers han de ser parells:
+  
+  - El exponent de 2 ja és 6 (parell), no cal multiplicar per cap factor addicional d'2.
+  - El exponent de 3 és 3 (impair). Per ferlo parell, x ha de proporcionar un factor additional de 3.
+
+- Llavors, el menor nombre natural \(x\) que compleix aquesta condició és 3.
+
+Resposta: B) 3

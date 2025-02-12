@@ -1,0 +1,295 @@
+<think>
+Primero, entiendo que Martí participó en 31 cursadas en total durante 5 años consecutivos. El primer año fue el que menos cursadas tuvo, y cada año posterior aumentaron las cursadas respecto al anterior. Además, en el quinto año participó en el triple de cursadas que en el primer año.
+
+Voy a definir una variable para el número de cursadas del primer año. Digamos que x es el número de cursadas en el primer año. Entonces:
+
+- Primer año: x
+- Año 2: x + d₁
+- Año 3: (x + d₁) + d₂
+- Año 4: ((x + d₁) + d₂) + d₃
+- Año 5: (((x + d₁) + d₂) + d₃) + d₄
+
+Sin embargo, también sabemos que el quinto año es triple del primer año:
+
+Año 5 = 3 * x
+
+También se menciona que cada año participó en más cursadas que el anterior, lo que significa que las diferencias d₁, d₂, d₃, d₄ son positivas.
+
+Sumando todas las cursadas durante los cinco años:
+
+x + (x + d₁) + ((x + d₁) + d₂) + (((x + d₁) + d₂) + d₃) + (((x + d₁) + d₂) + d₃ + d₄) = 31
+
+Simplificando:
+
+5x + 4d₁ + 3d₂ + 2d₃ + d₄ = 31
+
+Y sabemos que el quinto año es 3x, es decir:
+
+Año 5: x + d₁ + d₂ + d₃ + d₄ = 3x
+=> d₁ + d₂ + d₃ + d₄ = 2x
+
+Sustituyendo en la ecuación anterior:
+
+5x + 4d₁ + 3d₂ + 2d₃ + d₄ = 31
+
+Pero también:
+
+d₁ + d₂ + d₃ + d₄ = 2x
+
+Entonces, reemplazando d₁ + d₂ + d₃ + d₄ por 2x:
+
+5x + 4d₁ + 3d₂ + 2d₃ + (d₄) = 31
+Pero no se puede resolver directamente sin más información.
+
+Probablemente, sea mejor asumir que las diferencias son iguales o seguir un incremento constante. Supongamos que cada año aumenta en la misma cantidad:
+
+Año 2: x + a
+Año 3: x + 2a
+Año 4: x + 3a
+Año 5: x + 4a
+
+Y sabemos que Año 5 = 3x, por lo tanto:
+
+x + 4a = 3x => 4a = 2x => a = (2x)/4 = x/2
+
+Ahora sumamos las cursadas durante los años:
+
+Años: x, x+a, x+2a, x+3a, x+4a
+Suma total: 5x + (0 +1 +2 +3 +4)a = 5x + 10a = 31
+
+Sustituyendo a = x/2:
+
+5x + 10*(x/2) = 31 => 5x + 5x = 31 => 10x = 31 => x=3.1
+
+No es entero, lo que no tiene sentido ya que el número de cursadas debe ser entero.
+
+Entonces, mi suposición de que las diferencias son iguales está equivocada.
+
+Probablemente, las diferencias crecen o varían. Volvamos a considerar variables independientes:
+
+Supongamos que año 1: x
+
+Año 2: x + d₁
+
+Año 3: x + d₁ + d₂
+
+Año 4: x + d₁ + d₂ + d₃
+
+Año 5: x + d₁ + d₂ + d₃ + d₄ = 3x => d₁ + d₂ + d₃ + d₄ = 2x
+
+Suma total:
+
+x + (x + d₁) + (x + d₁ + d₂) + (x + d₁ + d₂ + d₃) + (x + d₁ + d₂ + d₃ + d₄) =
+
+5x + 4d₁ + 3d₂ + 2d₃ + d₄ =31
+
+Y sabemos que d₁ + d₂ + d₃ + d₄=2x.
+
+Entonces, necesitamos encontrar x y las diferencias d's tales que:
+
+5x + 4d₁ + 3d₂ + 2d₃ + d₄ =31
+
+y
+
+d₁ + d₂ + d₃ + d₄=2x.
+
+Supongamos que los incrementos son iguales, es decir, cada año sube en la misma cantidad:
+
+Año 2: x + a
+
+Año 3: x + 2a
+
+Año4: x+3a
+
+Año5: x+4a=3x => 4a=2x => a=x/2
+
+Sumando total:
+
+x + (x+a) + (x+2a) + (x+3a) + (x+4a)=5x +10a=31
+
+Sustituyendo a=x/2:
+
+5x + 10*(x/2)=5x +5x=10x=31 => x=3.1, no entero.
+
+Entonces, las diferencias no son iguales.
+
+Supongamos que las diferencias aumentan en 1 cada año:
+
+Año2: x + d
+
+Año3: Año2 + (d+1)
+
+Año4: Año3 + (d+2)
+
+Año5: Año4 + (d+3)=3x
+
+Entonces, Año5 = x + d + (d+1) + (d+2) + (d+3) = x + 4d +6=3x => 4d +6=2x => 2d +3=x.
+
+Suma total:
+
+Años: x, x+d, x+d+(d+1), x+d+(d+1)+(d+2), x+d+(d+1)+(d+2)+(d+3)
+
+Simplificando:
+
+Año1: x
+
+Año2: x + d
+
+Año3: x + 2d +1
+
+Año4: x +3d +3
+
+Año5: 3x
+
+Suma total: x + (x+d) + (x+2d+1)+(x+3d+3)+3x= 5x +6d +4=31.
+
+Sustituyendo x=2d+3:
+
+5*(2d+3) +6d +4=31 =>10d+15+6d+4=31=>16d +19=31=>16d=12=>d=12/16=0.75
+
+No entero.
+
+Entonces, otro enfoque: Sea x el primer año, y las diferencias d1, d2, d3, d4 positivas enteras.
+
+Suma total:
+
+x + (x+d1) + (x+d1+d2)+(x+d1+d2+d3)+(x+d1+d2+d3+d4)=5x+4d1+3d2+2d3+d4=31
+
+Y d1 +d2 +d3 +d4=2x.
+
+Necesitamos que 5x +4d1+3d2+2d3+d4=31 y d1+d2+d3+d4=2x.
+
+Sustituimos d1+d2+d3+d4=2x en la suma:
+
+5x + (4d1+3d2+2d3+d4)=5x + (d1+d2+d3+d4) + 3d1 +2d2 +d3=5x +2x +3d1 +2d2 +d3=7x +3d1+2d2+d3=31
+
+Y 7x +3d1 +2d2 +d3=31, con x,y,d's positivas enteras.
+
+Busquemos valores de x que hagan posible.
+
+x debe ser entero >=1.
+
+Supongamos x=3:
+
+Entonces, d1+d2+d3+d4=6
+
+Y 7*3 +3d1+2d2 +d3=21 +3d1+2d2 +d3=31 =>3d1+2d2 +d3=10.
+
+Necesitamos encontrar d1,d2,d3>0 enteros con d1+d2+d3<=6 (pues d4=6 - (d1+d2+d3)).
+
+Posibles:
+
+Pruebe d1=1:
+
+Entonces 3*1 +2d2 +d3=10 =>2d2 +d3=7
+
+Y d1=1, asi que d2+d3<=5 (pues d4=6 -1 -d2 -d3=5 -d2 -d3)
+
+Posibles:
+
+d2=1: 2*1 +d3=7 =>d3=5. Pero d1+d2+d3=1+1+5=7>6, no.
+
+d2=2: 4 +d3=7=>d3=3. Suma:1+2+3=6, que es <=6 (pues d4=0). Puede ser.
+
+Entonces d's=(1,2,3,0) pero d4=0 no permitido, ya que las diferencias deben ser positivas enteras.
+
+Asi que invalido.
+
+d2=3: 6 +d3=7=>d3=1. Suma=1+3+1=5<=6, asi d4=1.
+
+Valido: d1=1,d2=3,d3=1,d4=1.
+
+Suma total:
+
+Años:
+
+x=3,
+
+Año2=4,
+
+Año3=7,
+
+Año4=8,
+
+Año5=9.
+
+Suma:3+4+7+8+9=31. Correcto.
+
+Y Año5=x +d1+d2+d3+d4=3+1+3+1+1=9=3x=9, correcto.
+
+Asi que las diferencias son:
+
+Año2 -Año1=1
+
+Año3 -Año2=3
+
+Año4 -Año3=1
+
+Año5 -Año4=1
+
+Total de incrementos:1+3+1+1=6=2x=6.
+
+Valido. Pero en este caso, Año4=Año3 +1=8, y Año5=9, que es correcto.
+
+Asi que las edades son:
+
+Año1:3
+
+Año2:4
+
+Año3:7
+
+Año4:8
+
+Año5:9
+
+Suma 3+4+7+8+9=31. Correcto.
+
+Entonces, la edad del muchacho en el quinto año es 9 años.
+
+Otra posible x=2:
+
+d1+d2+d3+d4=4
+
+Y 7*2 +3d1 +2d2 +d3=14 +3d1+2d2 +d3=31=>3d1+2d2 +d3=17
+
+Con d1+d2+d3<=4.
+
+Inconcebible, pues 3d1+2d2 +d3 >=3*1+2*1+1=6 <17. No posible.
+
+x=4:
+
+Entonces d's suman 8.
+
+Suma total:7*4=28; 3d1+2d2 +d3=31-28=3
+
+Con d1+d2+d3<=8 (pues d4=8 -d1-d2 -d3)
+
+Posibles:
+
+d1=1:
+
+3+2d2 +d3=3 =>2d2 +d3=0. No posible.
+
+d1=0: no permitido.
+
+x=5:
+
+d's suman 10.
+
+Suma total:7*5=35>31, invalido.
+
+x=1:
+
+d's suman 2
+
+Suma total:7*1=7; 3d1 +2d2 +d3=24.
+
+Con d1+d2+d3<=2. Inconcebible.
+
+Asi que unica solucion x=3, años 3,4,7,8,9.
+
+Por lo tanto, en el quinto año, el muchacho tenia 9 años.
+</think>
+
+Después de analizar detenidamente, la edad del muchacho en el quinto año fue de **\(\boxed{9\)\) años**.

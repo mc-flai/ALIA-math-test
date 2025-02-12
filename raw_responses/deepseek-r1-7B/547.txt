@@ -1,0 +1,29 @@
+<think>
+Primero, identifico que se necesita encontrar el número máximo de ramos iguales utilizando todas las rosas. Esto significa que cada ramo debe tener el mismo número de rosas de cada color.
+
+Luego, tomo las cantidades de cada tipo de rosa: 42 rosas blancas, 66 rosas granadas y 78 rosas rojas. Para formar ramos iguales con todas las flores, debo determinar el máximo número de ramos que se puede crear, lo cual está limitado por la cantidad más pequeña en común entre los tres números.
+
+Decido calcular el MCM (Mínimo Común Múltiplo) de las cantidades de rosas de cada color. Sin embargo, me doy cuenta de que una manera eficiente es encontrar el Máximo Divisor Común (MDC) de los tres números, ya que este valor me permitirá determinar la cantidad máxima de ramos iguales.
+
+Calculo el MDC de 42, 66 y 78. Primero, encuentro el MDC de 42 y 66, que es 6. Luego, calculo el MDC de este resultado (6) con 78, obteniendo 6 como MDC final.
+
+Conocido que se pueden formar 6 ramos iguales, divido la cantidad de rosas granadas (66) por el número de ramos para determinar cuántas rosas granadas habrá en cada ramo: 66 dividido entre 6 da 11.
+
+Por lo tanto, cada ramo contendrá 11 rosas granadas.
+</think>
+
+**Raonament:**  
+Per fer el nombre més gran possible de rams iguals utilitzant totes les roses, hem de trobar el màxim númer que divideix exactament les quantitats de cadascun dels colors. Les quantitats són 42 roses blanques, 66 roses grogues i 78 roses roges.
+
+1. **Calcula el MDC (Màxim Divisor Comú) de les tres quantitats:**
+   - MDC(42, 66) = 6
+   - MDC(6, 78) = 6
+
+   El MDC total és 6. Això significa que el màxim nombre de rams iguals que es pot fer és 6.
+
+2. **Determina quantes roses grogues hi haurà en cada ram:**
+   - Rosa grogues totals: 66
+   - Número de rams: 6
+   - Roses grogues per ram: 66 ÷ 6 = 11
+
+**Resposta:** D) 11

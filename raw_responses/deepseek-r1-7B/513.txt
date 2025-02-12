@@ -1,0 +1,53 @@
+<think>
+Vamos a resolver este problema paso a paso. Primero, entendamos lo que se nos está preguntando.
+
+Tenemos una secuencia de 100 números que siguen el patrón \( n^{2018} + (n+1)^{2017} \), donde n comienza desde 1 hasta 100. Queremos determinar cuántos de estos números son pares.
+
+Para determinar si un número es par o impar, necesitamos analizar la suma \( n^{2018} + (n+1)^{2017} \). Un número es par si al menos uno de los términos en su suma es par. Sin embargo, en este caso, debemos considerar las propiedades específicas de las potencias:
+
+1. **Potencias con exponentes pares e impares**:
+   - Si un número entero se eleva a una potencia par, el resultado siempre será positivo, pero su paridad (si es par o impar) depende del número original.
+   - Si un número entero se eleva a una potencia impar, el resultado mantendrá la paridad del número original.
+
+2. **Análisis de \( n^{2018} \)**:
+   - 2018 es un exponente par. Por lo tanto:
+     - Si n es par, \( n^{2018} \) será par.
+     - Si n es impar, \( n^{2018} \) también será impar.
+
+3. **Análisis de \( (n+1)^{2017} \)**:
+   - 2017 es un exponente impar. Por lo tanto:
+     - Si n+1 es par, \( (n+1)^{2017} \) será par.
+     - Si n+1 es impar, \( (n+1)^{2017} \) también será impar.
+
+4. **Combinación de ambos términos**:
+   - Consideremos dos casos:
+     1. **Si n es par**:
+        - \( n^{2018} \) es par.
+        - n+1 será impar (pues si n es par, n+1 es impar), por lo que \( (n+1)^{2017} \) es impar.
+        - La suma de un número par y otro impar siempre es impar. Por ejemplo:
+          - 4 (par) + 5 (impar) = 9 (impar)
+          - 6 (par) + 7 (impar) = 13 (impar)
+
+     2. **Si n es impar**:
+        - \( n^{2018} \) es impar.
+        - n+1 será par, por lo que \( (n+1)^{2017} \) es par.
+        - La suma de un número impar y otro par también siempre es impar. Por ejemplo:
+          - 3 (impar) + 4 (par) = 7 (impar)
+          - 5 (impar) + 6 (par) = 11 (impar)
+
+5. **Conclusión**:
+   - En ambos casos, la suma \( n^{2018} + (n+1)^{2017} \) resulta en un número impar.
+   - Por lo tanto, ninguno de los 100 números en la secuencia es par.
+
+6. **Revisión**:
+   - Verificamos con ejemplos:
+     - Para n = 1: \( 1^{2018} + 2^{2017} \) → 1 (impar) + 2 (par) = 3 (impar)
+     - Para n = 2: \( 2^{2018} + 3^{2017} \) → 2^{2018} (par) + 3 (impar) = impar
+   - Los ejemplos confirman que la suma siempre es impar.
+
+**Respuesta final**: A) Cap
+</think>
+
+Raonament: Cada número en la secuencia segueix el patró \( n^{2018} + (n+1)^{2017} \). Anàliticzament, si \( n \) és parell, \( n^{2018} \) serà parell i \( (n+1)^{2017} \) serà impareix (perquè \( n+1 \) serà impareix). La suma d'un número parell i un altre impareix és impareix. Si \( n \) és impareix, \( n^{2018} \) serà impareix i \( (n+1)^{2017} \) serà parell. Tot ambdós casos resulten en una suma impareix. Per tant, cap dels 100 nombres és parell.
+
+Resposta: A

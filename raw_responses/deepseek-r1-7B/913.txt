@@ -1,0 +1,54 @@
+<think>
+Voy a intentar resolver este problema paso a paso. La expresión que tengo es:
+
+\[
+\frac{1 \cdot 2 \cdot 3 \cdots 99 \cdot 100}{(1 \cdot 3 \cdot 5 \cdots 99)(1 \cdot 2 \cdot 3 \cdots 49 \cdot 50)}
+\]
+
+Primero, identifico los términos de cada parte. El numerador es el factorial de 100, que se denota como 100!. En el denominador, hay dos productos: uno es el producto de todos los números impares desde 1 hasta 99, y otro es el factorial de 50, denotado como 50!.
+
+Entonces, la expresión se puede reescribir como:
+
+\[
+\frac{100!}{(1 \cdot 3 \cdot 5 \cdots 99) \times 50!}
+\]
+
+Sé que el producto de los números impares hasta 99 es igual al doble factorial de 99, es decir, 99!!. Pero también sé que 100! se puede expresar como (2^{50} \times 50!) \times 99!!, lo que simplifica la expresión a 2^{50}.
+</think>
+
+**Raonament:**
+
+La expresió donada és:
+
+\[
+\frac{1 \cdot 2 \cdot 3 \cdots 99 \cdot 100}{(1 \cdot 3 \cdot 5 \cdots 99)(1 \cdot 2 \cdot 3 \cdots 49 \cdot 50)}
+\]
+
+Podem descomposar cada part de l'expressió:
+
+- **Numerator:** \(1 \cdot 2 \cdot 3 \cdots 99 \cdot 100 = 100!\)
+- **Denominator:**
+  - Prima part: \(1 \cdot 3 \cdot 5 \cdots 99\) és el producte dels nombres senars de 1 a 99, que s'escriu com \(99!!\) (doble factorial).
+  - Segona part: \(1 \cdot 2 \cdot 3 \cdots 49 \cdot 50 = 50!\)
+
+Així, l'expressió queda:
+
+\[
+\frac{100!}{(99!!) \times 50!}
+\]
+
+Sabem que:
+
+\[
+100! = (2^{50} \times 50!) \times 99!!
+\]
+
+Substituïndolo en l'expressió:
+
+\[
+\frac{(2^{50} \times 50!) \times 99!!}{(99!!) \times 50!} = 2^{50}
+\]
+
+**Resposta:**
+
+D) \(2^{50}\)

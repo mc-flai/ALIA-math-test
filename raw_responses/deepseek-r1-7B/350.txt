@@ -1,0 +1,26 @@
+<think>
+Para resolver este problema, primero analizo los ejemplos proporcionados para entender cómo funciona la operación "◊".
+
+En el primer ejemplo, 2 ◊ 3 = (2 + 1) × 3 = 9. Observo que se suman los números naturales a partir de 2 hasta 1 (descendente) y luego se multiplica por el segundo número.
+
+En el segundo ejemplo, 4 ◊ 2 = (4 + 3 + 2 + 1) × 2 = 20. Aquí, se suman los números naturales a partir de 4 hasta 1 y luego se multiplica por 2.
+
+El tercer ejemplo es 3 ◊ 5 = (3 + 2 + 1) × 5 = 30, siguiendo el mismo patrón: suma descendente y multiplicación.
+
+Entonces, para resolver 6 ◊ 5, sumo los números naturales desde 6 hasta 1: 6 + 5 + 4 + 3 + 2 + 1 = 21. Luego, multiplico por el segundo número, que es 5: 21 × 5 = 105.
+</think>
+
+**Raonament:**  
+La operació "◊" consiste en sumar totes les unitats des de l'primer nombre fins a 1 i després multipliquem per el segon nombre. Per exemple, 2 ◊ 3 = (2 + 1) × 3 = 9. Aplaquem el mateix mètode a 6 ◊ 5:
+
+1. Sumem les unitats des de 6 fins a 1:
+   \[
+   6 + 5 + 4 + 3 + 2 + 1 = 21
+   \]
+   
+2. Multipliquem el resultat per el segon nombre, que és 5:
+   \[
+   21 × 5 = 105
+   \]
+
+**Resposta:** C)

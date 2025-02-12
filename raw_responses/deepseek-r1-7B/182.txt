@@ -1,0 +1,42 @@
+<think>
+Primero, analizo la expresión matemática dada: √√√x. Sabemos que cada radical se puede representar como una potencia con exponente 1/2.
+
+Aplicando sucesivamente las conversiones:
+- La primera raíz cuadrada es x^(1/2).
+- La segunda raíz cuadrada actúa sobre el resultado anterior, transformándolo en (x^(1/2))^(1/2) = x^(1/4).
+- Por último, la tercera raíz cuadrada convierte esta expresión en (x^(1/4))^(1/2) = x^(1/8).
+
+Comparando con las opciones proporcionadas, vemos que 1/8 corresponde a la opción B.
+</think>
+
+**Raonament:**
+
+La pregunta és: Quin és el resultat de √√√x?
+
+Per resoldre aquesta expressió, hem de comprendre com funcionen les arrels en matemàtiques. Sabem que:
+
+- La raíz quadrada d'un nombre pot ser representada com una potència amb exponent 1/2.
+  
+- En general, la raíz n-col de x es pot expressar com x^(1/n).
+
+Doncs, per resoldre √√√x, procedim paso a paso:
+
+1. **Primera raíz quadrada (√):**
+   \[
+   √x = x^{1/2}
+   \]
+
+2. **Segona raíz quadrada (√) sobre el resultat anterior:**
+   \[
+   √(√x) = √(x^{1/2}) = (x^{1/2})^{1/2} = x^{(1/2) \times (1/2)} = x^{1/4}
+   \]
+
+3. **Tercera raíz quadrada (√) sobre el resultat anterior:**
+   \[
+   √(√(√x)) = √(x^{1/4}) = (x^{1/4})^{1/2} = x^{(1/4) \times (1/2)} = x^{1/8}
+   \]
+
+Per tant, el resultat de √√√x és \( x^{1/8} \).
+
+**Resposta:**
+\boxed{B) x^(1/8)}

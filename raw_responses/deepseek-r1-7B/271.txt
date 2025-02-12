@@ -1,0 +1,47 @@
+<think>
+Primero, entiendo que se me pide calcular la diferencia entre la suma de los 10 primeros múltiplos positivos de 10 y la suma de los 10 primeros múltiplos positivos de 9.
+
+Para comenzar, un múltiplo positivo de un número es cualquier número que se pueda obtener multiplicando ese número por un entero positivo. Es decir, para 10, los primeros múltiplos serán 10×1, 10×2, 10×3 y así hasta el décimo. Lo mismo aplicaré para 9.
+
+Luego, sé que la suma de una secuencia aritmética se puede calcular con la fórmula: Suma = (n/2) × (primer término + último término), donde n es el número de términos.
+
+Determinaré qué son los primeros 10 múltiplos para cada número. Para 10, serán 10, 20, 30,... hasta 100, ya que 10×10=100. Para 9, será 9, 18, 27,... hasta 90, ya que 9×10=90.
+
+Ahora calcularé la suma de los múltiplos de 10:
+Suma de 10 = (10/2) × (10 + 100) = 5 × 110 = 550.
+
+Después, calcularé la suma de los múltiplos de 9:
+Suma de 9 = (10/2) × (9 + 90) = 5 × 99 = 495.
+
+Finalmente, encontraré la diferencia entre estas dos sumas:
+Diferencia = 550 - 495 = 55.
+</think>
+
+Raonament: 
+
+Per calcular la diferència entre la suma dels 10 primers múltiples positius de 10 i els de 9, seguirem els passos següents:
+
+1. **Múltiples de 10**: ELS 10 PRIMERS múltiples de 10 són: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100.
+   - La suma d'aquests múltiples és:
+     \[
+     S_{10} = 10 + 20 + 30 + 40 + 50 + 60 + 70 + 80 + 90 + 100
+     \]
+     \[
+     S_{10} = 10(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10) = 10 \times 55 = 550
+     \]
+
+2. **Múltiples de 9**: ELS 10 PRIMERS múltiples de 9 són: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90.
+   - La suma d'aquests múltiples és:
+     \[
+     S_{9} = 9 + 18 + 27 + 36 + 45 + 54 + 63 + 72 + 81 + 90
+     \]
+     \[
+     S_{9} = 9(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10) = 9 \times 55 = 495
+     \]
+
+3. **Diferència**: 
+   \[
+   Diferència = S_{10} - S_{9} = 550 - 495 = 55
+   \]
+
+Resposta: E) 55

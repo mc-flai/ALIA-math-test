@@ -1,0 +1,26 @@
+<think>
+Primero, identifico que hay 10 temas en total y el estudiante ha estudiado solo 5. El examen tiene 3 preguntas, cada una sobre un tema diferente y seleccionadas aleatoriamente.
+
+Para calcular la probabilidad de que todas las preguntas sean de los temas estudiaados, considero que las preguntas se eligen sin reemplazo, es decir, una vez elegido un tema, no vuelve a aparecer en las siguientes preguntas.
+
+La primera pregunta tiene 5/10 probabilidades de ser un tema estudiado. La segunda pregunta, ya que uno ya ha sido seleccionado y suponiendo que fue exitoso, tendrá 4/9 probabilidades. Finalmente, la tercera pregunta tendría 3/8 probabilidades.
+
+Multiplicando estas probabilidades entre sí: (5/10) * (4/9) * (3/8) = 1/6.
+</think>
+
+Raonament:
+Per calcular la probabilitat que totes les preguntes siguen dels temes estudiat, considerem que hi ha 10 temes en total i l'estudiant ha estudiado 5. L'examen té 3 preguntes independents, cadascuna triada aleatòriament d'un tema diferent.
+
+La probabilitat que la primera pregunta siga d'un tema estudiat és \( \frac{5}{10} = \frac{1}{2} \).
+
+Després de triar una pregunta, queden 9 temes. La probabilitat que la segona pregunta siga d'un tema estudiat és \( \frac{4}{9} \) (ya que hi ha 4 temes restants estudiats).
+
+Finalment, per a la tercera pregunta, queden 8 temes i la probabilitat és \( \frac{3}{8} \).
+
+La probabilitat total que totes les treves preguntes siguen dels temes estudiat es multiplica les individuals:
+
+\[
+\text{Probabilitat total} = \frac{1}{2} \times \frac{4}{9} \times \frac{3}{8} = \frac{1}{6}
+\]
+
+Resposta: A) \( \boxed{\dfrac{1}{6}} \)

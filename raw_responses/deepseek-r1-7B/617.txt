@@ -1,0 +1,85 @@
+<think>
+Vamos resolver el problema paso a paso.
+
+**Problema:**  
+Alí Babà y los 40 ladrones se repartieron 42 cajas idénticas, todas con el mismo número de monedas de oro. Cada uno obtuvo una caja llena y 2 monedas adicionales. ¿Cuántas monedas tenía una caja?
+
+**Datos iniciales:**  
+- Número de personas: 40 (Alí Babà + 40 ladrones) = 41 personas.
+- Número total de cajas: 42.
+
+Cada persona recibe:
+- 1 caja llena.
+- 2 monedas adicionales.
+
+**Objetivo:**  
+Determinar cuántas monedas hay en una caja.
+
+**Enfoque del problema:**  
+Primero, calculamos el número total de monedas distribuidas. Luego, relacionamos este total con el número de cajas y las monedas adicionales para encontrar la cantidad por caja.
+
+**Pasos:**
+
+1. **Total de monedas distribuidas:**  
+   Cada persona obtiene 1 caja + 2 monedas. Por lo tanto, el total de monedas es:
+   \[
+   \text{Total de monedas} = (\text{Número de personas}) \times (1 \text{ caja} + 2 \text{ monedas})
+   \]
+   Sustituyendo los valores:
+   \[
+   \text{Total de monedas} = 41 \times (C + 2)
+   \]
+   Donde \( C \) es el número de monedas por caja.
+
+2. **Relación con las cajas:**  
+   Las 42 cajas contienen un total de:
+   \[
+   \text{Total de monedas en cajas} = 42 \times C
+   \]
+   
+3. **Ecuación para el total de monedas:**  
+   El total de monedas distribuidas también se puede expresar como las monedas en las cajas más las monedas adicionales:
+   \[
+   41 \times (C + 2) = 42 \times C + (\text{monedas adicionales})
+   \]
+   Observamos que el número de monedas adicionales es \( 41 \times 2 = 82 \).
+
+4. **Planteando la ecuación:**  
+   \[
+   41C + 82 = 42C
+   \]
+
+5. **Resolviendo para \( C \):**  
+   Sustituyendo:
+   \[
+   41C + 82 = 42C \\
+   82 = 42C - 41C \\
+   82 = C
+   \]
+   
+6. **Conclusión:**  
+   Por lo tanto, cada caja contenía 82 monedas.
+
+**Respuesta Correcta:**  
+\boxed{B}
+</think>
+
+Raonament:  
+Alí Babà i els 40 lladres formen un total de 41 persones. Han repartit 42 caxtons, cada un dels quals conté el mateix nombre de monedes, denotat per \( C \). Cada persona obté una bossa plena (\( C \) monedes) i més 2 monedes. El total de monedes distribuïdes és:
+\[
+41 \times (C + 2)
+\]
+El total de monedes en les caxtons és:
+\[
+42 \times C
+\]
+Equateixons els dos totals:
+\[
+41(C + 2) = 42C \\
+41C + 82 = 42C \\
+82 = C
+\]
+Per tant, cada bossa tenia 82 monedes.
+
+Resposta:  
+\boxed{B}

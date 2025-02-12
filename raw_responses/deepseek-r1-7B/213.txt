@@ -1,0 +1,22 @@
+<think>
+Voy a intentar resolver este problema paso a paso. Primero, identifico los cambios de precio semana tras semana.
+
+1. **Semana 0 (hace tres semanas):** El precio se fija en un valor inicial que llamaremos P.
+
+2. **Semana 1 (hace dos semanas):** El precio aumenta un 20%. Así que el nuevo precio es P + 20% de P = 1.2 * P.
+
+3. **Semana 2 (hace una semana):** El precio sube otro 25%. Aplicando el 25% sobre el precio de la semana pasada, el precio ahora es 1.2 * P + 25% de (1.2 * P) = 1.2 * P * 1.25 = 1.5 * P.
+
+4. **Hoy:** El precio disminuye un 20%. Aplicando este descuento sobre el último precio, resulta en 1.5 * P - 20% de (1.5 * P) = 1.5 * P * 0.8 = 1.2 * P.
+
+Comparando con el precio inicial P, hoy cuesta 1.2 * P, lo que significa un aumento del 20%. Por lo tanto, la variación total es un incremento del 20%.
+</think>
+
+Raonament: 
+- Semana 0 (fa tres setmanes): Preu inicial = P.
+- Semana 1 (fa dues setmanes): Aumenta un 20% → Preu = 1.2P.
+- Semana 2 (fa una setmana): Aumenta un 25% → Preu = 1.2P * 1.25 = 1.5P.
+- Avui: Disminueix un 20% → Preu = 1.5P * 0.8 = 1.2P.
+- Comparació final: 1.2P - P = +0.2P, equivalent a un augment del 20%.
+
+Resposta: D) Ha augmentat d'un 20%.

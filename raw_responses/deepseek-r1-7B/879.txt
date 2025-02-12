@@ -1,0 +1,71 @@
+<think>
+Primero, reconozco que necesito determinar cuántas cifras tiene el número 20²⁰. 
+
+Recuerdo que para encontrar el número de cifras de un número entero N en base 10, se puede utilizar la fórmula: 
+Número de cifras = ⌊log₁₀(N)⌋ + 1
+
+Por lo tanto, aplicaré esta fórmula a 20²⁰.
+
+Primero, simplificaré log₁₀(20²⁰):
+log₁₀(20²⁰) = 20 * log₁₀(20)
+
+Luego, descompongo 20 en 2 * 10 para facilitar el cálculo:
+log₁₀(20) = log₁₀(2 * 10) = log₁₀(2) + log₁₀(10)
+
+Sé que log₁₀(10) es igual a 1, y que log₁₀(2) es aproximadamente 0.3010.
+
+Entonces:
+log₁₀(20) = 0.3010 + 1 = 1.3010
+
+Multiplicando por 20:
+log₁₀(20²⁰) = 20 * 1.3010 = 26.020
+
+Finalmente, aplico la fórmula del número de cifras:
+Número de cifras = ⌊26.020⌋ + 1 = 26 + 1 = 27
+</think>
+
+Raonament: 
+
+Per determinar quants digits té el nombre \(20^{20}\), podem fer servir la propietat del logaritme en base 10 per calcular l'ordinà (el logarithm) d'aquest nombre. La fórmula general per trobar el número de xifres d'un nombre entero \(N\) és:
+
+\[
+\text{Número de xifres} = \lfloor \log_{10}(N) \rfloor + 1
+\]
+
+En aquest cas, \(N = 20^{20}\). Apliquem la fórmula:
+
+\[
+\log_{10}(20^{20}) = 20 \cdot \log_{10}(20)
+\]
+
+Descomposim \(\log_{10}(20)\):
+
+\[
+\log_{10}(20) = \log_{10}(2 \times 10) = \log_{10}(2) + \log_{10}(10) = \log_{10}(2) + 1
+\]
+
+Sabem que:
+
+\[
+\log_{10}(2) \approx 0.3010
+\]
+
+Per tant,
+
+\[
+\log_{10}(20) \approx 0.3010 + 1 = 1.3010
+\]
+
+Ara, multiplicim per 20:
+
+\[
+\log_{10}(20^{20}) \approx 20 \times 1.3010 = 26.020
+\]
+
+Fent servir la fórmula del número de xifres:
+
+\[
+\text{Número de xifres} = \lfloor 26.020 \rfloor + 1 = 26 + 1 = 27
+\]
+
+Resposta: D) 27

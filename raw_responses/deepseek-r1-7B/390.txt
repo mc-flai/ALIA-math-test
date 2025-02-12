@@ -1,0 +1,87 @@
+<think>
+Vamos a resolver el problema paso a paso.
+
+Primero, definimos las variables:
+- Primer número: x
+- Segundo número: 7x (ya que es siete veces el primero)
+- Tercer número: y (menos que el segundo, es decir, y < 7x)
+
+Dado que el producto de los tres números es 140, tenemos la ecuación:
+x * 7x * y = 140
+Simplificando, obtenemos:
+7x²y = 140
+
+Necesitamos encontrar valores enteros para x y y que cumplan esta condición. Intentamos diferentes valores de x:
+
+1. Si x = 2:
+   - 7*(2)²*y = 140 → 28y = 140 → y = 5
+   - Verificamos si y < 7x: 5 < 14, lo cual es verdadero.
+   
+2. Si x = 3:
+   - 7*(3)²*y = 140 → 63y = 140 → y no es entero.
+
+3. Si x = 1:
+   - 7*1²*y = 140 → 7y = 140 → y = 20
+   - Verificamos si y < 7x: 20 < 7, lo cual es falso.
+
+Solo el valor x=2 cumple con las condiciones dadas. Por lo tanto, los números son 2, 14 y 5, y su suma es:
+2 + 14 + 5 = 21
+</think>
+
+Raonament:
+
+Definim les variables:
+- Primer nombre: \( x \)
+- Segon nombre: \( 7x \) (segons condició donada)
+- Tercer nombre: \( y \), on \( y < 7x \)
+
+Donat que el producte és 140, tenim:
+\[
+x \cdot 7x \cdot y = 140
+\]
+Simplificant:
+\[
+7x^2y = 140
+\]
+
+Busquem valors enteros per \( x \) i \( y \):
+
+1. **Caso 1: \( x = 2 \)**
+   \[
+   7(2)^2 y = 140 \\
+   28y = 140 \\
+   y = 5
+   \]
+   Verificem si \( y < 7x \):
+   \[
+   5 < 14 \quad (\text{Vèrdi})
+   \]
+
+2. **Caso 2: \( x = 3 \)**
+   \[
+   7(3)^2 y = 140 \\
+   63y = 140 \\
+   y \approx 2,222 \quad (\text{No enter})
+   \]
+
+3. **Caso 3: \( x = 1 \)**
+   \[
+   7(1)^2 y = 140 \\
+   7y = 140 \\
+   y = 20
+   \]
+   Verificem si \( y < 7x \):
+   \[
+   20 < 7 \quad (\text{Fals})
+   \]
+
+El nomre enter que compleix totes les condicions és \( x = 2 \). Aleshores, els nombres són:
+\[
+2, \ 14, \ 5
+\]
+La suma d'aquests nombres és:
+\[
+2 + 14 + 5 = 21
+\]
+
+Resposta: **B) 21**

@@ -1,0 +1,62 @@
+<think>
+Para resolver este problema, primero necesito entender qué se me está preguntando. Debo considerar las cuartas potencias de todos los números enteros desde 1 hasta 1000 y determinar cuántas de estas potencias terminan con el dígito 1 o 6 en la posición de las unidades.
+
+Primero, calcularé las cuartas potencias para varios números pequeños para detectar un patrón. Observo que:
+
+- \(1^4 = 1\) → Termina en 1
+- \(2^4 = 16\) → Termina en 6
+- \(3^4 = 81\) → Termina en 1
+- \(4^4 = 256\) → Termina en 6
+- \(5^4 = 625\) → Termina en 5
+- \(6^4 = 1296\) → Termina en 6
+- \(7^4 = 2401\) → Termina en 1
+- \(8^4 = 4096\) → Termina en 6
+- \(9^4 = 6561\) → Termina en 1
+
+De estos ejemplos, noto que las cuartas potencias terminan alternando entre 1 y 6 dependiendo del dígito final original. Para entender mejor, analizaré cómo behave el último dígito de un número al ser elevado a la cuarta potencia.
+
+Consideraré todos los posibles últimos dígitos (0-9) y determinaré qué dígitos resultan al elevarlos a la cuarta potencia:
+
+- \(0^4 = 0\) → Termina en 0
+- \(1^4 = 1\) → Termina en 1
+- \(2^4 = 16\) → Termina en 6
+- \(3^4 = 81\) → Termina en 1
+- \(4^4 = 256\) → Termina en 6
+- \(5^4 = 625\) → Termina en 5
+- \(6^4 = 1296\) → Termina en 6
+- \(7^4 = 2401\) → Termina en 1
+- \(8^4 = 4096\) → Termina en 6
+- \(9^4 = 6561\) → Termina en 1
+
+De este análisis, veo que las cuartas potencias terminan con 1 o 6 solo si el último dígito del número original es 1, 2, 3, 4, 6, 7, 8 u 9. Sin embargo, no siempre estos últimos dígitos resultan en 1 o 6; algunos números terminan con 5 y su cuarta potencia termina en 5, lo que no cumple la condición.
+
+Ahora, necesito determinar cuántos números entre 1 y 1000 tienen un último dígito que, al ser elevado a la cuarta potencia, resulte en 1 o 6. Observo que los últimos dígitos relevantes son 1, 2, 3, 4, 6, 7, 8 y 9.
+
+Cada década (0-9, 10-19, etc.) tiene 8 números cuya cuarta potencia termina en 1 o 6. Dado que hay 100 decenas en el rango de 1 a 1000, se espera que haya \(8 \times 100 = 800\) números cuya cuarta potencia termine en 1 o 6.
+
+Sin embargo, al revisar detenidamente, noto que algunos números no caen exactamente en este patrón. Por ejemplo, el número 5 elevado a la cuarta potencia termina en 5, lo que no cumple con la condición, pero ya he excluido a los números que terminan en 0 y 5.
+
+Finalmente, concluyo que hay exactamente 800 números entre 1 y 1000 cuya cuarta potencia termina en 1 o 6.
+</think>
+
+Raonament: 
+Per determinar quants quadrats perfectes (nombres al quart) de tots els enters del 1 a 1000 tenen l'1 o el 6 com la xifra de les unitats, hem de mirar la xifra final resultantquan elevem un nombre a la cuarta potència.
+
+Observant que:
+- Els nombres finals (0-9) quan elevats a la quart potència resulten en:
+   - 0^4 = 0
+   - 1^4 = 1
+   - 2^4 = 16
+   - 3^4 = 81
+   - 4^4 = 256
+   - 5^4 = 625
+   - 6^4 = 1296
+   - 7^4 = 2401
+   - 8^4 = 4096
+   - 9^4 = 6561
+
+Això mostra que només els nombres finals 1, 2, 3, 4, 6, 7, 8 i 9 donen com a xifa final de les unitats 1 o 6. Per cada decena (0-9, 10-19, etc.), hi ha 8 nombres que satisfan la condició.
+
+Havent 100 decenes en el rànge 1-1000, el total serà 8 × 100 = 800.
+
+Resposta: B) 800

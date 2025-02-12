@@ -1,0 +1,55 @@
+<think>
+Primero, identifico que los números solicitados deben estar entre 100 y 200. Luego, necesitan ser divisibles por ambos 2 y 3.
+
+Sé que un número divisible por 2 es par, y para ser divisible por 3, la suma de sus dígitos debe ser múltiplo de 3. 
+
+Para abordar este problema de manera eficiente, decide calcular el MCM de 2 y 3, que es 6. Esto significa que busco números entre 100 y 200 que sean divisibles por 6.
+
+Determino el primer múltiplo de 6 mayor o igual a 100, que es 102 (ya que 100 ÷ 6 = 16.666..., redondeando hacia arriba obtenemos 17, y 17 × 6 = 102).
+
+Luego, encuentro el último múltiplo de 6 menor o igual a 200. Dado que 200 ÷ 6 ≈ 33.333..., redondeo hacia abajo a 33, y 33 × 6 = 198.
+
+Ahora, sé que los múltiplos de 6 en este rango forman una secuencia: 102, 108, ..., 198. Para encontrar cuántos términos tiene esta secuencia, uso la fórmula del número de términos en una secuencia aritmética:
+
+n = ((último término - primer término) / diferencia) + 1
+
+Sustituyendo los valores:
+n = ((198 - 102)/6) + 1
+n = (96/6) + 1
+n = 16 + 1
+n = 17
+
+Por lo tanto, hay 17 números entre 100 y 200 que son divisibles por 2 y 3.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, hem de comptar quants nombres entre 100 i 200 són divisibles per **ambos 2 i 3**. 
+
+Un nombre que siga divisible per 2 i també per 3 ha de ser divisible per el MCM (mínim comú multiple) de 2 i 3, que és 6.
+
+1. **Trovem el primer múltiple de 6 major o igual a 100:**
+   
+   - Dividim 100 entre 6: \( 100 ÷ 6 \approx 16.666... \)
+   - Arredonà vers l'atzar amb valor superior, obtinguent 17.
+   - Primer múltiple de 6 major o igual a 100: \( 17 × 6 = 102 \)
+
+2. **Trovem el darrer múltiple de 6 menor o igual a 200:**
+   
+   - Dividim 200 entre 6: \( 200 ÷ 6 \approx 33.333... \)
+   - Arredonà vers l'atzar amb valor inferior, obtinguent 33.
+   - Darrer múltiple de 6 menor o igual a 200: \( 33 × 6 = 198 \)
+
+3. **Calculam quantitat de multiples de 6 entre 102 i 198:**
+   
+   Utilitzem la fórmula del número de termes d'una seqüència aritmètica:
+   \[
+   n = \frac{{\text{últim terme} - \text{primer terme}}}{diferència} + 1
+   \]
+   
+   Substituïm els valors:
+   \[
+   n = \frac{{198 - 102}}{6} + 1 = \frac{{96}}{6} + 1 = 16 + 1 = 17
+   \]
+
+**Resposta:** C) 17

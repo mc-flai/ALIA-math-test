@@ -1,0 +1,20 @@
+<think>
+Para resolver este problema, primero analizamos cómo funciona un torneo eliminatorio con 16 equipos. En cada ronda, los equipos juegan partidos contra otros, y el ganador avanza a la siguiente ronda.
+
+Sabemos que para determinar un ganador absoluto en un torneo de este tipo, es necesario eliminar a todos los equipos menos uno. Cada partido elimina exactamente un equipo. Por lo tanto, si hay 16 equipos al inicio, se necesitarán eliminar 15 equipos para determinar el campeón.
+
+Cada ronda elimina la mitad de los equipos participantes:
+- Ronda 1: 16 equipos jugan 8 partidos → 8 ganadores avanzan.
+- Ronda 2: 8 equipos juegan 4 partidos → 4 ganadores avanzan.
+- Ronda 3: 4 equipos juegan 2 partidos → 2 ganadores avanzan.
+- Final: 2 equipos juegan 1 partido → 1 ganador es declarado campeón.
+
+Sumando los partidos de todas las rondas:
+8 + 4 + 2 + 1 = 15 partidos en total.
+
+Por lo tanto, el número total de partidos que se juegan en la competición es 15.
+</think>
+
+Raonament: En un torneig eliminatorio con 16 equips, cada ronda reduceix el nombre d'equips a la mitat. Per determinar un campió, cal eliminar tots els 15 equips que no són el campió. Cada partit elimina un equip, per donc hi ha necessitat de jugar exactament 15 partits.
+
+Resposta: B) 15

@@ -1,0 +1,87 @@
+<think>
+Primero, entiendo que se trata de una sucesión numérica donde cada término aₙ, apartir del tercer, se define como el doble del término anterior (aₙ₋₁) más el término dos posiciones atrás (aₙ₋₂). Es decir, la relación es aₙ = 2*aₙ₋₁ + aₙ₋₂.
+
+Se me proporcionan que el tercer término (a₃) es 9 y el sexto término (a₆) es 128. Debo encontrar el quinto término (a₅).
+
+Para resolver esto, supongo que los términos de la sucesión son: a₁, a₂, 9, a₄, a₅, 128.
+
+Utilizo las relaciones definidas para expresar a₆ en términos de a₅ y a₄. Según la fórmula:
+
+a₆ = 2*a₅ + a₄
+
+Pero necesito encontrar a₅ y a₄. Para ello, retrocedo los pasos:
+
+1. Expreso a₄ usando a₃ y a₂:
+   a₄ = 2*a₃ + a₂ = 2*9 + a₂ = 18 + a₂
+
+2. Luego, expreso a₅ usando a₄ y a₃:
+   a₅ = 2*a₄ + a₃ = 2*(18 + a₂) + 9 = 36 + 2a₂ + 9 = 45 + 2a₂
+
+3. Ahora, expreso a₆ usando a₅ y a₄:
+   a₆ = 2*a₅ + a₄ = 2*(45 + 2a₂) + (18 + a₂) = 90 + 4a₂ + 18 + a₂ = 108 + 5a₂
+
+Sé que a₆ es 128, así que:
+   108 + 5a₂ = 128
+   Resto 108 de ambos lados:
+   5a₂ = 20
+   Divido por 5:
+   a₂ = 4
+
+Ahora que tengo a₂ = 4, retorno para encontrar a₄ y luego a₅.
+
+Calculo a₄:
+   a₄ = 18 + a₂ = 18 + 4 = 22
+
+Luego calculo a₅:
+   a₅ = 45 + 2a₂ = 45 + 2*4 = 45 + 8 = 53
+
+Verifico que con estos valores, a₆ se cumple correctamente:
+   a₅ = 53
+   a₄ = 22
+   a₆ = 2*53 + 22 = 106 + 22 = 128, lo cual coincide.
+
+Por lo tanto, el quinto término es 53.
+</think>
+
+Raonament: 
+
+La successió té la regla aₙ = 2aₙ₋₁ + aₙ₋₂. Coneixons que a₃ = 9 i a₆ = 128.
+
+1. Exprimimos a₄ en funció de a₃ i a₂:
+   \[
+   a_4 = 2a_3 + a_2 = 2*9 + a_2 = 18 + a_2
+   \]
+
+2. Exprimimos a₅ en funció de a₄ i a₃:
+   \[
+   a_5 = 2a_4 + a_3 = 2*(18 + a_2) + 9 = 36 + 2a_2 + 9 = 45 + 2a_2
+   \]
+
+3. Exprimimos a₆ en funció de a₅ i a₄:
+   \[
+   a_6 = 2a_5 + a_4 = 2*(45 + 2a_2) + (18 + a_2) = 90 + 4a_2 + 18 + a_2 = 108 + 5a_2
+   \]
+
+4. Sabemos que a₆ = 128, donc:
+   \[
+   108 + 5a_2 = 128 \\
+   5a_2 = 20 \\
+   a_2 = 4
+   \]
+
+5. Calculem a₄ i a₅:
+   \[
+   a_4 = 18 + 4 = 22 \\
+   a_5 = 45 + 2*4 = 45 + 8 = 53
+   \]
+
+6. Verificació:
+   \[
+   a_6 = 2a_5 + a_4 = 2*53 + 22 = 106 + 22 = 128
+   \]
+
+La successió es: ?, 4, 9, 22, 53, 128.
+
+La cinquena posició és 53.
+
+Resposta: B) 53

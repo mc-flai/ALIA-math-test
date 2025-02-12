@@ -1,0 +1,99 @@
+<think>
+Bueno, tengo que resolver este problema donde hay una expresión con 2016 términos y los signos + y - aparecen en un patrón específico. El patrón es dos signos + seguidos de un signo -, y esto se repite toda la expresión. La suma empieza con 1+2-3+4+5-6+7+8-9+... hasta el final, que应该是 +2014+2015-2016.
+
+Primero, intentaré entender cómo está estructurada esta secuencia de operaciones. Parece que cada grupo de tres términos sigue el mismo patrón: dos sumas y una resta. Es decir, el primer término es +, el segundo también es +, y el terciero es -. Entonces, por ejemplo:
+
+1 + 2 - 3 + 4 +5 -6 +7+8-9...
+
+Entonces, si tomo cada trio de términos, sería mejor analizar la suma en cada grupo de tres para ver si hay una tendencia o un patrón que pueda simplificar.
+
+Vamos a considerar los términos en grupos de tres:
+
+(1 + 2 - 3) + (4 +5 -6) + (7 +8 -9) + ... + (2014 +2015 -2016)
+
+Ahora, calculemos cada uno de estos grupos para ver si hay una fórmula que los represente.
+
+Consideremos el primer grupo: 1 + 2 -3 = 0
+
+El segundo grupo: 4 +5 -6 = 3
+
+El tercero grupo:7 +8 -9=6
+
+Cuarto grupo:10+11-12=9
+
+Sigue:13+14-15=12, etc.
+
+Ahora, observamos que los resultados de estos grupos forman una secuencia: 0, 3, 6, 9, 12,... Es decir, están aumentando en 3 cada vez. Eso es una progresión aritmética con primer término 0 y diferencia 3.
+
+Ahora, necesitamos saber cuántos términos hay en total, que son 2016. Y como los estamos agrupando de tres en tres, el número de grupos será 2016 /3 = 672 grupos.
+
+Entonces, cada grupo aporta un valor incremental: 0, 3, 6,..., y el último grupo sería 3*(n-1), donde n es el número del grupo. Para el grupo k, el valor es 3*(k-1).
+
+Sumando todos estos valores de los grupos:
+
+Sum_total = Sum_{k=1 a 672} [3*(k-1)]
+
+Esto es equivalente a 3 * Sum_{k=0 a 671} k
+
+La suma de los enteros desde 0 a N-1 es (N-1)*N / 2.
+
+Entonces, la suma_total = 3 * [ (671)*(672)/2 ] 
+
+Calculamos:
+
+(671*672)/2 = (671*336)
+
+Multiplicando 671 por 336: podemos calcular 670*336 + 1*336
+
+670*336 = 670*(300+36) = 670*300=201000, 670*36=24120 → total 201000 +24120=225120
+
+Luego 225120 + 336 = 225456
+
+Entonces, la suma_total = 3 * 225456 = 676,368
+
+Ahora, revisemos las opciones:
+
+Opción A: (2013*2013)/3 → Un número más pequeño que 2013^2 es alrededor de 4 millones.
+
+B: (2013*2016)/3 → Calculamos 2013*2016=?
+
+2013 * 2016 = ?
+
+Podemos calcularlo como (2000 +13)*(2000 +16) pero quizás mejor multiplicar directamente.
+
+2013*2016: 2000*2000=4,000,000; 2000*16=32,000; 13*2000=26,000; 13*16=208
+
+Sumando: 4,000,000 +32,000+26,000+208 = 4,058,208.
+
+Dividimos por 3: 4,058,208 /3=1,352,736.
+
+Nuestra suma_total es 676,368, que no coincide con 1,352,736.
+
+Opción C: (2016*2016)/4 → 2016^2 = ?
+
+2016*2016= (2000+16)^2=2000² + 2*2000*16 +16²=4,000,000 +64,000 +256=4,064,256.
+
+Dividimos por 4: 4,064,256 /4=1,016,064. No coincide con 676,368.
+
+Opción D: (2013*2016)/6 → Calculamos 2013*2016/6
+
+2013*2016 ya sabemos que es 4,058,208. Dividimos por 6: 4,058,208 /6= 676,368.
+
+Efectivamente, coincide con nuestra suma_total.
+
+Opción E: (2013*2013)/9 → 2013²=?
+
+Calculamos 2013*2013:
+
+(2000 +13)^2 = 2000^2 +2*2000*13 +13^2=4,000,000 +52,000 +169=4,052,169.
+
+Dividimos por 9: 4,052,169 /9= 450,241. No coincide.
+
+Por lo tanto, la respuesta correcta es D.
+</think>
+
+Raonament: 
+
+La expresión se puede agrupar en tríadas de términos donde cada grupo tiene dos sumas seguidas por una resta. Cada grupo de tres términos forma una progresión aritmética con una suma incremental que comienza en 0 y aumenta en 3. El número total de grupos es 672 (ya que 2016 / 3 = 672). La suma total de estos grupos se calcula como 3 * la suma de los enteros del 0 al 671, lo que resulta en 676,368. Comparando con las opciones dadas, la expresión coincide con la opción D: (2013*2016)/6.
+
+Resposta: D

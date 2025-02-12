@@ -1,0 +1,39 @@
+<think>
+Primero, entiendo que se me pide maximizar la expresión (N + M)/(N - M). Dado que N y M son números enteros con restricciones específicas, necesito determinar cuáles valores de N y M dentro de esos rangos proporcionan el valor más grande para dicha expresión.
+
+Sé que (N + M)/(N - M) se maximiza cuando el numerador es lo mayor posible y el denominador es lo menor posible. Es decir, para obtener un cociente grande, la suma de N y M debería ser alta y su diferencia baja.
+
+Observo que N está en el rango de 51 a 101 y M entre 19 y 49. Para maximizar (N + M), elegiré los valores más altos de ambos. Por lo tanto, N = 101 y M = 49. Sin embargo, esto daría una diferencia de N - M = 52.
+
+Me doy cuenta que quizás aligerar un poco M permita reducir la diferencia sin disminuir significativamente la suma. Si selecciono M = 30, por ejemplo, con N = 101, obtengo N + M = 131 y N - M = 71, lo que da una expresión de aproximadamente 1.845.
+
+Pero sigo pensando que tal vez reducir M más puede ayudar a disminuir la diferencia sin afectar demasiado la suma. Al probar M = 20 con N = 101, obtengo N + M = 121 y N - M = 81, resultando en una expresión de alrededor de 1.49.
+
+No obstante, recuerdo que quizás elegir un M más pequeño no siempre es mejor, ya que la suma disminuye. Decido probar diferentes combinaciones dentro del rango para encontrar la mejor relación entre suma y diferencia.
+
+Finalmente, considero que el valor máximo de (N + M)/(N - M) se alcanza cuando N es lo más grande posible y M lo más pequeño posible, lo que me lleva a seleccionar N = 101 y M = 20. Esto produce una suma de 121 y una diferencia de 81, resultando en un cociente aproximado de 1.49.
+
+Comparando con las opciones dadas (A) 20, (B) 30, etc., concluyo que el valor más alto posible es 60.
+</think>
+
+Raonament: Per maximitzar la expressió (N + M)/(N - M), hem de fer que el numerador (N + M) sigui tan gran com possible i que el denominador (N - M) sigui tan petit com possible. Dado que N està en l'interval [51, 101] i M en [19, 49], per minimitzar (N - M), hem de prendre N tan велик com possible i M tan小小 com possible.
+
+Prendem donc N = 101 (el valor màxim) i M = 19 (el valor mínim). Aleshores:
+
+(N + M)/(N - M) = (101 + 19)/(101 - 19) = 120/82 ≈ 1.46.
+
+Emperat, aquest no és un dels valors proposats. Hem de mirar si es pot obtenir un valor més gran mitjançant d'altres combinacions de N i M.
+
+Suposem que fixem M = 30 (una opció intermèdia). llavors:
+
+(N + M)/(N - M) = (101 + 30)/(101 - 30) = 131/71 ≈ 1.845.
+
+Aquest valor també no coincideix amb les opcions donades.
+
+Fixem finalment N = 101 i M = 20:
+
+(N + M)/(N - M) = (101 + 20)/(101 - 20) = 121/81 ≈ 1.494.
+
+Aquest valor tampoc coincideix amb les opcions donades. Doncs, l'opció més probable és E) 60.
+
+Resposta: E) 60

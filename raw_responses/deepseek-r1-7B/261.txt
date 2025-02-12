@@ -1,0 +1,66 @@
+<think>
+Primero, identifico los pesos de cada persona: Aitana pesa 40 kg, su padre (llamémosle Padre) 90 kg y su abuelo (abuelo) 70 kg. La barca no puede transportar un peso total superior a 120 kg en cada viaje.
+
+Necesito determinar la manera más eficiente de transportar a las tres personas al otro lado del río con el menor tiempo posible, considerando que la barca tarda 3 minutos ida y vuelta. Es importante minimizar el número de viajes para reducir el tiempo total.
+
+Primero, analizo quiénes pueden viajar juntos sin exceder el límite de peso:
+
+- Aitana (40 kg) + Padre (90 kg) = 130 kg → Superan el límite.
+- Aitana (40 kg) + Abuelo (70 kg) = 110 kg → Están dentro del límite.
+- Padre (90 kg) solo → No supera el límite.
+- Abuelo (70 kg) solo → No supera el límite.
+
+Noto que Aitana no puede viajar con su padre en un mismo viaje. Por lo tanto, la estrategia óptima es:
+
+1. Aitana y Abuelo viajan juntos en el primer viaje: 40 + 70 = 110 kg. Tarda 3 minutos.
+2. Luego, Abuelo regresa solo con la barca: 70 kg. Otra 3 minutos.
+3. En el tercer viaje, Padre viaja solo: 90 kg. Tarda 3 minutos.
+4. Finalmente, Aitana regresa con la barca vacía para traer a Abuelo de vuelta: esto no es necesario si ya están en el otro lado.
+
+Pero revisando, una vez que Aitana y Abuelo están al otro lado, Padre viaja solo, y luego Aitana vuelve sola. Sin embargo, esto no optimiza bien.
+
+Me doy cuenta de que quizás un enfoque mejor es:
+
+1. Aitana y Padre intentan viajar juntos: 40 + 90 = 130 kg → No pueden.
+2. Entonces, Padre viaja solo primero: 90 kg. Tarda 3 minutos.
+3. Luego, Aitana y Abuelo viajan juntos: 40 +70=110 kg. Otra 3 minutos.
+4. Finalmente, Aitana regresa sola para traer a Abuelo de vuelta, pero esto no es eficiente.
+
+Me doy cuenta de que quizás un método más efectivo es:
+
+- Primero, Padre viaja solo: 3 minutos.
+- Luego, vuelve solo: 3 minutos (total 6).
+- A continuación, Abuelo viaja solo: 3 minutos (total 9).
+- Finalmente, Padre vuelve por Abuelo: 3 minutos (total 12). Pero esto no es suficiente.
+
+Reviso que quizás la manera correcta es:
+
+1. Aitana y Abuelo van juntos: 3 minutos.
+2. Aitana regresa: 3 minutos (total 6).
+3. Padre viaja solo: 3 minutos (total 9).
+4. Aitana vuelve de nuevo para ayudar a Abuelo.
+
+No, esto no está bien pensado.
+
+Finalmente, concluyo que la única manera es:
+
+- Padre va solo: 3 minutos.
+- Vuelve solo: 3 minutos (total 6).
+- Abuelo va solo: 3 minutos (total 9).
+
+Al final, todos estarán al otro lado, y el tiempo total será 9 minutos.
+
+Por lo tanto, la respuesta es B) 9 minutos.
+</think>
+
+Raonament: 
+Per passar tots els tres al riu altre part, considerant que la barca no pot portar més de 120 quilos en un temps determinat, hem de planificar els viatges de manera eficient. 
+
+- **Viage 1:** Aitana i l'avi (40 + 70 = 110 kg) van als llargues del riu. Tardan 3 minuts.
+- **Viage 2:** L'avi torna sol a la riba inicial per guanyar temps. Tarda 3 minuts més, total 6 minuts.
+- **Viage 3:** El pare (90 kg) va sol als llargues del riu. Tarda 3 minuts més, total 9 minuts.
+- **Viage 4:** Aitana torna per guanyar temps. Tarda 3 minuts més, total 12 minuts.
+
+Tot i que no s'ha fet servir a la barca al full en tots els viatges, el temps total màxim és de 9 minuts per passar tothom a l'altra part del riu.
+
+Resposta: B) 9 min

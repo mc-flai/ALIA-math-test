@@ -1,0 +1,28 @@
+<think>
+Primero, observo que la expresión de A es un producto sucesivo de términos que disminuyen en dos unidades en cada paso. Al analizar los primeros términos, noto que algunos de ellos resultan en ceros: 2016 - 2 = 2014, 2015 - 3 = 2012, y así sucesivamente. Sin embargo, al llegar a un punto específico, el término (1009 - 1009) resulta en cero, lo que hace que todo el producto sea cero.
+
+Por lo tanto, concluyo que A es igual a cero.
+</think>
+
+**Raonament:**
+
+La expressió donada és:
+
+\[ A = (2017 - 1)(2016 - 2)(2015 - 3) \dotsm (3 - 2015)(2 - 2016)(1 - 2017) \]
+
+Observem que cada termen de la forma \((k - n)\), on \(k\) decreix per 1 i \(n\) creix per 1. Algun dels termes es poden simplificar:
+
+- \((2017 - 1) = 2016\)
+- \((2016 - 2) = 2014\)
+- \(\vdots\)
+- \((1010 - 1008) = 2\)
+- \((1009 - 1009) = 0\)
+- \((1 - 2017) = -2016\)
+
+Notem que alcanzàremos el termen \((1009 - 1009)\), que és \(0\). Quan multipliquem un nombre zero, l'producte total serà zero:
+
+\[ A = \dotsm \times 2 \times 0 \times (-2016) = 0 \]
+
+**Resposta:**
+
+D

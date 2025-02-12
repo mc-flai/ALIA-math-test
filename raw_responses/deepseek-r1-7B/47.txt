@@ -1,0 +1,61 @@
+<think>
+Primero, identifico los puntos en la recta: A, B, C, D, E, F, de izquierda a derecha.
+
+Dado que AD = CF y BD = DF, establezco relaciones entre las distancias.
+
+Asigno variables a las distancias entre puntos: AB = x, BC = y, CD = z, DE = w, EF = v.
+
+Utilizo las condiciones dadas para formar ecuaciones:
+
+1. AD = CF → (x + y + z) = (w + v)
+2. BD = DF → (y + z) = (v)
+
+Sustituyo v de la segunda ecuación en la primera: x + y + z = w + (y + z) → x = w.
+
+Esto significa que BC = DE, lo que corresponde a la opción B.
+</think>
+
+**Raonament:**
+
+Seguients los punts en l'ordre A-B-C-D-E-F, anomenem les distàncies entre ellos:
+
+- AB = \( x \)
+- BC = \( y \)
+- CD = \( z \)
+- DE = \( w \)
+- EF = \( v \)
+
+Dada que AD = CF i BD = DF.
+
+1. **Calculant AD:**
+   - AD = AB + BC + CD = \( x + y + z \)
+   
+2. **Calculant CF:**
+   - CF = CE + EF = (CD + DE) + EF = \( z + w + v \)
+   
+   Dada que AD = CF:
+   \[
+   x + y + z = z + w + v \quad \Rightarrow \quad x + y = w + v \quad (1)
+   \]
+   
+3. **Calculant BD:**
+   - BD = BC + CD = \( y + z \)
+   
+4. **Calculant DF:**
+   - DF = DE + EF = \( w + v \)
+   
+   Dada que BD = DF:
+   \[
+   y + z = w + v \quad (2)
+   \]
+   
+5. **Substituïnt (2) a (1):**
+   \[
+   x + y = (y + z) \quad \Rightarrow \quad x = z
+   \]
+   
+   Això vol dir que AB = CD.
+
+**Resposta:**
+
+D) Que AB = CD

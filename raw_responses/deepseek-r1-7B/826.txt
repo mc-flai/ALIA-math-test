@@ -1,0 +1,50 @@
+<think>
+Primero, identifico que hay una lista de cinco números consecutivos que van del 10 al 130. Necesito encontrar el número central.
+
+Denoto los números como a-2d, a-d, a, a+d, a+2d, donde "a" es el término medio y "d" es la diferencia constante entre los términos consecutivos.
+
+Dado que son consecutivos, d = 1. Por lo tanto, los números son a-2, a-1, a, a+1, a+2.
+
+La suma de los primeros tres números es 100:
+(a-2) + (a-1) + a = 3a - 3 = 100
+Resolviendo para "a":
+3a = 103 → a ≈ 34.33
+
+La suma de los tres números del medio es 200:
+(a-d) + a + (a+d) = 3a = 200
+Entonces, a = 200/3 ≈ 66.67
+
+Estas dos sumas dan valores diferentes para "a", lo que sugiere que los números no son consecutivos exactos.
+
+Reconsidero la estructura de la lista y concluyo que los números siguen una progresión aritmética con diferencia "d". Denoto los términos como:
+10, 10 + d, 10 + 2d, 10 + 3d, 130
+
+Calculo las sumas:
+- Suma de los primeros tres: (10) + (10 + d) + (10 + 2d) = 30 + 3d = 100 → 3d = 70 → d = 70/3 ≈ 23.33
+- Suma de los tres del medio: (10 + d) + (10 + 2d) + (10 + 3d) = 30 + 6d = 200 → 6d = 170 → d ≈ 28.33
+- Suma de los últimos tres: (10 + 2d) + (10 + 3d) + 130 = 150 + 5d = 300 → 5d = 150 → d = 30
+
+El valor consistente para "d" es 30, lo que implica que el término medio es:
+10 + 2d = 10 + 60 = 70
+</think>
+
+Raonament: 
+
+Considerem una llista de cinc nombres consecutius: a-2d, a-d, a, a+d, a+2d. De vegades, la suma dels primers tres és 100, la suma dels del mig és 200 i la suma dels últims tres és 300.
+
+Escribim les equacions:
+
+1. (a-2d) + (a-d) + a = 100 ⇒ 3a - 3d = 100
+2. (a-d) + a + (a+d) = 200 ⇒ 3a = 200
+3. a + (a+d) + (a+2d) = 300 ⇒ 3a + 3d = 300
+
+Des de l'equació 2: 3a = 200 ⇒ a = 200/3 ≈ 66,67.
+
+Substituim a en les altres equacions:
+
+1. 3*(200/3) - 3d = 100 ⇒ 200 - 3d = 100 ⇒ d = (200 - 100)/3 ≈ 33,33.
+3. 3*(200/3) + 3d = 300 ⇒ 200 + 3d = 300 ⇒ 3d = 100 ⇒ d ≈ 33,33.
+
+Luego, el nombre del mig és a = 200/3 ≈ 66,67. Mentre que en les opcions no hi ha un nombre exacte, l'opció més propera és B) 60.
+
+Resposta: \boxed{B}

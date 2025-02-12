@@ -1,0 +1,43 @@
+<think>
+Para resolver el problema, primero necesitamos encontrar el número entero más pequeño cuya suma de dígitos es igual a 2019. Luego, debemos determinar la primera cifra (la más a la izquierda) de ese número.
+
+Considerando que los números con más dígitos tienden a ser mayores, pero queremos el más pequeño, lo ideal sería minimizar la cantidad de dígitos y distribuir las sumas para que los dígitos en las posiciones más significativas sean lo más pequeños posible.
+
+La suma de dígitos es 2019. Para minimizar el número, usaremos tantos 9s como sea posible, ya que son los dígitos más grandes y permiten minimizar la cantidad de dígitos restantes.
+
+Calculamos cuántas veces cabe el 9 en 2019:
+2019 ÷ 9 = 224 con un resto de 3.
+
+Esto significa que necesitaremos 225 dígitos (224 nines y un 3). Para formar el número más pequeño, colocamos el 3 en la primera posición seguida por los 224 nines. Por lo tanto, el primer dígito es 3.
+</think>
+
+**Raonament:**
+
+El problema consiste en encontrar el nombre enter més petit (mínim) possible tancant que la suma de les seves xifres (dígitos) equivalga a 2019. Després, hem de determinar quina és la primera xifra d'aquest nombre.
+
+Per resoldre aquest problema, hem de considerar les següents passes:
+
+1. **Minimizar el número**: Un número amb menys xifres tendrà més probabilitat de ser petit que un altre amb mes xifres. Però, en aquest cas, la suma fixa (2019) fa que no podrem fer molt mica el nombre sense tenir molts dígitos.
+
+2. **Maximizar els dígitos**: Per fer un nombre petit, volem que les xifres més significatives (les de la part més a l'esquerra) siguin tan petites com possible. Tot i això, per arribar a una suma total fixa (2019), hem de distribuir els valors.
+
+3. **Utilitzar dígitos 9**: El 9 és el dígito més gran possible, per tant, si volem minimizar la quantitat de xifres, hem de fer servir tan fidel 9s com possible, i després allotjar el rest en un dígito.
+
+4. **Calcul**:
+   - Dividim 2019 entre 9: 
+     \[
+     2019 ÷ 9 = 224 \text{ r } 3
+     \]
+     Això vol dir que pots fer 224 xifres de 9, i un restant de 3.
+
+5. **Construir el nombre**: Per formar el mínim possible, volem que les xifres més significatives (les de l'esquerra) siguin tan petites com possible. Això vol dir que la xifra més a l'esquerra haura d ser 3, seguida de 224 nines.
+
+6. **Primera xifra**: En consecuencia, el nombre serà:
+   \[
+   3\underbrace{999\ldots9}_{224 \text{ vegades}}
+   \]
+   La primera xifra d'aquest nombre és 3.
+
+**Resposta:**
+
+B) 3

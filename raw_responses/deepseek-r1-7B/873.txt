@@ -1,0 +1,47 @@
+<think>
+Primero, identifico los tipos de frutas disponibles en la cistella: hay 2 manzanas, 3 peras y 2 plátanos. En total, son 7 frutas.
+
+Dolors necesita seleccionar 3 frutas de manera que solo se consideren sus tipos. Esto significa que no importa cuántas frutas haya de cada tipo, sino más bien qué combinación de tipos se eligen.
+
+Para resolver esto, listo todas las posibles combinaciones de tipos de frutas sin repetir:
+
+1. Tres manzanas (pero solo hay 2 disponibles, así que esta opción no es posible).
+2. Dos manzanas y una pera.
+3. Dos manzanas y un plátano.
+4. Una manzana, dos peras.
+5. Una manzana, una pera y un plátano.
+6. Dos peras y un plátano (pero solo hay 2 peras, así que es posible).
+7. Tres peras (solo hay 3 disponibles, pero no se mencionó en las opciones iniciales).
+
+Finalmente, elimino las combinaciones que no son posibles debido a la cantidad limitada de frutas y cuento las restantes, obteniendo un total de 4 combinaciones diferentes.
+</think>
+
+**Raonament:**
+
+La cistella conté dues taronges (manzanas), tres pomes (peras) i dues peres (plátanos). Dolors vol fer una bossa amb tres fruites tretes de la cistella, considerant només el tipus de les fruites. Això vol dir que hem de comptar les combinacions de tipus de fruta possible sense marcar ordre o repetició.
+
+El mètode per resoldre aquest tipus de problema és calcular les combinacions possibles mitjançant la fórmula de combinatorics:
+
+\[
+C(n, k) = \frac{n!}{k!(n - k)!}
+\]
+
+On:
+- \( n \) és el total d'elements
+- \( k \) és el nombre d'elements a elegir
+
+En aquest cas, tenim 3 tipus de fruites (manzana, pera i plátano), i volem elegir 3 fruites sense repetició. Però hem de considerar les quantitats llimits:
+
+1. **Tres manzanas:** Impossible, ja que només hi ha dues.
+2. **Dos manzanas i una pera:** Possible.
+3. **Dos manzanas i un plátano:** Possible.
+4. **Una manzana, dos pomes:** Possible.
+5. **Una manzana, una pera i un plátano:** Possible.
+6. **Tres pomes:** Possible, ja que hi ha tres.
+7. **Dos pomes i un plátano:** Impossible, ja que només hi ha dues peres.
+
+Després d'eliminar les combinacions impossibles, queden 4 combinacions possibles.
+
+**Resposta:**
+
+\boxed{B}

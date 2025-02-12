@@ -1,0 +1,27 @@
+<think>
+Voy a intentar resolver este problema paso a paso. Primero, entiendo que si la demanda anual de petróleo se mantiene constante y las reservas actuales se agotarán en 50 años, eso significa que el consumo anual es igual a las reservas divididas por 50 años.
+
+Ahora, se propone reducir la demanda cada año en un porcentaje fijo respecto al año anterior. Queremos encontrar el mínimo porcentaje de reducción que asegure que las reservas nunca se agoten.
+
+Para esto, pienso que necesitamos que la suma total del consumo a lo largo de los años sea finita y no exceda las reservas totales. Si la reducción es constante, cada año el consumo será menor que el anterior multiplicando por (1 - r), donde r es el porcentaje de reducción.
+
+Esto forma una serie geométrica convergente si|r| < 1. La suma total de esta serie debe ser igual a las reservas totales para evitar el agotamiento.
+
+La fórmula para la suma total de una serie geométrica converge es S = C / (1 - r), donde C es el consumo inicial anual y S son las reservas totales. Igualando esto, obtenemos que 1/(1 - r) debe ser igual a 50 años.
+
+Solving for r, encontramos que r = 2%.
+</think>
+
+Raonament: 
+
+Si mantenim la despesa anual de petroli constant, les reserves s'esgotaran en 50 anys. Per assegurar que les reserves no esgotin mai, necessitem reduir constantment la despesa each any per un percentatge fix (r). La despesa each any forma una progresió geomètrica: D₀, D₀(1 - r), D₀(1 - r)², etc. La suma total de la despesa a llarg termini ha de ser finita i no excedir les reserves totales.
+
+La condició per que la suma sigui finita és|r| < 1 (la despesa decreix cada any). La suma S = D₀ + D₀(1 - r) + D₀(1 - r)² + ... = D₀ / r. Per assegurar que S no exceda les reserves, necessitem que D₀ / r ≤ Reserves.
+
+Donat que les reserves s'esgotarien en 50 anys si la despesa fos constant (D₀ * 50 = Reserves), tenim:
+
+D₀ / r = Reserves  
+⇒ D₀ / r = D₀ * 50  
+⇒ r = 1/50 = 2%.
+
+Resposta: D) 2%

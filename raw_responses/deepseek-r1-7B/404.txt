@@ -1,0 +1,37 @@
+<think>
+Bueno, hoy tengo que resolver este problema de fracciones y sumas. Empecé leyendo detenidamente el enunciado para entender lo que se me pide.
+
+La fracción A está dada como una suma de 2017 términos en el numerador y otra suma de 2017 términos en el denominador. Ambas sumas parecen seguir un cierto patrón, así que mi primer pensamiento es identificar cuál es ese patrón para cada parte.
+
+Para el numerador, veo los términos: (1·5·25), (2·10·50), (3·15·75), y así sucesivamente. Noto que en cada término, el primer número está incrementando por 1, el segundo por 5 y el tercero por 25. Es decir, para el k-ésimo término, sería k, 5k, 25k.
+
+Del mismo modo, en el denominador, los términos son: (1·2·4), (2·4·8), (3·6·12), etc. Aquí también veo que el primer número incrementa por 1, el segundo por 2 y el tercero por 4. Así que para el k-ésimo término en el denominador sería k, 2k, 4k.
+
+Ahora, mi objetivo es simplificar la fracción A al reducir los términos de numerador y denominador.
+
+Para cada término del numerador, calculo su valor multiplicando los tres componentes: k * 5k * 25k = k * 5k * 25k. Esto simplifica a 125k³ (ya que 5*25=125 y k*k*k=k³).
+
+En el denominador, cada término es k * 2k * 4k = k * 2k * 4k, lo que da 8k³.
+
+Entonces, la fracción A se convierte en una suma de 125k³ dividida por una suma de 8k³, pero ya simplificada. Es decir, A = (Suma_{k=1}^{2017} 125k³) / (Suma_{k=1}^{2017} 8k³).
+
+Puedo factorizar las constantes de la suma:
+
+A = [125 * Suma(k³)] / [8 * Suma(k³)]
+
+Noto que Suma(k³) es el mismo para ambos, así que se cancelan. Lo que queda es 125/8.
+
+Ahora, simplifico 125/8. Calculando la división, 125 ÷ 8 = 15.625.
+
+Pero el problema dice que A es el cubo de un número racional X. Así que tengo:
+
+A = (X)^3 => 15.625 = X^3
+
+Para encontrar X, tomo la raíz cúbica de 15.625. Sabemos que 2.5^3 = 15.625, así que X = 2.5.
+
+Revisando las opciones, A) es 2.5, por lo que ésa debe ser la respuesta correcta.
+</think>
+
+Raonament: El numerador i el denominador són sumes de termes que es poden expressar com 125k³ i 8k³ respectivament. Dividint aquestes sumes simplifiquem a 125/8, que és el cub de 2.5. Per tant, X = 2.5.
+
+Resposta: A)

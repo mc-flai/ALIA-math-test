@@ -1,0 +1,67 @@
+<think>
+Primero, identifico los datos proporcionados en el problema. Necesito determinar cuántas patas tiene un rosky, basándome en las respuestas dadas por los participantes.
+
+Sé que:
+
+- Un perro tiene 4 patas.
+- Un pollo tiene 2 patas.
+- Un rosky es una criatura inventada cuyo número de patas desconozco. Mi objetivo es encontrar cuántas patas tiene un rosky.
+
+La suma total de patas incluye:
+
+- 6 perros: 6 × 4 = 24 patas
+- 1 pollo: 1 × 2 = 2 patas
+- 7 roskys: 7 × R, donde R es el número de patas que tiene un rosky.
+
+Así, la ecuación total de patas es:
+24 (perros) + 2 (pollo) + 7R (rokskys) = Total
+
+Conozco las respuestas de los participantes: 46, 52, 66, 78 y 82. Sólo una de ellas es correcta.
+
+Pruebo cada respuesta para encontrar R:
+
+1. Si el total es 46:
+   24 + 2 + 7R = 46
+   26 + 7R = 46 → 7R = 20 → R ≈ 2.857 (No entero, descarto)
+
+2. Si el total es 52:
+   24 + 2 + 7R = 52
+   26 + 7R = 52 → 7R = 26 → R ≈ 3.714 (No entero, descarto)
+
+3. Si el total es 66:
+   24 + 2 + 7R = 66
+   26 + 7R = 66 → 7R = 40 → R = 5.714 (No entero, descarto)
+
+4. Si el total es 78:
+   24 + 2 + 7R = 78
+   26 + 7R = 78 → 7R = 52 → R ≈ 7.428 (No entero, descarto)
+
+5. Si el total es 82:
+   24 + 2 + 7R = 82
+   26 + 7R = 82 → 7R = 56 → R = 8
+
+El único valor entero para R surge cuando el total de patas es 82. Por lo tanto, un rosky tiene 8 patas.
+</think>
+
+Raonament: Per determinar quants cops té un rosky, hem d'analitzar les respostes donades i calcular quina quantitat de potes condueix a una solució correcta.
+
+1. **Identificar els valors coneguts:**
+   - 6 gossos × 4 potes cada = 24 potes
+   - 1 pollastre × 2 potes = 2 potes
+   - 7 roskys × R potes cada (on R és el valor que busquem)
+
+2. **Escriure l'equació total de potes:**
+   \[
+   24 + 2 + 7R = \text{Total de potes}
+   \]
+
+3. **Probar les respostes donades per veure quina fa que R sigui un enter:**
+   - **Si Total = 46:** \(24 + 2 + 7R = 46 \Rightarrow 7R = 20 \Rightarrow R ≈ 2,857\) (no entero)
+   - **Si Total = 52:** \(24 + 2 + 7R = 52 \Rightarrow 7R = 26 \Rightarrow R ≈ 3,714\) (no entero)
+   - **Si Total = 66:** \(24 + 2 + 7R = 66 \Rightarrow 7R = 40 \Rightarrow R ≈ 5,714\) (no entero)
+   - **Si Total = 78:** \(24 + 2 + 7R = 78 \Rightarrow 7R = 52 \Rightarrow R ≈ 7,428\) (no entero)
+   - **Si Total = 82:** \(24 + 2 + 7R = 82 \Rightarrow 7R = 56 \Rightarrow R = 8\) (enter)
+
+La única quantitat que fa que R sigui un enter és quan el total de potes és 82, on R = 8.
+
+Resposta: E) 8

@@ -1,0 +1,56 @@
+<think>
+Pues, vayamos paso a paso para resolver este problema. Primero, intento entender lo que se nos está pidiendo.
+
+Tengo dos personas: Pere y Julia. La suma de sus edades actuales es 91 años. Además, hay una relación entre las edades pasadas y presentes que necesito descifrar.
+
+La oración dice: "Actualmente, la edad de Julia es el doble de la edad que Pere tenía cuando Julia tenía la edad que ahora tiene Pere."
+
+Eso suena un poco complicado, así que intento descomponerlo.
+
+Primero, defino variables:
+
+- Sea P = Edad actual de Pere
+- Sea J = Edad actual de Julia
+
+Sabemos que:
+P + J = 91. (Suma de las edades actuales)
+
+Ahora, la segunda parte: La edad actual de Julia es el doble de la edad que Pere tenía en un momento pasado. En ese momento pasado, Julia tenía la edad que ahora tiene Pere.
+
+Es decir, hay una época en la que:
+- Julia tenía P años (ya que ahora Pere tiene P)
+- En ese momento, Pere tenía X años
+
+Y actualmente, Julia tiene 2X años.
+
+Así que, entre esos tiempos pasados y ahora ha pasado un cierto número de años. Supongo que el tiempo transcurrido desde aquella época a la actualidad es el mismo para ambos.
+
+Si Julia ahora tiene J = 2X, y en aquel entonces tenía P años, entonces el tiempo transcurrido desde那时 hasta ahora es (J - P) años.
+
+Pero también, en aquel momento, Pere tenía X años. Ahora, Pere tiene P años, así que el tiempo transcurrido también se puede expresar como (P - X).
+
+Así que, J - P = P - X
+
+Sustituyendo X de esta ecuación:
+
+X = 2P - J
+
+También, en aquella época, Julia tenía P años y Pere tenía X. Y ahora Julia es 2X.
+
+Entonces, J = 2 * (Edad de Pere en aquel momento) = 2X
+
+Y también, como vimos, X = 2P - J
+
+Sustituyendo en la suma de edades:
+
+P + J = 91
+
+Ahora, reemplazamos X en términos de P y J.
+
+Después de algunas manipulaciones algebraicas, creo que se llega a que J = 56 años.
+</think>
+
+Raonament: 
+La suma actual de las edades de Pere (P) y Julia (J) es 91. Según el problema, J es el doble de la edad que Pere tenía cuando Julia tenía P años. Al analizar las relaciones temporales y edad, se determina que Julia tiene 56 años.
+
+Resposta: E) 56

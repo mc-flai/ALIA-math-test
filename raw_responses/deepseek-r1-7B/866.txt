@@ -1,0 +1,221 @@
+<think>
+Primero, entiendo que necesitamos encontrar números de tres dígitos con una propiedad específica. La condición es doble: al eliminar la primera cifra, el resultado debe ser un cuadrado perfecto; y al eliminar la última cifra, también debe resultar en un cuadrado perfecto.
+
+Voy a abordar cada condición por separado para luego combinar las posibles soluciones. Empezaré considerando que los números son de tres dígitos, lo que significa que van del 100 al 999.
+
+**Condición 1: Eliminar la primera cifra da un cuadrado perfecto**
+
+Si eliminamos la primera cifra, quedamos con dos dígitos. Por ejemplo, si el número es ABC (donde A, B, C son dígitos), al eliminar A nos quedaría BC, que debe ser un cuadrado perfecto de dos dígitos.
+
+Los cuadrados perfectos de dos dígitos son:
+- 16 (4²)
+- 25 (5²)
+- 36 (6²)
+- 49 (7²)
+- 64 (8²)
+- 81 (9²)
+
+Esto nos da posibles combinaciones para BC: 16, 25, 36, 49, 64, 81.
+
+**Condición 2: Eliminar la última cifra da un cuadrado perfecto**
+
+Al eliminar la última cifra del número ABC, obtenemos AB. Este también debe ser un cuadrado perfecto de dos dígitos.
+
+Los cuadrados perfectos de dos dígitos son los mismos que enumeré anteriormente: 16, 25, 36, 49, 64, 81.
+
+**Ahora, necesitamos encontrar números ABC tales que AB y BC sean ambos cuadrados perfectos.**
+
+Para ello, analizaré cada posible valor de BC (los cuadrados de dos dígitos) y veré si la primera parte AB también es un cuadrado perfecto.
+
+1. **BC = 16**
+   - AB debe ser un cuadrado perfecto.
+   - Las posibles AB son: 1, 2, 3, ..., 9 (ya que A no puede ser cero).
+   - Pero AB + 6 en el dígito B y C=6. Buscamos AB tal que AB es un cuadrado perfecto y termina con 1.
+   - Cuadrados de dos dígitos que terminan con 1: 25, 36, 49, 64, 81 no terminan con 1. En realidad, el cuadrado que termina en 1 es 01 (pero AB tiene dos dígitos), así que probablemente no hay solución aquí.
+
+2. **BC = 25**
+   - AB debe ser un cuadrado perfecto.
+   - AB termina con B=2 y C=5? No, BC=25 implica que el dígito central es 2 y el final es 5.
+   - Pero AB es A2. Buscamos A2 que sea un cuadrado perfecto.
+   - Cuadrados de dos dígitos: 16, 25, etc., pero 25 termina con 5, así que no coincide.
+
+3. **BC = 36**
+   - AB debe ser un cuadrado perfecto y terminar en 3 (ya que B=3).
+   - Cuadrados de dos dígitos que terminan en 3: revisando la lista, no hay cuadros que terminen con 3.
+
+4. **BC = 49**
+   - AB debe terminar en 4.
+   - Cuadrados que terminan en 4 son 16 (4²=16), 36 (6²=36), etc., pero no hay cuadros de dos dígitos que terminen con 4 aparte de 16 y 36.
+
+5. **BC = 64**
+   - AB debe terminar en 6.
+   - Cuadrados de dos dígitos que terminan en 6: 16, 36, etc. Revisando, 16 termina con 6? No, 16 termina con 6 en la decena pero el dígito central es 6. En este caso, BC=64 implica B=6 y C=4.
+   - Buscamos AB que termina en 6: posibles AB son 16 (A=1, B=6), ya que 16 es un cuadrado perfecto (4²). Entonces el número ABC sería A=1, B=6, C=4 → 164.
+
+   Verificamos:
+   - Eliminar primera cifra: 64 = 8² ✔️
+   - Eliminar última cifra: 16 = 4² ✔️
+
+6. **BC = 81**
+   - AB debe terminar en 8.
+   - Cuadrados de dos dígitos que terminan en 8: revisando, no hay cuadros que terminen con 8.
+
+Ahora, consideremos si hay más posibilidades:
+
+- Podemos tener números donde BC=25 y AB=25? Es decir, ABC=25C. Pero AB=25 es un cuadrado perfecto (5²), y BC=25 implica que C=5. Entonces el número sería 255.
+
+   Verificamos:
+   - Eliminar primera cifra: 55 → no es un cuadrado perfecto.
+   - No cumple la condición, así que descartamos.
+
+Otra posibilidad:
+
+- BC=64, AB=16 → ABC=164 ya considerada.
+- ¿ABC=364? Eliminar primera cifra: 64 =8². Eliminar última: 36=6². Sí, cumple ambas condiciones.
+
+   Verificamos:
+   - Eliminar primera cifra: 64 ✔️
+   - Eliminar última: 36 ✔️
+
+Entonces ahora tenemos dos números: 164 y 364.
+
+¿Hay más?
+
+- Consideremos BC=25. Si AB=25, ABC=25C con C=5. El número es 255.
+   - Eliminar primera: 55 → no es cuadrado perfecto.
+   - No cumple.
+
+- BC=49: Buscamos AB que termine en 4 y sea un cuadrado. Cuadrados terminando en 4 son 16 (no), 36, 49 (49 termina en 9). No hay coincidencias.
+
+Otra idea:
+
+- BC=81. Si AB=81, ABC=81C con C=1. El número es 811.
+   - Eliminar primera: 11 → no es cuadrado perfecto.
+   - Descartamos.
+
+¿Qué más?
+
+- Revisemos si hay números donde BC=64 y AB=36, es decir, ABC=364. Ya consideramos esto.
+
+Además, revisemos BC=25 y AB=16: ABC=16C con C=5 → 165.
+   - Eliminar primera: 65 → no es cuadrado perfecto.
+
+No sirve.
+
+También, BC=49 y AB=25: ABC=25C con C=9 → 259.
+   - Eliminar primera: 59 → no es cuadrado perfecto.
+
+Descartamos.
+
+Ahora, revisemos si hay números donde BC=16:
+
+- Buscamos AB que termine en 1 y sea un cuadrado. Cuadrados de dos dígitos terminando en 1 son 01 (no, A no puede ser cero), 21 (no), etc., así que probablemente no hay.
+
+Otra posibilidad:
+
+- BC=64. Si AB=81: ABC=81C con C=4 → 814.
+   - Eliminar primera: 14 → no es cuadrado perfecto.
+   - No cumple.
+
+Finalmente, consideremos si hay números donde BC=25 y AB=25, lo cual ya vimos que no sirve.
+
+Así que los números son:
+
+164, 364
+
+¿Hay más?
+
+Revisemos ABC=729:
+
+- Eliminar primera: 29 → no.
+No.
+
+ABC=121:
+
+- Eliminar primera:21→no.
+
+ABC=625:
+
+- Eliminar primera:25=5² ✔️
+- Eliminar última:62→no.
+
+Descartamos.
+
+Otra posibilidad:
+
+- ABC= 484:
+
+   Eliminar primera:84→no.
+
+No.
+
+Wait, BC=25, AB=16 → 16C con C=5 es 165. Verificar:
+
+Eliminar primera:65→no.
+
+No.
+
+BC=49, AB=36: ABC=36C con C=9→369.
+
+Eliminar primera:69→no.
+
+Descartamos.
+
+Otra idea: BC=81, AB=81: 811. No.
+
+Finalmente, consideremos BC=25 y AB=16: número 164 ya listo.
+
+Y BC=64 con AB=36: 364.
+
+No hay más números que cumplan ambas condiciones.
+
+Así que los números son 164, 364.
+
+Además, verificamos si ABC=729:
+
+   Eliminar primera:29→no.
+
+No.
+
+Y ABC= 625:
+
+   Eliminar última:62→no.
+
+No.
+
+También, consideremos ABC= 121:
+
+   Eliminar primera:21→no.
+
+Descartamos.
+
+Finalmente, solo hay dos números que cumplen las condiciones: 164 y 364.
+</think>
+
+Para resolver el problema, buscamos todos los números de tres dígitos ABC donde elimi-nando la primera cifra resulta en un cuadrado perfecto y eliminando la última cifra también resulta en otro cuadrado perfecto.
+
+**Paso a paso:**
+
+1. **Identificar posibles valores para BC y AB:**
+   - Los posibles cuadrados perfectos de dos dígitos son: 16, 25, 36, 49, 64, 81.
+   
+2. **Buscar combinaciones donde BC es un cuadrado perfecto y AB también lo es:**
+   - Por ejemplo:
+     - Si BC = 64 (cuadrado de 8), AB debe ser un cuadrado que termine en 6. Los posibles AB son 16 o 36.
+       - Si AB = 16, el número ABC será 164.
+       - Si AB = 36, el número ABC será 364.
+     - Otros valores de BC no dan combinaciones validas que cumplan ambas condiciones.
+
+3. **Verificar los números candidatos:**
+   - **164**:
+     - Eliminar primera cifra: 64 → 8² ✔️
+     - Eliminar última cifra: 16 → 4² ✔️
+   - **364**:
+     - Eliminar primera cifra: 64 → 8² ✔️
+     - Eliminar última cifra: 36 → 6² ✔️
+
+4. **Conclusión:**
+   - Los números que cumplen las condiciones son 164 y 364.
+
+**Respuesta final:**  
+$\boxed{164}$ y $\boxed{364}$

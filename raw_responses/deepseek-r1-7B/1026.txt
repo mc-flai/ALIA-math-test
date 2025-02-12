@@ -1,0 +1,40 @@
+<think>
+Primero, identifico que el ascensor puede transportar hasta 12 adultos o 18婴儿。Está claro que hay dos límites máximos: 12 adultos sin bebés y 18 bebés sin adultos.
+
+En este caso, necesitamos determinar cuántos bebés pueden subir junto con 8 adultos, respetando las restricciones de peso. 
+
+Sé que si hay 8 adultos a bordo, no podemos superar el límite total de 12 adultos, lo que deja disponibles 4 plazas para adultos adicionales o bebés.
+
+Sin embargo, los bebés y los adultos no se pueden mezclar directamente en términos de cuotas. En lugar de eso, debemos considerar la capacidad total del ascensor en función de la combinación de adultos y bebés que transporta.
+
+Supongo que el ascensor tiene una capacidad fija de peso, por lo que si introducimos 8 adultos, necesitamos calcular cuántos bebés cabrían con ellos sin exceder el límite total.
+
+Voy a asumir que la capacidad del ascensor en términos de peso se mantiene constante, independientemente de si son adultos o bebés. Si 12 adultos suman una determinada cantidad de kilogramos, y 18 bebés suman otra, entonces necesitamos encontrar cuántos bebés equivalentes a 8 adultos.
+
+Para ello, calculo la relación entre el peso de un adulto y un bebé. Dado que 12 adultos equivalen en peso a 18 bebés, el peso de un adulto es 18/12 = 1.5 veces el peso de un bebé.
+
+Ahora, con 8 adultos abordo, lo convierto a su equivalente en bebés: 8 * 1.5 = 12 bebés equivalentes.
+
+Si la capacidad total del ascensor es 18 bebés equivalentes, restamos los 12bebés que ya ocupan los adultos, obteniendo 6 bebés que podrían subir junto con ellos.
+</think>
+
+**Raonament:**
+
+El problema està basat en les restriccions de pes d'un ascensor que pot portar com màxim 12 adults o bé 18 infants. Busquem determinar quin és el nombre màxim d'infants que podran pujar a l'ascensor amb 8 adults.
+
+1. **Entendre les restriccions:**
+   - 12 adults = 18 infants (en termes de pes).
+   - Això vol dir que la capaçitat total en termes de pes es pot representar com 12 adults o 18 infants.
+
+2. **Calculo la relació entre un adult i un infant:**
+   - Si 12 adults equivalen a 18 infants, llavors 1 adult equivau a \( \frac{18}{12} = 1.5 \) infants.
+   - Això vol dir que cada adult ocupa l'espaci de 1.5 infants.
+
+3. **Aplico la restricció als 8 adults:**
+   - Si tenim 8 adults, aquests ocupen \( 8 \times 1.5 = 12 \) infants.
+   - La capaçitat total del ascensor en termes d'infants és 18.
+
+4. **Determino quins infants podran pujar:**
+   - Total infants posibles = Capaçitat total - Infants ocupats per adults = \( 18 - 12 = 6 \).
+
+**Resposta:** B) 6

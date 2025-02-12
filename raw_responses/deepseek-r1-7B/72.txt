@@ -1,0 +1,70 @@
+<think>
+Primero, identifico los datos iniciales del problema:
+
+- Número total de lanzamientos hasta el momento: 150
+-Número de caras obtenidas: 56
+
+Calculo la cantidad de lanzadas (cruz) que se han obtenido:
+Lanzadas = Total de lanzamientos - Caras = 150 - 56 = 94.
+
+El objetivo es alcanzar un porcentaje exacto del 50% de caras. Esto significa que el número total de caras dividido entre el número total de lanzamientos futuros debe ser igual a 0,5.
+
+Vamos a definir:
+- \( x \) como el número adicional de caras consecutivas necesarias.
+- Entonces, el total de caras será \( 56 + x \).
+- El total de lanzamientos será \( 150 + x \).
+
+Establezco la ecuación para alcanzar el 50%:
+\[
+\frac{56 + x}{150 + x} = 0.5
+\]
+
+Despejo \( x \):
+Multiplico ambos lados por \( 150 + x \) para eliminar el denominador:
+\[
+56 + x = 0.5(150 + x)
+\]
+\[
+56 + x = 75 + 0.5x
+\]
+Resto \( 0.5x \) de ambos lados:
+\[
+56 + 0.5x = 75
+\]
+Susto \( 56 \):
+\[
+0.5x = 19
+\]
+Multiplico por 2:
+\[
+x = 38
+\]
+
+Por lo tanto, se necesitan 38 caras consecutivas adicionales para que el total de caras represente exactamente el 50% de los lanzamientos totales.
+</think>
+
+**Raonament:**
+
+Después de 150 lanzamientos, se han obtenido 56 caras. Queremos determinar cuántas caras consecutivas se necesitan para que las caras representen exactamente el 50% del total de lanzamientos.
+
+Sea \( x \) el número de caras consecutivas adicionales necesarias. El total de caras será \( 56 + x \), y el total de lanzamientos será \( 150 + x \). Para que las caras representen el 50%, se debe cumplir:
+
+\[
+\frac{56 + x}{150 + x} = 0.5
+\]
+
+Multiplicando ambos lados por \( 150 + x \):
+
+\[
+56 + x = 75 + 0.5x
+\]
+
+Restando \( 0.5x \) y restando 56:
+
+\[
+0.5x = 19 \implies x = 38
+\]
+
+**Resposta:**
+
+E) 38

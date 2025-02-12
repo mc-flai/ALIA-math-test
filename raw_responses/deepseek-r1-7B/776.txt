@@ -1,0 +1,31 @@
+<think>
+Vamos a resolver este problema paso a paso.
+
+Primero, identifico que se trata de una sucesión donde cada término se obtiene sumando 1 a la suma de las cifras del término anterior y luego elevando el resultado al cuadrado. El primer término es 49, es decir, a₁ = 49.
+
+Calculo el segundo término:
+a₂ = (4 + 9 + 1)² = 196
+
+Luego, continúo con los siguientes términos para detectar un posible patrón o ciclo:
+
+- a₃: Sumo las cifras de 196 => 1 + 9 + 6 = 16; luego sumo 1 => 17. Cuadrado: 289
+- a₄: Sumo las cifras de 289 => 2 + 8 + 9 = 19; suma 1 => 20. Cuadrado: 400
+- a₅: Sumo las cifras de 400 => 4 + 0 + 0 = 4; suma 1 => 5. Cuadrado: 25
+- a₆: Sumo las cifras de 25 => 2 + 5 = 7; suma 1 => 8. Cuadrado: 64
+- a₇: Sumo las cifras de 64 => 6 + 4 = 10; suma 1 => 11. Cuadrado: 121
+- a₈: Sumo las cifras de 121 => 1 + 2 + 1 = 4; suma 1 => 5. Cuadrado: 25
+
+Observo que desde a₅ en adelante, la sucesión comienza a repetirse con el ciclo 25 → 64 → 121 → 49. Este ciclo tiene una longitud de 3 términos (después de a₁).
+
+Para determinar a₂₀₁₉, noto que los términos iniciales no forman parte del ciclo y necesito calcular cuántos términos hay dentro del ciclo. Al observar que desde a₂ hasta a₄ no están en el ciclo, me concentro en los términos a partir de a₅.
+
+Calculando la posición dentro del ciclo:
+2019 - 4 = 2015
+Luego, 2015 ÷ 3 da un cociente de 671 con resto 2.
+Esto significa que a₂₀₁₉ corresponde al segundo término en el ciclo: 64.
+</think>
+
+Raonament:
+La successió comença amb a₁ = 49. Calculant els primeros termes, observem un patró que entra en un cicle repetitiu des del terme a₅: 25 → 64 → 121 → 49. Per determinar a₂₀₁₉, notem que depèn del posició dins el cicle. Després de restar els primers 4 termes no pertenencents al cicle, l'index resultant (2015) qualsevol dividido per 3 dóna un restant de 2, corresponent a 64.
+
+Resposta: C) 64

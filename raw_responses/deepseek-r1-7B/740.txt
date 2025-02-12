@@ -1,0 +1,79 @@
+<think>
+Primero, identifico que los dos puntos marcanadas en el disco giran alrededor del centro. Uno está 3 cm más lejos que el otro.
+
+Se menciona que el punto más cercano se mueve a una velocidad 2,5 veces mayor que el otro. Dado que la velocidad angular es la misma para ambos puntos, ya que giran juntos con el disco, la relación entre las velocidades lineales y los radios está dada por v = ωr.
+
+Establezco que si v1 es la velocidad del punto más cercano (r) y v2 es la velocidad del punto más lejano (R), entonces v1 = 2.5 * v2.
+
+Sustituyendo en la fórmula de velocidad lineal, tengo ωr = 2.5 * ωR. Al cancelar ω, queda r = 2.5R.
+
+Conocemos que R = r + 3 cm. Sustituyendo en la ecuación anterior, obtengo r = 2.5(r + 3).
+
+Resolviendo para r, despejo r = 2.5r + 7.5, lo que simplifica a -1.5r = 7.5 y finalmente r = 5 cm.
+
+Entonces, R = 5 + 3 = 8 cm.
+</think>
+
+**Raonament:**
+
+Sabem que dos punts estan marcatges en un disc que gira al voltant del seu centre. Un punt es mou a una velocitat 2,5 vegades més ràpida que l'altre. La velocitat lineal d'un punt en circumferència es dona per la fórmula \( v = \omega r \), on \( \omega \) és la velocitat angular (la mateixa per tots dos punts, ja que el disc gira com un cossistent) i \( r \) és el radi de la circumferència.
+
+Donat que un punt està 3 cm més lluny del centre, anomenem:
+- \( r \) com el radi del punt més proper.
+- \( R = r + 3 \) cm com el radi del punt més llunyat.
+
+La velocitat lineal del punt més proper és \( v_1 = \omega r \).
+La velocitat lineal del punt més llunyat és \( v_2 = \omega R \).
+
+Segons la informació donada, \( v_1 = 2.5 \cdot v_2 \). Substituïnt les expressions de les velocitats:
+\[
+\omega r = 2.5 (\omega (r + 3))
+\]
+Dividim per \( \omega \) (que no és zero):
+\[
+r = 2.5(r + 3)
+\]
+Expanding the right side:
+\[
+r = 2.5r + 7.5
+\]
+Subtracting \( 2.5r \) from both sides:
+\[
+r - 2.5r = 7.5 \\
+-1.5r = 7.5
+\]
+Dividim per \( -1.5 \):
+\[
+r = \frac{7.5}{-1.5} = -5 \, \text{cm}
+\]
+Aquest resultat no fa sentit físic (un radi negatiu), el que significa que hi ha hauria un error en la interpretació de quin punt està més llunyat i quin està més proper. En realitat, l'equació correcta s'hauria resoldre com:
+\[
+r = 2.5(R) \quad \text{on} \quad R = r + 3
+\]
+Substituïnt \( R = r + 3 \):
+\[
+r = 2.5(r + 3)
+\]
+Expanding:
+\[
+r = 2.5r + 7.5 \\
+-1.5r = 7.5 \\
+r = -5 \, \text{cm}
+\]
+De nou obtenim un radi negatiu, el qual no és físicament possible. Però si invertim la relació de velocitats:
+\[
+v_2 = 2.5 v_1
+\]
+Entonces:
+\[
+\omega R = 2.5 (\omega r) \\
+R = 2.5 r \\
+r + 3 = 2.5 r \\
+3 = 2.5r - r \\
+3 = 1.5r \\
+r = \frac{3}{1.5} = 2 \, \text{cm}
+\]
+Luego, \( R = r + 3 = 2 + 3 = 5 \, \text{cm} \).
+
+**Resposta:**
+E) 5 cm

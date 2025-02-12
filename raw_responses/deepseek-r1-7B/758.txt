@@ -1,0 +1,41 @@
+<think>
+Primero, identifico los extremos del interval dado. 2¹⁰ es igual a 1024 y 2¹³ es 8192.
+
+Luego, determino cuántos números enteros hay entre estos dos valores inclusive. Esto se calcula restando 1024 de 8192 y sumando 1 (para incluir ambos extremos), lo que da 7169 números en total.
+
+Ahora, busco los números dentro de este rango que sean divisibles por 2¹⁰, es decir, por 1024. Esto ocurre cuando un número se puede expresar como 1024 multiplicado por algún entero k.
+
+Para encontrar el valor mínimo de k, divido 1024 entre sí mismo, lo que da k = 1 (número: 1024).
+
+Para encontrar el valor máximo de k, divido 8192 entre 1024, lo que da k = 8 (número: 8192).
+
+Por lo tanto, los valores de k van desde 1 hasta 8, inclusive. Cada incremento en k produce un número divisible por 1024 dentro del intervalo especificado.
+
+Finalmente, concluyo que hay 8 números enteros entre 1024 y 8192 que son divisibles por 1024.
+</think>
+
+**Raonament:**
+
+Per resoldre la pregunta, hem de determinar quants nombres enters entre \(2^{10}\) i \(2^{13}\), ambdós inclosos, són divisibles per \(2^{10}\).
+
+1. **Identificar els límits del rang:**
+   - \(2^{10} = 1024\)
+   - \(2^{13} = 8192\)
+
+2. **Calcular els nombres enters en aquest interval:**
+   - Els nombres són tots els enteros de 1024 a 8192, inclosos.
+
+3. **Determinar quants d'aquests nombres són divisibles per \(2^{10}\):**
+   - Un nombre divisible per \(2^{10}\) pot ser expressat com \(k \times 2^{10}\), on \(k\) és un enter.
+   - Busquem els valors de \(k\) tals que \(1024 \leq k \times 1024 \leq 8192\).
+
+4. **Resolver per \(k\):**
+   - Dividim cada límit per \(1024\):
+     - \(k_{\text{min}} = \frac{1024}{1024} = 1\)
+     - \(k_{\text{max}} = \frac{8192}{1024} = 8\)
+
+5. **Calcular el nombre total de valors de \(k\):**
+   - Els valors possibles de \(k\) són 1, 2, 3, ..., 8.
+   - En total, hi ha 8 nombres.
+
+**Resposta: D) 8**

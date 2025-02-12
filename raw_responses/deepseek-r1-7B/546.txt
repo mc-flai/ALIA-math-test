@@ -1,0 +1,55 @@
+<think>
+Primero, entiendo que los dos cangurús, A y B, parten del mismo punto y comienzan a saltar en línea recta en la misma dirección. Los saltos son simultáneos.
+
+Cada salto de A es de 6 metros. En cambio, el primer salto de B es de 1 metro, el segundo de 2 metros, el tercero de 3 metros, y así sucesivamente. Quiero determinar cuántos saltos debe hacer B para agarrar a A.
+
+Definiré n como el número de saltos que realiza B. En ese caso, la distancia total recorrida por B después de n saltos será la suma de los primeros n términos de la serie 1 + 2 + 3 + ... + n, es decir, S = n(n + 1)/2.
+
+Por otro lado, A, realizando saltos constantes de 6 metros, habrá recorrido una distancia de 6n metros después de n saltos.
+
+Para que B agarre a A, la distancia recorrida por B debe ser igual o mayor que la de A. Por lo tanto, establezco la ecuación:
+
+n(n + 1)/2 ≥ 6n
+
+Simplifico esta desigualdad:
+
+n^2 + n ≥ 12n  
+n^2 - 11n ≥ 0
+
+Factorizo la expresión:
+
+n(n - 11) ≥ 0
+
+Esto implica que n ≥ 11, ya que n no puede ser negativo.
+
+Por lo tanto, B debe realizar al menos 11 saltos para alcanzar o superar a A.
+</think>
+
+Raonament: 
+
+Per determinar quants salts el cangur B ha de fer per agafar el cangur A, hem de comparar la distància recorrida per cada un després de n salts.
+
+- **Distància del cangur A**: 
+  - Cada salt de A és 6 m.
+  - Desprès de n salts, A ha recorregut \( 6n \) metres.
+
+- **Distància del cangur B**:
+  - El primer salt és 1 m, el segon 2 m, el tercer 3 m, etc.
+  - La distància total desprès de n salts és la suma d'una progresió aritmètica: 
+    \[
+    S = \frac{n(n + 1)}{2}
+    \]
+
+Per que B agafin A, la distància recorrida per B ha de ser igual o major que la del A:
+\[
+\frac{n(n + 1)}{2} \geq 6n
+\]
+Simplificant:
+\[
+n^2 + n \geq 12n \\
+n^2 - 11n \geq 0 \\
+n(n - 11) \geq 0
+\]
+Aquesta desigualtat s'cumpleix quan \( n \geq 11 \). Per tant, B ha de fer almenys 11 salts.
+
+Resposta: **C) 11**

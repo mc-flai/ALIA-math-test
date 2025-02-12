@@ -1,0 +1,65 @@
+<think>
+Vamos a resolver este problema paso a paso.
+
+Primero, identificamos los puntos en una línea recta: A, B, Ci y D. Las distancias entre ellos son:
+
+- A y B: 1 cm
+- B y C: 2 cm
+- C y D: 3 cm
+- D y A: 4 cm
+
+Necesitamos determinar cuáles de estos puntos son los extremos, es decir, los más alejados en la línea recta.
+
+Consideremos las posibles configuraciones de los puntos:
+
+1. **Configuración en orden**: A-B-C-D
+   - Distancias: AB = 1 cm, BC = 2 cm, CD = 3 cm
+   - Distancia total AD = AB + BC + CD = 1 + 2 + 3 = 6 cm
+
+   En este caso:
+   - La distancia DA es 6 cm, pero el problema indica que DA es 4 cm. Esto no coincide.
+
+2. **Configuración alternativa**: A-B-C-D-A
+   - Supongamos que los puntos forman un círculo, pero el enunciado menciona una línea recta, por lo que esto no es posible.
+
+3. **Posibilidad de que D se encuentre antes de A**:
+   - Si consideramos la configuración: C-B-A-D
+     - Distancias: CB = 2 cm, BA = 1 cm, AD = 4 cm
+     - Total CA = CB + BA = 2 + 1 = 3 cm
+     - Distancia CD = 3 cm, lo que coincide con la distancia dada (C-D = 3 cm)
+   - En este caso:
+     - Los extremos serían C y D, ya que están más alejados.
+
+Después de analizar las diferentes configuraciones, vemos que la única que cumple con todas las distancias es cuando los puntos se encuentran en el orden C-B-A-D. Por lo tanto, los extremos son C y D.
+</think>
+
+Raonament:  
+Per resoldre aquest problema, hem de determinar quins punts són els extrems donats les distàncies entre ells i que estan en una línia recta.  
+
+- Ens dissen que hi ha quatre punts (A, B, C, D) en una línia recta.  
+- Les distàncies entre els punts són: AB = 1 cm, BC = 2 cm, CD = 3 cm i DA = 4 cm.  
+
+Per trobar els extrems, hem de posar a llargs els punts en un ordre possible. Com que estan en una línia recta, podem representar-los en un eix de coordenades.  
+
+Si supongem que el punt A està a la posició 0, llavors:  
+- Punt B està a 1 cm (AB = 1).  
+- Punt C està a 3 cm (B+C=2 cm, donc 1 + 2 = 3).  
+- Punt D està a 6 cm (C+D=3 cm, donc 3 + 3 = 6).  
+
+No obstant, la distància DA és donada com 4 cm. Si A està a 0 i D està a 6 cm, DA seria 6 cm, no 4 cm. Això no coincideix.  
+
+Un altre ordre possible:  
+- Punt C està a 0 cm.  
+- Punt B està a -2 cm (BC = 2 cm).  
+- Punt A està a -3 cm (B-A =1 cm, donc -2 + (-1) = -3).  
+- Punt D està a 3 cm (C-D=3 cm, donc 0 + 3 = 3).  
+
+Aquest ordre s'ajusta:  
+- C-B-A-D.  
+- Les distàncies coincideixen: AB =1 cm, BC=2 cm, CD=3 cm i DA=4 cm (distància de D a A: | -3 - 3 | =6 cm?? No, això no coincideix.)  
+
+Pàraules, hi ha una contradicció. Si C està a 0, B a 2, A a 1, i D a 3, llavors DA =2 cm, no4 cm.  
+
+Així que el solució correcta és què els extrems són C i D, sense tenir en compte la posició exacte dels punts.  
+
+Resposta: B) BiD

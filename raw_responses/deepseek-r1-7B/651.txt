@@ -1,0 +1,93 @@
+<think>
+Primero, entiendo que se nos da un número de tres dígitos. Al quitarle una de sus cifras (el primer dígito), queda un número de dos dígitos. Este número multiplicado por 7 da el número original de tres dígitos.
+
+Vamos a representar al número de tres dígitos como ABC, donde A es la primera cifra y B y C las siguientes. Al quitarle A, obtenemos BC, que es un número de dos dígitos.
+
+Según el enunciado: BC * 7 = ABC
+
+Esto se puede traducir matemáticamente:
+(10B + C) * 7 = 100A + 10B + C
+
+Expandimos la izquierda:
+70B + 7C = 100A + 10B + C
+
+Reorganizamos términos:
+70B - 10B + 7C - C = 100A
+60B + 6C = 100A
+
+Simplificando:
+Dividimos ambos lados por 2:
+30B + 3C = 50A
+
+Despejamos A:
+50A = 30B + 3C
+A = (30B + 3C)/50
+
+Dado que A debe ser un dígito entero entre 1 y 9, evaluamos posibles valores de B y C para que (30B + 3C) sea divisible por 50.
+
+Intentando valores:
+- Si B=1 y C=0: 30*1 + 3*0 =30 → A=30/50=0.6 (no entero)
+- Si B=2 y C=0: 60+0=60 → A=60/50=1.2 (no entero)
+- Si B=4 y C=0: 120 +0=120 → A=120/50=2.4 (no entero)
+- Si B=3 y C=0:90+0=90→A=90/50=1.8(no entero)
+
+Vamos probando con valores de C no cero:
+- B=1, C=0 no funcionó.
+- Pruebe B=1 y C=6: 30*1 + 3*6 =30+18=48 → A=48/50=0.96 (no entero)
+- B=2, C=10/ No válido.
+
+Continuamos hasta encontrar:
+B=1, C=0 no.
+B=2, C=0: 60→A=1.2
+No es entero.
+
+Probemos B=4 y C=0: 120 → A=2.4
+
+No. Probemos B=5, C=0:150→A=3.
+
+Ahora verificamos si ABC es un número de tres dígitos donde BC*7 =ABC.
+
+Si B=5, C=0:
+BC=50
+50 *7=350
+
+Entonces A=3, ya que el número original es 350.
+
+Verificamos: 50 *7=350 ✓
+
+Por lo tanto, la primera cifra que se ha quitado es 3.
+</think>
+
+Raonament:
+Seguirem els passos següents:
+
+1. **Representació del problema matemàticament:**  
+   - El nombre original de tres xifres es pot representar com \(100A + 10B + C\), on \(A\), \(B\) i \(C\) són les xifres, amb \(A \neq 0\).  
+   - Quan se lleva la primera xifa (\(A\)), el nombre resultant és \(10B + C\).  
+
+2. **Estatut de l'equació:**  
+   Conformem l'estatut donat:  
+   \[
+   (10B + C) \times 7 = 100A + 10B + C
+   \]  
+   Simplificant, obtenim:  
+   \[
+   70B + 7C = 100A + 10B + C \\
+   60B + 6C = 100A \\
+   10B + B' = 16.\overline{6}A
+   \]  
+   Observem que \(A\) ha de ser un enters, per tant, buscarem valors d'\(B\) i \(C\) que facin que \(100A\) sigui divisible per 6.
+
+3. **Ensenyament dels valors possibles:**  
+   - Proba les opcions donades:  
+     - **Opció C) 3:**  
+       \[
+       A = 3 \\
+       10B + B' = 50
+       \]  
+       El nombre resultant \(BC\) serà \(50\), ja que \(50 \times 7 = 350\).  
+
+4. **Conclusió:**  
+   La xifa que hem llevat és \(3\).
+
+Resposta: C)

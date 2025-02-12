@@ -1,0 +1,74 @@
+<think>
+Primero, entiendo que necesito calcular la suma de las cuatro cifras que representan el día y el mes para cada fecha en el año 2018. El ejemplo dado es el 22/03/2018, donde se suman 2 + 2 + 0 + 3 = 7.
+
+Mi objetivo es encontrar la máxima suma posible. Para ello, debo identificar cuál es la fecha que maximiza esta suma.
+
+Considero que los meses van del 01 al 12. Los días dependen del mes; por ejemplo, febrero en 2018 no era un año bisiesto, así que tenía 28 días. Sin embargo, para maximizar, me interesa el día más grande posible.
+
+Reviso cada mes:
+- Enero (01): Día hasta 31.
+- Febrero (02): Hasta 28 días.
+- Marzo (03): Hasta 31 días.
+- ...
+- Diciembre (12): Hasta 31 días.
+
+Para obtener la suma máxima, necesito que las cifras del día y mes sean lo más grandes posible. Por ejemplo:
+- Mes de diciembre (12) tiene cifras 1 y 2, sumando 3.
+- Un día como 31 tiene cifras 3 y 1, sumando 4.
+
+Sumando estas: 1 + 2 + 3 + 1 = 7. Pero esto no es suficiente.
+
+Después de analizar, me doy cuenta de que meses con dos dígitos altos, como septiembre (09), octubre (10), noviembre (11) y diciembre (12), combinados con días también grandes, proporcionarán sumas más altas.
+
+Considero el 31 de diciembre: 3 + 1 + 1 + 2 = 7. No es mejor que anterior.
+
+Luego, me concentro en meses con dígitos más altos, como septiembre (09) o octubre (10). Por ejemplo:
+- 31/09/2018: 3 + 1 + 0 + 9 = 13.
+- 30/10/2018: 3 + 0 + 1 + 0 = 4. No es mejor.
+
+Finalmente, me doy cuenta de que los meses con dos dígitos altos (como 09 o 10) y días también elevados proporcionan las sumas más grandes. 
+
+Después de probar varias combinaciones, determino que la suma máxima es 22, lograda en fechas como el 30/09/2018: 3 + 0 + 0 + 9 = 12, lo cual no es correcto.
+
+Reviso nuevamente y me doy cuenta de un error. Debería considerar días con dos dígitos altos en meses también con dos dígitos altos:
+
+- 31/09/2018: 3 + 1 + 0 + 9 = 13.
+- 30/10/2018: 3 + 0 + 1 + 0 = 4.
+- 29/11/2018: 2 + 9 + 1 + 1 = 13.
+- 28/12/2018: 2 + 8 + 1 + 2 = 13.
+
+No estoy obteniendo una suma mayor a 13, lo cual contradice las opciones dadas que van hasta 22. Me doy cuenta de que quizás he interpretado mal la fecha.
+
+Revisando el ejemplo, 22/03/2018 se interpreta como 2+2+0+3=7. Entonces, para maximizar, necesitamos meses con dígitos altos y días también.
+
+Considero que los meses van del 01 al 12, por lo que el mes de diciembre (12) tiene dígitos 1 y 2, sumando 3. Para maximizar, quizás un mes como septiembre (09), con dígitos 0 y 9, sumando 9.
+
+Ahora, combino este mes con días que tengan dígitos altos:
+- 30/09/2018: 3 + 0 + 0 + 9 = 12.
+- 29/09/2018: 2 + 9 + 0 + 9 = 20.
+
+Ahora, una suma de 20. Es posible que exista una fecha con suma mayor.
+
+Reviso:
+- Mes 09 (sumando 0+9=9) y día 30 (3+0=3), total 12.
+- Día 29/09: 2+9 + 0+9 = 20.
+- Día 28/09: 2+8 + 0+9 = 19.
+
+También, mes de agosto (08): 0+8=8. Un día como 30/08: 3+0 + 0+8=11.
+
+Me doy cuenta de que el 29/09/2018 da una suma de 20, lo cual es una de las opciones.
+
+Pero me pregunto si hay una fecha con mayor suma. Por ejemplo:
+
+- Día 31/07/2018: 3+1 + 0+7=11.
+- Día 31/06/2018: 3+1 + 0+6=10.
+
+No, no supera los 20.
+
+Entonces, concluyo que el número más grande posible es 20.
+</think>
+
+Raonament:
+Per calcular el nombre més gran associat a una data de l'any 2018, hem de maximitzar la suma dels quatre dígits del dia i mes. Els mesos van des de 01 a 12, i els dies depenen del mes (per exemple, febre no tenia 29 dies en 2018). La suma més gran es pot obtenir combinant un dia amb digits altos i un mes amb digits altos. Un exemple és el 30 de setembre de 2018 (30/09/2018), on la suma és 3 + 0 + 0 + 9 = 12, però hi ha dates com el 29/09/2018 on la suma és 2 + 9 + 0 + 9 = 20, que és una de les opcions donades.
+
+Resposta: B) 20

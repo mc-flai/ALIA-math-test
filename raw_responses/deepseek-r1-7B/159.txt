@@ -1,0 +1,38 @@
+<think>
+Primero, necesito calcular la posición de cada aguja en el reloj.
+
+Para la hora:
+- A las 12 horas y 20 minutos, la aguja de las horas no está exactamente en las 12. Se mueve a razón de 360 grados por 12 horas, lo que equivale a 0.5 grados por minuto.
+- En 20 minutos, la aguja de las horas se desplaza 20 * 0.5 = 10 grados.
+
+Para los minutos:
+- La aguja de los minutos en 20 minutos está en el 4 (ya que cada número representa 5 minutos). 
+- Cada número marca 30 grados, por lo que 4 * 30 = 120 grados.
+
+Ahora, calculo la diferencia entre las posiciones:
+- La aguja de los minutos está en 120 grados.
+- La aguja de las horas está en 10 grados.
+- La diferencia es |120 - 10| = 110 grados.
+
+Finalmente, verifico si esta diferencia es menor que 180 grados para asegurar la menor ángulo posible. En este caso, 110 grados cumple con esa condición.
+</think>
+
+Raonament: 
+
+Per calcular l'angle entre les dues agulles d'un rellotge a les 12 hores i 20 minuts, seguirem els passos següents:
+
+1. **Posició de l'agulla dels minuts:**
+   - A les 20 minuts, l'agulla dels minuts se situa a 20/60 del circumsferència.
+   - Cada minut correspon a 6 graus (360 graus / 60 minuts).
+   - Angle de l'agulla dels minuts: \(20 \times 6 = 120^\circ\).
+
+2. **Posició de l'agulla delles hores:**
+   - A les 12 hores i 20 minuts, l'agulla delles hores no està exactament a les 12, sinó que ha avançat un peu per als 20 minuts.
+   - Cada hora correspon a 30 graus (360 graus / 12 hores), i cada minut, l'agulla delles hores avança \(30/60 = 0.5\) graus per minut.
+   - Angle de l'agulla delles hores: \(20 \times 0.5 = 10^\circ\).
+
+3. **Càlcul de l'angle entre les dues agulles:**
+   - La diferència en graus entre les dues posicions és \( |120^\circ - 10^\circ| = 110^\circ \).
+   - Com aquest angle (110°) és menor que 180°, és el angle correcte.
+
+Resposta: C) 110°

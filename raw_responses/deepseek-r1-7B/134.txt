@@ -1,0 +1,72 @@
+<think>
+Primero, entiendo que necesito encontrar todos los números naturales n tales que al dividirlos por 7 dé un residuo igual al cociente. Matemáticamente, esto se puede expresar como:
+
+n = 7 * q + r
+
+donde q es el cociente y r es el residuo. Según la condición dada, r = q.
+
+Así que, reemplazando r por q en la ecuación, obtenemos:
+
+n = 7q + q = 8q
+
+Esto significa que los números naturales que cumplen con esta condición son los múltiplos de 8.
+
+Sin embargo, es importante considerar el rango de valores posibles para q. Dado que r es un residuo al dividir por 7, su valor debe estar en el intervalo [0, 6]. Por lo tanto, q también debe ser menor o igual a 6, ya que si q fuera mayor que 6, r = q no sería menor que 7.
+
+Por lo tanto, los posibles valores de q son 0, 1, 2, 3, 4, 5 y 6. Calculando n para cada uno de ellos:
+
+- Para q=0: n = 8*0 = 0 (aunque usualmente no se considera 0 un número natural)
+- Para q=1: n = 8*1 = 8
+- Para q=2: n = 8*2 = 16
+- Para q=3: n = 8*3 = 24
+- Para q=4: n = 8*4 = 32
+- Para q=5: n = 8*5 = 40
+- Para q=6: n = 8*6 = 48
+
+Excluyendo 0, los números naturales que cumplen con la condición son 8, 16, 24, 32, 40 y 48. Sumando estos números:
+
+8 + 16 = 24  
+24 + 24 = 48  
+48 + 32 = 80  
+80 + 40 = 120  
+120 + 48 = 168
+
+La suma total de estos números es 168.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, busquemos tots els nombres naturals \( n \) tals que al dividir per 7, el residu sigui igual al quocient. MatemàticAMENT, això vol dir:
+
+\[
+n = 7 \times q + r
+\]
+
+on \( q \) és el quocient i \( r \) és el residu. Segons la condició donada, \( r = q \). Reemplazant, obtinguem:
+
+\[
+n = 7q + q = 8q
+\]
+
+Això vol dir que els nombres naturals que completen la condició són multiples de 8.
+
+Per determinar quants d'aquests nombres hi ha, considerem que \( r \) és el residu al dividir per 7, el qual pot ser 0, 1, 2, 3, 4, 5 o 6. Per tant, \( q \) també pots ser aquests valors.
+
+Calculant els valors de \( n \):
+
+- \( q = 1 \): \( n = 8 \times 1 = 8 \)
+- \( q = 2 \): \( n = 8 \times 2 = 16 \)
+- \( q = 3 \): \( n = 8 \times 3 = 24 \)
+- \( q = 4 \): \( n = 8 \times 4 = 32 \)
+- \( q = 5 \): \( n = 8 \times 5 = 40 \)
+- \( q = 6 \): \( n = 8 \times 6 = 48 \)
+
+Sumant tots aquests nombres:
+
+\[
+8 + 16 + 24 + 32 + 40 + 48 = 168
+\]
+
+**Resposta:**
+
+B) 168

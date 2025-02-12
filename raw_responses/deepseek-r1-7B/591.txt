@@ -1,0 +1,57 @@
+<think>
+Primero, identifico que cada caja n contiene exactamente n pelotas numeradas de manera consecutiva. La primera caja (n=1) tiene 1 pelota con el número 1. La segunda caja (n=2) tiene 2 pelotas: 2 y 3. La tercera caja (n=3) tiene 3 pelotas: 4,5 y 6, y así sucesivamente.
+
+Quiero determinar en qué caja se encuentra la pelota número 2018. Para esto, necesito encontrar un patrón o fórmula que me permita calcular directamente en qué caja se ubica el número 2018.
+
+Observo que la suma de los números naturales hasta una cierta cantidad da el último número contenido en las cajas anteriores. Es decir, la suma S(n) = 1 + 2 + 3 + ... + n = n(n+1)/2 da el último número en la caja n.
+
+Quiero encontrar el valor de n tal que S(n-1) < 2018 ≤ S(n). Esto significa que necesito resolver la desigualdad n(n+1)/2 ≥ 2018 para encontrar la caja correspondiente.
+
+Multiplicando ambos lados por 2, obtengo:
+n² + n - 4036 ≥ 0
+
+Utilizo la fórmula cuadrática para resolver n:
+n = [-1 ± sqrt(1 + 4*4036)] / 2
+= [-1 ± sqrt(16145)] / 2
+Aproximando sqrt(16145) ≈ 127.09
+
+Entonces, n ≈ ( -1 + 127.09 ) / 2 ≈ 63.04
+
+Como n debe ser entero, verifico con n=63:
+S(63) = 63*64/2 = 2016
+Y S(64)=64*65/2=2080
+
+Dado que 2018 > 2016 y 2018 < 2080, la pelota número 2018 se encuentra en la caja n=64.
+
+Revisando las opciones proporcionadas, la correcta es D) 64.
+</think>
+
+Raonament:
+
+Per determinar en quina caixa hi haurà la pilota amb el número 2018, procedim com següent:
+
+1. **Entendre l'estructura dels contenidors:**
+   - La caixa n conté exactament n pilotes numerades de manera consecutiva.
+   - Exemple:
+     - Càixer 1: 1
+     - Càixer 2: 2, 3
+     - Càixer 3: 4, 5, 6
+     - I així successivament.
+
+2. **Establec un mètode per localitzar el número 2018:**
+   - La suma S(n) = 1 + 2 + 3 + ... + n = n(n+1)/2 dona el últim número en la caixa n.
+   - Busquem n tal que S(n-1) < 2018 ≤ S(n).
+
+3. **Resolem l'equació:**
+   - Cerquem n on n(n+1)/2 ≥ 2018
+   - Multiplicant per 2: n² + n - 4036 ≥ 0
+   - Utilitzant la fórmula de la xiqueta:
+     \[
+     n = \frac{-1 ± \sqrt{1 + 4 \times 4036}}{2} ≈ 63.04
+     \]
+   - Arredondant per defecte, n = 63. Verifiquem:
+     - S(63) = 63×64/2 = 2016
+     - S(64) = 64×65/2 = 2080
+   - Tot 2016 < 2018 ≤ 2080, la pilota està en la caixa 64.
+
+Resposta: D) 64

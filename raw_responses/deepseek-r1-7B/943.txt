@@ -1,0 +1,82 @@
+<think>
+Primero, entiendo que necesito resolver la ecuación |x - 2019| + |x − 2020| = 3 para encontrar los valores reales x que cumplen con esta condición. Luego, una vez que tenga esos valores, debo sumarlos y elegir la respuesta correcta entre las opciones dadas.
+
+Sé que las expresiones con valor absoluto suelen representar distancias en el eje numérico. Así que interpreto |x - 2019| como la distancia de x a 2019, y |x − 2020| como la distancia de x a 2020. La suma de estas distancias es igual a 3.
+
+Considero que las dos constantes, 2019 y 2020, están muy cerca una de la otra, exactamente a una unidad de distancia apartados (ya que 2020 - 2019 = 1). Por lo tanto, si x se encuentra entre estos dos números, la suma de las distancias sería justamente 1. Sin embargo, en este caso, el resultado es 3, lo que significa que x no está dentro del intervalo [2019, 2020].
+
+Para resolver esto, analizo los casos posibles basados en la posición de x respecto a 2019 y 2020.
+
+**Caso 1: x < 2019**
+
+En este caso, ambos términos del valor absoluto son negativos:
+
+|x - 2019| = 2019 - x
+
+|x − 2020| = 2020 - x
+
+Sumando estos, la ecuación se convierte en:
+(2019 - x) + (2020 - x) = 3
+Simplifico:
+4039 - 2x = 3
+-2x = 3 - 4039
+-2x = -4036
+x = (-4036)/(-2)
+x = 2018
+
+**Caso 2: x > 2020**
+
+Aquí, ambos términos del valor absoluto son positivos:
+
+|x - 2019| = x - 2019
+
+|x − 2020| = x - 2020
+
+Sumando:
+(x - 2019) + (x - 2020) = 3
+Simplifico:
+2x - 4039 = 3
+2x = 3 + 4039
+2x = 4042
+x = 4042/2
+x = 2021
+
+**Caso 3: 2019 ≤ x ≤ 2020**
+
+En este intervalo, la suma de las distancias es siempre 1, que no cumple con el resultado esperado de 3. Por lo tanto, no hay soluciones en este caso.
+
+Después de resolver los casos 1 y 2, he encontrado que los valores reales x que cumplen con la ecuación son 2018 y 2021. Ahora, sumo estos dos números:
+
+2018 + 2021 = 4039
+
+Reviso las opciones dadas para ver cuál coincide con 4039.
+</think>
+
+Raonament: 
+
+La ecuación |x - 2019| + |x − 2020| = 3 describe la suma de distancias de x a los puntos 2019 y 2020 en el eje numérico. Dado que 2019 y 2020 están a una unidad de distancia apartados, la suma de sus distancias será igual a 1 si x se encuentra entre ellos. Sin embargo, aquí la suma es 3, lo que indica que x debe estar fuera del intervalo [2019, 2020].
+
+Analizando los casos donde x < 2019 y x > 2020:
+
+- **Caso 1 (x < 2019):**
+  \[
+  |x - 2019| + |x - 2020| = (2019 - x) + (2020 - x) = 4039 - 2x = 3 \\
+  -2x = 3 - 4039 \\
+  -2x = -4036 \\
+  x = 2018
+  \]
+
+- **Caso 2 (x > 2020):**
+  \[
+  |x - 2019| + |x - 2020| = (x - 2019) + (x - 2020) = 2x - 4039 = 3 \\
+  2x = 3 + 4039 \\
+  2x = 4042 \\
+  x = 2021
+  \]
+
+La suma de los valores reales es:
+\[
+2018 + 2021 = 4039
+\]
+
+Resposta: E)

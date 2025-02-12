@@ -1,0 +1,67 @@
+<think>
+Primero, identifico las edades actuales de cada miembro de la familia. La madre tiene 36 años, los dos hijos varones tienen 13 y 4 años respectivamente, y la hija tiene 6 años.
+
+Luego, calculo la suma actual de las edades de los dos hijos: 13 + 4 = 17 años. A esto le sumo la edad de la hija, que es 6 años, obteniendo un total de 23 años.
+
+Ahora, defino una variable 'x' que representará el número de años que pasarán hasta que la suma de las edades de los dos hijos y su hermana supere la edad de la madre. Al cabo de esos años, cada miembro aumentará su edad en 'x', por lo que:
+
+- La madre tendrá 36 + x años.
+- Los hijos tendrán 13 + x y 4 + x años respectivamente.
+- La hija tendrá 6 + x años.
+
+Calculo la nueva suma de las edades de los dos hijos: (13 + x) + (4 + x) = 17 + 2x. A esto le sumo la edad actualizada de la hija, que es 6 + x, resultando en una suma total de 23 + 3x.
+
+Para determinar cuándo esta suma supere la edad de la madre, establezco la desigualdad:
+
+23 + 3x > 36 + x
+
+Simplifico la desigualdad restando 'x' de ambos lados y luego restando 23:
+
+2x > 13
+
+Divido ambos lados por 2 para encontrar el valor mínimo de 'x':
+
+x > 6.5
+
+Como los años no se pueden dividir en fracciones, redondeo hacia arriba al próximo entero, que es 7 años.
+
+Finalmente, verifico si con 7 años cumplimos la condición:
+
+Suma actualizada: 23 + 3*7 = 44
+Edad de la madre: 36 + 7 = 43
+
+44 > 43, por lo que 7 años son suficientes.
+</think>
+
+**Raonament:**
+
+Actualmente:
+- Edat de la mare: 36 anys
+- Edats dels fills: 13 anys (fill major) i 4 anys (fill menor)
+- Edat de la filla: 6 anys
+
+Volem trobar quants anys han de passar perquè la suma de les edats dels dos fills més la de la filla supere l'edat de la mare.
+
+Siguin x els anys que han de passar.
+
+Al cap de x anys:
+- Edat de la mare: 36 + x
+- Edats dels fills: 13 + x (fill major) i 4 + x (fill menor)
+- Edat de la filla: 6 + x
+
+La suma de les edats dels dos fills més la de la filla al cap de x anys serà:
+(13 + x) + (4 + x) + (6 + x) = 23 + 3x
+
+Volem que aquesta suma supere l'edat de la mare:
+23 + 3x > 36 + x
+
+Resolvem l'inequació:
+23 + 3x > 36 + x  
+23 - 36 + 3x - x > 0  
+-13 + 2x > 0  
+2x > 13  
+x > 6,5
+
+Després de 6,5 anys, la suma superarà l'edat de la mare. Però com no podem haver desmigades d'any, hem de posar x = 7 anys.
+
+**Resposta:** C) 7

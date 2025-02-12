@@ -1,0 +1,47 @@
+<think>
+Bueno, voy a intentar resolver este problema paso a paso. Primero, entiendo que hay un cubo grande de madera que tiene las caras externas pintadas de rojo. Luego, se corta el cubo en 27 pequeños cubos iguales, utilizando cortes paralelos a las caras y dividiendo cada arista del cubo grande en tres partes iguales.
+
+Primero, visualizo que un cubo dividido en 3 partes por cada arista resultará en una división de 3x3x3, lo que da 27 cubos menores. Ahora, me pregunto cuántas caras de estos pequeños cubos no están pintadas de rojo.
+
+Para ello, considero las posiciones de los pequeños cubos dentro del cubo grande:
+
+1. **Cubos en las esquinas**: Están en los vértices del cubo grande y tienen 3 caras pintadas. Pero como queremos saber cuántas caras NO están pintadas, cada cubo de esquina tiene 3 caras pintadas y 3 que no (ya que un cubo tiene 6 caras). Sin embargo, en este caso, al ser dividido, los cubos de las esquinas del gran cubo se convertirán en pequeños cubos con 3 caras pintadas.
+
+2. **Cubos en los bordes pero no en las esquinas**: Estos están en las aristas del cubo grande y tienen 2 caras pintadas. Por lo tanto, cada uno tiene 4 caras que NO están pintadas.
+
+3. **Cubos en las caras pero no en los bordes ni esquinas**: Están en el centro de cada cara del cubo grande y tienen 1 cara pintada. Así, poseen 5 caras sin pintura.
+
+4. **Cubos en el interior del cubo grande**: No están expuestos en las caras externas, por lo que ninguna de sus caras está pintada. Cada uno tiene 6 caras no pintadas.
+
+Ahora, cuento cuántos pequeños cubos hay en cada categoría:
+
+- **Esquinas**: Un cubo tiene 8 esquinas, y cada esquina produce un cubo pequeño con 3 caras pintadas. Pero para las caras NO pintadas, me interesa multiplicar el número de cubos por las caras no pintadas.
+
+- **Bordes (sin esquinas)**: Cada arista del cubo grande tiene 3 cubos, pero los dos extremos son esquinas, dejando un cubo en cada arista que NO es una esquina. Un cubo tiene 12 aristas, así que hay 12 cubos en estos bordes, con 2 caras pintadas y 4 no.
+
+- **Caras centrales**: Cada cara del cubo grande tiene un cubo central (no en el borde), lo que da 6 cubos, cada uno con 5 caras NO pintadas.
+
+- **Cubos interiores**: Sólo hay 1 cubo en el interior (en el centro del cubo grande), con 6 caras no pintadas.
+
+Ahora, calculo las caras no pintadas por cada categoría:
+
+- Esquinas: 8 cubos * 3 caras NO pintadas = 24
+- Bordes: 12 cubos * 4 caras NO pintadas = 48
+- Caras centrales: 6 cubos * 5 caras NO pintadas = 30
+- Interior: 1 cubo * 6 caras NO pintadas = 6
+
+Sumando todas estas, obtenemos: 24 + 48 + 30 + 6 = 108.
+
+Por lo tanto, el número total de caras no pintadas es 108.
+</think>
+
+Raonament:  
+El cubo original es dividido en 3x3x3, resultando en 27 pequeños cubos. Los cubos se encuentran en diferentes posiciones:  
+- **Esquinas**: 8 cubos con 3 caras pintadas → 3 no pintadas cada uno: 8 × 3 = 24.  
+- **Bordes (sin esquinas)**: 12 cubos con 2 caras pintadas → 4 no pintadas cada uno: 12 × 4 = 48.  
+- **Centros de cara**: 6 cubos con 1 cara pintada → 5 no pintadas cada uno: 6 × 5 = 30.  
+- **Cubos interiores**: 1 cubo con 0 caras pintadas → 6 no pintadas: 1 × 6 = 6.  
+
+Total de caras no pintadas: 24 + 48 + 30 + 6 = 108.
+
+Resposta: D) 108

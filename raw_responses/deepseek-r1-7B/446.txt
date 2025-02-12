@@ -1,0 +1,38 @@
+<think>
+Para resolver este problema, primero identifico que los lados del rectángulo son números enteros pares. Por lo tanto, cada lado se puede expresar como 2n y 2m, donde n y m son enteros positivos.
+
+El perímetro de un rectángulo se calcula con la fórmula P = 2 × (largo + ancho). Sustituyendo los valores, el perímetro será 2 × (2n + 2m) = 4(n + m).
+
+Ahora, analizo cada una de las opciones para ver si es divisible por 4:
+- A) 16: 16 ÷ 4 = 4 → Es válido.
+- B) 136: 136 ÷ 4 = 34 → Es válido.
+- C) 180: 180 ÷ 4 = 45 → No es entero, ya que 45 × 4 = 180, pero esto implica que n + m no es entero si seguimos el formato de los lados.
+- D) 246: 246 ÷ 4 = 61.5 → No es entero.
+- E) 300: 300 ÷ 4 = 75 → Es válido.
+
+Finalmente, observo que las opciones C y D no son divisibles exactamente por 4, lo que significa que no pueden ser perimetros válidos de un rectángulo con lados pares enteros.
+</think>
+
+**Raonament:**
+
+- Sabeu que cada costat d'un rectangle ha de ser un nombre parell. Això vol dir que els dos costats són múltiples de 2, com 2n i 2m, on n i m són nombres enters.
+
+- El perímetre P d'un rectangle es calcula amb la fórmula:
+  
+  \( P = 2 \times (\text{largo} + \text{ancho}) \)
+
+- Substituïndolo els valors:
+
+  \( P = 2 \times (2n + 2m) = 4(n + m) \)
+
+- Observem que el perímetre ha de ser un múltiple de 4. Analitzant les opcions:
+  
+  - A) 16: \( 16 ÷ 4 = 4 \) → Viable
+  - B) 136: \( 136 ÷ 4 = 34 \) → Viable
+  - C) 180: \( 180 ÷ 4 = 45 \) → No és enter, no viable
+  - D) 246: \( 246 ÷ 4 = 61.5 \) → No és enter, no viable
+  - E) 300: \( 300 ÷ 4 = 75 \) → Viable
+
+- Això vol dir que els nomers 180 i 246 no poden ser perimetres d'un rectangle amb costats parells, però entre les opcions solament hi ha un correcte.
+
+**Resposta: C)**

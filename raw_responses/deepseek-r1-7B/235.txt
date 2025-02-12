@@ -1,0 +1,53 @@
+<think>
+Vamos analizar el problema paso a paso.
+
+Temos una función f: R → R que satisface dos condiciones:
+
+1. Para todos los x, y en R, f(x + y) = f(x) · f(y).
+2. Para todo x en R, f(x) = 2f(x + 1).
+
+Primero, observemos la primera condición. La ecuación funcional f(x + y) = f(x)f(y) es conocida como multiplicativa, y generalmente las funciones que satisfacen esto son de la forma exponencial, es decir, f(x) = a^{x} para algún número a. Sin embargo, también hay que considerar si hay otras posibilidades.
+
+La segunda condición dice que f(x) = 2f(x + 1). Podemos reescribir esto como f(x + 1) = (1/2)f(x).
+
+Ahora, supongamos que f es de la forma exponencial, es decir, f(x) = a^{x}. Vamos a ver si esta hipótesis se sostiene con las condiciones dadas.
+
+Sustituyendo en la segunda condición:
+f(x + 1) = a^{x + 1} = a · a^{x} = a f(x)
+Pero según la condición, f(x + 1) = (1/2)f(x). Por lo tanto:
+
+a f(x) = (1/2)f(x)
+
+Dividimos ambos lados por f(x), suponiendo que f(x) ≠ 0:
+a = 1/2
+
+Así, la función sería f(x) = (1/2)^x.
+
+Ahora, veremos si esta función satisface las condiciones iniciales.
+
+Primera condición:
+f(x + y) = (1/2)^{x + y} = (1/2)^x · (1/2)^y = f(x)f(y). Cumple.
+
+Segunda condición:
+f(x) = 2f(x + 1)
+(1/2)^x = 2*(1/2)^{x + 1}
+Simplify the right side:
+2*(1/2)^{x}*(1/2)^1 = 2*(1/2)^{x}*(1/2) = (2)*(1/2)*(1/2)^{x} = (1)*(1/2)^{x} = (1/2)^x
+Por lo tanto, se cumple la condición.
+
+Ahora que tenemos f(x) = (1/2)^x, queremos calcular f(2016)/f(2014).
+
+Calculamos:
+f(2016) = (1/2)^{2016}
+f(2014) = (1/2)^{2014}
+
+Entonces,
+f(2016)/f(2014) = [(1/2)^{2016}]/[(1/2)^{2014}] = (1/2)^{2016 - 2014} = (1/2)^2 = 1/4
+
+Revisamos las opciones dadas:
+C) 1/4
+</think>
+
+Raonament: La funció f(x) és de la forma exponencial, concretament f(x) = (1/2)^x. Utilitzant aquesta forma, calculam f(2016)/f(2014) com ((1/2)^{2016}) / ((1/2)^{2014}) = (1/2)^2 = 1/4.
+
+Resposta: C

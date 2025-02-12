@@ -1,0 +1,27 @@
+<think>
+Primero, necesito entender el problema. Tengo que encontrar el valor más pequeño posible de la suma de las dos fracciones a/b + c/d, donde a, b, c y d son números diferentes del conjunto {1, 2, ..., 10}.
+
+Para minimizar la suma, quiero que ambas fracciones sean lo más pequeñas posibles. Por lo tanto, intentaré asignar los valores más pequeños a los numeradores y los más grandes a los denominadores.
+
+Considero las opciones dadas:
+- A) 2/10 + ... pero ya se ve que 2/10 es pequeño.
+- B) 3/19 no es posible porque 19 está fuera del rango de 1 a 10.
+- C) 14/45 tampoco es posible por el mismo motivo.
+- D) 29/90, también inválido.
+- E) 25/72, igualmente no válido.
+
+Entonces me concentro en combinar los números menores para numeradores y los mayores para denominadores. Por ejemplo:
+- a=1, b=8; c=2, d=9: 1/8 + 2/9 = (9+16)/72 = 25/72
+Otra combinación:
+- a=1, b=10; c=2, d=9: 1/10 + 2/9 = (9 + 20)/90 = 29/90
+
+Comparando las fracciones resultantes, 25/72 es mayor que 29/90. Por lo tanto, la suma más pequeña posible sería 29/90.
+
+Finalmente, verifico si hay una combinación que dé un valor menorStill, no encuentro una suma menor que 29/90 con los números disponibles, así que selecciono la opción D.
+</think>
+
+**Raonament:**  
+Per trobar el valor més xicotet de la suma \( \frac{a}{b} + \frac{c}{d} \), volem que les fraccions individualment siguin tan petites com possible. Això implica escollir els numeradors (a i c) als valors menors del conjunt {1, 2, ..., 10}, i els denominadors (b i d) als valors més grans. Una combinació optima és \( a = 1 \), \( b = 8 \); \( c = 2 \), \( d = 9 \), que dona la suma \( \frac{1}{8} + \frac{2}{9} = \frac{25}{72} \). Comparant amb les opcions, la més petita és \( \frac{29}{90} \).
+
+**Resposta:**  
+D) 29/90

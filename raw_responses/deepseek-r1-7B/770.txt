@@ -1,0 +1,125 @@
+<think>
+Bueno, tengo que resolver este problema donde se me pide encontrar para qué valores del parámetro "a" la ecuación 2 - |x| = a x tiene exactamente dos soluciones. Las opciones son cinco: A) de menos infinito a -1, B) de -1 a 1, C) de 1 a más infinito, D) a igual a 0, y E) a igual a -1 o a 1.
+
+Primero, entiendo que la ecuación es 2 - |x| = a x. Y necesito que esta ecuación tenga exactamente dos soluciones. Vamos a ver cómo abordar esto.
+
+Sé que |x| es el valor absoluto de x, lo que significa que es simétrico con respecto al eje y. Por lo tanto, es probable que la gráfica de 2 - |x| sea una V invertida con el vértice en (0, 2). La ecuación a x es una recta con pendiente "a". Quiero encontrar los valores de "a" para los cuales esta recta intersecte la grafica de 2 - |x| exactamente两次.
+
+Vamos a tratar de graficar ambas funciones mentalmente. La función 2 - |x| está compuesta por dos rayos: uno con pendiente +1 y otro con pendiente -1, ambos partiendo del punto (0, 2). 
+
+Entonces, la recta y = a x es una línea que pasa por el origen con una inclinación determinada por "a". Quiero que esta recta intersecte exactamente dos veces algrafico de 2 - |x|.
+
+Para que haya dos soluciones, la recta y = a x debe cortar ambas partes de la V invertida. Es decir, una intersección en el primer cuadrante (donde x es positivo) y otra en el segundo cuadrante (donde x es negativo).
+
+Ahora, consideremos los casos:
+
+1. **Cuando a = 0**: La recta se convierte en y = 0, que es el eje x. Entonces, la ecuación se vuelve 2 - |x| = 0 → |x| = 2, lo que da x = 2 y x = -2. Eso son dos soluciones, así que a=0 también daría dos soluciones.
+
+Pero veo que la opción D es "a=0", pero en las opciones no incluye a=0 como correcta, sino en una de las alternativas. Pero debo considerar si es el único valor o si hay más.
+
+2. **Cuando |a| > 1**: Si a es mayor que 1 en positivo o menor que -1, la recta y = a x será bastante inclinada. Imagino que para "a" positivo mayor que 1, la recta subirá muy rápido, tal vez solo cortando una parte de la V invertida, lo mismo para "a" negativo menor que -1, quizás también solo una intersección.
+
+3. **Cuando |a| < 1**: En este caso, la pendiente es más suave. La recta y = a x ascenderá o descenderá menos bruscamente. Por lo tanto, probablemente cortará ambas partes de la V invertida, dándonos dos soluciones.
+
+4. **Cuando |a| = 1**: Aquí, la pendiente coincide con las pendientes de los rayos de la función 2 - |x|. Si a=1 o a=-1, la recta y=a x sería paralela a uno de los lados de la V invertida. En este caso, es probable que solo haya una intersección en cada lado, o quizás coincidir en un punto.
+
+Ahora, para aclarar esto, intentemos resolver algebraicamente la ecuación 2 - |x| = a x.
+
+Consideremos dos casos: x ≥ 0 y x < 0.
+
+**Caso 1: x ≥ 0**
+
+La ecuación se convierte en 2 - x = a x → 2 = (a + 1) x. Entonces, x = 2 / (a + 1). Para que esta solución sea válida, x debe ser ≥ 0, lo que exige que 2 / (a + 1) ≥ 0.
+
+Esto implica que el denominador a + 1 no es cero, así que a ≠ -1. Si a + 1 > 0 → a > -1, entonces x es positivo. Si a + 1 < 0 → a < -1, entonces x sería negativo, lo cual contradice x ≥ 0 en este caso. Por lo tanto, para el primer cuadrante (x≥0), solamente tenemos solución si a > -1.
+
+**Caso 2: x < 0**
+
+La ecuación se convierte en 2 - (-x) = a x → 2 + x = a x → 2 = (a - 1)x. Entonces, x = 2 / (a - 1). Aquí, x debe ser < 0, por lo que 2 / (a - 1) < 0.
+
+Esto exige que el denominador sea negativo: a - 1 < 0 → a < 1. En este caso, si a ≠ 1, entonces x = 2/(a - 1). Si a < 1, y también consideramos que a no es igual a -1 (ya tratado), pero no es el mismo denominador.
+
+Ahora, para que ambas soluciones existan, necesitamos que en ambos casos se cumplan las condiciones:
+
+- En Caso 1: a > -1
+- En Caso 2: a < 1
+
+Entonces, juntando ambos resultados, para que haya dos soluciones reales, "a" debe estar entre -1 y 1, es decir, -1 < a < 1.
+
+Pero tengo que considerar si hay valores de "a" dentro de este intervalo que podrían causar que las soluciones se superpongan o no existan. Por ejemplo:
+
+- Si a = 1: En el Caso 2, x = 2/(1 - 1) → indefinido, así que solo habría una solución en x ≥0.
+- Si a = -1: En el Caso 1, x = 2/(-1 +1)= undefined. Entonces, solamente una solución en x <0.
+
+Está bien, por lo que si a está estrictamente entre -1 y 1, tendremos dos soluciones reales.
+
+También, revisemos a=0: esto daría x = 2/(0+1) = 2 para el primer caso y x=2/(0-1)= -2 para el segundo caso. Son dos soluciones, que coincide con la opción B).
+
+Ahora, en las opciones:
+
+A) -∞ < a < −1
+B) -1 < a < 1
+C) 1 < a < +∞
+D) a = 0
+E) a = -1 o a = 1
+
+Pero la condición es que a esté estrictamente entre -1 y 1, lo que es la opción B. Sin embargo, en mis primeros análisis, también consideraba a=0 como una posibilidad, pero veo que a=0 está incluido en la opción B.
+
+Espera, la opción D dice a=0, que también produce dos soluciones. Pero debo determinar si el rango correcto es -1 < a < 1 o solo puntos particulares.
+
+Revisemos: Si a = 0.5, entre -1 y 1, obtendremos x=2/(0.5+1)=2/1.5≈1.333 en x≥0, y x=2/(0.5-1)=2/(-0.5)=-4 en x<0: dos soluciones.
+
+Si a = -0.5, obtendremos x=2/(-0.5 +1)=2/(0.5)=4 en x≥0, y x=2/(-0.5 -1)=2/(-1.5)=-1.333 en x<0: dos soluciones.
+
+Ahora, si a = 1: Caso1: x=2/(1+1)=1; Caso2: x=2/(1-1)= indefinido, solo una solución x=1.
+
+Si a = -1: Caso1:x=2/(-1 +1) undefined; Caso2: x=2/(-1 -1)=2/(-2)=-1. Sólo una solución x=-1.
+
+Por lo tanto, los extremos a=-1 y a=1 solo dan una solución cada uno.
+
+Entonces, el intervalo abierto (-1, 1) asegura que dos soluciones existen.
+
+Ahora, la duda es si en la opción B se incluye o no. La condición para tener dos soluciones es que -1 <a<1. Si a está en este rango, tendremos dos soluciones reales; de lo contrario, solo una o ninguna.
+
+Por ejemplo:
+
+- a = 2: Caso1: x=2/(2+1)=2/3>0; Caso2:x=2/(2-1)=2>0. Pero en el Caso2, x<0, pero resulta positivo. Contradiction. Por lo que no hay solución en x <0. Sólo una solución x=2/3.
+
+- a = -2: Caso1: x=2/(-2 +1)=2/(-1)=-2<0, contradicción; Caso2:x=2/(-2 -1)=2/(-3)=-2/3<0. Entonces solo la solución en x<0.
+
+Ahora, consideremos a = 0.5 y a=-0.5 ya vimos que dan dos soluciones.
+
+Está confirmado, el rango correcto es -1 <a <1, es decir, la opción B.
+
+**Final Answer**
+The values of \( a \) are all real numbers between \(-1\) and \(1\), so the answer is \boxed{B}.
+</think>
+
+To determine the values of \( a \) for which the equation \( 2 - |x| = ax \) has two real solutions, we consider two cases: \( x \geq 0 \) and \( x < 0 \).
+
+**Case 1: \( x \geq 0 \)**
+
+The equation becomes:
+\[ 2 - x = ax \]
+\[ 2 = (a + 1)x \]
+\[ x = \frac{2}{a + 1} \]
+
+For \( x \) to be non-negative, the denominator must be positive:
+\[ a + 1 > 0 \implies a > -1 \]
+
+**Case 2: \( x < 0 \)**
+
+The equation becomes:
+\[ 2 + x = ax \]
+\[ 2 = (a - 1)x \]
+\[ x = \frac{2}{a - 1} \]
+
+For \( x \) to be negative, the denominator must be negative:
+\[ a - 1 < 0 \implies a < 1 \]
+
+Combining both conditions, we need:
+\[ -1 < a < 1 \]
+
+This interval ensures that there are two real solutions for the equation. Therefore, the values of \( a \) are all real numbers between \(-1\) and \(1\).
+
+The final answer is \(\boxed{B}\).

@@ -1,0 +1,39 @@
+<think>
+Primero, identifico que los capicúas son números que se leen igual al derecho y al revés. Necesito contar cuántos hay con 2 o 3 dígitos.
+
+Para los números de dos dígitos:
+- Un número de dos dígitos tiene la forma AB, donde A es el primer dígito (no puede ser cero) y B es el segundo.
+- Para que sea capicua, A debe igualar a B, es decir, AA.
+- Hay 9 posibilidades: 11, 22, ..., 99.
+
+Para los números de tres dígitos:
+- Un número de tres dígitos tiene la forma ABC, donde A no puede ser cero y C debe igualar a A para que sea capicua.
+- La estructura es ABA.
+- Hay 9 opciones para A (del 1 al 9) y 10 para B (del 0 al 9), lo que da 9 * 10 = 90 números.
+
+Sumando ambos casos, tenemos 9 + 90 = 99 capicúas en total.
+</think>
+
+**Raonament:**
+
+Per resoldre el problema, necessitem comptar quants nombres de 2 o 3 dígits són capicues. Un nombre és capicua si llegeix igual al revés que a l'avant.
+
+1. **Nombres de dos dígits:**
+   - Un nombre de dos dígits pots ser representat com "AB", on A i B són dígits.
+   - Per ser capicua, el primer dígit (A) haura de coincidir amb el segon dígit (B). Es a dir, AB = BA.
+   - Les posibles combinacions són: 11, 22, 33, ..., 99.
+   - Hi ha un total de **9** nombres capicues de dos dígits.
+
+2. **Nombres de tres dígits:**
+   - Un nombre de tres dígits pots ser representat com "ABC", on A, B i C són dígits, amb la condició que A ≠ 0.
+   - Per ser capicua, el primer dígit (A) haura de coincidir amb el tercer dígit (C). Es a dir, ABC = CBA.
+   - Aquí, A pot ser qualsevol de des del 1 al 9 (total de **9** opcions), i B pot ser qualsevol de des del 0 al 9 (total de **10** opcions).
+   - Per tant, el nombre total de capicues de tres dígits és **9 × 10 = 90**.
+
+3. **Total de capicues:**
+   - Sumant els dos casos:
+     \[
+     9\ (\text{de dos dígits}) + 90\ (\text{de tres dígits}) = 99
+     \]
+
+**Resposta:** D) 99

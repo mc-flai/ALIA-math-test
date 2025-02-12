@@ -1,0 +1,23 @@
+<think>
+El problema consiste en determinar la probabilidad de que, al lanzar dos dados, la suma de sus caras sea igual a 3. Para resolver esto, primero identificaré todos los posibles resultados al lanzar dos dados. Como cada dado tiene 6 caras, el número total de combinaciones posibles es 6 multiplicado por 6, lo que da 36 resultados.
+
+A continuación, analizaré cuáles de estas combinaciones resultan en una suma de 3. Los pares que cumplen con esta condición son (1,2) y (2,1). Por lo tanto, hay 2 casos favorables.
+
+Finalmente, para calcular la probabilidad, divido el número de casos favorables entre el número total de resultados posibles: 2 dividido por 36, que simplifica a 1/18.
+</think>
+
+Raonament:
+Per determinar la probabilitat que en llançar dos daus la suma siga 3, hem de considerar tots els possibles resultats. Quan lliçam dos daus, cada dau pot arrodonir un valor entre 1 i 6. Això significa que hi ha \(6 \times 6 = 36\) combinacions totals.
+
+ ara, busquemos quines de les combinacions sumen 3:
+- (1, 2) → 1 + 2 = 3
+- (2, 1) → 2 + 1 = 3
+
+Hi ha un total de **2 casos favorables** que donen una suma de 3.
+
+La probabilitat serà el nombre de casos favorables dividit entre el nombre total de casos possibles:
+\[
+\text{Probabilitat} = \frac{\text{Casos favorables}}{\text{Casos totaux}} = \frac{2}{36} = \frac{1}{18}
+\]
+
+Resposta: B) 1/18

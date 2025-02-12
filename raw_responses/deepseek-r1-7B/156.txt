@@ -1,0 +1,50 @@
+<think>
+Primero, identifico que N es un número de dos dígitos. Decido representarlo como 10*a + b, donde "a" es la cifra de las decenas y "b" es la cifra de las unidades.
+
+Luego, según el enunciado, el cociente de N dividido por la suma de sus dígitos es igual a 8. Esto significa que (10*a + b) / (a + b) = 8.
+
+Para resolver esta ecuación, multiplico ambos lados por (a + b), obteniendo 10*a + b = 8*(a + b).
+
+Simplificando la ecuación, resto 8*a de ambos lados: 2*a + b = 8*b, lo que conduce a 2*a = 7*b.
+
+Ahora, busco valores enteros para "a" y "b" entre 1 y 9 (ya que son dígitos) que satisfagan esta relación. Pruebo los posibles valores de "b":
+
+- Si b=0, 2*a=0 → a=0, pero N no sería un número de dos dígitos.
+- Si b=2, 2*a=14 → a=7. Este valor es válido, ya que 72 dividido por 9 da 8.
+
+Al probar otros valores de "b", verifico que solo cuando b=2 se cumple la condición con un dígito de decenas valido.
+</think>
+
+Raonament:
+
+El número N és un nombre de dues xifres, per tant pots representar-lo com \(10a + b\),其中 \(a\) és la xifra de les desenes i \(b\) és la xifra de les unitats.
+
+Segons el problema:
+\[
+\frac{N}{\text{suma de les xifres}} = 8
+\]
+Substituïnt N per \(10a + b\) i la suma de les xifres per \(a + b\), obtenim:
+\[
+\frac{10a + b}{a + b} = 8
+\]
+Multiplicant ambies parts per \(a + b\):
+\[
+10a + b = 8(a + b)
+\]
+Simplificant:
+\[
+10a + b = 8a + 8b \\
+2a = 7b \\
+\]
+Ara, pots expressar aquesta equació com:
+\[
+a = \frac{7b}{2}
+\]
+Des que \(a\) i \(b\) són xifres enters entre 0 i 9, pots provar valors per \(b\) que facin \(a\) un enter:
+
+- Si \(b = 0\): \(a = 0\), però això no donaria un nombre de dues xifres.
+- Si \(b = 2\): \(a = \frac{7 \times 2}{2} = 7\), que és valid ja que 72 dividit per 9 (suma de les xifres) és 8.
+
+Prova d'altres valors per b no donaria resultats valids. Per tant, la xifra de les unitats és 2.
+
+Resposta: \boxed{B})

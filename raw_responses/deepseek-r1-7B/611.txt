@@ -1,0 +1,69 @@
+<think>
+Alright, let's try to figure out how many '+' signs need to be changed to '×' in the expression 1+2+3+4+5 = 27 so that it becomes a correct equation without changing any other numbers or symbols.
+
+First, I'll write down the original expression:
+1 + 2 + 3 + 4 + 5 = 27
+
+Wait, actually, let me calculate what the left side equals. Adding them up: 1+2 is 3, plus 3 is 6, plus 4 is 10, and then plus 5 is 15. So 1+2+3+4+5 equals 15, not 27. So the initial equation is wrong because it's stated as equal to 27.
+
+So our goal is to change some '+' to '×' so that the total becomes 27 instead of 15. Let me think about how changing an addition to multiplication affects the total.
+
+Each time I replace a '+', which is adding a number, with a '×', it's like inserting a multiplication operation between two numbers. This can significantly increase the result because multiplying two numbers gives a larger product than their sum.
+
+Let me list all possible changes and see what each change does:
+
+1. Change 1+2 to 1×2: Now the expression starts with 1×2, then continues as +3+4+5.
+So it's (1×2)+3+4+5 = 2+3+4+5=14. Still less than 27.
+
+2. Change 2+3 to 2×3: So expression is 1+(2×3)+4+5. That's 1+6+4+5=16. Closer, but still not 27.
+
+3. Change 3+4 to 3×4: Now it's 1+2+(3×4)+5 = 1+2+12+5=20. Still below.
+
+4. Change 4+5 to 4×5: Then we have 1+2+3+(4×5)=1+2+3+20=26. Close to 27, but not quite there.
+
+So changing only one '+' gives us a maximum of 26 when we change the last addition. So if I can't get exactly 27 with just one change, maybe two changes would work.
+
+Let me try combining different pairs:
+
+Option 1: Change both 4+5 and another pair.
+
+For example, change 3+4 to × and 4+5 to ×: That would give 1+2+(3×4)×5. Wait, that's not right because changing both 3+4 and 4+5 would actually make it 1+2+(3×4×5). Let me calculate that:
+
+1 + 2 + (3×4×5) = 3 + 60 = 63. Way too big.
+
+Alternatively, change two other pairs. Maybe change 2+3 and 4+5.
+
+So expression becomes 1 + (2×3) + (4×5) = 1 + 6 + 20 = 27! Oh wait, that adds up to exactly 27.
+
+Wait, let me check that again:
+
+If I change '+' to '×' between 2 and 3, making it 2×3=6, and also between 4 and5, making it 4×5=20. So the expression becomes: 1 + (2×3) + (4×5). Calculating step by step:
+
+Start with 1.
+
+Then add (2×3)=6: 1+6=7.
+
+Then add (4×5)=20: 7+20=27.
+
+Yes, that works. So changing two '+' signs gives us the correct result of 27.
+
+Let me verify if there's another way with just one change:
+
+As before, changing only the last '+' to × gives 1+2+3+4×5=1+2+3+20=26. Close but not enough.
+
+What if I change a different pair? For example, changing 1+2 to ×: Then it's (1×2)+3+4+5=2+3+4+5=14. No good.
+
+Changing 2+3 to × gives us 1+(2×3)+4+5=1+6+4+5=16.
+
+Changing 3+4 to ×: 1+2+(3×4)+5=1+2+12+5=20.
+
+So no single change gets to 27. Only two changes, specifically changing both the second and fourth '+' signs, gives us 27.
+
+Therefore, the minimum number of changes needed is 2.
+</think>
+
+The original equation sums up to 15, not 27. By strategically replacing two addition signs with multiplication signs between numbers that will significantly increase the total when multiplied, we can reach 27. 
+
+Raonament: The sum without any changes is 15. To reach 27, changing two '+' signs to '×' in specific places (like 2+3 and 4+5) increases certain parts of the equation through multiplication, leading to the desired total.
+
+Resposta: B)

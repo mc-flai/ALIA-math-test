@@ -1,0 +1,17 @@
+<think>
+Primero, entiendo que Silvia dibuja un rectángulo siguiendo las líneas de una cuadrícula. Luego, pinta los cuadraditos interiores que tocan los costados del rectángulo. Después de esto, nota que todavía hay 16 cuadraditos interiores sin pintar.
+
+Quiero relacionar la cantidad de cuadraditos totales con los que ha pintado y los que no. Supongo que el número total de cuadraditos es M, y los pintados son 4n - 4, donde n es la longitud del costado del rectángulo en cuadraditos.
+
+Entonces, el número de cuadraditos sin pintar sería M - (4n - 4) = 16. Necesito expresar M en términos de las dimensiones del rectángulo. Si asumo que el rectángulo es un cuadrado con lados de n cuadraditos, M sería n².
+
+Sustituyendo, obtenemos la ecuación n² - 4n + 4 = 16, que simplifico a n² - 4n - 12 = 0. Resolviendo esta ecuación, encuentro las soluciones posibles para n: 6 y -2 (descarto la negativa). Por lo tanto, el cuadrado tiene lados de 6 cuadraditos.
+
+Finalmente, verifico que M = 36 cuadraditos en total.
+</think>
+
+**Raonament:**  
+Silvia dibuja un rectangle en una quadrícula i pinta els quadradets que toquen els costats. Després, hi ha 16 quadradets sense pintar. Per determinar quants quadradets conté el rectangle, considerem que el número total de quadradets és M i els pintats són 4n - 4, on n és la mida del costat. Aleshores, M - (4n - 4) = 16. Resolviendo l'equació, obtenim n = 6, llavors M = 36.
+
+**Resposta:**  
+\boxed{B}

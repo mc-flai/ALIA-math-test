@@ -1,0 +1,39 @@
+<think>
+Para resolver este problema, primero identifico que se me da la primera página de una parte del libro que se rompió: 387. Necesito encontrar cuántas páginas tiene esta parte separada.
+
+Sé que en libros, las páginas suelen estar numeradas de manera que las páginas impares están en un lado y las pares en el otro, formando así una hoja o folio. Cada hoja tiene dos páginas: una impar y la siguiente par. Por ejemplo, página 1 y 2 forman una hoja.
+
+Si la primera página es 387, que es impar, entonces la primera hoja incluye las páginas 387 (implicita en el cálculo) y 388. La ultima página de esta parte también debe ser una página par o impar dependiendo del número total de páginas.
+
+El problema menciona que el número de la última página tiene las mismas cifras pero en un orden diferente. Analizo los números que pueden formarse con las cifras 3, 8 y 7:
+
+- 387
+- 378
+- 837
+- 873
+- 738
+- 783
+
+Ahora, como la primera página es 387, la última página no puede ser menor que esta. Considero posibles números:
+
+1. **387 a 378**: No es posible porque 378 < 387.
+2. **387 a 738**: Viable.
+3. **387 a 783**: Viable.
+4. **387 a 837**: Viable.
+5. **387 a 873**: Viable.
+
+Calculo cuántas páginas hay entre 387 y cada uno de estos números:
+
+- De 387 a 738: \(738 - 386 = 352\) páginas, lo que equivale a 176 hojas.
+- De 387 a 783: \(783 - 386 = 397\) páginas, lo que equivale a 198.5 hojas (no entero).
+- De 387 a 837: \(837 - 386 = 451\) páginas, lo que equivale a 225.5 hojas.
+- De 387 a 873: \(873 - 386 = 487\) páginas, lo que equivale a 243.5 hojas.
+
+Solo el rango de 387 a 738 da un número entero de hojas (176). Por lo tanto, la parte separada incluye 176 hojas.
+</think>
+
+Raonament: La primera pàgina del fragment trencat és 387. Busquem quin nombre, formant amb les xifres 3, 8 i 7 en un ordre diferent, serveix com a ùltima pàgina. Un cop identificat aquest número, calculam el total de fulls entre la primera i l’última pàgina, teniendo en compte que cada full conté dues pàginas consecutives.
+
+Les posibles permutacions dels números 3, 8 i 7 són 387, 378, 837, 873, 738, 783. Entre aquests, el més probable com ùltima pàgina és 738. L’interval de pàginas va des de 387 a 738, que fa 352 pàginas. Com cada full té dues pàginas, el nombre total de fulls trencats és 176.
+
+Resposta: B)

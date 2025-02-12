@@ -1,0 +1,105 @@
+<think>
+Okay, so I need to figure out where the treasure is buried based on the four manuscripts Captain Blackbeard found. Let me read through each piece of information again carefully.
+
+The first manuscript says, "The treasure is in Cabrera or Sa Conillera." So that's an OR statement—meaning it could be one of those two places, but not necessarily both. The second one states, "The treasure is in Ibiza." The third claims, "The treasure is in Formentera." And the fourth says, "The treasure is NOT in Sa Conillera."
+
+Now, the key point here is that only one of these four statements is true, and the rest are false. Also, the treasure is on one of these four islands: Cabrera, Ibiza, Sa Conillera, or Formentera.
+
+Let me go through each possibility one by one to see which scenario fits where only one statement is true.
+
+First, let's assume that the first statement is true. That means the treasure is either in Cabrera or Sa Conillera. If this is true, then we have to check what other statements would be false. The second statement says it's in Ibiza—so if the treasure is in Cabrera or Sa Conillera, this statement is definitely false. Similarly, the third statement claims Formentera, which would also be false if our first assumption holds. Now, the fourth statement says it's NOT in Sa Conillera. If the treasure were in Cabrera, then this statement would be true because the treasure isn't in Sa Conillera. But wait—no, if the treasure is in Cabrera, then the fourth statement ("not in Sa Conillera") is still true because it's not in that specific island. However, we have to remember that only one statement can be true.
+
+So, if the first statement is true (treasure is in Cabrera or Sa Conillera), and let's say it's in Cabrera, then the fourth statement would also be true ("not in Sa Conillera"). But this means two statements are true, which violates the condition that only one is true. Alternatively, if the treasure were in Sa Conillera, then the first statement is still true, but the fourth statement becomes false because it IS in Sa Conillera. So let's see:
+
+- If treasure is in Cabrera: Statements 1 and 4 are true → two truths—invalid.
+- If treasure is in Sa Conillera: Statement 1 is true (since it includes Sa Conillera), but statement 4 becomes false because the treasure IS there. Also, statements 2 and 3 are false. So only one statement is true. This scenario works.
+
+Wait, let me double-check that. If the treasure is in Sa Conillera:
+
+- Statement 1: True (since it's OR with Cabrera or Sa Conillera)
+- Statement 4: False (because treasure is in Sa Conillera)
+
+So only one statement is true—statement 1. That fits.
+
+But wait, let me consider another possibility where the second statement is true. If the treasure is in Ibiza:
+
+- Statement 2 is true.
+- Then, what about the other statements? Statement 1 says it's in Cabrera or Sa Conillera, which would be false because it's in Ibiza. Statement 3 says Formentera, also false. Statement 4 says not in Sa Conillera—true, because it's in Ibiza, so Sa Conillera is excluded. But then statements 2 and 4 are both true, which again violates the condition of only one statement being true.
+
+So that can't be.
+
+Now, let's check if the third statement is true: treasure is in Formentera.
+
+- Statement 3: True.
+- Then statement 1 says it's in Cabrera or Sa Conillera—false. Statements 2 (Ibiza) and 4 ("not in Sa Conillera") would be false as well because the treasure is in Formentera, so Sa Conillera isn't it. Wait, no—if it's in Formentera, statement 4 ("not in Sa Conillera") is true because it's not there. So statements 3 and 4 would both be true—again two truths, which is invalid.
+
+So that can't be either.
+
+Now, let me consider if the fourth statement is true: "The treasure is not in Sa Conillera." If this is the only true statement, then the treasure must be in one of the other islands: Cabrera, Ibiza, or Formentera. But let's see what that implies for the other statements.
+
+If statement 4 is true (treasure not in Sa Conillera), then:
+
+- Statement 1 says it's in Cabrera OR Sa Conillera. Since it's not in Sa Conillera, but could be in Cabrera, so if it's in Cabrera, then statement 1 would be true as well because of the OR condition. That means two statements (1 and 4) are true—invalid.
+
+Alternatively, if treasure is in Ibiza: then statements 2 is true, which can't happen because we assumed only statement 4 is true. Similarly, if it's in Formentera, then statement 3 is also true. So regardless, if statement 4 is the only true one, there are contradictions elsewhere.
+
+Therefore, the only scenario that works without causing more than one true statement is when the treasure is in Sa Conillera. Because:
+
+- Statement 1 is true (since it's in Sa Conillera).
+- Statements 2 and 3 are false.
+- Statement 4 is false because the treasure IS in Sa Conillera.
+
+Wait, hold on! Earlier I thought if the treasure is in Sa Conillera, statement 1 is true and statement 4 is false. That makes only one true statement—statement 1. Because:
+
+- Treasure in Sa Conillera:
+   - Statement 1: True (since it's OR with Cabrera or Sa Conillera)
+   - Statement 2: False
+   - Statement 3: False
+   - Statement 4: False (because the treasure is indeed in Sa Conillera)
+
+Wait, no—if statement 4 says "not in Sa Conillera," then if it's actually there, statement 4 is false. So only statement 1 is true.
+
+But earlier I thought when the treasure was in Cabrera, statements 1 and 4 would both be true—but that's not possible because the treasure can't be in both places. Wait no—if the treasure is in Sa Conillera, then statement 4 is false. But if it were in Cabrera, statement 1 is still true (since it includes Cabrera or Sa Conillera), and statement 4 would also be true because it's not in Sa Conillera.
+
+Wait, this is a bit confusing. Let me make a table to clarify:
+
+Possible treasure locations: Cabrera, Ibiza, Sa Conillera, Formentera.
+
+For each location, check which statements are true:
+
+1. Treasure = Cabrera:
+   - Statement 1: True (Cabrera or Sa Conillera)
+   - Statement 2: False
+   - Statement 3: False
+   - Statement 4: True (not in Sa Conillera)
+   → Two truths: invalid.
+
+2. Treasure = Ibiza:
+   - S1: False
+   - S2: True
+   - S3: False
+   - S4: True (since not in Sa Conillera)
+   → Two truths: invalid.
+
+3. Treasure = Sa Conillera:
+   - S1: True
+   - S2: False
+   - S3: False
+   - S4: False (because it's there)
+   → Only one truth: valid.
+
+4. Treasure = Formentera:
+   - S1: False
+   - S2: False
+   - S3: True
+   - S4: True (not in Sa Conillera)
+   → Two truths: invalid.
+
+So the only scenario where exactly one statement is true is when the treasure is in Sa Conillera. Therefore, the answer should be D) Sa Conillera.
+</think>
+
+Raonament:
+- Analitzem cada posibilitat considerant que només una informació és certa.
+- Si el tesor està a Sa Conillera, només la primera declaració ("El tesor està a Cabrera o a Sa Conillera") és certa, mentre les restants són falses. Aquesta situació satisfà la condició de que només una informació sigui correcta.
+
+D) Sa Conillera

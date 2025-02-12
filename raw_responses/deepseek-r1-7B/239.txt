@@ -1,0 +1,63 @@
+<think>
+Bueno, voy a intentar resolver este problema. Primero, entiendo que tenemos 2016 puntos distribuidos en una circunferencia. Y la pregunta es: ¿cuál es el número máximo de cuerdas que se pueden dibujar, uniando pares de estos puntos, sin que se intersecten en ningún punto interior al círculo?
+
+Voy a empezar pensando en cómo dibujar cuerdas entre puntos en una circunferencia sin que se crucen. Recuerdo que si conecto dos puntos con una cuerda, para evitar que se intersequen, las cuerdas no deben formar ángulos opuestos o algo así.
+
+Pero quizás es mejor abordarlo de manera más estructurada. Supongo que el problema se relaciona con la teoría de grafos y planares, donde quieren maximizar el número de aristas sin que haya intersecciones. En este caso, los vértices están colocados en una circunferencia, lo cual me recuerda a las estructuras poligonales o convexas.
+
+Otra idea es considerar que si no quiero que se intersecten las cuerdas, cada cuerda debe ser un arco que no rodee más de 180 grados alrededor de la circunferencia. Si una cuerda rodea más de 180 grados, cualquier otra cuerda que se dibuje en el otro semicírculo podría intersectarla.
+
+Espero que el número máximo de cuerdas sin intersección se corresponda con un árbol genealógico o algo similar. Pero quizás no, quizás sea más sencillo: si los puntos están en una circunferencia, el grafo maximal sin intersecciones es una triangulación.
+
+Ah, sí, la triangulación de un polígono convexo con n vértices tiene (n(n-3))/2 + 2 aristas. Pero no estoy seguro si eso aplica directamente aquí.
+
+Otra aproximación: cada vez que dibujo una cuerda sin intersecciones, divide el círculo en dos partes. Siempre que las nuevas cuerdas se dibujan en una de estas partes sin interferir con las ya existentes.
+
+Pero quizás hay una fórmula directa para este tipo de problemas. Recuerdo algo relacionado con no-intersección de arcos: el número máximo de arcos sin intersección es igual a n, formando una estrella o algo así. Pero con 2016 puntos, no creo que sea sencillo.
+
+Otra idea: si considero los puntos como vértices de un polígono convexo, la cantidad máxima de diagonales sin intersecciones es n-3, pero esto es por cada vértice. Sin embargo, sumando para todos, me doy cuenta de que no es correcto.
+
+Espera, quizás el problema se reduce a dibujar un grafo acíclico en el círculo sin intersecciones, lo cual es simplemente un árbol. Un árbol con n vértices tiene n-1 aristas. En este caso, 2016 puntos, así que 2015 cuerdas. Pero no sé si esto es correcto.
+
+Pero el número de aristas sin intersecciones en un círculo con n puntos es más complejo. Creo que la cantidad máxima sin que se crucen es similar a la de una triangulación, que para n puntos en circunferencia es (n(n-3))/2 + 1? No estoy seguro.
+
+Otra forma: si no quiero que las cuerdas se intersequen, cada nueva cuerda debe estar contenida en un semicírculo determinado por las ya existentes. Pero esto me está complicando.
+
+De repente recuerdo que el número máximo de arcos sin intersección es n(n-1)/2 si no hay restricción, pero con la restricción de que no se intersecten, es menor.
+
+Pero quizás lo que busco es un matching maximal sin intersecciones. Un matching donde las cuerdas no se cruzan.
+
+En este caso, el número máximo de arcos sin intersección sería n-1 si formamos una estrella radial, pero no, en una circunferencia, una estrella radial requiere que todas las cuerdas pasen por un mismo punto central, lo cual no es permitido aquí.
+
+Entonces quizás la cantidad máxima se logra al dibujar una triangulación maximal sin intersecciones. Para n puntos en una circunferencia, el número de aristas en una triangulación es 3n -6. Pero con n=2016, esto daría un número extremadamente alto, que no coincide con las opciones dadas.
+
+Vuelvo a pensar: quizás lo que se me está pidiendo es simplemente dibujar tantas cuerdas como posibles sin que se crucen. Esto sería equivalente al número de aristas en un grafo planario maximizado para n vértices colocados en una circunferencia.
+
+Recuerdo que el teorema de Kuratowski dice que un grafo es no planario si contiene K5 o K3,3 como menores. Pero esto quizás no me ayude directamente.
+
+Otra idea: considerar que cada vez que dibujo una cuerda, divide el círculo en dos regiones. Siempre puedo agregar nuevas cuerdas en estas regiones sin intersección.
+
+El número máximo de aristas sin intersección sería n + (n - 2) + ... ? No, esto no me resulta.
+
+Espero que quizás la cantidad máxima de arcos sin intersección sea n(n-1)/2, pero claro que si dibujas todas las posibles, se van a cruzar. Entonces hay que reducir.
+
+Otra idea: para n puntos en circunferencia, el número máximo de cuerdas sin intersección es 3n -6. Para n=2016, esto daría 3*2016 -6 = 6048 -6=6042, pero no está en las opciones.
+
+Está claro que mis ideas están dispersas y quizás incorrectas. Tal vez debo buscar una fórmula o concepto directamente relacionado.
+
+Recuerdo que el problema es similar al de dibujar un grafo planario en una circunferencia sin que se crucen las aristas, lo cual para n vértices, el número máximo de aristas es 3n -6. Pero quizás no, ya que en una circunferencia, los vértices están en un círculo fijo.
+
+Otra idea: si dibujamos un grafo sin aristas que se crucen, y todos los vértices están en la circunferencia, entonces el grafo es outerplanar. Y para un grafo outerplanar maximizado (maximal outerplanar graph), el número de aristas es 2n -3.
+
+Sí, recuerdo que un grafo maximal outerplanar con n vértices tiene 2n -3 aristas.
+
+Entonces, si n=2016, el número máximo de cuerdas sin intersección sería 2*2016 -3 = 4032 -3 = 4029.
+
+Revisando las opciones: A)2016 B)2015 C)4029 D)4031 E)Depende de la posición de los puntos.
+
+La respuesta es C)4029.
+</think>
+
+Raonament: Para maximizar el número de cuerdas sin que se intersequen en ningún punto interior, consideramos un grafo outerplanar maximal con n vértices. Este tipo de grafo alcanza el máximo número de aristas sin que las mismas se crucen. La fórmula para el número de aristas en un grafo outerplanar maximal es 2n - 3. Aplicando esto a n = 2016, obtenemos 2*2016 - 3 = 4032 - 3 = 4029.
+
+Resposta: C) 4029

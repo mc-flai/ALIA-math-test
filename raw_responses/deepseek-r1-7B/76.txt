@@ -1,0 +1,65 @@
+<think>
+Maria está seleccionando aleatoriamente dos números diferentes del conjunto {8, 9, 10} y calcula su suma. Por otro lado, Pere selecciona aleatoriamente dos números diferentes del conjunto {3, 5, 6} y obtiene su producto. Queremos calcular la probabilidad de que la suma obtenida por Maria sea mayor que el producto obtenido por Pere.
+
+Primero, identifico los posibles pares y sus resultados para cada persona.
+
+Para Maria:
+- Los pares posibles son (8,9), (8,10) y (9,10).
+- Sus sumas correspondientes son 17, 18 y 19.
+
+Para Pere:
+- Los pares posibles son (3,5), (3,6) y (5,6).
+- Sus productos correspondientes son 15, 18 y 30.
+
+A continuación, calculo todas las combinaciones posibles entre las sumas de Maria y los productos de Pere. Hay un total de 3x3=9 combinaciones.
+
+Comparo cada suma de Maria con cada producto de Pere:
+- 17 > 15: Verdadero
+- 17 > 18: Falso
+- 17 > 30: Falso
+- 18 > 15: Verdadero
+- 18 > 18: Falso
+- 18 > 30: Falso
+- 19 > 15: Verdadero
+- 19 > 18: Verdadero
+- 19 > 30: Falso
+
+Cuento cuántas veces la suma de Maria es mayor que el producto de Pere. En este caso, son 4 ocasiones.
+
+Por lo tanto, la probabilidad es 4/9.
+</think>
+
+Raonament:
+Maria tria dos nombres del conjunt {8, 9, 10} i calcula la seua suma. Pere tria dos nombres del conjunt {3, 5, 6} i calcula el seu producte. Per determinar la probabilitat que la suma de Maria siga major que el producte de Pere, hem de considerar totes les posibles combinacions:
+
+**Possibilitats per Maria:**
+- (8,9) → 17
+- (8,10) → 18
+- (9,10) → 19
+
+**Possibilitats per Pere:**
+- (3,5) → 15
+- (3,6) → 18
+- (5,6) → 30
+
+ ara compararem cada suma de Maria amb cada producte de Pere:
+
+| Suma de Maria | Producte de Pere | Comparació (Suma > Producte?) |
+|----------------|-------------------|------------------------------|
+| 17             | 15                | Verdadero                   |
+| 17             | 18                | Falso                        |
+| 17             | 30                | Falso                        |
+| 18             | 15                | Verdadero                   |
+| 18             | 18                | Falso                        |
+| 18             | 30                | Falso                        |
+| 19             | 15                | Verdadero                   |
+| 19             | 18                | Verdadero                   |
+| 19             | 30                | Falso                        |
+
+En total, hi ha **4 vegades** que la suma de Maria és major que el producte de Pere. Com que hi ha un total de **9 posibles combinacions**, la probabilitat serà:
+
+\[
+P = \frac{4}{9}
+\]
+
+Resposta: A) $\boxed{\dfrac{4}{9}}$

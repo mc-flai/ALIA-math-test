@@ -1,0 +1,66 @@
+<think>
+Primero, analizo los datos proporcionados del problema.
+
+El teatro tiene una capacidad total de 200 espectadores. Los abonados pagan 10 euros por entrada, y las entradas restantes se venden en taquilla a 40 euros.
+
+Un día determinado, el teatro está completamente lleno, lo que genera un ingreso total de 4400 euros. Esto me permite calcular cuántos abonados acudieron ese día.
+
+En otro día, todos los abonados van al teatro y solo una cuarta parte de las butacas para no abonados quedan libres. Necesito determinar el ingreso total de ese día.
+
+Primero, calculo la cantidad de entradas vendidas en taquilla cuando el teatro está lleno:
+
+Ingreso total = (Número de abonados × 10) + (Número de no abonados × 40) = 4400 euros
+
+Dado que la capacidad es 200, y si N es el número de abonados, los no abonados serán 200 - N.
+
+Así, establezco la ecuación:
+
+10N + 40(200 - N) = 4400
+
+Resolviendo la ecuación paso a paso, encuentro que N = 80. Esto significa que hay 80 abonados y 120 no abonados.
+
+Ahora, en el día en cuestión, todos los abonados asisten, es decir, 80 personas. Además, solo una cuarta parte de las butacas para no abonados quedan libres, lo que equivale a 3/4 partes ocupadas: (200 - 80) × 3/4 = 60 personas.
+
+Finalmente, calculo el ingreso total:
+
+Ingreso = (80 × 10) + (60 × 40) = 800 + 2400 = 3200 euros.
+</think>
+
+**Raonament:**
+
+El teatre té una capacitat de 200 espectadors. Hi ha dos tipus d'entrades:
+
+1. **Entrades per abonats:** Preu de 10 €.
+2. **Entrades a la taquilla:** Preu de 40 €.
+
+Un dia concret, el teatre està completament ple i el total dels ingressos és de 4400 €. Amb aquesta informació, podem calcular quantitat d'abonats que van al teatre:
+
+- Se sap que la suma dels ingressos es: 
+  \[
+  10x + 40(200 - x) = 4400
+  \]
+  Onde \( x \) és el nombre d'abonats.
+
+Resolviendo l'equació:
+\[
+10x + 8000 - 40x = 4400 \\
+-30x + 8000 = 4400 \\
+-30x = -3600 \\
+x = 120
+\]
+Així, hi ha 120 abonats i 80 taquilla.
+
+El dia en qüestió:
+- Tots els abonats van al teatre: 120 entrades a 10 €.
+- Només una quarta part de les butaques per no abonats queden buides, el que significa que s'ocupen 3/4 dels llocs restants:
+  \[
+  (200 - 120) \times \frac{3}{4} = 60
+  \]
+  Així, hi ha 60 entrades a taquilla.
+
+El total d'ingressos:
+\[
+(120 \times 10) + (60 \times 40) = 1200 + 2400 = 3600 \, €
+\]
+
+**Resposta:** B) 3600 €

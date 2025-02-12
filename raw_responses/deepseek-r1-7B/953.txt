@@ -1,0 +1,30 @@
+<think>
+Primero, voy a dibujar el cuadrado ABCD con lados de longitud 2. Etiquetaré los vértices de manera que AB y AD sean los costados adyacentes, con A en la esquina inferior izquierda, B en la superior izquierda, C en la superior derecha y D en la inferior derecha.
+
+Luego, encuentro los puntos medios E y F de los segmentos AB y AD respectivamente. Como cada lado mide 2, los puntos medios dividirán estos lados en partes iguales de 1 unidad cada una. Es decir, E está a mitad de AB, a (0,1) si considero A como el origen (0,0), y F está a mitad de AD, a (1,0).
+
+Después, defino el punto G en el segmento CF tal que 3CG = 2GF. Esto significa que la relación entre CG y GF es de 2:3. Para encontrar las coordenadas de G, uso la sección interna del punto que divide CF en una proporción de 2 a 3.
+
+Primero, determino las coordenadas de C y F. C está en (2,0) y F en (1,0). Usando la fórmula de división de un segmento en una cierta razón, calculo G como [(3*2 + 2*1)/(2+3), (3*0 + 2*0)/(2+3)] = (8/5, 0).
+
+Ahora tengo las coordenadas de los puntos B, E y G. Convierto estos puntos en sus coordenadas cartesianas: B está en (0,2), E en (1,1) y G en (8/5,0).
+
+Utilizo la fórmula del área del triángulo dada tres coordenadas: ½ |x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|. Sustituyendo los valores de B, E y G en la fórmula, obtengo el área del triángulo BEG.
+
+Después de realizar los cálculos necesarios, verifico que el área resultante es 6/5.
+</think>
+
+Raonament:  
+1. **Dibuja el cuadrat ABCD:** Con lados de longitud 2, situamos los vértices en A(0,0), B(0,2), C(2,2) y D(2,0).  
+2. **Encuentra los puntos medios E y F:**  
+   - E es el punto medio de AB: E(0,1).  
+   - F es el punto medio de AD: F(1,0).  
+3. **Define CF:** El segmento CF va de C(2,2) a F(1,0).  
+4. **Encuentra G en CF tal que 3CG = 2GF:** Usando la sección interna, G divide CF en la relación CG:GF = 2:3. Las coordenadas de G son [(2*1 + 3*2)/(2+3), (2*0 + 3*2)/(2+3)] = (8/5, 6/5).  
+5. **Calcula el área del triángulo BEG:** Los puntos B(0,2), E(0,1) y G(8/5,6/5) forman un triángulo. Aplica la fórmula de área:  
+   \[
+   \text{Área} = \frac{1}{2} |x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| = \frac{6}{5}.
+   \]
+
+Resposta:  
+\boxed{E)}

@@ -1,0 +1,63 @@
+<think>
+Voy a empezar analizando las oraciones dadas para entender las relaciones entre los pesos de cada fruta.
+
+Primero, la primera oración dice que un albercoc y una mandarina pesan lo mismo que una nespra y una pera. Es decir:
+
+Albercoc + Mandarina = Nespra + Pera --> (1)
+
+La segunda oración afirma que un albercoc y una nespra pesan menos que una mandarina y una pera. Esto significa:
+
+Albercoc + Nespra < Mandarina + Pera --> (2)
+
+Finalmente, la tercera oración menciona que una nespra y una mandarina pesan menos que un albercoc y una pera:
+
+Nespra + Mandarina < Albercoc + Pera --> (3)
+
+Ahora, intentaré expresar cada fruta en términos de las demás para identificar cuál es la más pesada.
+
+De la ecuación (1), podemos despejar que Albercoc = Nespra + Pera - Mandarina.
+
+Sustituyendo esto en la desigualdad (2):
+
+(Nespra + Pera - Mandarina) + Nespra < Mandarina + Pera
+
+Simplificando, 2*Nespra + Pera - Mandarina < Mandarina + Pera
+
+Eliminando Pera de ambos lados:
+
+2*Nespra - Mandarina < Mandarina
+
+Luego, 2*Nespra < 2*Mandarina --> Nespra < Mandarina
+
+Así que sabemos que la mandarina pesa más que la nespra.
+
+Ahora, observando la desigualdad (3):
+
+Nespra + Mandarina < Albercoc + Pera
+
+Sabemos que Albercoc = Nespra + Pera - Mandarina, por lo que:
+
+Nespra + Mandarina < (Nespra + Pera - Mandarina) + Pera
+
+Simplificando: Nespra + Mandarina < Nespra + 2*Pera - Mandarina
+
+Eliminando Nespra de ambos lados:
+
+Mandarina < 2*Pera - Mandarina
+
+Luego, 2*Mandarina < 2*Pera --> Mandarina < Pera
+
+Por lo tanto, la pera pesa más que la mandarina.
+
+Finalmente, considerando que la pera es más pesada que la mandarina y la mandarina es más pesada que la nespra, y teniendo en cuenta la primera ecuación (1), concluyo que la pera es la fruta que pesa más.
+</think>
+
+Raonament:  
+A partir de les relacions donades, hem establert les següents desigualtats:  
+1. Albercoc + Mandarina = Nespra + Pera  
+2. Albercoc + Nespra < Mandarina + Pera  
+3. Nespra + Mandarina < Albercoc + Pera  
+
+Després d'analitzar aquestes desigualtats, hem arribat a la conclusió que la pera pesa més que les altres fruites.
+
+Resposta: C) La pera

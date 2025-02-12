@@ -1,0 +1,41 @@
+<think>
+Primero, identifico que se están celebrando los cumpleaños de Anna y Helena. Se me dice que la suma de sus edades es 19 años.
+
+Luego, hay dos frases: "Anna tiene cuatro años menos que Helena" y "Helena tiene cinco años más que Anna".Solo una de estas frases es verdadera.
+
+Supongo que si la primera frase es cierta, Anna = Helena - 4. Sumando sus edades, obtengo (Helena - 4) + Helena = 19, lo que simplifica a 2 * Helena - 4 = 19. Entonces, 2 * Helena = 23 y Helena = 11.5 años. Pero las edades suelen ser enteras, así que esto no es posible.
+
+Por lo tanto, la primera frase debe ser falsa, lo que significa que la segunda frase es cierta: Helena tiene cinco años más que Anna. Entonces, Anna = Helena - 5. Sumando sus edades, (Helena - 5) + Helena = 19, lo que simplifica a 2 * Helena - 5 = 19. Resolviendo esto, 2 * Helena = 24 y por lo tanto, Helena = 12 años.
+</think>
+
+Raonament:  
+Vamos a resolver el problema paso a paso.
+
+1. **Definimos las edades**:
+   - Sea \( A \) la edad de Anna.
+   - Sea \( H \) la edad de Helena.
+
+2. **Suma de las edades**:
+   - Sabemos que \( A + H = 19 \).
+
+3. **Frases condicionales**:
+   - Sólo una de las siguientes frases es verdadera:
+     1. "Anna tiene cuatro años menos que Helena" → \( A = H - 4 \).
+     2. "Helena tiene cinco años más que Anna" → \( H = A + 5 \).
+
+4. **Análisis**:
+   - **Supongamos que la primera frase es verdadera** (\( A = H - 4 \)):
+     - Sustituimos en la suma: \( (H - 4) + H = 19 \).
+     - Simplificamos: \( 2H - 4 = 19 \) → \( 2H = 23 \) → \( H = 11.5 \).  
+       *Esto no es posible, ya que las edades son enteras.*  
+     - Por lo tanto, la primera frase NO puede ser verdadera.
+
+   - **Supongamos que la segunda frase es verdadera** (\( H = A + 5 \)):
+     - Sustituimos en la suma: \( A + (A + 5) = 19 \).
+     - Simplificamos: \( 2A + 5 = 19 \) → \( 2A = 14 \) → \( A = 7 \).
+     - Luego, \( H = 7 + 5 = 12 \).
+
+5. **Conclusión**:
+   - La edad de Helena es de **12 años**.
+
+Resposta: D

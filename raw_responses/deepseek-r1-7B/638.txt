@@ -1,0 +1,49 @@
+<think>
+Vamos a resolver este problema paso a paso.
+
+Primero, identifico las actividades y los medios de transporte que Joan utiliza:
+
+1. **Viaje en autobús y regreso caminando**: Esto le toma 3 horas.
+2. **Viaje y regreso en autobús**: Esto le toma 1 hora.
+
+Necesitamos encontrar el tiempo que Joan tardaría en ir a la escuela y volver caminando.
+
+**Variables:**
+- Sea \( A \) el tiempo que tarda Joan en ir en autobús.
+- Sea \( C \) el tiempo que tarda Joan en caminar un trayecto.
+
+Entonces:
+1. Viaje en autobús y regreso caminando:
+   - Id en autobús: \( A \)
+   - Regreso caminando: \( C \)
+   - Total: \( A + C = 3 \) horas
+
+2. Viaje y regreso en autobús:
+   - Id en autobús: \( A \)
+   - Regreso en autobús: \( A \)
+   - Total: \( A + A = 2A = 1 \) hora
+   - Por lo tanto, \( A = 0.5 \) horas
+
+Sustituimos el valor de \( A \) en la primera ecuación:
+- \( 0.5 + C = 3 \)
+- \( C = 2.5 \) horas
+
+Ahora, si Joan camina ida y vuelta:
+- Total de tiempo: \( C + C = 2C = 5 \) horas
+</think>
+
+**Raonament:**
+
+Joan va a l'institut en autobús i torna caminant, el que li toma 3 hores. Si hi va i torna tots dos cops en autobús, el temps necessari és de 1 hora.
+
+1. **Determinar el temps en autobús ida i volta:**
+   - Viaje en autobús y regreso en autobús: \(2A = 1\) hora → \(A = 0,5\) hores.
+
+2. **Calcular el temps caminando:**
+   - Viaje en autobús y regreso caminando: \(A + C = 3\) hores.
+   - Sustituim \(A = 0,5\): \(0,5 + C = 3\) → \(C = 2,5\) hores.
+
+3. **Calcular el temps caminando ida i volta:**
+   - Joan necessita caminar dos cops (ida i tornada), per tant: \(2 \times 2,5 = 5\) hores.
+
+**Resposta:** D) 5 h

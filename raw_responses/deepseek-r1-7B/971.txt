@@ -1,0 +1,41 @@
+<think>
+Primero, identifico que tenemos cuatro paquetes con pesos enteros y todos son diferentes. La suma total es de 20 kg.
+
+El tercer paquete, ordenado de menor a mayor peso, pesa 8 kg. Esto significa que los dos primeros paquetes suman un total que, al sumarse con el tercero (8 kg) y el cuarto, da 20 kg.
+
+Si llamo a los pesos de los paquetes a, b, c, d en orden creciente, entonces c = 8 kg. Sabemos que a < b < c < d y que a + b + c + d = 20.
+
+Sustituyendo c por 8 kg: a + b + 8 + d = 20 → a + b + d = 12.
+
+Dado que a, b son menores que 8 y d es mayor que 8, necesitamos encontrar valores enteros y únicos para a, b y d que cumplan a + b + d = 12 con a < b < 8 < d.
+
+Empezaré probando los posibles valores para d. El mínimo valor para d es 9 kg. Si d=9, entonces a + b = 3. Los únicos enteros positivos y diferentes son a=1 y b=2.
+
+Verifico si esto cumple con las condiciones: 1 < 2 < 8 < 9 y suma total de 1+2+8+9=20 kg, lo cual es correcto.
+
+Por lo tanto, el segundo paquete pesa 2 kg.
+</think>
+
+Raonament:
+
+Lisa ha rebut quatre paquets d'objectes amb pesos enters, tots diferents i en ordre creixent. El pes total dels quatre paquets és de 20 kg, i el tercer paquet, quan està ordenat, pesa 8 kg.
+
+Vamos a denotar els pesos als paquets com a, b, c, d on a < b < c < d. Segons les condicions:
+1. a + b + c + d = 20
+2. c = 8
+
+Sustituïm c en la suma total:
+a + b + 8 + d = 20 → a + b + d = 12
+
+Sabem que els pesos són tots diferents i enters, i que a < b < 8 < d.
+
+Empezim probant valors per d:
+- Si d = 9 kg:
+  - Tots los paquets: a, b, 8, 9
+  - Suma total: a + b + 8 + 9 = 20 → a + b = 3
+  - Posibles valors per a i b (amb a < b < 8):
+    - a = 1 kg, b = 2 kg
+
+Aquestes valors compleixen totes les condicions.
+
+Resposta: A) 2 kg

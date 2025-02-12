@@ -1,0 +1,85 @@
+<think>
+Primero, analizo la ecuación dada: \(a^2 + b^2 = 6ab\). Quiero expresar esto en términos de la relación entre \(a\) y \(b\).
+
+Divido ambos lados de la ecuación por \(b^2\) para obtener:
+\[
+\frac{a^2}{b^2} + 1 = 6 \cdot \frac{a}{b}
+\]
+Esto simplifica a:
+\[
+\left(\frac{a}{b}\right)^2 - 6\left(\frac{a}{b}\right) + 1 = 0
+\]
+Sea \(x = \frac{a}{b}\), la ecuación se convierte en:
+\[
+x^2 - 6x + 1 = 0
+\]
+Resolviendo esta ecuación cuadrática, obtengo:
+\[
+x = \frac{6 \pm \sqrt{36 - 4}}{2} = \frac{6 \pm \sqrt{32}}{2} = 3 \pm 2\sqrt{2}
+\]
+Dado que \(a > b\) y ambos son positivos, elegimos la raíz positiva:
+\[
+x = 3 + 2\sqrt{2}
+\]
+Ahora, necesito encontrar \(\frac{a + b}{a - b}\). Expreso esto en términos de \(x\):
+\[
+\frac{a + b}{a - b} = \frac{x + 1}{x - 1}
+\]
+Sustituyendo el valor de \(x\):
+\[
+\frac{(3 + 2\sqrt{2}) + 1}{(3 + 2\sqrt{2}) - 1} = \frac{4 + 2\sqrt{2}}{2 + 2\sqrt{2}}
+\]
+Simplifico la expresión:
+\[
+\frac{2(2 + \sqrt{2})}{2(1 + \sqrt{2})} = \frac{2 + \sqrt{2}}{1 + \sqrt{2}} = \sqrt{2}
+\]
+Por lo tanto, la respuesta es B) √2.
+</think>
+
+Raonament:
+  
+  Dada la ecuación \(a^2 + b^2 = 6ab\), podremos reescribir aquesta com:
+
+  \[
+  a^2 - 6ab + b^2 = 0
+  \]
+
+  Dividim per \(b^2\) (supongom que \(b \neq 0\) perquè \(0 < b < a\)):
+
+  \[
+  \left(\frac{a}{b}\right)^2 - 6\left(\frac{a}{b}\right) + 1 = 0
+  \]
+
+  Seva \(x = \frac{a}{b}\), llavors la ecuación es convierte en:
+
+  \[
+  x^2 - 6x + 1 = 0
+  \]
+
+  Resolviendo aquesta ecuación quadràtica, obtenim les solucions:
+
+  \[
+  x = \frac{6 \pm \sqrt{36 - 4}}{2} = \frac{6 \pm \sqrt{32}}{2} = \frac{6 \pm 4\sqrt{2}}{2} = 3 \pm 2\sqrt{2}
+  \]
+
+  Donat que \(a > b\) i ambos són positius, la solució correcta és \(x = 3 + 2\sqrt{2}\).
+
+  Ara volem trobar el valor de \(\frac{a + b}{a - b}\). Podrem reescriure aquesta expressió com:
+
+  \[
+  \frac{a + b}{a - b} = \frac{\frac{a}{b} + 1}{\frac{a}{b} - 1} = \frac{x + 1}{x - 1}
+  \]
+
+  Substituim \(x = 3 + 2\sqrt{2}\):
+
+  \[
+  \frac{(3 + 2\sqrt{2}) + 1}{(3 + 2\sqrt{2}) - 1} = \frac{4 + 2\sqrt{2}}{2 + 2\sqrt{2}}
+  \]
+
+  Simplificant:
+
+  \[
+  \frac{2(2 + \sqrt{2})}{2(1 + \sqrt{2})} = \frac{2 + \sqrt{2}}{1 + \sqrt{2}} = \sqrt{2}
+  \]
+
+Resposta: B) √2

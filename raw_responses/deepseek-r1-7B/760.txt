@@ -1,0 +1,65 @@
+<think>
+Primero, identifico que hay un aumento del 20% en el número de chicas y una disminución del 20% en el número de chicos. Esto significa que si inicialmente había C chicas y H chicos, después de los cambios habrá 1.2C chicas y 0.8H chicos.
+
+Luego, sabemos que el total de estudiantes aumentó en uno, es decir: 1.2C + 0.8H = C + H + 1.
+
+Para simplificar, resto C + H de ambos lados, lo que nos da 0.2C - 0.2H = 1.
+
+Divido la ecuación por 0.2 para obtener C - H = 5.
+
+Esto implica que el número inicial de chicas es cinco unidades mayor que el número de chicos: C = H + 5.
+
+Busco números enteros positivos para C y H que cumplan con esta relación y al multiplicar y sumar resulten en uno de los valores propuestos. Tras algunas pruebas, encuentro que si inicialmente había 10 chicas y 5 chicos (total de 15 estudiantes), después del cambio habría 12 chicas y 4 chicos, sumando un total de 16 estudiantes, lo que coincide con una disminución de 1 estudiante. Sin embargo, el problema indica que el total aumentó en uno, por lo que ajusto mis valores.
+
+Al final, determino que si inicialmente había 25 chicas y 20 chicos (total de 45 estudiantes), después del cambio habría 30 chicas y 16 chicos, sumando un total de 46 estudiantes, es decir, un incremento de 1 estudiante. Esto coincide con las opciones proporcionadas, donde 46 no está incluido, por lo que reviso mis cálculos.
+
+Después de reevaluar, me doy cuenta de que quizás he cometido un error en la interpretación del aumento. Finalmente, concluyo que el número total inicial de estudiantes debe ser 25, lo que resulta en un total actual de 31 estudiantes.
+</think>
+
+**Raonament:**
+
+Supongamos que inicialment hi havia \( C \) xics i \( H \) xiques. Aquest any, el nombre de xics ha crescut en un 20%, per tant \( 1.2C \). El nombre de xiques ha disminuït en un 20%, per tant \( 0.8H \).
+
+El total d'estudiants ara és:
+\[
+1.2C + 0.8H
+\]
+
+Sabem que el total d'estudiants ara és un més que abans, per tant:
+\[
+1.2C + 0.8H = C + H + 1
+\]
+
+Fem les operacions necessàries per resoldre l'equació:
+\[
+1.2C + 0.8H - C - H = 1 \\
+0.2C - 0.2H = 1 \\
+C - H = 5
+\]
+
+Aquesta equació mostra que inicialment hi havia 5 més xics que xiques (\( C = H + 5 \)).
+
+Busquem un nombre enter per \( H \) i substituim en l'equació:
+- Si \( H = 20 \), llavors \( C = 25 \)
+- Total inicial: \( 25 + 20 = 45 \)
+- Total actual: \( 1.2 \times 25 + 0.8 \times 20 = 30 + 16 = 46 \)
+
+El total d'estudiants ara és 46, que no coincideix amb cap de les opcions donades (22, 26, 29, 31, 34). Però, si rebrincavàs els valors inicisals:
+
+- Si \( H = 15 \), llavors \( C = 20 \)
+- Total inicial: \( 20 + 15 = 35 \)
+- Total actual: \( 1.2 \times 20 + 0.8 \times 15 = 24 + 12 = 36 \)
+
+Encara no coincideix. Continuàvam:
+
+- Si \( H = 25 \), llavors \( C = 30 \)
+- Total inicial: \( 30 + 25 = 55 \)
+- Total actual: \( 1.2 \times 30 + 0.8 \times 25 = 36 + 20 = 56 \)
+
+Ara, 56 - 55 = 1, que coincideix amb el condició donada.
+
+Mirant les opcions, la més propera a 56 és 34, però no exactament. Pots considerar que hi ha un error en els càlculs o que les opcions possen tenir una solució alternativa.
+
+**Resposta:**
+
+E) 34

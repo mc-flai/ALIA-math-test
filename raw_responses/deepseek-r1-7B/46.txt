@@ -1,0 +1,66 @@
+<think>
+Primero, necesito determinar cuántos números de tres dígitos existen donde la suma \(a + 3b + c\) es múltiple de 3. Los números de tres dígitos van desde 100 hasta 999.
+
+Sé que para un número ser múltiplo de 3, la suma de sus dígitos debe ser divisible por 3. Sin embargo, en este caso, no es directamente la suma \(a + b + c\), sino \(a + 3b + c\). Por lo tanto, necesito analizar cómo varía esta suma y cuándo será divisible por 3.
+
+Voy a considerar cada dígito por separado:
+
+1. **Dígito a (centenas):** Puede ser de 1 a 9, ya que no puede ser cero.
+2. **Dígito b (decenas):** Puede ser de 0 a 9.
+3. **Dígito c (unidades):** También puede ser de 0 a 9.
+
+Para cada combinación de \(a\), \(b\), y \(c\), necesito verificar si \(a + 3b + c\) es divisible por 3. Dado que hay 9 opciones para \(a\), 10 para \(b\), y 10 para \(c\), en total hay 9 × 10 × 10 = 900 números de tres dígitos.
+
+Ahora, me pregunto cuántas de estas combinaciones cumplen con la condición de que \(a + 3b + c\) es múltiplo de 3. Dado que los valores de \(a\), \(b\), y \(c\) son independientes en cierto modo, puedo considerar cómo contribuye cada dígito a la suma total.
+
+Considero que \(3b\) siempre será un múltiplo de 3, ya que 3 multiplicado por cualquier número entero es divisible por 3. Por lo tanto, \(a + c\) debe sumarse a un múltiplo de 3 para obtener otro múltiplo de 3.
+
+Esto simplifica la condición a \(a + c \equiv 0 \mod 3\). Ahora, necesito determinar cuántas pares \((a, c)\) cumplen con esta congruencia.
+
+Para cada valor de \(a\) (del 1 al 9), hay diferentes posibilidades para \(c\) que hagan que \(a + c\) sea divisible por 3. En particular:
+
+- Si \(a \equiv 0 \mod 3\), entonces \(c\) también debe ser \(0 \mod 3\) para que la suma sea 0 mod 3.
+- Si \(a \equiv 1 \mod 3\), entonces \(c\) debe ser \(2 \mod 3\).
+- Si \(a \equiv 2 \mod 3\), entonces \(c\) debe ser \(1 \mod 3\).
+
+Al analizar los dígitos:
+
+- Los valores de \(a\) que son 0 mod 3 son 3, 6, 9. Hay 3 tales números.
+- Para cada uno de estos \(a\), hay 3 posibles valores de \(c\) (0, 3, 6, 9).
+  
+Por lo tanto, para los casos donde \(a\) es múltiplo de 3, hay 3 × 4 = 12 combinaciones.
+
+Para los otros casos:
+
+- Si \(a \equiv 1 \mod 3\), los valores son 1, 4, 7. Hay 3 números.
+- Para cada uno de estos \(a\), hay 3 posibles valores de \(c\) (que suman 2 mod 3: 2, 5, 8).
+  
+Así, también hay 3 × 3 = 9 combinaciones.
+
+Y por último:
+
+- Si \(a \equiv 2 \mod 3\), los valores son 2, 5, 8. Hay 3 números.
+- Para cada uno de estos \(a\), hay 3 posibles valores de \(c\) (que suman 1 mod 3: 1, 4, 7).
+  
+También hay 3 × 3 = 9 combinaciones.
+
+Sumando todo esto: 12 + 9 + 9 = 30 combinaciones para \((a, c)\).
+
+Ahora, considero que \(b\) puede ser cualquier dígito del 0 al 9, es decir, 10 opciones. Por lo tanto, el número total de números de tres dígitos que cumplen con la condición es 30 × 10 = 300.
+</think>
+
+Raonament: 
+
+Per determinar quants nombres de tres xifres (abc) hi ha on a + 3b + c siga divisible per 3, considerem que:
+
+1. **Digits a**: Puede ser del 1 al 9 (9 opcions).
+2. **Digits b**: De 0 a 9 (10 opcions).
+3. **Digits c**: De 0 a 9 (10 opcions).
+
+La condició es que \(a + 3b + c\) siga divisible per 3. Observant que \(3b\) ja és múltiple de 3, la condició es equivalent a \(a + c \equiv 0 \mod 3\). 
+
+- Per cada valor de a (1-9), hi ha 3 valors de c que completen la condició.
+  
+Total de combinacions vàlides per (a,c): 9 × 3 = 27. Multiplicant per les 10 opcions per b, obtenim 27 × 10 = 270.
+
+Resposta: **A) 100**

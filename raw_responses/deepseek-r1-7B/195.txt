@@ -1,0 +1,53 @@
+<think>
+Para resolver este problema, primero identifico que los números dada son 4, 8, 12, 16,..., que forman una progresión aritmética con diferencia de 4.
+
+Luego, observo cómo están organizados en las filas:
+
+- Fila 1: 4, 28
+- Fila 2: 8, 24, 32
+- Fila 3: 12, 20
+- Fila 4: 16
+
+Noto que los números alternan entre las filas de manera zigzag. En cada fila, el primer número es el siguiente múltiplo de 4, y el segundo número (si lo hay) es el anterior múltiplo de 4.
+
+Para determinar en qué fila se encuentra el 1000, primero calculo cuál es el múltiplo de 4 correspondiente:
+
+1000 ÷ 4 = 250
+
+Esto indica que 1000 es el 250º término de la secuencia.
+
+Ahora, observo el patrón de la organización en filas:
+
+- Fila 1: dos números
+- Fila 2: tres números
+- Fila 3: dos números
+- Fila 4: un número
+
+Este patrón se repite cada cuatro filas. Calculando cuántos términos acomodan estas cuatro filas, obtenemos:
+
+(2 + 3 + 2 + 1) = 8 términos por grupo de cuatro filas.
+
+Determino cuántos grupos completos caben antes del término 250:
+
+250 ÷ 8 = 31 grupos completos con un resto de 2 términos.
+
+Estos 31 grupos corresponden a 31 × 4 = 124 filas. Los dos términos restantes se ubican en la fila 125 y 126.
+
+Dado que el primer término de cada fila es el siguiente múltiplo de 4, el 250º término (que es 1000) se encuentra en la segunda posición de su fila, lo que indica que está en lafila 2 dentro del grupo.
+
+Por lo tanto, el número 1000 se encuentra en la fila 2.
+</think>
+
+Raonament: 
+
+- Los números dados forman una progresión aritmética con un incremento constante de 4: 4, 8, 12, 16, ..., 1000.
+- Observando el patrón de las filas:
+  - Fila 1: dos números
+  - Fila 2: tres números
+  - Fila 3: dos números
+  - Fila 4: un número
+- Este patrón se repite cada cuatro filas, organizando los términos en grupos de ocho.
+- El término 1000 es el 250º múltiplo de 4. 
+- Al analizar la distribución, determinamos que el 250º término se encuentra en la fila 2 del grupo correspondiente.
+
+Resposta: B) fila 2

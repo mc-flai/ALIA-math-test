@@ -1,0 +1,73 @@
+<think>
+Primero, identifico los datos del problema:
+
+- Hay 40 jugadores en total.
+- Los primeros 34 jugadores tienen una media de 9 puntos. Por lo tanto, la suma total de puntos de estos 34 jugadores es 34 * 9 = 306 puntos.
+- La media total de los 40 jugadores es 8,9 puntos. Entonces, la suma total de puntos de todos los jugadores es 40 * 8,9 = 356 puntos.
+- Los últimos 6 jugadores han obtenido como mínimo 7 puntos cada uno, lo que significa que al menos suman 6 * 7 = 42 puntos.
+
+Ahora, calculo la cantidad de puntos restantes para los últimos 6 jugadores:
+
+Puntos totales de los primeros 34: 306
+Suma total necesaria: 356
+Por lo tanto, puntos necesarios para los últimos 6 jugadores: 356 - 306 = 50
+
+Sabemos que los últimos 6 suman al menos 42 puntos. Para maximizar el número de jugadores con 10 puntos, intentamos asignarles la máxima puntuación posible.
+
+Supongamos que x jugadores han obtenido 10 puntos:
+
+Entonces, la suma de los puntos de estos x jugadores es 10x.
+El resto (6 - x) jugadores suman al menos 7 cada uno: 7*(6 - x).
+
+Por lo tanto, la suma total para los últimos 6 jugadores sería:
+10x + 7(6 - x) ≥ 50
+
+Simplificando:
+10x + 42 - 7x ≥ 50
+3x + 42 ≥ 50
+3x ≥ 8
+x ≥ 8/3 ≈ 2,666...
+
+Dado que x debe ser entero, el valor mínimo de x es 3.
+
+Por lo tanto, como queremos maximizar x, la respuesta es 3 jugadores con 10 puntos.
+</think>
+
+**Raonament:**
+
+Per determinar com màxim quants dels últims 6 jugadors han obtingut 10 punts, seguire les passes seguintes:
+
+1. **Calcula els punts totals dels 40 jugadors:**
+   - Mitjana total = 8,9 punts
+   - Punts totals = 40 jugadors × 8,9 = 356 punts
+
+2. **Calcula els punts totals dels primers 34 jugadors:**
+   - Mitjana dels 34 jugadors = 9 punts
+   - Punts totals = 34 jugadors × 9 = 306 punts
+
+3. **Determineu els punts restants per als últims 6 jugadors:**
+   - Punts restants = 356 punts totals - 306 punts dels primers 34 = 50 punts
+
+4. **Sabem que els ulltims 6 jugadors han obtingut com a mínim 7 punts cada un:**
+   - Punts mínims per als 6 jugadors = 6 jugadors × 7 punts = 42 punts
+
+5. **Per maximar el nombre de jugadors amb 10 punts, asumim que tant com possible d'ells han obtingut 10 punts:**
+   - Si tots 6 jugadors hubieran tingut 10 punts, els punts total serien = 6 × 10 = 60
+   - però només tenim 50 punts disponibles
+
+6. **Formulem una equació per determinar com màxim quants jugadors poden tenir 10 punts:**
+   \[
+   10x + 7(6 - x) = 50
+   \]
+   on \(x\) és el nombre de jugadors amb 10 punts.
+
+7. **Resol la equació:**
+   \[
+   10x + 42 - 7x = 50 \\
+   3x = 8 \\
+   x ≈ 2,666...
+   \]
+   
+   Com \(x\) ha de ser un enter, el màxim possible és **3 jugadors**.
+
+**Resposta:** C) 3

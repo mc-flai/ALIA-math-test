@@ -1,0 +1,35 @@
+<think>
+El segment BC té com a mitjà punt M. Sabem que els segments AB i AC són perpendiculars, formant un triangle rectangle en A. La distància del punt M al segment AB és menor que la distància a AC.
+
+Primero, considero el triangle ABC on AB ⊥ AC, formant un triangle rectangle. Llavors, BC serà la hipotenusa.
+
+Calculo les coordenades assignades: poso A en (0, 0), B en (x, 0) i C en (0, y). El punt mitjà M de BC té coordenades (x/2, y/2).
+
+La distància d'un punt a un segment se pot calcular mitjançant fórmules bàsiques. Per AB, que està sobre l'eix x, la distància del punt M a AB serà |y/2|. Per AC, que està sobre l'eix y, la distància serà |x/2|.
+
+Doncs, segons el problema, |y/2| < |x/2|, o sea y < x.
+
+Finalment, comparo les longituds: AB = x, AC = y, BC = √(x² + y²). Com que y < x, entoces AC < AB < BC.
+</think>
+
+Raonament:
+
+Considerem un triangle rectangle amb punts A, B i C on AB ⊥ AC. El segment BC té el seu punt mitjà M. Sabemos que la distància del punt M al segment AB és menor que la distància a AC.
+
+1. **Asignació de coordenades**: Posar A en (0, 0), B en (x, 0) i C en (0, y). Aleshores, el punt mitjà M de BC té coordenades ((x/2), (y/2)).
+   
+2. **Calculo les distàncies**:
+   - La distància d'un punt a un segment es pot calcular mitjançant fórmules bàsiques.
+   - Per AB, que està sobre l'eix x, la distància del punt M a AB serà |y/2|.
+   - Per AC, que està sobre l'eix y, la distància serà |x/2|.
+
+3. **Comparació**: Doncs, segons el problema, |y/2| < |x/2|, o sea y < x.
+
+4. **Longituds del triangle**:
+   - AB = x
+   - AC = y
+   - BC = √(x² + y²)
+   
+5. **Conclusion**: Com que y < x, entoces AC < AB < BC.
+
+Resposta: D) AC < AB < BC

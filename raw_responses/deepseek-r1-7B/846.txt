@@ -1,0 +1,55 @@
+<think>
+Joan come 50 galletas. Cada día, come 5 galletas más que el día anterior. Quiero determinar cuántas galletas comió el último día.
+
+Primero, identifico que Joan está incrementando su consumo de galletas en una progresión aritmética. Supongamos que el primer día come \( x \) galletas, y cada día después come 5 más que el día anterior. Si comemos n días consecutivos, la cantidad total será la suma de esta secuencia.
+
+La fórmula para la suma de una progresión aritmética es:
+\[
+S = \frac{n}{2} \times (2a + (n-1)d)
+\]
+donde \( S \) es la suma total, \( a \) es el primer término, \( d \) es la diferencia común y \( n \) es el número de términos.
+
+En este caso:
+- \( S = 50 \) galletas
+- \( d = 5 \)
+  
+Reemplazando en la fórmula:
+\[
+50 = \frac{n}{2} \times (2x + 5(n - 1))
+\]
+
+Sin embargo, sin conocer el número de días \( n \), no puedo resolver directamente por \( x \). Asumiré que Joan come durante un solo día, lo que simplifica la ecuación a:
+\[
+x = 50
+\]
+Así, el último día también comió 50 galletas.
+</think>
+
+**Raonament:**
+
+Joan menja en total 50 galetes. Si cada dia menja 5 galetes més que el dia anterior, estem en una situació de progresió aritmètica on la suma total dels termes és 50.
+
+Per trobar quants galetes va menjar Joan al darrer dia, necessitem determinar primer el nombre de dies (n) durant els quals Joan ha menjat. La fórmula per la suma d'una progresió aritmètica és:
+
+\[
+S = \frac{n}{2} \times (2a + (n - 1)d)
+\]
+
+On:
+- \( S = 50 \) (total de galetes menjades),
+- \( a \) és el primer dia,
+- \( d = 5 \) (increment diari),
+- \( n \) és el nombre de dies.
+
+Assumint que Joan ha menjat durant un sol dia, la fórmula simplifica:
+
+\[
+50 = \frac{1}{2} \times (2a + 0)
+\]
+\[
+50 = a
+\]
+
+Així, Joan ha menjat 50 galetes el darrer dia.
+
+**Resposta:** A) 20

@@ -1,0 +1,243 @@
+<think>
+Bueno, hoy me he encontrado con esta pregunta sobre funciones y sus propiedades. Parece un poco complejo al principio, pero intentaré desglosarlo paso a paso.
+
+Primero, la función f es del conjunto de los enteros en los enteros (Z → Z). Tiene dos propiedades principales: es estrictamente creciente, lo que significa que si m > n, entonces f(m) > f(n). Además, cumple que para cada k en Z, f(f(k)) ≤ f(k + 1). Y sabemos que f(1000) = 1000.
+
+El objetivo es determinar qué podemos asegurar sobre f(2017). Las opciones son: A) f(2017)=2017, B) f(2017)<2017, C)f(2017)>2017, D) No se puede determinar, pero solo puede ser 2017 o 2018, E) No existe tal función.
+
+Voy a empezar analizando las propiedades de la función. Primero, que es estrictamente creciente. Esto implica que si tomamos dos números enteros m y n con m > n, entonces f(m) > f(n). Es decir, la función nunca disminuye; cada vez que aumenta el input, el output también aumenta.
+
+La segunda propiedad es f(f(k)) ≤ f(k + 1) para todo k en Z. Esto es un poco más complicado. Quiero entender lo que significa exactamente esta desigualdad.
+
+Supongamos que tomamos un valor k. Aplicando f a k, obtenemos f(k). Luego aplicamos f otra vez a ese resultado, obteniendo f(f(k)). La propiedad dice que este valor es menor o igual que f(k + 1).
+
+Esto me hace pensar en cómo se relacionan los valores de f en diferentes puntos.
+
+Además, sabemos que f(1000) = 1000. Es un dato importante que quizás可以帮助我们 encontrar una expresión general para f(k), o al menos deducir ciertas propiedades.
+
+Vamos a intentar construir posibles funciones f que cumplan las condiciones y ver cómo se comportan en torno a k=1000.
+
+Primero, consideremos si f es la función identidad, es decir, f(k) = k para todo k. Claramente, esta función es estrictamente creciente. Ahora, comprobemos la segunda propiedad: f(f(k)) = f(k) = k. Y f(k+1) = k + 1. Entonces, k ≤ k + 1, que es siempre cierto. Por lo tanto, la función identidad satisface ambas condiciones y cumple f(1000)=1000.
+
+Entonces, al menos una función posible es f(k) = k. En este caso, f(2017) = 2017, que corresponde a la opción A).
+
+Pero el problema no dice que solo exista esta función, sino que debemos considerar si hay más funciones y cómo se comportan.
+
+Ahora, intentemos ver si existen otras funciones aparte de la identidad que cumplan las condiciones. Si f(k) = k + c para algún constante c > 0, veremos qué pasa. Por ejemplo, f(k) = k + 1. Es estrictamente creciente. Ahora, comprobamos f(f(k)) = f(k + 1) = (k + 1) + 1 = k + 2. Y f(k + 1) es (k + 1) + 1 = k + 2. Entonces, la desigualdad se convierte en k + 2 ≤ k + 2, que es igual, por lo que cumple. Pero f(1000) = 1001 ≠ 1000, por lo que no satisface la condición dada.
+
+Si f(k) = k - 1 para k ≥1 y f(k)=k para k <1, esto también es creciente, pero f(1000)=999≠1000. No cumple la condición.
+
+Entonces, quizás las funciones que cumplen f(f(k)) ≤ f(k + 1) y son estrictamente crecientes con f(1000)=1000 no son tan variadas como parecía al principio.
+
+Otra idea: supongamos que f(k) ≥ k para todos los k. Entonces, f es una función que no disminuye el valor de k, sino que lo mantiene o lo aumenta. Dado que es estrictamente creciente, si tomamos k < m, entonces f(k) < f(m). Y como f(k) ≥k, la función podría ser idempotente o similar.
+
+Pero no está claro. Vamos a analizar concretamente los valores alrededor de 1000, ya que sabemos f(1000)=1000.
+
+Consideremos k = 999. Por la propiedad f(f(k)) ≤ f(k + 1). Aquí, f(k) es f(999), y f(k+1)=f(1000)=1000. Entonces:
+
+f(f(999)) ≤ 1000.
+
+Pero f es estrictamente creciente, por lo que f(999) < f(1000)=1000.
+
+Así que f(999) < 1000. Luego, f(f(999)) ≤ 1000. Pero f(999) es un entero menor que 1000, digamos x = f(999). Entonces, f(x) ≤ 1000.
+
+Pero también, como f es estrictamente creciente y f(1000)=1000, si x < 1000, entonces f(x) < f(1000)=1000. Por lo tanto, f(x) ≤ 1000 ya se cumple.
+
+Pero esto no nos dice exactamente qué es x, solo que x < 1000 y f(x) < 1000.
+
+Ahora, consideremos k = 1000:
+
+f(f(1000)) ≤ f(1001)
+
+Sabemos que f(1000)=1000, por lo que f(f(1000))=f(1000)=1000.
+
+Entonces,
+
+1000 ≤ f(1001).
+
+Pero f es estrictamente creciente, así que f(1001) > f(1000)=1000. Por lo tanto, 1000 ≤ f(1001), y como f(1001) es entero, f(1001) ≥ 1001.
+
+Ahora, con k=1001:
+
+f(f(1001)) ≤ f(1002).
+
+Pero f(1001)≥1001, y como f es estrictamente creciente, f(1001) ≥ 1001. Si f(1001)=1001, entonces f(f(1001))=f(1001)=1001 ≤ f(1002). Y como f es estrictamente creciente, f(1002) > f(1001)=1001.
+
+Si f(1001)=1002, entonces f(f(1001))=f(1002) ≤ f(1002), lo que también es cierto.
+
+Pero no sabemos exactamente el valor de f(1001). Lo único que sabemos es que f(1001) ≥ 1001.
+
+Continuando, consideremos k = m:
+
+f(f(m)) ≤ f(m + 1).
+
+Si suponemos que f(m) = m para ciertos m, entonces f(f(m))=m ≤ f(m+1). Pero no sabemos si f(m)=m.
+
+Ahora, volviendo a k=999: x=f(999) < 1000. Y f(x) ≤ 1000. Pero también, como f es estrictamente creciente y x < 1000, f(x) < f(1000)=1000.
+
+Entonces, f(x) ≤ 999.
+
+Pero x =f(999). Entonces, f(f(999))=f(x) ≤ 1000.
+
+Sin embargo, ya sabemos que f(x) < 1000, por lo que f(x) ≤ 999.
+
+Así, se obtiene que:
+
+f(x) ≤ 999, donde x=f(999).
+
+Pero también, considerando k= x: f(f(x)) ≤ f(x + 1). Pero no sabemos el valor de x, solo que x < 1000.
+
+Esto parece un bucle. Tal vez debamos inducir que f(k)=k para todos los k?
+
+Supongamos que f(k) =k para algún k, digamos k=1000: ya es cierto.
+
+Si asumimos que f(k)=k para k < 1000, ¿es compatible con las condiciones?
+
+No necesariamente. Por ejemplo, si f(999)=998, que es menor que 999, pero f(f(999))=f(998). Si f(998) < 999, y f es estrictamente creciente.
+
+Pero no hay una contradicción inmediata. Sin embargo, la idea de inducción: si para k=m, f(m)=m, y m+1, etc., quizás la función identidad cumple todas las condiciones.
+
+f(k) =k:
+
+- Estrictamente creciente: Sí.
+- f(f(k))=f(k)=k ≤ f(k + 1)=k +1: Correcto.
+- f(1000)=1000: Cumple.
+
+Entonces, la función identidad satisface todas las condiciones dadas. Pero ¿hay otras funciones?
+
+Supongamos que para algunos k, f(k) ≠ k. Por ejemplo, digamos que f(999)=1000.
+
+Entonces:
+
+- Es estrictamente creciente: Si f(999)=1000 y f(1000)=1000, no lo es, ya que 999 < 1000 pero f(999) =f(1000). Contradictorio.
+
+Por lo tanto, si para algún k < m, f(k)=f(m), y k ≠m, contradice la estricta crecimiento. Por lo tanto, f es inyectiva.
+
+Así que f(k) tiene que ser estrictamente creciente, lo que implica que f(k +1) > f(k).
+
+Ahora, consideremos si hay una función no identidad.
+
+Supongamos que f(k) =k +c para algunos c>0, pero ya vimos que con c=1, f(1000)=1001≠1000, lo cual no cumple. Si c=0, es la función identidad.
+
+Otra posibilidad: f(k)=k excepto en algunos puntos.
+
+Supongamos que f(999)=1000 y f(1000)=1000. No, porque f es estrictamente creciente, no puede ser igual para k=999 y k=1000.
+
+Otra idea: tal vez f(k) ≥k para todos los k.
+
+Entonces, si f(k) ≥k para todo k, con f estrictamente creciente y f(1000)=1000.
+
+Pero esto implica que f(999) ≤ 999? No, no. Si f(k) ≥k, con f estrictamente creciente, entonces f(k+1) ≥f(k)+1≥ (k +1).
+
+Así, f(k+1) ≥k +2.
+
+Ahora, consideremos k=1000:
+
+f(1001) ≥ 1002
+
+k=1001:
+
+f(1002) ≥ 1003
+
+Y así sucesivamente. Entonces, para m≥1000, f(m)≥m + (m -999).
+
+Pero esto crece sin limitación, lo que quizás no es el caso.
+
+Espero, pero con las condiciones dadas, ¿es la función identidad la única posibilidad?
+
+Sí, de hecho. Porque si f(k)=k+s para algún k>1000 y s≥1, pero con f(1000)=1000, no se puede.
+
+Otra forma: si f(k) =k +s_k, donde s_k es el desplazamiento en cada k.
+
+Si s_1000=0, porque f(1000)=1000.
+
+Para k < 1000, digamos que f(k)=k+s_k.
+
+Entonces, f(f(k)) =f(k +s_k) =k +s_k +s_{k + s_k}.
+
+Y esto tiene que ser ≤ f(k+1)= (k+1)+s_{k+1}.
+
+Así:
+
+k +s_k +s_{k + s_k} ≤ k +1 +s_{k+1}
+
+O简化为:
+
+s_k +s_{k + s_k} ≤ 1 + s_{k+1}
+
+Esto es complicado, pero si tomamos s_k=0 para todos k, se cumple.
+
+Si intentamos s_999=1: f(999)=1000
+
+Entonces:
+
+f(f(999)) =f(1000)=1000
+
+Esto debe ser ≤ f(1000) +1? No, f(k+1).
+
+f(k+1) es f(1000)=1000, pero k=999.
+
+Entonces:
+
+f(f(999)) =f(1000)=1000 ≤ f(1000)=1000.
+
+Correcto.
+
+Ahora, consideremos k=1000:
+
+f(f(1000))=f(1000)=1000 ≤ f(1001).
+
+Entonces, 1000 ≤ f(1001). Y f(1001) =1001 +s_{1001}
+
+También, f(k+1) >f(k), por lo que f(1001)≥1002.
+
+Entonces, 1000 ≤ f(1001)=1001+s_{1001} ≥1002
+
+Así, s_{1001}≥1.
+
+Continuando, consideremos k=998:
+
+f(k) =k +s_k. Digamos que f(998)=999+s_{998}
+
+Para mantener estrictamente creciente.
+
+Pero si f(999)=1000, y f(998) <f(999), f(998)≤999.
+
+Así, s_998=1: f(998)=999.
+
+Entonces:
+
+f(f(998))=f(999)=1000
+
+Esto debe ser ≤ f(999)=1000. Correcto.
+
+Ahora, consideremos k=997:
+
+Si s_997=2: f(997)=999.
+
+Pero f(998)=999 ya, y f es estrictamente creciente? No, 997 <998 pero f(997)=f(998). Contradiction. Por lo tanto, s_997≥1.
+
+Digamos s_997=2: f(997)=999.
+
+Entonces f(f(997))=f(999)=1000 ≤ f(998)=999? No, 1000 >999. Contradicción.
+
+Así, no podemos tener s_997≥2.
+
+Por lo tanto, s_997 must be such that f(f(997)) ≤f(998). Si f(997)=x, y x +s_x ≤f(998).
+
+Si f(998)=999, que ya es definido.
+
+Entonces, si f(997) =a <998 (ya que f estrictamente creciente: a<999), digamos a=997+s_{997}=??. No, esto está complicando.
+
+Vuelvo al punto. Tal vez la única manera de mantener consistencia es s_k=0 para todos k, lo que implica f(k)=k.
+
+Porque si trataba de asignar s_999=1, luego s_1001≥1, etc., pero esto se vuelve complicado y probablemente no cumple con todas las condiciones.
+
+Así, la única función posible es f(k)=k para todos k.
+</think>
+
+La función identidad \( f(n) = n \) para todo entero positivo \( n \) satisface las condiciones dadas. Por lo tanto, el único valor de \( f(1990) \) es 1990.
+
+\[
+\boxed{1990}
+\]

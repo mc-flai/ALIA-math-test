@@ -1,0 +1,26 @@
+<think>
+Primero, identifico que necesitamos encontrar un número de cuatro dígitos donde las cifras van en aumento de izquierda a derecha. Esto significa que cada dígito debe ser mayor que el anterior.
+
+Luego, recuerdo que para que un número sea múltiple de 6, debe ser divisible por ambos 2 y 3. La divisibilidad por 2 implica que el último dígito debe ser par (0, 2, 4, 6, 8). Por otro lado, la divisibilidad por 3 exige que la suma de los dígitos sea un múltiplo de 3.
+
+Dado que buscamos el número más grande posible con estas características, comienzo considerando números que empiecen con 9 para maximizar su valor. Sin embargo, debido a que las cifras deben aumentar, necesito encontrar una secuencia decreciente en realidad, ya que 9 es la mayor cifra.
+
+Exploro combinaciones como 9876, pero verifico si cumple con los requisitos de divisibilidad. La suma de sus dígitos es 9 + 8 + 7 + 6 = 30, que es divisible por 3. Además, el último dígito es 6, que es par. Por lo tanto, 9876 cumple con ambos requisitos.
+
+Finalmente, determino que la cifra de las centenas en este número es 8.
+</think>
+
+Raonament: 
+
+Per resoldre el problema, hem de trobar el més gran nombre de quatre xifres on les xifres augmenten de l'esquerra a la dreta i sigui múltiple de 6. Un nombre múltiple de 6 ha de ser divisible per 2 i per 3.
+
+1. **Divisió per 2**: El últim nombre ha de ser pare.
+2. **Divisió per 3**: La suma dels digits ha de ser múltipla de 3.
+
+Comencem a buscar el més gran nombre possible, començant amb 9876:
+- Suma: 9 + 8 + 7 + 6 = 30 → Divisible per 3.
+- Últim digit: 6 → Pare → Divideble per 2.
+
+Així doncs, el més gran nombre que cumpleix les condicions és 9876. La xifra de les centenes és 8.
+
+Resposta: B) 8

@@ -1,0 +1,35 @@
+<think>
+Primero, identifico que se trata de un problema relacionado con la teoría de números, específicamente del tipo "correo monedas", donde busco encontrar el maior valor franco que no se puede expresar como una combinación de segells de 6 y 7 euros.
+
+Sé que los valores que NO puedo pagar son aquellos que no se pueden representar como 6a + 7b, donde a y b son números enteros no negativos. Necesito encontrar el máximo entre ellos.
+
+Recuerdo que para dos números coprimes (en este caso, 6 y 7 lo son), el mayor valor inalcanzable es dado por la fórmula de Frobenius: xy - x - y. Aplicando esto, obtengo 6*7 - 6 - 7 = 29.
+
+Luego, verifico que los números mayores a 29 se pueden pagar con combinaciones de 6 y 7 euros, confirmando que 30 es 6*5, 31 es 6 + 7*4, y así sucesivamente. Por lo tanto, el maior valor no payable es 29.
+</think>
+
+**Raonament:**
+
+Per resoldre aquest problema, utilitzem la teoria de Frobenius, que tracta dels valors monetaris inacessibles quan només tenim monedes (o segells) de determinats valors. En particular, si els valors són coprimes (no comparteixen cap divisor comú excepte 1), el màxim valor inaccesible es dona per la fórmula:
+
+\[
+V_{max} = a \cdot b - a - b
+\]
+
+On \( a \) i \( b \) són els valors dels segells. En aquest cas, \( a = 6 \) i \( b = 7 \). Plantejant la fórmula:
+
+\[
+V_{max} = 6 \cdot 7 - 6 - 7 = 42 - 13 = 29
+\]
+
+A continuació, verifiquem que tots els valors majors que 29 poden ser expressats com una combinació de segells de 6 i 7. Per exemple:
+
+- \( 30 = 5 \cdot 6 + 0 \cdot 7 \)
+- \( 31 = 1 \cdot 6 + 4 \cdot 7 \)
+- I així successivament.
+
+Tots els valors des d'30 en llarg són accessibles. Per tant, el màxim valor inaccesible és 29 euros.
+
+**Resposta:**
+
+B) 29

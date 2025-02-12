@@ -1,0 +1,44 @@
+<think>
+El problema consiste en determinar la xifra de las unitats del sumatori factorial desde 1! hasta 2016!. 
+
+Primero, sé que el factorial de un número n!, especialmente para valores grandes como 2016!, resulta en un número extremadamente grande. Sin embargo, solo necesitamos preocuparnos por la xifra final de la suma total, lo cual simplifica el cálculo.
+
+Noto que, a partir del 5! (que es 120), los factoriales terminan con al menos una xifra cero debido a la multiplicación de 2 y 5. Dado que los siguientes números (6!, 7!, etc.) son multiplos de 10, su contribución al dígito final de la suma será cero.
+
+Por lo tanto, solo necesitamos considerar el sumatorio desde 1! hasta 4! para determinar la xifra de las unitats. Calculando:
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+
+Sumando estos: 1 + 2 + 6 + 24 = 33.
+
+La xifra de las unitats es el dígito final de esta suma, que es 3.
+</think>
+
+**Raonament:**
+
+Per determinar la xifra de les unitats del sumatori factorial \(1! + 2! + 3! + \dots + 2016!\), observem que:
+
+1. **Característica dels factorials majors a o igual a 5!:**
+   - A partir de \(5!\) (que és 120), tots els factorials tindran com a mínim un factor de 10 (dada la multiplicació de 2 i 5). 
+   - Aquest fàctic implica que les unitats dels factorials des d'\(5!\) enllà seran zeros, ja que qualsevol múltiple de 10 acaba amb xifra 0.
+
+2. **Suma restringida a factorials menors a 5!:**
+   - Doncs només les sumes dels primeros factorials (des d'\(1!\) fins \(4!\)) pot afeyir a la xifra de les unitats final.
+   - Calculem aquesta suma:
+     \[
+     1! = 1 \\
+     2! = 2 \\
+     3! = 6 \\
+     4! = 24 \\
+     \text{Suma} = 1 + 2 + 6 + 24 = 33
+     \]
+   - La xifra de les unitats d'aquesta suma és **3**.
+
+3. **Efecte dels factorials majors a o igual a 5!:**
+   - Com tots els factorials des d'\(5!\) enllà acaben amb zeros, no afeyirán al xifra de les unitats final quan s'agreguen.
+
+**Resposta:**
+
+\boxed{C}

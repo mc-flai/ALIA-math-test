@@ -1,0 +1,35 @@
+<think>
+Primero, identifico los datos proporcionados en el problema. Hay 12 niños en total, y sus edades son 6, 7, 8, 9 y 10 años. Se menciona que cuatro de ellos tienen 6 años.
+
+La moda del grupo es 8, lo que significa que el número 8 se repite más veces que las demás edades. Dado que la moda es 8, al menos debe haber dos niños con esta edad, pero podría haber más.
+
+Conocemos que hay 4 niños de 6 años. Supongamos inicialmente que hay dos niños de 8 años para establecer la moda. Esto sumaría 4 (de 6) + 2 (de 8) = 6 niños. Sin embargo, el grupo total es de 12 niños, por lo que necesitamos asignar edades a los restantes.
+
+Si damos 7, 9 y 10 años a los otros niños, debemos distribuirlos de manera que la moda siga siendo 8. Si hubiera más de dos niños de 8 años, diríamos que hay tres o más, pero el problema no especifica un número exacto, solo que 8 es la moda.
+
+Supongamos que hay tres niños de 8 años para asegurar que sea la moda. Entonces, contando: 4 (de 6) + 3 (de 8) = 7 niños. Aún quedan 5 niños por asignar. Podemos distribuir sus edades restantes (7, 9 y 10) de manera uniforme para calcular la media.
+
+Para simplificar, asumiremos que los demás niños tienen edades iguales a 7 años. Entonces, sumamos las edades: (4 * 6) + (3 * 8) + (5 * 7). Luego calculamos el promedio dividiendo esta suma por el total de niños (12).
+
+Al calcular esto, obtenemos una media que rondaría entre 7 y 7.5 años. Dado las opciones proporcionadas, la más plausible es 7.5 años.
+</think>
+
+**Raonament:**
+
+- **Dades iniciales:** Hi ha 12 xiquets amb edats de 6, 7, 8, 9 i 10 anys. Quatre tenen 6 anys, i la moda (el valor més repetit) és 8.
+
+- **Determinar la moda:** La moda és 8, per tant el nombre d'edat 8 ha de ser el més freqüent. Dado que hi ha 4 xiquets de 6 anys, hi ha de haver més d'un xicot de 8 anys.
+
+- **Assignar edats restants:** Supongamos que hi ha 3 xiquets de 8 anys per assegurar que la moda siga 8. Aleshores, queden 12 - 4 (de 6) - 3 (de 8) = 5 xiquets més.
+
+- **Distribuir edats restants:** Assumim que els 5 xiquets restants tenen edats de 7, 9 i 10 anys. Per simplificar, supongamos que 2 tenen 7 anys, 2 tenen 9 anys i 1 te 10 anys.
+
+- **Calcular la mitjana:**
+  \[
+  \text{Mitjana} = \frac{(4 \times 6) + (3 \times 8) + (2 \times 7) + (2 \times 9) + (1 \times 10)}{12}
+  \]
+  \[
+  = \frac{24 + 24 + 14 + 18 + 10}{12} = \frac{90}{12} = 7,5
+  \]
+
+**Resposta:** D) 7,5

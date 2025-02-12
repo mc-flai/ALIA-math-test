@@ -1,0 +1,36 @@
+<think>
+Primero, entiendo que hay dos puertos muy distanciados y que cada día a las 7 de la tarde salen de cada puerto un barco rumbo al otro puerto. El viaje dura 170 horas.
+
+Ahora, necesito determinar cuántos barcos que realizan la misma ruta en el sentido contrario se encontrarán cada barco durante su trayecto.
+
+Considero que los barcos salen a la misma hora de ambos puertos y navegan continuamente sin detenerse. Dado que el viaje dura 170 horas, un barco sale a las 7 p.m., otro sale al día siguiente a las 7 p.m. y así sucesivamente.
+
+Para calcular cuántos barcos se encontrarán, miro que en el tiempo que tarda un barco en hacer el viaje, salen varios barcos del puerto contrario. Concretamente, 170 horas divididas por 24 dan aproximadamente 7 salidas diarias (pues 7*24=168 horas). Sumando las salidas de ambos puertos, obtengo un total de 14 barcos con los que se encontrará cada barco.
+</think>
+
+**Raonament:**
+
+Imaginons dos ports molt llunyats on surten vaixells cap a l'altre port a les set de la vesprada. Cada vaixell dura 170 hores en fer el viatge. Per calcular quants vaixells se trobaran cada un, considerem que:
+
+1. **Interval de salidas:** Com tots els vaixells surten a les 7 p.m., hi ha un vaixell salient cada dia a la mateixa hora des d'amb port.
+
+2. **Duració del viatge:** El viatge dura 170 hores, que correspon a més o menys 7 dies i 2 hores (perquè 170 ÷ 24 ≈ 7·24 = 168 hores).
+
+3. **Calcul de vaixells en ruta:** En el temps que un vaixell fa el viatge, hi ha:
+   - Un vaixell salient cada dia des d'amb port.
+   - En total, durant 7 dies, surten 7 vaixells d'un port i 7 d' l'altre.
+
+4. **Total de vaixells que se troban:** Sumant els vaixells que vengen en sentit contrari durant el viatge, tenim 7 (d'un port) + 7 (d l'altre) = **14 vaixells**.
+
+**Resposta: D) 14**
+
+Raonament:
+
+Cada barco sale a las 7 p.m. de cada puerto y tarda 170 horas en realizar el viaje. Durante este tiempo, salen barcos diariamente a la misma hora desde ambos puertos. Calculando cuántas veces salieron los barcos durante el viaje:
+
+- Tiempo total del viaje: 170 horas.
+- Número de días completos que tarda el viaje: 170 / 24 ≈ 7 días (ya que 7 * 24 = 168 horas).
+  
+Por lo tanto, desde cada puerto salieron 7 barcos durante el tiempo del viaje. Sumando ambos sentidos, tenemos un total de 7 + 7 = 14 barcos que se encontrarán.
+
+Resposta: D) 14

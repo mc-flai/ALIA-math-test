@@ -1,0 +1,33 @@
+<think>
+El usuario me está preguntando la probabilidad de obtener dos números consecutivos al lanzar dos dados. Primero, debo identificar qué se entiende por números consecutivos en este contexto.
+
+Al lanzar dos dados normales, cada uno tiene 6 caras con números del 1 al 6. Los pares consecutivos pueden ser (1,2), (2,3), ..., hasta (5,6) en orden ascendente y también considerando la inversa, como (2,1), (3,2), etc.
+
+Ahora, calcularé el número total de resultados posibles al lanzar dos dados: 6 caras para el primer dado multiplicadas por 6 caras para el segundo, lo que da 36 combinaciones.
+
+Después, determinaré cuántos de estos pares son consecutivos. Para ello, contaré las parejas en orden ascendente y luego sumaré sus inversas. En total, hay 5 pares ascendentes y otros 5 descendentes, lo que suma 10 resultados favorables.
+
+Finalmente, calcularé la probabilidad dividiendo el número de resultados favorables entre el total de resultados posibles: 10/36, que simplificando da 5/18. Revisando las opciones proporcionadas, veo que coincide con la opción C.
+</think>
+
+**Raonament:**  
+Per calcular la probabilitat d'obtindre dos números consecutius en llançar dos daus, seguiremos els passos següents:
+
+1. **Identificar els casos favorables:**
+   - Un pare de nombres consecutius poden ser:
+     - (1, 2), (2, 3), (3, 4), (4, 5), (5, 6) → 5 pares en ordre ascendent.
+     - (2, 1), (3, 2), (4, 3), (5, 4), (6, 5) → 5 pares en ordre descendent.
+   - En total, hi ha **10 casos favorables**.
+
+2. **Determinar el nombre total de resultats possibles:**
+   - Quan llançam dos daus, cada dau té 6 cares numerades del 1 al 6.
+   - El nombre total de combinacions possibles és \(6 \times 6 = 36\).
+
+3. **Calcular la probabilitat:**
+   - La probabilitat d'obtindre dos nombres consecutius és el quocient entre els casos favorables i els resultats possibles:
+     \[
+     \text{Probabilitat} = \frac{\text{Casos favorables}}{\text{Resultats possibles}} = \frac{10}{36} = \frac{5}{18}
+     \]
+
+**Resposta:**  
+C) 5/18

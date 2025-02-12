@@ -1,0 +1,66 @@
+<think>
+Primero, definimos las variables. Sean x los cubos y y los tetraedros.
+
+Cada cubo tiene 8 vértices y cada tetraedro tiene 4 vértices. Según el problema, la suma total de vértices es 52:
+8x + 4y = 52
+
+Cada cubo tiene 6 caras y cada tetraedro tiene 4 caras. La suma total de caras es 42:
+6x + 4y = 42
+
+Restamos las dos ecuaciones para eliminar y:
+(8x + 4y) - (6x + 4y) = 52 - 42
+2x = 10
+x = 5
+
+Sustituimos x en la primera ecuación:
+8*5 + 4y = 52
+40 + 4y = 52
+4y = 12
+y = 3
+</think>
+
+Raonament:
+
+Els cubos i tetràedres tenen vèrtexs i cares en númerors específics:
+
+- Un cub té **8 vèrtexs** i **6 cares**.
+- Un tetràedre té **4 vèrtexs** i **4 cares**.
+
+Etsatge 1: Definim les variables
+- Deixem \( x \) representar el nombre de cubos.
+- Deixem \( y \) representar el nombre de tetràedres.
+
+Etsatge 2: Formulam les equacions segons les dades proporcionades
+
+1. **Vèrtexs totals:**
+   \[
+   8x + 4y = 52
+   \]
+   
+2. **Cares totales:**
+   \[
+   6x + 4y = 42
+   \]
+
+Etsatge 3: Resolvem el sistema d'equacions
+
+Restem les dues equacions per eliminar \( y \):
+\[
+(8x + 4y) - (6x + 4y) = 52 - 42 \\
+2x = 10 \\
+x = 5
+\]
+
+Substituim \( x = 5 \) a la primera equació:
+\[
+8(5) + 4y = 52 \\
+40 + 4y = 52 \\
+4y = 12 \\
+y = 3
+\]
+
+Etsatge 4: Interpretació dels resultats
+- \( x = 5 \): Elsa té **5 cubos**.
+- \( y = 3 \): Elsa té **3 tetràedres**.
+
+Resposta: \boxed{B}

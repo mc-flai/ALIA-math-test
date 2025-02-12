@@ -1,0 +1,32 @@
+<think>
+Primero, necesito determinar la última cifra de \(4^{2015}\). Observo que las potencias de 4 presentan un patrón en sus últimas cifras. 
+
+Calculando las primeras potencias:
+- \(4^1 = 4\) → Última cifra: 4
+- \(4^2 = 16\) → Última cifra: 6
+- \(4^3 = 64\) → Última cifra: 4
+- \(4^4 = 256\) → Última cifra: 6
+
+Noto que el patrón de las últimas cifras se repite cada dos exponentes: 4, 6, 4, 6,... 
+
+Dado que el exponente 2015 es impar, me fijo en la posición del patrón correspondiente a los exponentes impares. La primera potencia impar (\(4^1\)) termina en 4, y la tercera también (\(4^3\)). Por lo tanto, el patrón para las potencias impares siempre es 4.
+
+Por consiguiente, \(4^{2015}\) tendrá como última cifra el dígito 4.
+</think>
+
+**Raonament:**  
+Per determinar la darrera xifra de \(4^{2015}\), podem observar que les potències de 4 presenten un patrón recurrent en les seves darreres xifres:
+
+\[
+\begin{align*}
+4^1 &= 4 \quad (\text{darrera xifra: } 4) \\
+4^2 &= 16 \quad (\text{darrera xifra: } 6) \\
+4^3 &= 64 \quad (\text{darrera xifra: } 4) \\
+4^4 &= 256 \quad (\text{darrera xifra: } 6) \\
+\end{align*}
+\]
+
+Aquest patrón (4, 6, 4, 6, ...) se repeteix cada dues potències. Com que \(2015\) és un exponent impare, correspondrà a la primera posició del patrón, qualsevol vegada que el exponent sigui odd, la darrera xifra serà \(4\).
+
+**Resposta:**  
+A) 4

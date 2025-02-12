@@ -1,0 +1,47 @@
+<think>
+Primero, entiendo que se me pide calcular la suma de los factoriales desde 1! hasta 2015!, y luego determinar la cifra de las decenas de ese gran número. 
+
+Sé que un factorial de un número n (denotado como n!) es el producto de todos los enteros positivos desde 1 hasta n. Por ejemplo, 5! = 5×4×3×2×1 = 120.
+
+Empezaré sumando los primeros factoriales para ver si puedo detectar un patrón en la suma o en la cifra de las decenas:
+
+- 1! = 1
+- 2! = 2
+- 3! = 6
+- 4! = 24
+- 5! = 120
+- 6! = 720
+- 7! = 5040
+
+Al sumar estos, obtengo:
+1 + 2 = 3  
+3 + 6 = 9  
+9 + 24 = 33  
+33 + 120 = 153  
+153 + 720 = 873  
+873 + 5040 = 5913
+
+Hasta aquí, la suma es 5913. Observo que a partir de 5!, los factoriales son múltiplos de 10, lo que significa que terminan en cero. Esto se debe a que 5! y superiores incluyen al menos un 2 y un 5 en sus factores, multiplicando juntos para formar 10.
+
+Entonces, considero que los términos desde 5! en adelante (hasta 2015!) no contribuirán a la cifra de las decenas de la suma total, ya que siempre terminan en cero y, por lo tanto, no afectarán el dígito de las decenas.
+
+Ahora, solo necesito considerar los términos hasta 4! para determinar la cifra de las decenas:
+
+Suma = 1 + 2 + 6 + 24 = 33
+
+La suma parcial es 33. Si sumo más factoriales que terminan en cero (desde 5! en adelante), estos solo aumentarán el valor total, pero no influirán en la cifra de las decenas.
+
+Por lo tanto, la cifra de las decenas en la suma total será el mismo dígito que ocupa la posición de las decenas en 33, es decir, 3.
+</think>
+
+Raonament:  
+Per calcular la xifra de les desenes de la suma dels factorials des de 1! fins a 2015!, primer sumem els primers factorials:  
+1! = 1  
+2! = 2  
+3! = 6  
+4! = 24  
+Suma parcial: 1 + 2 + 6 + 24 = 33  
+
+A partir de 5! ençà, tots els factorials són múltiples de 10 (perquè contenen almenys un 2 i un 5 com a factors), llavors no afavoriran la xifra de les desenes. La suma total serà donc 33 + multiples de 10, per tant la xifra de les desenes és 3.
+
+Resposta: D)

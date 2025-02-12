@@ -1,0 +1,98 @@
+<think>
+Primero, identifico que hay dos espelmes con la misma longitud inicial. Ambas comienzan a quemarse al mismo tiempo. La primera se quema por completo en 4 horas y la segunda en 5 horas.
+
+Sé que las tasas de quemado son constantes para cada espalda. Por lo tanto, puedo calcular la tasa de quema de cada una:
+
+- Para la primera espalda: (1 longitud) / 4 horas = 1/4 longitud por hora.
+- Para la segunda espalda: (1 longitud) / 5 horas = 1/5 longitud por hora.
+
+Estoy buscando el tiempo t en que la espalda que dura más (la que se quema en 5 horas) tenga el triple de longitud que la otra. En este momento, la longitud restante de cada espalda será:
+
+- Longitud de la primera espalda: L1(t) = 1 - (1/4)t.
+- Longitud de la segunda espalda: L2(t) = 1 - (1/5)t.
+
+Según el problema, quiero que L2(t) sea el triple de L1(t). Por lo tanto, planteo la ecuación:
+
+L2(t) = 3 * L1(t)
+
+Sustituyendo las expresiones anteriores:
+
+1 - (1/5)t = 3*(1 - (1/4)t)
+
+Expandiendo y resolviendo para t:
+
+1 - (t/5) = 3 - (3t)/4
+
+Reorganizo los términos:
+
+-(t/5) + (3t)/4 = 3 - 1
+
+Calculo el coeficiente de t:
+
+(-4t + 15t)/20 = 2
+
+(11t)/20 = 2
+
+Multiplico ambos lados por 20:
+
+11t = 40
+
+Finalmente, divido para encontrar t:
+
+t = 40/11 horas.
+
+Ahora, comparo este resultado con las opciones dadas y veo que coincide con la opción A.
+</think>
+
+Raonament:  
+Supongamos que ambas espelmes tenen una longitud inicial de \( L \). La primera espalda se quema en 4 hores, i la segona en 5 hores. Les taxes de quemada són constantes, per tant:
+
+- Taxa de quemada de la primera espalda: \( \frac{L}{4} \) per hora.
+- Taxa de quemada de la segona espalda: \( \frac{L}{5} \) per hora.
+
+Definim \( t \) com el temps en hores necessari perquè una espalda tinga triple longitud que l'altra. En aquest moment, les longitudes restants són:
+
+- Longitud de la primera espalda: \( L - \frac{L}{4}t \).
+- Longitud de la segona espalda: \( L - \frac{L}{5}t \).
+
+Segons el problema, volem que la segona espalda (que dura més) tinga triple longitud que l'altra:
+
+\[
+L - \frac{L}{5}t = 3 \left( L - \frac{L}{4}t \right)
+\]
+
+Dividim per \( L \) (suposant \( L \neq 0 \)):
+
+\[
+1 - \frac{t}{5} = 3 \left( 1 - \frac{t}{4} \right)
+\]
+
+Expansión i simplificació:
+
+\[
+1 - \frac{t}{5} = 3 - \frac{3t}{4}
+\]
+
+\[
+-\frac{t}{5} + \frac{3t}{4} = 2
+\]
+
+Calculant el coeficient de \( t \):
+
+\[
+-\frac{4t}{20} + \frac{15t}{20} = 2
+\]
+
+\[
+\frac{11t}{20} = 2
+\]
+
+\[
+11t = 40
+\]
+
+\[
+t = \frac{40}{11}
+\]
+
+Resposta: A) \( \frac{40}{11} \).
