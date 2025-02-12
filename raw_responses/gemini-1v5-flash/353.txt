@@ -1,0 +1,18 @@
+Raonament:
+
+Analitzem cada afirmació:
+
+* **A és divisible per 5:** Si A és divisible per 5, A pot ser 5 o 10.
+* **A és divisible per 11:** Si A és divisible per 11, A ha de ser 11 o un múltiple de 11 superior a 10 (que no es considera perquè A < 10).
+* **A és divisible per 55:** Si A és divisible per 55, A ha de ser 55 o un múltiple de 55 superior a 10 (que no es considera perquè A < 10).
+* **A és menor que 10:** Això limita les possibilitats.
+
+Sabem que dues afirmacions són vertaderes i dues falses.  Considerem les combinacions possibles:
+
+* Si "A és divisible per 55" és vertadera, llavors A hauria de ser 55, però això contradiu "A és menor que 10". Per tant, "A és divisible per 55" és falsa.
+
+* Si "A és divisible per 11" és vertadera, llavors A hauria de ser 11, però això contradiu "A és menor que 10". Per tant, "A és divisible per 11" és falsa.
+
+Això significa que "A és divisible per 5" i "A és menor que 10" han de ser vertaderes.  L'única opció que compleix ambdues condicions és A = 5.
+
+Resposta: B)

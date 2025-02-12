@@ -1,0 +1,11 @@
+Raonament:
+
+L'equació és X³ + Y² + Z = 2020.  Volem trobar els valors més grans possibles de X i Y per després calcular Z.
+
+1. **Trobar el valor més gran de X:** Per maximitzar X, hem de minimitzar Y² i Z. El valor mínim per a Y i Z és 1 (ja que són enters positius).  Si Y = 1 i Z = 1, llavors X³ = 2020 - 1 - 1 = 2018.  Com que 12³ = 1728 i 13³ = 2197, el valor enter més gran per a X és 12.
+
+2. **Trobar el valor més gran de Y:** Ara que X = 12, tenim 12³ + Y² + Z = 2020.  12³ = 1728.  Llavors, Y² + Z = 2020 - 1728 = 292. Per maximitzar Y, hem de minimitzar Z. El valor mínim per a Z és 1.  Si Z = 1, llavors Y² = 291.  Com que 17² = 289 i 18² = 324, el valor enter més gran per a Y és 17.
+
+3. **Calcular Z:**  Ara que tenim X = 12 i Y = 17, substituïm a l'equació: 12³ + 17² + Z = 2020.  1728 + 289 + Z = 2020.  2017 + Z = 2020.  Per tant, Z = 2020 - 2017 = 3.
+
+Resposta: E)

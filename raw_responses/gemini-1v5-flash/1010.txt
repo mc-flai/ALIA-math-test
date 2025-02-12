@@ -1,0 +1,13 @@
+Raonament:
+
+Un nombre de tres xifres es pot representar com 100a + 10b + c, on a, b, i c són xifres de 0 a 9, i a és diferent de 0.  La condició per ser un nombre "bonic" és que b > a + c.
+
+Busquem la seqüència més llarga de nombres bonics consecutius.  Observem que si tenim un nombre bonic, el següent pot no ser-ho.  Per exemple, si tenim 190 (9 > 1+0), el següent és 191 (9 > 1+1 és cert), 192 (9 > 1+2 és cert), 193 (9 > 1+3 és cert), 194 (9 > 1+4 és cert), 195 (9 > 1+5 és cert), 196 (9 > 1+6 és cert), 197 (9 > 1+7 és cert), 198 (9 > 1+8 és cert), 199 (9 > 1+9 és fals).  Aquí tenim una seqüència de 8 nombres bonics consecutius.
+
+Si provem amb altres nombres, és difícil trobar una seqüència més llarga.  Per exemple, si comencem amb 290, la seqüència és més curta.
+
+Considerem la màxima suma possible de les xifres exteriors: a + c ≤ 18 (quan a=9 i c=9).  Per tant, b ha de ser almenys 19, el que és impossible.  La màxima suma és 18, per tant, b ha de ser com a mínim 19, el que no és possible.
+
+La seqüència més llarga que hem trobat és de 8 nombres.  És difícil demostrar formalment que no n'hi ha una de més llarga sense una prova exhaustiva, però la intuïció suggereix que 8 és el màxim.
+
+Resposta: C)

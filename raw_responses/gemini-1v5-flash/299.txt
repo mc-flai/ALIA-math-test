@@ -1,0 +1,28 @@
+Raonament:
+
+Un nombre és divisible per 99 si és divisible per 9 i per 11.  Per ser divisible per 9, la suma de les seves xifres ha de ser divisible per 9. Per ser divisible per 11, la diferència entre la suma de les xifres en posicions imparells i la suma de les xifres en posicions parells ha de ser divisible per 11 (o 0).
+
+Busquem el nombre més petit que compleixi aquestes condicions i que la suma de les seves xifres sigui imparell.
+
+Comencem provant amb múltiples de 99:
+
+* 99: Suma de xifres = 18 (parell)
+* 198: Suma de xifres = 18 (parell)
+* 297: Suma de xifres = 18 (parell)
+* 396: Suma de xifres = 18 (parell)
+* 495: Suma de xifres = 18 (parell)
+* 594: Suma de xifres = 18 (parell)
+* 693: Suma de xifres = 18 (parell)
+* 792: Suma de xifres = 18 (parell)
+* 891: Suma de xifres = 18 (parell)
+* 990: Suma de xifres = 18 (parell)
+* 1089: Suma de xifres = 18 (parell)
+* ...
+
+Observem que la suma de les xifres dels múltiples de 99 fins ara sempre és parell. Això és perquè els múltiples de 99 tenen la forma 99k, i si k és parell, la suma de les xifres serà parell, i si k és imparell, la suma de les xifres serà parell.  Per tant, necessitem un múltiple de 99 que tingui una suma de xifres imparell.
+
+Per aconseguir una suma de xifres imparell, necessitem que la suma de les xifres sigui un múltiple de 9 imparell (9, 27, 45, etc.).  Si la suma de les xifres és 9, el nombre més petit seria 999 (suma de xifres = 27).  Si la suma de les xifres és 27, el nombre més petit seria 9999 (suma de xifres = 36).  Si la suma de les xifres és 45, el nombre més petit seria 99999 (suma de xifres = 45).
+
+El nombre més petit amb una suma de xifres imparell i divisible per 99 és 99999. La suma de les seves xifres és 45, que és imparell.
+
+Resposta: C)

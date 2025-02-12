@@ -1,0 +1,31 @@
+Raonament:
+
+Siguin a, b i h les longituds dels dos costats i l'altura respectivament.  Tenim que a, b ∈ {6, 7, 8} i h ∈ {6, 7, 8}.  L'àrea del triangle és (1/2) * base * altura.  Com que l'altura és respecte al tercer costat, podem considerar dos casos:
+
+**Cas 1: La base és 6.**
+
+* Si h = 7, l'àrea és (1/2) * 6 * 7 = 21.  En aquest cas, el tercer costat (c) ha de complir el teorema de Pitàgores per a un triangle acutangle:  a² + h² > c², b² + h² > c², a² + b² > c².  Això significa que 6² + 7² > c², 7² + 7² > c², i 6² + 7² > c².  Per tant, c² < 85.  Com que c = √(a² + b² - 2ab cos C), on C és l'angle oposat a c,  i el triangle és acutangle, c ha de ser menor que √85.
+
+* Si h = 8, l'àrea és (1/2) * 6 * 8 = 24.  Similarment,  6² + 8² > c², 8² + 8² > c², i 6² + 8² > c².  Per tant, c² < 100.
+
+**Cas 2: La base és 7.**
+
+* Si h = 6, l'àrea és (1/2) * 7 * 6 = 21.
+
+* Si h = 8, l'àrea és (1/2) * 7 * 8 = 28.
+
+**Cas 3: La base és 8.**
+
+* Si h = 6, l'àrea és (1/2) * 8 * 6 = 24.
+
+* Si h = 7, l'àrea és (1/2) * 8 * 7 = 28.
+
+Ara, comprovem les opcions:
+
+A) $3 (\sqrt{28} - \sqrt{13}) \approx 3(5.29 - 3.61) \approx 5.04$
+B) $\sqrt{84} + \sqrt{39} \approx 9.17 + 6.25 \approx 15.42$
+C) $\sqrt{252} + \sqrt{117} \approx 15.87 + 10.82 \approx 26.69$
+
+Cap de les opcions coincideix amb les àrees calculades (21, 24, 28).  Hi ha un error en el plantejament o les opcions de resposta.  No obstant, hem de considerar que les àrees calculades són possibles.  No podem descartar la possibilitat d'un error en les opcions de resposta.
+
+Resposta: E)

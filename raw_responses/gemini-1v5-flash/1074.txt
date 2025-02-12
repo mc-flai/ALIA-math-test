@@ -1,0 +1,30 @@
+Raonament:
+
+Analitzem cada afirmació:
+
+* **Primer pot:** El nombre de caramels és igual al nombre de pots amb un sol caramel.  Si hi hagués un pot amb un sol caramel, el primer pot tindria 1 caramel. Si hi haguessin dos pots amb un sol caramel, el primer pot tindria 2 caramels, i així successivament.
+
+* **Segon pot:** El nombre de caramels és igual al nombre de pots amb dos caramels.  Un raonament similar al de l'anterior.
+
+* **Tercer pot:** El nombre de caramels és igual al nombre de pots amb tres caramels.  Igual que els anteriors.
+
+* **Quart pot:** El nombre de caramels és igual al nombre de pots buits.
+
+Per a resoldre el problema, hem de trobar una combinació que compleixi totes les condicions.  Com que tenim 4 pots, només podem tenir un màxim de 4 pots amb un sol caramel, un màxim de 4 pots amb dos caramels, etc.  A més, el nombre total de caramels ha de ser un nombre enter.
+
+Proveu amb diferents combinacions:
+
+* **Opció 1:** Si el primer pot té 1 caramel (1 pot amb 1 caramel), el segon pot té 0 caramels (0 pots amb 2 caramels), el tercer pot té 0 caramels (0 pots amb 3 caramels), i el quart pot té 3 caramels (3 pots buits). Això no és possible, ja que només tenim 4 pots.
+
+* **Opció 2:** Si el primer pot té 0 caramels (0 pots amb 1 caramel), el segon pot té 0 caramels (0 pots amb 2 caramels), el tercer pot té 0 caramels (0 pots amb 3 caramels), i el quart pot té 4 caramels (4 pots buits). Això tampoc és possible, ja que el primer pot hauria de tenir 0 caramels.
+
+* **Opció 3:**  Considerem la possibilitat que hi hagi un pot amb un caramel, un pot amb dos caramels, un pot amb tres caramels i un pot buit.  Això compleix totes les condicions:
+
+    * Primer pot: 1 caramel (1 pot amb 1 caramel)
+    * Segon pot: 0 caramels (0 pots amb 2 caramels)
+    * Tercer pot: 0 caramels (0 pots amb 3 caramels)
+    * Quart pot: 3 caramels (3 pots buits)
+
+    En total, 1 + 0 + 0 + 3 = 4 caramels.
+
+Resposta: C)

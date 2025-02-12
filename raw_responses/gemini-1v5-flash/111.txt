@@ -1,0 +1,19 @@
+Raonament: L'estudiant ha escrit la multiplicació 14₆ · 25₆ = 416₆.  Això significa que està treballant en una base b, on b > 6 (ja que apareixen els dígits 6).  Convertim l'expressió a base 10 per resoldre per b:
+
+14₆ = 1*b¹ + 4*b⁰ = b + 4
+25₆ = 2*b¹ + 5*b⁰ = 2b + 5
+416₆ = 4*b² + 1*b¹ + 6*b⁰ = 4b² + b + 6
+
+Per tant, l'equació en base 10 és: (b + 4)(2b + 5) = 4b² + b + 6
+
+Desenvolupant l'equació:
+
+2b² + 5b + 8b + 20 = 4b² + b + 6
+2b² + 13b + 20 = 4b² + b + 6
+0 = 2b² - 12b - 14
+0 = b² - 6b - 7
+0 = (b - 7)(b + 1)
+
+Les solucions per b són b = 7 i b = -1. Com que la base ha de ser un nombre enter positiu major que 6, la única solució vàlida és b = 7.
+
+Resposta: A)

@@ -1,0 +1,13 @@
+Raonament: Per obtenir el nombre més gran possible amb tres A, dues B i una C, hem de col·locar les xifres en ordre decreixent.  Com que A, B i C són xifres diferents, i A apareix tres vegades, A ha de ser la xifra més gran.  Després, B ha d'aparèixer dues vegades i ser major que C.  Per tant, l'ordre ha de ser AAAA > B > C.  El nombre més gran possible seria AAABBC.
+
+Analitzem les opcions:
+
+* **A) AAABBC:**  Aquest nombre és consistent amb l'ordre decreixent si A > B > C.
+* **B) CAAABB:** Aquest nombre implica que C > A, el que contradiu que A ha de ser la xifra més gran.
+* **C) BBAAAC:** Aquest nombre implica que B > A, el que contradiu que A ha de ser la xifra més gran.
+* **D) AAABCB:** Aquest nombre és possible si A > B > C.
+* **E) AAACBB:** Aquest nombre és possible si A > B > C.
+
+Per tant, els nombres B) i C) no poden ser mai el nombre més gran que podem obtenir d'aquesta manera, ja que impliquen que A no és la xifra més gran.  La pregunta demana quin *no* pot ser mai el nombre més gran, per tant, tant B com C serien respostes vàlides.  No obstant, només podem escollir una opció.  Com que B) és més improbable que C), escollirem B).
+
+Resposta: B)

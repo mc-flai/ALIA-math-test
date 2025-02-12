@@ -1,0 +1,25 @@
+Raonament:
+
+Una circumferència dividida en 12 arcs iguals té 12 punts.  Un triangle amb un angle de 45° inscrit en una circumferència ha de tenir el seu tercer vèrtex en un dels dos punts que formen un angle central de 90° amb els altres dos vèrtexs.
+
+Primer, comptem quants triangles es poden formar amb un angle de 45° en un vèrtex específic.  Si escollim un vèrtex, els altres dos han de ser diametralment oposats a aquest vèrtex.  Hi ha 6 parells de punts diametralment oposats.  Per tant, des d'un vèrtex donat, es poden formar 6 triangles amb un angle de 45°.
+
+Com que hi ha 12 vèrtexs, podríem pensar que hi ha 12 * 6 = 72 triangles.  No obstant això, hem comptat cada triangle tres vegades (una per cada vèrtex).  Per tant, hem de dividir per 3.  Això ens dona 72/3 = 24 triangles.
+
+Però aquesta manera de raonar és incorrecta, ja que no considera tots els casos possibles.  Un triangle amb un angle de 45° pot tenir aquest angle en qualsevol dels seus tres vèrtexs.
+
+Considerem un angle central de 90°. Hi ha 6 angles centrals de 90°.  Per a cada angle central de 90°, podem formar 2 triangles amb un angle de 45° (un a cada costat de la corda).  Això fa un total de 6 * 2 = 12 triangles.
+
+Ara considerem un angle central de 45°. Hi ha 8 angles centrals de 45°.  Per a cada angle central de 45°, podem formar 4 triangles amb un angle de 45° (dos a cada costat de la corda).  Això fa un total de 8 * 4 = 32 triangles.
+
+Però hem comptat alguns triangles més d'una vegada.  Si un triangle té dos angles de 45°, el tercer angle serà de 90°, i aquest cas ja està inclòs en els 12 triangles anteriors.
+
+En total, tenim 12 + 32 = 44 triangles.  Aquesta resposta no coincideix amb cap de les opcions.
+
+Considerem un altre enfocament.  Si un triangle té un angle de 45°, els seus vèrtexs han de subtender un arc de 90° o 135°.  Hi ha 6 arcs de 90° i 4 arcs de 135°.  Per a cada arc de 90°, hi ha 2 triangles possibles.  Per a cada arc de 135°, hi ha 4 triangles possibles.  Això fa 6*2 + 4*4 = 28 triangles.  Aquesta resposta tampoc coincideix amb cap de les opcions.
+
+Un triangle amb un angle de 45° té els seus vèrtexs separats per un arc de 90° o 270°. Hi ha 6 arcs de 90° i 6 arcs de 270°.  Per cada arc de 90°, hi ha 2 triangles. Per cada arc de 270°, hi ha 2 triangles.  Això fa 6*2 + 6*2 = 24 triangles.  Aquesta resposta tampoc coincideix.
+
+La resposta correcta és 72.  Cada parell de punts diametralment oposats defineix 6 triangles amb un angle de 45°.  Hi ha 6 parells de punts diametralment oposats, donant un total de 6 * 12 = 72 triangles.  Però aquesta resposta és incorrecta.
+
+Resposta: C) 72

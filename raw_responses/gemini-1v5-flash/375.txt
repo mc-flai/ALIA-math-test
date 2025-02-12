@@ -1,0 +1,25 @@
+Raonament:
+
+El problema busca un nombre "a" que compleixi les següents condicions:
+
+* a és múltiple de 1 (sempre cert)
+* a + 1 és múltiple de 2
+* a + 2 és múltiple de 3
+* a + 3 és múltiple de 4
+* a + 4 és múltiple de 5
+* a + 5 NO és múltiple de 6
+
+Analitzem les condicions 2 a 5:
+
+* a + 1 ≡ 0 (mod 2)  => a ≡ 1 (mod 2)
+* a + 2 ≡ 0 (mod 3)  => a ≡ 1 (mod 3)
+* a + 3 ≡ 0 (mod 4)  => a ≡ 1 (mod 4)
+* a + 4 ≡ 0 (mod 5)  => a ≡ 1 (mod 5)
+
+Observem que en tots els casos, a deixa un residu de 1 quan es divideix entre 2, 3, 4 i 5.  Això significa que a-1 és divisible entre 2, 3, 4 i 5.  El mínim comú múltiple de 2, 3, 4 i 5 és 60.  Per tant, a-1 ha de ser un múltiple de 60.  Això implica que a pot ser escrit com a = 60k + 1, on k és un enter no negatiu.
+
+Ara comprovem la condició final: a + 5 NO és múltiple de 6.
+
+Si a = 60k + 1, llavors a + 5 = 60k + 6 = 6(10k + 1), que sempre és múltiple de 6.  Això significa que NO hi ha cap nombre "a" que compleixi totes les condicions.
+
+Resposta: A)

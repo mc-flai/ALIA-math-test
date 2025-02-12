@@ -1,0 +1,21 @@
+Raonament:
+
+Un cub gros de costat n està format per n³ cubs menuts.
+
+Els cubs menuts amb una sola cara pintada es troben a les cares del cub gros, excepte els cubs de les arestes i els cubs de les cantonades.  Per cada cara hi ha (n-2)² cubs amb una sola cara pintada. Com que hi ha 6 cares, el nombre total de cubs amb una sola cara pintada és 6(n-2)².
+
+Els cubs menuts sense cap cara pintada es troben a l'interior del cub gros. Formen un cub més petit de costat (n-2).  Per tant, el nombre de cubs sense cap cara pintada és (n-2)³.
+
+El problema ens diu que el nombre de cubs amb una sola cara pintada és igual al nombre de cubs sense cap cara pintada:
+
+6(n-2)² = (n-2)³
+
+Si n-2 = 0, llavors n = 2.  Però això no és possible, ja que necessitaríem almenys un cub sense cap cara pintada.  Per tant, podem dividir per (n-2)² a ambdós costats de l'equació:
+
+6 = n - 2
+
+Resolent per n:
+
+n = 6 + 2 = 8
+
+Resposta: D)

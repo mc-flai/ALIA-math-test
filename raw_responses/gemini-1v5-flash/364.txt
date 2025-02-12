@@ -1,0 +1,42 @@
+Raonament:  La pregunta busca la mínima diferència entre dos nombres consecutius en la seqüència de nombres naturals tals que la suma dels seus dígits és divisible per 5.
+
+Analitzem alguns nombres:
+
+* 5 (suma dígits = 5)
+* 14 (suma dígits = 5)
+* 19 (suma dígits = 10)
+* 23 (suma dígits = 5)
+* 28 (suma dígits = 10)
+* 32 (suma dígits = 5)
+* 37 (suma dígits = 10)
+* 41 (suma dígits = 5)
+* 46 (suma dígits = 10)
+* 50 (suma dígits = 5)
+* 55 (suma dígits = 10)
+* 59 (suma dígits = 14)
+* 64 (suma dígits = 10)
+* 69 (suma dígits = 15)
+* 73 (suma dígits = 10)
+* 78 (suma dígits = 15)
+* 82 (suma dígits = 10)
+* 87 (suma dígits = 15)
+* 91 (suma dígits = 10)
+* 96 (suma dígits = 15)
+
+
+Observem les diferències entre nombres consecutius que compleixen la condició:
+
+* 14 - 5 = 9
+* 19 - 14 = 5
+* 23 - 19 = 4
+* 28 - 23 = 5
+* 32 - 28 = 4
+* 37 - 32 = 5
+* ...
+
+La mínima diferència que observem és 4.  Per exemple, entre 23 i 19.
+
+Per a demostrar que 4 és la mínima diferència, considerem que si la suma dels dígits és divisible per 5, l'afegir 1 a un nombre que compleix la condició, la suma dels dígits augmentarà en 1, i per tant no serà divisible per 5.  Si afegim 2, tampoc. Si afegim 3, tampoc.  Si afegim 4, la suma dels dígits augmentarà en 4, i si la suma original era múltiple de 5, la nova suma serà múltiple de 5.  Per tant, la mínima diferència és 4.
+
+
+Resposta: D)

@@ -1,0 +1,51 @@
+Raonament:
+
+L'equació donada és a²ˣ – b²ˣ – 2(ab)ˣ = 0.  Podem reescriure aquesta equació com:
+
+(aˣ)² - (bˣ)² - 2(aˣ)(bˣ) = 0
+
+Observem que aquesta equació té la forma d'una identitat notable:  u² - 2uv + v² = (u - v)², on u = aˣ i v = bˣ.  Per tant, podem reescriure l'equació com:
+
+(aˣ - bˣ)² = 0
+
+Això implica que:
+
+aˣ - bˣ = 0
+
+aˣ = bˣ
+
+Prenent el logaritme natural a ambdós costats:
+
+ln(aˣ) = ln(bˣ)
+
+x ln(a) = x ln(b)
+
+x(ln(a) - ln(b)) = 0
+
+Com que a > 1 i b > 1,  ln(a) i ln(b) són nombres positius. Per tant, ln(a) - ln(b) només serà zero si a = b, cosa que no està garantida per l'enunciat del problema.  Per tant, l'única manera que x(ln(a) - ln(b)) = 0 és si x = 0.  No obstant això, aquesta solució no està entre les opcions.
+
+Fem un altre enfocament.  Dividim l'equació original per (bˣ)²:
+
+(aˣ/bˣ)² - 1 - 2(aˣ/bˣ) = 0
+
+Si definim y = (aˣ/bˣ), tenim una equació quadràtica:
+
+y² - 2y - 1 = 0
+
+Resolent aquesta equació quadràtica amb la fórmula general:
+
+y = (2 ± √(4 - 4(1)(-1))) / 2 = (2 ± √8) / 2 = 1 ± √2
+
+Com que y = (aˣ/bˣ) = (a/b)ˣ, tenim dues possibilitats:
+
+(a/b)ˣ = 1 + √2  o  (a/b)ˣ = 1 - √2
+
+Com que a > 1 i b > 1,  (a/b)ˣ > 0.  Per tant, descartem la solució (a/b)ˣ = 1 - √2 ja que és negativa.
+
+Prenent logaritmes a la solució vàlida:
+
+x ln(a/b) = ln(1 + √2)
+
+x = ln(1 + √2) / ln(a/b)
+
+Resposta: D)

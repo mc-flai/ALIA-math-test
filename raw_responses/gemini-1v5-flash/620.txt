@@ -1,0 +1,14 @@
+Raonament:  Per a ordenar una seqüència de nombres, el mètode més eficient és utilitzar un algoritme d'ordenació.  En aquest cas, tenim una seqüència de 9 llibres desordenats.  No podem saber l'ordre inicial sense més informació, però podem determinar un límit inferior al nombre d'intercanvis necessaris.
+
+Considerem el cas pitjor: una seqüència completament invertida (9, 8, 7, 6, 5, 4, 3, 2, 1).  Per a ordenar aquesta seqüència, necessitem almenys 4 intercanvis.  Per exemple:
+
+1. Intercanviem el 9 i l'1.
+2. Intercanviem el 8 i el 2.
+3. Intercanviem el 7 i el 3.
+4. Intercanviem el 6 i el 4.
+
+Aquestes 4 intercanvis no garanteixen que la seqüència estigui completament ordenada, però sí que ens acosta significativament a l'ordre correcte.  És possible que necessitem més intercanvis, però 4 és un límit inferior.  Les opcions A, B i C són totes inferiors o iguals a 4.  Les opcions D i E són massa altes per a una seqüència de només 9 elements.
+
+Per tant, la resposta més probable és 4, ja que és el mínim nombre d'intercanvis que podríem necessitar en el cas pitjor.  És important notar que el nombre exacte d'intercanvis dependrà de l'ordre inicial dels llibres.
+
+Resposta: C)

@@ -1,0 +1,28 @@
+Raonament:
+
+La suma dels nombres de les cartes de l'1 al 7 és 28 (1+2+3+4+5+6+7 = 28).  El primer estudiant treu 3 cartes i el segon 2.  Queden 2 cartes.
+
+La clau és la declaració del primer estudiant: "Sé que la suma dels nombres de les teues cartes és un nombre parell".  Això significa que el primer estudiant sap amb certesa que la paritat de la suma de les seves cartes determina la paritat de la suma de les cartes del segon estudiant.
+
+Perquè la suma de les cartes del segon estudiant sigui parell, hi ha dues possibilitats:
+
+* **Ambdues cartes del segon estudiant són parells:**  En aquest cas, la suma de les cartes que queden (les del primer estudiant) ha de ser parell.
+* **Ambdues cartes del segon estudiant són imparells:** En aquest cas, la suma de les cartes que queden (les del primer estudiant) ha de ser parell.
+
+En qualsevol cas, la suma de les cartes del primer estudiant ha de ser parell.  Analitzem les opcions:
+
+* A) 10 (parell)
+* B) 12 (parell)
+* C) 6 (parell)
+* D) 9 (imparell)
+* E) 15 (imparell)
+
+Les úniques opcions possibles són 10, 12 i 6.  Però, com el primer estudiant sap amb certesa la paritat de la suma de les cartes del segon estudiant, ha de tenir informació suficient per determinar-ho.  Si la suma de les cartes del primer estudiant fos 6 (1+2+3), hi hauria més d'una possibilitat per a la suma de les cartes del segon estudiant (parell o imparell).  El mateix passa amb 10 i 12.  Però, si la suma de les cartes del primer estudiant fos 12, la suma de les cartes restants seria 16 (28 - 12), i l'única manera que la suma de dues cartes sigui 16 és amb 7 i 9, però el 9 no és possible.
+
+Per tant, cal analitzar amb més detall. Si la suma de les cartes del primer estudiant és 12 (per exemple, 4+5+3), les cartes restants sumen 16.  No hi ha dues cartes que sumin 16.  Si la suma és 10 (per exemple, 1+2+7), les cartes restants sumen 18.  Tampoc hi ha dues cartes que sumin 18.  Si la suma és 6 (1+2+3), les cartes restants sumen 22.  Tampoc hi ha dues cartes que sumin 22.
+
+Analitzem la possibilitat de 12. Si el primer estudiant té 12 (per exemple, 3+4+5), les cartes restants sumen 16.  No hi ha dues cartes que sumin 16.  Si el primer estudiant té 10 (per exemple, 1+2+7), les cartes restants sumen 18.  No hi ha dues cartes que sumin 18.  Si el primer estudiant té 6 (per exemple, 1+2+3), les cartes restants sumen 22.  No hi ha dues cartes que sumin 22.
+
+La única combinació que funciona és que el primer estudiant tingui les cartes 1, 2 i 3 (suma 6).  Les cartes restants són 4, 5, 6, 7.  El segon estudiant pot tenir qualsevol parella que sumi un nombre parell (4+6, 5+7).
+
+Resposta: C)

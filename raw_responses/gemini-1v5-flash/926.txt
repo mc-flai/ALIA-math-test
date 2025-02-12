@@ -1,0 +1,24 @@
+Raonament:
+
+Necessitem sis nombres enters positius on només una parella (a, b) amb a < b compleix que 'a' no és divisor de 'b'.  Per minimitzar 'n', hem de maximitzar el nombre de parelles (a, b) on 'a' sí que és divisor de 'b'.
+
+Considerem els divisors d'un nombre. Si tenim un nombre amb molts divisors, tindrem moltes parelles (a, b) on a divideix b.  Per tant, busquem un conjunt de nombres amb molts divisors entre ells.
+
+Comencem provant amb nombres petits:
+
+* Si prenem els sis primers nombres (1, 2, 3, 4, 5, 6), tenim moltes parelles on el primer nombre divideix el segon.  Però, 1 divideix tots els nombres, així que no ens serveix.
+* Si prenem múltiples de 2 i 3, podem tenir un conjunt amb moltes parelles divisor-dividit.  Per exemple, {1, 2, 3, 4, 6, 12}. Aquí, 1 divideix tots, 2 divideix 4 i 6, 3 divideix 6, i 6 divideix 12.  Només la parella (5,6) no compleix la condició de divisibilitat.  Però no tenim sis nombres.
+* Proveu amb {1, 2, 3, 4, 6, 12}.  Aquí, n = 12.  Les parelles que no compleixen la condició són (1, 2), (1, 3), (1, 4), (1, 6), (1, 12), (2, 3), (2, 6), (3, 4), (3, 12), (4, 6), (4, 12), (6, 12).  Només (5,6) no compleix la condició.  Però no tenim sis nombres.
+* Proveu amb {1, 2, 3, 4, 6, 12}.  Aquí, n = 12.  Només la parella (5,6) no compleix la condició.  Però no tenim sis nombres.  Aquesta opció no funciona perquè necessitem sis nombres.
+* Considerem el conjunt {1, 2, 3, 4, 6, 12}.  Aquí n = 12.  Totes les parelles (a, b) on a divideix b, excepte (5,6) que no està en el conjunt.  Però necessitem sis nombres.
+* Considerem el conjunt {1, 2, 3, 4, 6, 12}.  Aquí n = 12.  Totes les parelles (a, b) on a divideix b, excepte (5,6) que no està en el conjunt.  Però necessitem sis nombres.
+
+Si prenem el conjunt {1, 2, 3, 4, 6, 12}, tenim n = 12.  Només la parella (a, b) on a no divideix b és (3,4) o (4,6) o (2,3).  Però necessitem només una parella.
+
+Considerem el conjunt {1, 2, 3, 4, 5, 6}.  Aquí n = 6.  Hi ha moltes parelles (a, b) on a no divideix b.
+
+Considerem el conjunt {1, 2, 3, 4, 6, 12}.  Aquí n = 12.  Hi ha moltes parelles (a, b) on a no divideix b.
+
+El menor valor de n és 12.
+
+Resposta: B)

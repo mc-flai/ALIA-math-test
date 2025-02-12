@@ -1,0 +1,3 @@
+Raonament:  Si el rectangle té *a* quadrats d'ample i *b* quadrats d'alt, el nombre total de quadrats és *a* * *b*.  Els quadrats pintats són els que toquen els costats, que són 2*a + 2*b - 4 (es resten 4 perquè les quatre cantonades es compten dues vegades). Els quadrats sense pintar són (a-2)(b-2) = 16.  Per tant, tenim les possibles parelles d'enters (a-2, b-2) que donen 16: (1,16), (2,8), (4,4), (8,2), (16,1).  Això significa que les possibles dimensions del rectangle són: (3,18), (4,10), (6,6), (10,4), (18,3).  Els nombres totals de quadrats per a cada cas són: 54, 40, 36, 40, 54.  El màxim nombre de quadrats és 54.
+
+Resposta: D)

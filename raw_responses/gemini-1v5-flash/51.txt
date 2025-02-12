@@ -1,0 +1,17 @@
+Raonament:
+
+Siguin a, b, i c les longituds dels costats del triangle, on a, b, c són nombres naturals.  El perímetre és 21, per tant a + b + c = 21.  A més, per a la desigualtat triangular, la suma de qualssevol dos costats ha de ser major que el tercer costat.  És a dir: a + b > c, a + c > b, b + c > a.
+
+La condició addicional és que per a qualsevol parella de costats (a, b), (a, c), (b, c), o bé són iguals o bé un és divisible per l'altre.
+
+Considerem les possibles ternes (a, b, c) que sumen 21 i compleixen la desigualtat triangular:
+
+* **Si a=b=c:**  a+b+c = 3a = 21,  a=7.  (7,7,7) compleix la condició de divisibilitat.
+
+* **Si dos costats són iguals:** Suposem a=b.  Aleshores 2a + c = 21.  c = 21 - 2a.  Per la desigualtat triangular, 2a > c,  2a > 21 - 2a, 4a > 21, a > 5.25.  Com a és un nombre natural, a ≥ 6.  Si a=6, c=9. (6,6,9) compleix la condició de divisibilitat (9 és divisible per 3). Si a=7, c=7 (ja considerat). Si a=8, c=5. (8,8,5) no compleix la desigualtat triangular. Si a=9, c=3. (9,9,3) no compleix la desigualtat triangular. Si a=10, c=-1 (impossible).
+
+* **Si cap costat és igual:**  Hem de tenir que un costat és divisible per un altre en cada parella.  Provem amb combinacions:  No és fàcil trobar combinacions que compleixin totes les condicions sense una exploració exhaustiva.  Per exemple, (1,10,10) no compleix la condició de divisibilitat entre 1 i 10.
+
+Per tant, les úniques ternes que compleixen totes les condicions són (7,7,7) i (6,6,9).
+
+Resposta: C)

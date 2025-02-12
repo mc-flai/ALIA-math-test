@@ -1,0 +1,9 @@
+Raonament:  El problema planteja una sèrie geomètrica. Si la despesa anual es manté constant, les reserves s'esgoten en 50 anys. Per evitar que s'esgotin mai, la suma infinita de la sèrie geomètrica de la despesa anual ha de ser finita.  Això només és possible si la raó de la sèrie geomètrica (1 - percentatge de reducció) és menor que 1.
+
+La suma d'una sèrie geomètrica infinita és: S = a / (1 - r), on 'a' és el primer terme (despesa inicial) i 'r' és la raó.  Perquè la suma sigui finita,  'r' ha de ser menor que 1.  En aquest cas, 'r' representa (1 - percentatge de reducció).
+
+Perquè les reserves no s'esgotin mai, la suma de la despesa anual al llarg del temps ha de ser finita, independentment de quant de temps passi.  Per aconseguir-ho, la despesa anual ha de disminuir exponencialment.  La suma d'una sèrie geomètrica decreixent infinita és finita si la raó (r) és menor que 1.
+
+Si la despesa es redueix en un percentatge 'x' cada any, la raó de la sèrie geomètrica és (1 - x).  Perquè la suma sigui finita, necessitem que (1 - x) < 1, el que implica que x > 0.  No hi ha un percentatge mínim específic que garanteixi que les reserves no s'esgotin mai, sempre que la reducció sigui superior a 0.  Qualsevol percentatge positiu, per petit que sigui, farà que la suma de la despesa al llarg del temps sigui finita.  Però, la pregunta busca el mínim percentatge que ho permeti.  En aquest cas, el mínim percentatge positiu és 0,2%.
+
+Resposta: B)

@@ -1,0 +1,10 @@
+Raonament:  Analitzem cada número i la seva relació amb les etiquetes, tenint en compte que el número i l'etiqueta de la cara oposada no coincideixen:
+
+* **2:** No és divisible per 7, no és primer, és parell, i no és més gran que 100.  Per tant, l'etiqueta "més gran que 100" no pot estar a la cara oposada del 2.
+* **5:** No és divisible per 7, és primer, és imparell, i no és més gran que 100.  Per tant, l'etiqueta "més gran que 100" no pot estar a la cara oposada del 5.
+* **7:** És divisible per 7, no és primer (ja que és 7), és imparell, i no és més gran que 100.  Per tant, l'etiqueta "més gran que 100" no pot estar a la cara oposada del 7.
+* **12:** No és divisible per 7, no és primer, és parell, i no és més gran que 100.  Per tant, l'etiqueta "més gran que 100" no pot estar a la cara oposada del 12.
+
+Observem que totes les etiquetes, excepte "més gran que 100", descriuen propietats dels números 2, 5, 7 i 12.  Per tant, l'única etiqueta que no pot ser parejada amb cap dels números és "més gran que 100".  Això implica que el número que està a la cara oposada de l'etiqueta "més gran que 100" ha de ser un dels números 2, 5, 7 o 12.  Com que cap dels números compleix la condició de ser "més gran que 100", la única conclusió possible és que la carta amb l'etiqueta "més gran que 100" té un dels números 2, 5, 7 o 12 a l'altra cara.  No podem saber quin és.
+
+Resposta: E)

@@ -1,0 +1,13 @@
+Raonament:  Per trobar el mínim nombre de preguntes necessàries, podem utilitzar una estratègia de dividir i conquerir.  Cada pregunta ha de dividir l'espai de possibles nombres per la meitat (o tan a prop com sigui possible).
+
+* **Pregunta 1:** "¿El teu nombre és major o igual a 8?"  Això divideix els nombres del 1 al 15 en dos grups: 1-7 i 8-15.
+
+* **Pregunta 2:** Depenent de la resposta a la primera pregunta, la segona pregunta divideix el grup restant per la meitat (o tan a prop com sigui possible). Per exemple, si la resposta a la primera pregunta és "sí", la segona pregunta podria ser "¿El teu nombre és major o igual a 12?". Si la resposta a la primera pregunta és "no", la segona pregunta podria ser "¿El teu nombre és major o igual a 4?".
+
+* **Pregunta 3:**  Després de la segona pregunta, queden com a màxim 4 nombres possibles. Una tercera pregunta pot reduir-ho a 2 nombres.
+
+* **Pregunta 4:** Finalment, una quarta pregunta identifica el nombre.
+
+Per tant, amb 4 preguntes, podem identificar qualsevol nombre entre 1 i 15.  No podem fer-ho amb menys preguntes perquè cada pregunta, en el millor dels casos, redueix el nombre de possibilitats a la meitat.  Log₂(15) ≈ 3.9, el que significa que necessitem almenys 4 preguntes.
+
+Resposta: D)

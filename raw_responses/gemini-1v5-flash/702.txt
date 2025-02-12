@@ -1,0 +1,19 @@
+Raonament:  La xifra de les unitats d'una quarta potència depèn només de la xifra de les unitats del nombre elevat a la quarta potència.  Per tant, només cal mirar les quartes potències dels nombres de l'1 al 9:
+
+1⁴ = 1
+2⁴ = 16
+3⁴ = 81
+4⁴ = 256
+5⁴ = 625
+6⁴ = 1296
+7⁴ = 2401
+8⁴ = 4096
+9⁴ = 6561
+
+Observem que les xifres de les unitats de les quartes potències dels nombres de l'1 al 9 són 1, 6, 1, 6, 5, 6, 1, 6, 1.  El patró de les xifres de les unitats es repeteix cada 10 nombres.
+
+Les xifres de les unitats que ens interessen són 1 i 6.  En el cicle de 10 nombres, apareixen 4 vegades (1, 6, 1, 6, 5, 6, 1, 6, 1, 0).  
+
+Com que tenim els nombres de l'1 al 1000, hi ha 1000/10 = 100 cicles de 10 nombres.  En cada cicle, hi ha 4 quartes potències que acaben en 1 o 6.  Per tant, el nombre total de quartes potències que acaben en 1 o 6 és 100 cicles * 4 quartes potències/cicle = 400.
+
+Resposta: C)

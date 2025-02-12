@@ -1,0 +1,9 @@
+Raonament: L'àrea d'un triangle rectangle és (1/2) * base * altura, on la base i l'altura són els catets.  En aquest cas, l'àrea és 36, així que (1/2) * b * h = 36, o b * h = 72.  Necessitem trobar parelles de nombres enters (b, h) que multiplicades donen 72.  Com que l'ordre importa (un triangle amb base 8 i altura 9 és diferent d'un amb base 9 i altura 8), hem de considerar totes les parelles possibles.
+
+Els factors de 72 són: 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.  Les parelles que multiplicades donen 72 són:
+
+(1, 72), (2, 36), (3, 24), (4, 18), (6, 12), (8, 9), (9, 8), (12, 6), (18, 4), (24, 3), (36, 2), (72, 1).
+
+Hi ha 12 parelles, però com que l'ordre importa, cada parella representa un triangle rectangle diferent. Per tant, hi ha 12 triangles rectangles distints.
+
+Resposta: C)

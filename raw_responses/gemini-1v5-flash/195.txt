@@ -1,0 +1,23 @@
+Raonament: La seqüència de nombres és una progressió aritmètica amb una diferència comuna de 4.  Observem el patró de les files:
+
+* **Fila 1:** Té 1 nombre (4 * 1 = 4, 4 * 7 = 28).  La suma dels índexs és 1.
+* **Fila 2:** Té 3 nombres (8, 24, 32). La suma dels índexs és 3.
+* **Fila 3:** Té 2 nombres (12, 20). La suma dels índexs és 3.
+* **Fila 4:** Té 1 nombre (16). La suma dels índexs és 1.
+
+El patró de la quantitat de nombres per fila és 1, 3, 2, 1, 3, 2, 1...  Aquest patró es repeteix cada 4 files.  La suma dels índexs en cada cicle de 4 files és 1 + 3 + 2 + 1 = 7.
+
+Per trobar en quina fila està el 1000, primer trobem el terme de la seqüència:
+
+1000 = 4n  (on n és el terme)
+n = 250
+
+Ara, dividim 250 entre 7 (la suma dels índexs en un cicle de 4 files):
+
+250 / 7 ≈ 35.7
+
+Això significa que el nombre 1000 està en el cicle 35è.  Com que el cicle té 4 files, 35 * 4 = 140 files.  El residu de 250 / 7 és 1, el que indica que el nombre 1000 està en la primera fila del cicle 36è.
+
+Per tant, el nombre 1000 es troba a la **fila 1**.
+
+Resposta: A)

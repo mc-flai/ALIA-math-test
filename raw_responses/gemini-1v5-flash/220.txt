@@ -1,0 +1,26 @@
+Raonament:
+
+Comencem simplificant l'expressió utilitzant les propietats dels logaritmes.  Recordem que:
+
+* `a log b = log (b^a)`
+* `log a - log b = log (a/b)`
+
+Apliquem aquestes propietats a l'expressió donada:
+
+20 log 16 − 6 log 4 = log (16^20) - log (4^6) = log ((16^20) / (4^6))
+
+Ara, simplifiquem l'argument del logaritme:
+
+16 = 2^4  i  4 = 2^2
+
+Per tant:
+
+(16^20) / (4^6) = ((2^4)^20) / ((2^2)^6) = (2^80) / (2^12) = 2^(80-12) = 2^68
+
+Així, l'expressió es converteix en:
+
+log (2^68) = 68 log 2
+
+Per tant, la resposta correcta és la E.
+
+Resposta: E)

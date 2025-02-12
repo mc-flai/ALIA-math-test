@@ -1,0 +1,30 @@
+Raonament:
+
+Si N té exactament sis divisors, això significa que N pot ser de dues formes:  p⁵ (on p és un nombre primer) o p²q (on p i q són nombres primers diferents).
+
+El producte de cinc dels seus divisors és 648.  Com que el producte de *tots* els divisors d'un nombre n és igual a n^(d/2), on d és el nombre de divisors, sabem que el producte dels sis divisors de N és N³.  Per tant, si el producte de cinc divisors és 648, l'altre divisor (x) ha de complir que 648 * x = N³.
+
+Factoritzem 648: 648 = 2³ * 3⁴
+
+Considerem les dues possibilitats per a N:
+
+* **N = p⁵:** Si N = p⁵, els seus divisors són 1, p, p², p³, p⁴, p⁵. El producte de cinc d'ells seria p¹⁰.  Com que p¹⁰ = 648 no té solució entera per a p, aquesta possibilitat queda descartada.
+
+* **N = p²q:** Els divisors de N serien 1, p, q, p², pq, p²q.  El producte de cinc d'ells ha de ser 648.  Provem amb diferents combinacions:
+
+    * Si el divisor que falta és 1, llavors N³ = 648, però això no dona un valor enter per a N.
+    * Si el divisor que falta és p, q, p², pq o p²q, el producte dels altres cinc divisors ha de ser 648.  Analitzem les opcions de resposta:
+
+        * Si l'altre divisor és 12, 648/12 = 54.  54 no és un divisor de 648.
+        * Si l'altre divisor és 4, 648/4 = 162.  162 = 2 * 3⁴.  Això podria funcionar.
+        * Si l'altre divisor és 9, 648/9 = 72.  72 = 2³ * 3².  Això podria funcionar.
+        * Si l'altre divisor és 24, 648/24 = 27.  27 = 3³.  Això podria funcionar.
+        * Si l'altre divisor és 16, 648/16 = 40.5, que no és un enter.
+
+Analitzem més a fons les opcions que donen resultats enters:
+
+* Si el divisor que falta és 4 (2²), llavors el producte dels altres cinc divisors és 162 (2 * 3⁴).  Això suggereix que N podria ser 2² * 3² = 36. Els divisors de 36 són 1, 2, 3, 4, 6, 9, 12, 18, 36.  El producte de cinc d'ells és 648.  En aquest cas, l'altre divisor és 4.
+* Si el divisor que falta és 9 (3²), llavors el producte dels altres cinc divisors és 72 (2³ * 3²).  Això suggereix que N podria ser 2³ * 3² = 72. Els divisors de 72 són 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 36, 72.  El producte de cinc d'ells és 648.  En aquest cas, l'altre divisor és 9.
+* Si el divisor que falta és 24 (2³ * 3), llavors el producte dels altres cinc divisors és 27 (3³).  Això suggereix que N podria ser 2³ * 3³ = 216. Els divisors de 216 són 1, 2, 3, 4, 6, 8, 9, 12, 18, 24, 27, 36, 54, 72, 108, 216.  El producte de cinc d'ells és 648.  En aquest cas, l'altre divisor és 24.
+
+Resposta: B)

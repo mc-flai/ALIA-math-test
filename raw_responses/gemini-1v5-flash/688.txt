@@ -1,0 +1,30 @@
+Raonament:
+
+Sigui $n_i$ el nombre de passatgers al vagó $i$, on $i = 1, 2, ..., 18$.  Sabem que $\sum_{i=1}^{18} n_i = 700$.
+
+També sabem que per a qualsevol bloc de cinc vagons adjacents, la suma de passatgers és 199.  Això significa:
+
+$n_i + n_{i+1} + n_{i+2} + n_{i+3} + n_{i+4} = 199$ per a $i = 1, 2, ..., 14$.
+
+Considerem dos blocs adjacents de cinc vagons:
+
+Bloc 1: $n_1 + n_2 + n_3 + n_4 + n_5 = 199$
+Bloc 2: $n_2 + n_3 + n_4 + n_5 + n_6 = 199$
+
+Restant Bloc 1 - Bloc 2, obtenim: $n_1 - n_6 = 0$, o sigui, $n_1 = n_6$.
+
+De la mateixa manera, podem demostrar que $n_i = n_{i+5}$ per a $i = 1, 2, ..., 13$.  Això significa que el nombre de passatgers es repeteix cada cinc vagons.
+
+El tren té 18 vagons, que es poden dividir en tres grups de cinc vagons i tres vagons addicionals.  La suma de passatgers en els tres grups de cinc vagons és $3 \times 199 = 597$.  Per tant, els tres vagons restants tenen $700 - 597 = 103$ passatgers.
+
+Els tres vagons restants són els del mig: $n_8, n_9, n_{10}$.  Com que $n_i = n_{i+5}$, tenim $n_8 = n_3$, $n_9 = n_4$, $n_{10} = n_5$.  Però no podem determinar individualment el nombre de passatgers en cada vagó.
+
+No obstant això, sabem que la suma dels passatgers en els tres vagons del mig és 103.  Per trobar el nombre de passatgers en els dos vagons del mig, necessitem més informació.  L'enunciat diu que en *qualsevol* bloc de cinc vagons adjacents hi ha 199 passatgers.  Això implica una distribució simètrica.
+
+Considerem els vagons centrals: $n_9$ i $n_{10}$.  Per simetria, $n_9 = n_{10}$.  Per tant, $2n_9 + n_8 = 103$.  Com que $n_8 = n_3$, $n_9 = n_4$, $n_{10} = n_5$, i $n_3 + n_4 + n_5 = 199 - (n_1 + n_2) = 199 - (n_6 + n_7)$, podem deduir que $n_8 + n_9 + n_{10} = 103$.  Si suposem simetria, $n_9 = n_{10}$, llavors $n_8 + 2n_9 = 103$.  Si $n_9 = n_{10} = x$, llavors $n_8 = 103 - 2x$.  No podem determinar $x$ amb la informació donada.
+
+No obstant això, si considerem la simetria, els dos vagons del mig tindran el mateix nombre de passatgers.  Per tant, la suma dels passatgers en els dos vagons del mig serà 103/3 * 2, que no és un nombre enter.  Hi ha un error en el raonament.
+
+Considerem el bloc central de 5 vagons: $n_7, n_8, n_9, n_{10}, n_{11}$.  La suma és 199.  Els tres vagons del mig sumen 103.  Per tant, $n_7 + n_{11} = 199 - 103 = 96$.  Per simetria, $n_7 = n_{11} = 48$.  Llavors, $n_8 + n_9 + n_{10} = 103$.  Si $n_8 = n_{10}$, $2n_8 + n_9 = 103$.  Si $n_8 = n_9 = n_{10}$, $3n_8 = 103$, que no és possible.
+
+Resposta: C) 78 (Aquesta resposta és una aproximació, ja que no es pot determinar amb precisió amb la informació donada)

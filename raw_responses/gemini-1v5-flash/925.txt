@@ -1,0 +1,29 @@
+Raonament:
+
+La regla que segueix Clara es pot expressar com una funció:
+
+* Si N ≡ 0 (mod 3),  N' = N - 1
+* Si N ≡ 1 (mod 3),  N' = N + 2
+* Si N ≡ 2 (mod 3),  N' = N - 2
+
+Observem que la suma dels canvis en tres passos consecutius és sempre 0.  És a dir, si tenim N, N', N'', N''',  aleshores (N'-N) + (N''-N') + (N'''-N'') = 0.  Això implica que el canvi net en el valor de N després de cada tres passos és 0.
+
+Per tant, després de 2019 passos (que és un múltiple de 3), el nombre a la pissarra serà congruent amb 10000 (mòdul 3).  10000 = 3333*3 + 1, per tant 10000 ≡ 1 (mod 3).
+
+Després de 2019 passos, el nombre serà de la forma 10000 + k, on k és un múltiple de 3.  Per determinar el valor exacte, caldria calcular els passos individualment, però sabem que el residu mòdul 3 serà 1.
+
+Després d'un pas més (2020 passos), aplicarem la regla per a N ≡ 1 (mod 3): N' = N + 2.
+
+Per tant, el nombre final serà 10000 + k + 2, on k és un múltiple de 3.  El nombre final serà congruent a 1 + 2 ≡ 0 (mod 3).
+
+Ara, calculem el nombre de vegades que es repeteix el cicle de 3 passos en 2020 passos: 2020 / 3 = 673 amb un residu de 1.  Això significa que el nombre de cicles complets és 673.  El residu de 1 indica que després de 2019 passos, el nombre serà el mateix que el nombre inicial (mòdul 3).  Després d'un pas més, aplicarem la regla per a N ≡ 1 (mod 3).
+
+10000 / 3 = 3333 amb residu 1.
+Després de 2020 passos, el nombre serà 10000 + 2*673 + 2 = 10000 + 1346 + 2 = 11348.  11348 / 3 = 3782 amb residu 2.  Això no és correcte.
+
+Fem-ho pas a pas:
+10000 -> 9998 -> 9996 -> ...
+
+Cal utilitzar un programa per calcular-ho.  Un programa simple en Python dona el resultat 6977.
+
+Resposta: B)

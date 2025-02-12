@@ -1,0 +1,39 @@
+Raonament:
+
+Sigui P = (0, 2017).  La recta que passa per P i és perpendicular a y = mx té pendent -1/m (si m≠0).  L'equació d'aquesta recta és:
+
+y - 2017 = (-1/m)x
+
+El punt d'intersecció entre y = mx i y - 2017 = (-1/m)x es troba resolent el sistema d'equacions:
+
+y = mx
+y = (-1/m)x + 2017
+
+mx = (-1/m)x + 2017
+x(m + 1/m) = 2017
+x(m² + 1)/m = 2017
+x = 2017m / (m² + 1)
+
+Substituint x a y = mx:
+
+y = m * (2017m / (m² + 1)) = 2017m² / (m² + 1)
+
+El punt simètric de P respecte a y = mx és (2x, 2y - 2017).  Per tant, les coordenades del punt simètric són:
+
+x' = 2x = 4034m / (m² + 1)
+y' = 2y - 2017 = 4034m² / (m² + 1) - 2017 = (4034m² - 2017m² - 2017) / (m² + 1) = (2017m² - 2017) / (m² + 1) = 2017(m² - 1) / (m² + 1)
+
+Perquè x' i y' siguin enters, 4034m i 2017(m²-1) han de ser divisibles per (m²+1).
+
+Observem que si m=1, x'=2017 i y'=0.  Si m=2, x'= 4034(2)/5 i y'=2017(3)/5, que no són enters. Si m=3, x'=4034(3)/10 i y'=2017(8)/10, que no són enters.
+
+Si m² + 1 divideix 2017m, llavors m² + 1 divideix 2017m² + 2017 - 2017m² = 2017.  Els divisors de 2017 són 1 i 2017 (ja que 2017 és primer).
+
+Si m² + 1 = 1, llavors m = 0 (no és un enter positiu).
+Si m² + 1 = 2017, llavors m² = 2016, que no té solució entera.
+
+Però hem de considerar que m²+1 ha de dividir 4034m i 2017(m²-1).  Si m=1, tenim x'=2017 i y'=0.  Si m=2, no són enters.  Si m=3, no són enters.  Si m=10, no són enters.
+
+Analitzant amb més detall,  només per a m=1 obtenim coordenades enteres.
+
+Resposta: A)

@@ -1,0 +1,15 @@
+Raonament: Un cub té 8 vèrtexs.  Un pla està definit per tres punts no col·lineals.  Per tant, necessitem escollir 3 vèrtexs del cub per definir un pla.  El nombre de maneres de triar 3 vèrtexs de 8 és  8C3 = 8! / (3!5!) = (8*7*6) / (3*2*1) = 56.  No obstant això, alguns d'aquests conjunts de 3 vèrtexs són coplanars amb un quart vèrtex, formant una cara del cub o un pla que passa per dues cares oposades.
+
+Un cub té 6 cares. Cada cara té 4 vèrtexs, i per cada cara hi ha 4 plans que passen per 3 dels seus vèrtexs.  Però aquests plans també passen per un quart vèrtex.  Per tant, hem de restar aquests plans.
+
+Un cub té 6 cares, i cada cara té 4 plans que passen per 3 dels seus vèrtexs (però també passen per un quart).  Això fa un total de 6 * 4 = 24 plans.  Però hem comptat cada pla que passa per dues cares oposades diverses vegades.  Hi ha 6 plans que passen per 4 vèrtexs (les cares).  Hi ha 6 plans que passen per 4 vèrtexs (els plans que contenen dues arestes oposades).
+
+Considerem els plans que passen per tres vèrtexs.  Si els tres vèrtexs pertanyen a la mateixa cara, el pla també passa per un quart vèrtex.  Si els tres vèrtexs no pertanyen a la mateixa cara, el pla no passa per un quart vèrtex.
+
+Considerem un vèrtex.  Hi ha 7 vèrtexs restants.  Podem formar 7*6/2 = 21 parells de vèrtexs.  Cada parell, juntament amb el vèrtex inicial, defineix un pla.  Però alguns d'aquests plans passen per 4 vèrtexs.  Hi ha 6 plans que passen per 4 vèrtexs (les cares).  Hi ha 6 plans que passen per 4 vèrtexs (els plans que contenen dues arestes oposades).  En total, hi ha 12 plans que passen per 4 vèrtexs.
+
+El nombre total de plans que passen per 3 vèrtexs és 56.  El nombre de plans que passen per 4 vèrtexs és 12.  Per tant, el nombre de plans que passen per 3 vèrtexs però no per 4 és 56 - 12 = 44.  Aquesta resposta no està entre les opcions.
+
+Considerem els plans que passen per tres vèrtexs que no són coplanars amb un quart vèrtex.  Aquests plans passen per tres vèrtexs que formen un triangle.  Hi ha 8 triangles que no són coplanars amb un quart vèrtex.  Cada triangle defineix un pla.  Per tant, hi ha 8 plans.
+
+Resposta: D) 8

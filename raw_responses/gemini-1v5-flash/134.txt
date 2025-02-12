@@ -1,0 +1,27 @@
+Raonament:
+
+Sigui *n* un nombre natural.  El problema ens diu que quan dividim *n* per 7, el residu és igual al quocient.  Podem expressar això matemàticament com:
+
+n = 7q + q  on 'q' és el quocient.
+
+Simplificant, tenim:
+
+n = 8q
+
+Això significa que *n* ha de ser un múltiple de 8.  Però, a més, el quocient 'q' ha de ser menor que 7, ja que si fos 7 o més gran, el residu seria 7 o més gran, cosa que no és possible en una divisió per 7.
+
+Per tant, els possibles valors de 'q' són 0, 1, 2, 3, 4, 5, 6.
+
+Els valors corresponents de *n* són:
+
+* q = 0  => n = 0
+* q = 1  => n = 8
+* q = 2  => n = 16
+* q = 3  => n = 24
+* q = 4  => n = 32
+* q = 5  => n = 40
+* q = 6  => n = 48
+
+La suma d'aquests nombres és 0 + 8 + 16 + 24 + 32 + 40 + 48 = 168
+
+Resposta: B)

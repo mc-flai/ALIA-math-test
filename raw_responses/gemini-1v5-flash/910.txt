@@ -1,0 +1,31 @@
+Raonament:
+
+El descompte per a un grup de *n* persones és del *n*%.  El cost d'una entrada és *x*.  El cost total per a un grup de *n* persones sense descompte és *nx*.  Amb el descompte, el cost d'una entrada és *x - (n/100)x = x(1 - n/100)*.  El cost total per al grup amb el descompte és *nx(1 - n/100)*.
+
+La promoció estableix que el màxim descompte per a tot el grup és el preu normal de 4 entrades, que és *4x*.  Per tant, el descompte màxim és *nx - nx(1 - n/100) = nx²/100*.  Això ha de ser menor o igual a *4x*.
+
+Tenim la desigualtat:
+
+*nx²/100 ≤ 4x*
+
+Simplificant (assumint x > 0, ja que el preu d'una entrada no pot ser zero):
+
+*nx/100 ≤ 4*
+
+*n ≤ 400/x*
+
+No coneixem el valor de *x*, però sabem que el descompte màxim és el preu de 4 entrades.  Per tant, el descompte màxim és 4x.  El descompte per a un grup de n persones és nx(n/100).  Igualant el descompte màxim al preu de 4 entrades:
+
+*nx(n/100) = 4x*
+
+Simplificant (assumint x > 0):
+
+*n²/100 = 4*
+
+*n² = 400*
+
+*n = 20*  (prenem la solució positiva, ja que n representa el nombre de persones)
+
+Per tant, el màxim nombre de persones per al qual el descompte no supera el preu de 4 entrades és 20.  Si n fos major que 20, el descompte superaria el preu de 4 entrades.
+
+Resposta: B)

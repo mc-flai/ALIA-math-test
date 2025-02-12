@@ -1,0 +1,19 @@
+Raonament:  Observem que l'expressió √(20 + √(20 + √(20 + √(20 + √20)))) és una successió anidada de radicals.  Per a simplificar, podem aproximar el valor.  Comencem calculant √20 ≈ 4.47.
+
+Si substituïm √20 per 4.47 a l'expressió, obtenim:
+
+√(20 + √(20 + √(20 + √(20 + 4.47))))
+
+Podem observar que cada vegada que afegim un nivell més de radicals, el valor augmenta, però de forma cada vegada més lenta.  Per tant, podem fer una aproximació per excés i per defecte.
+
+Una aproximació per excés seria considerar que tots els √20 són 5.  En aquest cas, tindríem:
+
+√(20 + √(20 + √(20 + √(20 + 5)))) ≈ √(20 + √(20 + √(20 + √25))) = √(20 + √(20 + √(20 + 5))) ≈ √(20 + √(20 + √25)) = √(20 + √25) = √25 = 5
+
+Una aproximació per defecte seria considerar que tots els √20 són 4.  En aquest cas, tindríem:
+
+√(20 + √(20 + √(20 + √(20 + 4))))  Aquesta aproximació serà menor que 5.
+
+Com que l'expressió és una successió creixent que convergeix a un valor, i hem vist que una aproximació per excés dona 5, i una aproximació per defecte dona un valor menor que 5, podem deduir que el valor de l'expressió està entre 4 i 5.  Per tant, la part entera ha de ser 4.  Però, si fem una aproximació més precisa amb una calculadora, el valor és aproximadament 4.99, la part entera és 4.
+
+Resposta: A)

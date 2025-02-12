@@ -1,0 +1,27 @@
+Raonament:
+
+Si en cada tres vagons consecutius hi ha 99 passatgers, podem representar el nombre de passatgers en cada vagó com a:
+
+* Vagó 1: x
+* Vagó 2: y
+* Vagó 3: z
+* Vagó 4: x
+* Vagó 5: y
+* Vagó 6: z
+* Vagó 7: x
+* Vagó 8: y
+* Vagó 9: z
+* Vagó 10: x
+* Vagó 11: y
+
+Sabem que x + y + z = 99.  Aquesta suma es repeteix tres vegades en els 11 vagons.  Per tant, tenim 3(x + y + z) = 3(99) = 297 passatgers en els primers 9 vagons.
+
+Els 350 passatgers totals menys els 297 dels primers 9 vagons ens deixen 350 - 297 = 53 passatgers en els dos últims vagons (vagó 10 i 11).  Com que el nombre de passatgers en els vagons 10 i 11 es repeteix del patró (x i y), sabem que x + y = 53.
+
+Ara, sabem que x + y + z = 99 i x + y = 53.  Per tant, podem trobar el valor de z (passatgers al vagó 3, 6, 9):
+
+z = 99 - (x + y) = 99 - 53 = 46
+
+Per tant, hi ha 46 passatgers en el sisè vagó.
+
+Resposta: D)

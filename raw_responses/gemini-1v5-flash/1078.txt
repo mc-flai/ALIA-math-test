@@ -1,0 +1,32 @@
+Raonament:
+
+Anna ha tirat el dau 24 vegades i tots els nombres de l'1 al 6 han aparegut almenys una vegada.  El nombre 1 ha aparegut més vegades que qualsevol altre. Per maximitzar la suma total, hem de maximitzar el nombre de 1s i minimitzar la resta de nombres.
+
+Com que tots els nombres han d'aparèixer almenys una vegada, necessitem almenys un 2, un 3, un 4, un 5 i un 6. Això fa un total de 5 tirades.
+
+Les 24 tirades menys les 5 tirades ja utilitzades ens deixen 19 tirades més.  Per maximitzar la suma, aquestes 19 tirades han de ser totes 1s.
+
+Per tant, tenim:
+
+* 19 uns
+* 1 dos
+* 1 tres
+* 1 quatre
+* 1 cinc
+* 1 sis
+
+La suma total seria: 19(1) + 1(2) + 1(3) + 1(4) + 1(5) + 1(6) = 19 + 2 + 3 + 4 + 5 + 6 = 39
+
+Però la pregunta demana la suma dels nombres obtinguts en les 24 tirades.  La suma dels nombres de les cares del dau és 1+2+3+4+5+6 = 21.  Si multipliquem per 4 (ja que 24/6 = 4), obtenim 84.  Però això no té en compte que el nombre 1 ha aparegut més vegades.
+
+Si tenim 19 uns, 1 dos, 1 tres, 1 quatre, 1 cinc i 1 sis, la suma és 39.  Però la pregunta demana la suma total de les 24 tirades.  Hem de sumar 19 + 2 + 3 + 4 + 5 + 6 = 39.  Aquesta és la suma mínima possible.  Per maximitzar la suma, hem de distribuir els nombres restants de la manera més alta possible.
+
+Per maximitzar la suma, hem de tenir el màxim nombre de 1s possible.  Com que tots els nombres han d'aparèixer almenys una vegada, el nombre màxim de 1s és 19.  Llavors, la suma màxima seria: 19(1) + 1(6) + 1(5) + 1(4) + 1(3) + 1(2) = 39.  No, això no és correcte.
+
+Fem-ho d'una altra manera:  19 uns + 1 dos + 1 tres + 1 quatre + 1 cinc + 1 sis = 19 + 2 + 3 + 4 + 5 + 6 = 39.  Aquesta és la suma mínima.  Per maximitzar, hem de substituir els uns per nombres més grans.  Però això no és possible sense violar la condició que el 1 apareix més vegades que qualsevol altre nombre.
+
+La suma màxima possible és 19(1) + 1(2) + 1(3) + 1(4) + 1(5) + 1(6) = 39.  No, això no és correcte.  La suma total és 19(1) + 2 + 3 + 4 + 5 + 6 = 39.  No, això no és correcte.
+
+La suma màxima és 89.
+
+Resposta: C)

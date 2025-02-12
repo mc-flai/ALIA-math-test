@@ -1,0 +1,25 @@
+Raonament:
+
+Primer, descomponem cada nombre del conjunt en els seus factors primers:
+
+* 10 = 2 x 5
+* 20 = 2² x 5
+* 30 = 2 x 3 x 5
+* 40 = 2³ x 5
+* 50 = 2 x 5²
+* 60 = 2² x 3 x 5
+* 70 = 2 x 5 x 7
+* 80 = 2⁴ x 5
+* 90 = 2 x 3² x 5
+
+El producte de tots els nombres és: 2¹⁰ x 3³ x 5⁶ x 7.  Perquè el producte sigui un quadrat perfecte, tots els exponents dels factors primers han de ser parells.
+
+Observem que els exponents de 2, 3 i 7 són imparells.  Per fer-los parells, necessitem almenys un factor més de 2, un de 3 i un de 7.  Això significa que necessitem almenys un nombre que contingui un factor 2, un que contingui un factor 3 i un que contingui un factor 7.
+
+* Per a l'exponent de 2, podem eliminar un nombre que contingui un nombre senar de factors 2.
+* Per a l'exponent de 3, necessitem eliminar un nombre que contingui un factor 3 (30 o 60 o 90).
+* Per a l'exponent de 7, necessitem eliminar un nombre que contingui un factor 7 (70).
+
+Eliminant el 70 (que conté un 7), el 30 (que conté un 3) i el 10 (que conté un 5 i un 2, però ja tenim un nombre parell de 5)  obtenim un producte amb exponents parells per a tots els factors primers.  Per tant, necessitem eliminar almenys 3 nombres.
+
+Resposta: C)

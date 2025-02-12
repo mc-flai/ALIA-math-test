@@ -1,0 +1,25 @@
+Raonament:
+
+Sigui S un conjunt amb n elements.  Tenim 7 subconjunts de S, cadascun amb 3 elements.  Cada parell d'elements de S apareix exactament en un d'aquests subconjunts.
+
+Considerem el nombre de parells d'elements en S.  Aquest nombre és  n(n-1)/2.
+
+Cada subconjunt de 3 elements conté 3(2)/2 = 3 parells d'elements.  Com que tenim 7 subconjunts, el nombre total de parells d'elements en tots els subconjunts és 7 * 3 = 21.
+
+Per tant, tenim l'equació:
+
+n(n-1)/2 = 21
+
+Resolent per n:
+
+n(n-1) = 42
+
+n² - n - 42 = 0
+
+(n-7)(n+6) = 0
+
+Les solucions són n = 7 i n = -6.  Com que n ha de ser positiu, n = 7.
+
+Per tant, el conjunt S té 7 elements.
+
+Resposta: E)

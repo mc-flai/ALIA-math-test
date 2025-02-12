@@ -1,0 +1,20 @@
+Raonament: Els nombres cangurils són 1, 3, 13, 31, 131.  Volem expressar 1362 com a suma d'aquests nombres. Per minimitzar el nombre de sumands, hem d'utilitzar els nombres cangurils més grans possible.
+
+Comencem dividint 1362 entre el nombre canguríl més gran, 131:
+
+1362 ÷ 131 ≈ 10 amb un residu.  Això significa que podem utilitzar deu 131s.
+
+1362 - (10 * 131) = 1362 - 1310 = 52
+
+Ara hem de trobar la manera d'expressar 52 com a suma de nombres cangurils.  Podem utilitzar un 31 i un 21.  Però 21 no és un nombre canguríl.  Proveu altres combinacions:
+
+* 31 + 21 (no vàlid)
+* 13 + 13 + 13 + 13 = 52 (vàlid)
+
+Per tant, podem expressar 1362 com:
+
+10 * 131 + 4 * 13 = 1310 + 52 = 1362
+
+En total, hem utilitzat 10 + 4 = 14 nombres cangurils.
+
+Resposta: A)

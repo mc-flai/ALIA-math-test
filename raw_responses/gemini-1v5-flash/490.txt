@@ -1,0 +1,11 @@
+Raonament: Per trobar el nombre entre 1 i 50 amb més divisors, cal calcular el nombre de divisors de cada opció.  Un mètode eficient és trobar la factorització prima de cada nombre:
+
+* **36:** 2² x 3²  (Nombre de divisors: (2+1)(2+1) = 9)
+* **42:** 2 x 3 x 7 (Nombre de divisors: (1+1)(1+1)(1+1) = 8)
+* **45:** 3² x 5 (Nombre de divisors: (2+1)(1+1) = 6)
+* **48:** 2⁴ x 3 (Nombre de divisors: (4+1)(1+1) = 10)
+* **50:** 2 x 5² (Nombre de divisors: (1+1)(2+1) = 6)
+
+El nombre de divisors es calcula multiplicant un més que cada exponent en la factorització prima.  El 48 té 10 divisors, més que qualsevol altre nombre de la llista.
+
+Resposta: D)

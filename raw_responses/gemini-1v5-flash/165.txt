@@ -1,0 +1,15 @@
+Raonament:
+
+Els nombres de dues xifres són del 10 al 99.  Hem de trobar els múltiples de 3 que compleixin que la diferència absoluta entre les seves xifres és 3.
+
+Sigui el nombre de dues xifres representat com 10a + b, on 'a' és la xifra de les desenes i 'b' és la xifra de les unitats.  Sabem que 10a + b és múltiple de 3, per tant, 10a + b ≡ 0 (mod 3).  També sabem que |a - b| = 3.
+
+Considerem els casos possibles:
+
+* **Cas 1: a - b = 3**  Això significa a = b + 3.  Substituint a la congruència: 10(b+3) + b ≡ 0 (mod 3)  => 11b + 30 ≡ 0 (mod 3) => 11b ≡ 0 (mod 3) => 2b ≡ 0 (mod 3) => b ≡ 0 (mod 3).  Per tant, b pot ser 0, 3, 6, 9.  Si b=0, a=3 (30). Si b=3, a=6 (63). Si b=6, a=9 (96). Si b=9, a=12 (no vàlid, ja que 'a' ha de ser una xifra).  Això ens dona 3 nombres: 30, 63, 96.
+
+* **Cas 2: b - a = 3** Això significa b = a + 3.  Substituint a la congruència: 10a + (a+3) ≡ 0 (mod 3) => 11a + 3 ≡ 0 (mod 3) => 11a ≡ 0 (mod 3) => 2a ≡ 0 (mod 3) => a ≡ 0 (mod 3).  Per tant, a pot ser 0, 3, 6, 9. Si a=0, b=3 (no vàlid, ja que no és un nombre de dues xifres). Si a=3, b=6 (36). Si a=6, b=9 (69). Si a=9, b=12 (no vàlid). Això ens dona 2 nombres: 36, 69.
+
+En total, tenim 3 + 2 = 5 nombres.
+
+Resposta: D)

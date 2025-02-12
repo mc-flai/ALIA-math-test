@@ -1,0 +1,35 @@
+Raonament:
+
+Sigui el rectangle ABCD amb AB = a i BC = b, on a > b.  La diagonal és AC.  Dividim el rectangle en dos triangles, ABC i ADC.
+
+Considerem el triangle ABC. Inscrivim un quadrat en aquest triangle amb un vèrtex en el vèrtex B.  Sigui el costat del quadrat x.  Llavors, la base del triangle format per la resta del triangle ABC (el triangle que queda per sobre del quadrat) és a-x, i l'altura és b-x.  Per semblança de triangles, tenim:
+
+x/b = (a-x)/a
+
+ax = b(a-x)
+ax = ab - bx
+ax + bx = ab
+x(a+b) = ab
+x = ab/(a+b)
+
+Ara considerem el triangle ADC.  Inscrivim un quadrat en aquest triangle amb un vèrtex en el vèrtex D.  El costat d'aquest quadrat també serà ab/(a+b).
+
+La distància entre els vèrtexs dels quadrats que es troben a l'interior del rectangle és la hipotenusa d'un triangle rectangle amb catets (a - 2x) i (b - 2x).  Substituint el valor de x:
+
+(a - 2ab/(a+b)) = (a(a+b) - 2ab)/(a+b) = (a² - ab)/(a+b)
+(b - 2ab/(a+b)) = (b(a+b) - 2ab)/(a+b) = (ab - b²)/(a+b)
+
+La distància d és:
+
+d² = ((a² - ab)/(a+b))² + ((ab - b²)/(a+b))²
+d² = (a⁴ - 2a³b + a²b² + a²b² - 2ab³ + b⁴)/(a+b)²
+d² = (a⁴ - 2a³b + 2a²b² - 2ab³ + b⁴)/(a+b)²
+d² = (a² - b²)²/(a+b)²
+d = √((a² - b²)²/(a+b)²)
+d = (a² - b²)/(a+b)
+
+Però aquesta distància és la distància entre els dos vèrtexs dels quadrats que estan sobre la diagonal.  La distància entre els vèrtexs interiors és la hipotenusa d'un triangle rectangle amb catets (a - 2x) i (b - 2x).  Per tant, la distància és:
+
+d = √((a - 2ab/(a+b))² + (b - 2ab/(a+b))²) = √((a² - ab)/(a+b))² + ((ab - b²)/(a+b))² = (a²-b²)/(a+b)
+
+Resposta: E) (a-b)√a²-b²/(a+b)  (Aquesta resposta no coincideix amb el meu càlcul. Hi ha un error en el meu raonament o en les opcions.)  El meu càlcul indica que la resposta hauria de ser (a²-b²)/(a+b), que no està entre les opcions.  Hi ha un error en l'enunciat o les opcions de resposta.

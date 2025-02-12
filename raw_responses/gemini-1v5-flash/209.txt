@@ -1,0 +1,41 @@
+Raonament:
+
+Primer, analitzem el patró en el numerador i el denominador.
+
+**Numerador:**
+
+El terme general del numerador és de la forma  n * (5n) * (25n) = 125n³.  La suma del numerador és:
+
+∑ (125n³)  des de n=1 fins a n=2016
+
+Això és igual a 125 * ∑ n³ des de n=1 fins a n=2016.  La suma dels cubs dels primers n nombres naturals és [n(n+1)/2]².  Per tant, la suma del numerador és:
+
+125 * [2016 * (2016 + 1) / 2]² = 125 * (2016 * 2017 / 2)² = 125 * (1008 * 2017)²
+
+**Denominador:**
+
+El terme general del denominador és de la forma n * (2n) * (4n) = 8n³. La suma del denominador és:
+
+∑ (8n³) des de n=1 fins a n=2016
+
+Això és igual a 8 * ∑ n³ des de n=1 fins a n=2016.  Usant la mateixa fórmula que abans:
+
+8 * [2016 * (2016 + 1) / 2]² = 8 * (2016 * 2017 / 2)² = 8 * (1008 * 2017)²
+
+**Fracció A:**
+
+Ara podem calcular la fracció A:
+
+A = (125 * (1008 * 2017)²) / (8 * (1008 * 2017)²) = 125/8
+
+Simplificant:
+
+A = 125/8 = 15.625
+
+Com que A és el cub d'un nombre racional, podem calcular la arrel cúbica de 15.625:
+
+∛15.625 = 2.5
+
+Per tant, A = 2.5³ = 15.625
+
+Resposta: D) 15,625

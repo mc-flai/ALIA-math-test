@@ -1,0 +1,27 @@
+Raonament:
+
+La funció f(x) és un polinomi de grau 2015.  Observem que els termes ax²⁰¹⁵ i bx són termes imparells, mentre que -1010 és un terme parell.  Això significa que:
+
+f(-x) = a(-x)²⁰¹⁵ + b(-x) - 1010 = -ax²⁰¹⁵ - bx - 1010 = - (ax²⁰¹⁵ + bx) - 1010
+
+Sabem que f(-5) = 5.  Substituint a la funció:
+
+5 = a(-5)²⁰¹⁵ + b(-5) - 1010
+
+Ara, calculem f(5):
+
+f(5) = a(5)²⁰¹⁵ + b(5) - 1010
+
+Observem que f(5) = -f(-5) + 2(-1010) - (-1010) = -f(-5) -1010
+
+f(5) = - (a(-5)²⁰¹⁵ + b(-5) - 1010) -1010
+f(5) = - (5) - 1010
+f(5) = -1015
+
+No obstant això, hi ha un error en el raonament anterior.  La relació entre f(-x) i f(x) no és tan simple com hem assumit.  La relació correcta és:
+
+f(-x) = -ax²⁰¹⁵ - bx - 1010
+
+Per tant, no podem determinar f(5) només coneixent f(-5) sense conèixer els valors de 'a' i 'b'.
+
+Resposta: E)

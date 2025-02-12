@@ -1,0 +1,46 @@
+Raonament:
+
+Siguin $x_1, x_2, ..., x_{11}$ el nombre de passatgers en cada vagó, respectivament.  Sabem que la suma total de passatgers és 350:
+
+$\sum_{i=1}^{11} x_i = 350$
+
+També sabem que en tres vagons consecutius hi ha sempre 99 passatgers. Això significa:
+
+$x_i + x_{i+1} + x_{i+2} = 99$ per a $i = 1, 2, ..., 9$
+
+Considerem tres grups consecutius de tres vagons:
+
+* $x_1 + x_2 + x_3 = 99$
+* $x_2 + x_3 + x_4 = 99$
+* $x_3 + x_4 + x_5 = 99$
+* ... i així successivament.
+
+Restem la primera equació de la segona:  $(x_2 + x_3 + x_4) - (x_1 + x_2 + x_3) = 99 - 99 = 0$,  el que implica $x_4 - x_1 = 0$, o sigui $x_4 = x_1$.
+
+De la mateixa manera, restem la segona equació de la tercera: $(x_3 + x_4 + x_5) - (x_2 + x_3 + x_4) = 0$, el que implica $x_5 - x_2 = 0$, o sigui $x_5 = x_2$.
+
+En general, podem observar un patró: $x_{i+3} = x_i$ per a $i = 1, 2, ..., 8$.  Això significa que la seqüència de passatgers es repeteix cada tres vagons.
+
+Per tant, $x_1 = x_4 = x_7 = x_{10}$
+$x_2 = x_5 = x_8 = x_{11}$
+$x_3 = x_6 = x_9$
+
+La suma total és: $3(x_1 + x_2 + x_3) + x_{10} = 350$.  Com que $x_1 + x_2 + x_3 = 99$, tenim:
+
+$3(99) + x_{10} = 350$
+$297 + x_{10} = 350$
+$x_{10} = 350 - 297 = 53$
+
+Com que $x_6 = x_3$, i $x_1 + x_2 + x_3 = 99$, no podem determinar el valor de $x_6$ directament.  Però sabem que $x_1 = x_4 = x_7 = x_{10} = 53$.  I $x_2 = x_5 = x_8 = x_{11}$.  I $x_3 = x_6 = x_9$.
+
+Com que $x_1 + x_2 + x_3 = 99$, i $x_4 + x_5 + x_6 = 99$, i $x_4 = x_1$ i $x_5 = x_2$, llavors $x_6 = x_3$.  Per tant, $x_6 = x_3$.
+
+$3(x_1 + x_2 + x_3) = 297$
+$3(99) = 297$
+$350 - 297 = 53$  (aquest és $x_{10}$)
+
+$x_6 = x_3 = 99 - x_1 - x_2 = 99 - 53 - x_2$
+
+No podem determinar $x_6$ amb la informació donada.  Hi ha múltiples solucions possibles.
+
+Resposta: No es pot determinar amb la informació donada.  Cap de les opcions és correcta.

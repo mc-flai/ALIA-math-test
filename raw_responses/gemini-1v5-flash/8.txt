@@ -1,0 +1,17 @@
+Raonament:
+
+Analitzem les opinions de cada jugador:
+
+* **A:** Exclou C i E.
+* **B:** Exclou C i D.
+* **C:** Prefereix A a B, D i E.  Això significa que C no es vota a si mateix.
+* **D:** Només accepta A o C.
+* **E:** Prefereix C a B i A a D. Això significa que E no es vota a si mateix.
+
+Si mirem les opinions, veiem que B i D són els que tenen més restriccions.  B rebutja C i D, i D rebutja B i E (implicita, ja que només accepta A o C).
+
+Com que B rebutja C i D, i D rebutja B i E, l'única opció que queda és A.  A més, A és acceptable per a D.  C també rebutja B, D i E, i E rebutja B i D, però no rebutja A.
+
+Per tant, l'únic jugador que no és rebutjat per ningú és A.
+
+Resposta: A)

@@ -1,0 +1,44 @@
+Raonament:
+
+Tenim el sistema d'equacions següent:
+
+* a = b + 1
+* b = c + 1
+* c = d + 1
+* a = a + b + c + d + 4
+
+De la primera equació, b = a - 1.
+De la segona equació, c = b - 1 = (a - 1) - 1 = a - 2.
+De la tercera equació, d = c - 1 = (a - 2) - 1 = a - 3.
+
+Substituïm b, c i d en la quarta equació:
+
+a = a + (a - 1) + (a - 2) + (a - 3) + 4
+
+Simplificant:
+
+a = 4a - 2
+
+Restant 'a' a ambdós costats:
+
+0 = 3a - 2
+
+Sumant 2 a ambdós costats:
+
+2 = 3a
+
+Dividint per 3:
+
+a = 2/3
+
+Ara podem trobar b, c i d:
+
+b = a - 1 = 2/3 - 1 = -1/3
+c = a - 2 = 2/3 - 2 = -4/3
+d = a - 3 = 2/3 - 3 = -7/3
+
+Finalment, calculem a + b + c + d:
+
+a + b + c + d = 2/3 + (-1/3) + (-4/3) + (-7/3) = (2 - 1 - 4 - 7)/3 = -10/3
+
+Resposta: C)

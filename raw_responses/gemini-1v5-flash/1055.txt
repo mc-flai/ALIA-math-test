@@ -1,0 +1,11 @@
+Raonament:
+
+Hi ha 7 alumnes, cadascun nascut en un mes diferent del mateix any.  Per ordenar-los, podem ordenar-los pel seu mes de naixement, del més antic al més modern (gener, febrer, març...).  Per formar dos equips de 3 alumnes cadascun, hem de seleccionar 6 alumnes de 7.  La condició és que el més gran del primer equip ha de ser més jove que el més petit del segon equip.
+
+Si seleccionem els 6 alumnes, el més gran del primer equip ha de ser el tercer alumne seleccionat, i el més petit del segon equip ha de ser el quart alumne seleccionat.  Per tant, només podem seleccionar els 6 alumnes de manera que el tercer alumne sigui més jove que el quart.
+
+Per seleccionar els 6 alumnes de 7, tenim $\binom{7}{6} = 7$ maneres.  Per cada selecció de 6 alumnes, hi ha una única manera de dividir-los en dos equips de 3 que compleixin la condició.  Per exemple, si seleccionem els alumnes 1, 2, 3, 4, 5, 6, el primer equip seria {1, 2, 3} i el segon equip seria {4, 5, 6}.  Si seleccionem els alumnes 1, 2, 3, 4, 5, 7, el primer equip seria {1, 2, 3} i el segon equip seria {4, 5, 7}.  En tots els casos, el més gran del primer equip és més jove que el més petit del segon equip.
+
+Per tant, hi ha 7 maneres de seleccionar els dos equips.
+
+Resposta: C)

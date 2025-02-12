@@ -1,0 +1,23 @@
+Raonament:
+
+Analitzem cada condició:
+
+* **(1) n és un nombre de dos dígits:** Això limita n a estar entre 10 i 99.
+* **(2) n és parell:** n ha de ser un nombre parell.
+* **(3) n és primer:** Un nombre primer només és divisible per 1 i per ell mateix.  Els nombres parells majors que 2 no són primers.
+* **(4) n és el quadrat d'un nombre enter:** n ha de ser un quadrat perfecte.
+* **(5) n és més gran que 50:** n > 50.
+
+Com que n compleix quatre de les cinc condicions, i la condició (3) (n és primer) és incompatible amb la condició (2) (n és parell) per a nombres majors que 2,  n NO pot ser primer.  Per tant, la condició (3) és la que no es compleix.
+
+Això significa que n ha de ser un nombre de dos dígits, parell, quadrat perfecte i major que 50.  Els quadrats perfectes de dos dígits majors que 50 són:
+
+* 8² = 64
+* 9² = 81
+* 10² = 100 (aquest no és vàlid perquè és de tres dígits)
+
+De les opcions, només 64 i 81 compleixen les condicions.  Com que n ha de ser parell, n = 64.
+
+La suma de les xifres de 64 és 6 + 4 = 10.
+
+Resposta: A)

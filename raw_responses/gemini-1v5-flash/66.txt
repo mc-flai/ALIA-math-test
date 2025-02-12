@@ -1,0 +1,21 @@
+Raonament: Per trobar el residu de dividir $20! + 520$ entre $2^9 = 512$, primer cal calcular quantes vegades el factor 2 apareix en la factorització de $20!$.  Utilitzem la fórmula de Legendre:
+
+$v_2(20!) = \sum_{k=1}^{\infty} \left\lfloor \frac{20}{2^k} \right\rfloor = \left\lfloor \frac{20}{2} \right\rfloor + \left\lfloor \frac{20}{4} \right\rfloor + \left\lfloor \frac{20}{8} \right\rfloor + \left\lfloor \frac{20}{16} \right\rfloor = 10 + 5 + 2 + 1 = 18$
+
+Això significa que $20! = 2^{18} \cdot n$, on $n$ és un enter que no és divisible per 2.
+
+Ara, dividim $20! + 520$ entre $2^9$:
+
+$\frac{20! + 520}{2^9} = \frac{2^{18}n + 520}{2^9} = 2^9n + \frac{520}{2^9}$
+
+Com que $520 = 2^3 \cdot 5 \cdot 13$, podem escriure:
+
+$\frac{520}{512} = \frac{2^3 \cdot 65}{2^9} = \frac{65}{2^6} = \frac{65}{64} = 1 + \frac{1}{64}$
+
+Per tant, el residu de dividir 520 entre 512 és 1.
+
+El residu de dividir $20! + 520$ entre $2^9$ és el residu de dividir $2^9n + 1$ entre $2^9$, que és 1.  No obstant això, hi ha un error en el càlcul anterior.  El residu de dividir 520 entre 512 és 8.
+
+Per tant, el residu de dividir $20! + 520$ entre $2^9$ és el residu de dividir $2^{18}n + 520$ entre $2^9$.  Com que $2^{18}n$ és divisible entre $2^9$, el residu depèn només de 520.  El residu de dividir 520 entre 512 és 8.
+
+Resposta: B)

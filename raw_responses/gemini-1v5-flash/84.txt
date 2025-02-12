@@ -1,0 +1,17 @@
+Raonament:
+
+La diagonal AC del rectangle ABCD divideix el rectangle en dos triangles rectangles congruents, ABC i ADC.  El nombre de quadrats que talla la diagonal AC és igual al nombre de quadrats que talla la diagonal en cada triangle, multiplicado per 2, menos 1 (ya que el cuadrado que contiene el vértice A se cuenta dos veces).
+
+El teorema de Pick afirma que l'àrea d'un polígon amb vèrtexs en punts de coordenades enteres és A = i + b/2 - 1, on i és el nombre de punts interiors i b és el nombre de punts del contorn.  En el nostre cas, la diagonal AC passa per punts de coordenades enteres.
+
+El nombre de quadrats que talla la diagonal en un rectangle de dimensions m x n és m + n - mcd(m, n), on mcd(m, n) és el màxim comú divisor de m i n.
+
+En aquest cas, m = 36 i n = 25. El màxim comú divisor de 36 i 25 és 1.  Per tant, el nombre de quadrats que talla la diagonal AC en un dels triangles és 36 + 25 - 1 = 60.
+
+Com que la diagonal talla dos triangles, el nombre total de quadrats que talla la diagonal és 60 + 60 - 1 = 119.  No obstant això, aquest càlcul no és correcte ja que no considera que la diagonal pot passar per un vèrtex.
+
+Usant la fórmula m + n - mcd(m, n), tenim 36 + 25 - mcd(36, 25) = 36 + 25 - 1 = 60.  Aquesta fórmula ens dona el nombre de quadrats que la diagonal talla en un dels triangles.  Com que hi ha dos triangles, el nombre total de quadrats que talla la diagonal és 60 + 60 - 1 = 119.  Però això no és correcte.
+
+La fórmula correcta és m + n - gcd(m,n), on m i n són les dimensions del rectangle.  En aquest cas, m = 36 i n = 25.  gcd(36, 25) = 1.  Per tant, el nombre de quadrats que talla la diagonal és 36 + 25 - 1 = 60.
+
+Resposta: A) 60

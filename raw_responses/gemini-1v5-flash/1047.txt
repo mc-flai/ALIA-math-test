@@ -1,0 +1,39 @@
+Raonament:
+
+Sigui $v_A$ la velocitat d'Ariadna i $v_B$ la velocitat de Baldiri.  Ens diuen que $v_A = 3v_B$.  Sigui $d$ la distància entre A i B.
+
+Quan es troben per primera vegada, Ariadna ha recorregut una distància $d + x$, on $x$ és la distància des del punt B fins al punt de trobada.  Baldiri ha recorregut una distància $d - x$.
+
+El temps que han trigat és de 15 minuts (0.25 hores).  Per tant:
+
+$(d + x) / v_A = 0.25$
+$(d - x) / v_B = 0.25$
+
+Substituint $v_A = 3v_B$:
+
+$(d + x) / (3v_B) = 0.25$
+$(d - x) / v_B = 0.25$
+
+De la segona equació, $d - x = 0.25v_B$.  De la primera, $d + x = 0.75v_B$.  Sumant les dues equacions:
+
+$2d = v_B$
+
+Ara, considerem el segon encontre.  En aquest moment, Ariadna haurà recorregut $2d + y$ i Baldiri $2d - y$, on $y$ és la distància des del punt A fins al punt del segon encontre.  El temps que triguen a trobar-se per segona vegada és $t$.
+
+$(2d + y) / (3v_B) = t$
+$(2d - y) / v_B = t$
+
+Substituint $2d = v_B$:
+
+$(v_B + y) / (3v_B) = t$
+$(v_B - y) / v_B = t$
+
+De la segona equació, $1 - y/v_B = t$, per tant $y = v_B(1-t)$.  Substituint a la primera equació:
+
+$(v_B + v_B(1-t)) / (3v_B) = t$
+$2v_B - v_Bt / 3v_B = t$
+$2 - t = 3t$
+$4t = 2$
+$t = 0.5$ hores = 30 minuts
+
+Resposta: C) 30 min

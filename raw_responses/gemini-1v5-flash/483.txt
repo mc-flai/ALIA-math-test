@@ -1,0 +1,20 @@
+Raonament: Sigui el nombre de dos dígits representat com 10a + b, on 'a' i 'b' són els dígits de les desenes i les unitats respectivament.  El problema ens diu que el nombre és 4 vegades la suma dels seus dígits, per tant:
+
+10a + b = 4(a + b)
+
+Simplificant l'equació:
+
+10a + b = 4a + 4b
+6a = 3b
+2a = b
+
+Com que 'a' i 'b' són dígits, 'a' pot ser 1, 2, 3, o 4.  Si 'a' és més gran que 4, 'b' seria més gran que 9, que no és un dígit vàlid.
+
+* Si a = 1, b = 2. El nombre és 12.  12 = 4(1+2) = 12.  (Correcte)
+* Si a = 2, b = 4. El nombre és 24.  24 = 4(2+4) = 24.  (Correcte)
+* Si a = 3, b = 6. El nombre és 36.  36 = 4(3+6) = 36.  (Correcte)
+* Si a = 4, b = 8. El nombre és 48.  48 = 4(4+8) = 48.  (Correcte)
+
+Per tant, hi ha 4 nombres que compleixen la condició.
+
+Resposta: D)

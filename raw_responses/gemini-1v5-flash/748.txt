@@ -1,0 +1,23 @@
+Raonament:
+
+Sigui N un nombre del conjunt {1000, 1001, ..., 1999}.  Volem trobar els nombres N tals que si suprimim una xifra qualsevol, el nombre resultant (n) és un divisor de N (N = kn per algun enter k).
+
+Considerem els nombres de quatre xifres entre 1000 i 1999.  Si suprimim una xifra, obtenim un nombre de tres xifres o un nombre de dues xifres o un nombre d'una xifra.
+
+Analitzem els casos possibles:
+
+* **Suprimir la xifra de les unitats:**  Si N = 1000a + 100b + 10c + d, i suprimim d, obtenim n = 100a + 10b + c.  Perquè n | N, ha de ser que 100a + 10b + c | 1000a + 100b + 10c + d.  Això implica que 100a + 10b + c | 10(100a + 10b + c) + d, per tant 100a + 10b + c | d.  Com que d és una xifra (0-9), això només és possible si d = 0.  Per tant, els nombres acabats en 0 compleixen aquesta condició.
+
+* **Suprimir la xifra de les desenes:**  Similarment, si suprimim la xifra de les desenes, obtenim condicions complexes.
+
+* **Suprimir la xifra de les centenes:**  Similarment, si suprimim la xifra de les centenes, obtenim condicions complexes.
+
+* **Suprimir la xifra de les unitats de miler:**  Si suprimim la xifra de les unitats de miler (1), obtenim un nombre de tres xifres.  Aquest cas és difícil d'analitzar generalment.
+
+En comptes d'un anàlisi general, és més fàcil provar amb nombres concrets.  Els nombres acabats en 0 entre 1000 i 1999 són 100, per tant, ja tenim una gran quantitat de candidats.  Però, si suprimim el 0, el nombre resultant ha de dividir el nombre original.  Per exemple, 1000, 1100, 1200... 1900.  Si suprimim el 0, tenim 100, 110, 120... 190.  100 divideix 1000, 110 divideix 1100, etc.  Això ens dona 100 nombres.  Però la pregunta demana quants nombres compleixen la condició, no quants nombres acabats en 0 hi ha.
+
+Considerem els nombres de la forma 1aa0, on a és una xifra.  Si suprimim el 0, tenim 1aa.  1100 = 110 * 10, 1220 = 122 * 10, etc.  Això no funciona.
+
+Considerem els nombres 1100, 1200, ..., 1900.  Si suprimim el 0, obtenim 110, 120, ..., 190.  110 no divideix 1100, però 110 divideix 1100.  120 divideix 1200, etc.  Això ens dona 9 nombres.
+
+Resposta: B)

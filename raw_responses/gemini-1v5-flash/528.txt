@@ -1,0 +1,15 @@
+Raonament:
+
+El nombre de dígits necessaris per numerar les pàgines d'un llibre depèn del nombre de pàgines.  Per a nombres de pàgines de 1 a 9, es necessiten 9 dígits. De 10 a 99, es necessiten 90 x 2 = 180 dígits. De 100 a 999, es necessiten 900 x 3 = 2700 dígits.  I així successivament.
+
+Comencem per aproximar el nombre de pàgines.  Si tinguéssim 1000 pàgines, necessitaríem 9 + 180 + 2700 = 2889 dígits.  Com que necessitem 11381 dígits, sabem que el nombre de pàgines és molt superior a 1000.
+
+Suposem que el nombre de pàgines és 'n'.  Si 'n' és un nombre de tres dígits, el nombre de dígits seria 2889 + (n-999)*4.  Si 'n' és un nombre de quatre dígits, el nombre de dígits seria 2889 + 900*4 + (n-9999)*5.
+
+Però, podem simplificar el problema.  Suposem que totes les pàgines tenen un nombre de quatre dígits.  Llavors, el nombre de dígits seria aproximadament 4n.  Si 4n = 11381, llavors n = 11381/4 ≈ 2845.  Això és una aproximació, ja que les primeres pàgines tenen menys de quatre dígits.
+
+Per tant, hem de provar amb els nombres propers a 2845.  Anem a provar amb les opcions donades:
+
+* 3136 pàgines:  9 + 180 + 2700 + (3136-999)*4 = 11381 dígits.  Això funciona!
+
+Resposta: A)

@@ -1,0 +1,31 @@
+Raonament:
+
+Sigui el nombre de tres xifres original "abc", on 'a' és la xifra de les centenes, 'b' la de les desenes i 'c' la de les unitats.  Després de llevar la primera xifra (a), obtenim el nombre de dos xifres "bc".  El problema ens diu que 7 * "bc" = "abc".  Això es pot expressar com:
+
+7 * (10b + c) = 100a + 10b + c
+
+Simplificant l'equació:
+
+70b + 7c = 100a + 10b + c
+
+60b + 6c = 100a
+
+Dividint per 2:
+
+30b + 3c = 50a
+
+Dividint per 3:
+
+10b + c = (50/3)a
+
+Com que 'a', 'b' i 'c' són xifres enteres (entre 0 i 9),  (50/3)a ha de ser un nombre enter.  Per tant, 'a' ha de ser un múltiple de 3.  Les opcions possibles per a 'a' són 3, 6 i 9.
+
+Si a = 3, 10b + c = 50,  per tant b = 5 i c = 0. El nombre original seria 350, i 7 * 50 = 350.  Això funciona.
+
+Si a = 6, 10b + c = 100,  per tant b = 10, que no és una xifra vàlida.
+
+Si a = 9, 10b + c = 150, per tant b = 15, que no és una xifra vàlida.
+
+Per tant, l'única solució vàlida és a = 3.
+
+Resposta: C)

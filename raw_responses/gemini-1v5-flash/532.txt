@@ -1,0 +1,11 @@
+Raonament:
+
+El problema ens diu que el producte dels dos nombres més petits és 16.  Els factors de 16 són 1, 2, 4, 8, 16.  Com els nombres han de ser enters positius i distints, les úniques parelles possibles són (1, 16), (2, 8) i (4,4).  Com que els nombres han de ser distints, descartem (4,4).  Per tant, els dos nombres més petits són 2 i 8 (o 1 i 16, però veurem que això no funciona).
+
+El problema també ens diu que el producte dels dos nombres més grans és 225. Els factors de 225 són 1, 3, 5, 9, 15, 25, 45, 75, 225.  Les parelles possibles de factors distints que multipliquen 225 són (1, 225), (3, 75), (5, 45), (9, 25) i (15,15).  Com que els nombres han de ser distints, descartem (15,15).
+
+Si els dos nombres més petits són 2 i 8, els dos nombres més grans han de ser més grans que 8.  Les parelles possibles per als nombres més grans són (9, 25).  Per tant, els quatre nombres serien 2, 8, 9, 25.  La suma seria 2 + 8 + 9 + 25 = 44.
+
+Si els dos nombres més petits fossin 1 i 16, els dos nombres més grans haurien de ser més grans que 16.  No hi ha cap parella de factors de 225 que compleixi aquesta condició i que siguin més grans que 16.
+
+Resposta: C)

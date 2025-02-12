@@ -1,0 +1,29 @@
+Raonament: La suma donada és:
+
+S = 1/n + 2/(n-1) + 3/(n-2) + ... + (n-1)/2 + n/1
+
+Observem que si invertim l'ordre dels termes, obtenim:
+
+S = n/1 + (n-1)/2 + (n-2)/3 + ... + 2/(n-1) + 1/n
+
+Si sumem les dues expressions de S, obtenim:
+
+2S = (n+1)/n + (n+1)/(n-1) + (n+1)/(n-2) + ... + (n+1)/2 + (n+1)/1
+
+2S = (n+1) * [1/n + 1/(n-1) + 1/(n-2) + ... + 1/2 + 1/1]
+
+2S = (n+1) * H<sub>n</sub>, on H<sub>n</sub> és el n-èsim nombre harmònic.
+
+Per tant, S = (n+1) * H<sub>n</sub> / 2
+
+Ens donen que S = 11.15.  Per tant, hem de trobar un valor de n tal que (n+1) * H<sub>n</sub> / 2 ≈ 11.15.  Aquesta equació és difícil de resoldre analíticament.  Provem amb els valors de les opcions:
+
+* Si n=5, H₅ ≈ 1 + 1/2 + 1/3 + 1/4 + 1/5 ≈ 2.283.  (5+1) * 2.283 / 2 ≈ 6.85
+* Si n=6, H₆ ≈ 2.45.  (6+1) * 2.45 / 2 ≈ 8.575
+* Si n=7, H₇ ≈ 2.593.  (7+1) * 2.593 / 2 ≈ 10.372
+* Si n=8, H₈ ≈ 2.718.  (8+1) * 2.718 / 2 ≈ 12.231
+* Si n=10, H₁₀ ≈ 2.929.  (10+1) * 2.929 / 2 ≈ 16.1095
+
+El valor de n=7 dona un resultat més proper a 11.15.  L'aproximació no és perfecta a causa de la naturalesa dels nombres harmònics.
+
+Resposta: C)

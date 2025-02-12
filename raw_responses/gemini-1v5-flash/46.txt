@@ -1,0 +1,19 @@
+Raonament:
+
+Un nombre de tres xifres abc és múltiple de 3 si la suma de les seves xifres (a + b + c) és múltiple de 3.  Volem trobar quants nombres abc hi ha tals que a + 3b + c és múltiple de 3.  Observem que si a + 3b + c és múltiple de 3, llavors a + c és múltiple de 3, ja que 3b sempre és múltiple de 3.
+
+Per tant, ens hem de centrar en la condició que a + c sigui múltiple de 3.
+
+* **a = 1:** c pot ser 2, 5, 8.  Hi ha 9 possibilitats per a b (0-9).  Total: 3 * 9 = 27
+* **a = 2:** c pot ser 1, 4, 7.  Hi ha 9 possibilitats per a b.  Total: 3 * 9 = 27
+* **a = 3:** c pot ser 0, 3, 6, 9.  Hi ha 9 possibilitats per a b.  Total: 4 * 9 = 36
+* **a = 4:** c pot ser 2, 5, 8.  Hi ha 9 possibilitats per a b.  Total: 3 * 9 = 27
+* **a = 5:** c pot ser 1, 4, 7.  Hi ha 9 possibilitats per a b.  Total: 3 * 9 = 27
+* **a = 6:** c pot ser 0, 3, 6, 9.  Hi ha 9 possibilitats per a b.  Total: 4 * 9 = 36
+* **a = 7:** c pot ser 2, 5, 8.  Hi ha 9 possibilitats per a b.  Total: 3 * 9 = 27
+* **a = 8:** c pot ser 1, 4, 7.  Hi ha 9 possibilitats per a b.  Total: 3 * 9 = 27
+* **a = 9:** c pot ser 0, 3, 6, 9.  Hi ha 9 possibilitats per a b.  Total: 4 * 9 = 36
+
+Sumant tots els totals: 27 + 27 + 36 + 27 + 27 + 36 + 27 + 27 + 36 = 300
+
+Resposta: B)

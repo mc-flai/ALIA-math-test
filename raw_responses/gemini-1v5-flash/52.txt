@@ -1,0 +1,15 @@
+Raonament: Perquè el producte de set nombres naturals consecutius acabi en 00, ha de ser divisible per 100, és a dir, per 4 i per 25.  Com que 25 = 5², el producte ha de contenir almenys dos factors 5 i almenys dos factors 2.  És més probable que trobem dos factors 2 que dos factors 5. Per tant, ens centrarem en trobar dos factors 5.
+
+Si un dels nombres és múltiple de 25, ja tenim dos factors 5 (25 = 5 x 5).  Si un dels nombres és múltiple de 5 però no de 25, necessitaríem un altre nombre múltiple de 5.  Això és menys probable.
+
+Els múltiples de 25 menors de 50 són 25 i 50.  Com que els nombres han de ser menors que 50, considerem seqüències que contenen el 25.  Les seqüències possibles són:
+
+* 21, 22, 23, 24, 25, 26, 27
+* 22, 23, 24, 25, 26, 27, 28
+* 23, 24, 25, 26, 27, 28, 29
+* ...i així successivament fins a:
+* 44, 45, 46, 47, 48, 49, 50 (aquesta seqüència no és vàlida perquè 50 no és menor que 50)
+
+Observem que hi ha 15 seqüències possibles que contenen el 25.  Cada una d'aquestes seqüències contindrà almenys dos factors 5 (del 25) i diversos factors 2.  Per tant, el producte de cada seqüència acabarà en 00.
+
+Resposta: B)

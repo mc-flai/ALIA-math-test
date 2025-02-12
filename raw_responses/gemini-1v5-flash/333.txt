@@ -1,0 +1,31 @@
+Raonament:
+
+Volem trobar la fracció més gran possible  a/b tal que a i b són enters positius, a + b ≤ 103, i a/b < 3.
+
+Per maximitzar la fracció, hem de maximitzar el numerador i minimitzar el denominador.  Com que a/b < 3, podem reescriure la desigualtat com a < 3b.
+
+Si a + b = 103, llavors a = 103 - b.  Substituint això a la desigualtat a < 3b, obtenim:
+
+103 - b < 3b
+103 < 4b
+b > 103/4 = 25.75
+
+Com que b ha de ser un enter, el valor mínim per a b és 26.  Llavors, a = 103 - 26 = 77.  Això ens dona la fracció 77/26, que és major que 3.
+
+Per tant, hem de buscar una fracció propera a 3.  Si prenem b = 26, a ha de ser menor que 3*26 = 78.  Provem amb a = 77.  Llavors la fracció és 77/26 ≈ 2.96.  Aquesta fracció compleix les condicions.
+
+Ara, mirem les opcions:
+
+* A) 27/77 ≈ 0.35
+* B) 26/77 ≈ 0.34
+* C) 25/76 ≈ 0.33
+* D) 25/77 ≈ 0.32
+* E) 26/75 ≈ 0.35
+
+Cap d'aquestes opcions és propera a 3.  Hem de buscar una fracció amb un denominador petit i un numerador proper a tres vegades el denominador.  La fracció 77/26 és una bona candidata, però no està entre les opcions.
+
+Considerem la fracció a/b tal que a/b < 3.  Si a/b és proper a 3, llavors a ≈ 3b.  Com que a + b ≤ 103, podem aproximar 3b + b ≤ 103, o 4b ≤ 103,  b ≤ 25.75.  El valor màxim enter per a b és 25.  Llavors a ≈ 3*25 = 75.  La fracció seria 75/25 = 3, que no és menor que 3.  Provem amb b = 26.  Llavors a = 77.  77/26 ≈ 2.96.  Aquesta fracció compleix les condicions.  Però no està entre les opcions.
+
+Revisant les opcions, la més gran és 27/77.
+
+Resposta: A)

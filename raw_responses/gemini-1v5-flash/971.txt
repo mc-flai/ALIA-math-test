@@ -1,0 +1,13 @@
+Raonament: El pes total dels quatre paquets és de 20 kg. El tercer paquet pesa 8 kg.  Com que els pesos són enters i diferents, podem representar els pesos dels quatre paquets com a a, b, c, d, on a < b < c < d. Sabem que c = 8 kg i a + b + c + d = 20 kg.
+
+Perquè els pesos siguin diferents i enters, el paquet més lleuger (a) ha de pesar com a mínim 1 kg.  El segon paquet (b) ha de pesar més que el primer (a), però menys que el tercer (c=8).  El quart paquet (d) ha de pesar més que el tercer (c=8).
+
+Substituint c = 8 en l'equació del pes total: a + b + 8 + d = 20.  Això simplifica a a + b + d = 12.
+
+Per minimitzar el pes del quart paquet (d), maximitzem els pesos del primer (a) i segon (b).  Si a = 1 i b = 7, llavors d = 4, però això no compleix la condició b < c.  Si a = 1 i b = 6, llavors d = 5.  Si a = 2 i b = 6, llavors d = 4, però això no compleix la condició b < c. Si a = 1 i b = 5, llavors d = 6. Si a = 2 i b = 5, llavors d = 5, però això no compleix la condició que els pesos siguin diferents. Si a = 3 i b = 4, llavors d = 5. Si a = 2 i b = 4, llavors d = 6. Si a = 1 i b = 4, llavors d = 7. Si a = 3 i b = 5, llavors d = 4, però això no compleix la condició b < c.
+
+Per tant, una combinació possible és a = 1 kg, b = 5 kg, c = 8 kg, d = 6 kg.  Una altra combinació possible és a = 2 kg, b = 5 kg, c = 8 kg, d = 5 kg (incorrecta perquè d = c).  Una altra combinació possible és a = 2 kg, b = 4 kg, c = 8 kg, d = 6 kg.  Una altra combinació possible és a = 3 kg, b = 4 kg, c = 8 kg, d = 5 kg.
+
+En totes les combinacions possibles que compleixen les condicions, el segon paquet pesa 5 kg.
+
+Resposta: D)

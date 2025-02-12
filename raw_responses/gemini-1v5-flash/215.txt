@@ -1,0 +1,33 @@
+Raonament:
+
+Un nombre de dues xifres es pot representar com 10a + b, on 'a' i 'b' són les xifres de les desenes i unitats respectivament.  El problema ens diu que el nombre ha de ser múltiple de 3, per tant, 10a + b ≡ 0 (mod 3).  També ens diu que |a - b| = 3.  Això significa que a - b = 3 o b - a = 3.
+
+**Cas 1: a - b = 3**
+
+Això implica que a = b + 3.  Com que a i b són xifres, les possibilitats són:
+
+* b = 0, a = 3  (Nombre: 30. 30 és múltiple de 3)
+* b = 1, a = 4  (Nombre: 41. 41 no és múltiple de 3)
+* b = 2, a = 5  (Nombre: 52. 52 no és múltiple de 3)
+* b = 3, a = 6  (Nombre: 63. 63 és múltiple de 3)
+* b = 4, a = 7  (Nombre: 74. 74 no és múltiple de 3)
+* b = 5, a = 8  (Nombre: 85. 85 no és múltiple de 3)
+* b = 6, a = 9  (Nombre: 96. 96 és múltiple de 3)
+
+
+**Cas 2: b - a = 3**
+
+Això implica que b = a + 3.  Les possibilitats són:
+
+* a = 0, b = 3  (Nombre: 3. No és de dues xifres)
+* a = 1, b = 4  (Nombre: 14. 14 no és múltiple de 3)
+* a = 2, b = 5  (Nombre: 25. 25 no és múltiple de 3)
+* a = 3, b = 6  (Nombre: 36. 36 és múltiple de 3)
+* a = 4, b = 7  (Nombre: 47. 47 no és múltiple de 3)
+* a = 5, b = 8  (Nombre: 58. 58 no és múltiple de 3)
+* a = 6, b = 9  (Nombre: 69. 69 és múltiple de 3)
+
+
+En total, tenim 4 nombres que compleixen les condicions: 30, 63, 36, 96.
+
+Resposta: C)

@@ -1,0 +1,25 @@
+Raonament: Per minimitzar la diferència entre dos nombres de quatre xifres formats amb els dígits 1, 2, 3, 4, 5, 6, 7 i 8, hem de distribuir els dígits de manera que els nombres siguin el més propers possible.  La millor manera de fer-ho és agrupar els dígits més grans i els més petits en cada nombre.
+
+Si ordenem els dígits de menor a major (1, 2, 3, 4, 5, 6, 7, 8), una aproximació seria formar dos nombres amb els dígits més propers: un amb els dígits més petits i l'altre amb els dígits més grans.  Però això no garanteix la mínima diferència.
+
+Una estratègia més efectiva és intentar que les xifres de les unitats, desenes, centenes i milers siguin el més properes possibles.  Per exemple, si posem el 1 i el 8 en les unitats, la diferència serà 7.  Si posem el 2 i el 7 en les desenes, la diferència serà 5.  Si posem el 3 i el 6 en les centenes, la diferència serà 3.  I si posem el 4 i el 5 en les milers, la diferència serà 1.
+
+Per tant, una possible combinació seria: 5314 i 6728. La diferència és 6728 - 5314 = 1414.  Aquesta no és cap de les opcions.
+
+Proveu una altra combinació: 4172 i 5836. La diferència és 5836 - 4172 = 1664. Tampoc és cap de les opcions.
+
+Però si intentem minimitzar la diferència xifra a xifra, la millor aproximació és: 5243 i 6178. La diferència és 6178 - 5243 = 935.  Aquesta no és cap de les opcions.
+
+Analitzem les opcions:
+* A) 124: massa petita
+* B) 247: massa petita
+* C) 358: massa petita
+* D) 643: massa petita
+* E) 1357: massa petita
+
+Hem de buscar una combinació que doni una diferència més gran.  Provem amb 4132 i 5867. La diferència és 1735.  Tampoc és cap de les opcions.
+
+Finalment, observem que la diferència mínima entre dos nombres de quatre xifres formats amb aquests dígits és 8765 - 1234 = 7531.  Cap de les opcions s'aproxima a aquest valor.  Hi ha un error en el plantejament o les opcions de resposta.  No hi ha una solució entre les opcions donades.
+
+
+Resposta: Cap de les opcions és correcta.

@@ -1,0 +1,25 @@
+Raonament:  Volem trobar els enters 'a' entre 1 i 25 tals que a(a+1)(a+2) sigui múltiple de 84.  Primer, factoritzem 84: 84 = 2² * 3 * 7.  Això significa que el producte a(a+1)(a+2) ha de contenir almenys dos factors 2, un factor 3 i un factor 7.
+
+Com que a, (a+1) i (a+2) són tres enters consecutius, sempre hi haurà almenys un múltiple de 2 i un múltiple de 3 en aquest producte.  La clau és el factor 7.  Perquè el producte sigui múltiple de 84, un dels tres factors (a, a+1, a+2) ha de ser múltiple de 7.
+
+Anem a buscar els valors d'a que compleixen aquesta condició:
+
+* Si a és múltiple de 7: a pot ser 7, 14, 21.
+* Si a+1 és múltiple de 7: a pot ser 6, 13, 20.
+* Si a+2 és múltiple de 7: a pot ser 5, 12, 19.
+
+En total, tenim 9 valors possibles d'a: 5, 6, 7, 12, 13, 14, 19, 20, 21.  Ara bé, hem de comprovar si aquests valors fan que el producte sigui múltiple de 84.
+
+* Si a=5, 5*6*7 = 210 (múltiple de 84)
+* Si a=6, 6*7*8 = 336 (múltiple de 84)
+* Si a=7, 7*8*9 = 504 (múltiple de 84)
+* Si a=12, 12*13*14 = 2184 (múltiple de 84)
+* Si a=13, 13*14*15 = 2730 (múltiple de 84)
+* Si a=14, 14*15*16 = 3360 (múltiple de 84)
+* Si a=19, 19*20*21 = 7980 (múltiple de 84)
+* Si a=20, 20*21*22 = 9240 (múltiple de 84)
+* Si a=21, 21*22*23 = 10626 (múltiple de 84)
+
+Tots els 9 valors d'a fan que el producte sigui múltiple de 84.
+
+Resposta: E)

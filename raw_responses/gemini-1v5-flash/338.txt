@@ -1,0 +1,23 @@
+Raonament:
+
+Tenim quatre persones: Clara (C), Joan (J), Pau (P) i Sofia (S).  Les posicions possibles són 1, 2, 3 i 4.
+
+Sabem que:
+
+* C + J + S = 6
+* J + P = 6
+* J > C (Joan està millor situat que Clara)
+
+Analitzem les possibles combinacions per a C + J + S = 6:
+
+* Si C = 1, llavors J + S = 5.  Les úniques possibilitats són J = 2, S = 3 o J = 3, S = 2.  En ambdós casos, J + P = 6 implica que P = 4 o P = 3 respectivament.  En el primer cas, J > C es compleix. En el segon cas, J > C també es compleix.
+
+* Si C = 2, llavors J + S = 4.  Les possibilitats són J = 1, S = 3 (no compleix J > C) o J = 3, S = 1.  Si J = 3, S = 1, llavors J + P = 6 implica P = 3, però això no és possible ja que P ha de ser un nombre diferent de J i S.
+
+* Si C = 3, llavors J + S = 3.  Això implica que J = 1, S = 2 o J = 2, S = 1.  En ambdós casos, J > C no es compleix.
+
+* Si C = 4, llavors J + S = 2.  Això no és possible amb nombres enters positius.
+
+Per tant, l'única combinació possible que compleix totes les condicions és: C = 1, J = 2, S = 3, P = 4.
+
+Resposta: B)

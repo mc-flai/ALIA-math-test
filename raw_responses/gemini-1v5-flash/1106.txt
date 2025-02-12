@@ -1,0 +1,15 @@
+Raonament:
+
+Tenim 20 punts que divideixen la circumferència en arcs iguals.  El nombre total de cordes que es poden dibuixar connectant parells d'aquests punts és la combinació de 20 punts presos de 2 en 2, que és  20C2 = (20*19)/2 = 190.
+
+Ara, hem de restar les cordes que no compleixen la condició de ser més llargues que el radi però més curtes que el diàmetre.
+
+Una corda és més curta que el radi si connecta dos punts adjacents o dos punts separats per un sol punt.  Hi ha 20 cordes que connecten punts adjacents.
+
+Una corda és més llarga que el diàmetre si connecta dos punts que estan separats per més de 10 punts.  Hi ha 10 parells de punts que compleixen aquesta condició (punt 1 i 12, punt 1 i 13, ..., punt 1 i 20; punt 2 i 13, etc.).  Però hem de tenir en compte que cada parella es compta dues vegades (1-12 i 12-1), així que hi ha 10 cordes més llargues que el diàmetre.
+
+Per tant, les cordes que són més llargues que el radi però més curtes que el diàmetre són:
+
+190 (total) - 20 (més curtes que el radi) - 10 (més llargues que el diàmetre) = 160
+
+Resposta: E)

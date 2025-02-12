@@ -1,0 +1,11 @@
+Raonament:
+
+Com que f és estrictament creixent i f(1000) = 1000, tenim que f(x) = x per a x = 1000.  Suposem que existeix un k tal que f(k) > k.  Llavors, per la propietat f(f(k)) ≤ f(k+1), tenim que f(f(k)) > f(k) (perquè f és estrictament creixent i f(k) > k).  Per tant, f(k+1) > f(k).  Si f(k) = k + r amb r > 0, llavors f(k+r) ≥ f(f(k)) > f(k) = k+r.  Per inducció, podem demostrar que f(k+nr) > k+nr per a tot n natural.  Això implica que f(x) > x per a tot x > 1000.
+
+Ara suposem que existeix un k tal que f(k) < k.  Llavors, f(f(k)) < f(k) < k.  Però f(f(k)) ≤ f(k+1), així que f(k+1) > f(f(k)).  Si f(k) = k - r amb r > 0, llavors f(k-r) ≤ f(f(k)) < k-r.  Per inducció, podem demostrar que f(k-nr) < k-nr per a tot n natural.  Això implica que f(x) < x per a tot x < 1000.
+
+Com que f(1000) = 1000, i f(x) > x per a x > 1000 i f(x) < x per a x < 1000, l'única funció que compleix aquestes condicions és f(x) = x per a tot x ∈ Z.
+
+Per tant, f(2017) = 2017.
+
+Resposta: A)

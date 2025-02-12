@@ -1,0 +1,27 @@
+Raonament:
+
+Sigui S(N) la suma dels dígits del nombre N.  El problema ens diu que S(N) = 3 * S(N+1).
+
+Si N acaba en 9, llavors N+1 tindrà un dígit menys que N, però la suma dels dígits augmentarà en 1 menys el nombre de dígits de N. Per exemple, si N = 9, S(N) = 9 i S(N+1) = 1, i 9 = 3*1.  Si N = 99, S(N) = 18 i S(N+1) = 1, i 18 ≠ 3*1. Si N = 999, S(N) = 27 i S(N+1) = 1, i 27 ≠ 3*1.
+
+Si N no acaba en 9, llavors la suma dels dígits de N+1 serà la suma dels dígits de N més 1.  Per tant, S(N+1) = S(N) + 1.  Substituint en l'equació original:
+
+S(N) = 3 * (S(N) + 1)
+S(N) = 3S(N) + 3
+2S(N) = -3
+S(N) = -3/2
+
+Aquesta solució no és possible ja que la suma dels dígits ha de ser un nombre enter positiu.  Per tant, N ha d'acabar en 9.
+
+Considerem nombres que acaben en 9:
+
+* Si N = 9, S(N) = 9, S(N+1) = 1.  9 = 3 * 1.  Això funciona!
+* Si N = 99, S(N) = 18, S(N+1) = 1.  18 ≠ 3 * 1.
+* Si N = 999, S(N) = 27, S(N+1) = 1.  27 ≠ 3 * 1.
+* Si N = 9999, S(N) = 36, S(N+1) = 1.  36 ≠ 3 * 1.
+
+Observem que quan N és un nombre format per k noues, S(N) = 9k i S(N+1) = 1.  Per tant, 9k = 3 * 1, que implica k = 1/3, que no és un enter.
+
+La única solució és N = 9, on S(N) = 9.
+
+Resposta: B)

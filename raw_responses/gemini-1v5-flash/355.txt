@@ -1,0 +1,18 @@
+Raonament:
+
+Primer, reescrivim l'equació per a obtenir una equació quadràtica en termes de x:
+
+xy + 4x - 13 = x²
+xy = x² - 4x + 13
+y = (x² - 4x + 13) / x
+
+Perquè y sigui un nombre enter, x ha de ser un divisor de 13. Els divisors de 13 són ±1 i ±13.  Per tant, podem provar cada valor de x:
+
+* Si x = 1, y = (1 - 4 + 13) / 1 = 10
+* Si x = -1, y = (1 + 4 + 13) / -1 = -18
+* Si x = 13, y = (169 - 52 + 13) / 13 = 10
+* Si x = -13, y = (169 + 52 + 13) / -13 = -18
+
+Així doncs, tenim quatre parells (x, y) que satisfan l'equació: (1, 10), (-1, -18), (13, 10), (-13, -18).
+
+Resposta: E)

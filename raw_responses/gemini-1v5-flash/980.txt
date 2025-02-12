@@ -1,0 +1,37 @@
+Raonament:
+
+Siguem A = pes de l'albercoc, M = pes de la mandarina, N = pes de la nespra, P = pes de la pera.  Tradueixem les frases a equacions:
+
+* **Frase 1:** A + M = N + P
+* **Frase 2:** A + N < M + P
+* **Frase 3:** N + M < A + P
+
+Restem la primera equació de la segona:
+
+(A + N) - (A + M) < (M + P) - (N + P)  =>  N - M < M - N  =>  2N < 2M  =>  N < M
+
+Restem la primera equació de la tercera:
+
+(N + M) - (A + M) < (A + P) - (N + P)  =>  N - A < A - N  =>  2N < 2A  =>  N < A
+
+Ara sabem que N < M i N < A.  Per tant, la nespra és més lleugera que l'albercoc i la mandarina.
+
+Substituïm N < A a la frase 1: A + M = N + P  => A + M > N + N => A + M > 2N
+
+Substituïm N < M a la frase 1: A + M = N + P => A + M > N + N => A + M > 2N
+
+De la frase 2: A + N < M + P.  Com que N és la més lleugera,  A < M + P - N.
+
+De la frase 3: N + M < A + P. Com que N és la més lleugera, M < A + P - N.
+
+No podem determinar amb certesa quina fruita és la més pesada només amb aquestes tres equacions.  Necessitem més informació.  Però, podem descartar que la nespra sigui la més pesada.
+
+Analitzem les opcions:
+
+* Si la pera fos la més pesada, la frase 2 (A + N < M + P) seria fàcilment computable.
+* Si la mandarina fos la més pesada, la frase 3 (N + M < A + P) seria fàcilment computable.
+* Si l'albercoc fos la més pesada, la frase 2 (A + N < M + P) seria fàcilment computable.
+
+No podem concloure amb certesa quina fruita és la més pesada amb la informació donada.
+
+Resposta: E)

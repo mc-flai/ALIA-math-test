@@ -1,0 +1,24 @@
+Raonament:
+
+Sigui N un nombre de dues xifres.  Podem expressar N com 10a + b, on 'a' és la xifra de les desenes i 'b' és la xifra de les unitats.  La suma de les seues xifres és a + b.
+
+El problema ens diu que el quocient de N entre la suma de les seues xifres és 8.  Per tant, podem escriure l'equació:
+
+(10a + b) / (a + b) = 8
+
+Multiplicant ambdues parts per (a + b), obtenim:
+
+10a + b = 8(a + b)
+10a + b = 8a + 8b
+2a = 7b
+a = (7/2)b
+
+Com que 'a' i 'b' han de ser nombres enters entre 0 i 9, 'b' ha de ser un nombre parell per a que 'a' siga un nombre enter.  Les opcions per a 'b' són 0, 2, 4, 6, i 8.
+
+Si b = 0, a = 0 (no és un nombre de dues xifres).
+Si b = 2, a = 7.  N = 72.  72 / (7 + 2) = 8.  (Correcte)
+Si b = 4, a = 14 (no és vàlid, ja que 'a' ha de ser menor que 10).
+
+Per tant, l'única solució vàlida és b = 2.
+
+Resposta: B)

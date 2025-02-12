@@ -1,0 +1,16 @@
+Raonament: L'equació donada és abcd = a³ + b³ + c³ + d³, on abcd representa un nombre de quatre dígits.  Això significa que 1000a + 100b + 10c + d = a³ + b³ + c³ + d³.
+
+Per a que la igualtat sigui certa, el terme a³ ha de ser proper a 1000a.  Si a és petit, la diferència serà gran. Si a és gran, la diferència serà petita.  Provem amb alguns valors de 'a':
+
+* Si a = 1, 1000 + 100b + 10c + d = 1 + b³ + c³ + d³.  Això és improbable, ja que el costat esquerre és molt més gran que el dret.
+* Si a = 2, 2000 + 100b + 10c + d = 8 + b³ + c³ + d³.  Tampoc és probable.
+* Si a = 3, 3000 + 100b + 10c + d = 27 + b³ + c³ + d³.  Més probable, però encara difícil.
+* Si a = 4, 4000 + 100b + 10c + d = 64 + b³ + c³ + d³.  Més probable.
+* Si a = 5, 5000 + 100b + 10c + d = 125 + b³ + c³ + d³.  Més probable.
+* Si a = 6, 6000 + 100b + 10c + d = 216 + b³ + c³ + d³.  Més probable.
+
+Observem que a mesura que 'a' augmenta, la diferència entre 1000a i a³ disminueix.  Però, també hem de considerar que b, c i d són dígits entre 0 i 9.  Per tant, b³ + c³ + d³ té un màxim valor de 27 + 27 + 27 = 81.  Això significa que 1000a ha de ser aproximadament igual a a³.
+
+Per a trobar una solució, necessitem provar valors.  Un mètode més sistemàtic seria provar valors de 'a' i veure si hi ha solucions per a b, c i d.  No obstant això, per a aquest problema, una aproximació és suficient.  Com que 4000 és més proper a 4³ que 1000, 2000 o 3000, és més probable que la solució estigui prop de 4.
+
+Resposta: A) 2

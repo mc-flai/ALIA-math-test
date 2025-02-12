@@ -1,0 +1,28 @@
+Raonament:
+
+Primer, trobem la descomposició en factors primers de 1024: 1024 = 2¹⁰.
+
+Els divisors positius de 1024 són de la forma 2ᵏ, on k és un enter entre 0 i 10, inclosos.  Per tant, hi ha 11 divisors.
+
+La suma dels divisors positius de 1024 (a) és:
+
+a = 1 + 2 + 2² + 2³ + ... + 2¹⁰ = (2¹¹ - 1) / (2 - 1) = 2¹¹ - 1 = 2047
+
+El producte dels divisors positius de 1024 (b) es pot calcular de la següent manera:  Si els divisors són d₁, d₂, ..., dₙ, el seu producte és √(nⁿ), on n és el nombre del qual estem calculant els divisors.  En aquest cas, n = 1024 i hi ha 11 divisors.  Per tant, el producte és:
+
+b = 1024¹¹ᐟ² = (2¹⁰)⁵·⁵ = 2⁵⁰
+
+Ara comprovem les opcions:
+
+A) (a - 1)⁵ = (2047 - 1)⁵ = 2046⁵ ≠ 2⁵⁰
+B) (a + 1)⁵ = (2047 + 1)⁵ = 2048⁵ = (2¹¹)⁵ = 2⁵⁵ ≠ 2⁵⁰
+C) a⁵ = 2047⁵ ≠ 2⁵⁰
+D) a⁵ - 1 = 2047⁵ - 1 ≠ 2⁵⁰
+E) a⁵ + 1 = 2047⁵ + 1 ≠ 2⁵⁰
+
+Hi ha un error en el càlcul del producte dels divisors.  El producte dels divisors de n és n^(d/2), on d és el nombre de divisors.  En aquest cas, d = 11.  Per tant, el producte és 1024^(11/2) = (2¹⁰)^(11/2) = 2⁵⁵.  Aquesta expressió no coincideix amb cap de les opcions.
+
+No obstant això, hi ha una fórmula per al producte dels divisors d'un nombre. Si la factorització en primers de n és p₁^a₁ * p₂^a₂ * ... * pₖ^aₖ, llavors el nombre de divisors és (a₁+1)(a₂+1)...(aₖ+1).  En el nostre cas, 1024 = 2¹⁰, així que el nombre de divisors és 11. El producte dels divisors és n^(d/2) = 1024^(11/2) = 2⁵⁵.  Cap de les opcions és correcta.  Hi ha un error en l'enunciat o les opcions de resposta.
+
+
+Resposta: Cap de les opcions és correcta.

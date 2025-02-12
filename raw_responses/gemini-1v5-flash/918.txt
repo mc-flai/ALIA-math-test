@@ -1,0 +1,24 @@
+Raonament:
+
+La fórmula de recurrència és aₙ = 2aₙ₋₁ + aₙ₋₂.  Sabem que a₃ = 9 i a₆ = 128.  Necessitem trobar a₅.
+
+Podem treballar cap enrere des de a₆:
+
+* a₆ = 2a₅ + a₄ = 128
+* a₅ = 2a₄ + a₃ = 2a₄ + 9
+
+Substituint a₅ en l'equació de a₆:
+
+128 = 2(2a₄ + 9) + a₄
+128 = 4a₄ + 18 + a₄
+128 - 18 = 5a₄
+110 = 5a₄
+a₄ = 22
+
+Ara podem trobar a₅:
+
+a₅ = 2a₄ + a₃ = 2(22) + 9 = 44 + 9 = 53
+
+Per tant, el cinqué nombre de la successió és 53.
+
+Resposta: B)

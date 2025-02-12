@@ -1,0 +1,13 @@
+Raonament: Per formar un triangle, necessitem seleccionar 3 punts que no estiguin alineats.  Tenim 7 punts en total.  6 d'ells estan en una mateixa recta, i el setè punt està fora d'aquesta recta.
+
+Si seleccionem 3 punts dels 6 que estan alineats, no podem formar un triangle perquè els tres punts estarien en la mateixa recta.
+
+Per tant, per formar un triangle, hem de seleccionar el punt que està fora de la recta i dos punts qualssevol dels 6 que estan alineats.
+
+El nombre de maneres de seleccionar 2 punts dels 6 que estan alineats és combinació de 6 prenent 2, que és:
+
+₆C₂ = 6! / (2! * (6-2)!) = 6! / (2! * 4!) = (6 * 5) / (2 * 1) = 15
+
+Per cada parella de punts seleccionats dels 6 alineats, podem formar un triangle amb el setè punt.  Per tant, hi ha 15 triangles possibles.
+
+Resposta: D)

@@ -1,0 +1,7 @@
+Raonament: Un cub té 8 vèrtexs.  Considerem un vèrtex qualsevol.  Aquest vèrtex està connectat a 3 vèrtexs més per arestes.  Per tant, necessitarem almenys 4 colors per acolorir aquest vèrtex i els seus veïns, assegurant-nos que cap vèrtex adjacent tingui el mateix color.
+
+Ara bé, considerem un altre vèrtex que no sigui adjacent al primer.  Aquest vèrtex pot estar connectat a un màxim de 3 vèrtexs que ja han estat acolorits.  En el pitjor dels casos, aquests 3 vèrtexs tenen colors diferents.  Per tant, necessitarem un quart color per acolorir aquest vèrtex.  
+
+Si continuem aquest raonament per a la resta de vèrtexs, veurem que amb 4 colors podem acolorir tots els vèrtexs del cub complint la condició.  No podem utilitzar menys de 4 colors.
+
+Resposta: B)

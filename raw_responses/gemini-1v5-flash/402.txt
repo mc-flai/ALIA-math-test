@@ -1,0 +1,18 @@
+Raonament: Per maximitzar la fracció (N+M)/(N-M), necessitem maximitzar el numerador (N+M) i minimitzar el denominador (N-M).  Com que N i M són positius, el denominador serà sempre positiu.
+
+Per maximitzar N+M, escollim els valors màxims per a N i M: N = 101 i M = 49.  Això dona N+M = 150.
+
+Per minimitzar N-M, necessitem que la diferència entre N i M sigui la més petita possible.  Per aconseguir-ho, escollim un valor de N proper a M.  Si prenem N = 51 i M = 19, tenim N-M = 32.  Si prenem N = 101 i M = 49, tenim N-M = 52.  Per minimitzar la diferència, escollim valors de N i M propers.
+
+No obstant això, la pregunta demana el valor *més gran* de la fracció.  Per tant, hem de buscar una combinació que maximitzi la fracció.  Observem que si N és molt més gran que M, el denominador (N-M) serà proper a N, mentre que el numerador (N+M) serà també proper a N.  En aquest cas, la fracció serà propera a 2.  Si N i M són propers, la fracció serà molt més gran.
+
+Per exemple, si N = 51 i M = 19, (N+M)/(N-M) = (51+19)/(51-19) = 70/32 = 2.1875.
+Si N = 101 i M = 49, (N+M)/(N-M) = (101+49)/(101-49) = 150/52 ≈ 2.88
+
+Per maximitzar la fracció, necessitem que N-M sigui petit i N+M sigui gran.  Però, si N-M és molt petit, la fracció pot ser gran, però no necessàriament la més gran.  Provem amb valors propers:
+
+Si N = 51 i M = 49, (N+M)/(N-M) = 100/2 = 50.
+
+Aquesta és la combinació que dona el valor més gran.
+
+Resposta: D)

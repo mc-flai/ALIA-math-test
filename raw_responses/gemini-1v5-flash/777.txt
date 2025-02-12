@@ -1,0 +1,16 @@
+Raonament:
+
+Primer, cal calcular el nombre total de maneres de triar tres nombres diferents del conjunt {1, 2, 3, ..., 10}.  Això es pot fer mitjançant combinacions:  ¹⁰C₃ = 10! / (3! * 7!) = 120.
+
+Ara, considerem el cas on un dels tres nombres és la mitjana dels altres dos.  Suposem que els tres nombres són a, b, i c, i que b és la mitjana dels altres dos.  Llavors, 2b = a + c.  Això significa que a + c ha de ser un nombre parell.  Perquè això passi, a i c han de ser tots dos parells o tots dos imparells.
+
+En el conjunt {1, 2, ..., 10}, hi ha 5 nombres parells i 5 nombres imparells.
+
+* Si a i c són tots dos parells, hi ha ⁵C₂ = 10 maneres de triar-los.  Per a cada parella, b = (a+c)/2 és únicament determinat.
+* Si a i c són tots dos imparells, hi ha ⁵C₂ = 10 maneres de triar-los.  Per a cada parella, b = (a+c)/2 és únicament determinat.
+
+En total, hi ha 10 + 10 = 20 maneres de triar tres nombres on un és la mitjana dels altres dos.
+
+Per tant, la probabilitat és 20/120 = 1/6.
+
+Resposta: B)

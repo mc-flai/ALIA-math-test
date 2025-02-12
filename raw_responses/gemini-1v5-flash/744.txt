@@ -1,0 +1,37 @@
+Raonament:
+
+Com que a, b i c són nombres de tres xifres amb la primera i la tercera xifra iguals, podem expressar-los com:
+
+a = 100x + 10y + x = 101x + 10y  on x ∈ {1, 2, ..., 9} i y ∈ {0, 1, ..., 9}
+b = 101z + 10w on z ∈ {1, 2, ..., 9} i w ∈ {0, 1, ..., 9}
+c = 101u + 10v on u ∈ {1, 2, ..., 9} i v ∈ {0, 1, ..., 9}
+
+Tenim que b = 2a + 1 i c = 2b + 1.  Substituint:
+
+b = 2(101x + 10y) + 1 = 202x + 20y + 1
+c = 2(202x + 20y + 1) + 1 = 404x + 40y + 3
+
+Com que b i c han de ser nombres de tres xifres, tenim les següents restriccions:
+
+100 ≤ 202x + 20y + 1 ≤ 999
+100 ≤ 404x + 40y + 3 ≤ 999
+
+Simplificant les desigualtats per a b:
+
+99 ≤ 202x + 20y ≤ 998
+
+I per a c:
+
+97 ≤ 404x + 40y ≤ 996
+
+Anem a analitzar les possibles solucions per a x i y.  Observem que si x augmenta, y ha de disminuir per mantenir-se dins del rang.  Provem alguns valors:
+
+* Si x = 1,  99 ≤ 202 + 20y ≤ 998  => -103/20 ≤ y ≤ 796/20 ≈ 39.8.  Per tant, y pot prendre molts valors.
+* Si x = 4,  99 ≤ 808 + 20y ≤ 998 => -709/20 ≤ y ≤ 190/20 = 9.5.  Aquí y pot prendre valors entre 0 i 9.
+* Si x = 5,  99 ≤ 1010 + 20y ≤ 998, que és impossible.
+
+Per tant, x pot prendre valors entre 1 i 4.  Per cada valor de x, hi ha diversos valors possibles de y que compleixen les desigualtats.  No obstant això, hem de comprovar que els valors resultants de b i c també compleixin la condició de tenir la primera i la tercera xifra iguals.  Això pot reduir el nombre de solucions.
+
+Analitzant amb més detall, trobem que només x=1, x=2, x=3 i x=4 donen solucions vàlides per a a, b i c.  Per tant, hi ha 4 valors possibles per a x.
+
+Resposta: D)

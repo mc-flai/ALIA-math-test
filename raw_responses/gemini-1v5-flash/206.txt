@@ -1,0 +1,28 @@
+Raonament:
+
+Un nombre de tres xifres N = abc és divisible per 9 si la suma de les seues xifres (a + b + c) és divisible per 9.  A més, hem de complir que a > b > c, on a, b, i c són xifres entre 0 i 9 (a no pot ser 0).
+
+Comencem trobant combinacions de tres xifres diferents que sumen un múltiple de 9.  Les possibles sumes són 18 i 27 (ja que la suma màxima és 9+8+7=24).
+
+**Per a a+b+c = 18:**
+
+Les combinacions possibles que compleixen a > b > c són:
+* 9 + 8 + 1 = 18
+* 9 + 7 + 2 = 18
+* 9 + 6 + 3 = 18
+* 8 + 7 + 3 = 18
+* 8 + 6 + 4 = 18
+* 7 + 6 + 5 = 18
+
+Hi ha 6 combinacions.
+
+**Per a a+b+c = 27:**
+
+L'única combinació possible que compleix a > b > c és:
+* 9 + 8 + 7 = 27
+
+Hi ha 1 combinació.
+
+En total, hi ha 6 + 1 = 7 combinacions de xifres que compleixen les condicions.  Per tant, hi ha 7 nombres enters positius de tres xifres que compleixen les condicions donades.
+
+Resposta: A)

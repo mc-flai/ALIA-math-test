@@ -1,0 +1,27 @@
+Raonament:
+
+Comencem amb l'equació donada:
+
+$\frac{a}{b+1} + \frac{b}{a+1} = 1$
+
+Multiplicant ambdues parts per (b+1)(a+1), obtenim:
+
+$a(a+1) + b(b+1) = (b+1)(a+1)$
+
+$a^2 + a + b^2 + b = ab + a + b + 1$
+
+$a^2 + b^2 - ab - 1 = 0$
+
+Ara, volem trobar el valor de $\frac{a}{b} + \frac{b}{a} - ab$.  Podem reescriure aquesta expressió com:
+
+$\frac{a^2 + b^2}{ab} - ab$
+
+De l'equació $a^2 + b^2 - ab - 1 = 0$, tenim $a^2 + b^2 = ab + 1$.  Substituint això a l'expressió anterior:
+
+$\frac{ab + 1}{ab} - ab = 1 + \frac{1}{ab} - ab$
+
+No podem determinar un valor únic per a aquesta expressió sense més informació sobre a i b.  Per exemple, si a=1, llavors de l'equació $a^2 + b^2 - ab - 1 = 0$ obtenim $1 + b^2 - b - 1 = 0$, o $b(b-1) = 0$, així b=0 o b=1.  Si b=0, l'expressió $\frac{a}{b} + \frac{b}{a} - ab$ no està definida. Si b=1, l'expressió és igual a 1 + 1 - 1 = 1.  Si a=2, llavors $4 + b^2 - 2b - 1 = 0$, o $b^2 - 2b + 3 = 0$, que no té solucions reals.
+
+Per tant, no podem determinar un valor únic per a l'expressió $\frac{a}{b} + \frac{b}{a} - ab$.
+
+Resposta: E)

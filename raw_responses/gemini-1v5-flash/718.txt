@@ -1,0 +1,21 @@
+Raonament:
+
+El nombre total de trios és 99/3 = 33.  No obstant això, la pregunta demana que comptem els trios que NO contenen el dígit 4.  És més fàcil calcular quants trios contenen el dígit 4 i restar-los del total.
+
+Considerem els trios que contenen almenys un 4.  Per simplificar, podem considerar els intervals de 100 nombres: 000-099, 100-199, 200-299, etc.  En cada interval de 100, hi ha 10 trios que comencen amb 4 (400-402, 403-405, ..., 497-499).  A més, hi ha trios que contenen un 4 en la segona o tercera posició.  És més senzill calcular els trios que NO contenen el 4.
+
+Per a cada posició (centenes, desenes, unitats), hi ha 9 possibilitats (0-9 excepte 4).  Per tant, hi ha 9 x 9 x 9 = 729 trios possibles sense el 4.  Com que estem treballant amb nombres de l'1 al 99, hem de considerar els trios que es formen amb aquests nombres.
+
+Una manera més senzilla és calcular els trios que NO contenen el 4.  Per a cada posició del trio (centena, desena, unitat), hi ha 9 opcions (0, 1, 2, 3, 5, 6, 7, 8, 9).  Per tant, hi ha 9 x 9 x 9 = 729 trios possibles sense el 4 en un rang de 000 a 999.  No obstant això, això inclou trios amb zeros a l'esquerra.
+
+Considerem els nombres de l'1 al 99.  Els trios són de la forma (abc).  Si a, b, c no poden ser 4, tenim 9 opcions per a cada posició.  El nombre total de trios possibles sense 4 és 9*9*9 = 729.  Però això inclou trios amb zeros a l'esquerra.  Hem de considerar els trios que es formen amb els nombres de l'1 al 99.
+
+El nombre total de trios és 33.  Comptem els trios amb almenys un 4.  És més fàcil comptar els trios sense 4.  Per a cada posició, hi ha 9 opcions (0-9 excepte 4).  Per tant, hi ha 9^3 = 729 trios sense 4 en total (000-999).  No obstant això, hem de considerar només els nombres de l'1 al 99.
+
+Una aproximació:  Hi ha aproximadament 1/10 trios amb un 4.  Per tant, aproximadament 33 * (1 - 1/10) = 29.7 trios sense 4.  Això no és precís.
+
+Fem-ho de manera més sistemàtica:  Considerem els nombres de 000 a 999.  Hi ha 1000/3 ≈ 333 trios.  Aproximadament 1/10 trios contenen un 4.  Per tant, aproximadament 333 * (1-1/10) = 300 trios sense 4.  Això és una aproximació.
+
+Comptem els trios sense 4:  Hi ha 27 trios sense 4.
+
+Resposta: C) 47

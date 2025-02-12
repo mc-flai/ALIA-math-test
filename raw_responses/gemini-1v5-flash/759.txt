@@ -1,0 +1,39 @@
+Raonament:
+
+Primer, calculem 7!, 8! i 9!:
+
+* 7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040
+* 8! = 8 × 7! = 8 × 5040 = 40320
+* 9! = 9 × 8! = 9 × 40320 = 362880
+
+Ara sumem els tres nombres:
+
+7! + 8! + 9! = 5040 + 40320 + 362880 = 408240
+
+Per trobar la potència més alta de 3 que divideix 408240, descomponem aquest nombre en factors primers:
+
+408240 = 2⁶ × 3⁵ × 5 × 7
+
+Com podem veure, la potència més alta de 3 que divideix 408240 és 3⁵.
+
+Alternativament, podem trobar la potència més alta de 3 que divideix cada factorial i després sumar els exponents:
+
+* 7! = 2⁴ × 3² × 5 × 7
+* 8! = 2⁷ × 3⁴ × 5 × 7
+* 9! = 2⁷ × 3⁴ × 5 × 7
+
+Observem que 7! conté 3², 8! conté 3⁴ i 9! conté 3⁴.  Per tant, 7! + 8! + 9! contindrà almenys 3².  Però, com que 8! i 9! contenen 3⁴, podem treure factor comú 3² de 7!, 8! i 9!:
+
+7! = 3² * (1680)
+8! = 3⁴ * (1120)
+9! = 3⁴ * (13440)
+
+Sumant: 3² * (1680 + 9*1120 + 81*1120) = 3² * (1680 + 10080 + 90720) = 3² * 102480
+
+Ara, 102480 = 2⁶ * 5 * 1281.  1281 = 3² * 11 * 13.  Per tant, 102480 = 2⁶ * 3² * 5 * 11 * 13.
+
+Així, 7! + 8! + 9! = 3² * 102480 = 3² * (2⁶ * 3² * 5 * 11 * 13) = 2⁶ * 3⁴ * 5 * 11 * 13.
+
+Per tant, la potència més alta de 3 és 3⁵.
+
+Resposta: C)

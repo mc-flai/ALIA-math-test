@@ -1,0 +1,15 @@
+Raonament:
+
+1. **Puntuació total dels 34 primers jugadors:** Si la mitjana dels 34 primers jugadors és de 9 punts, la seva puntuació total és 34 * 9 = 306 punts.
+
+2. **Puntuació total dels 40 jugadors:** Si la mitjana dels 40 jugadors és de 8,9 punts, la seva puntuació total és 40 * 8,9 = 356 punts.
+
+3. **Puntuació total dels últims 6 jugadors:** La diferència entre la puntuació total dels 40 jugadors i la dels 34 primers és la puntuació total dels últims 6 jugadors: 356 - 306 = 50 punts.
+
+4. **Mínim de punts dels últims 6 jugadors:** Sabem que cada un dels últims 6 jugadors ha obtingut almenys 7 punts.  Per tant, el mínim de punts que podrien haver obtingut entre els 6 és 6 * 7 = 42 punts.  Com que només han obtingut 50 punts en total, això significa que hi ha una diferència de 50 - 42 = 8 punts que s'han de distribuir entre els 6 jugadors.
+
+5. **Màxim de jugadors amb 10 punts:** Per maximitzar el nombre de jugadors amb 10 punts, hem de minimitzar la puntuació dels altres jugadors.  Si un jugador obté 8 punts, els altres 5 jugadors han d'obtenir 7 punts cadascun (8 + 5*7 = 43, que és més de 42, així que no és possible). Si un jugador obté 8 punts i un altre 8 punts, els altres 4 jugadors han d'obtenir 7 punts cadascun (16 + 28 = 44, que és més de 42, així que no és possible). Si tres jugadors obtenen 8 punts, els altres tres han d'obtenir 7 punts cadascun (24 + 21 = 45, que és més de 42, així que no és possible). Si quatre jugadors obtenen 8 punts, els altres dos han d'obtenir 7 punts cadascun (32 + 14 = 46, que és més de 42, així que no és possible). Si cinc jugadors obtenen 8 punts, l'últim jugador ha d'obtenir 2 punts (40 + 10 = 50). Això no és possible ja que la puntuació mínima és 7.
+
+Per tant, només podem tenir un màxim de 2 jugadors amb 10 punts (20 punts) i els altres 4 jugadors amb 8 punts (32 punts), sumant un total de 50 punts.
+
+Resposta: B)

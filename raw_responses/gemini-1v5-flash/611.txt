@@ -1,0 +1,25 @@
+Raonament: L'expressió original és 1 + 2 + 3 + 4 + 5 = 15, no 27.  Per tant, necessitem augmentar el resultat.  Provem a canviar un signe '+' per '×':
+
+* Si canviem el primer '+', tenim 1 × 2 + 3 + 4 + 5 = 14
+* Si canviem el segon '+', tenim 1 + 2 × 3 + 4 + 5 = 16
+* Si canviem el tercer '+', tenim 1 + 2 + 3 × 4 + 5 = 22
+* Si canviem el quart '+', tenim 1 + 2 + 3 + 4 × 5 = 26
+
+Cap d'aquestes opcions dona 27.  Proveu amb dues multiplicacions:
+
+* 1 + 2 × 3 + 4 × 5 = 30
+* 1 × 2 + 3 × 4 + 5 = 19
+* 1 × 2 × 3 + 4 + 5 = 14
+* 1 + 2 × 3 × 4 + 5 = 29
+* 1 + 2 + 3 × 4 × 5 = 61
+
+Amb tres multiplicacions:
+
+* 1 × 2 × 3 × 4 + 5 = 29
+* 1 × 2 × 3 + 4 × 5 = 31
+* 1 × 2 + 3 × 4 × 5 = 62
+* 1 + 2 × 3 × 4 × 5 = 121
+
+Observem que és difícil aconseguir 27.  Anem a provar una estratègia diferent.  Necessitem un producte que, sumat a uns quants nombres, doni 27.  Si fem 3 x 4 = 12, i 12 + 1 + 2 + 5 = 20.  Si fem 4 x 5 = 20, i 20 + 1 + 2 + 3 = 26.  Si fem 3 x 5 = 15, i 15 + 1 + 2 + 4 = 22.  Si fem 2 x 3 x 4 = 24, i 24 + 1 + 5 = 30.  Si fem 2 x 3 x 4 = 24, i 24 + 1 + 2 = 27.  Això implica canviar tres signes +.
+
+Resposta: C)

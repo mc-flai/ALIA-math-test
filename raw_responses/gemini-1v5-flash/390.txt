@@ -1,0 +1,22 @@
+Raonament:
+
+Siguin els tres nombres enters a, b i c.  Sabem que:
+
+* a * b * c = 140
+* b = 7a
+* c < b
+
+Substituïm b en la primera equació:
+
+a * (7a) * c = 140
+7a²c = 140
+a²c = 20
+
+Ara hem de trobar tres nombres enters que compleixin aquestes condicions.  Com que 20 = 2² * 5,  podem provar diferents valors per a 'a' i 'c':
+
+* Si a = 1, llavors c = 20.  En aquest cas, b = 7a = 7.  Però c (20) no és menor que b (7), així que aquesta combinació no funciona.
+* Si a = 2, llavors c = 5.  En aquest cas, b = 7a = 14.  Aquí c (5) és menor que b (14), i compleix totes les condicions.
+
+Per tant, els tres nombres són a = 2, b = 14, i c = 5.  La seva suma és 2 + 14 + 5 = 21.
+
+Resposta: B)

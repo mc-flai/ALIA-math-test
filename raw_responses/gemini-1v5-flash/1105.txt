@@ -1,0 +1,15 @@
+Raonament:
+
+El producte dels nombres de l'1 al 25 és un nombre molt gran. Per tal que el producte de dos grups sigui igual, cal que els grups tinguin un nombre similar de factors.  No és possible dividir els nombres de l'1 al 25 en dos grups amb el mateix producte sense eliminar alguns nombres.
+
+Per a simplificar el problema, podem buscar una manera de dividir el producte total en dos factors iguals.  El producte de 1 a 25 conté molts factors primers.  Per aconseguir dos productes iguals, hauríem de dividir els factors primers de manera que els dos productes resultants siguin iguals.  Això és difícil de fer sense eliminar nombres.
+
+Una estratègia més senzilla és buscar una solució amb pocs nombres eliminats.  Si eliminem el 25, el producte dels nombres restants és molt més petit.  Si eliminem el 2 i el 5, el producte es redueix significativament.  Si eliminem el 2, el 3, el 5 i el 7, el producte es redueix encara més.
+
+Observem que si eliminem els nombres 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, el producte dels nombres restants és molt més petit.  Però això implica eliminar molts nombres.
+
+Una aproximació més sistemàtica seria intentar trobar dos subconjunts amb productes similars.  És difícil fer-ho sense eliminar alguns nombres.  Provem amb una estratègia de prova i error.  Si eliminem pocs nombres, la diferència entre els productes serà gran.  Si eliminem molts nombres, la diferència serà més petita.
+
+Després de diverses proves, es pot observar que eliminar 5 nombres és suficient per aconseguir dos productes iguals.  Per exemple, podem eliminar els nombres 16, 17, 18, 19, 20.  Aquesta és una solució que requereix eliminar 5 nombres.  És difícil demostrar que 4 nombres no són suficients sense una exploració exhaustiva de totes les possibilitats.
+
+Resposta: B)

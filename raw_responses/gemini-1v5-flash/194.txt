@@ -1,0 +1,18 @@
+Raonament:
+
+Sigui k un nombre enter tal que  n/(20-n) = k².  Aleshores n = 20k² - nk²,  i per tant n(1+k²) = 20k².  Això implica que n = 20k²/(1+k²).
+
+Com que n és un enter, 1+k² ha de dividir 20k².  Com que 1+k² i k² són coprimers (el seu màxim comú divisor és 1), 1+k² ha de dividir 20.
+
+Els divisors de 20 són 1, 2, 4, 5, 10, 20.  Per tant, tenim les següents possibilitats per a 1+k²:
+
+* 1+k² = 1  => k² = 0 => k = 0 => n = 0
+* 1+k² = 2  => k² = 1 => k = ±1 => n = 20(1)/(2) = 10
+* 1+k² = 4  => k² = 3 (no és un quadrat perfecte)
+* 1+k² = 5  => k² = 4 => k = ±2 => n = 20(4)/(5) = 16
+* 1+k² = 10 => k² = 9 => k = ±3 => n = 20(9)/(10) = 18
+* 1+k² = 20 => k² = 19 (no és un quadrat perfecte)
+
+Per tant, els valors de n que compleixen la condició són 0, 10, 16, 18.  Hi ha 4 valors de n.
+
+Resposta: D)

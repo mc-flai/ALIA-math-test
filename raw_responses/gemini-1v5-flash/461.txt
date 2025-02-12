@@ -1,0 +1,36 @@
+Raonament:  Per escriure un nombre senar N com a suma de k nombres imparells, podem pensar en la quantitat de nombres imparells que podem utilitzar.  Si tenim 5 nombres imparells, la seva suma sempre serà un nombre imparell.  Per tant, podem escriure 13 com a suma de 5 nombres imparells.
+
+Per simplificar el problema, podem pensar en la quantitat de maneres de distribuir 13 unitats en 5 caixes, on cada caixa conté almenys una unitat (perquè els nombres són imparells).  Primer, assignem una unitat a cada caixa.  Això deixa 13 - 5 = 8 unitats per distribuir entre les 5 caixes.  Aquest és un problema de combinacions amb repetició.
+
+Utilitzant la fórmula de les combinacions amb repetició, tenim:
+
+C(n+k-1, k-1) on n és el nombre d'unitats a distribuir (8) i k és el nombre de caixes (5).
+
+C(8+5-1, 5-1) = C(12, 4) = 12! / (4! * 8!) = 495
+
+Però això no és correcte, ja que hem de tenir en compte que cada caixa ha de tenir un nombre imparell d'unitats.  Una manera més senzilla és pensar en la representació:
+
+13 = x₁ + x₂ + x₃ + x₄ + x₅  on xᵢ són nombres imparells.
+
+Podem definir yᵢ = (xᵢ + 1)/2, on yᵢ són nombres enters.  Llavors:
+
+13 = 2y₁ - 1 + 2y₂ - 1 + 2y₃ - 1 + 2y₄ - 1 + 2y₅ - 1
+13 = 2(y₁ + y₂ + y₃ + y₄ + y₅) - 5
+18 = 2(y₁ + y₂ + y₃ + y₄ + y₅)
+9 = y₁ + y₂ + y₃ + y₄ + y₅
+
+Ara hem de trobar el nombre de maneres de sumar 9 com a suma de 5 nombres enters positius.  Utilitzant la fórmula de les estrelles i barres, tenim:
+
+C(n-1, k-1) = C(9-1, 5-1) = C(8, 4) = 70
+
+Aquest mètode tampoc és correcte.  Una aproximació més senzilla és provar amb casos:
+
+Si tenim 1, 1, 1, 1, 9, la suma és 13.
+Si tenim 1, 1, 1, 3, 7, la suma és 13.
+Si tenim 1, 1, 1, 5, 5, la suma és 13.
+Si tenim 1, 1, 3, 3, 5, la suma és 13.
+Si tenim 1, 3, 3, 3, 3, la suma és 13.
+
+Sembla que hi ha 5 possibilitats.  Però hem de tenir en compte les permutacions.
+
+Resposta: B)

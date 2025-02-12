@@ -1,0 +1,14 @@
+Raonament: La suma total dels elements del conjunt {1, 2, 3, 4, 5, 6, 7} és 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.  Per poder dividir el conjunt en dos subconjunts amb la mateixa suma, cada subconjunt ha de sumar 28/2 = 14.
+
+Necessitem trobar totes les combinacions de nombres del conjunt original que sumen 14.  Anem a buscar-les sistemàticament:
+
+* **7 + 6 + 1:**  Això deixa {2, 3, 4, 5} que suma 14.  Una solució.
+* **7 + 5 + 2:** Això deixa {1, 3, 4, 6} que suma 14. Una solució.
+* **7 + 4 + 3:** Això deixa {1, 2, 5, 6} que suma 14. Una solució.
+* **7 + 3 + 4:**  (Repetida)
+* **6 + 5 + 3:** Això deixa {1, 2, 4, 7} que suma 14. Una solució.
+* **6 + 5 + 2 + 1:** Això deixa {3, 4, 7} que suma 14. Una solució.
+
+No hi ha més combinacions possibles.  Hem trobat 5 maneres diferents de dividir el conjunt en dos subconjunts amb la mateixa suma.  Observem que l'ordre dels subconjunts no importa (per exemple, {2, 5, 7} i {1, 3, 4, 6} és el mateix que {1, 3, 4, 6} i {2, 5, 7}).
+
+Resposta: E)

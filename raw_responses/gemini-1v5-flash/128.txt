@@ -1,0 +1,21 @@
+Raonament:
+
+Primer, descomponem N en els seus factors primers: N = 5² · 3⁴ · 2.  Perquè K · N sigui un cub perfecte, cada factor primer en la descomposició de K · N ha de tenir un exponent múltiple de 3.
+
+Analitzem els exponents dels factors primers de N:
+
+* 5: té exponent 2 (no múltiple de 3)
+* 3: té exponent 4 (no múltiple de 3)
+* 2: té exponent 1 (no múltiple de 3)
+
+Per convertir els exponents en múltiples de 3, necessitem multiplicar N per un nombre K que contingui els factors primers necessaris:
+
+* Per al 5, necessitem un 5 més per arribar a un exponent de 3 (2 + 1 = 3).
+* Per al 3, necessitem un 3 més per arribar a un exponent de 6 (4 + 2 = 6).
+* Per al 2, necessitem dos 2 més per arribar a un exponent de 3 (1 + 2 = 3).
+
+Per tant, K ha de contenir almenys 5¹, 3², i 2².  Això significa que K = 5 · 3² · 2² = 5 · 9 · 4 = 180.
+
+K · N = 180 · (5² · 3⁴ · 2) = 5³ · 3⁶ · 2³ que és un cub perfecte (5³ · 3⁶ · 2³ = (5 · 3² · 2)³ = 450³).
+
+Resposta: E)

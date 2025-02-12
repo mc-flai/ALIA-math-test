@@ -1,0 +1,28 @@
+Raonament:
+
+Estem buscant subconjunts de 5 elements del conjunt {1, 2, ..., 17} que formin una progressió aritmètica.  Una progressió aritmètica de 5 termes es pot representar com {a, a+d, a+2d, a+3d, a+4d}, on 'a' és el primer terme i 'd' és la diferència comuna.  Com que els elements han d'estar entre 1 i 17, tenim les següents restriccions:
+
+* 1 ≤ a ≤ 17
+* a + 4d ≤ 17
+
+Aquesta segona desigualtat es pot reescriure com d ≤ (17-a)/4.  Per a cada valor de 'a', podem trobar el nombre màxim de valors possibles de 'd'.
+
+* Si a = 1, d ≤ 4 (d pot ser 1, 2, 3, 4)
+* Si a = 2, d ≤ 3.75 (d pot ser 1, 2, 3)
+* Si a = 3, d ≤ 3.5 (d pot ser 1, 2, 3)
+* Si a = 4, d ≤ 3.25 (d pot ser 1, 2, 3)
+* Si a = 5, d ≤ 3 (d pot ser 1, 2, 3)
+* Si a = 6, d ≤ 2.75 (d pot ser 1, 2)
+* Si a = 7, d ≤ 2.5 (d pot ser 1, 2)
+* Si a = 8, d ≤ 2.25 (d pot ser 1, 2)
+* Si a = 9, d ≤ 2 (d pot ser 1, 2)
+* Si a = 10, d ≤ 1.75 (d pot ser 1)
+* Si a = 11, d ≤ 1.5 (d pot ser 1)
+* Si a = 12, d ≤ 1.25 (d pot ser 1)
+* Si a = 13, d ≤ 1 (d pot ser 1)
+* Si a = 14, d ≤ 0.75 (d pot ser 0, però això no forma una progressió)
+* Si a > 14, no hi ha valors possibles de 'd'.
+
+Sumant els valors possibles de 'd' per a cada 'a': 4 + 3 + 3 + 3 + 3 + 2 + 2 + 2 + 2 + 1 + 1 + 1 + 1 = 26
+
+Resposta: D)

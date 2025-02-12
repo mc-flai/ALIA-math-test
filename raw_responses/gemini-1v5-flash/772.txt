@@ -1,0 +1,11 @@
+Raonament: Un cub té 8 vèrtexs.  Un pla està definit per tres punts no col·lineals.  Per tant, necessitem trobar el nombre de maneres de seleccionar tres vèrtexs d'un cub que no siguin col·lineals.
+
+Considerem els diferents tipus de plans que poden passar per almenys tres vèrtexs d'un cub:
+
+* **Plans que passen per 4 vèrtexs:**  Hi ha 6 cares, i cada cara conté 4 vèrtexs.  Per tant, hi ha 6 plans d'aquest tipus.
+
+* **Plans que passen per 3 vèrtexs:** Aquests plans contenen tres vèrtexs que no pertanyen a la mateixa cara.  Considerem els plans que passen per una aresta i un vèrtex oposat a aquesta aresta. Hi ha 12 arestes, i per cada aresta hi ha un pla que passa per aquesta aresta i el vèrtex oposat.  Però, cada pla es compta dues vegades (una per cada aresta que conté).  Per tant, hi ha 6 plans d'aquest tipus.
+
+En total, hi ha 6 + 6 = 12 plans que passen per almenys tres vèrtexs d'un cub.
+
+Resposta: C)

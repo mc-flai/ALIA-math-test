@@ -1,0 +1,34 @@
+Raonament:
+
+Analitzem cada posició de cada ciclista a les prediccions:
+
+* **A:** Apareix en 1r lloc (1), 2n lloc (2), 3r lloc (1), 4t lloc (1), 5è lloc (1).  Necessita almenys dues coincidències.
+* **B:** Apareix en 2n lloc (2), 3r lloc (1), 4t lloc (1), 1r lloc (1), 2n lloc (1). Necessita almenys dues coincidències.
+* **C:** Apareix en 1r lloc (2), 3r lloc (2), 5è lloc (1), 1r lloc (1), 3r lloc (1). Necessita almenys dues coincidències.
+* **D:** Apareix en 3r lloc (1), 1r lloc (1), 2n lloc (1), 4t lloc (1), 1r lloc (1), 4t lloc (1). Necessita almenys dues coincidències.
+* **E:** Apareix en 4t lloc (1), 5è lloc (1), 1r lloc (1), 2n lloc (1), 5è lloc (1), 3r lloc (1). Necessita almenys dues coincidències.
+
+Observem que la C apareix dues vegades en primer lloc.  Això fa que la C sigui una bona candidata per a la primera posició.  A més, la B apareix dues vegades en segon lloc.  Això fa que la B sigui una bona candidata per a la segona posició.
+
+Si C és primer i B és segon, mirem les opcions que compleixen aquesta condició:  Només la C) CABED ho fa.
+
+Verifiquem si CABED compleix la condició de que cada ciclista estigui situat correctament almenys dues vegades:
+
+* **C:** 1r (2 vegades)
+* **A:** 3r (1 vegada), 4t (1 vegada) - No compleix la condició.
+* **B:** 2n (2 vegades)
+* **E:** 5è (1 vegada), 3r (1 vegada) - No compleix la condició.
+* **D:** 4t (1 vegada), 1r (1 vegada) - No compleix la condició.
+
+Per tant, la hipòtesi inicial és incorrecta.  Necessitem un mètode més sistemàtic.  Analitzem les opcions:
+
+* **A) BAECD:**  No compleix la condició per a tots els ciclistes.
+* **B) CADEB:**  No compleix la condició per a tots els ciclistes.
+* **C) CABED:**  No compleix la condició per a tots els ciclistes.
+* **D) DABCE:**  No compleix la condició per a tots els ciclistes.
+* **E) AECDB:**  No compleix la condició per a tots els ciclistes.
+
+Aquest problema sembla tenir un error en l'enunciat o les opcions de resposta, ja que cap opció compleix la condició de que cada ciclista estigui situat correctament almenys dues vegades.
+
+
+Resposta: No hi ha una resposta correcta entre les opcions donades.

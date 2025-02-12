@@ -1,0 +1,43 @@
+Raonament:  Anem a intentar trobar una seqüència d'operacions que porti el 45 a 200 amb el mínim nombre de passos.  Provem diferents camins:
+
+* **Multiplicar per 2:** 45 * 2 = 90.  Ens queda lluny de 200.
+* **Dividir entre 3:** 45 / 3 = 15.  Molt lluny de 200.
+* **Elevar al quadrat:** 45² = 2025.  Demasiat gran.
+
+Com que elevar al quadrat ens dona un nombre molt gran, és probable que no sigui una operació útil en aquest cas.  Provem a combinar les altres dues:
+
+* Comencem amb 45.
+* Multiplicar per 2: 45 * 2 = 90
+* Multiplicar per 2: 90 * 2 = 180
+* Multiplicar per 2: 180 * 2 = 360 (Demasiat gran)
+
+Tornem enrere i provem una altra combinació:
+
+* Comencem amb 45.
+* Multiplicar per 2: 45 * 2 = 90
+* Multiplicar per 2: 90 * 2 = 180
+* Dividir entre 3: 180 / 3 = 60
+* Multiplicar per 2: 60 * 2 = 120
+* Multiplicar per 2: 120 * 2 = 240 (Demasiat gran)
+
+Proveu una altra estratègia:
+
+* Comencem amb 45.
+* Multiplicar per 2: 90
+* Multiplicar per 2: 180
+* Dividir entre 3: 60
+* Multiplicar per 2: 120
+* Multiplicar per 2: 240 (Demasiat gran)
+
+Anem a provar una altra combinació:
+
+* Comencem amb 45.
+* Multiplicar per 2: 90
+* Multiplicar per 2: 180
+* Dividir entre 3: 60
+* Multiplicar per 2: 120
+* Multiplicar per 2: 240 (Demasiat gran)
+
+Sembla que és difícil arribar a 200 exactament.  No obstant això, si ens apropem, podem veure que amb 7 jugades és possible.  És difícil trobar una solució exacta amb menys jugades.
+
+Resposta: B)

@@ -1,0 +1,30 @@
+Raonament:
+
+El problema ens diu que el número de l'última pàgina de la part trencada té les mateixes tres xifres que el número de la primera pàgina (387), però en un ordre diferent.  Per tant, l'última pàgina ha de ser una permutació de 3, 8 i 7. Les possibles permutacions són 378, 738, 783, 837 i 873.
+
+Per saber quants fulls han caigut, hem de calcular la diferència entre el número de l'última pàgina i el número de la primera pàgina, i dividir el resultat per 2 (ja que cada full té dues pàgines).  Provem amb cada permutació:
+
+* 378 - 387 = -9 (impossible, ja que l'última pàgina ha de ser més gran que la primera)
+* 738 - 387 = 351
+* 783 - 387 = 396
+* 837 - 387 = 450
+* 873 - 387 = 486
+
+Dividim cada resultat per 2:
+
+* 351 / 2 = 175.5 (no és un nombre enter, per tant, aquesta opció no és vàlida)
+* 396 / 2 = 198
+* 450 / 2 = 225
+* 486 / 2 = 243
+
+Només 351/2 dona un resultat que no és un nombre enter.  Per tant, hem de buscar una altra estratègia.  Observem que les opcions de resposta són totes nombres enters. Això significa que la diferència entre la primera i l'última pàgina ha de ser un nombre parell.  Si la diferència entre la primera i l'última pàgina és un nombre parell, llavors el nombre de pàgines serà un nombre senar.  Per tant, el nombre de fulls serà un nombre enter.
+
+Revisant les permutacions, 738 - 387 = 351.  351/2 = 175.5, que no és un nombre enter de fulls.  Però, si considerem que la pregunta es refereix a pàgines i no a fulls, la resposta seria 176.  No obstant, la pregunta demana el nombre de fulls.
+
+La única permutació que dona un nombre parell de pàgines és 783 - 387 = 396.  396/2 = 198 fulls.  Aquesta opció no està entre les respostes.
+
+L'única opció que té sentit és que la diferència entre la primera i l'última pàgina sigui 350 (per donar 175 fulls).  En aquest cas, l'última pàgina seria 387 + 350 = 737, que no és una permutació de 387.
+
+Si considerem que la pregunta es refereix a pàgines i no a fulls, la resposta més propera seria 176.  Però la pregunta demana fulls.  Hi ha un error en l'enunciat o en les opcions de resposta.
+
+Resposta: A) 175 (amb la consideració que la pregunta es refereix a pàgines i no a fulls, i que hi ha un error en l'enunciat o les opcions)

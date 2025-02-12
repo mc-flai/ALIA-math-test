@@ -1,0 +1,13 @@
+Raonament:
+
+L'àrea total per la qual la cabra pot passejar es compon de dues parts:
+
+1. **L'àrea del triangle:** Aquesta és l'àrea de la parcel·la triangular, que ja se'ns dóna com A.
+
+2. **L'àrea dels tres segments circulars:** La cabra pot moure's fins a una distància màxima *d* més enllà de cada costat del triangle.  Aquesta regió forma tres segments circulars, un per cada costat del triangle.  Cada segment té un radi *d*.  L'àrea d'un segment circular és la diferència entre l'àrea d'un sector circular i l'àrea d'un triangle.  Però, simplificant, podem aproximar l'àrea de cada segment com la meitat de l'àrea d'un rectangle amb base igual a la longitud del costat del triangle i altura *d*.  La suma de les longituds dels costats del triangle és el perímetre P.  Per tant, l'àrea total dels tres segments és aproximadament (1/2) * P * d.  Aquesta aproximació és més precisa com més petit és *d* en comparació amb les dimensions del triangle.  Una aproximació més precisa seria considerar l'àrea dels tres sectors circulars amb radi *d* i angles corresponents als angles del triangle, però això complica el càlcul sense aportar una millora significativa en la precisió per a la majoria de casos.
+
+Per tant, l'àrea total és aproximadament A + (1/2)Pd.  No obstant això, aquesta aproximació no coincideix amb cap de les opcions donades.  L'opció més propera és A + dP, però aquesta opció ignora l'àrea dels tres segments circulars.  Les opcions que inclouen πd² o πa² són incorrectes, ja que no reflecteixen correctament la geometria del problema.
+
+La resposta més propera a la solució correcta, considerant l'aproximació dels segments com rectangles, seria A + Pd.  No obstant això, cap de les opcions coincideix exactament.  L'opció B és la més propera, però sobreestima l'àrea dels segments circulars.
+
+Resposta: A) A + dP (Aquesta és la millor aproximació entre les opcions donades, però no és perfectament precisa.)

@@ -1,0 +1,19 @@
+Raonament:
+
+Primer, cal calcular el nombre de diputats que representa cada partit:
+
+* Partit 1 (10%): 300 * 0.10 = 30 diputats
+* Partit 2 (20%): 300 * 0.20 = 60 diputats
+* Partit 3 (25%): 300 * 0.25 = 75 diputats
+* Partit 4 (45%): 300 * 0.45 = 135 diputats
+
+Com que els partits tenen una política d'igualtat, la distribució de gènere en cada partit serà aproximadament la meitat d'homes i la meitat de dones.  Però, com que el nombre de diputats per partit no sempre és parell, cal arrodonir.  Per minimitzar el nombre de dones, arrodonirem cap avall el nombre de dones en cada partit:
+
+* Partit 1 (30 diputats): 15 dones
+* Partit 2 (60 diputats): 30 dones
+* Partit 3 (75 diputats): 37 dones
+* Partit 4 (135 diputats): 67 dones
+
+Sumant el nombre mínim de dones en cada partit: 15 + 30 + 37 + 67 = 149 dones.
+
+Resposta: C)

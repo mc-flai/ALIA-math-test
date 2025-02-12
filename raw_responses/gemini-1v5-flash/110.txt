@@ -1,0 +1,23 @@
+Raonament:  La pregunta és quants enters positius més petits que 101 són divisibles pel quadrat d'un nombre natural més gran que 1.  Necessitem trobar els nombres que compleixen aquesta condició.
+
+Els quadrats de nombres naturals més grans que 1 són: 4, 9, 16, 25, 36, 49, 64, 81, 100...
+
+Ara hem de trobar els múltiples d'aquests quadrats que siguin menors que 101:
+
+* Múltiples de 4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100 (25 nombres)
+* Múltiples de 9: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99 (11 nombres)
+* Múltiples de 16: 16, 32, 48, 64, 80, 96 (6 nombres)
+* Múltiples de 25: 25, 50, 75, 100 (4 nombres)
+* Múltiples de 36: 36, 72 (2 nombres)
+* Múltiples de 49: 49, 98 (2 nombres)
+* Múltiples de 64: 64 (1 nombre)
+* Múltiples de 81: 81 (1 nombre)
+* Múltiples de 100: 100 (1 nombre)
+
+Si sumem tots aquests nombres, hem de tenir en compte que alguns nombres es repeteixen (per exemple, 36 és múltiple de 4 i de 9). Per evitar comptar-los dues vegades, hem de buscar els nombres que són múltiples de més d'un quadrat.  Una manera més senzilla és utilitzar el principi d'inclusió-exclusió, però en aquest cas, és més fàcil llistar-los i eliminar els repetits.
+
+Una manera més eficient és comptar els múltiples de cada quadrat menors que 101 i restar els que s'han comptat més d'una vegada.  Això és complex.  Una aproximació més senzilla és simplement llistar els múltiples:
+
+Els nombres que compleixen la condició són: 4, 8, 9, 12, 16, 18, 20, 24, 25, 27, 28, 32, 36, 40, 44, 45, 48, 49, 50, 52, 54, 56, 60, 63, 64, 68, 72, 75, 76, 80, 81, 84, 88, 90, 92, 96, 98, 99, 100.  En total hi ha 39 nombres.
+
+Resposta: E) 39

@@ -1,0 +1,34 @@
+Raonament:
+
+Sigui x el nombre inicial de xics i y el nombre inicial de xiques.  El nombre total d'estudiants inicialment era x + y.
+
+Després dels canvis:
+
+* El nombre de xics va augmentar en un 20%, així que ara hi ha 1.2x xics.
+* El nombre de xiques va disminuir en un 20%, així que ara hi ha 0.8y xiques.
+
+El nombre total d'estudiants ara és 1.2x + 0.8y, i sabem que aquest nombre és un més que el nombre inicial:
+
+1.2x + 0.8y = x + y + 1
+
+Simplificant l'equació:
+
+0.2x - 0.2y = 1
+
+Dividint per 0.2:
+
+x - y = 5
+
+Això significa que inicialment hi havia 5 xics més que xiques.
+
+Ara, provem les opcions de resposta:
+
+* **A) 22:** Si el total és 22,  x + y = 22.  Com que x - y = 5, podem sumar les dues equacions: 2x = 27,  x = 13.5 (no és un nombre enter, impossible).
+* **B) 26:** Si el total és 26, x + y = 26.  Sumant amb x - y = 5, obtenim 2x = 31, x = 15.5 (no és un nombre enter, impossible).
+* **C) 29:** Si el total és 29, x + y = 29.  Sumant amb x - y = 5, obtenim 2x = 34, x = 17.  Llavors, y = 12.  Això funciona!  Inicialment hi havia 17 + 12 = 29 estudiants. Després dels canvis: 1.2 * 17 + 0.8 * 12 = 20.4 + 9.6 = 30 estudiants.  30 - 29 = 1, compleix la condició.
+* **D) 31:** Si el total és 31, x + y = 31.  Sumant amb x - y = 5, obtenim 2x = 36, x = 18.  Llavors, y = 13.  Inicialment hi havia 31 estudiants. Després dels canvis: 1.2 * 18 + 0.8 * 13 = 21.6 + 10.4 = 32 estudiants.  32 - 31 = 1, compleix la condició.
+* **E) 34:** Si el total és 34, x + y = 34.  Sumant amb x - y = 5, obtenim 2x = 39, x = 19.5 (no és un nombre enter, impossible).
+
+Per tant, tant 29 com 31 són possibles.  No obstant, la pregunta demana quin *pot* ser el nombre actual d'estudiants.
+
+Resposta: C)

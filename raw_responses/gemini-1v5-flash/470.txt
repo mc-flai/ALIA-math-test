@@ -1,0 +1,18 @@
+Raonament:  Els punts A, B, C i D estan en una línia recta.  Les distàncies entre ells són: AB = 1 cm, BC = 2 cm, CD = 3 cm, i DA = 4 cm.  Observem que la distància total des de A fins a D passant per B i C és AB + BC + CD = 1 + 2 + 3 = 6 cm.  Però la distància directa de D a A és de 4 cm.  Això significa que els punts no estan ordenats linealment de la manera que sembla a primera vista.  L'única manera que això sigui possible és que els punts estiguin ordenats de manera que un punt estigui entre els altres dos.
+
+Si considerem que A i D són els extrems, la distància entre ells és 4 cm.  La distància entre A i D passant pels altres punts és 6 cm.  Això és possible si B i C estan entre A i D, però no en aquest ordre.
+
+Provem diferents ordenacions:
+
+* **A-B-C-D:**  AB + BC + CD = 6 ≠ DA (4)
+* **A-C-B-D:**  AC + CB + BD =  (impossible determinar sense més informació)
+* **A-B-D-C:** AB + BD + DC = (impossible determinar sense més informació)
+* **A-D-B-C:** AD + DB + BC = 4 + (impossible determinar sense més informació)
+* **A-D-C-B:** AD + DC + CB = 4 + 3 + 2 = 9 ≠ AB (1)
+* **D-A-B-C:** DA + AB + BC = 4 + 1 + 2 = 7 ≠ CD (3)
+* **D-A-C-B:** DA + AC + CB = (impossible determinar sense més informació)
+* **D-C-B-A:** DC + CB + BA = 3 + 2 + 1 = 6 ≠ AD (4)
+
+L'única manera de que la distància AD sigui 4 cm i la distància total passant per B i C sigui 6 cm és que els punts estiguin ordenats de manera que un punt estigui entre els altres dos.  Per tant, A i D han de ser els extrems.
+
+Resposta: A)

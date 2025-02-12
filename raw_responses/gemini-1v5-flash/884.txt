@@ -1,0 +1,23 @@
+Raonament:  El mínim comú múltiple (mcm) d'un conjunt de nombres és el menor nombre que és múltiple de tots els nombres del conjunt. Per minimitzar el mcm dels huit nombres restants, hem d'eliminar el nombre que contribueix més al mcm del conjunt original.  Observem la factorització en nombres primers dels nombres de l'1 al 9:
+
+* 1 = 1
+* 2 = 2
+* 3 = 3
+* 4 = 2²
+* 5 = 5
+* 6 = 2 * 3
+* 7 = 7
+* 8 = 2³
+* 9 = 3²
+
+El mcm de {1, 2, 3, 4, 5, 6, 7, 8, 9} és 2³ * 3² * 5 * 7 = 2520.  Si eliminem un nombre, intentem reduir els factors primers més grans.
+
+* Si eliminem el 9 (3²), el mcm seria 2³ * 3 * 5 * 7 = 840.
+* Si eliminem el 8 (2³), el mcm seria 2² * 3² * 5 * 7 = 1260.
+* Si eliminem el 7, el mcm seria 2³ * 3² * 5 = 360.
+* Si eliminem el 6 (2*3), el mcm seria 2³ * 3² * 5 * 7 = 1260.
+* Si eliminem el 5, el mcm seria 2³ * 3² * 7 = 504.
+
+Comparant els resultats, el mínim mcm s'obté en eliminar el 9.  En aquest cas, el mcm és 840.  Eliminar el 7 també dona un mcm baix (504), però eliminar el 9 dona un mcm menor.
+
+Resposta: A)

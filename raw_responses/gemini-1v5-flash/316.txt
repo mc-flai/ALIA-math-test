@@ -1,0 +1,18 @@
+Raonament: El cub gran es divideix en 27 cubs petits (3x3x3).
+
+* **Cubs amb 3 cares pintades:** Hi ha 8 cubs petits a les cantonades del cub gran, cadascun amb 3 cares pintades.
+* **Cubs amb 2 cares pintades:** Hi ha 12 cubs petits a les arestes (exceptuant les cantonades), cadascun amb 2 cares pintades.
+* **Cubs amb 1 cara pintada:** Hi ha 6 cubs petits a les cares centrals (exceptuant les arestes i cantonades), cadascun amb 1 cara pintada.
+* **Cubs sense cares pintades:** Hi ha 1 cub petit al centre del cub gran, sense cap cara pintada.
+
+El nombre total de cares dels cubs petits és 27 cubs * 6 cares/cub = 162 cares.
+
+Les cares pintades són: 8 cubs * 3 cares/cub + 12 cubs * 2 cares/cub + 6 cubs * 1 cara/cub = 24 + 24 + 6 = 54 cares.
+
+Les cares no pintades són: 162 cares totals - 54 cares pintades = 108 cares.
+
+Alternativament, podem calcular directament les cares no pintades del cub interior de 1x1x1.  Aquest cub té 6 cares, i totes estan no pintades.  El cub de 3x3x3 té un cub interior de 1x1x1.  Per tant, hi ha 6 cares no pintades en aquest cub interior.  Ara, considerem el cub de 2x2x2 que envolta el cub interior.  Aquest té 6 cares, cadascuna amb 4 cares no pintades.  Això fa un total de 24 cares no pintades.  Finalment, considerem el cub de 3x3x3.  Aquest té 6 cares, cadascuna amb 9 cares, però ja hem comptat les 4 cares del cub de 2x2x2 i la cara central del cub de 1x1x1.  Això deixa 4 cares no pintades per cada cara gran, per un total de 24 cares no pintades.  En total, tenim 6 + 24 = 30 cares no pintades.  Aquest raonament és incorrecte.
+
+El raonament correcte és que el cub interior de 1x1x1 té 6 cares no pintades.
+
+Resposta: D)

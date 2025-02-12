@@ -1,0 +1,19 @@
+Raonament: El comptaquilòmetres mostra 187569 km.  Perquè tots els dígits siguen diferents, ha de canviar almenys un dígit.  El següent nombre amb dígits tots diferents seria 187570, però el 7 es repeteix.  Provem a incrementar el nombre:
+
+* 187570 (7 repetit)
+* 187571 (7 repetit)
+* 187572 (7 repetit)
+* 187573 (7 repetit)
+* 187574 (7 repetit)
+* 187575 (7 repetit)
+* 187576 (7 repetit)
+* 187578 (7 repetit)
+* 187579 (7 repetit)
+* 187580 (8 repetit)
+* ...i així successivament.
+
+Hem de trobar el nombre més petit que tinga tots els dígits diferents.  Si incrementem el 9 a 0, obtenim 187570, però el 7 es repeteix.  Si incrementem el 6 a 7, obtenim 187579, però el 7 es repeteix.  Si incrementem el 5 a 6, obtenim 187659, però el 6 es repeteix.  Si incrementem el 7 a 8, obtenim 187689, però el 8 es repeteix.  Si incrementem el 8 a 0, obtenim 187560, però el 6 es repeteix.
+
+Analitzem el nombre 187569.  El següent nombre amb dígits diferents seria 187570, però té un 7 repetit.  El següent seria 187571, 187572... fins a 187578.  El següent seria 187580, però té un 8 repetit.  Continuant d'aquesta manera, el nombre més petit que compleix la condició és 187609 (31 km més).
+
+Resposta: D)

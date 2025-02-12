@@ -1,0 +1,11 @@
+Raonament:
+
+Dibuixem un triangle rectangle ABC, on l'angle BAC és recte (90 graus).  Sigui M el punt mitjà de BC. La distància des de M a AB és la longitud de la mediana des de C a AB, i la distància des de M a AC és la longitud de la mediana des de B a AC.  
+
+Si la distància de M a AB és menor que la distància de M a AC, això significa que la mediana des de C a AB és menor que la mediana des de B a AC.  En un triangle rectangle, la mediana des d'un catet és la meitat de la hipotenusa.  Per tant, la mediana des de C a AB és BC/2, i la mediana des de B a AC és BC/2.  Aquesta afirmació contradiu la premisa del problema.
+
+No obstant això, considerem la distància des de M a AB i des de M a AC com les altures dels triangles rectangles AMB i AMC respectivament.  L'altura d'un triangle rectangle des del vèrtex de l'angle recte al costat oposat és sempre menor que els catets.  Si la distància de M a AB és menor que la distància de M a AC, això implica que la projecció de M sobre AB és més propera a A que la projecció de M sobre AC.  Això només és possible si AB < AC.
+
+Com que AB i AC són catets i BC és la hipotenusa, sempre es compleix que AB < BC i AC < BC.  Per tant, si AB < AC, llavors l'ordre ha de ser AB < AC < BC.
+
+Resposta: A)

@@ -1,0 +1,26 @@
+Raonament:
+
+El problema descriu una sèrie de dies on Elisabet menja una fracció de les xocolatines que li queden.  En lloc de calcular cada dia individualment, podem observar un patró.  El problema indica que el procés continua fins que es menja la meitat de les xocolatines que li quedaven del dia anterior.  Això implica que el nombre de xocolatines que menja cada dia disminueix.
+
+Si seguim el patró:
+
+* **Dilluns:** Menja (1/10) * 60 = 6 xocolatines. Queden 54.
+* **Dimarts:** Menja (1/9) * 54 = 6 xocolatines. Queden 48.
+* **Dimecres:** Menja (1/8) * 48 = 6 xocolatines. Queden 42.
+* **Dijous:** Menja (1/7) * 42 = 6 xocolatines. Queden 36.
+
+Observem que cada dia menja 6 xocolatines.  Aquest patró continua fins que el denominador de la fracció és 2.  En aquest punt, menjarà la meitat de les xocolatines que li quedin.
+
+Si continuem el patró:
+
+* **Divendres:** (1/6) * 36 = 6 xocolatines. Queden 30.
+* **Dissabte:** (1/5) * 30 = 6 xocolatines. Queden 24.
+* **Diumenge:** (1/4) * 24 = 6 xocolatines. Queden 18.
+* **Dilluns 2:** (1/3) * 18 = 6 xocolatines. Queden 12.
+* **Dimarts 2:** (1/2) * 12 = 6 xocolatines. Queden 6.
+
+En aquest punt, el problema diu que menja la meitat de les que li queden.  Per tant, menja 6/2 = 3 xocolatines.
+
+Finalment, li queden 6 - 3 = 3 xocolatines.
+
+Resposta: C)

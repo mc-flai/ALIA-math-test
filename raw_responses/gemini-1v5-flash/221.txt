@@ -1,0 +1,26 @@
+Raonament:  Hi ha 4! = 24 possibles ordenacions dels punts A, B, C i D en una recta.  No obstant això, podem utilitzar les distàncies donades per reduir les possibilitats.  Observem que:
+
+* AB + BC + CD + DA = 13 + 11 + 14 + 12 = 50
+
+Si els punts estiguessin ordenats com A-B-C-D, la distància total seria AB + BC + CD = 38, que és menor que la distància total.  Això indica que els punts no estan ordenats linealment en aquest ordre.
+
+Considerem les possibles configuracions:
+
+* **A-C-B-D:**  AC + CB + BD = AC + 11 + BD.  No podem determinar AC i BD directament.
+* **A-B-D-C:** AB + BD + DC = 13 + BD + 14 = 27 + BD.  No podem determinar BD directament.
+* **A-D-C-B:** AD + DC + CB = 12 + 14 + 11 = 37.  Això no és possible ja que la suma de totes les distàncies és 50.
+* **A-C-D-B:** AC + CD + DB = AC + 14 + DB.  No podem determinar AC i DB directament.
+* **A-D-B-C:** AD + DB + BC = 12 + DB + 11 = 23 + DB.  No podem determinar DB directament.
+* **B-A-C-D:** BA + AC + CD = 13 + AC + 14 = 27 + AC.  No podem determinar AC directament.
+* **B-C-A-D:** BC + CA + AD = 11 + CA + 12 = 23 + CA.  No podem determinar CA directament.
+* **B-A-D-C:** BA + AD + DC = 13 + 12 + 14 = 39.  Això no és possible ja que la suma de totes les distàncies és 50.
+* **C-B-A-D:** CB + BA + AD = 11 + 13 + 12 = 36.  Això no és possible ja que la suma de totes les distàncies és 50.
+* **C-D-A-B:** CD + DA + AB = 14 + 12 + 13 = 39.  Això no és possible ja que la suma de totes les distàncies és 50.
+* **D-A-B-C:** DA + AB + BC = 12 + 13 + 11 = 36.  Això no és possible ja que la suma de totes les distàncies és 50.
+* **D-C-B-A:** DC + CB + BA = 14 + 11 + 13 = 38.  Això no és possible ja que la suma de totes les distàncies és 50.
+
+Però, si considerem que la suma de les distàncies és el perímetre d'un quadrilàter cíclic, llavors tenim que AB + CD = BC + DA, és a dir, 13 + 14 = 11 + 12 = 27.  Això no és cert.
+
+No obstant això, si considerem que els punts estan en una línia, i que la suma de les distàncies oposades és igual, tenim que AC + BD = 27.
+
+Resposta: D)

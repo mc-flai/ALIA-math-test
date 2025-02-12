@@ -1,0 +1,13 @@
+Raonament:
+
+La quadrícula té 21 columnes i 33 files.  El nombre total de caselles és 21 * 33 = 693.
+
+Pintem de negre les files que el seu nombre NO és múltiple de 3.  Els múltiples de 3 entre 1 i 33 són 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33. Hi ha 11 múltiples de 3. Per tant, hi ha 33 - 11 = 22 files que no són múltiples de 3 i que es pintaran de negre.  Cada una d'aquestes files té 21 caselles.
+
+Pintem de negre les columnes que el seu nombre és parell. Els nombres parells entre 1 i 21 són 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Hi ha 10 columnes parells. Cada columna parell té 33 caselles.
+
+El nombre total de caselles pintades és (22 files * 21 columnes) + (10 columnes * 33 files) - (22 files * 10 columnes) = 462 + 330 - 220 = 572.  Restem les caselles que s'han comptat dues vegades (les files no múltiples de 3 i les columnes parells).
+
+El nombre de caselles que queden sense pintar és el nombre total de caselles menys les caselles pintades: 693 - 572 = 121.
+
+Resposta: B)

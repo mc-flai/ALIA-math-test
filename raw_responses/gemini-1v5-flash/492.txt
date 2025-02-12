@@ -1,0 +1,21 @@
+Raonament:
+
+Sigui $n_i$ el nombre de passatgers al vagó $i$, on $i = 1, 2, 3, 4, 5$.
+El nombre total de passatgers és $N = \sum_{i=1}^5 n_i$.
+
+Un passatger al vagó $i$ té com a veïns els passatgers als vagons $i-1, i, i+1$ (considerant que si $i=1$, només té veïns als vagons 1 i 2, i si $i=5$, només té veïns als vagons 4 i 5).
+
+Si un passatger té exactament 5 veïns, ha de ser en un dels vagons extrems (1 o 5) i hi ha 4 passatgers més al seu vagó.  Si està al vagó 1, té 4 veïns al vagó 1 i 1 veí al vagó 2. Si està al vagó 5, té 4 veïns al vagó 5 i 1 veí al vagó 4.
+
+Si un passatger té exactament 10 veïns, ha d'estar en un dels vagons interiors (2, 3 o 4).  En aquest cas, ha de tenir 4 veïns al seu vagó i 3 veïns a cada vagó adjacent.
+
+Considerem el cas on tots els passatgers tenen 10 veïns.  Això implica que cada vagó té almenys 5 passatgers.  Si cada vagó té 5 passatgers, el nombre total de passatgers és 25.  En aquest cas, un passatger té 4 + 3 + 3 = 10 veïns.
+
+Considerem el cas on tots els passatgers tenen 5 veïns.  Això implica que cada vagó té 5 passatgers.  Però això contradiu la condició que cada passatger té 5 o 10 veïns.
+
+Suposem que hi ha $x$ passatgers amb 5 veïns i $y$ passatgers amb 10 veïns.  Llavors $x + y = N$.
+El nombre total de parelles de veïns és $\frac{5x + 10y}{2}$.
+
+Si hi ha 2 vagons amb 5 passatgers cadascun i 1 vagó amb 3 passatgers, el total és 13 passatgers.  En aquest cas, els passatgers dels vagons extrems tenen 5 veïns, i els del vagó central tenen 10 veïns.
+
+Resposta: A)

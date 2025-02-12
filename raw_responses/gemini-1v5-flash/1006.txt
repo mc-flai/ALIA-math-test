@@ -1,0 +1,20 @@
+Raonament:
+
+Analitzem cada afirmació, tenint en compte que cada pirata diu la veritat en una afirmació i mentida en l'altra:
+
+* **Pirata 1 (8 monedes, 6 diamants):** Si les 8 monedes són certes, llavors els 6 diamants són falsos.  Si els 6 diamants són certs, llavors les 8 monedes són falses.
+
+* **Pirata 2 (7 monedes, 4 diamants):** Si les 7 monedes són certes, llavors els 4 diamants són falsos. Si els 4 diamants són certs, llavors les 7 monedes són falses.
+
+* **Pirata 3 (7 monedes, 7 diamants):** Si les 7 monedes són certes, llavors els 7 diamants són falsos. Si els 7 diamants són certs, llavors les 7 monedes són falses.
+
+Observem que el nombre de monedes (7) apareix en dues respostes.  Si assumim que "7 monedes" és la informació vertadera en dues de les respostes (Pirata 2 i Pirata 3), llavors:
+
+* **Pirata 2:** 7 monedes és cert, per tant 4 diamants és fals.
+* **Pirata 3:** 7 monedes és cert, per tant 7 diamants és fals.
+
+Això implica que el nombre de diamants ha de ser 6 (l'única opció restant que no ha estat declarada com a falsa).
+
+Per tant, Barbaroja té 7 monedes i 6 diamants.  La suma és 7 + 6 = 13.
+
+Resposta: C)

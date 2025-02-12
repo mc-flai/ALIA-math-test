@@ -1,0 +1,24 @@
+Raonament:
+
+Calculem els primers termes de la successió per veure si hi ha un patró:
+
+* a₁ = 49
+* a₂ = (4 + 9 + 1)² = 14² = 196
+* a₃ = (1 + 9 + 6 + 1)² = 17² = 289
+* a₄ = (2 + 8 + 9 + 1)² = 20² = 400
+* a₅ = (4 + 0 + 0 + 1)² = 5² = 25
+* a₆ = (2 + 5 + 1)² = 8² = 64
+* a₇ = (6 + 4 + 1)² = 11² = 121
+* a₈ = (1 + 2 + 1 + 1)² = 5² = 25
+* a₉ = (2 + 5 + 1)² = 8² = 64
+* a₁₀ = (6 + 4 + 1)² = 11² = 121
+
+Observem que la successió es repeteix cíclicament a partir de a₅: 25, 64, 121, 25, 64, 121,...  El cicle té longitud 3.
+
+Per determinar a₂₀₁, cal calcular el residu de 2019 dividit entre 3:
+
+2019 ÷ 3 = 673 amb residu 0.  Com que el residu és 0, el terme a₂₀₁₉ és el mateix que el tercer terme del cicle.
+
+Per tant, a₂₀₁₉ = 121.
+
+Resposta: A)

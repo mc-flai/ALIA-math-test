@@ -1,0 +1,33 @@
+Raonament:
+
+Sigui  x = 2018.  Llavors el producte és (10000x + x + 1)(10000x + x -1) = (10001x + 1)(10001x - 1) = (10001x)² - 1.
+
+Per tant, 20182019 × 20192018 = (10001 * 2018)² - 1 = 20182018² -1.
+
+Per trobar el residu de la divisió entre 9, podem utilitzar la propietat que el residu de la divisió d'un nombre entre 9 és igual a la suma dels seus dígits.
+
+La suma dels dígits de 2018 és 2 + 0 + 1 + 8 = 11. La suma dels dígits de 11 és 1 + 1 = 2.  Per tant, 2018 és congruent amb 2 (mòdul 9).
+
+Llavors, 20182018 ≡ 2222 (mòdul 9). La suma dels dígits de 2222 és 8, per tant 20182018 ≡ 8 (mòdul 9).
+
+Per tant, 20182018² ≡ 8² ≡ 64 ≡ 1 (mòdul 9).
+
+Finalment, 20182018² - 1 ≡ 1 - 1 ≡ 0 (mòdul 9).
+
+Per tant, el residu de la divisió de 20182019 × 20192018 entre 9 és 0.  No obstant això, cap de les opcions de resposta és 0.  Hi ha un error en el raonament anterior.  Fem-ho d'una altra manera:
+
+Notem que 20182019 = 20182018 + 1 i 20192018 = 20182018 + 10000.  Llavors el producte és:
+
+(20182018 + 1)(20182018 + 10000) = 20182018² + 10001 * 20182018 + 10000
+
+La suma dels dígits de 20182018 és 2+0+1+8+2+0+1+8 = 22. La suma dels dígits de 22 és 4.  Per tant, 20182018 ≡ 4 (mod 9).
+
+Llavors, 20182018² ≡ 4² ≡ 16 ≡ 7 (mod 9).
+
+10001 ≡ 1+0+0+0+1 ≡ 2 (mod 9)
+
+10000 ≡ 1 (mod 9)
+
+Per tant, 20182019 × 20192018 ≡ 7 + 2*4 + 1 ≡ 7 + 8 + 1 ≡ 16 ≡ 7 (mod 9)
+
+Resposta: D)

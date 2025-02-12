@@ -1,0 +1,39 @@
+Raonament:
+
+Sigui *x* el nombre total de pomes.  Si hi ha *N* xiquets, cada un rep *x/N* pomes.
+
+Si hi ha *N-2* xiquets, cada un rep *x/(N-2)* pomes.  Sabem que això és una poma més que abans, per tant:
+
+x/(N-2) = x/N + 1
+
+Si hi ha *N-3* xiquets, cada un rep *x/(N-3)* pomes.  Sabem que això són dues pomes més que abans, per tant:
+
+x/(N-3) = x/N + 2
+
+Ara tenim un sistema de dues equacions amb dues incògnites (x i N):
+
+1) x/(N-2) = x/N + 1
+2) x/(N-3) = x/N + 2
+
+Resolguem la primera equació per a x:
+
+x/(N-2) - x/N = 1
+xN - x(N-2) = N(N-2)
+xN - xN + 2x = N² - 2N
+2x = N² - 2N
+x = (N² - 2N)/2
+
+Substituïm aquest valor de x a la segona equació:
+
+(N² - 2N)/(2(N-3)) = (N² - 2N)/(2N) + 2
+
+Multiplicant per 2N(N-3) per eliminar les fraccions:
+
+N(N² - 2N) = (N-3)(N² - 2N) + 4N(N-3)
+N³ - 2N² = N³ - 2N² - 3N² + 6N + 4N² - 12N
+0 = N² - 6N
+0 = N(N - 6)
+
+Això ens dona dues solucions: N = 0 o N = 6.  Com que el nombre de xiquets ha de ser positiu, la solució és N = 6.
+
+Resposta: A)

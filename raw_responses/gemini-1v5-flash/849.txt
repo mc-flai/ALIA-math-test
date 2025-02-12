@@ -1,0 +1,15 @@
+Raonament:
+
+Primer, trobem el valor de x.  Volem trobar el nombre natural més petit x tal que 12x és un quadrat perfecte.  Factoritzem 12 com 2² * 3. Perquè 12x sigui un quadrat perfecte, x ha de contenir almenys un factor 3.  Per tant, el valor més petit de x és 3.  12x = 12 * 3 = 36 = 6².
+
+Segon, trobem el valor de y. Volem trobar el nombre natural més petit y tal que 24y és un cub perfecte. Factoritzem 24 com 2³ * 3. Perquè 24y sigui un cub perfecte, y ha de contenir almenys dos factors 2 i dos factors 3.  Per tant, el valor més petit de y és 2² * 3² = 4 * 9 = 36.  24y = 24 * 36 = 864 = 9.6³ (aproximadament).  24 * 36 = 864 = 2³ * 3³ * 2² = (2² * 3)² = 12³
+
+Per tant, x = 3 i y = 36.  x + y = 3 + 36 = 39.  Cap de les opcions coincideix amb aquest resultat.  Revisemos el càlcul de y.
+
+24 = 2³ * 3. Per a que 24y sigui un cub perfecte, y ha de tenir almenys dos factors 3 i un factor 2.  El menor valor de y és 2 * 3² = 18.  24 * 18 = 432 = 2⁴ * 3³ = (2 * 3√3)²  Això no és un cub perfecte.
+
+24y ha de ser de la forma 2<sup>3k</sup> * 3<sup>3m</sup> on k i m són enters.  Per tant, y ha de ser de la forma 2<sup>3k-3</sup> * 3<sup>3m-1</sup>.  El menor valor positiu per a k i m és k=1 i m=1.  Això dona y = 2<sup>0</sup> * 3² = 9.  24 * 9 = 216 = 6³.
+
+Per tant, x = 3 i y = 9.  x + y = 3 + 9 = 12.
+
+Resposta: B)

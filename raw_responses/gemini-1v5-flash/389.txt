@@ -1,0 +1,42 @@
+Raonament:
+
+Siguin:
+
+* D = nombre de llibres de detectius
+* G = nombre de llibres de guies de viatge
+* C = nombre de llibres de ciència ficció
+
+El problema ens diu:
+
+* Tres no són de detectius:  D + G + C - D = 3  => G + C = 3
+* Quatre no són guies de viatge: D + G + C - G = 4 => D + C = 4
+* Cinc no són de ciència ficció: D + G + C - C = 5 => D + G = 5
+
+Tenim un sistema de tres equacions amb tres incògnites:
+
+1) G + C = 3
+2) D + C = 4
+3) D + G = 5
+
+Resolem el sistema:
+
+De l'equació (3), G = 5 - D.  Substituïm a l'equació (1):
+
+(5 - D) + C = 3  => C = D - 2
+
+Substituïm C = D - 2 a l'equació (2):
+
+D + (D - 2) = 4  => 2D = 6  => D = 3
+
+Ara substituïm D = 3 a les equacions (1) i (3):
+
+G + C = 3
+3 + G = 5 => G = 2
+
+C = 3 - G = 3 - 2 = 1
+
+Per tant, Josep té 3 llibres de detectius, 2 guies de viatge i 1 llibre de ciència ficció.
+
+El nombre total de llibres és D + G + C = 3 + 2 + 1 = 6
+
+Resposta: E)

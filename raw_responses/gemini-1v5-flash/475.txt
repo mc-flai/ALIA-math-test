@@ -1,0 +1,26 @@
+Raonament:
+
+Sigui x el nombre inicial de cireres. Maria se'n menja una tercera part, deixant (2/3)x cireres. Antoni se'n menja una setena part de la resta, és a dir, (1/7)*(2/3)x = (2/21)x.  Per tant, el nombre de cireres que queden és (2/3)x - (2/21)x = (14/21)x - (2/21)x = (12/21)x = (4/7)x.
+
+Ara hem de trobar un nombre x tal que (4/7)x sigui un nombre enter i que aquest nombre enter sigui una de les opcions de resposta.  Perquè (4/7)x sigui un nombre enter, x ha de ser un múltiple de 7.
+
+* Si x = 7, queden (4/7)*7 = 4 cireres.
+* Si x = 14, queden (4/7)*14 = 8 cireres.
+* Si x = 21, queden (4/7)*21 = 12 cireres.
+* Si x = 28, queden (4/7)*28 = 16 cireres.
+* Si x = 35, queden (4/7)*35 = 20 cireres.
+* I així successivament...
+
+Cap d'aquests resultats coincideix amb les opcions de resposta.  Hi ha un error en el plantejament.  Analitzem les opcions:
+
+Si el nombre de cireres que queden és 23, 24, 25, 26 o 27, podem treballar a la inversa:
+
+* Si queden 23 cireres, (4/7)x = 23  => x = (7*23)/4 = 40.25 (no és un nombre enter)
+* Si queden 24 cireres, (4/7)x = 24  => x = (7*24)/4 = 42 (és un nombre enter)
+* Si queden 25 cireres, (4/7)x = 25  => x = (7*25)/4 = 43.75 (no és un nombre enter)
+* Si queden 26 cireres, (4/7)x = 26  => x = (7*26)/4 = 45.5 (no és un nombre enter)
+* Si queden 27 cireres, (4/7)x = 27  => x = (7*27)/4 = 47.25 (no és un nombre enter)
+
+Només quan queden 24 cireres, el nombre inicial de cireres és un nombre enter (42).
+
+Resposta: B)

@@ -1,0 +1,22 @@
+Raonament:  Per resoldre aquest problema, hem de treballar cap enrere des dels 25 caps.  Analitzem cada possibilitat de talls:
+
+* **Tallar 3 caps:** Si el drac té 25 caps, no podem haver arribat a aquesta situació tallant 3 caps anteriorment, ja que no creixen caps nous.
+
+* **Tallar 2 caps:** Si el drac tenia 27 caps abans de tallar 2, ara en tindria 25.  Si seguim treballant cap enrere, abans de tenir 27, hauria de tenir 29, 31, etc.  Aquest patró no ens porta a un nombre petit de caps inicials.
+
+* **Tallar 1 cap:** Si el drac tenia 21 caps abans de tallar-ne 1 (i li van créixer 4), ara en tindria 25.  Seguint cap enrere:
+    * 21 - 1 + 4 = 24 (No funciona)
+    * 17 - 1 + 4 = 20
+    * 13 - 1 + 4 = 16
+    * 9 - 1 + 4 = 12
+    * 5 - 1 + 4 = 8
+    * 1 - 1 + 4 = 4
+
+Observem que si el nombre de caps és de la forma 4n + 1 (on n és un enter no negatiu), podem arribar a 25 caps.  Per tant, hem de trobar un nombre de la llista d'opcions que segueixi aquest patró.
+
+Només el 5 (5 - 1 + 4 = 8; 8 - 1 + 4 = 11; 11 - 1 + 4 = 14; 14 - 1 + 4 = 17; 17 - 1 + 4 = 20; 20 - 1 + 4 = 23; 23 - 1 + 4 = 26; 26 - 1 + 4 = 29; 29 - 1 + 4 = 32; 32 - 1 + 4 = 35; 35 - 1 + 4 = 38; 38 - 1 + 4 = 41; 41 - 1 + 4 = 44; 44 - 1 + 4 = 47; 47 - 1 + 4 = 50; 50 - 1 + 4 = 53; 53 - 1 + 4 = 56; 56 - 1 + 4 = 59; 59 - 1 + 4 = 62; 62 - 1 + 4 = 65; 65 - 1 + 4 = 68; 68 - 1 + 4 = 71; 71 - 1 + 4 = 74; 74 - 1 + 4 = 77; 77 - 1 + 4 = 80; 80 - 1 + 4 = 83; 83 - 1 + 4 = 86; 86 - 1 + 4 = 89; 89 - 1 + 4 = 92; 92 - 1 + 4 = 95; 95 - 1 + 4 = 98; 98 - 1 + 4 = 101; 101 - 1 + 4 = 104; 104 - 1 + 4 = 107; 107 - 1 + 4 = 110; 110 - 1 + 4 = 113; 113 - 1 + 4 = 116; 116 - 1 + 4 = 119; 119 - 1 + 4 = 122; 122 - 1 + 4 = 125; 125 - 1 + 4 = 128; 128 - 1 + 4 = 131; 131 - 1 + 4 = 134; 134 - 1 + 4 = 137; 137 - 1 + 4 = 140; 140 - 1 + 4 = 143; 143 - 1 + 4 = 146; 146 - 1 + 4 = 149; 149 - 1 + 4 = 152; 152 - 1 + 4 = 155; 155 - 1 + 4 = 158; 158 - 1 + 4 = 161; 161 - 1 + 4 = 164; 164 - 1 + 4 = 167; 167 - 1 + 4 = 170; 170 - 1 + 4 = 173; 173 - 1 + 4 = 176; 176 - 1 + 4 = 179; 179 - 1 + 4 = 182; 182 - 1 + 4 = 185; 185 - 1 + 4 = 188; 188 - 1 + 4 = 191; 191 - 1 + 4 = 194; 194 - 1 + 4 = 197; 197 - 1 + 4 = 200; 200 - 1 + 4 = 203; 203 - 1 + 4 = 206; 206 - 1 + 4 = 209; 209 - 1 + 4 = 212; 212 - 1 + 4 = 215; 215 - 1 + 4 = 218; 218 - 1 + 4 = 221; 221 - 1 + 4 = 224; 224 - 1 + 4 = 227; 227 - 1 + 4 = 230; 230 - 1 + 4 = 233; 233 - 1 + 4 = 236; 236 - 1 + 4 = 239; 239 - 1 + 4 = 242; 242 - 1 + 4 = 245; 245 - 1 + 4 = 248; 248 - 1 + 4 = 251)
+
+
+De les opcions donades, només el 5 és de la forma 4n + 1.
+
+Resposta: B)

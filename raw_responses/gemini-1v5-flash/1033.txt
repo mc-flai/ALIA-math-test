@@ -1,0 +1,37 @@
+Raonament:
+
+Sigui x la longitud d'un salt de pujada.  Ens diuen que x = 1 metre.
+La longitud d'un salt de baixada és 3x = 3 metres.
+
+Sigui n el nombre de salts de pujada.  El nombre de salts de baixada serà (2024 - n).
+
+La distància total de pujada és n * x = n * 1 = n metres.
+La distància total de baixada és (2024 - n) * 3x = (2024 - n) * 3 = 3(2024 - n) metres.
+
+La distància total del recorregut és la suma de la distància de pujada i la distància de baixada:
+
+n + 3(2024 - n) = 2024
+
+Resolent per n:
+
+n + 6072 - 3n = 2024
+-2n = 2024 - 6072
+-2n = -4048
+n = 2024
+
+Per tant, hi ha 2024 salts de pujada.  El nombre de salts de baixada és 0.  Això no és possible.  Hi ha un error en el plantejament.
+
+Fem-ho d'una altra manera.  Suposem que la longitud total de la pista és L metres.
+
+A la pujada, el nombre de salts és L/1 = L.
+A la baixada, el nombre de salts és L/3.
+
+El nombre total de salts és L + L/3 = 2024.
+
+(4L)/3 = 2024
+4L = 6072
+L = 1518
+
+La longitud total del recorregut és 2L = 2 * 1518 = 3036 metres.
+
+Resposta: D)

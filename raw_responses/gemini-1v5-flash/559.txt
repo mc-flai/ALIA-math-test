@@ -1,0 +1,32 @@
+Raonament:
+
+Primer, calculem els valors de 2016·2018 i 2017·2019:
+
+2016·2018 = 4064288
+2017·2019 = 4070293
+
+La diferència entre aquests dos nombres és:
+
+4070293 - 4064288 = 6005
+
+No obstant això, la pregunta demana quants nombres *naturals* hi ha entre aquests dos nombres.  La diferència calculada inclou els dos extrems, per tant, el nombre de nombres naturals entre ells és la diferència menys 1:
+
+6005 - 1 = 6004
+
+Cap de les opcions coincideix amb aquest resultat.  Hi ha un error en el plantejament inicial.  Fem una aproximació diferent.
+
+Observem que 2017² = 4070289.  Els nombres 2016·2018 i 2017·2019 es poden expressar com:
+
+2017² - 1² = (2017-1)(2017+1) = 2016·2018
+2017² + 2² = (2017-2)(2017+2)  <-- Aquesta expressió no és correcta.
+
+Fem una altra aproximació:
+
+2016 * 2018 = (2017 - 1)(2017 + 1) = 2017² - 1
+2017 * 2019 = (2017)(2017 + 2) = 2017² + 2(2017)
+
+La diferència és:  (2017² + 2(2017)) - (2017² - 1) = 2(2017) + 1 = 4035
+
+Per tant, hi ha 4035 nombres naturals entre 2016·2018 i 2017·2019 (inclosos els extrems).  Si no s'inclouen els extrems, hi ha 4033 nombres.  La pregunta és ambigua en aquest sentit.  Si la pregunta es refereix als nombres estrictament entre els dos valors, la resposta seria 4033. Si inclou els extrems, la resposta seria 4035.
+
+Resposta: E) 4035 (assumint que la pregunta inclou els extrems) o C) 4033 (assumint que la pregunta no inclou els extrems).  La pregunta és ambigua.

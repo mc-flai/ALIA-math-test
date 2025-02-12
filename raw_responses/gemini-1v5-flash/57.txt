@@ -1,0 +1,24 @@
+Raonament:
+
+Sigui X el nombre introduït a la màquina. La màquina retorna un valor Y amb la mateixa probabilitat segons les següents operacions: Y = X+2, Y = X+3, Y = 2X, Y = 3X.
+
+1. **Primer pas:** Introduïm X=1.  Les possibilitats per a són: a = 1+2=3, a = 1+3=4, a = 2*1=2, a = 3*1=3.  Per tant, a pot ser 2, 3 o 4 amb probabilitats P(a=2)=1/4, P(a=3)=2/4=1/2, P(a=4)=1/4.
+
+2. **Segon pas:** Introduïm a.  Calculem les possibilitats per a b per cada valor possible de a:
+
+    * Si a=2: b pot ser 4, 5, 4, 6.  Probabilitats: P(b=4|a=2)=2/4=1/2, P(b=5|a=2)=1/4, P(b=6|a=2)=1/4.
+    * Si a=3: b pot ser 5, 6, 6, 9. Probabilitats: P(b=5|a=3)=1/4, P(b=6|a=3)=2/4=1/2, P(b=9|a=3)=1/4.
+    * Si a=4: b pot ser 6, 7, 8, 12. Probabilitats: P(b=6|a=4)=1/4, P(b=7|a=4)=1/4, P(b=8|a=4)=1/4, P(b=12|a=4)=1/4.
+
+3. **Tercer pas:** Introduïm b.  Per calcular la probabilitat que c sigui parell, necessitem considerar totes les possibilitats per a b i les seves probabilitats, i després calcular la probabilitat que c sigui parell per cada valor de b.  Això és molt laboriós.  Una aproximació més senzilla és considerar la probabilitat que un nombre sigui parell o imparell després de cada operació.
+
+    * Sumar 2: manté la paritat.
+    * Sumar 3: canvia la paritat.
+    * Multiplicar per 2: sempre resulta parell.
+    * Multiplicar per 3: manté la paritat si el nombre és parell, canvia si és imparell.
+
+4. **Aproximació:**  Observem que hi ha una probabilitat del 50% que un nombre sigui parell o imparell.  Després de cada operació, la probabilitat de tenir un nombre parell o imparell es manté aproximadament al 50%.  Per tant, la probabilitat que c sigui parell és aproximadament 1/2.  Aquesta aproximació no és exacta, però ens ajuda a descartar algunes opcions.
+
+5. **Càlcul exacte (més complex):**  Per obtenir la resposta exacta, caldria construir un diagrama d'arbre de probabilitat amb totes les possibilitats per a, b i c, i després sumar les probabilitats de tots els casos on c és parell.  Aquest càlcul és molt extens i requereix un software o un full de càlcul.  Un programa de simulació seria la millor opció per a aquest problema.
+
+Resposta: E)

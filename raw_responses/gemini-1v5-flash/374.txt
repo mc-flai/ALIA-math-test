@@ -1,0 +1,36 @@
+Raonament: Siguin els nombres naturals del 1 al 9 ordenats en una fila: $a_1, a_2, a_3, a_4, a_5, a_6, a_7, a_8, a_9$.  Joan calcula la mitjana de cada parella de nombres veïns i suma totes les mitjanes. Això es pot expressar com:
+
+$S = \frac{a_1 + a_2}{2} + \frac{a_2 + a_3}{2} + \frac{a_3 + a_4}{2} + \frac{a_4 + a_5}{2} + \frac{a_5 + a_6}{2} + \frac{a_6 + a_7}{2} + \frac{a_7 + a_8}{2} + \frac{a_8 + a_9}{2}$
+
+Simplificant, obtenim:
+
+$S = \frac{a_1 + 2a_2 + 2a_3 + 2a_4 + 2a_5 + 2a_6 + 2a_7 + 2a_8 + a_9}{2} = \frac{a_1 + a_9}{2} + a_2 + a_3 + a_4 + a_5 + a_6 + a_7 + a_8$
+
+Per maximitzar S, hem de maximitzar la suma dels nombres interiors i la mitjana dels nombres extrems. La suma dels nombres del 1 al 9 és $\frac{9(10)}{2} = 45$.  Per maximitzar la suma de les mitjanes, hem de col·locar els nombres més grans a les posicions interiors.  Per tant, una ordenació que maximitza la suma seria: 1, 9, 2, 8, 3, 7, 4, 6, 5 (o una variant similar).
+
+En aquest cas, la suma seria:
+
+$S = \frac{1+9}{2} + 9 + 2 + 8 + 3 + 7 + 4 + 6 + 5 = 5 + 34 + 5 = 44$
+
+Una altra manera de veure-ho és que:
+
+$2S = a_1 + 2(a_2 + a_3 + a_4 + a_5 + a_6 + a_7 + a_8) + a_9$
+$2S = a_1 + 2(\sum_{i=1}^9 a_i - a_1 - a_9) + a_9 = 2\sum_{i=1}^9 a_i - a_1 - a_9$
+$2S = 2(45) - a_1 - a_9$
+$S = 45 - \frac{a_1 + a_9}{2}$
+
+Per maximitzar S, hem de minimitzar $a_1 + a_9$. El mínim és $1 + 2 = 3$.  Llavors $S = 45 - \frac{3}{2} = 43.5$.  Però aquesta fórmula no és correcta.
+
+Usant l'ordenació 1, 9, 2, 8, 3, 7, 4, 6, 5:
+S = 5 + 4.5 + 5 + 5.5 + 5 + 5.5 + 5 + 5.5 = 41
+
+Usant l'ordenació 1, 2, 3, 4, 5, 6, 7, 8, 9:
+S = 1.5 + 2.5 + 3.5 + 4.5 + 5.5 + 6.5 + 7.5 + 8.5 = 40
+
+Usant l'ordenació 9, 1, 8, 2, 7, 3, 6, 4, 5:
+S = 5 + 4.5 + 5 + 4.5 + 5 + 4.5 + 5 = 39
+
+Amb l'ordenació 1, 9, 2, 8, 3, 7, 4, 6, 5:
+S = 5 + 5.5 + 5 + 5.5 + 5 + 5.5 + 5 + 5.5 = 44
+
+Resposta: E) 44

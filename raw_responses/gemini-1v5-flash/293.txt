@@ -1,0 +1,20 @@
+Raonament: El nombre que s'ha de formar és 2017.  Aitana escriu els nombres de l'1 al 100.  Per maximitzar el nombre de 2017 que pot formar, ha de buscar la major quantitat de "2", "0", "1" i "7" en aquesta seqüència de nombres.
+
+Comptem quantes vegades apareix cada xifra:
+
+* **2:** Apareix 20 vegades (2, 12, 20, 21...92)
+* **0:** Apareix 11 vegades (10, 20, 30...100)
+* **1:** Apareix 21 vegades (1, 10, 11...91)
+* **7:** Apareix 20 vegades (7, 17, 27...97)
+
+Per formar un 2017 necessitem: 1 x 2, 1 x 0, 1 x 1, 1 x 7.
+
+El mínim nombre de cada xifra que tenim és 11 (per al 0).  Per tant, podem formar com a màxim 11 nombres 2017.  Però la pregunta demana la màxima quantitat de còpies que es poden obtenir *esborrant xifres*.  Això significa que podem utilitzar les xifres múltiples vegades.
+
+Si utilitzem tots els zeros (11), només podem formar 11 nombres 2017.  Però tenim més "2", "1" i "7".  Per tant, el nombre de 2017 que podem formar està limitat pel nombre de zeros.
+
+Però la pregunta diu que les xifres no esborrades es mantenen en el mateix ordre.  Això significa que no podem simplement agafar totes les xifres i reordenar-les.  Hem de buscar seqüències de 2017 dins de la seqüència de nombres de l'1 al 100.  És molt difícil trobar més de 5 seqüències de 2017 sense alterar l'ordre.
+
+Analitzant la seqüència, és difícil trobar més de 5 seqüències de 2017 sense alterar l'ordre.  És possible que hi hagi alguna combinació que permeti obtenir 6, però és molt improbable.
+
+Resposta: B)

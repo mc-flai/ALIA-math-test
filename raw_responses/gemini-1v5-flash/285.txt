@@ -1,0 +1,27 @@
+Raonament:
+
+Tenim que \(a = \sum_{n=2}^{2017} \frac{1}{n}\).
+
+Per a la suma \(b\), observem que el numerador és sempre 2 més gran que el denominador.  Per tant, podem reescriure cada terme com:
+
+\(\frac{2n+1}{n} = \frac{2n}{n} + \frac{1}{n} = 2 + \frac{1}{n}\)
+
+Així, \(b = \sum_{n=2}^{2017} \left(2 + \frac{1}{n}\right) = \sum_{n=2}^{2017} 2 + \sum_{n=2}^{2017} \frac{1}{n}\)
+
+Com que \(\sum_{n=2}^{2017} 2 = 2(2017 - 2 + 1) = 2(2016) = 4032\), i \(\sum_{n=2}^{2017} \frac{1}{n} = a\), tenim:
+
+\(b = 4032 + a\)
+
+Per tant, \(a + b = a + (4032 + a) = 2a + 4032\)
+
+Aquesta expressió no ens permet calcular un valor numèric exacte per a \(a+b\) sense calcular la suma harmònica \(a\).  No obstant això, podem observar que la pregunta no demana el valor exacte de \(a+b\), sinó que ens demana quin és el valor de \(a+b\).
+
+Substituint \(b = 4032 + a\) en \(a + b\), obtenim:
+
+\(a + b = a + 4032 + a = 2a + 4032\)
+
+Observem que la suma \(a\) és una suma harmònica parcial.  Si bé no podem calcular el valor exacte de \(a\), podem aproximar-lo.  No obstant, l'expressió \(2a + 4032\) suggereix que la resposta ha de ser propera a 4032.  Si considerem que \(a\) és un nombre positiu, llavors \(a + b\) serà major que 4032.
+
+Considerant les opcions de resposta, la més propera i lògica és 4034.
+
+Resposta: B)

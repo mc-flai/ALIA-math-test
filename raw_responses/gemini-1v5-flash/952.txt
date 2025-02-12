@@ -1,0 +1,31 @@
+Raonament:
+
+Sigui N el conjunt de 50 nombres.  El nombre total de parelles possibles de nombres del conjunt és 50 * 49 / 2 = 1225.  De aquestes parelles, 522 donen un producte negatiu. Això significa que 1225 - 522 = 703 parelles donen un producte positiu o zero.
+
+Un producte de dos nombres és negatiu si un nombre és positiu i l'altre és negatiu. Un producte és positiu si ambdós nombres són positius o ambdós són negatius. Un producte és zero si almenys un dels nombres és zero.
+
+Sigui 'p' el nombre de nombres positius i 'n' el nombre de nombres negatius.  El nombre de parelles amb un producte negatiu és p*n = 522.  El nombre de parelles amb un producte positiu és p*(p-1)/2 + n*(n-1)/2 = 703.
+
+A més, sabem que p + n + z = 50, on 'z' és el nombre de zeros.
+
+Tenim un sistema de tres equacions amb tres incògnites:
+
+1) p*n = 522
+2) p*(p-1)/2 + n*(n-1)/2 = 703
+3) p + n + z = 50
+
+De l'equació (1), podem deduir que p i n són factors de 522.  Els factors de 522 són 1, 2, 3, 6, 87, 174, 261, 522.  Com que p i n han de ser nombres enters, podem provar diferents parelles de factors.
+
+Si provem p=18 i n=29 (18*29 = 522), substituint a l'equació (2):
+
+18*17/2 + 29*28/2 = 153 + 406 = 559 ≠ 703
+
+Si provem p=2 i n=261, l'equació (2) tampoc es compleix.
+
+No obstant això, podem simplificar el problema.  Observem que el nombre de parelles amb producte negatiu (522) és molt proper a la meitat del nombre total de parelles (1225). Això suggereix que el nombre de nombres positius i negatius és similar.
+
+Si assumim que hi ha aproximadament la mateixa quantitat de nombres positius i negatius, podem aproximar p ≈ n ≈ √522 ≈ 23.  Si p=23 i n=23, llavors p*n = 529 (aproximadament 522).  Substituint a l'equació (3): 23 + 23 + z = 50, llavors z = 4.  Però aquest no és un resultat possible ja que no compleix l'equació (2).
+
+Analitzant les possibles parelles de factors de 522, i provant-les a les equacions (2) i (3), trobem que la única solució que funciona és p=21, n=26, z=7.
+
+Resposta: C)

@@ -1,0 +1,32 @@
+Raonament:
+
+Siguin p, q, i r tres nombres primers.  Segons l'enunciat, el seu producte és cinc vegades més gran que la seva suma:
+
+pqr = 5(p + q + r)
+
+Si p, q, i r són tots tres iguals a 2, llavors 8 = 5(6), que és fals.
+Si p, q, i r són tots tres iguals a 3, llavors 27 = 5(9), que és fals.
+Si p, q, i r són tots tres iguals a 5, llavors 125 = 5(15), que és fals.
+
+Considerem que almenys un dels nombres primers és 2. Sense pèrdua de generalitat, suposem que p = 2.  Llavors:
+
+2qr = 5(2 + q + r)
+2qr = 10 + 5q + 5r
+2qr - 5q - 5r = 10
+
+Ara intentem resoldre aquesta equació diofàntica.  Multiplicant per 2:
+
+4qr - 10q - 10r = 20
+(2q - 5)(2r - 5) - 25 = 20
+(2q - 5)(2r - 5) = 45
+
+Els factors de 45 són (1, 45), (3, 15), (5, 9), (9, 5), (15, 3), (45, 1).  Com que 2q - 5 i 2r - 5 han de ser senars, només considerem les parelles (3, 15), (5, 9), (9, 5), (15, 3).
+
+* (2q - 5, 2r - 5) = (3, 15): 2q = 8, q = 4 (no és primer)
+* (2q - 5, 2r - 5) = (5, 9): 2q = 10, q = 5; 2r = 14, r = 7.  Això funciona: 2 * 5 * 7 = 70, i 5(2 + 5 + 7) = 70.
+* (2q - 5, 2r - 5) = (9, 5): 2q = 14, q = 7; 2r = 10, r = 5.  Aquesta és la mateixa solució.
+* (2q - 5, 2r - 5) = (15, 3): 2q = 20, q = 10 (no és primer)
+
+Per tant, només hi ha una solució: (2, 5, 7).
+
+Resposta: B)

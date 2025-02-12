@@ -1,0 +1,9 @@
+Raonament: Un nombre de 6 xifres format únicament pels dígits 1 i 2 té 2⁶ = 64 possibilitats.  Després de recórrer 9 km, el conductor observa un nou nombre de 6 xifres amb els mateixos dígits.  Això significa que el nombre inicial més 9 ha de ser un altre nombre de 6 xifres format només per 1s i 2s.  Per tant, ens interessa saber quants parells de nombres (x, x+9) compleixen aquesta condició.
+
+Considerem les possibilitats per a la xifra de les unitats. Si la xifra de les unitats de x és 1, la xifra de les unitats de x+9 serà 0, que no és permès.  Per tant, la xifra de les unitats de x ha de ser 2.  En aquest cas, la xifra de les unitats de x+9 serà 1.
+
+Ara considerem la xifra de les desenes. Si la xifra de les desenes de x és 1, la xifra de les desenes de x+9 serà 2 (11+9=20). Si la xifra de les desenes de x és 2, la xifra de les desenes de x+9 serà 1 (21+9=30, però com que només podem usar 1 i 2, hauríem de considerar el transport).  En aquest cas, la xifra de les desenes de x+9 serà 1.
+
+Aquest patró es repeteix per a totes les xifres.  Per cada xifra, hi ha 2 possibilitats (1 o 2).  Però, com que la suma de 9 pot provocar un transport, no podem simplement multiplicar les possibilitats independentment.  En canvi, hem de considerar que la xifra de les unitats ha de ser 2, i la resta de xifres poden ser 1 o 2.  Per tant, hi ha 2⁵ = 32 possibilitats per a les xifres restants.  Però, com que la xifra de les unitats ha de ser 2, només hi ha 32 possibilitats.
+
+Resposta: E)

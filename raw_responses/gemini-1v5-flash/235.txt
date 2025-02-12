@@ -1,0 +1,30 @@
+Raonament:
+
+Tenim dues condicions:
+
+1. f(x) = 2f(x + 1)  per a tot x ∈ R
+2. f(x + y) = f(x)f(y) per a tot x, y ∈ R
+
+De la segona condició, si fem x = 0, obtenim f(y) = f(0)f(y).  Si f(y) no és zero per a tot y, podem dividir per f(y) i obtenim f(0) = 1.
+
+Ara, utilitzem la primera condició: f(x) = 2f(x + 1).  Si substituïm x per x - 1, obtenim:
+
+f(x - 1) = 2f(x)
+
+Ara, volem calcular f(2016) / f(2014).  Utilitzem la segona condició amb x = 2014 i y = 2:
+
+f(2014 + 2) = f(2016) = f(2014)f(2)
+
+Per tant, f(2016) / f(2014) = f(2).
+
+Ara, utilitzem la primera condició amb x = 0:
+
+f(0) = 2f(1)  =>  1 = 2f(1)  =>  f(1) = 1/2
+
+Utilitzem la segona condició amb x = 1 i y = 1:
+
+f(1 + 1) = f(2) = f(1)f(1) = (1/2)(1/2) = 1/4
+
+Per tant, f(2016) / f(2014) = f(2) = 1/4
+
+Resposta: C)

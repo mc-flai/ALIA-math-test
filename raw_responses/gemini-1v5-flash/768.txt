@@ -1,0 +1,53 @@
+Raonament:
+
+La calculadora de Sara no respecta l'ordre de les operacions correctament.  Quan escriu `a + b ÷ c`, la calculadora calcula `b ÷ c` primer i després suma `a`.  Quan escriu `b + a ÷ c`, la calculadora calcula `a ÷ c` primer i després suma `b`.
+
+Tenim les següents equacions:
+
+* a + b/c = 11  (Equació 1)
+* b + a/c = 14  (Equació 2)
+
+Restem l'equació 1 de l'equació 2:
+
+(b + a/c) - (a + b/c) = 14 - 11
+b + a/c - a - b/c = 3
+b - a + a/c - b/c = 3
+b - a + (a - b)/c = 3
+
+Multiplicant per c:
+
+c(b - a) + a - b = 3c
+c(b - a) - (b - a) = 3c
+(c - 1)(b - a) = 3c
+
+Ara, provem amb diferents valors de c per veure si trobem una solució senzilla amb enters positius per a, b i c.
+
+Si c = 1, llavors 0 = 3, que és fals.
+Si c = 2, llavors (2 - 1)(b - a) = 6,  b - a = 6.
+Si c = 3, llavors (3 - 1)(b - a) = 9, b - a = 9/2, que no és un enter.
+Si c = 4, llavors (4 - 1)(b - a) = 12, b - a = 4.
+Si c = 5, llavors (5 - 1)(b - a) = 15, b - a = 15/4, que no és un enter.
+
+Considerem el cas c = 2 i b - a = 6.  Substituint a l'equació 1:
+
+a + b/2 = 11
+a + (a + 6)/2 = 11
+2a + a + 6 = 22
+3a = 16
+a = 16/3, que no és un enter.
+
+Considerem el cas c = 4 i b - a = 4.  Substituint a l'equació 1:
+
+a + b/4 = 11
+a + (a + 4)/4 = 11
+4a + a + 4 = 44
+5a = 40
+a = 8
+b = a + 4 = 12
+
+Ara comprovem amb l'equació 2:
+b + a/c = 12 + 8/4 = 12 + 2 = 14.  Això és correcte.
+
+El resultat correcte de (a+b)/c és (8+12)/4 = 20/4 = 5
+
+Resposta: E)

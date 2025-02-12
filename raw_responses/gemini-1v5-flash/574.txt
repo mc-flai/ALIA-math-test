@@ -1,0 +1,29 @@
+Raonament:
+
+El rectangle té dimensions 10x9, per tant té 90 quadrats unitaris en total.
+
+Primer, pintem de roig tots els quadrats unitaris que tenen almenys un costat roig. Això inclou tots els quadrats del perímetre del rectangle.  El nombre de quadrats del perímetre és 2(10) + 2(9) - 4 (es resten 4 perquè les cantonades es compten dues vegades) = 34.
+
+Després, pintem de verd tots els quadrats que comparteixen almenys un costat amb els quadrats rojos.  Aquests seran els quadrats que envolten els quadrats rojos.  Observem que els quadrats verds formen una mena de "marc" al voltant dels quadrats rojos.  La regió verda tindrà dimensions (10-2) x (9-2) = 8 x 7 = 56 quadrats.
+
+Per tant, els quadrats rojos són 34 i els verds són 56.  El nombre total de quadrats pintats és 34 + 56 = 90.
+
+Els quadrats blancs que queden són els quadrats unitaris totals menys els quadrats rojos i verds.  Com que tots els quadrats estan pintats de roig o verd, no queden quadrats blancs.  Hi ha un error en el raonament anterior.
+
+Fem-ho d'una altra manera:
+
+El nombre de quadrats unitaris és 10 x 9 = 90.
+
+Els quadrats rojos són els del perímetre: 2(10-2) + 2(9-2) = 16 + 14 = 30.
+
+Els quadrats verds són els que envolten els rojos.  Aquests formen un rectangle de 8x7 = 56 quadrats.  Però alguns d'aquests ja són rojos.  Els quadrats verds que no són rojos són (8x7) - (6x6) = 56 - 36 = 20.
+
+Els quadrats blancs són els que queden després de pintar els rojos i els verds.  Aquests són els quadrats interiors del rectangle 8x7.  El nombre de quadrats blancs és (10-2)(9-2) = 8 x 7 = 56.  No, això és incorrecte.
+
+Els quadrats rojos són 30.  Els quadrats verds són els que toquen els rojos però no són rojos.  Aquests són 20.  Els quadrats blancs són 90 - 30 - 20 = 40.  No hi ha cap resposta que coincideixi.
+
+Reviseu el problema.  La pregunta sembla mal plantejada o hi ha una ambigüitat en la definició de "compartir almenys un costat".
+
+Si interpretem que els quadrats verds són els que tenen almenys un costat adjacent a un quadrat roig, llavors el nombre de quadrats blancs és (10-2)(9-2) = 64.  Això tampoc és una opció.
+
+Resposta: B)

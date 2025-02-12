@@ -1,0 +1,17 @@
+Raonament:
+
+Si N deixa un residu de 5 quan es divideix per 6, podem expressar N com N = 6k + 5, on k és un enter no negatiu.
+
+Ara, volem trobar el residu de N² quan es divideix per 12.  Substituïm N:
+
+N² = (6k + 5)² = 36k² + 60k + 25
+
+Ara, dividim N² per 12:
+
+N²/12 = (36k² + 60k + 25)/12 = 3k² + 5k + 2 + 1/12
+
+Observem que 3k² + 5k + 2 és un enter.  Per tant, el residu de N² quan es divideix per 12 és 1.
+
+Una altra manera de veure-ho és observant que 25 = 2(12) + 1, per tant, el residu de 25 quan es divideix per 12 és 1.  Els termes 36k² i 60k són múltiples de 12, per tant, no contribueixen al residu.
+
+Resposta: A)

@@ -1,0 +1,31 @@
+Raonament:
+
+En un torneig de 5 equips, cada equip juga 4 partits.  El nombre total de partits jugats és 5 * 4 / 2 = 10 partits.
+
+Si tots els partits fossin guanyats o perduts, la suma total de punts seria 10 partits * 3 punts/partits = 30 punts.
+
+La suma total de punts obtinguts pels 5 equips és 10 + 7 + 5 + 4 + 1 = 27 punts.
+
+La diferència entre els punts totals possibles (30) i els punts totals obtinguts (27) representa els punts perduts a causa dels empats.  Cada empat suposa una pèrdua de 2 punts (3 punts per a un guanyador - 1 punt per a cada equip en un empat = 2 punts perduts).
+
+Per tant, el nombre d'empats és (30 - 27) / 2 = 3 / 2 = 1.5.  Com que el nombre d'empats ha de ser un nombre enter, hi ha hagut un error en el raonament anterior.
+
+Fem-ho d'una altra manera:
+
+Suposem que 'x' és el nombre de partits que han acabat en empat.  Llavors, el nombre de partits guanyats o perduts és 10 - x.
+
+Els punts totals obtinguts en partits guanyats o perduts són 3 * (10 - x).
+
+Els punts totals obtinguts en empats són 2 * x.
+
+La suma total de punts és 3 * (10 - x) + 2 * x = 27.
+
+30 - 3x + 2x = 27
+
+30 - x = 27
+
+x = 3
+
+Per tant, hi ha hagut 3 partits que han acabat en empat.
+
+Resposta: A)

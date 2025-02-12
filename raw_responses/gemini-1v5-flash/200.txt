@@ -1,0 +1,20 @@
+Raonament:
+
+Comencem amb un nombre parell m no divisible per 4. Això significa que m es pot escriure com 2p, on p és un nombre senar.  El major divisor de m diferent de m és p.  Per tant, la primera iteració retorna m + p = 2p + p = 3p.
+
+Ara analitzem el nombre 3p.  Com que p és senar, 3p és senar. El major divisor de 3p diferent de 3p dependrà de la factorització de p.  No podem determinar-ho sense més informació sobre p.  Però, si assumim que p és un nombre primer (per simplificar), el major divisor de 3p diferent de 3p és 3.  En aquest cas, la segona iteració retorna 3p + 3 = 3(p+1).
+
+Si continuem amb aquesta simplificació (p primer), la següent iteració dependrà de la factorització de 3(p+1).  No podem predir el resultat de manera general després de 6 iteracions sense conèixer la forma de p.  Per tant, la resposta depèn d'altres divisors de m.
+
+Però, si considerem un exemple concret, podem veure la complexitat.  Suposem m = 6.  Llavors:
+
+1. m = 6, k = 3,  6 + 3 = 9
+2. 9, k = 3, 9 + 3 = 12
+3. 12, k = 6, 12 + 6 = 18
+4. 18, k = 9, 18 + 9 = 27
+5. 27, k = 9, 27 + 9 = 36
+6. 36, k = 18, 36 + 18 = 54
+
+54 no coincideix amb cap de les opcions donades.  Això demostra que no podem trobar una fórmula general simple.
+
+Resposta: E)

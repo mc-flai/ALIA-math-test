@@ -1,0 +1,18 @@
+Raonament: L'equació és $(x^2 - 4)^{x^2+1} = 9$.  Perquè aquesta equació sigui certa, la base $(x^2 - 4)$ ha de ser igual a 3 o -3, i l'exponent $(x^2 + 1)$ ha de ser un nombre enter.
+
+Cas 1: $x^2 - 4 = 3$
+$x^2 = 7$
+$x = \pm \sqrt{7}$  Aquestes solucions no són enteres.
+
+Cas 2: $x^2 - 4 = -3$
+$x^2 = 1$
+$x = \pm 1$
+
+Si $x = 1$, llavors $(1^2 - 4)^{1^2 + 1} = (-3)^2 = 9$.  Això és una solució vàlida.
+Si $x = -1$, llavors $((-1)^2 - 4)^{(-1)^2 + 1} = (-3)^2 = 9$.  Això també és una solució vàlida.
+
+Cas 3:  Considerem la possibilitat que $x^2 + 1$ sigui parell.  En aquest cas, $(x^2 - 4)^{x^2+1}$ sempre serà positiu, independentment del signe de $(x^2 - 4)$.  Per tant, no podem tenir $(x^2 - 4) = -3$ si $x^2 + 1$ és parell.
+
+Per tant, les úniques solucions enteres són $x = 1$ i $x = -1$.
+
+Resposta: C)

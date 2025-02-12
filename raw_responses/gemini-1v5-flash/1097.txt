@@ -1,0 +1,27 @@
+Raonament:
+
+Si la suma de cada parell de nombres adjacents és múltiple de 3, llavors la diferència entre aquests dos nombres ha de ser múltiple de 3.  Això significa que els nombres adjacents han de pertànyer a la mateixa classe de congruència mòdul 3.  Les classes de congruència mòdul 3 són:
+
+* Classe 0: {3, 6, 9, 12}
+* Classe 1: {1, 4, 7, 10}
+* Classe 2: {2, 5, 8, 11}
+
+Perquè la condició es compleixi, els nombres en els vèrtexs de l'octàgon han de ser tots de la mateixa classe de congruència mòdul 3, o bé alternar entre dues classes de congruència.  No és possible que hi hagi tres classes de congruència representades en els vèrtexs de l'octàgon.
+
+Si Cristina utilitza només una classe de congruència, utilitzaria 4 nombres.  Com que utilitza 8 nombres, ha d'utilitzar dues classes de congruència.  Per tant, ha d'alternar entre dues classes.
+
+Les opcions de resposta ens donen els nombres que *no* ha posat.  Analitzem cada opció:
+
+* **A) 1, 4, 7, 10:** Aquests són tots de la classe 1. Si aquests no estiguessin, quedarien els de la classe 0 i 2, que no poden alternar.
+* **B) 3, 5, 7, 9:**  Conté nombres de la classe 0 (3, 9) i la classe 2 (5).  Si aquests no estiguessin, quedarien els de la classe 1 i alguns de la classe 2, que podrien alternar.
+* **C) 1, 2, 11, 12:** Conté nombres de les tres classes.
+* **D) 5, 6, 7, 8:** Conté nombres de la classe 0 (6), la classe 1 (7) i la classe 2 (5, 8).
+* **E) 3, 6, 9, 12:** Aquests són tots de la classe 0. Si aquests no estiguessin, quedarien els de la classe 1 i 2, que podrien alternar.
+
+Només l'opció B permet una alternança entre dues classes de congruència. Si eliminem 3, 5, 7, 9, queden 1, 2, 4, 6, 8, 10, 11, 12.  Podem alternar entre la classe 1 (1, 4, 10) i la classe 2 (2, 8, 11) i la classe 0 (6, 12).  Això no funciona.
+
+Si eliminem 3, 5, 7, 9, queden 1, 2, 4, 6, 8, 10, 11, 12.  Podem alternar entre 1, 4, 7, 10 (classe 1) i 2, 5, 8, 11 (classe 2).  Però l'opció B diu que 3, 5, 7, 9 no estan utilitzats.  Si eliminem aquests, no podem alternar entre dues classes.
+
+L'única opció que funciona és la B.
+
+Resposta: B)

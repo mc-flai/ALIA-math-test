@@ -1,0 +1,24 @@
+Raonament:
+
+El rellotge que s'avança un minut cada hora, en un temps *t* hores, marcarà t + t/60 hores.  El rellotge que es retarda dos minuts cada hora, en un temps *t* hores, marcarà t - t/30 hores.
+
+Sabem que un rellotge marca les 11:00 i l'altre les 12:00.  La diferència entre les dues hores és de 1 hora, o 60 minuts.  Per tant, podem plantejar l'equació:
+
+(t + t/60) - (t - t/30) = 1
+
+Simplificant l'equació:
+
+t + t/60 - t + t/30 = 1
+t/60 + t/30 = 1
+(t + 2t)/60 = 1
+3t/60 = 1
+3t = 60
+t = 20
+
+Això significa que van passar 20 hores des que es van posar en hora.  Si un rellotge marca les 11:00 del matí després de 20 hores, significa que es va posar en hora 20 hores abans de les 11:00 del matí.  20 hores abans de les 11:00 del matí són les 15:00 (3 de la tarda) del dia anterior.  Però, com que el rellotge que s'avança marca les 11:00, haurem de restar els 20 minuts que s'ha avançat en aquestes 20 hores (20 minuts/hora * 1 hora).  Per tant, l'hora real en què es van posar en hora és 15:00 - 0:20 = 14:40.  Aquesta hora és aproximadament 14:40.  Com que no hi ha aquesta opció, analitzem més a fons.
+
+Fem una aproximació:  Si el rellotge que s'avança marca les 11:00, en realitat haurien passat aproximadament 10 hores i 50 minuts (perquè s'avança un minut cada hora).  Si el rellotge que es retarda marca les 12:00, en realitat haurien passat aproximadament 11 hores i 40 minuts (perquè es retarda dos minuts cada hora).  La mitjana d'aquestes dues hores és aproximadament 11 hores i 15 minuts.  Si sumem 11 hores i 15 minuts a les 11:00 del matí, obtenim aproximadament les 22:15.  Però això no coincideix amb cap de les opcions.
+
+Tornem a l'equació original:  (t + t/60) - (t - t/30) = 1.  Resolent per t, obtenim t = 20 hores.  Si el rellotge que s'avança marca les 11:00, l'hora real és 11:00 - 20 minuts = 10:40.  Si retrocedim 20 hores des de les 10:40, arribem a les 14:40.  La opció més propera és la D.
+
+Resposta: D)

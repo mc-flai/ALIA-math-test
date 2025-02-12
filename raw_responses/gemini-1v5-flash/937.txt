@@ -1,0 +1,21 @@
+Raonament:
+
+Un polinomi de grau 5 amb coeficients 1 o -1 es pot escriure en la forma:
+
+P(x) = a₅x⁵ + a₄x⁴ + a₃x³ + a₂x² + a₁x + a₀
+
+on cada aᵢ ∈ {1, -1} per i = 0, 1, 2, 3, 4, 5.
+
+Si 1 és una arrel, llavors P(1) = 0.  Això significa:
+
+a₅ + a₄ + a₃ + a₂ + a₁ + a₀ = 0
+
+Com que cada aᵢ és 1 o -1, la suma de sis termes, cadascun dels quals és 1 o -1, només pot ser 0 si hi ha tres 1s i tres -1s.
+
+El nombre de maneres de triar 3 posicions per als 1s (i les altres 3 posicions seran -1s) entre les 6 posicions és donat per la combinació:
+
+₆C₃ = 6! / (3! * 3!) = (6 * 5 * 4) / (3 * 2 * 1) = 20
+
+Per tant, hi ha 20 polinomis de grau 5 amb coeficients 1 o -1 que tenen 1 com a arrel.
+
+Resposta: D)

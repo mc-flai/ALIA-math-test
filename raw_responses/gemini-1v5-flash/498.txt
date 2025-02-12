@@ -1,0 +1,21 @@
+Raonament:  El problema ens dona les distàncies entre parells de punts col·lineals.  Perquè els punts estiguin en una línia recta, la suma de les distàncies entre els punts ha de ser consistent independentment de l'ordre en què els sumem.  Provem diferents ordres:
+
+* **Opció 1: A-B-C-D:** 1 + 2 + 3 = 6 cm.  La distància entre A i D hauria de ser 6 cm, però ens diuen que és 4 cm.  Això és una contradicció.
+
+* **Opció 2: A-B-D-C:** 1 + 4 + 3 = 8 cm.  Això tampoc funciona.
+
+* **Opció 3: A-C-B-D:**  No és possible ja que B està entre A i C.
+
+* **Opció 4: A-C-D-B:** No és possible ja que B està entre A i C.
+
+* **Opció 5: A-D-B-C:** 4 + 1 + 2 = 7 cm. Això tampoc funciona.
+
+* **Opció 6: A-D-C-B:** 4 + 3 + 2 = 9 cm. Això tampoc funciona.
+
+No obstant això, si considerem que els punts poden estar en ordre invers, podem trobar una solució.  Si els punts estan en l'ordre A-D-C-B, les distàncies són: AD = 4, DC = 3, CB = 2, BA = 1.  La distància total és 9 cm.  Si els punts estan en l'ordre B-C-D-A, les distàncies són: BC = 2, CD = 3, DA = 4, AB = 1.  La distància total és 10 cm.
+
+Però, si considerem que els punts estan en l'ordre A-B-C-D, la distància total és 1+2+3 = 6 cm, mentre que la distància AD és 4 cm.  Si considerem l'ordre A-D-C-B, la distància total és 4+3+2 = 9 cm, mentre que la distància AB és 1 cm.  No hi ha cap ordre que compleixi totes les condicions.
+
+L'única manera de que funcioni és si els punts no estan en l'ordre lineal que esperem.  Per tant, la única solució possible és que els punts estiguin disposats de manera que la distància entre dos punts no sigui la suma de les distàncies entre els punts intermedis.  Això implica que els punts no estan en una línia recta.
+
+Resposta: E) És impossible saber-ho.

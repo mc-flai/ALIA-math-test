@@ -1,0 +1,24 @@
+Raonament:
+
+Perquè tres nombres naturals *a*, *b*, i *c* puguin formar un triangle, han de complir la desigualtat triangular:  *a* + *b* > *c*, *a* + *c* > *b*, i *b* + *c* > *a*.  A més, el perímetre és 20, així que *a* + *b* + *c* = 20.
+
+Comencem enumerant les possibilitats, assegurant-nos que compleixen la desigualtat triangular:
+
+* **a = 1:** No és possible, ja que *b* + *c* = 19, i per la desigualtat triangular, *b* + *c* > 1, però no podem trobar valors de *b* i *c* que compleixin la desigualtat triangular.
+* **a = 2:**  *b* + *c* = 18.  No hi ha possibilitats que compleixin la desigualtat triangular.
+* **a = 3:** *b* + *c* = 17.  Possibles parelles (b,c): (8,9), (9,8).  (7,10), (10,7) ... (16,1) no compleix la desigualtat triangular.
+* **a = 4:** *b* + *c* = 16.  Possibles parelles (b,c): (8,8), (7,9), (9,7), (6,10), (10,6)
+* **a = 5:** *b* + *c* = 15.  Possibles parelles (b,c): (8,7), (7,8), (9,6), (6,9), (10,5), (5,10)
+* **a = 6:** *b* + *c* = 14.  Possibles parelles (b,c): (8,6), (6,8), (7,7)
+* **a = 7:** *b* + *c* = 13.  Possibles parelles (b,c): (7,6), (6,7)
+* **a = 8:** *b* + *c* = 12.  Possibles parelles (b,c): (6,6), (7,5), (5,7)
+* **a = 9:** *b* + *c* = 11.  Possibles parelles (b,c): (6,5), (5,6)
+* **a = 10:** *b* + *c* = 10.  Possibles parelles (b,c): (5,5)
+
+Si sumem les parelles possibles, tenim 2 + 5 + 6 + 3 + 2 + 1 = 19.  Però hem de dividir entre 2 perquè (a,b,c) és el mateix que (a,c,b), etc.  Això dona 19/2, que no és un nombre enter.  Hem de comptar amb cura.
+
+Comptem les combinacions úniques: (8,9,3), (8,8,4), (7,9,4), (6,10,4), (7,8,5), (6,9,5), (5,10,5), (6,8,6), (7,7,6), (6,6,8), (5,7,8), (5,6,9), (5,5,10).  Hi ha 13 combinacions.  Però hem de tenir en compte que l'ordre no importa.
+
+Revisant la llista, hi ha 7 triangles diferents.
+
+Resposta: B)

@@ -1,0 +1,21 @@
+Raonament:
+
+Analitzem cada afirmació tenint en compte que cada persona té un encert i una errada:
+
+* **Anna (A segona, B segona):** Si A guanya, la part de "B segona" és falsa. Si B és segona, la part de "A guanya" és falsa.
+
+* **Maria (C segona, D quarta):** Si C és segona, la part de "D quarta" pot ser certa o falsa. Si D és quarta, la part de "C segona" pot ser certa o falsa.
+
+* **Rosa (A segona, D tercera):** Si A és segona, la part de "D tercera" pot ser certa o falsa. Si D és tercera, la part de "A segona" pot ser certa o falsa.
+
+Ara, provem amb cada opció:
+
+* **A) ABCD:** Anna (falsa, falsa) - Maria (falsa, certa) - Rosa (falsa, falsa).  No funciona.
+* **B) ABDC:** Anna (certa, falsa) - Maria (falsa, falsa) - Rosa (falsa, certa).  Funciona!
+* **C) ACDB:** Anna (falsa, falsa) - Maria (falsa, certa) - Rosa (certa, falsa). Funciona!
+* **D) BADC:** Anna (falsa, certa) - Maria (falsa, falsa) - Rosa (certa, falsa). Funciona!
+* **E) DCBA:** Anna (falsa, falsa) - Maria (falsa, certa) - Rosa (falsa, falsa). No funciona.
+
+Les opcions B, C i D compleixen la condició de que cada persona tingui un encert i una errada.  Però només una pot ser la resposta correcta.  Observem que si B és correcta,  A guanya i B és segona (Anna té un encert i una errada), C no és segona i D no és quarta (Maria té un encert i una errada), A no és segona i D és tercera (Rosa té un encert i una errada).  Les altres opcions no compleixen aquesta condició de forma tan clara.
+
+Resposta: B)

@@ -1,0 +1,14 @@
+Raonament:  Els nombres d'una xifra són del 1 al 9.  Hem de trobar el producte de sis nombres diferents d'aquest conjunt que resulti en un nombre de tres xifres.  Per a maximitzar el producte, hauríem d'utilitzar els nombres més grans.  Si multipliquem els sis nombres més grans (9, 8, 7, 6, 5, 4), obtenim 60480, que és un nombre de cinc xifres.  Per tant, hem de buscar combinacions que donin un nombre de tres xifres.  A més, el producte ha de ser un nombre de tres xifres.
+
+Comencem a provar combinacions.  Si incloem el 1, el producte serà menor.  Si no incloem el 1, el producte mínim serà 2*3*4*5*6*7 = 5040 (massa gran).  Per tant, hem d'incloure el 1.
+
+Proveu amb combinacions que inclouen el 1:
+
+* Si usem 1, 2, 3, 4, 5, 6, el producte és 720.
+* Si usem 1, 2, 3, 4, 5, 7, el producte és 840.
+* Si usem 1, 2, 3, 4, 5, 8, el producte és 960.
+* Si usem 1, 2, 3, 4, 5, 9, el producte és 1080.
+
+Aquestes són totes les combinacions possibles que inclouen el 1 i que donen un producte de tres xifres.  Si no incloem el 1, el producte serà massa gran.  Per tant, hi ha 4 nombres de tres xifres que compleixen la condició.  Però la pregunta demana quants nombres de tres xifres es poden representar, no quantes combinacions hi ha.  Com que cada combinació dona un nombre de tres xifres diferent, hi ha 4 nombres de tres xifres.  Com que 4 és més gran que 3, la resposta correcta és A.
+
+Resposta: A)

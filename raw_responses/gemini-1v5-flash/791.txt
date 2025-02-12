@@ -1,0 +1,22 @@
+Raonament: Perquè es pugui construir un triangle amb tres segments de longituds a, b i c, s'ha de complir la desigualtat triangular: la suma de les longituds de qualssevol dos segments ha de ser major que la longitud del tercer segment.  Això es pot expressar amb tres desigualtats:
+
+* a + b > c
+* a + c > b
+* b + c > a
+
+Anem a comprovar cada opció:
+
+A) (2,3,4): 2 + 3 > 4 (Cert), 2 + 4 > 3 (Cert), 3 + 4 > 2 (Cert).  Es pot construir un triangle.
+
+B) (5,2,8): 5 + 2 > 8 (Fals). No es pot construir un triangle.
+
+C) (10,1,10): 10 + 1 > 10 (Cert), 10 + 10 > 1 (Cert), 1 + 10 > 10 (Fals). No es pot construir un triangle.
+
+D) (2,2,2): 2 + 2 > 2 (Cert), 2 + 2 > 2 (Cert), 2 + 2 > 2 (Cert). Es pot construir un triangle.
+
+E) (38,17,23): 38 + 17 > 23 (Cert), 38 + 23 > 17 (Cert), 17 + 23 > 38 (Cert). Es pot construir un triangle.
+
+
+Només les opcions B i C no compleixen la desigualtat triangular en tots els casos.  Com que la pregunta demana amb quin trio NO es pot construir un triangle,  tant B com C serien vàlides.  No obstant, seguint l'ordre de les opcions, la primera que no compleix la desigualtat triangular és la B.
+
+Resposta: B)

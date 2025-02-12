@@ -1,0 +1,11 @@
+Raonament:  Per trobar el mínim nombre de preguntes necessàries, hem d'utilitzar una estratègia eficient.  La millor estratègia és dividir l'espai de nombres possibles a la meitat amb cada pregunta.
+
+Si fem una pregunta com "El teu nombre és major o igual a 8?", dividim els nombres del 1 al 15 en dos grups: 1-7 i 8-15.  La resposta ens dirà a quin grup pertany el nombre.  Després d'aquesta pregunta, ens queden com a màxim 8 nombres possibles.
+
+Amb una segona pregunta, podem dividir aquest grup a la meitat de nou. Per exemple, si el nombre està entre 1 i 7, podem preguntar "El teu nombre és major o igual a 4?". Això ens deixa amb 4 nombres possibles com a màxim.
+
+Amb una tercera pregunta, podem reduir el nombre de possibilitats a 2.  I amb una quarta pregunta, podem identificar el nombre exactament.
+
+Per tant, el mínim nombre de preguntes necessàries és 4.  Qualsevol estratègia que no utilitzi aquest mètode de dividir l'espai de nombres a la meitat necessitarà més preguntes.
+
+Resposta: D)

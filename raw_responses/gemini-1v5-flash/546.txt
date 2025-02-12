@@ -1,0 +1,23 @@
+Raonament: El cangur A salta 6 metres en cada salt.  El cangur B salta una distància creixent: 1m, 2m, 3m, etc.  Necessitem trobar el nombre de salts de B que superen la distància recorreguda per A.
+
+La distància recorreguda per A després de *n* salts és 6*n metres.
+
+La distància recorreguda per B després de *n* salts és la suma d'una progressió aritmètica: 1 + 2 + 3 + ... + n = n(n+1)/2 metres.
+
+Volem trobar el menor valor de *n* tal que la distància de B sigui major o igual a la distància de A:
+
+n(n+1)/2 ≥ 6n
+
+Multiplicant per 2:
+
+n(n+1) ≥ 12n
+
+Si n > 0, podem dividir per n:
+
+n + 1 ≥ 12
+
+n ≥ 11
+
+Per tant, el cangur B necessita fer almenys 11 salts per superar al cangur A.
+
+Resposta: C)

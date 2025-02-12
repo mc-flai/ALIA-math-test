@@ -1,0 +1,21 @@
+Raonament: El volum d'una esfera és proporcional al cub del seu radi (V = (4/3)πr³).  La superfície d'una esfera és proporcional al quadrat del seu radi (A = 4πr²).  Si tenim dues esferes iguals amb una superfície de 2 mm², podem trobar el radi de cada esfera:
+
+2 mm² = 4πr²
+r² = 2 mm² / (4π)
+r = √(2 mm² / (4π))
+
+Quan unim les dues esferes, el volum total serà el doble del volum d'una sola esfera.  Si el nou radi és R, llavors:
+
+2 * (4/3)πr³ = (4/3)πR³
+2r³ = R³
+R = 2^(1/3)r
+
+Ara, calculem la superfície de la nova esfera:
+
+A_nova = 4πR² = 4π(2^(1/3)r)² = 4π(2^(2/3))r²
+
+Com que 4πr² = 2 mm², substituïm:
+
+A_nova = 2^(2/3) * 2 mm² = 2^(2/3 + 1) mm² = 2^(5/3) mm²
+
+Resposta: E)

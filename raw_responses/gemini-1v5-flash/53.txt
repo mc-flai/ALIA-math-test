@@ -1,0 +1,41 @@
+Raonament:
+
+Primer, cal calcular el nombre total de permutacions possibles de les sis lletres A, C, G, N, R, U.  Això és 6! (6 factorial) = 6 x 5 x 4 x 3 x 2 x 1 = 720.  Cada permutació representa una paraula en aquest llenguatge.
+
+Volem trobar la paraula en la posició 537.  Per fer-ho, podem utilitzar un mètode similar a la conversió de nombres a altres bases.  Anirem ordenant les lletres per ordre alfabètic i veurem quantes paraules comencen per cada lletra.
+
+* Paraules que comencen per A: 5! = 120
+* Paraules que comencen per C: 5! = 120
+* Paraules que comencen per G: 5! = 120
+* Paraules que comencen per N: 5! = 120
+
+537 - 120 - 120 - 120 - 120 = 57.  Això significa que la paraula que busquem està entre les paraules que comencen per N.
+
+Ara, considerem les paraules que comencen per N:
+
+* Paraules que comencen per NA: 4! = 24
+* Paraules que comencen per NC: 4! = 24
+* Paraules que comencen per NG: 4! = 24
+* Paraules que comencen per NR: 4! = 24
+
+57 - 24 - 24 - 24 = -15.  Hem passat la paraula que busquem.  Per tant, la paraula comença per NGR.
+
+Ara, considerem les paraules que comencen per NGR:
+
+* Paraules que comencen per NGCA: 2! = 2
+* Paraules que comencen per NGCR: 2! = 2
+* Paraules que comencen per NGRU: 2! = 2
+
+57 - 24 - 24 - 24 - 2 = 7.  Això significa que la paraula que busquem és la setena paraula que comença per NGR.
+
+Ordenant les dues lletres restants (A i U) alfabèticament, tenim:
+1. NGRACU
+2. NGRAUC
+3. NGRCAU
+4. NGRCUA
+5. NGRUCA
+6. NGRUAC
+
+La setena paraula que comença per NGR és NGRCAU.
+
+Resposta: C)

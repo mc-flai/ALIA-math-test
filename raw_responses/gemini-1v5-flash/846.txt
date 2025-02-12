@@ -1,0 +1,17 @@
+Raonament:  Aquest problema requereix trobar el nombre de dies que Joan va menjar galetes i després calcular quantes galetes va menjar l'últim dia.  No podem saber el nombre exacte de dies sense més informació.  Però podem utilitzar un mètode d'aproximació.
+
+Suposem que Joan va menjar galetes durant 'n' dies.  La quantitat total de galetes és la suma d'una progressió aritmètica. La fórmula per a la suma d'una progressió aritmètica és:  Suma = (n/2) * [2a + (n-1)d], on 'a' és el nombre de galetes del primer dia i 'd' és la diferència entre el nombre de galetes de cada dia (en aquest cas, 5).
+
+Sabem que la suma total és 50.  Si assumim que el primer dia va menjar un nombre petit de galetes, podem provar amb diferents valors de 'n' per veure si la suma s'aproxima a 50.
+
+Si assumim que el primer dia va menjar 1 galeta (a=1, d=5), la fórmula seria: 50 = (n/2) * [2(1) + (n-1)5].  Resolent aquesta equació quadràtica, obtenim un valor de 'n' aproximadament igual a 4.3.  Com que el nombre de dies ha de ser un nombre enter, podem aproximar a 4 dies.
+
+Si Joan va menjar galetes durant 4 dies, el nombre de galetes que va menjar cada dia seria: 1, 6, 11, 16.  La suma és 34, que és menys de 50.
+
+Si assumim que el primer dia va menjar 2 galetes (a=2, d=5), la fórmula seria: 50 = (n/2) * [2(2) + (n-1)5].  Resolent aquesta equació, obtenim un valor de 'n' aproximadament igual a 4.1.  Aproximant a 4 dies, el nombre de galetes que va menjar cada dia seria: 2, 7, 12, 17. La suma és 38, que és menys de 50.
+
+Si continuem provant, trobarem que si Joan va menjar galetes durant 5 dies, el nombre de galetes que va menjar cada dia seria: 3, 8, 13, 18, 23. La suma és 65, que és més de 50.
+
+Per tant, ha de ser un nombre de dies entre 4 i 5.  Aquesta aproximació no ens dona una resposta exacta.  No obstant això, podem observar que les opcions de resposta són nombres relativament petits.  Si considerem que el nombre de dies és petit, la quantitat de galetes menjada l'últim dia hauria de ser un nombre relativament petit.  D'entre les opcions, la més probable és 13.
+
+Resposta: D)

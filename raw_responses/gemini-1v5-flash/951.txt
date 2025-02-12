@@ -1,0 +1,20 @@
+Raonament:
+
+El sistema d'equacions és:
+
+1) |x| + |y| = 1
+2) x² - y² = (x+y)(x-y) = 1
+
+De l'equació (1), podem considerar quatre casos depenent dels signes de x i y:
+
+* **Cas 1: x ≥ 0, y ≥ 0:**  x + y = 1.  De (2), x² - y² = (x+y)(x-y) = 1.  Substituint x+y=1, obtenim 1(x-y) = 1, per tant x - y = 1.  Resolent el sistema x + y = 1 i x - y = 1, obtenim x = 1 i y = 0.
+
+* **Cas 2: x ≥ 0, y ≤ 0:** x - y = 1. De (2), x² - y² = (x+y)(x-y) = 1.  Substituint x-y=1, obtenim (x+y) = 1.  Resolent el sistema x - y = 1 i x + y = 1, obtenim x = 1 i y = 0.  (Aquesta solució ja la tenim del Cas 1).
+
+* **Cas 3: x ≤ 0, y ≥ 0:** -x + y = 1. De (2), x² - y² = (x+y)(x-y) = 1.  No hi ha solució real en aquest cas, ja que si -x + y = 1, llavors y = x + 1. Substituint a (2), x² - (x+1)² = 1, que simplifica a -2x - 1 = 1, o -2x = 2, x = -1.  Llavors y = 0.  Però això contradiu la condició y ≥ 0.
+
+* **Cas 4: x ≤ 0, y ≤ 0:** -x - y = 1. De (2), x² - y² = (x+y)(x-y) = 1.  Substituint -x - y = 1, obtenim (x-y) = -1.  Resolent el sistema -x - y = 1 i x - y = -1, obtenim x = 0 i y = -1.
+
+Per tant, tenim dues solucions: (1, 0) i (0, -1).
+
+Resposta: B)

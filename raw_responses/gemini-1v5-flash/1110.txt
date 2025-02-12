@@ -1,0 +1,22 @@
+Raonament: Anem a analitzar cada condició per a cada opció:
+
+* **Dues unitats més menut que un múltiple de 10:**  El nombre ha de ser de la forma 10k - 2, on k és un enter.
+
+* **Dues unitats més gran que un quadrat perfecte:** El nombre ha de ser de la forma n² + 2, on n és un enter.
+
+* **El doble d'un nombre primer:** El nombre ha de ser de la forma 2p, on p és un nombre primer.
+
+Anem a comprovar cada opció:
+
+* **A) 78:** 78 = 2 * 39 (39 no és primer), 78 = 76 + 2 (76 no és un quadrat perfecte), 78 = 80 - 2 (80 és múltiple de 10).  No compleix totes les condicions.
+
+* **B) 58:** 58 = 2 * 29 (29 és primer), 58 = 56 + 2 (56 no és un quadrat perfecte), 58 = 60 - 2 (60 és múltiple de 10). No compleix totes les condicions.
+
+* **C) 38:** 38 = 2 * 19 (19 és primer), 38 = 36 + 2 (36 = 6²), 38 = 40 - 2 (40 és múltiple de 10).  **Compleix totes les condicions.**
+
+* **D) 18:** 18 = 2 * 9 (9 no és primer), 18 = 16 + 2 (16 = 4²), 18 = 20 - 2 (20 és múltiple de 10). No compleix totes les condicions.
+
+* **E) 6:** 6 = 2 * 3 (3 és primer), 6 = 4 + 2 (4 = 2²), 6 = 8 -2 (8 no és múltiple de 10). No compleix totes les condicions.
+
+
+Resposta: C)

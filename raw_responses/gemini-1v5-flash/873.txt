@@ -1,0 +1,20 @@
+Raonament:  Tenim un total de 7 fruites (2 taronges + 3 pomes + 2 peres). Dolors vol triar 3 fruites.  Per simplificar, considerarem les combinacions possibles sense importar l'ordre.  Podem utilitzar combinacions amb repetició o sense, depenent de si considerem que les fruites del mateix tipus són indistinguibles.  Com que la pregunta només demana el tipus de fruita, considerarem que les fruites del mateix tipus són indistinguibles.
+
+Les combinacions possibles són:
+
+* 3 pomes (PPP)
+* 2 pomes, 1 pera (PPA)
+* 2 pomes, 1 taronja (PPT)
+* 1 poma, 2 peres (APP)
+* 1 poma, 1 pera, 1 taronja (APT)
+* 1 poma, 2 taronges (PTT)
+* 3 peres (AAA) - No és possible ja que només hi ha 2 peres
+* 2 peres, 1 taronja (ATA)
+* 2 peres, 1 poma (APA) - ja considerada
+* 1 pera, 2 taronges (TTA)
+* 3 taronges (TTT) - No és possible ja que només hi ha 2 taronges
+
+
+En total, hi ha 7 combinacions possibles.
+
+Resposta: C)

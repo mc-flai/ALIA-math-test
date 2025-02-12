@@ -1,0 +1,26 @@
+Raonament:
+
+Sigui *n* el nombre de daus que té l'Agnès.
+La probabilitat d'obtenir un 12 en un dau és 1/12, i la probabilitat de no obtenir un 12 és 11/12.
+
+La probabilitat que només surti un 12 en tirar *n* daus és donada per la distribució binomial:
+
+P(un 12) = n * (1/12)^1 * (11/12)^(n-1)
+
+La probabilitat que no surti cap 12 en tirar *n* daus és:
+
+P(cap 12) = (11/12)^n
+
+El problema ens diu que aquestes dues probabilitats són iguals:
+
+n * (1/12) * (11/12)^(n-1) = (11/12)^n
+
+Simplifiquem l'equació:
+
+n * (1/12) = (11/12)
+
+n = 11
+
+Per tant, Agnès té 11 daus.
+
+Resposta: D)

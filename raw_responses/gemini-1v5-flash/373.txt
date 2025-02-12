@@ -1,0 +1,52 @@
+Raonament:
+
+Sigui x el nombre inicial.  El procés és:
+
+1. x - 1
+2. 2(x - 1) = 2x - 2
+3. 2(2x - 2) - 1 = 4x - 5
+4. 2(4x - 5) - 1 = 8x - 11
+5. 2(8x - 11) - 1 = 16x - 23
+6. 2(16x - 23) - 1 = 32x - 47
+7. 2(32x - 47) - 1 = 64x - 95
+8. 2(64x - 95) - 1 = 128x - 191
+9. 2(128x - 191) - 1 = 256x - 383
+10. 2(256x - 383) - 1 = 512x - 767
+
+Observem un patró:  El coeficient de x es duplica en cada iteració, començant per 2 i arribant a 2<sup>10</sup> = 1024 després de 10 iteracions.  El terme constant és una progressió geomètrica decreixent.
+
+Després de 10 iteracions, tenim:
+
+512x - 767
+
+Però, si mirem la fórmula general:
+
+Iteració 1: 2x - 2
+Iteració 2: 4x - 5
+Iteració 3: 8x - 11
+Iteració n: 2<sup>n</sup>x - (2<sup>n</sup> - 1)
+
+Per tant, després de 10 iteracions (n=10):
+
+2<sup>10</sup>x - (2<sup>10</sup> - 1) = 1024x - (1024 - 1) = 1024x - 1023
+
+Això no coincideix amb cap de les opcions donades.  Hi ha un error en el meu raonament inicial.  Analitzem el patró del terme constant:
+
+-2, -5, -11, -23, -47, -95, -191, -383, -767, -1535
+
+La diferència entre termes consecutius es duplica: 3, 6, 12, 24, 48, 96, 192, 384, 768.
+
+El terme constant després de 10 iteracions és -1535.  Per tant, la expressió és 1024x - 1535.  Aquesta expressió tampoc coincideix amb cap de les opcions.
+
+Fem-ho de forma iterativa:
+
+1. x-1
+2. 2(x-1) = 2x-2
+3. 2(2x-2)-1 = 4x-5
+4. 2(4x-5)-1 = 8x-11
+5. 2(8x-11)-1 = 16x-23
+...i així successivament.  El coeficient de x és 2^n i el terme independent és -(2^(n+1)-1).  Per n=10, tenim 1024x - (2^11 -1) = 1024x - 2047.  Tampoc coincideix.
+
+Hi ha un error en el plantejament de la pregunta o en les opcions de resposta.  No hi ha cap opció que coincideixi amb el resultat correcte.
+
+Resposta: Cap de les opcions és correcta.

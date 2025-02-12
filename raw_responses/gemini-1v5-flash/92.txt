@@ -1,0 +1,16 @@
+Raonament: Per poder construir un ortoedre amb rajoles de 1 × 2 × 4, el volum de l'ortoedre ha de ser divisible pel volum de la rajola (1 × 2 × 4 = 8).  Calculem el volum de cada ortoedre:
+
+* **I:** 1 × 5 × 6 = 30.  30 no és divisible entre 8.
+* **II:** 6 × 6 × 5 = 180. 180 és divisible entre 8 (180 / 8 = 22.5).  Encara que el resultat és decimal, això no significa que no es pugui construir.  Es pot construir si es poden col·locar les rajoles de manera que ocupin tot l'espai.
+* **III:** 6 × 6 × 4 = 144. 144 és divisible entre 8 (144 / 8 = 18).
+* **IV:** 4 × 4 × 6 = 96. 96 és divisible entre 8 (96 / 8 = 12).
+
+Però la divisibilitat del volum no garanteix la construcció.  Per exemple, un ortoedre de 2x2x2 té un volum de 8, divisible entre 8, però no es pot construir amb una rajola de 1x2x4.  No obstant, en els casos II, III i IV, la divisibilitat del volum entre 8 és una condició necessària, però no suficient.  Analitzem més a fons:
+
+* **II (6x6x5):**  Es pot descompondre en 22.5 rajoles de 1x2x4.  Com que no és un nombre enter, no es pot construir.
+* **III (6x6x4):**  Es pot descompondre en 18 rajoles de 1x2x4.  És possible construir-lo.
+* **IV (4x4x6):** Es pot descompondre en 12 rajoles de 1x2x4. És possible construir-lo.
+
+Per tant, només els ortoedres III i IV es poden construir amb les rajoles donades.
+
+Resposta: E) III i IV

@@ -1,0 +1,11 @@
+Raonament:
+
+El problema es basa en la idea de que la pilota segueix un patró cíclic. Cada estudiant passa la pilota a l'estudiant que està sis llocs a la dreta.  Si hi ha 50 estudiants, el patró es repeteix cada cert nombre de passes.  Per trobar aquest nombre, hem de buscar el màxim comú divisor (MCD) entre 50 i 6.  No obstant això, aquest enfocament no és directament útil per resoldre el problema.
+
+Un enfocament més útil és considerar que Frida rep la pilota 100 vegades. Això significa que la pilota ha circulat moltes vegades.  Si la pilota sempre segueix el mateix patró, només alguns estudiants rebran la pilota.  Els estudiants que reben la pilota són aquells que estan a una posició que és un múltiple de MCD(50,6) des de la posició inicial de la pilota.
+
+El MCD(50, 6) = 2. Això significa que la pilota només passa per estudiants que estan a una posició parella des de la posició inicial.  Com que hi ha 50 estudiants, la meitat (25) són parells i la meitat (25) són imparells.  Per tant, només els 25 estudiants en posicions parells rebran la pilota.
+
+Els 25 estudiants restants en posicions imparells no rebran mai la pilota.
+
+Resposta: C)

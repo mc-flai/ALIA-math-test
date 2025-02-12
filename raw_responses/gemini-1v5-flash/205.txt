@@ -1,0 +1,45 @@
+Raonament:
+
+L'expressió té la forma:  1+2-3+4+5-6+7+8-9+...+2014+2015-2016.  Observem un patró:  (1+2-3) + (4+5-6) + (7+8-9) + ...
+
+Cada grup de tres termes consecutius suma 0 + 3 + 6 + ...
+
+El nombre de grups de tres termes és 2016/3 = 672.
+
+Però, l'últim grup no segueix el patró.  El patró és (3k-2) + (3k-1) - (3k) = 3k - 3 + 2 = 3k - 1.  Això és igual a 3k - 3 + 2 = 3k -1.  La suma de cada grup és 3k - 1.
+
+Si agrupem els termes de tres en tres, tenim 672 grups.  La suma de cada grup és: (3k-2) + (3k-1) - 3k = 3k - 3 = 3(k-1).  Però això no és correcte.
+
+Fem-ho d'una altra manera:  agrupem els termes de la següent manera:
+
+(1+2-3) + (4+5-6) + ... + (2014+2015-2016)
+
+Cada grup suma 0.  Hi ha 2016/3 = 672 grups.  Per tant, la suma seria 0.  Però això no és correcte.
+
+Observem que la suma és:
+
+1 + 2 - 3 + 4 + 5 - 6 + ... + 2014 + 2015 - 2016
+
+= (1 + 2 + 4 + 5 + ... + 2014 + 2015) - (3 + 6 + 9 + ... + 2016)
+
+= (Suma dels nombres de 1 a 2015, excepte els múltiples de 3) - (Suma dels múltiples de 3 de 3 a 2016)
+
+La suma dels nombres de 1 a n és n(n+1)/2.
+
+Suma de 1 a 2015 = 2015 * 2016 / 2 = 2031120
+
+Suma dels múltiples de 3 de 3 a 2016 = 3(1 + 2 + ... + 672) = 3 * 672 * 673 / 2 = 678324
+
+Suma dels nombres de 1 a 2015, excepte els múltiples de 3: 2031120 - 678324 = 1352796
+
+Però, hem de restar els múltiples de 3.  La suma dels múltiples de 3 fins a 2016 és 3(1+2+...+672) = 3(672*673)/2 = 678324
+
+2031120 - 678324 = 1352796
+
+1352796 / 2 = 676398
+
+Aquesta aproximació no funciona.
+
+Fem-ho d'una altra manera:  1 + 2 - 3 = 0, 4 + 5 - 6 = 3, 7 + 8 - 9 = 6...  La suma és 3(1 + 2 + ... + 671) + 1 + 2 = 3(671*672)/2 + 3 = 676398
+
+Resposta: Cap de les opcions és correcta.  La suma és 676398.

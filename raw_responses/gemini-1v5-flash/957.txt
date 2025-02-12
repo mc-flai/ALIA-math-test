@@ -1,0 +1,13 @@
+Raonament:
+
+Tenim dos triangles, cadascun amb 3 vèrtexs.  Per tant, tenim un total de 6 vèrtexs.  Volem dibuixar una línia recta que passi per un vèrtex de cada triangle.
+
+Per cada vèrtex del primer triangle (3 opcions), podem escollir qualsevol dels 3 vèrtexs del segon triangle per formar una línia. Això ens dona 3 * 3 = 9 parells possibles de vèrtexs, un de cada triangle.
+
+No obstant això, la pregunta especifica que la línia ha de travessar almenys un dels triangles.  Com que la línia connecta un vèrtex d'un triangle amb un vèrtex de l'altre, *sempre* travessarà almenys un dels triangles (si els triangles no es superposen).  Per tant, totes les 9 línies compleixen la condició.
+
+Però, cal tenir en compte que algunes d'aquestes línies poden ser les mateixes. Si els triangles estan disposats de manera que dos parells de vèrtexs defineixin la mateixa línia, llavors el nombre de línies úniques serà menor que 9.  No obstant això, la pregunta no especifica la posició dels triangles.  En el cas més general, on els triangles no estan disposats de manera que dos parells de vèrtexs defineixin la mateixa línia, hi haurà 9 línies possibles.
+
+Com que la pregunta demana el nombre de maneres de dibuixar una línia que passi per un vèrtex de cada triangle i travesse almenys un d'ells, i hem determinat que totes les línies que connecten un vèrtex d'un triangle amb un vèrtex de l'altre compleixen aquesta condició, el nombre mínim de línies possibles és 3 (si els triangles estan disposats de manera que les línies siguin coincidents). El nombre màxim és 9 (si els triangles estan disposats de manera que totes les línies siguin diferents).  Per tant, la resposta correcta ha de ser E.
+
+Resposta: E)

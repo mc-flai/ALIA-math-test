@@ -1,0 +1,60 @@
+Raonament:
+
+Sigui x el nombre de curses que Martí va córrer el primer any.
+El segon any va córrer x + a curses, on 'a' és un nombre enter positiu.
+El tercer any va córrer x + 2a curses.
+El quart any va córrer x + 3a curses.
+El cinquè any va córrer x + 4a curses.
+
+Sabem que el total de curses en cinc anys és 31:
+
+x + (x + a) + (x + 2a) + (x + 3a) + (x + 4a) = 31
+5x + 10a = 31
+
+També sabem que el cinquè any va participar en el triple de curses que en el primer:
+
+x + 4a = 3x
+4a = 2x
+2a = x
+
+Substituïm x = 2a a l'equació 5x + 10a = 31:
+
+5(2a) + 10a = 31
+10a + 10a = 31
+20a = 31
+a = 31/20
+
+Com que 'a' ha de ser un nombre enter, hi ha un error en el plantejament inicial.  Anem a provar un altre enfocament.
+
+Suposem que el nombre de curses cada any és una progressió aritmètica.  Sigui x el nombre de curses del primer any.  Llavors el nombre de curses cada any seria:
+
+Any 1: x
+Any 2: x + d
+Any 3: x + 2d
+Any 4: x + 3d
+Any 5: x + 4d
+
+on d és la diferència entre el nombre de curses de cada any.
+
+El total de curses és 31: 5x + 10d = 31
+
+El cinquè any és el triple del primer: x + 4d = 3x  =>  4d = 2x  =>  2d = x
+
+Substituïm x = 2d a l'equació anterior:
+
+5(2d) + 10d = 31
+20d = 31
+d = 31/20
+
+Novament, d no és un nombre enter.  Hi ha un error en l'enunciat o en la interpretació.  Anem a buscar una solució entera.
+
+Provem amb valors petits per a x:
+
+Si x = 3, llavors el cinquè any seria 9.  La suma seria 3+4+5+6+9 = 27 (no és 31)
+Si x = 4, llavors el cinquè any seria 12. La suma seria 4+5+6+7+12 = 34 (no és 31)
+Si x = 5, llavors el cinquè any seria 15. La suma seria 5+6+7+8+15 = 41 (no és 31)
+Si x = 2, llavors el cinquè any seria 6. La suma seria 2+3+4+5+6 = 20 (no és 31)
+
+Aparentment hi ha un error en l'enunciat del problema. No hi ha una solució entera que compleixi totes les condicions.
+
+Resposta: No hi ha una resposta correcta entre les opcions donades.

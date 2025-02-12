@@ -1,0 +1,56 @@
+Raonament:
+
+Comencem analitzant les afirmacions de cada persona:
+
+* **Alèxia:** La suma dels seus nombres és 6. Les úniques parelles possibles són (1, 5) i (2, 4).
+
+* **Bru:** La diferència entre els seus nombres és 5. Les parelles possibles són (1, 6), (2, 7), (3, 8), (4, 9).
+
+* **Clara:** El producte dels seus nombres és 18. Les úniques parelles possibles són (2, 9) i (3, 6).
+
+* **Diana:** Un dels seus nombres és el doble de l'altre. Les parelles possibles són (1, 2), (2, 4), (3, 6), (4, 8).
+
+Ara, analitzem les combinacions possibles tenint en compte que cada parella de nombres és única:
+
+* Si Clara té (2, 9), Alèxia ha de tenir (1, 5) i Bru ha de tenir (3, 8) o (4, 7).  Diana podria tenir (1,2) o (4,8).  Si Bru té (3,8), Diana ha de tenir (1,2) i la carta restant és 7. Si Bru té (4,7), Diana ha de tenir (4,8) que no és possible.
+
+* Si Clara té (3, 6), Alèxia ha de tenir (2, 4) i Bru ha de tenir (1, 6) o (4, 9).  Diana podria tenir (1,2), (2,4) o (4,8). Si Bru té (1,6), Diana ha de tenir (2,4) i la carta restant és 7. Si Bru té (4,9), Diana ha de tenir (1,2) i la carta restant és 5.
+
+Observem que la parella (4,9) per a Bru no és possible perquè el 9 ja està agafat per Clara.  Per tant, l'única combinació possible és:
+
+* Alèxia: (2, 4)
+* Bru: (1, 6)
+* Clara: (3, 6)
+* Diana: (2, 4)
+
+Això no és possible perquè Diana i Alèxia tenen les mateixes cartes.
+
+Tornem a revisar:
+
+* Alèxia: (1,5) o (2,4)
+* Bru: (1,6), (2,7), (3,8), (4,9)
+* Clara: (2,9), (3,6)
+* Diana: (1,2), (2,4), (3,6), (4,8)
+
+Si Clara té (2,9), Alèxia té (1,5).  Bru pot tenir (3,8) o (4,7). Si Bru té (3,8), Diana té (1,2) i la carta restant és 7. Si Bru té (4,7), no funciona.
+
+Si Clara té (3,6), Alèxia té (2,4). Bru pot tenir (1,6) o (4,9). Si Bru té (1,6), no funciona. Si Bru té (4,9), no funciona.
+
+L'única combinació coherent és:
+
+* Alèxia: (1, 5)
+* Bru: (3, 8)
+* Clara: (2, 9)
+* Diana: (4, 8)  (Error, 8 ja està agafat)
+
+Si Clara té (2,9), Alèxia (1,5), Bru (3,8), Diana (4,8) - No funciona.
+
+Si Clara té (3,6), Alèxia (1,5), Bru (2,7), Diana (1,2) - La carta restant és 4.
+
+Si Clara té (3,6), Alèxia (2,4), Bru (1,6), Diana (1,2) - La carta restant és 5.
+
+Si Clara té (3,6), Alèxia (2,4), Bru (1,6), Diana (2,4) - No funciona.
+
+La carta restant és el 5.
+
+Resposta: B)

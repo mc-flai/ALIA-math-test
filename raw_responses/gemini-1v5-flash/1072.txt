@@ -1,0 +1,35 @@
+Raonament:
+
+Sigui $v_A$ la velocitat d'Alícia i $v_B$ la velocitat de Baldiri.  Ens diuen que $v_A = 3v_B$.  Sigui $d$ la distància entre A i B.
+
+Quan es troben per primera vegada, Alícia ha recorregut una distància $d_A = v_A t_1$ i Baldiri una distància $d_B = v_B t_1$, on $t_1 = 15$ minuts és el temps transcorregut fins a la primera trobada.  En aquest moment, la suma de les distàncies recorregudes és igual a la distància total: $d_A + d_B = d$.  Substituint les expressions per $d_A$ i $d_B$, tenim:
+
+$v_A t_1 + v_B t_1 = d$
+$3v_B t_1 + v_B t_1 = d$
+$4v_B t_1 = d$
+
+Ara, considerem la segona trobada.  En aquest moment, Alícia haurà recorregut una distància total de $2d + x$, on $x$ és una distància addicional.  Baldiri haurà recorregut una distància total de $2d - x$.  El temps transcorregut fins a la segona trobada serà $t_2$.  Per tant:
+
+$v_A t_2 = 2d + x$
+$v_B t_2 = 2d - x$
+
+Sumant les dues equacions:
+
+$v_A t_2 + v_B t_2 = 4d$
+$(v_A + v_B) t_2 = 4d$
+$(3v_B + v_B) t_2 = 4d$
+$4v_B t_2 = 4d$
+$v_B t_2 = d$
+
+De la primera trobada, sabem que $d = 4v_B t_1 = 4v_B (15) = 60v_B$.  Substituint això a l'equació anterior:
+
+$v_B t_2 = 60v_B$
+$t_2 = 60$ minuts
+
+Però això és el temps total fins a la segona trobada.  El temps transcorregut *després* de la primera trobada és $t_2 - t_1 = 60 - 15 = 45$ minuts.  Per tant, el temps total fins a la segona trobada és $15 + 45 = 60$ minuts.  No obstant això, aquesta resposta no està entre les opcions.
+
+Fem un altre enfocament.  La velocitat relativa entre Alícia i Baldiri és $v_A + v_B = 4v_B$.  En la primera trobada, la distància recorreguda és $d$.  En la segona trobada, la distància recorreguda és $3d$.  Per tant, el temps de la segona trobada és:
+
+$t_2 = \frac{3d}{4v_B} = \frac{3(4v_B(15))}{4v_B} = 45$ minuts
+
+Resposta: E) 45 min

@@ -1,0 +1,19 @@
+Raonament:
+
+El problema ens diu que el producte de les edats de Maria, la seva filla i la seva neta d'aquí a dos anys serà 2024.  Primer, descomponem 2024 en els seus factors primers:
+
+2024 = 2 x 2 x 2 x 11 x 23
+
+Com que les edats són nombres enters, hem de trobar tres factors que representin les edats d'aquí a dos anys.  A més, sabem que les edats actuals de Maria i la seva filla són nombres parells.  Per tant, les seves edats d'aquí a dos anys seran també nombres parells.
+
+Considerem que la neta tindrà 2 anys d'aquí a dos anys (actualment té 0 anys). Això ens deixa amb 2 x 1012.  1012 no és divisible entre nombres parells que puguin representar edats plausibles de mare i filla.
+
+Proveu amb la neta tenint 22 anys d'aquí a dos anys (actualment 20 anys).  Això ens deixa amb 2 x 2 x 2 x 11 x 23 / 22 = 92.  92 es pot descompondre en 23 i 4 (o 46 i 2, però això no té sentit en el context).  Això no funciona perquè les edats de la mare i la filla han de ser parells.
+
+Proveu amb la neta tenint 2 anys d'aquí a dos anys.  Això ens deixa amb 1012.  1012 = 4 x 253.  253 és un nombre primer.  Això no funciona.
+
+Proveu amb la neta tenint 4 anys d'aquí a dos anys (actualment 2 anys).  Això ens deixa amb 506.  506 = 2 x 11 x 23.  No hi ha una combinació de nombres parells que funcioni aquí.
+
+Proveu amb la neta tenint 22 anys d'aquí a dos anys (actualment 20 anys).  Això ens deixa amb 92.  92 = 4 x 23.  Si la filla té 26 anys d'aquí a dos anys (24 actualment), la mare hauria de tenir 46 anys d'aquí a dos anys (44 actualment).  Això funciona!
+
+Resposta: C)

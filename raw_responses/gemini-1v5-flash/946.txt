@@ -1,0 +1,27 @@
+Raonament: El centre del cub és el punt mitjà de la diagonal principal que uneix dos vèrtexs oposats.  Com que tenim tres vèrtexs no coplanars (P, Q, R), podem trobar el quart vèrtex oposat a un d'ells.  Per exemple, si considerem P(3,4,1), el vèrtex oposat S tindrà coordenades tal que el punt mitjà de PS sigui el mateix que el punt mitjà de QR.
+
+Calculem el punt mitjà de QR:
+M<sub>QR</sub> = ((5+1)/2, (2+6)/2, (9+5)/2) = (3, 4, 7)
+
+Si M<sub>QR</sub> és el punt mitjà de PS, llavors:
+( (3+x)/2, (4+y)/2, (1+z)/2 ) = (3, 4, 7)
+
+Resolent per x, y, z:
+(3+x)/2 = 3  => x = 3
+(4+y)/2 = 4  => y = 4
+(1+z)/2 = 7  => z = 13
+
+Per tant, S = (3, 4, 13).
+
+Ara, calculem el punt mitjà de la diagonal PS:
+Centre = ((3+3)/2, (4+4)/2, (1+13)/2) = (3, 4, 7)
+
+No obstant això, (3,4,7) no és cap de les opcions.  Hem de comprovar si hem fet alguna cosa malament.  El problema és que hem assumit que P és oposat a S, però això no és necessariament cert.  Hi ha 4 diagonals en un cub.
+
+Una altra manera d'abordar el problema és considerar que el centre del cub és la mitjana de les coordenades dels 8 vèrtexs.  Com que tenim tres vèrtexs, podem intentar trobar el quart vèrtex que forma un paral·lelepíped amb els tres donats.  No obstant això, aquest mètode és més complex.
+
+Una aproximació més senzilla és observar que el centre del cub ha de ser el punt mitjà de la diagonal que uneix dos vèrtexs oposats.  Si mirem les opcions, podem comprovar quina opció és el punt mitjà entre dos dels vèrtexs donats o un vèrtex i un vèrtex hipotètic.  Observem que A(4,3,5) és el punt mitjà entre P(3,4,1) i un punt hipotètic (5,2,9).  No és una solució directa, però és una aproximació.
+
+Analitzant les opcions, la més propera a ser el punt mitjà de les coordenades dels tres punts donats és A(4,3,5).
+
+Resposta: A)

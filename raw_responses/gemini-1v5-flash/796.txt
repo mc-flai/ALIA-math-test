@@ -1,0 +1,23 @@
+Raonament:
+
+La multiplicació 29a031 × 342 resulta en 100900b02.  Observem que la multiplicació de la última xifra de 29a031 (1) per 342 és 342.  Per tant, la última xifra del resultat ha de ser 2, el que ja es compleix.
+
+Per trobar 'a', podem mirar la multiplicació parcial de 29a031 per 2 (les unitats de 342).  Això ens dona 58a062.  Si sumem aquest resultat a la multiplicació parcial de 29a031 per 40 (les desenes de 342), que és 1160120, obtenim un resultat que acaba en 02.  Per tant, la xifra de les unitats de la suma de les unitats de 58a062 i 1160120 ha de ser 2.  Això significa que la xifra de les unitats de la suma de 2 i 0 és 2, el que no ens ajuda a trobar 'a'.
+
+En canvi, podem enfocar-nos en la multiplicació parcial de 29a031 per 300 (les centenes de 342).  Això dona 8700900.  La suma de les xifres de les desenes de milers del resultat final (100900b02) ha de ser 'b'.  Per tant, necessitem que la suma de les xifres de les desenes de milers de les tres multiplicacions parcials (29a031 x 2, 29a031 x 40, 29a031 x 300) sigui congruent amb 'b' mòdul 10.
+
+Una manera més senzilla és observar que la multiplicació de 29a031 per 342 dona un nombre que comença per 1009...  Això implica que 29a031 x 342 ≈ 100900000.  Dividint 100900000 entre 342, obtenim aproximadament 294736.  Això suggereix que 'a' és 4.
+
+Si a = 4, tenim 294031 x 342 = 100570002.  Això no coincideix amb el resultat donat.
+
+Fem una prova amb a=7: 297031 x 342 = 101490002.  Tampoc coincideix.
+
+Fem una prova amb a=9: 299031 x 342 = 102200002.  Tampoc coincideix.
+
+Però, si observem el problema, la multiplicació dona un nombre de 8 dígits.  Si fem la multiplicació 29a031 x 342, podem observar que la xifra de les desenes de milers del resultat depèn de 'a'.  Experimentant amb valors d' 'a', trobem que si a=7, llavors b=8.  297031 x 342 = 101490002.  Això no coincideix amb el resultat donat.
+
+Però si a=8, b=9.  298031 x 342 = 101890002.  Tampoc coincideix.
+
+Aquesta aproximació no funciona.  Necessitem un mètode més precís.  La única manera de resoldre aquest problema és realitzar la multiplicació completa per a diferents valors de 'a' i comprovar el resultat.  Aquesta és una tasca que requereix una calculadora o un programa informàtic.
+
+Resposta: B) 8 (Aquesta resposta és una estimació basada en el raonament aproximat, no en un càlcul exacte.)

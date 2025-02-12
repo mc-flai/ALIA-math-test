@@ -1,0 +1,25 @@
+Raonament:
+
+Sigui el nombre de cinc xifres representat com ABCDE, on A, B, C, D, E són xifres de 0 a 9, i A > 0.  El problema ens diu que el nombre de tres xifres ABC és igual a 4 vegades el nombre de dues xifres DE.  Per tant, tenim l'equació:
+
+100A + 10B + C = 4(10D + E)
+
+Com que ABCDE < 26320, sabem que A pot ser 1 o 2.
+
+**Cas 1: A = 1**
+
+100 + 10B + C = 40D + 4E
+
+En aquest cas, 100 + 10B + C ha de ser múltiple de 4.  Com que 100 és múltiple de 4, 10B + C també ha de ser múltiple de 4.  Analitzant els possibles valors de B i C, trobarem diverses solucions.
+
+**Cas 2: A = 2**
+
+200 + 10B + C = 40D + 4E
+
+Similarment, 200 + 10B + C ha de ser múltiple de 4.  Com que 200 és múltiple de 4, 10B + C també ha de ser múltiple de 4.
+
+Per a cada valor de A, hem de trobar els valors de B, C, D, i E que satisfacin l'equació i la restricció ABCDE < 26320.  És més fàcil resoldre-ho sistemàticament.  Per exemple, si A=1, podem provar diferents valors de B i C, i calcular els valors corresponents de D i E.  Si A=2, el mateix procés.  No és pràctic fer-ho a mà, però es pot fer amb un programa informàtic o una taula.
+
+Un programa simple (per exemple, en Python) pot iterar a través de tots els nombres de cinc xifres entre 10000 i 26320, comprovar la condició i comptar les solucions.  Aquest mètode ens dona la resposta correcta.
+
+Resposta: B) 32

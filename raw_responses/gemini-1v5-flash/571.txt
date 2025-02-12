@@ -1,0 +1,28 @@
+Raonament:
+
+Tenim el sistema d'equacions:
+
+* a + 2 = k
+* b - 2 = k
+* c * 2 = k
+* d / 2 = k
+
+on k és un nombre enter positiu.  Podem expressar a, b, c i d en funció de k:
+
+* a = k - 2
+* b = k + 2
+* c = k / 2
+* d = 2k
+
+Com que a, b, c i d són nombres enters positius, k ha de ser un nombre parell (perquè c = k/2 sigui un enter).  Si k és parell, llavors a, b, c i d seran tots nombres enters positius.
+
+Comparant les expressions:
+
+* a = k - 2
+* b = k + 2
+* c = k / 2
+* d = 2k
+
+Observem que d = 2k és sempre major que b = k + 2, ja que k és un nombre enter positiu.  Per exemple, si k=2, a=0 (no és positiu), b=4, c=1, d=4. Si k=4, a=2, b=6, c=2, d=8.  Si k=6, a=4, b=8, c=3, d=12.  En tots els casos, d és el més gran.
+
+Resposta: D)

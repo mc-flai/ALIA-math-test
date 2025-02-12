@@ -1,0 +1,9 @@
+Raonament: Si Susanna fa un tall al pastís, el divideix en 2 trossos. Si fa dos talls paral·lels a un costat, obtindrà 3 trossos. Si fa tres talls paral·lels a un costat, obtindrà 4 trossos.  En general, si fa 'n' talls paral·lels a un costat, obtindrà 'n+1' trossos.
+
+Ara bé, si fa talls paral·lels a *ambdós* costats, el nombre de trossos augmenta de forma diferent.  Si fa 'x' talls paral·lels a un costat i 'y' talls paral·lels a l'altre costat, el nombre de trossos serà (x+1)(y+1).
+
+En aquest cas, Susanna fa 7 talls en total.  Per obtenir el màxim nombre de trossos, ha de fer els talls de manera que no siguin paral·lels entre si.  Per exemple, podria fer 3 talls paral·lels a un costat i 4 a l'altre. Això donaria (3+1)(4+1) = 20 trossos.  O bé, 2 talls en una direcció i 5 en l'altra, donant (2+1)(5+1) = 18 trossos.  O bé, 1 tall i 6 talls, donant (1+1)(6+1) = 14 trossos.  O bé, 0 talls i 7 talls, donant (0+1)(7+1) = 8 trossos.
+
+Però si tots els talls són paral·lels a un mateix costat, el màxim de trossos que pot obtenir és 8.  Per tant, qualsevol nombre de trossos superior a 8 és possible.  El nombre de trossos que *no* és possible és 12. No hi ha cap combinació de 7 talls que doni exactament 12 trossos.
+
+Resposta: B)

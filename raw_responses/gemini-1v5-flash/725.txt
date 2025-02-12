@@ -1,0 +1,17 @@
+Raonament: Per maximitzar el pes del cangur més lleuger, hem de minimitzar els pesos dels dos cangurs més pesats.  Com que els pesos han de ser enters i diferents, els dos cangurs més pesats haurien de tenir els pesos més propers possibles entre ells i al pes total.
+
+Suposem que el pes total és 97 kg. Per trobar el pes màxim del cangur més lleuger, hem de distribuir la resta del pes entre els dos cangurs més pesats de la manera més eficient possible.  Si els dos cangurs més pesats pesen x i y kg, on x < y, llavors x + y + z = 97, on z és el pes del cangur més lleuger.  Per maximitzar z, hem de minimitzar x i y.
+
+Per minimitzar x i y, fem que la diferència entre ells sigui la mínima possible.  Si x i y són nombres consecutius, la seva suma serà un nombre imparell.  Per tant, la suma de x i y ha de ser un nombre imparell per poder tenir un valor enter per a z.
+
+Per aproximar-nos a la solució, podem dividir el pes total entre tres: 97 / 3 ≈ 32.33.  Això suggereix que els pesos podrien estar al voltant de 32, 33 i 32.  Però els pesos han de ser diferents.  Per tant, podem provar amb pesos propers a 32 i 33.
+
+Si el cangur més pesat pesa 33 kg i el segon més pesat pesa 32 kg, la suma és 65 kg.  Llavors, el cangur més lleuger pesaria 97 - 65 = 32 kg.  Però això no és vàlid perquè els pesos han de ser diferents.
+
+Si el cangur més pesat pesa 33 kg i el segon més pesat pesa 31 kg, la suma és 64 kg.  Llavors, el cangur més lleuger pesaria 97 - 64 = 33 kg.  Això tampoc és vàlid perquè els pesos han de ser diferents.
+
+Si el cangur més pesat pesa 34 kg i el segon més pesat pesa 31 kg, la suma és 65 kg.  Llavors, el cangur més lleuger pesaria 97 - 65 = 32 kg.  Això és vàlid.
+
+Per tant, el pes màxim del cangur més lleuger és 32 kg.
+
+Resposta: D)

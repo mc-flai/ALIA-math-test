@@ -1,0 +1,22 @@
+Raonament:  Aquest problema es pot resoldre utilitzant tècniques de combinatòria.  Primer, convertim tot a cèntims per simplificar els càlculs: 100 euros són 10000 cèntims.  Necessitem trobar el nombre de solucions enteres no negatives a l'equació:
+
+50x + 100y + 200z = 10000
+
+on x, y, i z representen el nombre de monedes de 50 cèntims, 1 euro i 2 euros respectivament.  Podem simplificar dividint l'equació per 50:
+
+x + 2y + 4z = 200
+
+Ara, podem resoldre aquest problema utilitzant una tècnica similar a la de les estrelles i barres, però amb una restricció.  Per cada valor de z, tenim una equació lineal en dues variables.
+
+* Si z = 0: x + 2y = 200.  y pot prendre valors de 0 a 100, donant 101 solucions.
+* Si z = 1: x + 2y = 196.  y pot prendre valors de 0 a 98, donant 99 solucions.
+* Si z = 2: x + 2y = 192.  y pot prendre valors de 0 a 96, donant 97 solucions.
+* ...i així successivament fins a z = 50: x + 2y = 0, donant 1 solució.
+
+La suma total de solucions és la suma d'una progressió aritmètica:
+
+Suma = 101 + 99 + 97 + ... + 1 =  Σ_(i=1)^51 (2i -1) = 51² = 2601
+
+Per tant, hi ha 2601 maneres diferents de sumar 100 euros amb monedes de 50 cèntims, 1 euro i 2 euros.
+
+Resposta: C)

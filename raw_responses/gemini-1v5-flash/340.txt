@@ -1,0 +1,20 @@
+Raonament:
+
+Comencem amb les boletes 1 i 2.  La tercera boleta ha de ser la suma de les dues anteriors: 1 + 2 = 3.  La quarta boleta ha de ser la suma de la segona i la tercera: 2 + 3 = 5. La cinquena boleta ha de ser la suma de la tercera i la quarta: 3 + 5 = 8.  La sisena boleta ha de ser la suma de la quarta i la cinquena: 5 + 8 = 13.
+
+Observem la seqüència: 1, 2, 3, 5, 8, 13...  Aquesta és la successió de Fibonacci.  Però per formar un collar, la última boleta ha de sumar amb la primera per donar la segona.  En aquest cas, 13 + 1 = 14 ≠ 2.  Per tant, necessitem més boletes.
+
+Continuem la seqüència: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...
+
+Si intentem tancar el collar amb 5 boletes (1, 2, 3, 5, 8), no funciona.  Amb 6 boletes (1, 2, 3, 5, 8, 13), tampoc.  Necessitem trobar una seqüència que es tanqui.  Observem que la suma de dos nombres consecutius de Fibonacci dona el següent nombre de la seqüència.  Per tant, per formar un collar, necessitem una seqüència on la suma de l'últim i el primer sigui igual al segon.  Això no passa amb poques boletes.
+
+Analitzem les opcions:
+
+* **2 boletes:** Imposible, ja que necessita dues boletes adjacents.
+* **4 boletes:** Imposible, ja que no es pot formar un collar que compleixi la condició.
+* **5 boletes:** Imposible, ja que no es pot formar un collar que compleixi la condició.
+* **6 boletes:** Imposible, ja que no es pot formar un collar que compleixi la condició.
+
+En realitat, no hi ha una solució amb un nombre petit de boletes que compleixi la condició.  La pregunta sembla tenir un error o ser molt complexa per resoldre-la sense un mètode més avançat.  No obstant això, entre les opcions donades, la més propera a una possible solució seria la D) 6, però no és una solució vàlida.
+
+Resposta: D) 6 (amb la consideració que no hi ha una solució perfecta entre les opcions donades)

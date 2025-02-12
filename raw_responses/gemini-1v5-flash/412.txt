@@ -1,0 +1,43 @@
+Raonament:
+
+Tenim que a + b + c = 100 i 1/(a+b) + 1/(b+c) + 1/(a+c) = 0.1.  Volem trobar el valor de c/(a+b) + a/(b+c) + b/(c+a).
+
+Observem que podem reescriure l'equació donada com:
+
+1/(a+b) + 1/(b+c) + 1/(a+c) = 1/10
+
+Multiplicant ambdues parts per 10, obtenim:
+
+10/(a+b) + 10/(b+c) + 10/(a+c) = 1
+
+Ara, suposem que  x = a+b, y = b+c, z = a+c.  Llavors, a+b+c = (x+y+z)/2 = 100, per tant x+y+z = 200.
+
+L'expressió que volem calcular és:
+
+c/(a+b) + a/(b+c) + b/(c+a) = c/x + a/y + b/z
+
+No podem substituir directament.  No obstant, observem que:
+
+c = (x+y+z)/2 - x = (y+z-x)/2
+a = (x+z-y)/2
+b = (x+y-z)/2
+
+Substituint a l'expressió que volem calcular:
+
+[(y+z-x)/2]/x + [(x+z-y)/2]/y + [(x+y-z)/2]/z = (y+z-x)/(2x) + (x+z-y)/(2y) + (x+y-z)/(2z)
+
+Aquesta expressió és complexa i no sembla conduir a una solució senzilla.  Proveu una altra estratègia.
+
+Suposem que a=0, b=0, c=100.  Llavors a+b+c = 100.  L'equació 1/(a+b) + 1/(b+c) + 1/(a+c) esdevé indefinida.  Aquesta suposició no és vàlida.
+
+Suposem que a=33.33, b=33.33, c=33.34.  Llavors a+b+c ≈ 100.  1/(a+b) + 1/(b+c) + 1/(a+c) ≈ 0.1.  Llavors c/(a+b) + a/(b+c) + b/(c+a) ≈ 0.5.  Aquesta no és una de les opcions.
+
+Observem que si multipliquem l'expressió 1/(a+b) + 1/(b+c) + 1/(a+c) = 0.1 per (a+b+c) = 100, obtenim:
+
+100/(a+b) + 100/(b+c) + 100/(a+c) = 10
+
+Aquesta expressió no sembla ajudar a resoldre el problema.
+
+No hi ha una manera evident de resoldre aquest problema amb les dades proporcionades.  Les opcions de resposta suggereixen una solució senzilla, però no es veu clar com arribar-hi.
+
+Resposta: B) 1 (Aquesta resposta és una suposició basada en la simplicitat de les opcions, no en un raonament matemàtic complet.)

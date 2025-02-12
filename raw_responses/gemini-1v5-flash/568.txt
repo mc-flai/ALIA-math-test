@@ -1,0 +1,15 @@
+Raonament:
+
+Donat que n<sup>n</sup> = m, volem trobar una expressió per a n<sup>(n<sup>(n+1)</sup>)</sup> en termes de m.  Observem que n<sup>(n+1)</sup> = n<sup>n</sup> * n<sup>1</sup> = n<sup>n</sup> * n = m * n.
+
+Per tant, n<sup>(n<sup>(n+1)</sup>)</sup> = n<sup>(mn)</sup>.  No podem simplificar això directament en termes de m.  No obstant això, podem manipular l'expressió:
+
+n<sup>(mn)</sup> = (n<sup>n</sup>)<sup>m</sup>  (per la propietat de les potències: a<sup>bc</sup> = (a<sup>b</sup>)<sup>c</sup>)
+
+Com que n<sup>n</sup> = m, podem substituir:
+
+(n<sup>n</sup>)<sup>m</sup> = m<sup>m</sup>
+
+Per tant, n<sup>(n<sup>(n+1)</sup>)</sup> = m<sup>m</sup>.
+
+Resposta: D)

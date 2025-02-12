@@ -1,0 +1,22 @@
+Raonament: La suma dels nombres naturals des de 1 fins a n es pot calcular amb la fórmula:  S = n(n+1)/2.  El problema indica que aquesta suma és un nombre de tres xifres iguals, per tant, la suma ha de ser de la forma 111k, on k és un enter entre 1 i 9.  Així, tenim l'equació:
+
+n(n+1)/2 = 111k
+
+n(n+1) = 222k
+
+Com que 222 = 2 x 3 x 37, podem reescriure l'equació com:
+
+n(n+1) = 2 x 3 x 37 x k
+
+Per a que n(n+1) sigui un producte de dos nombres consecutius,  ha de ser proper a la arrel quadrada de 222k.  Provem diferents valors de k:
+
+* Si k=1, n(n+1) = 222.  √222 ≈ 14.89,  per tant n ≈ 14.  14 x 15 = 210 (massa petit)
+* Si k=2, n(n+1) = 444. √444 ≈ 21.07, per tant n ≈ 21.  21 x 22 = 462 (massa gran)
+* Si k=3, n(n+1) = 666. √666 ≈ 25.8, per tant n ≈ 25.  25 x 26 = 650 (massa petit)
+* Si k=4, n(n+1) = 888. √888 ≈ 29.8, per tant n ≈ 29.  29 x 30 = 870 (massa petit)
+* Si k=5, n(n+1) = 1110. √1110 ≈ 33.3, per tant n ≈ 33.  33 x 34 = 1122 (massa gran)
+* Si k=6, n(n+1) = 1332. √1332 ≈ 36.5, per tant n ≈ 36.  36 x 37 = 1332 (solució!)
+
+Per tant, n = 36.  La suma és 36(37)/2 = 666.
+
+Resposta: B)

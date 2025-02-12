@@ -1,0 +1,22 @@
+Raonament: Només ens interessa el dígit de les unitats.  Per tant, podem simplificar el problema considerant només els dígits de les unitats de cada factor.
+
+El dígit de les unitats de 2014 és 4.  El dígit de les unitats de 2016 és 6.
+
+Necessitem trobar el dígit de les unitats de 4²⁰¹⁵ · 6²⁰¹⁷.
+
+Observem els patrons dels dígits de les unitats de les potències de 4:
+4¹ = 4
+4² = 16
+4³ = 64
+4⁴ = 256
+... el patró dels dígits de les unitats és 4, 6, 4, 6, ...  Per a exponents imparells, el dígit de les unitats és 4. Per a exponents parells, el dígit de les unitats és 6.  Com que 2015 és imparell, el dígit de les unitats de 4²⁰¹⁵ és 4.
+
+Observem els patrons dels dígits de les unitats de les potències de 6:
+6¹ = 6
+6² = 36
+6³ = 216
+... el dígit de les unitats sempre és 6, independentment de l'exponent.  Per tant, el dígit de les unitats de 6²⁰¹⁷ és 6.
+
+Finalment, multipliquem els dígits de les unitats: 4 x 6 = 24.  El dígit de les unitats del resultat és 4.
+
+Resposta: C)

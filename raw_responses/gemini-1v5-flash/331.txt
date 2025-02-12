@@ -1,0 +1,19 @@
+Raonament: Hi ha 5 xiquets en total.  Si Adrià ha de quedar per davant dels seus dos amics, primer hem de determinar quantes posicions pot ocupar Adrià. Pot quedar primer, segon, tercer o quart.  No pot quedar cinquè perquè en aquest cas no quedaria per davant dels seus dos amics.
+
+Una vegada sabem que Adrià pot ocupar 4 posicions, hem de considerar les posicions dels seus dos amics.  Si Adrià queda primer, els seus dos amics poden ocupar qualsevol de les 4 posicions restants (2n, 3r, 4t, 5è).  El nombre de maneres de col·locar els dos amics en aquestes 4 posicions és 4 x 3 = 12.
+
+Si Adrià queda segon, els seus dos amics poden ocupar qualsevol de les 3 posicions restants (3r, 4t, 5è).  El nombre de maneres de col·locar els dos amics en aquestes 3 posicions és 3 x 2 = 6.
+
+Si Adrià queda tercer, els seus dos amics poden ocupar qualsevol de les 2 posicions restants (4t, 5è).  El nombre de maneres de col·locar els dos amics en aquestes 2 posicions és 2 x 1 = 2.
+
+Si Adrià queda quart, els seus dos amics han d'ocupar la cinquena posició. Hi ha només 1 manera de col·locar-los.
+
+En total, el nombre de bons resultats per Adrià és 12 + 6 + 2 + 1 = 21.  No obstant això, cap de les opcions de resposta coincideix amb 21.  Hi ha un error en el plantejament o les opcions de resposta.  Revisant el raonament, l'error està en assumir que els dos amics són diferents. Si els considerem com a un sol grup, el problema es simplifica.
+
+Tenim 4 posicions possibles per Adrià (1r, 2n, 3r, 4t).  Per cada posició d'Adrià, els seus dos amics han de quedar en posicions posteriors.  El nombre de maneres de col·locar els altres 3 xiquets en les posicions restants és 3! = 6.  Per tant, el nombre total de bons resultats és 4 * 6 = 24.  Tampoc coincideix amb cap opció.
+
+Revisant de nou, si considerem que els dos amics són indistinguibles, el problema es simplifica.  Si Adrià queda en la posició k (k=1,2,3,4), els seus dos amics han de quedar en les posicions k+1, k+2.  Per tant, hi ha 4 bons resultats possibles.  Aquesta simplificació tampoc dona cap de les respostes.
+
+Sembla que hi ha un error en l'enunciat o les opcions de resposta.
+
+Resposta: Cap de les opcions és correcta.

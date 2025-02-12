@@ -1,0 +1,27 @@
+Raonament:  Per maximitzar el nombre de boles que podem treure sense treure tres del mateix color seguides, hem de buscar un patró que alterni els colors el màxim possible.  Comencem amb el color més abundant, el groc.
+
+Si treiem tres boles grogues seguides, ja hem fallat.  Per tant, la seqüència ideal seria alternar colors.  Per exemple: Groc, Blanc, Verd, Groc, Blanc, Verd...
+
+Tenim 50 boles grogues, 10 blanques i 4 verdes.  Si seguim el patró Groc-Blanc-Verd, podem treure:
+
+* 16 grogues (16 x 1 = 16)
+* 5 blanques (5 x 1 = 5)
+* 4 verdes (4 x 1 = 4)
+
+Això ens dona un total de 25 boles.  Però podem fer-ho millor.  Si intentem un patró que prioritzi l'alternança, però sense deixar de banda cap color, podem aconseguir més.
+
+Considerem que després de dues boles d'un color, hem de canviar.  Per tant, podem treure:
+
+* 16 grogues (16 x 1 = 16)
+* 5 blanques (5 x 1 = 5)
+* 4 verdes (4 x 1 = 4)
+
+Total: 25 boles.  Però podem afegir més boles.  Si després de cada dues grogues, posem una blanca o una verda, podem treure més.
+
+Analitzem:  Si treiem 16 grogues, 5 blanques i 4 verdes, ja tenim 25.  Podem afegir més grogues, però sempre intercalant amb un altre color.  Si afegim 16 grogues, necessitem almenys 8 boles més d'altres colors per evitar tres seguides.  No tenim tantes boles blanques ni verdes.
+
+La millor estratègia és intentar treure el màxim de boles sense repetir tres del mateix color seguides.  Un patró aproximat seria: GGBGBGBGBGBGBGBGBGBGBGBG...  Amb aquest patró, podem treure moltes boles grogues, però hem de tenir en compte les blanques i les verdes.
+
+Provant diferents combinacions, la màxima quantitat de boles que podem treure sense violar la regla és 44.
+
+Resposta: C)

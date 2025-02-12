@@ -1,0 +1,18 @@
+Raonament:  Volem trobar els possibles residus quan dividim $n^3$ per 9, on $n$ és un nombre natural.  Observem els primers cubs:
+
+* 1³ = 1  (residuo 1 al dividir per 9)
+* 2³ = 8  (residuo 8 al dividir per 9)
+* 3³ = 27 (residuo 0 al dividir per 9)
+* 4³ = 64 (residuo 1 al dividir per 9)
+* 5³ = 125 (residuo 8 al dividir per 9)
+* 6³ = 216 (residuo 0 al dividir per 9)
+* 7³ = 343 (residuo 1 al dividir per 9)
+* 8³ = 512 (residuo 8 al dividir per 9)
+* 9³ = 729 (residuo 0 al dividir per 9)
+* 10³ = 1000 (residuo 1 al dividir per 9)
+
+Observem un patró: els residus es repeteixen cada tres nombres: 1, 8, 0, 1, 8, 0...  Per tant, només hi ha 3 possibles residus diferents: 0, 1 i 8.
+
+Una altra manera de veure-ho és considerar els residus de $n$ quan es divideix per 3. Si $n \equiv 0 \pmod{3}$, llavors $n^3 \equiv 0 \pmod{9}$. Si $n \equiv 1 \pmod{3}$, llavors $n^3 \equiv 1 \pmod{9}$. Si $n \equiv 2 \pmod{3}$, llavors $n^3 \equiv 8 \pmod{9}$.  Per tant, només hi ha 3 possibles residus.
+
+Resposta: C)

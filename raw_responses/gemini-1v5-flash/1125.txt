@@ -1,0 +1,26 @@
+Raonament: Per comparar les fraccions, podem simplificar-les i expressar-les en termes de p i q.  Com que p < q, podem fer una estimació.  Observem que totes les fraccions són de la forma (ap + bq)/(c), on a, b, i c són constants.  Per facilitar la comparació, suposem valors per a p i q.  Per exemple, p = 1 i q = 2.  Substituint aquests valors a cada opció:
+
+A) (1 + 3(2))/4 = 7/4 = 1.75
+B) (1 + 2(2))/3 = 5/3 ≈ 1.67
+C) (1 + 2)/2 = 3/2 = 1.5
+D) (2(1) + 2)/3 = 4/3 ≈ 1.33
+E) (3(1) + 2)/4 = 5/4 = 1.25
+
+En aquest cas, A) és el més gran.  Ara, analitzem de forma més general.  Observem que totes les fraccions tenen un numerador que és una combinació lineal de p i q, i un denominador constant.  La fracció més gran serà aquella que té el coeficient de q més gran en relació al seu denominador.  Comparant els coeficients de q dividits pels seus denominadors:
+
+A) 3/4 = 0.75
+B) 2/3 ≈ 0.67
+C) 1/2 = 0.5
+D) 1/3 ≈ 0.33
+E) 1/4 = 0.25
+
+A) té el coeficient de q més gran en relació al seu denominador.  Per tant, és probable que representi el valor més gran.  Per assegurar-nos, podem restar les fraccions:
+
+A - B = (p+3q)/4 - (p+2q)/3 = (3p + 9q - 4p - 8q)/12 = (-p + q)/12 > 0  (ja que p < q)
+A - C = (p+3q)/4 - (p+q)/2 = (p + 3q - 2p - 2q)/4 = (q - p)/4 > 0
+A - D = (p+3q)/4 - (2p+q)/3 = (3p + 9q - 8p - 4q)/12 = (-5p + 5q)/12 = 5(q-p)/12 > 0
+A - E = (p+3q)/4 - (3p+q)/4 = (p + 3q - 3p - q)/4 = (2q - 2p)/4 = (q-p)/2 > 0
+
+En tots els casos, A és major que les altres opcions.
+
+Resposta: A)

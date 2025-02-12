@@ -1,0 +1,44 @@
+Raonament:
+
+Sigui P el nombre total de pomes.  Si hi ha N xics, cada un rep P/N pomes.
+
+Si hi ha N-2 xics, cada un rep P/(N-2) pomes.  Sabem que P/(N-2) = P/N + 1.
+
+Si hi ha N-3 xics, cada un rep P/(N-3) pomes. Sabem que P/(N-3) = P/N + 2.
+
+Tenim un sistema de dues equacions amb dues incògnites (P i N):
+
+1) P/(N-2) = P/N + 1
+2) P/(N-3) = P/N + 2
+
+Simplifiquem l'equació 1:
+
+PN = P(N-2) + N(N-2)
+PN = PN - 2P + N² - 2N
+2P = N² - 2N
+P = (N² - 2N)/2
+
+Substituïm P a l'equació 2:
+
+(N² - 2N)/2(N-3) = (N² - 2N)/2N + 2
+
+Simplifiquem:
+
+(N² - 2N)/2(N-3) = (N² - 2N + 4N)/2N
+(N² - 2N)/2(N-3) = (N² + 2N)/2N
+N(N-2)/2(N-3) = N(N+2)/2N
+(N-2)/(N-3) = (N+2)/N
+N(N-2) = (N-3)(N+2)
+N² - 2N = N² + 2N - 3N - 6
+N² - 2N = N² - N - 6
+-2N = -N - 6
+N = 6
+
+Per tant, hi ha 6 xics.  Comprovem:
+
+Si N=6, P = (6² - 2*6)/2 = 12 pomes.
+Si hi ha 6 xics, cada un rep 12/6 = 2 pomes.
+Si hi ha 4 xics (N-2), cada un rep 12/4 = 3 pomes (1 més).
+Si hi ha 3 xics (N-3), cada un rep 12/3 = 4 pomes (2 més).
+
+Resposta: A)

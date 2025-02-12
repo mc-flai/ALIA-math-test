@@ -1,0 +1,11 @@
+Raonament: Un nombre palindròmic de sis dígits té la forma ABCCBA, on A, B, i C són dígits de 0 a 9, i A no pot ser 0.  Podem expressar aquest nombre com:
+
+100000A + 10000B + 1000C + 100C + 10B + A = 100001A + 10010B + 1100C
+
+Observem que podem factoritzar aquesta expressió:
+
+100001A + 10010B + 1100C = 11 * (9091A + 910B + 100C)
+
+Això demostra que tots els nombres palindròmics de sis dígits són divisibles per 11.  Per trobar el màxim comú divisor, hem de comprovar si hi ha un divisor comú més gran que 11.  No obstant això, ja que 11 és un nombre primer, i la nostra expressió mostra que 11 és un factor de tots els nombres palindròmics de sis dígits, el màxim comú divisor ha de ser almenys 11.  No hi ha cap altre factor comú evident a tots els nombres palindròmics de sis dígits més gran que 11.
+
+Resposta: D)

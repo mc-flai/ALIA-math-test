@@ -1,0 +1,9 @@
+Raonament: Un capicua de tres xifres té la forma aba, on 'a' i 'b' són dígits del 0 al 9, i 'a' no pot ser 0.  Per ser múltiple de 6, ha de ser múltiple de 2 i de 3.  Ser múltiple de 2 implica que la xifra de les unitats (a) ha de ser parell (2, 4, 6, 8).  Ser múltiple de 3 implica que la suma de les xifres (a + b + a = 2a + b) ha de ser múltiple de 3.
+
+Busquem el capicua més gran. Comencem amb el valor més gran possible per 'a', que és 9.  Però 9 és senar, així que no serveix.  Provem amb 8: el capicua seria 8b8.  Perquè sigui múltiple de 3, 2(8) + b = 16 + b ha de ser múltiple de 3.  Els valors possibles de b que fan que 16 + b sigui múltiple de 3 són 2, 5, 8.  El capicua més gran seria 888 (16+8=24, múltiple de 3).
+
+Si provem amb a=6, el capicua seria 6b6.  2(6)+b = 12+b ha de ser múltiple de 3.  Els valors possibles de b són 0, 3, 6, 9. El capicua més gran seria 696.
+
+Si comparem 888 i 696, el més gran és 888.  La suma de les seues xifres és 8 + 8 + 8 = 24.
+
+Resposta: E)

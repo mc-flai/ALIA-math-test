@@ -1,0 +1,37 @@
+Raonament:  Com que hi ha quatre persones i cadascuna ha agafat un nombre diferent de peixos, i Anna n'ha agafat més que ningú i Beatriu menys, l'única manera de distribuir els 11 peixos és de la següent manera:
+
+* Anna: 4 peixos
+* Carles: 3 peixos
+* David: 2 peixos
+* Beatriu: 2 peixos (Aquesta distribució no és vàlida, ja que Beatriu no pot tenir el mateix nombre de peixos que David)
+
+Per tant, l'única distribució possible és:
+
+* Anna: 4 peixos
+* Carles: 3 peixos
+* David: 2 peixos
+* Beatriu: 2 peixos (Incorrecta, ja que David i Beatriu tenen el mateix nombre de peixos)
+
+Proveu una altra distribució:
+
+* Anna: 4 peixos
+* Carles: 3 peixos
+* David: 2 peixos
+* Beatriu: 2 peixos (Incorrecta)
+
+Proveu una altra distribució:
+
+* Anna: 4 peixos
+* Carles: 3 peixos
+* David: 2 peixos
+* Beatriu: 1 peix (Correcta)
+
+En aquesta distribució, Anna ha agafat 4 peixos, Beatriu 1, Carles 3 i David 2.  La suma és 10, no 11.  Per tant, hem de reajustar.
+
+Si Beatriu ha agafat 1 peix, la resta de peixos es distribueixen així: 10 peixos entre 3 persones.  Perquè no hi hagi dos amb el mateix nombre, ha de ser 4, 3 i 2.  Anna té 4, Carles 3 i David 2.  Total 9.  Falta un peix.
+
+Si Beatriu té 1 peix, la resta són 10.  La única manera de distribuir 10 peixos entre 3 persones sense que cap tingui el mateix nombre és 4, 3, 2, 1.  Per tant, Anna té 4, Carles 3, David 2 i Beatriu 1.  Això suma 10.  Falta un peix.
+
+La única distribució possible és: Anna (4), Carles (3), David (2), Beatriu (1).  Això suma 10.  Hi ha un error en l'enunciat o les opcions de resposta.  No és possible que sumin 11 amb les condicions donades.  Suposant que l'enunciat és correcte i que la suma és 10, la quantitat de peixos que han atrapat Carles i David és 3 + 2 = 5.
+
+Resposta: C) 5

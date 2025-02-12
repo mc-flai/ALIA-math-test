@@ -1,0 +1,76 @@
+Raonament: Siguin els cinc nombres a, b, c, d, e.  Tenim les següents equacions:
+
+* a + b + c = 100
+* b + c + d = 200
+* c + d + e = 300
+
+Restem la primera equació de la segona:
+
+(b + c + d) - (a + b + c) = 200 - 100
+d - a = 100
+
+Restem la segona equació de la tercera:
+
+(c + d + e) - (b + c + d) = 300 - 200
+e - b = 100
+
+Sumem les dues equacions resultants:
+
+(d - a) + (e - b) = 100 + 100
+d + e - a - b = 200
+
+Ara, sumem la primera i la tercera equació:
+
+(a + b + c) + (c + d + e) = 100 + 300
+a + b + 2c + d + e = 400
+
+Restem la equació (d + e - a - b = 200) de la equació (a + b + 2c + d + e = 400):
+
+(a + b + 2c + d + e) - (d + e - a - b) = 400 - 200
+2a + 2b + 2c = 200
+a + b + c = 100
+
+Ja sabem que a + b + c = 100.  Això no ens ajuda a trobar c.  Però, observem que la diferència entre dues sumes consecutives és constant:
+
+(b + c + d) - (a + b + c) = 100
+(c + d + e) - (b + c + d) = 100
+
+Això implica que la seqüència és aritmètica.  La diferència entre termes consecutius és constant.  Sigui aquesta diferència x.  Llavors:
+
+b = a + x
+c = a + 2x
+d = a + 3x
+e = a + 4x
+
+Substituint a la segona equació:
+
+(a + x) + (a + 2x) + (a + 3x) = 200
+3a + 6x = 200
+
+Substituint a la primera equació:
+
+a + (a + x) + (a + 2x) = 100
+3a + 3x = 100
+
+Restem les dues equacions:
+
+(3a + 6x) - (3a + 3x) = 200 - 100
+3x = 100
+x = 100/3
+
+Ara, substituïm x a 3a + 3x = 100:
+
+3a + 3(100/3) = 100
+3a + 100 = 100
+3a = 0
+a = 0
+
+Per tant, c = a + 2x = 0 + 2(100/3) = 200/3
+
+Això no és correcte.  Fem-ho d'una altra manera.  La suma dels tres nombres del mig és 200, i la suma dels tres nombres de l'esquerra és 100.  La diferència és 100.  La diferència entre la suma dels tres nombres del mig i la suma dels tres nombres de la dreta és també 100.  Per tant, la seqüència és aritmètica amb una diferència constant entre termes consecutius.  El terme central és la mitjana de la suma dels tres nombres del mig, que és 200/3.  Això no és cap de les opcions.
+
+Fem-ho d'una altra manera:  Si la seqüència és aritmètica, el terme central és la mitjana de la seqüència. La suma total és 100 + 300 - 200 = 200.  La mitjana és 200/5 = 40.  Això tampoc és cap de les opcions.
+
+Considerem que la suma dels 5 nombres és 100 + 300 - 200 = 200.  La mitjana és 200/5 = 40.  Aquesta no és una de les opcions.  Hi ha un error en l'enunciat o en les opcions.
+
+Resposta: Cap de les opcions és correcta.

@@ -1,0 +1,24 @@
+Raonament:
+
+Siguin a, b, c i d els nombres als vèrtexs del quadrat, en ordre horari.  Les condicions del problema són:
+
+* a és múltiple de b, o b és múltiple de a.
+* b és múltiple de c, o c és múltiple de b.
+* c és múltiple de d, o d és múltiple de c.
+* d és múltiple de a, o a és múltiple de d.
+* a no és múltiple de c, i c no és múltiple de a.
+* b no és múltiple de d, i d no és múltiple de b.
+
+Per minimitzar la suma a+b+c+d, intentem utilitzar nombres petits.  Considerem el cas on a=1.  Llavors, per complir les condicions de multiplicitat en els costats, b ha de ser 1, c ha de ser 1 i d ha de ser 1.  Això no compleix la condició de les diagonals.
+
+Considerem ara el cas on a=2.  Si b=1, llavors c ha de ser múltiple de b (1) o b ha de ser múltiple de c.  Si c=1, llavors d ha de ser 1 o 2.  Si d=1, no compleix la condició de la diagonal. Si d=2, tampoc compleix la condició de la diagonal.
+
+Provem amb a=2, b=1.  Perquè no es compleixi la condició de la diagonal, c ha de ser un nombre que no sigui múltiple de 2 ni tingui 2 com a múltiple.  El més petit és 3.  Llavors, d ha de ser múltiple de 3 o 3 ha de ser múltiple de d.  Si d=3, no compleix la condició de la diagonal.  Si d=6, compleix totes les condicions.  Llavors a=2, b=1, c=3, d=6.  La suma és 2+1+3+6 = 12.
+
+Provem amb altres combinacions.  Si a=1, b=2, c=1, d=2, no compleix la condició de les diagonals.
+
+Si a=2, b=4, c=1, d=2, no compleix la condició de les diagonals.
+
+La combinació a=2, b=1, c=3, d=6 sembla la que dona la suma més petita.
+
+Resposta: A)

@@ -1,0 +1,16 @@
+Raonament:  Tenim 6 cilindres, amb 3 blaus, 2 verds i 1 groc.  Per calcular el nombre de possibilitats d'apilar-los, utilitzarem permutacions amb repetició. La fórmula és:
+
+n! / (n1! * n2! * ... * nk!)
+
+on:
+
+* n és el nombre total d'elements (6 cilindres)
+* n1, n2, ... nk són el nombre d'elements de cada tipus (3 blaus, 2 verds, 1 groc)
+
+En aquest cas, la fórmula seria:
+
+6! / (3! * 2! * 1!) = (6 * 5 * 4 * 3 * 2 * 1) / ((3 * 2 * 1) * (2 * 1) * 1) = 720 / (6 * 2 * 1) = 720 / 12 = 60
+
+Per tant, hi ha 60 possibilitats diferents d'apilar els 6 cilindres.
+
+Resposta: B)

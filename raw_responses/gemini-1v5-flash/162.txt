@@ -1,0 +1,11 @@
+Raonament:  Un nombre compost és un nombre enter positiu que té almenys un divisor positiu diferent de 1 i de si mateix. Un nombre primer és un nombre enter major que 1 que només és divisible per 1 i per si mateix.  Hem de trobar quin nombre no es pot expressar com un nombre primer multiplicat per dos nombres compostos.  Analitzem cada opció:
+
+* **A) 25:** 25 = 5 x 5 x 1.  No compleix la condició, ja que només té un factor primer i un factor compost (5).
+* **B) 2·3·4·5 = 120:** 120 = 2 x (4) x (15).  2 és primer, 4 i 15 són compostos. Compleix la condició.
+* **C) 2·3²·5 = 90:** 90 = 3 x (6) x (5). 3 és primer, 6 i 5 són compostos. Compleix la condició.
+* **D) 6·12 = 72:** 72 = 2 x (6) x (6). 2 és primer, 6 i 6 són compostos. Compleix la condició.
+* **E) 1000:** 1000 = 2 x (10) x (50). 2 és primer, 10 i 50 són compostos. Compleix la condició.
+
+Només l'opció A no compleix la condició de tenir un nombre primer multiplicat per dos nombres compostos.
+
+Resposta: A)

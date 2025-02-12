@@ -1,0 +1,27 @@
+Raonament:
+
+Sigui *n* el nombre d'equips. Cada equip té 3 jugadors.  Si hi ha *n* equips, hi ha 3*n* jugadors en total.
+
+Cada jugador juga contra tots els jugadors dels altres equips.  Un jugador juga contra (3n - 3) jugadors (tots els jugadors excepte els del seu propi equip).
+
+Si hi ha 3n jugadors, el nombre total de partides jugades seria (3n * (3n - 3)) / 2.  Dividim entre 2 perquè cada partida implica dos jugadors.  Simplificant, tenim:
+
+(3n * (3n - 3)) / 2 = (9n² - 9n) / 2
+
+Sabem que el nombre total de partides no pot superar les 250.  Per tant:
+
+(9n² - 9n) / 2 ≤ 250
+
+9n² - 9n ≤ 500
+
+9n² - 9n - 500 ≤ 0
+
+Per resoldre aquesta desigualtat quadràtica, podem utilitzar la fórmula quadràtica o provar valors de *n*.  Provant valors:
+
+Si n = 8: (9 * 64 - 9 * 8) / 2 = (576 - 72) / 2 = 252 > 250 (massa partides)
+Si n = 7: (9 * 49 - 9 * 7) / 2 = (441 - 63) / 2 = 189 ≤ 250 (funciona)
+Si n = 9: (9 * 81 - 9 * 9) / 2 = (729 - 81) / 2 = 324 > 250 (massa partides)
+
+Per tant, el nombre màxim d'equips és 7.
+
+Resposta: E)

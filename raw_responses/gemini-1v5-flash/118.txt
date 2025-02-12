@@ -1,0 +1,33 @@
+Raonament:
+
+Sabem que hi ha 15 participants en total, distribuïts en quatre equips (A, B, C, D) amb un nombre diferent de participants en cada equip i almenys dos participants per equip.
+
+* A + B = 7
+* A + D = 9
+
+Restem la primera equació de la segona:
+
+(A + D) - (A + B) = 9 - 7
+D - B = 2
+
+Això significa que l'equip D té dos membres més que l'equip B.  Com que cada equip té un nombre diferent de membres i almenys dos, les possibilitats per a B i D són:
+
+* Si B = 2, llavors D = 4
+* Si B = 3, llavors D = 5
+* Si B = 4, llavors D = 6 (i així successivament)
+
+Ara, substituïm els valors possibles de B a l'equació A + B = 7 per trobar A:
+
+* Si B = 2, A = 5
+* Si B = 3, A = 4
+* Si B = 4, A = 3 (i així successivament)
+
+Com que A i B no poden tenir el mateix nombre de membres, descartem la possibilitat B=4, A=3.
+
+Si A = 5 i B = 2, llavors D = 4.  El nombre total de membres en A, B i D és 5 + 2 + 4 = 11.  Per tant, el nombre de membres de l'equip C és 15 - 11 = 4.
+
+Si A = 4 i B = 3, llavors D = 5. El nombre total de membres en A, B i D és 4 + 3 + 5 = 12.  Per tant, el nombre de membres de l'equip C és 15 - 12 = 3.
+
+Com que totes les opcions són possibles, cal revisar les condicions.  La condició que el nombre de participants de cada equip sigui diferent es compleix en ambdós casos.  Però, només una opció està disponible: 4.
+
+Resposta: C)

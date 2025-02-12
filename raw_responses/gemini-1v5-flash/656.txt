@@ -1,0 +1,34 @@
+Raonament:
+
+Sigui x la longitud d'un dels costats del primer quadrat i y la longitud d'un dels costats del segon quadrat.  Les longituds x i y són nombres enters.
+
+La suma de les longituds dels costats dels dos quadrats és igual a la longitud total de la corda: 4x + 4y = 40.  Simplificant, tenim x + y = 10.
+
+La suma de les àrees dels dos quadrats és 68 m²: x² + y² = 68.
+
+Tenim un sistema de dues equacions amb dues incògnites:
+
+1) x + y = 10
+2) x² + y² = 68
+
+De l'equació 1), podem expressar y com y = 10 - x.  Substituint això a l'equació 2):
+
+x² + (10 - x)² = 68
+x² + 100 - 20x + x² = 68
+2x² - 20x + 32 = 0
+x² - 10x + 16 = 0
+
+Resolent aquesta equació quadràtica (factoritzant o utilitzant la fórmula quadràtica), obtenim:
+
+(x - 2)(x - 8) = 0
+
+Per tant, x = 2 o x = 8.
+
+Si x = 2, llavors y = 10 - 2 = 8.
+Si x = 8, llavors y = 10 - 8 = 2.
+
+En qualsevol cas, les àrees dels quadrats són 2² = 4 m² i 8² = 64 m².
+
+La diferència entre les àrees dels dos quadrats és 64 - 4 = 60 m².
+
+Resposta: E)

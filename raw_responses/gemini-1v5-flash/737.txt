@@ -1,0 +1,18 @@
+Raonament:  Necessitem trobar el nombre màxim de caixes que puguem tenir.  Perquè totes les caixes tinguin el mateix nombre de pomes, el nombre de caixes ha de ser un divisor de 60.  A més, cada caixa ha de tenir un nombre diferent de peres.  Per maximitzar el nombre de caixes, necessitem minimitzar el nombre de pomes per caixa.
+
+Els divisors de 60 són: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
+
+Si tenim 1 caixa, tindrà 60 pomes i 60 peres.
+Si tenim 2 caixes, tindran 30 pomes cadascuna.  Per tenir un nombre diferent de peres a cada caixa, una tindria 1 pera i l'altra 59.
+Si tenim 3 caixes, tindran 20 pomes cadascuna.  Podríem tenir 1, 2, 58 peres.
+Si tenim 4 caixes, tindran 15 pomes cadascuna.  Podríem tenir 1, 2, 3, 57 peres.
+Si tenim 5 caixes, tindran 12 pomes cadascuna.  Podríem tenir 1, 2, 3, 4, 56 peres.
+Si tenim 6 caixes, tindran 10 pomes cadascuna.  Podríem tenir 1, 2, 3, 4, 5, 55 peres.
+Si tenim 10 caixes, tindran 6 pomes cadascuna.  Podríem tenir 1, 2, 3, 4, 5, 6, 7, 8, 9, 51 peres.
+Si tenim 12 caixes, tindran 5 pomes cadascuna.  Podríem tenir 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 49 peres.
+Si tenim 15 caixes, tindran 4 pomes cadascuna.  Podríem tenir 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 46 peres.
+Si tenim 20 caixes, tindran 3 pomes cadascuna.  Podríem tenir 1, 2, ..., 19, 41 peres.
+
+El nombre màxim de caixes que podem tenir amb un nombre diferent de peres a cada caixa és 15.
+
+Resposta: B)

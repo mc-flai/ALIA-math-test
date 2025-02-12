@@ -1,0 +1,26 @@
+Raonament: L'expressió és una suma de diferències de quadrats.  Podem agrupar els termes de dos en dos:
+
+(2015² − 2014²) + (2013² − 2012²) + ... + (3² − 2²) + 1²
+
+Utilitzant la diferència de quadrats (a² - b² = (a+b)(a-b)), podem simplificar cada parella:
+
+(2015 + 2014)(2015 - 2014) + (2013 + 2012)(2013 - 2012) + ... + (3 + 2)(3 - 2) + 1²
+
+Això es simplifica a:
+
+4029 + 4025 + ... + 5 + 1
+
+Aquesta és una sèrie aritmètica amb el primer terme a₁ = 1, l'últim terme aₙ = 4029 i la diferència comuna d = 4.  Per trobar el nombre de termes, podem utilitzar la fórmula aₙ = a₁ + (n-1)d:
+
+4029 = 1 + (n-1)4
+4028 = 4(n-1)
+1007 = n-1
+n = 1008
+
+La suma d'una sèrie aritmètica és donada per S = n/2(a₁ + aₙ):
+
+S = 1008/2 (1 + 4029) = 504 * 4030 = 2031120
+
+Per tant, la suma de la sèrie és 2031120.
+
+Resposta: D)

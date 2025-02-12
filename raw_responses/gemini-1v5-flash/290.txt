@@ -1,0 +1,10 @@
+Raonament:  Volem minimitzar el producte abcd després d'augmentar un dels nombres en 1.  Considerem l'efecte d'augmentar cada nombre individualment:
+
+* **Augmentant a:** El nou producte és (a+1)bcd.  La diferència respecte al producte original és (a+1)bcd - abcd = bcd.
+* **Augmentant b:** El nou producte és a(b+1)cd.  La diferència respecte al producte original és a(b+1)cd - abcd = acd.
+* **Augmentant c:** El nou producte és ab(c+1)d.  La diferència respecte al producte original és ab(c+1)d - abcd = abd.
+* **Augmentant d:** El nou producte és abc(d+1).  La diferència respecte al producte original és abc(d+1) - abcd = abc.
+
+Com que a < b < c < d, tenim que abc < abd < acd < bcd.  Per tant, la menor diferència s'aconsegueix augmentant *d*.  Encara que l'augment en el valor absolut és el més gran, el producte resultant és el més petit.
+
+Resposta: D)

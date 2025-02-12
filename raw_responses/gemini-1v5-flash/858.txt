@@ -1,0 +1,21 @@
+Raonament:  Anem a intentar trobar una seqüència que ens porti de 45 a 200 amb el mínim nombre de passos possibles, utilitzant només doblar, dividir per tres o elevar al quadrat.  Provem diverses estratègies:
+
+* **Estratègia 1 (Doblar):** Doblar 45 repetidament ens dona 90, 180, 360...  Ens passem de 200.
+* **Estratègia 2 (Dividir per 3):** Dividir 45 entre 3 dona 15, que és massa petit.
+* **Estratègia 3 (Quadrat):** El quadrat de 45 és 2025, massa gran.
+
+Per tant, necessitem una combinació d'operacions.  Anem a explorar algunes possibilitats:
+
+* **Seqüència 1:** 45 * 2 = 90; 90 * 2 = 180; 180 + 20 = 200 (Aquesta no és vàlida perquè no podem sumar 20).
+* **Seqüència 2:** 45 * 2 = 90; 90 * 2 = 180; 180 * 1.111... = 200 (Aquesta no és vàlida perquè no podem multiplicar per 1.111...).
+* **Seqüència 3:** 45^2 = 2025 (Massa gran)
+* **Seqüència 4:** 45 x 2 = 90; 90 x 2 = 180; 180/3 = 60; 60 x 2 = 120; 120 x 2 = 240 (Massa gran)
+* **Seqüència 5:** 45 * 2 = 90; 90^2 = 8100 (Massa gran)
+* **Seqüència 6:** 45 * 2 = 90; 90 / 3 = 30; 30 * 2 = 60; 60 * 2 = 120; 120 * 2 = 240 (Massa gran)
+* **Seqüència 7:**  45 x 2 = 90; 90 x 2 = 180; 180 / 3 = 60; 60 x 2 = 120; 120 x 2 = 240 (Massa gran)
+* **Seqüència 8:** 45 * 2 = 90; 90 * 2 = 180; 180/3 = 60; 60*2 = 120; 120*2 = 240 (Massa gran)
+* **Seqüència 9:** 45 * 2 = 90; 90 * 2 = 180.  No podem arribar a 200 amb una sola operació des de 180.
+
+Després de provar diverses combinacions, sembla difícil aconseguir 200 amb menys de 7 passos.  No he trobat una seqüència que ho aconsegueixi en menys de 7 passos.
+
+Resposta: B)

@@ -1,0 +1,59 @@
+Raonament:
+
+Sigui N = 1000p + 100q + 10r + s el nombre de quatre xifres.
+El nombre pq,rs es pot escriure com 10p + q + rs/100 = 10p + q + r/10 + s/100.
+Els nombres de dues xifres pq i rs són 10p + q i 10r + s respectivament.
+La mitjana entre pq i rs és (10p + q + 10r + s)/2.
+Segons l'enunciat, pq,rs és la mitjana entre pq i rs:
+
+10p + q + r/10 + s/100 = (10p + q + 10r + s)/2
+
+Multiplicant per 100 per eliminar les fraccions:
+
+1000p + 100q + 10r + s = 500p + 50q + 500r + 50s
+
+Simplificant:
+
+500p + 50q - 490r - 49s = 0
+
+Dividint per 10:
+
+50p + 5q - 49r - 4.9s = 0
+
+Com que p, q, r, s són dígits enters, la única manera que aquesta equació es compleixi és si s=0.  Això simplifica l'equació a:
+
+50p + 5q - 49r = 0
+
+Per trobar una solució senzilla, podem provar valors petits. Si p=1, llavors 50 + 5q = 49r.  Si q=9, 50 + 45 = 95 = 49r, que no té solució entera per r.
+
+Si provem p=1, q=4, tenim 50 + 20 = 70 = 49r, que tampoc té solució entera.
+
+Si provem p=1, q=0, tenim 50 = 49r, que no té solució entera.
+
+Si provem p=2, 100 + 5q = 49r. Si q=0, 100 = 49r, que no té solució entera. Si q=1, 105 = 49r, que no té solució entera. Si q=2, 110 = 49r, que no té solució entera.
+
+Si provem amb p=1, q=9, 50 + 45 = 95, que no és divisible per 49.
+
+Però si considerem que la mitjana és:
+
+(10p + q + 10r + s)/2 = 10p + q + r/10 + s/100
+
+Multiplicant per 200:
+
+2000p + 200q + 20r + 2s = 2000p + 200q + 20r + 2s
+
+Aquesta equació és una identitat, no ens ajuda.  L'error està en la interpretació de pq,rs.  Ha de ser (10p+q) + (r/10 + s/100).
+
+Tornem a la primera equació: 500p + 50q - 490r - 49s = 0.  Si s=0, 50p + 5q = 49r.  Si p=1, 50 + 5q = 49r.  Si q=9, 95 = 49r, no és possible.
+
+Provant amb valors, si p=1, q=4, r=2, s=0,  50(1) + 5(4) - 49(2) = 70 - 98 = -28.  No funciona.
+
+Si p=1, q=9, r=2, s=0, 50 + 45 - 98 = -2.
+
+Si p=1, q=4, r=1, s=0, 50 + 20 - 49 = 21. No funciona.
+
+Per a que la mitjana sigui correcta, ha de ser: (10p+q + 10r+s)/2 = 10p + q + 0.1r + 0.01s.  Això no porta a una solució senzilla.
+
+No he pogut trobar una solució analítica.  Provant amb valors, sembla que no hi ha solució senzilla.
+
+Resposta: No puc determinar la resposta amb el raonament proporcionat.

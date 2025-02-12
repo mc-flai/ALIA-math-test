@@ -1,0 +1,34 @@
+Raonament:
+
+El nombre A és la suma d'una sèrie geomètrica:  A = 1 + 10 + 10² + ... + 10²⁰¹⁴ = (10²⁰¹⁵ - 1) / 9
+
+Volem calcular la suma de les xifres de 2015 * A.  Observem que A té 2015 uns.  Si multipliquem A per 2015, obtindrem un nombre molt gran.  No és pràctic calcular aquest producte directament i després sumar les seues xifres.
+
+En comptes d'això, podem utilitzar una propietat de la suma de les xifres. La suma de les xifres d'un nombre és congruent al nombre mòdul 9.  És a dir,  S(n) ≡ n (mod 9), on S(n) és la suma de les xifres de n.
+
+Per tant, la suma de les xifres de 2015 * A és congruent a 2015 * A (mod 9).
+
+Primer, calculem 2015 (mod 9):
+2015 = 9 * 223 + 8
+2015 ≡ 8 (mod 9)
+
+Després, calculem A (mod 9):
+A = 111...111 (2015 uns)
+A = Σᵢ₌₀²⁰¹⁴ 10ⁱ
+A ≡ Σᵢ₌₀²⁰¹⁴ 1 (mod 9)  (ja que 10 ≡ 1 (mod 9))
+A ≡ 2015 (mod 9)
+A ≡ 8 (mod 9)
+
+Per tant, 2015 * A ≡ 8 * 8 ≡ 64 ≡ 1 (mod 9)
+
+La suma de les xifres de 2015 * A ha de ser congruent a 1 (mod 9).  Observem les opcions:
+
+A) 16000 ≡ 7 (mod 9)
+B) 16050 ≡ 2 (mod 9)
+C) 16200 ≡ 0 (mod 9)
+D) 2015 * 2015 = 4060225 ≡ 0 (mod 9)
+E) 16120 ≡ 1 (mod 9)
+
+Només l'opció E) compleix la congruència.
+
+Resposta: E)

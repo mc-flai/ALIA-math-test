@@ -1,0 +1,29 @@
+Raonament: Un rectangle té dos parells de costats iguals.  Siguin a i b les longituds dels costats del rectangle.  Tenim dues possibilitats:
+
+* **Cas 1:** La suma de tres costats és 20.  Això pot ser a + a + b = 20, o a + b + b = 20.  En ambdós casos, podem expressar b en funció de a:
+
+    * 2a + b = 20  =>  b = 20 - 2a
+    * a + 2b = 20  =>  2b = 20 - a  => b = (20 - a)/2
+
+* **Cas 2:** La suma de tres costats és 22.  De la mateixa manera:
+
+    * 2a + b = 22  =>  b = 22 - 2a
+    * a + 2b = 22  =>  2b = 22 - a  => b = (22 - a)/2
+
+El perímetre del rectangle és sempre 2a + 2b.  Substituint les expressions de b en funció de a:
+
+* **Cas 1:**
+    * 2a + 2(20 - 2a) = 2a + 40 - 4a = 40 - 2a
+    * 2a + 2((20 - a)/2) = 2a + 20 - a = 10 + a
+
+* **Cas 2:**
+    * 2a + 2(22 - 2a) = 2a + 44 - 4a = 44 - 2a
+    * 2a + 2((22 - a)/2) = 2a + 22 - a = 12 + a
+
+
+Per trobar el perímetre, necessitem que la suma de tres costats sigui 20 o 22.  Observem que les opcions de resposta són 14, 18, 28, 38 i 56.  Només 28 és un nombre que pot ser expressat com 40 - 2a o 44 - 2a o 10 + a o 12 + a.
+
+Si 40 - 2a = 28, llavors 2a = 12, i a = 6.  Llavors b = 20 - 2(6) = 8.  El perímetre seria 2(6) + 2(8) = 28.
+Si 44 - 2a = 28, llavors 2a = 16, i a = 8. Llavors b = 22 - 2(8) = 6. El perímetre seria 2(8) + 2(6) = 28.
+
+Resposta: C)

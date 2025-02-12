@@ -1,0 +1,26 @@
+Raonament:
+
+El problema ens diu que si en la posició N hi ha la xifra X, el nombre M conté X xifres N.  Com que M és un nombre de 10 xifres, la suma de les xifres de 0 a 9 ha de ser 10.  Per tant, podem representar el nombre M com una seqüència de 10 xifres, on la posició i conté la xifra que indica quantes vegades apareix la xifra i en el nombre M.
+
+Considerem la suma de les posicions: 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45.  Aquesta suma ha de ser igual a la suma de les xifres de M multiplicada per la seva posició.
+
+Per a que la suma de les xifres sigui 10, hem de trobar una combinació de xifres que compleixi la condició.  No podem tenir molts zeros, ja que si tenim pocs zeros, la suma de les posicions serà molt alta.  Per altra banda, si tenim molts zeros, la suma de les posicions serà baixa.  Hem de buscar un equilibri.
+
+Provem amb diferents combinacions.  Si hi hagués 8 zeros, la suma de les posicions seria molt baixa.  Si hi hagués 4 zeros, la suma de les posicions seria alta.  La clau és trobar una combinació que equilibri la suma de les posicions amb la suma de les xifres.
+
+Després de provar diverses combinacions, la única que funciona és la següent:
+
+* Posició 0: 6 zeros
+* Posició 1: 1 un
+* Posició 2: 2 dosos
+* Posició 3: 0 tresos
+* Posició 4: 0 quatres
+* Posició 5: 0 cinc
+* Posició 6: 0 sisos
+* Posició 7: 0 set
+* Posició 8: 0 vuit
+* Posició 9: 1 nou
+
+Aquesta combinació compleix la condició:  6 zeros, 1 un, 2 dosos, 0 tresos, etc.  La suma de les xifres és 10 (6 + 1 + 2 = 9).  La suma de les posicions és 45.
+
+Resposta: B)

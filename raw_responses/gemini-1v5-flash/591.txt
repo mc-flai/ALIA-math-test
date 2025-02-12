@@ -1,0 +1,22 @@
+Raonament:  Observem el patró de com es distribueixen les pilotes:
+
+* Caixa 1: 1 pilota (número 1)
+* Caixa 2: 2 pilotes (números 2, 3)
+* Caixa 3: 3 pilotes (números 4, 5, 6)
+* Caixa n: n pilotes (números  ∑_(i=1)^(n-1) i + 1  fins a  ∑_(i=1)^n i )
+
+La fórmula per la suma dels primers n nombres naturals és n(n+1)/2.  Per tant, la última pilota a la caixa n té el número n(n+1)/2.
+
+Volem trobar la caixa (n) on es troba la pilota número 2018.  Necessitem resoldre la desigualtat:
+
+n(n+1)/2 ≥ 2018
+
+n(n+1) ≥ 4036
+
+Podem aproximar la solució fent la arrel quadrada de 4036, que és aproximadament 63.5.  Provem amb n=63:
+
+63(64)/2 = 2016
+
+Això significa que la pilota número 2016 està a la caixa 63.  La pilota número 2017 i 2018 estaran a la caixa següent, la caixa 64.
+
+Resposta: D)

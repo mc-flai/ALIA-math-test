@@ -1,0 +1,22 @@
+Raonament:
+
+Primer, cal calcular la velocitat de traducció de l'equip inicial de 3 traductors.  Si 3 traductors traduïxen 18 pàgines en 2 hores (120 minuts), la seua velocitat és de 18 pàgines / 120 minuts = 0,15 pàgines/minut per traductor.  Com que són 3 traductors, la velocitat total de l'equip inicial és de 0,15 pàgines/minut * 3 traductors = 0,45 pàgines/minut.
+
+Durant els primers 120 minuts, l'equip inicial va traduir 18 pàgines.
+
+Després, durant 20 minuts, se'ls ajunten 3 traductors més. Ara hi ha 6 traductors treballant. La velocitat total de l'equip ampliat és de 0,15 pàgines/minut * 6 traductors = 0,9 pàgines/minut.
+
+En 20 minuts, l'equip ampliat va traduir 0,9 pàgines/minut * 20 minuts = 18 pàgines.  Però això és incorrecte, ja que hem de sumar les pàgines traduïdes pels 6 traductors durant 20 minuts a les pàgines ja traduïdes pels 3 traductors inicials.
+
+En els 20 minuts addicionals, els 6 traductors van traduir 0,9 pàgines/minut * 20 minuts = 18 pàgines.  Això és incorrecte.
+
+Cal corregir el càlcul:
+
+* Velocitat dels 3 traductors inicials: 18 pàgines / 120 minuts = 0.15 pàgines/minut per traductor.
+* Velocitat total dels 3 traductors inicials: 0.15 pàgines/minut/traductor * 3 traductors = 0.45 pàgines/minut.
+* Pàgines traduïdes pels 3 traductors en 120 minuts: 0.45 pàgines/minut * 120 minuts = 18 pàgines.
+* Velocitat total dels 6 traductors: 0.15 pàgines/minut/traductor * 6 traductors = 0.9 pàgines/minut.
+* Pàgines traduïdes pels 6 traductors en 20 minuts: 0.9 pàgines/minut * 20 minuts = 18 pàgines.
+* Total de pàgines traduïdes: 18 pàgines (inicials) + 3 pàgines (addicionals) = 21 pàgines.
+
+Resposta: A)

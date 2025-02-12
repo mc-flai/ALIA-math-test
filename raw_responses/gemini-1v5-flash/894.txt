@@ -1,0 +1,42 @@
+Raonament:
+
+Sigui la graella 3x3 representada per la matriu:
+
+```
+a b c
+d e f
+g h i
+```
+
+Sabem que:
+
+* El producte de cada fila és 1: abc = def = ghi = 1
+* El producte de cada columna és 1: adg = beh = cfi = 1
+* El producte dels nombres de qualsevol graella 2x2 és 2: ab = 2, be = 2, ef = 2, de = 2, eh = 2, fh = 2, etc.
+
+Considerem les quatre graelles 2x2 que contenen la casella central 'e'.  Els seus productes són:
+
+* abde = 2
+* bcef = 2
+* degh = 2
+* efhi = 2
+
+Multiplicant aquests quatre productes, obtenim:
+
+(abde)(bcef)(degh)(efhi) = 2 * 2 * 2 * 2 = 16
+
+Simplificant, tenim:
+
+a(b²)(c)(d²)(e²)(f²)(g)(h²)i = 16
+
+Com que abc = 1, def = 1, ghi = 1, podem substituir:
+
+(1)(1)(1)(e²) = 16
+
+e² = 16
+
+e = ±4
+
+Com que els nombres són positius, e = 4.
+
+Resposta: C)

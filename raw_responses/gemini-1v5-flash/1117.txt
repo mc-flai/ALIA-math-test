@@ -1,0 +1,9 @@
+Raonament: Blai comença amb 1 i multiplica repetidament per 6 o per 10.  Per tant, els nombres que pot obtenir seran de la forma 2<sup>a</sup> 3<sup>b</sup> 5<sup>c</sup>, on a, b, i c són enters no negatius.  Analitzem la descomposició en factors primers de cada opció:
+
+* **A) 2¹⁰⁰3²⁰5⁸⁰:**  a=100, b=20, c=80.  Possible.
+* **B) 2⁹⁰3²⁰5⁸⁰:** a=90, b=20, c=80. Possible.
+* **C) 2⁹⁰3²⁰5⁷⁰:** a=90, b=20, c=70. Possible.
+* **D) 2¹¹⁰3⁸⁰5³⁰:** a=110, b=80, c=30. Possible.
+* **E) 2⁵⁰5⁵⁰:** a=50, b=0, c=50.  Aquí tenim un problema.  Per obtenir un 5⁵⁰, necessitem multiplicar per 10 cinquanta vegades (10 = 2*5).  Cada vegada que multipliquem per 10, també introduïm un 2.  Per tant, el nombre de factors 2 ha de ser igual o major que el nombre de factors 5.  En aquest cas, tenim 50 factors 5 però només 50 factors 2.  Si haguéssim multiplicat per 6 (2*3) alguna vegada, hauríem introduït més factors 2.  Per tant, aquest nombre no es pot obtenir.
+
+Resposta: E)

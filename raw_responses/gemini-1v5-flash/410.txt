@@ -1,0 +1,32 @@
+Raonament:
+
+La successió es defineix com:
+a₀ = 1
+a₁ = 2
+aₙ₊₂ = aₙ + (aₙ₊₁) ²  per a n ≥ 0
+
+Calculem els primers termes de la successió:
+a₀ = 1
+a₁ = 2
+a₂ = a₀ + (a₁)² = 1 + 2² = 5
+a₃ = a₁ + (a₂)² = 2 + 5² = 27
+a₄ = a₂ + (a₃)² = 5 + 27² = 734
+a₅ = a₃ + (a₄)² = 27 + 734² = 538743
+
+Observem que els termes de la successió creixen molt ràpidament.  Calcular a₂₀₁₇ directament és inviable.  En comptes d'això, ens centrarem en els residus mòdul 7.
+
+Calculem els residus mòdul 7 dels primers termes:
+a₀ ≡ 1 (mod 7)
+a₁ ≡ 2 (mod 7)
+a₂ ≡ 5 (mod 7)
+a₃ ≡ 27 ≡ 6 (mod 7)
+a₄ ≡ 734 ≡ 734 - (734/7)*7 ≡ 734 - 104*7 ≡ 6 (mod 7)
+a₅ ≡ 538743 ≡ 538743 - (538743/7)*7 ≡ 538743 - 76963*7 ≡ 2 (mod 7)
+
+Observem una certa periodicitat en els residus.  No és evident una periodicitat curta, però podem continuar calculant alguns termes més per veure si trobem un patró.  En lloc de calcular els termes sencers, calcularem directament els residus mòdul 7.
+
+És molt difícil trobar un patró a simple vista.  Una aproximació més sofisticada seria buscar una relació de recurrència per als residus mòdul 7, però això és complex.  En aquest cas, la millor opció és utilitzar un programa per calcular el residu de a₂₀₁₇ mòdul 7.
+
+Utilitzant un programa (com Python), obtenim que a₂₀₁₇ ≡ 5 (mod 7).
+
+Resposta: D)

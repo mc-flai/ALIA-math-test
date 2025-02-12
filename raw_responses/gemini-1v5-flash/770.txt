@@ -1,0 +1,16 @@
+Raonament:
+
+L'equació és 2 - |x| = ax.  Podem reescriure-la com |x| = 2 - ax.  Perquè hi hagi exactament dues solucions, la recta y = 2 - ax ha de tallar la funció y = |x| en dos punts.
+
+Considerem dos casos:
+
+* **x ≥ 0:**  Llavors |x| = x, i l'equació es converteix en x = 2 - ax.  Resolent per x, obtenim x(1+a) = 2, o x = 2/(1+a).  Perquè aquesta solució sigui vàlida (x ≥ 0), necessitem 2/(1+a) ≥ 0, el que implica 1+a > 0, o a > -1.
+
+* **x < 0:** Llavors |x| = -x, i l'equació es converteix en -x = 2 - ax.  Resolent per x, obtenim x(a-1) = 2, o x = 2/(a-1).  Perquè aquesta solució sigui vàlida (x < 0), necessitem 2/(a-1) < 0, el que implica a-1 < 0, o a < 1.
+
+Per tenir exactament dues solucions, necessitem una solució positiva i una negativa.  Això significa que hem de tenir a > -1 i a < 1.  Per tant, la condició és -1 < a < 1.
+
+Si a = 1, llavors x = 2/(1+1) = 1 (x≥0) i no hi ha solució per x<0.
+Si a = -1, llavors no hi ha solució per x≥0 i x = 2/(-2) = -1 (x<0).
+
+Resposta: B)

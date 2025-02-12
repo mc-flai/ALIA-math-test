@@ -1,0 +1,10 @@
+Raonament: La suma dels nombres enters positius des de 1 fins a n es calcula amb la fórmula n(n+1)/2.  Si Joan ha obtingut 857, però ha sumat un nombre dues vegades, significa que la suma correcta és menor que 857.  Necessitem trobar un nombre n tal que n(n+1)/2 sigui proper a 857, però lleugerament inferior.
+
+Anem a provar amb alguns valors de n:
+
+* Si n = 40: 40(41)/2 = 820
+* Si n = 41: 41(42)/2 = 861
+
+Com que 861 és superior a 857, sabem que n = 41 és massa gran.  Per tant, la suma correcta és 820 (quan n=40).  La diferència entre la suma incorrecta (857) i la suma correcta (820) és 857 - 820 = 37.  Aquest és el nombre que Joan va sumar dues vegades.
+
+Resposta: D)

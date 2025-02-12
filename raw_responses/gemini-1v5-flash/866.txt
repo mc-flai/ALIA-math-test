@@ -1,0 +1,36 @@
+Raonament:
+
+Un nombre de tres xifres es pot representar com 100a + 10b + c, on a, b i c són xifres de 0 a 9, i a és diferent de 0.
+
+Si eliminem la primera xifra (a), obtenim el nombre 10b + c, que ha de ser un quadrat perfecte.  Anomenem aquest quadrat perfecte  x².
+
+Si eliminem l'última xifra (c), obtenim el nombre 10a + b, que també ha de ser un quadrat perfecte. Anomenem aquest quadrat perfecte y².
+
+Per tant, tenim les equacions:
+
+10b + c = x²
+10a + b = y²
+
+Com que 10b + c és un nombre de dues xifres, x² pot ser 16, 25, 36, 49, 64, 81.  Això significa que x pot ser 4, 5, 6, 7, 8, 9.
+
+Com que 10a + b és un nombre de dues xifres, y² pot ser 16, 25, 36, 49, 64, 81. Això significa que y pot ser 4, 5, 6, 7, 8, 9.
+
+Ara hem de trobar parelles (a, b, c) que satisfacin les dues equacions.  Provem amb els valors possibles de x i y:
+
+* Si x = 4, 10b + c = 16.  Possibles valors: b=1, c=6.  Llavors 10a + 1 = y².  No hi ha solució.
+* Si x = 5, 10b + c = 25.  Possibles valors: b=2, c=5.  Llavors 10a + 2 = y².  No hi ha solució.
+* Si x = 6, 10b + c = 36.  Possibles valors: b=3, c=6.  Llavors 10a + 3 = y².  No hi ha solució.
+* Si x = 7, 10b + c = 49.  Possibles valors: b=4, c=9.  Llavors 10a + 4 = y².  No hi ha solució.
+* Si x = 8, 10b + c = 64.  Possibles valors: b=6, c=4.  Llavors 10a + 6 = y².  Si a=1, 16 = 4², funciona.  El nombre és 164.
+* Si x = 9, 10b + c = 81.  Possibles valors: b=8, c=1.  Llavors 10a + 8 = y².  Si a=1, 18 no és un quadrat perfecte. Si a=2, 28 no és un quadrat perfecte. Si a=7, 78 no és un quadrat perfecte. Si a=8, 88 no és un quadrat perfecte.
+
+* Si y = 4, 10a + b = 16.  Possibles valors: a=1, b=6.  Llavors 10(6) + c = x².  60 + c = x².  No hi ha solució.
+* Si y = 5, 10a + b = 25.  Possibles valors: a=2, b=5.  Llavors 10(5) + c = x².  50 + c = x².  No hi ha solució.
+* Si y = 6, 10a + b = 36.  Possibles valors: a=3, b=6.  Llavors 10(6) + c = x².  60 + c = x².  No hi ha solució.
+* Si y = 7, 10a + b = 49.  Possibles valors: a=4, b=9.  Llavors 10(9) + c = x².  90 + c = x².  No hi ha solució.
+* Si y = 8, 10a + b = 64.  Possibles valors: a=6, b=4.  Llavors 10(4) + c = x².  40 + c = x².  No hi ha solució.
+* Si y = 9, 10a + b = 81.  Possibles valors: a=8, b=1.  Llavors 10(1) + c = x².  10 + c = x².  No hi ha solució.
+
+Només hem trobat un nombre: 164.
+
+Resposta: A)

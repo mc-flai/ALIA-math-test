@@ -1,0 +1,19 @@
+Raonament:
+
+Un nombre és múltiple de 6 si és múltiple de 2 i de 3.  Per ser múltiple de 2, la seva última xifra ha de ser parella.  Per ser múltiple de 3, la suma de les seves xifres ha de ser múltiple de 3.
+
+Els nombres de 4 xifres amb xifres creixents d'esquerra a dreta tenen la forma abcd, on a < b < c < d i a ≥ 1.  Per trobar el més gran, hem de començar amb les xifres més grans possibles.
+
+Si d és 8, llavors c pot ser 7, 6 o 5.  Si c és 7, b pot ser 6 o 5, i a pot ser 4, 3, 2 o 1.  Si c és 6, b pot ser 5, 4, 3, 2 o 1.  Si c és 5, b pot ser 4, 3, 2 o 1.
+
+Per a que sigui múltiple de 6, la suma a+b+c+d ha de ser múltiple de 3 i d ha de ser parell.  Anem provant amb els nombres més grans:
+
+* Si d=8, provem amb c=7.  Llavors a+b+7+8 = a+b+15 ha de ser múltiple de 3.  Si a=4 i b=5, tenim 4578.  La suma és 24, múltiple de 3.  4578 és múltiple de 6.
+
+* Si d=8, c=6.  a+b+6+8 = a+b+14 ha de ser múltiple de 3.  No hi ha combinació possible amb a<b<6 que ho compleixi.
+
+* Si d=8, c=5.  a+b+5+8 = a+b+13 ha de ser múltiple de 3.  No hi ha combinació possible amb a<b<5 que ho compleixi.
+
+Per tant, el nombre més gran de 4 xifres amb xifres creixents que és múltiple de 6 és 4578.  La xifra de les centenes és 7.
+
+Resposta: A)

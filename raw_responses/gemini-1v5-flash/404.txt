@@ -1,0 +1,34 @@
+Raonament:
+
+Primer, analitzem el numerador i el denominador per separat.  Observem un patró en cada suma:
+
+**Numerador:** 1·5·25 + 2·10·50 + 3·15·75 + ...  =  1³·5³ + 2³·5³·2³ + 3³·5³·3³ + ... = 5³(1³ + 2³·2³ + 3³·3³ + ... + 2017³·2017³) = 125 Σ_{k=1}^{2017} k^6
+
+**Denominador:** 1·2·4 + 2·4·8 + 3·6·12 + ... = 1·2·(2·2) + 2·4·(4·2) + 3·6·(6·2) + ... = 2 Σ_{k=1}^{2017} k·(2k)·(2·2k) = 8 Σ_{k=1}^{2017} k³
+
+Per tant, la fracció A es pot escriure com:
+
+A = [125 Σ_{k=1}^{2017} k⁶] / [8 Σ_{k=1}^{2017} k³]
+
+Sabem que la suma dels cubs dels primers n nombres naturals és [n(n+1)/2]².  Per tant, Σ_{k=1}^{2017} k³ = [2017(2018)/2]²
+
+No hi ha una fórmula tan senzilla per a la suma de les sisenes potències.  No obstant això, podem simplificar la fracció:
+
+A = (125/8) * [Σ_{k=1}^{2017} k⁶] / [Σ_{k=1}^{2017} k³]
+
+Observem que si aproximem la suma de les sisenes potències per la integral de x⁶ de 0 a 2017, obtenim un valor molt proper a (2017⁷)/7.  De manera similar, la suma dels cubs es pot aproximar per (2017⁴)/4.  Per tant, podem aproximar A com:
+
+A ≈ (125/8) * [(2017⁷)/7] / [(2017⁴)/4] = (125/8) * (4/7) * 2017³ = (125/14) * 2017³
+
+Aquesta aproximació encara és complexa.  No obstant, la pregunta ens diu que A = X³.  Si observem les opcions, podem provar a calcular el cub de cada opció:
+
+* 2.5³ = 15.625
+* 6.25³ = 244.140625
+* 15.625³ = 3814.697265625
+* 32³ = 32768
+
+Cap d'aquestes opcions sembla encaixar directament amb l'aproximació.  No obstant, si considerem que la fracció A es pot simplificar considerablement, i que la pregunta busca una solució senzilla, la opció més plausible és la que dona un resultat proper a un cub perfecte.
+
+Observem que 15.625 = 2.5³.  Si X = 2.5, llavors X³ = 15.625.  Aquesta és una opció plausible, donada la complexitat del càlcul exacte.
+
+Resposta: A)

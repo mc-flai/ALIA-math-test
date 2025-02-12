@@ -1,0 +1,28 @@
+Raonament:
+
+Siguin els nou nombres ordenats en ordre ascendent:  x₁, x₂, x₃, x₄, x₅, x₆, x₇, x₈, x₉.
+El nombre del mig és x₅.  Ens diuen que x₅ és la mitjana aritmètica dels nou nombres.
+
+La mitjana aritmètica dels cinc nombres més grans és 68:
+(x₅ + x₆ + x₇ + x₈ + x₉) / 5 = 68
+x₅ + x₆ + x₇ + x₈ + x₉ = 68 * 5 = 340
+
+La mitjana aritmètica dels cinc nombres més petits és 44:
+(x₁ + x₂ + x₃ + x₄ + x₅) / 5 = 44
+x₁ + x₂ + x₃ + x₄ + x₅ = 44 * 5 = 220
+
+La suma dels nou nombres és:
+(x₁ + x₂ + x₃ + x₄ + x₅) + (x₅ + x₆ + x₇ + x₈ + x₉) = 220 + 340 - x₅
+
+Com que x₅ és la mitjana aritmètica dels nou nombres, podem dir que:
+(x₁ + x₂ + x₃ + x₄ + x₅ + x₆ + x₇ + x₈ + x₉) / 9 = x₅
+x₁ + x₂ + x₃ + x₄ + x₅ + x₆ + x₇ + x₈ + x₉ = 9x₅
+
+Substituint les sumes parcials:
+220 + 340 - x₅ = 9x₅
+560 = 10x₅
+x₅ = 56
+
+Per tant, la suma dels nou nombres és 9x₅ = 9 * 56 = 504
+
+Resposta: C)

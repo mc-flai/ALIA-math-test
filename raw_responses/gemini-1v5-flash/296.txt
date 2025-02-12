@@ -1,0 +1,17 @@
+Raonament:  No necessitem calcular la suma completa de S per trobar la xifra de les unitats. Només ens interessa la xifra de les unitats de cada terme de la suma.  Observem un patró en les xifres de les unitats dels quadrats:
+
+1² = 1
+2² = 4
+3² = 9
+4² = 16
+5² = 25
+6² = 36
+7² = 49
+8² = 64
+9² = 81
+10² = 100
+...i així successivament.  El patró de les xifres de les unitats es repeteix cada 10 nombres: 1, 4, 9, 6, 5, 6, 9, 4, 1, 0. La suma d'aquestes xifres és 1+4+9+6+5+6+9+4+1+0 = 45.  La xifra de les unitats d'aquesta suma és 5.
+
+Com que el patró es repeteix cada 10 nombres, podem dividir 2017 entre 10: 2017 ÷ 10 = 201 amb un residu de 7. Això significa que tenim 201 repeticions completes del patró, i després 7 termes addicionals. La suma de les xifres de les unitats de les 201 repeticions completes del patró serà 201 * 5 = 1005, que acaba en 5.  Ara només cal sumar les xifres de les unitats dels 7 termes addicionals (que són els 7 primers del patró): 1 + 4 + 9 + 6 + 5 + 6 + 9 = 40. La xifra de les unitats d'aquesta suma és 0.  Per tant, la xifra de les unitats de la suma total és 5 + 0 = 5.
+
+Resposta: B)

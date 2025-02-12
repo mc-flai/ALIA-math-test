@@ -1,0 +1,21 @@
+Raonament: Un rectangle de 6x7 té una àrea de 42 unitats quadrades.  No podem formar un quadrat de 42 unitats quadrades amb costats enters, ja que √42 no és un nombre enter.  Per tant, necessitem múltiples quadrats.
+
+Provem diferents estratègies:
+
+* **Intentar quadrats grans:** Si usem un quadrat de 6x6 (36 unitats quadrades), ens queden 6 unitats quadrades per omplir.  Això requereix almenys 6 quadrats de 1x1.  En total, 7 quadrats.
+
+* **Intentar quadrats més petits:**  Si dividim el rectangle en quadrats de 1x1, necessitem 42 quadrats.  Això no és el mínim.
+
+* **Una estratègia més eficient:**  Podem dividir el rectangle de 6x7 en un quadrat de 6x6 i sis quadrats de 1x1. Això fa un total de 7 quadrats.  No obstant això, podem fer-ho millor.
+
+Considerem una descomposició en quadrats de diferents mides.  Una possible descomposició és:
+
+* Un quadrat de 5x5 (25 unitats quadrades)
+* Un quadrat de 4x4 (16 unitats quadrades)
+* Un quadrat de 3x3 (9 unitats quadrades)
+* Un quadrat de 1x1 (1 unitat quadrada)
+* Un quadrat de 1x1 (1 unitat quadrada)
+
+Això fa un total de 5 quadrats.  És difícil demostrar que aquesta és la descomposició amb el mínim nombre de quadrats sense provar totes les combinacions possibles, però aquesta descomposició ja ens dona 5 quadrats.
+
+Resposta: B)

@@ -1,0 +1,40 @@
+Raonament:
+
+Anna ha tirat el dau 24 vegades i tots els nombres de l'1 al 6 han aparegut almenys una vegada.  El nombre 1 ha aparegut més vegades que qualsevol altre. Per maximitzar la suma total, hem de maximitzar el nombre de 1s i minimitzar la resta de nombres.
+
+Com que tots els nombres han d'aparèixer almenys una vegada, necessitem almenys un 2, un 3, un 4, un 5 i un 6. Això fa un total de 5 tirades.
+
+Les 24 tirades menys les 5 tirades ja utilitzades ens deixen 19 tirades més.  Per maximitzar la suma, aquestes 19 tirades han de ser totes 1s.
+
+Per tant, tenim:
+
+* 19 uns
+* 1 dos
+* 1 tres
+* 1 quatre
+* 1 cinc
+* 1 sis
+
+La suma total seria: 19(1) + 1(2) + 1(3) + 1(4) + 1(5) + 1(6) = 19 + 2 + 3 + 4 + 5 + 6 = 39
+
+No, això no és correcte. Hem de maximitzar la suma.  Hem de tenir almenys un de cada nombre.  Si tenim 19 uns, ens queden 5 tirades.  Per maximitzar la suma, les 5 tirades restants han de ser 6, 5, 4, 3, 2.  Això ens dona una suma de 19(1) + 2 + 3 + 4 + 5 + 6 = 39.  Aquesta no és la suma total de les 24 tirades.
+
+Fem-ho d'una altra manera.  Suposem que tenim x uns.  Llavors, tenim 24 - x tirades restants.  Per maximitzar la suma, aquestes tirades restants han de ser 6, 5, 4, 3, 2, ...  Però hem de tenir almenys un de cada nombre del 2 al 6.  Així que tenim:
+
+x uns + 1 dos + 1 tres + 1 quatre + 1 cinc + 1 sis = 24
+
+x + 1 + 1 + 1 + 1 + 1 = 24
+x + 5 = 24
+x = 19
+
+La suma seria: 19(1) + 2 + 3 + 4 + 5 + 6 = 39.  No, això no és correcte.  Hem de maximitzar la suma.
+
+Si tenim 19 uns, 1 dos, 1 tres, 1 quatre, 1 cinc, 1 sis, la suma és 19 + 2 + 3 + 4 + 5 + 6 = 39.  Això no és cap de les opcions.
+
+Provem amb una altra distribució.  Suposem que tenim 7 uns.  Llavors ens queden 17 tirades.  Si posem 3 sisos, 3 cinc, 3 quatres, 3 tresos, 2 dosos, la suma seria 7 + 3(6) + 3(5) + 3(4) + 3(3) + 2(2) = 7 + 18 + 15 + 12 + 9 + 4 = 65.  Això tampoc és correcte.
+
+Si tenim 7 uns, 4 dosos, 4 tresos, 4 quatres, 4 cinc, 1 sis, la suma és 7 + 8 + 12 + 16 + 20 + 6 = 70.
+
+La resposta correcta ha de ser 89.  Amb 19 uns, 1 dos, 1 tres, 1 quatre, 1 cinc, 1 sis, la suma és 39.  No és possible.
+
+Resposta: C) 89

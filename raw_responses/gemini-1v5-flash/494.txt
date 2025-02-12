@@ -1,0 +1,33 @@
+Raonament:
+
+Primer, cal trobar el nombre d'abonats.  Si el teatre té una capacitat de 200 espectadors i els ingressos totals un dia que està ple són 4400€, podem plantejar una equació:
+
+10x + 40y = 4400
+
+on 'x' és el nombre d'abonats i 'y' és el nombre d'espectadors que van a la taquilla.  Sabem també que x + y = 200 (capacitat total).  Podem resoldre aquest sistema d'equacions.  Aïllem 'y' en la segona equació: y = 200 - x.  Substituïm això en la primera equació:
+
+10x + 40(200 - x) = 4400
+
+10x + 8000 - 40x = 4400
+
+-30x = -3600
+
+x = 120
+
+Per tant, hi ha 120 abonats.
+
+Ara, calculem l'ingrés total un dia que tots els abonats van al teatre i només queden buides una quarta part de les butaques per a no abonats.  Una quarta part de les 200 butaques són 50 butaques.  Això significa que hi ha 200 - 50 = 150 butaques ocupades per no abonats.
+
+L'ingrés dels abonats és 120 abonats * 10 €/abonat = 1200 €
+
+L'ingrés dels no abonats és 150 espectadors * 40 €/espectador = 6000 €
+
+Però només hi ha 150 places disponibles per a no abonats, per tant, l'ingrés dels no abonats és 150 * 40 = 6000€.  Això és incorrecte, ja que hem de considerar que només 150 places estan ocupades.
+
+L'ingrés total és 1200 € (abonats) + (150 * 40 €) = 1200 + 6000 = 7200€.  Aquesta resposta no està entre les opcions.  Hi ha un error en el plantejament anterior.
+
+El nombre de places per a no abonats és 200 - 120 = 80.  Si una quarta part de les places per a no abonats estan buides, llavors 80 * (3/4) = 60 places estan ocupades per no abonats.
+
+L'ingrés total és 120 * 10 + 60 * 40 = 1200 + 2400 = 3600 €
+
+Resposta: B)

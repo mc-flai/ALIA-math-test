@@ -1,0 +1,23 @@
+Raonament:
+
+Volem trobar l'expressió general de n tal que $10^n + 1$ sigui divisible per 11.  Ho podem fer provant alguns valors de n:
+
+* Si n = 1, $10^1 + 1 = 11$, que és divisible per 11.
+* Si n = 2, $10^2 + 1 = 101$, que no és divisible per 11.
+* Si n = 3, $10^3 + 1 = 1001 = 11 \times 91$, que és divisible per 11.
+* Si n = 4, $10^4 + 1 = 10001$, que no és divisible per 11.
+* Si n = 5, $10^5 + 1 = 100001 = 11 \times 9091$, que és divisible per 11.
+* Si n = 6, $10^6 + 1 = 1000001$, que no és divisible per 11.
+
+Observem que $10^n + 1$ és divisible per 11 quan n és un nombre senar.  Això suggereix que la resposta és B) o D).
+
+Podem utilitzar el criteri de divisibilitat per 11.  La suma alternada de les xifres d'un nombre ha de ser divisible per 11 per tal que el nombre sigui divisible per 11.  Per a $10^n + 1$, tenim un 1 seguit de n zeros i un altre 1.  La suma alternada de les xifres és $1 - 0 + 0 - ... + 1 = 2$ si n és parell, i $1 - 0 + 0 - ... - 0 + 1 = 2$ si n és senar.  Però això no és divisible per 11.
+
+Considerem la congruència mòdul 11:
+$10 \equiv -1 \pmod{11}$
+$10^n \equiv (-1)^n \pmod{11}$
+$10^n + 1 \equiv (-1)^n + 1 \pmod{11}$
+
+Perquè $10^n + 1$ sigui divisible per 11, necessitem que $(-1)^n + 1 \equiv 0 \pmod{11}$.  Això només passa si $(-1)^n = -1$, el que significa que n ha de ser senar.  Per tant, n es pot expressar com $n = 2m + 1$ per a algun enter m.
+
+Resposta: B)

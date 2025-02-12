@@ -1,0 +1,13 @@
+Raonament:
+
+Primer, cal calcular quants nombres de quatre xifres es poden formar amb les xifres 1, 2, 3 i 4 sense repeticions.  Això es pot fer mitjançant permutacions: hi ha 4! (4 factorial) = 4 x 3 x 2 x 1 = 24 nombres possibles.
+
+Ara, considerem la posició de cada xifra (unitats, desenes, centenes, milers).  Cada xifra (1, 2, 3, 4) apareixerà en cada posició exactament 24/4 = 6 vegades.
+
+Per tant, la suma de les xifres en cada posició serà 6 * (1 + 2 + 3 + 4) = 6 * 10 = 60.
+
+Com que hi ha quatre posicions (unitats, desenes, centenes, milers), la suma total serà:
+
+60 * 1 + 60 * 10 + 60 * 100 + 60 * 1000 = 60 + 600 + 6000 + 60000 = 66660
+
+Resposta: A)

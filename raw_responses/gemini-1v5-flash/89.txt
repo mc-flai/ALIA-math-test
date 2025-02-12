@@ -1,0 +1,26 @@
+Raonament: Calculem els primers factorials:
+
+* 1! = 1
+* 2! = 2
+* 3! = 6
+* 4! = 24
+* 5! = 120
+* 6! = 720
+* 7! = 5040
+* 8! = 40320
+* ...
+
+Observem que a partir de 5!, tots els factorials contenen un factor 10 (5! = 5 x 4 x 3 x 2 x 1 = 120, 6! = 6 x 5! = 720, etc.).  Això significa que a partir de 5!, tots els factorials són múltiples de 10 i, per tant, la seva xifra de les unitats és 0 i la xifra de les desenes també és 0.
+
+Per tant, per calcular la xifra de les desenes de la suma $1! + 2! + 3! + 4! + 5! + \cdots + 2015!$, només necessitem sumar les desenes de $1! + 2! + 3! + 4!$:
+
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+
+Suma de les desenes: 0 + 0 + 0 + 2 = 2
+
+La suma de les desenes de $1! + 2! + 3! + 4!$ és 2.  Com que totes les sumes posteriors tenen una xifra de les desenes igual a 0, la xifra de les desenes de la suma total és 2.
+
+Resposta: C)

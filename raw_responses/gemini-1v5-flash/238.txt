@@ -1,0 +1,11 @@
+Raonament:
+
+Per tornar a l'origen després de dos llançaments, el robot ha de compensar els moviments en x i en y.  Això significa que necessita moure's igual nombre de vegades a la dreta que a l'esquerra, i igual nombre de vegades amunt que avall.
+
+* **Moviment en x:** La probabilitat que el dau vermell sigui parell (moviment a la dreta) és 1/2 (2, 4, 6). La probabilitat que sigui senar (moviment a l'esquerra) és també 1/2 (1, 3, 5). Per tornar a l'origen en x després de dos llançaments, necessitem un moviment a la dreta i un a l'esquerra, o viceversa.  La probabilitat d'això és (1/2)*(1/2)*2 = 1/2 (el 2 és perquè hi ha dues maneres d'aconseguir-ho: dreta-esquerra o esquerra-dreta).
+
+* **Moviment en y:**  La probabilitat que el dau blau sigui parell (moviment amunt) és 1/2. La probabilitat que sigui senar (moviment avall) és també 1/2.  Per tornar a l'origen en y després de dos llançaments, necessitem un moviment amunt i un avall, o viceversa. La probabilitat d'això és (1/2)*(1/2)*2 = 1/2.
+
+Per tornar a l'origen en x *i* en y simultàniament, hem de multiplicar les probabilitats independents: (1/2) * (1/2) = 1/4.
+
+Resposta: E)

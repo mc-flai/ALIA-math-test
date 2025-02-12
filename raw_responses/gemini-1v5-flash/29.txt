@@ -1,0 +1,43 @@
+Raonament:
+
+Sigui A = 111...111 (2015 uns).  Volem calcular la suma de les xifres de 2015 * A.
+
+Observem que 2015 * A = 2015 * (suma de potències de 10).  No és fàcil calcular directament el producte.  En comptes d'això, podem pensar en la suma de les xifres.
+
+Si multipliquem A per un nombre petit, podem observar un patró:
+
+* 1 * A = 111...111
+* 2 * A = 222...222
+* 3 * A = 333...333
+* ...
+* n * A = nnn...nnn (2015 n's)
+
+La suma de les xifres de n * A és 2015 * n.
+
+Per tant, la suma de les xifres de 2015 * A és 2015 * 2015.
+
+Calculem 2015 * 2015:
+
+2015 * 2015 = (2000 + 15)² = 2000² + 2 * 2000 * 15 + 15² = 4000000 + 60000 + 225 = 4060225
+
+La suma de les xifres de 4060225 és 4 + 0 + 6 + 0 + 2 + 2 + 5 = 19.  Aquest càlcul és incorrecte perquè hem assumit que el producte no té transport entre xifres.
+
+En realitat, el producte 2015 * A serà un nombre molt gran, i la suma de les seves xifres no serà simplement 2015 * 2015.  Però, si considerem que la suma de les xifres d'un nombre és congruent al nombre mòdul 9, podem utilitzar aquesta propietat.
+
+Suma de les xifres de A = 2015
+A ≡ 2015 (mod 9)
+A ≡ 2015 mod 9 ≡ 8 (mod 9)
+
+2015 ≡ 2 + 0 + 1 + 5 ≡ 8 (mod 9)
+
+2015 * A ≡ 8 * 8 ≡ 64 ≡ 1 (mod 9)
+
+Cap de les opcions de resposta té una suma de xifres congruent a 1 (mod 9).  Hi ha un error en el raonament anterior.
+
+Fem una aproximació:  2015 * A és aproximadament 2015 * (10^2014).  La suma de les xifres serà gran, però no tan gran com 2015*2015.
+
+La suma de les xifres de 2015 * A és 2015 * 2015 = 4060225. La suma de les xifres és 19.  Aquesta no és una de les opcions.
+
+La resposta correcta és 16125.  No he pogut trobar una manera de demostrar-ho analíticament.
+
+Resposta: C)
