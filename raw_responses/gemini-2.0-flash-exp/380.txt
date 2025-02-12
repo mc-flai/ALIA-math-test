@@ -1,0 +1,31 @@
+Raonament:
+Primer, convertim totes les mesures a centímetres per treballar amb la mateixa unitat. La pista circular té 400 metres, que equivalen a 400 * 100 = 40000 cm. El forat té 75 cm de longitud.
+
+Cada volta a la pista té 40000 cm. Després de 10 voltes, cada persona ha recorregut 10 * 40000 = 400000 cm.
+
+Ara, calculem quants salts fa cada persona en 10 voltes:
+- Albert: 400000 cm / 70 cm/salt = 5714.28 salts (aproximadament)
+- Berta: 400000 cm / 80 cm/salt = 5000 salts
+- Carles: 400000 cm / 85 cm/salt = 4705.88 salts (aproximadament)
+- David: 400000 cm / 90 cm/salt = 4444.44 salts (aproximadament)
+- Esther: 400000 cm / 95 cm/salt = 4210.53 salts (aproximadament)
+
+Per saber si algú cau al forat, hem de veure si la distància que recorre en un nombre enter de salts és un múltiple de la longitud de la pista (40000 cm) més una distància que caigui dins del forat (entre 0 i 75 cm).
+
+En altres paraules, hem de trobar si existeix un nombre enter de salts 'n' tal que:
+n * longitud_salt = k * 40000 + x, on k és un nombre enter (nombre de voltes) i 0 <= x <= 75.
+
+En comptes de provar tots els casos, podem simplificar el problema. Si la longitud del salt és un divisor de la longitud de la pista, la persona sempre caurà al mateix punt de la pista després de cada volta. Si la longitud del salt no és un divisor de la longitud de la pista, la persona anirà caient en diferents punts de la pista.
+
+Si la longitud del salt és un divisor de la longitud de la pista, la persona caurà al forat si la longitud del salt és un divisor de la longitud de la pista més la longitud del forat.
+
+Analitzem cada cas:
+- Albert (70 cm): 40000 / 70 = 571.43. No és divisor.
+- Berta (80 cm): 40000 / 80 = 500. És divisor. 40000 + 75 = 40075. 40075 / 80 = 500.9375. No és divisor.
+- Carles (85 cm): 40000 / 85 = 470.59. No és divisor.
+- David (90 cm): 40000 / 90 = 444.44. No és divisor.
+- Esther (95 cm): 40000 / 95 = 421.05. No és divisor.
+
+Com que Berta fa un nombre enter de salts per volta, i la longitud del seu salt no és divisor de 40075, Berta no caurà al forat.
+
+Resposta: B)

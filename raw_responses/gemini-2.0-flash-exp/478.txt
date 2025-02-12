@@ -1,0 +1,27 @@
+Raonament:
+Sigui v la velocitat de Mar i 5v la velocitat d'Alba. Considerem la longitud de la pista circular com L.
+Quan Alba fa una volta completa, ha recorregut una distància L. El temps que triga Alba a fer una volta és t_Alba = L / (5v).
+En aquest mateix temps, Mar ha recorregut una distància de v * t_Alba = v * (L / (5v)) = L/5. Això vol dir que Mar ha recorregut 1/5 de la pista.
+Per tant, quan Alba fa una volta, Mar ha recorregut 1/5 de la pista. La diferència de distància recorreguda entre Alba i Mar és de 4/5 de la pista.
+Perquè es tornin a trobar, la diferència de distància recorreguda ha de ser un múltiple de la longitud de la pista L.
+La primera vegada que es troben, la diferència de distància recorreguda serà L. Això vol dir que Alba haurà fet una volta més que Mar.
+Si Alba ha fet x voltes, Mar haurà fet x/5 voltes. La diferència de voltes és x - x/5 = 4x/5. Perquè es trobin, aquesta diferència ha de ser un nombre enter de voltes.
+Per tant, 4x/5 = n, on n és un nombre enter. Això implica que x = 5n/4.
+La primera vegada que es troben, n=1, i x=5/4. Això vol dir que Alba ha fet 5/4 de volta i Mar 1/4 de volta. La diferència és 1 volta.
+La segona vegada que es troben, n=2, i x=10/4=5/2. Alba ha fet 5/2 voltes i Mar 1/2 volta. La diferència és 2 voltes.
+La tercera vegada que es troben, n=3, i x=15/4. Alba ha fet 15/4 voltes i Mar 3/4 de volta. La diferència és 3 voltes.
+La quarta vegada que es troben, n=4, i x=20/4=5. Alba ha fet 5 voltes i Mar 1 volta. La diferència és 4 voltes.
+En general, es trobaran cada vegada que la diferència de voltes sigui un nombre enter. Això passa quan x és un múltiple de 5/4.
+Per tant, es trobaran quan Alba hagi fet 5/4, 10/4, 15/4, 20/4, 25/4, etc. voltes.
+La primera vegada que es troben és quan Alba ha fet 5/4 de volta i Mar 1/4 de volta.
+La segona vegada que es troben és quan Alba ha fet 10/4 de volta i Mar 2/4 de volta.
+La tercera vegada que es troben és quan Alba ha fet 15/4 de volta i Mar 3/4 de volta.
+La quarta vegada que es troben és quan Alba ha fet 20/4 = 5 voltes i Mar 4/4 = 1 volta.
+En general, es trobaran cada vegada que Alba hagi fet un nombre de voltes que sigui un múltiple de 5/4.
+La primera vegada que es troben és quan Alba ha fet 5/4 de volta.
+La segona vegada que es troben és quan Alba ha fet 10/4 de volta.
+La tercera vegada que es troben és quan Alba ha fet 15/4 de volta.
+La quarta vegada que es troben és quan Alba ha fet 20/4 = 5 voltes.
+Això vol dir que es trobaran 5 vegades en una volta d'Alba.
+
+Resposta: C)

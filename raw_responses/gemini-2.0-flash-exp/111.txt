@@ -1,0 +1,29 @@
+Raonament:
+Primer, convertim els nombres de base 6 a base 10 per entendre millor l'operació.
+14₆ = 1 * 6¹ + 4 * 6⁰ = 6 + 4 = 10
+25₆ = 2 * 6¹ + 5 * 6⁰ = 12 + 5 = 17
+En base 10, la multiplicació seria 10 * 17 = 170.
+
+Ara, convertim el resultat 416₆ a base 10:
+416₆ = 4 * 6² + 1 * 6¹ + 6 * 6⁰ = 4 * 36 + 6 + 6 = 144 + 6 + 6 = 156.
+Això ens indica que l'estudiant no està calculant en base 6, ja que 10 * 17 no és igual a 156.
+
+L'estudiant està calculant en una base b desconeguda. Per tant, hem de trobar la base b tal que:
+(1 * b¹ + 4 * b⁰) * (2 * b¹ + 5 * b⁰) = 4 * b² + 1 * b¹ + 6 * b⁰
+(b + 4) * (2b + 5) = 4b² + b + 6
+2b² + 5b + 8b + 20 = 4b² + b + 6
+2b² + 13b + 20 = 4b² + b + 6
+0 = 2b² - 12b - 14
+0 = b² - 6b - 7
+Ara hem de resoldre aquesta equació quadràtica per trobar el valor de b.
+(b - 7)(b + 1) = 0
+Les solucions són b = 7 i b = -1. Com que la base no pot ser negativa, la base és b = 7.
+
+Comprovem:
+14₇ = 1 * 7¹ + 4 * 7⁰ = 7 + 4 = 11
+25₇ = 2 * 7¹ + 5 * 7⁰ = 14 + 5 = 19
+11 * 19 = 209
+416₇ = 4 * 7² + 1 * 7¹ + 6 * 7⁰ = 4 * 49 + 7 + 6 = 196 + 7 + 6 = 209
+Per tant, la base és 7.
+
+Resposta: A)

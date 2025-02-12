@@ -1,0 +1,43 @@
+<think>
+Para resolver este problema, primero consideremos que cada jugada es un evento independiente con una probabilidad de 0.6 de ganar y 0.4 de perder.
+
+En cada set, la primera jugador que gana dos sets guanya el partit. por lo tanto,-Judit o Susanna debe ganar dos sets consecutivos para ser el primero a ganar el partit.
+
+La probabilidad de Judit ganar el primer set es 0.6 y al siguiente set también lo es, por lo que la probability de Judit ganar dos sets en ahorro es 0.6 * 0.6 = 0.36.
+
+Si Judit pierde al primer set (probabilidad 0.4), entonces necesitamos calcular la probabilidad de ganar dos sets consecutivos, ya que-Judit no ganará el primer set y por lo tanto, Susanna será el primero a ganar dos sets.
+
+La probabilidad de Judit gaining two sets in a row is 0.6 * 0.6 = 0.36, y la de losing the first set (by Judit) es 0.4, por lo que la probability de gánar los dos sets sin que Judit ganara el primer son: 0.4 * (Judit ganar dos sets consecutivos) = 0.4 * 0.36 = 0.144.
+
+Por lo tanto, la probabilidad total de que Judit gane el partit es 0.36 + 0.144 = 0.504.
+</think>
+
+Para resolver este problema, analizamos cada set y determinamos las probabilidades necesarias para calcular la probabilidad de Judit ganar el partit.
+
+**Problema:**
+Judit y Susanna juguen tres sets en un partit a la millor. La primera jugador que guana dos sets guanya el partit. Sabemos que la probabilidad de Judit ganar un set a Susanna es 0,6. ¿Cuál es la probabilidad de Judit ganar el partit?
+
+**Solución:**
+
+1. **Análisis de cada set:**
+   - Cada set tiene dos posibles resultados: gana o pierde.
+   - La probabilidad de ganar un set por Judit es \( p = 0,6 \), y la de pierderlo es \( q = 1 - p = 0,4 \).
+
+2. **Determine juntos los casos where Juditgan dos sets en ahorro:**
+   - **Casos donde Judit gana el primer set:**
+     - Peraldo gana el segundo set.
+     - Probabilidad: \( p \times q = 0,6 \times 0,4 = 0,24 \).
+   - **Casos donde Judit pierde el primer set y gana dos en ahorro:**
+     - Gana el segundo y el tercero set.
+     - Probabilidad: \( q \times p \times p = 0,4 \times 0,6 \times 0,6 = 0,144 \).
+
+3. **Suma las probabilidades de ambos casos para obtener la probabilidad total de Judit ganar el partit:**
+   \[
+   P(\text{Judit gana el partit}) = 0,24 + 0,144 = 0,384
+   \]
+
+**Respuesta final:**
+
+La probabilidad de Judit ganar el partit es **0,504**.
+
+\boxed{E}

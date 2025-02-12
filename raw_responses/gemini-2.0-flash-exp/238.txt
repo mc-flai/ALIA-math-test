@@ -1,0 +1,22 @@
+Raonament:
+Primer, analitzem el moviment del robot amb un llançament dels daus. El dau vermell pot ser parell (2, 4, 6) o senar (1, 3, 5), amb una probabilitat de 1/2 per a cada cas. Si és parell, el robot es mou a la dreta (+1 en l'eix x), i si és senar, a l'esquerra (-1 en l'eix x). De manera similar, el dau blau pot ser parell (2, 4, 6) o senar (1, 3, 5), amb una probabilitat de 1/2 per a cada cas. Si és parell, el robot es mou cap amunt (+1 en l'eix y), i si és senar, cap avall (-1 en l'eix y).
+
+Perquè el robot torni a l'origen després de dos llançaments, la suma dels moviments en l'eix x ha de ser 0 i la suma dels moviments en l'eix y també ha de ser 0. Això vol dir que el robot ha de fer un moviment cap a la dreta i un cap a l'esquerra en l'eix x, i un moviment cap amunt i un cap avall en l'eix y, en qualsevol ordre.
+
+Considerem els possibles moviments en l'eix x en dos llançaments:
+* Dreta-Dreta (+1, +1)
+* Dreta-Esquerra (+1, -1)
+* Esquerra-Dreta (-1, +1)
+* Esquerra-Esquerra (-1, -1)
+Només els casos Dreta-Esquerra i Esquerra-Dreta fan que la suma dels moviments en l'eix x sigui 0. La probabilitat de cada moviment és 1/2 * 1/2 = 1/4. Per tant, la probabilitat que la suma dels moviments en l'eix x sigui 0 és 1/4 + 1/4 = 1/2.
+
+De manera similar, considerem els possibles moviments en l'eix y en dos llançaments:
+* Amunt-Amunt (+1, +1)
+* Amunt-Avall (+1, -1)
+* Avall-Amunt (-1, +1)
+* Avall-Avall (-1, -1)
+Només els casos Amunt-Avall i Avall-Amunt fan que la suma dels moviments en l'eix y sigui 0. La probabilitat de cada moviment és 1/2 * 1/2 = 1/4. Per tant, la probabilitat que la suma dels moviments en l'eix y sigui 0 és 1/4 + 1/4 = 1/2.
+
+Com que els moviments en l'eix x i l'eix y són independents, la probabilitat que el robot torni a l'origen després de dos llançaments és el producte de les probabilitats que la suma dels moviments en l'eix x sigui 0 i que la suma dels moviments en l'eix y sigui 0. Per tant, la probabilitat és (1/2) * (1/2) = 1/4.
+
+Resposta: E)

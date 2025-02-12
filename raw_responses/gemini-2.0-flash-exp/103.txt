@@ -1,0 +1,24 @@
+Raonament:
+Per calcular la probabilitat d'obtenir una suma de 6 amb tres daus, primer hem de determinar quants casos favorables hi ha, és a dir, quantes combinacions de tres nombres entre 1 i 6 sumen 6. Després, dividirem aquest nombre pel nombre total de resultats possibles al llançar tres daus.
+
+Les combinacions que sumen 6 són:
+* 1 + 1 + 4 (i les seves permutacions: 114, 141, 411) - 3 combinacions
+* 1 + 2 + 3 (i les seves permutacions: 123, 132, 213, 231, 312, 321) - 6 combinacions
+* 2 + 2 + 2 - 1 combinació
+
+En total, hi ha 3 + 6 + 1 = 10 combinacions que sumen 6.
+
+El nombre total de resultats possibles al llançar tres daus és 6 * 6 * 6 = 216, ja que cada dau té 6 cares.
+
+Per tant, la probabilitat d'obtenir una suma de 6 és el nombre de casos favorables dividit pel nombre total de casos possibles: 10 / 216.
+
+Simplificant la fracció, 10/216 = 5/108.
+
+Ara, comparem aquest resultat amb les opcions de resposta:
+* A) ¹²/(₁₀!) - No té sentit en aquest context.
+* B) ¹⁰/(₆!) - No té sentit en aquest context.
+* C) ¹⁰/(₆·₆·₆) - Aquesta és la resposta correcta, ja que 6·6·6 = 216.
+* D) ¹²/(₆^₆) - No té sentit en aquest context.
+* E) ¹⁸/(₆·₆·₆) - No té sentit en aquest context.
+
+Resposta: C)

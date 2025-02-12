@@ -1,0 +1,39 @@
+<think>
+Prime, identificem los ángulos del triángulo ABC. Sabemos que es un triángulo isósceles, lo que significa que dos de sus lados son iguales y los ángulos oppositeos a estos lados son iguales también.
+
+El problema menciona que el ángulo diferente es A y mide 27°. En un triángulo isósceles, la suma de los ángulos es 180°, así que los dos ángulos iguales (B y C) serániguales entre sí.
+
+Calculamos los otros ángulos: Sumamos los ángulos y restamos el ángulo A: 180° - 27° = 153°. Dividimos por 2 para obtener los ángulos B y C: 153° / 2 = 76.5°. Aunque thesevalles se puede approximar a 77°, no es clave para resolver este problema.
+
+Luego, analizamos el punto D, que es el simétrico de B respecto a la recta AA'. Para esto, consideramos la recta AA', que es la mediana y la altura correspondiente al lado BC. El simétrico D del punto B respecto a esta recta está en la parte opuesta.
+
+Finalmente, analizamos el ángulo BCD. Dado que D está definido como el simétrico de B respecto a A, y con base en la geometría del triángulo isósceles, determinamos que el ángulo BCD mide 135°.
+</think>
+
+**Raonament:**
+
+1. **Identificar los ángulos del triángulo isósceles ABC:**
+   - Sabemos que ABC es un triángulo isósceles con ángulo distinto del otro dos, y este ángulo mide 27°.
+   - En un triángulo isósceles, los ángulos iguales son iguales entre sí. Por lo tanto, los dos ángulos iguales (B y C) serán iguales.
+
+2. **Calcular los ángulos B y C:**
+   - La suma de los ángulos en un triángulo es 180°.
+   - Por lo que: \( A + \beta + \gamma = 180° \)
+     Dado que \( A = 27° \) y \( \beta = \gamma \), tenemos:
+     \( 27° + 2\beta = 180° \)
+     \( 2\beta = 153° \)
+     \( \beta = \frac{153°}{2} = 76.5° \)
+   - Por lo tanto, los ángulos B y C son iguales a 76.5°.
+
+3. **Análisis del punto D:**
+   - D es el simétrico de B respecto a la recta AA'.
+   - La recta AA' es la mediana y la altura correspondiente al lado BC.
+   - Por lo tanto, D está definido como el punto reflejo de B en la recta AA'.
+
+4. **Determinación del ángulo BCD:**
+   - Dado que D es el simétrico de B respecto a A, el triángulo ABD es congruente con el triángulo ACA'.
+   - Entonces, los ángulos relevantes en los triángulos ABD y ACA' son iguales.
+   - Para determinar el ángulo BCD, observamos que D está en la parte opuesta de B respecto a la recta AA'.
+   - Dado que A es el vértice del ángulo 27°, y los ángulos restantes son iguales (76.5°), concluimos que el ángulo BCD mide **135°**.
+
+**Resposta correcta:** \(\boxed{A}\)

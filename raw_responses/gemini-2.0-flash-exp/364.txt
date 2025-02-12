@@ -1,0 +1,30 @@
+Raonament:
+Per trobar la mínima diferència entre dos nombres consecutius de la seqüència, hem d'analitzar com es construeixen aquests nombres. La condició és que la suma dels seus dígits sigui divisible per 5.
+
+Comencem amb el primer nombre, 5. El següent nombre ha de tenir una suma de dígits divisible per 5 i ser més gran que 5. El següent nombre és 14 (1+4=5). La diferència és 14-5=9.
+
+El següent nombre és 19 (1+9=10). La diferència és 19-14=5.
+
+El següent nombre és 23 (2+3=5). La diferència és 23-19=4.
+
+El següent nombre és 28 (2+8=10). La diferència és 28-23=5.
+
+El següent nombre és 32 (3+2=5). La diferència és 32-28=4.
+
+El següent nombre és 37 (3+7=10). La diferència és 37-32=5.
+
+El següent nombre és 41 (4+1=5). La diferència és 41-37=4.
+
+El següent nombre és 46 (4+6=10). La diferència és 46-41=5.
+
+El següent nombre és 50 (5+0=5). La diferència és 50-46=4.
+
+Observem que la diferència entre nombres consecutius sembla ser 4 o 5. Però, podem trobar una diferència menor?
+
+Considerem el cas en què un nombre acaba en 9. Per exemple, 9. El següent nombre ha de tenir una suma de dígits divisible per 5. El següent nombre és 14. La diferència és 5. Si tenim 19, el següent és 23, la diferència és 4. Si tenim 29, el següent és 32, la diferència és 3. Si tenim 39, el següent és 41, la diferència és 2. Si tenim 49, el següent és 50, la diferència és 1.
+
+Però, hem de tenir en compte que els nombres han d'estar ordenats de forma creixent. Per tant, si tenim 49, el següent nombre amb suma de dígits divisible per 5 és 50. La diferència és 1.
+
+Per tant, la mínima diferència possible és 1. Per exemple, 49 (4+9=13) no està a la llista, però el següent nombre a la llista és 50 (5+0=5). La diferència és 1.
+
+Resposta: A)

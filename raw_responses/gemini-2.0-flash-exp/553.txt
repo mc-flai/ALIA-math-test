@@ -1,0 +1,13 @@
+Raonament:
+El problema ens diu que el nombre ab0 té tres xifres i és igual a la suma dels cubs de les seves xifres. Això vol dir que 100a + 10b + 0 = a³ + b³ + 0³. Per tant, 100a + 10b = a³ + b³.
+Hem de trobar un nombre de tres xifres que compleixi aquesta condició. Les opcions de resposta ens donen possibles combinacions de xifres, però no ens donen el valor concret de a i b. Per tant, hem de buscar un nombre que compleixi la condició.
+Comencem provant amb nombres petits. Si a=1, tenim 100 + 10b = 1 + b³. Si b=0, tenim 100 = 1, que no és cert. Si b=1, tenim 110 = 2, que tampoc és cert. Si b=2, tenim 120 = 1 + 8 = 9, que tampoc és cert. Si b=3, tenim 130 = 1 + 27 = 28, que tampoc és cert. Si b=4, tenim 140 = 1 + 64 = 65, que tampoc és cert. Si b=5, tenim 150 = 1 + 125 = 126, que tampoc és cert.
+Si a=2, tenim 200 + 10b = 8 + b³. Si b=0, tenim 200 = 8, que no és cert. Si b=1, tenim 210 = 9, que tampoc és cert. Si b=2, tenim 220 = 8 + 8 = 16, que tampoc és cert. Si b=3, tenim 230 = 8 + 27 = 35, que tampoc és cert. Si b=4, tenim 240 = 8 + 64 = 72, que tampoc és cert. Si b=5, tenim 250 = 8 + 125 = 133, que tampoc és cert.
+Si a=3, tenim 300 + 10b = 27 + b³. Si b=0, tenim 300 = 27, que no és cert. Si b=1, tenim 310 = 28, que tampoc és cert. Si b=2, tenim 320 = 27 + 8 = 35, que tampoc és cert. Si b=3, tenim 330 = 27 + 27 = 54, que tampoc és cert. Si b=4, tenim 340 = 27 + 64 = 91, que tampoc és cert. Si b=5, tenim 350 = 27 + 125 = 152, que tampoc és cert.
+Si a=4, tenim 400 + 10b = 64 + b³. Si b=0, tenim 400 = 64, que no és cert. Si b=1, tenim 410 = 65, que tampoc és cert. Si b=2, tenim 420 = 64 + 8 = 72, que tampoc és cert. Si b=3, tenim 430 = 64 + 27 = 91, que tampoc és cert. Si b=4, tenim 440 = 64 + 64 = 128, que tampoc és cert. Si b=5, tenim 450 = 64 + 125 = 189, que tampoc és cert.
+Si a=1, b=5, tenim 150 = 1 + 125 = 126. No funciona.
+Si a=3, b=7, tenim 370 = 27 + 343 = 370. Aquest funciona!
+Per tant, el nombre és 370. Les xifres són 3, 7 i 0.
+L'opció que correspon a les xifres de les centenes, desenes i unitats és a, b, 0.
+
+Resposta: A)

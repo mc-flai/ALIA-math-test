@@ -1,0 +1,19 @@
+Raonament:
+1. **Angles centrals i inscrits:** En una circumferència dividida en 12 arcs iguals, cada arc correspon a un angle central de 360°/12 = 30°. Un angle inscrit és la meitat de l'angle central que abasta el mateix arc. Per tant, un angle inscrit que abasta un arc de 30° mesura 15°.
+
+2. **Angles de 45°:** Per obtenir un angle de 45°, l'arc que abasta l'angle inscrit ha de ser de 90° (ja que 90°/2 = 45°). Un arc de 90° correspon a 90°/30° = 3 arcs.
+
+3. **Triangles amb un angle de 45°:** Per formar un triangle amb un angle de 45°, hem de triar dos punts que estiguin separats per 3 arcs. El tercer punt pot ser qualsevol dels punts restants.
+
+4. **Comptant els triangles:**
+   - Fixem un punt com a vèrtex de l'angle de 45°. Hi ha 12 opcions per a aquest punt.
+   - Un cop fixat aquest punt, hi ha dos punts que estan a 3 arcs de distància (un a cada costat). Aquests dos punts formen els altres dos vèrtexs de l'angle de 45°.
+   - El tercer vèrtex del triangle pot ser qualsevol dels 10 punts restants (no pot ser el punt fixat ni els dos que formen l'angle de 45°).
+   - Per tant, per cada punt fixat, hi ha 10 triangles possibles.
+   - Com que hi ha 12 punts que podem fixar, sembla que hi ha 12 * 10 = 120 triangles.
+
+5. **Evitant la doble comptabilització:** Hem de tenir en compte que cada triangle amb un angle de 45° s'ha comptat dues vegades, ja que cada triangle té dos angles de 45° possibles. Per exemple, si tenim els punts A, B i C, i l'angle en A és de 45°, també podem considerar que l'angle en C és de 45° (si la distància entre A i B és de 3 arcs). Per tant, hem de dividir el resultat per 2.
+
+6. **Càlcul final:** El nombre total de triangles amb un angle de 45° és (12 * 10) / 2 = 60.
+
+Resposta: B)

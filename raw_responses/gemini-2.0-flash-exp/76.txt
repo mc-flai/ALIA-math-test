@@ -1,0 +1,28 @@
+Raonament:
+Primer, calculem totes les possibles sumes que Maria pot obtenir. Les combinacions de dos nombres diferents del conjunt {8, 9, 10} són:
+- 8 + 9 = 17
+- 8 + 10 = 18
+- 9 + 10 = 19
+Hi ha 3 sumes possibles.
+
+Ara, calculem tots els possibles productes que Pere pot obtenir. Les combinacions de dos nombres diferents del conjunt {3, 5, 6} són:
+- 3 * 5 = 15
+- 3 * 6 = 18
+- 5 * 6 = 30
+Hi ha 3 productes possibles.
+
+Ara, llistem totes les combinacions possibles de la suma de Maria i el producte de Pere, i comptem en quants casos la suma de Maria és més gran que el producte de Pere:
+- Maria suma 17, Pere producte 15: 17 > 15 (Sí)
+- Maria suma 17, Pere producte 18: 17 > 18 (No)
+- Maria suma 17, Pere producte 30: 17 > 30 (No)
+- Maria suma 18, Pere producte 15: 18 > 15 (Sí)
+- Maria suma 18, Pere producte 18: 18 > 18 (No)
+- Maria suma 18, Pere producte 30: 18 > 30 (No)
+- Maria suma 19, Pere producte 15: 19 > 15 (Sí)
+- Maria suma 19, Pere producte 18: 19 > 18 (Sí)
+- Maria suma 19, Pere producte 30: 19 > 30 (No)
+
+Hi ha un total de 3 * 3 = 9 combinacions possibles. D'aquestes, en 4 casos la suma de Maria és més gran que el producte de Pere.
+Per tant, la probabilitat que la suma de Maria siga més gran que el producte de Pere és de 4/9.
+
+Resposta: A)

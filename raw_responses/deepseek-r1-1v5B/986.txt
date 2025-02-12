@@ -1,0 +1,64 @@
+<think>
+Para resolver este problema, comencemos por identificar cuántas partides han jugado en total y cuántas han jugado Magnus a lo largo del tiempo.
+
+El torneig ha tenido 15 partides que Magnus ha jugado. A la mitida del torneig, Magnus ha guntado n/2 de las partides, perdido t/3, y 2(partdes) han abruido en los restantes. Aquí, n son las partitiones totales.
+
+Sabemos que a la mitidad del torneig, las partitions que han jugado son n + n/2 + t/3 = n. Entonces, t/3 es igual a 2(partdes), lo que nos da que t = 6(partdes). 
+
+Después de la mitidad, los restantes partides que remainen son t - n. Al final, las partitions totales son n. Por lo tanto, n + (n - n) = n. 
+
+De esta manera, t = 6, y a la mitidad, Magnus ha jugado n/2 partidas, por lo que las partitiones restantes son t - n/2 = (6 - n)/2.
+
+Finalmente, los partidos que quedan para jugar son t - n = 4.
+</think>
+
+**Raonament:**
+
+1. **Definimos variables:**
+   - Total de partitions totales \( t \)
+   - Partidas jugadas a la mitidad \( n \)
+   - Partidas jugadas perdiñas \( t/3 \)
+   - Partidas abruidas \( 2 \)
+
+2. **Sumamos las partitiones que han jugado:**
+   \[
+   n + \frac{t}{3} + 2 = n
+   \]
+   
+3. **Despejamos \( t \):**
+   \[
+   \frac{t}{3} + 2 = 0 \\
+   \frac{t}{3} = -2
+   \]
+   Ahora, verificamos si este resultado es posible:
+   \[
+   -2 \times 3 = -6
+   \]
+   Esto es inviable, lo que sugiere que hay un error en el cálculo.
+
+4. **Correcto:**
+   La suma correcta es:
+   \[
+   n + \frac{t}{3} + 2 = t
+   \]
+   
+5. **Despejamos \( t \):**
+   \[
+   n + \frac{t}{3} + 2 = t \\
+   \frac{t}{3} - t = -n - 2 \\
+   -\frac{2t}{3} = -n - 2 \\
+   \frac{2t}{3} = n + 2
+   \]
+   
+6. **Después de la mitidad, las partitions restantes son \( t - n \).**
+   En el problema, las partitions totales son 15, pero no se menciona directamente las partitiones jugadas a la mitidad y las que abruidas.
+
+7. **Reorganizamos la ecuación:**
+   \[
+   \frac{2t}{3} = n + 2 \\
+   2t = 3n + 6
+   \]
+   
+8. **Después de una cyclotopía o ver las opciones, observamos que el resultado del problema es 4.**
+
+\boxed{4}

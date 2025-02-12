@@ -1,0 +1,54 @@
+<think>
+Para determinar cuántos números de dos y tres dígitros son capicues, primero revisemos el concepto: un número es capicuaje si es igual del reíster de su dígito inferior a su dereita superior. Por ejemplo, 44 o 373 son capicuales.
+
+Para calcular los números de dos dígitros que son capicuales:
+
+1. El primer dígito puede ser anyo entre 1 y 9 (no cero, porque no podemos tener un número con cero en el primer dígito).
+2. El segundo dígito debe ser igual al primero para que estén formados como capicuales.
+3. Por lo tanto, hay 9 opciones posibles para el primer dígito, lo que da un total de 9 números de dos dígitros.
+
+Para calcular los números de tres dígitros que son capicuales:
+
+1. El primer dígito puede ser anyo entre 1 y 9.
+2. El segundo dígito puede ser cualquier número (0-9).
+3. El tercer dígito debe ser igual al primero para formar capicuales.
+4. Por lo tanto, hay 9 opciones posibles para el primer dígito y 10 opciones posibles para el segundo dígito, lo que da un total de 9*10=90 números de tres dígitros.
+
+Sumando ambos tipos:
+- Números de dos dígitros: 9
+- Números de tres dígitros: 90
+
+Total de capicuales: 9 + 90 = 99.
+</think>
+
+Para determinar cuántos números de dos y tres dígitros son capicuales, revisemos el concepto de número capicuaje:
+
+1. **Números de dos dígitros capicuales**:
+   - El número debe ser igual del reíster de su dígito inferior a su dereita superior.
+   - El primer dígito (deshetime) puede ser anyo entre 1 y 9 (no cero, ya que no podemos tener un número con cero en el primer dígito).
+   - El segundo dígito (desde) debe ser igual al primero para formar capicuales.
+   
+   Por lo tanto:
+   \[
+   9 \text{ números de dos dígitros}
+   \]
+
+2. **Números de tres dígitros capicuales**:
+   - El primer dígito (deshite) puede ser anyo entre 1 y 9.
+   - El segundo dígito (desde) puede ser cualquier número (0-9).
+   - El tercer dígito (deshetime) debe ser igual al primero para formar capicuales.
+   
+   Por lo tanto:
+   \[
+   9 \text{ opciones posibles para el primer dígito} \times 10 \text{ opciones posibles para el segundo dígito} = 90 \text{ números de tres dígitros}
+   \]
+
+Sumando ambos tipos:
+\[
+9 + 90 = 99
+\]
+
+Por lo tanto, **la respuesta es 99**.
+
+###Respuesta final:  
+\boxed{E) 100}

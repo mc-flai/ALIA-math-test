@@ -1,0 +1,32 @@
+Raonament:
+Primer, analitzem quants zeros i vuitens s'utilitzen per a numerar les pàgines.
+- Del 1 al 9: No s'utilitza cap 0 ni 8.
+- Del 10 al 19: S'utilitza un 0 (al 10) i un 8 (al 18).
+- Del 20 al 29: S'utilitza un 0 (al 20).
+- Del 30 al 39: S'utilitza un 0 (al 30).
+- Del 40 al 49: S'utilitza un 0 (al 40).
+- Del 50 al 59: S'utilitza un 0 (al 50).
+- Del 60 al 69: S'utilitza un 0 (al 60).
+- Del 70 al 79: No s'utilitza cap 0 ni 8.
+- Del 80 al 89: S'utilitzen deu 8 (80, 81, 82, 83, 84, 85, 86, 87, 88, 89) i un 0 (al 80).
+
+Ara, comptem els zeros i vuitens utilitzats fins a cada opció:
+- A) 48:
+    - Zeros: 10, 20, 30, 40 = 4 zeros
+    - Vuitens: 8, 18, 28, 38, 48 = 5 vuitens
+- B) 58:
+    - Zeros: 10, 20, 30, 40, 50 = 5 zeros
+    - Vuitens: 8, 18, 28, 38, 48, 58 = 6 vuitens
+- C) 60:
+    - Zeros: 10, 20, 30, 40, 50, 60 = 6 zeros
+    - Vuitens: 8, 18, 28, 38, 48, 58 = 6 vuitens
+- D) 68:
+    - Zeros: 10, 20, 30, 40, 50, 60 = 6 zeros
+    - Vuitens: 8, 18, 28, 38, 48, 58, 68 = 7 vuitens
+- E) 88:
+    - Zeros: 10, 20, 30, 40, 50, 60, 80 = 7 zeros
+    - Vuitens: 8, 18, 28, 38, 48, 58, 68, 78, 80, 81, 82, 83, 84, 85, 86, 87, 88 = 17 vuitens
+
+La única opció que compleix la condició de 5 zeros i 6 vuitens és la B) 58.
+
+Resposta: B)

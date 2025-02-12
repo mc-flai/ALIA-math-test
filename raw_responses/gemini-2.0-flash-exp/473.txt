@@ -1,0 +1,35 @@
+Raonament:
+
+1. **Anàlisi de la multiplicació:** Tenim una multiplicació on un nombre de 6 xifres (TALENT) multiplicat per una xifra (X) dona un nombre de 6 xifres (746136). Això ens indica que X no pot ser un nombre molt gran, ja que si fos 9, el resultat de la multiplicació seria molt més gran.
+
+2. **Anàlisi de la unitat:** La unitat del resultat és 6. Això significa que el producte de la unitat de TALENT (T) per X ha de donar un nombre que acabi en 6. Les possibles combinacions per a T i X són:
+    * T=1, X=6
+    * T=2, X=3 o X=8
+    * T=3, X=2
+    * T=4, X=4 o X=9
+    * T=6, X=1 o X=6
+    * T=7, X=8
+    * T=8, X=2 o X=7
+    * T=9, X=4 o X=6
+
+3. **Anàlisi de la primera xifra:** La primera xifra del resultat és 7. Això significa que el producte de la primera xifra de TALENT (T) per X ha de ser un nombre proper a 7. Si X fos 1, T hauria de ser 7, però si X fos 9, T hauria de ser 0 o 1.
+
+4. **Prova i error:** Comencem provant amb X=2. Si X=2, la unitat de T ha de ser 3 o 8. Si T=3, el producte de 3 per 2 és 6, que encaixa amb la unitat del resultat. Si T=8, el producte de 8 per 2 és 16, que també encaixa amb la unitat del resultat. Però si T=3, el producte de 3 per 2 és 6, que no encaixa amb la primera xifra del resultat (7). Per tant, T no pot ser 3. Si T=8, el producte de 8 per 2 és 16, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 2.
+
+5. **Prova amb X=6:** Si X=6, la unitat de T ha de ser 1 o 6. Si T=1, el producte de 1 per 6 és 6, que encaixa amb la unitat del resultat. Si T=6, el producte de 6 per 6 és 36, que també encaixa amb la unitat del resultat. Si T=1, el producte de 1 per 6 és 6, que no encaixa amb la primera xifra del resultat (7). Per tant, T no pot ser 1. Si T=6, el producte de 6 per 6 és 36, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 6.
+
+6. **Prova amb X=9:** Si X=9, la unitat de T ha de ser 4. Si T=4, el producte de 4 per 9 és 36, que encaixa amb la unitat del resultat. Si T=4, el producte de 4 per 9 és 36, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 9.
+
+7. **Prova amb X=8:** Si X=8, la unitat de T ha de ser 2 o 7. Si T=2, el producte de 2 per 8 és 16, que encaixa amb la unitat del resultat. Si T=7, el producte de 7 per 8 és 56, que també encaixa amb la unitat del resultat. Si T=2, el producte de 2 per 8 és 16, que no encaixa amb la primera xifra del resultat (7). Per tant, T no pot ser 2. Si T=7, el producte de 7 per 8 és 56, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 8.
+
+8. **Prova amb X=3:** Si X=3, la unitat de T ha de ser 2. Si T=2, el producte de 2 per 3 és 6, que encaixa amb la unitat del resultat. Si T=2, el producte de 2 per 3 és 6, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 3.
+
+9. **Prova amb X=4:** Si X=4, la unitat de T ha de ser 4 o 9. Si T=4, el producte de 4 per 4 és 16, que encaixa amb la unitat del resultat. Si T=9, el producte de 9 per 4 és 36, que també encaixa amb la unitat del resultat. Si T=4, el producte de 4 per 4 és 16, que no encaixa amb la primera xifra del resultat (7). Per tant, T no pot ser 4. Si T=9, el producte de 9 per 4 és 36, que no encaixa amb la primera xifra del resultat (7). Per tant, X no pot ser 4.
+
+10. **Prova amb X=5:** Si X=5, la unitat de T ha de ser 2. Si T=2, el producte de 2 per 5 és 10, que no encaixa amb la unitat del resultat (6). Per tant, X no pot ser 5.
+
+11. **Revisió:** Hem provat totes les opcions i cap encaixa. Hem de tornar a revisar el raonament.
+
+12. **Solució:** Després de revisar, ens adonem que hem de provar amb un valor de X que doni un resultat que comenci per 7. Si provem amb X=9, i T=8, el producte de 8 per 9 és 72, que podria encaixar. Si provem amb TALENT = 82946, i X=9, el resultat és 746514. No encaixa. Si provem amb TALENT = 82904, i X=9, el resultat és 746136. Encaixa! Per tant, T=8, A=2, L=9, E=0, N=4, X=9.
+
+Resposta: E)

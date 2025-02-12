@@ -1,0 +1,10 @@
+Raonament:
+Primer, observem que la seqüència de números és una progressió aritmètica amb un primer terme de 4 i una diferència comuna de 4. Per tant, el terme n-èsim de la seqüència és 4n. Per trobar quin terme és 1000, resolem 4n = 1000, que ens dona n = 250. Així, 1000 és el terme 250 de la seqüència.
+
+Ara, analitzem com s'organitzen els números en les files. La primera fila té 2 números, la segona 3, la tercera 2, la quarta 1, i així successivament. El nombre de números per fila segueix el patró 2, 3, 2, 1, 2, 3, 2, 1, ... Aquest patró es repeteix cada 4 files.
+
+Per determinar en quina fila es troba el número 250, hem de comptar quants números hi ha en cada grup de 4 files: 2 + 3 + 2 + 1 = 8. Dividim 250 entre 8 per veure quants grups de 4 files complets hi ha: 250 / 8 = 31 amb un residu de 2. Això significa que hi ha 31 grups complets de 4 files, i després hem de comptar 2 números més.
+
+Després de 31 grups de 4 files, hem comptat 31 * 8 = 248 números. El número 249 estarà a la primera fila del següent grup de 4 files, i el número 250 estarà a la segona fila del mateix grup. Per tant, el número 1000 (que és el terme 250) es troba a la segona fila.
+
+Resposta: B)

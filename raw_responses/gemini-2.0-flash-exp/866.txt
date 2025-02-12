@@ -1,0 +1,16 @@
+Raonament:
+Hem de trobar números de tres xifres, que anomenarem 'abc', on 'a', 'b' i 'c' són dígits. Si eliminem la primera xifra, obtenim 'bc', que ha de ser un quadrat perfecte. Si eliminem l'última xifra, obtenim 'ab', que també ha de ser un quadrat perfecte.
+
+Els quadrats perfectes de dues xifres són: 16, 25, 36, 49, 64, 81.
+
+Ara hem de buscar números de tres xifres que compleixin la condició.
+- Si 'bc' = 16, llavors 'b' = 1 i 'c' = 6. Els possibles 'ab' són 11, 21, 31, 41, 51, 61, 71, 81, 91. D'aquests, només 81 és un quadrat perfecte. Per tant, 816 és un número vàlid.
+- Si 'bc' = 25, llavors 'b' = 2 i 'c' = 5. Els possibles 'ab' són 12, 22, 32, 42, 52, 62, 72, 82, 92. Cap d'aquests és un quadrat perfecte.
+- Si 'bc' = 36, llavors 'b' = 3 i 'c' = 6. Els possibles 'ab' són 13, 23, 33, 43, 53, 63, 73, 83, 93. Cap d'aquests és un quadrat perfecte.
+- Si 'bc' = 49, llavors 'b' = 4 i 'c' = 9. Els possibles 'ab' són 14, 24, 34, 44, 54, 64, 74, 84, 94. D'aquests, 64 és un quadrat perfecte. Per tant, 649 és un número vàlid.
+- Si 'bc' = 64, llavors 'b' = 6 i 'c' = 4. Els possibles 'ab' són 16, 26, 36, 46, 56, 66, 76, 86, 96. D'aquests, 16 i 36 són quadrats perfectes. Per tant, 164 i 364 són números vàlids.
+- Si 'bc' = 81, llavors 'b' = 8 i 'c' = 1. Els possibles 'ab' són 18, 28, 38, 48, 58, 68, 78, 88, 98. Cap d'aquests és un quadrat perfecte.
+
+Per tant, els números que compleixen la condició són 816, 649, 164 i 364. Hi ha 4 números.
+
+Resposta: C)

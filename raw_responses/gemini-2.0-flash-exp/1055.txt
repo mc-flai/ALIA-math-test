@@ -1,0 +1,24 @@
+Raonament:
+1. **Entendre la restricció:** Tenim 7 alumnes, tots nascuts el mateix any, però en mesos diferents. Això vol dir que podem ordenar-los per edat de manera única. La restricció principal és que la persona més gran del primer equip ha de ser més jove que la persona més jove del segon equip.
+
+2. **Selecció dels equips:** Hem de seleccionar dos equips de 3 alumnes cadascun. Això deixa un alumne sense equip.
+
+3. **Ordenació per edat:** Imaginem que els alumnes estan ordenats per edat, del més jove al més gran. Anomenem-los A1, A2, A3, A4, A5, A6 i A7, on A1 és el més jove i A7 el més gran.
+
+4. **Posició de l'alumne restant:** L'alumne que no pertany a cap equip pot estar en qualsevol de les 7 posicions.
+
+5. **Anàlisi de la restricció:** Perquè la persona més gran del primer equip siga més jove que la persona més jove del segon equip, hem de tenir una separació entre els dos equips. Si l'alumne restant és A1, A2 o A3, no podem formar els equips amb la restricció donada. Si l'alumne restant és A7, tampoc podem formar els equips amb la restricció donada.
+
+6. **Casos vàlids:** Els casos vàlids són quan l'alumne restant és A4, A5 o A6.
+    * Si l'alumne restant és A4, els equips han de ser {A1, A2, A3} i {A5, A6, A7}.
+    * Si l'alumne restant és A5, els equips han de ser {A1, A2, A3} i {A6, A7, A4} o {A1, A2, A4} i {A6, A7, A3} o {A1, A3, A4} i {A6, A7, A2} o {A2, A3, A4} i {A6, A7, A1}. Però només hi ha una manera de fer-ho: {A1, A2, A3} i {A6, A7, A4}.
+    * Si l'alumne restant és A6, els equips han de ser {A1, A2, A3} i {A4, A5, A7}.
+
+7. **Càlcul de les combinacions:**
+    * Si l'alumne restant és A4, només hi ha una manera de formar els equips: {A1, A2, A3} i {A5, A6, A7}.
+    * Si l'alumne restant és A5, només hi ha una manera de formar els equips: {A1, A2, A3} i {A4, A6, A7}.
+    * Si l'alumne restant és A6, només hi ha una manera de formar els equips: {A1, A2, A3} i {A4, A5, A7}.
+
+8. **Total de maneres:** Per tant, hi ha 3 maneres possibles de formar els equips que compleixen la restricció.
+
+Resposta: A)

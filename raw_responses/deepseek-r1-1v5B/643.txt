@@ -1,0 +1,48 @@
+<think>
+Prime, identifiquem la cantidad total de bosses que s'enten amb el problema. Elleix i els 40 lladres (total de 42 personages).
+
+ cada one pot repartir les bosses idèntiques sense més que aconseguint una bossa plena i 2 monedes. Assim, cada bossa tenta distribuir una quantitat de monedes igual a la quantitat d'or sense que es deu a cada lladi.
+
+Per a distingir la quantitat de monedes que tenen les bosses, utilitzem la notació x per a la solució. Així, cada one reparteix les 42 bosses entre els 42 personages i agora tracta amb el valor de la moneda.
+
+El problema implica donar una bossa plena (igual que aquesta posada) i 2 monedes per a cada lladi. Com que les inspirem sense més data, pot ser que el nombre de monedes per bossa sigui el mateix per a tots, perquè la distribució no es disminues.
+
+Aplicant el teorema del mape d'or (teorema del mape), pot expressar l'ajuda amb les variables:
+
+x * 42 = 42 + (42 * 2)
+
+Com que cada one reparte les 42 bosses entre els 42 personages, el producte resultant és la moneda per bossa. Així, la expressió pot ser simplificada sense el 42:
+
+x = 1 + 2 ⇒ x = 3
+
+Per a donar una moneda a cada one sense que es deu, l'existència d'aquest valor de la moneda és possible.
+
+Finalment, observant que les posibles respostes s'arranjan al voltant de 80-90, així com un més al borde dins de la possibilitats.
+</think>
+
+Raonament:
+
+El problema es equivalent a: quin és el nombre de monedes que tenen les bosses, que es denoten per x.
+
+Cada one (alí i els 40 lladres) reparts les 42 bosses idèntiques sense més que aconseguint una bossa plena i 2 monedes. Així, el nombre de monedes que cada one repete ésigual a la quantitat d'or que quanca quen teniu, com un entity que no es donat.
+
+La expressión matemàtica que describeix aquest problema és:
+
+\[
+x \times 42 = 42 + (42 \times 2)
+\]
+
+Simplificant l'equació:
+
+\[
+42x = 42 + 84 \\
+42x = 126 \\
+x = \frac{126}{42} \\
+x = 3
+\]
+
+Per a donar una moneda a cada one sense que es deu, la posició correcta es:
+
+\[
+\boxed{B)
+\]

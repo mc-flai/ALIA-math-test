@@ -1,0 +1,73 @@
+Raonament:
+La calculadora respecta la jerarquia d'operacions, per tant, primer fa la divisió i després la suma. Així, les equacions que Sara introdueix són:
+1) a + (b/c) = 11
+2) b + (a/c) = 14
+
+Multipliquem ambdues equacions per c per eliminar les divisions:
+1) ac + b = 11c
+2) bc + a = 14c
+
+Sumem les dues equacions:
+ac + b + bc + a = 11c + 14c
+ac + bc + a + b = 25c
+c(a+b) + (a+b) = 25c
+(a+b)(c+1) = 25c
+
+Volem trobar el valor de (a+b)/c. Anomenem x = (a+b)/c. Llavors, a+b = xc. Substituïm a l'equació anterior:
+xc(c+1) = 25c
+Dividim per c (sabem que c és un enter positiu, per tant, no és 0):
+x(c+1) = 25
+x = 25/(c+1)
+
+Com que a, b i c són enters positius, x també ha de ser un nombre racional positiu. Perquè x sigui un enter, c+1 ha de ser un divisor de 25. Els divisors de 25 són 1, 5 i 25.
+Si c+1 = 1, llavors c=0, però c ha de ser positiu, així que descartem aquesta opció.
+Si c+1 = 5, llavors c=4 i x = 25/5 = 5.
+Si c+1 = 25, llavors c=24 i x = 25/25 = 1.
+
+Ara hem de comprovar si amb x=5 i x=1 podem trobar valors enters positius per a, b i c que compleixin les equacions originals.
+Si x=5, llavors (a+b)/c = 5, per tant a+b = 5c. Si c=4, a+b=20.
+1) a + b/4 = 11
+2) b + a/4 = 14
+Si a=16 i b=4, llavors 16 + 4/4 = 17 (no compleix)
+Si a=15 i b=5, llavors 15 + 5/4 = 16.25 (no compleix)
+Si a=12 i b=8, llavors 12 + 8/4 = 14 (no compleix)
+Si a=10 i b=10, llavors 10 + 10/4 = 12.5 (no compleix)
+Si x=1, llavors (a+b)/c = 1, per tant a+b = c. Si c=24, a+b=24.
+1) a + b/24 = 11
+2) b + a/24 = 14
+Si a=10 i b=14, llavors 10 + 14/24 = 10 + 7/12 = 10.58 (no compleix)
+Si a=12 i b=12, llavors 12 + 12/24 = 12.5 (no compleix)
+Si a=11 i b=13, llavors 11 + 13/24 = 11.54 (no compleix)
+Si a=10 i b=14, llavors 10 + 14/24 = 10 + 7/12 = 10.58 (no compleix)
+Si a=8 i b=16, llavors 8 + 16/24 = 8 + 2/3 = 8.66 (no compleix)
+Si a=16 i b=8, llavors 16 + 8/24 = 16 + 1/3 = 16.33 (no compleix)
+Si a=18 i b=6, llavors 18 + 6/24 = 18 + 1/4 = 18.25 (no compleix)
+Si a=6 i b=18, llavors 6 + 18/24 = 6 + 3/4 = 6.75 (no compleix)
+Si c=4, a+b=20.
+1) a + b/4 = 11
+2) b + a/4 = 14
+Multiplicant per 4:
+1) 4a + b = 44
+2) 4b + a = 56
+Restant la primera de la segona:
+3b - 3a = 12
+b - a = 4
+b = a + 4
+Substituint a la primera:
+4a + a + 4 = 44
+5a = 40
+a = 8
+b = 12
+(a+b)/c = (8+12)/4 = 20/4 = 5
+Si c=24, a+b=24.
+1) a + b/24 = 11
+2) b + a/24 = 14
+Multiplicant per 24:
+1) 24a + b = 264
+2) 24b + a = 336
+Restant la primera de la segona:
+23b - 23a = 72
+b - a = 72/23 (no enter)
+Per tant, la solució és x=5.
+
+Resposta: E)

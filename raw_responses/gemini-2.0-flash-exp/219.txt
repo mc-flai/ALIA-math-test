@@ -1,0 +1,37 @@
+Raonament:
+La suma de tots els números de les cartes és 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28, que és un nombre parell.
+Perquè la suma de les dues cartes del segon estudiant sigui parell, hi ha dues possibilitats:
+1. Les dues cartes tenen números parells.
+2. Les dues cartes tenen números imparells.
+
+Els números parells a la caixa són 2, 4 i 6. Els números imparells són 1, 3, 5 i 7.
+
+Si el primer estudiant sap que la suma de les cartes del segon estudiant és parell, això vol dir que el primer estudiant no ha tret una combinació de cartes que obligui al segon estudiant a tenir una suma imparella. Per tant, el primer estudiant no ha tret una combinació que deixi només un número parell i un número imparell a la caixa.
+
+Analitzem les possibles combinacions de cartes que el primer estudiant podria haver tret:
+* Si el primer estudiant hagués tret tres números parells (2, 4, 6), quedarien a la caixa els quatre números imparells (1, 3, 5, 7). El segon estudiant podria treure dues cartes imparells i la suma seria parell.
+* Si el primer estudiant hagués tret dos números parells i un imparell, quedarien a la caixa un parell i tres imparells. El segon estudiant podria treure un parell i un imparell, i la suma seria imparella.
+* Si el primer estudiant hagués tret un número parell i dos imparells, quedarien a la caixa dos parells i dos imparells. El segon estudiant podria treure un parell i un imparell, i la suma seria imparella.
+* Si el primer estudiant hagués tret tres números imparells, quedarien a la caixa tres parells i un imparell. El segon estudiant podria treure dos parells i la suma seria parell.
+
+Per tant, l'única manera que el primer estudiant estigui segur que la suma de les cartes del segon estudiant és parell és que el primer estudiant hagi tret o bé tres números parells o bé tres números imparells.
+
+Si el primer estudiant hagués tret els tres números parells (2, 4, 6), la suma seria 2 + 4 + 6 = 12.
+Si el primer estudiant hagués tret tres números imparells, les possibles combinacions serien:
+* 1 + 3 + 5 = 9
+* 1 + 3 + 7 = 11
+* 1 + 5 + 7 = 13
+* 3 + 5 + 7 = 15
+
+Com que la suma de les cartes del primer estudiant ha de ser una de les opcions donades, l'única opció possible és 12 o 15.
+Si la suma fos 12, el primer estudiant hauria tret 2, 4 i 6. Quedarien 1, 3, 5 i 7. El segon estudiant podria treure 1 i 3, 1 i 5, 1 i 7, 3 i 5, 3 i 7, o 5 i 7. Totes les sumes serien parells.
+Si la suma fos 15, el primer estudiant hauria tret 3, 5 i 7. Quedarien 1, 2, 4 i 6. El segon estudiant podria treure 2 i 4, 2 i 6, o 4 i 6. Totes les sumes serien parells.
+
+L'única opció que coincideix amb les opcions donades és 12 o 15. Però si el primer estudiant hagués tret 1, 3 i 5, la suma seria 9, i si hagués tret 1, 3 i 7, la suma seria 11, i si hagués tret 1, 5 i 7, la suma seria 13. Cap d'aquestes sumes coincideix amb les opcions donades. Per tant, la suma ha de ser 12 o 15.
+
+Si el primer estudiant hagués tret 2, 4 i 6, la suma seria 12. Si el primer estudiant hagués tret 3, 5 i 7, la suma seria 15.
+Com que l'enunciat diu que el primer estudiant sap que la suma de les cartes del segon és parell, això vol dir que el primer estudiant ha tret o bé tres parells o bé tres imparells.
+Si el primer estudiant hagués tret 2, 4 i 6, la suma seria 12. Si el primer estudiant hagués tret 3, 5 i 7, la suma seria 15.
+L'única opció que coincideix amb les opcions donades és 15.
+
+Resposta: E)

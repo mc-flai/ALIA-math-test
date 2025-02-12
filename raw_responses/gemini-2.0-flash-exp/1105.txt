@@ -1,0 +1,20 @@
+Raonament:
+Perquè el producte de dos grups de nombres sigui el mateix, el producte total de tots els nombres ha de ser un quadrat perfecte (o una potència de 2 si es permeten nombres repetits, però en aquest cas no és així). Si el producte total no és un quadrat perfecte, hem d'eliminar nombres fins que ho sigui.
+
+Primer, calculem el producte de tots els nombres de l'1 al 25. En comptes de calcular el producte exacte, ens fixarem en els factors primers que apareixen un nombre imparell de vegades, ja que aquests són els que impedeixen que el producte sigui un quadrat perfecte.
+
+Els nombres primers entre 1 i 25 són: 2, 3, 5, 7, 11, 13, 17, 19, 23.
+Analitzem la quantitat de vegades que apareixen aquests factors primers en la descomposició dels nombres de l'1 al 25:
+- 2: Apareix en 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24. La quantitat de factors 2 és: 1+2+1+3+1+2+1+4+1+2+1+3 = 22 (parell)
+- 3: Apareix en 3, 6, 9, 12, 15, 18, 21, 24. La quantitat de factors 3 és: 1+1+2+1+1+2+1+1 = 10 (parell)
+- 5: Apareix en 5, 10, 15, 20, 25. La quantitat de factors 5 és: 1+1+1+1+2 = 6 (parell)
+- 7: Apareix en 7, 14, 21. La quantitat de factors 7 és: 1+1+1 = 3 (imparell)
+- 11: Apareix en 11, 22. La quantitat de factors 11 és: 1+1 = 2 (parell)
+- 13: Apareix en 13. La quantitat de factors 13 és: 1 (imparell)
+- 17: Apareix en 17. La quantitat de factors 17 és: 1 (imparell)
+- 19: Apareix en 19. La quantitat de factors 19 és: 1 (imparell)
+- 23: Apareix en 23. La quantitat de factors 23 és: 1 (imparell)
+
+Els factors primers que apareixen un nombre imparell de vegades són 7, 13, 17, 19 i 23. Per tant, per a que el producte sigui un quadrat perfecte, hem d'eliminar almenys un nombre que contingui cadascun d'aquests factors. La manera més eficient d'eliminar-los és eliminar els nombres primers 7, 13, 17, 19 i 23. Això fa un total de 5 nombres.
+
+Resposta: B)

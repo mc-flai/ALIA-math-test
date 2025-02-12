@@ -1,0 +1,98 @@
+Raonament:
+Hem de trobar un nombre 'a' que compleixi les següents condicions:
+1. a és múltiple de 1 (a = 1k, on k és un enter). Això sempre es compleix per a qualsevol enter.
+2. a + 1 és múltiple de 2 (a + 1 = 2m, on m és un enter). Això implica que 'a' és imparell.
+3. a + 2 és múltiple de 3 (a + 2 = 3n, on n és un enter).
+4. a + 3 és múltiple de 4 (a + 3 = 4p, on p és un enter).
+5. a + 4 és múltiple de 5 (a + 4 = 5q, on q és un enter). Això implica que 'a' acaba en 1 o 6. Com que 'a' és imparell, 'a' acaba en 1.
+6. a + 5 NO és múltiple de 6.
+
+Comencem a buscar un nombre que compleixi les condicions 2, 3, 4 i 5.
+De la condició 5, sabem que a acaba en 1.
+Provem amb nombres que acaben en 1:
+- Si a = 1, a+1=2 (múltiple de 2), a+2=3 (múltiple de 3), a+3=4 (múltiple de 4), a+4=5 (múltiple de 5). Però a+5=6 (múltiple de 6). No compleix la condició 6.
+- Si a = 11, a+1=12 (múltiple de 2), a+2=13 (no múltiple de 3). No compleix la condició 3.
+- Si a = 21, a+1=22 (múltiple de 2), a+2=23 (no múltiple de 3). No compleix la condició 3.
+- Si a = 31, a+1=32 (múltiple de 2), a+2=33 (múltiple de 3), a+3=34 (no múltiple de 4). No compleix la condició 4.
+- Si a = 41, a+1=42 (múltiple de 2), a+2=43 (no múltiple de 3). No compleix la condició 3.
+- Si a = 51, a+1=52 (múltiple de 2), a+2=53 (no múltiple de 3). No compleix la condició 3.
+- Si a = 61, a+1=62 (múltiple de 2), a+2=63 (múltiple de 3), a+3=64 (múltiple de 4), a+4=65 (múltiple de 5). Però a+5=66 (múltiple de 6). No compleix la condició 6.
+- Si a = 71, a+1=72 (múltiple de 2), a+2=73 (no múltiple de 3). No compleix la condició 3.
+- Si a = 81, a+1=82 (múltiple de 2), a+2=83 (no múltiple de 3). No compleix la condició 3.
+- Si a = 91, a+1=92 (múltiple de 2), a+2=93 (múltiple de 3), a+3=94 (no múltiple de 4). No compleix la condició 4.
+- Si a = 101, a+1=102 (múltiple de 2), a+2=103 (no múltiple de 3). No compleix la condició 3.
+- Si a = 111, a+1=112 (múltiple de 2), a+2=113 (no múltiple de 3). No compleix la condició 3.
+- Si a = 121, a+1=122 (múltiple de 2), a+2=123 (múltiple de 3), a+3=124 (múltiple de 4), a+4=125 (múltiple de 5). Però a+5=126 (múltiple de 6). No compleix la condició 6.
+- Si a = 181, a+1=182 (múltiple de 2), a+2=183 (múltiple de 3), a+3=184 (múltiple de 4), a+4=185 (múltiple de 5). Però a+5=186 (múltiple de 6). No compleix la condició 6.
+- Si a = 241, a+1=242 (múltiple de 2), a+2=243 (múltiple de 3), a+3=244 (múltiple de 4), a+4=245 (múltiple de 5). Però a+5=246 (múltiple de 6). No compleix la condició 6.
+- Si a = 301, a+1=302 (múltiple de 2), a+2=303 (múltiple de 3), a+3=304 (múltiple de 4), a+4=305 (múltiple de 5). Però a+5=306 (múltiple de 6). No compleix la condició 6.
+- Si a = 361, a+1=362 (múltiple de 2), a+2=363 (múltiple de 3), a+3=364 (múltiple de 4), a+4=365 (múltiple de 5). Però a+5=366 (múltiple de 6). No compleix la condició 6.
+- Si a = 421, a+1=422 (múltiple de 2), a+2=423 (múltiple de 3), a+3=424 (múltiple de 4), a+4=425 (múltiple de 5). Però a+5=426 (múltiple de 6). No compleix la condició 6.
+- Si a = 481, a+1=482 (múltiple de 2), a+2=483 (múltiple de 3), a+3=484 (múltiple de 4), a+4=485 (múltiple de 5). Però a+5=486 (múltiple de 6). No compleix la condició 6.
+- Si a = 541, a+1=542 (múltiple de 2), a+2=543 (múltiple de 3), a+3=544 (múltiple de 4), a+4=545 (múltiple de 5). Però a+5=546 (múltiple de 6). No compleix la condició 6.
+- Si a = 601, a+1=602 (múltiple de 2), a+2=603 (múltiple de 3), a+3=604 (múltiple de 4), a+4=605 (múltiple de 5). Però a+5=606 (múltiple de 6). No compleix la condició 6.
+- Si a = 661, a+1=662 (múltiple de 2), a+2=663 (múltiple de 3), a+3=664 (múltiple de 4), a+4=665 (múltiple de 5). Però a+5=666 (múltiple de 6). No compleix la condició 6.
+- Si a = 721, a+1=722 (múltiple de 2), a+2=723 (múltiple de 3), a+3=724 (múltiple de 4), a+4=725 (múltiple de 5). Però a+5=726 (múltiple de 6). No compleix la condició 6.
+- Si a = 781, a+1=782 (múltiple de 2), a+2=783 (múltiple de 3), a+3=784 (múltiple de 4), a+4=785 (múltiple de 5). Però a+5=786 (múltiple de 6). No compleix la condició 6.
+- Si a = 841, a+1=842 (múltiple de 2), a+2=843 (múltiple de 3), a+3=844 (múltiple de 4), a+4=845 (múltiple de 5). Però a+5=846 (múltiple de 6). No compleix la condició 6.
+- Si a = 901, a+1=902 (múltiple de 2), a+2=903 (múltiple de 3), a+3=904 (múltiple de 4), a+4=905 (múltiple de 5). Però a+5=906 (múltiple de 6). No compleix la condició 6.
+- Si a = 961, a+1=962 (múltiple de 2), a+2=963 (múltiple de 3), a+3=964 (múltiple de 4), a+4=965 (múltiple de 5). Però a+5=966 (múltiple de 6). No compleix la condició 6.
+- Si a = 1021, a+1=1022 (múltiple de 2), a+2=1023 (múltiple de 3), a+3=1024 (múltiple de 4), a+4=1025 (múltiple de 5). Però a+5=1026 (múltiple de 6). No compleix la condició 6.
+- Si a = 1081, a+1=1082 (múltiple de 2), a+2=1083 (múltiple de 3), a+3=1084 (múltiple de 4), a+4=1085 (múltiple de 5). Però a+5=1086 (múltiple de 6). No compleix la condició 6.
+- Si a = 1141, a+1=1142 (múltiple de 2), a+2=1143 (múltiple de 3), a+3=1144 (múltiple de 4), a+4=1145 (múltiple de 5). Però a+5=1146 (múltiple de 6). No compleix la condició 6.
+- Si a = 1191, a+1=1192 (múltiple de 2), a+2=1193 (no múltiple de 3). No compleix la condició 3.
+- Si a = 1201, a+1=1202 (múltiple de 2), a+2=1203 (múltiple de 3), a+3=1204 (múltiple de 4), a+4=1205 (múltiple de 5). Però a+5=1206 (múltiple de 6). No compleix la condició 6.
+- Si a = 1261, a+1=1262 (múltiple de 2), a+2=1263 (múltiple de 3), a+3=1264 (múltiple de 4), a+4=1265 (múltiple de 5). Però a+5=1266 (múltiple de 6). No compleix la condició 6.
+- Si a = 1321, a+1=1322 (múltiple de 2), a+2=1323 (múltiple de 3), a+3=1324 (múltiple de 4), a+4=1325 (múltiple de 5). Però a+5=1326 (múltiple de 6). No compleix la condició 6.
+- Si a = 1381, a+1=1382 (múltiple de 2), a+2=1383 (múltiple de 3), a+3=1384 (múltiple de 4), a+4=1385 (múltiple de 5). Però a+5=1386 (múltiple de 6). No compleix la condició 6.
+- Si a = 1441, a+1=1442 (múltiple de 2), a+2=1443 (múltiple de 3), a+3=1444 (múltiple de 4), a+4=1445 (múltiple de 5). Però a+5=1446 (múltiple de 6). No compleix la condició 6.
+- Si a = 1491, a+1=1492 (múltiple de 2), a+2=1493 (no múltiple de 3). No compleix la condició 3.
+- Si a = 1501, a+1=1502 (múltiple de 2), a+2=1503 (múltiple de 3), a+3=1504 (múltiple de 4), a+4=1505 (múltiple de 5). Però a+5=1506 (múltiple de 6). No compleix la condició 6.
+- Si a = 1561, a+1=1562 (múltiple de 2), a+2=1563 (múltiple de 3), a+3=1564 (múltiple de 4), a+4=1565 (múltiple de 5). Però a+5=1566 (múltiple de 6). No compleix la condició 6.
+- Si a = 1621, a+1=1622 (múltiple de 2), a+2=1623 (múltiple de 3), a+3=1624 (múltiple de 4), a+4=1625 (múltiple de 5). Però a+5=1626 (múltiple de 6). No compleix la condició 6.
+- Si a = 1681, a+1=1682 (múltiple de 2), a+2=1683 (múltiple de 3), a+3=1684 (múltiple de 4), a+4=1685 (múltiple de 5). Però a+5=1686 (múltiple de 6). No compleix la condició 6.
+- Si a = 1741, a+1=1742 (múltiple de 2), a+2=1743 (múltiple de 3), a+3=1744 (múltiple de 4), a+4=1745 (múltiple de 5). Però a+5=1746 (múltiple de 6). No compleix la condició 6.
+- Si a = 1801, a+1=1802 (múltiple de 2), a+2=1803 (múltiple de 3), a+3=1804 (múltiple de 4), a+4=1805 (múltiple de 5). Però a+5=1806 (múltiple de 6). No compleix la condició 6.
+- Si a = 1861, a+1=1862 (múltiple de 2), a+2=1863 (múltiple de 3), a+3=1864 (múltiple de 4), a+4=1865 (múltiple de 5). Però a+5=1866 (múltiple de 6). No compleix la condició 6.
+- Si a = 1921, a+1=1922 (múltiple de 2), a+2=1923 (múltiple de 3), a+3=1924 (múltiple de 4), a+4=1925 (múltiple de 5). Però a+5=1926 (múltiple de 6). No compleix la condició 6.
+- Si a = 1981, a+1=1982 (múltiple de 2), a+2=1983 (múltiple de 3), a+3=1984 (múltiple de 4), a+4=1985 (múltiple de 5). Però a+5=1986 (múltiple de 6). No compleix la condició 6.
+- Si a = 2041, a+1=2042 (múltiple de 2), a+2=2043 (múltiple de 3), a+3=2044 (múltiple de 4), a+4=2045 (múltiple de 5). Però a+5=2046 (múltiple de 6). No compleix la condició 6.
+- Si a = 2091, a+1=2092 (múltiple de 2), a+2=2093 (no múltiple de 3). No compleix la condició 3.
+- Si a = 2101, a+1=2102 (múltiple de 2), a+2=2103 (múltiple de 3), a+3=2104 (múltiple de 4), a+4=2105 (múltiple de 5). Però a+5=2106 (múltiple de 6). No compleix la condició 6.
+- Si a = 2161, a+1=2162 (múltiple de 2), a+2=2163 (múltiple de 3), a+3=2164 (múltiple de 4), a+4=2165 (múltiple de 5). Però a+5=2166 (múltiple de 6). No compleix la condició 6.
+- Si a = 2221, a+1=2222 (múltiple de 2), a+2=2223 (múltiple de 3), a+3=2224 (múltiple de 4), a+4=2225 (múltiple de 5). Però a+5=2226 (múltiple de 6). No compleix la condició 6.
+- Si a = 2281, a+1=2282 (múltiple de 2), a+2=2283 (múltiple de 3), a+3=2284 (múltiple de 4), a+4=2285 (múltiple de 5). Però a+5=2286 (múltiple de 6). No compleix la condició 6.
+- Si a = 2341, a+1=2342 (múltiple de 2), a+2=2343 (múltiple de 3), a+3=2344 (múltiple de 4), a+4=2345 (múltiple de 5). Però a+5=2346 (múltiple de 6). No compleix la condició 6.
+- Si a = 2401, a+1=2402 (múltiple de 2), a+2=2403 (múltiple de 3), a+3=2404 (múltiple de 4), a+4=2405 (múltiple de 5). Però a+5=2406 (múltiple de 6). No compleix la condició 6.
+- Si a = 2461, a+1=2462 (múltiple de 2), a+2=2463 (múltiple de 3), a+3=2464 (múltiple de 4), a+4=2465 (múltiple de 5). Però a+5=2466 (múltiple de 6). No compleix la condició 6.
+- Si a = 2521, a+1=2522 (múltiple de 2), a+2=2523 (múltiple de 3), a+3=2524 (múltiple de 4), a+4=2525 (múltiple de 5). Però a+5=2526 (múltiple de 6). No compleix la condició 6.
+- Si a = 2581, a+1=2582 (múltiple de 2), a+2=2583 (múltiple de 3), a+3=2584 (múltiple de 4), a+4=2585 (múltiple de 5). Però a+5=2586 (múltiple de 6). No compleix la condició 6.
+- Si a = 2641, a+1=2642 (múltiple de 2), a+2=2643 (múltiple de 3), a+3=2644 (múltiple de 4), a+4=2645 (múltiple de 5). Però a+5=2646 (múltiple de 6). No compleix la condició 6.
+- Si a = 2701, a+1=2702 (múltiple de 2), a+2=2703 (múltiple de 3), a+3=2704 (múltiple de 4), a+4=2705 (múltiple de 5). Però a+5=2706 (múltiple de 6). No compleix la condició 6.
+- Si a = 2761, a+1=2762 (múltiple de 2), a+2=2763 (múltiple de 3), a+3=2764 (múltiple de 4), a+4=2765 (múltiple de 5). Però a+5=2766 (múltiple de 6). No compleix la condició 6.
+- Si a = 2821, a+1=2822 (múltiple de 2), a+2=2823 (múltiple de 3), a+3=2824 (múltiple de 4), a+4=2825 (múltiple de 5). Però a+5=2826 (múltiple de 6). No compleix la condició 6.
+- Si a = 2881, a+1=2882 (múltiple de 2), a+2=2883 (múltiple de 3), a+3=2884 (múltiple de 4), a+4=2885 (múltiple de 5). Però a+5=2886 (múltiple de 6). No compleix la condició 6.
+- Si a = 2941, a+1=2942 (múltiple de 2), a+2=2943 (múltiple de 3), a+3=2944 (múltiple de 4), a+4=2945 (múltiple de 5). Però a+5=2946 (múltiple de 6). No compleix la condició 6.
+- Si a = 3001, a+1=3002 (múltiple de 2), a+2=3003 (múltiple de 3), a+3=3004 (múltiple de 4), a+4=3005 (múltiple de 5). Però a+5=3006 (múltiple de 6). No compleix la condició 6.
+- Si a = 3061, a+1=3062 (múltiple de 2), a+2=3063 (múltiple de 3), a+3=3064 (múltiple de 4), a+4=3065 (múltiple de 5). Però a+5=3066 (múltiple de 6). No compleix la condició 6.
+- Si a = 3121, a+1=3122 (múltiple de 2), a+2=3123 (múltiple de 3), a+3=3124 (múltiple de 4), a+4=3125 (múltiple de 5). Però a+5=3126 (múltiple de 6). No compleix la condició 6.
+- Si a = 3181, a+1=3182 (múltiple de 2), a+2=3183 (múltiple de 3), a+3=3184 (múltiple de 4), a+4=3185 (múltiple de 5). Però a+5=3186 (múltiple de 6). No compleix la condició 6.
+- Si a = 3241, a+1=3242 (múltiple de 2), a+2=3243 (múltiple de 3), a+3=3244 (múltiple de 4), a+4=3245 (múltiple de 5). Però a+5=3246 (múltiple de 6). No compleix la condició 6.
+- Si a = 3301, a+1=3302 (múltiple de 2), a+2=3303 (múltiple de 3), a+3=3304 (múltiple de 4), a+4=3305 (múltiple de 5). Però a+5=3306 (múltiple de 6). No compleix la condició 6.
+- Si a = 3361, a+1=3362 (múltiple de 2), a+2=3363 (múltiple de 3), a+3=3364 (múltiple de 4), a+4=3365 (múltiple de 5). Però a+5=3366 (múltiple de 6). No compleix la condició 6.
+- Si a = 3421, a+1=3422 (múltiple de 2), a+2=3423 (múltiple de 3), a+3=3424 (múltiple de 4), a+4=3425 (múltiple de 5). Però a+5=3426 (múltiple de 6). No compleix la condició 6.
+- Si a = 3481, a+1=3482 (múltiple de 2), a+2=3483 (múltiple de 3), a+3=3484 (múltiple de 4), a+4=3485 (múltiple de 5). Però a+5=3486 (múltiple de 6). No compleix la condició 6.
+- Si a = 3541, a+1=3542 (múltiple de 2), a+2=3543 (múltiple de 3), a+3=3544 (múltiple de 4), a+4=3545 (múltiple de 5). Però a+5=3546 (múltiple de 6). No compleix la condició 6.
+- Si a = 3601, a+1=3602 (múltiple de 2), a+2=3603 (múltiple de 3), a+3=3604 (múltiple de 4), a+4=3605 (múltiple de 5). Però a+5=3606 (múltiple de 6). No compleix la condició 6.
+- Si a = 3661, a+1=3662 (múltiple de 2), a+2=3663 (múltiple de 3), a+3=3664 (múltiple de 4), a+4=3665 (múltiple de 5). Però a+5=3666 (múltiple de 6). No compleix la condició 6.
+- Si a = 3721, a+1=3722 (múltiple de 2), a+2=3723 (múltiple de 3), a+3=3724 (múltiple de 4), a+4=3725 (múltiple de 5). Però a+5=3726 (múltiple de 6). No compleix la condició 6.
+- Si a = 3781, a+1=3782 (múltiple de 2), a+2=3783 (múltiple de 3), a+3=3784 (múltiple de 4), a+4=3785 (múltiple de 5). Però a+5=3786 (múltiple de 6). No compleix la condició 6.
+- Si a = 3841, a+1=3842 (múltiple de 2), a+2=3843 (múltiple de 3), a+3=3844 (múltiple de 4), a+4=3845 (múltiple de 5). Però a+5=3846 (múltiple de 6). No compleix la condició 6.
+- Si a = 3901, a+1=3902 (múltiple de 2), a+2=3903 (múltiple de 3), a+3=3904 (múltiple de 4), a+4=3905 (múltiple de 5). Però a+5=3906 (múltiple de 6). No compleix la condició 6.
+- Si a = 3961, a+1=3962 (múltiple de 2), a+2=3963 (múltiple de 3), a+3=3964 (múltiple de 4), a+4=3965 (múltiple de 5). Però a+5=3966 (múltiple de 6). No compleix la condició 6.
+- Si a = 4021, a+1=4022 (múltiple de 2), a+2=4023 (múltiple de 3), a+3=4024 (múltiple de 4), a+4=4025 (múltiple de 5). Però a+5=4026 (múltiple de 6). No compleix la condició 6.
+- Si a = 4081, a+1=4082 (múltiple de 2), a+2=4083 (múltiple de 3), a+3=4084 (múltiple de 4), a+4=4085 (múltiple de 5). Però a+5=4086 (múltiple de 6). No compleix la condició 6.
+- Si a = 4141, a+1=4142 (múltiple de 2), a+2=4143 (múltiple de 3), a+3=4144 (múltiple de 4), a+4=4145 (múltiple de 5). Però a+5=4146 (múltiple de 6). No compleix la condició 6.
+- Si a = 4201, a+1=4202 (múltiple de 2), a+2=4203 (múltiple de 3), a+3=4204 (múltiple de 4), a+4=4205 (múltiple de 5). Però a+5=4206 (múltiple de 6). No compleix la condició 6.
+- Si a = 4261, a+1=4262 (múltiple de 2), a+2=4263 (múltiple de 3), a+3=4264 (múltiple de 4), a+4=4265 (múltiple de 5). Però a+5=4266 (múltiple de 6). No compleix la condició 6.
+- Si a = 4321, a+1=4322 (múltiple de 2), a

@@ -1,0 +1,62 @@
+<think>
+ primer, identifico que se necesita calcular la diferencia entre la suma de los 10 primeros múltiples positivos de 10 y las de 9.
+
+Luego, determinaré cómo calificar a los múltiples de 10: 10, 20, 30, ..., hasta el 10° multiple.
+
+Similarmente, para los múltiples de 9: 9, 18, 27, ..., hasta el 10° multiple.
+
+Luego, aplicaré la fórmula de suma de una serie aritmética para ambas series:
+
+Para los múltiples de 10:
+La primera terminada es a = 10.
+El último término es l = 10 * 10 = 100.
+N paras es n = 10.
+
+Suma = (a + l) / 2 * n = (10 + 100)/2 * 10 = 55 * 10 = 550.
+
+Para los múltiples de 9:
+La primera terminada es a = 9.
+El último término es l = 9 * 10 = 90.
+N paras es n = 10.
+
+Suma = (a + l)/2 * n = (9 + 90)/2 * 10 = 49.5 * 10 = 495.
+
+Finalmente, restaré la suma de los múltiples de 9 al suma de los múltiples de 10 para obtener la diferencia: 550 - 495 = 55.
+</think>
+
+Raonament:
+
+Para encontrar la diferencia entre la suma de los 10 primeros múltiples positivos de 10 y las de 9, sigamos estos pasos:
+
+1. **Calcular la suma de los múltiples de 10:**
+   - Los múltiples de 10 en primeros son: 10, 20, 30, ..., 100.
+   - Asegúrate de que hay 10 términos.
+   
+   La fórmula para la suma de una serie aritmética es:
+   \[
+   S_n = \frac{n}{2} \times (a_1 + a_n)
+   \]
+   Donde:
+   - \( n = 10 \) (número de términos),
+   - \( a_1 = 10 \) (primer término),
+   - \( a_{10} = 10 \times 10 = 100 \) (décimo término).
+   
+   Sustituyendo los valores:
+   \[
+   S_{10} = \frac{10}{2} \times (10 + 100) = 5 \times 110 = 550
+   \]
+
+2. **Calcular la suma de los múltiples de 9:**
+   - Los múltiples de 9 en primeros son: 9, 18, 27, ..., 90.
+   
+   Aplicamos la misma fórmula:
+   \[
+   S_{10} = \frac{10}{2} \times (9 + 90) = 5 \times 99 = 495
+   \]
+
+3. **Calcular la diferencia:**
+   \[
+   550 - 495 = 55
+   \]
+
+**Respuesta:** \boxed{E}

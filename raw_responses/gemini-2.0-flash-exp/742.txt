@@ -1,0 +1,18 @@
+Raonament:
+Un cub té 8 vèrtexs. Per definir un pla, necessitem almenys tres punts no col·lineals. Si escollim tres vèrtexs d'un cub, podem formar un pla. Però la pregunta ens demana quants plans passen per exactament tres vèrtexs, és a dir, que no passin per quatre.
+
+Hi ha dos tipus de plans que passen per tres vèrtexs d'un cub:
+1. Plans que contenen una cara del cub: Cada cara del cub té 4 vèrtexs, així que aquests plans no compleixen la condició de passar per exactament tres vèrtexs.
+2. Plans que passen per tres vèrtexs que no formen una cara: Aquests plans són els que ens interessen.
+
+Considerem un vèrtex del cub. Hi ha tres vèrtexs adjacents a aquest vèrtex. Si escollim dos d'aquests vèrtexs adjacents i el vèrtex original, formem una cara del cub, i per tant, no ens serveix. Però si escollim un vèrtex adjacent i un vèrtex no adjacent, formem un pla que passa per exactament tres vèrtexs.
+
+Per cada vèrtex, hi ha 3 vèrtexs adjacents i 4 vèrtexs no adjacents. Si escollim un vèrtex i un altre no adjacent, i després un tercer vèrtex que no estigui en la mateixa línia que els dos primers, formarem un pla que passa per exactament tres vèrtexs.
+
+Per cada vèrtex, hi ha 4 vèrtexs no adjacents. Si escollim un d'aquests 4 vèrtexs, i després escollim un tercer vèrtex que no estigui en la mateixa línia que els dos primers, formarem un pla que passa per exactament tres vèrtexs. Però hem de tenir en compte que cada pla està definit per tres vèrtexs, així que hem de dividir per 3 per evitar comptar el mateix pla diverses vegades.
+
+Considerem un vèrtex A. Hi ha 4 vèrtexs no adjacents a A. Si escollim un d'aquests, per exemple B, hi ha 2 vèrtexs que no estan en la mateixa línia que A i B. Per exemple, C i D. Així, per cada parella de vèrtexs no adjacents, hi ha 2 plans possibles. Per cada vèrtex, hi ha 4 vèrtexs no adjacents, i per cada vèrtex no adjacent, hi ha 2 vèrtexs que no estan en la mateixa línia. Això fa 4 * 2 = 8 plans per cada vèrtex. Però hem de dividir per 3 per evitar comptar el mateix pla diverses vegades.
+
+En realitat, hi ha 12 plans que passen per exactament tres vèrtexs d'un cub. Aquests plans són els que tallen el cub per una diagonal de cara i un vèrtex oposat. Per exemple, si tenim els vèrtexs A, B, C, D, E, F, G, H, un pla pot passar per A, C i F. Hi ha 12 d'aquests plans.
+
+Resposta: E)

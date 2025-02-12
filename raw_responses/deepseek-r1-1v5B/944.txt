@@ -1,0 +1,37 @@
+<think>
+Prime vegem que Joan intentava sumar els nombres enters positius de l'1 fins a un nombre n. Així, la suma total serà 1 + 2 + 3 + ... + n, quina la formula de la qual recordem: S = n(n + 1)/2.
+
+El problema es que Joan ha sumat dues vegades el mateix nombre x i obtinguda un total de 857. El seu albert pot tenir dos causes:
+
+1) El nombre x que ha sumat dues vegades és la més gràvia possible, o
+2) El nombre x es considera l'altre número que hi sumava sense que hi hés percorruda.
+
+En el primer cas, dono que la suma correcta serria S = 857 - x. Com que S està expressible com n(n + 1)/2, dono que x ha de ser un nombre que pot ser expressedió como x = n(n + 1)/2 - (857 - x). Així, al igual que (n^2 + n)/2 - 857 + x = x. Per tant, (n^2 + n)/2 - 857 = 0 ⇒ n^2 + n - 1714 = 0.
+
+Resolim l'ecuación quadratic: discriminant = √(1 + 6856) ≈ 82.95, que no és un nombre entat. Així, aquesta posició impossible i la x ha sumat dues vegades és la més gràvia possible.
+
+En el segon cas, dono que la suma es S = 857 - x, que és igual a (n(n + 1))/2. Ara, com que Joan ha sumat dues vegades el mateix nombre x, l'altre nombre es n, quina pot ser el valor de x que hi sumava dos vegades.
+
+Per a determinar n, utilitzem la suma sense x: S = (n^2 + n)/2 - x. Com que Joan ha sumat dues vegades un nombre x, per així que la suma serà S = (n(n + 1))/2 - x. Així, la suma actualment es calculada de Joan és 857. El valor actual de la suma sense x és (n^2 + n)/2 - x.
+
+Per a donar un nombre que sigui alreaa, l'altre número que ha sumat dues vegades x és el que qués hem donats. Com que la més gràvia possible i el més altra, com que n està alredon de 41 o 42 (com així que (n^2 +n)/2 ≈857). Calculem la suma sense x: Si n=40 ⇒ S=(1600+40)/2=820, per tant x=857-820=37.
+
+La posició possible i que el valor de x ser 37. Així, la segona vegada sumat el mateix nombre es 37, sense que ho sumavem una vegada, dona que la suma total ho ha totalitzat 857.
+</think>
+
+Raonament:
+
+Joan sumava els nombres enters positius des de 1 fins a un nombre n, com a tota la suma seria S = n(n + 1)/2. El llotzava dues vegades el mateix nombre x i obtingut un total de 857.
+
+Llavors:
+1. Si x és la més gràvia possible que hi sumавem dues vegades, potser x es el que expressa la可以从 al pair: S = 857 - x, on S ser la suma real sense x.
+   De donat: n(n + 1)/2 - x = 857 - x ⇒ n(n + 1) = 1714. Així, resolim l'equació quadràtica: n^2 +n -1714=0. Discriminant D = √(1 + 6856)=√8297≈91.23, que no és un nombre entat. Per tant, x es la més gràvia possible i la posició impossible.
+
+2. La vegada possible que hi sumavem dues vegades el mateix nombre x es l'altre número que ha sumat dues vegades.
+   Dona que la suma sense x és S = 857 - x, que serà (n(n +1))/2 -x.
+   Per a donar un nombre que sigui alredon de 41 o 42:
+   Si n=40 ⇒ S=(1600+40)/2=820 ⇒ x = 857 -820 =37.
+
+La posició possible i el valor de x es 37.
+
+**Resposta:** \boxed{D}

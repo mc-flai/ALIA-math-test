@@ -1,0 +1,30 @@
+Raonament:
+1. **Anàlisi de les equacions:** Tenim dues equacions que defineixen la funció f:
+   - f(x) = 2f(x + 1)
+   - f(x + y) = f(x) * f(y)
+
+2. **Manipulació de la primera equació:** Podem reescriure la primera equació per aïllar f(x+1):
+   f(x+1) = f(x) / 2
+
+3. **Aplicació de la segona equació:** Utilitzem la segona equació per expressar f(x+2) en termes de f(x) i f(2):
+   f(x+2) = f(x) * f(2)
+
+4. **Relació entre f(x+1) i f(x+2):** També podem expressar f(x+2) utilitzant la primera equació:
+   f(x+2) = f((x+1)+1) = f(x+1) / 2
+
+5. **Igualació i simplificació:** Igualem les dues expressions per f(x+2):
+   f(x) * f(2) = f(x+1) / 2
+   Substituïm f(x+1) per f(x)/2:
+   f(x) * f(2) = (f(x) / 2) / 2
+   f(x) * f(2) = f(x) / 4
+   Dividim per f(x) (que és diferent de 0 ja que el domini són els reals positius):
+   f(2) = 1/4
+
+6. **Càlcul de f(2016) / f(2014):** Utilitzem la segona equació per expressar f(2016) en termes de f(2014) i f(2):
+   f(2016) = f(2014 + 2) = f(2014) * f(2)
+   Per tant, f(2016) / f(2014) = f(2014) * f(2) / f(2014) = f(2)
+
+7. **Substitució del valor de f(2):**
+   f(2016) / f(2014) = f(2) = 1/4
+
+Resposta: C)

@@ -1,0 +1,44 @@
+<think>
+Prime vegem que hi haviem un total de 100 personas en l'olimpa.
+
+Llavors, calculem quina quantità d'hipotesis hem expressada per cada problema:
+- Primer problema: 90 resoldre.
+- Segon problema: 80 resoldre.
+- Terç problema: 70 resoldre.
+- Cuarta problema: 60 resoldre.
+
+Per donar una x-fórmula, utilitzem la fórmula d'independencia entre variables: Totales = hipotesi +hipotesi - intersecció. Així, la x-fórmula serà:
+\[
+x + y + z + w = 100
+\]
+Si donat que el nombre de individuals que resoldre qualsevs problemes no es tan gran com possible, cal intentar arribar a una solució compatible amb les dades informadas.
+
+Tambí pot expressar la quantitat de x (x) que resolt el primer problema i així el nombre total per a cada una de l'altre hipotesis:
+\[
+y = 100 - x
+\]
+Plugging into the fórmula:
+\[
+x + (100 - x) + z + w = 100 \\
+z + w = 0
+\]
+Així, el nombre de people que resoldre els quinche i la qüarta es zero. Així, tot l'hiposita van ser resoldres així que calment x es igual a zero.
+
+Per a les ques teniem que resoldre el terç i la qüarta problema, cal donar una quantitat de people que no s'expreni obvious.
+
+Finalment, com a concludeix, pot ser que hi ha 20 guanyadors.
+</think>
+
+Raonament: 
+
+El problema es similar a un enigma d'intersectió en matemàtiques. Ambitivament, cal explorar les dades donades i la fórmula del teorema de la inclusión-exclusión per al cálculo de la quantitat total de elements. De vegats, la fórmula es la segona que pot utilitzar:
+
+\[
+|x| + |y| + |z| + |w| - |x \cap y| - |x \cap z| - |x \cap w| - |y \cap z| - |y \cap w| - |z \cap w| + |x \cap y \cap z| + |x \cap y \cap w| + |x \cap z \cap w| + |y \cap z \cap w| - |x \cap y \cap z \cap w| = \text{Totals}
+\]
+
+Així, en ourdamant, donat que el nombre de persones que resolt tots els problemes es zero (com s'ha demostrat anteriorment), la quantitat x (que resol el primer problema) pot ser igual a 0. Per a les ques van resoldre el terç i quarta problema, l'hiposita total es 20.
+
+Finalment, quan cal dem on nombrar les guanyadors que resolt els terç i quarta problema es de 20.
+
+\boxed{C}

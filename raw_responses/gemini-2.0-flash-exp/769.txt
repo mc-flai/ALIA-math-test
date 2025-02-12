@@ -1,0 +1,26 @@
+Raonament:
+Primer, hem de trobar la descomposició en factors primers de 1024. Sabem que 1024 = 2^10.
+Els divisors positius de 1024 són de la forma 2^k, on k pot ser qualsevol enter entre 0 i 10. Per tant, els divisors són 2^0, 2^1, 2^2, ..., 2^10.
+
+La suma dels divisors (a) és:
+a = 2^0 + 2^1 + 2^2 + ... + 2^10
+Aquesta és una progressió geomètrica amb el primer terme 1, la raó 2 i 11 termes. La suma d'una progressió geomètrica és S = a_1 * (r^n - 1) / (r - 1), on a_1 és el primer terme, r és la raó i n és el nombre de termes.
+a = 1 * (2^11 - 1) / (2 - 1) = 2048 - 1 = 2047
+
+El producte dels divisors (b) és:
+b = 2^0 * 2^1 * 2^2 * ... * 2^10
+Utilitzant les propietats de les potències, podem sumar els exponents:
+b = 2^(0 + 1 + 2 + ... + 10)
+La suma dels exponents és la suma dels primers 10 nombres naturals, que és (10 * 11) / 2 = 55.
+b = 2^55
+
+Ara hem de comprovar quina de les igualtats és correcta.
+A) (a - 1)^5 = (2047 - 1)^5 = 2046^5. Això no és igual a 2^55.
+B) (a + 1)^5 = (2047 + 1)^5 = 2048^5 = (2^11)^5 = 2^55. Això és igual a b.
+C) a^5 = 2047^5. Això no és igual a 2^55.
+D) a^5 - 1 = 2047^5 - 1. Això no és igual a 2^55.
+E) a^5 + 1 = 2047^5 + 1. Això no és igual a 2^55.
+
+Per tant, la igualtat correcta és (a + 1)^5 = b.
+
+Resposta: B)

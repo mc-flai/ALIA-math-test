@@ -1,0 +1,49 @@
+Raonament:
+
+1. **Analitzar les prediccions:** Tenim sis prediccions i sabem que cada ciclista ha estat situat correctament almenys dues vegades. Això vol dir que hem de buscar coincidències per a cada ciclista.
+
+2. **Començar per la primera posició:**
+   - A apareix primer a les prediccions de ABDEC i BACED.
+   - B apareix primer a la predicció de BACED.
+   - C apareix primer a les prediccions de CDBEA i CEADB.
+   - D apareix primer a la predicció de DAECB.
+   - E apareix primer a la predicció de EADBC.
+
+3. **Analitzar la segona posició:**
+   - A apareix segon a les prediccions de ABDEC i EADBC.
+   - B apareix segon a les prediccions de ABDEC i BACED.
+   - C apareix segon a la predicció de CDBEA.
+   - D apareix segon a les prediccions de CEADB i DAECB.
+   - E apareix segon a la predicció de CDBEA.
+
+4. **Analitzar la tercera posició:**
+   - A apareix tercer a les prediccions de EADBC i CEADB.
+   - B apareix tercer a la predicció de EADBC.
+   - C apareix tercer a la predicció de BACED.
+   - D apareix tercer a la predicció de ABDEC.
+   - E apareix tercer a la predicció de DAECB.
+
+5. **Analitzar la quarta posició:**
+   - A apareix quart a la predicció de DAECB.
+   - B apareix quart a la predicció de CDBEA.
+   - C apareix quart a la predicció de ABDEC.
+   - D apareix quart a les prediccions de BACED i EADBC.
+   - E apareix quart a la predicció de CEADB.
+
+6. **Analitzar la cinquena posició:**
+   - A apareix cinquè a la predicció de BACED.
+   - B apareix cinquè a la predicció de DAECB.
+   - C apareix cinquè a la predicció de EADBC.
+   - D apareix cinquè a la predicció de CDBEA.
+   - E apareix cinquè a les prediccions de ABDEC i CEADB.
+
+7. **Construir la solució:**
+   - **C** apareix primer dues vegades (CDBEA i CEADB), així que C és el primer.
+   - **A** apareix segon dues vegades (ABDEC i EADBC), així que A és el segon.
+   - **B** apareix tercer una vegada (EADBC) i segon dues vegades (ABDEC i BACED), però com que A ja està en segona posició, B no pot ser segon. Per tant, B ha de ser el tercer.
+   - **E** apareix quart una vegada (CEADB) i cinquè dues vegades (ABDEC i CEADB). Com que ja tenim C, A i B, E ha de ser el cinquè.
+   - **D** apareix quart dues vegades (BACED i EADBC), així que D és el quart.
+
+8. **Solució final:** La posició final és CABED.
+
+Resposta: C)

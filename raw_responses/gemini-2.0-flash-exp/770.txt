@@ -1,0 +1,16 @@
+Raonament:
+L'equació donada és 2 - |x| = ax. Per analitzar el nombre de solucions, podem considerar dos casos: x ≥ 0 i x < 0.
+
+Cas 1: x ≥ 0. En aquest cas, |x| = x, i l'equació es converteix en 2 - x = ax, que es pot reescriure com 2 = (a+1)x. Si a+1 ≠ 0, llavors x = 2/(a+1). Perquè aquesta solució sigui vàlida, hem de tenir x ≥ 0, és a dir, 2/(a+1) ≥ 0. Això implica que a+1 > 0, o a > -1.
+
+Cas 2: x < 0. En aquest cas, |x| = -x, i l'equació es converteix en 2 - (-x) = ax, que es pot reescriure com 2 + x = ax, o 2 = (a-1)x. Si a-1 ≠ 0, llavors x = 2/(a-1). Perquè aquesta solució sigui vàlida, hem de tenir x < 0, és a dir, 2/(a-1) < 0. Això implica que a-1 < 0, o a < 1.
+
+Perquè l'equació tingui exactament dues solucions, necessitem una solució per a x ≥ 0 i una solució per a x < 0. Això significa que hem de tenir a > -1 i a < 1. Per tant, -1 < a < 1.
+
+Ara, hem de considerar els casos en què a+1 = 0 o a-1 = 0.
+Si a = -1, l'equació del cas 1 esdevé 2 = 0, que no té solució. L'equació del cas 2 esdevé 2 = -2x, que té solució x = -1. Per tant, només hi ha una solució.
+Si a = 1, l'equació del cas 2 esdevé 2 = 0, que no té solució. L'equació del cas 1 esdevé 2 = 2x, que té solució x = 1. Per tant, només hi ha una solució.
+
+Per tant, l'interval -1 < a < 1 és l'únic que garanteix dues solucions.
+
+Resposta: B)

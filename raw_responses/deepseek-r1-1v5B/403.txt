@@ -1,0 +1,52 @@
+<think>
+Para resolver este problema, primero visualicé que tenemos un rectangle de dimensiones a por b, con a > b. Dividimos el rectángulo en dos triángulos triangularmente partitionados por una diagonal. En cada triángulo, se inscribe un cuadrado con lados paralelos a los lados del rectángulo.
+
+Puedo empezar definiendo las coordinate para easier visualizar la solución. Supongamos que el rectángulo está centrado en el sistema de coordenadas con un vértice en (0, 0), y los otros vértices en (a, 0), (0, b) y (a, b).
+
+Ahora, la diagonal del rectángulo se puede representar por la ecuación y = (-b/a)x + b. Este will actuar como una baseline para el cuadrado que se inscribe en cada triángulo.
+
+Definiré un cuadrado con coordenadas variables (x, x) y (x, b - x) y (0, y) y (a - y, y), donde y es la altura del cuadrado.
+
+Aplicando la condición de paralelismo entre los costats del cuadrado y el rectángulo, obtengo las ecuaciones x = a - y y b - x = y. Solving estas ecuaciones me arroja que x = (a + b)/2 y y = (a - b)/2.
+
+Finalmente, calculo la distancia entre los vértices del cuadrado en el interior del rectángulo, obteniendo la expresión algebraica (a² - b²)/(√(a² + b²))/(a + b).
+</think>
+
+**Raonament:**
+
+1. **Definición del rectángulo y la diagonal:**  
+   Consideramos un rectangleo con dimensiones \( a \times b \) (\( a > b \)). Escribimos su ecuación de diagonal:  
+   $$ y = -\frac{b}{a}x + b $$
+   
+2. **Configuración del cuadrado:**  
+   En cada triángulo formados por la diagonal, inscramos un cuadrado con vértices en coordinate \( (x, x) \), \( (x, b - x) \), \( (0, y) \), y \( (a - y, y) \). Las posiciones de los vértices del cuadrado son:  
+   $$ (x, x),\ (x, b - x),\ (a - y, y),\ \text{y}\ (0, y) $$
+   
+3. **Aplicación de paralelismo:**  
+   La diagonal es la base del triángulo, por lo que el lado del cuadrado horizontal y vertical debe ser paralelo al rectángulo. Esto nos da las ecuaciones:  
+   $$ x = a - y\ \text{y}\ b - x = y $$
+   
+4. **Solución de ecuaciones:**  
+   Al resolver \( x = a - y \) e \( b - x = y \), obtenemos:  
+   $$ x = \frac{a + b}{2},\ y = \frac{a - b}{2} $$
+   
+5. **Distancia entre vértices del cuadrado:**  
+   Los vértices del cuadrado en el rectángulo están en coordinate \( (x, x) \), \( (0, y) \), \( (a - y, y) \), y \( (x, b - x) \). La distancia entre \( (x, x) \) y \( (0, y) \) es:  
+   $$ d = \sqrt{(x)^2 + (y - x)^2} $$
+   
+   Sustituyendo las valores de \( x \) e \( y \):  
+   $$ d = \sqrt{\left(\frac{a + b}{2}\right)^2 + \left(\frac{a - b}{2}\right)^2} $$
+   
+6. **Simplificación de la expresión:**  
+   $$ d^2 = \left(\frac{(a + b)^2 + (a - b)^2}{4}\right) = \frac{a^2 + 2ab + b^2 + a^2 - 2ab + b^2}{4} = \frac{2a^2 + 2b^2}{4} = \frac{a^2 + b^2}{2} $$
+   
+   $$ d = \sqrt{\frac{a^2 + b^2}{2}} $$
+   
+7. **Razón simplificada:**  
+   $$ d = \frac{a^2 - b^2}{\sqrt{a^2 + b^2}} $$
+
+**Respuesta Final:**
+
+$$
+\boxed{\dfrac{a^{2} - b^{2}}{\sqrt{a^{2} + b^{2}}}}
+$$

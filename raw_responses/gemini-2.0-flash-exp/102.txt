@@ -1,0 +1,14 @@
+Raonament:
+1. **Relació entre superfície i radi d'una esfera:** La superfície d'una esfera és donada per la fórmula A = 4πr², on r és el radi de l'esfera.
+2. **Volum d'una esfera:** El volum d'una esfera és donat per la fórmula V = (4/3)πr³.
+3. **Conservació del volum:** Quan dues esferes de mercuri es fusionen en una sola, el volum total es conserva. Això vol dir que la suma dels volums de les dues esferes petites és igual al volum de l'esfera gran.
+4. **Càlcul del radi de les esferes petites:** Si la superfície de cada esfera petita és 2 mm², tenim 2 = 4πr², d'on r² = 2/(4π) = 1/(2π). Per tant, el radi de cada esfera petita és r = √(1/(2π)).
+5. **Càlcul del volum de les esferes petites:** El volum de cada esfera petita és V = (4/3)πr³ = (4/3)π(√(1/(2π)))³ = (4/3)π(1/(2π))^(3/2) = (4/3)π(1/(2√2π√π)) = (4/3)π/(2√2π√π) = 2/(3√2√π).
+6. **Càlcul del volum de l'esfera gran:** El volum de l'esfera gran és la suma dels volums de les dues esferes petites, és a dir, 2 * (2/(3√2√π)) = 4/(3√2√π).
+7. **Càlcul del radi de l'esfera gran:** Si R és el radi de l'esfera gran, el seu volum és (4/3)πR³. Igualant-lo al volum total, tenim (4/3)πR³ = 4/(3√2√π). Simplificant, R³ = 1/(√2√π) = 1/(2^(1/2)π^(1/2)). Per tant, R = (1/(2^(1/2)π^(1/2)))^(1/3) = 1/(2^(1/6)π^(1/6)).
+8. **Càlcul de la superfície de l'esfera gran:** La superfície de l'esfera gran és A = 4πR² = 4π(1/(2^(1/6)π^(1/6)))² = 4π(1/(2^(1/3)π^(1/3))) = 4π/(2^(1/3)π^(1/3)) = 4π^(2/3)/2^(1/3) = 2²π^(2/3)/2^(1/3) = 2^(2-1/3)π^(2/3) = 2^(5/3)π^(2/3).
+9. **Relació amb la superfície inicial:** La superfície inicial de cada esfera era 2 mm². Si la superfície de l'esfera gran és A, i la superfície de cada esfera petita és A_p, tenim que A_p = 4πr² = 2. Per tant, r² = 2/(4π) = 1/(2π). El volum de cada esfera petita és V_p = (4/3)πr³ = (4/3)π(1/(2π))^(3/2) = (4/3)π(1/(2√2π√π)) = 1/(3√2√π). El volum total és 2V_p = 2/(3√2√π). El volum de l'esfera gran és V = (4/3)πR³. Igualant els volums, (4/3)πR³ = 2/(3√2√π), d'on R³ = 1/(2√2π√π). R = (1/(2√2π√π))^(1/3). La superfície de l'esfera gran és A = 4πR² = 4π(1/(2√2π√π))^(2/3) = 4π(1/(2^(2/3)2^(1/3)π^(1/3))) = 4π/(2π)^(2/3) = 4π^(1/3)/2^(2/3) = 2²π^(1/3)/2^(2/3) = 2^(4/3)π^(1/3).
+10. **Simplificació:** Si la superfície de cada esfera petita és 2 mm², el seu radi és r = √(1/(2π)). El volum de cada esfera petita és (4/3)π(1/(2π))^(3/2). El volum total és 2*(4/3)π(1/(2π))^(3/2) = (8/3)π(1/(2π))^(3/2). El radi de l'esfera gran és R, i el seu volum és (4/3)πR³. Igualant els volums, (4/3)πR³ = (8/3)π(1/(2π))^(3/2), d'on R³ = 2(1/(2π))^(3/2). R = (2(1/(2π))^(3/2))^(1/3) = 2^(1/3)(1/(2π))^(1/2). La superfície de l'esfera gran és 4πR² = 4π(2^(1/3)(1/(2π))^(1/2))² = 4π2^(2/3)(1/(2π)) = 4π2^(2/3)/(2π) = 2^(2/3+2-1) = 2^(5/3).
+11. **Resposta:** La superfície de la nova esfera és 2^(5/3) mm².
+
+Resposta: E)

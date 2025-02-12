@@ -1,0 +1,23 @@
+Raonament:
+Sigui 'n' el nombre natural que busquem. Segons l'enunciat, quan dividim 'n' per 7, obtenim un quocient 'q' i un residu 'r' tal que r = q. Per tant, podem expressar 'n' com:
+
+n = 7q + r
+
+Com que r = q, podem substituir 'r' per 'q':
+
+n = 7q + q
+n = 8q
+
+A més, sabem que el residu 'r' ha de ser menor que el divisor, que és 7. Per tant, q < 7. Com que 'q' és el quocient d'una divisió amb nombres naturals, 'q' ha de ser un nombre natural. Així, els possibles valors de 'q' són 1, 2, 3, 4, 5 i 6.
+
+Ara podem calcular els valors de 'n' per a cada valor de 'q':
+- Si q = 1, n = 8 * 1 = 8
+- Si q = 2, n = 8 * 2 = 16
+- Si q = 3, n = 8 * 3 = 24
+- Si q = 4, n = 8 * 4 = 32
+- Si q = 5, n = 8 * 5 = 40
+- Si q = 6, n = 8 * 6 = 48
+
+La suma de tots aquests nombres és: 8 + 16 + 24 + 32 + 40 + 48 = 168
+
+Resposta: B)

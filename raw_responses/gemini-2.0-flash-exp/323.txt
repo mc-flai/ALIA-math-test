@@ -1,0 +1,29 @@
+Raonament:
+La suma dels angles interiors d'un polígon de k costats és (k-2) * 180 graus. Si tots els angles interiors són de 90 o 150 graus, podem expressar la suma dels angles interiors com 90a + 150b, on a és el nombre d'angles de 90 graus i b és el nombre d'angles de 150 graus, i a + b = k. Per tant, tenim l'equació:
+
+(k-2) * 180 = 90a + 150b
+
+Dividint tota l'equació per 30, obtenim:
+
+6(k-2) = 3a + 5b
+
+Com que a + b = k, podem expressar a com k - b i substituir-ho a l'equació:
+
+6(k-2) = 3(k-b) + 5b
+6k - 12 = 3k - 3b + 5b
+6k - 12 = 3k + 2b
+3k - 12 = 2b
+b = (3k - 12) / 2
+
+Com que b ha de ser un nombre enter no negatiu, 3k - 12 ha de ser un nombre parell no negatiu. Això implica que 3k ha de ser un nombre parell, i per tant, k ha de ser un nombre parell. A més, 3k - 12 ha de ser major o igual a 0, per tant 3k >= 12, i k >= 4.
+
+Ara, analitzem les opcions:
+A) k = 4: b = (3*4 - 12) / 2 = 0. a = 4. Possible.
+B) k = 6: b = (3*6 - 12) / 2 = 3. a = 3. Possible.
+C) k = 8: b = (3*8 - 12) / 2 = 6. a = 2. Possible.
+D) k = 9: k és imparell, per tant, no pot ser.
+E) k = 10: b = (3*10 - 12) / 2 = 9. a = 1. Possible.
+
+Per tant, l'únic valor de k que no pot ser és 9.
+
+Resposta: D)

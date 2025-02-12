@@ -1,0 +1,13 @@
+Raonament:
+1. **Identificar els grups de vagons:** Tenim 11 vagons i sabem que cada 3 vagons consecutius tenen 99 passatgers. Podem dividir els 11 vagons en grups de 3, amb un grup de 2 al final. Els grups serien: (1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11).
+2. **Passatgers en els grups complets:** Els grups (1, 2, 3), (4, 5, 6) i (7, 8, 9) tenen 99 passatgers cadascun. Això suma 99 * 3 = 297 passatgers.
+3. **Passatgers en els dos últims vagons:** El total de passatgers és 350, i ja hem comptat 297, per tant, els vagons 10 i 11 tenen 350 - 297 = 53 passatgers.
+4. **Relació entre grups:** Si anomenem el nombre de passatgers en cada vagó com a v1, v2, v3, ..., v11, sabem que:
+    * v1 + v2 + v3 = 99
+    * v4 + v5 + v6 = 99
+    * v7 + v8 + v9 = 99
+    * v10 + v11 = 53
+5. **Patró:** Observem que la suma de passatgers en els vagons 1, 2, 3 és igual a la suma dels vagons 4, 5, 6 i també igual a la suma dels vagons 7, 8, 9. Això suggereix que hi podria haver un patró o una distribució similar de passatgers entre els vagons dins de cada grup de 3.
+6. **Passatgers en el sisè vagó:** No podem saber exactament quants passatgers hi ha en cada vagó individualment, però sabem que la suma dels vagons 4, 5 i 6 és 99. Si suposem que la distribució de passatgers és similar en cada grup de 3, i que no hi ha cap informació que ens digui el contrari, podem assumir que la mitjana de passatgers per vagó en cada grup de 3 és 99/3 = 33. Per tant, el sisè vagó tindria aproximadament 33 passatgers.
+
+Resposta: B)

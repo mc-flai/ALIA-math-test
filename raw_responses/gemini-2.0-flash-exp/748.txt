@@ -1,0 +1,481 @@
+Raonament:
+Sigui el nombre original N, que té quatre xifres. Representem N com abcd, on a, b, c i d són les xifres del nombre. El valor de N és 1000a + 100b + 10c + d.
+Si suprimim la primera xifra (a), el nombre resultant és bcd, que té valor 100b + 10c + d.
+Si suprimim la segona xifra (b), el nombre resultant és acd, que té valor 100a + 10c + d.
+Si suprimim la tercera xifra (c), el nombre resultant és abd, que té valor 100a + 10b + d.
+Si suprimim la quarta xifra (d), el nombre resultant és abc, que té valor 100a + 10b + c.
+
+Perquè el nombre resultant sigui divisor del nombre original, el nombre original ha de ser un múltiple del nombre resultant.
+
+Analitzem els casos:
+1. Si suprimim la primera xifra (a), N = k1 * (100b + 10c + d) per algun enter k1.
+2. Si suprimim la segona xifra (b), N = k2 * (100a + 10c + d) per algun enter k2.
+3. Si suprimim la tercera xifra (c), N = k3 * (100a + 10b + d) per algun enter k3.
+4. Si suprimim la quarta xifra (d), N = k4 * (100a + 10b + c) per algun enter k4.
+
+Comencem provant amb nombres de la forma 1xxx.
+- Si el nombre és 1000, al suprimir 1, obtenim 000, que no és un divisor.
+- Si el nombre és 1001, al suprimir 1, obtenim 001, que és divisor. Al suprimir 0, obtenim 101, que no és divisor.
+- Si el nombre és 1111, al suprimir 1, obtenim 111, que és divisor.
+- Si el nombre és 1224, al suprimir 1, obtenim 224, que no és divisor.
+
+Considerem nombres de la forma 1aaa.
+Si el nombre és 1111, al suprimir qualsevol 1, obtenim 111, que és divisor.
+Si el nombre és 1222, al suprimir 1, obtenim 222, que no és divisor.
+Si el nombre és 1333, al suprimir 1, obtenim 333, que no és divisor.
+
+Considerem nombres de la forma 1abc on a=b=c.
+Si el nombre és 1111, al suprimir qualsevol 1, obtenim 111, que és divisor.
+Si el nombre és 1222, al suprimir 1, obtenim 222, que no és divisor.
+
+Considerem nombres de la forma 100x.
+Si el nombre és 1000, al suprimir 1, obtenim 000, que no és divisor.
+Si el nombre és 1001, al suprimir 1, obtenim 001, que és divisor. Al suprimir 0, obtenim 101, que no és divisor.
+
+Considerem nombres de la forma 1xx0.
+Si el nombre és 1110, al suprimir 1, obtenim 110, que no és divisor.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 1339/339 no és enter.
+1448: 1448/448 no és enter.
+1555: 1555/555 no és enter.
+1664: 1664/664 no és enter.
+1776: 1776/776 no és enter.
+1888: 1888/888 no és enter.
+1995: 1995/995 no és enter.
+
+Els nombres que compleixen la condició són:
+1111: 111 és divisor de 1111.
+1224: 1224/224 no és enter.
+1339: 133

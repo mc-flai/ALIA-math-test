@@ -1,0 +1,33 @@
+Raonament:
+La suma dels quadrats dels primers n nombres naturals ve donada per la fórmula:
+$$ \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6} $$
+En el nostre cas, n = 2017. Per tant,
+$$ S = \sum_{k=1}^{2017} k^2 = \frac{2017(2017+1)(2 \cdot 2017 + 1)}{6} = \frac{2017 \cdot 2018 \cdot 4035}{6} $$
+Per trobar la xifra de les unitats de S, només necessitem considerar les xifres de les unitats dels factors i les operacions.
+La xifra de les unitats de 2017 és 7.
+La xifra de les unitats de 2018 és 8.
+La xifra de les unitats de 4035 és 5.
+Per tant, la xifra de les unitats del producte 2017 * 2018 * 4035 és la mateixa que la xifra de les unitats de 7 * 8 * 5 = 280, que és 0.
+Ara hem de dividir per 6. Però, com que el producte acaba en 0, podem escriure el producte com 10k per algun enter k.
+$$ S = \frac{10k}{6} = \frac{5k}{3} $$
+Però, com que el producte 2017 * 2018 * 4035 és divisible per 6, sabem que el resultat de la divisió serà un enter.
+Per trobar la xifra de les unitats de S, podem considerar la xifra de les unitats de la suma dels quadrats dels primers nombres naturals.
+La xifra de les unitats dels quadrats dels nombres naturals segueix un patró:
+1^2 = 1
+2^2 = 4
+3^2 = 9
+4^2 = 16 (6)
+5^2 = 25 (5)
+6^2 = 36 (6)
+7^2 = 49 (9)
+8^2 = 64 (4)
+9^2 = 81 (1)
+10^2 = 100 (0)
+El patró de les xifres de les unitats és 1, 4, 9, 6, 5, 6, 9, 4, 1, 0, i es repeteix cada 10 nombres.
+La suma de les xifres de les unitats en un cicle de 10 és 1+4+9+6+5+6+9+4+1+0 = 45.
+Com que 2017 = 201 * 10 + 7, tenim 201 cicles complets i 7 termes addicionals.
+La suma de les xifres de les unitats dels 201 cicles és 201 * 5 = 1005, que acaba en 5.
+La suma de les xifres de les unitats dels 7 termes addicionals és 1+4+9+6+5+6+9 = 40, que acaba en 0.
+Per tant, la xifra de les unitats de la suma és 5 + 0 = 5.
+
+Resposta: B)

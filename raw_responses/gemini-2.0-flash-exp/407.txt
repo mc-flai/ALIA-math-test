@@ -1,0 +1,13 @@
+Raonament:
+Perquè Judit guanyi el partit, pot guanyar de dues maneres: guanyant els dos primers sets, o guanyant un dels dos primers sets i el tercer.
+
+*   **Cas 1: Judit guanya els dos primers sets.** La probabilitat d'això és 0.6 * 0.6 = 0.36.
+
+*   **Cas 2: Judit guanya un dels dos primers sets i el tercer.** Això pot passar de dues maneres:
+    *   Judit guanya el primer set, Susanna el segon, i Judit el tercer: 0.6 * (1-0.6) * 0.6 = 0.6 * 0.4 * 0.6 = 0.144
+    *   Susanna guanya el primer set, Judit el segon, i Judit el tercer: (1-0.6) * 0.6 * 0.6 = 0.4 * 0.6 * 0.6 = 0.144
+
+La probabilitat total que Judit guanyi el partit és la suma de les probabilitats dels casos 1 i 2:
+0.36 + 0.144 + 0.144 = 0.36 + 0.288 = 0.648
+
+Resposta: B)

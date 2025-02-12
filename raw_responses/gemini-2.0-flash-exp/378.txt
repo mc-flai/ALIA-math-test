@@ -1,0 +1,19 @@
+Raonament:
+Sigui el nombre de sis xifres original com `abcde4`. Quan movem el 4 al principi, obtenim el nombre `4abcde`. Segons l'enunciat, `4abcde = 4 * abcde4`.
+
+Podem expressar els nombres en termes de potències de 10:
+`abcde4 = 10 * abcde + 4`
+`4abcde = 400000 + abcde`
+
+L'equació que hem de resoldre és:
+`400000 + abcde = 4 * (10 * abcde + 4)`
+`400000 + abcde = 40 * abcde + 16`
+`400000 - 16 = 40 * abcde - abcde`
+`399984 = 39 * abcde`
+`abcde = 399984 / 39`
+`abcde = 10256`
+
+Per tant, el nombre original és `102564`. El nou nombre és `410256`. Comprovem que `410256 = 4 * 102564`.
+El tercer dígit del nombre original `102564` és 2.
+
+Resposta: C)

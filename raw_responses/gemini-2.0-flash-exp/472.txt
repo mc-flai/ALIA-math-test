@@ -1,0 +1,21 @@
+Raonament:
+Per trobar les parelles de cartes que sumen 50, hem de buscar els parells de nombres que compleixen aquesta condició. Podem començar amb el nombre més petit, l'1, i buscar el seu complement per arribar a 50, que seria 49. Així, la primera parella és (1, 49). La següent parella seria (2, 48), i així successivament.
+
+Podem observar que cada vegada que augmentem el primer nombre en 1, el segon nombre disminueix en 1. Aquest procés continuarà fins que arribem a un punt on els dos nombres de la parella siguin iguals o el segon nombre sigui menor que el primer.
+
+Si continuem amb la llista, tindrem:
+(1, 49)
+(2, 48)
+(3, 47)
+...
+(24, 26)
+(25, 25)
+
+Si continuem, la següent parella seria (26, 24), que ja hem comptat. Per tant, hem de parar quan arribem a la parella (25, 25).
+
+Per tant, les parelles que sumen 50 són:
+(1, 49), (2, 48), (3, 47), ..., (24, 26), (25, 25).
+
+El nombre de parelles és el mateix que el nombre de nombres que hi ha des de l'1 fins al 25. Per tant, hi ha 25 parelles.
+
+Resposta: C)

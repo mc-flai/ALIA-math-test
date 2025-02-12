@@ -1,0 +1,24 @@
+Raonament:
+Per trobar el nombre de valors diferents que pot prendre el producte de sis enters positius distints que sumen 24, hem de trobar totes les possibles combinacions d'aquests sis enters i calcular els seus productes. Després, comptarem quants productes diferents obtenim.
+
+Comencem per trobar les combinacions possibles:
+1. La combinació més petita possible és 1 + 2 + 3 + 4 + 5 + 9 = 24. El producte és 1 * 2 * 3 * 4 * 5 * 9 = 1080.
+2. Podem intentar reduir el 9 i augmentar altres nombres. Per exemple, 1 + 2 + 3 + 4 + 6 + 8 = 24. El producte és 1 * 2 * 3 * 4 * 6 * 8 = 1152.
+3. Una altra combinació podria ser 1 + 2 + 3 + 4 + 7 + 7, però els nombres han de ser distints, així que aquesta no és vàlida.
+4. Podem provar 1 + 2 + 3 + 5 + 6 + 7 = 24. El producte és 1 * 2 * 3 * 5 * 6 * 7 = 1260.
+5. Si intentem reduir més els nombres grans, per exemple, 1 + 2 + 3 + 4 + 5 + 9, ja la tenim.
+6. Si intentem 1 + 2 + 3 + 4 + 5 + 9, ja la tenim.
+7. Si intentem 1 + 2 + 3 + 4 + 6 + 8, ja la tenim.
+8. Si intentem 1 + 2 + 3 + 5 + 6 + 7, ja la tenim.
+9. Si intentem 1 + 2 + 3 + 4 + 5 + 9, ja la tenim.
+10. Si intentem 1 + 2 + 3 + 4 + 6 + 8, ja la tenim.
+11. Si intentem 1 + 2 + 3 + 5 + 6 + 7, ja la tenim.
+
+Sembla que hem trobat totes les combinacions possibles. Ara, calculem els productes:
+- 1 * 2 * 3 * 4 * 5 * 9 = 1080
+- 1 * 2 * 3 * 4 * 6 * 8 = 1152
+- 1 * 2 * 3 * 5 * 6 * 7 = 1260
+
+Els productes són 1080, 1152 i 1260. Tots tres són diferents. Per tant, hi ha 3 valors diferents possibles per al producte.
+
+Resposta: C)

@@ -1,0 +1,15 @@
+Raonament:
+Els nombres "cangurils" són 1, 3, 13, 31, 131. Volem expressar 1362 com a suma d'aquests nombres utilitzant la mínima quantitat de sumands. Per fer-ho, hem de prioritzar l'ús dels nombres cangurils més grans possible.
+
+1. **Utilitzem el nombre més gran possible:** El nombre canguril més gran és 131. Dividim 1362 entre 131 per veure quantes vegades hi cap: 1362 / 131 ≈ 10.4. Això vol dir que podem utilitzar 131 deu vegades. 10 * 131 = 1310.
+2. **Calculem el residu:** 1362 - 1310 = 52.
+3. **Utilitzem el següent nombre més gran possible:** El següent nombre canguril més gran és 31. Dividim 52 entre 31: 52 / 31 ≈ 1.6. Això vol dir que podem utilitzar 31 una vegada. 1 * 31 = 31.
+4. **Calculem el nou residu:** 52 - 31 = 21.
+5. **Utilitzem el següent nombre més gran possible:** El següent nombre canguril més gran és 13. Dividim 21 entre 13: 21 / 13 ≈ 1.6. Això vol dir que podem utilitzar 13 una vegada. 1 * 13 = 13.
+6. **Calculem el nou residu:** 21 - 13 = 8.
+7. **Utilitzem el següent nombre més gran possible:** El següent nombre canguril més gran és 3. Dividim 8 entre 3: 8 / 3 ≈ 2.6. Això vol dir que podem utilitzar 3 dues vegades. 2 * 3 = 6.
+8. **Calculem el nou residu:** 8 - 6 = 2.
+9. **Utilitzem el nombre més petit possible:** El nombre canguril més petit és 1. Necessitem utilitzar 1 dues vegades per obtenir 2. 2 * 1 = 2.
+10. **Comptem els sumands:** Hem utilitzat 10 vegades 131, 1 vegada 31, 1 vegada 13, 2 vegades 3 i 2 vegades 1. En total, 10 + 1 + 1 + 2 + 2 = 16 sumands.
+
+Resposta: B)

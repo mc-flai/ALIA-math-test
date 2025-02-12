@@ -1,0 +1,12 @@
+Raonament:
+Per minimitzar el nombre de quadrats, hem de buscar els quadrats més grans possibles que puguin encaixar dins del rectangle de 6x7. El costat d'aquests quadrats ha de ser un divisor comú de 6 i 7. El màxim comú divisor (MCD) de 6 i 7 és 1, però això ens donaria 42 quadrats de 1x1, que no és el que busquem.
+
+En comptes d'això, podem intentar utilitzar quadrats més grans. El costat més gran possible d'un quadrat que cap dins del rectangle és 6. Si fem un quadrat de 6x6, ens quedarà un rectangle de 6x1. Aquest rectangle de 6x1 el podem dividir en 6 quadrats de 1x1. Això ens donaria un total de 1 + 6 = 7 quadrats.
+
+Podem intentar una altra aproximació. Podem començar amb quadrats de costat 1, però això ens donaria 42 quadrats. Si intentem amb quadrats de costat 2, no encaixarien perfectament. Si intentem amb quadrats de costat 3, tampoc encaixarien perfectament. Si intentem amb quadrats de costat 4, tampoc encaixarien perfectament. Si intentem amb quadrats de costat 5, tampoc encaixarien perfectament. Si intentem amb quadrats de costat 6, podem fer un quadrat de 6x6 i ens queda un rectangle de 6x1 que necessita 6 quadrats de 1x1. Això ens dona 7 quadrats.
+
+Si intentem amb quadrats de costat 1, necessitem 42 quadrats. Si intentem amb quadrats de costat 2, no encaixen perfectament. Si intentem amb quadrats de costat 3, no encaixen perfectament. Si intentem amb quadrats de costat 4, no encaixen perfectament. Si intentem amb quadrats de costat 5, no encaixen perfectament. Si intentem amb quadrats de costat 6, podem fer un quadrat de 6x6 i ens queda un rectangle de 6x1 que necessita 6 quadrats de 1x1. Això ens dona 7 quadrats.
+
+La millor manera de minimitzar el nombre de quadrats és utilitzar el quadrat més gran possible, que és de 6x6. Això ens deixa un rectangle de 6x1, que necessita 6 quadrats de 1x1. Això ens dona un total de 7 quadrats.
+
+Resposta: C)

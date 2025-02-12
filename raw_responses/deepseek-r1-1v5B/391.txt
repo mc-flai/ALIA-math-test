@@ -1,0 +1,84 @@
+<think>
+Para resolver este problema, primero identificaré los triángulos posibles que cumplan con las condiciones dadas.
+
+También me aseguraré de calcular el perímetro de cada triángulo y verificar si es igual a 12.
+
+Finalmente, contaré cuántos triángulos satisfy both the natural number condition for each side length and have a perimeter of exactly 12.
+</think>
+
+Para resolver este problema, seguiremos los siguientes pasos:
+
+### **1. Identificar las opciones de triángulo**
+
+La pregunta es: **"Quants triangles existeixen tals que la longitud de cada costat siga un nombre natural i el perímetre siga 12?"**
+
+Las opciones de respuesta son: A) 1, B) 2, C) 3, D) 6 y E) 10.
+
+### **2. Calculando los triángulos posibles**
+
+Vamos a analizar las posibles longitudes de los lados del triángulo que cumplan con las siguientes condiciones:
+
+- **Cada lado debe tener una longitud numérica natural (es decir, entero no negativo).**
+- **El perimeter (la suma de las longitudes de los tres lados) debe ser igual a 12.**
+
+Estas son las constrcciones principales del problema.
+
+### **3. Enumerando las posibles combinaciones**
+
+Vamos a listar todas las combinaciones de tres números naturales que suman al 12, y verifiquemos si forman triángulos.
+
+La regla para verificar si una triángulo tiene lados de longitudes \(a\), \(b\) y \(c\) es que la suma de dos lados debe ser mayor que el tercer lado:
+
+\[ a + b > c \]
+\[ a + c > b \]
+\[ b + c > a \]
+
+Estas desigualidades aseguran que los tres puntos formen un triángulo.
+
+**Lados posibles:**
+
+1. \( (0, 1, 11) \)
+2. \( (1, 5, 6) \)
+3. \( (2, 4, 6) \)
+4. \( (3, 4, 5) \)
+
+### **4. Verificando si son triángulos**
+
+Vamos a verificar cada una de las combinaciones:
+
+1. **Triángulo con lados \(0\), \(1\) y \(11\):**
+   - Un lado es cero → No es un triángulo, ya que los tres puntos se colenan.
+   
+2. **Triangular con lados \(1\), \(5\) y \(6\):**
+   \[
+   1 + 5 > 6 \quad (6 = 6) \quad \text{No cumple}
+   \]
+   Por lo tanto, no es un triángulo.
+
+3. **Triangular con lados \(2\), \(4\) y \(6\):**
+   \[
+   2 + 4 > 6 \quad (6 = 6) \quad \text{No cumple}
+   \]
+   Por lo tanto, no es un triángulo.
+
+4. **Triangular con lados \(3\), \(4\) y \(5\):**
+   \[
+   3 + 4 > 5 \quad (7 > 5) \\
+   3 + 5 > 4 \quad (8 > 4) \\
+   4 + 5 > 3 \quad (9 > 3)
+   \]
+   Satisfactores las desigualidades. Por lo tanto, es un triángulo.
+
+### **5. Enumeración final de los triángulos**
+
+De las combinaciones anteriores, solo la tercera combинаión \( (3, 4, 5) \) cumple con las condiciones de triángulo y perimeter 12.
+
+### **6. Contando el número de triángulos**
+
+Claramente, solo hay uno triángulo que satisface ambas condiciones: \( (3, 4, 5) \).
+
+### ** respondencia correcta es: A) 1**
+
+\[
+\boxed{A}
+\]

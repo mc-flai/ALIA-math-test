@@ -1,0 +1,96 @@
+<think>
+Para resolver este problema, primero notemos que estamos buscando parelles ordenados {x, y} con x e y enteros positivos, tales que x² - y² = 105.
+
+Sabemos que x² - y² se puede factorizar en (x - y)(x + y). Entonces, la ecuación se convierte en (x - y)(x + y) = 105. 
+
+Ahora, es fundamental considerar las posibles decomposiciones enteras positivas de 105 como producto de dos números que satisfaceen x > y. Dado que x e y son números enteros positivos, x + y y x - y deben ser enteros positivos y x > y.
+
+Decidimos listar las posibles pares de factores de 105, donde cada par (a, b) satisfy a * b = 105 y b > a. Luego, para cada par {(b, a)}; definimos:
+
+x = (a + b)/2
+
+y = (b - a)/2
+
+Estos x e y deben ser números enteros positivos.
+
+Primero, factorizamos 105 enits: 
+
+105 = 3 * 5 * 7
+
+La listas de divisores positivos son:
+
+1, 3, 5, 7, 15, 21, 35, 105.
+
+Ahora, pairamos los divisores de forma que a < b y a*b = 105:
+
+(1, 105)
+
+(3, 35)
+
+(5, 21)
+
+(7, 15)
+
+Estas son las posibles pares. Ahora aplicamos la fórmula para x e y en cada uno de estos pares:
+
+1. Para (a=1, b=105):
+
+x = (1 + 105)/2 = 106/2 = 53
+
+y = (105 - 1)/2 = 104/2 = 52
+
+Verificamos: 53² - 52² = 2809 - 2704 = 105. Correcto.
+
+2. Para (a=3, b=35):
+
+x = (3 + 35)/2 = 38/2 = 19
+
+y = (35 - 3)/2 = 32/2 = 16
+
+Verificamos: 19² - 16² = 361 - 256 = 105. Correcto.
+
+3. Para (a=5, b=21):
+
+x = (5 + 21)/2 = 26/2 = 13
+
+y = (21 - 5)/2 = 16/2 = 8
+
+Verificamos: 13² - 8² = 169 - 64 = 105. Correcto.
+
+4. Para (a=7, b=15):
+
+x = (7 + 15)/2 = 22/2 = 11
+
+y = (15 - 7)/2 = 8/2 = 4
+
+Verificamos: 11² - 4² = 121 - 16 = 105. Correcto.
+
+Ahora, counting los pares {x,y}, cada uno da un par ordenado válido. Por lo tanto, hay 4 posibles pareles {x,y} de números enteros positivos que satisfacen la ecuación x² - y² = 105.
+</think>
+
+Para resolver el problema, primero notemos que x e y son números enteros positivos satisfying x² - y² = 105. Usando la factorización,
+
+x² - y² = (x - y)(x + y) = 105.
+
+Tomamos las posibles pares de divisores positivos de 105 que satisfan b > a:
+
+- (1, 105)
+- (3, 35)
+- (5, 21)
+- (7, 15)
+
+Para cada par {a, b}, definimos:
+
+x = (a + b) / 2
+y = (b - a) / 2
+
+Verificando que x e y sean números enteros positivos, obtenemos las siguientes soluciones:
+
+1. {53, 52}
+2. {19, 16}
+3. {13, 8}
+4. {11, 4}
+
+Esto da un total de 4 parelles {x, y}. 
+
+\boxed{E}

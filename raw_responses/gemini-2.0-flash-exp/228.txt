@@ -1,0 +1,16 @@
+Raonament:
+La inequació donada és 1/x + 1/y >= 1/2. Com que x i y són enters i x > 2 i y > 2, podem començar a explorar els valors possibles.
+
+Si x = 3, tenim 1/3 + 1/y >= 1/2. Això implica 1/y >= 1/2 - 1/3 = 1/6, per tant y <= 6. Com que y > 2, els valors possibles per a y són 3, 4, 5 i 6. Això ens dona 4 parelles: (3,3), (3,4), (3,5), (3,6).
+
+Si x = 4, tenim 1/4 + 1/y >= 1/2. Això implica 1/y >= 1/2 - 1/4 = 1/4, per tant y <= 4. Com que y > 2, els valors possibles per a y són 3 i 4. Això ens dona 2 parelles: (4,3), (4,4).
+
+Si x = 5, tenim 1/5 + 1/y >= 1/2. Això implica 1/y >= 1/2 - 1/5 = 3/10, per tant y <= 10/3 = 3.33. Com que y > 2, l'únic valor possible per a y és 3. Això ens dona 1 parella: (5,3).
+
+Si x = 6, tenim 1/6 + 1/y >= 1/2. Això implica 1/y >= 1/2 - 1/6 = 2/6 = 1/3, per tant y <= 3. Com que y > 2, l'únic valor possible per a y és 3. Això ens dona 1 parella: (6,3).
+
+Si x > 6, llavors 1/x < 1/6. Per tant, 1/x + 1/y >= 1/2 implica que 1/y > 1/2 - 1/6 = 1/3, així que y < 3. Això no és possible perquè y > 2. Per tant, no hi ha més solucions.
+
+En total, tenim 4 + 2 + 1 + 1 = 8 parelles.
+
+Resposta: D)

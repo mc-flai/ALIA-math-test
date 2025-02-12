@@ -1,0 +1,18 @@
+Raonament:
+L'equació donada és $(x^2 - 4)^{x^2 + 1} = 9$. Perquè aquesta equació tingui solucions enteres, hem d'analitzar les possibles bases i exponents que donin com a resultat 9.
+
+Primer, observem que $9 = 3^2 = (-3)^2 = 9^1 = (-9)^1$.
+Analitzem els casos:
+
+1. Si $x^2 - 4 = 3$, llavors $x^2 = 7$, que no té solucions enteres.
+2. Si $x^2 - 4 = -3$, llavors $x^2 = 1$, que té solucions enteres $x = 1$ i $x = -1$. En aquest cas, l'exponent seria $x^2 + 1 = 1 + 1 = 2$, i tenim $(-3)^2 = 9$, que és correcte. Per tant, $x=1$ i $x=-1$ són solucions.
+3. Si $x^2 - 4 = 9$, llavors $x^2 = 13$, que no té solucions enteres.
+4. Si $x^2 - 4 = -9$, llavors $x^2 = -5$, que no té solucions reals, i per tant tampoc enteres.
+5. Si $x^2 - 4 = 1$, llavors $x^2 = 5$, que no té solucions enteres.
+6. Si $x^2 - 4 = -1$, llavors $x^2 = 3$, que no té solucions enteres.
+
+Ara, considerem el cas en què l'exponent és 1. Si $x^2 + 1 = 1$, llavors $x^2 = 0$, i $x = 0$. En aquest cas, la base seria $0^2 - 4 = -4$, i l'equació seria $(-4)^1 = -4 \neq 9$. Per tant, $x=0$ no és solució.
+
+Per tant, les úniques solucions enteres són $x=1$ i $x=-1$.
+
+Resposta: C)

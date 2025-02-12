@@ -1,0 +1,25 @@
+Raonament:
+Siguin p, q i r tres nombres primers "especialment amics". Segons l'enunciat, el producte d'aquests tres nombres és cinc vegades més gran que la seva suma. Això es pot expressar amb l'equació:
+
+pqr = 5(p + q + r)
+
+Com que p, q i r són nombres primers, sabem que són enters positius majors que 1. A més, com que el producte pqr és múltiple de 5, almenys un dels nombres primers ha de ser 5. Sense pèrdua de generalitat, podem assumir que p = 5. L'equació es converteix en:
+
+5qr = 5(5 + q + r)
+qr = 5 + q + r
+qr - q - r = 5
+
+Ara, podem aplicar la tècnica de factorització de Simon:
+qr - q - r + 1 = 5 + 1
+(q - 1)(r - 1) = 6
+
+Com que q i r són nombres primers, q-1 i r-1 són enters positius. Les parelles de factors de 6 són (1, 6) i (2, 3). Això ens dona dues possibilitats:
+
+1) q - 1 = 1 i r - 1 = 6, que implica q = 2 i r = 7.
+2) q - 1 = 2 i r - 1 = 3, que implica q = 3 i r = 4. Però 4 no és primer, així que aquesta solució no és vàlida.
+3) q - 1 = 3 i r - 1 = 2, que implica q = 4 i r = 3. Però 4 no és primer, així que aquesta solució no és vàlida.
+4) q - 1 = 6 i r - 1 = 1, que implica q = 7 i r = 2.
+
+Per tant, les úniques solucions vàlides són (5, 2, 7) i les seves permutacions. Com que l'ordre dels nombres no importa, només hi ha un grup de nombres primers especialment amics: {2, 5, 7}.
+
+Resposta: B)

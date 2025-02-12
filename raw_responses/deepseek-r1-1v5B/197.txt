@@ -1,0 +1,50 @@
+<think>
+Para resolver este problema, primero identifico que necesitamos sumar todos los números enteros de cuatro dígitros que pueden formarse con las dígitolas 1, 2, 3 y 4 sin repeticiones. 
+
+Primero, calculamos el número total de números que podemos formar con estas dígitolas. Como hay 4 dígitolas diferentes estrictamente, el número total de números es de 4! = 24.
+
+Luego, para encontrar la suma total, se puede usar la techniquea de promedio multiplicado por el número total de términos. El promedio del conjunto serán los 12dc6 (o 12.000) y 34dc6 (o 34.000), que son las dos primeras y lastas posibles combinaciones. La media es (12.000 + 34.000)/2 = 23.000.
+
+Multiplicando este promedio por el número total de términos, 24, nos da 23.000 * 24 = 552.000.
+
+Finalmente, sumamos todos los términos de manera sistemática o verificamos si hay un error en el cálculo. Sin embargo, como he probado que el resultado es de 552.000 y no hay una opción dada, concluimos que la respuesta correcta no está entre las opciones proporcionadas.
+</think>
+
+Para resolver este problema, seguiremos estos pasos:
+
+1. **Determinar el número total de números**:
+   
+   Usamos la fórmula de permutación para 4 dígitolas diferentes y sin repeticiones:
+   \[
+   P(n, k) = n! / (n - k)! 
+   \]
+   Donde \( n = 4 \) y \( k = 4 \):
+   \[
+   P(4, 4) = 4! = 24
+   \]
+   
+2. **Calcular el rango de los números**:
+   
+   Los números pueden tener varyinges de dígitolas, desde 1234 hasta 4321.
+
+3. **Calcular el promedio del conjunto**:
+   
+   El primer número es 1234 y el último es 4321.
+   \[
+   \text{Promedio} = \frac{1234 + 4321}{2} = 2752.5
+   \]
+   
+4. **Calcular la suma total**:
+   
+   Multiplicamos el promedio por el número total de términos (número total de números):
+   \[
+   \text{Suma Total} = 2752.5 \times 24 = 66060
+   \]
+   
+5. **Comparar con las opciones**:
+   
+   Verificamos que el resultado no está en las opciones proporcionadas.
+
+Por lo tanto, la respuesta correcta no está amongas.
+
+\boxed{E}

@@ -1,0 +1,42 @@
+<think>
+El problema es calcular 2^{\log_4{9}}.
+
+Prime, calculo el log₄ de 9. Sabemos que 4 es 2 al quadrado, así que 4 = 2². 
+
+Puedo expressar log₄{9} como (log₂{9}) / (log₂{4}), usando la regla change of base.
+
+De manera, log₄{9} = \frac{\log_2{9}}{\log_2{4}} = \frac{\log_2{3^2}}{2} = \frac{2\log_2{3}}{2} = \log_2{3}
+
+Ahora, calculo 2^{\log_2{3}}, que es igual a 3.
+
+Entonces, el resultado es 3, que corresponde a la opción B.
+</think>
+
+El valor de l'expressió \(2^{\log_4{9}}\) esigui.
+
+**Raonament:**
+
+1. **Escribir el logaritmo en términos más pequeño:**
+   \[
+   \log_4{9} = \frac{\log_2{9}}{\log_2{4}}
+   \]
+   
+2. **Calcular los logaritmos en base 2:**
+   - Sabemos que \(9 = 3^2\), por lo que:
+     \[
+     \log_2{9} = \log_2{3^2} = 2 \cdot \log_2{3}
+     \]
+   - Entonces,
+     \[
+     \log_4{9} = \frac{2 \cdot \log_2{3}}{\log_2{4}} = \frac{2 \cdot \log_2{3}}{2} = \log_2{3}
+     \]
+   
+3. **Calcular la expresión exponentials:**
+   \[
+   2^{\log_2{3}} = 3
+   \]
+   
+Por lo tanto, el valor de \(2^{\log_4{9}}\) es **3**, que corresponde a la opción B.
+
+**Resposta Final:**  
+\boxed{B}

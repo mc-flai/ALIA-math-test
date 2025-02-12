@@ -1,0 +1,15 @@
+Raonament:
+Per resoldre aquest problema, hem de considerar el pitjor escenari possible per tal de minimitzar el percentatge de passatgers que van participar en les quatre visites.
+
+Suposem que tenim 100 passatgers. Si el 80% va participar en cada visita, això vol dir que 80 passatgers van participar en la primera visita, 80 en la segona, 80 en la tercera i 80 en la quarta.
+
+Per minimitzar el nombre de passatgers que van participar en totes les visites, hem de maximitzar el nombre de passatgers que van participar en només una, dues o tres visites.
+
+*   **Primera visita:** 80 passatgers participen.
+*   **Segona visita:** Per minimitzar la superposició, suposem que els 20 passatgers que no van participar en la primera visita, sí que participen en la segona. Això vol dir que 60 passatgers van participar en les dues primeres visites.
+*   **Tercera visita:** De nou, per minimitzar la superposició, suposem que els 20 passatgers que no van participar en les dues primeres visites, sí que participen en la tercera. Això vol dir que 40 passatgers van participar en les tres primeres visites.
+*   **Quarta visita:** Finalment, suposem que els 20 passatgers que no van participar en les tres primeres visites, sí que participen en la quarta. Això vol dir que 20 passatgers van participar en les quatre visites.
+
+Per tant, el percentatge mínim de passatgers que van participar en les quatre visites és del 20%.
+
+Resposta: D)

@@ -1,0 +1,33 @@
+Raonament:
+Sigui els costats del triangle a, b i c, on a, b i c són nombres naturals. El perímetre és 21, per tant, a + b + c = 21.
+La condició addicional és que per cada parella de costats (a, b), (a, c) i (b, c), o bé són iguals o bé un és divisible per l'altre.
+
+Analitzem les possibles combinacions:
+
+1. **Tots els costats iguals:** Si a = b = c, llavors 3a = 21, i a = 7. Així, (7, 7, 7) és una solució vàlida.
+
+2. **Dos costats iguals:** Suposem a = b. Llavors 2a + c = 21.
+   - Si a és divisible per c, llavors a = kc per algun natural k. Substituint, 2kc + c = 21, o c(2k+1) = 21. Les possibles parelles (c, 2k+1) són (1, 21), (3, 7), (7, 3), (21, 1).
+     - Si c=1, 2k+1=21, k=10, a=10, (10, 10, 1). No compleix la desigualtat triangular (10+10>1, 10+1>10, 10+1>10).
+     - Si c=3, 2k+1=7, k=3, a=9, (9, 9, 3). Compleix la desigualtat triangular (9+9>3, 9+3>9, 9+3>9) i la condició de divisibilitat.
+     - Si c=7, 2k+1=3, k=1, a=7, (7, 7, 7). Ja la teníem.
+     - Si c=21, 2k+1=1, k=0, no és possible.
+   - Si c és divisible per a, llavors c = ka. Substituint, 2a + ka = 21, o a(2+k) = 21. Les possibles parelles (a, 2+k) són (1, 21), (3, 7), (7, 3), (21, 1).
+     - Si a=1, 2+k=21, k=19, c=19, (1, 1, 19). No compleix la desigualtat triangular.
+     - Si a=3, 2+k=7, k=5, c=15, (3, 3, 15). No compleix la desigualtat triangular.
+     - Si a=7, 2+k=3, k=1, c=7, (7, 7, 7). Ja la teníem.
+     - Si a=21, 2+k=1, no és possible.
+
+3. **Tots els costats diferents:** Suposem a < b < c.
+   - Si a divideix b i b divideix c, llavors b = ka i c = lb = lka. Llavors a + ka + lka = 21, o a(1+k+lk) = 21.
+     - Si a=1, 1+k+lk=21. Si k=2, 1+2+2l=21, 2l=18, l=9, (1, 2, 18). No compleix la desigualtat triangular.
+     - Si a=1, 1+k+lk=21. Si k=3, 1+3+3l=21, 3l=17, no enter.
+     - Si a=3, 1+k+lk=7. Si k=2, 1+2+2l=7, 2l=4, l=2, (3, 6, 12). No compleix la desigualtat triangular.
+     - Si a=3, 1+k+lk=7. Si k=1, 1+1+l=7, l=5, (3, 3, 15). Ja la teníem.
+   - Si a divideix b i c divideix b, llavors b = ka i b = lc. Llavors ka = lc. a + ka + c = 21.
+     - Si a=1, b=k, c=l. k=lc. 1+k+c=21. k=lc. 1+lc+c=21. c(l+1)=20. Si c=1, l=19, k=19, (1, 19, 1). No compleix la desigualtat triangular. Si c=2, l=9, k=18, (1, 18, 2). No compleix la desigualtat triangular. Si c=4, l=4, k=16, (1, 16, 4). No compleix la desigualtat triangular. Si c=5, l=3, k=15, (1, 15, 5). No compleix la desigualtat triangular.
+     - Si a=3, b=3k, c=3l. 3k=3l. k=l. 3+3k+3l=21. 1+k+l=7. 1+2k=7. k=3. (3, 9, 9). Ja la teníem.
+
+Les solucions vàlides són (7, 7, 7) i (9, 9, 3).
+
+Resposta: C)

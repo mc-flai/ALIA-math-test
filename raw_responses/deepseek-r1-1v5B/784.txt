@@ -1,0 +1,28 @@
+<think>
+P primer que intentaré comprender bien el problema. La família Bosch ha preparado 180 bolets en su excursión. Están dividiendo estos bolets entre tres personas: la preparación, la aseción y la cencelament.
+
+First, I need to understand the total number of bolets and how they are distributed. There's a total of 180 bolets. Out of these, 20 se van arregular para repartir entre las personas de manera equitativa.
+
+So, if 20 bolets son arregulados y los demás se almacenen en 40 más que estos, then the distribución plana es de 20 arregulados y 160 non-arrugados. Ahora, en este caso, 40 de los non-arrugados se van assegurar, lo que le restan a las 180.
+
+Finalmente, la cantidad de bolets que han sido arregulados es 20, y después, cuando contamos entre las tres partes: preparación, almacenes y cencelament, el número total es 180. Entonces, al restar los bolets que se van al censado y a las que se van para repartir entre las personas, debo encontrar cuántos han arregulado.
+
+Ahora, intenté formalizar esta deducción para obtener la respuesta correcta.
+</think>
+
+Raionalizamos el problema paso a paso:
+
+1. **Total de bolets**: 180
+2. **Bolets arregulados (non-arrugados)**: 40
+3. **Bolets preparados (arrugados)**: 20
+4. **Cencelament**: Los restantes 160 non-arrugados se almacenen en la cencelament.
+
+Para encontrar cuántos bolets han arregulado, restamos los arregulados de los totales:
+
+\[
+\text{Bolets arregulados} = \text{Total} - \text{Bolets non-arrugados} = 180 - 40 = 140
+\]
+
+Ahora, al considerar que se van a repartir las 20 bolets entre las tres personas, y que 40 de los non-arrugados se van al censado, el número de bolets arregulados es 140.
+
+**Respuesta:** \boxed{C}

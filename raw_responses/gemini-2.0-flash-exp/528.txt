@@ -1,0 +1,16 @@
+Raonament:
+Primer, hem de comptar quants dígits s'utilitzen per a les pàgines d'un sol dígit (1-9), de dos dígits (10-99), de tres dígits (100-999), etc.
+
+*   **Pàgines d'un dígit (1-9):** Hi ha 9 pàgines, i cada una utilitza 1 dígit. Total: 9 * 1 = 9 dígits.
+*   **Pàgines de dos dígits (10-99):** Hi ha 90 pàgines, i cada una utilitza 2 dígits. Total: 90 * 2 = 180 dígits.
+*   **Pàgines de tres dígits (100-999):** Hi ha 900 pàgines, i cada una utilitza 3 dígits. Total: 900 * 3 = 2700 dígits.
+
+Fins ara, hem utilitzat 9 + 180 + 2700 = 2889 dígits. Ens queden 11381 - 2889 = 8492 dígits per utilitzar.
+
+Ara, anem a veure quantes pàgines de quatre dígits podem formar amb els dígits restants. Cada pàgina de quatre dígits utilitza 4 dígits. Per tant, podem formar 8492 / 4 = 2123 pàgines de quatre dígits.
+
+La primera pàgina de quatre dígits és la 1000. Per tant, la darrera pàgina de quatre dígits serà 1000 + 2123 - 1 = 3122.
+
+Per tant, el diccionari té 3122 pàgines.
+
+Resposta: B)

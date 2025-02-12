@@ -1,0 +1,34 @@
+<think>
+Vui, he un problema que veia, que més orígeni. El teóritat ha estàndiat, i el producte 1 per 2 per 3 per ... per 10. Estimam el número de zeros al final del producte. Els options són A) 1, B) 2, C) 3, D) 4 i E) 5.
+
+Per esfrontar aquest problema, posaixo que veiem sense que he resalt a la mitja. Apenat, cal recordar que el nombre d'zeros en un producte de numbers consecutius es igual al número de multiples de 10 en l'interval de tots els nombres del producte.
+
+El producte es 1×2×3×…×10, què dona 10 factorial o 10!. Sabim que el factori 5 i 10 impartits tenen factors de 2, perquè l'expressió 10! es expressa com multiplicació de tots els nombres del 2 al 10, a més de la vegada 2.
+
+Per donar un zero a un producte, cal tenir un factor de 10, que és el producte de 2 i 5. Com que en 10! hi s'entén que hi tenim molts multiples de 5 (com 5, 10), la quantitat de zeros serà major o igual a la quantitat de multiples de 5.
+
+Com previs, 10! conté dos multiples de 5: 5 i 10. Així, per cada múltiple de 5, tenim una o molt de zeros al final del producte. Com s'ha fet, hem hotem dos zeros a la dret del producte.
+
+Primer, calculo el log que expressa el producte: log(10!)=log(3628800). Llevam la base 10 i obté quinigura de zeros, que és 7. Així, dona dos zeros al final.
+
+Finalment, com a alternative, factoritzem 10!: 5×2×…×10. Ama l'expresión esvequalities el producte com (5×2)×(4×...) i (10). El producte de tos les parells conté un 10, donant un zero, i la vegada que tenim dos multiples de 5, resulta dos zeros en total.
+
+Com a més, l'expressió de 10! es pot expressar como 1×2×3×4×5×6×7×8×9×10. Com s'ha observat, hi ha dos multiples de 5 (5 i 10), perquè 5 divideix 10 exactament. Així, cada múltiple de 5 implica una o molt de zeros al final del producte.
+
+Ara, resum intuicionalment: el producte 10! conté dos multiples de 5, i per a cada mulᵗiple de 5 hi ha un zero. Així, ho hem contat, donant dos zeros al final.
+</think>
+
+Raonament:
+
+El número d'zeros en el producte 1×2×3×…×10 (sia expressat com 10! o "d major factorial") es igual a la quantitat de factors de 10 que hi s'entén. Un factor de 10 corresponent a un multiple de 10, i per a cada múltiple de 5 (apartant de l'altre) pot tenir un multiple de 2 para donar el zero.
+
+El producte 10! conté:
+
+- **Múltiples de 5**: 5 i 10.
+- **Cada mulᵗipe de 5 pot tenir una o molt de factors de 2**.
+
+Por tant, l'expressió conté dos multiples de 5 i per a cada múltiple hi ha un zero al final del producte. Així, el producte de 10! conté dos zeros al final.
+
+Finalment:
+
+\boxed{B}

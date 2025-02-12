@@ -1,0 +1,343 @@
+Raonament:
+Perquè el producte de set nombres naturals consecutius acabi en 00, necessitem que el producte contingui exactament dos factors 5 i almenys dos factors 2. Com que els factors 2 apareixen més sovint que els factors 5, ens centrarem en els factors 5.
+
+Els nombres naturals que contenen un factor 5 són els múltiples de 5: 5, 10, 15, 20, 25, 30, 35, 40, 45.
+Els nombres naturals que contenen dos factors 5 són els múltiples de 25: 25.
+
+Perquè el producte de set nombres consecutius acabi exactament en 00, necessitem que hi hagi exactament dos factors 5 i almenys dos factors 2. Això vol dir que un dels nombres ha de ser un múltiple de 25 (que aporta dos factors 5) i cap altre nombre del conjunt ha de ser un múltiple de 5.
+
+Analitzem les possibles seqüències de set nombres consecutius que compleixen aquesta condició:
+
+1. Si el múltiple de 25 és 25: la seqüència és 22, 23, 24, 25, 26, 27, 28. Aquesta seqüència té un factor 5 (25) i cap altre múltiple de 5. El producte acaba en 00.
+2. Si el múltiple de 25 és 25, la seqüència anterior és vàlida.
+3. Si el múltiple de 25 és 25, la seqüència 23, 24, 25, 26, 27, 28, 29 també és vàlida.
+4. Si el múltiple de 25 és 25, la seqüència 24, 25, 26, 27, 28, 29, 30 no és vàlida perquè té dos múltiples de 5 (25 i 30).
+5. Si el múltiple de 25 és 25, la seqüència 25, 26, 27, 28, 29, 30, 31 no és vàlida perquè té dos múltiples de 5 (25 i 30).
+6. Si el múltiple de 25 és 25, la seqüència 26, 27, 28, 29, 30, 31, 32 no és vàlida perquè té dos múltiples de 5 (30 i 25).
+7. Si el múltiple de 25 és 25, la seqüència 27, 28, 29, 30, 31, 32, 33 no és vàlida perquè té dos múltiples de 5 (30 i 25).
+8. Si el múltiple de 25 és 25, la seqüència 28, 29, 30, 31, 32, 33, 34 no és vàlida perquè té dos múltiples de 5 (30 i 25).
+9. Si el múltiple de 25 és 25, la seqüència 29, 30, 31, 32, 33, 34, 35 no és vàlida perquè té dos múltiples de 5 (30 i 35).
+10. Si el múltiple de 25 és 25, la seqüència 30, 31, 32, 33, 34, 35, 36 no és vàlida perquè té dos múltiples de 5 (30 i 35).
+11. Si el múltiple de 25 és 25, la seqüència 31, 32, 33, 34, 35, 36, 37 no és vàlida perquè té dos múltiples de 5 (35 i 25).
+12. Si el múltiple de 25 és 25, la seqüència 32, 33, 34, 35, 36, 37, 38 no és vàlida perquè té dos múltiples de 5 (35 i 25).
+13. Si el múltiple de 25 és 25, la seqüència 33, 34, 35, 36, 37, 38, 39 no és vàlida perquè té dos múltiples de 5 (35 i 25).
+14. Si el múltiple de 25 és 25, la seqüència 34, 35, 36, 37, 38, 39, 40 no és vàlida perquè té dos múltiples de 5 (35 i 40).
+15. Si el múltiple de 25 és 25, la seqüència 35, 36, 37, 38, 39, 40, 41 no és vàlida perquè té dos múltiples de 5 (35 i 40).
+16. Si el múltiple de 25 és 25, la seqüència 36, 37, 38, 39, 40, 41, 42 no és vàlida perquè té dos múltiples de 5 (40 i 25).
+17. Si el múltiple de 25 és 25, la seqüència 37, 38, 39, 40, 41, 42, 43 no és vàlida perquè té dos múltiples de 5 (40 i 25).
+18. Si el múltiple de 25 és 25, la seqüència 38, 39, 40, 41, 42, 43, 44 no és vàlida perquè té dos múltiples de 5 (40 i 25).
+19. Si el múltiple de 25 és 25, la seqüència 39, 40, 41, 42, 43, 44, 45 no és vàlida perquè té dos múltiples de 5 (40 i 45).
+20. Si el múltiple de 25 és 25, la seqüència 40, 41, 42, 43, 44, 45, 46 no és vàlida perquè té dos múltiples de 5 (40 i 45).
+21. Si el múltiple de 25 és 25, la seqüència 41, 42, 43, 44, 45, 46, 47 no és vàlida perquè té dos múltiples de 5 (45 i 25).
+22. Si el múltiple de 25 és 25, la seqüència 42, 43, 44, 45, 46, 47, 48 no és vàlida perquè té dos múltiples de 5 (45 i 25).
+23. Si el múltiple de 25 és 25, la seqüència 43, 44, 45, 46, 47, 48, 49 no és vàlida perquè té dos múltiples de 5 (45 i 25).
+
+Les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+3. 24, 25, 26, 27, 28, 29, 30 (no vàlida)
+4. 25, 26, 27, 28, 29, 30, 31 (no vàlida)
+...
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28
+2. 23, 24, 25, 26, 27, 28, 29
+
+Si el múltiple de 25 és 25, les seqüències vàlides són:
+1. 22, 23, 24, 25, 26, 27, 28

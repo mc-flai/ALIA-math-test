@@ -1,0 +1,34 @@
+Raonament:
+Primer, factoritzem l'expressió 3³² - 1 utilitzant la diferència de quadrats repetidament:
+3³² - 1 = (3¹⁶ - 1)(3¹⁶ + 1)
+= (3⁸ - 1)(3⁸ + 1)(3¹⁶ + 1)
+= (3⁴ - 1)(3⁴ + 1)(3⁸ + 1)(3¹⁶ + 1)
+= (3² - 1)(3² + 1)(3⁴ + 1)(3⁸ + 1)(3¹⁶ + 1)
+= (3 - 1)(3 + 1)(3² + 1)(3⁴ + 1)(3⁸ + 1)(3¹⁶ + 1)
+= 2 * 4 * 10 * 82 * 6562 * (3¹⁶ + 1)
+= 2 * 2² * 2 * 5 * 2 * 41 * 2 * 3281 * (3¹⁶ + 1)
+= 2⁵ * 5 * 41 * 3281 * (3¹⁶ + 1)
+= 32 * 5 * 41 * 3281 * (3¹⁶ + 1)
+
+Ara, calculem els factors que tenim:
+2 * 4 = 8
+2 * 4 * 10 = 80
+2 * 4 * 10 * 82 = 6560
+2 * 4 * 10 * 82 * 6562 = 429496720
+Els divisors de 3³² - 1 són productes de factors de la forma 3^k + 1 o 3^k - 1.
+Els factors que hem trobat són:
+2, 4, 10, 82, 6562, ...
+També tenim:
+3 - 1 = 2
+3 + 1 = 4
+3² + 1 = 10
+3⁴ + 1 = 82
+3⁸ + 1 = 6562
+3¹⁶ + 1 = 43046722
+Els divisors que ens interessen estan entre 75 i 84.
+Els divisors que hem trobat són:
+2, 4, 8, 10, 16, 20, 32, 40, 41, 80, 82, 160, 164, 205, 320, 328, 410, 656, 820, 1280, 1312, 1640, 2050, 3280, 3281, 6560, 6562, ...
+Els divisors entre 75 i 84 són 80 i 82.
+El producte d'aquests dos divisors és 80 * 82 = 6560.
+
+Resposta: B)

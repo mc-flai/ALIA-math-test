@@ -1,0 +1,73 @@
+<think>
+She starts by assigning variables to each fruit. She calls the albercoc "A," mandarina "M," nespra "N," and pera "P." 
+
+Using the first statement, she sets up an equation that shows a albercoc equals a mandarina plus a pera. Then, from the second statement, she creates another equation where a albercoc is less than the sum of a mandarina and a pera. This helps her find out how much each fruit weighs relative to the others.
+
+Next, she looks at the third statement, which tells her that a nespra is less than both an albercoc and a pera. She combines this information with her previous equations to get a clearer picture of the weight differences between all four fruits.
+
+Finally, by analyzing the total weights based on these relationships, she determines that the mandarina must be the heaviest fruit.
+</think>
+
+Raonament:
+
+1. **Definimos variables para cada type de frisa:**
+   - Sea \( A \) el peso de una albercoc.
+   - sea \( M \) el peso de una mandarina.
+   - sea \( N \) el peso de una nespra.
+   - sea \( P \) el peso de una pera.
+
+2. **Usamos las relaciones dadas para formular ecuaciones:**
+   
+   - **Primera relación:** "Un albercoc i una mandarina pesen igual que una nespra i una pera."
+     \[
+     A + M = N + P
+     \]
+     
+   - **Segona relacción:** "Un albercoc i una nespra pesen menys que una mandarina i una pera."
+     \[
+     A + N < M + P
+     \]
+     
+   - **Tercera relación:** "Una nesqua i una mandarina pesen menys que un albercoc i una pera."
+     \[
+     N + M < A + P
+     \]
+
+3. **Analizamos las ecuaciones para encontrar relaciones entre las variables:**
+   
+   - Dado que \( A + M = N + P \), podemos expressar una de las variables en términos de las demás.
+   
+   - Por ejemplo, \( A = N + P - M \).
+   
+   - Sustituimos \( A \) en la segunda relación:
+     \[
+     (N + P - M) + N < M + P
+     \]
+     Simplificando:
+     \[
+     2N + P - M < M + P \\
+     2N - M < M \\
+     2N < 2M \\
+     N < M
+     \]
+     
+   - Conocemos que \( N < M \).
+
+4. **Analizamos las relaciones para encontrar la mayor peso:**
+   
+   - Dado que \( N + P = A + M \) y \( N < M \), podemos inferir que:
+     \[
+     A > M
+     \]
+     
+   - Dado que \( A > M \) y \( M > N \), la nespra es la menos pesada.
+
+5. **Resumen de las relaciones:**
+   
+   \[
+   P < N < M < A
+   \]
+
+**Por consiguiente, la mandarina es la fruita más pesada.**
+
+\boxed{B) \text{La mandarina}}

@@ -1,0 +1,23 @@
+Raonament:
+Primer, utilitzarem les propietats dels logaritmes per simplificar l'expressió. Recordem que:
+1.  `a log b = log b^a`
+2.  `log a - log b = log (a/b)`
+
+Aplicant la primera propietat a l'expressió donada, tenim:
+`20 log 16 - 6 log 4 = log 16^20 - log 4^6`
+
+Ara, expressem 16 i 4 com a potències de 2:
+`16 = 2^4` i `4 = 2^2`
+
+Substituint a l'expressió:
+`log (2^4)^20 - log (2^2)^6 = log 2^(4*20) - log 2^(2*6) = log 2^80 - log 2^12`
+
+Ara, apliquem la segona propietat dels logaritmes:
+`log 2^80 - log 2^12 = log (2^80 / 2^12) = log 2^(80-12) = log 2^68`
+
+Finalment, apliquem la primera propietat de nou, però a la inversa:
+`log 2^68 = 68 log 2`
+
+Per tant, el resultat de l'expressió és `68 log 2`.
+
+Resposta: D)

@@ -1,0 +1,15 @@
+Raonament:
+Analitzem les implicacions lògiques de les afirmacions donades:
+
+1.  "Si Aleix no porta barret, aleshores Baltasar en porta." Això es pot expressar com: ¬Aleix → Baltasar (on ¬ significa "no").
+2.  "Si Baltasar no porta barret, aleshores Carles en porta." Això es pot expressar com: ¬Baltasar → Carles.
+3.  "Avui Carles no porta barret." Això es pot expressar com: ¬Carles.
+
+Ara, utilitzem la lògica per deduir qui porta barret:
+
+*   Com que ¬Carles és cert, i sabem que ¬Baltasar → Carles, per la llei del contrapositiu (si P → Q, llavors ¬Q → ¬P), podem deduir que ¬Carles → Baltasar. Per tant, si ¬Carles és cert, llavors Baltasar és cert. Això vol dir que Baltasar porta barret.
+*   Ara sabem que Baltasar porta barret. La primera afirmació era ¬Aleix → Baltasar. Això no ens diu res sobre si Aleix porta o no barret. Si Aleix porta barret, la implicació es compleix (perquè la implicació només és falsa si l'antecedent és cert i el conseqüent és fals). Si Aleix no porta barret, la implicació també es compleix perquè Baltasar porta barret. Per tant, no podem deduir res sobre si Aleix porta o no barret.
+
+Per tant, l'única conclusió segura és que Baltasar porta barret.
+
+Resposta: E)

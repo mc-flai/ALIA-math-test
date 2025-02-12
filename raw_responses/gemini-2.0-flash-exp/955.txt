@@ -1,0 +1,105 @@
+Raonament:
+Primer, hem de determinar la numeració de les pàgines. Com que el llibre comença a la pàgina 3 i cada full té dues pàgines, la numeració serà: (3, 4), (5, 6), (7, 8), i així successivament. L'últim full serà el que conté les pàgines 181 i 182.
+
+Ara, hem de trobar els fulls on la suma de les dues pàgines és un quadrat perfecte o un cub perfecte. La suma de les pàgines d'un full serà sempre un nombre imparell, ja que són dos nombres consecutius.
+
+*   Full 1: 3 + 4 = 7
+*   Full 2: 5 + 6 = 11
+*   Full 3: 7 + 8 = 15
+*   Full 4: 9 + 10 = 19
+*   Full 5: 11 + 12 = 23
+*   Full 6: 13 + 14 = 27
+*   Full 7: 15 + 16 = 31
+*   Full 8: 17 + 18 = 35
+*   Full 9: 19 + 20 = 39
+*   Full 10: 21 + 22 = 43
+*   Full 11: 23 + 24 = 47
+*   Full 12: 25 + 26 = 51
+*   Full 13: 27 + 28 = 55
+*   Full 14: 29 + 30 = 59
+*   Full 15: 31 + 32 = 63
+*   Full 16: 33 + 34 = 67
+*   Full 17: 35 + 36 = 71
+*   Full 18: 37 + 38 = 75
+*   Full 19: 39 + 40 = 79
+*   Full 20: 41 + 42 = 83
+*   Full 21: 43 + 44 = 87
+*   Full 22: 45 + 46 = 91
+*   Full 23: 47 + 48 = 95
+*   Full 24: 49 + 50 = 99
+*   Full 25: 51 + 52 = 103
+*   Full 26: 53 + 54 = 107
+*   Full 27: 55 + 56 = 111
+*   Full 28: 57 + 58 = 115
+*   Full 29: 59 + 60 = 119
+*   Full 30: 61 + 62 = 123
+*   Full 31: 63 + 64 = 127
+*   Full 32: 65 + 66 = 131
+*   Full 33: 67 + 68 = 135
+*   Full 34: 69 + 70 = 139
+*   Full 35: 71 + 72 = 143
+*   Full 36: 73 + 74 = 147
+*   Full 37: 75 + 76 = 151
+*   Full 38: 77 + 78 = 155
+*   Full 39: 79 + 80 = 159
+*   Full 40: 81 + 82 = 163
+*   Full 41: 83 + 84 = 167
+*   Full 42: 85 + 86 = 171
+*   Full 43: 87 + 88 = 175
+*   Full 44: 89 + 90 = 179
+*   Full 45: 91 + 92 = 183
+*   Full 46: 93 + 94 = 187
+*   Full 47: 95 + 96 = 191
+*   Full 48: 97 + 98 = 195
+*   Full 49: 99 + 100 = 199
+*   Full 50: 101 + 102 = 203
+*   Full 51: 103 + 104 = 207
+*   Full 52: 105 + 106 = 211
+*   Full 53: 107 + 108 = 215
+*   Full 54: 109 + 110 = 219
+*   Full 55: 111 + 112 = 223
+*   Full 56: 113 + 114 = 227
+*   Full 57: 115 + 116 = 231
+*   Full 58: 117 + 118 = 235
+*   Full 59: 119 + 120 = 239
+*   Full 60: 121 + 122 = 243
+*   Full 61: 123 + 124 = 247
+*   Full 62: 125 + 126 = 251
+*   Full 63: 127 + 128 = 255
+*   Full 64: 129 + 130 = 259
+*   Full 65: 131 + 132 = 263
+*   Full 66: 133 + 134 = 267
+*   Full 67: 135 + 136 = 271
+*   Full 68: 137 + 138 = 275
+*   Full 69: 139 + 140 = 279
+*   Full 70: 141 + 142 = 283
+*   Full 71: 143 + 144 = 287
+*   Full 72: 145 + 146 = 291
+*   Full 73: 147 + 148 = 295
+*   Full 74: 149 + 150 = 299
+*   Full 75: 151 + 152 = 303
+*   Full 76: 153 + 154 = 307
+*   Full 77: 155 + 156 = 311
+*   Full 78: 157 + 158 = 315
+*   Full 79: 159 + 160 = 319
+*   Full 80: 161 + 162 = 323
+*   Full 81: 163 + 164 = 327
+*   Full 82: 165 + 166 = 331
+*   Full 83: 167 + 168 = 335
+*   Full 84: 169 + 170 = 339
+*   Full 85: 171 + 172 = 343 = 7^3
+*   Full 86: 173 + 174 = 347
+*   Full 87: 175 + 176 = 351
+*   Full 88: 177 + 178 = 355
+*   Full 89: 179 + 180 = 359
+*   Full 90: 181 + 182 = 363
+
+Els quadrats perfectes són 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361...
+Els cubs perfectes són 1, 8, 27, 64, 125, 216, 343, 512...
+
+Les sumes de les pàgines que són quadrats o cubs perfectes són:
+* 343 = 7^3 (full 85)
+
+Per tant, només hi ha un full que compleix la condició.
+
+Resposta: A)

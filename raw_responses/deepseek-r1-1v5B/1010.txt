@@ -1,0 +1,30 @@
+<think>
+Para determinar cuál es la respuesta más grana, primero identificamos que un número de tres xifres es bonito si su centrilla cifra es mayor que la suma de las dos cifras restantes.
+
+Luego, analizamos todo posible número de tres xifres y verifiquemos cuáles cumplen con esta condición. Por ejemplo, el número 123 satisface la condición porque 2 > 1 + 3 = 4. Sin embargo, el número 321 no cumple ya que 2 < 3 + 1.
+
+Ahora, en orden de buscar números consecutivos y satisfying su condición, identificamos sequence de números como 123, 456, 789, etc., que satisficienten la condición. Por ejemplo:
+
+- Número 123: 2 > 1 + 3 ⇒ Bonito
+- Número 456: 5 > 4 + 6 = 10 ⇒ No cumple
+- Número 789: 8 > 7 + 9 = 16 ⇒ Cumple
+
+Por lo tanto, el número más grande que cumpla con la condición en su secuencia consecutiva es 789.
+</think>
+
+Para determinar cuál es la respuesta más grana, analizamos cada número de tres xifres y verifiquemos si cumplan con la condición de ser bonito: la cifra central debe ser mayor que la suma de las dos cifras restantes.
+
+La secuencia de números consecutivos que satisfiquen esta condición incluye:
+
+- **123**: 2 > 1 + 3 = 4 ⇒ Cumple
+- **789**: 8 > 7 + 9 = 16 ⇒ Cumple
+
+Las siguientes xifras no cumplan con la condición:
+
+- **456**: 5 < 4 + 6 = 10 ⇒ No cumple
+- **231**: 3 > 2 + 1 = 3 ⇒ Es igual, no cumple
+- **879**: 7 < 8 + 9 = 17 ⇒ No cumple
+
+Entre las xifras quecumplan con la condición, el número más grande es **789**.
+
+**Respuesta:** \boxed{C}

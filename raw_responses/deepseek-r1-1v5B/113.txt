@@ -1,0 +1,54 @@
+<think>
+Primer, observo que la successió comienza amb els valors a₀ = 4 i a₁ = 10. El següent terme de la successió es defineix per la fórmula a_{n+1} = a_n / a_{n-1} per a n ≥ 1.
+
+S' observa que la successió potencialsment followi una periodicitat o trend siguiu un cicle. Escrivim els primeros términes de la suya:
+
+a₀ = 4
+
+a₁ = 10
+
+a₂ = a₁ / a₀ = 10 / 4 = 2.5
+
+a₃ = a₂ / a₁ = 2.5 / 10 = 0.25
+
+a₄ = a₃ / a₂ = 0.25 / 2.5 = 0.1
+
+a₅ = a₄ / a₃ = 0.1 / 0.25 = 0.4
+
+a₆ = a₅ / a₄ = 0.4 / 0.1 = 4
+
+a₇ = a₆ / a₅ = 4 / 0.4 = 10
+
+Observem que a₆ i a₇ tenen el mateix valor que a₀ i a₁, respectivament. Esto probablement significa que la suya perds un cycle a l'espènia del 6è término.
+
+Estimam que la periodicitat de la successió és de 6 términos: 4, 10, 2.5, 0.25, 0.1, 0.4, i doncs a₀ i a₆, etc., tenen el mateix valor.
+
+Calentament, intentem determinar el període amb la fórmula: periode p = (n) / (m), on m és el nombre de términos en un cycle. Ara, com observes que a₆ = a₀ i a₇ = a₁, potem dir que l'iperíode p = 6.
+
+Entèsimment, para determinar a₂₀₁₅, dividimel per l'iperíode:
+
+2015 ÷ 6 = 335 Remainder 5
+
+Per així, a₂₀₁₅ = a₅ = 0.4 = 2/5.
+
+La resposta correcta és la B).
+</think>
+
+Raonament:
+- La successió comienza amb a₀ = 4 i a₁ = 10.
+- El següent terme s'obté per la fórmula: a_{n+1} = a_n / a_{n-1}.
+- Calculem els primeros términos:
+  - a₂ = a₁ / a₀ = 10 / 4 = 2.5
+  - a₃ = a₂ / a₁ = 2.5 / 10 = 0.25
+  - a₄ = a₃ / a₂ = 0.25 / 2.5 = 0.1
+  - a₅ = a₄ / a₃ = 0.1 / 0.25 = 0.4
+  - a₆ = a₅ / a₄ = 0.4 / 0.1 = 4
+  - a₇ = a₆ / a₅ = 4 / 0.4 = 10
+- Observem que a₀ = a₆ i a₁ = a₇, siguiendo un cycle de 6 términos.
+- Per a determine a₂₀₁₅, calculem el remainder de la divisió:
+  - 2015 ÷ 6 = 335 Remainder 5
+  - a_{2015} = a₅ = 0.4 = 2/5
+
+La resposta correcta és la **B) 2/5**.
+
+\boxed{B}

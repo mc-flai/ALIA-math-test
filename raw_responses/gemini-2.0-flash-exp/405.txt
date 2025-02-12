@@ -1,0 +1,20 @@
+Raonament:
+Aquest problema es relaciona amb el concepte de dissenys combinatoris, específicament amb els sistemes de triples de Steiner. Un sistema de triples de Steiner S(2, 3, n) és un conjunt de subconjunts de 3 elements (anomenats triples) d'un conjunt de n elements, de manera que cada parella d'elements apareix exactament en un triple. En aquest cas, ens diuen que tenim 7 subconjunts de 3 elements, i que cada parella d'elements de S apareix exactament en un d'aquests subconjunts. Per tant, estem buscant un sistema de triples de Steiner S(2, 3, n) amb 7 triples.
+
+La fórmula per calcular el nombre de triples en un sistema de triples de Steiner S(2, 3, n) és n(n-1)/6. En el nostre cas, sabem que el nombre de triples és 7, per tant, hem de resoldre l'equació:
+
+n(n-1)/6 = 7
+n(n-1) = 42
+n^2 - n - 42 = 0
+
+Aquesta és una equació quadràtica que podem resoldre factoritzant:
+(n - 7)(n + 6) = 0
+
+Les solucions són n = 7 i n = -6. Com que n ha de ser un nombre positiu, la solució vàlida és n = 7.
+
+Per verificar que n=7 és una solució vàlida, podem intentar construir un sistema de triples de Steiner S(2, 3, 7). Un exemple d'aquest sistema és:
+{1, 2, 3}, {1, 4, 5}, {1, 6, 7}, {2, 4, 6}, {2, 5, 7}, {3, 4, 7}, {3, 5, 6}
+
+Aquest sistema té 7 triples i cada parella d'elements apareix exactament en un triple. Per tant, n=7 és la resposta correcta.
+
+Resposta: E)

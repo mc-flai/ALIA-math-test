@@ -1,0 +1,68 @@
+<think>
+Prime, expressimos l'equació de l'incertesa:
+
+\[(x^2 - 4)^{x^2 + 1} = 9\]
+
+Com tenim en compte que l'escribedz potencialment donat depend de la variable x.
+
+Estudiam les posibles valors de \(x^2\) que satisfan l'equació. Observem que \(x^2\) és sempre posallocate, com a valor posallocate.
+
+Per a cada possible val/current de \(x^2\), es considera el component potencial i si la expressión potenciació equina 9.
+
+Es possible que la solucions en quocient de la x² siga dels components. Com s'ensenyen les potenciacions, tenim que analizar les val/currents que satisfan l'igualtat.
+
+Com s'ha fet es considerar cada posició i determina si la expressión potencial equina 9.
+
+Finalment, contem la nombre de solucions enteres que complan a l'equació.
+</think>
+
+Llaminem la resolució passant per a cada possible valor de \(x^2\).
+
+### Passos Sigues:
+
+1. **Definirem la Variable \(y = x^2\)**
+   
+   Què es dona com que \(x^2 \geq 0\), definimos:
+   
+   \[ y = x^2 \]
+   
+   Quada l'equació potencialment expressa com:
+   
+   \[(y - 4)^{y + 1} = 9\]
+
+2. **Encomendar Val/currents de \(y\)**
+   
+   Què es dona que \(y - 4 > 0\), perquè la expressión potencia serà definida.
+
+3. **Determinar Potenciacions que Equina 9**
+
+   Es possible que:
+   - \(y - 4 = 2\) i \(y + 1 = 2\) → \(y = 3\)
+   - \(y - 4 = 3\) i \(y + 1 = 2\) → \(y = 2\) (També es possible que \(y - 4 = -3\) i \(y + 1 = -2\), pero com s'ha calculat, \(x^2\) no pot ser negativa).
+
+4. **Solucions Correspondents**
+
+   - **Case 1: \(y = 3\)**  
+     \[ y = x^2 = 3 \Rightarrow x = \pm \sqrt{3} \] (No es enter, perquè \(\sqrt{3}\) no és enter)
+     
+   - **Case 2: \(y = 2\)**  
+     \[ y = x^2 = 2 \Rightarrow x = \pm \sqrt{2} \] (No es enter, com a reasoning similar que el anterior)
+
+5. **També Potenciacions Més Espectrales**
+
+   - **Case 3: \(y - 4 = 9\) i \(y + 1 = 1\)**  
+     \[ y = 5 \Rightarrow x^2 = 5 \Rightarrow x = \pm \sqrt{5} \] (No es enter)
+
+6. **Exhaustivament**
+
+   Com s'ha observat, l'igualtat potencialment equina 9 no ocupa val/currents entres de \(y\), que són no enters.
+
+7. **Nomenclura Ambfits**
+   
+   No es possible que \(x\) siga entera amb aquesta expressión, perquè la solucions en x² s'han explorades i nixen.
+
+**Conclusió:**
+
+No existís solucions enteres que complen la l'equació.
+
+\[\boxed{A}\]

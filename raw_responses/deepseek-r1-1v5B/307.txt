@@ -1,0 +1,36 @@
+<think>
+Pensei que he captaixement amb l'enunciat, i ho posaix per donar una lucha al problema.
+
+El cosit ha passat 17 cases, que farán el cicle de l'espació. Llamei la casa final en el costat parell "K" i a l'última casa del costat impar "L". Sabiem que l'última casa parella (K) té el número 12.
+
+Per a projecturar el lloc de l'última casa impar, cal subtracti la quantitat del cicle (17) al nombre de la casa final en el costat parell. Eso donaría 12 - 17 = -5. Com a rauament el número d'espacis negatives no teníem que ser nuls, cal addicionar l'espació total per a l'occurreció. Així, -5 + 17 = 12.
+
+Finalment, la casa final en el costat impar és la 12.
+</think>
+
+Ahora que volem analizar el problema paso a paso:
+
+- El cosit ha passat **17 cases** al llamar a la **casa final de l'arca parla** (**casa parella**) el número **12**.
+
+- Queremos encontrar el número de la casa del **costat impar** que és la **última** en el cosit.
+
+**Raonament:**
+
+1. **Definir variables e identificar la estructura del cicle:**
+   - Totales hay **17 cases**, lloc que es compara als dos costats.
+   - L'arca parla dos times: el costat parell y el costat impar.
+
+2. **Identificar la posición de la casa final de l'arca parella (K):**
+   - La casa final del costat parell (**casa K**) té el número **12**.
+
+3. **Determinar la relación entre las posiciones del dos costats:**
+   - Ltot d'arcanies es de 17, perquè l'reglament del cicle es decreta.
+   - La casa final del costat impar (**casa L**) está a **x arans a la derecha** que la casa K.
+
+4. **Aplicar el rauamente:**
+   - \( \text{Númbers de la casa L} = \text{Númbers de la casa K} - 17 + 1 \)
+   - \( N_L = 12 - 17 + 1 = -5 + 1 = 12 \)
+
+**Resposta final:**
+
+\boxed{E}

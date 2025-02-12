@@ -1,0 +1,25 @@
+Raonament:
+1. **Definir variables inicials i finals:**
+   - Sigui `P1` el nombre de dents del plat inicial i `p1` el nombre de dents del pinyó inicial.
+   - Sigui `N1` el nombre de revolucions inicials de la roda: `N1 = P1 / p1`.
+   - Sigui `P2` el nombre de dents del plat després del canvi i `p2` el nombre de dents del pinyó després del canvi.
+   - Sigui `N2` el nombre de revolucions finals de la roda: `N2 = P2 / p2`.
+
+2. **Relació entre revolucions:**
+   - Sabem que `N2 = 3 * N1`.
+
+3. **Canvi en el plat:**
+   - El nombre de dents del plat augmenta un 35%, per tant, `P2 = P1 + 0.35 * P1 = 1.35 * P1`.
+
+4. **Substituir i simplificar:**
+   - Substituïm `N1` i `N2` en la relació de revolucions: `P2 / p2 = 3 * (P1 / p1)`.
+   - Substituïm `P2`: `(1.35 * P1) / p2 = 3 * (P1 / p1)`.
+   - Simplifiquem dividint per `P1`: `1.35 / p2 = 3 / p1`.
+   - Aïllem `p2`: `p2 = (1.35 * p1) / 3 = 0.45 * p1`.
+
+5. **Calcular la variació del pinyó:**
+   - La variació del pinyó és `(p2 - p1) / p1`.
+   - Substituïm `p2`: `(0.45 * p1 - p1) / p1 = -0.55 * p1 / p1 = -0.55`.
+   - Això significa que el nombre de dents del pinyó ha disminuït un 55%.
+
+Resposta: C)

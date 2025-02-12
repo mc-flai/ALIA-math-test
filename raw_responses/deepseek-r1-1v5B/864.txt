@@ -1,0 +1,66 @@
+<think>
+Primero, identifico que cada cub tiene una altura de 5 cm.
+
+Llevamos into account que els cubs són ordinats del més xicast al més grand, per a què la distància entre les arestes de dos cubs consecutius es multiplica de 2 cm. Especificament, el més grand cub (C5) és tan alt com una torre feta amb els dos cubs més xicals (C1 i C2).
+
+Calculo la distància entre les arestes dels dos cubs més xicals:
+
+Si considero que les arestes entre C1 i C2 tenen una distància de 'd' cm, l'reta total entre C1 i C5 serà d + 4d = 5d.
+
+Llevamos a la fórmula del trànsvers al més grand cub:
+
+Trafa distance = (longitud) * sqrt(2)
+Per a C5: 5 cm = L * sqrt(2)
+Resolviendo, obtenemos L = 5 / sqrt(2).
+
+Calculo elrea total de la torre com un rectangle:
+rea_total = L * H
+Si el més gran cub és equivalent a la torre,entonces H = L = 5 / sqrt(2) cm.
+
+Finalmente, calculo la altura de la torre com un cub potencial (C6):
+Trea distance = 6d = L' * sqrt(2)
+Resolviendo, obtenemos L' = 6d / sqrt(2).
+
+Sumando el més grand cub amb la torre resultant:
+Total altitud = 5 cm + 6d / sqrt(2).
+</think>
+
+**Raonament:**
+
+1. **Determinación de alturas:**
+   - Cada cub tiene una altura de **5 cm**.
+   - La distancia entre les arestes de dos cubs consecutius es multiplica de **2 cm**.
+
+2. **Calculo delrea total de la torre:**
+   - Llevamos a la fórmula del trànsvers al més grand cub:
+     \[
+     \text{Trafa distance} = (longitud) \times \sqrt{2}
+     \]
+   - Para el cub més gran (**C5**): 
+     \[
+     5\,cm = L_{más\ grand}\times \sqrt{2} \Rightarrow L_{más\ grand}= \frac{5}{\sqrt{2}}\,cm
+     \]
+   
+3. **Altura de la torre com un rectangle:**
+   - La areta total (H) es igual a la longitud del cub:
+     \[
+     H = L = \frac{5}{\sqrt{2}}\,cm
+     \]
+
+4. **Calculo de la altura de la torre potencial (C6):**
+   - Para el cub C6:
+     \[
+     6d = L_{potencial}\times \sqrt{2} \Rightarrow L_{potencial}= \frac{6d}{\sqrt{2}}
+     \]
+   
+5. **Suma alturas:**
+   - Altura total de la torre potencial con C6:
+     \[
+     Total\,altitud = 5\,cm + \frac{6d}{\sqrt{2}} 
+     \]
+
+**Resposta Final:**
+
+La altura de la torre feta amb els cinc cubsés:
+
+\boxed{E) \; 50\,cm}

@@ -1,0 +1,51 @@
+<think>
+Primeit empreram els nombres més grands sense paràntesis per que són més grans i esmenten-los amb signs negatius. El procés de raonament es pot expressar com així:
+
+1 + 2 + 3 + ... + 64 + (-75) + (-76) + (-77) + (-78) + (-79) + (-80)
+
+Sumant tots els nombres positiveament i el negatius:
+1 + 2 + 3 + ... + 64 = (64 × 65)/2 = 2080
+-75 -76 -77 -78 -79 -80 = -445
+
+Total: 2080 - 445 = 1635
+
+Per a donar un resultat d'2020, cal tenir una differència de 2020 - 1635 = 385 en la suma de les negatius.
+
+Així que decrements els nombres més grands sense paràntesis sense paràntesis: 75, 76, ..., 80
+Sumem el negatiu del resultat: - (81 + 82 + ... + 140) = -385
+
+También pot que es useigen paràntesis en l'ordre inverse, tal com hem fet sense paràntesis.
+
+El total de la suma serà:
+(1 + 2 + ... + 64 + (-75 + -76 + ... + -140)) = 2020
+</think>
+
+Per a donar una expressió equivalent a **2020** com a la suma d'enters consecutives, es pot realitzar el seguent procés:
+
+La suma de nombres consecutius es calcula com:
+\[
+S = \frac{n(n + 1)}{2}
+\]
+Per \( n = 64 \):
+\[
+S = \frac{64 \times 65}{2} = 2080
+\]
+
+Si el resultat desalguia, es pot disminuir la suma sense paràntesis. Esmentem (-1) a **64** elements per tal de reduir la suma sense paràntesis.
+
+La nova suma serà:
+\[
+2080 - (65 + 66 + \dots + 140)
+\]
+Calculant la parts:
+- Suma positive: \( S = \frac{64 \times 65}{2} = 2080 \)
+- Suma negativa: \( - \sum_{k=65}^{140} k = -385 \)
+
+Per a donar un resultat de **2020**, cal tenir una differència de:
+\[
+2020 = 2080 - (-385)
+\]
+
+Així, el màxim nombre possible del signe "+" es **10**.
+
+\boxed{C}

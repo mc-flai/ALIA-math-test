@@ -1,0 +1,49 @@
+<think>
+Primeixem el nombre total de monedes, que és 21. cada moneda es pot ser de 2 o 5 cèntims d'euro.
+
+Si us considerem totes les monedes de 2 cèntims, el valor total serà 2*21=42 cèntims.
+
+Si us considerem totes les monedes de 5 cèntims, el valor total serà 5*21=105 cèntoms. Per aquesta raó, el valor total pot ser una quantitat que sigui sense par millers i entre 42 i 105.
+
+Observem que l'opció B) 60 cèntims es pot expressar com la suma de monedes de 2 cèntims i 5 cèntims. Exemplos: 18 monedes de 2 cèntims (18*2=36 cèntims) i 3 monetes de 5 cèntims (3*5=15 cèntums), tot i la suma serà 36+15=51. No, no veem 60.
+
+De la mateixa manera, l'opció C)70 es pot expressar com 14 monedes de 2 cèntims (14*2=28 cèntums) i 7 monetes de 5 cèntums (7*5=35), toti la suma serà 63. No, no veem 70.
+
+Raonem que el valor total pot ser una quantitat que sigui sense par millers i entre 42 i 105. Araixent com que les monedes són de 2 o 5 cèntims, l'espèncula possible per a cada moneda es 3 (igual que 5-2). Per aquesta raó, la quantitat total pot ser un nombre que sigui sense par millers i que sigi congruents amb 0 o 1 cèntums (al complementar de 2).
+
+Per exemple: 42+3=45 cèntims, el qual és una possible quantitat. 60 no pot ser per així que 45-60=-15, que no es pot expressar com un múltiplo d'3.
+
+Tambí l'opció E)102 no pot ser, com que es més grans que 105 i l'espèncula de cada moneda és 3.
+
+Donat que el valor total pot ser una quantitat que sigi multiple of 3 o multiple of 2, la solució possible és l'opció B)60 cèntims no pot ser, per així que l'opció correcta es E)102.
+</think>
+
+**Raonament:**
+
+Pensemos que les monedes es pot expressar com x monedes de 2 cèntims i y monetes de 5 cèntims. Asegurems que:
+
+\[
+x + y = 21
+\]
+
+El valor total en cèntims serà:
+
+\[
+2x + 5y
+\]
+
+S'entén que el valor total pot ser un nombre que sigi sense par millers i que sigi multiple of 3 o multiple of 2, amb la raó de que les diferences entre monedes de 2 cèntims i 5 cèntums són multiple de 3.
+
+**Evaluant las opciones:**
+
+- **A) 45 cèntims:** Es possible si teniem x = 9 monetes de 2 cèntims (18 cèntums) i y = 12 monetes de 5 cèntums (60 cèntums). Tots toti la suma serà 78 cèntums, no 45.
+  
+- **B) 60 cèntims:** Es impossible per així que el valor total sigi multiple of 3 o multiple of 2. No pot expressar amb x monetes de 2 i y monetes de 5 donant 60.
+
+- **C) 70 cèntums:** Es impossible per així que el valor total sigi multiple of 3 o multiple of 2. No pot expressar amb x monetes de 2 i y monetes de 5 donant 70.
+
+- **D) 81 cèntims:** Es possible si teniem x = 9 monetes de 2 (18 cèntums) i y = 12 monetes de 5 (60 cèntums), toti la suma serà 78 cèntums, no 81.
+
+- **E) 102 cèntims:** Es impossible per així que el valor total sigi multiple of 3 o multiple of 2. No pot expressar amb x monetes de 2 i y monetes de 5 donant 102.
+
+**Resposta correcta:** \boxed{E}

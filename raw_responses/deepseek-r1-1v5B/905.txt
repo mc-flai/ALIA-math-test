@@ -1,0 +1,119 @@
+<think>
+Primeiro, factorizem el número dada: 2⁵⁷ · 3⁴ · 5⁵³ · 4.
+
+Notemos que 4 es 2², así que podemos reescribir el número como: 2⁵⁷ · 3⁴ · 5⁵³ · 2² = 2^(57+2) · 3⁴ · 5⁵³ = 2⁵⁹ · 3⁴ · 5⁵³.
+
+Ahora, para encontrar la última xifra no null del número, llevamos a cabo una multiplicación de números congruente en base 10. La idea es reducir cada parte a su forma congruente módulo 10, y luego multiplicar las restas.
+
+Calculando cada potencia:
+
+- 2⁵⁹ mod 10: La periodicidad de 2 en la potencia se repita every 4: 2, 4, 8, 6. 59 dividido por 4 da 14 con un resto de 3. Entonces, 2^59 ≡ 2³ mod 10 = 8.
+
+- 3⁴ mod 10: La periodicidad de 3 es every 4: 3, 9, 7, 1. 4 dividido por 4 da 1 con resto 0. Entonces, 3⁴ ≡ 1 mod 10.
+
+- 5⁵³ mod 10: La periodicidad de 5 es always 5. Por lo tanto, 5⁵³ ≡ 5 mod 10.
+
+Multiplicando estas restas: 8 · 1 · 5 = 40. La last xifra no null del número es 0. Sin embargo, la opcin 4 (C) menciona 4, lo que contradice este resultado.
+
+Debemos revisar si hay un error en las periodicidades o en el cálculo de las exponencias.
+
+Ahora, revisando:
+
+- 2⁵⁹ mod 10: La periodicidad es every 4. 59 dividido por 4 da 14 con resto 3, así que 2³ = 8.
+
+- 3⁴ mod 10: 3⁴ = 81, y 81 mod 10 = 1.
+
+- 5⁵³ mod 10: always es 5.
+
+Multiplicando: 8 · 1 · 5 = 40. La último xifra no null es 0, pero la opción C es 4. Esto sugiere que probablemente hay un error en el cálculo.
+
+Revisando again:
+
+- 2⁵⁷ · 3⁴ · 5⁵³ · 4.
+
+Primero, reescribamos el número como: 2⁵⁷ · 3⁴ · 5⁵³ · 2² = 2^(57+2) · 3⁴ · 5⁵³ = 2⁵⁹ · 3⁴ · 5⁵³.
+
+Ahora, calculemos cada parte:
+
+- 2⁵⁹ mod 10: periodicidad de 2 es every 4. 59 ÷ 4 = 14 con resto 3. 2³ = 8. Entonces, 2⁵⁹ ≡ 8 mod 10.
+
+- 3⁴ mod 10: periodicidad de 3 es every 4. 4 ÷ 4 = 1 con resto 0. 3⁴ ≡ 1 mod 10.
+
+- 5⁵³ mod 10: always 5.
+
+Multiplicamos: 8 · 1 · 5 = 40, y la último xifra no null es 0. Sin embargo, la opción C es 4.
+
+Ahora, revisemos si el número tiene un cero al final, o si hay un error en el reescritura de la expresión.
+
+Recuerda que el número es 2⁵⁷ · 3⁴ · 5⁵³ · 4. Pero también, podemos calcular el número completo módulo 10 para asegurarnos.
+
+Calculando cada parte:
+
+- 2⁵⁷ mod 10: periodicidad de 2 es every 4. 57 ÷ 4 = 14 con resto 1. 2¹ = 2.
+
+- 3⁴ mod 10: periodicidad de 3 es every 4. 4 ÷ 4 = 1 con resto 0. 3⁴ ≡ 1.
+
+- 5⁵³ mod 10: always 5.
+
+Multiplicando: (2) · (1) · (5) = 10, y la último xifra no null es 0.
+
+De lo que se observa, la respuesta debería ser 0, pero no hay una opción C, ya que el resultado es 0. Sin embargo, en las respuestas dadas, la C es 4. Esto sugiere que quizás el cálculo de la periodicidad de 2 es incorrecto.
+
+Reconsiderando:
+
+- Para 2⁵⁷ mod 10: periodicidad de 4. 57 ÷ 4 = 14 con resto 1. 2¹ = 2. Por lo tanto, 2⁵⁷ ≡ 2 mod 10.
+
+Ahora, re evaluando:
+
+- 2⁵⁷ ≡ 2,
+
+- 3⁴ ≡ 1,
+
+- 5⁵³ ≡ 5.
+
+Multiplicando: 2 · 1 · 5 = 10. La último xifra no null es 0. Sin embargo, la opción C es 4.
+
+Debemos ser cuidadosos al reescritar el número. Tal vez debamos considerar que el exponente de 5 podría influir en la periodicidad o en el resultado.
+
+Reescribiendo el número: 2⁵⁷ · 3⁴ · 5⁵³ · 4 = (2⁵⁷ · 5⁵³) · (3⁴ · 4).
+
+Ahora, (2⁵⁷ · 5⁵³) es (10¹⁰ · 2^(57-10)) = 10¹⁰ · 2^47. 10¹⁰ termina con un cero en la decena, así que multiplicando por 2^47 (un número par) no change el resultado deLastly al final.
+
+Luego, (3⁴ · 4) = 81 · 4 = 324. Al multíplicar 324 por un número terminado con cero en la decena, el resultado también terminará en un cero.
+
+Por lo tanto, la último xifra no null es 0, pero no hay una opción C en las respuestas. Esto sugiere que perhaps no hay una respuesta correcta entre las dadas, o quizás hay una erratum.
+
+Sin embargo, revisando again:
+
+Raonament: El número es 2⁵⁷ · 3⁴ · 5⁵³ ·4 = 2^(57)·3^4·5^(53)·2^2 = 2^(59)·3^4·5^53.
+
+Reescribiendo como (2^59 ·5^53) ·(3^4):
+
+- 2^59 ·5^53 =10^53 ·2^6. 10^53 termina con ceros, multiplicando por 2^6=64, no se modifican los lastos.
+
+Ahora, (3^4)=81. Al multíplicar 81 ·10^53 ·2^6: 10^53 termina con ceros, 2^6=64 termina con 4 y 0. 81 ·64=5184. Por lo tanto, el número terminará en 5184·10^53, lo que termina en 4.
+
+Ah, así que la última xifra no null es 4.
+
+Ah, ya lo he seen. Dado que multiplicamos 81 ·64 =5184, y por cada potencia de 10^53, el resultado terminará en 4.
+
+Por lo tanto, la respuesta correcta es C:4.
+</think>
+
+La última xifra no nula del número es **C) 4**.
+
+Raonament:
+
+El número se puede expressar como \(2^{57} \cdot 3^4 \cdot 5^{53} \cdot 4\).
+
+Simplificamos \(5^{53}\):
+
+\(5^{53}\) termina con un cero en la decena.
+
+Luego, multiplicamos por \(2^2 = 4\) (de 4), lo que da 16. No se modifican los lastos excepto que 6 termina con 6 y 4 termina con 4.
+
+Ahora, multiplicamos por 81 (de \(3^4\)):
+
+\(16 \cdot 81 = 1296\). Por lo tanto, el resultado terminará en 6. Sin embargo, se multíplica por ceros adicionales de \(5^{53}\):
+
+Finalmente, la última xifra no nula del número es **C) 4**.

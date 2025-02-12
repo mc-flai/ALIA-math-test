@@ -1,0 +1,88 @@
+<think>
+Para resolver este problema, primero noto que ambos Pgül i Iolanda resuelven ecuaciones cuadráticas diferentes. Pgül resula la ecuación \( ax^2 + bx + c = 0 \) y Iolanda resula la ecuación \( bx^2 + ax + c = 0 \).
+
+Noto que ambas ecuaciones tienen la misma constante c, pero les van aarranjar la x^2 y x términos con el orden reversing de a i b.
+
+Ahora, me preocupa que las soluciones communes de ambas ecuaciones. Supongamos que existen dos soluciones, r y s, communes a ambas ecuaciones.
+
+Para r: \( ar^2 + br + c = 0 \) y \( br^2 + ar + c = 0 \).
+
+Restando las ecuaciones: \( (ar^2 + br + c) - (br^2 + ar + c) = 0 \Rightarrow (a - b)(r^2 - r) = 0 \).
+
+Si a ≠ b, entonces r(r - 1) = 0, lo que implica r = 0 o r = 1.
+
+Similarmente para s: \( as^2 + bs + c = 0 \) y \( bs^2 + as + c = 0 \).
+
+Restando: \( (a - b)(s^2 - s) = 0 \Rightarrow s(s - 1) = 0 \), lo que implies s = 0 o s = 1.
+
+Ahora, verifico las posibilidades:
+
+1. r = 0 y s = 0: Entonces c = 0, pero el problema dice que no hay números enteros exceptuadis c ≠ 0.
+
+2. r = 0 y s = 1: Entonces c = 0 (de la primera ecuación) y c = a(1)^2 + b(1) = a + b (de la segunda ecuación). Pero si c = 0, entonces a + b = 0.
+
+3. r = 1 y s = 1: Entonces ecuaciones implyan que 1 es una raíz multiple, pero debemos verificar.
+
+Si consideramos las opciones de la pregunta, verifico:
+
+A) Solución communes ha de ser 0: Pero no se debe necessarily, ya que r = 1 y s = 1 también es possibles.
+
+B) Equación ax² + bx + c tiene una raíz real. Puede ser cierto o no, dependiendo de los valores de a, b, c.
+
+C) a > 0: No se debe necessarily verifiable, por ejemplo, con a < 0.
+
+D) b < 0: No es necessary.
+
+E) a + b + c = 0: Si r = s = 1 son raíces comunes, entonces:
+
+1 + 1 + c/1 = 2 + c = 0 ⇒ c = -2
+
+Pero también necesitaré asegurarme de que c ≠ 0 y que los números enteros a, b, c sean diferentes.
+
+Sin embargo, el problema dice que no hay que importar a, b, o c; solo que son enteros diferentes y cap t Splash none. Sin embargo, la condición que arise es c = -2y a + b + c = 0 ⇒ a + b = 2.
+
+Pero no necessarily implya que a + b + c = 0.
+
+También, cuando r = s = 1 son raíces communes:
+
+1: \( a(1)^2 + b(1) + c = 0 \Rightarrow a + b + c = 0 \).
+
+Ahora verifico si es así.
+
+Si r y s son 1, entonces ecuación ax² + bx + c = 0 tiene raíces x = 1(double root)? No, unless discriminant is zero. Pero para que tengan dos raíces communes, need both.
+
+Sin embargo, la condición de que r y s sean 1 impliesa a + b + c = 0, lo que es una de las opciones (E).
+
+De las opciones dadas, solo E cumple con la condición de comúndolas.
+
+Así que la respuesta correcta es E.
+</think>
+
+Luego de analizar, la única opción certa siempre será la E) a + b + c = 0. 
+
+**Raonament:**
+
+Pgül resuelve \( ax^2 + bx + c = 0 \).
+
+Iolanda resuelve \( bx^2 + ax + c = 0 \).
+
+Si r y s son raíces communes, then:
+
+1. \( ar^2 + br + c = 0 \)
+2. \( br^2 + ar + c = 0 \)
+
+Restando las ecuaciones: \( (a - b)(r^2 - r) = 0 \). Si a ≠ b, r(r - 1) = 0 ⇒ r = 0 o r = 1.
+
+Similarmente, para s: \( as^2 + bs + c = 0 \) y \( bs^2 + as + c = 0 \).
+
+Restando: \( (a - b)(s^2 - s) = 0 \). Si a ≠ b, s(s - 1) = 0 ⇒ s = 0 o s = 1.
+
+Si r = s = 1, entonces:
+
+\( a(1)^2 + b(1) + c = 0 ⇒ a + b + c = 0 \).
+
+De las opciones dadas, solo la E es certa.
+
+**Respuesta:**
+
+\boxed{E}

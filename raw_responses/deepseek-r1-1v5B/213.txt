@@ -1,0 +1,75 @@
+<think>
+El problema es de cálculo del porcentaje de variación del preu del petroli después de tres setmanes de su evolución.
+
+Primero, definimos el preu inicial como P.
+
+En las primeras dos setmanas, el preu aumenta 20% cada una. La primera setmana el preu es P + 20%*P = 1.2P. La segunda setmana, el nuevo preu augmenta de 20%, por lo que es 1.2P + 20%*(1.2P) = 1.44P.
+
+La tercera setmana, el preu aumenta de 25%. Entonces, el nuevo preu será 1.44P + 25%*(1.44P) = 1.728P.
+
+Ahora, a la siguiente setmana, el preu disminuye de 20%. El nuevo preu será 1.728P - 20%*(1.728P) = 1.728P * 0.8 = 1.3824P.
+
+Comparando el final al inicial (P), la variación total es de un 38.24%. Averiginemos las opciones proporcionadas:
+
+A) Disminuye de 20%: No, ya no es lo mismo.
+
+B) No change: No, ya varíó.
+
+C) Augmente de 25%: No, ya varió más.
+
+D) Augpite de 20%: No, ya varió más.
+
+E) Augpite de 5%: No, ya varió más.
+
+Por lo tanto, no hay una opción correcta en las dadas. Sin embargo, a continuación la dijamos que el preu ha aumentado aproximadamente de 38.24%, pero none de las opciones dada es correcta.
+</think>
+
+**Raonament:**
+
+1. **Definición inicial del preu:**
+   - Sea \( P \) el valor del preu inicial.
+
+2. **Incremento en las primeras dos setmanas (20%):**
+   - La primera setmana: 
+     \[
+     P_{\text{new}} = P + 20\% \times P = 1.2P
+     \]
+   - La segunda setmana:
+     \[
+     P_{\text{new}} = 1.2P + 20\% \times 1.2P = 1.44P
+     \]
+
+3. **Incremento en la tercera setmana (25%)**:
+   - La tercera setmana:
+     \[
+     P_{\text{new}} = 1.44P + 25\% \times 1.44P = 1.728P
+     \]
+
+4. **Decremento a la siguiente setmana (20%)**:
+   - La oción succeedinga de la tercera setmana:
+     \[
+     P_{\text{new}} = 1.728P - 20\% \times 1.728P = 1.3824P
+     \]
+
+5. **Comparación con el inicial:**
+   - El preu final es \( 1.3824P \).
+   - Variación total:
+     \[
+     1.3824P - P = 0.3824P
+     \]
+   - Porcentaje de disminución:
+     \[
+     \frac{0.3824P}{P} \times 100\% = 38.24\%
+     \]
+
+6. **Contradicción con las opciones proporcionadas:**
+   - A) 20% disminución: No, varía más.
+   - B) No canvió: No, varía.
+   - C) Augpite de 25%: No, varía más.
+   - D) Augpite de 20%: No, varía más.
+   - E) Augpite de 5%: No, varía más.
+
+**Respuesta final:**
+\[
+\boxed{E}
+\]

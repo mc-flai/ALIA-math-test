@@ -1,0 +1,39 @@
+<think>
+Prime, calculem quants muntons tenim inicial: 555. Quem s'una 9 pedres cadascun, per 555 pedres es voliren unir. Com calculer el total?
+
+Per cada pedrea, tenim 9 munits, per 555 pedres, donades:
+
+555 pedres × 9 munits/pedre = 4995 munits.
+
+A continuació, dividim la pila resultant de pedres en muntons de 5 pedres cadascun. Ambitivament, en quants pedres heigem? Diferent en el pass que heigems uniron.
+
+También calcularem el nombre de pedres resultant:
+
+4995 munits ÷ 5 munits/pedre = 999 pedres.
+
+Per donar a cada pedra una munit de 5, tenim per 999 pedres:
+
+999 × 5 = 4995 munits.
+</think>
+
+Claramente, seguiem el procés de raonament següent:
+
+1. **Calcular el número total de munitos:**
+   
+   \[
+   555\ \text{pedres} \times 9\ \text{munitos/pedre} = 4995\ \text{munitos}
+   \]
+
+2. **Dividir la pila resultant de pedres en munitos de 5 cadascun:**
+   
+   \[
+   \frac{4995\ \text{munitos}}{5\ \text{munitos/pedre}} = 999\ \text{pedres}
+   \]
+
+3. **Obtener el número total de munitos:**
+   
+   \[
+   999\ \text{pedres} \times 5\ \text{munitos/pedre} = 4995\ \text{munitos}
+   \]
+
+**Respuesta final:** \(\boxed{B)\ 999}\)

@@ -1,0 +1,31 @@
+<think>
+Para resolver este problema, primero identifico que Rita esquan las tres peces menores y forman números de cuatro dígitos. Dado que el número 5333 está a considerar, las demás peces son 532, 531, 530 y 431.
+
+Luego, he identificado todas las pares de peces combinadas para formar números de cuatro dígitos. Esto nos da los siguientes números: 4531, 4532, 4533, 5304, 5314 y 5324.
+
+Finalmente, contamos los posibles números diferentes que podemos formar con estas combinaciones.
+</think>
+
+Para resolver este problema, seguiremos estos pasos:
+
+1. **Determinar las Peces Menores:**
+   Rita es Quantitambiénquan las tres peces menores que llevan a 5333. Estas son:
+   - 431
+   - 432
+   - 530
+
+2. **Formar Números de Cuatro Dígitros:**
+   Llevamos las peces menores dos a dos para combinarlas y formar números de cuatro dígitros. Esto nos da los siguientes números:
+   - 431 + 432 = 863
+   - 431 + 530 = 961
+   - 432 + 530 = 962
+
+3. **Contar los Números Differentes:**
+   A continuación, contamos cuántos números diferentes podemos formar con estas combinaciones:
+   - 863
+   - 961
+   - 962
+
+**Respuesta Final:**
+
+$\boxed{E}$

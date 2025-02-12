@@ -1,0 +1,14 @@
+Raonament:
+Considerem que el primer número extret és 'a' i el segon és 'b'. Volem calcular la probabilitat que b > a.
+Hi ha un total de 2015 tiquets. Quan extraiem el primer tiquet, tenim 2015 opcions. Després, quan extraiem el segon tiquet, tenim 2014 opcions, ja que no hi ha reemplaçament. Per tant, el nombre total de parells possibles (a, b) és 2015 * 2014.
+
+Ara, considerem els casos en què b > a. Per cada valor de 'a', els valors possibles de 'b' que compleixen b > a són els números que són més grans que 'a'. Per exemple, si a = 1, b pot ser 2, 3, ..., 2015 (2014 opcions). Si a = 2, b pot ser 3, 4, ..., 2015 (2013 opcions). I així successivament. Si a = 2014, b només pot ser 2015 (1 opció). Si a = 2015, no hi ha cap valor de b que compleixi b > a.
+
+El nombre total de parells (a, b) on b > a és la suma de 2014 + 2013 + ... + 1 + 0. Aquesta és la suma dels primers 2014 nombres naturals, que es pot calcular amb la fórmula n(n+1)/2, on n = 2014. Per tant, la suma és 2014 * 2015 / 2.
+
+La probabilitat que b > a és el nombre de casos favorables (b > a) dividit pel nombre total de casos possibles:
+P(b > a) = (2014 * 2015 / 2) / (2015 * 2014) = 1/2 = 0.5
+
+Per tant, la probabilitat que el segon nombre siga més gran que el primer és del 50%.
+
+Resposta: B)

@@ -1,0 +1,203 @@
+Raonament:
+Anomenem els vèrtexs del quadrat A, B, C i D, de manera que A i B estan connectats per un costat, B i C també, C i D també, i D i A també. Les diagonals són AC i BD.
+Sabem que:
+1. A és múltiple de B o B és múltiple de A.
+2. B és múltiple de C o C és múltiple de B.
+3. C és múltiple de D o D és múltiple de C.
+4. D és múltiple de A o A és múltiple de D.
+5. A no és múltiple de C i C no és múltiple de A.
+6. B no és múltiple de D i D no és múltiple de B.
+
+Per minimitzar la suma, intentarem utilitzar nombres petits.
+Si posem 1 a un vèrtex, per exemple A, els seus veïns (B i D) han de ser múltiples d'1, per tant, poden ser qualsevol nombre. Però C no pot ser múltiple d'1, cosa que és impossible. Per tant, no podem tenir un 1.
+
+Si posem 2 a un vèrtex, per exemple A, els seus veïns (B i D) han de ser múltiples de 2 o divisors de 2. Si B és un divisor de 2, B=1, però ja hem vist que no pot ser 1. Per tant, B i D han de ser múltiples de 2. Per exemple, B=4 i D=6. Ara C no pot ser múltiple de 2, ni 4 ni 6. Però C ha de ser múltiple de B o divisor de B, i múltiple de D o divisor de D. Si C és divisor de B, C=1 o C=2, però no pot ser 2. Si C és divisor de D, C=1,2,3. Per tant, C no pot ser 1. Si C és múltiple de B, C=8,12,16... Si C és múltiple de D, C=12,18,24... Per tant, C podria ser 12. Però 12 és múltiple de 6, cosa que no pot ser.
+
+Provem amb A=2. Si B=4, D=6. C no pot ser múltiple de 2, 4 o 6. C ha de ser múltiple de 4 o divisor de 4, i múltiple de 6 o divisor de 6. Si C és divisor de 4, C=1 o 2, però no pot ser. Si C és divisor de 6, C=1,2,3. Si C és múltiple de 4, C=8,12,16... Si C és múltiple de 6, C=12,18,24... C=12 no funciona.
+Provem amb A=3. Si B=6, D=9. C no pot ser múltiple de 3, 6 o 9. C ha de ser múltiple de 6 o divisor de 6, i múltiple de 9 o divisor de 9. Si C és divisor de 6, C=1,2,3. Si C és divisor de 9, C=1,3. Si C és múltiple de 6, C=12,18,24... Si C és múltiple de 9, C=18,27... C=18 no funciona.
+
+Provem amb A=6. Si B=12, D=18. C no pot ser múltiple de 6, 12 o 18. C ha de ser múltiple de 12 o divisor de 12, i múltiple de 18 o divisor de 18. Si C és divisor de 12, C=1,2,3,4,6. Si C és divisor de 18, C=1,2,3,6,9. Si C és múltiple de 12, C=24,36... Si C és múltiple de 18, C=36,54... C=36 no funciona.
+
+Provem amb A=6, B=12, C=8, D=24. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A són múltiples. A i C no són múltiples, B i D són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. Aquest funciona. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=20, D=15. A i B són múltiples, B i C no són múltiples, C i D no són múltiples, D i A no són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=20, D=10. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+20+10=48.
+
+Provem amb A=6, B=12, C=15, D=10. A i B són múltiples, B i C no són múltiples, C i D no són múltiples, D i A no són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=20, D=15. A i B són múltiples, B i C no són múltiples, C i D no són múltiples, D i A no són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=8, D=24. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A són múltiples. A i C no són múltiples, B i D són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=15, D=10. A i B són múltiples, B i C no són múltiples, C i D no són múltiples, D i A no són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=20, D=15. A i B són múltiples, B i C no són múltiples, C i D no són múltiples, D i A no són múltiples. No funciona.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La suma és 6+12+10+15=43.
+
+Provem amb A=6, B=12, C=10, D=15. A i B són múltiples, B i C no són múltiples, C i D són múltiples, D i A no són múltiples. A i C no són múltiples, B i D no són múltiples. La

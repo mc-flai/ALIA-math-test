@@ -1,0 +1,155 @@
+<think>
+Para resolver este problema, primero notemos que hay dos ecuaciones dadas:
+
+1. \(a + b + c = 100\)
+2. \(\frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{a+c} = 0.1\)
+
+Después, es necessary encontrar el valor de la expresión:
+\[
+\frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a}
+\]
+
+Primero, observamos que en las ecuaciones dadas, las sumas \(a+b\), \(b+c\) y \(a+c\) sondenominadores de fracciones. Sabemos que la suma total de \(a+b+c = 100\), por lo que cada denominador es la suma de dos variables.
+
+Vamos a denotar:
+- \(x = a + b\)
+- \(y = b + c\)
+- \(z = a + c\)
+
+Entonces, las ecuaciones secaniplekan como:
+1. \(x + y + z = 2(a + b + c) = 200\) (porque cada variable está incluída dos veces en las sumas \(a+b\), \(b+c\), y \(a+c\))
+2. \(\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 0.1\)
+
+Después, busquemos una relación que connecte la expresión desigualada con las ecuaciones dadas. La expresión que necesitamos encontrar es:
+\[
+\frac{c}{x} + \frac{a}{y} + \frac{b}{z}
+\]
+
+Notamos que \(x = a + b\), por lo que \(c = 100 - x\). De manera similar, \(a = y - c\) y \(b = z - c\).
+
+Reemplazando estos valores en la expresión desigualada:
+\[
+\frac{c}{x} + \frac{y - c}{y} + \frac{z - c}{z}
+\]
+
+Simplificando cada término:
+- \(\frac{c}{x}\)
+- \(1 - \frac{c}{y}\) (porque \(\frac{y - c}{y} = 1 - \frac{c}{y}\))
+- \(1 - \frac{c}{z}\)
+
+Sumando todos los términos:
+\[
+\frac{c}{x} + 1 - \frac{c}{y} + 1 - \frac{c}{z}
+\]
+Simplificando más:
+\[
+2 - c\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right)
+\]
+
+Ahora, reemplazamos \(c\) por \(100 - x\), ya que \(a + b = x\) y \(c = 100 - a - b = 100 - x\).
+
+Entonces:
+\[
+2 - (100 - x)\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right)
+\]
+
+Sabemos que la suma de las fracciones es 0.1, por lo que:
+\[
+2 - (100 - x)(0.1) = 2 - 10 + 0.1x = -8 + 0.1x
+\]
+
+Ahora, necesitamos encontrar el valor de \(x\). Sabemos que \(x + y + z = 200\) y que:
+\[
+\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 0.1
+\]
+
+De esta manera, intentamos buscar una relación entre \(x\), \(y\), y \(z\) que permita encontrar el valor de \(c/(a+b)\).
+
+Finalmente, observando las opciones dadas (A) 0, B) 1, C) 2, D) 7, E) 10), la respuestaursada es 0.
+</think>
+
+Para resolver este problema, seguiremos los siguientes pasos:
+
+**Paso 1: Definir las variables**
+
+Denotamos:
+- \(x = a + b\)
+- \(y = b + c\)
+- \(z = a + c\)
+
+De esta manera, sabemos que:
+\[
+a + b + c = 100 \implies x + y + z = 2(a + b + c) = 200
+\]
+
+**Paso 2: Utilizar las ecuaciones dadas**
+
+Sabemos que:
+\[
+\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 0.1
+\]
+
+Después, es necessary encontrar el valor de la expresión:
+\[
+E = \frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a}
+\]
+que se puede reescribir como:
+\[
+E = \frac{c}{x} + \frac{a}{y} + \frac{b}{z}
+\]
+
+**Paso 3: Expressión en términos de x, y, z**
+
+Notamos que \(c = 100 - a - b = 100 - x\), por lo que:
+\[
+E = \frac{100 - x}{x} + \frac{y - c}{y} + \frac{z - c}{z}
+\]
+
+Simplificando cada término:
+- \(\frac{100 - x}{x} = 100/x - 1\)
+- \(\frac{y - (100 - x)}{y} = \frac{y - 100 + x}{y}\)
+- \(\frac{z - (100 - x)}{z} = \frac{z - 100 + x}{z}\)
+
+Sumando todos los términos:
+\[
+E = \left(100/x - 1\right) + \left(1 - \frac{100 - x}{y}\right) + \left(1 - \frac{100 - x}{z}\right)
+\]
+Simplificando más:
+\[
+E = 3 - (100 - x)\left(\frac{1}{x} + \frac{1}{y} + \frac{1}{z}\right)
+\]
+
+**Paso 4: Sustituir el valor de la suma de las fracciones**
+
+Recall que:
+\[
+\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 0.1
+\]
+Sustituimos este valor en la expresión para \(E\):
+\[
+E = 3 - (100 - x)(0.1) = 3 - 10 + 0.1x = -7 + 0.1x
+\]
+
+**Paso 5: Determinar el valor de x**
+
+Para encontrar el valor de \(x\), observamos que:
+\[
+x + y + z = 200 \quad \text{y} \quad \frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 0.1
+\]
+Sin más información, es imposible encontrar el valor exacto de \(x\) de esta manera. Sin embargo, observamos que las opciones dadas incluyen un resultado que podría ser 0.
+
+**Paso 6: Comparar con las opciones**
+
+Comparando la expresión para \(E\) (\(-7 + 0.1x\)) con las opciones dadas:
+- A) 0: \(-7 + 0.1x = 0 \implies x = 70\)
+- B) 1: \(-7 + 0.1x = 1 \implies x = 80\)
+- C) 2: \(-7 + 0.1x = 2 \implies x = 90\)
+- D) 7: \(-7 + 0.1x = 7 \implies x = 140\)
+- E) 10: \(-7 + 0.1x = 10 \implies x = 170\)
+
+Dado que \(a + b + c = 100\), y \(x = a + b\), el valor máximo de \(x\) podría ser 100, lo que implica que \(E = -7 + 0.1 \times 100 = 3\). Sin embargo, none de las opciones es 3.
+
+Sin embargo, observamos que cuando \(x = 90\), \(E = 2\), lo cual está en las opciones D. Sin más información, la respuestaursada es:
+
+**Respuestaursada:**
+\boxed{0}

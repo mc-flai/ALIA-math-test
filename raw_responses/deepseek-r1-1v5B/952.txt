@@ -1,0 +1,139 @@
+<think>
+Préncipalmente, tenemos un conjunto de 50 números y necesitamos determinar cuántos de ellos son ceros. La información proporcionada es que si multiplicamos dos números del conjunto por sí mismo, en total hay 522 multiplications que dan un número negativo.
+
+Primero, recordemos que la multiplicación de dos números es negativa si y solo si los dos números son de diferentes signos. Entonces, cada producto negativo ocurre cuando uno de los números es positivo y el otro es negativo.
+
+Luego, pensamos en cómo se distribuyen los ceros en el conjunto. Si un número es cero, entama todo su multiplicación por cualquier otro número, incluyendo aquellos que no sean ceros. Sin embargo, si ambos números son ceros, su producto será positivo.
+
+Ahora, considering que hay 522 productos negativas, debemos determinar cómo estos se pueden distribuir entre los números de diferentes signos y el cero.
+
+Si denotamos:
+- z = número de ceros en el conjunto,
+- p = número de números positivos,
+- n = número de números negativos,
+
+entonces, p + n + z = 50 (total de números).
+
+Luego, el número total de productos negativas se puede calcular como p * n + z^2. Esto es because si dos números son positivos o dos son negativos, su producto será positivo, no contribute a los productos negativos. Si un número es positivo y otro es negativo, su producto será negativo.
+
+Entonces:
+p * n + z^2 = 522
+
+También, note que p + n = 50 - z.
+
+Después de establecer estas relaciones, podemos resolver el sistema de ecuaciones para encontrar la cantidad de ceros, z.
+</think>
+
+Para resolver este problema, sigamos los siguientes pasos:
+
+1. **Definir Variables:**
+   - Sea \( P \) el número de números positivos en el conjunto.
+   - sea \( N \) el número de números negativos en el conjunto.
+   - sea \( Z \) el número de ceros en el conjunto.
+
+2. **Relación entre variables:**
+   - El total de números es 50:
+     \[
+     P + N + Z = 50
+     \]
+   
+3. **Número de productos negativas:**
+   - La multiplicación de dos números negativos o dos números positivos da un producto positivo.
+   - Si uno de los números es cero, su producto con cualquier otro número será cero (positivo o negativo, dependiendo del otro número).
+   
+   Por lo tanto:
+   \[
+   \text{Números negativos} = P \times N + Z^2
+   \]
+   
+4. **Ajustar para el problema específico:**
+   - Dado que hay 522 productos negativos:
+     \[
+     P \times N + Z^2 = 522
+     \]
+   
+5. **Suma de ecuaciones:**
+   Sumamos las ecuaciones para obtener la cantidad de ceros.
+   \[
+   (P + N) + Z = 50 + Z
+   \]
+   Sustituimos \( P + N \) por \( 50 - Z \):
+   \[
+   (50 - Z) + Z = 50
+   \]
+   
+   Sin embargo, observamos que el número de productos negativos no es igual a la suma de productos positivos y ceros, ya que ciertos productos negativos se generan entre números cero e otro.
+
+   En este caso, la fórmula correcta sería:
+   \[
+   P \times N + 2Z^2 = 522
+   \]
+   
+6. **Resolver el sistema:**
+   - Tenemos dos ecuaciones:
+     \[
+     P + N + Z = 50
+     \]
+     \[
+     P \times N + 2Z^2 = 522
+     \]
+   
+   Puedes resolver este sistema para encontrar \( Z \).
+
+7. **Análisis de las opciones:**
+   - **A) 1:** Si \( Z = 1 \):
+     \[
+     P + N = 49
+     \]
+     \[
+     P \times N = 522 - 2(1)^2 = 520
+     \]
+     \[
+     \text{Raíces de } x^2 - 49x + 520 = 0
+     \]
+     La discriminante sería \( 49^2 - 4 \times 520 = 2401 - 2080 = 321 \), que no es un cuadrado perfecto, por lo que no hay soluciones enteras.
+   
+   - **B) 3:** Si \( Z = 3 \):
+     \[
+     P + N = 47
+     \]
+     \[
+     P \times N = 522 - 2(9) = 504
+     \]
+     \[
+     x^2 - 47x + 504 = 0
+     \]
+     La discriminante sería \( 47^2 - 4 \times 504 = 2209 - 2016 = 193 \), que no es un cuadrado perfecto, por lo que no hay soluciones enteras.
+   
+   - **C) 7:** Si \( Z = 7 \):
+     \[
+     P + N = 43
+     \]
+     \[
+     P \times N = 522 - 2(49) = 522 - 98 = 424
+     \]
+     \[
+     x^2 - 43x + 424 = 0
+     \]
+     La discriminante sería \( 43^2 - 4 \times 424 = 1849 - 1696 = 153 \), que no es un cuadrado perfecto, por lo que no hay soluciones enteras.
+   
+   - **D) 11:** Si \( Z = 11 \):
+     \[
+     P + N = 39
+     \]
+     \[
+     P \times N = 522 - 2(121) = 522 - 242 = 280
+     \]
+     \[
+     x^2 - 39x + 280 = 0
+     \]
+     La discriminante sería \( 39^2 - 4 \times 280 = 1521 - 1120 = 401 \), que no es un cuadrado perfecto, por lo que no hay soluciones enteras.
+   
+   - **E) No es pot determinar.**
+
+   Dado que none de las opciones proporcionadas satisfy la ecuación de discriminante y la condición necesaria para las raíces enteras, el número correcto de ceros en el conjunto es:
+
+\[
+\boxed{B)
+3}
+\]

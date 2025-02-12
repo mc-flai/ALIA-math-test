@@ -1,0 +1,14 @@
+Raonament:
+Per tal d'obtenir la suma més petita possible, hem de buscar que els primers dilluns de juliol, agost i setembre caiguin en els dies més petits possibles.
+
+*   **Juliol:** El primer dilluns de juliol pot ser com a molt aviat el dia 1, si el dia 1 de juliol és dilluns.
+*   **Agost:** Si el dia 1 de juliol és dilluns, el dia 1 d'agost serà dijous (ja que juliol té 31 dies, i 31 = 4 setmanes + 3 dies). Per tant, el primer dilluns d'agost serà el dia 5.
+*   **Setembre:** Si el dia 1 d'agost és dijous, el dia 1 de setembre serà diumenge (ja que agost té 31 dies, i 31 = 4 setmanes + 3 dies). Per tant, el primer dilluns de setembre serà el dia 2.
+
+La suma dels dies seria 1 + 5 + 2 = 8.
+
+Ara bé, hem de comprovar si podem obtenir una suma més petita. Si el primer dilluns de juliol fos el dia 2, el primer d'agost seria el dia 6 i el primer de setembre seria el dia 3. La suma seria 2+6+3=11. Si el primer dilluns de juliol fos el dia 3, el primer d'agost seria el dia 7 i el primer de setembre seria el dia 4. La suma seria 3+7+4=14. Si el primer dilluns de juliol fos el dia 4, el primer d'agost seria el dia 1 i el primer de setembre seria el dia 5. La suma seria 4+1+5=10. Si el primer dilluns de juliol fos el dia 5, el primer d'agost seria el dia 2 i el primer de setembre seria el dia 6. La suma seria 5+2+6=13. Si el primer dilluns de juliol fos el dia 6, el primer d'agost seria el dia 3 i el primer de setembre seria el dia 7. La suma seria 6+3+7=16. Si el primer dilluns de juliol fos el dia 7, el primer d'agost seria el dia 4 i el primer de setembre seria el dia 1. La suma seria 7+4+1=12.
+
+Per tant, la suma més petita que podem obtenir és 8.
+
+Resposta: D)

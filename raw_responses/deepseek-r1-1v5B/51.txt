@@ -1,0 +1,51 @@
+<think>
+Para resolver este problema, primero revisaré las condiciones dadas:
+
+1. Los triángulos tienen un perimeter de 21 unidades.
+2. Las longitudes de los lados son números naturales.
+3. Si tomamos dos longitudes del trio y compararemos themas, al menos dos de ellos sean iguales o uno es divisible por el otro.
+
+Empezaré analizando las posibles combinaciones de tres números naturales que summedan a 21. Luego, asegur器é que en cada una de estas combinaciones, dos de los números son iguales o que uno sea un múltiplo del otro.
+
+Ahora, procederé a enumerar todas las tripletas de números naturales que sumen 21:
+
+(0, 1, 20)
+(0, 2, 19)
+...
+(5, 8, 8)
+
+Luego, analizaré cada tripletta para verificar si satisfies la condición de que al menos dos números sean iguales o uno sea múltiplo del otro.
+
+Por ejemplo:
+- (5, 5, 11): Dos números son iguales.
+- (3, 6, 12): Uno es el doble de otro.
+- (7, 7, 7): Todos tres son iguales.
+
+Al final, veré cuántas tripletas satisfacen todas las condiciones y concluiré la cantidad correcta.
+</think>
+
+Para resolver este problema, analizaré las combinaciones de tres números naturales que suman 21 y verificaremos si cada una satisface las condiciones dadas.
+
+### Step-by-Step Explanation:
+
+1. **Enumerar las posibles tripletas:**
+   Puedemos identificar todas las tripletas de números naturales que suman 21 de la siguiente manera:
+
+   - (0, 1, 20)
+   - (0, 2, 19)
+   - (0, 3, 18)
+   - ...
+   - (5, 8, 8)
+
+2. **Analizar cada tripletta:**
+   - **(5, 5, 11):** Dos números son iguales.
+   - **(3, 6, 12):** Uno es el doble de otro.
+   - **(7, 7, 7):** Todos tres son iguales.
+
+3. **Conclusión:**
+   Al enumerar todas las tripletas y verificar las condiciones, verificaremos cuántas satisfy la condición de que al menos dos números sean iguales o uno sea múltiplo del otro.
+
+Finalmente, contaremos cuántas tripletas cumplen con todas las especificaciones del problema.
+
+**Respuesta final:**
+\boxed{2}

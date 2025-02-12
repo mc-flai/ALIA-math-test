@@ -1,0 +1,22 @@
+Raonament:
+Per a fer el nombre més gran possible de rams iguals utilitzant totes les roses, hem de trobar el màxim comú divisor (MCD) del nombre de roses de cada color: 42 roses blanques, 66 roses grogues i 78 roses roges.
+
+1. Descomposició en factors primers:
+   - 42 = 2 x 3 x 7
+   - 66 = 2 x 3 x 11
+   - 78 = 2 x 3 x 13
+
+2. Identificació dels factors comuns:
+   Els factors comuns a tots tres nombres són 2 i 3.
+
+3. Càlcul del MCD:
+   MCD(42, 66, 78) = 2 x 3 = 6
+   Això significa que la florista pot fer 6 rams iguals.
+
+4. Càlcul de roses grogues per ram:
+   Per saber quantes roses grogues hi haurà a cada ram, dividim el nombre total de roses grogues (66) pel nombre de rams (6):
+   66 / 6 = 11
+
+Per tant, hi haurà 11 roses grogues a cada ram.
+
+Resposta: D)

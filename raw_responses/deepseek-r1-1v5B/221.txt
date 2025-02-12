@@ -1,0 +1,71 @@
+<think>
+Primeixem la distància entre A i B, que es calcula com la suma de AB i BC: 13 + 11 = 24.
+
+Llavors, calculem la distància entirement de A a D. Com tenim en compte les distançes d'AB, CD i DA: 13 + 11 + 14 + 12 = 50.
+
+Tambí emusvem el valor de AC i BD sense l'ordre exacte dels punts alhoraixos. Ambitament, tenim que AC es calcula com AB + BC o BC + CA, ambigament possible. De la mateixa manera, BD serà distància entre dos punts perquè són alhoritzats a la recta.
+
+Finalment, sumem les distançes de A a C i B a D, resultant en 23.
+</think>
+
+**Pregunta:**
+Els punts \( A \), \( B \), \( C \) i \( D \) estan dibuixats en une recta en algun ordre. Sabem somems de les distанçats que els separen, que són:
+\[
+AB = 13,\ BC = 11,\ CD = 14,\ DA = 12
+\]
+Quin és el valor de \( AC + BD \)?
+
+**Resposta:**
+
+Raonament:
+
+1. **Identificar l'ordre dels punts en la recta:**
+   - Com s'ambava l'ordre dels punts, es pot observar les distançats entre dos punts i la distància total de certs punts.
+   - Ambitament, l'ordependència de l'ordre donat que l'ordependència pot ser per imposió a qualsevol alhoritzat.
+
+2. **Calcular la distància tota dels punts:**
+   - Sabem que \( DA = 12 \), i per com a mateixi, \( AB + BC + CD = 13 + 11 + 14 = 38 \).
+   - Per tant, la distància total \( AC \) es pot expressar com:
+     \[
+     AC = DA + AB + BC = 12 + 13 + 11 = 36
+     \]
+   
+3. **Calcular la distància de \( B \) a \( D \):**
+   - Així, la distància \( BD \) es pot expressar com:
+     \[
+     BD = BC + CD + DA = 11 + 14 + 12 = 37
+     \]
+   
+4. **Sumari de les distançats:**
+   - Així, la suma \( AC + BD \) es dona per:
+     \[
+     AC + BD = 36 + 37 = 73
+     \]
+
+**Però, com verificem que la solució sigui de les alternatives dada, el problema pot tenir un alborotat:**
+
+- **Si l'ordre dels punts és \( A - B - C - D \):**
+  - Llavors, la distància \( AC = AB + BC = 13 + 11 = 24 \)
+  - La distància \( BD = CD + DA = 14 + 12 = 26 \)
+  - \( AC + BD = 24 + 26 = 50 \)
+
+- **Si l'ordre dels punts és \( A - C - B - D \):**
+  - Llavors, la distància \( AC = AC \) (igual a zero)
+  - La distància \( BD = BC + CD + DA = 11 + 14 + 12 = 37 \)
+  - \( AC + BD = 0 + 37 = 37 \)
+
+- **Si l'ordre dels punts és \( A - B - D - C \):**
+  - Llavors, la distància \( AC = AB + BC + CD = 13 + 11 + 14 = 38 \)
+  - La distància \( BD = AD + DC = 12 + 14 = 26 \)
+  - \( AC + BD = 38 + 26 = 64 \)
+
+- **Si l'ordre dels punts és \( A - D - B - C \):**
+  - Llavors, la distància \( AC = AB + BC + CD + DA = 13 + 11 + 14 + 12 = 50 \)
+  - La distància \( BD = AD + DC = 12 + 14 = 26 \)
+  - \( AC + BD = 50 + 26 = 76 \)
+
+La segona alternative es pot expressar com:
+
+**Finalment, la solució donada en l'opció B) 23**
+
+\(\boxed{B}\)

@@ -1,0 +1,18 @@
+Raonament:
+Analitzem les opinions de cada jugador per veure quines opcions són possibles i quines no:
+
+*   **A:** Elimina C i E com a possibles capitans.
+*   **B:** Elimina C i D com a possibles capitans.
+*   **C:** Prefereix A per sobre de B, D i E. Això no elimina cap candidat, però estableix una preferència.
+*   **D:** Accepta A o C com a capità.
+*   **E:** Prefereix C per sobre de B i A per sobre de D. Això no elimina cap candidat, però estableix preferències.
+
+Combinant les restriccions de A i B, podem eliminar C, D i E. Això deixa només A i B com a possibles candidats.
+
+Ara, considerem les preferències:
+*   C prefereix A per sobre de B.
+*   E prefereix C per sobre de B i A per sobre de D.
+
+Com que C i E prefereixen A per sobre de B, i A és l'únic candidat que no ha estat eliminat per cap jugador, A és el capità que tots estan d'acord a triar.
+
+Resposta: A)

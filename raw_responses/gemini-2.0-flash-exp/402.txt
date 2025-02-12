@@ -1,0 +1,26 @@
+Raonament:
+Volem maximitzar la funció f(N, M) = (N+M)/(N-M), on 51 ≤ N ≤ 101 i 19 ≤ M ≤ 49. Per maximitzar una fracció, hem d'intentar que el numerador sigui el més gran possible i el denominador el més petit possible.
+
+Per maximitzar el numerador (N+M), hem de prendre els valors més grans possibles per a N i M. Així, N = 101 i M = 49.
+Per minimitzar el denominador (N-M), hem de prendre el valor més petit possible per a N i el més gran possible per a M. Així, N = 51 i M = 49.
+
+Però no podem maximitzar el numerador i minimitzar el denominador amb valors diferents de N i M. Hem de trobar una combinació que maximitzi la fracció.
+
+Si fixem N, la funció f(N, M) = (N+M)/(N-M) és creixent respecte a M. Per tant, per a un N donat, hem de prendre el valor més gran possible de M, que és M = 49. Així, la funció esdevé f(N) = (N+49)/(N-49).
+
+Ara, hem de trobar el valor de N que maximitza f(N) = (N+49)/(N-49). Podem reescriure la funció com:
+f(N) = (N-49 + 98)/(N-49) = 1 + 98/(N-49)
+
+Per maximitzar f(N), hem de minimitzar el denominador N-49. Com que 51 ≤ N ≤ 101, el valor més petit possible per a N és 51.
+Així, N = 51 i M = 49.
+f(51, 49) = (51+49)/(51-49) = 100/2 = 50.
+
+Si prenem N = 101 i M = 49, obtenim:
+f(101, 49) = (101+49)/(101-49) = 150/52 ≈ 2.88
+
+Si prenem N = 51 i M = 19, obtenim:
+f(51, 19) = (51+19)/(51-19) = 70/32 ≈ 2.18
+
+Per tant, el valor més gran s'obté quan N = 51 i M = 49, que és 50.
+
+Resposta: D)

@@ -1,0 +1,135 @@
+<think>
+Véram, teníem que resolver este problema sobre un cangur que puja por una pista de muntanya. Tenemos que calcular la longitud total del recorregut al qual el cangur ha fet 2024 salts.
+
+Primero, entiendo que el cangur perja una pista de muntanya i, en el cim, gira i torna a baixar per la mateixa pista. Ambis de los seu sals (su sal) són iguals. En particular, els salts de pujada fan, cadascun, 1 metre.
+
+Ahora, l'enunciation menciona que els salts de pujada són 3 vegues més llargs que els salts de baixada. Per tant, si els salts de pujada són 1 metre cada uno, els salts de baixada serán (1 - 3) = -2 metres? No, no, tal no, l' error es pot tenir quiel mateix: si el cangur fa munsals i gira, l'altura del muntal i la recta de baixada formen una corriencia. Per això, probablement, els salts de baixada són x metres, iels salts de pujada 3x.
+
+Per tant, el cangur perja la distància per muntal es pot expressar com a * d, on a és la velocità i d la distància. Tots iguals, en el cim, l'altitude del muntal es pot expressemix p.
+
+De la segona parte, els salts de baixada són x metres cada uno, iels salts de pujada 3x metres. Els salts de pujada fan, cadascun, 1 metre. Com s alarmsa a l'enunciat que el cangur ha fet 2024 salts en total.
+
+Tambíem pot expressar la distància total com l'arc muntal (d) seguda de l'recurs (p), amb p = d - d' o al mateix, i la distància del baix (x) per als 3 veges que es recorren.
+
+Tambíem pot expressar que el cangur ha fet 2024 salts en total, tots iguals, com les saltes de pujada i de baixada.
+
+Per aixós de claritate, definim variables:
+
+- Les saltes de pujada: s_p = x metres cada uno
+- Les saltes de baixada: s_b = 3x metres cada uno
+
+Tambíem pot expressar que el cangur ha fet 2024 salts en total. Si denotem n como el nombre d'altres salts, com a la muntal i com a l'recurs, per aixós de simetria.
+
+Per aixos de corregició: Tots iguals, es pot que les saltes de baixada són més grans o més llaves. Com exponem, el muntal es de distància d'altitude, la recta es la distància horizontal.
+
+De la segona part, el nombre total de salts per muntal es pot expressar com: (n) * (s_b + s_p) = n*(3x + x) = 4nx. Com aixós d'igualtat, la distància muntal d és igual a l'recurs p.
+
+Per aixos d'igualtat de la distància, com que en el cim el cangur perja i gira, la distància horitzontal es pot expressar como x * 2n per a l'arc del muntal.
+
+Per aixós d'igualtat horizontals:
+
+d = x * n
+
+Aplicant aixos horitzontals:
+
+d = p - d'
+
+Tambíem pot expressar que la distància horizontall de baixada es x * 2n, per aixos horizontals.
+
+Com aixós verticals:
+
+p = (3x) * n
+
+Per aixos verticalls:
+
+p = s_b * n = 3xn
+
+Aplicant aixos verticalls:
+
+d' = s_p * n = xn
+
+Donde d es la distància muntal i d' es la distància baixada.
+
+Llego a que la distància total es pot expressar com x(n) + 3x(n) = 4xn, per aixos horizontals. Per aixos verticalls, la distància vertical es x(n).
+
+Per aixós horizontals, la distància muntal d és igual a xn.
+
+Per aixos verticalls, l'recurs p es pot expressar com 3xn.
+
+Llevam a tot i tot per la distància horitzontal: xn = p - x(n)
+
+Tambíem pot expressar que el cangur ha fet 2024 salts en total. El nombre de salts al muntal es n, l'altres n als baixada.
+
+Com aixos horizontals:
+
+Total de salts horizontals: n (pujada) + n (baixada) = 2n
+
+Llena tot el problema com:
+
+Tota distància horizontals: d = xn
+La distància muntal d es igual a p, que equalseixent les expressions horizontals.
+
+Per aixos verticalls, la distància vertical d'haure (la pista) es x(n).
+
+Tambíem pot expressar que el cangur ha fet 2024 salts, tots iguals, com n (pujada) + n (baixada) = 2n = 2024.
+
+Entonces, n = 1012
+
+Per aixos verticalls:
+
+p = xn
+
+Tambíem pot expressar que la distància vertical es x(n)
+
+Per aixos horizontals, d = xn = p - x(n) => p = 2xn
+
+Com aixos verticalls, la distància horizontals es p = 3xn
+
+Aplicant tot i tot:
+
+d = xn = p - x(n)
+p = 3xn
+d = xn = 3xn - x(n) = 2xn
+
+Per aixos verticalls, la distància vertical d'haure es x(n)
+
+Llena tot i tot per les variables.
+
+Finalment, el recorregut total del cangur es la suma de la distància horizontals i la verticall.
+
+Total distàncies horizontals: xn + 3xn = 4xn
+Distància vertical: x(n)
+Tot: 4xn + x(n) = 5xn
+
+Per aixos horizontals, la distància horizontals es d = xn, que equalseixent la recta p - d', per la qual:
+
+p = (3x) * n
+d' = x * n
+
+Llevam a tot i tot per la solució.
+
+Finalment, el recorregut total del cangur serà 5xn.
+</think>
+
+El recorregut total del cangur fa 2024 salts. Com sprints que:
+
+- Les saltes de baixada (s_b) es 3 veges més llaves que les saltes de pujada (s_p). Si les saltes de pujada fien 1 metre, les saltes de baixada fan 3 metres.
+- El nombre total d'sals (n) equalseixent la distància horizontals entre l'arc del muntal i la recta de baixada. Tots iguals, el cangur ha fet 2024 salts en total.
+
+Per aixos horizontals:
+
+- La distància horizontals es x(n), que equalseixent la recta p - d'.
+- La distància vertical (la pista) es x(n).
+
+Llevam a tot i tot per la solució:
+
+- Tot distàncies horizontals: 4xn
+- Distància vertical: xn
+
+Tot, el recorregut total del cangur es 5xn.
+
+Com aixos verticalls, la distància horizontals p equalseixent 3xn. Així, 4xn + xn = 5xn.
+
+Finalment, l' Answer:
+
+\boxed{5xn}

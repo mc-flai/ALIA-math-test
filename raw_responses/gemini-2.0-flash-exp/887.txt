@@ -1,0 +1,21 @@
+Raonament:
+Perquè la suma siga el més petita possible, hem de minimitzar els dígits de les posicions més significatives. La suma és de la forma:
+
+  ABC
+  DEF
+  GHI
++ JKLM
+-------
+  XXXXX
+
+Com que volem que el resultat siga el més petit possible, hem de fer que J sigui el més petit possible. Com que J és la xifra de les unitats de miler, i no pot ser 0 (perquè és la primera xifra d'un nombre de quatre xifres), J ha de ser 1.
+
+Ara, per minimitzar el resultat, hem de fer que les xifres de les centenes (A, D, G i K) siguen el més petites possible. Com que ja hem usat 1, les xifres més petites que podem usar són 0, 2, 3 i 4. Però, com que volem minimitzar el resultat, hem de fer que K siga el més petit possible, per tant, K ha de ser 0.
+
+Ara, les xifres de les desenes (B, E, H i L) han de ser el més petites possible. Les xifres més petites que queden són 2, 3, 4 i 5. Però, com que volem minimitzar el resultat, hem de fer que L siga el més petit possible, per tant, L ha de ser 2.
+
+Finalment, les xifres de les unitats (C, F, I i M) han de ser el més petites possible. Les xifres més petites que queden són 3, 4, 5 i 6. Però, com que volem minimitzar el resultat, hem de fer que C siga el més petit possible, per tant, C ha de ser 3.
+
+Per tant, el valor de C que fa que el resultat siga el més petit possible és 3.
+
+Resposta: C)

@@ -1,0 +1,52 @@
+<think>
+Vambévem al problema del porviro. Tenim un cub, on hem calculat el volum de la esfera circumscrrita i l'esfera inscrita en aquest cub.
+
+Prime donem les hipótesis: Un cub rectangle per aixar la esfera circumscrrita. Averigüem la posicions de la esfera circumscrrita i la esfera inscrita, amb aysun radi i center.
+
+Per a la esfera circumscrrita, el seu centre és el centre del cub. El radi serà la distància de trànsvers a un vèrtex del cub. Com que el cub és regular (igual en x, y, z), la longitud de cada SIDE de l' cub és igual. Siguiem que llavors, el radi circumscructural R es pot expressar com R = (a√3)/2, on a es la measure de la measured d'una de les sides del cub.
+
+Làmunt a la esfera inscrita, el seu centre coincideix amb elcentre del cub. El radi serà la distància de trànsvers a un vèrtex, que és igual a (a√2)/2.
+
+El volum de l'esfera circumscructural es calcula com (4/3)πR³ = (4/3)π[(a√3)/2]³. Es simplifico per com (4/3)π*(3√3 a³)/8, que dona (4/3)*(3√3 a³)/8 = (√3 a³)/2.
+
+El volum de l'esfera inscrita es calcula com (4/3)πr³, on r = (a√2)/2. Plugging en, get (4/3)π[(a²*2)/(8)] → simplificem per (4/3)π*(2a²)/8 = (√2 a³)/6.
+
+Dividim el volum circumscructural per el volum inscrital: [(√3 a³)/2] / [ (√2 a³)/6 ] = (√3 / 2 ) * (6 / √2 ) = (√3 * 3) / √2 = 3√(3/2).
+
+Així, el quotient és 3√(3/2), que no es pot simplificar sense calcular numericalment. Per veure si es pot expressar com una de les options: 3√(3/2) ≈ 3*1.2247 ≈ 3.674, whereas 2√2 ≈ 2.828, √3≈1.732, etc. No es pot expressar exactament per aquestes alternatives. Així que la resposta correcta és "E) 3√3".
+</think>
+
+Raonament:
+
+Considerem un cub regular amb lesides de la mesura \( a \). Hem calculat el volum de l'esfera circumscrrita i l'esfera inscrita.
+
+1. **Volum de la esfera circumscrrita:**
+   - L'eSOFC (esfera circumscrutive) per una figura rectangular perfeita, com aquest cub.
+   - El centre de la sfera està en elcentre del cub.
+   - El radi \( R \) de l'esfera circumscrutive es pot expressar com:
+     \[
+     R = \frac{a\sqrt{3}}{2}
+     \]
+   - El volum \( V_{esf} \) de la esfera circumscrutive és:
+     \[
+     V_{esf} = \frac{4}{3}\pi R^3 = \frac{4}{3}\pi \left(\frac{a\sqrt{3}}{2}\right)^3 = \frac{\sqrt{3}}{2} a^3
+     \]
+
+2. **Volum de l'esfera inscrita:**
+   - L'eSFI (esfera inscrutive) per una esfera que fit en el cub sense vèrtex.
+   - El centre de la sfera es l'midiat entre els vèrtex del cub, i el radi \( r \) és:
+     \[
+     r = \frac{a\sqrt{2}}{2}
+     \]
+   - El volum \( V_{esf} \) de la esfera inscrutive és:
+     \[
+     V_{esf} = \frac{4}{3}\pi r^3 = \frac{\sqrt{2}}{6} a^3
+     \]
+
+3. **Quotient entre els volums:**
+   - Dividim el volum circumscrutive per el volum inscrutive:
+     \[
+     \frac{V_{esf}^{circum}}{V_{esf}^{insc}} = \frac{\frac{\sqrt{3}}{2} a^3}{\frac{\sqrt{2}}{6} a^3} = 3\sqrt{\frac{3}{2}}
+     \]
+   
+Raonament final: **E) \( 3\sqrt{3} \)**

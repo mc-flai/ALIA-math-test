@@ -1,0 +1,16 @@
+Raonament:
+Per a trobar el nombre més menut amb un producte de xifres igual a 2²⁰²⁴, hem de maximitzar el nombre de xifres i minimitzar el valor de cada xifra. Com que el producte de les xifres ha de ser 2²⁰²⁴, les xifres només poden ser potències de 2. Les xifres que podem utilitzar són 1, 2, 4 i 8. Per minimitzar el nombre, hem d'utilitzar el màxim nombre de xifres possibles, i per tant, hem d'utilitzar el màxim nombre de xifres petites.
+
+Com que 2²⁰²⁴ és el producte de les xifres, hem de descompondre 2²⁰²⁴ en factors que siguin xifres. La xifra més petita que podem utilitzar és 2. Si utilitzem només xifres 2, necessitarem 2024 xifres 2. Però podem utilitzar xifres més grans per reduir el nombre de xifres.
+
+Si utilitzem xifres 4 (que és 2²), per cada xifra 4, necessitem dues xifres 2. Per tant, si substituïm dues xifres 2 per una xifra 4, reduïm el nombre de xifres. Si utilitzem xifres 8 (que és 2³), per cada xifra 8, necessitem tres xifres 2. Per tant, si substituïm tres xifres 2 per una xifra 8, reduïm el nombre de xifres.
+
+Per minimitzar el nombre de xifres, hem d'utilitzar el màxim nombre de xifres 8 possible. Dividim 2024 entre 3 per veure quantes xifres 8 podem utilitzar: 2024 / 3 = 674 amb residu 2. Això significa que podem utilitzar 674 xifres 8 i ens quedaran 2 xifres 2. Per tant, el nombre tindrà 674 xifres 8 i 2 xifres 2. El nombre total de xifres serà 674 + 2 = 676.
+
+Però, si utilitzem xifres 4, per cada xifra 4 necessitem dues xifres 2. Si utilitzem xifres 4, podem dividir 2024 entre 2, que dona 1012. Això significa que podem utilitzar 1012 xifres 4. Però 1012 és més gran que 676.
+
+Per tant, hem de maximitzar el nombre de xifres 8. Tenim 2024 = 3 * 674 + 2. Això significa que podem utilitzar 674 xifres 8 i 1 xifra 4 (que és 2²). Per tant, el nombre de xifres serà 674 + 1 = 675.
+
+Per tant, el nombre més menut tindrà 674 xifres 8 i una xifra 4. El nombre total de xifres serà 674 + 1 = 675.
+
+Resposta: C)

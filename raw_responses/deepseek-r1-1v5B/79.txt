@@ -1,0 +1,25 @@
+<think>
+Primeixem la factoriación de 100!, que dona el nombre del producte d'igures complesses en el número. La factoriación de 100! inclú dona:
+
+2^82 × 3^41 × 5^24 × 7^9 × 11^7 × 13^5 × 17^4 × 19^3 × 23^3 × 29^2 × 31^3 × 37^2 × 41^2 × 43^2 × 47^2 × 53^2 × 59^1 × 61^1 × 67^1 × 71^1 × 73^1 × 79^1 × 83^1 × 89^1 × 97^1.
+
+Llegim que factoritem per la quantitat de 5s i 2s, llinches de mprintf:
+
+- Per a les 5s: 100/5 = 20, 100/25 = 4, total de 24.
+- Per a les 2s: 100/2 = 50, 100/4 = 25, 100/8 = 12, 100/16 = 6, 100/32 = 3, 100/64 = 1, tot per això 50+25=75+12=87+6=93+3=96+1=97.
+- Totals de mprintf: 24 per a les 5s i 97 per a les 2s. La majorita d'igures començar sense paràntesis, dona el producte.
+
+Així, després de la darrera xifra, les gràcies que tencem are als zeros són la quantitat de mprintf sense parèntesis, que és 97 - 24 = 73. Però aquest mateix, dona un error, perquè en la factoriación tenim 2^97 × 5^24, i el producte potència serà mprintf (igual que el mprintf sense parèntesis).
+
+Deixem que el treballigues al llibero.
+</think>
+
+Raonament:
+
+Para determinar la quantitat d'igures zero que hi ha després de la darrera xifra de 100!, es important calònard el producte de les gràcies mprintf sense parèntesis. La factoriación de 100! inclú:
+
+\[
+100! = 2^{97} \times 3^{48} \times 5^{24} \times 7^{16} \times 11^8 \times 13^4 \times 17^3 \times 19^2 \times 23^2 \times 29^1 \times 31^1 \times 37^1 \times 41^1 \times 43^1 \times 47^1 \times 53^1 \times 59^1 \times 61^1 \times 67^1 \times 71^1 \times 73^1 \times 79^1 \times 83^1 \times 89^1 \times 97^1
+\]
+
+La majorita d'igures zero són la quantitat de gràcies sense parèntesis, que és 24. Així, després de la darrera xifra, hi ha \(\boxed{24}\) zeros.

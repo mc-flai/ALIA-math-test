@@ -1,0 +1,97 @@
+<think>
+Primeixem el valor de \( a_1 = 49 \).
+
+Calcular \( a_2 \):
+Sumen les xifres de \( a_1 \): \( 4 + 9 = 13 \).
+Afté, aguda el quadrat del resultat: \( 13^2 = 169 \). Així, \( a_2 = 169 \).
+
+Calcular \( a_3 \):
+Sumen les xifres de \( a_2 \): \( 1 + 6 + 9 = 16 \).
+Afté, aguda el quadrat del resultat: \( 16^2 = 256 \). Així, \( a_3 = 256 \).
+
+Calcular \( a_4 \):
+Sumen les xifres de \( a_3 \): \( 2 + 5 + 6 = 13 \).
+Afté, aguda el quadrat del resultat: \( 13^2 = 169 \). Així, \( a_4 = 169 \).
+
+Observem que \( a_4 = a_3 \), per tant la successió calha i sense més variations.
+</think>
+
+Clàrsia, hem calculat els therein de l'apartament. \(\boxed{D}\) es la resposta correcta.
+
+Raonament:
+
+El nombre \( a_{n+1} \) es pot trobar amb la següent fórmula:
+\[
+a_{n+1} = (S_n + 1)^2
+\]
+doncs,
+\[
+S_n \text{ és la suma de les xifres de } a_n.
+\]
+
+Calcular \( S_1 \) i subsequentment:
+
+- \( a_1 = 49 \)
+  \[
+  S_1 = 4 + 9 = 13
+  \]
+  \[
+  a_2 = (S_1 + 1)^2 = (13 + 1)^2 = 14^2 = 196
+  \]
+
+- \( a_2 = 196 \)
+  \[
+  S_2 = 1 + 9 + 6 = 16
+  \]
+  \[
+  a_3 = (S_2 + 1)^2 = (16 + 1)^2 = 17^2 = 289
+  \]
+
+- \( a_3 = 289 \)
+  \[
+  S_3 = 2 + 8 + 9 = 19
+  \]
+  \[
+  a_4 = (S_3 + 1)^2 = (19 + 1)^2 = 20^2 = 400
+  \]
+
+- \( a_4 = 400 \)
+  \[
+  S_4 = 4 + 0 + 0 = 4
+  \]
+  \[
+  a_5 = (S_4 + 1)^2 = (4 + 1)^2 = 5^2 = 25
+  \]
+
+- \( a_5 = 25 \)
+  \[
+  S_5 = 2 + 5 = 7
+  \]
+  \[
+  a_6 = (S_5 + 1)^2 = (7 + 1)^2 = 8^2 = 64
+  \]
+
+- \( a_6 = 64 \)
+  \[
+  S_6 = 6 + 4 = 10
+  \]
+  \[
+  a_7 = (S_6 + 1)^2 = (10 + 1)^2 = 11^2 = 121
+  \]
+
+- \( a_7 = 121 \)
+  \[
+  S_7 = 1 + 2 + 1 = 4
+  \]
+  \[
+  a_8 = (S_7 + 1)^2 = (4 + 1)^2 = 5^2 = 25
+  \]
+
+Observem que \( a_8 = a_5 = 25 \) i el procés es repeta sense més variations. Així, la successió calha al cap de \( n = 7 \). Com que l'apartament ha hotzar \( a_{2019} \), com s'observa que la successió calha des de \( a_5 \) sense perders valor, el nombre sigui donant valors comels.
+
+Finalment,
+\[
+a_{2019} = 400
+\]
+
+Raonament final: \(\boxed{D}\)

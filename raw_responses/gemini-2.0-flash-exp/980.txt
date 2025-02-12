@@ -1,0 +1,53 @@
+Raonament:
+Anomenem les fruites amb les seves inicials: A (albercoc), M (mandarina), N (nespra), P (pera).
+Tenim les següents relacions de pes:
+1. A + M = N + P
+2. A + N < M + P
+3. N + M < A + P
+
+De la primera equació, podem aïllar A: A = N + P - M.
+Substituïm aquest valor d'A a la segona inequació:
+(N + P - M) + N < M + P
+2N + P - M < M + P
+2N < 2M
+N < M
+
+Ara, tornem a la primera equació i aïllem M: M = N + P - A.
+Substituïm aquest valor de M a la tercera inequació:
+N + (N + P - A) < A + P
+2N + P - A < A + P
+2N < 2A
+N < A
+
+Ara sabem que N < M i N < A.
+De la primera equació, podem aïllar P: P = A + M - N.
+Substituïm aquest valor de P a la segona inequació:
+A + N < M + (A + M - N)
+A + N < A + 2M - N
+2N < 2M
+N < M (que ja sabíem)
+
+Substituïm el valor de P a la tercera inequació:
+N + M < A + (A + M - N)
+N + M < 2A + M - N
+2N < 2A
+N < A (que ja sabíem)
+
+Ara, tornem a la primera equació i aïllem N: N = A + M - P.
+Substituïm aquest valor de N a la segona inequació:
+A + (A + M - P) < M + P
+2A + M - P < M + P
+2A < 2P
+A < P
+
+Substituïm el valor de N a la tercera inequació:
+(A + M - P) + M < A + P
+A + 2M - P < A + P
+2M < 2P
+M < P
+
+Ara tenim: N < M, N < A, A < P i M < P.
+Per tant, la relació de pes és: N < M, N < A, A < P i M < P.
+Això implica que la pera (P) és la més pesant.
+
+Resposta: C)

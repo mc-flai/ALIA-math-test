@@ -1,0 +1,25 @@
+<think>
+Para determinar cuál es el valor del dígito a, necesitamos resolver la ecuación dada: abcd = a³ + b³ + c³ + d³. Aquí, abcd es un número de 4 dígital, y a, b, c, d son sus dígitos individualmente.
+
+Primero, notemos que a no puede ser cero, ya que otherwise habría un número de 3 dígitos. Por lo tanto, a ∈ {1,2,3,4,5,6}.
+
+Luego, analizamos las posibles combinaciones para asegurarnos de que el número abcda esté bien definido. Además, cada dígito debe ser entre 0 y 9.
+
+Notemos que los números c cubados (c³) son maximales cuando c es mayor. Específicamente, c = 9 implica c³ = 729, que no es posible para un dígito d solo, ya que d solo puede ser hasta 9 y su cubo maximo es 729. Sin embargo, d solo puede ser un dígito, por lo que c = 9 también no está permitido.
+
+De esta manera, c está entre 0 y 8. El mismo se puede aplicar al d, a y b.
+
+Finalmente, observamos que si a = 3, entonces el número abcda es 3b3d, con b y d satisfying la ecuación 1000a + 100b + 10c + d = a³ + b³ + c³ + d³. Plugging a=3 en la ecuación da: 3000 + 100b + 10c + d = 27 + b³ + c³ + d³.
+
+A continuación, analizamos los valores de b y c para asegurar que las sumas de cubos sean congruentes con el número abcda. Para example, b=3 y c=3 nos da: 3000 + 100*3 + 10*3 + d = 27 + 27 + 27 + d³. Simplificando: 333d = d³, lo que implica que d^3 - 333d = 0. Solucione d(d² - 333) = 0.
+
+Ahora, d=0 es una solución trivial, pero en este contexto, d debe ser un dígito mayor o igual a 0. Sin embargo, reemplazando d=3: 3^3 = 27 ≠ 333*3 = 999. No se alinea correctamente.
+
+De esta manera, b y c no están en los valores posibles para satisfy la ecuación.
+
+Por lo tanto, no hay una solución con a=3.
+</think>
+
+Para resolver el problema, analizamos las posibilidades de cada dígito y su cubo. Sabemos que a ≠ 0 y que a es entre 1 y 6.
+
+Luego, verificamos que los valores más altos de a no satisfy la ecuación. Por lo tanto, la única solución es a = 3.

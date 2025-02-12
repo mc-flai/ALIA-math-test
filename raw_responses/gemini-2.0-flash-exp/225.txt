@@ -1,0 +1,11 @@
+Raonament:
+Aquest problema es pot resoldre utilitzant una estratègia de cerca binària. La idea és dividir l'espai de possibles nombres a la meitat a cada pregunta. Així, amb cada pregunta, eliminem la meitat dels nombres possibles.
+
+1. **Primera pregunta:** Preguntem si el nombre és menor o igual a 8. Això divideix els 15 nombres en dos grups: {1, 2, 3, 4, 5, 6, 7, 8} i {9, 10, 11, 12, 13, 14, 15}.
+2. **Segona pregunta:** Depenent de la resposta anterior, preguntem sobre la meitat del grup restant. Per exemple, si la resposta a la primera pregunta va ser "sí", preguntem si el nombre és menor o igual a 4. Això divideix el grup {1, 2, 3, 4, 5, 6, 7, 8} en {1, 2, 3, 4} i {5, 6, 7, 8}. Si la resposta a la primera pregunta va ser "no", preguntem si el nombre és menor o igual a 12. Això divideix el grup {9, 10, 11, 12, 13, 14, 15} en {9, 10, 11, 12} i {13, 14, 15}.
+3. **Tercera pregunta:** Continuem dividint el grup restant per la meitat. Per exemple, si després de les dues primeres preguntes tenim el grup {1, 2, 3, 4}, preguntem si el nombre és menor o igual a 2. Això divideix el grup en {1, 2} i {3, 4}. Si després de les dues primeres preguntes tenim el grup {13, 14, 15}, preguntem si el nombre és menor o igual a 14. Això divideix el grup en {13, 14} i {15}.
+4. **Quarta pregunta:** Després de tres preguntes, ens quedaran grups de 2 o 1 nombre. Si ens queda un grup de 2 nombres, preguntem si el nombre és igual al menor dels dos. Si la resposta és "sí", ja sabem el nombre. Si la resposta és "no", sabem que és l'altre nombre. Si ens queda un grup d'1 nombre, ja sabem el nombre.
+
+En general, per a un conjunt de *n* nombres, necessitem aproximadament log₂(n) preguntes per trobar el nombre correcte. En aquest cas, log₂(15) és aproximadament 3.9, per tant, necessitem 4 preguntes per estar segurs.
+
+Resposta: D)

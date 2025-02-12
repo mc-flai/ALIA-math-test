@@ -1,0 +1,49 @@
+<think>
+Bucol de calcul que permet d'obtenir 10^101 -9. Comptem les xifres de cada nombre:
+
+- 10^101: tiene 102 xifres (un 1 i 101 zeros).
+- 9: és un nombre sense xifres.
+
+Aplicant la regla de col·leva per la dècima posició:
+- De l'1 que sigui a l'unitat, col·levem 9, donant 0 i un 1 en les zeros.
+- A cada posició més versa, col·levem de 9 a 9, quèmigures són zeros.
+
+Finalment, sumem to all les xifres: 9*2 + (total d'ones entre 0 i 102).
+</think>
+
+**Raonament:**
+
+Cal esimer que calculen el nombre \(10^{101} - 9\) sense ambaccions. Aquest procèsal es:
+
+1. **Sovent a) \(10^{101}\):**
+   \[
+   10^{101} = 1\underbrace{00\ldots0}_{101 \text{ zeros}}
+   \]
+   El nombre ha de 102 xifres (un 1 i 101 zeros).
+
+2. **Sovent b) \(9\):**
+   \[
+   9 = 0\underbrace{99\ldots9}_{101 \text{ nulas dades} \Rightarrow 101 \text{ times}}
+   \]
+
+3. **Subtractió**:
+   \[
+   \begin{align*}
+   1\underbrace{00\ldots0}_{102 \text{ xifres}} \\
+   -\,\,0\underbrace{99\ldots9}_{101 \text{ zeros}} \\
+   &= \underbrace{999\ldots9}_{101 \text{ nulas dades} + 1 \text{ unitat}}}9
+   \end{align*}
+   \]
+   El resultat de la sustracció és un número que té **102 xifres** amb un 1 al final i **101 zeros en el segon més lànyum**, donant un total de **2 xifres (un 9)**.
+
+4. **Resumming:**
+   \[
+   \text{La suma de les xifres del nombre} = 9 + 1 + (101 \times 0) = 10
+   \]
+
+5. **Observa** que per every posició més lànym, la subtractió del zero i el dècimo zero resulten en zero.
+
+6. **Finalment:**
+   \[
+   \boxed{E}
+   \]

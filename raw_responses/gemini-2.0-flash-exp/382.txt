@@ -1,0 +1,21 @@
+Raonament:
+L'equació donada és x² - y² = 105. Podem factoritzar el costat esquerre com una diferència de quadrats: (x + y)(x - y) = 105.
+Com que x i y són enters positius, x + y i x - y també són enters. A més, x + y > x - y. També sabem que x + y i x - y han de tenir la mateixa paritat, ja que (x + y) + (x - y) = 2x, que és un nombre parell. Això significa que ambdós factors han de ser senars.
+Ara hem de trobar els parells de factors de 105. La factorització primera de 105 és 3 * 5 * 7. Els parells de factors de 105 són:
+1 * 105
+3 * 35
+5 * 21
+7 * 15
+Com que els dos factors han de ser senars, tots els parells de factors són vàlids. Ara, per a cada parell de factors (a, b) on a * b = 105 i a > b, tenim:
+x + y = a
+x - y = b
+Sumant les dues equacions, obtenim 2x = a + b, per tant x = (a + b) / 2.
+Restant la segona equació de la primera, obtenim 2y = a - b, per tant y = (a - b) / 2.
+Comprovem cada parell de factors:
+1) a = 105, b = 1: x = (105 + 1) / 2 = 53, y = (105 - 1) / 2 = 52.
+2) a = 35, b = 3: x = (35 + 3) / 2 = 19, y = (35 - 3) / 2 = 16.
+3) a = 21, b = 5: x = (21 + 5) / 2 = 13, y = (21 - 5) / 2 = 8.
+4) a = 15, b = 7: x = (15 + 7) / 2 = 11, y = (15 - 7) / 2 = 4.
+Tots els valors de x i y són enters positius, per tant, hi ha 4 parelles ordenades {x, y} que satisfan l'equació.
+
+Resposta: E)

@@ -1,0 +1,12 @@
+Raonament:
+El rectangle té dimensions 36 x 25. La diagonal AC travessa el rectangle des del vèrtex A fins al vèrtex C. Per cada unitat que avancem horitzontalment, avancem 25/36 unitats verticalment. La línia AC travessa un quadrat cada vegada que creua una línia vertical o horitzontal de la graella de quadrats.
+
+La línia AC comença al vèrtex A, que és un punt de la graella. La línia AC acaba al vèrtex C, que també és un punt de la graella.
+La línia AC creua 35 línies verticals (les que separen les columnes de quadrats) i 24 línies horitzontals (les que separen les files de quadrats).
+Si la línia AC no creués cap intersecció de la graella (és a dir, cap vèrtex de quadrat interior), el nombre de quadrats que tallaria seria 35 + 24 + 1 = 60. El +1 és perquè la línia comença en un quadrat.
+
+Però hem de tenir en compte que la línia AC pot creuar vèrtexs de quadrats interiors. Això passa quan la coordenada x i la coordenada y són nombres enters. La coordenada x va de 0 a 36 i la coordenada y va de 0 a 25. La relació entre x i y és y = (25/36)x. Per tant, la línia AC creua un vèrtex de quadrat interior quan (25/36)x és un nombre enter. Això passa quan x és un múltiple de 36/mcd(25,36) = 36/1 = 36. Per tant, només passa quan x=36, que és el vèrtex C. Per tant, no hi ha cap vèrtex interior que creui la línia AC.
+
+Per tant, el nombre de quadrats que talla la línia AC és 35 + 24 + 1 = 60.
+
+Resposta: A)

@@ -1,0 +1,31 @@
+<think>
+Bucular i comenciacem analyzant el problema. Siguiem segui, cada mica que cada operación dona un couple (p, q) tal que p + 2q es par. Sabemos que la distribución de p e q debe ser uniforme.
+
+Comenciemos per als casos on p =1. Iambinant aquesta scenario, compos les posibles parells i impars resultant. A continuació empscom hem els casos on p=2, donant una alfa en els parlats.
+
+Els següents passos busquem la distribucio de probabilitat que sigui el nombre q. Així, sumam totes les probabilities dels casos que resulten en par.
+
+Finalment, verifiem que la suma total de probabilities equigui a 1 i identifiquem la probabilitat donada en els choques als grups de resolució.
+</think>
+
+Bucular i comenciam analitzant el problema. Siguiem segui, cada mica que cada operación dona un couple \((p, q)\) tal que \(p + 2q\) és par.
+
+Comenciem per als casos on \(p =1\):
+
+- Si usemme \(1+2(1)=3\), que és impar.
+- Si usemme \(1+2(0)=1\), que és impar. (Tambí potmirsem el zero, ja que no lligat a l'operador "més".
+
+Empscom hem els casos on \(p=2\):
+
+- Si usemme \(2+2(1)=4\), que és par.
+- Si usemme \(2+2(0)=2\), que és par.
+
+El següent passos busquem la distribució de probabilitat que sigui el nombre \(q\). Així, sumem tots els probabilities dels casos que resulten en parell:
+
+- **Cauchers:** Ambions que donen parells: \(\frac{1}{8} + \frac{1}{4}\) (causadors \(p=2\) per \(q=0\) i \(q=1\)).
+
+Finalment, verifiem que la suma tota de les probabilitats equigui a 1 i identifiquem la probabilitat donada en els grups de resolució:
+
+La probabilitat que siguim un nombre parell es \(\frac{21}{32}\).
+
+\boxed{\dfrac{21}{32}}

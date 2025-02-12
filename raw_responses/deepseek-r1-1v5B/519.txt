@@ -1,0 +1,92 @@
+<think>
+El problema es relacionat dos cangurs, A i B, que starten jugando simultáment en una línea recta de la misma dirècció. El cangur A perfeix tats de 6 metros cada uns. El cangur B comica incrementalmente, el primer passant 1 m, el segon 2 m, el tercero 3 m, etc.
+
+Té que determinar quants tats del cangur B ha de corregir per a l'achar al cangur A.
+
+Primer, identificem les posicions de cada cangur. Suposiem que es starts a la posició zero.
+
+El cangur A comica tats de 6 m cada uns, donant una distanca total d'12 m per a cada dos passats.
+
+El cangur B comica incrementalment: el primer passat ha 1 m, el segon 2 m, el tercero 3 m, etc. Es tractable representar la distanca que l'ha-passat con les sumes de seqüències aritmòticas.
+
+El objectif és que la distància que ha comido el cangur B should ser igual a la de l'cangur A per al moment que hi fa entre dos passats. Llenat una expressió algebraica.
+
+Es defineixen les posicions cumulative comptant el més de zero:
+
+Per cangur A: 6 m per every 2 passats.
+
+Per cangur B: La distància after n passats serà la suma de 1 + 2 + ... +n = n(n+1)/2.
+
+Quer que: n(n+1)/2 = 6k, on k és un enter positiv.
+
+Tambí es pot expressar per que el cangur B ha comido k passats de 6 m, perquè el cangur A ha completed dos passats a una distància de 12 m.
+
+Ent regroupem la expressió: n(n+1)/2 = 6k ⇒n(n+1)=12k.
+
+Lliscament, per que 12 divideix a n(n+1), veiem que necessariament 12 divideix amb el producte consecutiu de dos nombres consecutius. El producte consecutiu de dos nombres consecutius es pot ser divisor d'una potenciació de 3, perquè entre qualsevol dos números consecutius, una deluesa e la llaixa per a les potencias.
+
+Per que s'hi ha necessari una distància que sigui una multiplez de 12. Si n(n+1) es multiplica per k, then el producte será un múltiplo de 12, perquè 12 divideix el producte.
+
+Els nombres consecutius n i n+1: quen satisfeixen que el producte n(n+1) siga una multiplez de 12.
+
+Per aquesta purpose, es pot analitzar per values de n:
+
+Si n=5, n+1=6. 5*6=30, que no és multiplez de 12.
+
+n=9: 9*10=90, que no es multiplez de 12.
+
+n=10:10*11=110, que no es multiplez de 12.
+
+n=11:11*12=132. Ahora, 132÷12=11, donat que es multiplez. Per així, n=11.
+
+Per així, el cangur B ha completed 11 passats. Evidentment, com enc$llegim, el cangur A perfeix 2 passats (d'12 m), per tant, el cangur B ha perdiut un passat (3 m).
+
+Per a ver que val: la distància del cangur B comica al mateix temps que l'cangur A comica:
+
+Cangur A ha corredit 2 passats, distàncie 12.
+
+Cangur B ha completed 11, sumant 6*5=30. 30-12=18 m. No, no, el cangur B dona 1+2+...+11= (11*12)/2=66 m.
+
+Ahora, la distància del cangur A al mateix instanti de comido: 12 m.
+
+La distància que ha lloc el cangur B a l' instant when el cangur A ha completed dos passats (a 12 m) es 66-12=54 m. La perfecció del cangur A es 12 m, la perfecció del cangur B al mateix instant es 54 m.
+
+Per que el cangur B ha corregit (54 -12)/3 = 14 passats? No, no, per a cada passat ho com enc$m.
+
+No, l'objectiu es que la distàncie de l'cangur B siga igual a la de l'cangur A. Per tant, a l instant when el cangur A ha completat dos passats, l'cangur B ha completat 12 m.
+
+Per que el producte n(n+1)/2 =6k ⇒ k= (n(n+1))/12.
+
+Si n=11: k=(11*12)/12=11. I per així, la distància del cangur B comica al mateix instanti que l'cangur A ha completat dos passats (12 m).
+
+Per a donar, el cangur B ha corregit 11 passats.
+
+Donat que la vegada que el cangur B perfeix k passats, el cangur A perfeix dos passats. Quan k es igual a 11, el cangur B ha corregit 11 passats, que és una de les alternatives: C) 11.
+</think>
+
+El problema pot ser resolte analitzant la distància que cada cangur comica en funció del nombre de passats.
+
+1. **Cangur A**: Perfeix dos passats amb una distància de 6 m cada uns. Tot alsos, l'entjali les distançes tot sense inter separar les passats.
+
+2. **Cangur B**: Comica incrementalment, el primer passat ha 1 m, el segon 2 m, el tercero 3 m, etc. La suma de tats comica en l' instant when com caigne al mateix instanti que el cangur A comca dos passats (a la distàncie de 12 m).
+
+3. **Equilibraçió**: Es pot representar la distància comica del cangur B com a la de l'cangur A per l' instant when el cangur A ha completat dos passats (distància 12 m). La suma de tats que ha comicit ha de ser igual a una multiplez de 6.
+
+La distància del cangur B al mateix instanti que l'cangur A ha completed dos passats es:
+
+\[
+S = \frac{n(n + 1)}{2} \geq 6k
+\]
+
+Ara, identificem el nombre d' passats (n) que ha comicit el cangur B per a que la distància siga multiplez de 12:
+
+- **n = 5**: \( S = 15 \), no es multiplez de 12.
+- **n = 9**: \( S = 45 \), no es multiplez de 12.
+- **n = 10**: \( S = 55 \), no es multiplez de 12.
+- **n = 11**: \( S = 66 \). \( 66 - 12 = 54 \) m. No, per així, la distància que ha lloc el cangur B al mateix instanti que el cangur A ha completat dos passats (la distància de l'cangur A al mateix instanti) es 12 m.
+
+Per que \( \frac{11 * 12}{2} = 66 \), la distància del cangur B al mateix instanti que el cangur A ha completat dos passats (distàncie de 12 m) esig que com caigne a la vegada que l'entjali perfecció el cangur A, alhora que el cangur B comica 11 passats.
+
+**Respuesta final:**
+
+\boxed{C}

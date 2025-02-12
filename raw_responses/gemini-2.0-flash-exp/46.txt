@@ -1,0 +1,19 @@
+Raonament:
+Un nombre de tres xifres es pot representar com 100a + 10b + c. La condició que a + 3b + c sigui múltiple de 3 es pot reescriure com a + 3b + c = 3k, on k és un enter.
+Com que 100a + 10b + c = 99a + a + 9b + b + c = 3(33a + 3b) + a + b + c, la condició que a + 3b + c sigui múltiple de 3 és equivalent a que a + c sigui múltiple de 3.
+Per tant, hem de comptar quants nombres de tres xifres abc compleixen que a + c és múltiple de 3.
+La xifra 'a' pot prendre valors de 1 a 9, i la xifra 'c' pot prendre valors de 0 a 9. La xifra 'b' pot prendre valors de 0 a 9, sense restriccions.
+Per cada valor de 'a', comptem quants valors de 'c' fan que a + c sigui múltiple de 3.
+- Si a = 1, c pot ser 2, 5, 8 (3 valors)
+- Si a = 2, c pot ser 1, 4, 7 (3 valors)
+- Si a = 3, c pot ser 0, 3, 6, 9 (4 valors)
+- Si a = 4, c pot ser 2, 5, 8 (3 valors)
+- Si a = 5, c pot ser 1, 4, 7 (3 valors)
+- Si a = 6, c pot ser 0, 3, 6, 9 (4 valors)
+- Si a = 7, c pot ser 2, 5, 8 (3 valors)
+- Si a = 8, c pot ser 1, 4, 7 (3 valors)
+- Si a = 9, c pot ser 0, 3, 6, 9 (4 valors)
+En total, hi ha 6 valors de 'a' que donen 3 valors de 'c' i 3 valors de 'a' que donen 4 valors de 'c'. Això fa un total de 6 * 3 + 3 * 4 = 18 + 12 = 30 parelles (a, c) que compleixen la condició.
+Com que 'b' pot prendre 10 valors (0 a 9), el nombre total de nombres de tres xifres que compleixen la condició és 30 * 10 = 300.
+
+Resposta: B)

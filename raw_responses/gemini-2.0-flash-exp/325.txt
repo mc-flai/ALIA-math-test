@@ -1,0 +1,10 @@
+Raonament:
+1. **Puntuació total dels 34 primers jugadors:** Si la mitjana dels 34 primers jugadors és de 9 punts, la seva puntuació total és 34 * 9 = 306 punts.
+2. **Puntuació total dels 40 jugadors:** Si la mitjana dels 40 jugadors és de 8,9 punts, la seva puntuació total és 40 * 8,9 = 356 punts.
+3. **Puntuació total dels últims 6 jugadors:** La puntuació total dels últims 6 jugadors és la diferència entre la puntuació total dels 40 jugadors i la dels 34 primers: 356 - 306 = 50 punts.
+4. **Puntuació mínima dels últims 6 jugadors:** Si cada un dels últims 6 jugadors ha obtingut almenys 7 punts, la puntuació mínima total que han obtingut és 6 * 7 = 42 punts.
+5. **Puntuació màxima addicional dels últims 6 jugadors:** La puntuació addicional que han obtingut els últims 6 jugadors per sobre del mínim és 50 - 42 = 8 punts.
+6. **Màxim de jugadors amb 10 punts:** Per maximitzar el nombre de jugadors amb 10 punts, hem de minimitzar la puntuació dels altres jugadors. Si un jugador té 10 punts, ha obtingut 3 punts més que el mínim de 7. Per tant, per cada jugador amb 10 punts, es consumeixen 3 dels 8 punts addicionals. El nombre màxim de jugadors amb 10 punts és 8 / 3 = 2.66. Com que no pot haver-hi una fracció de jugador, el màxim de jugadors amb 10 punts és 2.
+7. **Comprovació:** Si hi ha 2 jugadors amb 10 punts, han obtingut 2 * 10 = 20 punts. Els altres 4 jugadors han obtingut almenys 7 punts, per tant, com a mínim 4 * 7 = 28 punts. La suma total és 20 + 28 = 48 punts. Ens queden 2 punts addicionals per repartir entre els 4 jugadors que tenen 7 punts. Per tant, 2 jugadors tenen 10 punts i els altres 4 tenen 7.5 punts de mitjana. Però com que la puntuació ha de ser entera, podem tenir 2 jugadors amb 10 punts, 2 amb 8 punts i 2 amb 7 punts. 2*10 + 2*8 + 2*7 = 20 + 16 + 14 = 50.
+
+Resposta: B)

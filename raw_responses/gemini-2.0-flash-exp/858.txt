@@ -1,0 +1,102 @@
+Raonament:
+
+L'objectiu és trobar la seqüència més curta d'operacions (doblar, dividir per 3 o elevar al quadrat) per anar de 45 a 200. Comencem explorant les possibles operacions des de 45 i intentant acostar-nos a 200 el més ràpid possible.
+
+1. **Pas 1:**
+   - Doblar 45: 45 * 2 = 90
+   - Dividir 45 per 3: 45 / 3 = 15
+   - Elevar 45 al quadrat: 45 * 45 = 2025 (Massa gran, no és una bona opció inicial)
+
+2. **Pas 2 (des de 90):**
+   - Doblar 90: 90 * 2 = 180
+   - Dividir 90 per 3: 90 / 3 = 30
+   - Elevar 90 al quadrat: 90 * 90 = 8100 (Massa gran)
+
+3. **Pas 3 (des de 180):**
+   - Doblar 180: 180 * 2 = 360 (Massa gran)
+   - Dividir 180 per 3: 180 / 3 = 60
+   - Elevar 180 al quadrat: Massa gran
+
+4. **Pas 4 (des de 60):**
+   - Doblar 60: 60 * 2 = 120
+   - Dividir 60 per 3: 60 / 3 = 20
+   - Elevar 60 al quadrat: Massa gran
+
+5. **Pas 5 (des de 120):**
+   - Doblar 120: 120 * 2 = 240 (Massa gran)
+   - Dividir 120 per 3: 120 / 3 = 40
+   - Elevar 120 al quadrat: Massa gran
+
+6. **Pas 6 (des de 40):**
+   - Doblar 40: 40 * 2 = 80
+   - Dividir 40 per 3: No és enter
+   - Elevar 40 al quadrat: 1600 (Massa gran)
+
+7. **Pas 7 (des de 80):**
+   - Doblar 80: 80 * 2 = 160
+   - Dividir 80 per 3: No és enter
+   - Elevar 80 al quadrat: Massa gran
+
+8. **Pas 8 (des de 160):**
+   - Doblar 160: 160 * 2 = 320 (Massa gran)
+   - Dividir 160 per 3: No és enter
+   - Elevar 160 al quadrat: Massa gran
+
+Ara, tornem a analitzar des de 15 (pas 2):
+2. **Pas 2 (des de 15):**
+   - Doblar 15: 15 * 2 = 30
+   - Dividir 15 per 3: 15 / 3 = 5
+   - Elevar 15 al quadrat: 225 (Massa gran)
+
+3. **Pas 3 (des de 30):**
+   - Doblar 30: 30 * 2 = 60
+   - Dividir 30 per 3: 30 / 3 = 10
+   - Elevar 30 al quadrat: Massa gran
+
+4. **Pas 4 (des de 60):**
+   - Doblar 60: 60 * 2 = 120
+   - Dividir 60 per 3: 60 / 3 = 20
+   - Elevar 60 al quadrat: Massa gran
+
+5. **Pas 5 (des de 120):**
+   - Doblar 120: 120 * 2 = 240 (Massa gran)
+   - Dividir 120 per 3: 120 / 3 = 40
+   - Elevar 120 al quadrat: Massa gran
+
+6. **Pas 6 (des de 40):**
+   - Doblar 40: 40 * 2 = 80
+   - Dividir 40 per 3: No és enter
+   - Elevar 40 al quadrat: 1600 (Massa gran)
+
+7. **Pas 7 (des de 80):**
+   - Doblar 80: 80 * 2 = 160
+   - Dividir 80 per 3: No és enter
+   - Elevar 80 al quadrat: Massa gran
+
+8. **Pas 8 (des de 160):**
+   - Doblar 160: 160 * 2 = 320 (Massa gran)
+   - Dividir 160 per 3: No és enter
+   - Elevar 160 al quadrat: Massa gran
+
+Ara, analitzem des de 5 (pas 3):
+4. **Pas 4 (des de 5):**
+   - Doblar 5: 5 * 2 = 10
+   - Dividir 5 per 3: No és enter
+   - Elevar 5 al quadrat: 25
+
+5. **Pas 5 (des de 25):**
+   - Doblar 25: 25 * 2 = 50
+   - Dividir 25 per 3: No és enter
+   - Elevar 25 al quadrat: 625 (Massa gran)
+
+6. **Pas 6 (des de 50):**
+   - Doblar 50: 50 * 2 = 100
+   - Dividir 50 per 3: No és enter
+   - Elevar 50 al quadrat: 2500 (Massa gran)
+
+7. **Pas 7 (des de 100):**
+   - Doblar 100: 100 * 2 = 200
+
+La seqüència més curta que hem trobat és: 45 -> 15 -> 5 -> 10 -> 100 -> 200 (5 passos)
+
+Resposta: D)

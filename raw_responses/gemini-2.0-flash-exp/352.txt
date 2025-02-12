@@ -1,0 +1,24 @@
+Raonament:
+Un nombre palindròmic de sis dígits té la forma `abccba`, on a, b i c són dígits del 0 al 9, i a no pot ser 0. Aquest nombre es pot expressar com:
+
+100000a + 10000b + 1000c + 100c + 10b + a
+= 100001a + 10010b + 1100c
+= 100001a + 10010b + 1100c
+= 11 * (9091a + 910b + 100c)
+
+Això demostra que tots els nombres palindròmics de sis dígits són divisibles per 11.
+
+Ara, considerem alguns exemples de nombres palindròmics de sis dígits:
+- 100001 = 11 * 9091
+- 101101 = 11 * 9191
+- 110011 = 11 * 10001
+- 123321 = 11 * 11211
+- 999999 = 11 * 90909
+
+Per trobar el màxim comú divisor (MCD), hem de buscar el factor comú més gran que divideix tots els nombres palindròmics de sis dígits. Hem demostrat que 11 és un factor comú. Ara hem de veure si hi ha un factor comú més gran.
+
+Si considerem els nombres 100001 i 101101, la seva diferència és 101101 - 100001 = 1100. El MCD de 100001 i 101101 ha de ser un divisor de 1100. Els divisors de 1100 són 1, 2, 4, 5, 10, 11, 20, 22, 25, 44, 50, 55, 100, 110, 220, 275, 550, 1100.
+
+Com que tots els nombres palindròmics de sis dígits són divisibles per 11, i no hi ha cap altre factor comú evident més gran que 11, podem concloure que el MCD és 11.
+
+Resposta: D)

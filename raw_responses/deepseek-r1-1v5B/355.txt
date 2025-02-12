@@ -1,0 +1,120 @@
+<think>
+Para resolver la ecuación xy + 4x -13 = x² y encontrar las parejas enteras (x, y) que satisfan esta condición, primero reorganizamos la ecuación para dejarla en términos de y.
+
+Reorganizando, obtenemos:
+
+xy + 4x -13 = x²  
+xy = x² - 4x +13  
+y = (x² - 4x +13)/x
+
+Luego, cada x ≠ 0 nos da un valor de y. Ahora, para que y sea entero, el numerador debe ser divisible por x.
+
+Vamos a evaluar x para valores enteros negativos e positivos y ver cuáles satisfacen la condición de y being integer.
+
+Ejemplo:
+Si x = 1:  
+y = (1 -4 +13)/1 = 10/1 = 10, entero.
+
+x = 2:  
+y = (4 -8 +13)/2 = 9/2 = 4.5, no es entero.
+
+x = 3:  
+y = (9 -12 +13)/3 = 10/3 ≈ 3.333..., no es entero.
+
+x = -1:  
+y = ((-1)^2 -4*(-1) +13)/(-1) = (1 +4 +13)/(-1) = 18/-1 = -18, entero.
+
+x = -2:  
+y = (4 - (-8) +13)/(-2) = (25)/(-2) = -12.5, no es entero.
+
+x = -3:  
+y = (9 - (-12) +13)/(-3) = 34/(-3) ≈ -11.333..., no es entero.
+
+x = 0:  
+No es posible porque divide por cero en y.
+
+Observamos que solo x = 1 y x = -1 nos dan valores de y enteros. Por lo tanto, hay dos parejas enteras (x, y) que satisfacen la ecuación.
+
+La respuesta correcta es C) 2.
+</think>
+
+Para resolver la ecuación \( xy + 4x -13 = x^2 \) y encontrar las parejas enteras \((x, y)\) que satisfan esta condición, seguiremos los siguientes pasos:
+
+**Paso 1: Reorganizar la ecuación**
+
+Reorganizamos la ecuación para expresar \(y\) en términos de \(x\):
+
+\[
+xy + 4x -13 = x^2  
+\]
+\[
+xy = x^2 - 4x +13  
+\]
+\[
+y = \frac{x^2 - 4x +13}{x}
+\]
+
+**Paso 2: Evaluar para valores enteros de \(x\)**
+
+Para que \(y\) sea entero, el numerador debe ser divisible por \(x\). Evaluamos diferentes valores de \(x\) y ver cuáles satisfy this condition.
+
+- **\(x = 1\):**
+  
+  \[
+  y = \frac{1^2 -4(1) +13}{1} = \frac{1 - 4 + 13}{1} = \frac{10}{1} = 10
+  \]
+  
+  \(y\) es entero.
+
+- **\(x = -1\):**
+  
+  \[
+  y = \frac{(-1)^2 -4(-1) +13}{-1} = \frac{1 + 4 + 13}{-1} = \frac{18}{-1} = -18
+  \]
+  
+  \(y\) es entero.
+
+- **\(x = 2\):**
+  
+  \[
+  y = \frac{2^2 -4(2) +13}{2} = \frac{4 - 8 +13}{2} = \frac{9}{2} = 4.5
+  \]
+  
+  \(y\) no es entero.
+
+- **\(x = -2\):**
+  
+  \[
+  y = \frac{(-2)^2 -4(-2) +13}{-2} = \frac{4 + 8 +13}{-2} = \frac{25}{-2} = -12.5
+  \]
+  
+  \(y\) no es entero.
+
+- **\(x = 3\):**
+  
+  \[
+  y = \frac{3^2 -4(3) +13}{3} = \frac{9 - 12 +13}{3} = \frac{10}{3} ≈ 3.333...
+  \]
+  
+  \(y\) no es entero.
+
+- **\(x = -3\):**
+  
+  \[
+  y = \frac{(-3)^2 -4(-3) +13}{-3} = \frac{9 +12 +13}{-3} = \frac{34}{-3} ≈ -11.333...
+  \]
+  
+  \(y\) no es entero.
+
+**Paso 3: Contar las parejas enteras**
+
+El onlyo pairos enteros que satisfy this condition son:
+
+1. \( (x, y) = (1, 10) \)
+2. \( (x, y) = (-1, -18) \)
+
+Por lo tanto, hay **2** parejas enteras satisfactorias.
+
+\[
+\boxed{C}
+\]

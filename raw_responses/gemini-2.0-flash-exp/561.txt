@@ -1,0 +1,21 @@
+Raonament:
+Primer, factoritzem l'expressió 2^16 - 1. Utilitzarem la identitat de la diferència de quadrats: a^2 - b^2 = (a-b)(a+b).
+2^16 - 1 = (2^8)^2 - 1^2 = (2^8 - 1)(2^8 + 1)
+Ara, factoritzem 2^8 - 1 i 2^8 + 1:
+2^8 - 1 = (2^4)^2 - 1^2 = (2^4 - 1)(2^4 + 1) = (16 - 1)(16 + 1) = 15 * 17
+2^8 + 1 = 256 + 1 = 257
+Per tant, 2^16 - 1 = 15 * 17 * 257
+Ara factoritzem 15:
+15 = 3 * 5
+Així, 2^16 - 1 = 3 * 5 * 17 * 257
+Els divisors positius de 2^16 - 1 són els productes de les seves potències dels factors primers.
+Els divisors són de la forma 3^a * 5^b * 17^c * 257^d, on a, b, c, d poden ser 0 o 1.
+Per trobar els divisors de dues xifres, hem de considerar les combinacions dels factors primers que donen nombres entre 10 i 99.
+Els divisors són:
+1. 3 * 5 = 15
+2. 3 * 17 = 51
+3. 5 * 17 = 85
+No hi ha més divisors de dues xifres.
+Per tant, hi ha 3 divisors enters positius de dues xifres.
+
+Resposta: C)

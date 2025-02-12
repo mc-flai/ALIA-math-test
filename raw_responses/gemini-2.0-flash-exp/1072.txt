@@ -1,0 +1,32 @@
+Raonament:
+
+1. **Definició de variables:**
+   - Sigui `v_B` la velocitat de Baldiri.
+   - La velocitat d'Alícia és `v_A = 3 * v_B`.
+   - Sigui `d` la distància entre A i B.
+
+2. **Anàlisi del primer encontre:**
+   - En 15 minuts, Alícia ha recorregut una distància `d_A1 = v_A * 15 = 3 * v_B * 15`.
+   - En 15 minuts, Baldiri ha recorregut una distància `d_B1 = v_B * 15`.
+   - La suma de les distàncies recorregudes per Alícia i Baldiri en el primer encontre és igual a la distància entre A i B, és a dir, `d_A1 + d_B1 = d`.
+   - Per tant, `3 * v_B * 15 + v_B * 15 = d`, que simplifica a `4 * v_B * 15 = d`.
+   - Això significa que `60 * v_B = d`.
+
+3. **Anàlisi del segon encontre:**
+   - Després del primer encontre, Alícia es dirigeix cap a A i Baldiri cap a B.
+   - Perquè es trobin per segona vegada, la suma de les distàncies recorregudes per Alícia i Baldiri des del primer encontre ha de ser igual a dues vegades la distància entre A i B (una vegada per a que Alícia arribi a A i torni, i una altra per a que Baldiri arribi a B i torni).
+   - Sigui `t` el temps addicional (en minuts) que triguen a trobar-se per segona vegada.
+   - La distància recorreguda per Alícia en aquest temps és `d_A2 = v_A * t = 3 * v_B * t`.
+   - La distància recorreguda per Baldiri en aquest temps és `d_B2 = v_B * t`.
+   - La suma de les distàncies recorregudes des del primer encontre és `d_A2 + d_B2 = 2 * d`.
+   - Per tant, `3 * v_B * t + v_B * t = 2 * d`.
+   - Això simplifica a `4 * v_B * t = 2 * d`.
+
+4. **Resolució:**
+   - Sabem que `d = 60 * v_B`. Substituïm això a l'equació del segon encontre: `4 * v_B * t = 2 * (60 * v_B)`.
+   - Simplifiquem: `4 * v_B * t = 120 * v_B`.
+   - Dividim ambdós costats per `4 * v_B`: `t = 120 / 4 = 30`.
+   - Per tant, el temps addicional per al segon encontre és de 30 minuts.
+   - El temps total des de l'inici fins al segon encontre és 15 minuts (primer encontre) + 30 minuts = 45 minuts.
+
+Resposta: E)

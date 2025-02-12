@@ -1,0 +1,44 @@
+<think>
+Para resolver este problema, primero identificamos que N es un número con dos dígitos, meaning que N tiene dos dígitos entre 10 y 99. Además, la suma de sus dígitos es 8.
+
+ Sea el número N = 10a + b, donde a es el dígito de las unidades y b es el dígito de las decenas. Al sumar los dígitos, obtenemos a + b = 8.
+
+Desarrollando la expresión, tenemos que b = 8 - a.
+
+Ahora, para encontrar la xifra de las unitades (b), necesitamos determinar el valor de a y luego calcular b.
+
+Si tomamos a = 0, entonces b = 8 - 0 = 8. Si tomamos a = 1,entonces b = 7; si a = 2, b = 6; a = 3, b = 5; y así sucesivamente hasta que a = 8, con b = 0.
+
+Sin embargo, el problema no menciona cualquier restricción sobre los dígitos, por lo que cualquier xifra entre 0 y 8 es posible. Sin embargo, revisando las opciones proporcionadas: A) 0, B) 2, C) 4, D) 6 y E) 8.
+
+Si el número tiene dos dígitos, b no puede ser cero cuando a es mayor que 8, ya que a sería más de 8. Por lo tanto, la xifra de las unitades (b) debe ser al menos 0. En este caso, la xifra de las unidades es 0,2,4,6 o 8.
+
+Sin embargo, revisando el problema de manera clara: N tiene dos dígitos con suma de dígitros 8. Podemos ver que b puede ser cualquier número entera entre 0 y 8, dependiendo del valor de a.
+
+Por lo tanto, la xifra de las unitades puede ser 0,2,4,6 o 8.
+</think>
+
+Para resolver este problema, analizamos las posibles xifras de las unidades que cumplen con los requisitos establecidos:
+
+1. **Identificar el número N**: N es un número con dos dígitos (de la forma 10a + b), donde a y b son números enteros entre 0 y 9.
+
+2. **Suma de los dígitos**: Dado que la suma de los dígitos de N es 8, tenemos:
+   
+   \[
+   a + b = 8
+   \]
+
+3. **Determinar xifra de las unitades (b)**: Sabemos que \( b = 8 - a \).
+
+   - Si \( a = 0 \), entonces \( b = 8 \).
+   - Si \( a = 1 \), entonces \( b = 7 \).
+   - ...
+   - Si \( a = 8 \), entonces \( b = 0 \).
+
+4. **Conclusione**: La xifra de las unitades (b) puede ser 0, 2, 4, 6 o 8.
+
+Dado que las opciones proporcionadas incluyen todas estas posiciones, la xifra de las unitades es:
+
+\[
+\boxed{E}
+\]

@@ -1,0 +1,118 @@
+<think>
+Para resolver este problema, primero necesitamos entender qué significa que tres números primers son "especialmente amics". Según el enunciado, tres números primers son amíacos especialment si su producte es cinc veces mayor que la suma de los tres números.
+
+Entonces, sea \( p \), \( q \) y \( r \) los tres números primera. Luego, according a la condición dada:
+
+\[
+p \times q \times r = 5(p + q + r)
+\]
+
+La pregunta es: cuántos grupos de números primers especialmente amics hay?
+
+Primero, identificamos que los números primera son números primeros consecutivos. Es decir, si consideramos los números consecutivos, then \( p \), \( p+1 \), y \( p+2 \) son los tres primeros números primales. Sin embargo, debemos verificar si estos tres números satisfacen la condición de special amics.
+
+Tomando la triple \( (p, p+1, p+2) \):
+
+\[
+p(p+1)(p+2) = 5[p + (p+1) + (p+2)]
+\]
+
+Simplificando el lado derecho:
+
+\[
+5[3p + 3] = 15p + 15
+\]
+
+El lado izquierdo es:
+
+\[
+p(p+1)(p+2) = p^3 + 3p^2 + 2p
+\]
+
+Luego, establecemos la ecuación:
+
+\[
+p^3 + 3p^2 + 2p = 15p + 15
+\]
+
+Desarrollando:
+
+\[
+p^3 + 3p^2 + 2p - 15p - 15 = 0 \\
+p^3 + 3p^2 - 13p - 15 = 0
+\]
+
+Buscamos raíces enteras de esta ecuación. Aplicando el teorema del factor, probablemente p = 3:
+
+\[
+3^3 + 3(9) - 13(3) - 15 = 27 + 27 - 39 - 15 = 0
+\]
+
+Sí, p = 3 es una raíz. Factorizamos el polinomio:
+
+\[
+(p - 3)(p^2 + 6p + 5) = (p - 3)(p + 1)(p + 5)
+\]
+
+Ahora, los posibles triplets de números primers son:
+
+1. \( p = 3 \), \( q = 4 \), pero 4 no es primo.
+2. \( p = 3 \), \( q = 5 \), \( r = 7 \).
+
+Verificando si \( (3, 5, 7) \) satisface la condición:
+
+\[
+3 \times 5 \times 7 = 105 \\
+3 + 5 + 7 = 15 \\
+105 = 5 \times 15
+\]
+
+Sí, es correcto. Por lo tanto, hay un grupo de números primers especialmente amics.
+
+Ahora, verificamos si hay otros grupos. Supongamos que p = 2:
+
+Entonces, los tripletos serían (2,3,4), pero 4 no es primo; (2,3,5) y (2,3,7). Verificando (2,3,5):
+
+\[
+2 \times 3 \times 5 = 30 \\
+2 + 3 + 5 = 10 \\
+30 ≠ 5 × 10 = 50
+\]
+
+No satisface. Tampoco (2,3,7):
+
+\[
+2 × 3 × 7 = 42 \\
+2 + 3 + 7 = 12 \\
+42 ≠ 60
+\]
+
+No. Por lo tanto, solo hay un grupo: \( (3,5,7) \).
+</think>
+
+Para determinar cuántos grupos de números primers especialment amicos existen, analizamos las condiciones dadas:
+
+1. Los tres números primers son consecutivos: \( p \), \( p+1 \), y \( p+2 \).
+
+2. La condición es:
+   \[
+   p(p+1)(p+2) = 5(p + (p+1) + (p+2))
+   \]
+
+3. Simplificando:
+   \[
+   p^3 + 3p^2 + 2p = 15p + 15 \\
+   p^3 + 3p^2 - 13p - 15 = 0
+   \]
+
+4. Solución entera: \( p = 3 \).
+
+5. Por lo tanto, los números primers son \( (3, 5, 7) \).
+
+6. Verificamos que no hay otros triplets consecutivos que satisfan la condición.
+
+**Respuesta:**
+
+El único grupo de números primers especialment amicos es \( (3, 5, 7) \). Por lo tanto, hay un solo grupo.
+
+\boxed{B}

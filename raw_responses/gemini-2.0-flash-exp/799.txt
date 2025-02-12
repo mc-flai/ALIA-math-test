@@ -1,0 +1,37 @@
+Raonament:
+Primer, calculem la suma total dels elements del conjunt {1, 2, 3, 4, 5, 6, 7}. La suma és 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28. Perquè la suma dels elements de cada subconjunt siga la mateixa, cada subconjunt ha de sumar 28 / 2 = 14.
+
+Ara, hem de trobar les combinacions de nombres del conjunt original que sumen 14. Podem fer-ho de manera sistemàtica:
+
+*   Comencem amb el nombre més gran, 7. Si incloem 7, necessitem que la resta sume 7. Les combinacions possibles són:
+    *   7 + 6 + 1 = 14
+    *   7 + 5 + 2 = 14
+    *   7 + 4 + 3 = 14
+    *   7 + 4 + 2 + 1 = 14 (no és vàlida perquè ja tenim 7+4+3)
+*   Si no incloem 7, comencem amb el següent nombre més gran, 6.
+    *   6 + 5 + 3 = 14
+    *   6 + 4 + 3 + 1 = 14 (no és vàlida perquè ja tenim 6+5+3)
+    *   6 + 5 + 2 + 1 = 14 (no és vàlida perquè ja tenim 6+5+3)
+*   Si no incloem 7 ni 6, comencem amb el següent nombre més gran, 5.
+    *   5 + 4 + 3 + 2 = 14
+    *   5 + 4 + 3 + 1 + 1 = 14 (no és vàlida perquè no tenim dos 1)
+*   Si no incloem 7, 6 ni 5, comencem amb el següent nombre més gran, 4.
+    *   4 + 3 + 2 + 1 + 4 = 14 (no és vàlida perquè no tenim dos 4)
+
+Per tant, les combinacions que sumen 14 són:
+    *   {1, 6, 7}
+    *   {2, 5, 7}
+    *   {3, 4, 7}
+    *   {3, 5, 6}
+    *   {2, 3, 4, 5}
+
+Aquestes combinacions ens donen les següents particions del conjunt original:
+    *   {1, 6, 7} i {2, 3, 4, 5}
+    *   {2, 5, 7} i {1, 3, 4, 6}
+    *   {3, 4, 7} i {1, 2, 5, 6}
+    *   {3, 5, 6} i {1, 2, 4, 7}
+    *   {2, 3, 4, 5} i {1, 6, 7} (aquesta és la mateixa que la primera)
+
+Per tant, hi ha 4 maneres diferents de dividir el conjunt en dos subconjunts amb la mateixa suma.
+
+Resposta: D)

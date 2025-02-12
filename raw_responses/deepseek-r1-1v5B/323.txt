@@ -1,0 +1,135 @@
+<think>
+Para determinar cuál de las opciones no puede ser el número de lados k de un polígon cuyos ángulos interiores son iguales entre 90° y 150°, seguimos estos pasos:
+
+1. **Suma de los ángulos interiores**:
+   La suma general de los ángulos interiores en un polígon de k lados es (k-2)*180°.
+
+2. **Específicos para los ángulos interiores**:
+   Cada ángulo interior puede ser 90° o 150°, dependiendo del tipo de polígono.
+
+3. **Sistematizar las variables**:
+   Supongamos que hay 'x' ángulos interiores de 150° y 'y' ángulos interiores de 90°. Entonces:
+   x + y = k (total de ángulos)
+   
+4. **Suma de los ángulos interiores con las especificaciones**:
+   150x + 90y = (k-2)*180
+   
+5. **Substitution de variables**:
+   Usando x + y = k, sustituimos x por k - y en la ecuación de suma de ángulos interiores:
+   150(k - y) + 90y = (k-2)*180
+   Simplificando:
+   150k - 150y + 90y = 180k - 360
+   150k - 60y = 180k - 360
+   -60y = 30k - 360
+   2y = -k + 12
+   
+6. **Despeje de y**:
+   y = (-k + 12)/2
+   
+7. **Determine la condición para positividad**:
+   Y debe ser mayor que cero, por lo que:
+   (-k + 12)/2 > 0
+   -k + 12 > 0
+   k < 12
+   
+8. **Ajustar con las opciones proporcionadas**:
+   La opción de k es 4, 6, 8, 9 o 10.
+
+   Verificamos cada valor:
+
+   - **k = 4**: k < 12, que cumple.
+   - **k = 6**: k < 12, que cumple.
+   - **k = 8**: k < 12, que cumple.
+   - **k = 9**: k < 12, que cumple.
+   - **k = 10**: k < 12, que cumple.
+
+   Dado que k siempre debe ser menor que 12 para que y sea positiva, todas las opciones excepto la none. Sin embargo, revisando la ecuación y = (-k +12)/2, necesitamos also que x (el número de ángulos de 150°) no negativo.
+
+   Reexpresando:
+   x = k - y
+   x = k - [(-k +12)/2] = (2k + k -12)/2 = (3k -12)/2
+
+   Para que x sea positivo:
+   3k -12 >0
+   3k>12
+   k>4
+
+   Por lo tanto, k debe ser mayor que 4. Las opciones que cumplen con k >4 y k <12 son 6,8,9,10.
+
+   Ahora, revisamos las opciones proporcionadas:
+
+   A) 4: k=4 → x=(3*4 -12)/2=(12-12)/2=0. Entonces, todas los ángulos son 90°. Pueden existir polígonos cuyos ángulos interiores son todos 90°, como un cuadrado o un pentaigonal con ángulos de 90°, pero no más.
+
+   B)6: k=6 → x=(18-12)/2=3. Entonces, hay 3 ángulos de 150° y 3 de 90°. Suma de ángulos interiores: 3*150 +3*90 =450+270=720. Suma general: (6-2)*180=720, lo que cumple.
+
+   C)8: k=8 →x=(24-12)/2=6. Hay 6 ángulos de 150° y 2 de 90°. Suma interiores:6*150 +2*90=900+180=1080. Suma general: (8-2)*180=1080, cumple.
+
+   D)9:k=9 →x=(27-12)/2=7.5. No es entero, por lo que no se puede tener 7.5 ángulos de 150° y el otro 4 de 90°, ya que los ángulos debe ser enteros.
+
+   E)10:k=10 →x=(30-12)/2=9. Entonces, hay 9 ángulos de 150° y 1 de 90°. Suma interiores:9*150 +1*90=1350+90=1440. Suma general: (10-2)*180=1440, cumple.
+
+   Por lo tanto, la opción que no puede ser k es 9, ya que x no es entero.
+</think>
+
+Para determinar cuál de las opciones no puede ser el número de lados \(k\) del polígono, sigamos estos pasos:
+
+1. **Suma de los ángulos interiores**:
+   La suma general de los ángulos interiores en un polígono de \(k\) lados es \((k - 2) \times 180^\circ\).
+
+2. **Específicos para los ángulos interiores**:
+   Cada ángulo interior puede ser \(90^\circ\) o \(150^\circ\). Supongamos que hay \(x\) ángulos interiores de \(150^\circ\) y \(y\) ángulos interiores de \(90^\circ\):
+   \[
+   x + y = k
+   \]
+   
+3. **Suma de los ángulos interiores con las especificaciones**:
+   \[
+   150x + 90y = (k - 2) \times 180
+   \]
+
+4. **Substitution de variables**:
+   Reemplazamos \(x\) por \(k - y\) en la ecuación de suma de ángulos interiores:
+   \[
+   150(k - y) + 90y = (k - 2) \times 180
+   \]
+   Simplificando:
+   \[
+   150k - 60y = 180k - 360
+   \]
+   \[
+   -60y = 30k - 360
+   \]
+   \[
+   2y = -k + 12
+   \]
+   \[
+   y = \frac{-k + 12}{2}
+   \]
+
+5. **Determine la condición para positividad**:
+   \(y\) debe ser mayor que cero, por lo que:
+   \[
+   \frac{-k + 12}{2} > 0
+   \]
+   \[
+   -k + 12 > 0
+   \]
+   \[
+   k < 12
+   \]
+
+6. **Ajustar con las opciones proporcionadas**:
+   Verificamos cada valor de \(k\) (4, 6, 8, 9, 10):
+
+   - **\(k = 4\)**: Cumple \(k < 12\).
+   - **\(k = 6\)**: Cumple \(k < 12\).
+   - **\(k = 8\)**: Cumple \(k < 12\).
+   - **\(k = 9\)**: No cumple, ya que \(\frac{-9 + 12}{2} = 1.5\), no es entero.
+   - **\(k = 10\)**: Cumple \(k < 12\).
+
+7. **Conclusión**:
+   La opción que no puede ser \(k\) es **9**, ya que produces non-enteros de ángulos interiores.
+
+**Respuesta final**:
+
+La opción no posible es \(\boxed{9}\).

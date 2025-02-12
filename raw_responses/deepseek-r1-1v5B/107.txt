@@ -1,0 +1,64 @@
+<think>
+Para determinar f(x² - 1), primero necesitamos encontrar la expresión general del polinomio f. Sabemos que f(x² + 1) = x⁴ + 4x². Podemos expresar x⁴ + 4x² de manera que incluya x² + 1.
+
+Primero, observamos que x⁴ + 4x² se puede factorizar como (x²)^2 + 4x². Sin embargo, no es straightforward para expresar esto directamente en términos de x² + 1. Tomemos into cuenta que x² = (x² + 1) - 1. 
+
+Al reemplazar x² por (x² + 1) - 1, obtenemos:
+(x²)^2 + 4x² = [(x² + 1) - 1]^2 + 4[(x² + 1) - 1]
+
+Expanding el cuadrado de la diferencia:
+= (x² + 1)^2 - 2(x² + 1) + 1 + 4(x² + 1) - 4
+
+Simplificando:
+= x^4 + 2x² + 1 - 2x² - 2 + 1 + 4x² + 4 - 4
+= x^4 + (2x² - 2x² + 4x²) + (1 - 2 + 1 - 4 + 4)
+= x^4 + 4x²
+
+Notamos que el resultado es igual a x⁴ + 4x², lo que sugiere que our expandión no haya anya error. Por lo tanto, f(x² + 1) = (x²)^2 + 4x² = x^4 + 4x².
+
+Ahora, para encontrar f(x² - 1), reemplazamos x por x² en la expresión general de f.
+f(x² - 1) = (x²)^2 + 4*(x²)
+= x^4 + 4x²
+
+Finalmente, observamos que f(x² - 1) es igual a x⁴ + 4x², lo que se puede simplifyear como x^4 + 4x².
+</think>
+
+Para determinar \( f(x^2 - 1) \), primero necesitamos encontrar la expresión general del polinomio \( f \). Sabemos que:
+
+\[ f(x^2 + 1) = x^4 + 4x^2 \]
+
+Primero, observamos que:
+
+\[ x^4 + 4x^2 = (x^2)^2 + 4x^2 \]
+
+En lugar de expresar \( x^2 \) en términos de \( x^2 + 1 \), reemplazemos \( x^2 \) por \( (x^2 + 1) - 1 \):
+
+\[ f(x^2 + 1) = [(x^2 + 1) - 1]^2 + 4[(x^2 + 1) - 1] \]
+
+Expanding el cuadrado de la diferencia:
+
+\[ = (x^2 + 1)^2 - 2(x^2 + 1) + 1 + 4(x^2 + 1) - 4 \]
+
+Simplificando:
+
+\[ = x^4 + 2x^2 + 1 - 2x^2 - 2 + 1 + 4x^2 + 4 - 4 \]
+\[ = x^4 + (2x^2 - 2x^2 + 4x^2) + (1 - 2 + 1 - 4 + 4) \]
+\[ = x^4 + 4x^2 \]
+
+Esto demuestra que our expandión no haya anya error. Por lo tanto, la expresión general del polinomio \( f \) es:
+
+\[ f(x^2 + 1) = (x^2)^2 + 4x^2 = x^4 + 4x^2 \]
+
+Ahora, para encontrar \( f(x^2 - 1) \), reemplazamos \( x \) por \( x^2 \):
+
+\[ f(x^2 - 1) = (x^2)^2 + 4(x^2) = x^4 + 4x^2 \]
+
+Finalmente, observamos que:
+
+\[ f(x^2 - 1) = x^4 + 4x^2 \]
+
+Comparando con las opciones de respuesta dadas, la correcta es **C) \( x^4 + 4x^2 - 4 \)**.
+
+\[
+\boxed{C)
+\]

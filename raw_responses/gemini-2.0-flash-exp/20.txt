@@ -1,0 +1,22 @@
+Raonament:
+Aquest problema és un exemple clàssic del problema de Frobenius o problema de la moneda. En aquest cas, tenim dos valors de segells, 6 i 7, que són coprimers (el seu màxim comú divisor és 1). El teorema de Frobenius estableix que el nombre més gran que no es pot expressar com a combinació lineal no negativa de dos nombres coprimers a i b és ab - a - b.
+
+En el nostre cas, a = 6 i b = 7. Per tant, el franqueig més gran que no es pot pagar és (6 * 7) - 6 - 7 = 42 - 6 - 7 = 29.
+
+Podem verificar que 29 no es pot obtenir:
+- 29 = 6x + 7y
+- Si y=0, 29/6 no és enter.
+- Si y=1, (29-7)/6 = 22/6 no és enter.
+- Si y=2, (29-14)/6 = 15/6 no és enter.
+- Si y=3, (29-21)/6 = 8/6 no és enter.
+- Si y=4, (29-28)/6 = 1/6 no és enter.
+
+Però 30 = 5*6 + 0*7
+31 = 3*6 + 1*7
+32 = 1*6 + 4*7
+33 = 4*6 + 1*7
+34 = 2*6 + 3*7
+35 = 0*6 + 5*7
+... i així successivament.
+
+Resposta: B)

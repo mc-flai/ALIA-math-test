@@ -1,0 +1,12 @@
+Raonament:
+Un cub té 8 vèrtexs. Cada vèrtex està connectat per arestes a 3 altres vèrtexs. Per tant, per a un vèrtex donat, necessitem un color diferent per a ell i per als seus 3 veïns. Això significa que necessitem almenys 4 colors.
+
+Si intentem acolorir el cub amb 4 colors, podem fer-ho de la següent manera:
+1. Considerem un vèrtex qualsevol i assignem-li el color 1.
+2. Els tres vèrtexs adjacents a aquest vèrtex han de tenir colors diferents entre ells i diferents del color 1. Assignem-los els colors 2, 3 i 4.
+3. Ara considerem el vèrtex oposat al vèrtex inicial. Aquest vèrtex no està connectat directament a cap dels vèrtexs que ja hem acolorat. Per tant, podem assignar-li el color 1.
+4. Els tres vèrtexs adjacents a aquest últim vèrtex oposat són els que encara no hem acolorat. Cadascun d'aquests vèrtexs està connectat a dos vèrtexs amb colors diferents (un amb color 1 i un altre amb color 2, 3 o 4). Per tant, podem assignar-los els colors 2, 3 i 4 de manera que no hi haja conflictes.
+
+Per tant, podem acolorir el cub amb 4 colors de manera que cada vèrtex i els seus veïns tinguen colors diferents.
+
+Resposta: B)

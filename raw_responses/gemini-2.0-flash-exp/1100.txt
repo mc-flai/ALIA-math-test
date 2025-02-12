@@ -1,0 +1,37 @@
+Raonament:
+
+Primer, analitzem el patró de Carles: diu la veritat un dia, menteix l'endemà, i així successivament. Això significa que si un dia diu la veritat, l'endemà mentirà, i si un dia menteix, l'endemà dirà la veritat.
+
+Ara, analitzem cada afirmació:
+
+*   **A) Vaig mentir ahir i demà mentiré.** Si Carles diu la veritat, això significa que ahir va mentir i demà mentirà. Si Carles menteix, això significa que o ahir va dir la veritat o demà dirà la veritat (o ambdues).
+*   **B) Hui dic la veritat i demà diré la veritat.** Si Carles diu la veritat, això significa que hui diu la veritat i demà dirà la veritat. Si Carles menteix, això significa que o hui menteix o demà mentirà (o ambdues).
+*   **C) 2024 és divisible per 11.** Aquesta afirmació és falsa, ja que 2024 / 11 = 184 amb residu 0. Per tant, 2024 és divisible per 11. Si Carles diu la veritat, aquesta afirmació és falsa. Si Carles menteix, aquesta afirmació és veritable.
+*   **D) Ahir era dimecres.** Aquesta afirmació pot ser veritable o falsa depenent del dia en què Carles va fer les afirmacions.
+*   **E) Demà serà dissabte.** Aquesta afirmació pot ser veritable o falsa depenent del dia en què Carles va fer les afirmacions.
+
+Ara, considerem que Carles va fer exactament quatre afirmacions veritables.
+
+Si Carles va dir la veritat el dia que va fer les afirmacions, llavors:
+*   A) seria veritat (ahir va mentir i demà mentirà)
+*   B) seria falsa (demà mentirà)
+*   C) seria falsa (2024 és divisible per 11)
+*   D) podria ser veritat o falsa
+*   E) podria ser veritat o falsa
+
+Si Carles va mentir el dia que va fer les afirmacions, llavors:
+*   A) seria falsa (o ahir va dir la veritat o demà dirà la veritat)
+*   B) seria falsa (o hui menteix o demà mentirà)
+*   C) seria veritat (2024 no és divisible per 11)
+*   D) podria ser veritat o falsa
+*   E) podria ser veritat o falsa
+
+Si Carles va dir la veritat, necessitem 4 afirmacions veritables. Si A és veritat, B i C són falses, necessitem que D i E siguin veritables. Si Carles va mentir, necessitem 4 afirmacions veritables. Si C és veritat, A i B són falses, necessitem que D i E siguin veritables.
+
+Si A és veritat, llavors Carles va dir la veritat. Si B és veritat, llavors Carles va dir la veritat. Si C és veritat, llavors Carles va mentir.
+
+Si Carles va dir la veritat, A és veritat, B és falsa, C és falsa. Per tant, D i E han de ser veritat. Si Carles va mentir, A és falsa, B és falsa, C és veritat. Per tant, D i E han de ser veritat.
+
+L'única afirmació que sempre és falsa quan Carles diu la veritat és la C. Per tant, si Carles va fer 4 afirmacions veritables, la C és la que segur que no va fer.
+
+Resposta: C)

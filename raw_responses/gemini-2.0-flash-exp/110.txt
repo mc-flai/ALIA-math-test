@@ -1,0 +1,22 @@
+Raonament:
+Hem de trobar els enters positius més petits que 101 que són divisibles pel quadrat d'un nombre natural més gran que 1. Això vol dir que hem de buscar nombres que siguin múltiples de 4 (2²), 9 (3²), 16 (4²), 25 (5²), 36 (6²), 49 (7²), 64 (8²), 81 (9²), i 100 (10²).
+
+* Múltiples de 4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100 (25 nombres)
+* Múltiples de 9: 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99 (11 nombres)
+* Múltiples de 16: 16, 32, 48, 64, 80, 96 (6 nombres)
+* Múltiples de 25: 25, 50, 75, 100 (4 nombres)
+* Múltiples de 36: 36, 72 (2 nombres)
+* Múltiples de 49: 49, 98 (2 nombres)
+* Múltiples de 64: 64 (1 nombre)
+* Múltiples de 81: 81 (1 nombre)
+* Múltiples de 100: 100 (1 nombre)
+
+Ara hem de comptar els nombres sense repetir-los.
+* Múltiples de 4: 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100 (25)
+* Múltiples de 9 (no repetits): 9, 18, 27, 45, 54, 63, 81, 90, 99 (9)
+* Múltiples de 25 (no repetits): 25, 50, 75 (3)
+* Múltiples de 49 (no repetits): 49, 98 (2)
+
+Total: 25 + 9 + 3 + 2 = 39
+
+Resposta: E)

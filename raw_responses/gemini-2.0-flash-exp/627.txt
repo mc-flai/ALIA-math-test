@@ -1,0 +1,29 @@
+Raonament:
+Siguin $v_1, v_2, ..., v_{11}$ el nombre de passatgers en cada vagó. Sabem que la suma total de passatgers és 350, és a dir, $v_1 + v_2 + ... + v_{11} = 350$. També sabem que la suma de passatgers en tres vagons consecutius és sempre 99. Això ens dona les següents equacions:
+\begin{itemize}
+    \item $v_1 + v_2 + v_3 = 99$
+    \item $v_2 + v_3 + v_4 = 99$
+    \item $v_3 + v_4 + v_5 = 99$
+    \item $v_4 + v_5 + v_6 = 99$
+    \item $v_5 + v_6 + v_7 = 99$
+    \item $v_6 + v_7 + v_8 = 99$
+    \item $v_7 + v_8 + v_9 = 99$
+    \item $v_8 + v_9 + v_{10} = 99$
+    \item $v_9 + v_{10} + v_{11} = 99$
+\end{itemize}
+Restant la primera equació de la segona, obtenim $v_4 - v_1 = 0$, per tant $v_4 = v_1$. De la mateixa manera, restant la segona de la tercera, obtenim $v_5 - v_2 = 0$, per tant $v_5 = v_2$. En general, $v_{n+3} = v_n$. Això significa que els passatgers es repeteixen cada 3 vagons. Per tant, tenim:
+$v_1 = v_4 = v_7 = v_{10}$
+$v_2 = v_5 = v_8 = v_{11}$
+$v_3 = v_6 = v_9$
+
+La suma total de passatgers és:
+$v_1 + v_2 + v_3 + v_4 + v_5 + v_6 + v_7 + v_8 + v_9 + v_{10} + v_{11} = 350$
+Substituint les igualtats, tenim:
+$4v_1 + 4v_2 + 3v_3 = 350$
+També sabem que $v_1 + v_2 + v_3 = 99$. Multiplicant aquesta equació per 3, obtenim $3v_1 + 3v_2 + 3v_3 = 297$.
+Restant aquesta equació de $4v_1 + 4v_2 + 3v_3 = 350$, obtenim:
+$v_1 + v_2 = 350 - 297 = 53$
+Com que $v_1 + v_2 + v_3 = 99$, tenim $53 + v_3 = 99$, per tant $v_3 = 99 - 53 = 46$.
+Com que $v_6 = v_3$, tenim que $v_6 = 46$.
+
+Resposta: E)

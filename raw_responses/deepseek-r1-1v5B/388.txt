@@ -1,0 +1,66 @@
+<think>
+Prime, identifiquem els elements donats i la incómoda.
+
+El boles d'acétebal tenen un diàmetre de 20 cm i una profundada del 1 cm. El objecte que volem formar és una bola sòlida amb el mateix diàmetre, i esques hem formations buides per a escomber la font.
+
+Tambí recordem que el volume del boles es el volume de l'elipsecil (esfera truncata), que dona un vol total igual a 3/4 d'aquest.
+
+Para què formem una bola sòlida sense que escapi les boles, cal expressar la quantitat de boles necessàries per el volume total de la bola sòlida. Així, calculeré quants volums de boles serán equivalents a l'volume de la bola sòlida.
+
+Per això, calcularem el radi de la bola sòlida i les profundies dels boles, seguidament el volume total d'elles i compararle amb el del boles.
+
+Finalmente, dividirem el volumen total necessari per la bola sòlida pel cada boles buide per aular-los al numerador i el del boles a l'eix inferior de l'igura, resultant en el nombre d'aquells que cal enermeixar.
+</think>
+
+P sense que sigas donat les dades es devem realitzar un procés de raonament sense ambdore:
+
+**Raonament:**
+
+1. **Determinem els elements donats i la incómoda:**
+   - Diàmetre del boles: \( D = 20 \, \text{cm} \)
+   - Profundità del boles: \( d = 1 \, \text{cm} \)
+   - Diàmetre de la bola sòlida que volem formar: \( D_s = 20 \, \text{cm} \)
+
+2. **Calculam el radi de la bola sòlida:**
+   - El diàmetre \( D_s \) és la distana entre els punts furders, el seu radical mitjà és:
+     \[
+     r_s = \frac{D_s}{2} = \frac{20\,\text{cm}}{2} = 10 \, \text{cm}
+     \]
+
+3. **Calculam el volume de la bola sòlida:**
+   - El vol de la bola es la mitjana entre el volums de l'elipsecil i el del hemisferiu:
+     \[
+     V_s = \frac{\pi r_s^3}{6} + \frac{\pi r_s^3}{2} = \frac{2\pi r_s^3 + 3\pi r_s^3}{6} = \frac{5\pi r_s^3}{6}
+     \]
+   - Plugging \( r_s = 10 \, \text{cm} \):
+     \[
+     V_s = \frac{5\pi (10)^3}{6} = \frac{5\pi \cdot 1000}{6} = \frac{5000\pi}{6} \, \text{cm}^3
+     \]
+
+4. **Calculam el volume de cada boles:**
+   - El boles tèncer (el que s'ha escombi per aular-los) tenen un diàmetre del 20 cm i una profundità del 1 cm.
+   - El volume total d'un boles es la mitjana entre el volums de l'elipsecil i el del hemisferiu:
+     \[
+     V_{\text{boles}} = \frac{\pi r_b^3}{6} + \frac{\pi r_b^3}{2} = \frac{5\pi r_b^3}{6}
+     \]
+   - Smentim \( r_b = 10 \, \text{cm} \):
+     \[
+     V_{\text{boles}} = \frac{5\pi (10)^3}{6} = \frac{5\pi \cdot 1000}{6} = \frac{5000\pi}{6} \, \text{cm}^3
+     \]
+
+5. **Comparem el volumen total necessari amb el del boles:**
+   - El volume de la bola sòlida és igual a l'elipsecil sense la profundada del 1 cm.
+   - Quereu que formem una bola sòlida sense que escapi les boles, cal dividir el vol total necessari per la profundità de cada boles buide:
+     \[
+     N = \frac{V_s}{d} = \frac{\frac{5000\pi}{6}}{1} = 833.333... \approx 834
+     \]
+   - Així, cal enermeixar aproximadament \( 834 \) boles buides.
+
+6. **Reificant les alternatives:**
+   - A) 8
+   - B) 4
+   - C) 7
+   - D) 10
+   - E) 6
+
+La raonament es donaix amb l'approximació d'834 boles buides, per aular-los a la bola sòlida.

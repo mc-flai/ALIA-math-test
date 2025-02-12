@@ -1,0 +1,18 @@
+Raonament:
+1. **Visualització del problema:** Imaginem un tren que ix de València a les 10:00. Aquest tren arribarà a Tarragona a les 12:30. Durant aquest viatge, es creuarà amb tots els trens que hagen eixit de Tarragona cap a València en un interval de temps que permeti la trobada.
+
+2. **Anàlisi dels trens que ixen de Tarragona:**
+    * El tren que ix de Tarragona a les 10:00 es creuarà amb el tren de València.
+    * El tren que ix de Tarragona a les 11:00 es creuarà amb el tren de València.
+    * El tren que ix de Tarragona a les 12:00 es creuarà amb el tren de València.
+    * El tren que ix de Tarragona a les 13:00 no es creuarà amb el tren de València, ja que aquest ja haurà arribat a Tarragona.
+    * El tren que ix de Tarragona a les 9:00 ja s'haurà creuat amb el tren de València abans que aquest isca de València.
+
+3. **Consideració dels trens que ja estan en ruta:**
+    * El tren que ix de Tarragona a les 7:30 arribarà a València a les 10:00, just quan el tren de València ix. Per tant, aquest tren ja estarà en ruta i es creuarà amb el tren de València.
+    * El tren que ix de Tarragona a les 8:30 arribarà a València a les 11:00, i també es creuarà amb el tren de València.
+    * El tren que ix de Tarragona a les 9:30 arribarà a València a les 12:00, i també es creuarà amb el tren de València.
+
+4. **Càlcul dels creuaments:** El tren que ix de València a les 10:00 es creuarà amb els trens que ixen de Tarragona a les 7:30, 8:30, 9:00, 10:00, 11:00 i 12:00. Això fa un total de 6 trens.
+
+Resposta: E)

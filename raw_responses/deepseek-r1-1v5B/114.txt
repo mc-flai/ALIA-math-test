@@ -1,0 +1,38 @@
+<think>
+Para determinar la probabilidad de que el segundo tiquet extruido sea mayor que el primer, primero identificamos los espacios totales y los casos favorables.
+
+El total de tiquets en la caixa es 2015. Cuando tomamos el primer tiquet al azar, el segundo tiquet puede ser any del conjunto restante de 2014 tiquets.
+
+La probabilidad de que el segundo tiquet sea mayor que el primer se basa en el número de tiquets mayores que el primero. Si el primer tiquet tiene el número 'k', los tiquets más grandes son de k+1 hasta 2015, lo que suma (2015 - k) tiquets.
+
+Sin embargo, para calcular la probabilidad general, consideramos que cualquier tiquet inicial puede ser seleccionado con igual probability. La distribución uniforme de los números implies que cada número tiene la misma probabilidad de ser el primer.
+
+La media aritmética del rango de números da una idea de cómo se distribuyen los casos favorables. La media es (1 + 2015) / 2 = 1008, lo que sugiere que alrededor de la mitad de los tiquets son menores y la otra parte mayores.
+
+Finalmente, la probabilidad es aproximadamente 33,33%, ya que el conjunto de tiquets se distribuye en dos partes simétricas. Por lo tanto, la probabilidad de que el segundo tiquet sea mayor es igual a la de ser menor.
+</think>
+
+Para resolver este problema, sigamos los siguientes pasos:
+
+1. **Determinar el espacio total:**
+   - El caixa tiene 2015 tiquets, identificados por los números 1, 2, 3, ..., 2015.
+
+2. **Selector una tiqueta del primer tiquet:**
+   - La primera extracción puede ser cualquier número entre 1 y 2015 con la misma probabilidad.
+   - After extracting the first ticket, there hay 2014 tiquets remaining.
+
+3. **Determinar los casos favorables:**
+   - El segundo tiquet debe tener un valor mayor que el primer.
+   - Si el primer tiqueta tiene el número 'k', los tiquetes restantes con números > k son de k+1 hasta 2015, lo que es (2015 - k) tiquets.
+
+4. **Calcular la probabilidad:**
+   - La probability de que el segundo tiqueta sea mayor es la cantidad de tiquetes mayores que el primer dividida por el total de tiquetes restantes.
+   \[
+   P = \frac{2015 - k}{2014}
+   \]
+   - Sin embargo, para una distribución uniforme, se puede considerar que la media aritmética del rango nos da aproximadamente 33,33% de tiquetes más grandes que el primer.
+
+5. **Conclusión:**
+   - La probabilidad de que el segundo número sea mayor que el primero es aproximadamente **33,33%**.
+
+\boxed{D}

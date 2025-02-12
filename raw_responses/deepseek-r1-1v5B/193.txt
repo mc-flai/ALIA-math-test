@@ -1,0 +1,61 @@
+<think>
+Primejament, expressem l'equació donada en l'enunciat:
+
+ac + ad + bc + bd = 68 i c + d = 4
+
+El segon element al qual he observat és que el primer terme de l'esquema de la dígita (a b c d) es el més grand, donant que en quells paredonos a prioritzar. Empecem per analyser el segon equació:
+
+c + d = 4
+
+Estimem el possible valors que assignen a c i d:
+
+- c = 0, d = 4
+- c = 1, d = 3
+- c = 2, d = 2
+- c = 3, d = 1
+- c = 4, d = 0
+
+L'he toti considerant que c i d són números enters positives o zero.
+
+Com encanta, l'e IX factoritzar la expresión ac + ad + bc + bd:
+
+ac + ad + bc + bd = a(c + d) + b(c + d) = (a + b)(c + d)
+
+Però per donar que el producte vali 68 i com c + d =4, l'e IX factorització serà:
+
+(a + b)(4) = 68 → a + b =17
+
+Ara, restem a la suma total de variables a b c d:
+
+a + b + c + d = (a + b) + (c + d) =17 +4=21
+</think>
+
+El problema donat és el següent:
+
+Dada la expressió \( ac + ad + bc + bd = 68 \) i \( c + d = 4 \), quin és el valor de \( a + b + c + d \)?
+
+**Solución:**
+
+1. **Anular l'expressió d'aciliarmente:**
+   L'e IX factorització es pot aplicar a la expressión \( ac + ad + bc + bd \):
+   \[
+   ac + ad + bc + bd = a(c + d) + b(c + d) = (a + b)(c + d)
+   \]
+   
+2. **Aplicar el valor de la segona equació:**
+   Sabemos que \( c + d = 4 \), per tant:
+   \[
+   (a + b)(4) = 68
+   \]
+   Simplificant, obtenem:
+   \[
+   a + b = \frac{68}{4} =17
+   \]
+
+3. **Calcular la suma total de variables:**
+   Sumem \( a + b \) amb \( c + d \):
+   \[
+   a + b + c + d = (a + b) + (c + d) = 17 + 4 =21
+   \]
+
+**Respuesta final:** \(\boxed{C}\)

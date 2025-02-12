@@ -1,0 +1,46 @@
+Raonament:
+1. **Comprendre la geometria del cub:** En un cub, el centre és el punt mig de qualsevol de les seves diagonals principals (les que connecten vèrtexs oposats). Si tenim tres vèrtexs que no estan a la mateixa cara, podem utilitzar-los per trobar un quart vèrtex que sigui oposat a un d'ells.
+
+2. **Trobar un quart vèrtex:** Sigui S el quart vèrtex que forma una diagonal amb P. El centre del cub serà el punt mig de la diagonal PS. Per trobar S, podem utilitzar el fet que els vectors PQ i PR són arestes del cub. El vector PS serà la suma vectorial de PQ i PR, o la seva resta, depenent de la posició relativa dels vèrtexs.
+
+3. **Calcular els vectors PQ i PR:**
+   - PQ = Q - P = (5-3, 2-4, 9-1) = (2, -2, 8)
+   - PR = R - P = (1-3, 6-4, 5-1) = (-2, 2, 4)
+
+4. **Trobar el vector PS:**
+   - Si sumem PQ i PR, obtenim un vector que no és una aresta del cub, sinó una diagonal de la cara. Per tant, hem de restar-los per obtenir un vector que sigui una aresta del cub.
+   - PS = PQ - PR = (2 - (-2), -2 - 2, 8 - 4) = (4, -4, 4)
+   - També podriem fer PS = PR - PQ = (-4, 4, -4), que és el mateix vector amb signe contrari.
+
+5. **Calcular el vèrtex S:**
+   - S = P + PS = (3, 4, 1) + (4, -4, 4) = (7, 0, 5)
+   - O bé, S = P + (PR - PQ) = (3, 4, 1) + (-4, 4, -4) = (-1, 8, -3)
+   - Però, si fem S = P - PS = (3, 4, 1) - (4, -4, 4) = (-1, 8, -3)
+   - I si fem S = P - (PR - PQ) = (3, 4, 1) - (-4, 4, -4) = (7, 0, 5)
+   - Per tant, tenim dos possibles vèrtexs oposats a P: (7, 0, 5) i (-1, 8, -3).
+
+6. **Calcular el centre del cub:**
+   - Centre = (P + S) / 2
+   - Si S = (7, 0, 5), Centre = ((3+7)/2, (4+0)/2, (1+5)/2) = (5, 2, 3)
+   - Si S = (-1, 8, -3), Centre = ((3-1)/2, (4+8)/2, (1-3)/2) = (1, 6, -1)
+   - Cap d'aquests centres coincideix amb les opcions.
+
+7. **Revisar el mètode:** Hem de trobar un vèrtex oposat a P, Q o R. Si fem el mateix amb Q, obtenim:
+   - QP = -PQ = (-2, 2, -8)
+   - QR = R - Q = (1-5, 6-2, 5-9) = (-4, 4, -4)
+   - QS = QP - QR = (-2 - (-4), 2 - 4, -8 - (-4)) = (2, -2, -4)
+   - S = Q + QS = (5, 2, 9) + (2, -2, -4) = (7, 0, 5)
+   - Centre = (Q + S) / 2 = ((5+7)/2, (2+0)/2, (9+5)/2) = (6, 1, 7)
+   - Tampoc coincideix.
+
+8. **Revisar el mètode (de nou):** El centre del cub és el punt mig de la diagonal que uneix dos vèrtexs oposats. Si tenim tres vèrtexs, podem trobar el quart vèrtex que forma una diagonal amb un d'ells. Però, en comptes de fer la resta de vectors, podem fer la suma dels tres vèrtexs i restar-li el vèrtex oposat.
+   - Centre = (P + Q + R) / 2
+   - Centre = ((3+5+1)/2, (4+2+6)/2, (1+9+5)/2) = (9/2, 12/2, 15/2) = (4.5, 6, 7.5)
+   - Això tampoc coincideix.
+
+9. **Mètode correcte:** El centre del cub és el punt mig de la diagonal que uneix dos vèrtexs oposats. Si tenim tres vèrtexs, podem trobar el quart vèrtex que forma una diagonal amb un d'ells. Però, en comptes de fer la resta de vectors, podem fer la suma dels tres vèrtexs i restar-li el vèrtex oposat.
+   - Si P i S són oposats, llavors el centre és (P+S)/2.
+   - S = Q + R - P = (5,2,9) + (1,6,5) - (3,4,1) = (3,4,13)
+   - Centre = (P+S)/2 = ((3+3)/2, (4+4)/2, (1+13)/2) = (3,4,7)
+
+Resposta: C)

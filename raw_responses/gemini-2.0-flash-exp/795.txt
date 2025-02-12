@@ -1,0 +1,16 @@
+Raonament:
+El problema ens diu que el nombre d'ovelles és divisible tant per 15 com per 16, i que aquest nombre està entre 300 i 600. Per tant, hem de trobar un múltiple comú de 15 i 16 que estigui dins d'aquest rang.
+
+Primer, trobem el mínim comú múltiple (mcm) de 15 i 16.
+* Descomposició en factors primers de 15: 3 x 5
+* Descomposició en factors primers de 16: 2 x 2 x 2 x 2 = 2^4
+El mcm de 15 i 16 és el producte dels factors primers elevats a la màxima potència que apareixen en les descomposicions: 2^4 x 3 x 5 = 16 x 3 x 5 = 240.
+
+Ara, hem de trobar els múltiples de 240 que estiguin entre 300 i 600.
+* 240 x 1 = 240 (fora del rang)
+* 240 x 2 = 480 (dins del rang)
+* 240 x 3 = 720 (fora del rang)
+
+Per tant, l'únic múltiple de 240 que està entre 300 i 600 és 480.
+
+Resposta: E)

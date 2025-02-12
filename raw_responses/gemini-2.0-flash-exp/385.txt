@@ -1,0 +1,15 @@
+Raonament:
+Primer, descomponem el producte de les edats actuals de les tortugues en factors primers: 2² · 3³ · 11. Això significa que les edats de les tortugues, Tor i Tur, són combinacions d'aquests factors. L'edat de cada tortuga ha de ser un divisor d'aquest producte.
+
+D'aquí un any, les edats de les tortugues seran Tor+1 i Tur+1. El producte de les seves edats serà (Tor+1)(Tur+1). Hem de trobar quin dels nombres donats no pot ser un divisor d'aquest nou producte.
+
+Analitzem les opcions:
+A) 18 = 2 · 3². Si el producte (Tor+1)(Tur+1) fos divisible per 18, necessitaríem almenys un factor 2 i dos factors 3. Podria ser possible si, per exemple, Tor=8 i Tur=27, llavors (Tor+1)(Tur+1) = 9*28 = 252, que és divisible per 18.
+B) 5: Perquè el producte (Tor+1)(Tur+1) sigui divisible per 5, almenys un dels factors (Tor+1) o (Tur+1) ha de ser divisible per 5. Això vol dir que Tor o Tur hauria de ser un nombre que, en sumar-li 1, sigui divisible per 5. Per exemple, si Tor=4, Tor+1=5. Si Tur=27, Tur+1=28. El producte seria 5*28=140, divisible per 5.
+C) 6 = 2 · 3. Si el producte (Tor+1)(Tur+1) fos divisible per 6, necessitaríem almenys un factor 2 i un factor 3. Podria ser possible si, per exemple, Tor=8 i Tur=27, llavors (Tor+1)(Tur+1) = 9*28 = 252, que és divisible per 6.
+D) 22 = 2 · 11. Si el producte (Tor+1)(Tur+1) fos divisible per 22, necessitaríem almenys un factor 2 i un factor 11. Podria ser possible si, per exemple, Tor=10 i Tur=27, llavors (Tor+1)(Tur+1) = 11*28 = 308, que és divisible per 22.
+E) 37: Perquè el producte (Tor+1)(Tur+1) sigui divisible per 37, almenys un dels factors (Tor+1) o (Tur+1) ha de ser divisible per 37. Això vol dir que Tor o Tur hauria de ser un nombre que, en sumar-li 1, sigui divisible per 37. Les edats actuals de les tortugues són divisors de 2² · 3³ · 11 = 4 * 27 * 11 = 1188. Cap divisor d'aquest nombre, en sumar-li 1, pot ser divisible per 37. Per exemple, si Tor=11, Tor+1=12. Si Tor=27, Tor+1=28. Si Tor=108, Tor+1=109. Cap d'aquests valors, en sumar-li 1, és divisible per 37.
+
+Per tant, la resposta correcta és 37.
+
+Resposta: E)

@@ -1,0 +1,34 @@
+Raonament:
+Primer, manipulem les equacions per aïllar els termes que contenen `x` i `y`.
+De la primera equació, tenim:
+x/5 = 11 - 600/y
+x = 5(11 - 600/y)
+x = 55 - 3000/y
+
+De la segona equació, tenim:
+y/5 = 44 - 600/x
+y = 5(44 - 600/x)
+y = 220 - 3000/x
+
+Ara, substituïm l'expressió de `x` de la primera equació a la segona:
+y = 220 - 3000 / (55 - 3000/y)
+
+Multipliquem el numerador i el denominador de la fracció per `y`:
+y = 220 - 3000y / (55y - 3000)
+
+Multipliquem ambdós costats per (55y - 3000):
+y(55y - 3000) = 220(55y - 3000) - 3000y
+55y^2 - 3000y = 12100y - 660000 - 3000y
+55y^2 - 3000y = 9100y - 660000
+55y^2 - 12100y + 660000 = 0
+
+Dividim tota l'equació per 55:
+y^2 - 220y + 12000 = 0
+
+Ara, resolem aquesta equació quadràtica per trobar els valors de `y`. Podem factoritzar l'equació:
+(y - 120)(y - 100) = 0
+Per tant, les solucions per a `y` són y = 120 i y = 100.
+
+Com que ens demanen el valor mínim de `y`, la resposta és 100.
+
+Resposta: E)

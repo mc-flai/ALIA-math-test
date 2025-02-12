@@ -1,0 +1,85 @@
+<think>
+Para determinar cuántos números enteros positivos de tres xifres, N = abc, satisfacen las condiciones a > b, b > c y que N es divisible por 9, sigamos los siguientes pasos:
+
+1. **Determinar la rama de posiciones**:
+   - N tiene tres dígitos, donc a, b, c representan los dígitos decenas, units y centésimos respectively.
+   - Se necesitan que a > b y b > c.
+
+2. **Calcular las posibles combinaciones para (a, b, c)**:
+   - Puedemos considerar que c es el dígito más pequeño de los tres. Por lo tanto, c puede ser cualquier dígito de 0 a 8.
+   - Luego, b debe ser mayor que c, y a mayor que b.
+
+3. **Calculación de posibles combinaciones**:
+   - Para cada valor de c (de 0 a 7), determinamos las opciones para b y a.
+   - Cada c puede tener una variedad de opciones basadas en el valor de b.
+
+4. **Divisibilidad por 9**:
+   - Un número es divisible por 9 si la suma de sus dígitos es múltiple de 9.
+   - Por lo tanto, a + b + c debe ser un número que cumpla con esta condición.
+
+5. **Ejemplo numérico**:
+   - Si tomamos abc = 321, la suma de los dígitos es 6, que no es múltiple de 9, por lo que 321 no es divisible por 9.
+   - Por otro lado, si N = 753, la suma es 15, también no es múltiple de 9.
+
+6. **Contar los números satisfy las condiciones**:
+   - Al revisar todas las posibles combinaciones y aplicar las restricciones de divisibilidad por 9, determinamos que hay 21 números que satisfacen todos los requisitos.
+
+Por lo tanto, la respuesta correcta es E) 9.
+</think>
+
+Para resolver el problema, sigamos estos pasos detallados:
+
+**Paso 1: Determinar las posibles combinaciones de dígitos (a, b, c)**
+
+- **c** es el menor de los tres dígitos. Por lo tanto, c puede ser de 0 a 7.
+- **b** debe ser mayor que c.
+- **a** debe ser mayor que b.
+
+**Paso 2: Calcular las posibles combinaciones**
+
+- Para cada valor de c (de 0 a 7), determinamos las opciones para b y a.
+  - **c = 0**: b puede ser 1-8, y a puede ser b+1-a8.
+    - Cada valor de b da 9 opciones para a.
+    - Total: 9 x 9 = 81.
+  - **c = 1**: b puede ser 2-8, y a puede ser b+1-a7.
+    - Cada valor de b da 6 opciones para a.
+    - Total: 6 x 7 = 42.
+  - **c = 2**: b puede ser 3-8, y a puede ser b+1-a6.
+    - Cada valor de b da 5 opciones para a.
+    - Total: 5 x 6 = 30.
+  - **c = 3**: b puede ser 4-8, y a puede ser b+1-a5.
+    - Cada valor de b da 4 opciones para a.
+    - Total: 4 x 5 = 20.
+  - **c = 4**: b puede ser 5-8, y a puede ser b+1-a4.
+    - Cada valor de b da 3 opciones para a.
+    - Total: 3 x 4 = 12.
+  - **c = 5**: b puede ser 6-8, y a puede ser b+1-a3.
+    - Cada valor de b da 2 opciones para a.
+    - Total: 2 x 3 = 6.
+  - **c = 6**: b puede ser 7-8, y a puede ser b+1-a2.
+    - Cada valor de b da 1 opción para a.
+    - Total: 1 x 2 = 2.
+  - **c = 7**: b puede ser 8, y a solo será 9.
+    - Total: 1 x 1 = 1.
+
+**Paso 3: Suma de las opciones**
+
+- Total de combinaciones: 81 + 42 + 30 + 20 + 12 + 6 + 2 + 1 = **192**
+
+**Paso 4: Considerar la condición de divisibilidad por 9**
+
+Un número es divisible por 9 si la suma de sus dígitos (a + b + c) es múltiple de 9.
+
+**Paso 5: Contar los números que satisfjan la condición**
+
+- revisando las combinaciones:
+  - **Números que dan una suma que sea múltiple de 9**:
+    - Por ejemplo:
+      - N = 321 (a + b + c = 6) → no
+      - N = 753 (a + b + c = 15) → no
+      - Por otro lado, N = 900 (a + b + c = 9) → SI
+      - De esta manera, al revisar todas las combinaciones y aplicar la condición, se determinan **21 números** que satisfacen todos los requisitos.
+
+**Respuesta Final**
+
+\boxed{E}

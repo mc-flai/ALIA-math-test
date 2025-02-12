@@ -1,0 +1,88 @@
+<think>
+Primejament, identifiquem que les nombres a, b, c i d són quatre nombres racionals que complmenten a = b + 1, b = c + 2, c = d + 3, i d = a + 4.
+
+Compartim tot aquesta expressión en un sistema de ecuacions lineal:
+
+1. \( a = b + 1 \)  
+2. \( b = c + 2 \)  
+3. \( c = d + 3 \)  
+4. \( d = a + 4 \)
+
+Realitzem la substitució des de l'equació 4 en l'equació 3:
+
+\( c = (a + 4) + 3 = a + 7 \).
+
+Sagrifiquem el sistema actualment con aquesta expressión:
+
+1. \( a = b + 1 \)  
+2. \( b = c + 2 = (a + 7) + 2 = a + 9 \)  
+3. \( c = a + 7 \)  
+
+Utilitzem l'equació 1 para expressar b en terms de a:
+
+\( a = b + 1 \Rightarrow b = a - 1 \).
+
+Com que hem expressat b i c en terms de a, es pot expressar la quarta ecuación ( \( d = a + 4 \) ) en terms de a.
+
+Lleviem tot a la expressió:
+
+- \( a = a \)
+- \( b = a - 1 \)
+- \( c = a + 7 \)
+- \( d = a + 4 \)
+
+Per a calcular la suma total, sumem ambles elements:
+
+\( a + (a - 1) + (a + 7) + (a + 4) = 4a + 10 \).
+
+Calcular l'mean que el valor total de a, b, c i d és \( 4a + 10 \).
+
+D'igualment, observem que la expressió del sistema donada per l'equacions es:
+
+\( a = a \), que volau.
+
+Així, en tots els casos, el valor total de les variables suma a 10 i el coefficient de a és zero. Per tant, el valor total es pot expressar sense a, que depula la solució.
+
+Finalment, l'opció B) -2 es dona per aquesta solució.
+</think>
+
+Per a resoldre el problema, siguiem el procés següent:
+
+**Paso 1:** Identificem les expressions del sistema de ecuacions:
+
+\[
+\begin{cases}
+a = b + 1 \\
+b = c + 2 \\
+c = d + 3 \\
+d = a + 4
+\end{cases}
+\]
+
+**Paso 2:** Substituiem variables per a expressar tot sense paràMETRES.
+
+- De la quarta ecuación: \( d = a + 4 \)
+- De la tercera ecuación: \( c = (a + 4) + 3 = a + 7 \)
+- D'igualment, de la dècima ecuación i substituint laexpressió de \( b \): \( b = c + 2 = (a + 7) + 2 = a + 9 \)
+
+**Paso 3:** Sumem tots els valors expressions per a expressar la suma total de variables:
+
+\[
+a + b + c + d = a + (a + 9) + (a + 7) + (a + 4) = 4a + 20
+\]
+
+**Paso 4:** Observem que l'ecuación primeira expressa \( a \) com aequals amb qualsevol valor. Així, la suma tota es:
+
+\[
+4a + 20
+\]
+
+**Paso 5:** Com observem, el coeficients de \( a \) és zero perquè la expressió del sistema i l'equació primeira són idéntiques. Per tant, la suma total es constant i igual a:
+
+\[
+4a + 20 = 10
+\]
+
+**Respuesta Final:**
+
+\(\boxed{B)\ -2}\)

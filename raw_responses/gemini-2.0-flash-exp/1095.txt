@@ -1,0 +1,18 @@
+Raonament:
+Anomenem els pots P1, P2, P3 i P4. Sigui c1, c2, c3 i c4 el nombre de caramels que hi ha a cada pot respectivament.
+Segons l'enunciat:
+- c1 = nombre de pots amb 1 caramel
+- c2 = nombre de pots amb 2 caramels
+- c3 = nombre de pots amb 3 caramels
+- c4 = nombre de pots amb 0 caramels
+
+Analitzem les possibilitats:
+* Si hi hagués un pot amb 3 caramels, llavors c3=1. Però això implicaria que hi ha un pot amb 1 caramel, i per tant c1=1. Això vol dir que hi ha un pot amb 1 caramel i un pot amb 3 caramels. Però llavors c2=0 i c4=2. Això no és possible perquè c2 hauria de ser el nombre de pots amb 2 caramels, que en aquest cas és 0.
+* Si hi hagués un pot amb 2 caramels, llavors c2=1. Això implicaria que hi ha un pot amb 1 caramel, i per tant c1=1. Això vol dir que hi ha un pot amb 1 caramel i un pot amb 2 caramels. Però llavors c3=0 i c4=2. Això no és possible perquè c3 hauria de ser el nombre de pots amb 3 caramels, que en aquest cas és 0.
+* Si hi hagués un pot amb 1 caramel, llavors c1=1. Això vol dir que hi ha un pot amb 1 caramel. Si no hi ha cap pot amb 2 o 3 caramels, llavors c2=0 i c3=0. Això implicaria que c4=3, ja que hi ha 3 pots sense caramels. Però això no és possible perquè c4 hauria de ser el nombre de pots amb 0 caramels, que en aquest cas és 3.
+* Si tots els pots tenen 0 caramels, llavors c1=0, c2=0, c3=0 i c4=4. Però això no és possible perquè c4 hauria de ser el nombre de pots amb 0 caramels, que en aquest cas és 4.
+* Si hi ha un pot amb 1 caramel, llavors c1=1. Si hi ha un pot amb 0 caramels, llavors c4=1. Si no hi ha pots amb 2 o 3 caramels, llavors c2=0 i c3=0. Això vol dir que hi ha un pot amb 1 caramel i un pot amb 0 caramels. Però llavors c4=2, ja que hi ha 2 pots sense caramels. Això no és possible.
+* Si hi ha dos pots amb 1 caramel, llavors c1=2. Això vol dir que hi ha dos pots amb 1 caramel. Llavors c2=0, c3=0 i c4=2. Això vol dir que hi ha dos pots amb 1 caramel i dos pots amb 0 caramels. Això compleix les condicions.
+En aquest cas, el nombre total de caramels és 2 (en el primer pot) + 0 (en el segon pot) + 0 (en el tercer pot) + 0 (en el quart pot) = 2.
+
+Resposta: A)

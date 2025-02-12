@@ -1,0 +1,14 @@
+Raonament:
+Aquest problema es pot resoldre utilitzant el principi del colomar (o principi de Dirichlet). El principi del colomar estableix que si tens més objectes que categories, almenys una categoria tindrà més d'un objecte. En aquest cas, els habitants són els objectes i les edats són les categories.
+
+Hi ha 2016 habitants i cap d'ells té més de 49 anys. Això significa que les edats possibles són 0, 1, 2, ..., 49, que fan un total de 50 edats possibles.
+
+Per trobar el nombre mínim d'habitants que han de tenir la mateixa edat, dividim el nombre total d'habitants pel nombre d'edats possibles i arrodonim cap amunt al nombre enter més proper.
+
+2016 / 50 = 40.32
+
+Això significa que, com a mínim, hi ha 41 habitants que tenen la mateixa edat. Si hi hagués 40 habitants per cada edat, tindríem 40 * 50 = 2000 habitants. Com que tenim 2016 habitants, necessàriament hi haurà almenys una edat amb 41 habitants.
+
+Per tant, podem assegurar que almenys 41 habitants tenen la mateixa edat, però no podem assegurar que n'hi hagi 42 o més.
+
+Resposta: C)

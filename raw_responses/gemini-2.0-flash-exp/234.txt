@@ -1,0 +1,22 @@
+Raonament:
+La clau per resoldre aquest problema és racionalitzar cada terme de la suma. Per racionalitzar un terme de la forma 1/(√n + √(n-1)), multipliquem el numerador i el denominador pel conjugat del denominador, que és (√n - √(n-1)). Així, obtenim:
+
+1/(√n + √(n-1)) * (√n - √(n-1))/(√n - √(n-1)) = (√n - √(n-1)) / (n - (n-1)) = √n - √(n-1)
+
+Aplicant aquesta racionalització a cada terme de la suma, obtenim:
+
+1/(√2 + √1) = √2 - √1
+1/(√3 + √2) = √3 - √2
+1/(√4 + √3) = √4 - √3
+...
+1/(√2016 + √2015) = √2016 - √2015
+
+Ara, la suma original es converteix en:
+
+(√2 - √1) + (√3 - √2) + (√4 - √3) + ... + (√2016 - √2015)
+
+Observem que aquesta és una suma telescòpica, on la majoria dels termes s'anul·len entre si. Concretament, el -√2 s'anul·la amb el +√2, el -√3 s'anul·la amb el +√3, i així successivament fins que el -√2015 s'anul·la amb el +√2015. L'únic que queda és:
+
+-√1 + √2016 = √2016 - 1
+
+Resposta: E)

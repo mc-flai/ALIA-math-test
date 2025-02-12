@@ -1,0 +1,21 @@
+Raonament:
+Per determinar la xifra de les unitats d'una quarta potència, només necessitem considerar la xifra de les unitats del nombre original. Això és perquè la xifra de les unitats del producte només depèn de les xifres de les unitats dels factors.
+
+Analitzem les quartes potències de les xifres de les unitats (0-9):
+- 0^4 = 0
+- 1^4 = 1
+- 2^4 = 16 (unitats: 6)
+- 3^4 = 81 (unitats: 1)
+- 4^4 = 256 (unitats: 6)
+- 5^4 = 625 (unitats: 5)
+- 6^4 = 1296 (unitats: 6)
+- 7^4 = 2401 (unitats: 1)
+- 8^4 = 4096 (unitats: 6)
+- 9^4 = 6561 (unitats: 1)
+
+Veiem que les quartes potències tenen com a xifra de les unitats 0, 1, 5 o 6. Les que tenen 1 o 6 com a xifra de les unitats són les que provenen de nombres amb xifres de les unitats 1, 2, 3, 4, 6, 7, 8 i 9.
+Els nombres de l'1 al 1000 tenen les xifres de les unitats distribuïdes de manera uniforme. Per cada 10 nombres, hi ha un nombre que acaba en 0, un que acaba en 1, un que acaba en 2, i així fins a un que acaba en 9. Per tant, hi ha 100 nombres que acaben en 0, 100 que acaben en 1, 100 que acaben en 2, i així successivament.
+
+Dels 1000 nombres, els que tenen la xifra de les unitats 1, 2, 3, 4, 6, 7, 8 o 9 són 800 nombres. Per tant, hi ha 800 quartes potències que tenen 1 o 6 com a xifra de les unitats.
+
+Resposta: B)

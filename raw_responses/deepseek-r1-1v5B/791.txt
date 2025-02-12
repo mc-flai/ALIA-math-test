@@ -1,0 +1,63 @@
+<think>
+Prematic, intento comparar los tres números de cada trios para verificar si puedo construir un triángulo.
+
+Para el trios A) (2,3,4): La suma de los dos más pequeños es 2+3=5, que es mayor que 4. Por lo tanto, puedo construir un triángulo equilátero con estos lados.
+
+Para el trios B) (5,2,8): La suma de los dos más pequeño es 5+2=7, que es menor que 8. Esto significa que la longitud 8 no enoughe para formar un triángulo.
+
+Para el trios C) (10,1,10): La suma de los dos más pequeños es 1+10=11, que es mayor que 10. Por lo tanto, puedo construir un triángulo isosceles con estos lados.
+
+Para el trios D) (2,2,2): Todos los lados son iguales, por lo que straightforwardmente puedo construir un triángulo equilátero regular.
+
+Para el trios E) (38,17,23): La suma de los dos más pequeños es 17+23=40, que es mayor que 38. Esto significa que puedo construir un triángulo escalene con estos lados.
+</think>
+
+**Raonament:**
+
+Para formar un triángulo, los tres números de un trios deben satisfacer la **desigualdad triangular**, que dice que la suma de dos lados debe ser mayor que la longitud del tercer lado.
+
+Analizando cada trios:
+
+- **A) (2, 3, 4):**
+  
+  Suma de los dos más pequeños: \(2 + 3 = 5\).
+  
+  Diferencia con la longitud del tercer lado: \(5 - 4 = 1 > 0\).
+
+  Por lo tanto, puedo construir un triángulo.
+
+- **B) (5, 2, 8):**
+  
+  Suma de los dos más pequeños: \(2 + 5 = 7\).
+  
+  Diferencia con la longitud del tercer lado: \(7 - 8 = -1 < 0\).
+
+  La suma es menor que la longitud del primer lado, por lo que no puedo construir un triángulo.
+
+- **C) (10, 1, 10):**
+  
+  Suma de los dos más pequeños: \(1 + 10 = 11\).
+  
+  Diferencia con la longitud del tercer lado: \(11 - 10 = 1 > 0\).
+
+  Por lo tanto, puedo construir un triángulo.
+
+- **D) (2, 2, 2):**
+  
+  Todos los lados son iguales.
+
+  Por lo tanto, puedo straightforwardmente construir un triángulo equilátero regular.
+
+- **E) (38, 17, 23):**
+  
+  Suma de los dos más pequeños: \(17 + 23 = 40\).
+  
+  Diferencia con la longitud del tercer lado: \(40 - 38 = 2 > 0\).
+
+  Por lo tanto, puedo construir un triángulo escalene.
+
+**Respuesta:** La disposición que no puede ser constru either es **B) (5,2,8)**.
+
+Raíces:
+
+**Solución:** La raíz correcta es la **B)**.

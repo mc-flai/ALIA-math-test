@@ -1,0 +1,41 @@
+<think>
+Primero, identifico que Joan tiene el mismo número deermanos que germanes. Supongamos que Joan tiene x erfants y x germanes.
+
+Luego, Anna, que es una germana de Joan, tiene double el número de erfants que germanes. Esto significa que Anna tiene 2x erfants.
+
+Ahora, analizo la familia: Joan tiene x erfants y x germanes. Anna también tiene x erfants y x germanes. Sin embargo, en la familia total existen x erfants + 1 ( Joan) + x (anna) = 2x erfants. Por otro lado, hay x erfants de germanes, x germánas y 1 germana(Anna).
+
+Finalmente, contamos los x erfants: Joan + Anna + x erfants = 2x erfants. Las germanas son x y la única germana es Anna, por lo que hay x + 1 germanas.
+
+Por lo tanto, en total habrá 3x x erfants y x + 1 germanas, resultando en un total de 4x x erfants. Para x=1, el total sería 4 x erfants.
+</think>
+
+Raonament: 
+
+- Supongamos que Joan tiene \( x \) erfants y \( x \) germanes.
+
+- Anna, una germana de Joan, tiene double el número de erfants que germanes. Entonces, Anna tiene \( 2x \) erfants y \( x \) germanas.
+
+En la familia total:
+
+- Erfants: Joan (\( x \)), Anna (\( 2x \)) y ... quizás no hay más erfants besides Joan.
+  
+  Ahora, counts:
+  
+  - Erfants: \( x + 2x = 3x \).
+  
+  - Germanas: Joan (\( x \)), Anna (\( x \)), y la única germana de Joan (Anna) o perhaps she only has one. Sin embargo, according to the problem statement, la única germana es Anna.
+  
+  Entonces, total deGermanas: \( x + 1 = x + 1 \).
+
+Ahora, counts:
+- Erfants: \( 3x \).
+- Germanas: \( x + 1 \).
+
+Por lo tanto, la suma total de erfants y germanas es \( 3x + (x + 1) = 4x + 1 \). 
+
+Para que el número sea más sencillo, podemos considerar que \( x = 1 \), lo que da un total de erfants como \( 3(1) = 3 \) y germanas como \( 1 + 1 = 2 \).
+
+Por lo tanto, la respuesta es \( 3 (erfants) + 2 (germanas) = 5 \) x erfants.
+
+\boxed{C}

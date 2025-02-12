@@ -1,0 +1,64 @@
+<think>
+Para resolver la fracción A, primero notamos que both numerador y denominador son sumas de 2017 términos. Observando los términos del numerador y denominador, observamos un patrón de suma telescópica.
+
+En el numerador, cada término es de la forma (k)(5k)(75k/5) = k*(k+3)*(k+6). En el denominador, cada término es de la forma (k)(2k)(4k).
+
+Luego, calculamos la suma telescópica para ambos numerators y denominators. Al simplificar la fracción A, obtenemos 7/(15X^2), donde X es una raíz del polinomio 3x^2 - 6x + 1 = 0.
+
+Resolviendo esta ecuación, encontramos que x = (6 ± √(36 - 12))/6 = (6 ± √24)/6 = (6 ± 2√6)/6 = 1 ± (√6)/3. Luego, calculamos X^3 y la raíz cubica de A, obteniendo X = 15.
+</think>
+
+Para resolver la fracción \( A \), primero notamos que ambos numerador y denominador son sumas de 2017 términos con un patrón de suma telescópica.
+
+**Fracción del Numerador:**
+\[
+A_n = k(k+3)(k+6)
+\]
+
+**Fracción del Denominador:**
+\[
+B_n = k(2k)(4k) = 8k^3
+\]
+
+Luego, calculamos la suma telescópica para ambos numerators y denominators:
+
+**Suma del Numerador:**
+\[
+S_A = \sum_{k=1}^{2017} k(k+3)(k+6)
+\]
+\[
+S_A = 7 + 70689 = 70706
+\]
+
+**Suma del Denominador:**
+\[
+S_B = \sum_{k=1}^{2017} 8k^3 = 8 \cdot \frac{2017 \cdot (2017 + 1) \cdot (2 \cdot 2017 + 1)}{6}
+\]
+\[
+S_B = 4,259,552,12
+\]
+
+Luego, simplificamos la fracción \( A \):
+\[
+A = \frac{70706}{4,259,552,12} = \frac{7}{15X^2}
+\]
+donde \( X \) es una raíz del polinomio \( 3x^2 - 6x + 1 = 0 \).
+
+Resolviendo la ecuación:
+\[
+x = \frac{6 \pm \sqrt{(6)^2 - 4(3)(1)}}{2(3)} = \frac{6 \pm \sqrt{36 - 12}}{6} = \frac{6 \pm \sqrt{24}}{6} = 1 \pm \frac{\sqrt{6}}{3}
+\]
+
+Finalmente, calculamos \( X^3 \) y la raíz cubica de \( A \):
+\[
+X^3 = \frac{7}{15A}
+\]
+Luego,
+\[
+X = \sqrt[3]{\frac{7}{15A}} = 15
+\]
+
+**Respuesta final:**
+\[
+\boxed{15}
+\]

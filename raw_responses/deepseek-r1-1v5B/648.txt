@@ -1,0 +1,62 @@
+<think>
+Para resolver este problema, primero notamos que 1728 es el cubo del número 12, ya que 12 elevado a la potencia de tres da 1728.
+
+Después de esto, pensamos en multiplicar 1728 por los números naturales disponibles y ver si el resultado es un cuadrado perfecto. El objetivo es encontrar el número más pequeño que al multiplicarse por 1728 te devuelva una potencia entera de dos.
+
+Realizamos este proceso para cada opción:
+
+- Multiplicamos 1728 por 2: 1728 × 2 = 3456. Verificamos si es un cuadrado perfecto. Diferente de las potencias enteras de dos (16, 64, etc.), no es un cuadrado perfecto.
+  
+- Multiplicamos por 3: 1728 × 3 = 5184. Observamos que 72 al cuadrado es exactamente 5184, por lo que 3 es una solución.
+
+Repetimos el proceso para las restantes opciones para asegurarnos de que no haya una mejor respuesta. En este caso, 3 es el número más pequeño que cumple con los requerimientos del problema.
+</think>
+
+Raonament:
+
+La pregunta es encontrar el número natural más pequeño que, al ser multiplicado por 1728, resulte en un cuadrado perfecto.
+
+1. **Notación matemática:**
+   - Sabemos que \( 1728 = 12^3 \).
+   - Supongamos que el número entero seekedá sea \( n \). Luego, la condición del problema es:
+     \[
+     1728 \times n = k^2
+     \]
+     donde \( k \) es un número entero.
+
+2. **Expresión de la ecuación:**
+   - Reescribimos la ecuación para encontrar \( n \):
+     \[
+     n = \frac{k^2}{1728}
+     \]
+
+3. **Simplificación de la expresión:**
+   - Dado que \( 1728 = 12^3 \), la expresión se puede simplificar:
+     \[
+     n = \frac{k^2}{12^3} = \left( \frac{k}{12^{3/2}} \right)^2
+     \]
+     Para que \( n \) sea entero, \( \frac{k}{12^{3/2}} \) debe ser entero. 
+   
+4. **Determinación del número más pequeño \( n \):**
+   - El número más pequeño\( n \) se encuentra cuando \( k = 12^{3/2} \times m \), donde \( m \) es un número entero mayor que 0.
+   - Plugging \( k = 12^{3/2} \times m \) into the expression for \( n \):
+     \[
+     n = \frac{(12^{3/2} \times m)^2}{1728}
+     \]
+     Simplificando:
+     \[
+     n = \frac{12^3 \times m^2}{12^3} = m^2
+     \]
+   
+5. **Evaluación de opciones:**
+   - **A) \( n = 2 \):** No es necesario, ya que 1728 × 2 no es un cuadrado perfecto.
+   - **B) \( n = 3 \):** \( 1728 \times 3 = 5184 = 72^2 \), lo que cumple con la condición.
+   - **C) \( n = 6 \):** No es necesario, ya que 1728 × 6 no es un cuadrado perfecto.
+   - **D) \( n = 12 \):** \( 1728 \times 12 = 20736 = 144^2 \), lo que también cumple con la condición, pero 3 es menor que 12.
+   - **E) \( n = 18 \):** No es necesario, ya que 1728 × 18 no es un cuadrado perfecto.
+
+Por lo tanto, el número más pequeño \( n \) es **B) 3**.
+
+\[
+\boxed{B)
+\]

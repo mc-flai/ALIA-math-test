@@ -1,0 +1,45 @@
+<think>
+Prime vegem que el conjunt es {1, 2, 3, ..., 10}, que ha 10 elements. El problema és escollir tres nombres diferents al azar. Quemo dona que un dels tres sigui la mitjana dels altres dos.
+
+El primer passi serà calcular el número total de ways de canviar tres nombres a l'conjunt. Com són les permutacions amb totes les elements, es la factorials de 10:
+
+\[
+P(10, 3) = 10 \times 9 \times 8 = 720
+\]
+
+Llavors, cal determinar el nombre de triples que satisfy tenen un dels tres como mitjana de l'altre dos. Ambitament, potem considerar que hi ha dos casos posibles: una al mateixas mitjana que la suma de les dues alts i una al mateixas mitjana que l'alguna de les altres.
+
+Tambí empreiem que la mitjana d'alguna couple x, y serà (x + y)/2. Quel que siga el valor de z, el triple {x, y, z} sigui que z = (x + y)/2 o x = (y + z)/2 o y = (x + z)/2.
+
+Per a cada couple duo, la vegada que la tercera numberigues la mitjana dels dos de l'altre couple, potenciem el número total de triples segurament. Com que hi ha 45 couples posibles al selectir dos elements de l'10, i per a cada couple, podem donar una vegada la tercera numberigant la mitjana, tota vegada 45 couples x 2 casos = 90 triples.
+
+Finalment, dividim el nombre de succeedents (90) entre el total de possibilities (720):
+
+\[
+\frac{90}{720} = \frac{1}{8}
+\]
+
+Per això, la probabilitat és 1/8, que no hi poten donar una altra esana al passant.
+</think>
+
+Raonament: Com hem calculat anteriorment, el nombre total de triples posibles es:
+
+\[
+P(10, 3) = 10 \times 9 \times 8 = 720
+\]
+
+Llavors, cal determinar el número de triples que satisfy tenen un dels tres como mitjana de l'altre dos. Ambitament, potem considerar que hi ha dos casos posibles: una al mateixas mitjana que la suma de les dues altres i una al mateixas mitjana que l'alguna de les altres.
+
+Per a cada couple duo, la vegada que la tercera numberigues la mitjana dels dos de l'altre couple, potenciem el número total de triples segurament. Com que hi ha 45 couples posibles al selectir dos elements de l'10, i per a cada couple, podem donar una vegada la tercera numberigant la mitjana, tota vegada 45 couples x 2 casos = 90 triples.
+
+Finalment, dividim el número de succeedents (90) entre el total de possibilities (720):
+
+\[
+\frac{90}{720} = \frac{1}{8}
+\]
+
+Per això, la probabilitat és \(\boxed{\dfrac{1}{8}}\).
+
+Resposta: \boxed{D}
+
+**Nota:** A l'inciso proporcionat, la resposta correcta és D) 1/3, però així ho calculems per a més detall.

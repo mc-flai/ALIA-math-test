@@ -1,0 +1,22 @@
+Raonament:
+Aquest problema es pot resoldre utilitzant una estratègia de cerca binària. La idea és dividir l'espai de possibles nombres a la meitat amb cada pregunta.
+
+1. **Primera pregunta:** Preguntem si el nombre està entre 1 i 8 (inclòs). Això divideix els 15 nombres en dos grups aproximadament iguals.
+   - Si la resposta és "sí", sabem que el nombre està entre 1 i 8.
+   - Si la resposta és "no", sabem que el nombre està entre 9 i 15.
+
+2. **Segona pregunta:** Depenent de la resposta anterior, dividim el grup restant a la meitat.
+   - Si la resposta a la primera pregunta va ser "sí" (1-8), preguntem si el nombre està entre 1 i 4.
+   - Si la resposta a la primera pregunta va ser "no" (9-15), preguntem si el nombre està entre 9 i 12.
+
+3. **Tercera pregunta:** Tornem a dividir el grup restant a la meitat.
+   - Si la resposta a la segona pregunta va ser "sí" (1-4), preguntem si el nombre està entre 1 i 2.
+   - Si la resposta a la segona pregunta va ser "no" (5-8), preguntem si el nombre està entre 5 i 6.
+   - Si la resposta a la segona pregunta va ser "sí" (9-12), preguntem si el nombre està entre 9 i 10.
+   - Si la resposta a la segona pregunta va ser "no" (13-15), preguntem si el nombre és 13.
+
+4. **Quarta pregunta:** En el pitjor dels casos, després de la tercera pregunta, ens quedaran dos nombres possibles. Per exemple, si la resposta a la tercera pregunta va ser "sí" (1-2), preguntem si el nombre és 1. Si la resposta és "sí", sabem que el nombre és 1, si és "no", sabem que el nombre és 2.
+
+En general, per a un rang de *n* nombres, necessitem aproximadament log₂(n) preguntes per trobar el nombre. En aquest cas, log₂(15) és aproximadament 3.9, per tant, necessitem 4 preguntes per estar segurs.
+
+Resposta: D)

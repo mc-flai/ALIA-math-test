@@ -1,0 +1,75 @@
+<think>
+Primejament, identifiquem que la successió numèrica presented en el problema sige una seqüencia de números que followa una fórmula particular. El tercer nombre en l'successió és 9 i el químicent (el sisé) és 128.
+
+Com preolem, recordigem les dades proporcionals:
+- a₃ = 9
+- a₄ = 128
+
+L'equació que es dona en el problema es la segona fórmula: aₙ = 2aₙ₋₁ + aₙ₋₂.
+
+Per a calcular el químicent, es pot usar un procéder iteratiu. Comenciem per trobant l'anyant precedent (a₂) amb la fórmula:
+
+Calcular a₂:
+Utilitzem la fórmula d'aquesta successió para a₃:
+a₃ = 2a₂ + a₁
+Sabint que a₃ = 9, per tant:
+9 = 2a₂ + a₁
+
+Així, tenim una expressión que pot utilitzar per es expressar a₁ en termes de a₂.
+
+Después, calculem a₁ amb la fórmula amb el químicent (a₄):
+a₄ = 2a₃ + a₂
+128 = 2*9 + a₂ → 128 = 18 + a₂ → a₂ = 110
+
+Ahora, substituint a₂ en l'equació per a₁:
+9 = 2*110 + a₁ → 9 = 220 + a₁ → a₁ = -211
+
+Ambos valors de a₁ i a₂ (-211 i 110 respecte) es pot utilitzar per calcular l'anyant quin.
+
+Calculem a₅ (químicent):
+a₅ = 2a₄ + a₃ → a₅ = 2*128 + 9 = 256 + 9 = 265
+
+Així, observem que el químicent de la successió es 265.
+</think>
+
+**Solución:**
+
+La successió numèrica followi la fórmula:
+\[ a_n = 2a_{n-1} + a_{n-2} \]
+
+Donada que:
+- \( a_3 = 9 \)
+- \( a_4 = 128 \)
+
+Raonem backwards per obtenir el primer nombre (\( a_0 \)) i l'anyant quin (\( a_5 \)):
+  
+1. **Calcular \( a_2 \):**
+   Com Utilitzem la fórmula per \( a_3 \):
+   \[ a_3 = 2a_{2} + a_{1} \]
+   S que \( a_3 = 9 \), per tant:
+   \[ 9 = 2a_2 + a_1 \quad \text{(1)} \]
+   
+2. **Calcular \( a_1 \):**
+   Utilitzem la fórmula amb \( a_4 \):
+   \[ a_4 = 2a_3 + a_2 \]
+   S que \( a_4 = 128 \) i \( a_3 = 9 \), per tant:
+   \[ 128 = 2(9) + a_2 \]
+   \[ 128 = 18 + a_2 \]
+   \[ a_2 = 128 - 18 = 110 \quad (2) \]
+   
+3. **Solveix l'equació (1):**
+   Com \( a_2 = 110 \):
+   \[ 9 = 2(110) + a_1 \]
+   \[ 9 = 220 + a_1 \]
+   \[ a_1 = 9 - 220 = -211 \quad (3) \]
+   
+4. **Calcular \( a_5 \):**
+   Utilitzem la fórmula amb \( n = 5 \):
+   \[ a_5 = 2a_4 + a_3 \]
+   \[ a_5 = 2(128) + 9 \]
+   \[ a_5 = 256 + 9 = 265 \]
+
+**Respuesta Final:**
+\[
+\boxed{265}
+\]

@@ -1,0 +1,66 @@
+<think>
+Penseo que necesitaba resolver este problema matemático. Primero, entiendo que se pide encontrar cuántos números enteros n verifican que la expresión n/(20 - n) es un número perfecto cuadrado.
+
+Reviso la expresión n/(20 - n). Para que sea una potencia entera de dos, necesitamos que n/(20 - n) sea un número like k², donde k es entero. Esto implica que 20 - n debe ser un divisor de n.
+
+Me preocupa las fracciones, así que debo asegurarme de que 20 - n no sea cero. Por lo tanto, n ≠ 20. Además, necesito que 20 - n divida a n perfectamente, es decir, que el cociente k² es entero.
+
+Puedo setorizar los posibles valores de n que verifican esta condición. Empezaré probeando números cercanos a 20 y veré si satisfy la condition.
+
+Para n = 15: 15/(20 - 15) = 15/5 = 3, que es una potencia entera de dos (3^1), pero no es un número perfecto cuadrado. Por lo tanto, 15 no cumple.
+
+n = 16: 16/(20 - 16) = 16/4 = 4, que es 2², una potencia entera de dos. Además, 4 es un número perfecto cuadrado. Por lo tanto, 16 cumple.
+
+n = 21: 21/(20 - 21) = 21/-1 = -21, que no es positivo y por lo tanto no es una potencia entera de dos en absoluto.
+
+Ahora probaré más números cercanos:
+
+n = 8: 8/(20 - 8) = 8/12 ≈ 0.666..., no es entero.
+
+n = 9: 9/(20 - 9) = 9/11, no es entero.
+
+n = 4: 4/(20 - 4) = 4/16 = 1/4, no es entero.
+
+n = 3: 3/(20 - 3) = 3/17, no es entero.
+
+n = 5: 5/15 ≈ 0.333..., no es entero.
+
+n = 6: 6/14 ≈ 0.428..., no es entero.
+
+n = 7: 7/(20 - 7) = 7/13, no es entero.
+
+n = 10: 10/(20 - 10) = 10/10 = 1, que es 1², una potencia entera de dos y también un número perfecto cuadrado. Por lo tanto, 10 cumple.
+
+n = 18: 18/(20 - 18) = 18/2 = 9, que es 3², una potencia entera de dos y también un número perfecto cuadrado. Por lo tanto, 18 cumple.
+
+Finalmente, probaré n = 2: 2/(20 - 2) = 2/18 ≈ 0.111..., no es entero.
+
+Y n = 25: 25/(20 - 25) = 25/-5 = -5, no es positivo.
+
+Necesitamos verificar más valores, pero seementalmente, solo han foundido dos números que satisfy las condiciones: 16 y 18. Por lo tanto, habría dos números enteros que verifican el enfoque requerido.
+</think>
+
+Paso a paso:
+
+1. **Entender la condición**: Necesitamos encontrar números enteros \( n \) tales que la expresión \( \frac{n}{20 - n} \) es un número perfecto cuadrado.
+
+2. **Rango de posibles \( n \)**: \( n \) debe ser entero y no igual a 20, ya queelsebreakaría la división por cero.
+
+3. **Reorganizar la expresión**: Sea \( k^2 = \frac{n}{20 - n} \), donde \( k \) es un número entero positivo.
+
+4. **Expressión de \( n \)**: De la ecuación, \( n = 20k^2 - nk \). Pienso en taylor razonar con los valores de \( k \).
+
+5. **Probar valores de \( k \)**:
+   - \( k = 1 \): \( n = 20(1)^2 - (1)(n) \Rightarrow n + n = 20 \Rightarrow 2n = 20 \Rightarrow n = 10 \)
+     - Verificar: \( \frac{10}{20 - 10} = 1 \), que es \( 1^2 \), un número perfecto cuadrado.
+   - \( k = 2 \): \( n = 20(4) - (4)n \Rightarrow 5n = 80 \Rightarrow n = 16 \)
+     - Verificar: \( \frac{16}{20 - 16} = 4 = 2^2 \), un número perfecto cuadrado.
+   - \( k = 3 \): \( n = 20(9) - (9)n \Rightarrow 10n = 180 \Rightarrow n = 18 \)
+     - Verificar: \( \frac{18}{2} = 9 = 3^2 \), un número perfecto cuadrado.
+   - \( k = 4 \): \( n = 20(16) - (16)n \Rightarrow 17n = 320 \Rightarrow n \approx 18.82 \), no es entero.
+
+6. **No más soluciones**: Verifico que para \( k > 4 \), \( n \) no permanezcla entero o está fuera el rango de posibles valores.
+
+**Respuesta final:**
+
+\boxed{B}

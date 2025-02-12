@@ -1,0 +1,28 @@
+Raonament:
+El nombre N és pqrs, que es pot expressar com 1000p + 100q + 10r + s. El nombre pq,rs es pot expressar com 10p + q + r/10 + s/100. Els nombres pq i rs es poden expressar com 10p + q i 10r + s respectivament. Segons l'enunciat, pq,rs és la mitjana de pq i rs, per tant:
+
+(10p + q + r/10 + s/100) = ( (10p + q) + (10r + s) ) / 2
+
+Multiplicant per 2 i per 100 per eliminar els decimals i fraccions:
+
+200p + 200q + 20r + 2s = 100(10p + q) + 100(10r + s)
+200p + 200q + 20r + 2s = 1000p + 100q + 1000r + 100s
+200p + 200q + 20r + 2s = 1000p + 100q + 1000r + 100s
+0 = 800p - 100q + 980r + 98s
+Dividint per 2:
+0 = 400p - 50q + 490r + 49s
+0 = 400p - 50q + 490r + 49s
+Multiplicant per 100 per eliminar els decimals i fraccions:
+200(10p + q) + 20r + 2s = 100(10p + q) + 100(10r + s)
+2000p + 200q + 20r + 2s = 1000p + 100q + 1000r + 100s
+1000p + 100q - 980r - 98s = 0
+Dividint per 2:
+500p + 50q - 490r - 49s = 0
+50(10p + q) = 49(10r + s)
+50pq = 49rs
+
+Com que 50 i 49 són coprimers, pq ha de ser un múltiple de 49 i rs ha de ser un múltiple de 50. Com que pq i rs són nombres de dues xifres, pq ha de ser 49 i rs ha de ser 50. Per tant, p=4, q=9, r=5 i s=0.
+N = 4950
+La suma dels dígits de N és 4 + 9 + 5 + 0 = 18.
+
+Resposta: B)

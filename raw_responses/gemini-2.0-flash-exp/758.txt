@@ -1,0 +1,12 @@
+Raonament:
+Els nombres enters entre 2¹⁰ i 2¹³, ambdós inclosos, són 2¹⁰, 2¹⁰+1, 2¹⁰+2, ..., 2¹³. Volem saber quants d'aquests nombres són divisibles per 2¹⁰. Un nombre és divisible per 2¹⁰ si és un múltiple de 2¹⁰. Per tant, busquem els múltiples de 2¹⁰ que es troben en l'interval [2¹⁰, 2¹³].
+
+El primer múltiple de 2¹⁰ en aquest interval és 2¹⁰ = 1 * 2¹⁰.
+El següent múltiple de 2¹⁰ és 2 * 2¹⁰ = 2¹¹.
+El següent múltiple de 2¹⁰ és 3 * 2¹⁰.
+...
+El darrer múltiple de 2¹⁰ en aquest interval és 2¹³ = 2³ * 2¹⁰ = 8 * 2¹⁰.
+
+Per tant, els múltiples de 2¹⁰ en l'interval [2¹⁰, 2¹³] són de la forma k * 2¹⁰, on k és un enter tal que 1 ≤ k ≤ 8. Els valors possibles de k són 1, 2, 3, 4, 5, 6, 7 i 8. Hi ha 8 valors possibles per a k, per tant, hi ha 8 nombres divisibles per 2¹⁰ en l'interval [2¹⁰, 2¹³].
+
+Resposta: D)

@@ -1,0 +1,152 @@
+<think>
+Primeixem que els punts A i B s'exprigen en coordenades cartesianes com (0, 0) i (1, 0) respectivament.
+
+Per a un punt (x, y) que pertanya a la circumferència que passa per A i B, potominem l'equaçioón de la circunferència que satisfeix amb a dos punts en l'espírit de la geometria analítica.
+
+La generalitzada equacions de la circunferència s'expressa com (x - h)^2 + (y - k)^2 = r^2, on (h, k) es el centre i r el radius.
+
+Com que A i B stén en la circumferència:
+
+1. Planteigem l'equaçioón per x = 0: (0 - h)^2 + (0 - k)^2 = r^2 ⇒ h² + k² = r²
+2. Planteigem l'equaçioón per x = 1: (1 - h)^2 + (0 - k)^2 = r² ⇒ (1 - h)² + k² = r²
+
+Subtracting les dues equacions:
+
+(1 - h)² + k² - (h² + k²) = 0 ⇒ 1 - 2h + h² - h² = 0 ⇒ 1 - 2h = 0 ⇒ h = 1/2
+
+Per així, el centre de la circumferència està en el point (1/2, k).
+
+Com s'ha calculat el center i la distanaçioón del centre al punt A (0, 0):
+
+r² = (0 - 1/2)^2 + (0 - k)^2 ⇒ r² = 1/4 + k²
+
+Per a un punt (x, y) en la circumferència:
+
+(x - 1/2)^2 + (y - k)^2 = 1/4 + k²
+
+Expanding l'equaçioón:
+
+x² - x + 1/4 + y² - 2ky + k² = 1/4 + k² ⇒ Simplificant, x² - x + y² - 2ky = 0
+
+Aplicant la fórmula de la circunferència: x² + y² + Dx + Ey + F = 0, veigem que D = -1, E = -2k, F = 0.
+
+Per aquesta circunferència que passa per A (0,0) i B (1, 0):
+
+F = 0 ⇒ Circumferència passa per zero; la distància al centre (h, k) val r.
+
+P ara expressam el center en terms de y:
+
+Vogiam que h = D/2 = (-(-1))/2 = 1/2. Com que la circumferència està defineixona per a les donats punts A i B, la distància del centre al eix x es zero.
+
+Per així, el center (h, k) estáix en l'eix d'abscissa x=0, perquè la circumferència està symmetric sense a l'eix x=0. Per tant, k = 0.5, per que el centre és al mediator del segment AB.
+
+Tambí que el radius r es pot expressar com la distància del center a qualsevol punt de la circumferència, com a exemple (0,0):
+
+r² = (1/2)^2 + (0.5)^2 = 1/4 + 1/4 = 1/2 ⇒ r = √(1/2)
+
+Per a un punt (x, y) en la circumferència:
+
+(x - 1/2)^2 + (y - 0.5)^2 = (√(1/2))² ⇒ x² - x + 1/4 + y² - y + 1/4 = 1/2
+
+Simplificant:
+
+x² - x + y² - y + 1/4 + 1/4 = 1/2 ⇒ x² - x + y² - y + 0.5 = 0.5 ⇒ x² - x + y² - y = 0
+
+Aplicant la fórmula de la circunferència, identificem:
+
+x² + (-1)x + y² + (-1)y = 0 ⇒ x² - x + y² - y = 0
+
+Per així, per a qualsevol punt (x, y)不同于 A i B que pertanya a la circumferència, x y y satisfen l'equaçioón x² - x + y² - y = 0.
+
+Almokomant per a la seva resolució:
+
+1. Es tracta una circunferència amb centre en (1/2, 0.5) i radius √(1/2).
+2. Per un punt qualsevol alcircumference, el valor de x² + y² -x -y = 0.
+3. Ara donem així que x² + y² -x -y = 0 ⇒ x² + y² = x + y
+4. Com que amb l'equaçioón d'una circunferència, el valor de x² + y² pot expressar com x + y.
+5. Per així, per a qualsevol punt (x, y) alcircumference, la suma de les potencios dels coords es iguala la suma de les coordenades.
+6. Ara donem així que l'expmosteiram les optiones:
+
+A) 0 < x <1 ⇒ Potiavalzament, x valaria entre 0 i 1, per què el centre està al mediator del segment AB (de qüera punts entre A i B).
+B) x = y ⇒ La recta que connecte A a B (x=1, y=0), no potseria ser la circunferència, perquè la circumferència està centrada en (1/2, 0.5) i radius √(1/2).
+C) y =0 ⇒ Si x es posítif, la recta y=0 pot ser una solucioón, com a exemple (1,0), que és punt B, al possible. Ama el punt (0, 0) és punt A, i els punts distans de l'eix x =0 s'han inclidis.
+D) y ≠ 0 ⇒ Per a qualsevol punt alcircumference excepte A, la variable y pot ser zero?
+E) x > y ⇒ Potiavalzament, per les recta que passen al centrum (x=1/2, y=0.5), l'ajuntament d'extremos.
+
+Per així resoldre:
+
+Tambí com tenim la fórmula de la circunferència x² -x + y² -y = 0 ⇒ x² + y² = x + y ⇒ x² + y² = x + y
+
+Com que per a qualsevol punt alcircumference, x² + y² = x + y ⇒ Per així, per a qualsevol punt (x,y) alcircumference excepte A i B:
+
+1. Si x=1/2 ± r cosθ et x=1/2 ± r sinθ, dona y=0.5 ± r cos(90° - θ), que pot ser positif i negatif.
+
+Per així que la recta y=0 no potseria ser una solucioón, com a exemple (1,0) al circunferència.
+
+Mantendem que la recta x = 1/2 ± r cosθ et y = 0.5 ± r sinθ θ varriant.
+
+Per així que per qualsevol punt que alcircumference excepte A i B, la recta que passaal circunferència pot ser la recta vertical (x=1/2) o la horitzontal (y=0.5), etc., dones.
+
+De la fórmula x² + y² = x + y ⇒ per així que x² + y² - x - y = 0, per a qualsevol punt alcircumference, la suma de les potencios dels coords es iguala la suma de les coordenades.
+
+Per així, per a qualsevol punt (x,y) alcircumference excepte A i B:
+
+1. Si x=0.5 ± r, y=0.5 ± r, la recta y=x potseria ser una solucioón.
+2. Pero per així que l'ajuntament de l'equaçioón x² + y² =x + y implica que per a qualsevol punt alcircumference excepte A i B:
+
+Per així que x² + y² =x + y ⇒ x² -x + y² -y=0 ⇒ (x-0.5)² + (y-0.5)² = (√(1/2))², que es la circunferència amb centre en (0.5, 0.5) i radius √(1/2).
+
+Per així que per a qualsevol punt alcircumference excepte A i B:
+
+- L'ajuntament de x² + y² =x + y implica que x² + y² -x -y=0 ⇒ x² -x + y² -y = 0.
+
+Ara donam resolt a la optiones:
+
+A) 0 < x <1: Potiavalzament, per a qualsevol punt alcircumference excepte A i B, x valaria entre 0 i 1. Per així que la recta y=0 no potseria ser una solucioón, com a exemple (1,0) al circunferència.
+
+B) x =y: Potiavalzament, per a qualsevol punt alcircumference excepte A i B, la recta que passaal circunferència pot ser la recta vertical o horitzontal. Per així que la recta y=x potseria ser una solucioón, per així que x² + y² -x -y =0 ⇒ x² + x² -x -x= 2x² -2x=0 ⇒ 2x(x-1)=0⇒x=0 o x=1 ⇒ la recta x=0 ou y=0, com a exemple (1,1), que no s'ha fet alcircumference.
+
+C) y=0: Potiavalzament, per a qualsevol punt alcircumference excepte A i B, la recta y=0 potseria ser una solucioón. Per així que x² + 0 -x =0 ⇒x(x-1)=0⇒x=0 o x=1, que s'ha fet alcircumference (A i B).
+
+D) y ≠0: Potiavalzament, per a qualsevol punt alcircumference excepte A i B, la variable y no potseria ser zero. Per així que x² + y² -x -y =0 ⇒ x² -x + y² -y= 0. Com que si y=0, l'équaçioón dona x² -x=0⇒x(x-1)=0⇒x=0 o x=1, que s'ha fet alcircumference.
+
+E) x>y: Potiavalzament, per a qualsevol punt alcircumference excepte A i B, la recta que passaal circunferència pot ser l'aixional. Per així que per a qualsevol punt (x,y), x² + y² -x -y =0 ⇒x² -x + y² -y= 0 ⇒ per aquell punt, per ex: (1/2 + r, 0.5) ⇒x > y.
+
+Per així que la recta pot ser x>y, per a qualsevol punt alcircumference excepte A i B, l'ajuntament de les potencios d'x et y potseria ser posibled aquesta recta, com a exemple (1/2 + r cosθ, 0.5 + r sinθ), que pot ser x>y.
+
+Per així que la recta x>y potseria ser una solucioón per a qualsevol punt alcircumference excepte A i B:
+
+Per així que per a qualsevol punt (x,y) alcircumference excepte A i B, l'ajuntament de les potencios d'x et y potseria ser posibled aquesta recta x>y.
+
+Finalment, la solucioön es que la circunferència es pot expressar com x² + y² -x -y =0, per qualsevol punt (x,y) alcircumference excepte A i B, l'ajuntament de les potencios d'x et y potseria ser posibled aquesta recta.
+
+La resolucioön final es que la circunferència es pot expressar com x² + y² -x -y =0 per qualsevol punt (x,y) alcircumference excepte A i B, l'ajuntament de les potencios d'x et y potseria ser posibled aquesta recta.
+
+---
+
+**Final Answer**
+
+\boxed{x^2 + y^2 - x - y = 0}
+</think>
+
+To solve the problem of expressing the given circle in standard form, we start with the equation:
+
+\[ (x - \frac{1}{2})^2 + (y - \frac{1}{2})^2 = (\frac{\sqrt{2}}{2})^2 \]
+
+First, we expand this equation. The left side is expanded as follows:
+
+\[ (x - \frac{1}{2})^2 + (y - \frac{1}{2})^2 = x^2 - x + \frac{1}{4} + y^2 - y + \frac{1}{4} \]
+
+Combining like terms, we get:
+
+\[ x^2 - x + y^2 - y + \frac{1}{2} = \frac{1}{2} \]
+
+Next, we subtract \(\frac{1}{2}\) from both sides to isolate the quadratic terms:
+
+\[ x^2 + y^2 - x - y = 0 \]
+
+Thus, the given circle can be expressed in standard form as:
+
+\[
+\boxed{x^2 + y^2 - x - y = 0}
+\]

@@ -1,0 +1,14 @@
+Raonament:
+1. **Anàlisi de la condició de creixement estricte:** La funció f és estrictament creixent, el que significa que si m > n, llavors f(m) > f(n). Això implica que la funció és injectiva (un a un).
+
+2. **Anàlisi de la condició f(f(k)) ≤ f(k + 1):** Aquesta condició ens dona una relació entre el valor de la funció aplicada dues vegades i el valor de la funció en el següent enter.
+
+3. **Utilització de f(1000) = 1000:** Aquesta informació és crucial. Si substituïm k = 1000 a la segona condició, obtenim f(f(1000)) ≤ f(1001). Com que f(1000) = 1000, tenim f(1000) ≤ f(1001), que és 1000 ≤ f(1001). Però com que f és estrictament creixent, sabem que f(1001) > f(1000) = 1000. Per tant, f(1001) > 1000.
+
+4. **Aplicació iterativa:** Considerem ara k = 999. Tenim f(f(999)) ≤ f(1000) = 1000. Com que f és estrictament creixent, f(999) < f(1000) = 1000. Per tant, f(f(999)) < f(1000) = 1000. Però f(f(999)) ≤ f(1000) = 1000. Això implica que f(f(999)) < 1000. Si f(999) fos menor que 999, llavors f(f(999)) seria menor que f(999), que seria menor que 999, i per tant menor que 1000. Si f(999) fos igual a 999, llavors f(f(999)) = f(999) = 999, que és menor que 1000. Si f(999) fos major que 999, llavors f(f(999)) seria major que f(999), que seria major que 999. Però f(f(999)) ≤ 1000. Per tant, f(999) no pot ser major que 999. Per tant, f(999) ha de ser menor o igual a 999. Però com que f és estrictament creixent, f(999) < f(1000) = 1000. Per tant, f(999) < 1000.
+
+5. **Deducció de f(k) = k:** Si f(1000) = 1000, i f és estrictament creixent, i f(f(k)) ≤ f(k+1), la única funció que compleix aquestes condicions és f(k) = k per a tot k. Si f(k) = k, llavors f(f(k)) = f(k) = k i f(k+1) = k+1. Per tant, k ≤ k+1, que sempre es compleix.
+
+6. **Conclusió:** Si f(k) = k per a tot k, llavors f(2017) = 2017.
+
+Resposta: A)

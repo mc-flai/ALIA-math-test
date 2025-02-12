@@ -1,0 +1,25 @@
+Raonament:
+Siguin:
+-  `t` el temps en hores que va trigar Pere en anar a la font.
+-  `v` la velocitat mitjana en el camí d'anada.
+-  `d` la distància entre la casa i la font.
+
+Llavors, tenim que `d = v * t`.
+
+En el camí de tornada, la velocitat mitjana va ser un cinquè més curta, és a dir, `v - (1/5)v = (4/5)v`. El temps que va trigar en tornar va ser `t + 1`. Per tant, la distància de tornada és la mateixa, `d = (4/5)v * (t + 1)`.
+
+Com que les distàncies són iguals, podem igualar les dues expressions:
+`v * t = (4/5)v * (t + 1)`
+
+Dividim ambdues bandes per `v`:
+`t = (4/5)(t + 1)`
+`t = (4/5)t + 4/5`
+`t - (4/5)t = 4/5`
+`(1/5)t = 4/5`
+`t = 4`
+
+Per tant, el temps que va trigar en anar a la font va ser de 4 hores. El temps que va trigar en tornar va ser de 4 + 1 = 5 hores. A més, va descansar 1 hora.
+
+El temps total que va estar fora de casa és la suma del temps d'anada, el temps de descans i el temps de tornada: 4 + 1 + 5 = 10 hores.
+
+Resposta: E)

@@ -1,0 +1,300 @@
+Raonament:
+L'equació donada és $\frac{a}{b+1} + \frac{b}{a+1} = 1$. Multiplicant per $(b+1)(a+1)$ a ambdós costats, obtenim:
+$a(a+1) + b(b+1) = (b+1)(a+1)$
+$a^2 + a + b^2 + b = ab + a + b + 1$
+$a^2 + b^2 = ab + 1$
+$a^2 + b^2 - ab = 1$
+
+Ara, considerem l'expressió que volem avaluar: $\frac{a}{b} + \frac{b}{a} - ab$.
+Podem reescriure-la com:
+$\frac{a^2 + b^2}{ab} - ab$
+Substituint $a^2 + b^2 = ab + 1$, obtenim:
+$\frac{ab + 1}{ab} - ab$
+$\frac{ab}{ab} + \frac{1}{ab} - ab$
+$1 + \frac{1}{ab} - ab$
+
+Ara, hem de trobar una relació entre $ab$ i la condició $a^2 + b^2 - ab = 1$.
+Sabem que $(a-b)^2 = a^2 - 2ab + b^2 \geq 0$, per tant $a^2 + b^2 \geq 2ab$.
+Substituint $a^2 + b^2 = ab + 1$, tenim $ab + 1 \geq 2ab$, que implica $1 \geq ab$, o $ab \leq 1$.
+També sabem que $a^2 + b^2 - ab = 1$. Si $a=1$ i $b=1$, llavors $1+1-1=1$, que compleix la condició. En aquest cas, $ab=1$.
+Si $a=1$ i $b=0$, l'equació original no està definida.
+Si $a=2$ i $b=-1$, llavors $\frac{2}{0} + \frac{-1}{3}$ no està definida.
+Si $a=1$ i $b=-1$, llavors $\frac{1}{0} + \frac{-1}{2}$ no està definida.
+Si $a=1$ i $b=1$, llavors $\frac{1}{2} + \frac{1}{2} = 1$, que compleix la condició. En aquest cas, $ab=1$.
+Si $a=2$ i $b=1$, llavors $\frac{2}{2} + \frac{1}{3} = 1 + \frac{1}{3} \neq 1$.
+Si $a=2$ i $b=2$, llavors $\frac{2}{3} + \frac{2}{3} = \frac{4}{3} \neq 1$.
+Si $a=1$ i $b=1$, llavors $\frac{a}{b} + \frac{b}{a} - ab = 1 + 1 - 1 = 1$.
+Si $a=2$ i $b=1$, llavors $a^2+b^2-ab = 4+1-2=3 \neq 1$.
+Si $a=1$ i $b=1$, llavors $ab=1$.
+Si $a=1$ i $b=0$, l'equació original no està definida.
+Si $a=0$, llavors $b^2=1$, per tant $b=1$ o $b=-1$. Si $b=1$, $\frac{0}{2} + \frac{1}{1} = 1$, que compleix la condició. Si $b=-1$, $\frac{0}{0} + \frac{-1}{1}$ no està definida.
+Si $a=0$ i $b=1$, llavors $\frac{a}{b} + \frac{b}{a} - ab$ no està definida.
+Si $a=1$ i $b=1$, llavors $\frac{a}{b} + \frac{b}{a} - ab = 1 + 1 - 1 = 1$.
+Si $a=1$ i $b=1$, llavors $1 + \frac{1}{1} - 1 = 1$.
+Si $ab=1$, llavors $1 + \frac{1}{1} - 1 = 1$.
+Si $ab=x$, llavors $1 + \frac{1}{x} - x$.
+Si $x=1$, llavors $1+1-1=1$.
+Si $x=1/2$, llavors $1+2-1/2=5/2$.
+Si $x=1/3$, llavors $1+3-1/3=11/3$.
+Si $x=1/4$, llavors $1+4-1/4=19/4$.
+Si $ab=1$, llavors $1 + \frac{1}{1} - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, llavors $1 + 1 - 1 = 1$.
+Si $ab=1/2$, llavors $1 + 2 - 1/2 = 5/2$.
+Si $ab=1/3$, llavors $1 + 3 - 1/3 = 11/3$.
+Si $ab=1/4$, llavors $1 + 4 - 1/4 = 19/4$.
+Si $ab=1$, ll

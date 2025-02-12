@@ -1,0 +1,26 @@
+<think>
+Para resolver este problema, primero noto que necesitamos encontrar todos los pares enteros positivos que multipiden entre sí y dan una área de 60 cm². Esto es, Seek pairs (a, b) donde a × b = 60, con a e b entero positivos.
+
+Luego, countaré cuántas combinaciones diferentes podemos formedar de estos pares. Dado que los pares serán paireados y el producto es constante, cada pairo unique dará una estructura rectangular diferente.
+
+Finalmente, contaré las diferentes pares posibles para obtener la cantidad total de figuras rectangleas.
+</think>
+
+Para encontrar las Freddie dimensiones de rectángulos con área 60 cm² y con longitudes y anhos que son números naturales, procedemos de la siguiente manera:
+
+1. **Definir los pares (a, b):**
+   - Decidimos buscar todos los pares enteros positivos (a, b) tales que \( a \times b = 60 \).
+   
+2. **Lista de pares:**
+   - \( (1, 60) \)
+   - \( (2, 30) \)
+   - \( (3, 20) \)
+   - \( (4, 15) \)
+   - \( (5, 12) \)
+   - \( (6, 10) \)
+
+3. **Contar las Freddie dimensiones:**
+   - Observamos que hay 6 pares diferentes que cumplen con los requisitos.
+
+**Respuesta final:**  
+\boxed{6}

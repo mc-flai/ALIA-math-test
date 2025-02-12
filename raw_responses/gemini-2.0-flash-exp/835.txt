@@ -1,0 +1,27 @@
+Raonament:
+1. **Definir variables:**
+   - Sigui 'h' el nombre d'homes presents.
+   - Sigui 'd' el nombre de dones presents.
+   - Sabem que h + d ≤ 50.
+
+2. **Plantejar les equacions:**
+   - El nombre d'homes ballant és (3/4)h.
+   - El nombre de dones ballant és (4/5)d.
+   - Com que el tango es balla en parelles, el nombre d'homes ballant ha de ser igual al nombre de dones ballant: (3/4)h = (4/5)d.
+
+3. **Resoldre l'equació:**
+   - Multipliquem ambdós costats de l'equació per 20 per eliminar les fraccions: 15h = 16d.
+   - Això significa que h = (16/15)d.
+
+4. **Trobar valors enters:**
+   - Com que el nombre d'homes i dones ha de ser un nombre enter, 'd' ha de ser un múltiple de 15.
+   - Si d = 15, llavors h = (16/15)*15 = 16. En aquest cas, h + d = 16 + 15 = 31, que és menor que 50.
+   - Si d = 30, llavors h = (16/15)*30 = 32. En aquest cas, h + d = 32 + 30 = 62, que és major que 50, per tant, no és vàlid.
+   - Per tant, l'única solució vàlida és d = 15 i h = 16.
+
+5. **Calcular el nombre de persones ballant:**
+   - Homes ballant: (3/4) * 16 = 12
+   - Dones ballant: (4/5) * 15 = 12
+   - Total de persones ballant: 12 + 12 = 24
+
+Resposta: B)

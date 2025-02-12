@@ -1,0 +1,41 @@
+<think>
+Para resolver este problema, primero recordemos que un cubo tiene 8 vértices. El questionari se pidió determinar cuántos plans (pares planos) pasan por almenos tres de estos vértices.
+
+Puedimos analizar las posibles ternas de vértices de un cubo y counts las combinatorias correspondientes, considerando las diferentes categorías de triadros de vértices.
+
+1. **Cubos rectangulares**: En este caso, las armarcas laterales no son paralelas a los planos de la base. Esto nos permitiría aplicar la fórmula combinatoria general para nth Taken de 3.
+
+2. **Características del cubo regular**: Los triadros de vértices se dividirán en dos categorías principales: triadros que forman un triángulo plan, y otros que no forman tales figuras.
+
+3. **Triadros planos**: Hay diez such triadros que forman triángulos planos, como los laterales de la base y los laterales de la altura.
+
+4. **Triadros non-planos**: Los 12 restantes triadros no están en un mismo plano, por lo que no se consideran como plans.
+
+Finalmente, somemos los triadros planos (10) y los no-plantos (12), obteniendo una suma total de 22. Sin embargo,并非 es así ya que hay dose de triadros que coinciden con planos más complejos, que no se han contado correctamente.
+
+Posteriormente, ajustamos la counted las armarcas laterales y horizontales, asegurándolo de que los couplets estén bien distribuidos entre triadros planos y no-plantos.
+
+Finalmente, somemos ambas categorías para obtener la cantidad correcta.
+</think>
+
+Para resolver este problema, primero notamos que un cubo tiene 8 vértices. Al intentar determinar cuántos planes pasan por almenos tres de estos vértices, pensamos en las diferentes categorías que se pueden formar.
+
+1. **Triadros planos**: 
+   - Hay 10 triadros planos que forman figuras planas como los laterales de la base y de la altura.
+   
+2. **Triadros non-planos**: 
+   - Los 12 restantes triadros no están en un mismo plano, por lo que no se consideran como planes.
+
+Por lo tanto, al sumar las dos categorías:
+
+\[
+10 \text{ (triadros planos)} + 12 \text{ (no-plantos)} = 22
+\]
+
+Sin embargo, es importante ajustar la counted las armarcas laterales y horizontales para asegurarnos de que la contabilidad sea correcta.
+
+Finalmente, somemos ambas categorías para obtener la cantidad correcta:
+
+\[
+\boxed{20}
+\]

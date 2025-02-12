@@ -1,0 +1,81 @@
+<think>
+Primeixem la factorització de cada factorial sense paràntesis.
+
+7! = 5040
+
+8! = 40320
+
+9! = 362880
+
+Sumant les tres: 5040 + 40320 + 362880 = 408, (entorn de) 408. Ahora, ara factoritzem aquest nombre:
+
+408 = 8 × 51 = 8 × 3 × 17
+
+Però, l'expressió resultant no ha expressa en potències de 3.
+
+Així que es tracta de verificar si hi poten tenir factors de 3 alreaçant les sumes.
+
+Com s' observa, per a tot factorial n!, la factorització conté un gràfitat d'arregul·lada de 3 sense paràntesis, per què al graduation superior, l' factorial inclúix une més de factors 3 que la prior.
+
+Per exemple:
+
+7! = 2^4 × 3² × 5 × 7
+
+8! = 2^7 × 3² × 5 × 7
+
+9! = 2^7 × 3⁴ × 5 × 7
+
+Sumant les factors de 3 en cada factorial:
+
+7! contribue 3², 8! contribue 3², 9! contribue 3⁴.
+
+Sumant tots: 3² + 3² + 3⁴ = 3²(1 + 1) + 3⁴ = 2×3² + 3⁴ = 3⁴ × (2/9 + 1) = 3⁴ × 11/9, que no és potencia de 3.
+
+Per així, la suma no poten expressar una potència de 3 major que 3⁶. En resum, la potència més alta de 3 que divideix a l'suma és 3⁶.
+</think>
+
+El problema es: Quina és la potència més alta de 3 que és un divisor d'aquest nombre que sumem 7!+8!+9!.
+
+**Paso 1:** Calculem cada factorial sense paràntesis.
+
+- \(7! = 5040\)
+- \(8! = 40320\)
+- \(9! = 362880\)
+
+**Paso 2:** Sumem les tres factorial:
+
+\[
+5040 + 40320 + 362880 = 408, \text{entorn de} 408
+\]
+
+**Paso 3:** Factoritzem el nombre resultant a la suma sense paràntesis.
+
+\[
+408 = 8 \times 51 = 8 \times 3 \times 17
+\]
+
+Ara, expressí als factors de 3:
+
+\[
+408 = 3^2 \times (8 \times 17)
+\]
+
+**Paso 4:** Averiguar si la suma poten expressar una potència de 3 major que \(3^6\).
+
+Apareix que no, com s' observa:
+
+- \(7! = 2^4 \times 3^2 \times 5 \times 7\)
+- \(8! = 2^7 \times 3^2 \times 5 \times 7\)
+- \(9! = 2^7 \times 3^4 \times 5 \times 7\)
+
+Sumant les factors de 3:
+
+\[
+3^2 + 3^2 + 3^4 = 3^4 \times (1 + 1) + 3^4 = 3^6 \times 10
+\]
+
+Tambí no poten expressar una potència de 3 major que \(3^6\). Així, la potència més alta de 3 que divideix a l' suma és:
+
+**Respuesta:** Esquell de la option **E**, una potència de 3 més alta que \(3^6\).
+
+\boxed{E}

@@ -1,0 +1,44 @@
+<think>
+Para resolver este problema, primero noto que cada boleta tiene un número entero y que el número assigneda a cada borser debe ser la suma de los números de las dos boletes que se encuentran en cada lado. Además, los números que comenta a la primera boleta empiezan con 1 y 2.
+
+Entiendo que necesitamos determinar cuántas boletes David ha used para construir el collar de collor de boetes, llevándonos por las siguientes etapas:
+
+1. ** primeras dos boletes:**
+   - El boeto con el número 1 y elboeto con el número 2 forman una lierneta con el número 3.
+
+2. **Luego, hay que construir los números de las demás boletes utilizando las arities necesarias.**
+   - El boeto con el número 4 debe ser la suma de 1 y 3.
+   - El boeto con el número 5 debe ser la suma de 1 y 4 o 2 y 3, pero ya hay unboeto con 3 y otro con 2.
+   - El boeto con el número 6 debe ser la suma de 1 y 5 o 2 y 4.
+
+3. **Finalmente, observamos que los números 7 y 8 no tienen una lierneta asignada ya que las arities restantes (3 y 4) no se pueden sumar para obtener el número 6, ya que ya está asignado a este boeto.**
+   - Por lo tanto, David no ha used la tercera boeta (number 3).
+
+Ahora, contando las boletes usadas: 1, 2, 4 y 5, es 4 boetes.
+</think>
+
+Para resolver el problema de cómo manyboletes ha useido David para construir el collar de collor de boetes, sigamos estos pasos:
+
+### **Paso 1: Identificar las arities necesarias**
+- Los números assignados a cada lierneta (arities) son las-sumas de los números de las dos boletes que se encuentran en cada lado.
+- La primera lierneta tiene el número 3, ya que 1 + 2 = 3.
+
+### **Paso 2: Determinar las arities necesarias**
+- Buscamos las arities que no se encuentran con la suma de arities existentes:
+  - La lierneta con número 4 debe ser la suma de 1 y 3.
+  - La lierneta con número 5 debe ser la suma de 2 y 3 (o 1 y 4, pero 2 y 3 es más simple).
+  - La lierneta con número 6 debe ser la suma de 1 y 5 o 2 y 4.
+
+### **Paso 3: Verificar las arities restantes**
+- Los números 7 y 8 no tienen una lierneta asignada ya que las arities restantes (3 y 4) no se pueden sumar para obtener el número 6, ya que ya está asignado a este boeto.
+
+### **Paso 4: Contar las boletes usadas**
+- Boeto con número 1.
+- Boeto con número 2.
+- Boeto con numbered 4.
+- Boeto con numbered 5.
+
+Total: **4 boletes**.
+
+### **Respuesta final**
+El respondiente ha useido **C) 5** boletes.

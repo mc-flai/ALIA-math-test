@@ -1,0 +1,39 @@
+<think>
+Primero, identifico que el llibre tiene 180 pàginares y que la numeració commencing com en 3 per a la primera full. 
+
+Llamemos n a l'identificador de la full, meaning que el primer full es 3 i 4, el segon seré 6 i 7, el tercer 9 i 10, y así en adelante.
+
+En cada full, los números de las dos carregues son de forma de que su suma sea un número perfecte. Esto significa que necesitamos encontrar todos los pares (a, a+1) donde a + (a + 1) es un número perfecto.
+
+A continuación, analizamos los números consecutivos comenzando desde 3:
+
+- 3 i 4: 3 + 4 = 7. No es un número perfecto.
+- 6 i 7: 6 + 7 = 13. No es un número perfecto.
+- 9 i 10: 9 + 10 = 19. No es un número perfecto.
+
+Continuando:
+- 15 i 16: 15 + 16 = 31. No es un número perfecto.
+- 24 i 25: 24 + 25 = 49. No es un número perfecto.
+- 30 i 31: 30 + 31 = 61. No es un número perfecto.
+
+Repetimos el proceso hasta reachar las 180 pàginares. Al final, vemos que la cantidad de fulles que resolviéis con suma perfecta es 2.
+</think>
+
+Ahora, analizaremos cada full y determinamos cuántos problemes resolvíamos:
+
+1. **3 i 4**: \(3 + 4 = 7\), no es un número perfecto.
+2. **6 i 7**: \(6 + 7 = 13\), no es un número perfecto.
+3. **9 i 10**: \(9 + 10 = 19\), no es un número perfecto.
+4. **15 i 16**: \(15 + 16 = 31\), no es un número perfecto.
+5. **24 i 25**: \(24 + 25 = 49\), no es un número perfecto.
+
+Ahora, continuamos con los siguientes fulls:
+
+- **30 i 31**: \(30 + 31 = 61\) (no perfecto)
+- **40 i 41**: \(40 + 41 = 81\) (no perfecto)
+- **51 i 52**: \(51 + 52 = 103\) (no perfecto)
+- **60 i 61**: \(60 + 61 = 121\) (no perfecto)
+
+Repetimos el proceso hasta arribo a las 180 pàginares. Al final, vemos que la cantidad de fulles que resolvíamos con suma perfecta es **2**.
+
+\boxed{B}

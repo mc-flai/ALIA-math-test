@@ -1,0 +1,15 @@
+Raonament: Per a saber quan es tornaran a trobar els tres autobusos, hem de trobar el mínim comú múltiple (mcm) dels temps que triga cada autobús en fer el seu recorregut. Els temps són 20 minuts, 30 minuts i 24 minuts.
+
+1. Descomponem cada nombre en factors primers:
+   - 20 = 2² * 5
+   - 30 = 2 * 3 * 5
+   - 24 = 2³ * 3
+
+2. Per calcular el mcm, agafem els factors primers amb l'exponent més gran que apareix en cada descomposició i els multipliquem:
+   - mcm(20, 30, 24) = 2³ * 3 * 5 = 8 * 3 * 5 = 120
+
+3. El mcm és 120 minuts, que equivalen a 2 hores.
+
+4. Si els autobusos ixen a les 8:00 del matí, es tornaran a trobar 2 hores després, és a dir, a les 10:00 del matí.
+
+Resposta: B)

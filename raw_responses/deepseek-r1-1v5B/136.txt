@@ -1,0 +1,56 @@
+<think>
+Para resolver este problema, primero identifico los datos proporcionados:
+
+1. La edat mitjana de un equip de futbol tiene 21 jugadors que han jugado durante el partit.
+2. Un jugador, que era graviament del seu mal comportament, ha estat expulsat al camp.
+3. Al final, l'edat mitjana de los jugadors que ya están en el camp es de 20 anys.
+
+La idea es calcular la edatamitjana desapercibida por el jugador expulsido. Supongamos que la edatamitjana original era \( x \) anys, y que el jugador expulsado perturbó esta media. Usando la fórmula de la media aritmética:
+
+\[ \text{Media} = \frac{\text{Suma total de edatasmitjana}}{\text{número de jugadors}} \]
+
+Ahora, al expulsar el jugador, el número de jugadores reduce a 20. La nueva media es de 20 anys. Dado que el jugador expulsado tenía la misma media \( x \) (ya que no se ha informado sobre su edatamitjana), podemos establecer la siguiente ecuación:
+
+\[ 21x = 20y + x \]
+
+Ahora, reorganizando la ecuación para resolver \( y \):
+
+\[ 21x - x = 20y \]
+\[ 20x = 20y \]
+\[ y = x \]
+
+Esto sugiere que la edatamitjana del jugador expulsado es igual a la media original, pero no directlya nos da el valor de \( y \). Sin embargo, considerando que el jugador expulsado perturbó la media, probablemente su edad mitjana fue igual a la media original. Sin embargo, de las opciones ofrecidas, la única opción que alineará con este pensamiento es que la edatamitjana del jugador expulsado es 20 anys, pero en el problema mencionan que la nueva media es de 20 anys, lo que sugiere que el jugador expulsado tenía la misma edad que las demás jugadores.
+
+Sin embargo, revisando las opciones:
+
+A) 32
+B) 31
+C) 30
+D) 21
+E) 20
+
+La respuesta correcta es E) 20, ya que el jugador expulsado tenía la misma edad mitjana que las demás jugadores, lo que mantuvo la media unchanged.
+
+Sin embargo, revisando los cálculos, si la media original era \( x \), y el jugador expulsado también tenía \( x \), el total de edatasmitjana permanecía constante. Sin embargo, el problema menciona que el jugador expulsado lo elevó a 20 anys, lo que sugiere que el jugador expulsado tenía una edad lower. Sin embargo, como solo hay una opción lower (A:32, B:31, C:30, D:21), y E) 20 es la respuesta correcta.
+
+Sin embargo, reorganizing:
+
+Si la nueva media es de 20 anys con 20 jugadores:
+\[ \text{Suma total} = 20 \times 20 = 400 \]
+
+Originalmente, con 21 jugadors y edata mitjana \( x \):
+\[ \text{Suma total} = 21x \]
+
+El jugador expulsado tenía la misma media \( x \), por lo que:
+\[ 21x - x = 400 \]
+\[ 20x = 400 \]
+\[ x = 20 \]
+
+Por lo tanto, el jugador expulsado tenía una edatamitjana de 20 anys.
+</think>
+
+Eledat mitjana del equip de futbol, que tiene 21 jugadors, es de 21 anys. Al expulsar un jugador que tenía una edad mitjana igual a la media original (ya que su expulsión no afectó la media), el new mean de 20 anys por 20 jugadores implica que el jugador expulsado tenía una edatamitjana de 20 anys.
+
+Raonament: La media es la suma dividida entre el número de términos. Si al expulsar el jugador, que tenía la misma media \( x \), el new mean became \( y = 20 \). Luego, a) 32 b) 31 c) 30 d) 21 e) 20
+
+Resposta: \boxed{E}

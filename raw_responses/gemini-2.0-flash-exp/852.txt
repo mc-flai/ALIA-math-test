@@ -1,0 +1,17 @@
+Raonament:
+Si els talls són paral·lels als costats del rectangle, cada tall pot ser horitzontal o vertical. Si tots els talls són horitzontals, amb 7 talls tindrem 8 trossos. Si tots els talls són verticals, també tindrem 8 trossos. Si fem una combinació de talls horitzontals i verticals, el nombre de trossos serà el producte del nombre de trossos horitzontals pel nombre de trossos verticals. Per exemple, si fem 2 talls horitzontals i 5 verticals, tindrem 3 trossos horitzontals i 6 verticals, i per tant 3 * 6 = 18 trossos.
+
+Sigui 'h' el nombre de talls horitzontals i 'v' el nombre de talls verticals. Sabem que h + v = 7. El nombre de trossos serà (h+1) * (v+1). Hem de trobar quina de les opcions no pot ser el resultat d'aquesta multiplicació.
+
+* Si h=0, v=7, trossos = (0+1)*(7+1) = 1*8 = 8
+* Si h=1, v=6, trossos = (1+1)*(6+1) = 2*7 = 14
+* Si h=2, v=5, trossos = (2+1)*(5+1) = 3*6 = 18
+* Si h=3, v=4, trossos = (3+1)*(4+1) = 4*5 = 20
+* Si h=4, v=3, trossos = (4+1)*(3+1) = 5*4 = 20
+* Si h=5, v=2, trossos = (5+1)*(2+1) = 6*3 = 18
+* Si h=6, v=1, trossos = (6+1)*(1+1) = 7*2 = 14
+* Si h=7, v=0, trossos = (7+1)*(0+1) = 8*1 = 8
+
+Els possibles nombres de trossos són 8, 14, 18 i 20. L'única opció que no apareix és 12.
+
+Resposta: B)

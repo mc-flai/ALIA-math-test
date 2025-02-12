@@ -1,0 +1,13 @@
+Raonament:
+Primer, hem de comptar quantes xifres s'utilitzen per numerar les pàgines d'un llibre. Les pàgines de l'1 al 9 utilitzen 1 xifra per pàgina, les pàgines del 10 al 99 utilitzen 2 xifres per pàgina, i les pàgines del 100 en endavant utilitzen 3 xifres per pàgina.
+
+1. **Pàgines d'1 xifra (1-9):** Hi ha 9 pàgines que utilitzen 1 xifra cadascuna, per tant, s'utilitzen 9 xifres en total.
+2. **Xifres restants:** Després de numerar les pàgines de l'1 al 9, ens queden 231 - 9 = 222 xifres per utilitzar.
+3. **Pàgines de 2 xifres (10-99):** Les pàgines del 10 al 99 utilitzen 2 xifres per pàgina. Hi ha 90 pàgines en aquest rang (99 - 10 + 1 = 90). Per tant, s'utilitzen 90 * 2 = 180 xifres.
+4. **Xifres restants:** Després de numerar les pàgines del 10 al 99, ens queden 222 - 180 = 42 xifres per utilitzar.
+5. **Pàgines de 3 xifres (100 en endavant):** Les pàgines a partir de la 100 utilitzen 3 xifres per pàgina. Amb les 42 xifres restants, podem numerar 42 / 3 = 14 pàgines.
+6. **Pàgina final:** La primera pàgina de 3 xifres és la 100. Per tant, la pàgina final serà 100 + 14 - 1 = 113.
+
+Per tant, el llibre té 113 pàgines.
+
+Resposta: B)

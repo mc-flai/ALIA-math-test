@@ -1,0 +1,47 @@
+<think>
+Primero, identifico los datos proporcionados en la pregunta.
+
+La mosca comienza en Borriana y debe recorrer 2500 kilómetros paravisitar a Londres alineandose entre París. Su velocidad inicial es de 1 m/s, pero como una mosca màgica, she doble su velocidad cada vez que se recorre una distancia delmetrical.
+
+Para calcular el tiempo de viaje, primero necesito determinar qué tan rápido she es creciente su velocidad. A pesar de la doble aceleración constante, su velocidad no es lineal, sino que varía como la raíz cuadrada de la distancia recorrida (dado que la aceleración es constante).
+
+El método general es integrar la velocidad de la mosca con respecto a la distancia para encontrar el tiempo total de viaje.
+
+Finalmente, comparando el tiempo calculado con las opciones proporcionadas (A) 2 anys, (B) 2 mesos, (C) 12 hores, (D) 2 segons y (E) La mosca no arribarà mai a Londres ni tan sols a París), determinaré la opción correcta.
+</think>
+
+Raonament:
+
+La mosca comienza su viaje a una velocidad inicial de \( v_0 = 1 \, \text{m/s} \). DUEZCA, su velocidad se incrementa en forma constante, lo que significa que su velocidad varía con la distancia recorrida. Especially, la mosca tiene una aceleración constante, lo que nos suggest que su velocidad es proporcional a la raíz cuadrada de la distancia recorrida.
+
+La fórmula para calcular el tiempo total de viaje es:
+
+\[
+t = \frac{2d}{v_0 + v(t)} 
+\]
+
+donde:
+- \( d = 2500 \, \text{km} = 2,500,000 \, \text{m} \) es la distancia total.
+- \( v_0 = 1 \, \text{m/s} \) es la velocidad inicial.
+
+Aplicando esta fórmula:
+
+\[
+t = \frac{2 \times 2,500,000}{1 + (t/2)} 
+\]
+
+Resolviendo para \( t \):
+
+\[
+t^2 + t - 4 \,000 \,000 = 0
+\]
+
+La solución positiva es:
+
+\[
+t \approx 2 \, \text{annos}
+\]
+
+Por lo tanto, la mosca arribará a Londres alineandose entre París en aproximadamente 2 anys.
+
+\boxed{A}

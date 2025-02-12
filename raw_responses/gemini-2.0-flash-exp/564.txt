@@ -1,0 +1,8 @@
+Raonament:
+1. **Càlcul de rectes sense restriccions:** Si no hi hagués cap restricció, amb 10 punts podríem formar un nombre de rectes igual al nombre de combinacions de 10 punts agafats de 2 en 2. Això es calcula amb la fórmula de combinacions: C(n, k) = n! / (k! * (n-k)!), on n és el nombre total de punts i k és el nombre de punts que agafem per formar una recta (en aquest cas, 2). Per tant, C(10, 2) = 10! / (2! * 8!) = (10 * 9) / (2 * 1) = 45.
+
+2. **Rectes que es repeteixen:** Els 4 punts que estan en una mateixa recta formen una única recta, però si els considerem com a punts independents, la fórmula anterior ens donaria C(4, 2) = 4! / (2! * 2!) = (4 * 3) / (2 * 1) = 6 rectes. Per tant, hem comptat 6 rectes quan en realitat només n'hi ha una. Això vol dir que hem de restar 5 rectes (6 - 1 = 5).
+
+3. **Càlcul final:** Per tant, el nombre total de rectes que podem formar és el nombre de rectes sense restriccions menys les rectes que hem comptat de més a causa dels 4 punts alineats, és a dir, 45 - 5 = 40.
+
+Resposta: B)

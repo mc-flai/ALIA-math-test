@@ -1,0 +1,20 @@
+Raonament:
+Sigui *n* el nombre de daus que té l'Agnès. La probabilitat que en un dau surti un 12 és 1/12, i la probabilitat que no surti un 12 és 11/12.
+
+La probabilitat que només surti un 12 és la probabilitat que un dau concret surti 12 i els altres *n-1* daus no surtin 12, multiplicat pel nombre de daus que poden ser el que surt 12. Això és:
+P(només un 12) = n * (1/12) * (11/12)^(n-1)
+
+La probabilitat que no surti cap 12 és la probabilitat que tots els daus no surtin 12:
+P(cap 12) = (11/12)^n
+
+Segons l'enunciat, aquestes dues probabilitats són iguals:
+n * (1/12) * (11/12)^(n-1) = (11/12)^n
+
+Podem simplificar l'equació dividint ambdós costats per (11/12)^(n-1):
+n * (1/12) = (11/12)
+Multiplicant ambdós costats per 12:
+n = 11
+
+Per tant, l'Agnès té 11 daus.
+
+Resposta: D)

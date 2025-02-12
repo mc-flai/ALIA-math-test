@@ -1,0 +1,18 @@
+Raonament:
+La funció f(x) = |x - 2019| + |x - 2020| és una funció definida a trossos. Analitzem els diferents intervals:
+
+1. Si x < 2019:
+   f(x) = -(x - 2019) - (x - 2020) = -x + 2019 - x + 2020 = -2x + 4039
+   Volem que -2x + 4039 = 3, per tant, -2x = -4036, i x = 2018. Com que 2018 < 2019, aquesta és una solució vàlida.
+
+2. Si 2019 ≤ x ≤ 2020:
+   f(x) = (x - 2019) - (x - 2020) = x - 2019 - x + 2020 = 1
+   En aquest interval, f(x) = 1, que no és igual a 3. Per tant, no hi ha solucions en aquest interval.
+
+3. Si x > 2020:
+   f(x) = (x - 2019) + (x - 2020) = x - 2019 + x - 2020 = 2x - 4039
+   Volem que 2x - 4039 = 3, per tant, 2x = 4042, i x = 2021. Com que 2021 > 2020, aquesta és una solució vàlida.
+
+Les solucions són x = 2018 i x = 2021. La suma d'aquestes solucions és 2018 + 2021 = 4039.
+
+Resposta: E)

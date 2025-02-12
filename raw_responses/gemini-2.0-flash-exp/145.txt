@@ -1,0 +1,27 @@
+Raonament:
+Siguin 'p' el nombre de pomes i 'x' el nombre de pomes que rep cada xic quan hi ha N xics. Llavors, tenim que p = N * x.
+Si hi haguera N-2 xics, cada xic rebria x+1 pomes. Per tant, p = (N-2) * (x+1).
+Si hi haguera N-3 xics, cada xic rebria x+2 pomes. Per tant, p = (N-3) * (x+2).
+
+Igualem les expressions per a 'p':
+1) N * x = (N-2) * (x+1)
+2) N * x = (N-3) * (x+2)
+
+Desenvolupem les equacions:
+1) Nx = Nx + N - 2x - 2  =>  0 = N - 2x - 2  =>  N = 2x + 2
+2) Nx = Nx + 2N - 3x - 6  =>  0 = 2N - 3x - 6
+
+Substituïm N de la primera equació a la segona:
+0 = 2(2x + 2) - 3x - 6
+0 = 4x + 4 - 3x - 6
+0 = x - 2
+x = 2
+
+Ara substituïm x = 2 a l'equació N = 2x + 2:
+N = 2 * 2 + 2
+N = 4 + 2
+N = 6
+
+Per tant, el valor de N és 6.
+
+Resposta: A)

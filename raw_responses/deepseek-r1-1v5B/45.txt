@@ -1,0 +1,100 @@
+<think>
+Prime, identifiquem los datos del problema.
+
+Antoni recoge 1/5 del total de llibres. Bernat recoge 1/6 dels llibres que quedaron después de Antoni's recogida. Carles recoge 1/3 dels que quedaron después de su previo recogido. David recoge 1/4 dels que quedaron después de su recogida. En la parte final, Enric y Ferran reparten igualmente los que quedaron.
+
+Realicemos el cálculo paso a paso:
+
+1. Antoni recoge (1/5) del total.
+2. Bernat recoge 1/6 del 4/5 de total, es decir, (4/5)*(1/6).
+3. Carles recoge 1/3 del (4/5 - (4/5)*(1/6)) = (4/5)*(5/6) = (20/30), lo que equivale a (1/3)*(4/5) = 4/15.
+   A continuación, David recoge 1/4 del (20/30 - (20/30)*(1/3)) = (20/30)*(2/3) = (40/90), lo que equivale a (2/3)*(4/5) = 8/15.
+   Finalmente, Enric y Ferran recogen el restante de (40/90 - (40/90)*(1/2)) = (40/90)/2 = 20/90.
+
+Ahora, compararemos los recuots de cada uno:
+
+- Antoni: 18/90
+- Bernat: 16/90
+- Carles: 15/90
+- David: 8/90
+- Enric y Ferran: 20/90
+
+En conclusión, Enric y Ferran recogen el mayor restante.
+</think>
+
+**Raonament:**
+
+1. **Definición del problema:**
+   - Total de llibres: \( T \).
+   - Antoni recoge: \( \frac{1}{5}T \).
+   - Bernat recoge: \( \frac{1}{6} \) del restante después de Antoni.
+   - Carles recoge: \( \frac{1}{3} \) del restante después de su previo recogido.
+   - David recoge: \( \frac{1}{4} \) del restante después de su recogida.
+   - En el final, recogen la mitad igualmente los que quedaron.
+
+2. **Cálculo de recuots por cada persona:**
+   
+   - **Antoni:**
+     Recoge \( \frac{1}{5}T = 0.2T \).
+     
+   - **Bernat:**
+     Recoge \( \frac{1}{6} \) del \( (1 - \frac{1}{5})T = \frac{4}{5}T \).
+     Por lo tanto, recoge \( \frac{1}{6} \times \frac{4}{5}T = \frac{4}{30}T = \frac{2}{15}T \).
+
+   - **Carles:**
+     Recoge \( \frac{1}{3} \) del restante después de Bernat, que es \( (1 - \frac{1}{5} - \frac{1}{6})T = \frac{4}{5}T \times \frac{5}{6} = \frac{20}{30}T = \frac{2}{3}T \).
+     Por lo tanto, recoge \( \frac{1}{3} \times \frac{2}{3}T = \frac{2}{9}T \).
+
+   - **David:**
+     Recoge \( \frac{1}{4} \) del restante después de Carles, que es \( (1 - \frac{1}{5} - \frac{1}{6} - \frac{2}{9})T \).
+     Simplificando:
+     \[
+     1 = \frac{90}{90},\quad \frac{1}{5} = \frac{18}{90},\quad \frac{1}{6} = \frac{15}{90},\quad \frac{2}{9} = \frac{20}{90}.
+     \]
+     Luego,
+     \[
+     1 - \left( \frac{18}{90} + \frac{15}{90} + \frac{20}{90} \right) = 1 - \frac{53}{90} = \frac{37}{90}.
+     \]
+     Por lo tanto, recoge \( \frac{1}{4} \times \frac{37}{90}T = \frac{37}{360}T \).
+
+   - **Enric y Ferran:**
+     Recogen la mitad igualmente los que quedaron después de David's recogida. Los llibres restantes son:
+     \[
+     1 - \left( \frac{18}{90} + \frac{2}{15}T + \frac{2}{9}T + \frac{37}{360}T \right) = ?
+     \]
+     Para simplificar, conviene usar T como 360 (mínimo común múltiple de 5, 6, 3, 4 y 2):
+     
+     - \( T = 360 \).
+     - Antoni: \( \frac{1}{5}T = 72 \).
+     - Bernat: \( \frac{2}{15}T = 48 \).
+     - Carles: \( \frac{2}{9}T = 80 \).
+     - David: \( \frac{37}{360}T = 37 \).
+
+     Luego, llibres recogidos por todos:
+     \[
+     72 + 48 + 80 + 37 = 237.
+     \]
+     Llibres que quedaron: \( 360 - 237 = 123 \).
+     
+     En el final, recogen la mitad igualmente:
+     \[
+     \frac{1}{2} \times 123 = 61.5.
+     \]
+     
+     Por lo tanto, **Enric y Ferran** recogen \( 61.5 \) llibres.
+
+3. **Comparación de recuots:**
+   
+   - Antoni: 72
+   - Bernat: 48
+   - Carles: 80
+   - David: 37
+   - Enric y Ferran: 61.5
+
+4. **Conclusione:**
+   
+   El reciente más grande es de **Antoni (72)**, lo que significa que **Antoni ha recogido más llibres** que los demás.
+
+\[
+\boxed{A)
+\]

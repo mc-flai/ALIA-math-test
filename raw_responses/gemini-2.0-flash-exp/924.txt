@@ -1,0 +1,29 @@
+Raonament:
+Perquè tres nombres naturals formin els costats d'un triangle, la suma de dos costats qualssevol ha de ser estrictament més gran que el tercer costat (desigualtat triangular). A més, el perímetre ha de ser 20. Sigui a, b i c les longituds dels costats, amb a ≤ b ≤ c. Llavors, a + b + c = 20. També sabem que a + b > c. Com que a + b + c = 20, podem substituir a + b per 20 - c, obtenint 20 - c > c, que implica 20 > 2c, o c < 10. També sabem que c és el costat més llarg, per tant c ≥ 20/3, que és aproximadament 6.67. Així, c pot ser 7, 8 o 9.
+
+Cas 1: c = 9. Llavors a + b = 11. Com que a ≤ b ≤ 9, les possibles parelles (a, b) són:
+(2, 9) - No compleix a+b>c (2+9=11>9)
+(3, 8) - Compleix a+b>c (3+8=11>9)
+(4, 7) - Compleix a+b>c (4+7=11>9)
+(5, 6) - Compleix a+b>c (5+6=11>9)
+
+Cas 2: c = 8. Llavors a + b = 12. Com que a ≤ b ≤ 8, les possibles parelles (a, b) són:
+(4, 8) - Compleix a+b>c (4+8=12>8)
+(5, 7) - Compleix a+b>c (5+7=12>8)
+(6, 6) - Compleix a+b>c (6+6=12>8)
+
+Cas 3: c = 7. Llavors a + b = 13. Com que a ≤ b ≤ 7, les possibles parelles (a, b) són:
+(6, 7) - Compleix a+b>c (6+7=13>7)
+
+En total, tenim les següents combinacions:
+(3, 8, 9)
+(4, 7, 9)
+(5, 6, 9)
+(4, 8, 8)
+(5, 7, 8)
+(6, 6, 8)
+(6, 7, 7)
+
+Per tant, hi ha 7 triangles diferents.
+
+Resposta: B)

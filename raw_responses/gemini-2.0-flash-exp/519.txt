@@ -1,0 +1,22 @@
+Raonament:
+El cangur A salta sempre 6 metres per salt. Després de 'n' salts, el cangur A haurà recorregut 6n metres.
+El cangur B salta 1 metre el primer salt, 2 metres el segon, 3 metres el tercer, i així successivament. Després de 'n' salts, el cangur B haurà recorregut la suma dels primers 'n' nombres naturals, que es calcula amb la fórmula n(n+1)/2.
+Volem trobar el nombre de salts 'n' per al qual la distància recorreguda pel cangur B sigui igual o superior a la distància recorreguda pel cangur A. Per tant, hem de resoldre la inequació:
+n(n+1)/2 >= 6n
+Multipliquem els dos costats per 2:
+n(n+1) >= 12n
+n^2 + n >= 12n
+n^2 - 11n >= 0
+n(n-11) >= 0
+Aquesta inequació es compleix quan n <= 0 o n >= 11. Com que n ha de ser un nombre positiu de salts, la solució és n >= 11.
+Per tant, el nombre mínim de salts que ha de fer el cangur B per a agafar el cangur A és 11.
+Comprovem:
+Després de 10 salts:
+Cangur A: 6 * 10 = 60 metres
+Cangur B: 10 * (10+1) / 2 = 10 * 11 / 2 = 55 metres
+Després de 11 salts:
+Cangur A: 6 * 11 = 66 metres
+Cangur B: 11 * (11+1) / 2 = 11 * 12 / 2 = 66 metres
+Per tant, després de 11 salts, el cangur B agafa el cangur A.
+
+Resposta: C)

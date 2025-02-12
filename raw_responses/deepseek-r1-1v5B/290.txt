@@ -1,0 +1,39 @@
+<think>
+Cal llamem a ≤ b ≤ c ≤ d els quatre nombres que donen les quatre posits sense com que seguiem la ordinafé almolt per la magnitud. El objecte es donar una mida \( k \) que sumi 1 a qualsevol dels nombres de manera que el producte dels quatre nombres sigi el més petit possible sense com que sigi igualment la magnitud al mateix.
+
+Per aixonament, considerem que augmentant el nombre \( a \) i sumant 1 a l'altre nombres pot tenir un impacte més significat visible en el producte. Així, podem donar una mida a \( a \) i sumi 1 a \( b \), \( c \) i \( d \) per que aquesta changeament sigui major en el producte.
+
+Calculant els productes sense l'augments:
+- Producte original: \( a \times b \times c \times d \)
+- Producte après l'augment: \( (a + 1) \times b \times c \times d \)
+
+Per que \( (a + 1) \times b \times c \times d < a \times b \times c \times d \), volimitre que \( a < 0 \). Així, cal les mides dels queiguisen sense donar una magnitud negativa.
+
+Per aixonament, sumem 1 a \( a \) i a la mida principal \( d \), el producte serà més petit que l'original. Ara, aquesta changeament pot ser el que minima el producte sense altres de les condicions.
+</think>
+
+Vendramos a resoldre el problema passant per pas.
+
+**Problema:**
+Donem quatre nombres positius \( a < b < c < d \) i augmentig un dels therein una unitat de manera que el producte dels quatre nombres sigi el més petit possible sense que siga la magnitud al mateix. Quin és el nombre que sumem?
+
+**Solución:**
+
+1. **Definiremos los números:** \[ a < b < c < d \]
+2. **Augmentamos uno de ellos:** Decidimos sumar 1 a \( a \) i a l'altre tres mides.
+3. **Definiremos el novo producte:**
+   \[
+   (a + 1) \times b \times c \times d
+   \]
+4. **Desigualzamos con el producte original:**
+   \[
+   (a + 1) \times b \times c \times d < a \times b \times c \times d
+   \]
+5. **Descartamos la magnitud negativa:** 
+   \[ a + 1 < a \Rightarrow 1 < 0 \]
+6. **Por contradiction, siguimos llocantant el producte:**
+   Sumem 1 a \( d \) en lieu de a \( a \), donades la mida principal.
+
+**Respuesta final:**
+
+La mida que sumem és \( \boxed{E} \).

@@ -1,0 +1,46 @@
+<think>
+Primeixem el número 2019 i l'igual empenadament amb tot el nombre de dos xifres que pot expressar sense com s Intenta que s'iguali. Els nombres posibles que tenim a les dues posicions esment themselves are: 10, 11, 12, ..., 98, 99.
+
+Calculant la diferencia entre cada nombre i el número 2019:
+
+- 10 - 2019 = -2009
+- 11 - 2019 = -2008
+...
+- 98 - 2019 = -1921
+- 99 - 2019 = -1920
+
+A cada pair, la diferencia és negativa. El couple que hi pot queigui àmunt que possiblementigui a l'igualtat es el que ha més al borde del rang. Així que com s'entén que la distància a la deu vegada 2019 pot fer major en l'igualad que en el mateix o per a l'igual.
+
+Llavors, la solució és que el couple 98 i 2019 es pot expressar com a la per xifres diferents del número 2019.
+</think>
+
+Pere ha escriure tots els possibles nombres de dos xifres que s'expressen sense com s intenta que s'iguali el nombre 2019.
+
+El nombre 2019 es pot expressar amb dos xifres com:
+
+\[
+\begin{cases}
+\dfrac{a + b}{c} = 2019 \\
+\dfrac{d + e}{f} = 2019
+\end{cases}
+\]
+
+Les possibles nombres de dos xifres que pot expressar així són: 10, 11, 12, ..., 98, 99.
+
+Calculant la distància amb el nombre 2019:
+
+- **10**: \( |2019 - 10| = 2009 \)
+- **11**: \( |2019 - 11| = 2008 \)
+- ...
+- **98**: \( |2019 - 98| = 1921 \)
+- **99**: \( |2019 - 99| = 1920 \)
+
+El couple que hi pot queigui la major distància a la deu vegada 2019 és **98 i 2019**:
+
+\[
+\dfrac{98 + 20}{19} = 2019
+\]
+
+Llavors, el couple 98 i 2019 es pot expressar com a la per xifres diferents del número 2019.
+
+\boxed{B}

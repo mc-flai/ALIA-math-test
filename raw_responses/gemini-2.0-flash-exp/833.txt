@@ -1,0 +1,25 @@
+Raonament:
+1. **Definir variables:**
+   - Sigui `d` la distància que recorren tant la bicicleta com el ciclomotor (en km).
+   - Sigui `t_c` el temps que triga el ciclomotor en arribar a la destinació (en h).
+   - Sigui `t_b` el temps que triga la bicicleta en arribar a la destinació (en h).
+
+2. **Establir relacions:**
+   - Sabem que la velocitat és distància dividida per temps: `velocitat = distància / temps`.
+   - Per al ciclomotor: `30 = d / t_c`, per tant, `t_c = d / 30`.
+   - Per a la bicicleta: `20 = d / t_b`, per tant, `t_b = d / 20`.
+   - També sabem que la bicicleta triga 1 hora més que el ciclomotor: `t_b = t_c + 1`.
+
+3. **Substituir i resoldre:**
+   - Substituïm les expressions de `t_b` i `t_c` en l'equació `t_b = t_c + 1`:
+     `d / 20 = d / 30 + 1`
+   - Per eliminar els denominadors, multipliquem tota l'equació per 60 (el mínim comú múltiple de 20 i 30):
+     `60 * (d / 20) = 60 * (d / 30) + 60 * 1`
+     `3d = 2d + 60`
+   - Restem `2d` a ambdós costats:
+     `d = 60`
+
+4. **Conclusió:**
+   - La distància que van recórrer tant la bicicleta com el ciclomotor és de 60 km.
+
+Resposta: D)

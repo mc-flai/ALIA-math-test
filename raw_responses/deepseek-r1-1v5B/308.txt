@@ -1,0 +1,62 @@
+<think>
+Primeixem que la Nombre A és un número de 2017 xifres que comença i acaba per 1, amb toles altres xifresigurem 0. Ambitivament, pot expressar aquestaona como:
+
+$$A = \underbrace{1\underbrace{00\ldots0}_{2015}1}_{\text{2017 xifres}}$$
+
+El objectiu és calcular el residu de la divisió per 9, que es pot donar amb el mòdul de la suma de tots els digits del nombre a la divisió.
+
+Sumem les dígits de A:
+
+- El següent dígit es com deu amb el primer 1: 1
+- Amb el segon dígit, que es dona per 0 (totes altres xifres són 0)
+- El dígut final, que alsoda de 1: 1
+
+Sumant-ho:
+
+$$1 + 0 + \ldots + 0 + 1 = 2$$
+
+Per a una división per 9, el mòdul es pot donar amb 2. Araixem les options:
+</think>
+
+P ara resolomi la pregunta, com hem factoritambé:
+
+**Problem Statement:**
+Com que A és un nombre de 2017 xifres que comença i acaba per 1 i toles altres xifres són 0. Quin és el residu de la divisió de A per 9?
+
+**Raonament:**
+
+1. **Expressar el Número A:**
+   - El nombre A com encima es pot expressar als segueix:
+
+     $$A = \underbrace{1\underbrace{00\ldots0}_{2015}1}_{\text{2017 xifres}}$$
+
+     Aquí, el dígut primer es 1, el dígut final es 1 i tots els altres xifres són 0.
+
+2. **Calcular la Soma de les Digits:**
+   - Com que toles altres xifres són 0, la suma de les dígits del nombre A es:
+
+     $$\text{Suma de dígits} = 1 + 0 + \ldots + 0 + 1 = 2$$
+
+3. **Residu de la Divisió Per 9:**
+   - El residu de la divisió per 9 és igual a la suma de les dígits més que el mòdul de 9.
+     $$A \equiv (\text{Suma de dígits}) \pmod{9}$$
+
+4. **Determineixel Residu:**
+   - Per a l'expressió anterior, tenim:
+
+     $$A \equiv 2 \pmod{9}$$
+
+5. **Options de Resposta:**
+   - **A) 1**  
+     No és possible.
+   - **B) 2**  
+     És la resposta correta.
+   - **C) 3**  
+     No és possible.
+   - **D) 4**  
+     No és possible.
+   - **E) 5**  
+     No és possible.
+
+**Final Resposta:**
+\boxed{B}

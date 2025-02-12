@@ -1,0 +1,20 @@
+Raonament:
+Una circumferència que passa pels punts A(0,0) i B(1,0) té el seu centre en la mediatriu del segment AB. La mediatriu del segment AB és la recta vertical x = 1/2. El centre de la circumferència serà un punt de la forma (1/2, k) per a algun valor de k. El radi de la circumferència serà la distància entre el centre i el punt A (o B).
+
+Si un punt (x, y) pertany a la circumferència, la distància entre (x, y) i el centre (1/2, k) serà igual al radi. La distància entre (x, y) i (1/2, k) és igual a la distància entre (0, 0) i (1/2, k). Per tant, tenim:
+
+√((x - 1/2)² + (y - k)²) = √((0 - 1/2)² + (0 - k)²)
+(x - 1/2)² + (y - k)² = (1/2)² + k²
+x² - x + 1/4 + y² - 2ky + k² = 1/4 + k²
+x² - x + y² - 2ky = 0
+
+Aquesta equació representa una circumferència que passa per A i B. Notem que si y = 0, llavors x² - x = 0, que implica x(x-1) = 0, per tant x = 0 o x = 1. Això correspon als punts A i B. Com que el punt (x, y) és diferent de A i B, y no pot ser 0. Per tant, y ≠ 0.
+
+Analitzem les opcions:
+A) 0 < x < 1: No necessàriament. La circumferència pot tenir un centre amb una coordenada y gran, i per tant, pot tenir punts amb x fora d'aquest interval.
+B) x = y: No necessàriament. La circumferència pot tenir punts on x i y són diferents.
+C) y = 0: No. Si y = 0, el punt seria A o B.
+D) y ≠ 0: Sí. Si y = 0, el punt seria A o B, i l'enunciat diu que el punt és diferent de A i B.
+E) x > y: No necessàriament. La circumferència pot tenir punts on x < y.
+
+Resposta: D)

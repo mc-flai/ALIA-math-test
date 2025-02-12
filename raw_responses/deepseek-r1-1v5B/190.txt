@@ -1,0 +1,38 @@
+<think>
+ primer, identifico que el llibre tiene 88 pàginas.
+
+Llevament, el impressor commetes un error i los impresors del llibre numeren la darrera pàgina amb el m-no 264. Així dona una seqüència de numbers que cometa l'error: 1, 2, 4, 5, 7, 8, 10, ...
+
+Quemol·lo ve: els nombres són qualsevol nombre natural que no és multiple d'3. Per exemple, el número 3 es missing, ja que cometa l'error.
+
+Per a un llibre de x pàgina (x = 88), la darrera pàgina numerada depéda el m-no que sigui el seguent procèrció:
+
+- Ambos nombres del matemàtiques són que: per a quin x es pot expressar com a * 3 + r, amb r = 1 o 2.
+
+Així, la darrera pàgina es 88. Com calcula el m-no al llibre:
+
+- Dividim per 3 i restem el remainder: 88 ÷ 3 = 29 x 3 + 1 → m-no 1.
+
+Molts de times, el darrera pàgina serà x - remainder. En aquest cas, 88 - 1 = 87. Així, la darrera pàgina serà 87.
+
+Finalment, calcula per quin m-no ha fet: (87 + 2) ÷ 3 = 29 x 3 = 87, que sigella el m-no 87.
+</think>
+
+**Raonament:**
+
+El llibre tiene **88 pàgina sals de la numeració normal i comete un error. Les pàgines són numerades de la siguiente manera: 1, 2, 4, 5, 7, 8, 10, ... per així que el m-no que fa al lot de llibres sense el m-no que cometa l'error.
+
+Per a un llibre de **x** pàgina (x = 88), la darrera pàgina numerada depèn del m-no que fa aquesta numeració. El m-no es pot expressar per la segona fórmula:
+\[
+m - x \equiv r \pmod{3}
+\]
+on \(r\) és el remainder que l'impresor comete, que és el que no sota en les pàgines.
+
+Calculant el m-no que fa al lot de llibres sense el error:
+\[
+88 ÷ 3 = 29 \text{ x } 3 + 1
+\]
+El remainder \(r\) és **1**, per tant, la darrera pàgina numerada és:
+\[
+88 - r = 88 - 1 = \boxed{\mathbf{A)}\; 130}
+\]

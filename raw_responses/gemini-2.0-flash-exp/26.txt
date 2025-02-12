@@ -1,0 +1,15 @@
+Raonament:
+Observem que la seqüència de signes es repeteix cada quatre termes: +, +, -, -. Podem agrupar els termes de quatre en quatre per simplificar el càlcul:
+(1 + 2 - 3 - 4) + (5 + 6 - 7 - 8) + (9 + 10 - 11 - 12) + ...
+Calculem el valor de cada grup de quatre termes:
+1 + 2 - 3 - 4 = 3 - 7 = -4
+5 + 6 - 7 - 8 = 11 - 15 = -4
+9 + 10 - 11 - 12 = 19 - 23 = -4
+...
+Cada grup de quatre termes suma -4. Ara hem de determinar quants grups de quatre termes hi ha fins a 2015. Com que 2015 no és divisible per 4, hem de trobar el nombre de grups complets i els termes que queden al final.
+2015 dividit per 4 és 503 amb residu 3. Això significa que hi ha 503 grups complets de quatre termes, i després queden els termes 2013, 2014 i 2015.
+La suma dels 503 grups és 503 * (-4) = -2012.
+Ara hem de sumar els termes que queden: 2013 + 2014 - 2015 = 4027 - 2015 = 2012.
+La suma total és -2012 + 2012 = 0.
+
+Resposta: A)

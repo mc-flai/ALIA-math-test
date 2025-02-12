@@ -1,0 +1,33 @@
+Raonament:
+
+Sigui R la quantitat total de reserves de petroli i D la despesa anual constant actual. Si la despesa es manté constant, les reserves s'esgotaran en 50 anys, per tant, R = 50D.
+
+Ara, considerem que cada any es redueix la despesa en un percentatge fix 'p'. Això significa que la despesa del primer any serà D, la del segon any serà D(1-p), la del tercer any serà D(1-p)^2, i així successivament. La despesa total al llarg del temps serà la suma d'una sèrie geomètrica:
+
+Despesa total = D + D(1-p) + D(1-p)^2 + D(1-p)^3 + ...
+
+Perquè les reserves no s'esgotin mai, aquesta suma ha de ser finita i menor o igual a R. La suma d'una sèrie geomètrica infinita amb raó 'r' és a/(1-r), on 'a' és el primer terme. En aquest cas, a = D i r = (1-p). Per tant, la suma de la despesa total és:
+
+Despesa total = D / (1 - (1-p)) = D / p
+
+Perquè les reserves no s'esgotin mai, aquesta despesa total ha de ser menor o igual a les reserves totals R:
+
+D / p <= R
+
+Sabem que R = 50D, per tant:
+
+D / p <= 50D
+
+Dividint ambdós costats per D (assumint que D és diferent de zero):
+
+1 / p <= 50
+
+Aïllant p:
+
+p >= 1/50
+
+p >= 0.02
+
+Això significa que el percentatge de reducció 'p' ha de ser igual o superior a 0.02, que és el mateix que 2%. Per tant, el mínim percentatge de reducció que permetria que les reserves no s'arribessin a esgotar mai és del 2%.
+
+Resposta: D)

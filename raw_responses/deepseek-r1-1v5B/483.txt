@@ -1,0 +1,101 @@
+<think>
+Para resolver este problema, primero definimos qué significa que un número entero positivo de dos dígitats es igual a cuatro veces la suma de sus dígitats.
+
+Tomemos un número entero dos dígitats, denotado como N. Podremos expresar N como 10a + b, on a es el dígito de las unidades y b es el dígito de las decenas.
+
+ Según el problema, N debe ser igual a four veces la suma de sus dígitats: N = 4(a + b).
+
+Sustituyendo N por 10a + b, obtenemos:
+
+10a + b = 4(a + b)
+
+Realizando la operación algebraica,
+
+10a + b = 4a + 4b
+
+Restando a ambos lados,
+
+6a - 3b = 0
+
+Dividimos por 3,
+
+2a - b = 0
+
+Luego, despejamos b:
+
+b = 2a
+
+Ahora, analizemos los valores posibles para a y b. Dado que son dígitats, a puede ser del 1 al 9 (no cero) y b可以从 0 al 9.
+
+Plugging different values of a to find corresponding b:
+
+- a = 1: b = 2*1=2 → N = 12
+- a = 2: b =4 → N=24
+- a=3: b=6→N=36
+- a=4: b=8→N=48
+
+Para a=5, b=10, pero no es dígito posible. Por lo tanto, los números que satisfy la condición son 12, 24, 36 y 48.
+
+Sin embargo, revisando las opciones de las respuestas (A)1, B)2, C)3, D)4, E)5), solo hay cuatro números que fulfillan la condición. Por lo tanto, la respuesta correcta es D)4.
+</think>
+
+Para resolver este problema, primero definimos qué significa que un número entero positivo de dos dígitats es igual a cuatro veces la suma de sus dígitats.
+
+1. **Definir el número entero dos dígitats:**
+   
+   Sea \( N \) el número entero dos dígitats que satisface la condición \( N = 4(a + b) \), donde \( a \) es el dígito de las unidades y \( b \) es el dígito de las decenas.
+
+2. **Expresar el número en términos de las dígitas:**
+   
+   El número entero dos dígitats puede ser expresado como:
+   \[
+   N = 10b + a
+   \]
+
+3. **Aplicar la condición del problema:**
+   
+   Dada la condición \( N = 4(a + b) \), reemplazamos \( N \):
+   \[
+   10b + a = 4(b + a)
+   \]
+
+4. **Despejar las variables:**
+   
+   Simplificando la ecuación:
+   \[
+   10b + a = 4b + 4a \\
+   6b - 3a = 0
+   \]
+   Dividir ambos lados por 3:
+   \[
+   2b - a = 0 \\
+   \Rightarrow a = 2b
+   \]
+
+5. **Analizar los valores posibles para \( b \):**
+   
+   Dado que \( b \) es un dígito, podía ser del 1 al 9.
+
+   - \( b = 1 \): \( a = 2*1 = 2 \)
+     - Número: \( 10*1 + 2 = 12 \)
+   - \( b = 2 \): \( a = 4 \)
+     - Número: \( 10*2 + 4 = 24 \)
+   - \( b = 3 \): \( a = 6 \)
+     - Número: \( 10*3 + 6 = 36 \)
+   - \( b = 4 \): \( a = 8 \)
+     - Número: \( 10*4 + 8 = 48 \)
+
+6. **Enumerar los números que satisfacen la condición:**
+   
+   Los números posibles son 12, 24, 36 y 48.
+
+7. **Contar las respuestas:**
+   
+   Hay **4** números que satisfyan la condición.
+
+**Respuesta final:**
+
+\[
+\boxed{D)
+4}
+\]

@@ -1,0 +1,47 @@
+<think>
+Para determinar la xifra de units del número 1! + 2! + 3! + ... + 2016!, primero notemos que cada factorial se calcula de la siguiente manera:
+
+- 1! = 1
+- 2! = 2 × 1 = 2
+- 3! = 3 × 2 × 1 = 6
+- 4! = 4 × 3 × 2 × 1 = 24
+- 5! = 5 × 4 × 3 × 2 × 1 = 120
+- Y así sucesivamente.
+
+Ahora, notemos que el factorial de números grandes, como 6!, y más, será un número muy grande, pero la xifra de units del resultado total es importante. Al menos al menos, las cantidades de 6! y más no contribuirán a la xifra de units ya que themselves terminan en cero.
+
+Para demostrar esto, calculamos las Falling Factorials de los primeros números:
+
+- 1! = 1 (x2)
+- 2! = 2 (x4)
+- 3! = 6 (x6)
+- 4! = 24 (x24)
+- 5! = 120 (x120)
+- 6! = 720 (x720)
+  
+Ahora, note que 5! es 120 y alrededor de 5!, los factoriales son multiplos de 10. Por lo tanto, la suma de todos estos términos hasta 2016! seráigual a la suma de 1! + 2! + 3! + 4! + (la suma de todos los términos desde 5! hasta 2016!), y la suma de los términos desde 5! hasta 2016! será un multiple de 10. Por lo tanto, el xifra de units seráigual a la suma de 1! + 2! + 3! + 4!.
+
+Calculando esto:
+
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+
+Sumamos estos números: 1 + 2 + 6 + 24 = 33.
+
+La xifra de units es 3.
+</think>
+
+Raonament:
+Para determinar la xifra de_units del número \( 1! + 2! + 3! + \dots + 2016! \), analicamos los términos de la suma.
+
+Cada factorial \( n! \) para \( n \geq 5 \) termina en un cero, ya que contienen factores de 2 y de 5. Por lo tanto, las cantidades de 5!, 6!, ..., 2016! no contribuyen a la xifra de units.
+
+Sumamos solo los términos hasta 4!:
+\[
+1! + 2! + 3! + 4! = 1 + 2 + 6 + 24 = 33
+\]
+La xifra de units es **3**.
+
+Resposta: \boxed{C}

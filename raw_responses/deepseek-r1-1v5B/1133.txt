@@ -1,0 +1,178 @@
+<think>
+Para resolver este problema, primero notemos que p(x + 1) es un polinomio complejo que satisface la relación p(x + 1) = x² − x + 2 · p(6) para cualquier valor real de x.
+
+Primero, identificamos que el coeficiente constante del polinomio p(x) debe serigible de manera que el término constante en ambos lados de la ecuación sean iguales. Entonces, al sustituir x = 0 en ambas partes, obtenemos:
+
+p(1) = (0)^2 - 0 + 2 · p(6)
+p(1) = 2 · p(6)
+
+Ahora, si definimos p(x) como un polinomio de forma general, supongamos que es lineal o tal vez cuadrática. Dado que el lado derecho de la ecuación es un polinomio del segundo degree (x² - x), inferimos que p(x) debe ser también un polinomio del segundo degree.
+
+Ahora, suponemos que p(x) = ax^2 + bx + c.
+
+Calculamos p(1) y p(6):
+
+p(1) = a(1)^2 + b(1) + c = a + b + c
+p(6) = a(6)^2 + b(6) + c = 36a + 6b + c
+
+De la relación obtenida anteriormente:
+a + b + c = 2 · (36a + 6b + c)
+Simplificando:
+a + b + c = 72a + 12b + 2c
+Reducimos términos:
+0 = 71a + 11b + c
+
+Ahora, calculamos p(x + 1):
+
+p(x + 1) = a(x + 1)^2 + b(x + 1) + c = a(x^2 + 2x + 1) + b(x + 1) + c
+= ax^2 + (2a + b)x + (a + b + c)
+
+De la relación dada:
+ax^2 + (2a + b)x + (a + b + c) = x² - x + 2 · p(6)
+
+Comparando coeficientes:
+
+1. Coeficiente de x^2: a = 1
+2. Coeficiente de x: 2a + b = -1
+3. Constante: a + b + c = 2 · (36a + 6b + c) → ya lo simplificamos y escribe la ecuación 71a + 11b + c = 0
+
+Reemplazando a = 1 en las ecuaciones:
+
+From coefficient of x:
+2(1) + b = -1 ⇒ 2 + b = -1 ⇒ b = -3
+
+From constant term:
+1 + (-3) + c = 72(1) + 6(-3) + c
+Simplificando:
+-2 + c = 72 - 18 + c ⇒ -2 = 54 ⇒ c = 56
+
+Ahora, definimos p(x):
+p(x) = x^2 - 3x + 56
+
+La suma de los coeficientes es: 1 (de x²) + (-3) (de x) + 56 (constante) = 54.
+
+Pero no hay una option con 54. Por lo tanto, revisemos si hay un error en los cálculos.
+Ahora, revisando:
+
+p(x) = ax^2 + bx + c
+Calcular p(1): a + b + c
+p(6): 36a + 6b + c
+
+Y la ecuación fue: a + b + c = 72a + 12b + 2c ⇒ -71a -11b -c = 0 → 71a + 11b + c = 0.
+
+Ahora, p(x+1) = x² -x + 2p(6). Entonces,
+
+p(x+1) = a(x^2 + 2x +1 ) + b(x + 1) + c = ax^2 + (2a +b)x + (a + b + c)
+
+Desde p(x +1) = x² -x + 2p(6), la constante es 2p(6). Por lo tanto,
+
+a + b + c = 72a + 12b + 2c ⇒ a + b + c = (36 + 6)b + 2c → ya que p(6) = 36a + 6b + c, y 2p(6)=72a+12b+2c.
+
+Ahora, reemplazando a=1:
+
+p(x) = x^2 -3x +56. Suma de coeficientes:1-3+56=54. No hay una opción correcta, pero quizás equilibramos mal al intentar resolver.
+
+Otra forma: p(x) es lineal o constante, pero no, ya lo habíamos determinado que es cuadrática.
+
+Revisando la ecuación de coeficientes:
+
+p(x +1 ) = x² -x + 2p(6). P(x+1) es cuadrático, por lo tanto p(x) también lo es.
+
+También notemos que para x = -1,
+
+p(0) = (-1)^2 - (-1) + 2p(6)
+p(0) = 1 +1 + 2p(6)
+p(0)=2 + 2p(6)
+
+Si p(x) = ax² + bx + c, p(0)=c=2 + 2p(6). Y ya lo teníamos c=56.
+
+Pero si no hay una respuesta correcta, quizás el error está en la interpretación de la relación. Potente que sea el polinomio complejo, pero debemos ser cuidadosos con las partes reales y imaginarias.
+
+Si p(x) es polinomio complejo, p(6) tiene una parte real y una imaginaria. Sin embargo, p(x +1) es polinomio complejo, y la relación dada es para cualquier x real. Entonces, la parte real e imaginaria de x² -x solo están definidas en los reales, por lo que se debe asegurar que p(6) también está definido.
+
+También, p(x +1) = x² -x + 2p(6). Al considerar la relación para cualquier x real, es decir, x^2 -x es polinomio real, y 2p(6) es also real. Por lo tanto, p(6) debe ser un número complejo que al ser multiplicated por dos y sumado a x² -x, debo inferir su parte imaginaria.
+
+Sin embargo, debo recordar que p(x +1) es polinomio complejo, y x^2 -x son reales, lo que implica que 2p(6) también debe ser real. Por lo tanto, p(6) debe tener solo la parte real; su imaginaria debe ser cero.
+
+Estableciendo:
+
+p(x +1 ) = x² -x + 2 Re(p(6))
+
+Pero p(x +1) es polinomio complejo general, por lo que la parte imaginaria de p(6) musto ser zero. Esto implica que p(6) = k ∈ ℝ.
+
+Ahora, revisando el sistema:
+
+p(x +1 ) = x² -x + 2k
+
+De dono,
+
+p(x +1) es polinomio complejo con solo la parte real, y por lo tanto, p(x) también debe ser polinomio con solo la parte real.
+
+Ahora, intentamos resolver:
+
+p(x) = ax^2 + bx + c
+
+Calcular p(6):
+
+p(6)=36a + 6b +c=k (since k es real)
+
+De la relación p(x+1)=x² -x +2k,
+
+p(x +1)= a(x +1)^2 + b(x +1) + c= a x^2 + (2a +b)x + (a +b +c)
+
+E igualado a x² -x + 2k:
+
+ax^2 + (2a +b)x + (a +b +c)=x² -x +2k
+
+Por lo tanto,
+
+a =1,
+
+2a + b= -1 → 2(1) + b=-1→b=-3,
+
+a + b + c=2k.
+
+Sumando a y b:1-3 +c=2k→c=2k+2.
+
+Y p(6)=36a +6b +c =36 + (-18) +c = 18 +c=k.
+
+Pero c=2k +2, por lo que,
+
+p(6)=18 + (2k +2 )=20 +2k =k
+
+⇒20 +2k=k ⇒20=-k ⇒k=-20.
+
+Entonces,
+
+p(x) =x² -3x +c
+
+Ahora, p(6)=6² -3×6 +c=36-18 +c=18 + c=k= -20.
+
+De lo que c= -20 -18=-38.
+
+Por lo tanto,
+
+p(x) =x² -3x -38
+
+Suma de los coeficientes:1 -3 -38= -40. Asegurémonos:
+
+coeficiente x^2: 1, x: -3, constante: -38 ⇒1-3-38=-40.
+
+Pero la respuesta no está en los opts, quizás me equilibramos deagainar.
+
+Ahora, revisando p(6):
+
+p(6)=36 -18 -38= (36 - 18) -38=18-38=-20. Y k=-20 ⇒correcto.
+
+Suma coeficientes:1 -3 -38=-40.
+
+Entonces, la respuesta correcta es -40. Sin embargo, el enunciado no menciona que sea un número entero o etc., quizás no hay error.
+
+Finalmente, p(x) =x² -3x -38 ⇒sum de coeficientes:1-3-38=-40.
+</think>
+
+El polinomio es \( x^2 - 3x - 38 \). La suma de sus coeficientes es:
+
+\( 1 - 3 - 38 = -40 \).
+
+Respuesta final: \boxed{-40}

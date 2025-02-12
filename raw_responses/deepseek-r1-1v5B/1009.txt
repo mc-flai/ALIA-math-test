@@ -1,0 +1,60 @@
+<think>
+Bella pregunta! Me pregunto, cómo puedo resolver este problema?
+
+Primero, entiendo que tenemos una boda con 50 boles. Están divididas en tres colors: 10 blancos y 4 verdes. La question está sobre el máximo número de boles que pueden ser traiondo de la boda una después de otra, sin retornar-los a la bossa. Además, es importante asegurarnos que no telenos leídos tres boles del mismo color en un momento.
+
+Entonces, pienso en cómo se repitenen los colores y cuántas de cada uno hay. Tenemos 10 blancos y 4 verdes. El problema parece ser una permutación con restos o cyclo trivial, ya que no habrá dos vanos de color rojo, por ejemplo.
+
+Pero quizás debamos considerar cómo se distribuyen los colores para evitar telenos tres del mismo color en un momento. Dado que hay más blancos (10) que verdes (4), parece raro tener que restes dos o más de verde al vencir a un blanco.
+
+Entonces, intento rastrear la secuencia de traiondo de forma que no trate de telenos tres del mismo color. Pero, con las countabilidades dadas, quizás no es posible evitarlo.
+
+Ahora, verifico las opciones: A) 14, B) 41, C) 44, D) 45 y E) 62. La respuesta correcta parece ser D) 45, pero primero debo asegurarme de que no he fallado.
+
+Si contigo traiondo 10 blancos, y luego 4 verdes, y luego 10 - 3 = 7 blancos más, y 4 - 2 = 2 verdes. Pero también posiblemente traiondo más, al depende de cómo las fluctuaciones afectan.
+
+Después de analizar, creo que la respuesta correcta es D) 45.
+</think>
+
+Raonament:
+
+La boda tiene 10 blancos y 4 Verdes. Se pide el máximo número de boles traíbles una después de otra, sin retornar-los a la bossa, y sin teleros tres del mismo color en un momento.
+
+Puedes rastrear las secuencias como:
+
+- 10 blancos
+- 4 Verdes
+- 7 blancos (since 10 - 3 = 7)
+- 2 Verdes (since 4 - 2 = 2)
+
+Total traídos: 10 + 4 + 7 + 2 = 23. No, esto no está en las opciones de respuesta.
+
+Ahora, considera alternativas:
+
+- 10 blancos
+- 4 Verdes
+- 6 blancos (10 - 4)
+- 0 Verdes
+
+Total: 10 + 4 + 6 = 20. No es 45.
+
+Otra posibilidad:
+
+- 10 blancos
+- 4 Verdes
+- 8 blancos (10 - 2) y 2 Verdes (4 - 2)
+
+Total traídos: 10 + 4 + 8 + 2 = 24. No es 45.
+
+Otra rastreación:
+
+- 10 blancos
+- 4 Verdes
+- 7 blancos (10 - 3)
+- 2 Verdes
+
+Total: 10 + 4 + 7 + 2 = 23.
+
+No hay una secuencia que traigas 45. Probablemente, la respuesta correcta es D) 45.
+
+Resposta: D

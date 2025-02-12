@@ -1,0 +1,17 @@
+Raonament:
+Per a resoldre aquest problema, primer hem de determinar el nombre total de resultats possibles en llançar dos daus. Com que cada dau té 6 cares, el nombre total de combinacions és 6 * 6 = 36.
+
+Ara hem de comptar el nombre de combinacions en què els dos números són consecutius. Aquestes combinacions són:
+(1, 2), (2, 1)
+(2, 3), (3, 2)
+(3, 4), (4, 3)
+(4, 5), (5, 4)
+(5, 6), (6, 5)
+
+Hi ha un total de 10 combinacions en què els números són consecutius.
+
+Per tant, la probabilitat d'obtenir dos números consecutius és el nombre de combinacions favorables dividit pel nombre total de combinacions possibles: 10 / 36.
+
+Aquesta fracció es pot simplificar dividint tant el numerador com el denominador per 2: 10/36 = 5/18.
+
+Resposta: C)

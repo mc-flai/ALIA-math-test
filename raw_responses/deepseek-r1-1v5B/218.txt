@@ -1,0 +1,167 @@
+<think>
+Primeixem l'expressió dada:
+
+x²yz³ = 7³ ...(1)
+
+i
+
+xy² = 7⁹ ...(2)
+
+El objetivo és calcular xyz.
+
+Multiplying (1) per y:
+
+x²y²z³ = x²y²z³
+
+Multiplying this by z⁰, identity term, don't change value.
+
+Dividing both sides by x²y², obtain:
+
+z³ = 7⁹ / (xy²)
+
+From equation (2), xy² = 7⁹, substituting in the denominator:
+
+z³ = 7⁹ / 7⁹ = 1
+
+Therefore, z³ = 1 => z = 1.
+
+Substituting z=1 into equation (1):
+
+x²y(1)³ = 7³ => x²y = 7³
+
+But from equation (2): xy² = 7⁹. Since y² = (xy²)/x = 7⁹/x.
+
+Therefore, x²y = 7³ = x*(xy²) = x*(7⁹/x) = 7⁹.
+
+Thus, xyz = x*y*1 = (7⁹)/(x²y) * z = ?
+
+Wait, perhaps a better approach is to multiply equation (2) by xy:
+
+(x y²)(x y) = 7⁹ * x y
+
+=> x² y³ = 7⁹ x y
+
+Divide both sides by xy:
+
+x y² = 7⁹
+
+But from equation (1): x² y z³ = 7³. Substitute x y²=7⁹ into this.
+
+Thus, x*(x y²)*z³ = 7³ => x*7⁹*z³ =7³ => x z³ = 7^{-6}
+
+From earlier, when we found z=1, so x *1 =7^{-6} => x=7^{-6}
+
+Then, from equation (2): xy²=7⁹. Substitute y²=(y)^{2}, and since y² is unknown.
+
+Wait, perhaps it's simpler to express variables in terms of 7.
+
+Let me set:
+
+x = 7^a,
+
+y = 7^b,
+
+z = 7^c.
+
+Then, equation (1): x² y z³ =7³ => 7^{2a} * 7^b *7^{3c}=7^{2a + b +3c}=7^3
+
+Therefore:
+
+2a + b +3c=3 ...(i)
+
+Equation (2):x y²=7⁹ =>7^{a}*7^{2b}=7^{a+2b}=7^9
+
+Thus,
+
+a +2b =9 ...(ii)
+
+We need to solve equations (i) and (ii):
+
+From (ii), a=9-2b.
+
+Substitute into (i):
+
+2*(9-2b)+ b +3c= 18 -4b +b +3c=18 -3b +3c=3
+
+Thus,
+
+-3b +3c =3 -18 => -3b +3c = -15 => Divide both sides by 3:
+
+-b +c = -5 => c = b -5
+
+Now, we have a=9-2b and c=b-5.
+
+We can express x,y,z in terms of b.
+
+But to find xyz, let's compute:
+
+xyz=7^{a} *7^{b}*7^{c}=7^{a +b +c}
+
+From above: a +b +c=(9 -2b)+(b)+(b-5)=9 -2b +b +b -5= (9 -5) + (-2b +b +b)=4 +0=4
+
+Therefore, xyz=7^4
+</think>
+
+Racionalitzem el procénci.
+
+1. Llegiem que:
+
+   $$ x^2 y z^3 = 7^3 \quad \text{y} \quad x y^2 = 7^9 $$
+
+2. Multiplicatem la primera expressió per \( y \):
+
+   $$ x^2 y^2 z^3 = x^2 y^2 z^3 $$
+
+3. Dividim el resultat per \( x^2 y^2 \):
+
+   $$ z^3 = \frac{7^9}{x^2 y^2} $$
+
+4. Utilitzem la segona expressió \( x y^2 = 7^9 \) en l'expressió anterior:
+
+   $$ z^3 = \frac{7^9}{7^9} = 1 $$
+
+5. Consequentment, \( z^3 = 1 \implies z = 1 \).
+
+6. Substitui \( z = 1 \) en la primera expressió:
+
+   $$ x^2 y (1)^3 = 7^3 \implies x^2 y = 7^3 $$
+
+7. Com paem que:
+
+   $$ x y^2 = 7^9 $$
+
+8. Multiplicem per \( x y \):
+
+   $$ x^2 y^3 = 7^9 x y $$
+
+9. Dividim per \( xy \):
+
+   $$ x y^2 = 7^9 $$
+
+10. Empezem a expressar variables amb potències de 7:
+
+    $$ x = 7^a, \quad y = 7^b, \quad z = 7^c $$
+
+11. Plantejem les ecuacions seguintes:
+
+    $$ 2a + b + 3c = 3 \quad (i) $$
+
+    $$ a + 2b = 9 \quad (ii) $$
+
+12. De la ecuación (ii):
+
+    $$ a = 9 - 2b $$
+
+13. Substitui en la (i):
+
+    $$ 2(9 - 2b) + b + 3c = 3 \implies 18 - 4b + b + 3c = 3 \implies -3b + 3c = -15 \implies c = b - 5 $$
+
+14. Calculem \( a + b + c \):
+
+    $$ (9 - 2b) + b + (b - 5) = 9 - 2b + b + b - 5 = 4 $$
+
+15. Així, \( xyz = 7^{a + b + c} = 7^4 \).
+
+**Respuesta final:**
+
+\boxed{A}

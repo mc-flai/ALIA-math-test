@@ -1,0 +1,15 @@
+Raonament:
+1. **Identifiquem les posicions:** Les quatre primeres posicions són 1, 2, 3 i 4.
+2. **Analitzem la primera condició:** La suma de les posicions de Clara, Joan i Sofia és 6. Les possibles combinacions de tres nombres diferents entre 1, 2, 3 i 4 que sumen 6 són:
+    * 1 + 2 + 3 = 6
+3. **Analitzem la segona condició:** La suma de les posicions de Joan i Pau també és 6. Les possibles combinacions de dos nombres diferents entre 1, 2, 3 i 4 que sumen 6 són:
+    * 2 + 4 = 6
+    * 1 + 5 (no és possible perquè no hi ha posició 5)
+4. **Combinem les condicions:** Sabem que Joan està en ambdues sumes, i que la suma de Joan i Pau és 6. Això significa que Joan no pot ser la posició 1, ja que si ho fos, Pau seria la posició 5, que no existeix. Per tant, Joan ha de ser la posició 2 o 4.
+5. **Joan no pot ser la posició 4:** Si Joan fos la posició 4, Pau seria la posició 2. Però la suma de Clara, Joan i Sofia ha de ser 6, i si Joan és 4, les altres dues posicions haurien de sumar 2, que només podria ser 1+1, però no poden repetir posició. Per tant, Joan no pot ser la posició 4.
+6. **Joan és la posició 2:** Per tant, Joan ha de ser la posició 2. Això implica que Pau és la posició 4 (2+4=6).
+7. **Deduïm les posicions de Clara i Sofia:** Sabem que la suma de les posicions de Clara, Joan i Sofia és 6. Com que Joan és la posició 2, Clara i Sofia han de sumar 4. Les úniques opcions són 1+3.
+8. **Joan està millor situat que Clara:** Això significa que Clara no pot ser la posició 1, per tant, Clara és la posició 3 i Sofia és la posició 1.
+9. **Conclusió:** Sofia ha guanyat la primera posició.
+
+Resposta: D)

@@ -1,0 +1,42 @@
+Raonament:
+
+Primer, analitzem les possibles transformacions que la màquina pot fer a un nombre: sumar 2, sumar 3, multiplicar per 2 o multiplicar per 3.
+
+*   **Pas 1: De 1 a a**
+    *   Si la màquina suma 2 a 1, obtenim a = 3 (senar).
+    *   Si la màquina suma 3 a 1, obtenim a = 4 (parell).
+    *   Si la màquina multiplica 1 per 2, obtenim a = 2 (parell).
+    *   Si la màquina multiplica 1 per 3, obtenim a = 3 (senar).
+    
+    Per tant, la probabilitat que a sigui parell és 2/4 = 1/2, i la probabilitat que a sigui senar és 2/4 = 1/2.
+
+*   **Pas 2: De a a b**
+    *   **Si a és parell:**
+        *   Si sumem 2 a un nombre parell, obtenim un nombre parell.
+        *   Si sumem 3 a un nombre parell, obtenim un nombre senar.
+        *   Si multipliquem un nombre parell per 2, obtenim un nombre parell.
+        *   Si multipliquem un nombre parell per 3, obtenim un nombre parell.
+        Per tant, si a és parell, la probabilitat que b sigui parell és 3/4 i la probabilitat que b sigui senar és 1/4.
+    *   **Si a és senar:**
+        *   Si sumem 2 a un nombre senar, obtenim un nombre senar.
+        *   Si sumem 3 a un nombre senar, obtenim un nombre parell.
+        *   Si multipliquem un nombre senar per 2, obtenim un nombre parell.
+        *   Si multipliquem un nombre senar per 3, obtenim un nombre senar.
+        Per tant, si a és senar, la probabilitat que b sigui parell és 2/4 = 1/2 i la probabilitat que b sigui senar és 2/4 = 1/2.
+
+*   **Pas 3: De b a c**
+    *   **Si b és parell:**
+        *   La probabilitat que c sigui parell és 3/4 (com hem vist abans).
+    *   **Si b és senar:**
+        *   La probabilitat que c sigui parell és 1/2 (com hem vist abans).
+
+Ara, calculem la probabilitat que b sigui parell:
+P(b parell) = P(a parell) * P(b parell | a parell) + P(a senar) * P(b parell | a senar)
+P(b parell) = (1/2) * (3/4) + (1/2) * (1/2) = 3/8 + 1/4 = 5/8
+P(b senar) = 1 - P(b parell) = 1 - 5/8 = 3/8
+
+Finalment, calculem la probabilitat que c sigui parell:
+P(c parell) = P(b parell) * P(c parell | b parell) + P(b senar) * P(c parell | b senar)
+P(c parell) = (5/8) * (3/4) + (3/8) * (1/2) = 15/32 + 3/16 = 15/32 + 6/32 = 21/32
+
+Resposta: A)

@@ -1,0 +1,15 @@
+Raonament: Per trobar el nombre màxim que Bea pot obtenir sumant els dígits del rellotge digital, hem de buscar l'hora que produeixi la suma més gran possible. El rellotge digital mostra hores en format HH:MM, on HH va de 00 a 23 i MM va de 00 a 59.
+
+Per maximitzar la suma, volem que els dígits siguin el més grans possible.
+- Per a les desenes d'hora (primer dígit), el màxim és 2.
+- Per a les unitats d'hora (segon dígit), si el primer dígit és 2, el màxim és 3 (perquè l'hora màxima és 23). Si el primer dígit és 1 o 0, el màxim és 9.
+- Per a les desenes de minuts (tercer dígit), el màxim és 5.
+- Per a les unitats de minuts (quart dígit), el màxim és 9.
+
+Si triem 23:59, la suma dels dígits és 2 + 3 + 5 + 9 = 19.
+Si triem 19:59, la suma dels dígits és 1 + 9 + 5 + 9 = 24.
+Si triem 09:59, la suma dels dígits és 0 + 9 + 5 + 9 = 23.
+
+Per tant, la suma màxima s'obté amb l'hora 19:59, que dona una suma de 24.
+
+Resposta: A)

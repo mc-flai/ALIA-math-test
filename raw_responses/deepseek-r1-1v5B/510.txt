@@ -1,0 +1,59 @@
+<think>
+Per a cada tres-dígIT nombre que sumen 8, es dona una xarra dígita possible. El mostreig per a totsos nombres es la següent: 107 (suma 8; dígits 1+0+7=8), 116, 125, ..., 910. Aquests numbers són toalls de tres dígits i tenen un total de 43 nombres possibles.
+
+Per a cada eines, calculem la suma de les xarres: 1+0+7=8; 1+1+6=8; ...; 9+1+0=10. Aleshores, totsos nombres tenen una suma de xarres igual a 8.
+
+Finalment, sumem toles dos nombres: 107 + 116 = 223; 125 + 134 = 259; ...; 890 + 907 = 1797. Així, la suma de toalls dos nombres es 803.
+
+Per a l'opinió de les xarres: cada xarra dígita addicionala 1 a la posició més significant, tenim que multiplier la suma de les xarres per 10. Així, la suma total desiguals serà 8*10 + (suma de xarres) = 80 + 8 = 88.
+
+Per a les xarres: cada xarra dígita addicionala 2 per a la posició d'unitats, i 3 per a l'unitats més petit. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà 8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Per a l'unitats més grand: cada xarra dígita addicionala 3 per a l'unitats més grand. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà 8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Per a l'unitats més petit: cada xarra dígita addicionala 3 per a l'unitats més petit. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà 8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Així, la suma total desiguals serà 80 + 40 + 40 + 40 = 200. Així, la suma de toalls dos nombres serà 8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+</think>
+
+Raonament:
+
+Per a cada tres-dígIT nombre que sumen 8, es dona una xarra dígita possible. Per example:  
+- **107** (1+0+7=8)  
+- **116**, **125**, **134**, ..., **910**  
+
+Per a cada eines, calculem la suma de les xarres:  
+1+0+7=8; 1+1+6=8; ...; 9+1+0=10. Aleshores, totsos nombres tenen una suma de xarres igual a 8.
+
+Per a l'opinió de les xarres: cada xarra dígita addicionala 1 a la posició més significant, tenim que multiplier la suma de les xarres per 10. Així, la suma total desiguals serà:  
+8*10 + (suma de xarres) = 80 + 8 = 88.
+
+Per a l'unitats més grand: cada xarra dígita addicionala 3 per a l'unitats més grand. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Per a l'unitats més petit: cada xarra dígita addicionala 3 per a l'unitats més petit. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Així, la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 + 40 + 40 = 200.
+
+Quella suma d'aquests dos nombres:
+
+Finalment, sumem toalls dos nombres:  
+107 + 116 + 125 + 134 + ... + 890 + 907  
+
+Per a l'opinió de les xarres: cada xarra dígita additionala 2 per a l'unitats més significant, i 3 per a l'unitats més petit. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Per a l'unitats més grand: cada xarra dígita additionala 3 per a l'unitats més grand. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Per a l'unitats més petit: cada xarra dígita additionala 3 per a l'unitats més petit. Així, sumem totsos xarres per 10, per 2 i per 3, i obtenim que la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 = 120.
+
+Així, la suma total desiguals serà:  
+8*10 + (suma de xarres)*5 = 80 + 40 + 40 + 40 = 200.  
+
+Quella suma d'aquests dos nombres es 1016.
+
+\boxed{D}

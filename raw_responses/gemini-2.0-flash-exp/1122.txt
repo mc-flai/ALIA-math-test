@@ -1,0 +1,14 @@
+Raonament:
+Un cub de 3x3x3 té 27 cubs petits. La superfície d'un cub gran està formada per 6 cares, i cada cara té 3x3 = 9 cubs petits. Per tant, la superfície total del cub gran té 6 * 9 = 54 cubs petits. Perquè la meitat de la superfície siga negra i l'altra meitat blanca, necessitem que 54 / 2 = 27 cubs de la superfície siguen negres.
+
+Ara, analitzem la disposició dels cubs en un cub de 3x3x3:
+- Hi ha 8 cubs a les cantonades, cadascun amb 3 cares visibles.
+- Hi ha 12 cubs a les arestes (sense comptar les cantonades), cadascun amb 2 cares visibles.
+- Hi ha 6 cubs al centre de cada cara, cadascun amb 1 cara visible.
+- Hi ha 1 cub al centre del cub, que no té cap cara visible.
+
+Per minimitzar el nombre de cubs negres, hem de començar per pintar els cubs que tenen més cares visibles. Per tant, començarem per les cantonades. Si pintem les 8 cantonades de negre, tindrem 8 * 3 = 24 cares negres. Ens falten 27 - 24 = 3 cares negres. Per aconseguir-ho, necessitem pintar 2 cubs de les arestes (2 * 2 = 4 cares, però només necessitem 3, així que pintem 2 arestes i una cara d'un cub central) o 3 cubs centrals de les cares (3 * 1 = 3 cares). Per minimitzar el nombre de cubs, pintarem 2 cubs de les arestes i un cub central de la cara. Això ens dona 24 + 2 + 1 = 27 cares negres.
+
+Per tant, el nombre mínim de cubs negres és 8 (cantonades) + 2 (arestes) + 1 (centre de la cara) = 11.
+
+Resposta: D)

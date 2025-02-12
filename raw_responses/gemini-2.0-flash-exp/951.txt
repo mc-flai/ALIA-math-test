@@ -1,0 +1,14 @@
+Raonament:
+Analitzem les dues equacions per separat. La primera equació, |x| + |y| = 1, representa un quadrat amb vèrtexs a (1,0), (0,1), (-1,0) i (0,-1). La segona equació, x² - y² = 1, representa una hipèrbola amb branques que s'obren cap a l'esquerra i la dreta.
+
+Per trobar les solucions del sistema, hem de trobar els punts d'intersecció entre el quadrat i la hipèrbola.
+
+Considerem els casos per la primera equació:
+1. Si x ≥ 0 i y ≥ 0, tenim x + y = 1, o y = 1 - x. Substituint a la segona equació: x² - (1-x)² = 1, que dona x² - (1 - 2x + x²) = 1, o 2x - 1 = 1, o 2x = 2, o x = 1. Si x = 1, y = 1 - 1 = 0. Així, (1,0) és una solució.
+2. Si x ≥ 0 i y < 0, tenim x - y = 1, o y = x - 1. Substituint a la segona equació: x² - (x-1)² = 1, que dona x² - (x² - 2x + 1) = 1, o 2x - 1 = 1, o 2x = 2, o x = 1. Si x = 1, y = 1 - 1 = 0. Així, (1,0) és una solució (ja la teníem).
+3. Si x < 0 i y ≥ 0, tenim -x + y = 1, o y = 1 + x. Substituint a la segona equació: x² - (1+x)² = 1, que dona x² - (1 + 2x + x²) = 1, o -2x - 1 = 1, o -2x = 2, o x = -1. Si x = -1, y = 1 - 1 = 0. Així, (-1,0) és una solució.
+4. Si x < 0 i y < 0, tenim -x - y = 1, o y = -1 - x. Substituint a la segona equació: x² - (-1-x)² = 1, que dona x² - (1 + 2x + x²) = 1, o -2x - 1 = 1, o -2x = 2, o x = -1. Si x = -1, y = -1 - (-1) = 0. Així, (-1,0) és una solució (ja la teníem).
+
+Les solucions són (1,0) i (-1,0). Per tant, hi ha dues solucions.
+
+Resposta: B)

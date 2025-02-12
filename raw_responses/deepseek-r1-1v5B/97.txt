@@ -1,0 +1,55 @@
+<think>
+Para resolver este problema, primero notamos que el número "A" tiene 2015 dígitos, todos iguales a 1. Es decir, A es un número formado por 2015 ceros y 2015 de las unidades.
+
+Ahora, necesitamos multiplicar A por 2015 y encontrar la suma de sus xifres. Para esto, pensamos en cómo la multiplicación se comporta con números que son fully de 1s. Al multiplicar 111...1 (2015 veces) por un número entero, el resultado tiene una estructura particular.
+
+Consideremos un ejemplo más pequeño para entender el proceso. Si consideramos 111 * 3, el resultado es 333. En este caso, cada dígito del número multiplicado resulta en 3, y la suma de los xifres del producto es 3 + 3 = 6.
+
+Applicando esta estructura aourra, al multiplying 111...1 (2015 veces) por 2015, cada dígito del número A se multiplica por 2015. En consecuencia, cada dígito del resultado de la multiplicación será igual al dígito de A multiplido por 2015.
+
+Dado que todos los dígitos de A son 1, el resultado será un número formado por 2015 dígitos iguales a 2015. Por lo tanto, cada dígito del producto es 2015, y la suma total de los xifres será 2015 * (suma de los dígitos).
+
+Ahora, calculamos la suma de los dígitos del producto. Dado que el producto tiene 2015 dígitos iguales a 2015, la suma total es 2015 * 2015.
+
+Calculando esta multiplicación: 2015 * 2015 = (2000 + 15) * (2000 + 15) = 2000^2 + 2*2000*15 + 15^2 = 4,000,000 + 60,000 + 225 = 4,060,225.
+
+Finalmente, la suma de los xifres del producto es 4,060,225.
+</think>
+
+Para resolver el problema, followamos estos pasos:
+
+1. **Denominación del Número A:**
+   - El número \( A \) tiene 2015 dígitos y todos son iguales a 1. Es decir:
+     \[
+     A = 111\ldots1 \quad (\text{2015 dígitos})
+     \]
+
+2. **Multiplicación de \( A \) por 2015:**
+   - Multiplicamos \( A \) por 2015:
+     \[
+     2015 \times A = 2015 \times (111\ldots1) \quad (\text{2015 dígitos})
+     \]
+
+3. **Resultante de la Multiplicación:**
+   - Dado que cada dígito de \( A \) es 1, el resultado de la multiplicación será un número formado por 2015 dígitos iguales a 2015:
+     \[
+     2015 \times A = 222\ldots222 \quad (\text{2015 dígitos})
+     \]
+
+4. **Suma de los Xifres del Resultante:**
+   - El resultado tiene 2015 dígitos, cada uno igual a 2015. Por lo tanto:
+     \[
+     \text{Suma} = 2015 \times (2 + 0 + 1 + 5) = 2015 \times 8
+     \]
+   - Calculamos la suma de los dígitos:
+     \[
+     2 + 0 + 1 + 5 = 8
+     \]
+   - Por lo tanto:
+     \[
+     \text{Suma} = 2015 \times 8 = 16,120
+     \]
+
+**Respuesta Final:**
+
+\boxed{E) 16120}

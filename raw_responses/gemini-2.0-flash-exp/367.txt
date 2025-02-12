@@ -1,0 +1,12 @@
+Raonament:
+Per calcular la probabilitat que totes les preguntes siguin dels temes que l'estudiant ha estudiat, hem de considerar la probabilitat de que la primera pregunta sigui d'un tema estudiat, la segona també i la tercera també.
+
+*   **Primera pregunta:** Hi ha 5 temes estudiats de 10 possibles, per tant, la probabilitat que la primera pregunta sigui d'un tema estudiat és 5/10.
+*   **Segona pregunta:** Després de la primera pregunta, queden 9 temes possibles, i si la primera pregunta era d'un tema estudiat, queden 4 temes estudiats. Per tant, la probabilitat que la segona pregunta sigui d'un tema estudiat, donat que la primera ho era, és 4/9.
+*   **Tercera pregunta:** Després de les dues primeres preguntes, queden 8 temes possibles, i si les dues primeres eren de temes estudiats, queden 3 temes estudiats. Per tant, la probabilitat que la tercera pregunta sigui d'un tema estudiat, donat que les dues primeres ho eren, és 3/8.
+
+Per obtenir la probabilitat que les tres preguntes siguin de temes estudiats, hem de multiplicar les probabilitats de cada pas:
+
+(5/10) * (4/9) * (3/8) = (1/2) * (4/9) * (3/8) = (1 * 4 * 3) / (2 * 9 * 8) = 12 / 144 = 1/12
+
+Resposta: A)

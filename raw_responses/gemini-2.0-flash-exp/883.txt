@@ -1,0 +1,26 @@
+Raonament:
+1. **Analitzem les etiquetes i els números:**
+   - "divisible per 7": El número que compleix aquesta condició és el 7.
+   - "primer": Els números primers de la llista són el 2, el 5 i el 7.
+   - "imparell": Els números imparells de la llista són el 5 i el 7.
+   - "més gran que 100": Cap dels números de la llista compleix aquesta condició.
+
+2. **Apliquem la restricció que cap número es correspon amb la seva etiqueta:**
+   - El 7 no pot estar a la carta amb l'etiqueta "divisible per 7".
+   - El 2, el 5 i el 7 no poden estar a la carta amb l'etiqueta "primer".
+   - El 5 i el 7 no poden estar a la carta amb l'etiqueta "imparell".
+   - Cap número pot estar a la carta amb l'etiqueta "més gran que 100".
+
+3. **Deduïm la correspondència:**
+   - La carta amb l'etiqueta "divisible per 7" no pot tenir el 7, per tant, ha de tenir el 2, el 5 o el 12.
+   - La carta amb l'etiqueta "primer" no pot tenir el 2, el 5 o el 7, per tant, ha de tenir el 12.
+   - La carta amb l'etiqueta "imparell" no pot tenir el 5 o el 7, per tant, ha de tenir el 2 o el 12.
+   - La carta amb l'etiqueta "més gran que 100" no pot tenir cap dels números de la llista.
+
+4. **Resolem el problema:**
+   - Sabem que la carta amb l'etiqueta "primer" té el 12.
+   - Això vol dir que el 12 no pot estar a la carta amb l'etiqueta "imparell", per tant, la carta amb l'etiqueta "imparell" ha de tenir el 2.
+   - Això vol dir que el 2 no pot estar a la carta amb l'etiqueta "divisible per 7", per tant, la carta amb l'etiqueta "divisible per 7" ha de tenir el 5.
+   - Per eliminació, la carta amb l'etiqueta "més gran que 100" ha de tenir el 7.
+
+Resposta: C)

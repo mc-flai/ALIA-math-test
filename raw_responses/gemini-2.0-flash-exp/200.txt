@@ -1,0 +1,18 @@
+Raonament:
+Sigui f(n) la funció que el robot executa, és a dir, f(n) = n + k, on k és el major divisor de n diferent de n.
+Comencem amb un nombre parell m que no és divisible per 4. Això vol dir que m = 2p, on p és un nombre senar.
+Iteració 1:
+El major divisor de m = 2p diferent de m és p. Per tant, f(m) = m + p = 2p + p = 3p.
+Iteració 2:
+El major divisor de 3p és p (ja que p és senar i 3 és primer). Per tant, f(3p) = 3p + p = 4p.
+Iteració 3:
+El major divisor de 4p és 2p. Per tant, f(4p) = 4p + 2p = 6p.
+Iteració 4:
+El major divisor de 6p és 3p. Per tant, f(6p) = 6p + 3p = 9p.
+Iteració 5:
+El major divisor de 9p és 3p. Per tant, f(9p) = 9p + 3p = 12p.
+Iteració 6:
+El major divisor de 12p és 6p. Per tant, f(12p) = 12p + 6p = 18p.
+Com que m = 2p, tenim que p = m/2. Substituint p per m/2 a l'últim resultat, obtenim 18p = 18(m/2) = 9m.
+
+Resposta: D)

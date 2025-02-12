@@ -1,0 +1,32 @@
+Raonament:
+La successió segueix la regla aₙ = 2aₙ₋₁ + aₙ₋₂.
+Sabem que a₃ = 9 i a₆ = 128.
+Podem expressar a₄, a₅ i a₆ en termes dels anteriors:
+a₄ = 2a₃ + a₂
+a₅ = 2a₄ + a₃
+a₆ = 2a₅ + a₄
+
+Substituïm a₃ = 9:
+a₄ = 2(9) + a₂ = 18 + a₂
+a₅ = 2a₄ + 9
+a₆ = 2a₅ + a₄
+
+Substituïm a₄ en l'expressió de a₅:
+a₅ = 2(18 + a₂) + 9 = 36 + 2a₂ + 9 = 45 + 2a₂
+
+Substituïm a₄ i a₅ en l'expressió de a₆:
+128 = 2(45 + 2a₂) + (18 + a₂)
+128 = 90 + 4a₂ + 18 + a₂
+128 = 108 + 5a₂
+20 = 5a₂
+a₂ = 4
+
+Ara que sabem a₂, podem calcular a₄:
+a₄ = 18 + a₂ = 18 + 4 = 22
+
+Ara podem calcular a₅:
+a₅ = 2a₄ + a₃ = 2(22) + 9 = 44 + 9 = 53
+
+Per tant, el cinquè nombre de la successió és 53.
+
+Resposta: B)

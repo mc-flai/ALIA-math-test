@@ -1,0 +1,78 @@
+<think>
+Prime, identifiquem el producte que des desacercabEM. El producte es de 1 a 20, es decir, 1·2·3·4·...·20.
+
+También potencialment pots expressar este producte en forma factorial: 20!.
+
+Comptiem la quantitat d' factores que contenen el producte. El producte de 1 a n (n = 20) té n elements, hence这里有20 números consecutivs que multiplicen entre sí.
+
+Quan expressem el producte factorial en forma UPC, es donar un mètode de factorització. Aquest mètode consistirá en expressar cada número com una producta de factors primers.
+
+Reorganem els factors primers de tots els nombres de 1 a 20:
+
+- 2 = 2
+- 3 = 3
+- 4 = 2²
+- 5 = 5
+- 6 = 2·3
+- 7 = 7
+- 8 = 2³
+- 9 = 3²
+- 10 = 2·5
+- 11 = 11
+- 12 = 2²·3
+- 13 = 13
+- 14 = 2·7
+- 15 = 3·5
+- 16 = 2⁴
+- 17 = 17
+- 18 = 2·3²
+- 19 = 19
+- 20 = 2²·5
+
+Sumem el nombre de factors de 2 en tota la expressió:
+
+Para cada número, considerem el número de factors de 2 que conten:
+- 2: 1
+- 4: 2
+- 6: 1
+- 8: 3
+- 10:1
+- 12:2
+- 14:1
+- 16:4
+- 18:1
+- 20:2
+
+Sumen totos: 1+2+1+3+1+2+1+4+1+2 = 17.
+
+Sumem el número de factors de 5 en tota la expressió:
+- 5:1
+- 10:1
+- 15:1
+- 20:1
+
+Total:1+1+1+1=4.
+
+Lliscament, el producte UPC pot expressar per:
+
+2^17 · 3^8 · 5^4 · 7³ · 11 · 13 · 17 · 19.
+
+Llenem les dígitues i com que l'expressió dona les posicions de zeros a la哈尔, sabim que el nombre de zeros depende del nombre de factors de 10 en la expressión UPC. Cada zero resultant del producte pot correspondir a un factore 10 (i.e., un factor 2·5).
+
+En our cas, l'exponent de 5 es 4, perquè no hi tenim més factors de 5 que a més. Així, el producte UPC conté exactament 4 factors de 5.
+
+Per a cada factor de 5, al mateix temps pot tenir un factor de 2, tot i quetvi siga. Com hem vem que el producte UPC conté 17 factors de 2, es llibresment més de thanys que les factors de 5.
+
+Per tant, el nombre d'0s al final del nombreificant serà la quantitat del menor entre el nombre de factors de 5 i el nombre de factors de 2, que és el 4. I per així, hi pot tenir 4 zeros al final.
+</think>
+
+Clarament, el producte es expressat com \(\prod_{n=1}^{20} n = 20!\).
+
+Podem expressar \(20! = 2^{17} \cdot 3^8 \cdot 5^4 \cdot 7^3 \cdot 11 \cdot 13 \cdot 17 \cdot 19\). El nombre d' Zeroes es dona per el nombre de factors de 10 en la expressió UPC, que es pot calcular com el menor entre el nombre de factors de 2 i el del 5.
+
+Com hem vist:
+
+- **Factors de 5:** \(\lfloor \frac{20}{5} \rfloor + \left\lfloor \frac{20}{25} \right\rfloor = 4 + 0 = 4\)
+- **Factors de 2:** Més grans que el del 5, tot i que siga sense problemes.
+
+Portant, l'expressió UPC conté exactament 4 factors de 5. Així, hi pot tenir \(\boxed{B}\) (2) zeros al final del nombreificant.

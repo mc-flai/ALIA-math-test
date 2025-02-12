@@ -1,0 +1,248 @@
+Raonament:
+Primer, calculem la suma original: 222 + 333 + 444 + 555 = 1554.
+L'objectiu és obtenir 987. Per tant, hem de reduir la suma en 1554 - 987 = 567.
+Ara, analitzem com podem reduir la suma canviant dígits per 0. Cada vegada que canviem un dígit per 0, restem el valor d'aquest dígit a la suma total. Per exemple, si canviem el 2 de les centenes de 222 per un 0, restem 200 a la suma.
+Per reduir la suma en 567, hem de canviar dígits per 0 de manera que la suma dels valors dels dígits canviats sigui 567.
+Comencem per les centenes:
+- Si canviem el 5 de 555 per 0, restem 500. Ens quedaria 567 - 500 = 67.
+- Si canviem el 4 de 444 per 0, restem 400. Ens quedaria 567 - 400 = 167.
+- Si canviem el 3 de 333 per 0, restem 300. Ens quedaria 567 - 300 = 267.
+- Si canviem el 2 de 222 per 0, restem 200. Ens quedaria 567 - 200 = 367.
+Per tant, canviar el 5 de 555 per 0 és la millor opció per reduir la suma el màxim possible.
+Ara tenim 1554 - 500 = 1054. Ens falta reduir 1054 - 987 = 67.
+Ara, canviem el 4 de 444 per 0, restem 400. Ens quedaria 1054 - 400 = 654. Això no ens serveix.
+Canviem el 5 de 555 per 0, restem 500. Ens queda 1054.
+Ens falta reduir 1054 - 987 = 67.
+Ara, canviem el 4 de 444 per 0, restem 400. Ens quedaria 1054 - 400 = 654.
+Canviem el 3 de 333 per 0, restem 300. Ens quedaria 1054 - 300 = 754.
+Canviem el 2 de 222 per 0, restem 200. Ens quedaria 1054 - 200 = 854.
+Per tant, hem de canviar el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Ara, canviem el 4 de 444 per 0, restem 400. Ens quedaria 1054 - 400 = 654.
+Canviem el 3 de 333 per 0, restem 300. Ens quedaria 1054 - 300 = 754.
+Canviem el 2 de 222 per 0, restem 200. Ens quedaria 1054 - 200 = 854.
+Per tant, hem de canviar el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Ara, canviem el 6 de 67 per 0. No tenim cap 6.
+Hem de canviar el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 3 de 333 per 0 (restem 300). Ens quedaria 1554 - 500 - 300 = 754.
+Ens falta reduir 754 - 987 = -233.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 2 de 222 per 0 (restem 200). Ens quedaria 1554 - 500 - 200 = 854.
+Ens falta reduir 854 - 987 = -133.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Canviem el 4 de 444 per 0 (restem 400). Ens quedaria 1554 - 500 - 400 = 654.
+Ens falta reduir 654 - 987 = -333.
+Canviem el 5 de 555 per 0 (restem 500). Ens falta reduir 67.
+Can

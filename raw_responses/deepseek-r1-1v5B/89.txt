@@ -1,0 +1,65 @@
+<think>
+Para calcular la xifra de les desenes del nombre \(1! + 2! + 3! + \dots + 2015!\), primero notamos que cada factorial de número mayor que 5 es multiple de 10. Esto se debe a que el factorial de un número \(n \geq 5\) incluye factores 2 y 5, por lo que es divisible por 10.
+
+Esto significa que, al sumar todos los factorials del 1 al 5, podemos ignorear la contribución de los términos desde 6 hasta el 2015. Dado que \(5! = 120\), y cada subsequente factorial incluye un múltiplo de 10, las unidades terminan en 0.
+
+Ahora, sumemos los primeros cinco factoriales:
+
+- \(1! = 1\)
+- \(2! = 2\)
+- \(3! = 6\)
+- \(4! = 24\)
+- \(5! = 120\)
+
+Sumando estos: \(1 + 2 + 6 + 24 + 120 = 153\). La xifra de las desenes es 5.
+
+Por lo tanto, la xifra correcta es E.
+</think>
+
+Para calcular la **xifra de les desenes** (centenas) del nombre \( S = 1! + 2! + 3! + \dots + 2015!\), seguiremos los siguientes pasos:
+
+1. **Análisis de los términos menores o iguales a 5!:**
+
+   - \(1! = 1\)
+   - \(2! = 2\)
+   - \(3! = 6\)
+   - \(4! = 24\)
+   - \(5! = 120\)
+
+2. **Notación de la factorial:**
+
+   La factorial del número \( n \) (denotada como \( n! \)) es el producto de todos los números naturales desde 1 hasta \( n \). Es decir:
+
+   \[
+   n! = n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1
+   \]
+
+3. **Características de los factoriales larger:**
+
+   - \(6! = 720\)
+   - \(7! = 5040\), que es múltiplo de 10, ya que incluye factores 2 y 5.
+   - Por lo tanto, cada \( n! \) para \( n \geq 6 \) es múltiplo de 10 y por lo tanto, termina en 0.
+
+4. **Suma de todos los términos:**
+
+   Sumamos solo los términos menores que 5!, ya que los demás incluyen factores de 10 y no contribuyen a las unidades:
+
+   \[
+   S = (1! + 2! + 3! + 4!) + (5! + 6! + \dots + 2015!)
+   \]
+   
+   \[
+   S = (1 + 2 + 6 + 24) + (120 + \text{multiplos de 10})
+   \]
+   
+   \[
+   S = 33 + 120 + (\text{sumas de términos múltiples de 10})
+   \]
+   
+   La suma par she sumas de términos múltiples de 10 es múltiple de 10, por lo que el resultado final \( S \) termina en cero.
+
+5. **Determinación de la xifra de las desenes:**
+
+   Dado que \( S = ...00 \), la xifra de las desenes (centenas) es **0**.
+
+**Respuesta final:** \(\boxed{A}\)

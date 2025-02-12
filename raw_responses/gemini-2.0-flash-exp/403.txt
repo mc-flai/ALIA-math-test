@@ -1,0 +1,41 @@
+Raonament:
+
+1. **Visualització i Notació:** Imaginem el rectangle amb costats 'a' i 'b' (a > b). La diagonal divideix el rectangle en dos triangles rectangles. Dibuixem un quadrat dins de cada triangle, amb els costats paral·lels als del rectangle. Anomenem 'x' el costat del quadrat inscrit en el triangle superior i 'y' el costat del quadrat inscrit en el triangle inferior.
+
+2. **Triangles Semblants:** Considerem el triangle rectangle original amb costats 'a' i 'b' i la hipotenusa 'c' (c = √(a² + b²)). El triangle rectangle format per la cantonada superior del rectangle i el quadrat superior és semblant al triangle original. La relació entre els costats d'aquests triangles ens permet escriure:
+   (a - x) / x = a / b  =>  ab - bx = ax  =>  x(a + b) = ab  =>  x = ab / (a + b)
+
+   De manera similar, per al quadrat inferior, tenim:
+   (b - y) / y = b / a  =>  ab - ay = by  =>  y(a + b) = ab  =>  y = ab / (a + b)
+
+   Això ens indica que els dos quadrats tenen la mateixa mida, x = y.
+
+3. **Coordenades:** Considerem el rectangle amb un vèrtex a l'origen (0,0), i els altres vèrtexs a (a,0), (a,b) i (0,b). La diagonal va de (0,0) a (a,b). La recta que representa la diagonal té equació y = (b/a)x.
+
+   El vèrtex del quadrat superior que està a la diagonal tindrà coordenades (x_1, y_1). Com que el costat del quadrat és x, tenim que y_1 = x_1 + x. A més, y_1 = (b/a)x_1. Per tant, (b/a)x_1 = x_1 + x. Substituint x = ab/(a+b), tenim:
+   (b/a)x_1 = x_1 + ab/(a+b)
+   x_1(b/a - 1) = ab/(a+b)
+   x_1(b-a)/a = ab/(a+b)
+   x_1 = a²b / ((a+b)(b-a)) = -a²b / (a²-b²)
+
+   Però això no és correcte, ja que x_1 ha de ser positiu. Hem de considerar que el vèrtex del quadrat superior que està a la diagonal té coordenades (x_1, y_1) i que y_1 = (b/a)x_1. A més, y_1 = b - x. Per tant, (b/a)x_1 = b - x. Substituint x = ab/(a+b), tenim:
+   (b/a)x_1 = b - ab/(a+b) = b(a+b-a)/(a+b) = b²/(a+b)
+   x_1 = ab² / (b(a+b)) = ab/(a+b)
+   y_1 = b²/(a+b)
+   El vèrtex del quadrat superior que està a l'interior del rectangle té coordenades (x_1, y_1) = (ab/(a+b), b²/(a+b)).
+
+   De manera similar, el vèrtex del quadrat inferior que està a la diagonal tindrà coordenades (x_2, y_2). Com que el costat del quadrat és y, tenim que y_2 = y. A més, y_2 = (b/a)x_2. Per tant, (b/a)x_2 = y. Substituint y = ab/(a+b), tenim:
+   (b/a)x_2 = ab/(a+b)
+   x_2 = a²/(a+b)
+   y_2 = ab/(a+b)
+   El vèrtex del quadrat inferior que està a l'interior del rectangle té coordenades (x_2, y_2) = (a²/(a+b), ab/(a+b)).
+
+4. **Distància:** La distància 'd' entre els vèrtexs dels quadrats que estan a l'interior del rectangle és la distància entre els punts (x_1, y_1) i (x_2, y_2):
+   d = √[(x_2 - x_1)² + (y_2 - y_1)²]
+   d = √[((a²/(a+b)) - (ab/(a+b)))² + ((ab/(a+b)) - (b²/(a+b)))²]
+   d = √[((a²-ab)/(a+b))² + ((ab-b²)/(a+b))²]
+   d = √[(a²(a-b)² + b²(a-b)²)/(a+b)²]
+   d = √[(a-b)²(a²+b²)/(a+b)²]
+   d = (a-b)√(a²+b²)/(a+b)
+
+Resposta: B)

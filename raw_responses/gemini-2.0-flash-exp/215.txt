@@ -1,0 +1,43 @@
+Raonament:
+Primer, hem de trobar tots els nombres de dues xifres que són múltiples de 3. Un nombre és múltiple de 3 si la suma de les seves xifres és múltiple de 3.
+Després, hem de comprovar quins d'aquests nombres compleixen que el valor absolut de la diferència de les seves xifres és 3.
+
+Els nombres de dues xifres són de la forma 10a + b, on a i b són dígits entre 0 i 9, i a no pot ser 0.
+Els múltiples de 3 entre 10 i 99 són: 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99.
+
+Ara, comprovem quins d'aquests nombres compleixen que |a - b| = 3:
+- 12: |1 - 2| = 1 (no)
+- 15: |1 - 5| = 4 (no)
+- 18: |1 - 8| = 7 (no)
+- 21: |2 - 1| = 1 (no)
+- 24: |2 - 4| = 2 (no)
+- 27: |2 - 7| = 5 (no)
+- 30: |3 - 0| = 3 (sí)
+- 33: |3 - 3| = 0 (no)
+- 36: |3 - 6| = 3 (sí)
+- 39: |3 - 9| = 6 (no)
+- 42: |4 - 2| = 2 (no)
+- 45: |4 - 5| = 1 (no)
+- 48: |4 - 8| = 4 (no)
+- 51: |5 - 1| = 4 (no)
+- 54: |5 - 4| = 1 (no)
+- 57: |5 - 7| = 2 (no)
+- 60: |6 - 0| = 6 (no)
+- 63: |6 - 3| = 3 (sí)
+- 66: |6 - 6| = 0 (no)
+- 69: |6 - 9| = 3 (sí)
+- 72: |7 - 2| = 5 (no)
+- 75: |7 - 5| = 2 (no)
+- 78: |7 - 8| = 1 (no)
+- 81: |8 - 1| = 7 (no)
+- 84: |8 - 4| = 4 (no)
+- 87: |8 - 7| = 1 (no)
+- 90: |9 - 0| = 9 (no)
+- 93: |9 - 3| = 6 (no)
+- 96: |9 - 6| = 3 (sí)
+- 99: |9 - 9| = 0 (no)
+
+Els nombres que compleixen les dues condicions són: 30, 36, 63, 69 i 96.
+Per tant, hi ha 5 nombres que compleixen les condicions.
+
+Resposta: D)

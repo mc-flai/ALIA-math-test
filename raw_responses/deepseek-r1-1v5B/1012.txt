@@ -1,0 +1,46 @@
+<think>
+Per determinar a qui vam posar la hora de començar el rellotge, esdevem analizar las desviacions del horari de cada marca. El primer marca que observen és a les 11h en el mati, i el segon és a les 12h en l'mig dia.
+
+Es considera que el rellotge s'avança una minuta cada hora i el mateu es retarda dos minuts cada hora. Aquesta desviación implica que el mateu es gràciesa de temps respecte al marca regular.
+
+Si suposiem que la començar lliuremos a les H hora i M minues, potem expressar les temps de cada marca mitjançant les fórmules:
+
+- Temporal al marca del primer mateu: (H*60 + M) - 11h = 60*(H - 1) + (M - 1)
+- Temporal al marca del segon mateu: (H*60 + M) + 2 = 60*(H - 1) + (M + 2)
+
+Desenvolviendo les ecuacions:
+
+1. H*M - 11h = 60H - 60 + M - 1
+2. H*M + 2 = 60H - 60 + M + 2
+
+Solving per a la variable hiperbola, potem observar que la solució es quan les hiperbolas s'engulven lloturas, donades les temperatures i desvios.
+
+De canviant les variables, potem trobar que la començar lliuremos a les 14:00 h.
+</think>
+
+Raonament:
+
+El rellotge es s'avança una minuta cada hora i el mateu es retarda dos minuts cada hora. Quan es devinem el mateu al marca regular, l'estona es movimenta de 11h a les 12h.
+
+Per a quina hora començar la posada del rellotge (H) tenim que considerar les desviacions del horari:
+
+- El mateu es retarda de dos minuts a cada hora.
+- Alesa, el mateu s'arrana de 11h a les 12h.
+
+La fórmula para el temps al mateu serà:
+\[
+(H*60 + M) - (M + 2) = 60*(H - 1)
+\]
+Desenvolviendo:
+\[
+60H + M - M - 2 = 60H - 60
+\]
+Simplificant:
+\[
+-2 = -60
+\]
+
+Aquesta igualada no s'apliquera, donades les temperatures i desvios. Ara, donats les variables, potem trobar que la començar lliuremos a les 14:00 h.
+
+Resposta:
+D) A les 14.00 h

@@ -1,0 +1,40 @@
+Raonament:
+Tenim que a + 2 = b - 2 = c * 2 = d / 2. Per simplificar, podem igualar totes les expressions a una variable, per exemple, k. Així, tenim:
+a + 2 = k
+b - 2 = k
+c * 2 = k
+d / 2 = k
+
+Ara podem expressar a, b, c i d en termes de k:
+a = k - 2
+b = k + 2
+c = k / 2
+d = 2k
+
+Com que a, b, c i d són nombres enters positius, k ha de ser un nombre enter positiu i, a més, k ha de ser parell per tal que c sigui un enter. Per tant, k ha de ser un nombre parell positiu.
+
+Ara comparem les expressions per a, b, c i d:
+- a = k - 2
+- b = k + 2
+- c = k / 2
+- d = 2k
+
+Si k és un nombre parell positiu, per exemple, k=4, tindríem:
+a = 4 - 2 = 2
+b = 4 + 2 = 6
+c = 4 / 2 = 2
+d = 2 * 4 = 8
+
+En aquest cas, d és el més gran.
+
+Si k és un altre nombre parell positiu, per exemple, k=6, tindríem:
+a = 6 - 2 = 4
+b = 6 + 2 = 8
+c = 6 / 2 = 3
+d = 2 * 6 = 12
+
+En aquest cas, d també és el més gran.
+
+En general, com que k és un nombre parell positiu, k > 0. Per tant, 2k > k + 2 > k > k/2. Això implica que d > b > a i d > c. Per tant, d és sempre el nombre més gran.
+
+Resposta: D)

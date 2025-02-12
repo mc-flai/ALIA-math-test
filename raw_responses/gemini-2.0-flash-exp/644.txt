@@ -1,0 +1,23 @@
+Raonament:
+Per trobar el nombre natural més petit divisible per tots els nombres de l'1 al 9, hem de trobar el mínim comú múltiple (mcm) d'aquests nombres. Per fer-ho, primer descomponem cada nombre en factors primers:
+- 1 = 1
+- 2 = 2
+- 3 = 3
+- 4 = 2^2
+- 5 = 5
+- 6 = 2 * 3
+- 7 = 7
+- 8 = 2^3
+- 9 = 3^2
+
+El mcm s'obté agafant la potència més alta de cada factor primer que apareix en les descomposicions:
+- 2^3 (de 8)
+- 3^2 (de 9)
+- 5 (de 5)
+- 7 (de 7)
+
+Per tant, el mcm és 2^3 * 3^2 * 5 * 7 = 8 * 9 * 5 * 7 = 72 * 35 = 2520.
+
+La primera xifra de l'esquerra del nombre 2520 és 2.
+
+Resposta: B)

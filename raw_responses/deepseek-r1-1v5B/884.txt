@@ -1,0 +1,40 @@
+<think>
+Para resolver este problema, primero identifico que necesitamos eliminar un número del conjunto {1, 2, 3, ..., 8,9} de manera que el mínim comú múltiple de los huit nombres que se retainan sea el más pequeño posible. 
+
+Consideremos cada opción:
+
+- **A) 9**: Si eliminamos 9, elconjunt restante será {1,2,3,4,5,6,7,8}. El mínimo comú múltiple de estos números es 8!, ya que 8 es un número entero que no divide a los demás y none son primos mutua-s. 
+
+- **B) 8**: Si eliminamos 8, elconjunt restante será {1,2,3,4,5,6,7,9}. El mínimo comú múltiple de estos números es 2520, que es mayor que el de A), lo cual no es ideal.
+
+- **C) 7**: Si eliminamos 7, elconjunt restante será {1,2,3,4,5,6,8,9}. El mínimo comú múltiple de estos números es 2520 también, como con B).
+
+- **D) 6**: Si eliminamos 6, elconjunt restante será {1,2,3,4,5,7,8,9}. El mínimo comú múltiple de estos números es 2520 también.
+
+- **E) 5**: Si eliminamos 5, elconjunt restante será {1,2,3,4,6,7,8,9}. El mínimo comú múltiple de estos números es 2520 también.
+
+Al observar cada caso, la opción A) eliminiando 9, proporciona el mínimo comú múltiple más pequeño (8!) que las demás. Por lo tanto, la respuesta correcta es A).
+</think>
+
+Para resolver este problema, primero identificamos que necesitamos eliminar un número del conjunto {1, 2, 3, ..., 8,9} de manera que el mínimo comú múltiple de los huit nombres que se retainan sea el más pequeño posible.
+
+Consideremos cada opción:
+
+- **A) 9**: Si eliminamos 9, elconjunt restante será {1,2,3,4,5,6,7,8}. El mínimo comú múltiple de estos números es **8!** (8 factorial), que es el mínimo común múltiplo más pequeño de los números 1 a 8.
+
+- **B) 8**: Si eliminamos 8, elconjunt restante será {1,2,3,4,5,6,7,9}. El mínimo comú múltiple de estos números es mayor que el de A).
+
+- **C) 7**: Si eliminamos 7, elconjunt restante será {1,2,3,4,5,6,8,9}. El mínimo comú múltiple de estos números es mayor que el de A).
+
+- **D) 6**: Si eliminamos 6, elconjunt restante será {1,2,3,4,5,7,8,9}. El mínimo comú múltiple de estos números es mayor que el de A).
+
+- **E) 5**: Si eliminamos 5, elconjunt restante será {1,2,3,4,6,7,8,9}. El mínimo comú múltiple de estos números es mayor que el de A).
+
+Al observar cada caso, la opción **A)** eliminiando 9, proporciona el mínimo comú múltiple más pequeño (8!) que las demás. Por lo tanto, la respuesta correcta es:
+
+**Raonament:**
+- Si eliminamos 9, elconjunt restante es {1,2,3,4,5,6,7,8}, y su mínimo comú múltiple es 8! = 40320.
+- En las otras opciones, el mínimo comú múltiple es mayor que 40320.
+
+**Resposta:**
+\boxed{A}

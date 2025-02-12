@@ -1,0 +1,32 @@
+Raonament:
+Siguin 'p' el nombre total de pomes i 'x' el nombre de pomes que rep cada nen inicialment. Tenim les següents equacions basades en la informació donada:
+
+1.  N * x = p  (El nombre total de pomes és igual al nombre de nens per les pomes que rep cada un)
+2.  (N - 2) * (x + 1) = p (Si hi haguera N-2 nens, cada un rebria una poma més)
+3.  (N - 3) * (x + 2) = p (Si hi haguera N-3 nens, cada un rebria dues pomes més)
+
+Podem igualar les equacions 1 i 2:
+N * x = (N - 2) * (x + 1)
+Nx = Nx + N - 2x - 2
+0 = N - 2x - 2
+N = 2x + 2  (Equació 4)
+
+Ara igualem les equacions 1 i 3:
+N * x = (N - 3) * (x + 2)
+Nx = Nx + 2N - 3x - 6
+0 = 2N - 3x - 6
+2N = 3x + 6 (Equació 5)
+
+Substituïm l'equació 4 en l'equació 5:
+2 * (2x + 2) = 3x + 6
+4x + 4 = 3x + 6
+x = 2
+
+Ara substituïm el valor de x en l'equació 4:
+N = 2 * 2 + 2
+N = 4 + 2
+N = 6
+
+Per tant, el valor de N és 6.
+
+Resposta: A)

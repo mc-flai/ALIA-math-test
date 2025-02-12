@@ -1,0 +1,20 @@
+Raonament:
+Per resoldre aquest problema, podem assumir que hi ha un nombre total de llibres que sigui divisible per tots els denominadors de les fraccions que s'utilitzen (5, 6, 3 i 4). El mínim comú múltiple de 5, 6, 3 i 4 és 60. Per tant, assumirem que hi ha 60 llibres en total.
+
+1. **Antoni:** Recull 1/5 de 60 llibres, que són (1/5) * 60 = 12 llibres. Queden 60 - 12 = 48 llibres.
+2. **Bernat:** Recull 1/6 dels 48 llibres que queden, que són (1/6) * 48 = 8 llibres. Queden 48 - 8 = 40 llibres.
+3. **Carles:** Recull 1/3 dels 40 llibres que queden, que són (1/3) * 40 = 40/3 llibres. Això no és un nombre enter, però podem seguir treballant amb fraccions. Queden 40 - 40/3 = 120/3 - 40/3 = 80/3 llibres.
+4. **David:** Recull 1/4 dels 80/3 llibres que queden, que són (1/4) * (80/3) = 20/3 llibres. Queden 80/3 - 20/3 = 60/3 = 20 llibres.
+5. **Enric i Ferran:** Es reparteixen els 20 llibres restants a parts iguals, així que cadascun rep 20/2 = 10 llibres.
+
+Ara comparem la quantitat de llibres que ha rebut cada persona:
+* Antoni: 12 llibres
+* Bernat: 8 llibres
+* Carles: 40/3 = 13.33 llibres (aproximadament)
+* David: 20/3 = 6.66 llibres (aproximadament)
+* Enric: 10 llibres
+* Ferran: 10 llibres
+
+Carles és qui ha obtingut més llibres.
+
+Resposta: C)

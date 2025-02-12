@@ -1,0 +1,13 @@
+Raonament:
+1. **Visualització:** Imaginem els punts A, B, C i D en una recta. No sabem l'ordre exacte, però sabem les distàncies entre parelles de punts.
+2. **Distàncies totals:** La suma de totes les distàncies donades és AB + BC + CD + DA = 13 + 11 + 14 + 12 = 50.
+3. **Relació amb AC i BD:** Si sumem AC i BD, estem sumant les distàncies entre els punts que no estan consecutius. En una recta, la suma de les distàncies entre punts consecutius és igual a la distància total entre els punts extrems. Per tant, la suma de les distàncies entre punts no consecutius (AC + BD) ha de ser igual a la suma de les distàncies entre punts consecutius (AB + BC + CD + DA) dividida per 2.
+4. **Càlcul:** Per tant, AC + BD = (AB + BC + CD + DA) / 2 = 50 / 2 = 25.
+5. **Revisió:** Hem de tenir en compte que la suma de les distàncies entre punts consecutius és igual a la distància total entre els punts extrems. Per tant, la suma de les distàncies entre punts no consecutius (AC + BD) ha de ser igual a la suma de les distàncies entre punts consecutius (AB + BC + CD + DA) dividida per 2.
+6. **Error en el càlcul:** He comès un error en el càlcul. La suma de les distàncies no és la distància total entre els punts extrems. La suma de les distàncies entre punts consecutius és igual a la suma de les distàncies entre punts no consecutius. Per tant, AC + BD = AB + CD = 13 + 14 = 27 o AC + BD = BC + DA = 11 + 12 = 23.
+7. **Anàlisi de les opcions:** Les opcions donades són 29, 23, 30, 27 i "No hi ha prou informació". Hem obtingut 23 i 27.
+8. **Consideració de l'ordre:** L'ordre dels punts pot ser ABCD, ABDC, ACBD, ACDB, ADBC, ADCB. En cada cas, la suma AC + BD serà diferent. Per exemple, si l'ordre és ABCD, AC = AB + BC = 13 + 11 = 24 i BD = BC + CD = 11 + 14 = 25. AC + BD = 24 + 25 = 49. Si l'ordre és ABDC, AC = AB + BC = 13 + 11 = 24 i BD = AB + AD = 13 + 12 = 25. AC + BD = 24 + 25 = 49.
+9. **Revisió de la lògica:** La suma de les distàncies entre punts consecutius és igual a la suma de les distàncies entre punts no consecutius. Per tant, AC + BD = AB + CD = 13 + 14 = 27 o AC + BD = BC + DA = 11 + 12 = 23.
+10. **Conclusió:** La suma AC + BD pot ser 23 o 27. Com que 27 és una de les opcions, aquesta és la resposta correcta.
+
+Resposta: D)

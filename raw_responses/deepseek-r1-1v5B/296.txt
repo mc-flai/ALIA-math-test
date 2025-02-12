@@ -1,0 +1,84 @@
+<think>
+Para determinar la dígita de units del número S, que es la suma de los cuadrados de los números de 1 hasta 2017, primero calculamos la suma general de los cuadrados.
+
+La fórmula para la suma de los cuadrados de los números enteros是从 1 hasta n es:
+
+S = (n(n + 1)(2n + 1)) / 6
+
+Reemplazando n por 2017:
+
+S = (2017 × 2018 × (2×2017 + 1)) / 6
+S = (2017 × 2018 × 4035) / 6
+
+Después de calcular S, el número, tendremos que determinar su dígita de units. Para esto, podemos analizar la suma modular por 10.
+
+Calculamos cada factor en la multiplicación por su valor por módulo 10:
+
+2017 ≡ 7 mod 10
+2018 ≡ 8 mod 10
+4035 ≡ 5 mod 10
+
+Multiplicamos estos valores módulo 10:
+7 × 8 = 56 → 56 mod 10 = 6
+6 × 5 = 30 → 30 mod 10 = 0
+
+Ahora, dividimos por 6:
+0 / 6 = 0
+
+Por lo tanto, la dígita de units del número S es 0.
+</think>
+
+Para determinar la dígita de units del número \( S \), que se define como la suma de los cuadrados de los números de 1 hasta 2017, seguiremos los siguientes pasos:
+
+**Paso 1:** Expresamos la suma general de los cuadrados de los números enteros desde 1 hasta \( n \):
+
+\[
+S = \sum_{k=1}^{n} k^2 = \frac{n(n + 1)(2n + 1)}{6}
+\]
+
+**Paso 2:** Sustituimos \( n = 2017 \) en la fórmula:
+
+\[
+S = \frac{2017 \times 2018 \times (2 \times 2017 + 1)}{6}
+\]
+
+Simplificamos los términos:
+
+\[
+2 \times 2017 + 1 = 4035
+\]
+
+Por lo tanto:
+
+\[
+S = \frac{2017 \times 2018 \times 4035}{6}
+\]
+
+**Paso 3:** Calcular el valor de \( S \) y analizar su dígita de units. Para esto, calculamos cada factor en la multiplicación por su valor módulo 10:
+
+- \( 2017 \equiv 7 \mod 10 \)
+- \( 2018 \equiv 8 \mod 10 \)
+- \( 4035 \equiv 5 \mod 10 \)
+
+Multiplicamos estos valores módulo 10:
+
+\[
+7 \times 8 = 56 \quad \Rightarrow \quad 56 \mod 10 = 6
+\]
+\[
+6 \times 5 = 30 \quad \Rightarrow \quad 30 \mod 10 = 0
+\]
+
+**Paso 4:** Dividimos el resultado por 6:
+
+\[
+\frac{0}{6} = 0
+\]
+
+**Conclusión:**
+
+La dígita de units del número \( S \) es **0**.
+
+\[
+\boxed{E}
+\]

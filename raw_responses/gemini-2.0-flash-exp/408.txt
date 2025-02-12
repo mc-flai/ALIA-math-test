@@ -1,0 +1,24 @@
+Raonament:
+Per resoldre aquesta expressió, utilitzarem les propietats dels logaritmes. Primer, recordem la propietat del canvi de base per logaritmes: logₐb = logₓb / logₓa. En aquest cas, podem canviar la base del logaritme de base 4 a base 2:
+
+log₄9 = log₂9 / log₂4
+
+Com que 4 = 2², tenim que log₂4 = 2. Per tant:
+
+log₄9 = log₂9 / 2
+
+Ara, tornem a l'expressió original:
+
+2^(log₄9) = 2^(log₂9 / 2)
+
+Utilitzant la propietat de les potències (a^(b/c) = (a^b)^(1/c) o (a^(1/c))^b), podem reescriure l'expressió com:
+
+2^(log₂9 / 2) = (2^(log₂9))^(1/2)
+
+Recordem que a^(logₐb) = b. Per tant, 2^(log₂9) = 9. Llavors:
+
+(2^(log₂9))^(1/2) = 9^(1/2)
+
+I 9^(1/2) és l'arrel quadrada de 9, que és 3.
+
+Resposta: B)

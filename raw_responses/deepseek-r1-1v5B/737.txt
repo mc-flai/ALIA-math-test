@@ -1,0 +1,42 @@
+<think>
+Para resolver este problema, primero notemos que hay 60 pomes y 60 peres que se distribuyen en caixas de manera que cada una tenga el mismo número de pomes y no dos caixas tienen la misma cantidad de peres.
+
+Entonces, el número de pomes en cada caixa será un divisor de 60. Tomamos los divisores positivos de 60: 1, 2, 3, 4, 5, 6, 10, 12, 15 y 60.
+
+Ahora, para cada divisor, verificamos si el número de peres en cada caixa (which es 60 dividido por el número de pomes) es diferente. Por ejemplo:
+
+- Si hay 1 pome en una caixas, la cantidad de peres será 60, y esto se repite en todas las caixas, lo que no es permitido.
+- Si hay 2 pomes en cada caixas, la peres por caixa será 30. Dado que 60 dividido por 2 es 30, y si cada caixas tiene 2 pomes, entonces las quantidades de peres serían 30, 30, etc., lo que no cumple con el conflicto de la question.
+
+Repetimos este proceso para todos los divisores:
+
+- 1 pome: 60 peres por caixa (no permitido)
+- 2 pomes: 30 peres por caixas (existen dos caixas con la misma cantidad, no permite)
+- 3 pomes: 20 peres por caixas (si hay dos caixas con 3 pomes, las peres serían 20 y 20, conflicto)
+- 4 pomes: 15 peres por caixas. Si hay tres caixas con 4 pomes cada una, las peres serían 15, 15, 15. Esto cumple con la condición de que no dos caixas tengan la misma cantidad de peres.
+- 6 pomes: 10 peres por caixas. Si hay seis caixas con 6 pome cada una, las peres serían 10, 10, etc., conflicto
+- 12 pomes: 5 peres por caixas. Dado que 60 dividido por 12 es 5, y si hay diez caixas con 12 pome cada una, las peres serían 5, 5, etc., conflicto.
+
+Observamos que solo cuando el número de pomes en cada caixa es 4 (tres caixas) o 6 (diez caixas), no hay conflicto. Sin embargo, el problema se refiere a la cantidad máxima de caixas, por lo que el más grande es 12 caixas.
+</think>
+
+Para resolver este problema, analizamos los divisores positivos de 60 para determinar cuántas caixas pueden tener un número de pomesigual y que no tengan dos caixas con la misma cantidad de peres.
+
+La distribución debe cumplir con:
+1. Cada caixa tiene el mismo número de pomes.
+2. No dos caixas tienen la misma cantidad de peres.
+
+El número de pomes en cada caixa debe ser un divisor de 60: 1, 2, 3, 4, 5, 6, 10, 12, 15 y 60. 
+
+Analizando cada posible的数量:
+- **4 pomes por caixas**: 60 / 4 = 15 peres por caixas.
+  - Si hay tres caixas con 4 pome cada una, las peres serían 15, 15, 15. No cumple con la condición de que no dos caixas tengan la misma cantidad de peres.
+
+- **12 pomes por caixas**: 60 / 12 = 5 peres por caixas.
+  - Si hay diez caixas con 12 pome cada una, las peres serían 5, 5, etc. No cumple con la condición.
+
+El número más grande de caixas que cumple con los requisitos es **12**.
+
+Raonament: Los divisores de 60 son 1, 2, 3, 4, 5, 6, 10, 12, 15 y 60. Al dividir 60 por cada uno de estos, se verificó que solo cuando hay 4 pomes en cada caixas (tres caixas) o 12 pomes (diez caixas), no hay conflicto. Por lo tanto, el número máximo de caIXas es **12**.
+
+La respuesta correcta es **C) 12**.

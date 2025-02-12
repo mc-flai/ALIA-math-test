@@ -1,0 +1,19 @@
+<think>
+Primer, identificaré la cantidad de cubos rogs y blancs que tiene Sara. She té 3 cubs de color roig i 2 cubs de color blanc.
+
+Luego, calcularé el número total de cubos en la estructura final. Sumaré 3 (roigs) y 2 (blacks) para obtener un total de 5 cubos.
+
+Finalmente, determinaré el número de posibilidades diferentes que se pueden formar con estos 5 cubos en una uninterrupted torre. Dado que cada cubo es distinto por su color, el número de permutaciones totales será el factorial del número total de cubos, es decir, 5!.
+
+Calculando 5!, gets 120.
+</think>
+
+Raonament:
+
+Sara té 3 cubs de color roig i 2 cubs de color blanc. El total de cubos es:
+\[ 3 \text{ (roigs)} + 2 \text{ (blacks)} = 5 \text{ cubos} \]
+
+Si Sara fa una torre amb tos del cubs, el número de permutaciones diferentes que se podrían formar es igual a la factorial del número total de cubos:
+\[ P(5) = 5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 \]
+
+Resposta: \(\boxed{E}\)

@@ -1,0 +1,81 @@
+<think>
+Prime donem el problema en què sumem les xifres del número aaabbbb i com li equiliram amb el nombre ab, que consiste en dos xifres.
+
+Per així, calculem la suma de les xifres de aaabbbb. La number aaabbbb haixit xifres: a triplea per a, b triplea per b, tot donats per les dades posibles amb decimalistes. El total de xifres serà 3a + 3b.
+
+El nombre ab de dos xifres és 10a + b.
+
+ Igualem l'iguality 3a + 3b = 10a + b, que dona 2b = 7a. Així, descompos a b per a: b = (7/2)a.
+
+Per que a i b són xifres enterals positives, el valor posibles que compten a aregna entre 1 i 3 per què la raíz de 7 a dona un nombre decimal. Araixi hem canvi de xifra a 4 o 5.
+
+Per així que b siga una xifra entera, necessitambem que (7/2)a siga entera. Amb a = 4: b = 14/2 =7, i per a=5: b=35/2=17.5, que no és possible. Per tant, la solució poseda a=4 i b=7.
+
+La suma de xifres del número aaabbbb es 3*4 + 3*7 = 12 + 21 = 33. El nombre ab seria 47, que s'haigui per dos xifres. La suma satisfeja la condició donada.
+</think>
+
+**Raonament:**
+
+1. **Denominación del problema:**
+   - Número en què sumem las xifres es **aaabbbb**.
+   - El número **ab**, que equilibra la suma, haixit dos xifres.
+
+2. **Calculo de la suma de las xifres del número aaabbbb:**
+   
+   - La number aaabbbb tiene 7 xifres en total:
+     - **a** triplet \( a + a + a = 3a \)
+     - **b** triplet \( b + b + b + b = 4b \)
+     
+   - Total de xifres: \( 3a + 4b \)
+
+3. **Expressión del número ab:**
+   
+   - El número \( ab \) es un número de dos xifres que equilibria la suma:
+     - \( 10a + b \)
+
+4. **Ecuación de igualdad:**
+   
+   \[
+   3a + 4b = 10a + b
+   \]
+   
+5. **Resolució de l'ecuación:**
+   
+   - Simplificam el ecuación:
+     \[
+     3a + 4b = 10a + b \implies 4b - b = 10a - 3a \implies 3b = 7a
+     \]
+     
+   - Despeje de \( b \):
+     \[
+     b = \frac{7}{3}a
+     \]
+   
+6. **Determinación de xifres enterals:**
+   
+   - \( a \) y \( b \) han de ser xifres enterals (enteros positivos)
+   - Probramo los valores posibles para \( a \):
+     - \( a = 1 \): \( b = \frac{7}{3} \times 1 = \frac{7}{3} \) (no es entero)
+     - \( a = 2 \): \( b = \frac{7}{3} \times 2 = \frac{14}{3} \) (no es entero)
+     - \( a = 3 \): \( b = \frac{7}{3} \times 3 = 7 \) (entero)
+     - \( a = 4 \): \( b = \frac{7}{3} \times 4 = \frac{28}{3} \) (no es entero)
+
+   - Por l'absolutament que siga, solo el valor de \( a = 3 \) y \( b = 7 \) satisface las condiciones.
+
+7. **Validación:**
+   
+   - Suma de xifres del número aaabbbb:
+     \[
+     3a + 4b = 3(3) + 4(7) = 9 + 28 = 37
+     \]
+     
+   - Número \( ab \):
+     \[
+     10a + b = 10(3) + 7 = 37
+     \]
+     
+   - Ambas expresions satisfont la condición de igualdad.
+
+**Respuesta:**
+
+\boxed{B}

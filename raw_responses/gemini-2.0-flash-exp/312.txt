@@ -1,0 +1,19 @@
+Raonament:
+L'expressió es pot agrupar en blocs de quatre termes:
+(111 - 110 - 109 + 108) + (107 - 106 - 105 + 104) + (103 - 102 - 101 + 100) + ... + (7 - 6 - 5 + 4) + (3 - 2 - 1)
+
+Analitzem el patró de cada bloc de quatre termes:
+111 - 110 - 109 + 108 = 1 - 109 + 108 = -108 + 108 = 0
+107 - 106 - 105 + 104 = 1 - 105 + 104 = -104 + 104 = 0
+103 - 102 - 101 + 100 = 1 - 101 + 100 = -100 + 100 = 0
+...
+7 - 6 - 5 + 4 = 1 - 5 + 4 = -4 + 4 = 0
+
+Per tant, cada bloc de quatre termes suma 0. L'últim bloc no té quatre termes, sinó tres:
+3 - 2 - 1 = 1 - 1 = 0
+
+Ara hem de comptar quants blocs de quatre termes hi ha. El primer terme és 111 i l'últim és 1. Hi ha 111 termes en total.
+111 / 4 = 27 amb residu 3. Això vol dir que hi ha 27 blocs de quatre termes que sumen 0, i un bloc de tres termes que també suma 0.
+Per tant, la suma total és 0 + 0 + ... + 0 = 0.
+
+Resposta: B)

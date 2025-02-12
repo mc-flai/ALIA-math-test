@@ -1,0 +1,79 @@
+<think>
+Primero, identifico que se está dealgando un problema de depensas naturales relacionada con el despeeo del petroli y su impacto en los resíblores de petroli. Se menciona que si la depensas anual de petroli se mantúa constante, las reserves de petroli serán esgotadas después de 50 años.
+
+La propuesta propone un acord internacional para reducir la depensas del 2% cada año en relación con el anterior. La pregunta está focusada en determinar el porcentaje más pequeño de reducción que permitiría que las reserves no se arriben a esgotarse antes de 50 años.
+
+Trabajaré con los valores proporcionados: una depensas anual constante y una duración de 50 años. Suponiendo que cada años la depensas disminuye en un porcentaje fijo, necesito calcular cuán pequeño debe ser este porcentaje para evitar que las reserves de petroli se esgoten.
+
+Para resolver esto, probablemente se usarán ecuaciones exponentiales que relates el decremento anual con la duración. Crearé una relación entre la depensas inicial y la dependencia en los 50 años. Al resolver esta ecuación, se descubrirá cuál debe ser el porcentaje de reducción más pequeño requerido.
+
+Finalmente, compararé estos resultados con las opciones proporcionadas para determinar cuál sea la respuesta correcta.
+</think>
+
+Raonament:
+
+Para evitar que las reserves de petroli se esgoten después de 50 años, se propone un acord internacional donde cada año los paíos reducen la depensas en un porcentaje fijo respecto a l'any anterior.
+
+Supongamos que la depensas anual se mante constante y que las reserves de petroli desaparecerán después de 50 años. Dado que se proponen reducir la depensas en un porcentaje fijo cada año, necesitamos calcular cuál debe ser el porcentaje más pequeño de reducción para evitar que las reserves no se esgoten antes.
+
+Utilizando ecuaciones exponentiales, podemos establecer una relación entre la depensas inicial y la dependencia en los 50 años. Suponiendo que cada año la depensas disminuye en \( x \% \), la depensas después de \( t \) años será:
+
+\[
+D(t) = D_0 \times (1 - \frac{x}{100})^t
+\]
+
+Después de 50 años, las reserves serán esgotadas cuando:
+
+\[
+D(50) = 0
+\]
+
+Sustituyendo \( t = 50 \) y \( D(50) = 0 \):
+
+\[
+0 = D_0 \times (1 - \frac{x}{100})^{50}
+\]
+
+Desarrollando:
+
+\[
+(1 - \frac{x}{100})^{50} = 0
+\]
+
+La única solución para esta ecuación es:
+
+\[
+1 - \frac{x}{100} = 0 \quad \Rightarrow \quad x = 100\%
+\]
+
+Sin embargo, esto indica que si se reduce la depensas en cero por año, las reserves serán esGotadas instantáneamente.
+
+Sin embargo, en el problema se menciona que se proponen reducir la depensas del 2% cada año. Supongamos que esta propuesta es correcta y intentamos calcular cuál debe ser el porcentaje de reducción más pequeño para evitar que las reserves no se arriben a esGotar después de 50 años.
+
+Repetimos el proceso pero con \( x = 2\% \):
+
+\[
+D(50) = D_0 \times (1 - \frac{2}{100})^{50} = D_0 \times (0.98)^{50}
+\]
+
+Calculando \( (0.98)^{50} \approx 0.366 \), es decir:
+
+\[
+D(50) = D_0 \times 0.366
+\]
+
+Entonces, las reserves serán esGotadas después de \( \frac{1}{0.366} \approx 2.74 \) años.
+
+Esto significa que con un reducción del 2% cada año, las reserves se arriban a esgotar después de aproximadamente 2.74 años.
+
+Por lo tanto, para evitar que las reserves no se arriben a esGotar después de 50 años, la propuesta sea correcta y ligeramente mejorada, se necesita un reducción más pequeño, como el 1% cada año.
+
+Finalmente, de las opciones dadas:
+
+- **A) 200%**: No es posible.
+- **B) 0,2%**: No es necesario.
+- **C) 20%**: Excesivo.
+- **D) 2%**: Ligeramente mejorada y sufficiente.
+- **E) Això és impossible**.
+
+La respuesta correcta es **D) 2%**.

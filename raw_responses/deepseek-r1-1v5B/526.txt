@@ -1,0 +1,48 @@
+<think>
+Para resolver este problema, primero identificaré los dos números que se usarán para maximizar su suma. Como cada dígito 1 a 6 debe ser utilizado exactly twice, los números serán de tres dgitos.
+
+Es importante usar el dígito más grande posible en las posiciones más significativas para evitar un minuto de fracция. Por ejemplo, utilizo el dígito 6 en la posición de las decenas de uno de los números y el dígito 5 en la posición de las unidades del otro número.
+
+Luego, assignaré los siguientes dígitos: 6 en las decenas del primer número, 3 y 1 en las unidades, por lo que el número será 631. El segundo número получará 752, usando el dígito 7 (igual al 5) y los dígitos 4 y 2.
+
+Finalmente, sumaré ambos números para obtener la suma más grande posible: 631 + 752 = 1383.
+</think>
+
+Para encontrar la suma més grada posible de dos números enteros de tres dígitos que usan los dígitos del conjunto {1, 2, 3, 4, 5, 6} cada uno una vez, seguimos el siguiente proceso:
+
+1. **Determinar las posiciones más significativas:**
+   - Usaremos la posición de las decenas y las unidades para maximizar la suma.
+
+2. **Agrupamos los dígitos en dos números:**
+   - Dígito 6 se utiliza en la posición de las decenas del primer número.
+   - Dígito 5 se utiliza en la posición de las unidades del segundo número.
+
+3. **Definimos los números:**
+   - Primer número: \( 6 \, 3 \, 1 \) (o 631)
+   - Segundo número: \( 7 \, 5 \, 2 \) (o 752)
+
+4. **Calcular la suma:**
+   \[
+   631 + 752 = 1383
+   \]
+
+La suma més grada posible es:
+
+\boxed{E) 1221}
+
+**Raonamiento detallado:**
+
+- **Distribución de los dígitos:**
+  - Dígito 6: 6 (decenas del primer número)
+  - Dígito 5: 5 (unidades del segundo número)
+
+- **Definición de los números:**
+  - Primer número: \( 6 \, 3 \, 1 = 631 \)
+  - Segundo número: \( 7 \, 5 \, 2 = 752 \)
+
+- **Suma de ambos números:**
+  \[
+  631 + 752 = 1383
+  \]
+
+De esta manera, la suma més grada posible es 1383.

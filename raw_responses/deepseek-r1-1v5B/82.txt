@@ -1,0 +1,53 @@
+<think>
+Primepossem que els nombres enters positius més grans que 2015 que són divisibles per 2, 3 i 5.
+
+Com s'expressa que un nombre és divisible per 2, 3 i 5, cal que sigui multiple de la mida com aella del producte deLL factors primers: LCM(2,3,5)=30. Quan un nombre és multiple de 30, es pot expressar com 30k, on k és un enter positiu.
+
+Estimem el nombre de values k que satisfan la condició que 30k ≤ 2015.
+
+Calculatem la divideixió exacta de 2015 per 30: 2015 ÷ 30 = 67,166...
+
+Solem takeixer la part entera, el que dona 67 values. Així, es pot donar que a les opcions donades s'hi possem una de les alternatives correta amb la quantifyixé de 67.
+</think>
+
+**Pregunta:** Quants nombres enteros positius més grans que 2015 són divisibles per 2, por 3 y por 5?
+
+**Respuesta:** **B) 67**
+
+### Raonament:
+1. **Determinar los números que son divisibles por 2, 3 y 5:**
+   
+   Un número que sea divisible por 2, 3 y 5 debe ser un multiple de la Least Common Multiple (LCM) de estos números.
+   
+   \[
+   LCM(2, 3, 5) = 30
+   \]
+   
+2. **Determinar cuántos múltiplos de 30 son menores o iguales a 2015:**
+   
+   Queremos encontrar los valores enteros positivos \( k \) que satisfan la condición:
+   
+   \[
+   30k \leq 2015
+   \]
+   
+   Para encontrar \( k \), dividimos ambos lados de la desigualdad por 30:
+   
+   \[
+   k \leq \frac{2015}{30} \approx 67.166\ldots
+   \]
+   
+   El número de valores enteros positivos \( k \) que satisfacen esta condición es la parte entera de la división:
+   
+   \[
+   k = \lfloor 67.166\ldots \rfloor = 67
+   \]
+   
+3. **Conclusión:**
+   
+   Por lo tanto, hay **67** números enteros positivos menores o iguales a 2015 que son divisibles por 2, 3 y 5.
+
+### Resposta:
+\[
+\boxed{B}
+\]

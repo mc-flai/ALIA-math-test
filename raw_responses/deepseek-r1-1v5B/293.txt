@@ -1,0 +1,57 @@
+<think>
+Para resolver este problema, primero consideramos que Aitana escribe los números del 1 hasta el 100 en una fila. Luego, esborra las xifres que no han sido escritos, manteniendo su orden original. Finalmente, los xifres restantes se forman de forma que solo appearingen las veces múltiples de la número 2017.
+
+ Primero, identificamos cuáles son los números escritos másRFUOS por cada número 2017. Por ejemplo, el número 2017 aparece en diferentes rutes: 2017, 1942017, 1982017, etc., dependiendo de cómo se escoge el número que forma la raíz del número scrito.
+
+Ahora, analizaré las posibles combinaciones para obtener la màima cantidad de còpies. Probamos con diferentes combinaciones de números y verificamos cuántas veces aparecen las xifres 2, 0, y 1 en las raíces correspondientes a los rutes.
+
+En este caso, Foundamos que la máxima cantidad de còpies que podremos obtener es de 7 xifres.
+</think>
+
+Para resolver el problema, seguiremos estos pasos:
+
+1. **Determinar los números escritos**: Aitana escribe los números del 1 al 100 en una fila.
+
+2. **Identificar las raíces**: Identificamos las raíces de cada número que contienen la secuencia 2,0,1 (representando la cantidad de còpies) o las demás fluctuaciones.
+
+3. **Formar rutas**: Llevamos estos números a diferentes rutas para formar las raíces necesarias.
+
+4. **Contar las xifres restantes**: Contamos las xifres que aparecen en las raíces y verificamos cuántas veces aparecen las xifres 2, 0 y 1.
+
+5. **Determine la máxima cantidad**: La respuesta willable está determinada por la máxima cantidad de còpies que podremos obtener siguiendo esta estructura.
+
+**Raonamiento detallado:**
+
+- Aitana escribe los números del 1 al 100 en una fila:
+
+```
+1 2 3 4 ... 9 10 11 ... 99 100
+```
+
+- Identificamos las raíces de estos números que contienen la secuencia 2,0,1.
+
+- Por ejemplo:
+  - 2017: Raíz = 2017 (dóble ruta)
+  - 1942017: Raíz = 194
+  - 1982017: Raíz = 198
+  - 2002017: Raíz = 200
+
+- Llevamos estos números a diferentes rutas para formar las raíces necesarias:
+  - Ruta 1: 2017 (dóble)
+  - Rota 2: 194
+  - Rota 3: 198
+  - Rota 4: 200
+
+- Contamos las xifres que aparecen en las raíces y verificamos cuántas veces aparecen las xifres 2, 0 y 1.
+
+- Por ejemplo:
+  - 2017 aparece dos veces.
+  - 194 aparece un vez.
+  - 198 aparece un vez.
+  - 200 aparece una vez.
+
+- Contamos las xifres que aparecen en las raíces y verificamos cuántas veces aparecen las xifres 2, 0 y 1. En este caso, la máxima cantidad de còpies es de **7** xifres.
+
+Por lo tanto, laRespuesta correcta es:
+
+\boxed{B}

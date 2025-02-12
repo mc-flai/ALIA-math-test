@@ -1,0 +1,19 @@
+Raonament:
+Primer, calculem els factorials dels primers nombres i observem la xifra de les unitats:
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+5! = 120
+6! = 720
+7! = 5040
+8! = 40320
+A partir de 5!, la xifra de les unitats sempre és 0. Això és perquè 5! = 5 * 4 * 3 * 2 * 1 = 120, i tots els factorials posteriors tindran un factor 5 i un factor 2, per tant, el seu producte serà un múltiple de 10, i la xifra de les unitats serà 0.
+
+Per tant, per trobar la xifra de les unitats de la suma 1! + 2! + 3! + 4! + ... + 2016!, només hem de considerar la suma de les xifres de les unitats dels primers quatre factorials, ja que tots els altres tindran 0 com a xifra de les unitats.
+
+La suma de les xifres de les unitats dels primers quatre factorials és:
+1 + 2 + 6 + 4 = 13
+La xifra de les unitats d'aquesta suma és 3. Com que tots els factorials a partir de 5! tenen 0 com a xifra de les unitats, la xifra de les unitats de la suma total serà la mateixa que la xifra de les unitats de la suma dels primers quatre factorials, que és 3.
+
+Resposta: C)

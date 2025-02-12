@@ -1,0 +1,16 @@
+Raonament:
+Per resoldre aquest problema, hem de trobar combinacions de sis nombres diferents d'una xifra (del 0 al 9) que, multiplicats, donin un nombre de tres xifres (entre 100 i 999).
+
+Primer, observem que el 0 no pot ser un dels factors, ja que el producte seria 0. Per tant, els nombres que podem utilitzar són del 1 al 9.
+
+Comencem provant amb els nombres més petits: 1, 2, 3, 4, 5 i 6. El seu producte és 1 * 2 * 3 * 4 * 5 * 6 = 720. Aquest és un nombre de tres xifres.
+
+Ara, hem de veure si podem trobar altres combinacions. Si substituïm el 6 per un nombre més gran, el producte augmentarà. Per exemple, si substituïm el 6 pel 7, el producte serà 1 * 2 * 3 * 4 * 5 * 7 = 2520, que és un nombre de quatre xifres. Per tant, no podem augmentar el nombre més gran.
+
+Si substituïm el 5 pel 6, el producte serà 1 * 2 * 3 * 4 * 6 * 7 = 1008, que és un nombre de quatre xifres. Per tant, no podem augmentar el nombre més petit.
+
+Si substituïm el 1 per un nombre més gran, el producte augmentarà. Per exemple, si substituïm l'1 pel 2, el producte serà 2 * 3 * 4 * 5 * 6 * 7 = 5040, que és un nombre de quatre xifres.
+
+Per tant, la combinació 1, 2, 3, 4, 5 i 6 és l'única combinació de sis nombres diferents d'una xifra que dona un nombre de tres xifres.
+
+Resposta: D)

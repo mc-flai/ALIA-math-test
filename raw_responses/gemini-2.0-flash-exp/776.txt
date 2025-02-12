@@ -1,0 +1,19 @@
+Raonament:
+Primer, calculem els primers termes de la successió per veure si hi ha algun patró:
+a₁ = 49
+a₂ = (4 + 9 + 1)² = 14² = 196
+a₃ = (1 + 9 + 6 + 1)² = 17² = 289
+a₄ = (2 + 8 + 9 + 1)² = 20² = 400
+a₅ = (4 + 0 + 0 + 1)² = 5² = 25
+a₆ = (2 + 5 + 1)² = 8² = 64
+a₇ = (6 + 4 + 1)² = 11² = 121
+a₈ = (1 + 2 + 1 + 1)² = 5² = 25
+
+Observem que a partir de a₅, la successió es repeteix: 25, 64, 121, 25, 64, 121, ...
+Això vol dir que la successió és periòdica a partir de a₅, amb un període de 3.
+Per trobar a₂₀₁₉, hem de veure quin terme de la seqüència periòdica correspon a l'índex 2019.
+Com que la seqüència periòdica comença a a₅, considerem l'índex 2019 - 4 = 2015.
+Dividim 2015 per 3 (la longitud del període): 2015 = 3 * 671 + 2.
+Això significa que a₂₀₁₉ correspon al segon terme de la seqüència periòdica, que és 64.
+
+Resposta: C)

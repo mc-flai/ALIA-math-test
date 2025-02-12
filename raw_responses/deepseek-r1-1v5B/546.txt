@@ -1,0 +1,76 @@
+<think>
+Para resolver este problema, primero notemos que los cangurs A y B están jugando entre sí en un pauta rectangular. El primer salto del cangur A es de 6 metros de longitud, y cada salto del cangur B aumenta su longitud por un metro de forma adicional: el primer salto es 1 m, el segundo es 2 m, el tercero es 3 m, y así sucesivamente.
+
+Primero, analizamos cómo las sucesiones de longitudes van. El primer salto del cangur A es 6 m, mientras que el primer salto del cangur B es 1 m. Por lo tanto, después del primer salto, los cangurs B y A están a diferentes distancias del piso inferior.
+
+Ahora, observamos que cada vez que un salto se hace de un cangur, el otro está a una distancia mayor. Al finalizar un salto, ambos cangurs serán en la misma posición, lo cual nos detección en los pasos consecutivos.
+
+Para encontrar el número total de saltos que require el cangur B para catchesar al cangur A, calculamos cuántos salidos necesitan para que las distancias sean iguales. Esto suena like un problema de congruencias.
+
+Finalmente, determinamos que el cangur B debe hacer 10 salitos para que catchesara al cangur A.
+</think>
+
+Para resolver este problema, analizaremos los movimientos del cangur B y ver cómo se approacha a los jugadores.
+
+**Step-by-Step Explanation:**
+
+1. **Entender las Distancias:**
+   - El primer salto del cangur A es de 6 metros.
+   - El primer salto del cangur B es de 1 metro, el segundo de 2 metros, el tercero de 3 metros, etc.
+
+2. **Analyze the Progression of Each Cangur:**
+   - **Cangur A (máximo):** La secuencia de distancias que cubre los salios de cangur A es 6 m, 12 m, 18 m, ...
+     \[
+     a_n = 6n \quad \text{para } n=1,2,3,\dots
+     \]
+   - **Cangur B (mínimo):** La secuencia de distancias que cubre los salios de cangur B es:
+     \[
+     b_m = \frac{m(m+1)}{2} \quad \text{para } m=1,2,3,\dots
+     \]
+     Donde \(b_1 = 1\), \(b_2 = 3\), \(b_3 = 6\), etc.
+
+3. **Determinar la Distancia de Catches para el Cangur B:**
+   - El cangur B quiere catchesar al cangur A después de un número de salitos \(m\).
+   - Cuando catchesa a A, sus distancias serán iguales:
+     \[
+     6n = \frac{m(m+1)}{2}
+     \]
+     donde \(n\) es el número total de salios del cangur A y \(m\) es el número de salios necesarios para catchesar a B.
+
+4. **Resolver la Ecuación:**
+   - Multiplicamos ambos lados por 2 para eliminar el denominador:
+     \[
+     12n = m(m+1)
+     \]
+     Esto dice que \(m(m+1)\) debe ser un multiple de 12.
+
+5. **Encontrar la Smaller \(m\):**
+   - Busquemos el menor \(m\) que satisfaga esta ecuación.
+   - Protagonizamos los valores enteros para ver en qué valor se convierte la ecuación.
+     \[
+     m^2 + m - 12n = 0
+     \]
+     Para que \(m\) sea entero, el discriminant debe ser un cuadrado perfecto:
+     \[
+     D = 1 + 48n = k^2
+     \]
+     donde \(k\) es un número entero.
+
+6. **Encuentra la Smaller Solución:**
+   - Reemplazamos los valores de \(n\) y verifiquemos cuál sea el menor \(m\):
+     - Para \(n=1\): \(D = 49\), \(k=7\), \(m=(-1+7)/2=3\)
+     - Verificar: \(\frac{3(3+1)}{2}=6\), y \(6=6\) ⇒ Catchesa después de 3 salitos.
+
+   - Sin embargo, el cangur B necesita catchesar a A después de más salitos ya que su primer salto también está a la altura de 1 m.
+
+7. **Realizar la corrección:**
+   - Observamos que cuando \(n=6\) (caminos): \(D = 1 + 48*6 = 289\), \(k=17\), \(m=(−1+17)/2=8\)
+     \[
+     \frac{8*9}{2}=36 \quad \text{y} \quad 6n=36
+     \]
+   - Ahora, catchesa después de 8 salitos. Sin embargo, revisando los datos del problema:
+
+**Correcto:**
+- El cangur B necesita catchesar a A después de 10 salitos.
+
+La respuesta correcta es **B) 10**.

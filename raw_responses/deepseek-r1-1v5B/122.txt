@@ -1,0 +1,27 @@
+<think>
+Bé, quiero resolver este problema sobre coloring los vértices de un cubo de manera que cada vértice y todos los vértices que se encuentran por arista tengan diferentes colores. ¿Cuántos colores más littleres necesitaríamos usar?
+
+Primero, entiendo que un cubo tiene 8 vértices y 12 aristas. Cada arista conecta dos vértices, así que cada uno de estos debe tener una coloración diferente. Debo asegurarme de que no haya dos vértices adyacentes con las misma color.
+
+También he pensado sobre la idea de un cubo como un grafo k-regular con k=3, lo que significa que cada vértice es linked por tres aristas. Esto sugiere que el grafo tiene una estructura triple que puede ser limitada por un número limited de colores.
+
+Ahora, si considero solo dos colores, podríamos intentar colorear los vértices de manera alternativa, pero sé que en la estructura del cubo, cada arista restringe a dos vértices. Esto significa que se necesitarán más de dos colores, ya que no es posible coloring con dos colores sin que dos vértices adyacentes tengan el mismo color.
+
+Considerando este problema, intenté con tres colores y verifiquéé si puedo-colorizar el cubo de sucha manera. Supongamos que coloremo los vértices alternativamente: en el primer borde rojo, seguido del segundo borroble verde, etc., pero es importante asegurarme de que no se repite la misma coloración por arista.
+
+Sin embargo, como he encounterado somefractura durante mi intento, parece que no puedo-colorizar correctamente los vértices con tres colores. Por lo tanto, probablemente necesito usar cuatro colores.
+
+Finalmente, analizando las opciones proporcionadas: A) 2, B) 4, C) 5, D) 6 y E) 6, veo que las opciones más adecuadas son B) 4 y E) 6. Dado que el cubo es un grafo bipartit que puede ser colorido con dos colores alternativo, pero como ya lo he probado y no funciona, parece que solo fourearíamos necesitarlo.
+
+Finalmente, decido que requiere cuatro colores.
+</think>
+
+Raonament: 
+
+Un cubo tiene 8 vértices y 12 aristas. Cada vértice está conectado por tres aristas, lo que hace el grafo k-regular con k=3. Necesitamos colorear los vértices de manera que no dos vértices adyacentes tengan la misma color. Si usamos dos colores alternativo, es posible que no funcione correctamente porque cada vértice y su vecino están en el otro的颜色, pero se necesitarán más colores para evitar las arista.
+
+Si consideramos tres colores, sería suficiente si no existiera un problema de recíproco, pero como la estructura del cubo induce que cada vértice y su vecino tengan diferentes colores, pero también el vecinal de vecinal (el otro en el mismo borde), necesitamos más colores.
+
+Aplicando esta lógica, se demuestra que es necesario usar cuatro colores para coloring un cubo de manera que every vertex and its adjacent vertices have different colors. Por lo tanto, la respuesta correcta es B) 4.
+
+Resposta: B) 4

@@ -1,0 +1,35 @@
+Raonament:
+Perquè un subconjunt de 5 elements formi una progressió aritmètica, la diferència entre elements consecutius ha de ser constant. Sigui aquesta diferència 'd'. El subconjunt tindrà la forma {a, a+d, a+2d, a+3d, a+4d}, on 'a' és el primer terme i 'd' és la diferència. Tots els elements han d'estar entre 1 i 17, ambdós inclosos.
+
+Hem de trobar totes les possibles combinacions de 'a' i 'd' que compleixin aquesta condició.
+
+*   Si d=1:
+    *   a=1: {1, 2, 3, 4, 5}
+    *   a=2: {2, 3, 4, 5, 6}
+    *   ...
+    *   a=13: {13, 14, 15, 16, 17}
+    Hi ha 13 progressions amb d=1.
+
+*   Si d=2:
+    *   a=1: {1, 3, 5, 7, 9}
+    *   a=2: {2, 4, 6, 8, 10}
+    *   ...
+    *   a=9: {9, 11, 13, 15, 17}
+    Hi ha 9 progressions amb d=2.
+
+*   Si d=3:
+    *   a=1: {1, 4, 7, 10, 13}
+    *   a=2: {2, 5, 8, 11, 14}
+    *   ...
+    *   a=5: {5, 8, 11, 14, 17}
+    Hi ha 5 progressions amb d=3.
+
+*   Si d=4:
+    *   a=1: {1, 5, 9, 13, 17}
+    Hi ha 1 progressió amb d=4.
+
+Si d=5, el primer terme hauria de ser 1 i el conjunt seria {1, 6, 11, 16, 21}, però 21 no està dins del rang. Per tant, no hi ha més progressions possibles.
+
+El nombre total de subconjunts és 13 + 9 + 5 + 1 = 28.
+
+Resposta: E)

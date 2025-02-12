@@ -1,0 +1,15 @@
+Raonament:
+1. **Descomposició de la igualtat:** La igualtat ONE + ONE + ... + ONE = 2331 es pot expressar com a N * ONE = 2331, on N és el nombre de vegades que apareix la paraula ONE.
+2. **Factorització de 2331:** Per trobar el valor de N, hem de factoritzar 2331. 2331 = 3 * 7 * 111 = 3 * 7 * 3 * 37 = 3^2 * 7 * 37.
+3. **Anàlisi de les possibilitats:** Sabem que ONE és un nombre de tres xifres diferents. Per tant, hem de trobar un factor de 2331 que sigui un nombre de tres xifres diferents. Les possibles combinacions de factors són:
+    * 3 * 7 = 21 (no és de tres xifres)
+    * 3 * 37 = 111 (no té xifres diferents)
+    * 7 * 37 = 259 (podria ser ONE)
+    * 3 * 3 * 7 = 63 (no és de tres xifres)
+    * 3 * 3 * 37 = 333 (no té xifres diferents)
+    * 3 * 7 * 37 = 777 (no té xifres diferents)
+4. **Identificació de ONE:** L'única combinació que ens dona un nombre de tres xifres diferents és 259. Per tant, ONE = 259.
+5. **Càlcul de N:** Si ONE = 259, llavors N = 2331 / 259 = 9.
+6. **Verificació:** 9 * 259 = 2331.
+
+Resposta: B)

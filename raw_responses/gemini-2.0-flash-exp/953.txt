@@ -1,0 +1,16 @@
+Raonament:
+1. **Coordenades:** Assignem coordenades als punts per facilitar els càlculs. Considerem que A és l'origen (0,0). Llavors, B=(2,0), C=(2,2), D=(0,2), E=(1,0) i F=(0,1).
+
+2. **Vector CF:** El vector CF és C - F = (2,2) - (0,1) = (2,1).
+
+3. **Punt G:** Com que 3CG = 2GF, el punt G divideix el segment CF en la proporció 2:3. Per tant, podem trobar les coordenades de G utilitzant la fórmula de la divisió d'un segment:
+   G = (3C + 2F) / (3+2) = (3(2,2) + 2(0,1)) / 5 = (6,6) + (0,2) / 5 = (6,8)/5 = (6/5, 8/5).
+
+4. **Vectors BE i BG:** Calculem els vectors BE i BG:
+   BE = E - B = (1,0) - (2,0) = (-1,0)
+   BG = G - B = (6/5, 8/5) - (2,0) = (6/5 - 10/5, 8/5) = (-4/5, 8/5)
+
+5. **Àrea del triangle BEG:** L'àrea del triangle BEG es pot calcular utilitzant el determinant de les coordenades dels vectors BE i BG dividit per 2:
+   Àrea(BEG) = 1/2 * |(-1)(8/5) - (0)(-4/5)| = 1/2 * |-8/5| = 1/2 * 8/5 = 4/5
+
+Resposta: B)

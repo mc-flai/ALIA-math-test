@@ -1,0 +1,63 @@
+<think>
+Primejament, intentem resoldre la pregunta proposta. Queremos encontrar todos los números enteros n que satisfacen que el valor absoluto de n² - 2n - 3 es un número primo.
+
+Realizo una tabulación de valores para diferentes n y verifico si |n² - 2n - 3| es primo:
+
+- Para n = -1: |-1 + 2 - 3| = |-2| = 2, que és primer.
+- Para n = 0: |0 - 0 - 3| = | -3 | = 3, que és primer.
+- Para n = 1: |1 - 2 - 3| = |-4| = 4, no es primer.
+- Para n = 2: |4 - 4 - 3| = |-3| = 3, primer.
+- Para n = 3: |9 - 6 - 3| = |0| = 0, non primer.
+- Para n = 4: |16 - 8 - 3| = |5| = 5, primer.
+- Para n = 5: |25 - 10 - 3| = |12| = 12, no es primer.
+- Para n = 6: |36 - 12 - 3| = |21| = 21, non primer.
+
+Continuando con n = 7: |-49 + 14 - 3| = |-38| = 38, no es primer. Y así sucesivamente.
+
+Observo que para n ≥ 6, |n² - 2n - 3| crece y no es primo, ya que los números se pueden dividir por más número mayor que 1.
+</think>
+
+Para determinar cuántos números enteros \( n \) satisfyen la propiedad de que \( |n^2 - 2n - 3| \) es un número primo, propongemos el siguiente análisis:
+
+**Paso 1:** Expresamos el polinomio dentro del valor absoluto como \( P(n) = |n^2 - 2n - 3| \).
+
+**Paso 2:** Factorizamos la expresión polynomialial dentro de la absolute: 
+\[
+n^2 - 2n - 3 = (n - 3)(n + 1)
+\]
+Por lo tanto, \( P(n) = |(n - 3)(n + 1)| \).
+
+**Paso 3:** Para que \( P(n) \) sea un número primo, debe ser igual a 2 o 3, ya que los primos son números greater than 1 no divisibles por excepto por ±1 y ±themselves.
+
+**Paso 4:** Luego, analizamos los valores de \( n \) que satisfan:
+\[
+|(n - 3)(n + 1)| = 2 \quad \text{ou} \quad |(n - 3)(n + 1)| = 3
+\]
+
+**Paso 5:** Identificamos las soluciones para ambos casos:
+
+1. **Para \( |(n - 3)(n + 1)| = 2 \):**
+   - \( (n - 3)(n + 1) = 2 \) ⇒ \( n^2 - 2n - 5 = 0 \). No hay soluciones enteras.
+   - \( (n - 3)(n + 1) = -2 \) ⇒ \( n^2 - 2n + 1 = 0 \) ⇒ \( n = 1 \).
+   
+   **Soluciones:** \( n = 1 \).
+
+2. **Para \( |(n - 3)(n + 1)| = 3 \):**
+   - \( (n - 3)(n + 1) = 3 \) ⇒ \( n^2 - 2n - 6 = 0 \). No hay soluciones enteras.
+   - \( (n - 3)(n + 1) = -3 \) ⇒ \( n^2 - 2n + 2 = 0 \). No hay soluciones enteras.
+
+**Paso 6:** Enumeramos las soluciones identificadas:
+- \( n = 1 \)
+- \( n = 4 \) (ya verificado: \( |16 - 8 - 3| = 5 \), que es primer)
+
+**Paso 7:** Verificamos si hay más números enteros que satisformen la condición.
+
+- Para \( n = -2 \): \( |-4 + 4 - 3| = 3 \) (primer)
+- Para \( n = 1 \): ya identificado
+- Para \( n = 4 \): ya identificado
+
+**Paso 8:** Conclusión: Hay dos números enteros, \( n = -2 \) y \( n = 4 \), que satisfacen la propiedad.
+
+\[
+\boxed{B}
+\]

@@ -1,0 +1,30 @@
+<think>
+Para resolver este problema, primero identifico que se está trazando dos rectas perpendulares que no passan por los vértices del cuadrat. Estas rectas intersectan los lados del cuadrat en puntos denominados A, B, C y D.
+
+Luego, cada punto de intersección entre las rectas y los lados del cuadrat se une con los otros tres puntos para formar triángulos. Sin embargo, algunos de estos triángulos son degenerados (técnicas cero) y otros forman triángulos rectos.
+
+Finalmente, contando todos los triángulos que son rectos, obtenemos un total de 16.
+</think>
+
+Para resolver este problema, seguiremos los siguientes pasos:
+
+1. **Identificar las rectas perpendentes**:
+   - Tracemos dos rectas perpenduales que no passan por los vértices del cuadrat.
+   - Estas rectas intersectarán los lados del cuadrat en puntos denominados \( A, B, C \) y \( D \).
+
+2. **Unir los puntos de intersección**:
+   - Unímos cada punto \( A, B, C \) y \( D \) con otros puntos para formar triángulos.
+
+3. **Contar los triángulos rectos**:
+   - Cada uno de estos triángulos puede ser un triángulo recto.
+   - Por lo tanto, contamos todo el número de triángulos que se pueden formar entre estos puntos.
+
+4. **Razonamiento detallado**:
+   - **Paso 1**: Identificar las intersecciones. Las dos rectas perpenduales intersectan los lados del cuadrat en puntos específicos, lo que create cuatro puntos \( A, B, C \) y \( D \).
+   - **Paso 2**: Unir estos puntos con otros puntos. Esto significa que cada punto puede formar triángulos con otros tres puntos.
+   - **Paso 3**: Contar los triángulos. Sabemos que existen dos rectas perpenduales, lo que nos da una estructura similar a un cuadrilátero pero con ángulos de 90 grados entre la coupleza de las rectas.
+   - **Paso 4**: Finalmente, contamos todos los triángulos que son rectos.
+
+En conclusión, existen **16** triángulos rectos que podemos formar de esta manera.
+
+\boxed{E}

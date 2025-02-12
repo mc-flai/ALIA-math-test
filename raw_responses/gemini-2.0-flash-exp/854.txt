@@ -1,0 +1,14 @@
+Raonament:
+Analitzem cada dia de la setmana per veure si les dues frases poden ser dites per la llebre segons les seves regles:
+
+*   **Dilluns:** La llebre menteix. Si diu "Ahir vaig dir mentides", seria veritat (ja que diumenge diu la veritat), per tant, no pot ser dilluns. Si diu "Demà també diré mentides", seria veritat (ja que dimarts menteix), per tant, no pot ser dilluns.
+*   **Dimarts:** La llebre menteix. Si diu "Ahir vaig dir mentides", seria veritat (ja que dilluns menteix), per tant, no pot ser dimarts. Si diu "Demà també diré mentides", seria mentida (ja que dimecres diu la veritat), per tant, no pot ser dimarts.
+*   **Dimecres:** La llebre diu la veritat. Si diu "Ahir vaig dir mentides", seria veritat (ja que dimarts menteix). Si diu "Demà també diré mentides", seria mentida (ja que dijous menteix). Per tant, dimecres no pot ser.
+*   **Dijous:** La llebre menteix. Si diu "Ahir vaig dir mentides", seria mentida (ja que dimecres diu la veritat), per tant, no pot ser dijous. Si diu "Demà també diré mentides", seria veritat (ja que divendres menteix), per tant, no pot ser dijous.
+*   **Divendres:** La llebre menteix. Si diu "Ahir vaig dir mentides", seria mentida (ja que dijous menteix), per tant, no pot ser divendres. Si diu "Demà també diré mentides", seria mentida (ja que dissabte diu la veritat), per tant, no pot ser divendres.
+*   **Dissabte:** La llebre diu la veritat. Si diu "Ahir vaig dir mentides", seria veritat (ja que divendres menteix). Si diu "Demà també diré mentides", seria veritat (ja que diumenge diu la veritat). Per tant, dissabte podria ser.
+*   **Diumenge:** La llebre diu la veritat. Si diu "Ahir vaig dir mentides", seria mentida (ja que dissabte diu la veritat), per tant, no pot ser diumenge. Si diu "Demà també diré mentides", seria mentida (ja que dilluns menteix), per tant, no pot ser diumenge.
+
+L'únic dia que compleix les condicions és dissabte.
+
+Resposta: D)

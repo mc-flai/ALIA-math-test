@@ -1,0 +1,70 @@
+<think>
+Vigia com que cada part del entrenament ha tingut un temps específico. Sabemos que l'escalfament ha durat la tercera part de tot el temps total, el servei durant 20 minuts i la partit ha durat 12 minuts més que l'escalfament.
+
+Es possible que useguem a representar el temps total de l'entrenament com un nombre x. L'escalfament era x/3. El servei era 20 minuts, i la partit era x/3 +12 minuts.
+
+La suma de tos els parts equa les temps totals del entrenament, donades que 20 + (x/3 +12) = x.
+
+Simplificant: 20 +x/3 +12 = x ⇒ 32 + x/3 = x ⇒ x - x/3 = 32 ⇒ 2x/3 =32 ⇒ x=48 min.
+
+Per a donar una alba, la durada total de l'entrenament és de 48 min. Totes les posicions s'apropen sense problemes.
+</think>
+
+**Raonament:**
+
+1. **Definim el temps total de l'entrenament:**
+   
+   Com que cada part del entrenament ha tingut un temps específico, designem el temps total de l'entrenament com \( x \) min.
+
+2. **Identificem les parts d'entrenament:**
+
+   - **Escalfament:** La tercera part del temps total, per això ho expressem com:
+     \[
+     \text{Tempus escalfament} = \frac{x}{3}
+     \]
+     
+   - **Pràctica durant 20 minuts:**
+     \[
+     \text{Tempus servei} = 20 \text{ min}
+     \]
+
+   - **Partit:** La partit ha durat 12 minuts més que l'escalfament:
+     
+     \[
+     \text{Tempus partit} = \frac{x}{3} + 12
+     \]
+
+3. **Sumem tos els parts:**
+
+   Com així, la suma de tos els parts iguala el temps total de l'entrenament:
+   \[
+   \frac{x}{3} + 20 + \left( \frac{x}{3} +12 \right) = x
+   \]
+
+4. **Simplificem la equació:**
+
+   Simplificant la suma:
+   \[
+   \frac{x}{3} + 20 + \frac{x}{3} + 12 = x \\
+   \Rightarrow 2\cdot \frac{x}{3} + 32 = x \\
+   \Rightarrow \frac{2x}{3} + 32 = x
+   \]
+
+5. **Rendre la expressió sense fractes:**
+
+   Aftà així, restem \(\frac{2x}{3}\) a ambolències:
+   \[
+   \frac{2x}{3} + 32 - \frac{2x}{3} = x - \frac{2x}{3} \\
+   \Rightarrow 32 = \frac{x}{3}
+   \]
+
+6. **Calculem el temps total \( x \):**
+   
+   Multiplicant amb 3:
+   \[
+   x = 32 \times 3 = 96 \text{ min}
+   \]
+
+**Resposta:**
+
+\boxed{B) \; 96\,\min}

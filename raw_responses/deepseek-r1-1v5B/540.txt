@@ -1,0 +1,37 @@
+<think>
+Para determinar cuántos de los 100 números se encuentran antes del porcentaje n2018 + (n + 1)2017 en el patró n, es preciso analizar la secuencia de números. La secuencia empieza en n=1: 12018 + 22017 y termina con n=100: 1002018 + 1012017.
+
+Primero, notamos que los números se suman de forma parcial, donde el primer término del primer pairo es 12018 y el segundo es 22017. Cada siguiente suma inicia con un número más grande en el primer summedad: 22018 + 32017, y así sucesivamente hasta 992018 + 1002017, y finalmente termina con 1002018 + 1012017.
+
+Luego, se observa que el porcentaje n2018 + (n + 1)2017 ocupa la posición n=1. Queremos saber cuántos números se encuentran antes de este porcentaje en el patró n. 
+
+Para hacerlo, analizamos la secuencia y determinamos que los números del primer pairo hasta el último forman una serie de 100 términos. Dado que el porcentaje se encuentra en el primer pairo, y consideringa que los porcentados se incrementalizan a través de n, necesitamos comparar cómo se distribuyen estos 100 términos con la secuencia de n.
+
+Realizando una analítica detallada, observamos que los números se suman de forma que el primer summedad es siempre un número mayor que el segundo. Por lo tanto, las sumas forman una serie ascendente, y el porcentaje n2018 + (n + 1)2017 se encuentra en la posición n=1. 
+
+Finalmente, determinamos que los números antes del porcentaje son todos los precedentes, lo que leads a concluir que hay 99 números antes de este porcentaje.
+</think>
+
+Para resolver el problema, analizamos la secuencia de números y determinamos cuántos números se encuentran antes del porcentaje n2018 + (n + 1)2017 en el patró n.
+
+**Raonament:**
+
+1. **Determinar los valores de n y su suma:**
+   - El primer summedad es 12018 + 22017.
+   - La último suma es 1002018 + 1012017.
+   - Por lo tanto, la secuencia de n tiene 100 términos.
+
+2. **Identificar la posición del porcentaje n2018 + (n + 1)2017:**
+   - El porcentaje se encuentra en el pairo n=1: 12018 + 22017 = 34035.
+   - Es la primera suma en la secuencia.
+
+3. **Determinar cuántos números son antes del porcentaje:**
+   - Dado que los números son sumados de forma ascendente, los precedentes del pairo n=1 (34035) son todos los números anteriores.
+   - Por lo tanto, hay 99 números antes del porcentaje.
+
+**Respuesta:**
+
+E
+
+### Resposta:
+\boxed{E}

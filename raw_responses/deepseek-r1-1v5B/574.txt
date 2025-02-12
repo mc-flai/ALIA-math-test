@@ -1,0 +1,46 @@
+<think>
+Para resolver este problema, primero notamos que un rectángulo blato de 10 × 9 se divide en 90 quadratits unitaris. Aquest rectangle té un costat roja de 10 units i el llatr d'10 units. Llaminem tots els quadratits unitaris que tenen almenys un costat roig de roig, i lateram tots els quadratits unitaris que tenen almenys un costat comunitari amb les rouds.
+
+Para calcular el nombre de quadratits blancs que resten, primero determinaremos el número de quadratits que han sido pintad. Observem que en la recta vertical (de 10 units), cada file tiene 9 unitats (diferente de l'arc inferior). Com prenemos una de les filets per file vertical, es dijé 9 × 10 = 90 quadratits. Aquest total coincideix amb el nombre de quadratits que tenen almenys un costat roig.
+
+Ahora, calculem el número de quadratits blancs restants. Com tenim un rectángulo de 10 × 9, la diagonal del rectangle es de 10 units. La longitud de la diagonal es 10 units. Així, en la diagonal, no calentem qualsevol unitats quadr sense que sengues el roj. Com l'amplitud de la diagonal es igual a l'arretmentat, tots els unitats quadrades adjacentals aldiagonal seran blancs.
+
+Entonces, en la diagonal principal del rectángulo, tenim 10 unitats. Així, la quantitat total de unitats quadrades blancs restantes seréigem el número de unitats quadradas adjacentals a la diagonal. En un rectángulo de m × n, la longitud de la diagonal es igual a la raíz de (m² + n²). Iremíamos a raonar que en l'exserious del rectangle 10×9, la longitud de la diagonal és 361, pero no he calculat-lo correcament.
+
+Ahora, observem que en un rectángulo amb dimensions m × n, la diagonal es de m² + n². En este caso, m = 10 i n = 9, per tant, la diagonal és √(10² + 9²) = √241 ≈15.524 units. I don't know how that helps.
+
+De vegades, en un rectángulo de m × n, el número de unitats blancs alrededor de la diagonal es (m-1)(n-1). En este cas, (10 - 1) × (9 - 1) = 9 × 8 =72. Així, com tenim 72 unitats quadrades blancs alredor de la diagonal, que serien adjacentals a la diagonal.
+
+Entonces, la quantitat total de unitats quadradas que han been pintad es 90. Com el rectangle es de 10 × 9 = 90 unitats quadradas, i haveit 72 unitats blancs alredor de la diagonal, la quantitat restada sería 72 - (10 + 9) + 1 = 56. Així, el número de unitats quadrades blancs que resten seréigem 72 - 19 +1 =54.
+
+Per a tot altra, com que he calculat que el nombre de unitats blancs restantes esigual a la measures de la diagonal (10 ×9) menos la longitud de la diagonal (aproximativament 15.524), pero no teníem que usef-lo directament.
+</think>
+
+Para resolver el problema, seguiremos estos pasos:
+
+1. **Determinar el número de unitats blancas restantes:**
+   - El rectángulo es 10 × 9, per tant, ha dividido en 90 quadratits unitaris.
+   - Llamem la quantitat d'unitats blancs que resten denotada com \( Q \).
+   
+2. **Calcular el número de unitats pintadas:**
+   - Totals els 90 quadratits unitaris que tenen almenys un costat roig.
+   - El nombre total de unitats pints ( \( P \) ) esigual a:
+     \[
+     P = m \times n - (m + n - 1)
+     \]
+     On \( m = 9 \) i \( n = 8 \), per així que:
+     \[
+     P = 9 \times 8 =72
+     \]
+
+3. **Calcular \( Q \):**
+   - El nombre total de unitats quadrades en el rectángulo esigual a:
+     \[
+     m \times n =10 \times 9=90
+     \]
+   - La quantitat de unitats blancs restantes seréigem:
+     \[
+     Q = P + (m + n - 1) - m \times n =72 +18 -90=54
+     \]
+
+**Respuesta:** \(\boxed{E}\)

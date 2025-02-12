@@ -1,0 +1,23 @@
+Raonament:
+Sigui N un nombre de dues xifres. Podem expressar N com 10a + b, on 'a' és la xifra de les desenes i 'b' és la xifra de les unitats. La suma de les xifres de N és a + b. Segons l'enunciat, el quocient de N entre la suma de les seves xifres és 8. Per tant, tenim l'equació:
+
+(10a + b) / (a + b) = 8
+
+Multiplicant ambdós costats per (a + b), obtenim:
+
+10a + b = 8(a + b)
+10a + b = 8a + 8b
+10a - 8a = 8b - b
+2a = 7b
+
+Ara hem de trobar valors enters per a 'a' i 'b' que compleixin aquesta equació, sabent que 'a' i 'b' són dígits entre 0 i 9. Com que 2a és un nombre parell, 7b també ha de ser parell, i per tant, 'b' ha de ser parell. Les opcions per a 'b' són 0, 2, 4, 6 i 8.
+
+Si b = 0, 2a = 7*0 = 0, llavors a = 0, però N no seria un nombre de dues xifres.
+Si b = 2, 2a = 7*2 = 14, llavors a = 7. N seria 72. La suma de les xifres és 7+2=9. 72/9=8. Aquesta és una solució vàlida.
+Si b = 4, 2a = 7*4 = 28, llavors a = 14, que no és un dígit vàlid.
+Si b = 6, 2a = 7*6 = 42, llavors a = 21, que no és un dígit vàlid.
+Si b = 8, 2a = 7*8 = 56, llavors a = 28, que no és un dígit vàlid.
+
+L'única solució vàlida és quan b = 2 i a = 7, on N = 72. La xifra de les unitats és 2.
+
+Resposta: B)

@@ -1,0 +1,31 @@
+Raonament:
+
+1. **Definir variables:**
+   - Sigui `d` la distància total entre P i Q.
+   - La velocitat de Cris és `v_c = d/60` (distància per minut).
+   - La velocitat de Roc és `v_r = d/90` (distància per minut).
+
+2. **Distància recorreguda en funció del temps:**
+   - Després de `t` minuts, Cris ha recorregut una distància de `d_c = v_c * t = (d/60) * t`.
+   - Després de `t` minuts, Roc ha recorregut una distància de `d_r = v_r * t = (d/90) * t`.
+
+3. **Condició de trobada:**
+   - Es creuen quan la suma de les distàncies recorregudes per tots dos és igual a la distància total `d`. És a dir, `d_c + d_r = d`.
+
+4. **Resoldre l'equació:**
+   - Substituïm les expressions de `d_c` i `d_r` a la condició de trobada:
+     `(d/60) * t + (d/90) * t = d`
+   - Dividim tota l'equació per `d` (sabem que `d` no és zero):
+     `t/60 + t/90 = 1`
+   - Trobem un denominador comú (180):
+     `3t/180 + 2t/180 = 1`
+     `5t/180 = 1`
+   - Aïllem `t`:
+     `5t = 180`
+     `t = 180/5`
+     `t = 36`
+
+5. **Hora de trobada:**
+   - Es creuen 36 minuts després de les 10 del matí. Per tant, es creuen a les 10:36.
+
+Resposta: D)

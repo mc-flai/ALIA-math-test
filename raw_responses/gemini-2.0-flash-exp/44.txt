@@ -1,0 +1,24 @@
+Raonament:
+1. **Definir variables:**
+   - Sigui `p1` el preu del primer concert (9 €).
+   - Sigui `n1` el nombre d'espectadors del primer concert.
+   - Sigui `g1` els guanys del primer concert.
+   - Sigui `p2` el preu del segon concert (el que volem trobar).
+   - Sigui `n2` el nombre d'espectadors del segon concert.
+   - Sigui `g2` els guanys del segon concert.
+
+2. **Relacions:**
+   - `g1 = p1 * n1` (guanys = preu * nombre d'espectadors)
+   - `n2 = n1 + 0.50 * n1 = 1.5 * n1` (el nombre d'espectadors augmenta un 50%)
+   - `g2 = g1 + 0.20 * g1 = 1.2 * g1` (els guanys augmenten un 20%)
+   - `g2 = p2 * n2` (guanys del segon concert)
+
+3. **Substituir i resoldre:**
+   - Substituïm `g2` i `n2` en la darrera equació: `1.2 * g1 = p2 * (1.5 * n1)`
+   - Substituïm `g1` per `p1 * n1`: `1.2 * (p1 * n1) = p2 * (1.5 * n1)`
+   - Dividim ambdós costats per `n1`: `1.2 * p1 = p2 * 1.5`
+   - Aïllem `p2`: `p2 = (1.2 * p1) / 1.5`
+   - Substituïm `p1` per 9: `p2 = (1.2 * 9) / 1.5`
+   - Calculem: `p2 = 10.8 / 1.5 = 7.2`
+
+Resposta: D)

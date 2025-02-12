@@ -1,0 +1,27 @@
+<think>
+Dime que hi ha 2016 habitants quetenen el mateix problema, i cada uno de ellos no tiene més de 49 anys. Quavorsells pot expressar un nombre al menys que 49 que sigui la edat de quinsquiers habitants?
+
+Com que cada habitut pot tenir unaedat que maxima 49, si es possible que una persona sigue a l'edat major que 49. Si hi ha h habituat, al menys que 49 (h ≤ 48), donats que el maximo edat possible ser d1 = floor(49 - ε) i per se, per a tot h ≤ 48, h ≤ 49 - 1 ⇒ h ≤ 48. 
+
+Perquè pot expressar al menys de 49 (48), no capta el més petit que sigues a h ≥ 48, per què hi ha h = 48 habituat als maxim d'edat 48.
+
+Si h = 49, al menys que 49 (h ≤ 49 - ε) ⇒ h ≤ 48.999... ⇒ h = 48. 
+
+Si h = 50, al menys que 49 (h ≤ 48.999...) ⇒ h = 48.
+
+Per a tot h ≤ 49, la més granda edat possible que sigues al menys que 49 és 48.
+</think>
+
+**Raonament:**
+
+- **Total de habituat:** 2016 habituat
+- **Maxim d'edat per persona:** 49 anys
+- **Mostrant la més granda edat possible al menys que 49 (al maximals h = 48):**
+  - Si h = 48, l'edat maxima pot ser 48 anys.
+  - Si h = 49, per a tot i quin sigueix a l'edat superior a 48, h = 48.
+- **Conclusió:** Pot expressar al menys que 49 (48), donats que per every possible numèri h ≤ 49, la més granda edat possible que sigues al menys que 49 és 48.
+
+**Resposta:**
+E) Al menys 43, però a priori no podem dir que siguen 44 o més.
+
+La resposta correcta és **E)**.

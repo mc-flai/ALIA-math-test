@@ -1,0 +1,51 @@
+<think>
+Primero, notemos que cada término en la suma es de la forma \( \frac{1}{\sqrt{n+1} + \sqrt{n}} \). Para simplificar cada términado, multiplicamos numerador y denominador por el conjugate del denominador, que es \( \sqrt{n+1} - \sqrt{n} \):
+
+\[
+\frac{1}{\sqrt{n+1} + \sqrt{n}} \times \frac{\sqrt{n+1} - \sqrt{n}}{\sqrt{n+1} - \sqrt{n}} = \sqrt{n+1} - \sqrt{n}
+\]
+
+Ahora, sumamos todos los términos simplificados:
+
+\[
+(\sqrt{2016} - \sqrt{2015}) + (\sqrt{2015} - \sqrt{2014}) + \ldots + (\sqrt{2} - \sqrt{1})
+\]
+
+Notemos que la suma telescópica está, donde cada término intermedio se cancña con otro, por lo que solo se retainen los extremos:
+
+\[
+\sqrt{2016} - \sqrt{1} = \sqrt{2016} - 1
+\]
+
+Finalmente, identificamos que la suma da como resultado \( \sqrt{2016} - 1 \).
+</think>
+
+Para resolver la suma \( S = \frac{1}{\sqrt{2} + \sqrt{1}} + \frac{1}{\sqrt{3} + \sqrt{2}} + \ldots + \frac{1}{\sqrt{2016} + \sqrt{2015}} \), seguiremos estos pasos:
+
+**Paso 1:** Simplificar cada término de la suma.
+
+Consideremos un término general de la suma de forma \( \frac{1}{\sqrt{n+1} + \sqrt{n}} \). Para facilitar la reducción algebraica, multiplicamos numerador y denominador por el conjugado del denominator:
+
+\[
+\frac{1}{\sqrt{n+1} + \sqrt{n}} = \frac{\sqrt{n+1} - \sqrt{n}}{(\sqrt{n+1} + \sqrt{n})(\sqrt{n+1} - \sqrt{n})} = \sqrt{n+1} - \sqrt{n}
+\]
+
+**Paso 2:** Sumar todos los términos simplificados.
+
+Applying el paso anterior, cada término se convierte en una diferencia de raíces cuadradas:
+
+\[
+S = (\sqrt{2016} - \sqrt{2015}) + (\sqrt{2015} - \sqrt{2014}) + \ldots + (\sqrt{2} - \sqrt{1})
+\]
+
+Notamos que la suma telescópica está, donde cada término intermedio se canceled con otro:
+
+\[
+S = \sqrt{2016} - 1
+\]
+
+**Paso 3:** Obtener la respuesta final.
+
+La suma simplifica a \( S = \sqrt{2016} - 1 \).
+
+\boxed{\sqrt{2016} - 1}

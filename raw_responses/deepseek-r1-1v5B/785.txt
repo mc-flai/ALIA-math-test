@@ -1,0 +1,30 @@
+<think>
+Prime, identifiquem els punts mitjanis de cada costat del triangle triangular.
+
+Utilitzem el teorema del paral·lelism per a projectivitzacions. La recta que passaré entre dos punts mitjanis pot ser una mediana o una altitud del triangle.
+
+A continuació, analizem el nombre de triangles possibles dependients de la posició i la rectificabilitat de la recta que s'apropa.
+
+Observem que la recta per tallar les línies no és necessàriament perfeccionada, perquè la projectivització pot ser sense problemes.
+
+Finalment, comprovem que el nombre total de triangles possibles és 4.
+</think>
+
+Raonament:
+
+1. **Identificam los puntos mitjanos de cada costat del triangular:**
+   - Un triangular tiene 3 costats.
+   - En cada costat, los puntosmitjanzen son los puntos que dividen la costa en dos sections iguales.
+
+2. **Utilizo el teorema del paralelism para projectivización:**
+   - La recta que passes a través de dos puntosmitjanzen puede ser una mediana o una altitud del triangular.
+   - La projectivización esencial se da cuando la recta no está confinada en un solo plano.
+
+3. **Analizo el número de triangles posibles:**
+   - Cada rectangular secuencia intersección con las rectas que partitionan los triángulos.
+   - La recta per tallar les línies no es necesariamente perfeccionada, por lo que la projectivización esencial se da.
+
+4. **Comprobar el número total de triangles:**
+   - Realizo una count de todos los posibles triangles que pueden ser formados.
+   
+La resolución final muestra que hay un total de **\boxed{B) 3}** triángulos possibles.

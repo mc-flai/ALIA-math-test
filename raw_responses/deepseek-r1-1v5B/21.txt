@@ -1,0 +1,39 @@
+<think>
+Primeixem el nombre total de bancs en el parc sense importar la distinció entre lliures i ocupats. Com s'ha informat, el total de bancs es de 64.
+
+Luego, sabim que el nombre de bancs lliures és 18 més que el dels que són occupats. Escoliem perquè podem expressir el nombre de bancs lliures com (T - O), on T és la suma total i O es la de les occurents.
+
+Siguinmeix, sabim que cada banc lliure ha 1 persona i que cada banc Occupat ha dos_persones. Ambíssimals, tot i que no hagin res del nombre d'ocisió.
+
+La formula total de persones serà: P = (T - O) * 1 + O * 2.
+
+Si substitiem el valor con T = 64 i O = T - 18 = 46, la suma totals serí de 64 = 46 + 18.
+
+Computant la persona total: P = 46 + (46 * 2) = 46 + 92 = 138.
+
+Per això, veiem que el nombre de persones es de 138, que no està corribi amb les alternatives donades.
+</think>
+
+Raonament:
+
+Total de bancs en el parc: \( T = 64 \)
+
+Només lliures (\( T - O \)) es d'aless que el nombre de bancs occupats (\( O \)).
+
+Com s'ha informat:
+\[ T = O + 18 \]
+\[ \Rightarrow O = T - 18 \]
+
+Total de persones en bancs:
+- En les lliures: \( (T - O) \times 1 \)
+- En les ocisióts: \( O \times 2 \)
+
+Sovent,
+\[ P = (T - O) + 2O = T + O \]
+
+Substituint \( O = T - 18 \):
+\[ P = T + (T - 18) = 64 + 46 = 110 \]
+
+**Per aixós que se dona en la question de les alternatives, el nombre d'persones es de 138.**
+
+Raonament final: \boxed{E}

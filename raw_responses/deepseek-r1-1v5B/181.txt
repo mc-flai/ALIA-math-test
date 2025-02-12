@@ -1,0 +1,60 @@
+<think>
+Primejament, identifiquem el nombre de equips que s'introven en el torneig. El total és de 5 equips.
+
+Cada equip es potentina sense perdedora i es pot dinamica sense ganador. A continuación, cada encontro entre dos equips dona tres punts al ganador i zero a l'opponente. Si l'equip ha rebutat un empat, cada uno de les dues equips obtingut 1 punt.
+
+El total de partits que s'introven en el torneig és igual al coeficient de la variable 'n' en la fórmula binomial: C(5,2) = 10. Tot està dividit entre dos times perquè cada encontro es pot representar dues equips.
+
+Llenejament, tot i que les dos times queden sense perdedor al final (la suma de punts ha restat zero), hi ha unemits a les equips que rebutaven empat. Aquesta part fa que el total de punts assignats a les dues equips sense perdedor es igual a la quantitat tota de punts obtinguts summant 10 + 7 + 5 + 4 + 1, que tot a sumar 27 punts.
+
+Com a cada emita un donut de tres punts, el nombre total d'emits es igual a (27) / 3 = 9 partits amb emita. Per la mateixa cause, l'equips sense perdedor han rebutat x partits emitints amb dos times, tot i així.
+
+Utilitzant el teorema del balance d'equilibres (o l'elmementos de pauta igual) al mostreig que les equips sense perdedor han rebutat dos partits en vermell i quin en verde, tot i així.
+
+En resum, la solucion s'obtiu com s'ha calculat el nombre total d'emits, el número de partits amb emita, la distribució d'aquestes entre les equips sense perdedor i les equips que tenen unemits, finalment obtenim que la quantitat de partits amb emita és 9.
+</think>
+
+Raonament:
+
+1. **Nombre de equips**: El torneig tracta amb **5 equips**.
+
+2. **Partits entre dos times**:
+   - Cada pair d'equips cometre un partit.
+   - Total de partsit: \( \binom{5}{2} = 10 \).
+
+3. **Punts totals**: Els times tenen un total de punts obtinguts, que és la suma de les pints assignats a cada equip:
+   \[
+   10 + 7 + 5 + 4 + 1 = 27
+   \]
+
+4. **Partits amb emita**:
+   - Cada partit sense emita dona **3 punts** (3 punts al ganador i zero a l'opponente).
+   - Total de partits amb emita:
+     \[
+     \frac{27}{3} = 9
+     \]
+   
+5. **Equips sense perdedor**:
+   - Les equips sense perdedor (escales) rebutaven dos partits cada un.
+   - Com a les dues equips sense perdedor rebutaven dos partits, el nombre total de partits amb emita ésigual al número de equipes sense perdedor:
+     \[
+     x = 9
+     \]
+   
+6. **Resposta**:
+   - La quantitat d'equips sense perdedor ésigual a \(5\) (el nombre total d'equips).
+   - Per tenir sense perdedor, les dues equips sense perdedor rebutaven dos partits cada un.
+     \[
+     2x = 9
+     \]
+     \[
+     x = 4.5
+     \]
+   
+   **Els resultats són incompatibles**, perquè la división ha de ser entera.
+
+7. **Raonament final**:
+   - La quantitat d'equips sense perdedor ésigual a \(4\), com a la quantitat de partits sense emita.
+   - Tot com unemits a les equips sense perdedor, el total de punts assignats al igual que l'ordre del torque.
+
+**Respuesta**: \boxed{B}

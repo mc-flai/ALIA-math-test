@@ -1,0 +1,78 @@
+<think>
+Primeixem la expressió dada, que suma todo l’adició:
+
+1/n + 2/(n-1) + 3/(n-2) + ... + (n-1)/2 + n/1 = 11, 15
+
+Esmentam el problema per a values de n que satisfen la igualtat.
+
+Passa comencialsament a reordinar les terms:
+
+Suma = 1/n + 2/(n-1) + 3/(n-2) + ... + (n)/1 = 11, 15
+
+Esmentem que cada terme de la forma k/(n - k + 1), amb k = 1, 2, ..., n.
+
+Observen que si k eset que i n - i, el terme s'entona a la mateixa valor. Per exemple, k=1, i k=n-1; k=2, i k=n-2, etc., perquè:
+
+k/(n - k + 1) = (n - k)/(k)
+
+Sovelliam una posició integral amb la suma total.
+
+Suma = Σ_{k=1}^n [k/(n - k + 1)] = 11, 15
+
+Descomposen les expresions en parells que sumen 1:
+
+Σ = (1/n) + (2/(n-1)) + ... + ((n)/1)
+
+Comenciam a reordinar l'expressión de manera que tots els terms es posinen de forma simètrica.
+
+Suma = Σ_{k=1}^{n/2} [k/(n - k + 1) + (n - k)/(k)] 
+
+Per a cada k, el pair d'elements s'mplitza amb la mateixa suma.
+
+Tambí en consideren que si n és par, la mitjana dels elements donats es pot expressar de lació, però emppreciam que aquesta manera no s'aclarava sense una fórmula general.
+
+Comenciem per probar les alternatives donades i verificem qui siga satisfies la igualtat.
+
+A) n =5:
+Suma =1/5 + 2/4 + 3/3 + 4/2 +5/1 = 0.2 +0.5 +1 +2 +5=9, which no equina a 11,15
+
+B) n=6:
+Suma=1/6 +2/5+3/4+4/3+5/2+6/1 ≈0.1667+0.4+0.75+1.3333+2.5+6≈11.1666, que siga l'arribada a 11,15 (aproximant). Per tant, pot que siga la resposta.
+
+Verificem C) n=7:
+Suma=1/7 +2/6+3/5+4/4+5/3+6/2+7/1 ≈0.1429+0.3333+0.6+1+1.6667+3+7≈14.8429, que no equina a 11,15
+
+D) n=8:
+Suma=1/8 +2/7+3/6+4/5+5/4+6/3+7/2+8/1 ≈0.125+0.2857+0.5+0.8+1.25+2+3.5+8≈19.4607, que no equina a 11,15
+
+E) n=10:
+Suma=1/10 +2/9+3/8+4/7+5/6+6/5+7/4+8/3+9/2+10/1 ≈0.1+0.2222+0.375+0.5714+0.8333+1.2+1.75+2.6667+4.5+10≈21.5433, que no equina a 11,15
+
+Donat que per B) n=6, la suma equina al resultat donat, pot que siga la resposta.
+</think>
+
+El valor de \( n \) que satisfeix l'igualtat presented ha been calculada com el option **B)** 6.
+
+**Raonament:**
+
+Les expressions donades esmenten una suma amb termes simètrics. Quan sumem tots els elements, cada par es simplifica a la mateixa suma:
+
+\[
+\sum_{k=1}^{n/2} \left( \frac{k}{n - k + 1} + \frac{n - k}{k} \right)
+\]
+
+Per a cada \( k \), l'igualtat expressona que tots els terms es sumen a la mateixa valor. A més, la mitjana de la suma total és equina la mateixa valor donat (11, 15). 
+
+Comptant les alternatives:
+
+- **A) \( n = 5 \):** La suma approximateва a 9.
+- **B) \( n = 6 \):** La suma approximateva a 11, 15.
+- **C) \( n = 7 \):** La suma approximateва a 14,84.
+- **D) \( n = 8 \):** La suma approximateva a 19,46.
+- **E) \( n = 10 \):** La suma approximateva a 21,54.
+
+Per tant, la solució és \( n = 6 \).
+
+**Resposta:**
+
+\(\boxed{B}\)

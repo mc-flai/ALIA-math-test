@@ -1,0 +1,27 @@
+Raonament:
+La successió es defineix com a₀ = 1, a₁ = 2, i aₙ₊₂ = aₙ + (aₙ₊₁)². Calculem els primers termes de la successió i els seus residus mòdul 7 per veure si hi ha algun patró:
+
+a₀ = 1  =>  1 mod 7 = 1
+a₁ = 2  =>  2 mod 7 = 2
+a₂ = a₀ + a₁² = 1 + 2² = 1 + 4 = 5  =>  5 mod 7 = 5
+a₃ = a₁ + a₂² = 2 + 5² = 2 + 25 = 27  =>  27 mod 7 = 6
+a₄ = a₂ + a₃² = 5 + 6² = 5 + 36 = 41  =>  41 mod 7 = 6
+a₅ = a₃ + a₄² = 6 + 6² = 6 + 36 = 42  =>  42 mod 7 = 0
+a₆ = a₄ + a₅² = 6 + 0² = 6  =>  6 mod 7 = 6
+a₇ = a₅ + a₆² = 0 + 6² = 36  =>  36 mod 7 = 1
+a₈ = a₆ + a₇² = 6 + 1² = 7  =>  7 mod 7 = 0
+a₉ = a₇ + a₈² = 1 + 0² = 1  =>  1 mod 7 = 1
+a₁₀ = a₈ + a₉² = 0 + 1² = 1  =>  1 mod 7 = 1
+a₁₁ = a₉ + a₁₀² = 1 + 1² = 2  =>  2 mod 7 = 2
+
+Els residus mòdul 7 són: 1, 2, 5, 6, 6, 0, 6, 1, 0, 1, 1, 2, ...
+Sembla que la seqüència de residus es repeteix a partir de a₉ amb un període de 6: 1, 1, 2, 5, 6, 6, 0, 6, 1, 0, 1, 1, 2, ...
+La seqüència de residus a partir de a₉ és 1, 1, 2, 5, 6, 6, 0, 6, 1, 0, 1, 1, 2, ...
+Per tant, els residus mòdul 7 a partir de a₉ tenen un període de 6: 1, 1, 2, 5, 6, 6, 0, 6, 1, 0, 1, 1, 2, ...
+Com que volem trobar el residu de a₂₀₁₇ mòdul 7, hem de considerar l'índex 2017.
+Com que la seqüència es repeteix a partir de a₉, considerem 2017 - 9 = 2008.
+Dividim 2008 per 6: 2008 = 6 * 334 + 4.
+Això significa que el residu de a₂₀₁₇ mòdul 7 serà el mateix que el residu de a₉₊₄ = a₁₃ mòdul 7.
+El residu de a₁₃ és el quart element de la seqüència repetitiva, que és 5.
+
+Resposta: D)

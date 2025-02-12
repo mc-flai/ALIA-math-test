@@ -1,0 +1,27 @@
+<think>
+Para resolver este problema, primero identifico los elementos clave. La llebre dice dos frases en cada día: en el di jumbrador (Ahir) y el di muntóno (Demà). En ambas frases, la llave es "mentides", lo que indica que esta fomentada a Alícia.
+
+La-día ha de ser un día cuyos dials tiquen "mentides" en ambas frases. Sabemos que el dials muntón (Demà) se puede rarelyejar en días determinados: dimarts, dijous, dissabte y baigany. Por otro lado, el dials Ahir (Ahir) se rarelyeja en la noche, lo que ocurre en los días naves: sambres, dissabte, dilluns y euromàries.
+
+La intersección de estos días donde ambas frases tiquen "mentides" será aquel día que siga las tendencias de ambos dials. Verificando los días determinados:
+
+- Dimarts: muntón en las dos frases.
+- Dijous: muntón en las dos frases.
+- Dissabte: muntón en ambas frases.
+
+Por lo tanto, al leastzar un dijous, la llebre puede encontrar a Alícia y las dos frases mencionadas.
+</think>
+
+Raonament:
+
+La llebre diu dos frases:  
+1. "Ahir vaig dir mentides" (muntón en el di muntóno).  
+2. "Demà dir alsoi mentides" (muntón en el di Ahir).
+
+Un día al que estén bothambién mentides es el dijous, per què:  
+- En el di muntóno (Demà) rarelyeja en dissabte, dissabte, dilluns i euromàries.  
+- En el di Ahir (Ahir) rarelyeja en la noche, com aquest dials.  
+
+La intersección de talls sè: dijous.
+
+Resposta: C) Sí, un dijous.

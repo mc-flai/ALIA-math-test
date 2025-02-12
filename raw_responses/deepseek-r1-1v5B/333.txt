@@ -1,0 +1,43 @@
+<think>
+Prichet d'igrej que siga el problema de fracció que donat, intent emmagatzena tots els paràmetres posibles i llamad que sigam com fracció. El numerador e la denominació són nombres enters positius, per tant, el numerador (p) és major o igual a zero i la denominació (q) és major o igual a 1. A més, la suma de p i q no es major que 103.
+
+Tambí calcula quin fraccióigant que siga a l'igrej, que siga a més que 3 i es pot expressar com un fracció minor o igual a 3. La fraccióigant es pot expressar als fraccions que són major o igual a 1/2. Per això, intent emmagatzena les alternatives donades i comparar amb la majoritz.
+
+Per a cada couple (p, q) que complent una de les alternatives, calcula la suma p + q i comprobar si la fraccióigant es pot expressar en quins dels casos minor o igual a 1/2. Així es pot identificar quin fraccióigant majoritariament potser l'igrej.
+</think>
+
+Per a cada couple (p, q) que complent una de les alternatives donades i comprobar si la fraccióigant es pot expressar al·là de 3:
+
+- **A) \(\frac{27}{77}\):**
+  
+  \( p + q = 27 + 77 = 104 \), que Major que 103, per tant no complenta el seu procediment.
+  
+- **B) \(\frac{26}{77}\):**
+  
+  \( p + q = 26 + 77 = 103 \), que Menor o igual que 103.
+  
+  \(\frac{26}{77} < 3\) i es pot expressar al·là de 3.
+  
+- **C) \(\frac{25}{76}\):**
+  
+  \( p + q = 25 + 76 = 101 \), que Menor o igual que 103.
+  
+  \(\frac{25}{76} < 3\) i es pot expressar al·là de 3.
+  
+- **D) \(\frac{25}{77}\):**
+  
+  \( p + q = 25 + 77 = 102 \), Menor o igual que 103.
+  
+  \(\frac{25}{77} < 3\) i es pot expressar al·là de 3.
+  
+- **E) \(\frac{26}{75}\):**
+  
+  \( p + q = 26 + 75 = 101 \), Menor o igual que 103.
+  
+  \(\frac{26}{75} < 3\) i es pot expressar al·là de 3.
+
+Comparant les alternatives, **B) \(\frac{26}{77}\)** i **D) \(\frac{25}{77}\)** són les que complent el procèssament i compleixen la condició que la fraccióigant siga a més que 3.
+
+La majoritz amonges es **B) \(\frac{26}{77}\)**, per així que la fractióigantiguantigueda al·là de 3 amb el més grand possible numerador i denominador combinants les alternatives donades.
+  
+**Respuestas**: \(\boxed{A)\dfrac{27}{77}; B)\dfrac{26}{77}; C)\dfrac{25}{76}; D)\dfrac{25}{77}; E)\dfrac{26}{75}}\)

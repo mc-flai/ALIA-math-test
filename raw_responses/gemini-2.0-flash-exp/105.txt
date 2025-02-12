@@ -1,0 +1,19 @@
+Raonament:
+Per a rotar un punt (x, y) un angle θ en sentit antihorari al voltant de l'origen, utilitzem la següent transformació matricial:
+
+[x'] = [cos(θ)  -sin(θ)] [x]
+[y'] = [sin(θ)   cos(θ)] [y]
+
+En aquest cas, el punt és (7, 2) i l'angle de rotació és 45°, que en radians és π/4. Sabem que cos(π/4) = sin(π/4) = √2/2. Per tant, la matriu de rotació és:
+
+[√2/2  -√2/2]
+[√2/2   √2/2]
+
+Ara apliquem la transformació al punt (7, 2):
+
+x' = (√2/2) * 7 - (√2/2) * 2 = (7√2)/2 - (2√2)/2 = (5√2)/2
+y' = (√2/2) * 7 + (√2/2) * 2 = (7√2)/2 + (2√2)/2 = (9√2)/2
+
+Per tant, el punt resultant després de la rotació és ((5√2)/2, (9√2)/2).
+
+Resposta: A)

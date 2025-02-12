@@ -1,0 +1,156 @@
+<think>
+Para resolver este problema, primero identificaremos las cantidades de cada color y luego determinaremos cuántas llaunes tienen solo un único color.
+
+Sabemos que:
+- 25 llaunes son blancs.
+- 28 llaunes son blau.
+- 20 llaunes son verduras.
+Total de llaunes: 36.
+
+Ahora, si somamos las cantidades individuales: 25 + 28 + 20 = 73. Pero el total de llaunes es 36, lo que significa que hay una overcountada de 73 - 36 = 37.
+
+Esto sugiere que hay overlaps entre los colores, es decir, algunos llauns tienen más de un color y都被 contados en las diferentes categorías. Empezamos analizando el número de llaunes que tienen tres colores.
+
+Dado que 5 llaunes tienen todos tres de los-colors (blancos, blauos y verdes), cada uno de estos contribute a dos overcounts (aunque solo himself es blanc, blau o verde). Por lo tanto, los overcountados por los tres-colors son 5 x 2 = 10.
+
+Ahora restamos este número de los overcountados: 37 - 10 = 27. Esto nos da el número total de llauns que tienen dos de los tres colores. Ahora, cada uno de estos tiene un overflow de 1 (ya que son contidos en dos categorías).
+
+Total de llauns con dos-colors: 27. Por lo tanto, contamos las llaunes con dos-colors como follows:
+- Dblas blancos y blauas.
+- Dblas blancas y verdes.
+- Dblas blauas y verdes.
+
+Ahora, para calcular las quantidades específicas por color:
+
+1. Llaves blancas: 25
+   - Contamos las llaunes con dos-colors (doble) blancas.
+   Suponemos que x es el número de llaves blancas y blauas.
+   Entonces, las llaves verdes serían (20 - x).
+   Las llaves verdes y blancas serían (5 + x).
+
+   De las 28 llaves blauas:
+   - x son ambas blancas y blauas.
+   - Las restantes (28 - x) son blauas solo.
+
+   De las 20 llaves verdes:
+   - x son blancas y verdes.
+   - La delante (5 + x - x = 5) son verdes solo.
+
+   Sumando todas las llaves, obtenemos:
+   x (blancos y blauas) + (28 - x) (blauas solo) + (5 + x) (verdes solo) + x (tres-colors) = 36
+
+Sumando:
+x + 28 - x + 5 + x + x = 36
+Simplificando:
+33 + x = 36
+x = 3
+
+Ahora, las cantidades específicas por color son:
+
+- Llaves blancas: x (doble) + verdes solo (5) + blauas solo (28 - x)
+= 3 + 5 + (28 - 3)
+= 3 + 5 + 25
+= 33
+
+- Llaves verdes: x (doble) + blancas solo (25 - x) + blauas solo
+= 3 + (25 - 3) + (20 - 3)
+= 3 + 22 + 17
+= 42
+
+- Llaves blauas: x (doble) + verdes solo + blancas solo
+= 3 + 5 + (20 - 3)
+= 3 + 5 + 17
+= 25
+
+Finalmente, las llaunes que tienen solo un color son:
+- Llaves blancas: 33
+- Llaves verdes: 42
+- Llaves blauas: 25
+Total = 33 + 42 + 25 = 100
+
+Ahora, para obtener las llaunes pintadas de un solo color, restamos el 5 de tres-colors:
+100 - 5 = 95
+
+Finalmente, la respuesta correcta es D) 95.
+</think>
+
+Para resolver este problema, identificaremos las cantidades de cada color y luego determinaremos cuántas llaunes tienen solo un único color.
+
+Sabemos que:
+- **25** llaunes son blancos.
+- **28** llaunes son blauos.
+- **20** llaunes son verduras.
+- Total de llaunes: **36**.
+
+Primero, somamos las cantidades individuales para ver si hay overcountadas:
+\[
+25 + 28 + 20 = 73
+\]
+Comparando con el total de llauns (36), obtenemos un **overcountado** de:
+\[
+73 - 36 = 37
+\]
+Esto sugiere que hay overlaps entre los colores. Empezamos analizando el número de llaunes que tienen tres colores.
+
+Dado que **5** llauns tienen todos tres de los-colors (blancos, blauos y verdes), cada uno de estos contribute a dos overcounts. Por lo tanto, los overcountados por los tres-colors son:
+\[
+5 \times 2 = 10
+\]
+Restamos este número de los overcountados:
+\[
+37 - 10 = 27
+\]
+Esto nos da el número total de llauns que tienen dos de los tres colores.
+
+Ahora, para calcular las quantidades específicas por color:
+
+1. **Llaves blancas**:
+   - Contamos las llaunes con dos-colors (doble).
+   Suponemos que \( x \) es el número de llaves blancas y blauas.
+   Entonces, las llaves verdes serían \( 20 - x \).
+
+   De las **28** llaves blauas:
+   - \( x \) son ambas blancas y blauas.
+   - Las restantes \( (28 - x) \) son blauas solo.
+
+   De las **20** llaves verdes:
+   - \( x \) son blancas y verdes.
+   - La delante \( (5 + x - x = 5) \) son verdes solo.
+
+   Sumando todas las llaves, obtenemos:
+   \[
+   x \text{ (blancos y blauas)} + (28 - x) \text{ (blauas solo)} + (5 + x) \text{ (verdes solo)} + x \text{ (tres-colors)} = 36
+   \]
+   Simplificando:
+   \[
+   x + 28 - x + 5 + x + x = 36 \\
+   33 + x = 36 \\
+   x = 3
+   \]
+
+2. **Llaves blancas**:
+   \[
+   x \text{ (doble) } + \text{ verdes solo } (5) + \text{ blauas solo } (28 - x) \\
+   = 3 + 5 + (28 - 3) = 3 + 5 + 25 = 33
+   \]
+
+3. **Llaves verdes**:
+   \[
+   x \text{ (doble) } + \text{ blancas solo } (25 - x) + \text{ blauas solo } \\
+   = 3 + (25 - 3) + (20 - 3) = 3 + 22 + 17 = 42
+   \]
+
+4. **Llaves blauas**:
+   \[
+   x \text{ (doble) } + \text{ verdes solo } + \text{ blancas solo } \\
+   = 3 + 5 + (20 - 3) = 3 + 5 + 17 = 25
+   \]
+
+Finalmente, las llaunes que tienen solo un color son:
+\[
+33 \text{ (blancas) } + 42 \text{ (verdes) } + 25 \text{ (blauas)} = 100
+\]
+Finalmente, la respuesta correcta es **D) 95**.
+
+**Respuesta final:**
+\boxed{95}

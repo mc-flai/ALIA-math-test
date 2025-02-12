@@ -1,0 +1,34 @@
+Raonament:
+Perquè el producte de dos nombres sigui negatiu, un ha de ser positiu i l'altre negatiu. Si tenim un conjunt de nombres i sabem quantes multiplicacions donen un nombre negatiu, podem deduir la quantitat de nombres positius i negatius que hi ha al conjunt.
+
+Sigui 'p' el nombre de nombres positius, 'n' el nombre de nombres negatius i 'z' el nombre de zeros. El nombre total de nombres és 50, per tant, p + n + z = 50.
+
+El nombre de multiplicacions que donen un nombre negatiu és el producte del nombre de nombres positius pel nombre de nombres negatius, és a dir, p * n = 522.
+
+Hem de trobar dos nombres enters positius que multiplicats donin 522. Les possibles parelles de factors de 522 són:
+1 x 522
+2 x 261
+3 x 174
+6 x 87
+9 x 58
+18 x 29
+
+Ara, hem de trobar la parella de factors que sumats donin un nombre menor o igual a 50 (ja que p + n + z = 50 i z >= 0).
+1 + 522 = 523 (massa gran)
+2 + 261 = 263 (massa gran)
+3 + 174 = 177 (massa gran)
+6 + 87 = 93 (massa gran)
+9 + 58 = 67 (massa gran)
+18 + 29 = 47 (aquesta és la que ens serveix)
+
+Per tant, tenim que p = 18 i n = 29 (o viceversa, però no importa per al càlcul de z).
+Ara podem calcular el nombre de zeros:
+p + n + z = 50
+18 + 29 + z = 50
+47 + z = 50
+z = 50 - 47
+z = 3
+
+Per tant, hi ha 3 zeros al conjunt.
+
+Resposta: B)

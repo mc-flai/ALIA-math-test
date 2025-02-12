@@ -1,0 +1,26 @@
+Raonament:
+Per trobar el mínim nombre de quadrats per descompondre un rectangle de 6x7, hem de buscar la manera més eficient de cobrir la superfície amb quadrats. No podem fer-ho amb un sol quadrat, ja que no és un quadrat. Tampoc podem fer-ho amb dos quadrats, ja que no hi ha cap quadrat que puga cobrir una àrea de 42 (6x7).
+
+Comencem amb el quadrat més gran possible que cap dins del rectangle, que seria un quadrat de 6x6. Això ens deixa un rectangle de 6x1. Aquest rectangle de 6x1 el podem descompondre en 6 quadrats de 1x1. Això ens donaria un total de 1 + 6 = 7 quadrats.
+
+Podem intentar una altra aproximació. Podem posar un quadrat de 6x6, i ens queda un rectangle de 6x1. Aquest rectangle de 6x1 es pot dividir en 6 quadrats de 1x1. Això ens dona 1 + 6 = 7 quadrats.
+
+Si posem un quadrat de 5x5, ens quedaria un rectangle de 5x2 i un rectangle de 1x7. El rectangle de 5x2 no es pot dividir en quadrats iguals, i el de 1x7 es pot dividir en 7 quadrats de 1x1. Això no sembla una bona opció.
+
+Si posem un quadrat de 4x4, ens quedaria un rectangle de 4x3 i un rectangle de 2x7. El rectangle de 4x3 es pot dividir en 3 quadrats de 1x1 i un quadrat de 3x3, o en 4 quadrats de 1x1 i un quadrat de 2x2. El rectangle de 2x7 es pot dividir en 7 quadrats de 1x1 i un rectangle de 2x5. Això tampoc sembla una bona opció.
+
+Si posem un quadrat de 3x3, ens quedaria un rectangle de 3x4 i un rectangle de 3x7. El rectangle de 3x4 es pot dividir en 4 quadrats de 1x1 i un quadrat de 3x3, o en 3 quadrats de 1x1 i un quadrat de 2x2. El rectangle de 3x7 es pot dividir en 7 quadrats de 1x1 i un rectangle de 3x4. Això tampoc sembla una bona opció.
+
+La millor opció sembla ser començar amb un quadrat de 6x6, que ens deixa un rectangle de 6x1. Aquest rectangle de 6x1 es pot dividir en 6 quadrats de 1x1. Això ens dona un total de 1 + 6 = 7 quadrats.
+
+Una altra opció és començar amb un quadrat de 4x4. Ens quedaria un rectangle de 4x3 i un rectangle de 2x7. El rectangle de 4x3 es pot dividir en 4 quadrats de 1x1 i un quadrat de 2x2, o en 3 quadrats de 1x1 i un quadrat de 3x3. El rectangle de 2x7 es pot dividir en 7 quadrats de 1x1 i un rectangle de 2x5. Això no sembla una bona opció.
+
+Si comencem amb un quadrat de 3x3, ens quedaria un rectangle de 3x4 i un rectangle de 3x7. El rectangle de 3x4 es pot dividir en 4 quadrats de 1x1 i un quadrat de 3x3, o en 3 quadrats de 1x1 i un quadrat de 2x2. El rectangle de 3x7 es pot dividir en 7 quadrats de 1x1 i un rectangle de 3x4. Això tampoc sembla una bona opció.
+
+La millor opció és començar amb un quadrat de 6x6, que ens deixa un rectangle de 6x1. Aquest rectangle de 6x1 es pot dividir en 6 quadrats de 1x1. Això ens dona un total de 1 + 6 = 7 quadrats.
+
+Si comencem amb un quadrat de 5x5, ens quedaria un rectangle de 5x2 i un rectangle de 1x7. El rectangle de 5x2 no es pot dividir en quadrats iguals, i el de 1x7 es pot dividir en 7 quadrats de 1x1. Això no sembla una bona opció.
+
+La millor opció és començar amb un quadrat de 6x6, que ens deixa un rectangle de 6x1. Aquest rectangle de 6x1 es pot dividir en 6 quadrats de 1x1. Això ens dona un total de 1 + 6 = 7 quadrats.
+
+Resposta: C)

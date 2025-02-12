@@ -1,0 +1,23 @@
+Raonament:
+1. **Calcular el nombre de diputats per partit:**
+   - Partit 1 (10%): 300 * 0.10 = 30 diputats
+   - Partit 2 (20%): 300 * 0.20 = 60 diputats
+   - Partit 3 (25%): 300 * 0.25 = 75 diputats
+   - Partit 4 (45%): 300 * 0.45 = 135 diputats
+
+2. **Analitzar la paritat:**
+   - Cada partit té llistes alternades dona-home o home-dona. Això significa que, com a molt, la diferència entre el nombre d'homes i dones en cada partit serà d'1 diputat.
+   - Si el nombre de diputats d'un partit és parell, hi haurà exactament el mateix nombre d'homes i dones.
+   - Si el nombre de diputats d'un partit és imparell, hi haurà un diputat més d'un gènere que de l'altre.
+
+3. **Calcular el nombre mínim de dones:**
+   - Per minimitzar el nombre de dones, hem d'assumir que els partits amb un nombre imparell de diputats tenen un home més que dones.
+   - Partit 1 (30 diputats): 15 dones
+   - Partit 2 (60 diputats): 30 dones
+   - Partit 3 (75 diputats): 37 dones (assumim que hi ha un home més)
+   - Partit 4 (135 diputats): 67 dones (assumim que hi ha un home més)
+
+4. **Sumar el nombre mínim de dones:**
+   - Total mínim de dones: 15 + 30 + 37 + 67 = 149
+
+Resposta: C)

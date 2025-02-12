@@ -1,0 +1,33 @@
+<think>
+Prime, identifiquem quin eix pot donar la major part de punts en una recta. Com que tenim 10 punts i quatre d'aquests estan en una recta, es probable que una recta contingui dos punts.
+
+Raonem per aquesta informació: Les dos punts en la recta serán necessàries per definir una recta. Ambos dearestrejades a l'altxoma, el nombre de la recta serà fixat sense importar el posició de l'ordre del punton.
+
+Com presemme amb la resolució general d'un problema de combinatoria, identifiquem la quantitat total de pairs de puntons que pot formar una recta i les qualseus entre aquestes es corresponent.
+
+El nombre de pairs en 10 puntons és el binomial (10 choose 2) = 45. A més, als dos punts que són en la recta principal, l'ordre no ha importat. La recta pot estar definida sense importance del suxm de l'ordre de les puntons. Ambit així, el nombre total de rectes serà 45 - 1 = 44. Ara conté que quinque rectes són per la recta principal i cada una de las restes formar una recta individual.
+
+Per aquesta reationalització, potem observar que la resposta possible és 46, que fa tenir la opcio D.
+</think>
+
+Raonament: 
+
+El problema se torna en determinar el número de rectas que podríamos formar entre 10 punts en un pla. Dues punts són necessaries para definir una recta. Com tenim 10 punts, el número total de parells es:
+
+\[
+\binom{10}{2} = \frac{10 \times 9}{2} = 45
+\]
+
+A més, dos punts que són en la misma recta (comentem que almenys tres punts no estén alignados) serán necessaries para definir una recta. Així, el nombre total de rectes es:
+
+\[
+45 - 1 = 44
+\]
+
+A més, contendrem la recta principal que sè ha formada per aquests dos punts que són en la misma recta. Tot es:
+
+\[
+44 + 1 = \boxed{45}
+\]
+
+Per així, la resposta correcta és el-option C) 45.

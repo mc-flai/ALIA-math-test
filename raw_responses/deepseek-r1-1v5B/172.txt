@@ -1,0 +1,36 @@
+<think>
+Prime donem els dts que tenim: hi ha dos daus amb numerats del 1 al 6. Ara, es queres knowi el probable que de l'igualtat que sigues, com així com a la probabilitat d'obtenir un únic 6.
+
+S'agregem els dts possible: per a cada dau, hi ha 6 alternatives posibles. Com s'han col·lentats el dos dats, l'esp total de les possibles es calcula multiplicant 6 per 6, que dona 36 possibles outcomes.
+
+L'objectiu és que hi hella un únic 6 i el segon dau no sigui 6. Quina possible佳ua satisfy així: l'igual de cada 1 al 5 per a la primera duda i qualsevol valor per a lasegona, tot i que no siga 6.
+
+Com s'agregem aquestes elements: 5 alternatives per la primera duda i 6 alternatives per la segona, el total posibles successfulats es calculaixi 5 multiplied per 6, que dona 30.
+
+Finalment, la probabilitat es calcula com el ratio entre les possibles successes (30) i el total de possibles outcomes (36). Així, la probabilitat es de 30 dividido entre 36, simplificant per 6, que dona 5/6.
+</think>
+
+Raonament:
+
+El problem es: escollim dos dats amb numerats del 1 al 6. Quin és la probabilitat d'obtenir un únic 6?
+
+1. **Nomenclatura**:
+   - Ambigues dats possible: dos dats (d1, d2)
+   - Valors possibles per cada duit: 1, 2, 3, 4, 5, 6
+   - **Total de possibles outcomes**: 6 × 6 = 36
+
+2. **Obtinim un únic 6**:
+   - **d1 = 6 y d2 ≠ 6**
+   - **d2 = 6 y d1 ≠ 6**
+
+3. **Possibles successfulats**:
+   - Si d1 = 6, d2 puede ser 1, 2, 3, 4, o 5 ⇒ 5 alternatives
+   - Si d2 = 6, d1 puede ser 1, 2, 3, 4, o 5 ⇒ 5 alternatives
+   - **Total de successfulats**: 5 + 5 = 10
+
+4. **Probabilitat**:
+   \[
+   P(\text{ únic 6 }) = \frac{\text{Total de successfulats}}{\text{Total de possibles outcomes}} = \frac{10}{36} = \frac{5}{18}
+   \]
+
+Resposta: \boxed{E) \dfrac{5}{18}}

@@ -1,0 +1,17 @@
+Raonament:
+Sigui 'x' el nombre de monedes de 2 cèntims i 'y' el nombre de monedes de 5 cèntims. Sabem que Dani té 21 monedes en total, per tant, x + y = 21. El valor total en cèntims serà 2x + 5y. Volem trobar quin dels valors donats no pot ser igual a 2x + 5y.
+
+Podem expressar x en termes de y: x = 21 - y. Substituint això a l'expressió del valor total, obtenim:
+Valor total = 2(21 - y) + 5y = 42 - 2y + 5y = 42 + 3y
+
+Ara, hem de comprovar si cada opció pot ser expressada com 42 + 3y, on 'y' és un nombre enter no negatiu i menor o igual a 21 (ja que 'y' és el nombre de monedes de 5 cèntims).
+
+A) 45 = 42 + 3y  => 3 = 3y => y = 1.  (x = 20, y = 1)
+B) 60 = 42 + 3y  => 18 = 3y => y = 6.  (x = 15, y = 6)
+C) 70 = 42 + 3y  => 28 = 3y => y = 28/3. No és un nombre enter.
+D) 81 = 42 + 3y  => 39 = 3y => y = 13. (x = 8, y = 13)
+E) 102 = 42 + 3y => 60 = 3y => y = 20. (x = 1, y = 20)
+
+Com que l'opció C) requereix un valor de 'y' que no és un nombre enter, aquest valor no pot ser el valor total de les monedes.
+
+Resposta: C)

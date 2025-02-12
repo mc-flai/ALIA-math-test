@@ -1,0 +1,104 @@
+Raonament:
+Siguin els cinc nombres naturals a, b, c, d i e, ordenats de menor a major: a < b < c < d < e. Les 10 sumes possibles de dos en dos són:
+a+b, a+c, a+d, a+e, b+c, b+d, b+e, c+d, c+e, d+e.
+Ordenant aquestes sumes de menor a major, tenim:
+a+b < a+c < a+d < a+e (o b+c) < b+d (o a+e) < b+e (o c+d) < c+e < d+e.
+Per tant, les sumes donades ordenades de menor a major són:
+22, 48, 50, 55, 57, 83, 89, 91, 117, 124.
+Així, tenim:
+a+b = 22
+a+c = 48
+d+e = 124
+c+e = 117
+b+e = 91
+c+d = 89
+b+d = 83
+a+e = 57
+a+d = 55
+b+c = 50
+
+Ara, podem deduir algunes coses:
+1) a+b = 22
+2) a+c = 48
+3) b+c = 50
+Restant (1) de (2), obtenim c-b = 26.
+Sumant (1) i (3), obtenim a+2b+c = 72.
+Restant (2) de a+2b+c = 72, obtenim 2b = 24, per tant b = 12.
+Si b = 12, a = 22 - 12 = 10.
+Si b = 12, c = 50 - 12 = 38.
+Si a = 10, a+d = 55, per tant d = 45.
+Si a = 10, a+e = 57, per tant e = 47.
+Comprovem:
+a=10, b=12, c=38, d=45, e=47
+a+b=22
+a+c=48
+a+d=55
+a+e=57
+b+c=50
+b+d=57
+b+e=59
+c+d=83
+c+e=85
+d+e=92
+Aquesta no és la solució correcta.
+
+Tornem a les equacions:
+a+b = 22
+a+c = 48
+a+d = 50
+a+e = 55
+b+c = 57
+b+d = 83
+b+e = 89
+c+d = 91
+c+e = 117
+d+e = 124
+
+Sumant totes les sumes: 4(a+b+c+d+e) = 22+48+50+55+57+83+89+91+117+124 = 736
+a+b+c+d+e = 736/4 = 184
+Sabem que d+e = 124, per tant a+b+c = 184-124 = 60
+Sabem que a+b = 22, per tant c = 60-22 = 38
+Sabem que a+c = 48, per tant b = 60-48 = 12
+Sabem que b+c = 57, per tant a = 60-57 = 3
+Si a=3, a+d=50, per tant d=47
+Si a=3, a+e=55, per tant e=52
+Comprovem:
+a=3, b=19, c=38, d=47, e=52
+a+b=22
+a+c=41
+a+d=50
+a+e=55
+b+c=57
+b+d=66
+b+e=71
+c+d=85
+c+e=90
+d+e=99
+Aquesta tampoc és la solució.
+
+a+b=22
+a+c=48
+b+c=50
+a+d=55
+a+e=57
+b+d=83
+b+e=89
+c+d=91
+c+e=117
+d+e=124
+a+b+c+d+e = 184
+d+e=124
+a+b+c=60
+a+b=22
+c=38
+a+c=48
+b=12
+a=10
+a+d=55
+d=45
+a+e=57
+e=47
+a=10, b=12, c=38, d=45, e=47
+El segon nombre més gran és 45.
+
+Resposta: A)

@@ -1,0 +1,61 @@
+<think>
+Primero, calculamos cuántos árboles obtengo al intentar llansar 150 monedas enlaí: 150 · (1/2) = 75 arboles.
+
+Luego, counting las monedas resultantes de los 56 árboles ilimitados, verificamos que 42 arboles son consecutivos.
+
+Finalmente, calculamos la probabilidad de obtener exactamente el 50% de arboles consecutivos: 42 · (1/2) = 21.
+</think>
+
+**Solución:**
+
+1. **Determinar la cantidad esperada de árboles en 150 llansamientos:**
+   
+   Cada llançament d'una moneda tiene una probabilidad de \( \frac{1}{2} \) de ser ilimitado y otra de \( \frac{1}{2} \).
+   
+   Por lo tanto, la cantidad esperada \( E \) de árboles en 150 llansamientos es:
+   
+   \[
+   E = 150 \cdot \frac{1}{2} = 75
+   \]
+   
+   Es decir, expectamos obtener 75 árboles.
+
+2. **Verificar las 56 árboles ilimitadas resultantes:**
+   
+   Countamos las 56 árboles que eran ilimitados.
+   
+3. **Determinar cuántas de estas arboles son consecutivos:**
+   
+   Sabemos que en 56 árboles ilimitados, 42 de ellos eran consecutivos.
+
+4. **Calcular la cantidad esperada para obtener exactamente el 50% de árboles consecutivos:**
+   
+   Supongamos que necesitamos obtener \( x \) árboles consecutivos para que el porcentaje sea 50%.
+   
+   Entonces, 
+   
+   \[
+   x = \frac{50}{100} \cdot (x + y)
+   \]
+   
+   Dónde \( y \) es la cantidad de árboles no consecutivos. Sin embargo, como estamos lookando para una probabilidad exacta de 50%, y considerando que los árboles son aleatorios, el número ideal de árboles consecutivos serías aproximadamente 21.
+
+   Luego,
+   
+   \[
+   x = 21
+   \]
+   
+5. **Finalmente, determinar la cantidad de llançamientos necesarios para obtener 42 árboles consecutivos:**
+   
+   Dado que el número esperado de árboles consecutivos en un llançamiento es \( \frac{1}{2} \), necesitamos realizar:
+   
+   \[
+   N = 42 \cdot 2 = 84
+   \]
+   
+   LLansamientos para obtener exactamente 42 árboles consecutivos.
+
+**Respuesta:**
+
+\boxed{C) 47}

@@ -1,0 +1,29 @@
+<think>
+Prime, identifico que hay 5 portes disponibles.
+
+Luego, se selectiona un único porta para entrar y otro diferente para eixir. Esto significa que los dos-selectos deben ser diferentes.
+
+Para calcular las maneras de seleccionar ambas PORTes, uso el principio multiplicativo: multiplico el número de opciones posibles para el primer selector por las opciones restantes para el segundo selector.
+
+Entonces, 5 · (5 - 1) = 20 maneras diferentes de entry y eixir.
+</think>
+
+Raonament:
+
+El parçé cinc tiene **5 portes**. Es necesario seleccionar dos portes diferentes paraentry y eixir.
+
+La cantidad de maneras de selectionar ambas portes se puede calcular de la siguiente manera:
+
+\[
+\text{Maneras de selection} = \text{Portes posibles para entry} \times (\text{Portes posibles para eixir} - 1)
+\]
+
+Dado que hay **5 portes**, la cantidad será:
+
+\[
+5 \times (5 - 1) = 5 \times 4 = 20
+\]
+
+**Respuesta:**
+
+\boxed{B) 20}

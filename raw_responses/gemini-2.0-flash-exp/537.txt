@@ -1,0 +1,8 @@
+Raonament:
+La cabra pot passejar per tota l'àrea del triangle (A). A més, pot passejar per una franja de terra al voltant del triangle, a una distància màxima d. Aquesta franja es pot dividir en dues parts:
+1.  **Rectangles:** Al llarg de cada costat del triangle, la cabra pot passejar per un rectangle de longitud igual a la longitud del costat i amplada d. La suma de les àrees d'aquests rectangles és la suma de les longituds dels costats (el perímetre P) multiplicada per l'amplada d, és a dir, dP.
+2.  **Sectors circulars:** A cada vèrtex del triangle, la cabra pot passejar per un sector circular de radi d. La suma dels angles interiors d'un triangle és 180 graus o π radians. Per tant, la suma dels angles dels sectors circulars és també π radians. La suma de les àrees d'aquests sectors circulars és equivalent a l'àrea d'un cercle de radi d, que és πd².
+
+Per tant, l'àrea total per la qual la cabra pot passejar és la suma de l'àrea del triangle, l'àrea dels rectangles i l'àrea dels sectors circulars: A + dP + πd².
+
+Resposta: C)

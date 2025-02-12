@@ -1,0 +1,61 @@
+Raonament:
+Siguin els nombres a, b i c de la forma:
+a = x y x
+b = z w z
+c = u v u
+on x, y, z, w, u, v són dígits entre 0 i 9, i x, z, u no poden ser 0.
+
+Sabem que a, b i c són nombres de tres xifres entre 100 i 999, ambdós inclosos.
+També sabem que b = 2a + 1 i c = 2b + 1.
+Substituint b en la segona equació, tenim c = 2(2a + 1) + 1 = 4a + 3.
+
+Com que a, b i c són nombres de tres xifres, tenim:
+100 <= a <= 999
+100 <= b <= 999
+100 <= c <= 999
+
+Com que b = 2a + 1, tenim 100 <= 2a + 1 <= 999, que implica 99 <= 2a <= 998, i per tant 49.5 <= a <= 499.
+Com que a és un nombre enter, 50 <= a <= 499.
+
+Com que c = 4a + 3, tenim 100 <= 4a + 3 <= 999, que implica 97 <= 4a <= 996, i per tant 24.25 <= a <= 249.
+Com que a és un nombre enter, 25 <= a <= 249.
+
+Combinant les dues restriccions, tenim 50 <= a <= 499 i 25 <= a <= 249. Per tant, 50 <= a <= 249.
+
+Ara, considerem la forma dels nombres.
+a = 100x + 10y + x = 101x + 10y
+b = 2a + 1 = 2(101x + 10y) + 1 = 202x + 20y + 1
+c = 4a + 3 = 4(101x + 10y) + 3 = 404x + 40y + 3
+
+Com que b té la primera i la tercera xifra iguals, 202x + 20y + 1 ha de tenir la forma z w z.
+Com que c té la primera i la tercera xifra iguals, 404x + 40y + 3 ha de tenir la forma u v u.
+
+Si x = 1, a = 1y1.
+b = 202 + 20y + 1 = 203 + 20y. Si y = 0, b = 203, no compleix. Si y = 1, b = 223, no compleix. Si y = 2, b = 243, no compleix. Si y = 3, b = 263, no compleix. Si y = 4, b = 283, no compleix. Si y = 5, b = 303, compleix.
+c = 404 + 40y + 3 = 407 + 40y. Si y = 5, c = 407 + 200 = 607, compleix.
+Per tant, a = 151 és una solució.
+
+Si x = 2, a = 2y2.
+b = 404 + 20y + 1 = 405 + 20y. Si y = 0, b = 405, no compleix. Si y = 1, b = 425, no compleix. Si y = 2, b = 445, no compleix. Si y = 3, b = 465, no compleix. Si y = 4, b = 485, no compleix. Si y = 5, b = 505, compleix.
+c = 808 + 40y + 3 = 811 + 40y. Si y = 5, c = 811 + 200 = 1011, no compleix.
+Per tant, a = 252 no és una solució.
+
+Si x = 1, a = 151, b = 303, c = 607.
+Si x = 2, a = 202, b = 405, no compleix.
+Si x = 2, a = 252, b = 505, c = 1011, no compleix.
+
+Si a = 151, b = 303, c = 607.
+Si a = 101, b = 203, no compleix.
+Si a = 111, b = 223, no compleix.
+Si a = 121, b = 243, no compleix.
+Si a = 131, b = 263, no compleix.
+Si a = 141, b = 283, no compleix.
+Si a = 151, b = 303, c = 607.
+Si a = 161, b = 323, no compleix.
+Si a = 171, b = 343, no compleix.
+Si a = 181, b = 363, no compleix.
+Si a = 191, b = 383, no compleix.
+
+Només hi ha una solució: a = 151.
+
+Resposta: B)

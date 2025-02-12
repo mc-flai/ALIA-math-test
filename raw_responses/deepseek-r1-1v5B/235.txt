@@ -1,0 +1,63 @@
+<think>
+Para resolver este problema, primero notemos que la funció f cumple amb dues propietats: f(x) = 2f(x + 1) i f(x + y) = f(x)f(y). Vemo que la primera es una relació recursive que pot可以从 f(0) inferir. 
+
+Consideremos x = 0 en la primera expressió:
+f(0) = 2f(0 + 1) ⇒ f(0) = 2f(1).
+
+A continuació, usarem la segona propietat per expressar f(x + y). Si tomem per exemple x = 1 i y = -1, entenixim que:
+f(0) = f(1 + (-1)) = f(1)f(-1).
+
+Per això, f(-1) es pot expressar de la primera expressió amb x = -2:
+f(-2) = f(-3 + 1) = 2f(-2). Averiguem f(-2):
+f(-2) = (1/2)f(0), per així que f(-3) = (1/4)f(0).
+
+Entonces, com tenim f(-1) = (1/2)f(0) i f(1) = (1/2)f(0), podem expressar f(x + y) en termes de f(x) i f(y). 
+
+Finalment, calculem la relació entre f(2016) i f(2014):
+f(2016) / f(2014) = [f(2014 + 2)] / f(2014) = (f(2014)f(2)) / f(2014) = f(2).
+
+Per a determinar f(2), utilitzem la primera expressió comenciaments:
+f(1) = (1/2)f(0), per tant, f(2) = f(1 + 1) = f(1)^2. 
+
+Entonces, f(2) = (1/2 f(0))^2 = (1/4)f(0). Finalmente, f(2016)/f(2014) es igual a (1/4)f(0)/(1/4)f(0) = 1.
+</think>
+
+Para resolver el problema, seguiremos los siguientes pasos:
+
+1. **Identificar la relación recursive:**
+   Dada que \( f(x) = 2f(x + 1) \), podemos expressar:
+   \[
+   f(x + 1) = \frac{1}{2}f(x)
+   \]
+  stairs.
+
+2. **Aplicar la relación recursive para determinedad de x:**
+   Consideremos \( x = y = 0 \):
+   \[
+   f(0) = f(0 + 0) = f(0)f(0) \Rightarrow f(0)^2 = f(0)
+   \]
+   Esto implica que \( f(0) = 1 \) (la otra solución es f(0)=0, pero debemos considerar si esta es la única posibilidad).
+
+3. **Determinar \( f(1) \):**
+   Usando la relación recursive:
+   \[
+   f(0) = 2f(1) \Rightarrow 1 = 2f(1) \Rightarrow f(1) = \frac{1}{2}
+   \]
+
+4. **Calcular \( f(2) \):**
+   Aplicamos la relación recursive para x = 1:
+   \[
+   f(2) = f(1 + 1) = f(1)f(1) = \left(\frac{1}{2}\right)^2 = \frac{1}{4}
+   \]
+
+5. **Calcular \( f(x + y) = f(x)f(y):**
+   Para determinar la relación entre \( f(2016) \) y \( f(2014) \), consideramos:
+   \[
+   f(2016) = f(2014 + 2) = f(2014)f(2)
+   \]
+   Entonces,
+   \[
+   \frac{f(2016)}{f(2014)} = f(2) = \frac{1}{4}
+   \]
+
+**Respuesta final:** \boxed{\dfrac{1}{4}}

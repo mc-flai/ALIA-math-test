@@ -1,0 +1,51 @@
+<think>
+Per determinar quina és la darrera pàgina, es prefiem identificar el nombre segant del llibre sense skip que siga a les pàgines que s'etiquetaven de 1, 2, 4, 5, 7, 8, etc.
+
+Com que cada tres pàgine el número ha saldats sense comprobar si el skips es cumulativement o per pas. Així, al passos següents:
+
+- Pàgina 3: skip a la pàgina 4
+- Pàgina 6: skip a la pàgina 7
+- Pàgina 9: skip a la pàgina 10
+
+Per dir que el llibre té 89 pàgina, com s'aplicaré aquesta regularitat:
+
+N = (P - 2) / 3 + 1 = 89
+N - 2 / 3 + 1 = 89
+N - 2 = 3*88 = 264
+N = 266
+
+Per així que la darrera pàgina sigui N, la resposta serà el mòltiple de 3 más 1, al mig del llibre.
+
+Els valors possibles s'astrenen en les opcions donades. Així com que 267 ÷ 3 = 89, la darrera pàgina és 267.
+</think>
+
+**Raonament:**
+
+El llibre té 89 pàgina i hi ha un skip every three pages (a les pàgines 3, 6, 9,...etc). La fórmula per donar el nombre de la darrera pàgina es dona com:
+
+\[
+N = \frac{P - 2}{3} + 1
+\]
+
+donos \( P = 89 \):
+
+\[
+N = \frac{89 - 2}{3} + 1 = \frac{87}{3} + 1 = 29 + 1 = 30
+\]
+
+Per així que la darrera pàgina siga \( N \), com s'aplicaré aquesta regularitat:
+
+- Pàgina \( 30 - 2 = 28 \): skip a la pàgina \( 29 \)
+- Pàgina \( 29 \): skip a la pàgina \( 30 \)
+
+Per al mig del llibre, la darrera pàgina és:
+
+\[
+N = 89 + (89 - 1) \div 2 = 89 + 44 = 133
+\]
+
+**Respuesta:**
+
+Els valors posibles s'astrenen en les opcions donades. Així com que \( 133 \) és una de lesOptions proposadas, la darrera pàgina siga la OPTION B:
+
+**Final Answer:** \boxed{B}

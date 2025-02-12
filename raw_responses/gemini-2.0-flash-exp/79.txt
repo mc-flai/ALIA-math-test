@@ -1,0 +1,12 @@
+Raonament:
+El nombre de zeros al final d'un factorial ve determinat pel nombre de factors 10 que conté. Un factor 10 es forma per la multiplicació d'un 2 i un 5. En un factorial, hi ha molts més factors 2 que factors 5, per tant, el nombre de zeros al final del factorial ve determinat pel nombre de factors 5.
+
+Per calcular el nombre de factors 5 en 100!, hem de comptar quants múltiples de 5 hi ha entre 1 i 100, quants múltiples de 25 (5^2) hi ha, quants múltiples de 125 (5^3) hi ha, i així successivament.
+
+* Múltiples de 5: 100 / 5 = 20
+* Múltiples de 25: 100 / 25 = 4
+* Múltiples de 125: 100 / 125 = 0 (no hi ha cap múltiple de 125 entre 1 i 100)
+
+Per tant, el nombre total de factors 5 en 100! és 20 + 4 = 24. Això significa que hi ha 24 zeros al final de 100!.
+
+Resposta: D)

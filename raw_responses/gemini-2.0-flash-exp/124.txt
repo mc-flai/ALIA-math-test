@@ -1,0 +1,10 @@
+Raonament:
+Per formar un triangle necessitem tres punts no col·lineals. Tenim 7 punts en total, 6 dels quals estan en una mateixa recta. Això vol dir que per formar un triangle, necessitem seleccionar dos punts de la recta i un punt que no estigui en la recta, o bé, seleccionar tres punts que no estiguin en la recta. En aquest cas, només tenim un punt que no està en la recta.
+
+Per tant, per formar un triangle, hem de seleccionar dos punts dels 6 que estan en la recta i un punt del que no està en la recta.
+
+El nombre de maneres de seleccionar 2 punts dels 6 que estan en la recta és una combinació, ja que l'ordre no importa. Això es calcula com C(6, 2) = 6! / (2! * (6-2)!) = 6! / (2! * 4!) = (6 * 5) / (2 * 1) = 15.
+
+Una vegada hem seleccionat dos punts de la recta, només hi ha una manera de seleccionar el tercer punt, que és el que no està en la recta. Per tant, el nombre total de triangles que es poden formar és 15 * 1 = 15.
+
+Resposta: D)

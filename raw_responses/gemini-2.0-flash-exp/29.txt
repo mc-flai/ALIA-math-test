@@ -1,0 +1,31 @@
+Raonament:
+Primer, observem que el nombre A es pot expressar com la suma d'una progressió geomètrica:
+A = 1 + 10 + 10^2 + ... + 10^2014 = (10^2015 - 1) / 9
+
+Ara, volem calcular A * 2015. En comptes de fer la multiplicació directament, analitzem el patró que es forma quan multipliquem nombres formats per uns per altres nombres.
+
+Si multipliquem 1 per 2015, obtenim 2015. La suma de les xifres és 2+0+1+5 = 8.
+Si multipliquem 11 per 2015, obtenim 22165. La suma de les xifres és 2+2+1+6+5 = 16.
+Si multipliquem 111 per 2015, obtenim 223665. La suma de les xifres és 2+2+3+6+6+5 = 24.
+Si multipliquem 1111 per 2015, obtenim 2238665. La suma de les xifres és 2+2+3+8+6+6+5 = 32.
+
+Observem que la suma de les xifres augmenta en 8 cada vegada que afegim un 1 al nombre format per uns. Això passa perquè quan multipliquem 111...1 per 2015, el resultat és una seqüència de dígits que augmenta gradualment fins a un cert punt i després es manté constant o disminueix.
+
+En el cas de 2015 uns, el resultat de la multiplicació serà un nombre amb una estructura similar. La suma de les xifres augmentarà en 8 per cada 1 que afegim fins que arribem a un punt on la suma de les xifres ja no augmenta més.
+
+Podem observar que la suma de les xifres de 2015 és 2+0+1+5 = 8.
+Si multipliquem 1 per 2015, la suma de les xifres és 8.
+Si multipliquem 11 per 2015, la suma de les xifres és 16 = 2*8.
+Si multipliquem 111 per 2015, la suma de les xifres és 24 = 3*8.
+Si multipliquem 1111 per 2015, la suma de les xifres és 32 = 4*8.
+
+Això suggereix que si tenim n uns, la suma de les xifres del producte serà n*8 fins que arribem a un punt on la suma de les xifres ja no augmenta més. Aquest punt es dona quan el nombre de xifres del producte comença a tenir "arrossegaments" en la suma.
+
+En el nostre cas, tenim 2015 uns. Si la suma de les xifres fos simplement 2015 * 8, obtindríem 16120. Però hem de tenir en compte que hi haurà "arrossegaments" en la suma.
+
+Però, si fem la multiplicació de 11111 per 2015, obtenim 22388665, la suma de les xifres és 2+2+3+8+8+6+6+5 = 40 = 5*8.
+Si fem la multiplicació de 111111 per 2015, obtenim 223888665, la suma de les xifres és 2+2+3+8+8+8+6+6+5 = 48 = 6*8.
+
+Això ens indica que la suma de les xifres del producte A * 2015 serà 2015 * 8 = 16120.
+
+Resposta: B)

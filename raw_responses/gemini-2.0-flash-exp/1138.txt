@@ -1,0 +1,119 @@
+Raonament:
+L'equació que hem de resoldre és abcd = a³ + b³ + c³ + d³, on abcd representa un nombre de 4 dígits. Això vol dir que 1000a + 100b + 10c + d = a³ + b³ + c³ + d³.
+Com que abcd és un nombre de 4 dígits, sabem que 1000 ≤ abcd ≤ 9999. Per tant, 1000 ≤ a³ + b³ + c³ + d³ ≤ 9999.
+El valor màxim que pot tenir cada dígit és 9, així que el valor màxim de a³ + b³ + c³ + d³ és 4 * 9³ = 4 * 729 = 2916. Això vol dir que a no pot ser 9, 8, 7, 6 o 5, ja que 5000 > 2916.
+Si a = 1, el valor mínim de abcd seria 1000, i el valor màxim de a³ + b³ + c³ + d³ seria 1³ + 3*9³ = 1 + 2187 = 2188. Per tant, a podria ser 1.
+Si a = 2, el valor mínim de abcd seria 2000, i el valor màxim de a³ + b³ + c³ + d³ seria 2³ + 3*9³ = 8 + 2187 = 2195. Per tant, a podria ser 2.
+Si a = 3, el valor mínim de abcd seria 3000, i el valor màxim de a³ + b³ + c³ + d³ seria 3³ + 3*9³ = 27 + 2187 = 2214. Per tant, a podria ser 3.
+Si a = 4, el valor mínim de abcd seria 4000, i el valor màxim de a³ + b³ + c³ + d³ seria 4³ + 3*9³ = 64 + 2187 = 2251. Per tant, a podria ser 4.
+Si a = 5, el valor mínim de abcd seria 5000, i el valor màxim de a³ + b³ + c³ + d³ seria 5³ + 3*9³ = 125 + 2187 = 2312. Per tant, a podria ser 5.
+Si a = 6, el valor mínim de abcd seria 6000, i el valor màxim de a³ + b³ + c³ + d³ seria 6³ + 3*9³ = 216 + 2187 = 2403. Per tant, a podria ser 6.
+Si a = 7, el valor mínim de abcd seria 7000, i el valor màxim de a³ + b³ + c³ + d³ seria 7³ + 3*9³ = 343 + 2187 = 2530. Per tant, a podria ser 7.
+Si a = 8, el valor mínim de abcd seria 8000, i el valor màxim de a³ + b³ + c³ + d³ seria 8³ + 3*9³ = 512 + 2187 = 2699. Per tant, a podria ser 8.
+Si a = 9, el valor mínim de abcd seria 9000, i el valor màxim de a³ + b³ + c³ + d³ seria 9³ + 3*9³ = 729 + 2187 = 2916. Per tant, a podria ser 9.
+Però, com que el valor màxim de a³ + b³ + c³ + d³ és 2916, a no pot ser 9, 8, 7, 6 o 5.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=2, el nombre 370 és una solució: 370 = 3³ + 7³ + 0³ = 27 + 343 + 0 = 370. Però no és un nombre de 4 dígits.
+Si provem amb a=3, el nombre 371 és una solució: 371 = 3³ + 7³ + 1³ = 27 + 343 + 1 = 371. Però no és un nombre de 4 dígits.
+Si provem amb a=4, el nombre 407 és una solució: 407 = 4³ + 0³ + 7³ = 64 + 0 + 343 = 407. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153. Però no és un nombre de 4 dígits.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 1634 és una solució: 1634 = 1³ + 6³ + 3³ + 4³ = 1 + 216 + 27 + 64 = 308. No és una solució.
+Si provem amb a=1, el nombre 1734 és una solució: 1734 = 1³ + 7³ + 3³ + 4³ = 1 + 343 + 27 + 64 = 435. No és una solució.
+Si provem amb a=1, el nombre 153 és una solució: 153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 15

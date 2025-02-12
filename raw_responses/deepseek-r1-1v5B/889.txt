@@ -1,0 +1,45 @@
+<think>
+Para resolver este problema, primero identifico las velocidades de Cris y Roc. Sabemos que Cris va de P a Q con una velocidad constante, y Roc va de Q a P también con la misma velocidad constante.
+
+Luego, definimos t como el tiempo de inicio de cada uno. Dado que ambos empiezan en 10:00, cuando criten al pases, necesitamos determinar cuán longe van entre themselves para covering su trasa.
+
+Finalmente, calculamos las tardas totales de cada uno y sumamoslos para obtener la hora final de llocación.
+</think>
+
+Para resolver este problema, seguiremos estos pasos:
+
+1. **Definir Variables:**
+   - Vamos a designar:
+     - \( v_C \) como la velocidad de Cris.
+     - \( v_R \) como la velocidad de Roc.
+     - \( t \) como el tiempo de inicio de cada uno (en minutos).
+
+2. **Distancia entre P y Q:**
+   Supongamos que la distancia entre P y Q es \( D \). Al ser constante, podemos usar la fórmula:
+   \[
+   D = v_C \times t
+   \]
+   Donde:
+   - \( D \) es la distancia en unidades de distancia,
+   - \( v_C \) es la velocidad de Cris,
+   - \( t \) es el tiempo (en minutos) que Cris tarda para cover la distancia.
+
+3. **Tardos Totales:**
+   - **Tardas totales para Cris y Roc:**
+     - Cris tarda 60 minutos.
+     - Roc tarda 90 minutos.
+     - Por lo tanto, el tiempo total que criten es:
+       \[
+       t_{\text{total}} = 60 + 90 = 150 \text{ minutos}
+       \]
+
+4. **Hora de L locación:**
+   Dado que ambos empiezan en 10:00, sumamos el tiempo total de critud:
+   \[
+   10:00 + 150 \text{ minutos} = 10:\30 \quad (\text{porque } 60 \text{ minutos son } 1 \text{ hora y } 90 \text{ son } 1 \text{ hora y } 30 \text{ minutos})
+   \]
+
+**Respuesta Final:**
+La hora de l locación es **A las 10.30**.
+
+\boxed{A) A les 10.24}

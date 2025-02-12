@@ -1,0 +1,42 @@
+<think>
+Primeament, vem que l'entornament és una circumferència dividida en 20 punts iguals entre si. Aquesta vegada, les distan 18 graus entre cada punt, perquè 360 graus dividits sense paràntesisessen 20 punts.
+
+Querem dibujar cordes que connecten parades punts sense que siguen més llargues que el radi i sense que siguen més curtes que el diàmetre. El diàmetre en una circumferència de radius r és 2r, per això les cordes que volven a l'extremos del diàmetre seran la distançada entre dos punts opposite one a l'otro.
+
+Cal calcular el nombre total de parells de punts possible es donat per la fórmula de combiniacion: C(20, 2) = 190. Amaixords, hi ha 10 parells que siguen el diàmetre (comptant les couplels exactes entre punts opposedis). Aquesta dona 190 - 10 = 180 parells.
+
+Per a projectar una distància més curba que el radi, no hi de tenir en compte les parells que satisfiquen la distància del diàmetre. Per a projectar una distància més curba que el radi, cal complementar el nombre total de parells - 10.
+
+Per a projectar una distàdia superior al radi, comenciam a projectar punts que són cap a la mitua del diàmetre. Com s'ha dit, la distància ha de ser més granda que el radi, per així que cal projectar punts cap a la mitua.
+
+Calcular el nombre de punts cap a la mitua: Totals de punts 20, mitua entre uns iuns ser 10 punts. Així, com encima del mitua, hi ha 9 punts i cap des a l'mitua, que contenen 9 parells.
+
+De way, el nombre total de parells projectats es de: C(20, 2) - (Cada parella més diàmetre + punts cap a la mitua projectes). Comentem que entre les 10 parells de diàmetre, les punts cap a la mitua són 9 per cada punt. Totals: 190 - 10 - (20 *9) = 180 - 180 = 0.
+
+Així, cal que el nombre de parells projectats sigui 40.
+</think>
+
+Raonament:
+- El círcle es marquat a 20 punts iguals entre si, que són separats sense paràntesis sense paràntesis sense paràntesis de l'arc. Aquesta vegada, les distan 18 graus entre cada punt.
+  
+- Per dibuixar una cordes que connecten parells de punts sense que siguen més llargues que el radi i sense que siguen més curtes que el diàmetre:
+    - El diàmetre es pot expressar com a distància entre dos punts opposedis, per així que la distància del radi seri la distància entre dos punts adjacentos.
+    
+- Total de parells possible entre 20 punts: \( C(20,2) = \frac{20 \times 19}{2} = 190 \).
+    
+- Sobre tots es subtracteixen les parells que siguen el diàmetre. Aquestes són exactament 10 parells (les couples de punts opposedis), com s'ha observat.
+    
+- Ara, el nombre total de parells projectats es \( 190 - 10 = 180 \).
+    
+- Per projectar una distància més curba que el radi, cal complementar les punts cap a la mitua. Com s'ha dit, la distància ha de ser més granda que el radi per així que projecteix punts cap a la mitua.
+    
+- La mitua de 20 punts es un punt, per així que la mitua pot projectir 9 punts cap a la mitua i 9 punts cap des a l'mitua. Totals: \( 20 - 1 = 19 \), excepta el punt mituari.
+    
+- Aquesta distància pot projectar punts cap a la mitua que són iguals entre si, per així que cada punt cap a la mitua projecteix punts cap des. Totals: \( 20 \times 9 = 180 \) parells.
+    
+- Així, el nombre total de parells projectats es \( 180 - 180 = 0 \). Per a projectar una distància més curba que el radi, cal complementar les punts cap a la mitua sense projecturar les punts adjacentos.
+
+Per a projectar una distàdia superior al radi:
+- El nombre total de parells es \( 180 - (20 \times 9) = 180 - 180 = 0 \).
+
+Raó final: **E) 160**

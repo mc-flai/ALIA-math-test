@@ -1,0 +1,35 @@
+Raonament:
+1. **Definir variables:**
+   - Sigui 'x' el primer nombre enter.
+   - El segon nombre és 7 vegades el primer, per tant, és '7x'.
+   - Sigui 'z' el tercer nombre enter.
+
+2. **Establir equacions:**
+   - El producte dels tres nombres és 140:  x * 7x * z = 140
+   - El tercer nombre és més petit que el segon: z < 7x
+
+3. **Simplificar l'equació del producte:**
+   - 7x²z = 140
+   - x²z = 20
+
+4. **Trobar factors de 20:**
+   - Els factors de 20 són: 1, 2, 4, 5, 10, 20.
+   - Com que x² ha de ser un quadrat perfecte, les possibles combinacions per x² i z són:
+     - x² = 1, z = 20
+     - x² = 4, z = 5
+
+5. **Analitzar les combinacions:**
+   - Si x² = 1, llavors x = 1 o x = -1.
+     - Si x = 1, el segon nombre és 7 i el tercer és 20. Però z < 7x no es compleix (20 no és menor que 7).
+     - Si x = -1, el segon nombre és -7 i el tercer és 20. Però z < 7x no es compleix (20 no és menor que -7).
+   - Si x² = 4, llavors x = 2 o x = -2.
+     - Si x = 2, el segon nombre és 14 i el tercer és 5. Es compleix z < 7x (5 < 14).
+     - Si x = -2, el segon nombre és -14 i el tercer és 5. Es compleix z < 7x (5 < -14 no es compleix).
+
+6. **Solució:**
+   - L'única combinació que compleix totes les condicions és x = 2, el segon nombre és 14 i el tercer és 5.
+
+7. **Calcular la suma:**
+   - La suma dels tres nombres és 2 + 14 + 5 = 21.
+
+Resposta: B)

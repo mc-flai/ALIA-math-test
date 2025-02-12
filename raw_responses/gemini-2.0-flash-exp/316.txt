@@ -1,0 +1,17 @@
+Raonament:
+1. **Visualització:** Imaginem el cub gran dividit en 27 cubs petits. Aquests cubs petits es poden classificar segons el nombre de cares pintades:
+    * **Cubs amb 3 cares pintades:** Són els 8 cubs de les cantonades.
+    * **Cubs amb 2 cares pintades:** Són els 12 cubs que estan al mig de cada aresta.
+    * **Cubs amb 1 cara pintada:** Són els 6 cubs que estan al mig de cada cara.
+    * **Cubs amb 0 cares pintades:** És el cub que està al centre del cub gran.
+
+2. **Càlcul de cares no pintades:**
+    * Els 8 cubs de les cantonades tenen 3 cares pintades i, per tant, 3 cares no pintades cadascun.
+    * Els 12 cubs de les arestes tenen 2 cares pintades i, per tant, 4 cares no pintades cadascun.
+    * Els 6 cubs de les cares tenen 1 cara pintada i, per tant, 5 cares no pintades cadascun.
+    * El cub central té 0 cares pintades i, per tant, 6 cares no pintades.
+
+3. **Suma total de cares no pintades:**
+    * (8 cubs * 3 cares no pintades) + (12 cubs * 4 cares no pintades) + (6 cubs * 5 cares no pintades) + (1 cub * 6 cares no pintades) = 24 + 48 + 30 + 6 = 108
+
+Resposta: D)

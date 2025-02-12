@@ -1,0 +1,16 @@
+Raonament:
+Per trobar els possibles residus de dividir els cubs dels nombres naturals per 9, podem analitzar els residus dels nombres naturals al dividir-los per 9 i després elevar-los al cub i calcular el residu de nou. Els possibles residus al dividir un nombre natural per 9 són 0, 1, 2, 3, 4, 5, 6, 7 i 8.
+
+* Si el residu és 0, el cub també tindrà residu 0 (0^3 = 0).
+* Si el residu és 1, el cub tindrà residu 1 (1^3 = 1).
+* Si el residu és 2, el cub tindrà residu 8 (2^3 = 8).
+* Si el residu és 3, el cub tindrà residu 0 (3^3 = 27, i 27 dividit per 9 té residu 0).
+* Si el residu és 4, el cub tindrà residu 1 (4^3 = 64, i 64 dividit per 9 té residu 1).
+* Si el residu és 5, el cub tindrà residu 8 (5^3 = 125, i 125 dividit per 9 té residu 8).
+* Si el residu és 6, el cub tindrà residu 0 (6^3 = 216, i 216 dividit per 9 té residu 0).
+* Si el residu és 7, el cub tindrà residu 1 (7^3 = 343, i 343 dividit per 9 té residu 1).
+* Si el residu és 8, el cub tindrà residu 8 (8^3 = 512, i 512 dividit per 9 té residu 8).
+
+Per tant, els possibles residus són 0, 1 i 8. Hi ha 3 residus diferents.
+
+Resposta: C)

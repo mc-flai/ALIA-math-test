@@ -1,0 +1,27 @@
+Raonament:
+Aquest problema es pot resoldre utilitzant el principi d'inclusió-exclusió per a conjunts. Tenim tres conjunts: llaunes amb color blanc (B), llaunes amb color blau (A) i llaunes amb color verd (V).
+* |B| = 25
+* |A| = 28
+* |V| = 20
+* |B ∩ A ∩ V| = 5
+* Total de llaunes = 36
+
+Volem trobar el nombre de llaunes que tenen exactament un color. Per fer-ho, primer hem de trobar el nombre de llaunes que tenen almenys dos colors.
+
+El nombre total de llaunes és 36. Si sumem el nombre de llaunes de cada color, estem comptant les llaunes amb dos colors dues vegades i les llaunes amb tres colors tres vegades. Per tant, tenim:
+|B| + |A| + |V| = 25 + 28 + 20 = 73
+
+Ara, utilitzem el principi d'inclusió-exclusió per a tres conjunts:
+|B ∪ A ∪ V| = |B| + |A| + |V| - |B ∩ A| - |B ∩ V| - |A ∩ V| + |B ∩ A ∩ V|
+Sabem que |B ∪ A ∪ V| = 36 (totes les llaunes tenen almenys un color).
+36 = 73 - (|B ∩ A| + |B ∩ V| + |A ∩ V|) + 5
+|B ∩ A| + |B ∩ V| + |A ∩ V| = 73 + 5 - 36 = 42
+
+Ara, sabem que les llaunes amb dos colors es compten dues vegades en la suma |B ∩ A| + |B ∩ V| + |A ∩ V|, i les llaunes amb tres colors es compten tres vegades en la suma |B| + |A| + |V|. Per tant, per trobar el nombre de llaunes amb exactament dos colors, hem de restar el nombre de llaunes amb tres colors dues vegades de la suma de les interseccions de dos conjunts:
+Llaunes amb exactament dos colors = (|B ∩ A| + |B ∩ V| + |A ∩ V|) - 3 * |B ∩ A ∩ V| = 42 - 3 * 5 = 42 - 15 = 27
+
+Ara, per trobar el nombre de llaunes amb exactament un color, restem el nombre de llaunes amb dos o tres colors del total de llaunes:
+Llaunes amb un color = Total - Llaunes amb dos colors - Llaunes amb tres colors
+Llaunes amb un color = 36 - (27) - 5 = 36 - 32 = 4
+
+Resposta: B)

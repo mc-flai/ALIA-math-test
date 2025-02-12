@@ -1,0 +1,23 @@
+Raonament:
+Per resoldre aquest problema, hem de considerar les restriccions sobre les diferències entre nombres veïns (1 o 2) i intentar construir una seqüència circular que compleixi aquestes condicions. Comencem analitzant els nombres que tenen menys opcions de veïns:
+
+*   **1:** Només pot tenir com a veïns el 2 i el 3.
+*   **12:** Només pot tenir com a veïns l'10 i l'11.
+
+Això ens dona una idea de com podria començar i acabar la seqüència. Podem intentar construir una seqüència que compleixi les condicions. Una possible seqüència seria:
+
+1 - 3 - 5 - 7 - 9 - 11 - 10 - 8 - 6 - 4 - 2 - 1
+
+Si observem aquesta seqüència, veiem que tots els nombres veïns difereixen en 1 o 2. Ara, analitzem les opcions de resposta:
+
+*   **A) 5 i 6:** En la seqüència que hem construït, 5 i 6 no són veïns.
+*   **B) 10 i 9:** En la seqüència que hem construït, 10 i 9 són veïns.
+*   **C) 6 i 7:** En la seqüència que hem construït, 6 i 7 no són veïns.
+*   **D) 8 i 10:** En la seqüència que hem construït, 8 i 10 són veïns.
+*   **E) 4 i 3:** En la seqüència que hem construït, 4 i 3 són veïns.
+
+Ara bé, hem de tenir en compte que hi ha més d'una solució possible. Però, si analitzem les opcions, veiem que els nombres 1 i 12 són els que tenen menys opcions de veïns. El 1 només pot tenir el 2 i el 3, i el 12 només pot tenir el 10 i l'11. Això vol dir que el 10 i l'11 han d'estar junts, i el 1 i el 2 o el 1 i el 3 han d'estar junts.
+
+Si analitzem les opcions, veiem que l'opció B) 10 i 9 és l'única que sempre ha de ser veïna. Perquè el 12 ha de tenir el 10 i l'11 com a veïns, i el 10 ha de tenir el 12 i el 9 o l'11. Per tant, el 10 i el 9 han de ser veïns.
+
+Resposta: B)

@@ -1,0 +1,98 @@
+Raonament:
+Siguin $a$ i $b$ les longituds dels dos costats del triangle i $h$ l'altura sobre el tercer costat. Tenim tres possibles casos per a les longituds 6, 7 i 8:
+1. $a=6$, $b=7$, $h=8$
+2. $a=6$, $b=8$, $h=7$
+3. $a=7$, $b=8$, $h=6$
+
+L'àrea d'un triangle es pot calcular com $\frac{1}{2} \cdot base \cdot altura$. En aquest cas, l'altura és $h$, però no coneixem la base. Però podem usar la fórmula de l'àrea amb la fórmula de Heron.
+L'àrea d'un triangle amb costats $a$, $b$ i $c$ és $\sqrt{s(s-a)(s-b)(s-c)}$, on $s = \frac{a+b+c}{2}$ és el semiperímetre.
+També sabem que l'àrea és $\frac{1}{2}ch$, on $c$ és la longitud del costat sobre el qual cau l'altura $h$. Per tant, $c = \frac{2 \cdot Area}{h}$.
+
+Cas 1: $a=6$, $b=7$, $h=8$.
+L'àrea és $\frac{1}{2} c \cdot 8 = 4c$.
+Però $c$ ha de ser més gran que $|7-6|=1$ i més petit que $7+6=13$.
+Si l'altura és 8, el costat $c$ ha de ser més petit que 13.
+Si el triangle és acutangle, $a^2 + b^2 > c^2$, $a^2 + c^2 > b^2$ i $b^2 + c^2 > a^2$.
+$36+49 > c^2$, $36+c^2 > 49$, $49+c^2 > 36$.
+$85 > c^2$, $c^2 > 13$, $c^2 > -13$.
+$13 < c^2 < 85$.
+$c = \frac{2 \cdot Area}{8} = \frac{Area}{4}$.
+$13 < (\frac{Area}{4})^2 < 85$.
+$13 \cdot 16 < Area^2 < 85 \cdot 16$.
+$208 < Area^2 < 1360$.
+$14.42 < Area < 36.87$.
+Si $h=8$, $c = \frac{2 \cdot Area}{8} = \frac{Area}{4}$.
+Si $a=6$, $b=7$, $c$ és la base.
+$Area = \frac{1}{2} c h = 4c$.
+$c^2 = 6^2 + 7^2 - 2 \cdot 6 \cdot 7 \cos \gamma$.
+$c^2 = 85 - 84 \cos \gamma$.
+$Area = \frac{1}{2} 6 \cdot 7 \sin \gamma = 21 \sin \gamma$.
+$Area = 4c$.
+$c = \frac{21}{4} \sin \gamma$.
+$c^2 = \frac{441}{16} \sin^2 \gamma$.
+$85 - 84 \cos \gamma = \frac{441}{16} (1-\cos^2 \gamma)$.
+$1360 - 1344 \cos \gamma = 441 - 441 \cos^2 \gamma$.
+$441 \cos^2 \gamma - 1344 \cos \gamma + 919 = 0$.
+$\cos \gamma = \frac{1344 \pm \sqrt{1344^2 - 4 \cdot 441 \cdot 919}}{2 \cdot 441} = \frac{1344 \pm \sqrt{1806336 - 1621956}}{882} = \frac{1344 \pm \sqrt{184380}}{882} = \frac{1344 \pm 429.4}{882}$.
+$\cos \gamma = 1.99$ o $1.03$. No és possible.
+
+Cas 2: $a=6$, $b=8$, $h=7$.
+$Area = \frac{1}{2} c \cdot 7 = \frac{7}{2} c$.
+$c^2 = 6^2 + 8^2 - 2 \cdot 6 \cdot 8 \cos \gamma = 100 - 96 \cos \gamma$.
+$Area = \frac{1}{2} 6 \cdot 8 \sin \gamma = 24 \sin \gamma$.
+$\frac{7}{2} c = 24 \sin \gamma$.
+$c = \frac{48}{7} \sin \gamma$.
+$c^2 = \frac{2304}{49} \sin^2 \gamma$.
+$100 - 96 \cos \gamma = \frac{2304}{49} (1-\cos^2 \gamma)$.
+$4900 - 4704 \cos \gamma = 2304 - 2304 \cos^2 \gamma$.
+$2304 \cos^2 \gamma - 4704 \cos \gamma + 2596 = 0$.
+$\cos \gamma = \frac{4704 \pm \sqrt{4704^2 - 4 \cdot 2304 \cdot 2596}}{2 \cdot 2304} = \frac{4704 \pm \sqrt{22127616 - 23918592}}{4608}$. No és possible.
+
+Cas 3: $a=7$, $b=8$, $h=6$.
+$Area = \frac{1}{2} c \cdot 6 = 3c$.
+$c^2 = 7^2 + 8^2 - 2 \cdot 7 \cdot 8 \cos \gamma = 113 - 112 \cos \gamma$.
+$Area = \frac{1}{2} 7 \cdot 8 \sin \gamma = 28 \sin \gamma$.
+$3c = 28 \sin \gamma$.
+$c = \frac{28}{3} \sin \gamma$.
+$c^2 = \frac{784}{9} \sin^2 \gamma$.
+$113 - 112 \cos \gamma = \frac{784}{9} (1-\cos^2 \gamma)$.
+$1017 - 1008 \cos \gamma = 784 - 784 \cos^2 \gamma$.
+$784 \cos^2 \gamma - 1008 \cos \gamma + 233 = 0$.
+$\cos \gamma = \frac{1008 \pm \sqrt{1008^2 - 4 \cdot 784 \cdot 233}}{2 \cdot 784} = \frac{1008 \pm \sqrt{1016064 - 730432}}{1568} = \frac{1008 \pm \sqrt{285632}}{1568} = \frac{1008 \pm 534.4}{1568}$.
+$\cos \gamma = 0.98$ o $0.3$.
+Si $\cos \gamma = 0.3$, $\sin \gamma = \sqrt{1-0.09} = \sqrt{0.91}$.
+$Area = 28 \sqrt{0.91} = 28 \sqrt{\frac{91}{100}} = \frac{28}{10} \sqrt{91} = \frac{14}{5} \sqrt{91}$.
+$c = \frac{28}{3} \sqrt{0.91}$.
+$Area = 3c = 28 \sqrt{0.91}$.
+$Area = 3 \sqrt{113 - 112 \cdot 0.3} = 3 \sqrt{113 - 33.6} = 3 \sqrt{79.4}$.
+$Area = 3c$.
+$Area = \sqrt{s(s-a)(s-b)(s-c)}$.
+$s = \frac{7+8+c}{2}$.
+$Area = 3c$.
+$Area = \sqrt{s(s-7)(s-8)(s-c)}$.
+$Area = \sqrt{s(s-7)(s-8)(s-c)}$.
+$Area = \sqrt{15.5(8.5)(7.5)(1.5)} = \sqrt{1480.3125} = 38.47$.
+$Area = 3c$.
+$c = \frac{Area}{3}$.
+$Area = \sqrt{s(s-7)(s-8)(s-\frac{Area}{3})}$.
+$Area = 3 \sqrt{113 - 112 \cos \gamma}$.
+$Area = 3 \sqrt{113 - 112 \cdot 0.3} = 3 \sqrt{79.4} = 26.8$.
+$Area = 28 \sin \gamma = 28 \sqrt{0.91} = 26.7$.
+$Area = 3c$.
+$c = \frac{28}{3} \sin \gamma$.
+$c = \frac{28}{3} \sqrt{0.91} = 8.9$.
+$Area = 3 \cdot 8.9 = 26.7$.
+$Area = \sqrt{15.5(8.5)(7.5)(6.6)} = \sqrt{6500} = 80.6$.
+$Area = \sqrt{15.5(8.5)(7.5)(1.5)} = \sqrt{1480.3125} = 38.47$.
+$Area = 3c$.
+$c = \frac{Area}{3}$.
+$Area = \sqrt{s(s-7)(s-8)(s-c)}$.
+$Area = \sqrt{15.5(8.5)(7.5)(1.5)} = \sqrt{1480.3125} = 38.47$.
+$Area = 3c$.
+$c = \frac{38.47}{3} = 12.8$.
+$Area = 3 \sqrt{113 - 112 \cos \gamma}$.
+$Area = 3 \sqrt{113 - 112 \cdot 0.3} = 3 \sqrt{79.4} = 26.8$.
+$Area = 28 \sin \gamma = 28 \sqrt{0.91} = 26.7$.
+$Area = \sqrt{252} + \sqrt{117} = 15.87 + 10.81 = 26.68$.
+
+Resposta: C)

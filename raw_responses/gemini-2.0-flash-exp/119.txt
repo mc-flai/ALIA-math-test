@@ -1,0 +1,20 @@
+Raonament:
+La mosca duplica la seva velocitat cada metre recorregut. Això significa que la seva velocitat creix exponencialment. Per tant, la mosca guanyarà velocitat molt ràpidament i recorrerà grans distàncies en poc temps.
+
+Podem modelar la velocitat de la mosca com una funció de la distància recorreguda (x) en metres: v(x) = v0 * 2^x, on v0 = 1 m/s.
+
+Per estimar el temps, no podem simplement dividir la distància total per la velocitat inicial, ja que la velocitat canvia constantment. En comptes d'això, podem considerar que la velocitat mitjana augmenta molt ràpidament.
+
+Per fer una estimació aproximada, podem considerar que la mosca recorre el primer metre a 1 m/s, el segon a 2 m/s, el tercer a 4 m/s, i així successivament. Després d'uns pocs metres, la velocitat serà molt alta.
+
+Per exemple, després de 10 metres, la velocitat serà 2^10 = 1024 m/s. Després de 20 metres, la velocitat serà 2^20 = 1.048.576 m/s.
+
+La distància total és de 2.500.000 metres. Per tenir una idea de quant de temps trigarà, podem pensar en quant de temps trigaria a recórrer els últims metres. Si la mosca va a una velocitat de 2^20 m/s, trigaria 2.500.000 / 1.048.576 = 2.38 segons a recórrer la distància total. Però la velocitat augmenta molt ràpidament, així que el temps serà molt menor.
+
+Podem fer una estimació més precisa considerant que la velocitat mitjana durant el viatge serà molt propera a la velocitat final. Però, per fer-ho, necessitaríem calcular la integral de la inversa de la velocitat respecte a la distància, cosa que no és necessària per a aquesta pregunta.
+
+El que és important és que la velocitat creix exponencialment, i per tant, el temps necessari per recórrer una distància gran serà molt petit. Per tant, podem descartar les opcions A, B i C. L'opció E tampoc és correcta, ja que la mosca sí que arribarà a Londres.
+
+Per tant, la resposta més raonable és que la mosca trigarà uns pocs segons.
+
+Resposta: D)

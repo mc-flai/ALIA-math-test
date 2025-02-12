@@ -1,0 +1,32 @@
+Raonament:
+
+1. **Analitzem les pistes:**
+   - **Alèxia (suma 6):** Les possibles combinacions són (1, 5) i (2, 4).
+   - **Bru (diferència 5):** Les possibles combinacions són (1, 6), (2, 7), (3, 8) i (4, 9).
+   - **Clara (producte 18):** Les possibles combinacions són (2, 9) i (3, 6).
+   - **Diana (un doble de l'altre):** Les possibles combinacions són (1, 2), (2, 4), (3, 6) i (4, 8).
+
+2. **Eliminem possibilitats:**
+   - Clara té (2, 9) o (3, 6). Si Clara tingués (2, 9), Bru no podria tenir (2, 7) ni (4, 9), i si tingués (3, 6), Bru no podria tenir (1, 6) ni (3, 8).
+   - Si Clara té (2, 9), Diana no podria tenir (1, 2) ni (2, 4). Si Clara té (3, 6), Diana no podria tenir (3, 6).
+   - Si Alèxia té (1, 5), Bru no podria tenir (1, 6). Si Alèxia té (2, 4), Diana no podria tenir (2, 4).
+
+3. **Combinem les pistes:**
+   - Si Clara té (2, 9), Bru ha de tenir (1, 6) o (3, 8). Si Bru té (1, 6), Alèxia no pot tenir (1, 5), per tant, Alèxia ha de tenir (2, 4). Però si Alèxia té (2, 4), Diana no pot tenir (2, 4). Per tant, Clara no pot tenir (2, 9).
+   - Per tant, Clara ha de tenir (3, 6). Això vol dir que Bru no pot tenir (1, 6) ni (3, 8).
+   - Si Clara té (3, 6), Bru ha de tenir (2, 7) o (4, 9).
+   - Si Bru té (2, 7), Alèxia no pot tenir (2, 4), per tant, Alèxia ha de tenir (1, 5). Si Alèxia té (1, 5), Diana no pot tenir (1, 2).
+   - Si Bru té (4, 9), Alèxia no pot tenir (2, 4), per tant, Alèxia ha de tenir (1, 5). Si Alèxia té (1, 5), Diana no pot tenir (1, 2).
+   - Si Alèxia té (1, 5), Diana ha de tenir (4, 8).
+   - Per tant, Alèxia té (1, 5), Bru té (4, 9), Clara té (3, 6) i Diana té (2, 4).
+
+4. **Identifiquem el nombre restant:**
+   - Els nombres utilitzats són 1, 2, 3, 4, 5, 6, 8 i 9. El nombre que falta és el 7.
+
+5. **Revisem:**
+   - Alèxia: 1 + 5 = 6
+   - Bru: 9 - 4 = 5
+   - Clara: 3 * 6 = 18
+   - Diana: 4 = 2 * 2
+
+Resposta: B)

@@ -1,0 +1,18 @@
+Raonament:
+L'expressió original és 1 + 2 + 3 + 4 + 5 = 15. Necessitem obtenir 27, que és 12 més que 15. Cada vegada que canviem un signe + per un signe ×, el resultat augmenta. Per exemple, si canviem el primer + per ×, tindríem 1 × 2 + 3 + 4 + 5 = 2 + 3 + 4 + 5 = 14, que és menor que 15. Per tant, hem de buscar combinacions que augmentin el resultat en 12.
+
+Si canviem el primer + per ×, tenim 1 × 2 + 3 + 4 + 5 = 14.
+Si canviem el segon + per ×, tenim 1 + 2 × 3 + 4 + 5 = 1 + 6 + 4 + 5 = 16.
+Si canviem el tercer + per ×, tenim 1 + 2 + 3 × 4 + 5 = 1 + 2 + 12 + 5 = 20.
+Si canviem el quart + per ×, tenim 1 + 2 + 3 + 4 × 5 = 1 + 2 + 3 + 20 = 26.
+
+Ara, provem combinacions de dos canvis:
+- Si canviem el primer i el segon +, tenim 1 × 2 × 3 + 4 + 5 = 6 + 4 + 5 = 15.
+- Si canviem el primer i el tercer +, tenim 1 × 2 + 3 × 4 + 5 = 2 + 12 + 5 = 19.
+- Si canviem el primer i el quart +, tenim 1 × 2 + 3 + 4 × 5 = 2 + 3 + 20 = 25.
+- Si canviem el segon i el tercer +, tenim 1 + 2 × 3 × 4 + 5 = 1 + 24 + 5 = 30.
+- Si canviem el segon i el quart +, tenim 1 + 2 × 3 + 4 × 5 = 1 + 6 + 20 = 27.
+
+Hem trobat una combinació que dona 27: 1 + 2 × 3 + 4 × 5 = 27. Hem canviat dos signes +.
+
+Resposta: B)

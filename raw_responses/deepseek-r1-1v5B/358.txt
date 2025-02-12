@@ -1,0 +1,52 @@
+<think>
+Para determinar las enteras 'a' para las que el producto a(a + 1)(a + 2) es múltiple de 84, primero notamos que 84 factoriza en 2^2 * 3 * 7.
+
+Paso 1: Verificar divisibilidad por 4 (2^2). En tres números consecutivos, dos serán pares. Si a es par, entero o impar, uno de los restantes será también par. Por lo tanto, al menos dos factores de 2 existen.
+
+Paso 2: Verificar divisibilidad por 3. Al hacer a^3 (a(a +1)(a +2)), se asegura que el producto es múltiple de 3.
+
+Paso 3: Verificar divisibilidad por 7. Se require que a(a +1)(a +2) sea congruente con 0 módulo 7. Esto sucede si a es congruente con 0, 5, o 6 módulo 7, ya que these valores aseguran que uno de los tres números consecutivos sea múltiple de 7.
+
+Consecuentemente, hay 4 valores enteros 'a' que satisfacen todas las condiciones requeridas.
+</think>
+
+Para determinar cuántas enteras 'a' verifican que el producto \( a(a + 1)(a + 2) \) es múltiple de 84, seguiremos los siguientes pasos:
+
+### Step 1: Factorización del Múltiple
+La número 84 se puede descomponer en sus factores primos:
+\[ 84 = 2^2 \times 3 \times 7 \]
+
+Para que \( a(a + 1)(a + 2) \) sea múltiple de 84, debe ser múltiple de cada uno de estos números.
+
+---
+
+### Step 2: Verificación de Divisibilidad
+
+1. **Divisibilidad por 4 ( \( 2^2 \) ):**
+   - En los tres enteros consecutivos 'a', 'a + 1' y 'a + 2', dos son pares.
+     - Si 'a' es par, entero o impar:
+       - Si 'a' es par, 'a' es múltiple de 2.
+       - Al menos uno de 'a + 1' o 'a + 2' será also par, por lo que el producto tiene al menos dos factores de 2.
+     - Por lo tanto, \( a(a + 1)(a + 2) \) es múltiple de 4.
+
+2. **Divisibilidad por 3:**
+   - En los tres enteros consecutivos, siempre hay un número que sea múltiple de 3:
+     \[ a \equiv 0, 1, \text{ o } 2 \pmod{3} \]
+     - Si 'a' es múltiple de 3, el producto también será.
+     - Si 'a ≡ 1 \pmod{3}', entonces 'a + 2' es múltiple de 3.
+     - Si 'a ≡ 2 \pmod{3}', entonces 'a + 1' es múltiple de 3.
+
+3. **Divisibilidad por 7:**
+   - Se debe asegurar que uno de los tres enteros consecutivos es múltiple de 7:
+     \[ a \equiv 0, 5, \text{ o } 6 \pmod{7} \]
+     - Si 'a' es múltiple de 7, el producto también será.
+     - Si 'a ≡ 1 \pmod{7}',entonces 'a + 6' es múltiple de 7.
+     - Si 'a ≡ 2 \pmod{7}',entonces 'a + 5' es múltiple de 7.
+
+---
+
+### Step 3: Contando Valores Enteros 'a'
+Consecuentemente, hay 4 valores enteros 'a' que satisfacen todas las condiciones requeridas.
+
+**Respuesta final:**  
+\boxed{E}

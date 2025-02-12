@@ -1,0 +1,31 @@
+Raonament:
+
+Aquest problema es pot resoldre utilitzant una tècnica de programació dinàmica o, en aquest cas, una anàlisi combinatòria més directa. El que busquem és el nombre de solucions enteres no negatives a l'equació:
+
+50c + 100u + 200d = 10000
+
+on 'c' és el nombre de monedes de 50 cèntims, 'u' és el nombre de monedes d'1 euro i 'd' és el nombre de monedes de 2 euros. Dividint tota l'equació per 50, obtenim:
+
+c + 2u + 4d = 200
+
+Ara, podem analitzar les possibles combinacions de 'd' i calcular les combinacions de 'c' i 'u' per a cada valor de 'd'.
+
+*   Si d = 0, tenim c + 2u = 200. 'u' pot variar de 0 a 100, donant 101 solucions.
+*   Si d = 1, tenim c + 2u = 196. 'u' pot variar de 0 a 98, donant 99 solucions.
+*   Si d = 2, tenim c + 2u = 192. 'u' pot variar de 0 a 96, donant 97 solucions.
+...
+*   Si d = 50, tenim c + 2u = 0. 'u' ha de ser 0, donant 1 solució.
+
+Observem que el nombre de solucions per a cada valor de 'd' disminueix de 2 en 2. Això forma una progressió aritmètica amb el primer terme 101 i l'últim terme 1, amb una diferència de -2. El nombre de termes és 51 (d va de 0 a 50).
+
+Per calcular la suma d'aquesta progressió aritmètica, podem utilitzar la fórmula:
+
+S = (n/2) * (a1 + an)
+
+on 'n' és el nombre de termes, 'a1' és el primer terme i 'an' és l'últim terme.
+
+S = (51/2) * (101 + 1) = (51/2) * 102 = 51 * 51 = 2601
+
+Per tant, hi ha 2601 maneres diferents de sumar 100 euros amb monedes de 50 cèntims, 1 euro i 2 euros.
+
+Resposta: C)

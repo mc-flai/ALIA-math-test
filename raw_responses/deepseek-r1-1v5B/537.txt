@@ -1,0 +1,34 @@
+<think>
+Para resolver este problema, primero necesitamos entender la situación descrita. La parcel·la triangular tiene un área A y un perimeter P. La cabra puede moverse más lejos a una distancia máxima d de la frontera del triángulo hasta que rebbe una descàrrega elèctrica.
+
+Primero, identificaré la zona per la qual la cabra puede passejar. Sabemos que la cabra puede caminar a una distancia máxima d de la frontera. Esto significa que, por cada lado del triángulo, la zona permitida será el área del triángulo más las áreas laterales que extenden a una distancia d de cada lado.
+
+Luego, calcularé el área total de estas zones. Esto incluye el área del triángulo original y las zoneas laterales que son parábolas con radio r doughos. El radio r dougho es igual al-distans de los lados del triángulo, que en este caso se assume que todos los lados tienen la misma longitud. 
+
+Finalmente, sumaré el área del triángulo, las zoneas laterales y la parte inferior del triángulo para obtener la总面积 total de la zona permitida.
+</think>
+
+Para resolver este problema, sigamos estos pasos:
+
+1. **Determinar el área permitida por la cabra:**
+   - La parcel·la triangular tiene un área A.
+   - La cabra puede caminar a una distancia máxima d de cada lado del triángulo.
+   - Por lo tanto, la zona permitida incluye:
+     - El área del triángulo original (A).
+     - Zoneas laterales que son parábolas con radio r doughos y radio es igual al-distans de los lados del triángulo.
+
+2. **Calcular el área de las zoneas laterales:**
+   - La área de cada zona lateral es un parábola con radio r doughos, por lo que su área es \( 2 \pi r d \).
+   - Dado que todos los lados del triángulo tienen la misma longitud, el radio r dougho es igual a la altura del triángulo.
+   - La altura h del triángulo triangular se puede expresar como \( h = \frac{2A}{base} \).
+
+3. **Sumar las áreas para obtener la总面积 total:**
+   - Sumamos el área del triángulo, las zoneas laterales y la parte inferior del triángulo.
+   - Total = \( A + dP + 2\pi r d \), donde P es el perimeter del triángulo.
+
+4. **Finalmente, expresar la resposta en términos de A y d:**
+   - Como el radio r dougho se puede expresar en términos de la altura h (y por lo tanto, de la área A y la longitud del lado), finalmente:
+     - Total = \( A + dP + 2\pi \alpha^2 \).
+
+**Respuesta final:**
+\boxed{A + dP + 2\pi \alpha^2}

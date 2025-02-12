@@ -1,0 +1,34 @@
+Raonament:
+La suma dels nombres naturals des de 1 fins a n es calcula amb la fórmula n(n+1)/2. Sabem que aquesta suma ha de ser un nombre de tres xifres iguals, és a dir, un nombre de la forma 111, 222, 333, ..., 999. Aquests nombres són múltiples de 111, i per tant, de 3 i de 37. Podem expressar aquests nombres com 111k, on k pot ser 1, 2, 3, ..., 9. Per tant, la suma n(n+1)/2 ha de ser igual a 111k per algun valor de k entre 1 i 9. Això vol dir que n(n+1) = 222k.
+
+Ara, hem de trobar un valor de n tal que n(n+1) sigui igual a 222k per algun k entre 1 i 9.
+* Si k=1, n(n+1) = 222. No hi ha solució entera per a n.
+* Si k=2, n(n+1) = 444. No hi ha solució entera per a n.
+* Si k=3, n(n+1) = 666. No hi ha solució entera per a n.
+* Si k=4, n(n+1) = 888. No hi ha solució entera per a n.
+* Si k=5, n(n+1) = 1110. No hi ha solució entera per a n.
+* Si k=6, n(n+1) = 1332. No hi ha solució entera per a n.
+* Si k=7, n(n+1) = 1554. No hi ha solució entera per a n.
+* Si k=8, n(n+1) = 1776. No hi ha solució entera per a n.
+* Si k=9, n(n+1) = 1998. No hi ha solució entera per a n.
+
+Però, hem de tenir en compte que n(n+1) = 222k = 2 * 3 * 37 * k.
+Si n(n+1) = 666, n(n+1) = 2 * 3 * 3 * 37.
+Si n(n+1) = 111 * 6 = 666, no hi ha solució entera.
+Si n(n+1) = 111 * 1 = 111, no hi ha solució entera.
+Si n(n+1) = 111 * 2 = 222, no hi ha solució entera.
+Si n(n+1) = 111 * 3 = 333, no hi ha solució entera.
+Si n(n+1) = 111 * 4 = 444, no hi ha solució entera.
+Si n(n+1) = 111 * 5 = 555, no hi ha solució entera.
+Si n(n+1) = 111 * 6 = 666, no hi ha solució entera.
+Si n(n+1) = 111 * 7 = 777, no hi ha solució entera.
+Si n(n+1) = 111 * 8 = 888, no hi ha solució entera.
+Si n(n+1) = 111 * 9 = 999, no hi ha solució entera.
+
+Hem de buscar un valor de n tal que n(n+1)/2 sigui igual a 111, 222, 333, 444, 555, 666, 777, 888 o 999.
+Si n(n+1)/2 = 666, n(n+1) = 1332. Si n=36, n(n+1) = 36*37 = 1332. Per tant, n=36 és una solució.
+Si n(n+1)/2 = 111k, n(n+1) = 222k.
+Si k=6, n(n+1) = 1332. n=36, n(n+1)/2 = 36*37/2 = 666.
+Per tant, n=36 és la solució.
+
+Resposta: B)

@@ -1,0 +1,11 @@
+Raonament:
+Aquest problema es pot resoldre mitjançant un raonament lògic i una mica de prova i error. Sabem que Joan va menjar 50 galetes en total i que cada dia va menjar 5 galetes més que el dia anterior. Això significa que el nombre de galetes que va menjar cada dia forma una progressió aritmètica.
+
+Comencem provant amb un nombre de dies petit. Si hagués menjat galetes durant 2 dies, el primer dia hauria menjat x galetes i el segon x+5. La suma seria 2x+5. Si hagués menjat galetes durant 3 dies, el primer dia x, el segon x+5 i el tercer x+10. La suma seria 3x+15. Si hagués menjat galetes durant 4 dies, el primer dia x, el segon x+5, el tercer x+10 i el quart x+15. La suma seria 4x+30. Si hagués menjat galetes durant 5 dies, el primer dia x, el segon x+5, el tercer x+10, el quart x+15 i el cinquè x+20. La suma seria 5x+50.
+
+Si provem amb 4 dies, la suma seria 4x+30=50, per tant 4x=20 i x=5. El darrer dia hauria menjat 5+15=20.
+Si provem amb 5 dies, la suma seria 5x+50=50, per tant 5x=0 i x=0. Això no té sentit perquè no pot menjar 0 galetes el primer dia.
+
+Per tant, la solució és que va menjar galetes durant 4 dies. El primer dia va menjar 5 galetes, el segon 10, el tercer 15 i el quart 20. La suma és 5+10+15+20=50. El darrer dia va menjar 20 galetes.
+
+Resposta: A)

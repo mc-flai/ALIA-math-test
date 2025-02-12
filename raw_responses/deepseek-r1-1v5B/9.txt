@@ -1,0 +1,38 @@
+<think>
+Para resolver este problema, primero necesitamos identificar los números que verifican que cuando somen su dos faltas juntos con su suma y diferencia, forman todos los dígitos del 0 al 9.
+
+Esquematizamos el problema de la siguiente manera:
+
+ Sea x el número 157, y z el número 93. 
+
+- La suma de x y z es 250.
+- La diferencia es 64.
+
+Luego, combinamos todos los dígitos: 1, 5, 7, 2, 5, 0, 9, 3. Esto incluye todos los dígitos del 0 al 9.
+
+De esta manera, se cumple que cuando somen x y z juntos con su suma y diferencia, aparecen todas las xifras del 0 al 9.
+</think>
+
+Para resolver este problema, sigamos estos pasos:
+
+**Paso 1:** Identificar los números que verifican la condición solicitada.
+
+- **Números a Considerar:** 157 i 93
+- **Suma de x e y (x + y):** 157 + 93 = **250**
+- **Diferencia entre x e y (|x - y|):** |157 - 93| = **64**
+
+**Paso 2:** Combinar todos los dígitos.
+
+- Números: 1, 5, 7
+- Suma: 2, 5, 0
+- Diferencia: 6, 4
+
+**Paso 3:** Formar todos los dígitos del 0 al 9.
+
+La combinación de todos estos números y dígitos da:
+
+**1**, **5**, **7**, **2**, **5**, **0**, **6**, **4**
+
+Esto incluye todos los dígitos del **0** al **9**. Por lo tanto, los números que cumplen con la condición son **157 y 93**.
+
+**Resposta:** \boxed{A}

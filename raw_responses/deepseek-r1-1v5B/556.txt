@@ -1,0 +1,72 @@
+<think>
+Per resoldre el problema, es considera que en un polígon regular, el número total de costats ésigual a el nombre de vèrtex. Quan calculem la suma del nombre de costats i del nombre de diagonals, es expressa com:
+
+suma = n + d
+
+Com que el número de diagonals en un polígon regularSensegala (n(n - 3))/2, llevam a la fórmula:
+
+suma = n + [n(n - 3)/2] = 28
+
+Sumaré llambrs per simplificar:
+
+Multiplicatem amb 2:
+2n + n(n - 3) = 56
+Expresión polinómica:
+n² - n = 56
+Trascomos:
+n² - n - 56 = 0
+
+Resolviendo la ecuación quadratic:
+
+Discriminant D = 1 + 224 = 225
+Raíces:
+n = [1 ± √225]/2 ⇒ (1+15)/2=8 o (1-15)/2=-7
+
+De vegada, com que n ha de ser positiva, llevamos a -7 senseix.
+
+Assim, el nombre de vèrtex és 8.
+</think>
+
+Raonament:
+
+Un polígon regular tiene \(n\) costats, igualment el nombre de vèrtex. El número total de diagonals en un polígon regularSensegala la fórmula \(\frac{n(n - 3)}{2}\).
+
+Dado que la suma del nombre de costats i el nombre de diagonals és 28, es possible establecer l'equación:
+
+\[
+n + \frac{n(n - 3)}{2} = 28
+\]
+
+Multiplicem amb 2 per eliminar el denominador:
+
+\[
+2n + n(n - 3) = 56
+\]
+
+Simplificem y reorganizamos la expresión polinómica:
+
+\[
+n^2 - n = 56
+\]
+
+Trascomos el término חופשי para crear una ecuación cuadrada:
+
+\[
+n^2 - n - 56 = 0
+\]
+
+Resolvemos l'ecuación quadratic usando la fórmula quadrática:
+
+\[
+n = \frac{1 \pm \sqrt{1 + 4 \times 56}}{2} = \frac{1 \pm \sqrt{225}}{2}
+\]
+
+La raíz positive es:
+
+\[
+n = \frac{1 + 15}{2} = 8
+\]
+
+**Resposta:**
+
+\boxed{B) 8}

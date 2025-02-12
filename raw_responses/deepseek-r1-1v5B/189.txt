@@ -1,0 +1,76 @@
+<think>
+Per calcular el dígit de units del nombre 2014^2015 · 2016^2017, seguiremos el siguiente pass:
+
+1. **Calcular el dígit unitari de cada base:**
+   - 2014 mod 10 = 4
+   - 2016 mod 10 = 6
+
+2. **Determinar la potencia modular:**
+   - 4^2015 mod 10
+     Utilizamos el cycle de las potencias de 4:
+     4^1 = 4 (mod 10)
+     4^2 = 16 (mod 10) = 6
+     4^3 = 64 (mod 10) = 4
+     Observamos que el cycle es de dos números: [4, 6]. La exponentes son impares:
+     2015 es impar ⇒ 4^2015 mod 10 = 4
+   - 6^2017 mod 10
+     Observamos que cualquier potencia de 6 always dà un resultado de 6 (mod 10).
+
+3. **Multiplicar los resultados:**
+   4 · 6 = 24 ⇒ 24 mod 10 = 4
+
+Finalmente, el dígit unitari del número es 4.
+</think>
+
+Para determinar el dígito de units del número \(2014^{2015} \cdot 2016^{2017}\), seguimos los siguientes pasos:
+
+### Paso 1: Calcular el dígito unitari de cada base
+- **\(2014\)**
+  \[
+  2014 \mod 10 = 4
+  \]
+  
+- **\(2016\)** 
+  \[
+  2016 \mod 10 = 6
+  \]
+
+### Paso 2: Determinar la potencia modular
+#### \(4^{2015} \mod 10\)
+El círculo de las potencias de 4 es de dos números:
+- \(4^1 = 4\)
+- \(4^2 = 16\) → \(6\)
+- \(4^3 = 64\) → \(4\)
+- \(4^4 = 256\) → \(6\)
+
+El círculo tiene un período de 2 números: [4, 6]. Para determinar qué número se va a tener, usamos:
+\[
+2015 \mod 2 = 1
+\]
+Por lo tanto,
+\[
+4^{2015} \mod 10 = 4
+\]
+
+#### \(6^{2017} \mod 10\)
+La potencia de 6 siempre da como resultado 6 (mod 10):
+\[
+6^{n} \mod 10 = 6 \quad \text{para cualquier } n > 0
+\]
+Por lo tanto,
+\[
+6^{2017} \mod 10 = 6
+\]
+
+### Paso 3: Multiplicar los resultados
+Multiplicamos las dos potencias obtenidas:
+\[
+4 \cdot 6 = 24
+\]
+El dígito unitari de 24 es:
+\[
+24 \mod 10 = 4
+\]
+
+###Respuesta Final:
+\(\boxed{4}\)

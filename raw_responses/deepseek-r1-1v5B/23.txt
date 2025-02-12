@@ -1,0 +1,51 @@
+<think>
+ Primer, identifiquem los tiempres que takeen cada uno de Joan, Jordi i Josep para llenar las taronges.
+
+Joan pot omplir una caixa en 30 minuts.
+Jordi ho pot fer en 45 minuts.
+Josep, en 36 minuts.
+
+Llaminem el problema intentant calcular quin temp pot assignar a les tres xics per a l'om complet de tres caixes.
+
+Per això, es calcula la velocità de l'hom amb que es capta un caixa. La rapidez o velocità individual és inversa del temps necessari.
+
+ Joan: 1 caixa / 30 min.
+Jordi: 1 caixa /45 min.
+Josep: 1 caixa /36 min.
+
+Per a calcular el temps total de l'om complet, cal sumar les velocidades mutuas i invertir la suma per a la quantify de caixes que calen tots junts. El total de caixes és 3.
+
+La suma de les rapidez serà: 1/30 + 1/45 + 1/36.
+
+Calculaix amb un comun denominador, el mcm(30,45,36)=180.
+
+1/30 = 6/180
+1/45 = 4/180
+1/36 = 5/180
+
+Sumant: 6 +4 +5=15 ⇒15/180 ⇒ simplificat per 15, donats 1/12.
+
+Llaminem tots les tres caixes amb una xaca que l'hom pot fer amb la suma inversa de les rapidez: 1/(15/180)=12 minuts.
+
+Per això, el temps total es de 12 minuts.
+</think>
+
+Raonament:
+
+Joan pot omplir una caixa en 30 minuts ⇒ Joan' raó = 1 caixa / 30 min
+Jordi ho pot fer en 45 min ⇒ Jordi' raó = 1 caixa /45 min
+Josep, en 36 min ⇒ Josep' raó =1 caixa /36 min
+
+Per a la velocità total de l'hom amb que es capta una caixa, summem les rapidez mutuas:
+
+Raó total = Joan + Jordi + Josep = (1/30) + (1/45) + (1/36)
+
+Para sumar les fraccions, utilitzem un com denominador com el mcm de 30,45 i 36. El mcm de 30,45 i 36 es 180.
+
+Raó total = (6/180) + (4/180) + (5/180) = 15/180 = 1/12
+
+Llaminem tots les tres caixes amb una xaca que l'hom pot fer amb la raó inversa:
+
+Temp total = 1 / (1/12) = 12 min
+
+Resposta: \boxed{C}

@@ -1,0 +1,18 @@
+Raonament:
+Primer, reescrivim l'equació per aïllar la variable 'y':
+xy + 4x - 13 = x²
+xy = x² - 4x + 13
+Si x ≠ 0, podem dividir per x:
+y = x - 4 + 13/x
+
+Perquè 'y' sigui un nombre enter, 13/x ha de ser un nombre enter. Això significa que 'x' ha de ser un divisor de 13. Els divisors de 13 són 1, -1, 13 i -13.
+
+Ara, calculem els valors de 'y' per a cada valor de 'x':
+- Si x = 1, y = 1 - 4 + 13/1 = 1 - 4 + 13 = 10. Tenim el parell (1, 10).
+- Si x = -1, y = -1 - 4 + 13/(-1) = -1 - 4 - 13 = -18. Tenim el parell (-1, -18).
+- Si x = 13, y = 13 - 4 + 13/13 = 13 - 4 + 1 = 10. Tenim el parell (13, 10).
+- Si x = -13, y = -13 - 4 + 13/(-13) = -13 - 4 - 1 = -18. Tenim el parell (-13, -18).
+
+Per tant, tenim quatre parells de nombres enters (x, y) que satisfan l'equació: (1, 10), (-1, -18), (13, 10) i (-13, -18).
+
+Resposta: E)

@@ -1,0 +1,15 @@
+Raonament:
+Primer, hem de calcular el residu de $20!$ mòdul $2^9 = 512$. Per fer-ho, comptem quantes vegades apareix el factor 2 en la factorització de $20!$.
+El nombre de múltiples de 2 entre 1 i 20 és $\lfloor \frac{20}{2} \rfloor = 10$.
+El nombre de múltiples de 4 entre 1 i 20 és $\lfloor \frac{20}{4} \rfloor = 5$.
+El nombre de múltiples de 8 entre 1 i 20 és $\lfloor \frac{20}{8} \rfloor = 2$.
+El nombre de múltiples de 16 entre 1 i 20 és $\lfloor \frac{20}{16} \rfloor = 1$.
+Per tant, el nombre total de factors 2 en $20!$ és $10 + 5 + 2 + 1 = 18$. Això vol dir que $20!$ és divisible per $2^{18}$, i per tant, també per $2^9 = 512$. Així, $20! \equiv 0 \pmod{512}$.
+
+Ara, hem de calcular el residu de $520$ mòdul $512$.
+$520 = 512 + 8$, per tant, $520 \equiv 8 \pmod{512}$.
+
+Finalment, hem de calcular el residu de $20! + 520$ mòdul $512$.
+$20! + 520 \equiv 0 + 8 \equiv 8 \pmod{512}$.
+
+Resposta: B)

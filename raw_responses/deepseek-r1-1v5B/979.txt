@@ -1,0 +1,39 @@
+<think>
+Para resolver este problema, primero identifico las variables clave. hay 20 pomes y 20 peres en un cistell. Carles agafa 20 peces de fruita, y Lluc queda con los restantes 20. 
+
+Ahora, analicemos las opciones dadas:
+
+A) Carles ha agafat almenys una pera.
+B) Carles ha agafat tantes pomes com peres.
+C) Carles ha agafat tantes pomes com Lluc.
+D) Carles ha agafat tantes peres com Lluc pomes.
+E) Carles ha agafat tantes peres com Lluc.
+
+Primero, notamos que el total de peces es 40 (20 pomes + 20 peres). Cuando agafa 20 pome, los restantes serían 20 peres. 
+
+Para asegurar la certeatà de la respuesta, analizaré cada opción:
+
+A) Si Carles ha agafat almenys una pera, lo más que podría haber sido es que ha elegido cero pomes o 1 pome. Sin embargo, ya se han capturado todos los pomes (20), por lo tanto, si ha escuchado 20 peces, podría ser ceros o un pome. Esto no es siempre cierto.
+
+B) Si ha agafado tantes pomes como peres, eso significa que habrá equilibrio entre pomes y peres. Sin embargo, el total de pomes es igual a la de peres, lo que no necessarily implica equilibrio en las capturas aleatorias.
+
+C) Si ha agafado tantes pomes como Lluc, esto assume que Llucposee un número similar al que ha capturado. Sin embargo, el problema no define cómo se relacionan los nros de peces entre Carles y Lluc, por lo que no podemos asegurar la igualdad.
+
+D) Si ha agafado tantes peres como Lluc, meaning the número de peres capturados será similar a Lluc's. Sin embargo, sin más datos, no podemos determinar si esta es cierta.
+
+E) Esa es la opción que parece correcta. Al ser el solo posiblemente seguro que ha capturado la mitad de las pomes, ya que un total de 20 pomes y 20 peres, y se ha elegido 20, meaning que puede haber zero o un pome. Sin embargo, no es cierto, por ejemplo, si ha escuchado dos pomes, lo probable será que las restantes sean peres.
+
+Finalmente, la respuesta correcta es E.
+</think>
+
+Raonament: 
+
+El cistell tiene 20 pomes y 20 peres, totales de 40 peces. Carles agafó 20 peces, lo que significa que los restantes serían 20 peres. La solo opción que es certa con totallya garantía es:
+
+E) Carles ha agafat tantes peres com Lluc.  
+
+Raízen por la división equilibrada de pomes y peres, cuando se escuchan 20 peces, puede ser ceros o un pome. Sin embargo, no se conoce cómo se distribuyeron las capturas.
+
+La respuesta correcta es:
+
+\boxed{E}

@@ -1,0 +1,93 @@
+<think>
+Prime vegem que el problema es sobre una figura que compone cubs i tetràedres, que tén vèrtices, cares, arestes, etc.
+
+El total de vèrtices és 52, la suma del nombre de vèrtices de cubs i tetràedres. Com que un cub té 8 vèrtices i un tetraèdrat 4, si designem el nombre de tets als quim com 't', el total de vèrtices es pot expressar com:
+
+52 = 8c + 4t
+
+El total de cares és 42. Com un cub té 12 cares i un tetraèdrat 4, la suma serà:
+
+42 = 12c + 4t
+
+Per aular el sistema d'equacions:
+- c = (52 - 4t)/8
+- Sostem amb l'expressión de cares: 42 = 12*(52 - 4t)/8 + 4t
+
+Simplificant:
+42 = (624 - 12t)/8 + 4t
+Multiplicadors per 8: 336 = 624 -12t + 32t
+336 = 624 + 20t
+-288 = 20t
+t = -14.8
+
+Per això, la solució no sense practical, perquè tés negatивament el nombre de tets.
+
+Assuming que he corregit les fórmulas d'arestes: un cub té 12 cares i un tetraèdrat 6. Recalculem:
+
+52 = 8c +4t
+42 = 12c +6t
+
+Ex Expressions:
+- c = (52 -4t)/8
+- Substitueixem: 42 = 12*(52 -4t)/8 +6t
+
+Simplificant:
+42 = (624 -16t)/8 +6t
+Multiplicadors per 8: 336 = 624 -16t +48t
+336 = 624 +32t
+-288=32t
+t=-9
+
+Mérida, com a solució imposible, la cosa és que hi ha zero tets.
+
+Per tenir una resposta sensible, seguiem que el nombre de tets sigi l'arretat.
+</think>
+
+Vam realitzar el procés de raonament per determinar quantes tetràedres té la figure.
+
+**Pregunta:**
+- El total de vèrtices (cubs + tets) es 52.
+- El total de cares (cubs + tets) es 42.
+- Ambitament, un cub té 8 vèrtices i 12 cares; un tetraèdrat té 4 vèrtices i 6 cares.
+
+**Variables:**
+- C: nombre de cubs
+- T: nombre de tets
+
+**Ecuaciones:**
+1. Vèrtices:
+   \[
+   8C + 4T = 52
+   \]
+   
+2. Carres:
+   \[
+   12C + 6T = 42
+   \]
+
+**Raonament:**
+Primera, simplificem les ecuaciones sense parànteses:
+
+- Dividim la primera ecuación per 4:
+  \[
+  2C + T = 13 \quad (1)
+  \]
+  
+- Dividim la segona ecuación per 6:
+  \[
+  2C + T = 7 \quad (2)
+  \]
+
+**Pares de lèvells:**
+Per aular l'expresió (1) a (2):
+\[
+2C + T = 13 \\
+2C + T = 7
+\]
+Està clear que l'edatament no pot ser possible si hi ha un nombre real de tets, com que ambis lèvells donaven valir la mateixa quantitat.
+
+**Conclusió:**
+La solució pot ser zero tets:
+- **T = 0**
+
+Per això, la solució sense problemes és que hi ha ZERO tetràedres en la figura.

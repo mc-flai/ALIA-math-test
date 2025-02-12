@@ -1,0 +1,39 @@
+<think>
+Para resolver este problema, primero identifico que la raó entre dos enteros es 3:2. Esto significa que los dos enteros son múltiples de 3 y 2 respectivamente. 
+
+Luego, busco el mínim comú múltiple (mínimo común múltiplo) y el màxim comú divisor (máximo común divisor) entre estos dos enteros. El mínimo común múltiplo se obtiene multiplicando los números si son primos, pero en este caso, me aseguraré de usar la fórmula de lcm(a,b) = |a*b| / gcd(a,b).
+
+El máximo común divisor (máximo comú divisor) se puede encontrar utilizando el algoritmo de división sucesiva o factorización.
+
+Finalmente, calcularé la raó entre el mínimo común múltiple y el máximo común divisor para obtener la respuesta correcta.
+</think>
+
+Para resolver este problema, seguiremos estos pasos:
+
+1. **Identificar los números:** Sabemos que la raó entre dos enteros es 3:2, lo que significa que los números son módulos de 3 y 2 respectivamente.
+
+   - Raíz numérica: \(\frac{3}{2}\)
+
+2. **Determinar el máximo común divisor (máximo comú divisor):** Usando el algoritmo de divisiión sucesiva, verificamos que los números son primos entre sí. Por lo tanto:
+
+   - \( \text{MCD}(3, 2) = 1 \)
+
+3. **Determinar el mínimo común múltiple (mínimo comú múltiplo):** Aplicando la fórmula:
+
+   \[
+   \text{LCM}(a, b) = \frac{|a \times b|}{\text{GCD}(a, b)}
+   \]
+
+   Donde \( a = 3 \) y \( b = 2 \):
+
+   \[
+   \text{LCM}(3, 2) = \frac{3 \times 2}{1} = 6
+   \]
+
+4. **Calcular la raó entre el mínimo común múltiple y el máximo común divisor:**
+
+   \[
+   \text{Raó} = \frac{\text{LCM}(a, b)}{\text{MCD}(a, b)} = \frac{6}{1} = 6
+   \]
+
+**Respuesta final:** \(\boxed{D)\ 6}\)

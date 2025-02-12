@@ -1,0 +1,16 @@
+Raonament:
+Sigui 'n' el nombre d'equips que participen en el torneig. Cada equip té 3 jugadors. Per tant, hi ha un total de 3n jugadors.
+Cada jugador juga contra tots els jugadors dels altres equips. Això significa que cada jugador juga contra 3(n-1) jugadors.
+Com que hi ha 3n jugadors, el nombre total de partides seria (3n * 3(n-1)) / 2. Dividim per 2 perquè cada partida involucra dos jugadors.
+Per tant, el nombre total de partides és (9n(n-1))/2.
+Sabem que el nombre total de partides no pot ser superior a 250. Per tant, tenim la inequació:
+(9n(n-1))/2 <= 250
+9n(n-1) <= 500
+n(n-1) <= 500/9
+n(n-1) <= 55.55...
+Ara hem de trobar el valor màxim de 'n' que satisfà aquesta inequació. Podem provar amb diferents valors de 'n':
+Si n=7, n(n-1) = 7*6 = 42 <= 55.55
+Si n=8, n(n-1) = 8*7 = 56 > 55.55
+Per tant, el valor màxim de 'n' és 7.
+
+Resposta: E)

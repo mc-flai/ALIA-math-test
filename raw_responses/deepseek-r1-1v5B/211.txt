@@ -1,0 +1,61 @@
+<think>
+Vereu, el problema es que Pere ha recorregut un total de 400 km en un temps que ho assigna a la media de 50 km/h. Com que la secona parte del trajecte ha de ser de 200 km i la velocitat ha de ser 60 km/h, preestem el temps que vol formalment.
+
+Com encara es, el temps total sigui una distribució entre les parts. Aquesta duda es en quin de l'habitsi la velocity com que la resposta dona als segments.
+
+El primer sense ha already calculat la velocitat desculjada per a cada segment, i el segon es dona per a l'overall. El problema es la distribució del temps i la velocitat necessària al segon mateix de manera que la mitjana sigi 60 km/h.
+
+Per a resoldre-hi cal expressar tots els elements matemàticament i posar una equació que raoniga el velocity desigual entre les dues parts.
+</think>
+
+**Raonament:**
+
+1. **Recta Totalls:**
+   - Pere ha totalment recorregut \(400\ \text{km} + 200\ \text{km} = 600\ \text{km}\).
+
+2. **Times:**
+   - La velocitat mitjana en el primer trajecte era de \(50\ \text{km/h}\). El temps que ha pasat al primer trajecte és:
+     \[
+     t_1 = \frac{\text{Distancia}_1}{\text{Velocidad}_1} = \frac{400\ \text{km}}{50\ \text{km/h}} = 8\ \text{h}.
+     \]
+   - El temps que ha necessari per a la seva recoluchada de \(200\ \text{km}\) al velocity latera mitjana del \(60\ \text{km/h}\) és:
+     \[
+     t_2 = \frac{\text{Distancia}_2}{\text{Velocidad}_2} = \frac{200\ \text{km}}{v\ \text{km/h}},
+     \]
+     on \(v\) es la velocita mitjana que descomposa en el segon trajecte.
+
+3. **Total del Times:**
+   - El total de temps que ha totsèn per a l' Whole trajecte és:
+     \[
+     t_1 + t_2 = 8\ \text{h} + \frac{200}{v}.
+     \]
+   - La velocita mitjana deltra llarggeu Total es pot expressar com:
+     \[
+     V_{total} = \frac{\text{Distancia}_{total}}{t_1 + t_2} = \frac{600\ \text{km}}{8 + \frac{200}{v}}.
+     \]
+   
+4. **Desarrollament de la Expracció:**
+   - Com que el velocity latera total ha de ser de \(60\ \text{km/h}\), l'expressió es:
+     \[
+     60 = \frac{600}{8 + \frac{200}{v}}.
+     \]
+   
+5. **Resolució de la Equació:**
+   - Invertim amb el denomiador per despejar \(v\):
+     \[
+     60 \times \left(8 + \frac{200}{v}\right) = 600.
+     \]
+     \[
+     480 + \frac{12000}{v} = 600.
+     \]
+   - Restem l'el mateix a tot:
+     \[
+     \frac{12000}{v} = 120.
+     \]
+   - Solving per \(v\):
+     \[
+     v = \frac{12000}{120} = 100\ \text{km/h}.
+     \]
+
+**Respuesta:**
+La velocita mitjana que descomposa en el segon trajecte és de \(\boxed{A}\) \(100\ \text{km/h}\).

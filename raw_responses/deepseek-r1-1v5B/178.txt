@@ -1,0 +1,108 @@
+<think>
+Per resoldre la pregunta d'interval que indica exactament el conjunt de valors de 'a', es de seguida identificar los valores de 'a' que satisfy amb las desigualtats |a + b| ≤ 1 i |a - 3b| ≤ 2.
+
+Primero, notem que l'eja Petei usó la variable 'b', perquè no es explicitament definida. Sin embargo, el problema menciona que existe al menos un número de 'b' que satisface amb les desigualtades per a una dada de 'a'. El objectiu serà determinar el interval possible de 'a'.
+
+Vovem a representar las desigualtades de forma algebraica:
+
+1. |a + b| ≤ 1 ⇒ -1 ≤ a + b ≤ 1
+2. |a - 3b| ≤ 2 ⇒ -2 ≤ a - 3b ≤ 2
+
+Estimamos les variables 'a' i 'b', fets la segona desigualtat más difícil. De la primera, despejem 'b':
+
+-1 ≤ a + b ≤ 1  
+⇒ -1 - a ≤ b ≤ 1 - a
+
+Sagiam que 'b' ha de complentar amb aixi les dues inequalities. Comptems el seconda inequality:
+
+-2 ≤ a - 3b ≤ 2  
+Estimem la més perds 'a':
+
+-2 ≤ a - 3b ⇒ -2 + 3b ≤ a (igualment, perquè multiplicant sense invertir les inéqualities).  
+Per a la superioria: a - 3b ≤ 2 ⇒ a ≤ 2 + 3b
+
+Utilitzem l'expressión de 'b' d'la primera inequality:
+
+-1 - a ≤ b ≤ 1 - a
+
+Estimems l'upper i lower del 'a'.
+
+Comptems les més perds:
+
+La segona desigualtat per a:  
+a ≤ 2 + 3b ⇒ per la majoritzió de l'upper, utilitzem el maximum possible de 'b', que siguixi de l'interval: b ≤ 1 - a.  
+Deixem que b = 1 - a:
+a ≤ 2 + 3(1 - a) ⇒ a ≤ 2 + 3 - 3a ⇒ a + 3a ≤ 5 ⇒ 4a ≤5 ⇒ a ≤5/4
+
+Per la més perds l'upper: utilitzem l'minimum possible de 'b', que siguixi de l'interval: b ≥ -1 -a.  
+Comptems per l'upper en l'equació:
+
+a ≥ -2 + 3b ⇒ com a major aquesta expressió, es pot tenir que:
+-2 + 3b ≤ a 
+
+Per a la més perds de 'a', utilitzem el maximum possible de b: b =1 - a.  
+Llevarem-hi:
+
+-2 + 3(1 - a) ≤ a ⇒ -2 + 3 - 3a ≤ a ⇒ 1 - 3a ≤ a ⇒ 1 ≤4a ⇒ a ≥1/4
+
+Per la més perds l'upper, el maximum possible de 'a' es pot donar amb b =0:
+
+-2 ≤ a ≤2 ⇒ a ≤2
+
+Sinquè, donats tots les unsos, començem a donar el interval de 'a'.
+
+Comptems:
+
+De la segona desigualtat:
+a ≤5/4  
+i a ≥1/4 (de l'upper) i a ≤2 (de la més perds).
+
+I also remember that from the first inequality, 'b' ≥ -1 -a. No obstant si el maximum de 'a' es pot donar amb b =0:
+
+-1 ≤ a +0 ⇒ a ≥ -1.
+
+Per així que la majoritzió d'aquestes valents: a ≥ -1.
+
+Entendim que de tots els resultats, l'interval possible per a ser l'interval (-5/4 ≤a < 5/4). No hi pot tanen el 100 o tot alant JJ.
+
+Els alternatives donojn valents per a aixi les condicions, però no teniem que donar el valor total i s'aplicen amb la segona desigualtat. La resposta correcta és B.
+</think>
+
+Per determinar l'interval de valors possible per 'a', emprem les expressions deres inequalities:
+
+1. |a + b| ≤ 1 ⇒ -1 ≤ a + b ≤ 1  
+   ⇒ -1 - a ≤ b ≤ 1 - a
+
+2. |a - 3b| ≤ 2 ⇒ -2 ≤ a - 3b ≤ 2  
+   ⇒ -2 + 3b ≤ a ≤ 2 + 3b
+
+Sagim que 'b' ha de complent les dades de l'igualtat 1, per tant en l'igualtat 2:
+
+- De la primer inequality: b ≥ -1 - a  
+Per a la més perds 'a', utilitzem el maximals de 'b': b = 1 - a  
+⇒ a ≤ 5/4
+
+- De la segona inequality: a ≤ 2 + 3b ⇒ com b es major, com major 'a'. Utilitzem el maximals de 'b':
+   ⇒ a ≤ 5/4 (més perds)
+
+Comptem l'upper i lower:
+
+Per a la més perds l'upper: utilitzem b = 0  
+⇒ -2 ≤ a ≤ 2 ⇒ a ≤ 2
+
+Per a l'upper, com major 'a', utilitzem b =1 - a:
+   ⇒ -2 +3(1 - a) ≤ a ⇒ a ≥1/4
+
+Comptem el lower:
+
+Per la més perds l'upper: utilitzem b =0 ⇒ a ≥-2
+
+Compartim tots les resultats:
+
+a ≥1/4, a ≤5/4, a ≤2 (de la més perdes) ⇒ a ∈ [1/4, 5/4]
+
+Els alternatives incluent [-5/4, 1), [0, 5/4), etc., no tenim el valor total per al secondos l'interval actualment posiblv.
+
+**Respuesta: B) -5/4 ≤ a < 1**
+
+Els valors de 'a' que complent les desigualtades són qualsevendem entre [-5/4, 1).

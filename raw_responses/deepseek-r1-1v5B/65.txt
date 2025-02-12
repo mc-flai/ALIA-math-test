@@ -1,0 +1,41 @@
+<think>
+Para resolver este problema, primero identificamos que cada año el beneficio aumenta en un porcentaje fijo. El primer any tiene un beneficio del 40%. En el segundo任何, el beneficio será el doble del primer any, lo que es 80% del 40%, lo que suma 40 + (0.4 * 40) = 64%. En el tercer año, el beneficio se incrementará de manera similar: 80% del segundo any, lo que equivale a 51.2%. En el cuarto año, el beneficio será del 80% del tercer any, lo que suma 40.96%, y en el quinto año, el beneficio es del 72.71%.
+
+Ahora, identificamos los años en los que el beneficio supera el 15%. Observamos que los beneficios del segundo any (64%) y del cuarto any (40.96%) no superan el 15%, mientras que el sexto año (72.71%) lo cumple.
+
+Por lo tanto, la respuesta correcta es el sexto año.
+</think>
+
+Para resolver este problema, primero identificamos que cada año el beneficio aumenta de manera constante. La tasa de incremento es del 80% anual en cada uno de los años posteriores, con un beneficio inicial del 40% en el primer any.
+
+** PLAZCAZAS DE LA REPOSICION:**
+
+1. ** Primer Any (Año 1):**
+   - Beneficio = 40%
+
+2. ** Segundo Any (Año 2):**
+   -Beneficio = 40% + (80% del primer any) = 40% + (0.8 * 40%) = 40% + 32% = **64%**
+
+3. ** Tercer Any (Año 3):**
+   - Beneficio = 64% + (80% del segundo any) = 64% + (0.8 * 64%) = 64% + 51.2% = **115.2%**
+
+4. ** Cuarto Any (Año 4):**
+   - Beneficio = 115.2% + (80% del tercer any) = 115.2% + (0.8 * 115.2%) ≈ 115.2% + 92.16% ≈ **207.36%**
+
+5. ** Quinto Any (Año 5):**
+   - Beneficio = 207.36% + (80% del cuarto any) ≈ 207.36% + 165.888% ≈ **373.248%**
+
+6. ** Sexto Any (Año 6):**
+   - Beneficio = 373.248% + (80% del quinto any) ≈ 373.248% + 298.5984% ≈ **671.8464%**
+
+** Resolución:**
+Ahora, identificamos los años en los que el beneficio supera el 15%.
+
+- Año 1: 40% > 15%
+- Año 2: 64% > 15%
+- Año 3: 115.2% > 15%
+- Año 4 y onwards:beneficios son significativamente superiores a 15%.
+
+Por lo tanto, el beneficio anual se supera del 15% del primer any al **Año 6**.
+
+\boxed{E}

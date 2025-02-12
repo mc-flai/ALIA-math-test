@@ -1,0 +1,43 @@
+Raonament:
+Sigui N un nombre natural que acaba en 6. Podem expressar N com 10a + 6, on 'a' és un nombre natural que representa les xifres de N abans del 6.
+Si movem el 6 a la primera posició, obtenim el nombre M. M es pot expressar com 6 * 10^k + a, on k és el nombre de xifres de 'a'.
+L'enunciat diu que M = 4N. Per tant, tenim l'equació:
+6 * 10^k + a = 4 * (10a + 6)
+6 * 10^k + a = 40a + 24
+6 * 10^k - 24 = 39a
+2 * 10^k - 8 = 13a
+a = (2 * 10^k - 8) / 13
+
+Ara hem de trobar el valor més petit de k (nombre de xifres de 'a') que faci que 'a' sigui un nombre natural.
+Si k = 1, a = (20 - 8) / 13 = 12 / 13 (no és natural)
+Si k = 2, a = (200 - 8) / 13 = 192 / 13 (no és natural)
+Si k = 3, a = (2000 - 8) / 13 = 1992 / 13 = 153.23 (no és natural)
+Si k = 4, a = (20000 - 8) / 13 = 19992 / 13 = 1538 (és natural)
+
+Per tant, el valor més petit de k que fa que 'a' sigui natural és k=4, i a = 1538.
+Així, N = 10a + 6 = 10 * 1538 + 6 = 15386
+M = 61538
+Comprovem: 4 * 15386 = 61544 (no és correcte)
+Hem de revisar els càlculs.
+L'equació és: 6 * 10^k + a = 4 * (10a + 6)
+6 * 10^k + a = 40a + 24
+6 * 10^k - 24 = 39a
+2 * 10^k - 8 = 13a
+a = (2 * 10^k - 8) / 13
+
+Si k=1, a = 12/13
+Si k=2, a = 192/13
+Si k=3, a = 1992/13
+Si k=4, a = 19992/13 = 1538
+N = 15386
+M = 61538
+4N = 61544 (no funciona)
+
+Hem de buscar un valor de k que faci que 2*10^k - 8 sigui divisible per 13.
+Provem amb k=5: a = (200000 - 8) / 13 = 199992 / 13 = 15384
+N = 153846
+M = 615384
+4N = 615384. Funciona!
+La suma de les xifres de N és 1 + 5 + 3 + 8 + 4 + 6 = 27
+
+Resposta: D)

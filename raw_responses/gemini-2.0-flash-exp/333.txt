@@ -1,0 +1,33 @@
+Raonament:
+Volem trobar la fracció més gran possible, on el numerador i el denominador són enters positius, la seva suma és menor o igual a 103, i la fracció és menor que 3. Sigui la fracció n/d, on n és el numerador i d és el denominador. Tenim les condicions:
+1. n i d són enters positius.
+2. n + d <= 103
+3. n/d < 3, que implica n < 3d
+
+Per maximitzar la fracció n/d, volem que el numerador sigui el més gran possible i el denominador el més petit possible, subjecte a les restriccions. Com que n < 3d, podem escriure n = 3d - k, on k és un enter positiu. Substituint això a la segona condició, tenim:
+3d - k + d <= 103
+4d - k <= 103
+4d <= 103 + k
+
+Per maximitzar n/d, volem que d sigui el més petit possible. Si k = 1, tenim 4d <= 104, o d <= 26. Si d = 26, llavors n < 3*26 = 78. Però n + d <= 103, així que n <= 103 - 26 = 77. Per tant, si d = 26, el màxim valor de n és 77, però n < 3d, així que n ha de ser menor que 78. Per tant, n = 77 no és vàlid.
+
+Si d = 26, el màxim valor de n que compleix n < 3d és n = 77. Però n + d = 77 + 26 = 103, que compleix la condició n + d <= 103. La fracció seria 77/26, que és major que 3, així que no és vàlida.
+
+Si d = 27, llavors n < 3*27 = 81. El màxim valor de n que compleix n + d <= 103 és n = 103 - 27 = 76. La fracció seria 76/27, que és menor que 3.
+
+Ara, analitzem les opcions:
+A) 27/77: 27 + 77 = 104 > 103, no vàlida.
+B) 26/77: 26 + 77 = 103, 26/77 < 1, vàlida.
+C) 25/76: 25 + 76 = 101, 25/76 < 1, vàlida.
+D) 25/77: 25 + 77 = 102, 25/77 < 1, vàlida.
+E) 26/75: 26 + 75 = 101, 26/75 < 1, vàlida.
+
+Comparant les opcions vàlides, volem la fracció més gran.
+26/77 ≈ 0.337
+25/76 ≈ 0.329
+25/77 ≈ 0.325
+26/75 ≈ 0.347
+
+La fracció més gran és 26/75.
+
+Resposta: E)

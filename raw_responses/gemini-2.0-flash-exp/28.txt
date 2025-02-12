@@ -1,0 +1,41 @@
+Raonament:
+Anomenem A, B, S i T al nombre de caramels que tenen Andreu, Bernat, Susanna i Teresa respectivament.
+Tenim les següents dades:
+1. T > S (Teresa té més caramels que Susanna)
+2. A + B = S + T (Els xics junts tenen tants caramels com les xiques juntes)
+3. A + T < B + S (Andreu i Teresa junts tenen menys caramels que Bernat i Susanna junts)
+
+De la segona equació, podem aïllar A: A = S + T - B
+Substituïm aquest valor d'A a la tercera inequació:
+(S + T - B) + T < B + S
+2T - B < B
+2T < 2B
+T < B
+
+Per tant, Teresa té menys caramels que Bernat. Això descarta l'opció B i l'opció E.
+
+Ara, tornem a la tercera inequació: A + T < B + S
+Si restem T a ambdós costats, obtenim: A < B + S - T
+De la segona equació, sabem que S + T = A + B, per tant, S = A + B - T. Substituïm això a la inequació anterior:
+A < B + (A + B - T) - T
+A < 2B + A - 2T
+0 < 2B - 2T
+2T < 2B
+T < B
+
+Això ja ho havíem deduït abans.
+
+Ara, tornem a la tercera inequació: A + T < B + S
+Si restem A a ambdós costats, obtenim: T < B + S - A
+De la segona equació, sabem que A + B = S + T, per tant, B = S + T - A. Substituïm això a la inequació anterior:
+T < (S + T - A) + S - A
+T < 2S + T - 2A
+0 < 2S - 2A
+2A < 2S
+A < S
+
+Per tant, Andreu té menys caramels que Susanna. Això confirma l'opció C.
+
+L'opció A no és necessàriament certa, ja que no tenim cap relació directa entre S i B. L'opció D és falsa, ja que sabem que T > S.
+
+Resposta: C)

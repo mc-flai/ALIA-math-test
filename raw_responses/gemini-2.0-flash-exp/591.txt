@@ -1,0 +1,21 @@
+Raonament:
+Primer, hem de determinar quants números de pilota hi ha en total fins a una caixa donada. A la caixa 1 hi ha 1 pilota, a la caixa 2 hi ha 2 pilotes, a la caixa 3 hi ha 3 pilotes, i així successivament. Per tant, el nombre total de pilotes fins a la caixa *n* és la suma dels primers *n* nombres naturals, que es calcula amb la fórmula n(n+1)/2.
+
+Volem trobar la caixa *n* on la pilota número 2018 es troba. Això significa que la suma de pilotes fins a la caixa *n-1* és menor que 2018, i la suma de pilotes fins a la caixa *n* és igual o major que 2018. Matemàticament, busquem el valor de *n* tal que:
+
+(n-1)n/2 < 2018 <= n(n+1)/2
+
+Podem aproximar la solució de la següent manera:
+n(n+1)/2 ≈ n²/2 ≈ 2018
+n² ≈ 4036
+n ≈ √4036 ≈ 63.5
+
+Això ens dona una idea que la resposta està al voltant de 63. Ara hem de provar valors propers a 63 per trobar el valor exacte de *n*.
+
+Si n = 62: 62(63)/2 = 1953
+Si n = 63: 63(64)/2 = 2016
+Si n = 64: 64(65)/2 = 2080
+
+Això significa que fins a la caixa 63 hi ha 2016 pilotes. La pilota 2017 serà la primera de la caixa 64, i la pilota 2018 serà la segona de la caixa 64. Per tant, la pilota 2018 es troba a la caixa 64.
+
+Resposta: D)

@@ -1,0 +1,81 @@
+<think>
+Para determinar cuántos enteros positivos verifican que sean los puntos simétricos del punto (0, 2017) respecto a la recta y = mx, primero es necesario identificar el concepto de simetría con respecto a una recta.
+
+Primero, notamos que el punto (0, 2017) está en la posición x = 0. La recta y = mx tiene como pendiente m, por lo que su ángulo de incidence angular se puede calcular utilizando la tangente del ángulo, es decir, tg(θ) = m.
+
+Ahora, para encontrar el punto simétrico de (0, 2017) respecto a la recta y = mx, debemos calcular la ecuación de la perpendicular que passes por (0, 2017). La pendiente de esta perpendicular será -1/m, ya que es la negative inverse de la pendiente de la recta original.
+
+La ecuación de esta perpendicular es:
+y - 2017 = (-1/m)(x - 0)
+Simplificando:
+y = (-1/m)x + 2017
+
+Para encontrar los puntos intersección entre las dos rectas, y = mx y y = (-1/m)x + 2017, resolvemos la ecuación:
+
+mx = (-1/m)x + 2017
+Multiplicando ambos lados por m:
+m²x = -x + 2017m
+Moving términos:
+(m² + 1)x = 2017m
+Resolviendo para x:
+x = (2017m)/(m² + 1)
+
+Planteamos que x debe ser un entero positivo, por lo que (2017m) debe ser divisible entre (m² + 1). Sin embargo, no es fácil identificar los valores de m que satisfaga esta condición, ya que se necesitan resolver ecuaciones cuadráticas complejas.
+
+Sin embargo, notamos que m debe ser racional para que x sea entero. Supongamos que m = p/q, con p y q enteros positivos consecutivos. Entonces:
+
+x = (2017*(p/q)) / ((p² + q²)/q²) ) = 2017p / (p² + q²)
+
+Ahora, para x ser entero, necesitamos que p² + q² sea un divisor de 2017p. Dado que 2017 es un número primo, su solo divisores son 1 y 2017.
+
+Si p = 1, entonces:
+x = 2017*1 / (1 + q²)
+Para x ser entero, q² debe ser 2016. Sin embargo, 2016 no es un cuadrado perfecto, por lo que no hay soluciones en este caso.
+
+Si p = 2017,entonces:
+x = 2017*2017 / (2017² + q²)
+Para x ser entero, q² debe ser 0, lo que no es posible ya que q es positivo. Por lo tanto, no hay soluciones en este caso.
+
+Por lo tanto, no hay enteros positivos m que satisfaga las condiciones, lo que indica que la respuesta correcta es E) Per a una quantitat infinita.
+</think>
+
+Para determinar cuántas veces un entero positivo verifican que sean los puntos simétricos del punto (0, 2017) respecto a la recta y = mx, seguiremos estos pasos:
+
+1. **Identificar la Simetría**: El punto (0, 2017) está en la posición x = 0. Para encontrar su simétrico respecto a la recta y = mx, necesitamos calcular el punto que equidiste de ambos, sobre la recta.
+
+2. **Recta Perpendicular**: La pendiente de la recta y = mx es m, por lo que la pendiente de la perpendicular es -1/m. La ecuación de la perpendicular que passes por (0, 2017) es:
+   \[
+   y = (-1/m)x + 2017
+   \]
+
+3. **Intersección**: La intersección de las rectas y = mx y y = (-1/m)x + 2017 se determina al resolver:
+   \[
+   mx = (-1/m)x + 2017
+   \]
+   Multiplicando ambos lados por m:
+   \[
+   m²x = -x + 2017m
+   \]
+   Y despejando x:
+   \[
+   (m² + 1)x = 2017m \quad \Rightarrow \quad x = \frac{2017m}{m² + 1}
+   \]
+
+4. **Condición de Entero**: Para que x sea un entero positivo, el numerador (2017m) debe ser divisible por el denominador (m² + 1). Sin embargo, es difícil identificar valores de m que satisfractionan esta condición.
+
+5. **Análisis de Posibles Valores**:
+   - Si consideramos m = 1:
+     \[
+     x = \frac{2017 \cdot 1}{1² + 1} = \frac{2017}{2}
+     \]
+     No es entero.
+   - Si tomamos m = 2017:
+     \[
+     x = \frac{2017 \cdot 2017}{2017² + 1} = \frac{2017²}{2017² + 1}
+     \]
+     No es entero.
+
+6. **Conclusión**: No se encuentran enteros positivos m que satisfacen las condiciones, lo que indica que la respuesta correcta es E) Per a una quantitat infinita.
+
+**Respuesta Final:**
+\boxed{E}

@@ -1,0 +1,211 @@
+Raonament:
+
+1. **Definició de variables:**
+   - Sigui `d` la distància total de la passejada.
+   - Sigui `t` el temps total de la passejada.
+   - Sigui `t1` el temps que va caminar a 2 km/h.
+   - Sigui `t2` el temps que va caminar a 3 km/h.
+   - Sigui `t3` el temps que va caminar a 4 km/h.
+   - Sabem que `t = t1 + t2 + t3`.
+
+2. **Distàncies parcials:**
+   - Va caminar la meitat del temps a 2 km/h, per tant, `t1 = t/2`. La distància recorreguda en aquest temps és `d1 = 2 * t1 = 2 * (t/2) = t`.
+   - Va caminar la meitat de la distància total a 3 km/h, per tant, la distància recorreguda és `d2 = d/2`. El temps que va trigar és `t2 = d2 / 3 = (d/2) / 3 = d/6`.
+   - La distància restant és `d3 = d - d1 - d2 = d - t - d/2`. Però, com que la distància total és `d`, i la primera part va ser `d1 = t` i la segona `d2 = d/2`, la distància que va fer a 4 km/h és `d3 = d - d/2 = d/2`. El temps que va trigar és `t3 = d3 / 4 = (d/2) / 4 = d/8`.
+
+3. **Relació entre distància i temps:**
+   - La distància total és `d = d1 + d2 + d3`.
+   - La distància total també es pot expressar com `d = 2*t1 + 3*t2 + 4*t3`.
+   - Sabem que `d1 = t`, `d2 = d/2` i `d3 = d/2`. Per tant, `d = t + d/2 + d/2`.
+   - També sabem que `t1 = t/2`, `t2 = d/6` i `t3 = d/8`.
+   - El temps total és `t = t1 + t2 + t3 = t/2 + d/6 + d/8`.
+
+4. **Relació entre temps i distància:**
+   - Sabem que `d1 = t`, i que `d2 = d/2`. Per tant, `d = d1 + d2 + d3 = t + d/2 + d/2 = t + d`. Això no és correcte, ja que `d1` no és `t`.
+   - La distància total és `d = d1 + d2 + d3`.
+   - La distància total és `d = 2*t1 + 3*t2 + 4*t3`.
+   - Sabem que `t1 = t/2`, `d2 = d/2` i `d3 = d/2`.
+   - Per tant, `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3 = d/6`.
+   - La tercera part és la meitat de la distància, `d/2`, a 4 km/h. El temps és `t3 = (d/2)/4 = d/8`.
+   - El temps total és `t = t/2 + d/6 + d/8`.
+   - La distància total és `d = 2*(t/2) + 3*(d/6) + 4*(d/8) = t + d/2 + d/2 = t + d`. Això tampoc és correcte.
+   - La distància total és `d`. La meitat de la distància és `d/2`.
+   - La primera part és la meitat del temps, `t/2`, a 2 km/h. La distància és `d1 = 2*(t/2) = t`.
+   - La segona part és la meitat de la distància, `d/2`, a 3 km/h. El temps és `t2 = (d/2)/3

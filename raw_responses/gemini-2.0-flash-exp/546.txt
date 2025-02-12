@@ -1,0 +1,21 @@
+Raonament:
+El cangur A fa salts de 6 metres, per tant, després de *n* salts, haurà recorregut 6*n* metres.
+El cangur B fa salts que augmenten en 1 metre cada vegada. Després de *n* salts, la distància que haurà recorregut serà la suma dels primers *n* nombres naturals, que es calcula amb la fórmula n*(n+1)/2.
+Per a que el cangur B agafi el cangur A, la distància recorreguda per B ha de ser igual o superior a la distància recorreguda per A. Per tant, hem de trobar el valor de *n* per al qual es compleix la següent desigualtat:
+n*(n+1)/2 >= 6*n
+Multipliquem els dos costats per 2:
+n*(n+1) >= 12*n
+Dividim els dos costats per n (sabem que n és diferent de 0):
+n+1 >= 12
+n >= 11
+Per tant, el cangur B ha de fer 11 salts per a agafar el cangur A.
+Comprovem:
+Després de 10 salts:
+Cangur A: 10 * 6 = 60 metres
+Cangur B: 10 * (10+1) / 2 = 10 * 11 / 2 = 55 metres
+Després de 11 salts:
+Cangur A: 11 * 6 = 66 metres
+Cangur B: 11 * (11+1) / 2 = 11 * 12 / 2 = 66 metres
+Per tant, amb 11 salts el cangur B agafa el cangur A.
+
+Resposta: C)

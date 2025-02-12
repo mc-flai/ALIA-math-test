@@ -1,0 +1,16 @@
+Raonament:
+Si un nombre enter positiu N té exactament sis divisors, la seva factorització prima pot ser de dues formes: p⁵ o p²q, on p i q són nombres primers diferents.
+El producte de tots els divisors d'un nombre N és N^(nombre de divisors / 2). En aquest cas, el producte dels sis divisors és N^(6/2) = N³.
+Sabem que el producte de cinc dels divisors és 648. Si anomenem el divisor que falta com a 'x', llavors el producte de tots els divisors és 648 * x. Per tant, N³ = 648 * x.
+Hem de trobar la factorització prima de 648: 648 = 2³ * 3⁴.
+Per tant, N³ = 2³ * 3⁴ * x. Perquè N³ sigui un cub perfecte, els exponents dels factors primers han de ser múltiples de 3.
+Per tant, x ha de tenir almenys un factor 3 i cap factor 2.
+Si x = 3, N³ = 2³ * 3⁵, que no és un cub perfecte.
+Si x = 9, N³ = 2³ * 3⁶ = (2 * 3²)³ = 18³, per tant N = 18. Els divisors de 18 són 1, 2, 3, 6, 9, 18. El producte de 1, 2, 3, 6, 18 és 648. Per tant, el divisor que falta és 9.
+Si x = 12, N³ = 2⁵ * 3⁴, que no és un cub perfecte.
+Si x = 4, N³ = 2⁵ * 3⁴, que no és un cub perfecte.
+Si x = 24, N³ = 2⁶ * 3⁴, que no és un cub perfecte.
+Si x = 16, N³ = 2⁷ * 3⁴, que no és un cub perfecte.
+Per tant, l'única opció que fa que N³ sigui un cub perfecte és x = 9.
+
+Resposta: C)

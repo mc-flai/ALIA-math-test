@@ -1,0 +1,23 @@
+Raonament:
+1. **Visualització:** Imaginem una circumferència amb 20 punts equidistants. El radi connecta el centre amb un punt de la circumferència. El diàmetre connecta dos punts oposats passant pel centre.
+
+2. **Longitud de les cordes:**
+   - Una corda és més llarga que el radi si els punts que connecta estan separats per més d'un arc.
+   - Una corda és més curta que el diàmetre si els punts que connecta no són diametralment oposats.
+
+3. **Anàlisi:**
+   - Si numerem els punts de l'1 al 20, el punt 1 pot connectar-se amb els punts 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 i 18. El punt 2 no pot connectar-se amb el 1, 2, 3, 19 i 20.
+   - El punt 1 no pot connectar-se amb el 2 (longitud igual al radi) ni amb el 11 (longitud igual al diàmetre).
+   - Per tant, el punt 1 pot connectar-se amb 16 punts que compleixen la condició.
+   - El punt 2 pot connectar-se amb 16 punts diferents dels que es connecta el punt 1.
+   - El punt 3 pot connectar-se amb 16 punts diferents dels que es connecten el punt 1 i 2.
+   - I així successivament.
+
+4. **Càlcul:**
+   - Cada punt pot connectar-se amb 16 punts que compleixen la condició.
+   - Hi ha 20 punts.
+   - Si multipliquem 20 * 16, estem comptant cada corda dues vegades (per exemple, la corda que connecta el punt 1 amb el 3 és la mateixa que la que connecta el punt 3 amb el 1).
+   - Per tant, hem de dividir el resultat per 2.
+   - Nombre total de cordes = (20 * 16) / 2 = 320 / 2 = 160
+
+Resposta: E)

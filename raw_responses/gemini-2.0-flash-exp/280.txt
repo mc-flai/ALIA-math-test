@@ -1,0 +1,13 @@
+Raonament:
+El producte \(1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot \ldots \cdot 18 \cdot 19 \cdot 20\) és el factorial de 20, que s'escriu com 20!. Els zeros al final d'un nombre sorgeixen de la multiplicació de 2 i 5. En un factorial, sempre hi ha més factors 2 que factors 5, per tant, el nombre de zeros al final del resultat ve determinat pel nombre de factors 5.
+
+Per calcular el nombre de factors 5 en 20!, hem de comptar quants múltiples de 5 hi ha entre 1 i 20. Aquests són 5, 10, 15 i 20. Cada un d'aquests nombres aporta un factor 5. Però, hem de tenir en compte que 25 aporta dos factors 5, però com que 25 no està entre 1 i 20, no ens afecta.
+
+* 5 = 5 * 1 (1 factor 5)
+* 10 = 5 * 2 (1 factor 5)
+* 15 = 5 * 3 (1 factor 5)
+* 20 = 5 * 4 (1 factor 5)
+
+Per tant, hi ha un total de 1 + 1 + 1 + 1 = 4 factors 5 en 20!. Això significa que hi ha 4 parells de 2 i 5, i per tant, hi ha 4 zeros al final del nombre resultant.
+
+Resposta: D)

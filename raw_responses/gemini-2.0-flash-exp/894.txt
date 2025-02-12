@@ -1,0 +1,468 @@
+Raonament:
+Anomenem els nombres de la graella de la següent manera:
+
+```
+a  b  c
+d  e  f
+g  h  i
+```
+
+Sabem que el producte dels nombres de cada fila i columna és 1. Per tant:
+1.  a * b * c = 1
+2.  d * e * f = 1
+3.  g * h * i = 1
+4.  a * d * g = 1
+5.  b * e * h = 1
+6.  c * f * i = 1
+
+També sabem que el producte dels quatre nombres de qualsevol graella 2x2 és 2. Això ens dona les següents equacions:
+7.  a * b * d * e = 2
+8.  b * c * e * f = 2
+9.  d * e * g * h = 2
+10. e * f * h * i = 2
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1 * 1 * 1 = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1 * 1 * 1 = 1
+Això ens diu que el producte de tots els nombres de la graella és 1.
+
+Ara, multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 2 * 2 * 2 * 2 = 16
+Reorganitzant els termes:
+(a * b * c * d * e * f * g * h * i) * (b * d * e * e * f * h) = 16
+Sabem que el producte de tots els nombres de la graella és 1, per tant:
+1 * (b * d * e * e * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Ara, considerem el producte de les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 1 * 2 = 2
+a * b^2 * d * e^2 * h = 2
+
+Considerem el producte de les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 1 * 2 = 2
+b^2 * c * e^2 * f * h = 2
+
+Considerem el producte de les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 1 * 2 = 2
+b * d * e^2 * g * h^2 = 2
+
+Considerem el producte de les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 1 * 2 = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 2 * 2 = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 2 * 2 = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 2 * 2 * 2 * 2 = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Ara, considerem el producte de les equacions 7 i 8:
+(a * b * d * e) * (b * c * e * f) = 2 * 2 = 4
+a * b^2 * c * d * e^2 * f = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 2 * 2 * 2 * 2 = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Sabem que el producte de tots els nombres és 1.
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Considerem el producte de les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Considerem el producte de les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Si multipliquem les equacions 7, 8, 9 i 10, obtenim:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 1, 2 i 3:
+(a * b * c) * (d * e * f) * (g * h * i) = 1
+Multipliquem les equacions 4, 5 i 6:
+(a * d * g) * (b * e * h) * (c * f * i) = 1
+
+Multipliquem les equacions 7, 8, 9 i 10:
+(a * b * d * e) * (b * c * e * f) * (d * e * g * h) * (e * f * h * i) = 16
+(a * b * c * d * e * f * g * h * i) * (b * d * e^2 * f * h) = 16
+1 * (b * d * e^2 * f * h) = 16
+b * d * e^2 * f * h = 16
+
+Multipliquem les equacions 5 i 7:
+(b * e * h) * (a * b * d * e) = 2
+a * b^2 * d * e^2 * h = 2
+
+Multipliquem les equacions 5 i 8:
+(b * e * h) * (b * c * e * f) = 2
+b^2 * c * e^2 * f * h = 2
+
+Multipliquem les equacions 5 i 9:
+(b * e * h) * (d * e * g * h) = 2
+b * d * e^2 * g * h^2 = 2
+
+Multipliquem les equacions 5 i 10:
+(b * e * h) * (e * f * h * i) = 2
+b * e^2 * f * h^2 * i = 2
+
+Multipliquem les equacions 7 i 10:
+(a * b * d * e) * (e * f * h * i) = 4
+a * b * d * e^2 * f * h * i = 4
+
+Multipliquem les equacions 8 i 9:
+(b * c * e * f) * (d * e * g * h) = 4
+b * c * d * e^2 * f * g * h = 4
+
+Multipliquem les

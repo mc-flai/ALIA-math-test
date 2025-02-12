@@ -1,0 +1,16 @@
+Raonament:
+Primer, hem de determinar quants nombres de tres xifres hi ha en total. El primer nombre de tres xifres és 100 i l'últim és 999. Per tant, hi ha 999 - 100 + 1 = 900 nombres de tres xifres.
+
+Ara, calculem quants nombres de tres xifres són divisibles per 2. El primer nombre divisible per 2 és 100 i l'últim és 998. Per tant, hi ha (998 - 100) / 2 + 1 = 898 / 2 + 1 = 449 + 1 = 450 nombres divisibles per 2.
+
+Després, calculem quants nombres de tres xifres són divisibles per 3. El primer nombre divisible per 3 és 102 i l'últim és 999. Per tant, hi ha (999 - 102) / 3 + 1 = 897 / 3 + 1 = 299 + 1 = 300 nombres divisibles per 3.
+
+Ara, hem de calcular quants nombres de tres xifres són divisibles per 2 i 3 alhora, és a dir, per 6. El primer nombre divisible per 6 és 102 i l'últim és 996. Per tant, hi ha (996 - 102) / 6 + 1 = 894 / 6 + 1 = 149 + 1 = 150 nombres divisibles per 6.
+
+Per a trobar el nombre de nombres divisibles per 2 o per 3, utilitzem el principi d'inclusió-exclusió:
+Nombres divisibles per 2 o per 3 = Nombres divisibles per 2 + Nombres divisibles per 3 - Nombres divisibles per 2 i 3
+= 450 + 300 - 150 = 600
+
+Per tant, hi ha 600 nombres de tres xifres que són divisibles per 2 o per 3 o per 2 i 3 alhora.
+
+Resposta: A)

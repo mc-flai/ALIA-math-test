@@ -1,0 +1,19 @@
+Raonament:
+Aquest problema involucra una expressió amb arrels quadrades anidades. Per resoldre'l, podem començar per aproximar el valor de l'expressió. Notem que la part més interna és √20, que és lleugerament més gran que √16 = 4 i més petita que √25 = 5. Per tant, √20 està entre 4 i 5.
+
+Si substituïm √20 per un valor aproximat, per exemple 4.5, podem avaluar l'expressió de dins cap a fora:
+
+1.  √(20 + √20) ≈ √(20 + 4.5) = √24.5. Aquest valor està entre √16 = 4 i √25 = 5, i és més proper a 5.
+2.  √(20 + √(20 + √20)) ≈ √(20 + √24.5) ≈ √(20 + 4.95) ≈ √24.95. Aquest valor també està entre 4 i 5, i és molt proper a 5.
+3.  √(20 + √(20 + √(20 + √20))) ≈ √(20 + √24.95) ≈ √(20 + 4.995) ≈ √24.995. Aquest valor també està entre 4 i 5, i és molt proper a 5.
+4.  √(20 + √(20 + √(20 + √(20 + √20)))) ≈ √(20 + √24.995) ≈ √(20 + 4.9995) ≈ √24.9995. Aquest valor també està entre 4 i 5, i és molt proper a 5.
+
+A mesura que afegim més arrels, el valor de l'expressió s'acosta cada vegada més a 5. Per tant, la part entera de l'expressió serà 4.
+
+Una altra manera de raonar és considerar la successió definida per recurrència:
+x_1 = √20
+x_n = √(20 + x_{n-1})
+
+Si aquesta successió convergeix a un límit L, llavors L = √(20 + L). Elevat al quadrat, L^2 = 20 + L, o L^2 - L - 20 = 0. Resolent aquesta equació quadràtica, obtenim (L-5)(L+4) = 0, per tant L = 5 o L = -4. Com que L ha de ser positiu, L = 5. Això vol dir que la successió s'acosta a 5, però sempre serà menor que 5. Per tant, la part entera serà 4.
+
+Resposta: A)

@@ -1,0 +1,37 @@
+Raonament:
+
+1. **Definir variables:**
+   - Sigui 'x' el nombre de xics a la classe.
+   - Sigui 'y' el nombre de xiques a la classe.
+   - Sabem que x + y = 27 (total d'estudiants).
+
+2. **Estudiants que repeteixen:**
+   - Els xics que repeteixen són (2/3)x.
+   - Les xiques que repeteixen són (3/5)y.
+
+3. **Estudiants que NO repeteixen:**
+   - Els xics que NO repeteixen són (1/3)x.
+   - Les xiques que NO repeteixen són (2/5)y.
+   - El total d'estudiants que NO repeteixen és (1/3)x + (2/5)y.
+
+4. **Necessitem trobar valors enters per a x i y que compleixin les condicions:**
+   - x i y han de ser enters positius.
+   - x + y = 27
+   - (2/3)x ha de ser un nombre enter (perquè representa el nombre de xics que repeteixen). Això implica que x ha de ser un múltiple de 3.
+   - (3/5)y ha de ser un nombre enter (perquè representa el nombre de xiques que repeteixen). Això implica que y ha de ser un múltiple de 5.
+
+5. **Provar combinacions:**
+   - Si y = 5, x = 22 (no és múltiple de 3)
+   - Si y = 10, x = 17 (no és múltiple de 3)
+   - Si y = 15, x = 12 (sí és múltiple de 3)
+   - Si y = 20, x = 7 (no és múltiple de 3)
+   - Si y = 25, x = 2 (no és múltiple de 3)
+
+   La única combinació que compleix les condicions és x = 12 i y = 15.
+
+6. **Calcular els que NO repeteixen:**
+   - Xics que NO repeteixen: (1/3) * 12 = 4
+   - Xiques que NO repeteixen: (2/5) * 15 = 6
+   - Total que NO repeteixen: 4 + 6 = 10
+
+Resposta: D)

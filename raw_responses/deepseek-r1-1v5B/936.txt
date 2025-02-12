@@ -1,0 +1,25 @@
+<think>
+Primeixem la probabilitat que hi presents de tenir dos parells en qualsevol de les dadas.
+
+Com que there's 6 llocs posibles per a cada nombre, el total possible es 6 x 6 = 36.
+
+Llavors, com que la segona vegada ha de ser immediately 下 una vegada de la primera, tenim 5 pairs consecutius: (1,2), (2,3), ..., (5,6).
+
+Per tant, la probabilitat es del total es 5/36.
+
+Com així, l'opció correcta és A) 5/36.
+</think>
+
+Raonament:
+
+- **Numbers de parells possible**: Quan esesmentes juntats, el nombre possible de couples consecutius és \(5\), com que hi ha llocs de 1-2, 2-3,..., 5-6.
+
+- **Total de posicions possibles**: Com així, tots els couples possibles són \(6 \times 6 = 36\).
+
+- **Probabilitat d'obtindre dos parells consecutius:**
+
+  \[
+  P = \frac{\text{Nombre possible de couples consecutius}}{\text{Total de couples posibles}} = \frac{5}{36}
+  \]
+
+**Resposta:** A) \( \boxed{\dfrac{5}{36}} \)

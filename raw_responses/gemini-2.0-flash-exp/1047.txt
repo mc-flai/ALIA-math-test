@@ -1,0 +1,24 @@
+Raonament:
+
+1. **Definició de variables:**
+   - Sigui `v_B` la velocitat de Baldiri.
+   - La velocitat d'Ariadna és `v_A = 3 * v_B`.
+   - Sigui `d` la distància entre els punts A i B.
+
+2. **Primera trobada:**
+   - Quan es troben per primera vegada, Ariadna ha recorregut una distància `d_A1` i Baldiri una distància `d_B1`. La suma d'aquestes distàncies és igual a la distància entre A i B, és a dir, `d_A1 + d_B1 = d`.
+   - El temps que triguen a trobar-se per primera vegada és de 15 minuts (0.25 hores).
+   - Per tant, `d_A1 = v_A * 0.25 = 3 * v_B * 0.25` i `d_B1 = v_B * 0.25`.
+   - Substituint a la primera equació: `3 * v_B * 0.25 + v_B * 0.25 = d`, que simplifica a `v_B = d`.
+
+3. **Segona trobada:**
+   - Per a la segona trobada, Ariadna haurà recorregut una distància `d_A2` i Baldiri una distància `d_B2`. La suma d'aquestes distàncies serà igual a tres vegades la distància entre A i B, és a dir, `d_A2 + d_B2 = 3d`. Això és perquè Ariadna haurà anat fins a B i tornat cap a A, i Baldiri haurà anat fins a A i tornat cap a B.
+   - Sigui `t` el temps que triguen a trobar-se per segona vegada.
+   - Per tant, `d_A2 = v_A * t = 3 * v_B * t` i `d_B2 = v_B * t`.
+   - Substituint a la segona equació: `3 * v_B * t + v_B * t = 3d`, que simplifica a `4 * v_B * t = 3d`.
+   - Sabem que `v_B = d`, per tant, `4 * d * t = 3d`.
+   - Dividint per `d` a ambdós costats: `4t = 3`.
+   - Aïllant `t`: `t = 3/4` hores.
+   - Convertint a minuts: `t = (3/4) * 60 = 45` minuts.
+
+Resposta: E)

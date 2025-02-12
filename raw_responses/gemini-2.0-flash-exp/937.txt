@@ -1,0 +1,17 @@
+Raonament:
+Un polinomi de grau 5 amb coeficients 1 o -1 té la forma:
+P(x) = a₅x⁵ + a₄x⁴ + a₃x³ + a₂x² + a₁x + a₀
+on cada aᵢ és 1 o -1.
+
+Si 1 és una arrel del polinomi, llavors P(1) = 0. Per tant:
+a₅(1)⁵ + a₄(1)⁴ + a₃(1)³ + a₂(1)² + a₁(1) + a₀ = 0
+a₅ + a₄ + a₃ + a₂ + a₁ + a₀ = 0
+
+Necessitem trobar quantes combinacions de 6 coeficients (a₅, a₄, a₃, a₂, a₁, a₀), cadascun sent 1 o -1, sumen 0. Perquè la suma siga 0, necessitem que hi haja el mateix nombre de 1s que de -1s. Com tenim 6 coeficients, necessitem 3 coeficients que siguen 1 i 3 coeficients que siguen -1.
+
+El nombre de maneres de triar 3 posicions per als 1s (i les altres 3 seran -1s) és el nombre de combinacions de 6 elements triats 3 a 3, que es calcula com:
+C(6, 3) = 6! / (3! * (6-3)!) = 6! / (3! * 3!) = (6 * 5 * 4) / (3 * 2 * 1) = 20
+
+Per tant, hi ha 20 polinomis de grau 5 amb coeficients 1 o -1 que tenen 1 com a arrel.
+
+Resposta: D)

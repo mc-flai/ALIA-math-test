@@ -1,0 +1,83 @@
+<think>
+Para resolver la pregunta, primero notamos que hay dos series definidas por las variables \(a\) y \(b\).
+
+La primera serie \(a\) es la suma de reciprocos de los números enteros desde 2 hasta 2017:
+\[ a = \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{2017} \]
+
+La segunda serie \(b\) es la suma de fracciones con numeradores que son números impares y denominator los números enteros desde 2 hasta 2017:
+\[ b = \frac{3}{2} + \frac{5}{3} + \frac{7}{4} + \cdots + \frac{4033}{2017} \]
+
+Puedemos expressar \(a\) como la suma de reciprocos de números enteros desde 1 hasta 2017, exlcida el primer término:
+\[ a = \left( \sum_{n=1}^{2017} \frac{1}{n} \right) - 1 \]
+
+Ahora, para la serie \(b\), observamos que los numeradores son números impares y el denominador es el número de la posición. Por ejemplo:
+\[ b = \sum_{k=2}^{2017} \frac{2k - 1}{k} \]
+
+Esto se puede reescribir como la suma de dos series: una constante y otra armada. particularmente:
+\[ b = 2\sum_{k=2}^{2017} 1 - \sum_{k=2}^{2017} \frac{1}{k} \]
+
+Simplificando esta expresión, sabemos que la suma de 1 dos veces desde k=2 hasta k=2017 es:
+\[ 2(2016) = 4032 \]
+
+Y la segunda serie armada es:
+\[ -\sum_{k=2}^{2017} \frac{1}{k} \]
+
+Ahora, putting esto juntos con la suma de \(a\) y \(b\):
+\[ a + b = \left( \sum_{n=1}^{2017} \frac{1}{n} - 1 \right) + \left( 4032 - \sum_{k=2}^{2017} \frac{1}{k} \right) \]
+
+Observamos que la suma armada de reciprocos cancela:
+\[ \sum_{n=1}^{2017} \frac{1}{n} - \sum_{k=2}^{2017} \frac{1}{k} = 1 \]
+
+Por lo tanto, la suma total es:
+\[ a + b = (4032 - 1) + 1 = 4032 \]
+</think>
+
+Para resolver la pregunta, analizamos las dos series definidas por \(a\) y \(b\):
+
+La primera serie \(a\) es la suma de reciprocos de números enteros desde 2 hasta 2017:
+\[ a = \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{2017} \]
+
+La segunda serie \(b\) es la suma de fracciones con numeradores que son números impares y denominators los números enteros desde 2 hasta 2017:
+\[ b = \frac{3}{2} + \frac{5}{3} + \frac{7}{4} + \cdots + \frac{4033}{2017} \]
+
+**Expresión de \(a\):**
+\[
+a = \left( \sum_{n=1}^{2017} \frac{1}{n} \right) - 1
+\]
+donde la suma summamos desde 1 hasta 2017, y excluimos el primer término \(\frac{1}{1}\).
+
+**Expresión de \(b\):**
+Notamos que los numeradores son números impares. Por ejemplo:
+- Numerador del primer término: 3
+- Denominador: 2
+
+En general:
+\[ b = \sum_{k=2}^{2017} \frac{2k - 1}{k} \]
+Esto se puede reescribir como:
+\[
+b = 2\sum_{k=2}^{2017} 1 - \sum_{k=2}^{2017} \frac{1}{k}
+\]
+
+Simplificando:
+\[
+b = 2(2016) - \left( \sum_{n=1}^{2017} \frac{1}{n} - 1 \right)
+\]
+\[
+b = 4032 - a
+\]
+
+**Suma de \(a\) y \(b\):**
+\[
+a + b = \left( \sum_{n=1}^{2017} \frac{1}{n} - 1 \right) + (4032 - \sum_{k=2}^{2017} \frac{1}{k})
+\]
+La suma armada de reciprocos cancela:
+\[
+\sum_{n=1}^{2017} \frac{1}{n} - \sum_{k=2}^{2017} \frac{1}{k} = 1
+\]
+Por lo tanto:
+\[
+a + b = (4032 - 1) + 1 = 4032
+\]
+
+**Respuesta final:**
+\boxed{A}

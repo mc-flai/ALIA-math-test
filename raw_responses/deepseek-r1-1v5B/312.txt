@@ -1,0 +1,72 @@
+<think>
+Primejament, identifiquem quin és l'expressió que hem de calcular: 111 - 110 - 109 + 108 + 107 - 106 - 105 + ... + 4 + 3 - 2 - 1.
+
+Vom treballar sense separar la expressió en parts,而是 observem el patró d'operacions repetidues. Observem que l'expresión inclú la seqüència de números de 1 a 111, amb operacions alternant entre més quenc i menys. Per example:
+
+111 - 110 = 1
+
+1 - 109 = -108
+
+110 - 109 = 1 (perds el primer mèssol)
+
+108 + 107 = 215
+
+107 - 106 = 1
+
+105 - 104 = 1
+
+Etc.
+
+Observem que la successió de operacions potencialment formen paràntesis o groups d'operacions iguals, tal com així:
+
+111 - 110 - 109 + 108 = (111 - 110) - (109 - 108) = 1 - 1 = 0
+
+Llavors, cada group potencial de quatre terms (un més quenc, un menys, un més quenc i un més) pot treballar sense tenir segona posició.
+
+Per a donar una vegada, es considera que la expressió pot encotencinar en groups de dues operacions, per example:
+
+(111 - 110) = 1
+
+(-109 + 108) = -1
+
+(107 - 106) = 1
+
+(-105 + 104) = -1
+
+Etc.
+
+Així, cada dos operacions potencialment formen paràntesis que es sumen a zero. Quicks per a la segona posició:
+
+111 - 110 - 109 + 108 = (111 - 110) + (-109 + 108) = 1 - 1 = 0
+
+107 - 106 - 105 + 104 = (107 - 106) + (-105 + 104) = 1 -1 = 0
+
+Etc.
+
+Per així, la expressió pot ser resolt sense tenir segona posició, per així que la suma sigui de tota zero en les gràcies paregresals.
+
+Finalment, com s' Observa que el procés pot donar una solida distribució de paràntesis amb summats d'operacions repetitives que sumen un total de zero per a cada quadrat de nombres. Així, la expressió pot sumar tot a zero.
+</think>
+
+Raonament:
+
+Per a l'expressió dada:  
+111 - 110 - 109 + 108 + 107 - 106 - 105 + ... + 4 + 3 - 2 - 1  
+
+Vem que la successió de nombres es repeteix en paràtons. Es particularment, cada quadrat pot ser resolt per acompanyar les operacions:  
+111 - 110 = 1  
+-109 + 108 = -1  
+107 - 106 = 1  
+-105 + 104 = -1  
+
+Així, cada parèntesi pot donar un total de 0:  
+1 - 1 = 0  
+1 - 1 = 0  
+
+Per a la més gran paràton, com així:  
+3 - 2 - 1 + ... (no tot estan entats)  
+
+Així, la expressió pot sumar un total de zero.
+
+Resposta:  
+\boxed{B}

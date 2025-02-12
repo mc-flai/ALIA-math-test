@@ -1,0 +1,20 @@
+Raonament:
+Perquè només hi hagi una parella (a, b) amb a < b tal que a no divideixi b, la resta de parelles han de complir que a divideix b. Això implica que si ordenem els nombres de menor a major, cada nombre ha de ser divisor del següent, excepte per una parella. Per minimitzar n, hem de buscar una seqüència de nombres on els divisors siguin el més petits possible.
+
+Si tenim 6 nombres, els podem ordenar com a1 < a2 < a3 < a4 < a5 < a6 = n. Perquè només hi hagi una parella que no compleixi la condició de divisibilitat, totes les altres parelles han de complir-la. Això vol dir que a1 divideix a2, a2 divideix a3, a3 divideix a4, a4 divideix a5, i a5 divideix a6, excepte per una parella.
+
+Per minimitzar n, intentem que els nombres siguin el més petits possible. Comencem amb a1 = 1.
+- Si a1 = 1, a2 = 2, a3 = 4, a4 = 8, a5 = 16, llavors a6 hauria de ser un múltiple de 16. Però si a5 = 16, i a6 = 32, totes les parelles complirien la condició de divisibilitat. Per tant, hem de trencar aquesta cadena en algun punt.
+- Si a1 = 1, a2 = 2, a3 = 4, a4 = 8, i a5 no és divisible per 8, però a6 és divisible per a5, llavors a5 podria ser 9. En aquest cas, a6 hauria de ser un múltiple de 9. El més petit seria 18, però 8 no divideix 18, i 4 no divideix 9. Per tant, hi hauria més d'una parella que no compleix la condició.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, a6 hauria de ser un múltiple de 12. Si a6 = 24, totes les parelles compleixen la condició de divisibilitat. Però si a3 no divideix a4, llavors a3 podria ser 5, i a4 podria ser 10. En aquest cas, a5 podria ser 20 i a6 podria ser 40. Però 2 no divideix 5, i 5 no divideix 10.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, i a6 = 24, totes les parelles compleixen la condició. Però si a3 no divideix a4, llavors a3 podria ser 5, i a4 podria ser 10. En aquest cas, a5 podria ser 20 i a6 podria ser 40. Però 2 no divideix 5, i 5 no divideix 10.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, i a6 = 24, totes les parelles compleixen la condició. Però si a2 no divideix a3, llavors a2 podria ser 2, a3 podria ser 3, a4 podria ser 6, a5 podria ser 12, i a6 podria ser 24. Però 2 no divideix 3.
+- Si a1 = 1, a2 = 2, a3 = 4, a4 = 6, a5 = 12, a6 = 24. En aquest cas, 2 no divideix 6, però 2 divideix 4, 4 divideix 12, i 12 divideix 24. Per tant, hi ha més d'una parella que no compleix la condició.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, i a6 = 24, totes les parelles compleixen la condició. Però si a2 no divideix a3, llavors a2 podria ser 2, a3 podria ser 3, a4 podria ser 6, a5 podria ser 12, i a6 podria ser 24. Però 2 no divideix 3.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, i a6 = 24, totes les parelles compleixen la condició. Però si a3 no divideix a4, llavors a3 podria ser 5, i a4 podria ser 10. En aquest cas, a5 podria ser 20 i a6 podria ser 40. Però 2 no divideix 5, i 5 no divideix 10.
+- Si a1 = 1, a2 = 2, a3 = 3, a4 = 6, a5 = 12, i a6 = 24, totes les parelles compleixen la condició. Però si a4 no divideix a5, llavors a4 podria ser 7, i a5 podria ser 14. En aquest cas, a6 podria ser 28. Però 6 no divideix 7.
+- Si a1 = 1, a2 = 2, a3 = 4, a4 = 8, a5 = 12, a6 = 24. En aquest cas, 8 no divideix 12. Però 2 divideix 4, 4 divideix 8, i 12 divideix 24. Per tant, només hi ha una parella que no compleix la condició.
+
+Per tant, la seqüència 1, 2, 4, 8, 12, 24 compleix la condició. El valor més petit de n és 24.
+
+Resposta: C)

@@ -1,0 +1,20 @@
+Raonament:
+Sabem que Lisa té quatre paquets amb pesos diferents, tots nombres enters de quilos, i que el pes total és de 20 kg. També sabem que el tercer paquet, ordenats per pes creixent, pesa 8 kg. Per tant, tenim:
+
+* Paquet 1 < Paquet 2 < 8 kg < Paquet 4
+
+Com que els pesos són nombres enters i diferents, el paquet 1 ha de pesar com a mínim 1 kg i el paquet 2 ha de pesar com a mínim 2 kg. El paquet 4 ha de pesar com a mínim 9 kg.
+
+Si el paquet 2 pesés 2 kg, el paquet 1 hauria de pesar 1 kg. En aquest cas, el pes mínim del paquet 4 seria 9 kg. La suma seria 1 + 2 + 8 + 9 = 20 kg. Aquesta combinació compleix totes les condicions.
+
+Si el paquet 2 pesés 3 kg, el paquet 1 podria pesar 1 kg o 2 kg. Si el paquet 1 pesés 1 kg, el paquet 4 hauria de pesar 8 kg per a que la suma fos 20, però no pot ser igual al tercer paquet. Si el paquet 1 pesés 2 kg, el paquet 4 hauria de pesar 7 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Per tant, el paquet 2 no pot pesar 3 kg.
+
+Si el paquet 2 pesés 4 kg, el paquet 1 podria pesar 1, 2 o 3 kg. Si el paquet 1 pesés 1 kg, el paquet 4 hauria de pesar 7 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 2 kg, el paquet 4 hauria de pesar 6 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 3 kg, el paquet 4 hauria de pesar 5 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Per tant, el paquet 2 no pot pesar 4 kg.
+
+Si el paquet 2 pesés 5 kg, el paquet 1 podria pesar 1, 2, 3 o 4 kg. Si el paquet 1 pesés 1 kg, el paquet 4 hauria de pesar 6 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 2 kg, el paquet 4 hauria de pesar 5 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 3 kg, el paquet 4 hauria de pesar 4 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 4 kg, el paquet 4 hauria de pesar 3 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Per tant, el paquet 2 no pot pesar 5 kg.
+
+Si el paquet 2 pesés 6 kg, el paquet 1 podria pesar 1, 2, 3, 4 o 5 kg. Si el paquet 1 pesés 1 kg, el paquet 4 hauria de pesar 5 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 2 kg, el paquet 4 hauria de pesar 4 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 3 kg, el paquet 4 hauria de pesar 3 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 4 kg, el paquet 4 hauria de pesar 2 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Si el paquet 1 pesés 5 kg, el paquet 4 hauria de pesar 1 kg per a que la suma fos 20, però no pot ser menor que el tercer paquet. Per tant, el paquet 2 no pot pesar 6 kg.
+
+L'única combinació que compleix totes les condicions és 1 kg, 2 kg, 8 kg i 9 kg.
+
+Resposta: A)

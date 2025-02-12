@@ -1,0 +1,30 @@
+Raonament:
+Sigui *r* la solució en comú de les dues equacions. Llavors, tenim:
+1)  ar² + br + c = 0
+2)  br² + ar + c = 0
+
+Restem la segona equació de la primera:
+(ar² + br + c) - (br² + ar + c) = 0
+ar² + br - br² - ar = 0
+ar² - br² + br - ar = 0
+r²(a - b) + r(b - a) = 0
+r²(a - b) - r(a - b) = 0
+(a - b)(r² - r) = 0
+(a - b)r(r - 1) = 0
+
+Com que a i b són diferents, a - b ≠ 0. Per tant, tenim que r(r - 1) = 0, el que implica que r = 0 o r = 1.
+
+Si r = 0, llavors substituint a la primera equació, obtenim c = 0, però l'enunciat diu que c no és zero. Per tant, r no pot ser 0.
+
+Per tant, la solució en comú ha de ser r = 1. Substituint r = 1 a la primera equació, obtenim:
+a(1)² + b(1) + c = 0
+a + b + c = 0
+
+Ara analitzem les opcions:
+A) La solució en comú ha de ser 0. Fals, hem demostrat que és 1.
+B) L'equació quadràtica ax² + bx + c = 0 té exactament una solució real. No necessàriament, podria tenir dues solucions reals, una d'elles 1.
+C) a > 0. No podem assegurar que a sigui positiu.
+D) b < 0. No podem assegurar que b sigui negatiu.
+E) a + b + c = 0. Hem demostrat que aquesta afirmació és certa.
+
+Resposta: E)

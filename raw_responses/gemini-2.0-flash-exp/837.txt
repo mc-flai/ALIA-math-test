@@ -1,0 +1,8 @@
+Raonament:
+1. **Identificar les medalles:** Tenim 4 medalles: Or-Europa (OE), Bronze-Europa (BE), Or-Món (OM), Plata-Món (PM).
+2. **Condició de les medalles d'or:** Les dues medalles d'or (OE i OM) sempre han d'estar juntes. Podem tractar-les com un sol bloc.
+3. **Permutacions del bloc d'or i les altres medalles:** Ara tenim 3 elements a ordenar: el bloc d'or (OE-OM o OM-OE), la medalla de bronze (BE) i la medalla de plata (PM). Aquests 3 elements es poden ordenar de 3! = 3 * 2 * 1 = 6 maneres diferents.
+4. **Permutacions dins del bloc d'or:** Dins del bloc d'or, les dues medalles es poden ordenar de 2! = 2 * 1 = 2 maneres diferents (OE-OM o OM-OE).
+5. **Càlcul total d'ordenacions:** Per obtenir el nombre total d'ordenacions, hem de multiplicar les permutacions dels 3 elements per les permutacions dins del bloc d'or: 6 * 2 = 12.
+
+Resposta: C)

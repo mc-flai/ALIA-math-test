@@ -1,0 +1,52 @@
+<think>
+Prime, calculem el nombre total de tirs que Joana ha jugat. Sense més informació, suponi hem jugat x tirs sense fer els 5 tirs més afterals.
+
+El percentatge d'encert al primer set era 55%, el que significa que l'encertament era 0.55x.
+
+After tenir dos couples de 20 tirs, el percentatge era 56%. Tot i tot, ha jugat x + 10 tirs, per què addí les 5 més afterals.
+
+El new percentage serà (0.55x + 3)/ (x + 10) = 0.56
+
+Multiplicatem amb (x + 10):
+0.55x + 3 = 0.56(x + 10)
+0.55x + 3 = 0.56x + 5.6
+3 - 5.6 = 0.56x - 0.55x
+-2.6 = 0.01x
+x = -2.6 / 0.01 = -260
+
+No, no pot fer que com que x sigi el nombre de tirs, l'igual a -260, que no és possible.
+
+Entendim per què he fet: com s'ha representat la segona informació? El 5 tirs més afterals al total de 20. Per això, potser el primer set era 20 tirs i afterats tenim 5 tirs més.
+
+Per a que x sigi pos item canival,ificant com ha jugat x - 10 tirs afterals del primer set. Així, l'encertament serà (0.55x +3)/(x -10)= 0.56
+
+Multiplicatem amb (x -10):
+0.55x + 3 = 0.56(x -10)
+0.55x + 3 = 0.56x - 5.6
+3 +5.6= 0.56x - 0.55x
+8.6 = 0.01x
+x =8.6 /0.01= 860 tirs
+
+Tres dels darrers 5 tirs ha encertat.
+</think>
+
+Raonament:
+
+Joana juga bàsquet en 20 tims sense que tingui un percentatge d'encert del 55%. A continuació, afterats de 5 tims més, el seu percentatge ha passat a 56%. Quants dels seus darrers 5 tirs ha encertat?
+
+1. **Puntual sense les 5 afterwards:**
+   - Percentatge d'encert al primer set: \( 55\% \)
+   - Puntual: \( 0.55 \times 20 = 11 \) pints
+   - Total d'encertals: \( 11 \)
+
+2. **Puntual tot per aixós amb les 5 afterwards:**
+   - Percentatge final: \( 56\% \)
+   - Tims total: \( 20 + 5 = 25 \) tims
+   - Puntual: \( 0.56 \times 25 = 14 \) pints
+
+3. **Punsals tot:**
+   - Darrers 5 tims ha encertat: \( 14 - 11 = 3 \) pints.
+
+**Resposta:**
+
+\boxed{C}

@@ -1,0 +1,44 @@
+<think>
+Per determinar quells numbers entre 100 i 200 són divisibles per 2 i 3, esdevem primer escurir el més petit nombre que compliqui aquesta condició.
+
+El més petit número entre 100 i 200 que sigui per 2 i 3 és 102. Així, cada number que compliqui al 102 sense passar del 198 serà una solió de 6 (el mcm de 2 i 3).
+
+Comptem el número de nombres que composen la successi de 102 a 198 en steps de 6:
+(198 - 102)/6 + 1 = 17
+
+Per la posició final, no cal intentar cubrir amb el zero, per què 204 fa més que 200.
+</think>
+
+El procéxtu escurritr:
+
+1. **Identificar el més petit nombre entre 100 i 200 que compliqui al 2 i al 3:**
+   
+   - El més petit número que compliqui aquesta condició és 102.
+   
+2. **Calcular les steps de 6 (el mcm de 2 i 3):**
+   
+   - **102 + 6 = 108**
+   - **108 + 6 = 114**  
+   - **114 + 6 = 120**  
+   - ...continuem donant el més petit que compliqui a 198.
+   
+3. **Determine el número total de nombres:**
+   
+   - **Formula per calcular la quantitud d'elements en una successió aritmética:**
+     \[
+     n = \frac{\text{Ter}}} + 1
+     \]
+     On:
+     - **\(\text{Ter}}\)** es el més grand nombre que compliqui.
+     - **d** es el step (6 en aquest cas).
+   
+   - **Aplicem la fórmula:**
+     \[
+     n = \frac{198 - 102}{6} + 1 = \frac{96}{6} + 1 = 16 + 1 = 17
+     \]
+   
+4. **Conclusió:**
+   
+   **Existent 17 nombres entre 100 i 200 que compliquen a més al 2 i al 3.**
+
+\boxed{C) 17}

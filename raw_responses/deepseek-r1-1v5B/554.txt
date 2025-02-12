@@ -1,0 +1,78 @@
+<think>
+Prime vegamos que w + x = 3.
+
+También tenim que 1/w + 1/x = 1. Podremos expressar x en términos de w, comentariant.
+
+De la primera ecuación: x = 3 - w.
+
+Sagrifiquem la segona ecuación substituyendo x:
+1/w + 1/(3 - w) = 1
+
+Multiplicamos ambos lados por w(3 - w) para eliminar los denominadores:
+w(3 - w)(1/w + 1/(3 - w)) = w(3 - w)
+
+Simplificando, get: (3 - w) + w = w(3 - w)
+La izquierda simplify a 3.
+
+Entonces: 3 = w(3 - w)
+Resolviendo la ecuación quadratica: w² - 3w + 3 = 0
+
+Calculamos el discriminant: D = 9 - 12 = -3 < 0, lo que significa que no hay raíces reales. Por lo tanto, x/w + w/x no está definido.
+</think>
+
+**Respuesta:** \boxed{C}
+
+---
+
+Raonament:
+
+1. **Dada la ecuación**: \( w + x = 3 \)
+   
+   Podemos expressar \( x \) en términos de \( w \):
+   \[
+   x = 3 - w
+   \]
+
+2. **Sustituimos \( x \) en la segunda ecuación**:
+   \[
+   \frac{1}{w} + \frac{1}{x} = 1
+   \]
+   
+   Reemplazando \( x = 3 - w \):
+   \[
+   \frac{1}{w} + \frac{1}{3 - w} = 1
+   \]
+
+3. **Multiplicamos ambos lados por \( w(3 - w) \)** para eliminar los denominadores:
+   \[
+   (3 - w) + w = w(3 - w)
+   \]
+   
+   Simplificando la izquierda:
+   \[
+   3 = w(3 - w)
+   \]
+   
+4. **Expandimos la ecuación**:
+   \[
+   3 = 3w - w^2
+   \]
+   
+5. **Rendramos la ecuación a forma estándar**:
+   \[
+   w^2 - 3w + 3 = 0
+   \]
+
+6. **Calcular el discriminant**:
+   \[
+   D = (-3)^2 - 4(1)(3) = 9 - 12 = -3
+   \]
+   
+   Como \( D < 0 \), la ecuación tiene raíces reales imaginarias, lo que significa que no hay números reales \( w \) y \( x \) que satisfan ambas ecuaciones.
+
+7. **Conclusion**:
+   Como no existen números reales satisfying ambas ecuaciones, el valor de \( \frac{x}{w} + \frac{w}{x} \) no está definido en los números reales.
+
+Por lo tanto, la respuesta correcta es:
+
+\(\boxed{C}\)

@@ -1,0 +1,65 @@
+<think>
+Pentru resolvi el problema, empíritiem definir la expressión dada:
+
+E = √(20 + √(20 + √(20 + √(20 + √20))))
+
+Notem que la expressión es un radical iterado, amb la raíz de 20 en cada etapa. Observem que la expresión tiene una estructura simbórica similar a una sucesión convergente, possiblementamentament al valor que busca.
+
+Suposiem que la raíz converge a un valor L, per què tot i’ig appearances satisfiicen la propietat de l’infinit. Per tant:
+
+L = √(20 + L)
+
+Deixem ara resoldre la ecuación:
+
+L² = 20 + L
+
+Rendrime a forma quadrática:
+
+L² - L - 20 = 0
+
+Aplicant el mtod de factorització, volim buscar dos nombres que multipliquen tot sense això i sumen -20. Els factors són 5 i -4, per què:
+
+(L + 5)(L - 4) = 0
+
+Per tant, L = -5 o L = 4.
+
+Com preten un valor positiu (l’arrel de 20 en cada etapa), la solució possible és L = 4.
+
+Per a donar una verificación, calculem l’expressión original:
+
+E ≈ 4
+
+Portada que el valor arrojaté amb la teoría i la verificació finalment ha de ser 4, la part entera de E és 4.
+</think>
+
+Raonament:
+ 
+设有表达式 \( E = \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20}}}}} \)。
+
+观察到该表达式的结构相似，可以假设其收敛于一个值 \( L \)，即：
+
+\[ L = \sqrt{20 + L} \]
+
+两边平方得：
+
+\[ L^2 = 20 + L \]
+
+整理为二次方程：
+
+\[ L^2 - L - 20 = 0 \]
+
+解这个方程：
+
+判别式 \( D = (-1)^2 - 4 \times 1 \times (-20) = 81 \)
+
+根为：
+
+\[ L = \frac{1 \pm \sqrt{81}}{2} = \frac{1 \pm 9}{2} \]
+
+即 \( L = 5 \) 或 \( L = -4 \)。由于根号的结果非负，取正值解：
+
+\( L = 5 \)
+
+因此，表达式的整数部分为 4。
+
+**Respuesta:** \boxed{A}

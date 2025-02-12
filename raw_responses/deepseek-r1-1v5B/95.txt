@@ -1,0 +1,72 @@
+<think>
+Para resolver este problema, primero noto que la función dada es polinómica de grado 2015 y es impar. Sabemos que un polinomio de grado impar permanece injectivo en ℚ, lo que significa que si a ≠ b, entiendo que f(a) ≠ f(b). Además, sabemos que si f(-x) = -f(x), la función es impar.
+
+Observo que la expresión dada es f(x) = ax²⁰¹⁵ + bx – 1010. Noto que el exponente de x es 2015, que es impar, y el término lineal es bx. Además, el término constante -1010 me pregunта qué significado tiene.
+
+Ahora, conocemos que f(-5) = 5. Escribo la ecuación:
+
+f(-5) = a*(-5)^2015 + b*(-5) – 1010 = 5
+
+Simplificando, obtenemos:
+
+-a*5^2015 -5b = 5 + 1010 = 1015
+
+Entonces,
+
+a*5^2015 + 5b = -1015
+
+Despejamos f(5):
+
+f(5) = a*(5)^2015 + b*(5) – 1010
+
+Observo que a*5^2015 es la misma magnitud que el primer término de la ecuación anterior (a*(-5)^2015), pero con x=5 en lugar de -5.
+
+Si consideramos f(-5) = -1010 + (-a*5^2015 – 5b), como f(-5)=5, entonces:
+
+-a*5^2015 – 5b = 5 + 1010 = 1015
+
+Ahora, para f(5):
+
+f(5) = a*(5)^2015 + b*(5) – 1010
+
+Observo que:
+
+-a*5^2015 -5b = - (a*5^2015 + 5b) = - (-1015) = 1015
+
+Entonces,
+
+f(5) = 1015 – 1010 = 5
+
+Ahora, revisando las opciones, f(5)=5 es la opión D.
+</think>
+
+Para resolver este problema, analizamos la función dada:
+
+\[ f(x) = a x^{2015} + b x - 1010 \]
+
+Notemos que \(2015\) es un exponente impar y \(f(-x)\) se puede expresar como:
+
+\[ f(-x) = -a x^{2015} - b x - 1010 \]
+
+Dado que el término constante es -1010, no es symmetrico.
+
+Sabemos que \(f(-5) = 5\), por lo que reemplazamos \(x\) con 5:
+
+\[ f(5) = a (5)^{2015} + b (5) - 1010 \]
+
+Notando que:
+
+\[ a (5)^{2015} + b (5) = - [a (-5)^{2015} + b (-5)] \]
+
+Y sabemos que:
+
+\[ f(-5) = a (-5)^{2015} + b (-5) - 1010 = 5 \]
+\[ a (-5)^{2015} + b (-5) = 5 + 1010 = 1015 \]
+
+Luego:
+
+\[ f(5) = - (a (-5)^{2015} + b (-5)) - 1010 = -1015 - 1010 = 5 \]
+
+**Respuesta:**
+
+\(\boxed{D}\)

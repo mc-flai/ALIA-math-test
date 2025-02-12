@@ -1,0 +1,15 @@
+Raonament:
+Cada vegada que la fila passa per una porta, la primera persona passa a l'últim lloc. Per tant, podem simular el procés per veure qui obre cada porta:
+
+1. **Porta 1:** Ariadna obre la porta. La fila ara és Berta, Caterina, Diana, Elena, Ariadna.
+2. **Porta 2:** Berta obre la porta. La fila ara és Caterina, Diana, Elena, Ariadna, Berta.
+3. **Porta 3:** Caterina obre la porta. La fila ara és Diana, Elena, Ariadna, Berta, Caterina.
+4. **Porta 4:** Diana obre la porta. La fila ara és Elena, Ariadna, Berta, Caterina, Diana.
+5. **Porta 5:** Elena obre la porta. La fila ara és Ariadna, Berta, Caterina, Diana, Elena.
+6. **Porta 6:** Ariadna obre la porta. La fila ara és Berta, Caterina, Diana, Elena, Ariadna.
+7. **Porta 7:** Berta obre la porta. La fila ara és Caterina, Diana, Elena, Ariadna, Berta.
+8. **Porta 8:** Caterina obre la porta.
+
+Per tant, Caterina obre la darrera porta.
+
+Resposta: C)

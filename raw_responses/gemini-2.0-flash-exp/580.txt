@@ -1,0 +1,10 @@
+Raonament:
+Si un nombre enter positiu N, quan es divideix per 6, té un residu de 5, podem expressar N com N = 6k + 5, on k és un enter no negatiu.
+Ara volem trobar el residu quan N² es divideix per 12. Primer, calculem N²:
+N² = (6k + 5)² = (6k)² + 2(6k)(5) + 5² = 36k² + 60k + 25
+Ara, volem expressar N² en termes de múltiples de 12 més un residu.
+N² = 36k² + 60k + 25 = 12(3k²) + 12(5k) + 24 + 1 = 12(3k² + 5k + 2) + 1
+Com que 3k² + 5k + 2 és un enter, podem dir que N² = 12m + 1, on m = 3k² + 5k + 2.
+Per tant, quan N² es divideix per 12, el residu és 1.
+
+Resposta: A)

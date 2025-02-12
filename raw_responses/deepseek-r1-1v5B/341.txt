@@ -1,0 +1,48 @@
+<think>
+Para resolver este problema, primero identificamos que A y B son números enteros que satisfacen la ecuación A · B = 10 + A. 
+
+Entonces, reescribimos la ecuación como A · B - A = 10, lo que simplifica a A(B - 1) = 10.
+
+A continuación, analizamos los divisores de 10 para determinar las opciones posibles para A y B. Los números enteros que dividen 10 son: ±1, ±2, ±5 y ±10.
+
+Luego, cada divisor es un valor posible para (B - 1), lo que nos da B = divisor + 1. Por ejemplo:
+- Si (B - 1) = 1, entonces B = 2.
+- Si (B - 1) = -1,entonces B = 0.
+
+De esta manera, identificamos dos soluciones posibles para B: 2 y 0.
+
+Finalmente, contando las opciones posibles para B que cumplen con la condición dada, foundamos dos valores possibles.
+</think>
+
+Para resolver este problema, sigamos los siguientes pasos:
+
+1. **Identificar la ecuación**: Sabemos que A · B = 10 + A.
+
+2. **Rearrangamos la ecuación**:
+   \[
+   A \cdot B - A = 10
+   \]
+   Factorizamos A:
+   \[
+   A(B - 1) = 10
+   \]
+
+3. **Determinamos los divisores de 10**: Los números enteros que dividen 10 son ±1, ±2, ±5 y ±10.
+
+4. **Calcular B para cada divisor**:
+   - Si \( B - 1 = 1 \), entonces \( B = 2 \).
+   - Si \( B - 1 = -1 \),entonces \( B = 0 \).
+   - Si \( B - 1 = 2 \),entonces \( B = 3 \).
+   - Si \( B - 1 = -2 \),entonces \( B = -1 \).
+   - Si \( B - 1 = 5 \),entonces \( B = 6 \).
+   - Si \( B - 1 = -5 \),entonces \( B = -4 \).
+   - Si \( B - 1 = 10 \),entonces \( B = 11 \).
+   - Si \( B - 1 = -10 \),entonces \( B = -9 \).
+
+5. **Contando las opciones posibles para B**: We observamos que hay dos soluciones posibles para B: 2 y 0.
+
+Por lo tanto, **B puede ser 2 o 0**.
+
+\[
+\boxed{2}
+\]

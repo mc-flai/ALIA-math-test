@@ -1,0 +1,25 @@
+Raonament:
+El mínim comú múltiple (mcm) d'un conjunt de nombres es veu afectat principalment pels factors primers dels nombres. Per minimitzar el mcm, hem d'eliminar el nombre que més contribueix a augmentar el mcm, és a dir, el que tingui factors primers més grans o que apareguin amb major potència.
+
+Analitzem els nombres del conjunt {1, 2, 3, 4, 5, 6, 7, 8, 9} i els seus factors primers:
+- 1: No té factors primers.
+- 2: 2
+- 3: 3
+- 4: 2^2
+- 5: 5
+- 6: 2 * 3
+- 7: 7
+- 8: 2^3
+- 9: 3^2
+
+El mcm del conjunt complet seria 2^3 * 3^2 * 5 * 7 = 8 * 9 * 5 * 7 = 2520.
+
+Si eliminem el 9 (3^2), el mcm seria 2^3 * 3 * 5 * 7 = 8 * 3 * 5 * 7 = 840.
+Si eliminem el 8 (2^3), el mcm seria 2^2 * 3^2 * 5 * 7 = 4 * 9 * 5 * 7 = 1260.
+Si eliminem el 7, el mcm seria 2^3 * 3^2 * 5 = 8 * 9 * 5 = 360.
+Si eliminem el 6 (2*3), el mcm seria 2^3 * 3^2 * 5 * 7 = 2520 (no canvia).
+Si eliminem el 5, el mcm seria 2^3 * 3^2 * 7 = 8 * 9 * 7 = 504.
+
+Comparant els resultats, veiem que eliminar el 7 redueix el mcm a 360, que és el valor més petit que obtenim.
+
+Resposta: C)

@@ -1,0 +1,14 @@
+Raonament:
+1. **Comptar el nombre de permutacions:** Primer, hem de determinar quants nombres de quatre xifres diferents podem formar amb les xifres 1, 2, 3 i 4 sense repeticions. Això és una permutació de 4 elements, que es calcula com 4! = 4 * 3 * 2 * 1 = 24. Per tant, hi ha 24 nombres diferents.
+
+2. **Analitzar la posició de cada xifra:** En aquests 24 nombres, cada xifra (1, 2, 3 i 4) apareixerà el mateix nombre de vegades en cada posició (unitats, desenes, centenes i milers). Com que hi ha 24 nombres i 4 xifres, cada xifra apareixerà 24 / 4 = 6 vegades en cada posició.
+
+3. **Calcular la suma per posició:**
+   - Suma de les unitats: 6 * (1 + 2 + 3 + 4) = 6 * 10 = 60
+   - Suma de les desenes: 6 * (1 + 2 + 3 + 4) * 10 = 6 * 10 * 10 = 600
+   - Suma de les centenes: 6 * (1 + 2 + 3 + 4) * 100 = 6 * 10 * 100 = 6000
+   - Suma dels milers: 6 * (1 + 2 + 3 + 4) * 1000 = 6 * 10 * 1000 = 60000
+
+4. **Sumar les sumes per posició:** La suma total de tots els nombres és la suma de les sumes per posició: 60 + 600 + 6000 + 60000 = 66660
+
+Resposta: A)

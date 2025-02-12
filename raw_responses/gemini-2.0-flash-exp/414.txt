@@ -1,0 +1,18 @@
+Raonament:
+Siguin les tres rectes paral·leles r1, r2 i r3, i suposem que el punt P està sobre r1. Volem trobar triangles equilàters amb un vèrtex a P i els altres dos vèrtexs sobre r2 i r3 respectivament.
+
+Considerem un punt Q sobre r2. Per a que el triangle PQR siga equilàter, el punt R ha d'estar a una distància igual a PQ de P i de Q. El lloc geomètric dels punts a distància PQ de P és una circumferència amb centre P i radi PQ. El lloc geomètric dels punts a distància PQ de Q és una circumferència amb centre Q i radi PQ. El punt R ha de ser la intersecció d'aquestes dues circumferències.
+
+Ara bé, el punt R també ha d'estar sobre la recta r3. Per tant, el problema es redueix a trobar punts Q sobre r2 tals que la circumferència amb centre Q i radi PQ intersequi r3.
+
+Si rotem la recta r2 al voltant de P, la distància entre r2 i r1 canvia. Si la distància entre r1 i r2 és molt petita, la circumferència amb centre P i radi PQ pot no tallar r3. Si la distància entre r1 i r2 és gran, la circumferència amb centre P i radi PQ pot tallar r3 en dos punts.
+
+Però, en comptes de rotar r2, podem considerar que rotem r3 al voltant de P. Si r3 està molt a prop de r1, no hi haurà cap triangle equilàter. Si r3 està a una distància adequada, hi haurà dos triangles equilàters.
+
+Per a veure-ho amb més claredat, considerem la recta r2. Per a cada punt Q sobre r2, podem construir un triangle equilàter PQR amb R a un costat de la recta PQ. Si rotem el punt Q al llarg de r2, el punt R descriurà una corba. Aquesta corba pot tallar la recta r3 en 0, 1 o 2 punts. Però, per a cada punt Q, també podem construir un triangle equilàter PQR' amb R' a l'altre costat de la recta PQ. Per tant, per a cada punt Q, hi ha dos possibles triangles equilàters.
+
+Si la distància entre r1 i r2 és molt petita, i la distància entre r1 i r3 és molt gran, no hi haurà cap triangle equilàter. Si la distància entre r1 i r2 i r1 i r3 són comparables, hi haurà dos triangles equilàters.
+
+Per tant, la resposta correcta és que poden existir 0, 1 o 2 triangles equilàters.
+
+Resposta: A)

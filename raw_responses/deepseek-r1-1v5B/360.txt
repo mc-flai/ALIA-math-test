@@ -1,0 +1,29 @@
+<think>
+P primer que hagamos es dibujar un triángulo ABC, donde AB y AC son segmentos perpendiculares entre sí. Sabemos que el punto M es el centro del segmento BC, y que la distancia de M alsegmento AB es menor que a las distancias al segmento AC.
+
+Primero, tratemos el triángulo ABC como un triángulo rect角 con la hipotenusa BC. La mediana de un triángulo rectángulo tiene some propertye que puede ayudarnos a determinar la relación entre los lados.
+
+Ahora, analizamos la relación entre las distancias del punto M al segmentos AB y AC. Dado que esta distancia del punto mitjà de BC a AB es menor que a AC, podemos inferir que el triángulo es más equilibrado cuando AB es mayor que AC.
+
+Finalmente, determinamos que la mejor desigualdad es que AC es menor que BC, que en свою turna es menor que AB.
+</think>
+
+Raionalizamos el problema de manera estructurada:
+
+1. **Representación Gráfica:**
+   - Consideremos un triángulo ABC con AB ⊥ AC.
+   - M sea el punto medio del segmento BC.
+
+2. **Análisis de la Relación entre las Distancias:**
+   - La distancia del punto M al segmento AB es menor que a las distancias del mismo punto M al segmento AC.
+   - Esto implya que el triángulo ABC es más equilibrado cuando AB es mayor que AC.
+
+3. **Applicando la Propiedad del Medíano en Triángulos Rectangulares:**
+   - En un triángulo rectángulo, la mediana al segmento perpendicular (en este caso, AB) es menor que a las mediatrices de los catetos.
+   - Dado que BC es la hipotenusa y M es su punto medio, la relación entre los lados se determina por esta propiedades.
+
+4. **Determinación Final:**
+   - Dado que AC es másapyuroque BC (ya que el medíano al segmento perpendicular es menor), y en vez de lo contrario.
+   - La desigualdad certa es **AC < BC < AB**.
+
+**Respuesta final:** \boxed{B}

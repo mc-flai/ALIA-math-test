@@ -1,0 +1,9 @@
+Raonament:
+Perquè $10^n + 1$ siga un múltiple de 11, hem de tenir que $10^n + 1 \equiv 0 \pmod{11}$, o equivalentment, $10^n \equiv -1 \pmod{11}$.
+Com que $10 \equiv -1 \pmod{11}$, tenim que $10^n \equiv (-1)^n \pmod{11}$.
+Per tant, volem que $(-1)^n \equiv -1 \pmod{11}$. Això passa quan $n$ és imparell.
+Si $n$ és parell, $(-1)^n = 1$, i si $n$ és imparell, $(-1)^n = -1$.
+Per tant, $n$ ha de ser un nombre imparell.
+L'expressió general per a un nombre imparell és $2m+1$, on $m$ és un enter no negatiu.
+
+Resposta: B)

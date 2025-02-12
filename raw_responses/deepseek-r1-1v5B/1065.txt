@@ -1,0 +1,40 @@
+<think>
+Para resolver este problema, primero identificamos que tenemos 14 números enteros diferentes ypositivos con una mitaja de 12. Necesitamos encontrar el valor más grande posible del máximo entre estos 14 números.
+
+Dado que son enteros diferentes, los números deben formar una secuencia de 14 números consecutivos. La media de esta secuencia será la media de los 14 números consecutivos, que está a medioEntre el minimo y el maximo.
+
+Calculamos el máximo: Si la media es 12 y hay 14 números, theno maximize el maximo sería al usar sequence consecutivas centradas en 12. Esto resulta en 14 + (13*1) = 27. Ahora verificamos si el maximo es 27. La media de una secuencia con 14 números consecutivos es (min + max)/2. Si min es 14 y max es 27, la media sería (14 + 27)/2 = 20.5, no 12. Esto sugiere que necesitamos ajustar.
+
+Ahora usamos la fórmula para una secuencia de n números consecutivos: media = (min + max)/2 = 12 → min + max = 24. Dado que hay 14 números, el número medio es el valor de la media, lo que sugiere que maximo = minimo + 13.
+
+Sustituimos en la ecuación: min + (min +13) =24 → 2min+13=24 → 2min=11 → min=5.5. No podemos tener números fracos, por lo que ajustamos a 6 y maximo 19.
+
+Finalmente, el máximo es 19.
+</think>
+
+Para resolver este problema, sigamos estos pasos:
+
+1. **Identificar Variables:**
+   - Tenemos 14 números enteros diferentes e positivos.
+   - La media de estos números es 12.
+   - Necesitamos encontrar el valor más grande posible del máximo entre estos números.
+
+2. **Definir la Secuencia:**
+   - Usar una secuencia de 14 números consecutivos centrada en la media 12.
+   - Los números serán: \( a, a+1, a+2, \ldots, a+13 \).
+
+3. **Calcular el Maximo:**
+   - La media de la secuencia es: 
+     \[
+     \frac{a + (a + 13)}{2} = 12
+     \]
+   - Simplificando:
+     \[
+     2a + 13 = 24 \quad \Rightarrow \quad a = \frac{11}{2} = 5.5
+     \]
+   
+4. **Ajustar a números enteros:**
+   - Como no podemos tener númerosfracos, ajustamos a \( a = 6 \) y \( \text{maximo} = 6 + 13 = 19 \).
+
+**Respuesta:**  
+El valor más grande posible del máximo es \(\boxed{B)\ 24}\).

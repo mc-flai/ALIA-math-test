@@ -1,0 +1,42 @@
+Raonament:
+Sigui P = (0, 2017) el punt donat. Sigui P' = (x', y') el punt simètric de P respecte de la recta y = mx. El punt mig M entre P i P' és M = ((x'+0)/2, (y'+2017)/2) = (x'/2, (y'+2017)/2). Aquest punt M ha d'estar sobre la recta y = mx, per tant, (y'+2017)/2 = m(x'/2), o equivalentment, y' + 2017 = mx'.
+A més, la recta que uneix P i P' és perpendicular a la recta y = mx. La pendent de la recta y = mx és m. La pendent de la recta que uneix P i P' és (y' - 2017) / (x' - 0) = (y' - 2017) / x'. Com que les rectes són perpendiculars, el producte de les seves pendents és -1, és a dir, m * (y' - 2017) / x' = -1. Per tant, m(y' - 2017) = -x'.
+Tenim dues equacions:
+1) y' + 2017 = mx'
+2) m(y' - 2017) = -x'
+De la segona equació, x' = -m(y' - 2017). Substituint a la primera equació:
+y' + 2017 = m(-m(y' - 2017))
+y' + 2017 = -m^2(y' - 2017)
+y' + 2017 = -m^2y' + 2017m^2
+y'(1 + m^2) = 2017m^2 - 2017
+y' = 2017(m^2 - 1) / (m^2 + 1)
+Ara, substituïm y' a l'expressió de x':
+x' = -m(2017(m^2 - 1) / (m^2 + 1) - 2017)
+x' = -m(2017(m^2 - 1 - m^2 - 1) / (m^2 + 1))
+x' = -m(2017(-2) / (m^2 + 1))
+x' = 4034m / (m^2 + 1)
+Perquè x' i y' siguin enters, necessitem que m^2 + 1 divideixi 4034m i 2017(m^2 - 1).
+Com que 2017 és un nombre primer, els divisors de 2017 són 1 i 2017.
+Si m = 1, x' = 4034/2 = 2017 i y' = 0.
+Si m = 2017, x' = 4034*2017/(2017^2+1) i y' = 2017(2017^2-1)/(2017^2+1).
+Si m^2 + 1 divideix 4034m, llavors m^2 + 1 divideix 4034m^2. Com que m^2 + 1 divideix 4034(m^2 + 1) - 4034, llavors m^2 + 1 divideix 4034.
+Els divisors de 4034 són 1, 2, 2017, 4034.
+m^2 + 1 = 1 => m = 0 (no és positiu)
+m^2 + 1 = 2 => m = 1
+m^2 + 1 = 2017 => m^2 = 2016 (no és quadrat perfecte)
+m^2 + 1 = 4034 => m^2 = 4033 (no és quadrat perfecte)
+Si m = 1, x' = 2017 i y' = 0.
+Si m = 2017, x' = 4034*2017/(2017^2+1) i y' = 2017(2017^2-1)/(2017^2+1).
+Si m = 1, x' = 2017 i y' = 0.
+Si m = 2017, x' i y' no són enters.
+Si m^2 + 1 divideix 4034, llavors m^2 + 1 pot ser 1, 2, 2017, 4034.
+m^2 + 1 = 1 => m = 0 (no vàlid)
+m^2 + 1 = 2 => m = 1
+m^2 + 1 = 2017 => m^2 = 2016 (no enter)
+m^2 + 1 = 4034 => m^2 = 4033 (no enter)
+Per tant, només m = 1 funciona.
+Si m = 1, x' = 2017 i y' = 0.
+Si m = 2017, x' = 4034*2017/(2017^2+1) i y' = 2017(2017^2-1)/(2017^2+1).
+Només m = 1 dona coordenades enteres.
+
+Resposta: A)

@@ -1,0 +1,12 @@
+Raonament:
+Primer, observem patrons amb nombres més petits per veure si podem trobar una regla general.
+Si A = 9, A² = 81, suma de xifres = 9
+Si A = 99, A² = 9801, suma de xifres = 18
+Si A = 999, A² = 998001, suma de xifres = 27
+Si A = 9999, A² = 99980001, suma de xifres = 36
+
+Sembla que quan A té 'n' dígits 9, A² té 'n-1' dígits 9, un 8, 'n-1' dígits 0 i un 1. La suma de les xifres de A² és 9 * (n-1) + 8 + 1 = 9n - 9 + 9 = 9n.
+
+En el nostre cas, A té 2017 dígits 9. Per tant, la suma de les xifres de A² serà 9 * 2017 = 18153.
+
+Resposta: D)

@@ -1,0 +1,59 @@
+<think>
+Para resolver el problema, primero recordemos las identidades trigonométricas relevantes. Sabemos que tan x + cot x puede simplificarse utilizando las relaciones de los ángulos.
+
+Debemos expressions trigonométricas equivalentes para expresar tan x y cot x en términos de seno y coseno:
+- tan x = sen x / cos x
+- cot x = cos x / sen x
+
+Sumando ambas expresiones, tenemos:
+tan x + cot x = (sen x / cos x) + (cos x / sen x)
+
+Para sumar estas fracciones, necesitamos encontrar un denominador común, que sería sen x · cos x. Entonces:
+= [sen²x + cos²x] / (sen x · cos x)
+
+Sabemos que sen²x + cos²x = 1, por lo que la expresión simplifica a:
+= 1 / (sen x · cos x)
+
+El problema dice que tan x + cot x = π. Por lo tanto:
+1 / (sen x · cos x) = π
+
+Despejando sen x · cos x, obtenemos:
+sen x · cos x = 1 / π
+</think>
+
+Para resolver el problema, seguiremos estos pasos:
+
+1. **Rewrite tan x + cot x in terms of sine and cosine:**
+   - \(\tan x = \frac{\sin x}{\cos x}\)
+   - \(\cot x = \frac{\cos x}{\sin x}\)
+
+2. **Sumar las expresiones:**
+   \[
+   \tan x + \cot x = \frac{\sin x}{\cos x} + \frac{\cos x}{\sin x}
+   \]
+
+3. ** finding a common denominator:**
+   \[
+   \frac{\sin^2 x + \cos^2 x}{\sin x \cdot \cos x}
+   \]
+
+4. **Simplify using the Pythagorean identity (\(\sin^2 x + \cos^2 x = 1\)):**
+   \[
+   \tan x + \cot x = \frac{1}{\sin x \cdot \cos x}
+   \]
+
+5. **Dado que \(\tan x + \cot x = \pi\), reemplazar y resolver:**
+   \[
+   \frac{1}{\sin x \cdot \cos x} = \pi
+   \]
+   \[
+   \sin x \cdot \cos x = \frac{1}{\pi}
+   \]
+
+Por lo tanto, el valor de \(\sin x \cdot \cos x\) es \(\frac{1}{\pi}\).
+
+La respuesta correcta es:
+
+**E) 2/π**
+
+\boxed{\dfrac{2}{\pi}}

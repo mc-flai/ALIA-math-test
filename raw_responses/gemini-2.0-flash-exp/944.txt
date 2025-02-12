@@ -1,0 +1,10 @@
+Raonament:
+La suma dels nombres enters positius des de l'1 fins a n es calcula amb la fórmula n(n+1)/2. Joan ha sumat un nombre x dues vegades, per tant, la suma que ha obtingut és n(n+1)/2 + x = 857. Hem de trobar un valor de n tal que n(n+1)/2 sigui proper a 857 i després trobar el valor de x.
+
+Comencem provant amb valors de n:
+- Si n=40, n(n+1)/2 = 40*41/2 = 820. En aquest cas, x = 857 - 820 = 37. Com que 37 és menor o igual que 40, aquesta podria ser una solució.
+- Si n=41, n(n+1)/2 = 41*42/2 = 861. En aquest cas, la suma ja és superior a 857, per tant, no pot ser una solució.
+
+Per tant, la única solució possible és n=40 i x=37. El nombre que ha sumat dues vegades és 37.
+
+Resposta: D)

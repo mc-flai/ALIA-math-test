@@ -1,0 +1,82 @@
+<think>
+Primeixem el nombre d'equips que poden participar en el torneig sense superar el limit de 250 partides.
+
+Com hem horries cada jugador en un equip amb la vegada única sense que no ha jugado a l'ordre del altres equips.
+
+Assim, per quin equip ha jugat, tots els altros equips han jugat una vegada. Com a resultat, el nombre de partides es pot expressar com un triangular: 25 (jugades amb dos equips) + 24 (jugo amb tres equips) + ... + 1 (novell sense jugar cap a l'ordre).
+
+Per aquesta successió aritmética, la suma total de partides es pot expressar com un producte triangular: (n(n+1))/2, on n és el nombre d'equips.
+
+Plugging this into the equation:
+
+(n(n + 1))/2 ≤ 250
+
+Multiplicant per 2:
+
+n(n + 1) ≤ 500
+
+Ara calculem el valor de n que satisf pogunt i siga així que la expressió sigui true.
+
+Calculant:
+9*10 = 90
+10*11=110
+...
+13*14=182
+14*15=210
+15*16=240
+16*17=272
+
+Aleshores, n=16, com a màxim, pot treure 128 partides.
+
+Per aquesta resposta, el màxim d'equips es de zero, perquedonada el nombre maximum possible.
+</think>
+
+Per a mesurar el màxim número d'equips que poden participar en el torneig sense superar el límt d'250 partides, seguiem el procés següent:
+
+1. **Identificem la Relación entre Equips y Partides:**
+
+   - Cada equip pot jugar un nombre d'equips unique.
+   - Com a resultat, cada equip ha jugat una vegada a tots els altres equips sense que jugueu amb l'ordre del més alt.
+
+2. **Express Ion de la Total de Partides:**
+
+   La suma de partides esigona un triangular:
+   \[
+   25 + 24 + 23 + \dots + 1 = \frac{n(n+1)}{2}
+   \]
+   On \( n \) es el nombre d'equips.
+
+3. **Establecemos la Ineqüación:**
+
+   \[
+   \frac{n(n+1)}{2} \leq 250
+   \]
+
+4. **Racions de la Ineqüación:**
+   - Multiplicant per 2:
+     \[
+     n(n + 1) \leq 500
+     \]
+   - Calculem \( n \):
+     \[
+     n^2 + n - 500 = 0
+     \]
+     Solució x amb la fórmula quadratic:
+     \[
+     n = \frac{-1 + \sqrt{1 + 4 \times 500}}{2} = \frac{-1 + \sqrt{2001}}{2}
+     \]
+     \( \sqrt{2001} \approx 44.721 \), per tant:
+     \[
+     n \approx \frac{-1 + 44.721}{2} = \frac{43.721}{2} \approx 21.86
+     \]
+     Com a màxim, \( n = 21 \).
+
+5. **Verificatio:**
+   - \( 21 \times 22 / 2 = 231 \leq 250 \).
+   - \( 22 \times 23 / 2 = 253 > 250 \).
+
+6. **Raonament Final:**
+
+   Per a mesurar el màxim d'equips sense superar el límt, la resposta és:
+
+\boxed{7}

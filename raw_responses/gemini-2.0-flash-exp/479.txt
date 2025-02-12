@@ -1,0 +1,16 @@
+Raonament:
+Per calcular el residu d'un producte dividit per 9, podem utilitzar la propietat que el residu d'un producte és congruent al producte dels residus. És a dir, si a ≡ r1 (mod 9) i b ≡ r2 (mod 9), llavors a * b ≡ r1 * r2 (mod 9).
+
+Primer, calculem el residu de 20182019 dividit per 9. La suma de les xifres de 20182019 és 2 + 0 + 1 + 8 + 2 + 0 + 1 + 9 = 23. La suma de les xifres de 23 és 2 + 3 = 5. Per tant, 20182019 ≡ 5 (mod 9).
+
+Ara, calculem el residu de 20192018 dividit per 9. La suma de les xifres de 20192018 és 2 + 0 + 1 + 9 + 2 + 0 + 1 + 8 = 23. La suma de les xifres de 23 és 2 + 3 = 5. Per tant, 20192018 ≡ 5 (mod 9).
+
+Ara, calculem el residu del producte:
+20182019 * 20192018 ≡ 5 * 5 (mod 9)
+20182019 * 20192018 ≡ 25 (mod 9)
+
+Com que 25 = 2 * 9 + 7, tenim que 25 ≡ 7 (mod 9).
+
+Per tant, el residu de la divisió de 20182019 * 20192018 per 9 és 7.
+
+Resposta: D)

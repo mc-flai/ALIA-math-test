@@ -1,0 +1,49 @@
+<think>
+Prime vegem que l'escala ha 8 esglèts. Pujar els esglèts de dos en dos sense que comprovariability, el procés és similar a projectivar una successió de números que summen 8 amb uns i 2s sense qualsevol vegada appearances d'un número més gràcies que 1.
+
+Podem expressar la posiblitat de què segui un pair (dues esglèts juntats) o sense que comprovar. Amb aixodesjons:
+
+- Posicions potents en què sigui un pair (2 esglèts).
+- Llena l'escala sense paràntesis.
+
+La successió de pairs pot ser de dos pairs i una unitat, o un pair i quatre units. De segona part, les posicions que tenim per par de units es 4 (hagut 8 units, cada pair conté 2).
+
+Els models matemàtic s'entenden mitjançant la distribució multinomial. Amb aixodesjons:
+
+Total del models: 6 choose 4 = 15.
+
+Cada posició pot tenir 3 alternatives: paireix, unitaixos o par de units.
+
+Multiplicant tots, getria: 3^4 * (8!)/(2!^4) / (4!) = ?
+
+Per a l'escala de 8 esglèts, la resolució pot donar 19 maneres diferents.
+</think>
+
+**Raonament:**
+
+Puedem considerar que per a una escala de **8 esglaons**, l'ajuda potria ser representada com una successió de numbers que summen 8 amb uns (representant un esglèt) i 2s (representant dos esglèts juntats). Per example:
+
+- 1, 1, 2, 2, 1, 1
+- 1, 1, 1, 1, 1, 1, 1, 2
+- 2, 2, 2, 2
+
+La posició potents en què sigui un pair (dues esglèts juntats) o sense que comprovar serions:
+
+- **Pais (2 pairs):** Pot tenir dos pairs i una unitat (2 + 2 + 1).
+- **Unitats alone:** Pot tenir una unitat al final de l'escala.
+
+Amb aixodesjons, la successió potiana pot ser de dos parades i una unitat o un pair i quatre units. De segona part, les posicions que tenim per par de units es 4 (hagut 8 units, cada pair conté 2).
+
+**El models matemàtic:**
+
+La distribució multinomial pot expressar la quantitat de successions possibles:
+
+\[
+\text{Total del models} = \frac{8!}{(2!)^4}
+\]
+
+Per a l'escala de **8 esglaons**, la resolució pot donar 19 maneres diferents.
+
+**Resposta:**
+
+\boxed{B) 19}

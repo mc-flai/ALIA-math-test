@@ -1,0 +1,41 @@
+Raonament:
+1. **Definir variables:**
+   - Sigui `a` el nombre de participants de l'equip A.
+   - Sigui `b` el nombre de participants de l'equip B.
+   - Sigui `c` el nombre de participants de l'equip C.
+   - Sigui `d` el nombre de participants de l'equip D.
+
+2. **Establir equacions:**
+   - Sabem que el total de participants és 15: `a + b + c + d = 15`
+   - Sabem que els equips A i B junts tenen 7 participants: `a + b = 7`
+   - Sabem que els equips A i D junts tenen 9 participants: `a + d = 9`
+
+3. **Analitzar les restriccions:**
+   - Cada equip té almenys 2 participants: `a >= 2`, `b >= 2`, `c >= 2`, `d >= 2`
+   - El nombre de participants de cada equip és diferent: `a != b != c != d`
+
+4. **Trobar possibles valors per a 'a', 'b' i 'd':**
+   - De `a + b = 7`, les possibles combinacions per a `a` i `b` (ambdós >= 2) són:
+     - `a = 2`, `b = 5`
+     - `a = 3`, `b = 4`
+     - `a = 4`, `b = 3`
+     - `a = 5`, `b = 2`
+   - De `a + d = 9`, les possibles combinacions per a `a` i `d` (ambdós >= 2) són:
+     - `a = 2`, `d = 7`
+     - `a = 3`, `d = 6`
+     - `a = 4`, `d = 5`
+     - `a = 5`, `d = 4`
+     - `a = 6`, `d = 3`
+     - `a = 7`, `d = 2`
+
+5. **Combinar les restriccions i trobar la solució:**
+   - Hem de trobar un valor per a `a` que funcioni en ambdues equacions i que compleixi que tots els valors siguin diferents.
+   - Si `a = 2`, llavors `b = 5` i `d = 7`. En aquest cas, `a + b + d = 2 + 5 + 7 = 14`. Per tant, `c = 15 - 14 = 1`. Però `c` ha de ser >= 2, així que aquesta opció no és vàlida.
+   - Si `a = 3`, llavors `b = 4` i `d = 6`. En aquest cas, `a + b + d = 3 + 4 + 6 = 13`. Per tant, `c = 15 - 13 = 2`. Aquesta opció compleix totes les condicions.
+   - Si `a = 4`, llavors `b = 3` i `d = 5`. En aquest cas, `a + b + d = 4 + 3 + 5 = 12`. Per tant, `c = 15 - 12 = 3`. Però `b` i `c` serien iguals, així que aquesta opció no és vàlida.
+   - Si `a = 5`, llavors `b = 2` i `d = 4`. En aquest cas, `a + b + d = 5 + 2 + 4 = 11`. Per tant, `c = 15 - 11 = 4`. Però `c` i `d` serien iguals, així que aquesta opció no és vàlida.
+
+6. **Conclusió:**
+   - L'única solució vàlida és `a = 3`, `b = 4`, `d = 6` i `c = 2`.
+
+Resposta: A)

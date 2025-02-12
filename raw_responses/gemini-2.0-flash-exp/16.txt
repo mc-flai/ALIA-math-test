@@ -1,0 +1,21 @@
+Raonament:
+1. **Visualització:** Imaginem un quadrat amb centre O. Dibuixem dues rectes perpendiculars que passen per O i que tallen els costats del quadrat en els punts A, B, C i D. Unim aquests punts per formar un quadrilàter ABCD.
+
+2. **Identificació de triangles:** En dibuixar les rectes i unir els punts, es formen diversos triangles. Hem de comptar només els triangles rectangles.
+
+3. **Anàlisi dels angles:**
+   - Les rectes que passen per O són perpendiculars, per tant, formen angles de 90 graus.
+   - Els costats del quadrat formen angles de 90 graus.
+   - Els triangles que tenen un costat que és part del costat del quadrat i un altre costat que és part d'una de les rectes que passen per O, són rectangles.
+
+4. **Comptatge dels triangles rectangles:**
+   - Considerem un costat del quadrat. Les dues rectes perpendiculars que passen per O tallen aquest costat en dos punts. Per exemple, si un costat del quadrat és tallat en els punts A i B, es formen dos triangles rectangles amb aquest costat com a hipotenusa.
+   - Com que el quadrat té 4 costats, i cada costat genera 2 triangles rectangles, tenim 4 * 2 = 8 triangles rectangles.
+   - A més, els triangles formats per les rectes que passen per O i els costats del quadrat també són rectangles. Per exemple, si una recta talla el costat del quadrat en A i B, i l'altra recta talla el costat del quadrat en C i D, els triangles OAB, OBC, OCD i ODA són rectangles. Això afegeix 4 triangles rectangles més.
+   - Per tant, tenim 8 triangles rectangles formats pels costats del quadrat i els punts A, B, C i D, i 4 triangles rectangles formats per les rectes que passen per O i els costats del quadrat. En total, 8 + 4 = 12 triangles rectangles.
+
+5. **Revisió:** Hem de revisar que no ens hem deixat cap triangle rectangle. Els triangles que hem comptat són:
+    - Els 8 triangles que tenen com a hipotenusa un costat del quadrat.
+    - Els 4 triangles que tenen com a vèrtex el centre O i dos punts de tall amb els costats del quadrat.
+
+Resposta: C)

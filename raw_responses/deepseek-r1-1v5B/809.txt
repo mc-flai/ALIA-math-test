@@ -1,0 +1,43 @@
+<think>
+Prime vegem que l'objectiu és obtenir el nombre 12345 partint del nombre 13542. Ambit empe sense usar any intercanvis al mostrejat.
+
+Tentem per com es devят els dígits:
+
+1) Comparem el primer d'inglés: 1 en 13542 i 1 en 12345. Igual, donant zero canidats sense mesurar un intercanvis.
+
+2) Asegurem que el segon d'inglés no vali 3 (els primer d'inglés) al segon d'inglés 2. Es posa una vegada l'intercanvi entre el 3 i el 2, donant un intercanvis sense que la duda de l'inglés change.
+
+3) A continuació, com s'anem en el segon d'inglés amb el 0 al segon d'inglés. El segon d'inglés actualment es 2, però el segon d'inglés final és 4. Així, cal una vegada l'intercanvi entre el 2 i el 4.
+
+Per tot així, total hem fet dos intercanvis.
+</think>
+
+Raonament:
+
+L'objectiu és obtenir el nombre 12345 partint del nombre 13542. Ambit empe sense usar any intercanvis al mostejat.
+
+1) **Comparem el primer d'inglés:**
+   - El primer d'inglés en 13542 es 1.
+   - El primer d'inglés en 12345 es 1.
+   
+   Igual, donant zero canidats sense mesurar un intercanvis.
+
+2) **Vegem que el segon d'inglés no vali 3 (els primer d'inglés) al segon d'inglés 2.**
+   - El segon d'inglés en 13542 es 3.
+   - El segon d'inglés en 12345 es 2.
+   
+   Es posa una vegada l'intercanvi entre el 3 i el 2, donant un intercanvis sense que la duda de l'inglés change.
+
+3) **A continuació, com s'anem en el segon d'inglés amb el 0 al segon d'inglés.**
+   - El segon d'inglés actualment es 2.
+   - El segon d'inglés final (quedant en 12345) es 4.
+   
+   Així, cal una vegada l'intercanvi entre el 2 i el 4.
+
+Per totaixament obtenim el nombre 12345 començant d'innocent de 13542 amb un mitjanç de dos intercanvisos.
+
+**Resposta: B) 2**
+
+Els dos intercanvisos seríu:
+1. **Intercanvi entre el 3 i el 2 (dels segon d'inglés i el primer d'inglés).**
+2. **Intercanvi entre el 2 i el 4 (dels segon d'inglés i el segon d'inglés final).**

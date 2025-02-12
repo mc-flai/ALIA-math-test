@@ -1,0 +1,19 @@
+Raonament:
+Un cub té 8 vèrtexs. Per formar un triangle equilàter, necessitem seleccionar 3 vèrtexs del cub que estiguin a la mateixa distància entre ells.
+
+Podem visualitzar els triangles equilàters que es poden formar en un cub de la següent manera:
+1. **Triangles formats per cares:** No hi ha triangles equilàters que es puguin formar amb els vèrtexs d'una mateixa cara del cub, ja que les cares són quadrats.
+2. **Triangles formats per diagonals de les cares:** Si agafem una cara del cub, podem formar un triangle equilàter amb dos vèrtexs d'aquesta cara i un vèrtex de la cara oposada. Per exemple, si tenim la cara inferior del cub amb vèrtexs A, B, C i D, podem formar un triangle equilàter amb els vèrtexs A, C i un vèrtex de la cara superior que estigui a la mateixa distància d'A i C. Aquest vèrtex serà el que està directament sobre el centre de la cara inferior. Però aquest vèrtex no és un vèrtex del cub.
+3. **Triangles formats per diagonals espacials:** Si considerem les diagonals espacials del cub, podem formar triangles equilàters. Per exemple, si tenim un cub amb vèrtexs A, B, C, D, E, F, G i H, podem formar un triangle equilàter amb els vèrtexs A, C i F. També podem formar un triangle equilàter amb els vèrtexs B, D i H.
+    - Si agafem un vèrtex, per exemple A, podem formar un triangle equilàter amb els vèrtexs C i F.
+    - Si agafem el vèrtex B, podem formar un triangle equilàter amb els vèrtexs D i H.
+    - Si agafem el vèrtex C, podem formar un triangle equilàter amb els vèrtexs A i G.
+    - Si agafem el vèrtex D, podem formar un triangle equilàter amb els vèrtexs B i E.
+    - Si agafem el vèrtex E, podem formar un triangle equilàter amb els vèrtexs D i G.
+    - Si agafem el vèrtex F, podem formar un triangle equilàter amb els vèrtexs A i H.
+    - Si agafem el vèrtex G, podem formar un triangle equilàter amb els vèrtexs C i E.
+    - Si agafem el vèrtex H, podem formar un triangle equilàter amb els vèrtexs B i F.
+
+En total, hi ha 8 triangles equilàters que es poden formar amb els vèrtexs d'un cub. Cada vèrtex del cub forma part de dos triangles equilàters.
+
+Resposta: B)

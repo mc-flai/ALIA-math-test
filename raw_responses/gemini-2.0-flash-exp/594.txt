@@ -1,0 +1,21 @@
+Raonament:
+Sigui l'any de naixement del matemàtic 19XY, on X i Y són dígits entre 0 i 9. L'edat del matemàtic el 1955 seria 1955 - 19XY. Segons l'enunciat, aquesta edat és igual a la suma dels dígits de l'any de naixement, és a dir, 1 + 9 + X + Y = 10 + X + Y. Per tant, tenim l'equació:
+
+1955 - (1900 + 10X + Y) = 10 + X + Y
+1955 - 1900 - 10X - Y = 10 + X + Y
+55 - 10X - Y = 10 + X + Y
+45 = 11X + 2Y
+
+Ara hem de trobar valors per a X i Y que compleixin aquesta equació. Com que X i Y són dígits, podem provar valors per a X i veure si obtenim un valor enter per a Y.
+
+Si X = 0, 45 = 2Y, Y = 22.5 (no és un dígit)
+Si X = 1, 45 = 11 + 2Y, 34 = 2Y, Y = 17 (no és un dígit)
+Si X = 2, 45 = 22 + 2Y, 23 = 2Y, Y = 11.5 (no és un dígit)
+Si X = 3, 45 = 33 + 2Y, 12 = 2Y, Y = 6 (és un dígit)
+Si X = 4, 45 = 44 + 2Y, 1 = 2Y, Y = 0.5 (no és un dígit)
+
+Per tant, l'única solució vàlida és X = 3 i Y = 6. L'any de naixement del matemàtic és 1936.
+
+El matemàtic va complir 50 anys l'any 1936 + 50 = 1986. La suma dels dígits d'aquest any és 1 + 9 + 8 + 6 = 24.
+
+Resposta: D)

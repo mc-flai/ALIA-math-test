@@ -1,0 +1,20 @@
+Raonament:
+El problema ens diu que el rellotge digital mostra 20:20 quan el ratpenat surt i també quan torna, però en aquest últim cas, el ratpenat està penjat de cap per avall. Això significa que la imatge que veu del rellotge és la imatge reflectida verticalment. Per tant, hem de buscar una hora que, reflectida verticalment, també es llegeixi com 20:20.
+
+Si observem els números del rellotge digital, veiem que:
+- El 0 es veu igual reflectit verticalment.
+- El 1 es veu igual reflectit verticalment.
+- El 2 es veu com un 5 reflectit verticalment.
+- El 5 es veu com un 2 reflectit verticalment.
+- El 8 es veu igual reflectit verticalment.
+
+Per tant, per a que 20:20 es vegi com 20:20 reflectit verticalment, l'hora real ha de ser una hora que, reflectida, es vegi com 20:20. L'única hora que compleix aquesta condició és 05:05.
+
+Així doncs, el ratpenat va sortir a les 20:20 i va tornar a les 05:05 del dia següent. Per calcular el temps que ha estat fora, hem de calcular la diferència entre aquestes dues hores.
+
+De les 20:20 a les 00:00 hi ha 3 hores i 40 minuts.
+De les 00:00 a les 05:05 hi ha 5 hores i 5 minuts.
+
+Sumant els dos intervals: 3 hores i 40 minuts + 5 hores i 5 minuts = 8 hores i 45 minuts.
+
+Resposta: D)

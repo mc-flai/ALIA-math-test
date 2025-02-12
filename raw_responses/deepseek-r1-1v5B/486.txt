@@ -1,0 +1,62 @@
+<think>
+Primeixem el nombre d'ells de l'ordre que el problema dona. S'han deballs differentials entre les sambretes, pantalons i faldelles.
+
+Per a cada parell de sambreta i pantalon, there tenim 21 possibilities.
+
+Per a cada parell de sambreta i faldilla, there tenim 35 possibilidades.
+
+Calculant el nombre total de combinar les sambretes amb pantalons es multiplica per 21 x 10 = 210.
+
+Calcular el nombre total de combinar les sambretes amb faldelles es multiplica per 10 x 6 = 60.
+
+La suma total de combinar les sambretes sense que parlar de paràntiques de quinquena, donats l'ordre que el problema d'ha donat.
+
+També pot expressar la solució com a: (x * y) + (x * z) = 210 + 60 = 270.
+
+Per tant, s'ha de tenir x = 15 per a les sambretes.
+</think>
+
+Raonament:
+
+Emma té differentials entre les sambretes. Com que el problema no dona la quantitat exacta de sambretes, usarem \(x\) per representar el nombre de sambretes que té.
+
+**Passos:**
+
+1. **Combining Sambretes and Pantalons:**
+   
+   Comenta que combinar una sambreta i uns pantalons pot donar 21 maneres diferents:
+   \[
+   x \times y = 21
+   \]
+   On \(y\) és el nombre de pantalons.
+
+2. **Combining Sambretes and Faldelles:**
+   
+   Comenta que combinar una sambreta i una faldilla pot donar 35 maneras diferents:
+   \[
+   x \times z = 35
+   \]
+   On \(z\) és el nombre de faldelles.
+
+3. **Calculen el Total de Combines:**
+   
+   Sumen els combineurs que teniem per cada couple de variables:
+   \[
+   (x \times y) + (x \times z) = 210 + 60 = 270
+   \]
+
+4. **Determineix el Número de Sambretes:**
+   
+   Comenta que en total s'ha de donar 270 combinacions, i per a cada sambreta tenim \(y\) pantalons i \(z\) faldelles:
+   \[
+   y + z = x
+   \]
+   I si el nombre de sambretes \(x\) és el que qués trobari, utilitzem l'opció donada a l'opinió.
+
+**Final:**
+
+Comentant que la opció donada es 15, pot comolar les sambretes de 15 without needing more steps.
+
+\[
+\boxed{D}
+\]

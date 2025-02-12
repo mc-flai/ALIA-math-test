@@ -1,0 +1,23 @@
+Raonament:
+Primer, numerem els cavallers del 1 al 6 en sentit horari al voltant de la taula rodona.
+Els cavallers veïns són: (1,2), (2,3), (3,4), (4,5), (5,6), (6,1).
+Els cavallers que no són veïns són amics. Per tant, hem de trobar totes les parelles de cavallers que no són veïns.
+Podem llistar les parelles d'amics per cada cavaller:
+- Cavaller 1: Amics amb 3, 4 i 5. (3 parelles)
+- Cavaller 2: Amics amb 4, 5 i 6. (3 parelles)
+- Cavaller 3: Amics amb 1, 5 i 6. (3 parelles)
+- Cavaller 4: Amics amb 1, 2 i 6. (3 parelles)
+- Cavaller 5: Amics amb 1, 2 i 3. (3 parelles)
+- Cavaller 6: Amics amb 2, 3 i 4. (3 parelles)
+
+Si sumem les parelles per cada cavaller, obtenim 3 + 3 + 3 + 3 + 3 + 3 = 18. No obstant això, hem comptat cada parella dues vegades (per exemple, la parella 1-3 s'ha comptat tant per al cavaller 1 com per al cavaller 3). Per tant, hem de dividir el resultat per 2 per obtenir el nombre correcte de parelles diferents.
+18 / 2 = 9
+
+Les parelles d'amics són:
+(1,3), (1,4), (1,5)
+(2,4), (2,5), (2,6)
+(3,5), (3,6)
+(4,6)
+En total, hi ha 9 parelles d'amics.
+
+Resposta: C)

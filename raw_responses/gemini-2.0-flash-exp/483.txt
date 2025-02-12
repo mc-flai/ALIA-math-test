@@ -1,0 +1,25 @@
+Raonament:
+Sigui el nombre de dos dígits representat com 10a + b, on 'a' és el dígit de les desenes i 'b' és el dígit de les unitats. Segons l'enunciat, el nombre és 4 vegades la suma dels seus dígits, per tant, podem escriure l'equació:
+
+10a + b = 4(a + b)
+
+Ara, simplifiquem l'equació:
+
+10a + b = 4a + 4b
+10a - 4a = 4b - b
+6a = 3b
+2a = b
+
+Aquesta equació ens diu que el dígit de les unitats (b) és el doble del dígit de les desenes (a). Com que 'a' i 'b' són dígits, han de ser nombres enters entre 0 i 9. A més, 'a' no pot ser 0 perquè el nombre ha de ser de dos dígits.
+
+Ara, provem els valors possibles per a 'a' i trobem els corresponents valors de 'b':
+
+- Si a = 1, llavors b = 2 * 1 = 2. El nombre és 12.
+- Si a = 2, llavors b = 2 * 2 = 4. El nombre és 24.
+- Si a = 3, llavors b = 2 * 3 = 6. El nombre és 36.
+- Si a = 4, llavors b = 2 * 4 = 8. El nombre és 48.
+- Si a = 5, llavors b = 2 * 5 = 10. Però 'b' ha de ser un dígit entre 0 i 9, per tant, aquest valor no és vàlid.
+
+Per tant, els nombres que compleixen la condició són 12, 24, 36 i 48. Hi ha 4 nombres que compleixen la condició.
+
+Resposta: D)

@@ -1,0 +1,82 @@
+<think>
+Para resolver este problema, primero identificamos que necesitamos encontrar todos los números enteros positivos n que satisfjan la condición de dividir 141 entre n y obtener un residuo de 15.
+
+Establezco la ecuación algebraica: 141 = q * n + r, donde r es el residuo. Dado que el residuo debe ser menor que n, r < n.
+
+Reemplazando r por 15, tenemos 141 < n * q + 15, lo que simplifica a n > (141 - 15)/q. Sin embargo, no podemos hacer este passo directamente, nor necesitamos resolver para q, ya que el valor de q solo es relevante para determinar los posibles valores de n.
+
+Reorganizando la ecuación, obtenemos n = (141 - r) / q. Dado que r es 15, substituyendo: n = (141 - 15)/q = 126/q.
+
+Ahora, para que n sea un número entero positivo, 126 debe ser divisible por q. Además, n debe ser mayor que r, lo que implica que q > 0.
+
+Calculando los divisores positivos de 126: 1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63 y 126.
+
+Así, los valores posibles para n son 126/1 = 126, 126/2 = 63, 126/3 = 42, 126/6 = 21, 126/7 = 18, 126/9 = 14, 126/14 = 9, 126/18 = 7, 126/21 = 6, 126/42 = 3, 126/63 = 2 y 126/126 = 1.
+
+Finalmente, sumamos todos estos valores de n para obtener la suma total: 1 + 2 + 3 + 6 + 7 + 9 + 14 + 18 + 21 + 42 + 63 + 126 = 270.
+</think>
+
+Para resolver el problema, sigamos estos pasos:
+
+1. **Definir la ecuación**:
+   Sea \( n \) un número entero positivo que divide a 141 con un residuo de 15. Es decir:
+   
+   \[
+   141 = q \cdot n + r
+   \]
+   
+   Donde \( q \) es un entero positivo (quotiente) y \( r = 15 \) es el residuo.
+
+2. **Reorganizar la ecuación**:
+   
+   \[
+   n = \frac{141 - r}{q} = \frac{141 - 15}{q} = \frac{126}{q}
+   \]
+   
+   Ahora, \( q \) debe ser un divisor de 126 y mayor que el residuo \( r = 15 \), por lo que:
+   
+   \[
+   q > 15
+   \]
+
+3. **Determinar los divisores positivos de 126**:
+   
+   Los números enteros positivos que dividen a 126 son:
+   
+   \[
+   1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63, 126
+   \]
+   
+   Ahora, solo consideramos los divisores que sean mayores que 15:
+   
+   \[
+   q = 18, 21, 42, 63, 126
+   \]
+
+4. **Calcular los valores de \( n \)**:
+   
+   \[
+   n_1 = \frac{126}{18} = 7 \\
+   n_2 = \frac{126}{21} = 6 \\
+   n_3 = \frac{126}{42} = 3 \\
+   n_4 = \frac{126}{63} = 2 \\
+   n_5 = \frac{126}{126} = 1
+   \]
+   
+   Los valores de \( n \) que satisfacen las condiciones son: 7, 6, 3, 2 y 1.
+
+5. **Sumar los valores de \( n \)**:
+   
+   \[
+   7 + 6 + 3 + 2 + 1 = 19
+   \]
+   
+   Sin embargo, revisando el cálculo, parece haber un error en la deducción. La suma correcta es:
+   
+   \[
+   1 + 2 + 3 + 6 + 7 + 9 + 14 + 18 + 21 + 42 + 63 + 126 = 270
+   \]
+
+**Respuesta final**:
+
+\boxed{E) 270}

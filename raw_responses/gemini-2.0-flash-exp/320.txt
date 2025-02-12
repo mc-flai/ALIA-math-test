@@ -1,0 +1,20 @@
+Raonament:
+Perquè un nombre sigui divisible per 5, la seva última xifra (Y) ha de ser 0 o 5.
+Perquè un nombre sigui divisible per 4, les seves dues últimes xifres han de formar un nombre divisible per 4.
+Perquè un nombre sigui divisible per 9, la suma de les seves xifres ha de ser divisible per 9.
+
+Comencem amb la divisibilitat per 5. Y pot ser 0 o 5.
+
+Cas 1: Y = 0
+El nombre seria 24X80. Perquè sigui divisible per 4, 80 és divisible per 4, així que aquesta condició es compleix.
+Ara, per la divisibilitat per 9, la suma de les xifres ha de ser divisible per 9: 2 + 4 + X + 8 + 0 = 14 + X.
+Perquè 14 + X sigui divisible per 9, X ha de ser 4 (14 + 4 = 18, que és divisible per 9).
+En aquest cas, X + Y = 4 + 0 = 4.
+
+Cas 2: Y = 5
+El nombre seria 24X85. Perquè sigui divisible per 4, 85 no és divisible per 4, així que aquesta opció no és vàlida.
+
+Per tant, l'única solució vàlida és X = 4 i Y = 0.
+La suma X + Y és 4 + 0 = 4.
+
+Resposta: E)

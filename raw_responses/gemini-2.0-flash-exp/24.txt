@@ -1,0 +1,14 @@
+Raonament:
+Aquest problema és un problema de permutacions amb repeticions. Tenim 6 cilindres en total, dels quals 3 són blaus, 2 són verds i 1 és groc. La fórmula per calcular el nombre de permutacions amb repeticions és:
+
+n! / (n1! * n2! * ... * nk!)
+
+on n és el nombre total d'elements, i n1, n2, ..., nk són el nombre de vegades que es repeteix cada element.
+
+En aquest cas, n = 6 (total de cilindres), n1 = 3 (cilindres blaus), n2 = 2 (cilindres verds) i n3 = 1 (cilindre groc).
+
+Per tant, el nombre de possibilitats diferents d'apilar els cilindres és:
+
+6! / (3! * 2! * 1!) = (6 * 5 * 4 * 3 * 2 * 1) / ((3 * 2 * 1) * (2 * 1) * 1) = 720 / (6 * 2 * 1) = 720 / 12 = 60
+
+Resposta: B)

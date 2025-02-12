@@ -1,0 +1,61 @@
+<think>
+Primement, identifico que la expressión ha de resolverse por orden de jerárquía, comenciando desplazando los paréntesis más externos.
+
+Primero, calculo la parte del interior: 1 + 1 = 2.
+
+Luego, substituyendo el valor en la expresión original:
+
+1/(1 + (1/2)) + 1/(1 + (1/(1 + (1/2))))
+
+Simplificando cada término:
+
+1/(1 + 0.5) = 1/1.5 ≈ 0.666...
+
+Y la otra parte: 1/(1 + (1/1.5)) = 1/(1 + 0.666...) ≈ 1/1.666... ≈ 0.6
+
+Finalmente, sumando ambas partes: 0.666... + 0.6 = 1.285..., que equivalents a 19/15.
+</think>
+
+**Raonament:**
+
+La expresión dada es:
+
+\[
+\frac{1}{1+\left( \frac{1}{1+1} \right)} + \frac{1}{1+\left( \frac{1}{1+\left( \frac{1}{1+1} \right)} \right)}
+\]
+
+Primero, calculamos los paréntesis más externos:
+
+1. \( 1 + 1 = 2 \)
+   
+   Luego, reemplazando en la expresión original:
+
+   \[
+   \frac{1}{1+\left( \frac{1}{2} \right)} + \frac{1}{1+\left( \frac{1}{1+\left( \frac{1}{2} \right)} \right)}
+   \]
+
+2. Simplificamos los términos:
+
+   a. \( 1 + \frac{1}{2} = \frac{3}{2} \)
+
+      Entonces, la primera fracción es:
+
+      \[
+      \frac{1}{\frac{3}{2}} = \frac{2}{3}
+      \]
+
+   b. En la segunda fracción, reemplazamos \( 1 + \frac{1}{2} = \frac{3}{2} \):
+
+      \[
+      \frac{1}{1+\left( \frac{1}{\frac{3}{2}} \right)} = \frac{1}{1 + \frac{2}{3}} = \frac{1}{\frac{5}{3}} = \frac{3}{5}
+      \]
+
+3. Sumamos ambas fracciones:
+
+   \[
+   \frac{2}{3} + \frac{3}{5} = \frac{10}{15} + \frac{9}{15} = \frac{19}{15}
+   \]
+
+**Respuesta Final:**
+
+\boxed{\dfrac{19}{15}}

@@ -1,0 +1,42 @@
+<think>
+Bueno, tengo que resolver este problema con ecuaciones. Al principiante, sé que hay dos números, a y b, y me dondbrebo encontrar su cubo sumado, a³ + b³. Tenemos dos ecuaciones:
+
+1. a + b = 4
+2. a² + b² = 6
+
+Creo que puedo usar estas ecuaciones para encontrar la suma de sus cubos. Comenzando, recall que la fórmula para la suma de cubos es a³ + b³ = (a + b)(a² - ab + b²). Tenemos a + b = 4 y también a² + b² = 6, pero necesito el valor de ab.
+
+Para encontrar ab, me encantaríamos usar las ecuaciones dadas. Sabemos que (a + b)² = a² + 2ab + b². Sustituyendo los valores, (4)² = 6 + 2ab ⇒ 16 = 6 + 2ab ⇒ 2ab = 10 ⇒ ab = 5.
+
+Ahora, reemplazar en la fórmula de la suma de cubos: a³ + b³ = (a + b)(a² - ab + b²) = 4*(6 - 5) = 4*1 = 4.
+
+Finalmente, el valor del cubo sumado es 4.
+</think>
+
+Para resolver el problema, sigamos estos pasos:
+
+1. **Denominamos las ecuaciones dadas:**
+   \[
+   a + b = 4 \quad \text{y} \quad a^2 + b^2 = 6
+   \]
+
+2. **Recapitulemos la fórmula para la suma de cubos:**
+   \[
+   a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+   \]
+   
+3. **Sabemos que \( a + b = 4 \) y \( a^2 + b^2 = 6 \). Para encontrar \( ab \), usamos la ecuación:
+   \[
+   (a + b)^2 = a^2 + 2ab + b^2
+   \]
+   Reemplazando los valores:
+   \[
+   4^2 = 6 + 2ab \Rightarrow 16 = 6 + 2ab \Rightarrow 2ab = 10 \Rightarrow ab = 5
+   \]
+
+4. **Sustituimos \( a + b \) y \( a^2 + b^2 \) en la fórmula:**
+   \[
+   a^3 + b^3 = (a + b)(a^2 - ab + b^2) = 4(6 - 5) = 4 \times 1 = 4
+   \]
+
+**Respuesta final:** \(\boxed{4}\)

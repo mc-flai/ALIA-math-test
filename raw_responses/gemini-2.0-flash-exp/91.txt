@@ -1,0 +1,17 @@
+Raonament:
+Primer, visualitzem la piràmide hexagonal regular ABCDEFV. La base és un hexàgon regular ABCDEF, i el vèrtex superior és V. La línia AV és una de les arestes laterals de la piràmide. Hem de comptar quantes arestes de la piràmide no intersecten la línia AV.
+
+Les arestes de la piràmide són:
+- Les arestes de la base: AB, BC, CD, DE, EF, FA
+- Les arestes laterals: AV, BV, CV, DV, EV, FV
+
+La línia AV és una aresta lateral. Les arestes que intersecten AV són:
+- Les arestes que comparteixen el vèrtex A: AB, AF
+- L'aresta que comparteix el vèrtex V: BV, CV, DV, EV, FV
+
+Per tant, les arestes que no intersecten AV són les arestes de la base que no tenen el vèrtex A: BC, CD, DE, EF.
+A més, l'aresta lateral AV no intersecta amb ella mateixa.
+Les arestes que no intersecten AV són: BC, CD, DE, EF.
+Això fa un total de 4 arestes.
+
+Resposta: E)

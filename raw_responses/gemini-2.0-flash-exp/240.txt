@@ -1,0 +1,13 @@
+Raonament: Per calcular 100000 - 44444, podem fer la resta columna per columna, començant per la dreta. Com que tenim molts zeros a 100000, haurem de demanar prestat de la columna de l'esquerra.
+- 0 - 4 no es pot fer, demanem prestat a la columna de l'esquerra, que també és 0, així que hem de seguir demanant fins arribar a l'1.
+- L'1 es converteix en 0, i el primer 0 es converteix en 10.
+- Aquest 10 es converteix en 9 i el següent 0 es converteix en 10.
+- Així successivament fins arribar a la columna de les unitats.
+- Ara tenim 10 - 4 = 6
+- 9 - 4 = 5
+- 9 - 4 = 5
+- 9 - 4 = 5
+- 9 - 4 = 5
+Per tant, el resultat és 55556.
+
+Resposta: A)

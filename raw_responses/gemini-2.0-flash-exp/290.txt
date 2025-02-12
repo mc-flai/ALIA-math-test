@@ -1,0 +1,11 @@
+Raonament:
+L'objectiu és minimitzar el producte dels quatre nombres després d'augmentar un d'ells en una unitat. Inicialment, tenim el producte \(abcd\). Si augmentem un dels nombres en 1, tindrem un dels següents productes:
+\begin{itemize}
+    \item \((a+1)bcd\)
+    \item \(a(b+1)cd\)
+    \item \(ab(c+1)d\)
+    \item \(abc(d+1)\)
+\end{itemize}
+Per minimitzar el producte, hem d'augmentar el nombre que, en el producte original, té el valor més petit. Això és perquè, en augmentar un nombre petit, l'increment relatiu del producte serà menor que si augmentem un nombre gran. Com que \(a < b < c < d\), el nombre més petit és \(a\). Per tant, augmentar \(a\) en 1 donarà el producte més petit.
+
+Resposta: A)

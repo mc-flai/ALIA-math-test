@@ -1,0 +1,161 @@
+<think>
+Prime vegem que llibre ha utilitzat exactament 231 xifres per a les pàgines que hi poten al le donat.
+
+También recordem que el nombre de xifres en un llibre es calculat això: sumant el nombre de xifres de cada página.
+
+Per exemple, una página 1 ha d'exactament 1 xifra, la página 2 ha d'a dos xifres, etc.
+
+Igualment, les pàgines més grans són las que tenen més xifres, com a llibre pot ha de passar tant pàgina més gran quan el nombre de xifres que cal.
+
+Deixem que X sigui el nombre de les pàganes i M la quantitat de xifres.
+
+El valor total de les xifres en un llibre es igual a la suma del nombre de xifres en cada página. Quan tenim una pàgina més grans, la expressió es pot formalitzar com:
+
+Total xifres = 1 + 2 + 3 + ... + (x - 4) + (x - 2) + (x - 1) + x
+
+Els nombres de les xifres en llibre es: 1, 2,..., x.
+
+Per així que la suma siga el valor de 231 xifres, cal resoldre la equació:
+
+( (x - 4)(x - 3) ) / 2 + (x - 2) + (x - 1) + x = 231
+
+Simplificant:
+
+(x² -7x + 6)/2 + 3x -1 = 231
+
+Multiplicacions per 2:
+
+x² -7x +6 +6x -2 = 462
+
+Simplificants la expressión:
+
+x² -x +4 = 462 ⇒ x² -x -458 =0
+
+Resolviendo la ecuación quadrada:
+
+x = [1 ± √(1 + 1832)] / 2 ⇒ x = [1 ± √1833]/2
+
+Calculant la raí quadrada: √1833 ≈42.81, per així que x ≈ (1 +42.81)/2 ≈21.905.
+
+Per tant, el nombre de les pàganes és 22.
+
+Ara comvolim als optimitats: la suma de xifres sense si la vegada que una página llibre tingui més que 4 xifres per així que no estiguiem amb decimals. Per exemple, una página 10 tenia exactament 2 xifres.
+
+Però en el cas de x =22:
+
+Pàginas 1 al 4: sumen 1+2+3+4=10 xifres
+
+Pàgina 5: 6 xifres
+
+Pàgana 6:7
+
+...
+
+Pàgana 9:9
+
+Pàgana 10: 2 xifres
+
+Pàgana 11:3
+
+Pàgana 12:4
+
+Pàgana 13:5
+
+Pàgana 14:6
+
+Pàgana 15:7
+
+Pàgana 16:8
+
+Pàgana 17:9
+
+Pàgana 18:2
+
+Pàgana 19:3
+
+Pàgana 20:4
+
+Pàgana 21:5
+
+Pàgana 22:6
+
+Sumem tots així:
+
+1+2=3; +3=6; +4=10.
+
+Pàgana 5:6 ⇒ total 16.
+
+Pàgana 6:7⇒23.
+
+Pàgana 7:8⇒31.
+
+Pàgana 8:9⇒40.
+
+Pàgana 9:2⇒42.
+
+Pàgana 10:3⇒45.
+
+Pàgana 11:4⇒49.
+
+Pàgana 12:5⇒54.
+
+Pàgana 13:6⇒60.
+
+Pàgana 14:7⇒67.
+
+Pàgana 15:8⇒75.
+
+Pàgana 16:9⇒84.
+
+Pàgana 17:2⇒86.
+
+Pàgana 18:3⇒89.
+
+Pàgana 19:4⇒93.
+
+Pàgana 20:5⇒98.
+
+Pàgana 21:6⇒104.
+
+Pàgana 22:7⇒111.
+
+I, per així que la suma total de xifres és 111, alreadi que el problema es potent que dona 231 xifres. Així comvolim que la solució correcta sigui 111 pàganes.
+</think>
+
+Raonament: El llibre ha utilitzat exactament 231 xifres per a les pàganes que hi poten. Com presem, la suma de xifres en una publications es igual a la sum de tots els números de xifres de cada página.
+
+Assim que si denoteram \( x \) com el nombre de las pàganes, el nombre total d'xifres ésigual a la suma dels nombres de xifres de cada página. El theoretically, una página 1 pot tenir un solo xifra (1), una página 2 dos xifres (2,...,9), etc.
+
+El llibre pot hi tingut tant pàganes grans que possible per aiguar el nombre d'xifres sense comprobar decimal. Així, la suma dels nombres de xifres d'una publications es:
+
+\( \sum_{n=1}^{x-4} n + (x - 2) + (x - 1) + x = 231 \)
+
+La summatriu expressiona com:
+
+\( 1 + 2 + ... + (x - 5) + (x - 3) + (x - 2) + (x - 1) + x = 231 \)
+
+Quan expressivem la suma de xifres, pot donar:
+
+\( \frac{(x - 4)(x - 3)}{2} + (x - 2) + (x - 1) + x = 231 \)
+
+Simplificant l'expression:
+
+\( x^2 - x - 458 = 0 \)
+
+Raó quadràtica. Solucionant la raí quadrada, tindrem:
+
+\( x ≈ 21.905 \)
+
+Per tant, el nombre de les pàganes és 22.
+
+Comvolim als optimitats que la suma d'xifres sense comprobar decimal pot donar:
+
+Pàgana 1: 1
+
+Pàgana 2: 2
+
+...
+
+Pàgana 5: 6
+
+Per així que la suma total de xifres és 111, que sigui el nombre de les pàganes que pot tenir un llibre per aiguar 231 xifres.

@@ -1,0 +1,41 @@
+Raonament:
+Sigui $n_i$ el nombre de passatgers al vagó $i$, on $i=1, 2, 3, 4, 5$. El nombre total de passatgers al tren és $N = n_1 + n_2 + n_3 + n_4 + n_5$.
+Considerem un passatger al vagó 1. Els seus veïns són els passatgers del vagó 1 i els del vagó 2. Per tant, té $n_1 + n_2 - 1$ veïns (restem 1 perquè no comptem el passatger mateix). Aquest nombre ha de ser 5 o 10.
+Considerem un passatger al vagó 2. Els seus veïns són els passatgers del vagó 1, 2 i 3. Per tant, té $n_1 + n_2 + n_3 - 1$ veïns. Aquest nombre ha de ser 5 o 10.
+Considerem un passatger al vagó 3. Els seus veïns són els passatgers del vagó 2, 3 i 4. Per tant, té $n_2 + n_3 + n_4 - 1$ veïns. Aquest nombre ha de ser 5 o 10.
+Considerem un passatger al vagó 4. Els seus veïns són els passatgers del vagó 3, 4 i 5. Per tant, té $n_3 + n_4 + n_5 - 1$ veïns. Aquest nombre ha de ser 5 o 10.
+Considerem un passatger al vagó 5. Els seus veïns són els passatgers del vagó 4 i 5. Per tant, té $n_4 + n_5 - 1$ veïns. Aquest nombre ha de ser 5 o 10.
+
+Si tots els passatgers tenen 5 veïns, tindríem:
+$n_1 + n_2 - 1 = 5 \Rightarrow n_1 + n_2 = 6$
+$n_1 + n_2 + n_3 - 1 = 5 \Rightarrow n_1 + n_2 + n_3 = 6$
+$n_2 + n_3 + n_4 - 1 = 5 \Rightarrow n_2 + n_3 + n_4 = 6$
+$n_3 + n_4 + n_5 - 1 = 5 \Rightarrow n_3 + n_4 + n_5 = 6$
+$n_4 + n_5 - 1 = 5 \Rightarrow n_4 + n_5 = 6$
+Això implica que $n_3 = 0$, que no és possible.
+
+Si tots els passatgers tenen 10 veïns, tindríem:
+$n_1 + n_2 - 1 = 10 \Rightarrow n_1 + n_2 = 11$
+$n_1 + n_2 + n_3 - 1 = 10 \Rightarrow n_1 + n_2 + n_3 = 11$
+$n_2 + n_3 + n_4 - 1 = 10 \Rightarrow n_2 + n_3 + n_4 = 11$
+$n_3 + n_4 + n_5 - 1 = 10 \Rightarrow n_3 + n_4 + n_5 = 11$
+$n_4 + n_5 - 1 = 10 \Rightarrow n_4 + n_5 = 11$
+Això implica que $n_3 = 0$, que no és possible.
+
+Per tant, hi ha passatgers amb 5 veïns i passatgers amb 10 veïns.
+Si $n_1 + n_2 = 6$, llavors $n_1 + n_2 + n_3 = 11$, per tant $n_3 = 5$.
+Si $n_4 + n_5 = 6$, llavors $n_3 + n_4 + n_5 = 11$, per tant $n_3 = 5$.
+Si $n_2 + n_3 + n_4 = 11$, llavors $n_1 + n_2 = 6$ i $n_3 + n_4 + n_5 = 11$.
+Si $n_1 + n_2 = 11$, llavors $n_1 + n_2 + n_3 = 6$, per tant $n_3 = -5$, que no és possible.
+Si $n_4 + n_5 = 11$, llavors $n_3 + n_4 + n_5 = 6$, per tant $n_3 = -5$, que no és possible.
+
+Considerem $n_1 + n_2 = 6$ i $n_4 + n_5 = 6$. Llavors $n_1 + n_2 + n_3 = 11$, $n_2 + n_3 + n_4 = 11$, $n_3 + n_4 + n_5 = 11$.
+$n_3 = 5$. $n_2 + 5 + n_4 = 11$, $n_2 + n_4 = 6$.
+$n_1 + n_2 = 6$, $n_4 + n_5 = 6$.
+$n_1 + n_2 + 5 = 11$, $n_2 + 5 + n_4 = 11$, $5 + n_4 + n_5 = 11$.
+$n_1 + n_2 = 6$, $n_2 + n_4 = 6$, $n_4 + n_5 = 6$.
+$n_1 = n_4$, $n_2 = n_5$.
+$n_1 + n_2 = 6$, $n_2 + n_1 = 6$, $n_1 + n_2 = 6$.
+$n_1 + n_2 + n_3 + n_4 + n_5 = n_1 + n_2 + 5 + n_1 + n_2 = 2(n_1 + n_2) + 5 = 2(6) + 5 = 17$.
+
+Resposta: C)

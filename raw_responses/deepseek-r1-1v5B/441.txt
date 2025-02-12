@@ -1,0 +1,56 @@
+<think>
+Per a que resoldiem el problema, recordem que hi ha un total de 31 estudiants i cada tenda acull tres o cinc. Com s'ha donat el més important que la quantitat d'aquellles que acullen cinc estudiants sigui a menz uns que acullen tres.
+
+Suposimem que x tendes acullen cinc estudiants i y tendes acullen tres. El total de estudios de cinc seran 5x i el total de estudios de tres serán 3y. Tot al lot d'aquellles serán x + y = 31.
+
+También, la vegada que hi ha més tendes de tres que de cinc, s'aplica aquesta condición: x > y.
+
+Llegimos l'equación 5x + 3y = 31. Ambas variables són enteres positives i x > y.
+
+Per avaluar les possibilities, seguirem possible values per x:
+
+- Si x=6, then y=(31 -5*6)/3 = (31-30)/3=1/3, no és entera.
+- x=5: y=(31-25)/3=6/3=2. És possible que x=5 i y=2. La vegada d'arretat de la condición x>y satisfeira (5>2).
+- x=4: y=(31-20)/3=11/3, no és entera.
+- x=7: y=(31-35)/3=-4/3, que no s'ha pos Bh.
+  
+La solució es x=5 tendes acullen cinc estudiants.
+</think>
+
+Raonament:
+
+Sabemos que hi ha un total de **31 estudiants** i cada una de la tendes que aculla un nombre d'estudios: **3 o 5**. Ara bé, el problema esmenta que hi ha **més tendes de tres que de cinc**, i volem determinar quantes tendes acullen **cinc estudiants**.
+
+1. **Definir Variables:**
+   - Sea \( x \) el nombre de tendes que acullen **3 estudiants**.
+   - Sea \( y \) el nombre de tendes que acullen **5 estudiants**.
+   
+2. **Suma Total de Tendes:**
+   El total d'estudios serà la suma de estudiants de cada tenda:
+   \[
+   3x + 5y = 31
+   \]
+   
+3. **Relación de Quantidades:**
+   Sabemos que hi ha **més tendes de tres que de cinc**, es a say:
+   \[
+   x > y
+   \]
+   
+4. **Raconja Valors Permetents a Solució:**
+   Volem determinar entès per \( x \) i \( y \) que satisfiquen les iguals i l'inequalitat:
+   - \( 3x + 5y = 31 \)
+   - \( x > y \)
+   
+5. **Practica Valors:**
+   - **Si \( x=6 \):** \( 3*6 + 5y = 18 + 5y = 31 \) → \( 5y =13 \), que no és enter.
+   - **Si \( x=5 \):** \( 3*5 + 5y =15 +5y=31 \) → \( 5y=16 \), que no és enter.
+   - **Si \( x=4 \):** \( 3*4 +5y=12+5y=31→5y=19\), non entera.
+   - **Si \( x=7 \):** \( 21 +5y=31→5y=10→ y=2 \). Asegurament, \( x>y \) (7>2).
+
+6. **Solución:**
+   El possible solution es \( x=5 \) tendes acullen **5 estudiants**, com s'ha determinat per la condición i el més petit valor possible que respecta l'igual de quantitud.
+
+**Resposta:**
+
+\boxed{D}

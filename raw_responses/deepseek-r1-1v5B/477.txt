@@ -1,0 +1,50 @@
+<think>
+Para determinar el número total de divisores naturales del número 4242, primero es necesario descomponerlo en su forma factural.
+
+Primero, identificamos los divisores primos de 4242. Al dividir por 2, obtenemos 2121. Luego, verifiquemos si 2121 es divisible por 3; el suma de sus dígitos (2+1+2+1=6) es divisorable por 3, lo que nos da 707.
+
+Después, dividimos 707 entre 7 y obtenemos 101. Verificamos que 101 es un número primo. Por lo tanto, la descomposición factorial de 4242 es: 4242 = 2¹ × 3¹ × 7¹ × 101¹.
+
+Luego, para calcular el número total de divisores naturales, usamos la fórmula que suma los exponentes de cada factor, summedadentro de un product. Es decir, (1+1)(1+1)(1+1)(1+1) = 2×2×2×2 = 16.
+
+Por lo tanto, el número total de divisores naturales del número 4242 es 16.
+</think>
+
+Para determinar el número total de divisores naturales del número 4242, seguiremos los siguientes pasos:
+
+1. **Descomponer el número en sus factores primares**:
+   
+   \[
+   4242 = 2^1 \times 3^1 \times 7^1 \times 101^1
+   \]
+   
+2. **Aplicar la fórmula para calcular los divisores naturales**:
+   
+   La fórmula para determinar el número de divisores es:
+   
+   \[
+   (e_1 + 1) \times (e_2 + 1) \times \cdots \times (e_n + 1)
+   \]
+   
+   Donde \( e_i \) son los exponentes de cada factor primo en la descomposición.
+
+3. **Aplicar el método para el número dado**:
+   
+   Para 4242, los exponentes son:
+   
+   - \( e_1 = 1 \) (por el factor 2)
+   - \( e_2 = 1 \) (por el factor 3)
+   - \( e_3 = 1 \) (por el factor 7)
+   - \( e_4 = 1 \) (por el factor 101)
+
+   Plugging these into la fórmula:
+   
+   \[
+   (1 + 1)^4 = 2^4 = 16
+   \]
+   
+4. **Respuesta final**:
+   
+   Por lo tanto, el número total de divisores naturales del número 4242 es **16**.
+
+\boxed{A) 16}

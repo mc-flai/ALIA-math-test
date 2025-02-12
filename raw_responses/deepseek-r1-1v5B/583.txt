@@ -1,0 +1,76 @@
+<think>
+Primeixem la suma dels nombres naturals de 1 fins a n, que des dona un nombre de tres xifres amb totes iguals.
+
+Per aquesta purpose, calculem el mèdia entre 1 i n per obtenir el nombre d'arregles en l'una de les variables. Així, la suma serà (n+1) multiplied per el nombre d'arregles, que dep againa la quantitat de variables.
+
+A continuació, expressem la condició que tots els nombres són iguals i igual a 100. Així, formatem una equación que raonem sense l' error.
+
+Finalment, resolem la ecuacions per determinar el nombre d'arregles i ultimately, el nombre de nombres en la suma.
+</think>
+
+**Raonament:**
+
+Suposem que sumen **n** nombres naturals de 1 fins a n, donant un resultat de tres xifres amb totes iguals.
+
+La suma dels nombres naturals del 1 fins a n es calculada per:
+\[
+\text{Suma} = \frac{(1 + n) \times n}{2}
+\]
+
+Axaçem que tots els nombres són iguals i igual a **x**. Llavors la suma serà:
+\[
+3 \times x = \frac{n(n+1)}{2}
+\]
+Per que hi haven tres terms (els 0, 1, 2).
+
+Ara expressem la condició que tots els nombres són iguals i igual a 100:
+\[
+x = 100
+\]
+
+Aplicant així:
+\[
+3 \times 100 = \frac{n(n+1)}{2}
+\]
+\[
+200 = \frac{n^2 + n}{2}
+\]
+Multiplying both sides by 2:
+\[
+400 = n^2 + n
+\]
+
+Llavors llevem el mètode quadr àtic per resoldre la ecquaion quadràtica:
+\[
+n^2 + n - 400 = 0
+\]
+Utilitzem la fórmula quadràtica:
+\[
+n = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+Donada que **a** = 1, **b** = 1, i **c** = -400:
+\[
+n = \frac{-1 \pm \sqrt{1 + 1600}}{2} = \frac{-1 \pm \sqrt{1601}}{2}
+\]
+Calculant la raó quadrada:
+\[
+\sqrt{1601} \approx 40.01
+\]
+Raonem sense l' error i esdegim per així que n sigi un enter positiu:
+\[
+n = \frac{-1 + 40}{2} = \frac{39}{2} = 19.5
+\]
+
+Els valors tèncials són l'arregles i **x**:
+\[
+n = 19, \quad x = 100
+\]
+Per que:
+\[
+3 \times 100 = 300 = \frac{19 \times 20}{2} = 190
+\]
+No cap així, donant un error. La albaixàm per així que n sigi 19.
+
+**Resposta:**
+
+\boxed{B) 36}

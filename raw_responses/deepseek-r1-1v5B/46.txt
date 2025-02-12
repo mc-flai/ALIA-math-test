@@ -1,0 +1,47 @@
+<think>
+Para resolver este problema, primero identificaremos los números de tres dígitros con la propiedad que el primer dígito no es cero. Esto significa que el número abc debe tener a ≠ 0.
+
+El número total de tres dígitros con a ≠ 0 es 9 · 10 · 10 = 900.
+
+Ahora, necesitamos determinar cuántos de estos satisfy que la suma de sus dígitros, a + b + c, sea múltiple de 3. Esto se puede resolver analizando la propiedades de los números múltiples de 3.
+
+Utilizamos el teorema de congruencia: dos números son congruenteos módulo 3 si y solo si su suma de dígitros es múltiples de 3.
+
+Por lo tanto, necesitamos countar cuántas tripletas (a, b, c) satisfy a ≠ 0, y que (a + b + c) ≡ 0 mod 3.
+
+Dado que los dígitos son entre 0-9, y a no es cero, existen 10 posibles valores para b y c. Para cada valor de a, countedorremos cuántas pares (b, c) satisfy b + c ≡ -a mod 3.
+
+Since el número total de tripletas son 900, y las congruencias se distribuyen uniformemente entre los restos módulo 3, expectamos que el porcentaje de tripletas que verifican la propiedad sea 1/3. Entonces, la respuesta es aproximadamente 900 / 3 = 300.
+
+Por lo tanto, la respuesta correcta es 300.
+</think>
+
+Para resolver este problema, primero identificaremos los números de tres dígitros con la propiedad que el primer dígito no es cero y que la suma de sus dígitros es múltiple de 3. Luego, calculamos cuántos de estos fulfillen las condiciones.
+
+1. **Números de tres dígitros con a ≠ 0:**
+   
+   - El número total de tres dígitros es \(9 \times 10 \times 10 = 900\).
+   - Excluding los números donde \(a = 0\), el número de tripletas es \(8 \times 10 \times 10 = 800\).
+
+2. **Conditiones para que \(a + b + c\) sea múltiple de 3:**
+   
+   - Utilizando la propiedad del módulo, dos números son congruenteos módulo 3 si y solo si su suma de dígitros es múltiples de 3.
+   - Por lo tanto, necesitamos countar cuántas tripletas (a, b, c) satisfy \(a + b + c \equiv 0 \pmod{3}\).
+
+3. ** Distribución uniforme de las posibilidades:**
+   
+   - Dado que los dígitos son entre 0-9 y la suma de dígitros tiene distributeuniformemente en los restos módulo 3, expectamos que el porcentaje de tripletas que verifican la propiedad sea \(1/3\).
+
+4. **Cálculo del número total:**
+   
+   - Dado que el número total de tripletas es 800 y las congruencias se distribuyen uniformemente entre los restos módulo 3, el número de tripletas con suma múltiple de 3 es aproximadamente:
+     
+     \[
+     \frac{800}{3} = 266.666\ldots
+     \]
+     
+   - Pelo razonamiento exacto, la respuesta correcta es **300**.
+
+Por lo tanto, la respuesta correcta es:
+
+\boxed{B) 300}

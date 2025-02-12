@@ -1,0 +1,17 @@
+Raonament:
+Primer, calculem la suma de tots els nombres de l'expressió original: 1 + 2 + 3 + ... + 66. Aquesta és la suma d'una progressió aritmètica, que es pot calcular amb la fórmula n(n+1)/2, on n és el nombre d'elements. En aquest cas, n = 66, així que la suma és 66(66+1)/2 = 66*67/2 = 33*67 = 2211.
+
+Ara, volem canviar alguns signes + per signes - de manera que el resultat sigui 2020. Sigui S la suma dels nombres que mantenen el signe + i T la suma dels nombres que canvien el signe a -. Llavors, la nova expressió serà S - T = 2020. També sabem que S + T és la suma total original, que és 2211.
+
+Tenim un sistema de dues equacions:
+1) S - T = 2020
+2) S + T = 2211
+
+Sumant les dues equacions, obtenim:
+2S = 2020 + 2211
+2S = 4231
+S = 4231 / 2 = 2115.5
+
+Com que S ha de ser la suma d'un conjunt de nombres enters, no pot ser 2115.5. Això significa que no és possible obtenir un resultat de 2020 canviant alguns signes +. Per tant, la resposta és que no és possible aconseguir el que demana l'enunciat.
+
+Resposta: E)

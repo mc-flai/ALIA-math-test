@@ -1,0 +1,36 @@
+<think>
+Primeixem que els cavallers són dividits en dos grups: les que s'odien entre si (veiem callals) i les que no (les amics). Quero trio una parella de cavallers que siguen amics. 
+
+Comenciem per a determinar el nombre d'objetivs totals. Si thereigem al rei Artur el numer del mateix, la distància esdeu pot ser de 1 a n-1 per als posibles pairs. 
+
+Raonem combinatorialment: quin és el número possible de parells (a, b) amb a < b? Es el que calculen la fórmula binomial C(n-1, 2), que equivalent a ((n-1)*(n-2))/2.
+
+Per exemple, si n = 6:
+C(5, 2) = (5*4)/2 = 10 parells.
+
+Com per exemple, quan n = 3: posibles parells són C(2,2)=1. Si n=4, es 3; etc.
+
+Per a tot n >=3, el nombre de parells amics és (n-1)(n-2)/2.
+</think>
+
+**Solució:**
+
+Quer triar una parella de cavallers que siguen amics, la quantitat de possibilitats es trobaria com el número de parells possible entre les cavallers que no són veírs. Si thereigem al rei Artur el numer del mateix (n-1) per a l'altira taurneta, la distància esdeu pot ser de 1 a n−1 per als posibles parells.
+
+Raonem combinatorialment: quin és el nombre possible de parells (a, b) amb a < b? Es el que calculen la fórmula binomial C(n−1, 2), que equivalent a ((n−1)*(n−2))/2.
+
+Per exemple:
+- Si n = 3: posibles parells són C(2, 2) = 1.
+- Si n = 4: posibles parells són C(3, 2) = 3.
+- Si n = 5: posibles parells són C(4, 2) = 6.
+- Si n = 6: posibles parells són C(5, 2) = 10.
+
+Com per exemple, quan n = 7:
+C(6, 2) = (6*5)/2 = 15 parells.
+
+Por el que, en general, la quantitat de possibilitats es trobaria com ((n−1)(n−2))/2. Diferent footing d'ajuda personali no es necessary.
+
+**Resposta:**
+El nombre de possibilitats és \boxed{9}.
+
+La resposta correcta és **E) 18**, però, segurament, based en el procés que ha descrit, la quantitat社rada es calcula de la forma detallada anteriorment. Diferent footing d'ajuda personali no es necessary.

@@ -1,0 +1,24 @@
+Raonament:
+1. **Identificar els dies de la setmana:** Hem de determinar quin dia de la setmana correspon a cada resposta donada pel xic. Sabem que diu la veritat dijous i divendres, menteix dimarts, i pot dir veritat o mentida els altres dies.
+2. **Analitzar les respostes:**
+    * Si el primer dia va dir "Joan", podria ser qualsevol dia excepte dimarts.
+    * El segon dia va dir "Lluís".
+    * El tercer dia va dir "Joan".
+    * El quart dia va dir "Lluís".
+    * El cinquè dia va dir "Pere".
+    * El sisè dia va dir "Lluís".
+3. **Deduir els dies:**
+    * Si el primer dia va dir "Joan" i el tercer dia també, i sabem que no menteix dos dies seguits, llavors el primer i el tercer dia no poden ser dimarts.
+    * Si el segon dia va dir "Lluís" i el quart dia també, i sabem que no menteix dos dies seguits, llavors el segon i el quart dia no poden ser dimarts.
+    * Si el segon dia va dir "Lluís" i el sisè dia també, i sabem que no menteix dos dies seguits, llavors el segon i el sisè dia no poden ser dimarts.
+    * Si el cinquè dia va dir "Pere", aquest dia podria ser qualsevol dia.
+    * Si el primer dia va dir "Joan" i el tercer dia també, i sabem que no menteix dos dies seguits, llavors el primer i el tercer dia no poden ser dimarts.
+    * Si el segon dia va dir "Lluís" i el quart dia també, i sabem que no menteix dos dies seguits, llavors el segon i el quart dia no poden ser dimarts.
+    * Si el segon dia va dir "Lluís" i el sisè dia també, i sabem que no menteix dos dies seguits, llavors el segon i el sisè dia no poden ser dimarts.
+    * Si el cinquè dia va dir "Pere", aquest dia podria ser qualsevol dia.
+4. **Construir la seqüència:**
+    * Si el primer dia fos dilluns, el segon seria dimarts (mentida), el tercer dimecres, el quart dijous (veritat), el cinquè divendres (veritat), el sisè dissabte. Això encaixa amb la informació que tenim.
+    * Per tant, la seqüència de dies seria: Dilluns, Dimarts, Dimecres, Dijous, Divendres, Dissabte.
+5. **Determinar la resposta del setè dia:** El setè dia seria diumenge. Com que diumenge pot dir veritat o mentida, no podem saber quin és el seu nom real.
+
+Resposta: E)

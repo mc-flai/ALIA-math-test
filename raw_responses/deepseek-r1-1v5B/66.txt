@@ -1,0 +1,56 @@
+<think>
+Para resolver el problema, primero calculamos \(20!\). Note que \(20! = 20 \times 19 \times 18 \times \dots \times 1\), y sabemos que si任何一个 de los números en la multiplicación es múltiple de \(2^9 = 512\), el producto también será múltiple de \(512\). Por ejemplo, el número \(16\) es igual a \(2^4\), y al multiplying por \(8\) (which es \(2^3\)), el resultado es \(2^{4+3}=2^7\). Continuando esta manera hasta reaches a \(16 \times 9 = 144\), que no es múltiple de \(512\). Por lo tanto, \(20! \) no está congruente con 0 al módulo \(512\).
+
+Luego calculamos el resto \(R\) de la división de \(520\) entre \(512\), que es \(8\). Al restar esto a \(20!\), se obtiene un número entero que no está congruente con 0 al módulo \(512\).
+
+Finalmente, calculamos la suma \(20! + 520\) y luego el módulo de esta suma por \(512\). Dado que \(20!\) no está congruente con 0 y \(520 \mod 512 = 8\), la suma será congruente con \(8\) al módulo \(512\).
+</think>
+
+Para resolver el problema, analizamos las partes de la expresión \(20! + 520\) en relación a \(512 = 2^9\).
+
+1. **Calcular \(20!\) y su módulo \(512\):**
+   
+   \[
+   20! = 20 \times 19 \times 18 \times \dots \times 1
+   \]
+   
+   Notemos que si any uno de los números en la multiplicación es múltiple de \(2^9 = 512\), el producto también será múltiple de \(512\). Por ejemplo:
+   
+   - \(16\) es igual a \(2^4\)
+   - \(8\) es igual a \(2^3\)
+   - \(4\) es igual a \(2^2\)
+   - \(2\) es igual a \(2^1\)
+   
+   Al multiplicar todos estos números, obtenemos:
+   
+   \[
+   2^4 \times 2^3 \times 2^2 \times 2^1 = 2^{4+3+2+1} = 2^9 = 512
+   \]
+   
+   Por lo tanto, \(20!\) no está congruente con 0 al módulo \(512\).
+
+2. **Calcular el módulo de \(520\) por \(512\):**
+   
+   \[
+   520 \div 512 = 1 \text{ with a remainder of } 8
+   \]
+   
+   Por lo tanto:
+   
+   \[
+   520 \mod 512 = 8
+   \]
+
+3. **Sumar \(20! + 520\) y calcular el módulo \(512\):**
+   
+   Como \(20! \mod 512 = R\) (un número entero que no está congruente con 0) y \(520 \mod 512 = 8\), la suma será:
+   
+   \[
+   (R + 8) \mod 512
+   \]
+   
+   Dado que \(R\) es un número entero mayor o igual a 1 y menor que 512, el resultado de la suma será congruente con \(8\).
+
+Por lo tanto, el residuo de dividir \(20! + 520\) entre \(512\) es:
+
+\(\boxed{B)\ 8}\)

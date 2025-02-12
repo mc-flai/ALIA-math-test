@@ -1,0 +1,14 @@
+Raonament:
+Un cub té 8 vèrtexs. Per definir un pla, necessitem almenys 3 punts no col·lineals. Analitzarem els diferents tipus de plans que passen per almenys 3 vèrtexs d'un cub:
+
+1. **Plans que contenen una cara del cub:** Hi ha 6 cares en un cub, i cada cara defineix un pla. Per tant, tenim 6 plans d'aquest tipus.
+
+2. **Plans que contenen dues diagonals oposades de cares paral·leles:** Considerem un parell de cares oposades. Podem triar una diagonal d'una cara i la diagonal oposada de la cara paral·lela. Hi ha 2 diagonals per cara, i 3 parells de cares oposades. Per tant, tenim 2 diagonals * 3 parells de cares = 6 plans d'aquest tipus.
+
+3. **Plans que contenen 4 vèrtexs que formen un rectangle:** Aquests plans són els que hem comptat en el punt 2.
+
+4. **Plans que contenen 3 vèrtexs que formen un triangle:** Aquests plans són els que hem comptat en el punt 1 i 2.
+
+Per tant, sumant els plans del tipus 1 i 2, tenim 6 + 6 = 12 plans.
+
+Resposta: C)

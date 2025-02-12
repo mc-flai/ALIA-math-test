@@ -1,0 +1,13 @@
+Raonament:
+Sabem que n^n = m. Volem trobar una expressió per a n^(n^(n+1)).
+Podem reescriure l'exponent n^(n+1) com n^n * n^1 = n^n * n.
+Per tant, n^(n^(n+1)) = n^(n^n * n).
+Com que n^n = m, podem substituir n^n per m a l'exponent:
+n^(n^n * n) = n^(m * n).
+Ara, podem utilitzar la propietat de les potències (a^b)^c = a^(b*c) per reescriure l'expressió:
+n^(m * n) = (n^n)^m.
+Com que n^n = m, podem substituir n^n per m:
+(n^n)^m = m^m.
+Per tant, n^(n^(n+1)) = m^m.
+
+Resposta: D)

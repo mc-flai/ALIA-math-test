@@ -1,0 +1,108 @@
+<think>
+Prime, identificem las cifras de las tres números que se están sumando: 222, 333 y 444.
+
+Luego, identificamos las posibles fluctuaciones en cada una de sus cifras para asegurarnos de que la suma final seaigualada a 987.
+
+Después, analizamos cómo cambiar las dígitas de los números para obtener la suma exacta y countamos cuántas fluctuaciones necesitan aplicarse para lograrlo.
+
+Finalmente, determinamos cuántas cifras de dígits se han necesitatedzen cambiar para que la suma final coincida con 987.
+</think>
+
+Para resolver el problema, seguiremos estos pasos:
+
+1. **Identificar las cifras originales**:
+   
+   - **222**: Digits: 2, 2, 2
+   - **333**: Digits: 3, 3, 3
+   - **444**: Digits: 4, 4, 4
+
+2. **Sumar las cifras de cada posición**:
+   
+   - **Pendiente:** Suma directamente las cifras de cada posición para obtener una suma inicial.
+   
+     \[
+     \begin{align*}
+     200 + 300 + 400 &= 900 \\
+     20 + 30 + 40 &= 90 \\
+     2 + 3 + 4 &= 9
+     \end{align*}
+     \]
+     
+     **Suma inicial**: **900 + 90 + 9 = 999**
+
+3. **Compare con la suma final desired (987)**:
+   
+   - La suma initial es **999**, que es mayor que **987**.
+   - Por lo tanto, necesitamos reduce la suma en **12**.
+
+4. **Analizar las fluctuaciones necessarias para reducir la suma de 12**:
+   
+   - **Cifras pendientes a cambiar**: Necesitamos reductiones en las dígitos más valiosos (igualmente, los que tengan la mayor importancia por contribuir más al valor decimal).
+   
+     \[
+     \begin{align*}
+     &222 \xrightarrow{\text{(reducir}}) 205 \\
+     &333 \xrightarrow{\text{(reducir}}) 188 \\
+     &444 \xrightarrow{\text{(reducir}}) 769
+     \end{align*}
+     \]
+     
+   - ** fluctuaciones necesarias**:
+     
+     - **222**: Reducir de **2 a 0** en la posición de las unidades (reducción de **2 + 2 = 4**).
+     - **333**: Reducir de **3 a 1** en la posición de las unidades (reducción de **3 + 3 = 6$$).
+     - **444**: Reducir de **4 a 0** en la posición de las unidades (reducción de **4 + 4 = 8$$).
+
+5. **Total de fluctuaciones necessarias**:
+   
+   \[
+   4 + 6 + 8 = 18
+   \]
+
+   Ahora, vemos que necesitamos reducir la suma en **12**, lo cual es posible si cambiamos **4** dígitos.
+
+6. **Determinar cuántas fluctuaciones necesitan aplicarse**:
+   
+   - **Cifras pendientes a cambiar**: 4
+   - ** fluctuaciones necesarias reducir**: 12
+
+   Ahora, analizamos las fluctuaciones y cuáles se deben cambiar para reducir la suma.
+
+7. **Reafirmación de las fluctuaciones**:
+   
+   - **Cifras pendientes a cambiar**:
+     
+     \[
+     \begin{align*}
+     &222 \xrightarrow{\text{(reducir}}) 205 \\
+     &333 \xrightarrow{\text{(reducir}}) 188 \\
+     &444 \xrightarrow{\text{(reducir}}) 769
+     \end{align*}
+     \]
+     
+   - ** fluctuaciones necesarias reducir**:
+     
+     \[
+     \begin{align*}
+     &205: + (1 + 3 + 4 = 8) \\
+     &188: + (1 + 1 + 9 = 11) \\
+     &769: + (8 + 3 + 4 = 15)
+     \end{align*}
+     \]
+     
+   - **Total de fluctuaciones**:
+     
+     \[
+     8 + 11 + 15 = 34
+     \]
+     
+   Ahora, vemos que necesitamos reducir la suma en **12**, lo cual es posible si cambiamos **4** dígitos.
+
+8. **Raonamiento final**:
+   
+   - **Cifras pendientes a cambiar**: 4
+   - ** fluctuaciones necesarias reducir**: 12
+
+   Conclusión: necesitamos cambiar **4** dígitos para reducir la suma en el valor deseado.
+
+\boxed{B}

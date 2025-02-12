@@ -1,0 +1,10 @@
+Raonament:
+Aquest problema és un problema de combinatòria, específicament de permutacions amb repeticions. Tenim un total de 5 cubs (3 vermells i 2 blancs). Si tots els cubs fossin diferents, tindríem 5! (5 factorial) permutacions possibles, que és 5 * 4 * 3 * 2 * 1 = 120. No obstant això, els cubs vermells són idèntics entre si, i els cubs blancs també ho són. Per tant, hem de dividir el nombre total de permutacions per les permutacions dels cubs vermells i les permutacions dels cubs blancs per eliminar les repeticions.
+
+El nombre de permutacions de 3 cubs vermells és 3! = 3 * 2 * 1 = 6.
+El nombre de permutacions de 2 cubs blancs és 2! = 2 * 1 = 2.
+
+Per tant, el nombre total de torres diferents que Sara pot construir és:
+5! / (3! * 2!) = 120 / (6 * 2) = 120 / 12 = 10
+
+Resposta: D)

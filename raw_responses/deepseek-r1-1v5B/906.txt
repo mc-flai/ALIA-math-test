@@ -1,0 +1,40 @@
+<think>
+Para resolver la operación dada, primero identifico que contains potencias exponenciales con base 2. La expresión es:
+
+2^(2²) · 2^(2^(2²)) : ((2²)²)²
+
+Sé que en las exponentes hay parities que pueden ser reducidas o simplificado de manera estructurada.
+
+Primero, calculemos cada parte del producto y la división separadamente.
+
+1. La primera potencia: 2^(2²). Sabemos que 2² es 4, así que esta es 2^4 = 16.
+
+2. La segunda potencia: 2^(2^(2²)). Primero calculamos el exponente intermedio: 2² = 4. Ahora, esto es 2^4 = 16. Luego, 2^ (2^4) es 2^16.
+
+Ahora, multiplicamos las dos partes: 16 · 2^16 = 2^4 · 2^16 = 2^(4+16) = 2²⁰.
+
+Después de todo esto, la operación restante es la división por ((2²)²)². Primero calculamos el denominador: (2²)² es 4² = 16, y luego ((2²)²)² = 16² = 256.
+
+Finalmente, dividimos 2^20 entre 256: 2^20 / 2^8 = 2^(20-8) = 2¹².
+
+Entonces, el resultado es 2^12, que corresponde a la opción D.
+</think>
+
+Raonament:
+
+La operación dada es:
+\[ 2^{(2^2)} \cdot 2^{(2^{(2^2)})} : ((2^2)^2)^2 \]
+
+Simplificamos cada parte:
+
+1. \( 2^{(2^2)} = 2^4 = 16 \)
+2. \( 2^{(2^{(2^2)})} = 2^{16} \)
+3. Denominador: \( ((2^2)^2)^2 = (4^2)^2 = 16^2 = 256 \)
+
+Multiplicamos las partes del producto:
+\[ 16 \cdot 2^{16} = 2^4 \cdot 2^{16} = 2^{4+16} = 2^{20} \]
+
+Dividimos por el denominador:
+\[ \frac{2^{20}}{256} = \frac{2^{20}}{2^8} = 2^{20-8} = 2^{12} \]
+
+**Respuesta:** \(\boxed{D)\; 2^{12}}\)

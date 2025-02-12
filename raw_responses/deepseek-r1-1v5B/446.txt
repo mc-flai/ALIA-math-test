@@ -1,0 +1,113 @@
+<think>
+Para determinar cuál de las opciones no puede ser el perímetro del rectángulo con cada lado entero par, primero calculamos el perímetro general. El perímetro de un rectángulo se calcula de la siguiente manera:
+
+Perímetro = 2*(longitud + ancho)
+
+Dado que cada lado es par, botho la longitud y ancho son números enteros pares. Por lo tanto, sumarlos dos y multiplificar por 2 también resultará en un número entero.
+
+Ahora, revisando las opciones:
+
+A) 16: Puede ser perimeter, por ejemplo, 4x4 (perímetro=2*(4+4)=16).
+
+B) 136: Puede ser perimeter, por ejemplo, 58x58 (perímetro=2*(58+58)=236, pero no, eso es 236, no 136. Ahora se acerca a la división entera.)
+
+Ahora, verificamos si B) 136 puede ser perimeter. Supongamos que el perímetro es 136, entonces:
+
+136 = 2*(l + a), donde l y a son números enteros pares.
+
+Dividimos ambos lados por 2: 68 = l + a
+
+Ahora, busquemos dos números pares que sumen 68. Por ejemplo, 34 y 34: 34*2=68, pero su perimeter sería 136, que es la opción B.
+
+C) 180: Similar al anterior,
+
+180 = 2*(l + a)
+
+Dividir por 2: 90 = l + a
+
+En este caso, existen pares que sumen 90. Por ejemplo, 45 y 45, pero eso no es par, correcto?
+
+No, 45 es impar. Por lo tanto, necesitamos dos números pares que sumen 90.
+
+Ejemplo: 44 y 46. Suma = 90, bothos pares. Entonces perimeter=2*(44+46)=180, por lo que C) es posiblemente una opción correcta.
+
+D) 246:
+
+246 = 2*(l + a)
+
+Dividir por 2: 123 = l + a
+
+Ahora, necesitamos dos números pares que sumen 123. Pero 123 es impar y la suma de dos números pares always da un número par, por lo que no hay dos pares que sumen 123.
+
+Por lo tanto, D) 246 no puede ser el perímetro del rectángulo con cada lado par.
+
+E) 300:
+
+300 = 2*(l + a)
+
+Dividir por 2: 150 = l + a
+
+Existen pares que sumen 150. Por ejemplo, 74 y 76. Suma=150, bothos pares.
+
+Entonces, E) es posiblemente una opción correcta.
+
+Reviso la respuesta proporcionada: La respuesta menciona D) 246 como no potente perimeter, ya que su suma de lados es impar.
+</think>
+
+Raonament:
+
+El perímetro del rectángulo se calcula como:
+
+\[
+P = 2 \times (l + a)
+\]
+
+Donde \( l \) y \( a \) son los longitudes de cada lado.
+
+Dado que ambos lados son números enteros pares, la suma de ambos es par. Multiplicando por 2, el perímetro será también un número entero par.
+
+Revisando las opciones:
+
+- **A) 16**:
+  
+  \[
+  16 = 2 \times (l + a) \Rightarrow l + a = 8
+  \]
+  
+  Por ejemplo: \( l = 4 \), \( a = 4 \).
+
+- **B) 136**:
+
+  \[
+  136 = 2 \times (l + a) \Rightarrow l + a = 68
+  \]
+  
+  Por ejemplo: \( l = 34 \), \( a = 34 \).
+
+- **C) 180**:
+  
+  \[
+  180 = 2 \times (l + a) \Rightarrow l + a = 90
+  \]
+  
+  Por ejemplo: \( l = 44 \), \( a = 46 \).
+
+- **D) 246**:
+
+  \[
+  246 = 2 \times (l + a) \Rightarrow l + a = 123
+  \]
+  
+  123 es impar, y la suma de dos números pares siempre es par. Por lo tanto, no hay dos pares que sumen 123.
+
+- **E) 300**:
+  
+  \[
+  300 = 2 \times (l + a) \Rightarrow l + a = 150
+  \]
+  
+  Por ejemplo: \( l = 74 \), \( a = 76 \).
+
+Conclusión:
+
+\boxed{D}

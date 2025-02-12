@@ -1,0 +1,31 @@
+Raonament:
+Primer, trobem la descomposició en factors primers de 1000:
+1000 = 10^3 = (2*5)^3 = 2^3 * 5^3
+
+Els divisors de 1000 són de la forma 2^a * 5^b, on a pot ser 0, 1, 2 o 3, i b pot ser 0, 1, 2 o 3.
+Perquè un divisor sigui parell, el valor de 'a' ha de ser almenys 1. Per tant, 'a' pot ser 1, 2 o 3. 'b' pot ser qualsevol valor entre 0 i 3.
+
+Els divisors parells són:
+- 2^1 * 5^0 = 2
+- 2^1 * 5^1 = 10
+- 2^1 * 5^2 = 50
+- 2^1 * 5^3 = 250
+- 2^2 * 5^0 = 4
+- 2^2 * 5^1 = 20
+- 2^2 * 5^2 = 100
+- 2^2 * 5^3 = 500
+- 2^3 * 5^0 = 8
+- 2^3 * 5^1 = 40
+- 2^3 * 5^2 = 200
+- 2^3 * 5^3 = 1000
+
+La suma dels divisors parells és:
+2 + 10 + 50 + 250 + 4 + 20 + 100 + 500 + 8 + 40 + 200 + 1000 = 2184
+
+Alternativament, podem calcular la suma dels divisors de 1000 i restar la suma dels divisors imparells.
+La suma de tots els divisors de 1000 és (1+2+2^2+2^3)(1+5+5^2+5^3) = (1+2+4+8)(1+5+25+125) = 15 * 156 = 2340
+Els divisors imparells són de la forma 2^0 * 5^b, on b pot ser 0, 1, 2 o 3.
+La suma dels divisors imparells és (1)(1+5+25+125) = 156
+La suma dels divisors parells és 2340 - 156 = 2184
+
+Resposta: C)

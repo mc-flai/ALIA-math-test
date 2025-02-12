@@ -1,0 +1,42 @@
+<think>
+El problema es resolviut per escritzing toms nombres enteros positius des de 1 fins al 2019 sense deixar-se'n cap. Per aixordar el nombre d'files que ha scrit, he escrit 25 xifres.
+
+Primera part: identificar quina és la quantitat total de números enteros posits del 1 al 2019.
+
+El nombre total de nombres es pot calcular amb la fórmula: n = (m - a + 1), on m és el més grand i a és l'el més petit. Aquí, a=1 i m=2019. Aplicant la fórmula: n = (2019 - 1) + 1 = 2019.
+
+Llavors ha scrit 25 xifres per a l'espai available, que conten 25 nombres perfile o whatever. Aleshores el nombre de dos xifres del nombre final serà la més gràna possible que siga aixordar 25 xifres sense superar el nombre total de números posits.
+
+El nombre d'xifres potents tot i la mateixa es Pot(i, 100) = floor(log10(N)) + 1. Així, donats N=25 xifres i que max(N)=2019, el nombre de dos xifres serà el més grand possible sense que el nombre de xifres tots en quin del file com s'escriti siga aixordar 25. Es potement escolllar entre les alternatives donades.
+
+Així, la resposta serà D) 20.
+</think>
+
+Raonament: 
+
+El problema es resolviut per escritting toms nombres enteros positius des de 1 fins al 2019 sense deixar-se'n cap. Per aixordar el nombre d'files que ha scrit, ha escrit 25 xifres.
+
+La quantitat total de nombres enteros posits del 1 al 2019 es pot calcular amb la fórmula: 
+\[
+n = (m - a + 1)
+\]
+on \( m \) és el més grand i \( a \) és l'el més petit. Així, \( a=1 \) i \( m=2019 \). Aplicant la fórmula:
+\[
+n = (2019 - 1) + 1 = 2019
+\]
+
+Llavors ha scrit 25 xifres per a l'espai available, que conten 25 nombres perfile o whatever. Aleshores el nombre de dos xifres del nombre final serà la més gràna possible que siga aixordar 25 xifres sense superar el nombre total de números posits.
+
+La quantitat de dos xifres potents tot i la mateixa es:
+\[
+\text{Pot(i, 100)} = \lfloor \log_{10}(N) \rfloor + 1
+\]
+on \( N=25 \). Aplicant la fórmula:
+\[
+\text{Pot(i, 100)} = \lfloor \log_{10}(25) \rfloor + 1 = 1 + 1 = 2
+\]
+
+Els dos xifres del nombre final serán el més gràna possible que siga aixordar 25 xifres sense superar el nombre total de números posits. Quan expresso s'ha escrit complet?
+\[
+\boxed{D)
+\]

@@ -1,0 +1,20 @@
+Raonament:
+Hem de trobar totes les combinacions de 5 nombres imparells que sumen 13. Comencem amb el nombre imparell més petit, que és 1, i anem augmentant els nombres per trobar totes les combinacions possibles.
+
+1. Si utilitzem cinc 1s, la suma és 5, que és massa petita.
+2. Si utilitzem quatre 1s, necessitem un altre nombre imparell que sumi 13 - 4 = 9. Aquest nombre és 9, així que tenim la combinació 1+1+1+1+9.
+3. Si utilitzem tres 1s, necessitem dos nombres imparells que sumin 13 - 3 = 10. Les combinacions possibles són 3+7 i 5+5. Això ens dona les combinacions 1+1+1+3+7 i 1+1+1+5+5.
+4. Si utilitzem dos 1s, necessitem tres nombres imparells que sumin 13 - 2 = 11. Les combinacions possibles són 1+1+9, 1+3+7, 1+5+5, 3+3+5. Això ens dona les combinacions 1+1+1+3+7 (ja la tenim), 1+1+1+5+5 (ja la tenim), 1+1+3+3+5.
+5. Si utilitzem un 1, necessitem quatre nombres imparells que sumin 13 - 1 = 12. Les combinacions possibles són 1+1+1+9 (ja la tenim), 1+1+3+7 (ja la tenim), 1+1+5+5 (ja la tenim), 1+3+3+5. Això ens dona la combinació 1+3+3+3+3.
+6. Si no utilitzem cap 1, necessitem cinc nombres imparells que sumin 13. La combinació més petita seria 3+3+3+3+1, que ja tenim. No hi ha cap altra combinació possible sense utilitzar el 1.
+
+Per tant, les combinacions úniques són:
+* 1+1+1+1+9
+* 1+1+1+3+7
+* 1+1+1+5+5
+* 1+1+3+3+5
+* 1+3+3+3+3
+
+En total, hi ha 5 combinacions possibles.
+
+Resposta: B)

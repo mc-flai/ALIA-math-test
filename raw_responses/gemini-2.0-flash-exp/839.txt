@@ -1,0 +1,19 @@
+Raonament:
+El segle XXI comença l'any 2001 i acaba l'any 2100. Hem de buscar els anys dins d'aquest interval on la suma de les seves xifres sigui 4.
+
+*   Anys de la forma 20XY:
+    *   Si X=0, llavors 2 + 0 + 0 + Y = 4, per tant Y = 2. L'any és 2002.
+    *   Si X=1, llavors 2 + 0 + 1 + Y = 4, per tant Y = 1. L'any és 2011.
+    *   Si X=2, llavors 2 + 0 + 2 + Y = 4, per tant Y = 0. L'any és 2020.
+    *   Si X=3, llavors 2 + 0 + 3 + Y = 4, per tant Y = -1. No és vàlid.
+    *   Si X=4, llavors 2 + 0 + 4 + Y = 4, per tant Y = -2. No és vàlid.
+    *   Per a X > 2, la suma de les xifres serà sempre major que 4.
+
+*   Anys de la forma 21XY:
+    *   Si X=0, llavors 2 + 1 + 0 + Y = 4, per tant Y = 1. L'any és 2101. Aquest any no pertany al segle XXI.
+    *   Si X=1, llavors 2 + 1 + 1 + Y = 4, per tant Y = 0. L'any és 2110. Aquest any no pertany al segle XXI.
+    *   Per a X > 0, la suma de les xifres serà sempre major que 4.
+
+Per tant, els anys del segle XXI que compleixen la condició són 2002, 2011 i 2020. Hi ha 3 anys.
+
+Resposta: C)

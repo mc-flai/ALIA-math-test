@@ -1,0 +1,44 @@
+Raonament:
+L'alfabet té 6 lletres: A, C, G, N, R, U. Les paraules són de 6 lletres diferents, per tant, són permutacions de les 6 lletres. El nombre total de paraules és 6! = 720. Volem trobar la paraula que ocupa la posició 537.
+
+Per trobar la paraula a la posició 537, podem raonar de la següent manera:
+1. **Primera lletra:**
+   - Si la primera lletra és A, hi ha 5! = 120 paraules que comencen per A.
+   - Si la primera lletra és C, hi ha 5! = 120 paraules que comencen per C.
+   - Si la primera lletra és G, hi ha 5! = 120 paraules que comencen per G.
+   - Si la primera lletra és N, hi ha 5! = 120 paraules que comencen per N.
+   - Si la primera lletra és R, hi ha 5! = 120 paraules que comencen per R.
+   - Si la primera lletra és U, hi ha 5! = 120 paraules que comencen per U.
+   Com que 120 * 4 = 480 i 120 * 5 = 600, la paraula 537 estarà entre les que comencen per R.
+   El número de paraules que comencen per A, C, G i N és 4 * 120 = 480. Per tant, la paraula 537 serà la 537 - 480 = 57a paraula que comença per R.
+
+2. **Segona lletra:**
+   - Si la segona lletra és A, hi ha 4! = 24 paraules que comencen per RA.
+   - Si la segona lletra és C, hi ha 4! = 24 paraules que comencen per RC.
+   - Si la segona lletra és G, hi ha 4! = 24 paraules que comencen per RG.
+   - Si la segona lletra és N, hi ha 4! = 24 paraules que comencen per RN.
+   - Si la segona lletra és U, hi ha 4! = 24 paraules que comencen per RU.
+   Com que 24 * 2 = 48 i 24 * 3 = 72, la paraula 57a que comença per R estarà entre les que comencen per RG.
+   El número de paraules que comencen per RA i RC és 2 * 24 = 48. Per tant, la paraula 57a que comença per R serà la 57 - 48 = 9a paraula que comença per RG.
+
+3. **Tercera lletra:**
+   - Si la tercera lletra és A, hi ha 3! = 6 paraules que comencen per RGA.
+   - Si la tercera lletra és C, hi ha 3! = 6 paraules que comencen per RGC.
+   - Si la tercera lletra és N, hi ha 3! = 6 paraules que comencen per RGN.
+   - Si la tercera lletra és U, hi ha 3! = 6 paraules que comencen per RGU.
+   Com que 6 * 1 = 6 i 6 * 2 = 12, la paraula 9a que comença per RG estarà entre les que comencen per RGC.
+   El número de paraules que comencen per RGA és 6. Per tant, la paraula 9a que comença per RG serà la 9 - 6 = 3a paraula que comença per RGC.
+
+4. **Quarta lletra:**
+   - Si la quarta lletra és A, hi ha 2! = 2 paraules que comencen per RGCA.
+   - Si la quarta lletra és N, hi ha 2! = 2 paraules que comencen per RGCN.
+   - Si la quarta lletra és U, hi ha 2! = 2 paraules que comencen per RGCU.
+   Com que 2 * 1 = 2 i 2 * 2 = 4, la paraula 3a que comença per RGC estarà entre les que comencen per RGCN.
+   El número de paraules que comencen per RGCA és 2. Per tant, la paraula 3a que comença per RGC serà la 3 - 2 = 1a paraula que comença per RGCN.
+
+5. **Cinquena i sisena lletra:**
+   Les lletres que queden són A i U. La primera paraula que comença per RGCN és RGCNUA. La segona és RGCNUA. Per tant, la primera paraula que comença per RGCN és RGCNUA.
+
+Per tant, la paraula que ocupa la posició 537 és RGCNUA.
+
+Resposta: E)

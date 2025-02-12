@@ -1,0 +1,14 @@
+Raonament:
+Un hexàgon regular té 6 vèrtexs. Per a cada parella de vèrtexs, els punts que estan exactament a 1 cm de distància d'ambdós vèrtexs formen una circumferència de radi 1 cm centrada en cada vèrtex. Per tant, hem de comptar les interseccions d'aquestes circumferències.
+
+1. **Vèrtexs adjacents:** Si considerem dos vèrtexs adjacents, la distància entre ells és 1 cm. Les dues circumferències de radi 1 cm centrades en aquests vèrtexs es tallen en dos punts: un és l'altre vèrtex adjacent i l'altre és un punt fora de l'hexàgon. Com que hi ha 6 parelles de vèrtexs adjacents, això ens dona 6 punts fora de l'hexàgon.
+
+2. **Vèrtexs separats per un vèrtex:** Si considerem dos vèrtexs separats per un vèrtex, la distància entre ells és igual a la longitud del costat multiplicada per l'arrel quadrada de 3 (aproximadament 1.732 cm). Les circumferències de radi 1 cm centrades en aquests vèrtexs no es tallen.
+
+3. **Vèrtexs oposats:** Si considerem dos vèrtexs oposats, la distància entre ells és 2 cm. Les circumferències de radi 1 cm centrades en aquests vèrtexs es tallen en un punt, que és el centre de l'hexàgon. Com que hi ha 3 parelles de vèrtexs oposats, això ens dona 1 punt (el centre de l'hexàgon).
+
+4. **Altres parelles de vèrtexs:** No hi ha altres parelles de vèrtexs que estiguin a una distància tal que les circumferències de radi 1 cm es tallin.
+
+Per tant, tenim 6 punts fora de l'hexàgon (un per cada parella de vèrtexs adjacents) i 1 punt al centre de l'hexàgon (per les parelles de vèrtexs oposats). En total, hi ha 6 + 1 = 7 punts.
+
+Resposta: B)

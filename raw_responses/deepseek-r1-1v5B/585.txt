@@ -1,0 +1,87 @@
+<think>
+Para resolver la ecuación \((x^2 - 4x + 5)^{x^2 + x - 30} = 1\), seguiremos estos pasos:
+
+1. **Sigue la condición de base 1:**
+   La expresión seráigual a 1 si:
+   - La base es igual a 1, es decir, \(x^2 - 4x + 5 = 1\).
+   - Otra caso es que la exponentiazz seaigual a 0, y la base no seaigual a 0.
+
+2. **Resolver la ecuación \(x^2 - 4x + 5 = 1\):**
+   Simplificando:
+   \[
+   x^2 - 4x + 4 = 0
+   \]
+   Factorizamos:
+   \[
+   (x - 2)^2 = 0 \Rightarrow x = 2
+   \]
+
+3. **Resolver la ecuación exponentialsigual a 0:**
+   - \(x^2 + x - 30 = 0\) y \(x^2 - 4x + 5 \neq 0\).
+
+   Factorizamos la ecuación:
+   \[
+   (x + 6)(x - 5) = 0 \Rightarrow x = -6 \text{ o } x = 5
+   \]
+
+4. **Verificar si la base esigual a 0:**
+   \[
+   x^2 - 4x + 5 = 0 \Rightarrow D = (-4)^2 - 4 \times 1 \times 5 = 16 - 20 = -4 < 0
+   \]
+   Por lo tanto, la base no esigual a 0.
+
+5. **Reconsiderar las soluciones:**
+   - \(x = 2\): Verificamos que \(x^2 + x - 30 = 2\), y por lo tanto, la ecuación será \(1^2 = 1\).
+   - \(x = -6\): \(x^2 + x - 30 = 3\) (igual a 3), y la base esigual a 1. Dado que 1 elevado a cualquier potencia esigual a 1, x=-6 es una solución.
+   - \(x = 5\): \(x^2 + x - 30 = 0\) y la base esigual a 1. Por lo tanto, también será una solución.
+
+6. **Countar las soluciones:**
+   - x=2
+   - x=-6
+   - x=5
+
+   Por lo tanto, hay tres soluciones reales distintas.
+</think>
+
+Para resolver la ecuación \((x^2 - 4x + 5)^{x^2 + x - 30} = 1\), seguiremos estos pasos:
+
+1. **Identificar los casos en que una expresión potencial seaigual a 1:**
+   
+   La expresión esigual a 1 si:
+   - **Casofracas base igual a 1:**
+     \[
+     x^2 - 4x + 5 = 1
+     \]
+     Simplificando:
+     \[
+     x^2 - 4x + 4 = 0 \\
+     (x - 2)^2 = 0 \\
+     x = 2
+     \]
+     
+   - **Casofracas exponentialsigual a 0, y la base no seaigual a 0:**
+     \[
+     x^2 + x - 30 = 0 \quad \text{y} \quad x^2 - 4x + 5 \neq 0
+     \]
+     
+     Factorizamos la ecuación:
+     \[
+     (x + 6)(x - 5) = 0 \\
+     x = -6 \quad \text{o} \quad x = 5
+     \]
+     
+     Verificamos que las bases no seanigualas a 1:
+     \[
+     (-6)^2 - 4(-6) + 5 = 36 + 24 + 5 = 65 \neq 0 \\
+     5^2 - 4(5) + 5 = 25 - 20 + 5 = 10 \neq 0
+     \]
+     
+     Por lo tanto, ambas soluciones son validas.
+
+2. **Reconocer las soluciones reales distintas:**
+   - \(x = 2\)
+   - \(x = -6\)
+   - \(x = 5\)
+
+**Respuesta final:**  
+La ecuación tiene \(\boxed{3}\) soluciones reales distintas.

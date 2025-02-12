@@ -1,0 +1,55 @@
+<think>
+Para resolver este problema, primero identificaremos las dimensiones posibles para un cub de plástic que compliquen las condiciones dadas.
+
+1. **Determinar la longitud de l'aresta**:
+   - La longitud de l'aresta está en centímetres i fulls.
+   - El cub debe complqrtre el volumen inferior a 0,1 dm³ y inferior a 1 m³.
+   - Convertimos los volúmenes a cm³ para facilitar la comparación:
+     - 0.1 dm³ = 10 cm³
+     - 1 m³ = 1000 cm³
+   - Por lo tanto, la longitud de l'aresta debe estar entre 4 y 9 centímetres (puedes calcular esto si es necesario).
+
+2. **Calcular las dimensiones posibles para l'aresta**:
+   - Enumeramos los números enteros que lieven entre 4 y 9 centímetres, incluyendo los enteros fulls.
+   - Por lo tanto, las longitudes de l'aresta pueden ser: 4 cm, 5 cm, 6 cm, 7 cm, 8 cm y 9 cm.
+   - Esto nos da 6 posibles valores.
+
+3. **Calcular el volumen para cada longitud**:
+   - Para cada valor de la longitud (l), el volumen del cub será l³.
+   - Por ejemplo:
+     - L=4 cm → V=4³=64 cm³
+     - L=5 cm → V=125 cm³
+     - L=6 cm → V=216 cm³
+     - L=7 cm → V=343 cm³
+     - L=8 cm → V=512 cm³
+     - L=9 cm → V=729 cm³
+
+4. **Determine el número de cubos que compliquen las condiciones**:
+   - Verificamos si cada volumen es entre 10 cm³ y 1000 cm³.
+   - Observamos que todos los volúmenes calculados (64, 125, 216, 343, 512, 729) satisfacen esta condición.
+
+5. **Total de cubos posibles**:
+   - Tomamos el número total de longitudes de l'aresta que satisfyn las condiciones: 6.
+   - Por lo tanto, la fàbrica puede crear 6 cubos de plástic combinando las diferentes longitudes de l'aresta que compliquen lascondiciones dadas.
+
+Finalmente, observamos que el número total de volumenes posibles que verifican las condiciones de la question es 6.
+</think>
+
+Para determinar cuántas grandàries diferents poden ser els cubs de plàstic en la fàbrica:
+
+1. **Identificar la longitud de l'aresta**:
+   - La longitud de l'aresta (l) debe complqrtre el volumen 0.1 dm³ a 1 m³, equivalents a 10 cm³ a 1000 cm³.
+   - L'aresta debe ser un número entero que caiga entre 4 y 9 centímetres.
+
+2. **Enumerar las longitudes de l'aresta**:
+   - Possible longitudes: 4 cm, 5 cm, 6 cm, 7 cm, 8 cm, 9 cm.
+   - Número total de longitudes: 6.
+
+3. **Calcular el volumen para cada longitud**:
+   - \(\boxed{V = l^3}\).
+
+4. **Determinar cuántos cubos existen en la fàbrica**:
+   - Cada longitud l produce un volumen \(V = l^3\) que compliqua lascondiciones.
+   - Por lo tanto, hay 6 volumenes que compliquen lascondiciones.
+
+\(\boxed{6}\)

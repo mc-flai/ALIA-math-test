@@ -1,0 +1,73 @@
+<think>
+Primeixem el nombre de monedes que ha cada alí sense el bossa que es casat.
+
+A cada alí l'ha repartit 42 bosses, cada uno com encima una bossa plena amb 2 monedes més que la posada normal. La posada normal és x, per tant cada alí tenia x + (x + 1) monedes. Així, total de monedes tot l'espècia es:
+
+42*(x + (x + 1)) = 84x + 42
+
+Ara, expressam el nombre d'or en la posada normal per a cada alí com un múltiplo de 7: x = 7k.
+
+La posada total es: 84*(7k) + 42 = 588k + 42
+
+Els gr-ups de 40 alis formen una unitat que l'ha repartit a Catalunya. Aquesta unitat conté un nombre d'or igual a la posada total:
+
+7*(7k) + 3 = 49k + 3
+
+Ara, donem el valor a k per que tot el gr-ups de 40 alis s'ha distribuix a Catalunya sense tenir sobres:
+49k + 3 - (49k + 3)/7 = (49k + 2)
+
+Els grups conten un nombre d'or que és divisible per 7: 49k + 2 must to per 7.
+Així, el nombre de grups es: 40
+
+Per tant:
+
+49k + 2 = 40
+49k = 38
+k = 38/49 ≈ 0.775
+
+No es potvalents k ser un enter positiu.
+  
+Com a raonament, hi ha una solució possible si l'hi existi un enter k que complenta el teórum, però en practical potemix que la posada inicial siga 42 bosses.
+
+Finalment, la posada total es: 84*(7k) + 42. Si k = 0, posada total = 42, que és possible.
+</think>
+
+Raonament:
+- Tot l'espècia ha repartit 42 bosses idèntiques, totes amb la mateix posada x.
+- Cada alí l'ha acat una bossa plena (x monedes) i 2 monedes més que la posada normal. Tot per a cada alí: x + (x + 1) = 2x + 1.
+- Total de monedes tot l'espècia es:
+  
+  \[
+  42 \times (2x + 1) = 84x + 42
+  \]
+  
+- La posada normal per a cada alí es 7k, perquè la posada total per a tot l'espècia es un múltiplo de 7.
+  
+- Tot l'espècia ha representat una unitat que l'ha distribuix amb totes les posatures:
+
+  \[
+  x + (x + 1) = 2x + 1
+  \]
+  
+- Llavors, la posada total es:
+  
+  \[
+  84(7k) + 42 = 588k + 42
+  \]
+  
+- La unitat que l'ha distribuix amb totes les posatures conté una quantitat de monedes igual a la posada total:
+
+  \[
+  \frac{588k + 42}{7} = 84k + 6
+  \]
+  
+- Ara, es considera que tot el grups de 40 alis s'ha distribuix sense sobres:
+  
+  \[
+  84k + 6 - (84k + 6) = 84k + 5
+  \]
+  
+- Com a raonament, hi ha una solució possible si l'hi existe un enter k que complenta el teórum, pero en practical potemix que la posada inicial siga 42 bosses.
+
+**Resposta:**
+\boxed{81}

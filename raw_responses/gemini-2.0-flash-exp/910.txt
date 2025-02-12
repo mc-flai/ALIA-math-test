@@ -1,0 +1,22 @@
+Raonament:
+La promoció indica que un grup de *n* amics té un descompte del *n*% en cada entrada. El màxim descompte per a tot el grup és el preu normal de 4 entrades. Això vol dir que el descompte total del grup no pot superar el valor de 4 entrades.
+
+Si el preu d'una entrada és *p*, el descompte total per a un grup de *n* persones seria *n* * (n/100) * *p* = (n^2/100) * *p*. El màxim descompte és el preu de 4 entrades, que és 4*p*. Per tant, hem de trobar el valor màxim de *n* tal que:
+
+(n^2/100) * *p* <= 4 * *p*
+
+Dividint ambdós costats per *p* (assumint que el preu d'una entrada és positiu), obtenim:
+
+n^2/100 <= 4
+
+Multiplicant ambdós costats per 100:
+
+n^2 <= 400
+
+Prenent l'arrel quadrada d'ambdós costats:
+
+n <= 20
+
+Per tant, el nombre màxim de persones en un grup per a que el descompte no supere el preu de 4 entrades és 20.
+
+Resposta: B)

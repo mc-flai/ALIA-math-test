@@ -1,0 +1,104 @@
+<think>
+Bèta, siguiem un pass-by-pass per resoldre el problema.
+
+ primer, coneixem que la mida del rellotge electrònic 示例ifica les horisors i minuts, com a exemple:
+
+- 00:00 show <15:00>.
+
+Aquesta vegada, el 00:00 inclou un zero.
+
+El objecti és determinar el nombre de moments exactament amb 3 zeros en la mida del rellotge sense que treguiem el 00:00.
+
+Amb la darrada, seguirem les passos segents:
+
+1. **Definiremos la quantitat de horisors i minuts en un perihèdode de 24 hores:**
+   - **Horisors (hh):** del 00 a 23, tot sense a les dades.
+   - **Minuts (mm):** del 00 a 59.
+
+2. **Determinemos el nombre de zeros que pot tenir la mida total per un rellotge:**
+   - **HH:** Ambusions, si H=0, tenim un zero al final.
+   - **MM:** Si M=00, tenim dos zeros; si M>=15, tenim dos zeros (una d'arriondo i una final).
+
+3. **Calularíem el total de zeros per rellotge:**
+   - **Càlculo del zero en HH:**
+     - Si H >= 0 i <=9 (per a 0 a 15), tenim un zero.
+     - Si H >=10 a 23, no tenim zero.
+   - **Calcular zeros per MM:**
+     - Si M = 00, dos zeros; si M >=15, dos zeros.
+
+4. **Sumem el total de zeros tot per un rellotge (HH + MM):**
+
+   D'aquesta expressión pot可以从 que hi hagin 3 zeros a l' instant que quemigual. El que volga que treguiem exactament 3 zeros, hem perpiciolat per a les posibles posicions ocurrir amb 3 zeros.
+
+5. **Calularíem el nombre de moments que canvien la quantitat d'zero a 3.**
+
+Així, es possible que l' instant que tenim un moment que cometa exactament 3 zeros.
+
+6. **Evaluem tot i dijém el nombre de such moments en el perihèdode de 24 hores:**
+   - Sumem els moments per cada posició possible de H i M que resulten a les condicions d'hipotèses anteriors.
+
+Aplicant això, observaixem que hi pot ser exactament un moment que canvina exactament 3 zeros.
+</think>
+
+Bèta, resovim el problema de manera detallada:
+
+**Problema:**
+En un període de 24 hores, quants minuts ho volem que cometin exactament 3 zeros en la mida electrònic del rellotge?
+
+---
+
+**Solución Pass-by-pass:**
+
+1. **Definiremos la mida del rellotge i el número de zeros possibles:**
+   
+   - La mida del rellotge és un nombre de ddges "HH:mm", on:
+     - **HH:** Un número de dades entre 00 a 23.
+     - **mm:** Una numbresa entre 00 a 59.
+
+   - **Càlcul de zeros:**
+     - Si la posició final (m) ha value 00, l'eixi pot tenir dos zeros.
+     - Si m >=15 i <=23, l'eixi pot tenir dos zeros.
+     - Si m == 15, l'eixi pot tenir dos zeros.
+
+   - Si H = 0 (a la dècima posició), tenim un zero a l'eixi final. Si H >= 10 (a la centèsima posició), no tenim zero.
+
+2. **Determinem el número total de zeros per rellotge:**
+   
+   - Si H = 0:
+     - Si m == 00: Zeros = 3.
+     - Si 0 <= m <15: Zeros = 2 (a la centèsima i final).
+     - Si 15 <= m <=23: Zeros = 2.
+
+   - Si H >=10:
+     - Zeros = 2 (a la centèsima i final).
+
+3. **Calularíem el nombre de moments que canvien el total de zeros a 3:**
+   
+   - Ambijs pot que canviar exactament 3 zeros.
+   - Així, pot tenir un moment que canvina exactament 3 zeros.
+
+4. **Evaluem el número de such moments en el perihèdode de 24 hores:**
+   
+   - **Casos posibles para Zeros = 3:**
+     - H = 0 i m >=15 (mota zero a la centèsima i final).
+       - Ex: 00:15, 00:25, ..., 00:59.
+     - H >=10 i m == 00 (mota dos zeros a la centèsima i final).
+       - Ex: 10:00, 11:00, ..., 23:00.
+
+   - **Calcular el nombre de trets:**
+     - **H = 0 i m >=15:**
+       - **H:** 1 valor.
+       - **m:** del 15 a 59, totals 45 values (59-15+1=45).
+       - Total: 1 * 45 = 45 trets.
+
+     - **H >=10 i m ==00:**
+       - **H:** de 10 a23, totals 14 values.
+       - Total: 14 trets.
+
+   - **Total de trets que canvien el Zeros a 3:**
+     - 45 +14 = \boxed{B) 25}.
+
+---
+
+**Respuesta final:**
+\boxed{B) 25}

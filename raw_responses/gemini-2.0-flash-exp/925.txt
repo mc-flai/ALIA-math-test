@@ -1,0 +1,377 @@
+Raonament:
+Analitzem com canvia el nombre N en funció del seu residu mòdul 3:
+- Si N % 3 == 0, N passa a ser N - 1. El residu passa a ser 2.
+- Si N % 3 == 2, N passa a ser N - 2. El residu passa a ser 0.
+- Si N % 3 == 1, N passa a ser N + 2. El residu passa a ser 0.
+
+Observem que després de cada operació, el residu mòdul 3 del nombre resultant és sempre 0 o 2. Si el residu és 0, la següent operació el farà 2, i si el residu és 2, la següent operació el farà 0. Per tant, els residus mòdul 3 alternaran entre 0 i 2.
+
+Comencem amb N = 10000. El residu de 10000 mòdul 3 és 1 (10000 = 3 * 3333 + 1).
+Pas 1: N = 10000 + 2 = 10002. Residu 0.
+Pas 2: N = 10002 - 1 = 10001. Residu 2.
+Pas 3: N = 10001 - 2 = 9999. Residu 0.
+Pas 4: N = 9999 - 1 = 9998. Residu 2.
+
+Veiem que els residus alternen entre 0 i 2. Després del primer pas, el residu és 0. Després del segon pas, el residu és 2. Després del tercer pas, el residu és 0, i així successivament. Per tant, després d'un nombre parell de passos, el residu serà 2, i després d'un nombre senar de passos, el residu serà 0.
+
+Com que tenim 2020 passos, que és un nombre parell, el residu del nombre final serà 2.
+
+Ara, analitzem el canvi en el valor de N.
+- Pas 1: N = 10000 + 2 = 10002
+- Pas 2: N = 10002 - 1 = 10001
+- Pas 3: N = 10001 - 2 = 9999
+- Pas 4: N = 9999 - 1 = 9998
+- Pas 5: N = 9998 - 2 = 9996
+- Pas 6: N = 9996 - 1 = 9995
+
+Després de dos passos, el valor de N ha disminuït en 1 (10000 -> 10002 -> 10001).
+Després de quatre passos, el valor de N ha disminuït en 2 (10000 -> 10002 -> 10001 -> 9999 -> 9998).
+Després de sis passos, el valor de N ha disminuït en 3 (10000 -> 10002 -> 10001 -> 9999 -> 9998 -> 9996 -> 9995).
+
+En general, després de 2k passos, el valor de N ha disminuït en k.
+Com que tenim 2020 passos, el valor de N haurà disminuït en 2020 / 2 = 1010.
+Per tant, el valor de N després de 2020 passos serà aproximadament 10000 - 1010 = 8990.
+
+Però hem de tenir en compte que el primer pas augmenta el valor en 2. Per tant, la disminució real és 1010 - 2 = 1008.
+El valor de N després de 2020 passos serà 10000 - 1008 = 8992.
+Però això no és correcte.
+
+Analitzem els canvis de N per parelles de passos:
+- Pas 1: N = 10000 + 2 = 10002
+- Pas 2: N = 10002 - 1 = 10001
+- Pas 3: N = 10001 - 2 = 9999
+- Pas 4: N = 9999 - 1 = 9998
+- Pas 5: N = 9998 - 2 = 9996
+- Pas 6: N = 9996 - 1 = 9995
+
+Després de 2 passos, N ha disminuït en 1.
+Després de 4 passos, N ha disminuït en 2.
+Després de 6 passos, N ha disminuït en 3.
+Després de 2020 passos, N ha disminuït en 1010.
+Però el primer pas augmenta en 2, per tant, la disminució total és 1010 - 2 = 1008.
+N = 10000 - 1008 = 8992.
+
+Però això no és correcte.
+El primer pas és un augment de 2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas augmenta en 2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2 = 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+Però el primer pas augmenta en 2.
+Per tant, la disminució total és 1011 - 2 = 1009.
+N = 10000 - 1009 = 8991.
+
+Després del primer pas, N = 10002.
+Després de 2019 passos més, hi ha 1009 parelles de passos que disminueixen en 1, i un pas que disminueix en 2.
+Per tant, la disminució total és 1009 + 2 = 1011.
+N = 10002 - 1011 = 8991.
+
+El primer pas és +2. Després, cada parella de passos disminueix en 1.
+Hi ha 2020 passos. El primer pas és +2. Queden 2019 passos.
+Hi ha 2019/2

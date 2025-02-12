@@ -1,0 +1,62 @@
+<think>
+Primero, necesitamos rotular el punto (7, 2) alrededor de l'origen amb un ángulo de 45° en la direction antihoraria. 
+
+Para hacerlo, recordemos que la fórmula de rotación se puede representar como:
+
+x’ = x * cosθ - y * sinθ
+
+y’ = x * sinθ + y * cosθ
+
+donde (x, y) es el punto original y θ es l'ángulo de rotación.
+
+Siguently, usaremos θ = 45°. Sabemos que cos(45°) = √2/2 i sin(45°) = √2/2. 
+
+Aplicando la fórmula:
+
+x’ = 7 * (√2/2) - 2 * (√2/2) = (7√2 - 2√2)/2 = (5√2)/2
+
+y’ = 7 * (√2/2) + 2 * (√2/2) = (7√2 + 2√2)/2 = (9√2)/2
+
+Entonces, l'origen de la rotación está alrededor de l'origen, y el punto original (7,2) se ha rotatado 45° anti horizant, resultando en las coordenadas (5√2/2, 9√2/2).
+
+Al observar las opciones dadas, la respuesta correcta es A.
+</think>
+
+Raonament:
+
+Para rotular el punto \((7, 2)\) alrededor de l'origen amb un ángulo de \(45^\circ\) en la dirección antihoraria, utilizamos la fórmula de rotación:
+
+\[
+x’ = x \cdot \cos\theta - y \cdot \sin\theta
+\]
+\[
+y’ = x \cdot \sin\theta + y \cdot \cos\theta
+\]
+
+Donde:
+- \((x, y) = (7, 2)\)
+- \(\theta = 45^\circ\)
+
+Calculamos los valores de \(\cos(45^\circ)\) i \(\sin(45^\circ)\):
+\[
+\cos(45^\circ) = \sin(45^\circ) = \frac{\sqrt{2}}{2}
+\]
+
+Aplicando la fórmula:
+\[
+x’ = 7 \cdot \frac{\sqrt{2}}{2} - 2 \cdot \frac{\sqrt{2}}{2} = \left(7 - 2\right) \cdot \frac{\sqrt{2}}{2} = 5 \cdot \frac{\sqrt{2}}{2} = \frac{5\sqrt{2}}{2}
+\]
+\[
+y’ = 7 \cdot \frac{\sqrt{2}}{2} + 2 \cdot \frac{\sqrt{2}}{2} = \left(7 + 2\right) \cdot \frac{\sqrt{2}}{2} = 9 \cdot \frac{\sqrt{2}}{2} = \frac{9\sqrt{2}}{2}
+\]
+
+Luego, las coordenadas del punto después de la rotación son:
+\[
+\left(\frac{5\sqrt{2}}{2}, \frac{9\sqrt{2}}{2}\right)
+\]
+
+Al observar las opciones dadas, la respuesta correcta es:
+
+**A) \(\left(\dfrac{5\sqrt{2}}{2}, \dfrac{9\sqrt{2}}{2}\right)\)**
+
+\boxed{A}

@@ -1,0 +1,85 @@
+<think>
+Prime, identificem los números clave del problema. La hotelada allocateó 500 personas en beforee y 300 personas en la Reconstruction.
+
+A continuación, definimos una variable para denotar las的数量 de habitacions triples o quàdruples que habían existir antes de la reconstructión: x.
+
+La cantidad de habitaciones triples (III) contribuyeron a la总数 de habitaciones. Ahora, para los cubos y cuadros, usamos el concepto de potencia: III^3 para cada triples y III^2 para cada quàdruples.
+
+Finalmente, establecemos una ecuación que suma las habitaciones triples y cubos: x * 3 + y * 2 = total de habitaciones. Sustituimos los valores conocidos (total de habitaciones 500 y 300) para resolver la variable x.
+</think>
+
+**Solución:** 
+
+La problemática del hotel Gran Cangur de Erea es un problema de aritmética básica, relacionada con las cantidades de habitacions triples o quàdruples que habían existir antes de la reconstructión. 
+
+Raonament:
+
+1. **Definimos variables:**
+   - Sea \( x \) el número de habitacions triples (III).
+   - sea \( y \) el número de habitacions quàdruples (QII).
+
+2. **Relación entre las cantidades:**
+   - Cada triples contribute 3 habitaciones.
+   - Cada quàdruple contribute 4 habitaciones.
+
+3. **Total de habitaciones:**
+   \[
+   3x + 4y = \text{Total de habitaciones}
+   \]
+
+4. **Datos del problema:**
+   - Al beforee (efectuando la reconstructión), allocateó **500 personas**.
+   - Ahora, potente a la reconstruction, allocateó **300 personas**.
+
+5. **Establecemos la ecuación base:**
+   \[
+   3x + 4y = 500
+   \]
+
+6. **Desarrollo de la ecuación para encontrar \( x \):**
+
+   - Sustituimos \( y = 100 \):
+     \[
+     3x + 4(100) = 500 \\
+     3x + 400 = 500 \\
+     3x = 100 \\
+     x = \frac{100}{3} \approx 33.33
+     \]
+   
+   - Sin embargo, este resultado no es posible porque el número de habitaciones debe ser un número entero.
+
+7. **Correcto el error:**
+
+   - Reemplazando \( y = 25 \):
+     \[
+     3x + 4(25) = 500 \\
+     3x + 100 = 500 \\
+     3x = 400 \\
+     x = \frac{400}{3} \approx 133.33
+     \]
+   
+   - Still no entero.
+
+8. **Raíz de la obsesión:**
+
+   - La ecuación es incorrecta ya que los datos no son compatibles para encontrar un número entero de habitaciones triples y quàdruples.
+   - Verificando, cuando \( x = 100 \):
+     \[
+     3(100) + 4y = 500 \\
+     300 + 4y = 500 \\
+     4y = 200 \\
+     y = 50
+     \]
+   
+   - Ahora, verificamos si la cantidad de habitaciones quàdruples \( y = 50 \) es correcta:
+     \[
+     \text{Total de habitaciones} = 3(100) + 4(50) = 300 + 200 = 500
+     \]
+   
+   - Por lo tanto, el número de habitacions triples era \( x = 100 \).
+
+**Respuesta final:** 
+
+\[
+\boxed{E}
+\]

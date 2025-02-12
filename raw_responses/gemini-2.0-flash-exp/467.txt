@@ -1,0 +1,20 @@
+Raonament:
+Analitzem les condicions una per una per veure quines són compatibles i quines no:
+
+1. **(1) n és un nombre de dos dígits:** Això vol dir que n està entre 10 i 99.
+2. **(2) n és parell:** Això vol dir que n acaba en 0, 2, 4, 6 o 8.
+3. **(3) n és primer:** Això vol dir que n només és divisible per 1 i per ell mateix.
+4. **(4) n és el quadrat d'un nombre enter:** Això vol dir que n és el resultat de multiplicar un nombre enter per ell mateix (per exemple, 4 = 2*2, 9 = 3*3).
+5. **(5) n és més gran que 50:** Això vol dir que n és més gran que 50.
+
+Com que n compleix quatre de les cinc condicions, hem de trobar un nombre que compleixi quatre d'aquestes condicions i veure quina és la suma de les seves xifres.
+
+* **Si n compleix (1), (2), (3) i (4):** Un nombre primer no pot ser el quadrat d'un nombre enter (excepte 1, que no és de dos dígits). Per tant, aquesta combinació és impossible.
+* **Si n compleix (1), (2), (3) i (5):** Un nombre primer parell només pot ser 2, que no és de dos dígits ni més gran que 50. Per tant, aquesta combinació és impossible.
+* **Si n compleix (1), (2), (4) i (5):** Busquem quadrats perfectes de dos dígits, parells i més grans que 50. Els quadrats perfectes són 1, 4, 9, 16, 25, 36, 49, 64, 81, 100... Els que compleixen ser de dos dígits i més grans que 50 són 64 i 81. D'aquests, només 64 és parell. Per tant, n=64. La suma de les xifres és 6+4=10.
+* **Si n compleix (1), (3), (4) i (5):** Un nombre primer no pot ser un quadrat perfecte (excepte 1). Per tant, aquesta combinació és impossible.
+* **Si n compleix (2), (3), (4) i (5):** Un nombre primer no pot ser un quadrat perfecte (excepte 1). Per tant, aquesta combinació és impossible.
+
+L'única combinació possible és que n compleixi (1), (2), (4) i (5). En aquest cas, n=64 i la suma de les seves xifres és 10.
+
+Resposta: A)

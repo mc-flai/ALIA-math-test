@@ -1,0 +1,25 @@
+Raonament:
+Primer, hem de resoldre les potències dins de l'expressió.
+* 2² = 4
+* 2^(2²) = 2⁴ = 16
+* (2²)² = 4² = 16
+* ((2²)²)² = (4²)² = 16² = 256
+
+Ara, substituïm aquests valors a l'expressió original:
+2^(2²) · 2^(2^(2²)) : ((2²)²)² = 2⁴ · 2¹⁶ : 256
+
+Recordem que 256 = 2⁸. Per tant, l'expressió esdevé:
+2⁴ · 2¹⁶ : 2⁸
+
+Quan multipliquem potències amb la mateixa base, sumem els exponents:
+2⁴ · 2¹⁶ = 2^(4+16) = 2²⁰
+
+Ara tenim:
+2²⁰ : 2⁸
+
+Quan dividim potències amb la mateixa base, restem els exponents:
+2²⁰ : 2⁸ = 2^(20-8) = 2¹²
+
+Per tant, el resultat de l'operació és 2¹².
+
+Resposta: D)

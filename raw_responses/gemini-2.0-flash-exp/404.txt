@@ -1,0 +1,22 @@
+Raonament:
+Primer, analitzem el numerador de la fracció A. El terme general del numerador és n * (5n) * (25n) = n * 5n * 5^2 * n = 125n^3. Per tant, el numerador és la suma de 2017 termes de la forma 125n^3, on n va de 1 a 2017. Així, el numerador és:
+Numerador = 125 * (1^3 + 2^3 + 3^3 + ... + 2017^3)
+
+Ara, analitzem el denominador de la fracció A. El terme general del denominador és n * (2n) * (4n) = n * 2n * 2^2 * n = 8n^3. Per tant, el denominador és la suma de 2017 termes de la forma 8n^3, on n va de 1 a 2017. Així, el denominador és:
+Denominador = 8 * (1^3 + 2^3 + 3^3 + ... + 2017^3)
+
+Ara podem escriure la fracció A:
+A = [125 * (1^3 + 2^3 + 3^3 + ... + 2017^3)] / [8 * (1^3 + 2^3 + 3^3 + ... + 2017^3)]
+
+Observem que la suma de cubs (1^3 + 2^3 + 3^3 + ... + 2017^3) apareix tant al numerador com al denominador, per tant, es pot simplificar:
+A = 125 / 8
+
+Ens diuen que A és el cub d'un nombre racional X, és a dir, A = X^3. Per tant:
+X^3 = 125 / 8
+
+Per trobar X, hem de calcular l'arrel cúbica de 125/8:
+X = (125/8)^(1/3) = (125)^(1/3) / (8)^(1/3) = 5 / 2 = 2.5
+
+Per tant, el valor de X és 2.5.
+
+Resposta: A)

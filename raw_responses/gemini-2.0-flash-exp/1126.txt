@@ -1,0 +1,10 @@
+Raonament:
+Per calcular quants nombres de tres xifres contenen almenys un dels dígits 1, 2 o 3, és més fàcil calcular primer quants nombres de tres xifres NO contenen cap d'aquests dígits i després restar aquest resultat del total de nombres de tres xifres.
+
+1. **Total de nombres de tres xifres:** El primer dígit pot ser qualsevol nombre de l'1 al 9 (9 opcions), i els dos dígits següents poden ser qualsevol nombre del 0 al 9 (10 opcions cadascun). Per tant, hi ha 9 * 10 * 10 = 900 nombres de tres xifres.
+
+2. **Nombres de tres xifres que NO contenen 1, 2 o 3:** Si no podem usar 1, 2 o 3, el primer dígit pot ser qualsevol dels dígits 4, 5, 6, 7, 8 o 9 (6 opcions). Els dos dígits següents poden ser qualsevol dels dígits 0, 4, 5, 6, 7, 8 o 9 (7 opcions cadascun). Per tant, hi ha 6 * 7 * 7 = 294 nombres de tres xifres que no contenen 1, 2 o 3.
+
+3. **Nombres de tres xifres que contenen almenys un 1, 2 o 3:** Per trobar el nombre de nombres de tres xifres que contenen almenys un 1, 2 o 3, restem el nombre de nombres que NO contenen cap d'aquests dígits del total de nombres de tres xifres: 900 - 294 = 606.
+
+Resposta: E)

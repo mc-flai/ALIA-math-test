@@ -1,0 +1,50 @@
+<think>
+Para resolver este problema, primero identificaré los números consecutivos naturales menores que 50 que pueden formarse multiplicando dos números consecutivos menores que 50.
+
+Luego, calcularé el producto de estos números para verificar si produce un número terminado en dos ceros.
+
+Finalmente, contaré las occasioniones en que el producto satisfaga la condición requerida.
+</think>
+
+Para resolver este problema, seguiremos los siguientes pasos:
+
+1. **Identificar los números consecutivos menores que 50:**
+   
+   Verificaremos los números de 2 a 49, ya que son los números consecutivos menores que 50.
+
+2. **Calcular el producto de dos números consecutivos menores que 50 y ver si es terminado en dos ceros:**
+   
+   - **2 × 3 = 6** (No termina en dos ceros)
+   - **3 × 4 = 12** (No termina en dos ceros)
+   - **4 × 5 = 20** (No termina en dos ceros)
+   - **5 × 6 = 30** (No termina en dos ceros)
+   - **6 × 7 = 42** (No termina en dos ceros)
+   - **7 × 8 = 56** (No termina en dos ceros)
+   - **8 × 9 = 72** (No termina en dos ceros)
+   - **9 × 10 = 90** (No termina en dos ceros)
+   - **10 × 11 = 110** (No termina en dos ceros)
+   - **11 × 12 = 132** (No termina en dos ceros)
+   - **12 × 13 = 156** (No termina en dos ceros)
+   - **13 × 14 = 182** (No termina en dos ceros)
+   - **14 × 15 = 210** (No termina en dos ceros)
+   - **15 × 16 = 240** (No termina en dos ceros)
+   - **16 × 17 = 272** (No termina en dos ceros)
+   - **17 × 18 = 306** (No termina en dos ceros)
+   - **18 × 19 = 342** (No termina en dos ceros)
+   - **19 × 20 = 380** (No termina en dos ceros)
+   - **20 × 21 = 420** (No termina en dos ceros)
+   - **21 × 22 = 462** (No termina en dos ceros)
+   - **22 × 23 = 506** (No termina en dos ceros)
+   - **23 × 24 = 552** (No termina en dos ceros)
+   - **24 × 25 = 600** (Termina en dos ceros)
+   - **25 × 26 = 650** (No termina en dos ceros)
+   - **26 × 27 = 702** (No termina en dos ceros)
+   - **27 × 28 = 756** (No termina en dos ceros)
+   - **28 × 29 = 812** (No termina en dos ceros)
+   - **29 × 30 = 870** (No termina en dos ceros)
+   - **30 × 31 = 930** (No termina en dos ceros)
+   
+   Notemos que solo **24 × 25 = 600** produce un producto terminado en dos ceros.
+
+**Respuesta final:**  
+\boxed{A}

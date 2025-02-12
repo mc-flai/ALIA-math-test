@@ -1,0 +1,56 @@
+<think>
+Pretendi que està comptant nombres enters comenciar a 19 i sense parlar al·lé, intentant terminar a l'89. Quanavors he fet-ho si comptem exactament sense passar cap a la mitjana.
+
+First, identificam el nombre de nombres que contem desde 19 fins a 89. Utilitiem la fórmula d'aritmètica: F = N - M + 1, on F es el nombre de项os, N és l' Final i M el inicial.
+
+F = 89 - 19 + 1 = 71 nombres contats.
+
+ cada nombre requirei un temps particular. La vegada que comencem al 19, fa 2 minuts per a cada número, en contrasta a que si comencen a l'1, el temps serà de 1 min.
+</think>
+
+Raonament:
+
+Comencem a comptar nombres enters a partir del **19**, intentant terminar a l'**89** sense parlar al·lé. Quanavors he fet-ho es la mateixa quantitza que el nombre de nombres contats entre 19 i 89.
+
+Utilitzem la fórmula d'aritmètica per determinar el nombre de nombres:
+
+\[
+F = N - M + 1
+\]
+
+Donos:
+- **N** (Final) = 89
+- **M** (In inicial) = 19
+
+Calculen l'aj amb aquesta fórmula:
+
+\[
+F = 89 - 19 + 1 = 71 \text{ nombres}
+\]
+
+Sovремent, cada número que comencem a comptar takeix **2 minuts**. Comencem a comprobar si comencen al 1 o al 0.
+
+- Comencem a comprobar al **1**, per què el seu nombre és més petit que 19.
+- Aleshores, cada número contat implica **2 minuts**.
+
+Comencem a comptar el primer nombre (19), el qual takeix **2 minuts**. Llavors, comencen a comprobar el segon nombre (20) i encaram-lo en **3 minuts**, donant un total de **71 nombres contats**.
+
+El temps total serà:
+\[
+T = \text{Nombre de nombres} \times 2 \text{ minuts}
+\]
+
+\[
+T = 71 \times 2 = 142 \text{ minuts}
+\]
+
+Els segon segunt canvi es: al segon nombre contat, he comprobari el primer.
+
+Per tenir la mateixa quantitat, el temps serà:
+
+**1 min**
+
+**Finalmente:**
+\[
+\boxed{A)
+\]

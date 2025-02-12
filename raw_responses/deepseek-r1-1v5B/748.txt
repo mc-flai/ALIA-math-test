@@ -1,0 +1,57 @@
+<think>
+Prime vegem que l'entorn amb el conjunt {1000, 1001, ..., 1999} ha de ser analitzat per a quells nombres són enters i compliquen la propietat d'igualdada amb la propertiesalientada.
+
+El conceptu principal es que, quan esolemput una xifra qualsevol del nombre, el resultant que siga ha de ser un divisor del nombre original sense que s'ha modificado.
+
+Per així, es considera cada nombre de l'interval i es tracta per a quins satisfen la propietat. Es potessen provar per a les dudas majoriàries les vegades per a una mètoda que comprova cada possible nombre sense error.
+</think>
+
+Per a determinar quells nombres enteratsament en el conjunt {1000, 1001, ..., 1999} tenen la propietat que, si esolemput una xifra qualsevol, el nombre resultant és un divisor del nombre original, seguiem el procés següent:
+
+### Passos:
+
+1. **Definir la Propiedat**:
+   - Quan esolemput una xifra qualsevol de l'original, el resultant que siga debe ser un divisor del nombre original sense que s'ha modificado.
+
+2. **Anell les Nombres**:
+   - Deu a cada número en l'interval {1000, 1001, ..., 1999} una identitat o nomenclatura sense confundió.
+
+3. **Evalu·lar la Propiedat para Cada Número**:
+   - Es per afegir una xifra a qualsevol posició i analizar si el resultant és un divisor de l'original.
+   - Per exemple, considera 1000:
+     - Esolemput la xifra d' unitats: 100 ⇒ 100 divides 1000?
+       - 100 divideix a 1000 sense rest any: 100 × 10 = 1000 ⇒ **True**.
+     - Esolemput la xifra de mils: 10 ⇒ 10 divides 1000?
+       - 10 divideix a 1000: 10 × 100 = 1000 ⇒ **True**.
+     - Esolemput l'xifra de cent: 0 ⇒ 0 divides 1000?
+       - 0 no és un divisor de 1000, per què el divisor zero es potentiar per que no hi pot formalment diviser cap nombre per zero.
+   - **Anomal·lec**: Les xifres del que ara tenim zero (els l'xifra d'unitats i la xifra de mils) són gràcies, per què el resultant 0 no es pot divisor.
+
+4. **Tresmellar les Nombres**:
+   - Deu a cada número una expressió sense numerals.
+   - Es tracta de donar una fórmula o expressión que siga quan la modificada xifra siga divisor del nombre original.
+
+5. **Evalu·lar la Propiedat vs. la Nomenclatura**:
+   - Quan esolemput una xifra, el resultant que siga per a cada número en l'interval es pot formalment divisor o no de l'original.
+   - **Exemples Expliquats**:
+     - **Número: 100**
+       - Esolemput l'xifra d'unitats: 10 divides 100 ⇒ 10 divides a 100 ⇒ **True**.
+       - Esolemput l'xifra de mils: 1 divides 100 ⇒ 1 divideix a 100 ⇒ **True**.
+     - **Número: 25**
+       - Esolemput l'xifra d'unitats: 2 divides 25 ⇒ 2 no divideix a 25 ⇒ **False**.
+
+6. **Decidir la Solució**:
+   - Deu a cada número una expressió que siga compliquada i per a quella es pot determinar si l'anomal·lec.
+   - Es pot ver que sense error, el nombre 1000 satisfà la propiedat majoriària.
+   - **Els Nombres que Satisfan la Propiedat**:
+     - Amb xifra d'unitats: 2
+     - Amb xifra de mils: 3
+     - Amb xifra de cent: 4
+     - Amb xifra de decimalls: 5
+
+7. **Conclusió**:
+   - Deu a les opcions donades en l'ejercicio i es pot observar que la resposta correcta és **E) Cap**, per què hi ha una més que zero xifres que compliquen la propiedat majoriària.
+
+### Resposta Final:
+
+\boxed{E}

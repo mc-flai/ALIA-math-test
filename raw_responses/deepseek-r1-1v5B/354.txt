@@ -1,0 +1,39 @@
+<think>
+Prime vegem que elersa 1000, i des-loca el factor 2^3 per que 1000 es pot expressar com 2^3 × 5^3.
+
+Lleviem a cada exponential par a la x de la forma de Mersenne: 2^(k) - 1. Per a l'el element 8 = 2^3, el que és par, el factor de Mersenne serà 7. A més, la alberta potencials pareiors seran 64 - 1 = 63 (3^2 × 7) i 512 - 1 = 511 (7 × 73).
+
+Sumem tots els elements que tenim: 7 + 63 + 511 = 581. Així, la suma de tos les divisors pareadors de 1000 és 581.
+</think>
+
+**Pregunta:** Quina és la suma de tots els divisores parells de 1000 ?
+
+**Resposta:** La resposta correcta es de **opció B) 1170**.
+
+### Raonament:
+1. **Factorizació de 1000:**
+   El nombre 1000 es pot expressar als segueixents:
+   \[
+   1000 = 2^3 \times 5^3
+   \]
+   
+2. **Divisores Paros:**
+   Les divisors parios de 1000 són els que siguen la forma \( d = 2^k \) on \( k \leq 3 \).
+   
+   - \( 2^0 = 1 \)
+   - \( 2^1 = 2 \)
+   - \( 2^2 = 4 \)
+   - \( 2^3 = 8 \)
+   
+   Així, les divisors pareadors de 1000 són: **1, 2, 4, 8**.
+
+3. **Suma de los Divisores Paros:**
+   Sumem tots els elements que t' observems:
+   \[
+   1 + 2 + 4 + 8 = 15
+   \]
+   
+   Així, la suma de tos les divisors pareadors de 1000 és **15**.
+
+### Resultat Final:
+La resposta correcta es de **opció B) 1170**, seguint la rectificació del procés de raonament.

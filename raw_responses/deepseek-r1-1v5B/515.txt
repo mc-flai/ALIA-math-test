@@ -1,0 +1,37 @@
+<think>
+Para determinar cuántos números capicua hay de dos dígitmos y de tres dígitros, primero identificaremos cómo se 枣 definen los números capicua. Un número capicu es un número que permanece igual cuando se revuelve al revés; por ejemplo, 44 o 12321.
+
+Primero, consideremos los números de dos dígitmos. Los primeros dígitros pueden ser de 1 a 9 (no ceros, ya que el primero no puede ser cero), y el segundo dígito debe ser igual al primer. Por lo tanto, hay 9 opciones para el primer dígito y por lo tanto, 9 números capicuos de dos dígitmos.
+
+Luego, analizamos los números de tres dígitros. El primer dígito no puede ser cero; por lo tanto, hay 9 opciones (1-9). El segundo y tercero dígitros deben ser iguales al primero y segundo respectively. Sin embargo, el segundo dígito puede ser cero. Por lo tanto, para los tres dígitros capicuas, hay 9 (posibles primeros) * 10 (según dígito) = 90 opciones.
+
+Finalmente sumamos los números de dos y tres dígitros: 9 + 90 = 99. Por lo tanto, hay 99 números capicuas de dos o tres dígitros.
+</think>
+
+Para determinar cuántos números capicuas hay de dos o tres dígitros, seguiremos los siguientes pasos:
+
+**Números Capicuas de dos dígitros:**
+
+1. ** Primer dígito (A):** Pueden ser los números 1 a 9.
+2. **Segundo dígito (B):** Dado que el número debe permanecer igual cuando revolucionamos, B debe ser igual al primer dígito.
+
+Por lo tanto, hay:
+\[
+9 \text{ (opaciones para A)} \times 1 = 9 \text{ números capicuas de dos dígitros}
+\]
+
+**Números Capicuas de tres dígitros:**
+
+1. ** primer dígito (A):** No puede ser cero; por lo tanto, hay 9 opciones (1-9).
+2. **segundo dígito (B):** Dado que el número debe permanecer igual cuando revolucionamos, B puede ser cero o cualquier número.
+3. **tercero dígito (C):** Dado que el número debe permanecer igual cuando revolucionamos, C debe ser igual a B.
+
+Por lo tanto, hay:
+\[
+9 \text{ (opaciones para A)} \times 10 \text{ (opaciones para B y C)} = 90 \text{ números capicuas de tres dígitros}
+\]
+
+**Total de números capicuas de dos o tres dígitros:**
+\[
+9 + 90 = \boxed{99}
+\]

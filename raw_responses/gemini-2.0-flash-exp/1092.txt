@@ -1,0 +1,36 @@
+Raonament:
+1. **Definició de variables:**
+   - Sigui M l'edat actual de Maria.
+   - Sigui F l'edat actual de la filla de Maria.
+   - Sigui N l'edat actual de la neta de Maria (que és 0, ja que acaba de néixer).
+
+2. **Edats d'aquí a dos anys:**
+   - L'edat de Maria d'aquí a dos anys serà M + 2.
+   - L'edat de la filla de Maria d'aquí a dos anys serà F + 2.
+   - L'edat de la neta de Maria d'aquí a dos anys serà N + 2 = 0 + 2 = 2.
+
+3. **Equació:**
+   - El producte de les edats d'aquí a dos anys és 2024: (M + 2) * (F + 2) * 2 = 2024
+
+4. **Simplificació de l'equació:**
+   - Dividim els dos costats per 2: (M + 2) * (F + 2) = 1012
+
+5. **Anàlisi de factors:**
+   - Hem de trobar dos nombres parells (M i F) que, sumats a 2 i multiplicats, donin 1012.
+   - Descomposem 1012 en factors primers: 1012 = 2 * 2 * 11 * 23 = 4 * 253 = 22 * 46
+   - Les possibles parelles de factors de 1012 són: (1, 1012), (2, 506), (4, 253), (11, 92), (22, 46), (23, 44), (44, 23), (46, 22), (92, 11), (253, 4), (506, 2), (1012, 1).
+   - Com que M i F són parells, M+2 i F+2 també són parells. Per tant, hem de buscar parelles de factors parells. Les parelles de factors parells de 1012 són (2, 506), (22, 46), (46, 22), (506, 2).
+
+6. **Prova de les parelles de factors:**
+   - Si (M+2) = 2 i (F+2) = 506, llavors M = 0 i F = 504. M no pot ser 0.
+   - Si (M+2) = 506 i (F+2) = 2, llavors M = 504 i F = 0. F no pot ser 0.
+   - Si (M+2) = 22 i (F+2) = 46, llavors M = 20 i F = 44. M i F són parells.
+   - Si (M+2) = 46 i (F+2) = 22, llavors M = 44 i F = 20. M i F són parells.
+
+7. **Anàlisi de les opcions:**
+   - Les opcions donades per a l'edat de Maria són 42, 44, 46, 48 i 50.
+   - Hem trobat que M pot ser 20 o 44.
+   - Si M = 20, llavors F = 44. Si M = 44, llavors F = 20.
+   - L'única opció que coincideix amb els resultats és 44.
+
+Resposta: B)

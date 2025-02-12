@@ -1,0 +1,43 @@
+<think>
+P Primer, entiendo que hay 4 classes en la escuela. Sabemos que si tomamos solo las tres primeras clases, las promedios de cada clase son 28.
+
+Ahora, al considerar todas las cuatro clases, la media es de 26. 
+
+Para encontrar el número de alumnos en la cuarta clase, intentamos establecer una ecuación basada en los datos proporcionados. Supongamos que hay x alumnos en la cuarta clase. La media total esigual a (2*28 + 28 + x)/4 = 26.
+
+Calculando esto: 10*4 = 32 → 8*4=32, luego 7*4=28 y 4*4=16. Sumando 16+28+28+16 = 88, y 88/4=22. 
+
+Por lo tanto, la cuarta clase tiene 22 alumnos.
+</think>
+
+**Pregunta:** En una escuela hay cuatro clases. Quan es compten només els alumnes de las tres primeras classes, la mitjana al alumnes per$class és de 28, però quan es compten les quatre classes, la mitjana és de 26. Quants alumnes té la cuarta clase?
+
+**Resposta:** La cuarta clase tèn substantialment més alumnos que les tres primeres. Com calculem:
+
+1. **Notación:**
+   - Llegada a las tres primeras clases, la mitjana es de 28.
+   - La mitjana al alumnes per$class amb quaterna clase es de 26.
+
+2. **Denotация matemàtica:**
+   - $M_1 = 28$ (mitjana per primera$class)
+   - $M_{1,2} = 26$ (mitjana al alumnes per classes amb quaterna clase)
+
+3. **Definiciones:**
+   - $n_1$ es el nombre d'alumns en la primera$class
+   - $n_2$, $n_3$, $n_4$ son los nombres de las alumnos en las clases respectivas
+
+4. **Eqüios:**
+   - $\frac{n_1 + n_2}{2} = 28 \Rightarrow n_1 + n_2 = 56$ (sum de alumnos en dos clases)
+   - $\frac{n_1 + n_2 + n_3 + n_4}{4} = 26 \Rightarrow n_1 + n_2 + n_3 + n_4 = 104$ (total de alumnos amb quaterna clase)
+
+5. **Aplicación:**
+   - De l'igura anterior, $n_1 + n_2 = 56$, i per la tercera ecuación, $56 + n_3 + n_4 = 104$
+   - Quementament, $n_3 + n_4 = 48$
+
+6. **Desarrollo:**
+   - $n_1 + n_2 = 56$ (de la primera ecuación)
+   - $n_1 + n_2 + n_3 + n_4 = 104$ (de la tercera ecuación)
+   - Deixem que $x = n_4$, el nombre de la alumnos en la cuarta clase.
+   - $56 + x = 104 \Rightarrow x = 104 - 56 = 48$
+
+**Respuesta final:** \boxed{B) 22}

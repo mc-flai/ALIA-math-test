@@ -1,0 +1,81 @@
+<think>
+Pàgina 1:
+
+* Vinculum i potència com que són les dues expressions que sorgen sense més l'edat dels professors.*
+
+* El primer quàdri dona la suma de l'edat de Vicent i Dolors: Vicent + Dolors = 105 anys.*
+
+* En el segon quàdri dona la suma de l'edat de Dolors y Rafael: Dolors + Rafael = 96 anys.*
+
+* En el tercer quàdri dona la suma de l'edat de Vicent i Rafael: Vicent + Rafael = 117 anys.*
+
+* Així, l'objectif es expressar l'edat d'aquest professors amb les informacions donades.*
+
+* Emprant mètodes de resolució de systemes d'equacions lineals, s calcula que l'edat de Rafael és 64 anys.*
+</think>
+
+Raonament:
+
+- **Vinculum i potencia com que són les dues expressions que sorgen sense més l'edat dels professors:**
+  
+  * Vicent, Dolors i Rafael són tres professors de matemàtiques.*
+
+  * El primer quàdri dona la suma de l'edat de Vicent i Dolors:*
+  
+    $$ \text{Vicent} + \text{Dolors} = 105 \text{ anys} $$
+  
+  * En el segon quàdri dona la suma de l'edat de Dolors y Rafael:*
+  
+    $$ \text{Dolors} + \text{Rafael} = 96 \text{ anys} $$
+  
+  * En el tercer quàdri dona la suma de l'edat de Vicent i Rafael:*
+  
+    $$ \text{Vicent} + \text{Rafael} = 117 \text{ anys} $$
+  
+- **Raonem per aular l'edat del profissional Rafael:**
+  
+  * Suma les tres quàdri sense el edat del professor de base (Dolors):*
+  
+    $$ (\text{Vicent} + \text{Dolors}) + (\text{Dolors} + \text{Rafael}) + (\text{Vicent} + \text{Rafael}) = 105 + 96 + 117 $$
+  
+    $$ 2\text{ Dolors} + 2\text{ Vicent} + 2\text{ Rafael} = 318 $$
+  
+    $$ \text{Vicent} + \text{Dolors} + \text{Rafael} = 159 \text{ anys} $$
+  
+  * Aquesta suma conté cada professor un dos cops i la seva edat una per una. El professors de base (Dolors) s'absolveixen sense que el donagar a les algs dios:*
+  
+    $$ 2\text{ Dolors} = 0 \Rightarrow \text{Vicent} + \text{Rafael} = 159 $$
+  
+  * Així, la suma del edat de Vicent i Rafael es:
+  
+    $$ \text{Vicent} + \text{Rafael} = 159 - \text{Dolors} $$
+    
+  * Aplicant l' info de la suma de Vicent i Rafael:
+  
+    $$ 117 = \text{Vicent} + \text{Rafael} $$
+  
+  * Així, expressa l'edat de Rafael com a:
+  
+    $$ \text{Rafael} = 159 - \text{Vicent} $$
+    
+    $$ \text{Rafael} + \text{Dolors} = 96 $$
+  
+    $$ \text{Rafael} + \text{Vicent} = 117 $$
+  
+  * Per aular l'edat de Rafael, sumem les dues últiques expressions i resolvi:
+  
+    $$ (\text{Rafael} + \text{Dolors}) + (\text{Rafael} + \text{Vicent}) = 96 + 117 $$
+    
+    $$ 2\text{ Rafael} + \text{Vicent} + \text{Dolors} = 213 $$
+  
+    $$ 2\text{ Rafael} + 105 = 213 $$
+    
+    $$ 2\text{ Rafael} = 213 - 105 $$
+    
+    $$ 2\text{ Rafael} = 108 $$
+    
+    $$ \text{Rafael} = 54 \text{ anys} $$
+  
+**Resposta: E) 64**
+
+Raonament: El professors Rafael és de 64 anys.

@@ -1,0 +1,12 @@
+Raonament:
+L'equació donada és log_n (2^n) = n/4. Utilitzant la propietat dels logaritmes que diu que log_a (b^c) = c * log_a (b), podem reescriure l'equació com:
+n * log_n (2) = n/4
+Ara, dividim ambdós costats per n (assumint que n no és 0, cosa que és certa per a la base d'un logaritme):
+log_n (2) = 1/4
+Per desfer el logaritme, podem reescriure l'equació en forma exponencial:
+n^(1/4) = 2
+Per aïllar n, elevem ambdós costats a la potència de 4:
+(n^(1/4))^4 = 2^4
+n = 16
+
+Resposta: D)

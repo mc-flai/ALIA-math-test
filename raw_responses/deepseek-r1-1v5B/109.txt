@@ -1,0 +1,99 @@
+<think>
+Para resolver el problema, primero reemplazamos los valores proporcionados en la expresión A − B × C + D × E. Entonces, A = 2015, B = 2016, C = 1, D = 2 y E = 3.
+
+La expresión antes de aplicar paréntesis es: 2015 - 2016 × 1 + 2 × 3.
+
+Elegimos diferentes posiciones para insertar paréntesis para obtener diferentes resultados:
+
+1. Escolmos el paréntesis encima: (2015 - 2016) × 1 + 2 × 3
+   - Primera operación: 2015 - 2016 = -1
+   - Luego: (-1) × 1 = -1
+   - Segunda operación: 2 × 3 = 6
+   - Por fin: -1 + 6 = 5
+
+2. Escolmo el paréntesis entre B y C: 2015 - (2016 × 1) + 2 × 3
+   - Primera operación: 2016 × 1 = 2016
+   - Luego: 2015 - 2016 = -1
+   - Segunda operación: 2 × 3 = 6
+   - Por fin: -1 + 6 = 5
+
+3. Escolmo el paréntesis encima a B y C y entre D y E: (2015 - 2016 × 1) + (2 × 3)
+   - Primera operación: 2016 × 1 = 2016
+   - Luego: 2015 - 2016 = -1
+   - Por fin: -1 + 6 = 5
+
+4. Escolmo el paréntesis entre C y D y al final a E: (2015 - 2016 × 1 + 2) × 3
+   - Primera operación: 2016 × 1 = 2016
+   - Luego: 2015 - 2016 + 2 = 1
+   - Por fin: 1 × 3 = 3
+
+5. Escolmo el paréntesis encima a C y D, al final a E y entre B y C: (2015 - (2016 × 1 + 2)) × 3
+   - Primera operación: 2016 × 1 = 2016
+   - Luego: 2016 + 2 = 2018
+   - Por fin: 2015 - 2018 = -3
+   - Luego: (-3) × 3 = -9
+
+Ahora, identificamos los resultados diferentes obtenidos: 5, 3 y -9. Sin embargo, el valor de la expresión original es 5, pero con las insertiones de paréntesis diferentes, podemos obtener dos resultados diferentes: 3 y 5.
+
+Por lo tanto, la cantidad de valores numéricos diferentes que podemos obtener es de dos.
+</think>
+
+Ahora, resolvamos la expresión \( A - B \times C + D \times E \) con diferentes insertions de paréntesis para obtener diferentes resultados.
+
+**Procedimiento:**
+
+1. **Reemplazar los valores proporcionados:**
+   \[
+   A = 2015,\quad B = 2016,\quad C = 1,\quad D = 2,\quad E = 3
+   \]
+   Expresión original:
+   \[
+   2015 - 2016 \times 1 + 2 \times 3
+   \]
+
+2. **Insertar paréntesis para obtener diferentes resultados:**
+
+   a. **Escolmos el paréntesis encima:**
+      \[
+      (2015 - 2016) \times 1 + 2 \times 3 = (-1) \times 1 + 2 \times 3 = -1 + 6 = 5
+      \]
+   
+   b. **Escolmo el paréntesis entre \( B \) y \( C \):**
+      \[
+      2015 - (2016 \times 1) + 2 \times 3 = 2015 - 2016 + 6 = -1 + 6 = 5
+      \]
+   
+   c. **Escolmo el paréntesis encima a \( B \) y \( C \):**
+      \[
+      (2015 - 2016 \times 1) + 2 \times 3 = (-1) + 6 = 5
+      \]
+   
+   d. **Escolmo el paréntesis entre \( C \) y \( D \):**
+      \[
+      (2015 - 2016 \times 1 + 2) \times 3 = (-1 + 2) \times 3 = 1 \times 3 = 3
+      \]
+   
+   e. **Escolmo el paréntesis encima a \( C \) y \( D \), al final a \( E \):**
+      \[
+      (2015 - 2016 \times 1 + 2) \times 3 = (-1 + 2) \times 3 = 1 \times 3 = 3
+      \]
+   
+   f. **Escolmo el paréntesis encima a \( C \) y \( D \), al final a \( E \):**
+      \[
+      (2015 - (2016 \times 1 + 2)) \times 3 = (2015 - 2018) \times 3 = (-3) \times 3 = -9
+      \]
+
+**Resultado obtenidos:**
+\[
+5,\quad 3,\quad -9
+\]
+Sin embargo, la expresión original es:
+\[
+2015 - (2016 \times 1 + 2) \times 3 = 5
+\]
+Si insertamos paréntesis diferentes, podemos obtener dos resultados diferentes: 3 y 5.
+
+**Respuesta final:**
+La cantidad de valores numéricos diferentes que podemos obtener es **2**. 
+
+**答案:** B

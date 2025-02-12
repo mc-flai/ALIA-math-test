@@ -1,0 +1,17 @@
+Raonament:
+Analitzem cada condició per separat i després les combinem per trobar la resposta correcta:
+
+1. **Dues unitats més menut que un múltiple de 10:** Això significa que el nombre ha de ser de la forma 10n - 2, on n és un enter. Per tant, el nombre ha de acabar en 8.
+2. **Dues unitats més gran que un quadrat perfecte:** Això significa que el nombre ha de ser de la forma m² + 2, on m és un enter.
+3. **El doble d'un nombre primer:** Això significa que el nombre ha de ser de la forma 2p, on p és un nombre primer. Per tant, el nombre ha de ser parell.
+
+Ara, analitzem les opcions:
+* A) 78: Acaba en 8 (condició 1), és parell (condició 3). 78 = 8² + 14, no compleix la condició 2. 78 = 2 * 39, 39 no és primer. No compleix la condició 3.
+* B) 58: Acaba en 8 (condició 1), és parell (condició 3). 58 = 7² + 9, no compleix la condició 2. 58 = 2 * 29, 29 és primer. Compleix la condició 3.
+* C) 38: Acaba en 8 (condició 1), és parell (condició 3). 38 = 6² + 2, compleix la condició 2. 38 = 2 * 19, 19 és primer. Compleix la condició 3.
+* D) 18: Acaba en 8 (condició 1), és parell (condició 3). 18 = 4² + 2, compleix la condició 2. 18 = 2 * 9, 9 no és primer. No compleix la condició 3.
+* E) 6: No acaba en 8 (no compleix la condició 1).
+
+L'única opció que compleix totes les condicions és la C) 38.
+
+Resposta: C)

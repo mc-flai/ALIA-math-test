@@ -1,0 +1,97 @@
+<think>
+Prime, identificaré las relaciones dada entre losgramos.
+
+1. Sabemos que dos prunes pesen el mismo que tres mandarines y una pera:
+   2P = 3M + P_a
+
+2. También sabemos que sis prunes pesen el mismo que una mandarina y una pera:
+   5P = M + P_a
+
+Ahora, intentaré despejar una de las variables para encontrar la relación entre losmandares y peras.
+
+Primero, despebo P_a en la primera ecuación:
+2P - 3M = P_a
+
+Luego, sutilgo esta expresión en la segunda ecuación:
+5P = M + (2P - 3M)
+5P = 2P - 2M
+5P - 2P = -2M
+3P = -2M => M = (-3/2) P
+
+Ahora, reemplazaré M en la primera ecuación para encontrar P_a:
+2P = 3*(-3/2 P) + P_a
+2P = -9/2 P + P_a
+2P + 9/2 P = P_a
+13/2 P = P_a
+
+Finalmente, reemplazaré M y P_a en la pregunta que necesita saber cuántos mandarines equivalen una pera:
+P_a = M + ???
+
+También, ya que P_a = (13/2) P y M = (-3/2) P,
+P_a = (-3/2) P + ??? 
+
+Debemos resolver para ???:
+P_a - M = ??? 
+(13/2 P) - (-3/2 P) = (16/2) P = 8P
+
+Así, una pera es igual a 8 mandarines.
+</think>
+
+Raonament:
+
+Primero, identificaré las relaciones entre losgramos dadas.
+
+1. Sabemos que dos prunes pesen el mismo que tres mandarines y una pera:
+   \[
+   2P = 3M + P_a
+   \]
+   
+2. También sabemos que sis prunes pesen el mismo que una mandarina y una pera:
+   \[
+   5P = M + P_a
+   \]
+
+Despues, intentaré despejar una de las variables para encontrar la relación entre losmandares y peras.
+
+Primero, resuelvo \( P_a \) de la primera ecuación:
+\[
+2P - 3M = P_a
+\]
+Ahora, reemplazaré este valor en la segunda ecuación:
+\[
+5P = M + (2P - 3M)
+\]
+Simplificando:
+\[
+5P = 2P - 2M
+\]
+Despejo \( M \):
+\[
+5P - 2P = -2M \\
+3P = -2M \\
+M = -\frac{3}{2} P
+\]
+
+Ahora, reemplazaré \( M \) en la primera ecuación para encontrar \( P_a \):
+\[
+2P = 3\left(-\frac{3}{2} P\right) + P_a \\
+2P = -\frac{9}{2} P + P_a \\
+2P + \frac{9}{2} P = P_a \\
+\frac{13}{2} P = P_a
+\]
+
+Finalmente, reemplazaré \( M \) y \( P_a \) en la pregunta que necesita saber cuántos mandarines equivalen una pera:
+\[
+P_a = M + ? \\
+P_a = -\frac{3}{2} P + ? 
+\]
+Sustituyendo \( P_a = \frac{13}{2} P \) y \( M = -\frac{3}{2} P \):
+\[
+\frac{13}{2} P = -\frac{3}{2} P + ??? \\
+??? = \frac{13}{2} P + \frac{3}{2} P \\
+??? = 8P
+\]
+
+Así, una pera es igual a **8** mandarines.
+
+**Respuesta:** \boxed{D}

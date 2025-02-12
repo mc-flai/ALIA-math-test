@@ -1,0 +1,81 @@
+<think>
+Para resolver el problema, primero identificamos los valores de a y b que satisfacen la ecuación x² + x - 7 = 0. Utilizamos la fórmula quadratica para encontrar a y b.
+
+Luego, usamos estos valores en la expresión 3a² + 4b² + 2a + 3b + 1 para calcular el resultado final.
+</think>
+
+Para resolver el problema, seguimos los siguientes pasos:
+
+### Paso 1: Aplicar la Fórmula Quadrática
+
+La ecuación dada es:
+\[ x^2 + x - 7 = 0 \]
+
+Applying the quadratic formula:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+donde \( a = 1 \), \( b = 1 \), y \( c = -7 \).
+
+Sustituyendo los valores:
+\[
+x = \frac{-1 \pm \sqrt{1^2 - 4(1)(-7)}}{2(1)} = \frac{-1 \pm \sqrt{1 + 28}}{2} = \frac{-1 \pm \sqrt{29}}{2}
+\]
+
+Por lo tanto:
+\[
+a = \frac{-1 + \sqrt{29}}{2}, \quad b = \frac{-1 - \sqrt{29}}{2}
+\]
+
+### Paso 2: Calcular \(3a^2 + 4b^2 + 2a + 3b + 1\)
+
+Primero, calculamos \( a^2 \) y \( b^2 \):
+
+\[
+a^2 = \left(\frac{-1 + \sqrt{29}}{2}\right)^2 = \frac{1 - 2\sqrt{29} + 29}{4} = \frac{30 - 2\sqrt{29}}{4}
+\]
+
+\[
+b^2 = \left(\frac{-1 - \sqrt{29}}{2}\right)^2 = \frac{1 + 2\sqrt{29} + 29}{4} = \frac{30 + 2\sqrt{29}}{4}
+\]
+
+Luego, calculamos \(3a^2\) y \(4b^2\):
+
+\[
+3a^2 = 3 \times \frac{30 - 2\sqrt{29}}{4} = \frac{90 - 6\sqrt{29}}{4}
+\]
+
+\[
+4b^2 = 4 \times \frac{30 + 2\sqrt{29}}{4} = 30 + 2\sqrt{29}
+\]
+
+Ahora, sumamos las partes:
+\[
+3a^2 + 4b^2 = \frac{90 - 6\sqrt{29}}{4} + 30 + 2\sqrt{29} = \frac{90 - 6\sqrt{29} + 120 + 8\sqrt{29}}{4} = \frac{210 + 2\sqrt{29}}{4}
+\]
+
+Ahora, calculamos \(2a + 3b\):
+
+\[
+2a = 2 \times \frac{-1 + \sqrt{29}}{2} = -1 + \sqrt{29}
+\]
+\[
+3b = 3 \times \frac{-1 - \sqrt{29}}{2} = \frac{-3 - 3\sqrt{29}}{2}
+\]
+
+Sumamos:
+\[
+2a + 3b = (-1 + \sqrt{29}) + \left(\frac{-3}{2} - \frac{3\sqrt{29}}{2}\right) = -\frac{5}{2} - \frac{\sqrt{29}}{2}
+\]
+
+Finalmente, sumamos todo para obtener el resultado final:
+\[
+3a^2 + 4b^2 + 2a + 3b + 1 = \frac{210 + 2\sqrt{29}}{4} - \frac{5}{2} - \frac{\sqrt{29}}{2} + 1
+\]
+
+Simplificando:
+\[
+= \frac{210 + 2\sqrt{29} - 10 - 2\sqrt{29} + 4}{4} = \frac{204}{4} = 51
+\]
+
+###respondencia: B) 51

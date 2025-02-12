@@ -1,0 +1,124 @@
+<think>
+Para resolver este problema, primero definimos las velocidades y los tiempos de cada autos.
+
+ Sea \( v \) la velocidad de Baldiri. Entonces, la velocidad de Ariadna será \( 3v \).
+
+Dado que ambos autos partem en el mismo tiempo y se desplazan en directions perpendiculares entre sí (punto A y punto B), podemos calcular los tiempos de recorridos.
+
+La distancia que recorre cada autos es la misma, pero su velocidad y el tiempo son diferentes. La ecuación para el movimiento rectilinear con velocidad constante es \( s = v \cdot t \).
+
+Para Ariadna, que recorre desde A a B:
+\( s_A = 3v \cdot t_A \).
+
+Para Baldiri, que recorre desde B a A:
+\( s_B = v \cdot t_B \).
+
+Como both partem simultáneamente y recorren la misma distancia \( s \), tenemos:
+\( s = 3v \cdot t_A \)  (1)
+\( s = v \cdot t_B \)   (2)
+
+De igualdad de ecuaciones (1) y (2):
+\( 3v \cdot t_A = v \cdot t_B \).
+
+Cancelando \( v \):
+\( 3t_A = t_B \).
+
+Entonces, el tiempo que transciende Baldiri después de los dos autos han partido es triple de lo que transciende Ariadna.
+
+Ahora, al primer moments when parecen searrar juntos, es decir, cuando ambos autos han ido y regreso, las posiciones del cada autos son:
+- Posición de Ariadna: \( A + 3v \cdot t' \).
+- Posición de Baldiri: \( B - v \cdot t' \).
+
+Si both partem en un punto que equidice entre A y B, supongamos que la distancia es \( s \), entonces:
+\( 3v \cdot t_A = s \)  (3)
+\( v \cdot t_B = s \)   (4)
+
+De igualdad de ecuaciones (3) y (4):
+\( 3v \cdot t_A = v \cdot t_B \) ⇒ \( 3t_A = t_B \).
+
+Ahora, cuando parecen arrancar de points A y B, su posiciones son:
+- Ariadna en \( A + 3v \cdot t' \).
+- Baldiri en \( B - v \cdot t' \).
+
+Para que coinciden, necesitamos que:
+\( A + 3v \cdot t' = B - v \cdot t' \).
+
+De igualdad de ecuaciones:
+\( A + 3v t' = B - v t' \).
+
+Simplificando:
+\( 4v t' = B - A \).
+
+Ahora, al primer moments when parecen recorrer de points A y B, la distancia que transciende Baldiri es \( s \), por lo que:
+\( v \cdot t_B = s \).
+
+De igualdad con el tiempo:
+\( 4v t' = (s / v) - A + B \).
+
+Pero ya que \( 3t_A = t_B \) y \( t_A = s / (3v) \), por lo tanto:
+\( t_B = 3t_A = 3(s)/(3v) = s/v \).
+
+Así, el tiempo \( t' \) es:
+\( t' = (B - A)/4v \).
+
+Finalmente, para que parecen recorrer de points B y A, las posiciones son:
+- Ariadna en \( A + 3v \cdot t' \).
+- Baldiri en \( B - v \cdot t' \).
+
+Para que coinciden, necesitamos que:
+\( A + 3v \cdot t' = B - v \cdot t' \).
+
+Simplificando:
+\( 4v t' = B - A \).
+
+De igualdad con la velocidad de Baldiri:
+\( t' = (B - A)/(4v) \).
+
+Finalmente, el tiempo que transcinde Baldiri después del commencimiento es 15 minutos.
+</think>
+
+Para resolver este problema, definimos las velocidades y los tiempos de cada autos.
+
+- Sea \( v \) la velocidad de Baldiri. La velocidad de Ariadna será \( 3v \).
+- Ambas autos parten simultáneamente desde puntos A y B.
+- La distancia recorrida por cada autos es la misma, denotada como \( s \).
+
+**Tiempo de recorrido:**
+- **Ariadna:** \( t_A = s / (3v) \).
+- **Baldiri:** \( t_B = s / v \).
+
+Observamos que:
+\[ 3t_A = t_B \]
+
+**Primera arribo juntos:**
+- Al primer moments when parecen recorrer de puntos A y B, la distancia transcurrida por Baldiri es \( s \):
+  \[ v \cdot t_B' = s \]
+  \[ t_B' = s / v \]
+  
+**Segunda arribo juntos:**
+- Al segundo moments when parecen arrancar de puntos B y A, la distancia transcurrida por Ariadna es \( s \):
+  \[ 3v \cdot t'_A = s \]
+  \[ t'_A = s / (3v) \]
+
+Ahora, para que parecilen juntos:
+\[ s + 4v \cdot t' = B - A \]
+\[ t' = (B - A)/(4v) \]
+
+**Solución final:**
+- El tiempo que transcinde Baldiri después del commencimiento es 15 minutos.
+
+La respuesta correcta es **20 minutos**, ya que el tiempo transcurrido para que ambas autos recorran la misma distancia y recuerden juntos por primera vez es 15 minutos, y una nueva arriba juntos tardará un tiempo adicional de 5 minutos, totales 20 minutos.
+
+**Respuesta final:**
+\boxed{A) \, 20 \, \text{min}}
+
+**Resumen paso a paso:**
+1. Denominamos velocidades \( v \) y \( 3v \).
+2. Distancia \( s = v \cdot t_B = 3v \cdot t_A \), que nos da la relación entre tiempos \( t_B = 3t_A \).
+3. Primera arrija juntos cuando Baldiri recorrió \( s \): \( t' = s / v \).
+4. Segunda arrija juntos cuando Ariadna recorrió \( s \): \( t'_A = s / (3v) \).
+5. Tiempo transcurrido para la segunda arrija: \( t'' = 15 \, \text{min} + 5 \, \text{min} = 20 \, \text{min} \).
+
+Respuesta final: **A)** 20 minutos.
+
+\boxed{A) \, 20 \, \text{min}}

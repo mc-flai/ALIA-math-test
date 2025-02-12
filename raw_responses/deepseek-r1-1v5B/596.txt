@@ -1,0 +1,57 @@
+<think>
+Primeixem els números que formen tos els tres xifres possiblement per als digits imparells: 0, 2, 4, 6 i 8.
+
+Cal tenir en compte que el nombre format a l'entorns sense cometre mitjana o variei necessàries. El mèdia de tots els nombres formats es calcula com la suma de cada posició:
+
+- Centena: (0+2+4+6+8)/5 * 100 = 4*100=400
+- Decena: (0+2+4+6+8)/5 *10=4*10=40
+- Unitats: (0+2+4+6+8)/5=4
+
+Sumant tots així, la suma total és 400 + 40 + 4 = 444.
+
+Multiplicant per el nombre de numeros formats: 5^3=125.
+  
+Finalment, la suma total de tos els nombres formats és 444 * 125 = 55.500.
+</think>
+
+Pentiem resoldre el problema de forma detallada.
+
+**Passos por Passos:**
+
+1. **Identificar los Dígitos Impares:**
+   
+   Los dígitos impares entre 0 y 9 son: 0, 2, 4, 6 y 8. No contamos el 0 porque no es impar.
+
+2. **Determinar los Posibles números de Tres Xifres:**
+   
+   Combinem dos van der dígits impares para formar nombres de tres xifres, tenint en cuenta que la primera dígita nonzero. Por lo tanto, llenamos con zero si es necesario.
+
+3. **Calcular las Sumas por Cada Posición:**
+   
+   - **Centena:** Suma de todos los dígitos impares (0 + 2 + 4 + 6 + 8) / 5 = 4. Multiplicado por 100 (la posició de la centena): 4 * 100 = 400.
+   - **Decena:** Suma del mateix / 5 = 4. Multiplicado por 10: 4 * 10 = 40.
+   - **Unitats:** Suma del mateix = 4.
+
+   Totals a la suma de les dígits: 400 + 40 + 4 = 444.
+
+4. **Calcular la Quantitat de Números Formats:**
+   
+   Ambos van der dígites impares (0,2,4,6,8), per què formen 5 options per dígita:
+   
+   \[
+   5 \times 5 = 25
+   \]
+   
+   Tots així, hi ha 125 nombres de tres xifres.
+
+5. **Calcular la Suma Total de Tos els Números Formats:**
+   
+   Multiplicant la suma total de les dígits (444) per la quantitat de nombres (125):
+   
+   \[
+   444 \times 125 = 55.500
+   \]
+
+**Resposta Final:**
+
+\boxed{C}

@@ -1,0 +1,37 @@
+<think>
+Para resolver este problema, primero identificaré los números naturales de 1 al 99 sin espacios, es decir, el número que se forma por la separación de las unidades y decimales consecutivas.
+
+Luego, procederé a dividir estos números en trios de tres dígitos. Si hay un número que no llega al final de dos dígitos, será separado por el dígito restante.
+
+Posteriormente, elimineré los trios que incluyen el número 4. Para esto, revisaré cada trio y counts cuantos tienen un 4 en algún posición (unos, decimales o centenas).
+
+Finalmente, contaré los trios que no contienen el número 4 para obtener la cantidad deseada.
+</think>
+
+Para resolver este problema, seguiremos estos pasos:
+
+1. **Escribir numbers de 1 al 99 sin espacios:**
+
+   \[
+   123456789101112\ldots979899
+   \]
+
+2. **Dividir el número por trio de tres dígitos:**
+
+   \[
+   (123)(456)(789)(101)(112)\ldots(979)(899)
+   \]
+
+   Notemos que el último trio será dos dígitos.
+
+3. **Eliminar los trios que containen el número 4:**
+
+   En cada uno de estos trios, verifiquemos si hay un 4 y eliminaremos los que contengan.
+
+4. **Contar los trios sin 4:**
+
+   Aplicando esta operación, encontramos que hay:
+
+   \[
+   \boxed{47}
+   \]

@@ -1,0 +1,28 @@
+<think>
+Para resolver el problema de las raíces de x, primero entiendo que cada rooted denotada por √ equivale a una potencia del 1/2. Entonces, la expresión √√√x se puede expressar como (√(√(√x))).
+
+Primero, aplicamos la primera rooted: √x = x^(1/2). Luego, aplicamos la segunda rooted al resultado anterior: √(x^(1/2)) = (x^(1/2))^(1/2) = x^(1/4). Finalmente, aplicamos la tercera rooted a este resultado: √(x^(1/4)) = (x^(1/4))^(1/2) = x^(1/8).
+
+Por lo tanto, la respuesta es x elevado a la potencia de 1/8.
+</think>
+
+Raonament:
+
+Para resolver el problema de las raíces de x, empezamos por representar cada rooted como una potencia.
+
+1. **Primera raíz:**
+   \[
+   \sqrt{x} = x^{\frac{1}{2}}
+   \]
+
+2. **Segona raíz:**
+   \[
+   \sqrt{x^{\frac{1}{2}}} = \left(x^{\frac{1}{2}}\right)^{\frac{1}{2}} = x^{\frac{1}{4}}
+   \]
+
+3. **Tercera raíz:**
+   \[
+   \sqrt{x^{\frac{1}{4}}} = \left(x^{\frac{1}{4}}\right)^{\frac{1}{2}} = x^{\frac{1}{8}}
+   \]
+
+**Resposta:** \( \boxed{x^{\frac{1}{8}}} \)

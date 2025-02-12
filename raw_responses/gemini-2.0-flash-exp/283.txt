@@ -1,0 +1,14 @@
+Raonament:
+La primera pàgina de la part trencada és la 387. L'última pàgina ha de tenir les mateixes xifres (3, 8 i 7) però en un ordre diferent. Com que els números de pàgina augmenten, l'última pàgina ha de ser un número més gran que 387. Les possibles combinacions de 3, 8 i 7 que són més grans que 387 són: 738, 783 i 837. D'aquestes, la més gran és 873. Per tant, l'última pàgina de la part trencada és la 873.
+
+Per calcular quants fulls van caure, hem de tenir en compte que cada full té dues pàgines. Per tant, hem de calcular quantes pàgines hi ha entre la 387 i la 873, incloent-les totes dues, i després dividir per 2.
+
+El nombre total de pàgines és 873 - 387 + 1 = 487.
+Com que cada full té dues pàgines, el nombre de fulls és 487 / 2 = 243.5. Això no pot ser, ja que el nombre de fulls ha de ser un nombre enter.
+
+Hem de tenir en compte que les pàgines d'un llibre estan numerades de manera que una pàgina és senar i la següent és parell. Per tant, si la primera pàgina és la 387 (senar), l'última pàgina ha de ser parell. Dels números que hem trobat (738, 783 i 837), només 738 és parell. Per tant, l'última pàgina és la 738.
+
+El nombre total de pàgines és 738 - 387 + 1 = 352.
+El nombre de fulls és 352 / 2 = 176.
+
+Resposta: B)

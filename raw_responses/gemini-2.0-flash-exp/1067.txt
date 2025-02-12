@@ -1,0 +1,31 @@
+Raonament:
+Siguin x el nombre de curses del primer any, x+a el nombre de curses del segon any, x+a+b el nombre de curses del tercer any, x+a+b+c el nombre de curses del quart any i 3x el nombre de curses del cinquè any. Sabem que el total de curses en els cinc anys és 31. Per tant, tenim l'equació:
+
+x + (x+a) + (x+a+b) + (x+a+b+c) + 3x = 31
+
+Simplificant, obtenim:
+
+6x + 3a + 2b + c = 31
+
+També sabem que cada any va córrer més curses que l'anterior, per tant, a, b i c són nombres enters positius. A més, sabem que el cinquè any va córrer el triple que el primer, per tant, 3x és un nombre enter. Això implica que x ha de ser un nombre enter.
+
+Comencem provant amb x=1. Si x=1, llavors 3x=3. La suma dels 5 anys seria 1+2+3+4+3=13, que és massa petit.
+Si x=2, llavors 3x=6. La suma dels 5 anys seria 2+3+4+5+6=20, que és massa petit.
+Si x=3, llavors 3x=9. La suma dels 5 anys seria 3+4+5+6+9=27, que és massa petit.
+Si x=4, llavors 3x=12. La suma dels 5 anys seria 4+5+6+7+12=34, que és massa gran.
+
+Per tant, x ha de ser un nombre entre 3 i 4. Com que x ha de ser un nombre enter, hem de buscar una altra manera de resoldre el problema.
+
+Sabem que el nombre de curses augmenta cada any, i que el cinquè any va córrer el triple que el primer. Per tant, podem provar amb diferents valors per a x i veure si trobem una solució que compleixi les condicions.
+
+Si x=3, el cinquè any va córrer 9 curses. La suma total és 31. Per tant, els quatre primers anys han de sumar 31-9=22 curses. Si els quatre primers anys fossin 3, 4, 5 i 6, la suma seria 18, que és massa petita. Si fossin 3, 4, 6 i 9, la suma seria 22, però el cinquè any no seria el triple del primer.
+Si x=4, el cinquè any va córrer 12 curses. La suma total és 31. Per tant, els quatre primers anys han de sumar 31-12=19 curses. Si els quatre primers anys fossin 4, 5, 6 i 7, la suma seria 22, que és massa gran.
+
+Provem amb x=3. Si el primer any va córrer 3 curses, el cinquè any va córrer 9 curses. La suma dels altres tres anys ha de ser 31 - 3 - 9 = 19. Perquè cada any corri més que l'anterior, els tres anys intermedis podrien ser 4, 6 i 9. Però el cinquè any ha de ser el triple del primer, per tant, no pot ser 9.
+Si els tres anys intermedis fossin 4, 5 i 7, la suma seria 16, que és massa petita.
+Si els tres anys intermedis fossin 4, 6 i 8, la suma seria 18, que és massa petita.
+Si els tres anys intermedis fossin 4, 7 i 8, la suma seria 19. Per tant, els anys serien 3, 4, 7, 8 i 9.
+
+Per tant, el quart any va córrer 8 curses.
+
+Resposta: C)

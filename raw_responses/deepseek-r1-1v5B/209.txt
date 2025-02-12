@@ -1,0 +1,70 @@
+<think>
+Para resolver este problema, primero identificaré los patrones que rigen los numeradores y denominadores de la fracción A. En el numerador, los términos parecen ser multiplicaciones de tres números que decremen en un paso constante. Observo que los primeros términos son (1·5·25), (2·10·50), (3·15·75), etc., lo que sugiere que el primer número es n, el segundo es 5n y el tercero es 25n. Por lo tanto, cada término en el numerador se puede expresar como n(n + 4)(n + 8).
+
+En el denominador, los términos siguen un similar patrones. Los primeros términos son (1·2·4), (2·4·8), (3·6·12), etc., lo que sugiere que el primero es n, el segundo es 2n y el tercero es 4n. Por lo tanto, cada término en el denominador se puede expresar como n(n + 2)(n + 4).
+
+Ahora, la fracción A tiene 2016 términos para ambos numeradores y denominadores. Esto significa que los sumatorios son de orden 2016. Además, sabemos que A es el cubo de un número racional. Esto implica que las expresiones algebraicas should resultaren cubosperfectos.
+
+Luego, reescribiré la fracción A utilizando las expresiones generadas:
+
+Numerador: Σ [n(n + 4)(n + 8)] de n=1 a 2016
+
+Denominador: Σ [n(n + 2)(n + 4)] de n=1 a 2016
+
+Para simplificar, intentaré factorizar estos términos o encontrar expresiones que pueden ser cubados perfectos.
+
+Finalmente, observaré que el numerador puede ser expressedo como (n^3 + 12n^2 + 48n) y el denominador como (n^3 + 6n^2 + 8n). Al simplificar la fracción, se reduce a un factor común de n^3, lo que resulta en una expresión similar al cubo de un número racional. Finalmente, determinaré que el número racional es 15/4, ya que (15/4)^3 = 3375/64, y observaré que los términos simplifyan a 1/4, lo que da como resultado el valor 15.625.
+</think>
+
+Raonament:
+
+La fracción A es definida como:
+
+\[
+A = \frac{\sum_{n=1}^{2016} n(n + 4)(n + 8)}{\sum_{n=1}^{2016} n(n + 2)(n + 4)}
+\]
+
+Primero, identificamos los términos en el numerador y denominador:
+
+- **Numerador:** \(\sum_{n=1}^{2016} n(n + 4)(n + 8)\)
+- **Denominador:** \(\sum_{n=1}^{2016} n(n + 2)(n + 4)\)
+
+En el numerador:
+\[
+n(n + 4)(n + 8) = n^3 + 12n^2 + 32n
+\]
+
+En el denominador:
+\[
+n(n + 2)(n + 4) = n^3 + 6n^2 + 8n
+\]
+
+La fracción se simplifica a:
+\[
+A = \frac{\sum_{n=1}^{2016} (n^3 + 12n^2 + 32n)}{\sum_{n=1}^{2016} (n^3 + 6n^2 + 8n)}
+\]
+
+Factorem los términos sumatorios:
+- **Numerador:**
+\[
+\sum_{n=1}^{2016} n^3 + 12 \sum_{n=1}^{2016} n^2 + 32 \sum_{n=1}^{2016} n
+\]
+- **Denominador:**
+\[
+\sum_{n=1}^{2016} n^3 + 6 \sum_{n=1}^{2016} n^2 + 8 \sum_{n=1}^{2016} n
+\]
+
+Simplificando:
+\[
+A = \frac{\left( (2016)^4 + 12 \cdot (2016)(2017)(4033) + 32 \cdot \frac{2016 \cdot 2017}{2} \right)}{\left( (2016)^4 + 6 \cdot (2016)(2017)(4033) + 8 \cdot \frac{2016 \cdot 2017}{2} \right)}
+\]
+
+Factorem los términos comunes:
+\[
+A = \left( \frac{15.625}{1} \right)^3 = (15.625)^3
+\]
+
+Por lo tanto, la raíz cúbica de A es 15.625.
+
+**Respuesta:**  
+\boxed{D) 15,625}

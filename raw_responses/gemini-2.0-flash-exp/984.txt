@@ -1,0 +1,31 @@
+Raonament:
+Per obtenir el nombre més gran possible, hem de col·locar les xifres més grans a les posicions més significatives (les de l'esquerra). Com que tenim tres A, dues B i una C, i sabem que A, B i C són xifres diferents, hem de considerar diferents casos per veure quina combinació ens dona el nombre més gran.
+
+*   **Cas 1: A > B > C**
+    En aquest cas, el nombre més gran que podem formar serà AAABBC.
+
+*   **Cas 2: A > C > B**
+    En aquest cas, el nombre més gran que podem formar serà AAACBB.
+
+*   **Cas 3: B > A > C**
+    En aquest cas, el nombre més gran que podem formar serà BBAAAC.
+
+*   **Cas 4: B > C > A**
+    En aquest cas, el nombre més gran que podem formar serà BBAACA. Però com que no tenim aquesta opció, hem de veure si podem obtenir un nombre més gran amb les opcions que tenim. Si B > C > A, el nombre més gran que podem formar amb les opcions donades seria BBAAAC.
+
+*   **Cas 5: C > A > B**
+    En aquest cas, el nombre més gran que podem formar serà CAAABB.
+
+*   **Cas 6: C > B > A**
+    En aquest cas, el nombre més gran que podem formar serà CAABBB. Però com que no tenim aquesta opció, hem de veure si podem obtenir un nombre més gran amb les opcions que tenim. Si C > B > A, el nombre més gran que podem formar amb les opcions donades seria CAAABB.
+
+Ara, analitzem les opcions donades:
+*   A) AAABBC: Pot ser el nombre més gran si A > B > C.
+*   B) CAAABB: Pot ser el nombre més gran si C > A > B o C > B > A.
+*   C) BBAAAC: Pot ser el nombre més gran si B > A > C o B > C > A.
+*   D) AAABCB: No pot ser el nombre més gran, ja que si A és la xifra més gran, les tres A han d'anar juntes al principi. Si A no és la xifra més gran, llavors el nombre més gran començaria per B o C.
+*   E) AAACBB: Pot ser el nombre més gran si A > C > B.
+
+Per tant, l'única opció que no pot ser mai el nombre més gran és AAABCB.
+
+Resposta: D)

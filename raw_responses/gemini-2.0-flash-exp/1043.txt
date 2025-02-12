@@ -1,0 +1,12 @@
+Raonament:
+El problema tracta sobre un grup d'estudiants asseguts en cercle i passant una pilota. Cada estudiant passa la pilota a l'estudiant sis llocs a la dreta. Això significa que la pilota segueix un patró determinat al voltant del cercle. Per determinar quants estudiants no reben mai la pilota, hem de trobar el patró que segueix la pilota i quants estudiants són accessibles des d'un punt de partida.
+
+El nombre d'estudiants és 50. Cada vegada que la pilota es passa, es mou 6 posicions a la dreta. Això vol dir que la posició de la pilota després de n passades es pot representar com (6n) mod 50, on n és el nombre de passades.
+
+Per trobar quants estudiants són accessibles, hem de trobar el màxim comú divisor (MCD) de 6 i 50. El MCD de 6 i 50 és 2. Això significa que la pilota només visitarà 50/2 = 25 estudiants diferents.
+
+Com que Frida ha rebut la pilota 100 vegades, sabem que la pilota ha estat en moviment durant un temps considerable. Això no afecta el nombre d'estudiants que reben la pilota, ja que el patró de moviment és fix.
+
+Si hi ha 50 estudiants en total i la pilota només visita 25 estudiants, llavors 50 - 25 = 25 estudiants no rebran mai la pilota.
+
+Resposta: D)
