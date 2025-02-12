@@ -1,0 +1,39 @@
+Raonament: Anem a analitzar com canvien els caps del dragó en funció de quants caps talla el guerrer.
+
+1. Si talla 1 cap, el nombre de caps augmenta en 3 (4 nous caps creixen en lloc d'un tallat). Així que si el dragó tenia \( x \) caps, després de tallar 1 cap tindrà \( x - 1 + 4 = x + 3 \) caps.
+2. Si talla 2 caps, el nombre de caps es manté igual, ja que els dos caps tornen a créixer. Per tant, el nombre de caps després de tallar 2 caps és \( x - 2 + 2 = x \).
+3. Si talla 3 caps, el nombre de caps disminueix en 3, així que tindrà \( x - 3 \) caps.
+
+Ara, sabem que en un moment donat el dragó tenia 25 caps. Això pot passar després de tallar caps. Anem a veure com podem arribar a 25 caps a partir de les opcions donades.
+
+- Si el guerrer talla 1 cap, el nombre de caps augmenta. Per tant, no pot ser que el dragó tingués 25 caps després de tallar 1 cap.
+- Si talla 2 caps, el nombre de caps es manté igual, així que no pot ser que el dragó tingués 25 caps després de tallar 2 caps.
+- Si talla 3 caps, el nombre de caps disminueix. Així que si el dragó tenia 25 caps després de tallar 3 caps, abans de tallar els caps havia de tenir \( 25 + 3 = 28 \) caps.
+
+Ara, comprovem les opcions donades per veure si alguna d'elles pot ser 28:
+
+A) 3 (no pot ser)
+B) 5 (no pot ser)
+C) 7 (no pot ser)
+D) 9 (no pot ser)
+E) 11 (no pot ser)
+
+Cap de les opcions donades no és 28. Ara, provem a veure si el dragó podia tenir 25 caps després de tallar 1 cap o 2 caps.
+
+Si el dragó tenia 25 caps i el guerrer talla 1 cap, abans de tallar havia de tenir \( 25 - 3 = 22 \) caps. 
+Si el guerrer talla 2 caps, abans de tallar havia de tenir \( 25 + 2 = 27 \) caps.
+
+Ara, comprovem si alguna de les opcions donades pot ser 22 o 27:
+
+- 22 no és una opció.
+- 27 no és una opció.
+
+Per tant, revisem les opcions inicials i veiem que cap d'elles pot ser la resposta correcta. 
+
+Però, si considerem que el guerrer talla 3 caps i el dragó tenia 28 caps, i que 28 no és una opció, potser hem de considerar que el guerrer talla 1 cap i el dragó tenia 22 caps, que tampoc és una opció.
+
+Finalment, si el guerrer talla 1 cap i el dragó tenia 25 caps, llavors el nombre inicial de caps hauria de ser 22, que no és una opció.
+
+Per tant, la resposta correcta és que no hi ha cap opció que pugui ser correcta, però si hem de triar una, la més propera seria 11, ja que és la més baixa i podria ser un error en el plantejament.
+
+Resposta: E) 11.

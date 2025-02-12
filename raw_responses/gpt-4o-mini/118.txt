@@ -1,0 +1,50 @@
+Raonament: 
+Tenim 15 participants en total i els equips A, B, C i D. Sabem que:
+
+1. El nombre de participants de cada equip és diferent.
+2. A + B = 7 (participants d'A i B junts).
+3. A + D = 9 (participants d'A i D junts).
+
+Podem expressar el nombre de participants de cada equip de la següent manera:
+
+- A + B = 7
+- A + D = 9
+
+D'aquí podem deduir que D = 9 - A. 
+
+Ara, si sumem les dues equacions:
+
+A + B + A + D = 7 + 9
+2A + B + D = 16
+
+Sabem que el total de participants és 15, així que:
+
+A + B + C + D = 15
+
+Substituïm B i D en termes d'A:
+
+B = 7 - A
+D = 9 - A
+
+Substituïm aquests valors a l'equació del total:
+
+A + (7 - A) + C + (9 - A) = 15
+7 + C + 9 - A = 15
+C - A + 16 = 15
+C - A = -1
+C = A - 1
+
+Ara, sabem que C ha de ser un nombre positiu i que A, B, C i D han de ser diferents i com a mínim 2. 
+
+Si A = 3, llavors B = 4 (7 - 3), D = 6 (9 - 3) i C = 2 (3 - 1). 
+Això compleix les condicions: 3, 4, 2, 6 són diferents i cada equip té almenys 2 membres.
+
+Si A = 4, llavors B = 3 (7 - 4), D = 5 (9 - 4) i C = 3 (4 - 1). 
+Això no és vàlid perquè C no pot tenir el mateix nombre de membres que B.
+
+Si A = 5, llavors B = 2 (7 - 5), D = 4 (9 - 5) i C = 4 (5 - 1). 
+Això no és vàlid perquè C no pot tenir el mateix nombre de membres que D.
+
+Per tant, la única solució vàlida és A = 3, B = 4, D = 6 i C = 2.
+
+Resposta: A) 2

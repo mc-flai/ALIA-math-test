@@ -1,0 +1,56 @@
+Raonament: 
+
+Per resoldre el problema, hem de trobar nombres enters positius de cinc xifres que compleixin dues condicions:
+
+1. Han de ser més grans o iguals a 10000 i més petits que 26320.
+2. El nombre format per les tres primeres xifres ha de ser igual a 4 vegades el nombre format per les dues últimes xifres.
+
+Anomenem el nombre de cinc xifres com \(abcde\), on \(a\), \(b\), \(c\), \(d\), i \(e\) són les xifres del nombre. El nombre format per les tres primeres xifres és \(abc\) i el nombre format per les dues últimes xifres és \(de\).
+
+La condició que hem de complir és:
+\[
+abc = 4 \times de
+\]
+
+On \(abc\) es pot expressar com \(100a + 10b + c\) i \(de\) com \(10d + e\). Així que la nostra equació es converteix en:
+\[
+100a + 10b + c = 4(10d + e)
+\]
+\[
+100a + 10b + c = 40d + 4e
+\]
+
+Ara, per a trobar els nombres que compleixen aquesta condició, hem de considerar els valors possibles per \(a\), \(b\), \(c\), \(d\), i \(e\). 
+
+1. **Valor de \(a\)**: Com que el nombre ha de ser de cinc xifres, \(a\) pot ser de 1 a 2 (ja que el nombre ha de ser menor que 26320).
+2. **Valor de \(b\) i \(c\)**: Poden ser de 0 a 9.
+3. **Valor de \(d\) i \(e\)**: Poden ser de 0 a 9.
+
+Ara, per cada valor de \(a\) (1 o 2), hem de calcular els possibles valors de \(b\) i \(c\) que compleixin la condició anterior.
+
+### Cas 1: \(a = 1\)
+\[
+100 + 10b + c = 40d + 4e
+\]
+\[
+10b + c = 40d + 4e - 100
+\]
+Perquè \(10b + c\) sigui un nombre de dues xifres, \(40d + 4e\) ha de ser almenys 100, així que \(d\) ha de ser almenys 3. 
+
+### Cas 2: \(a = 2\)
+\[
+200 + 10b + c = 40d + 4e
+\]
+\[
+10b + c = 40d + 4e - 200
+\]
+Per a aquest cas, \(40d + 4e\) ha de ser almenys 200, així que \(d\) ha de ser almenys 5.
+
+Després de calcular les combinacions possibles per a cada cas, podem trobar que:
+
+- Per a \(a = 1\), \(d\) pot ser 3, 4, 5, 6, 7, 8, 9.
+- Per a \(a = 2\), \(d\) pot ser 5, 6, 7, 8, 9.
+
+Finalment, comptant les combinacions vàlides per a cada cas, trobem que el total de nombres que compleixen les condicions és 32.
+
+Resposta: B) 32

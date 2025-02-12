@@ -1,0 +1,22 @@
+Raonament: Per determinar quants residus diferents podem obtenir al dividir el cub dels nombres naturals per 9, hem de considerar els residus possibles dels nombres naturals quan es divideixen per 9. Els residus possibles són 0, 1, 2, 3, 4, 5, 6, 7, i 8, és a dir, hi ha 9 residus possibles.
+
+Ara, calculem el cub dels residus possibles i després els dividim per 9 per veure quins residus obtinguem:
+
+1. \(0^3 \mod 9 = 0\)
+2. \(1^3 \mod 9 = 1\)
+3. \(2^3 \mod 9 = 8\)
+4. \(3^3 \mod 9 = 0\)
+5. \(4^3 \mod 9 = 1\)
+6. \(5^3 \mod 9 = 8\)
+7. \(6^3 \mod 9 = 0\)
+8. \(7^3 \mod 9 = 1\)
+9. \(8^3 \mod 9 = 8\)
+
+Ara, resumim els residus obtinguts:
+- Residus 0: de \(0^3\), \(3^3\), i \(6^3\)
+- Residus 1: de \(1^3\), \(4^3\), i \(7^3\)
+- Residus 8: de \(2^3\), \(5^3\), i \(8^3\)
+
+Per tant, els residus diferents que podem obtenir són 0, 1 i 8. Això ens dóna un total de 3 residus diferents.
+
+Resposta: C)

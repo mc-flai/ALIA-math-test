@@ -1,0 +1,13 @@
+Raonament: Per calcular quants zeros hi ha al final de 100!, hem de determinar quantes vegades el número 10 és un factor en el producte de tots els números des de 1 fins a 100. Com que 10 és el producte de 2 i 5, i hi ha més factors de 2 que de 5 en aquest rang, només necessitem comptar quants factors de 5 hi ha.
+
+Per fer-ho, utilitzem la fórmula següent per calcular el nombre de factors de 5 en 100!:
+
+1. Comptem quants números són divisibles per 5: \( \left\lfloor \frac{100}{5} \right\rfloor = 20 \)
+2. Comptem quants números són divisibles per \( 5^2 = 25 \): \( \left\lfloor \frac{100}{25} \right\rfloor = 4 \)
+3. No cal comptar \( 5^3 = 125 \) perquè 125 és més gran que 100.
+
+Ara sumem els resultats: \( 20 + 4 = 24 \).
+
+Així que, 100! té 24 zeros al final.
+
+Resposta: D)

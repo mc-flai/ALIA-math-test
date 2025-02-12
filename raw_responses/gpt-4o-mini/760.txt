@@ -1,0 +1,56 @@
+Raonament: 
+Sigui \( x \) el nombre de xics i \( y \) el nombre de xiques a la classe inicialment. Segons el problema, el nombre de xics ha crescut un 20%, així que el nou nombre de xics és \( 1.2x \). D'altra banda, el nombre de xiques ha disminuït un 20%, així que el nou nombre de xiques és \( 0.8y \). 
+
+Segons el problema, ara hi ha un estudiant més que abans, per tant, podem escriure l'equació següent:
+
+\[
+1.2x + 0.8y = x + y + 1
+\]
+
+Simplificant l'equació, obtenim:
+
+\[
+1.2x + 0.8y - x - y = 1
+\]
+
+\[
+0.2x - 0.2y = 1
+\]
+
+Dividint tota l'equació per 0.2, tenim:
+
+\[
+x - y = 5
+\]
+
+Això significa que el nombre de xics és 5 més que el nombre de xiques. Ara podem expressar \( x \) en funció de \( y \):
+
+\[
+x = y + 5
+\]
+
+El nombre total d'estudiants inicialment era \( x + y \). Substituint \( x \):
+
+\[
+x + y = (y + 5) + y = 2y + 5
+\]
+
+El nombre total d'estudiants actualment és:
+
+\[
+1.2x + 0.8y = 1.2(y + 5) + 0.8y = 1.2y + 6 + 0.8y = 2y + 6
+\]
+
+Sabem que el nombre total actual és \( 2y + 6 \) i que és igual a \( x + y + 1 = 2y + 5 + 1 = 2y + 6 \). Això confirma que les equacions són consistents.
+
+Ara, per trobar el nombre total d'estudiants, podem provar les opcions donades:
+
+- A) 22: \( 2y + 6 = 22 \) → \( 2y = 16 \) → \( y = 8 \) → \( x = 13 \) (13 + 8 = 21, no és correcte)
+- B) 26: \( 2y + 6 = 26 \) → \( 2y = 20 \) → \( y = 10 \) → \( x = 15 \) (15 + 10 = 25, no és correcte)
+- C) 29: \( 2y + 6 = 29 \) → \( 2y = 23 \) → \( y = 11.5 \) (no és un nombre enter, no és correcte)
+- D) 31: \( 2y + 6 = 31 \) → \( 2y = 25 \) → \( y = 12.5 \) (no és un nombre enter, no és correcte)
+- E) 34: \( 2y + 6 = 34 \) → \( 2y = 28 \) → \( y = 14 \) → \( x = 19 \) (19 + 14 = 33, no és correcte)
+
+Després de revisar les opcions, la que compleix les condicions és la que dóna un nombre enter per a \( y \) i \( x \). La resposta correcta és:
+
+Resposta: E) 34

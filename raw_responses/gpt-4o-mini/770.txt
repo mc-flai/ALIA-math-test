@@ -1,0 +1,27 @@
+Raonament: Comencem per analitzar l'equació donada: \( 2 - |x| = ax \). Aquesta equació es pot reescriure com \( |x| + ax = 2 \). 
+
+Per resoldre aquesta equació, considerem els dos casos que defineix la funció valor absolut \( |x| \):
+
+1. **Cas 1: \( x \geq 0 \)**. En aquest cas, \( |x| = x \), així que l'equació es converteix en:
+   \[
+   x + ax = 2 \implies (1 + a)x = 2 \implies x = \frac{2}{1 + a} \quad \text{(si \( 1 + a \neq 0 \))}
+   \]
+
+2. **Cas 2: \( x < 0 \)**. Aquí, \( |x| = -x \), així que l'equació es converteix en:
+   \[
+   -x + ax = 2 \implies (a - 1)x = 2 \implies x = \frac{2}{a - 1} \quad \text{(si \( a - 1 \neq 0 \))}
+   \]
+
+Ara, per tenir exactament dues solucions, necessitem que una solució provingués del cas \( x \geq 0 \) i l'altra del cas \( x < 0 \). Això implica que:
+
+- La solució \( x = \frac{2}{1 + a} \) ha de ser no negativa, és a dir, \( \frac{2}{1 + a} \geq 0 \). Això implica que \( 1 + a > 0 \) o \( a > -1 \).
+  
+- La solució \( x = \frac{2}{a - 1} \) ha de ser negativa, és a dir, \( \frac{2}{a - 1} < 0 \). Això implica que \( a - 1 < 0 \) o \( a < 1 \).
+
+Per tant, per tenir exactament dues solucions, hem de complir les dues condicions simultàniament:
+1. \( a > -1 \)
+2. \( a < 1 \)
+
+Això ens dóna el conjunt de valors per a \( a \) com \( -1 < a < 1 \).
+
+Resposta: B)

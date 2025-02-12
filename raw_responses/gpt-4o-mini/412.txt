@@ -1,0 +1,44 @@
+Raonament: Tenim les dues equacions següents:
+
+1. \( a + b + c = 100 \)
+2. \( \frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} = 0.1 \)
+
+Volem trobar el valor de l'expressió \( \frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} \).
+
+Podem reescriure l'expressió que volem calcular:
+
+\[
+\frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} = \frac{c}{100-c} + \frac{a}{100-a} + \frac{b}{100-b}
+\]
+
+Per simplificar el càlcul, utilitzem la segona equació. Multipliquem per \( (a+b)(b+c)(c+a) \) per eliminar les fraccions:
+
+\[
+(b+c)(c+a) + (c+a)(a+b) + (a+b)(b+c) = 0.1 (a+b)(b+c)(c+a)
+\]
+
+Això ens donarà una equació en termes de \( a, b, c \). No obstant això, en comptes de resoldre aquesta equació complexa, podem observar que:
+
+Si sumem les tres fraccions, podem expressar-les en termes de \( a, b, c \):
+
+\[
+\frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} = \frac{c(b+c)(c+a) + a(c+a)(a+b) + b(a+b)(b+c)}{(a+b)(b+c)(c+a)}
+\]
+
+Però, en comptes de fer càlculs complicats, podem utilitzar la identitat que relaciona les dues equacions. Sabem que:
+
+\[
+\frac{1}{a+b} + \frac{1}{b+c} + \frac{1}{c+a} = \frac{(b+c)(c+a) + (c+a)(a+b) + (a+b)(b+c)}{(a+b)(b+c)(c+a)} = 0.1
+\]
+
+Això implica que la suma dels productes de les dues variables és igual a 0.1 vegades el producte dels tres termes. 
+
+Finalment, podem deduir que:
+
+\[
+\frac{c}{a+b} + \frac{a}{b+c} + \frac{b}{c+a} = 1
+\]
+
+Per tant, el valor de l'expressió que busquem és 1.
+
+Resposta: B)

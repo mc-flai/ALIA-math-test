@@ -1,0 +1,22 @@
+Raonament: Tenim una circumferència amb 20 punts marcats, que divideixen la circumferència en 20 arcs iguals. Cada parella de punts pot formar una corda. El total de cordes que es poden dibuixar entre 20 punts és el nombre de combinacions de 20 punts agafats de 2 en 2, que es calcula amb la fórmula de combinaciones: C(n, k) = n! / (k!(n-k)!), on n és el nombre total de punts i k és el nombre de punts a escollir.
+
+Per tant, el nombre total de cordes és:
+C(20, 2) = 20! / (2!(20-2)!) = 20! / (2! * 18!) = (20 * 19) / (2 * 1) = 190.
+
+Ara, hem de determinar quines d'aquestes cordes són més llargues que el radi del cercle però més curtes que el diàmetre. 
+
+1. **Cords més llargues que el radi**: Una corda és més llarga que el radi si connecta dos punts que estan separats per més de 10 arcs (ja que el radi és la meitat del diàmetre). Això significa que hem de considerar les cordes que connecten punts que estan separats per 11, 12, 13, 14, 15, 16, 17, 18, 19 arcs.
+
+2. **Cords més curtes que el diàmetre**: Una corda és més curta que el diàmetre si connecta dos punts que estan separats per menys de 10 arcs.
+
+Per tant, les cordes que compleixen ambdues condicions són aquelles que connecten punts separats per 11, 12, 13, 14, 15, 16, 17, 18, 19 arcs. 
+
+- Si considerem un punt fix, podem connectar-lo amb 9 punts que estan a la seva esquerra (0 a 9 arcs) i 10 punts a la seva dreta (10 a 19 arcs). Només les connexions amb 11 a 19 arcs són vàlides, que són 9 connexions per cada punt.
+
+Així, per cada punt, podem connectar-lo amb 9 punts que estan a la seva dreta (11 a 19 arcs). Com que hi ha 20 punts, el total de cordes que compleixen les condicions és 20 * 9 = 180.
+
+No obstant això, hem de tenir en compte que cada corda es compta dues vegades (una per cada extrem), així que hem de dividir per 2:
+
+Total de cordes vàlides = 180 / 2 = 90.
+
+Resposta: A) 90.

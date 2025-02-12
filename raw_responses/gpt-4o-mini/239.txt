@@ -1,0 +1,23 @@
+Raonament: Per resoldre el problema, hem de determinar quantes cordes podem dibuixar entre 2016 punts en una circumferència sense que s'intersequin. Cada corda uneix dues parelles de punts, i per evitar que les cordes s'intersequin, hem de garantir que no hi hagi dues cordes que comparteixin un punt interior. 
+
+El nombre màxim de cordes que es poden dibuixar sense interseccions es pot calcular utilitzant la combinatòria. Si tenim \( n \) punts, el nombre de maneres de triar 2 punts per formar una corda és donat per la combinació \( C(n, 2) \), que es calcula com:
+
+\[
+C(n, 2) = \frac{n(n-1)}{2}
+\]
+
+En el nostre cas, \( n = 2016 \):
+
+\[
+C(2016, 2) = \frac{2016 \times 2015}{2} = 2031120
+\]
+
+Així, el nombre màxim de cordes que es poden dibuixar és 2031120. No obstant això, la pregunta demana el nombre de cordes que es poden dibuixar sense que s'intersequin, i això es pot aconseguir dibuixant un arbre de cordes que connecti tots els punts sense interseccions. El nombre màxim de cordes que es poden dibuixar en aquest cas és \( n - 1 \), que en el nostre cas seria:
+
+\[
+2016 - 1 = 2015
+\]
+
+Per tant, la resposta correcta és que el nombre màxim de cordes que es poden dibuixar sense interseccions és 2015.
+
+Resposta: B)

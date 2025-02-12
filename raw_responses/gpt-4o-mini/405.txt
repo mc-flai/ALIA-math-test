@@ -1,0 +1,36 @@
+Raonament: Tenim un conjunt \( S \) amb \( n \) elements i volem trobar 7 subconjunts de 3 elements cadascun, de manera que per cada parell d'elements de \( S \), hi hagi exactament un subconjunt que contingui aquests dos elements. 
+
+Cada subconjunt de 3 elements pot ser representat com un triangle en un gràfic, on cada vèrtex representa un element del conjunt \( S \). Si considerem que cada subconjunt de 3 elements conté 3 parells d'elements, llavors cada subconjunt contribueix amb 3 parells. Si tenim 7 subconjunts, el total de parells que podem formar és \( 7 \times 3 = 21 \).
+
+D'altra banda, el nombre total de parells d'elements que podem formar amb \( n \) elements és \( \binom{n}{2} = \frac{n(n-1)}{2} \). Segons el problema, cada parell d'elements ha de ser cobert per exactament un subconjunt, per tant, hem d'igualar el nombre de parells:
+
+\[
+\frac{n(n-1)}{2} = 21
+\]
+
+Multiplicant per 2, obtenim:
+
+\[
+n(n-1) = 42
+\]
+
+Ara, hem de resoldre aquesta equació quadràtica. Reorganitzant, tenim:
+
+\[
+n^2 - n - 42 = 0
+\]
+
+Utilitzant la fórmula quadràtica \( n = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \), on \( a = 1, b = -1, c = -42 \):
+
+\[
+n = \frac{1 \pm \sqrt{1 + 168}}{2} = \frac{1 \pm \sqrt{169}}{2} = \frac{1 \pm 13}{2}
+\]
+
+Això ens dóna dues solucions:
+
+1. \( n = \frac{14}{2} = 7 \)
+2. \( n = \frac{-12}{2} = -6 \) (no és vàlida, ja que \( n \) ha de ser positiu)
+
+Per tant, el valor de \( n \) és 7. 
+
+Resposta: E) 7

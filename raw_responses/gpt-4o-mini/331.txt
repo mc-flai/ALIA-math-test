@@ -1,0 +1,20 @@
+Raonament: Tenim 5 xiquets corrent en la competició, i Adrià ha de finalitzar per davant de dos dels seus amics. Anomenem els xiquets com A (Adrià), B (amic 1), C (amic 2) i D, E (altres dos xiquets). 
+
+Perquè Adrià tingui un bon resultat, ha de quedar en una posició superior a B i C. Això significa que Adrià pot ocupar qualsevol de les posicions 1, 2 o 3, ja que si ocupa la 4a o 5a posició, no estaria per davant dels seus amics.
+
+1. Si Adrià ocupa la 1a posició, B i C poden ocupar les posicions 2, 3, 4 i 5. Les combinacions de B i C en aquestes posicions són 6 (2, 3, 4, 5) i les dues posicions restants poden ser ocupades per D i E en qualsevol ordre. Així que les combinacions són 6 * 2! = 12.
+
+2. Si Adrià ocupa la 2a posició, B i C han de ocupar les posicions 3, 4 i 5. Les combinacions de B i C en aquestes posicions són 3 (3, 4, 5) i les dues posicions restants poden ser ocupades per D i E en qualsevol ordre. Així que les combinacions són 3 * 2! = 6.
+
+3. Si Adrià ocupa la 3a posició, B i C han de ocupar les posicions 4 i 5. Les combinacions de B i C en aquestes posicions són 1 (4, 5) i les dues posicions restants poden ser ocupades per D i E en qualsevol ordre. Així que les combinacions són 1 * 2! = 2.
+
+Ara sumem totes les combinacions possibles:
+- 1a posició: 12
+- 2a posició: 6
+- 3a posició: 2
+
+Total = 12 + 6 + 2 = 20.
+
+Per tant, el nombre total de bons resultats possibles per Adrià és 20.
+
+Resposta: B) 20

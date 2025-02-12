@@ -1,0 +1,48 @@
+Raonament: 
+
+Tenim dues condicions per a la funció \( f \):
+
+1. \( f(x) = 2f(x + 1) \)
+2. \( f(x + y) = f(x) \cdot f(y) \)
+
+Comencem a analitzar la segona condició, que és una forma de la propietat de multiplicativitat. Una funció que compleix aquesta propietat és de la forma \( f(x) = a^x \) per a algun \( a > 0 \).
+
+Substituïm \( f(x) = a^x \) en la primera condició:
+
+\[
+f(x) = a^x \quad \text{i} \quad f(x + 1) = a^{x + 1} = a^x \cdot a
+\]
+
+Així, la primera condició es converteix en:
+
+\[
+a^x = 2(a^x \cdot a) \implies a^x = 2a^{x + 1} \implies a^x = 2a^x \cdot a
+\]
+
+Dividint per \( a^x \) (suponint que \( a^x \neq 0 \)):
+
+\[
+1 = 2a \implies a = \frac{1}{2}
+\]
+
+Per tant, la funció \( f(x) \) es pot expressar com:
+
+\[
+f(x) = \left(\frac{1}{2}\right)^x
+\]
+
+Ara calculem \( f(2016) \) i \( f(2014) \):
+
+\[
+f(2016) = \left(\frac{1}{2}\right)^{2016} \quad \text{i} \quad f(2014) = \left(\frac{1}{2}\right)^{2014}
+\]
+
+Ara calculem el quocient:
+
+\[
+\frac{f(2016)}{f(2014)} = \frac{\left(\frac{1}{2}\right)^{2016}}{\left(\frac{1}{2}\right)^{2014}} = \left(\frac{1}{2}\right)^{2016 - 2014} = \left(\frac{1}{2}\right)^{2} = \frac{1}{4}
+\]
+
+Per tant, el valor de \( \frac{f(2016)}{f(2014)} \) és \( \frac{1}{4} \).
+
+Resposta: C)

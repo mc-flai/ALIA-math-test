@@ -1,0 +1,47 @@
+Raonament: Tenim la funció \( f \) tal que \( f(xy) = f(x + y) \) per a tots els enters \( x \) i \( y \). Sabem que \( f(9) = 18 \). 
+
+Podem començar a explorar la funció substituint valors per \( x \) i \( y \). Si escollim \( x = 0 \) i \( y = 0 \), obtenim:
+
+\[
+f(0 \cdot 0) = f(0 + 0) \implies f(0) = f(0)
+\]
+
+Això no ens aporta nova informació. Provem amb \( x = 1 \) i \( y = 1 \):
+
+\[
+f(1 \cdot 1) = f(1 + 1) \implies f(1) = f(2)
+\]
+
+Ara provem amb \( x = 1 \) i \( y = 2 \):
+
+\[
+f(1 \cdot 2) = f(1 + 2) \implies f(2) = f(3)
+\]
+
+Així, tenim que \( f(1) = f(2) = f(3) \). Continuem amb \( x = 2 \) i \( y = 2 \):
+
+\[
+f(2 \cdot 2) = f(2 + 2) \implies f(4) = f(4)
+\]
+
+Això és trivial. Provem amb \( x = 3 \) i \( y = 3 \):
+
+\[
+f(3 \cdot 3) = f(3 + 3) \implies f(9) = f(6)
+\]
+
+Sabem que \( f(9) = 18 \), per tant \( f(6) = 18 \). 
+
+Continuem amb \( x = 3 \) i \( y = 1 \):
+
+\[
+f(3 \cdot 1) = f(3 + 1) \implies f(3) = f(4)
+\]
+
+Així, \( f(3) = f(4) \) i, per tant, \( f(1) = f(2) = f(3) = f(4) = f(6) = f(9) = 18 \).
+
+Podem deduir que \( f(n) = 18 \) per a tots els enters \( n \) que hem provat. 
+
+Per tant, si \( f(n) = 18 \) per a tots els enters, també ha de ser així per a \( f(2020) \).
+
+Resposta: B) 18

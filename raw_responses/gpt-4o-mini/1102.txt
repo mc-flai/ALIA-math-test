@@ -1,0 +1,15 @@
+Raonament: 
+
+Júlia construeix un cub de 3 × 3 × 3, que conté un total de 27 cubs. Vol que la superfície del cub estigui composta per un terç de cubs negres, un terç de cubs grisos i un terç de cubs blancs. Això significa que, en total, haurà d'utilitzar 9 cubs de cada color (9 negres, 9 grisos i 9 blancs) per aconseguir la proporció desitjada.
+
+Per determinar el mínim (m) i el màxim (M) nombre de cubs negres que pot utilitzar, hem de considerar la disposició dels cubs en la superfície del cub de 3 × 3 × 3. La superfície d'aquest cub està formada per 6 cares, i cada cara té 9 cubs, per tant, la superfície total conté 54 cubs (6 cares × 9 cubs per cara). No obstant això, cada cub de la superfície comparteix cares amb altres cubs, així que no podem simplement sumar els cubs de la superfície.
+
+En un cub de 3 × 3 × 3, els cubs de la superfície són els que es troben a les cares exteriors. Hi ha 26 cubs a la superfície (tots menys el cub central). Si volem que un terç de la superfície sigui negra, necessitem que 9 dels 26 cubs de la superfície siguin negres.
+
+Per tant, el màxim nombre de cubs negres (M) que podem utilitzar és 9, ja que no podem tenir més cubs negres que el nombre total de cubs negres que es poden col·locar a la superfície.
+
+El mínim nombre de cubs negres (m) que podem utilitzar és 0, ja que podem optar per no utilitzar cap cub negre a la superfície i, en canvi, utilitzar cubs grisos i blancs per aconseguir la proporció desitjada.
+
+Per tant, M = 9 i m = 0. La diferència M - m és 9 - 0 = 9.
+
+Resposta: E) 9

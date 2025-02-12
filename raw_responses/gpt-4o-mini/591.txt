@@ -1,0 +1,32 @@
+Raonament: Cada caixa \( n \) conté \( n \) pilotes, i els números de les pilotes en cada caixa es poden calcular sumant el total de pilotes de les caixes anteriors. La suma de les primeres \( n \) caixes és igual a la suma dels primers \( n \) nombres naturals, que es pot calcular amb la fórmula:
+
+\[
+S_n = \frac{n(n + 1)}{2}
+\]
+
+Així, per trobar en quina caixa es troba la pilota número 2018, hem de buscar el valor de \( n \) tal que:
+
+\[
+S_n < 2018 \leq S_{n+1}
+\]
+
+Calculant \( S_n \) per diferents valors de \( n \):
+
+- Per \( n = 62 \):
+  \[
+  S_{62} = \frac{62 \times 63}{2} = 1953
+  \]
+
+- Per \( n = 63 \):
+  \[
+  S_{63} = \frac{63 \times 64}{2} = 2016
+  \]
+
+- Per \( n = 64 \):
+  \[
+  S_{64} = \frac{64 \times 65}{2} = 2080
+  \]
+
+Veiem que \( 1953 < 2018 \leq 2016 \), així que la pilota número 2018 es troba a la caixa número 64.
+
+Resposta: D) 64

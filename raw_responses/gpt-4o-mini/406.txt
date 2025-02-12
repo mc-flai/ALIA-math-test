@@ -1,0 +1,63 @@
+Raonament: 
+
+Per trobar el punt simètric del punt (0, 2017) respecte a la recta \(y = mx\), primer hem de determinar la forma de la recta i la seva pendent \(m\). La recta \(y = mx\) passa pel origen (0,0) i té una pendent \(m\).
+
+El punt simètric d'un punt respecte a una recta es pot trobar utilitzant la fórmula de la projecció del punt sobre la recta. La projecció del punt \(P(0, 2017)\) sobre la recta \(y = mx\) es pot calcular amb les següents equacions:
+
+1. La recta perpendicular a \(y = mx\) que passa pel punt \(P\) té una pendent de \(-\frac{1}{m}\) (ja que les pendents de dues rectes perpendiculares són inverses negatives).
+2. L'equació de la recta perpendicular que passa pel punt \(P(0, 2017)\) és \(y - 2017 = -\frac{1}{m}(x - 0)\), o sigui, \(y = -\frac{1}{m}x + 2017\).
+
+Per trobar el punt de intersecció entre les dues rectes, igualem les dues equacions:
+
+\[
+mx = -\frac{1}{m}x + 2017
+\]
+
+Multiplicant per \(m\) per eliminar el denominador:
+
+\[
+m^2x + x = 2017m
+\]
+
+\[
+x(m^2 + 1) = 2017m
+\]
+
+D'aquí, podem resoldre per \(x\):
+
+\[
+x = \frac{2017m}{m^2 + 1}
+\]
+
+Ara substituïm \(x\) en l'equació de la recta \(y = mx\) per trobar \(y\):
+
+\[
+y = m\left(\frac{2017m}{m^2 + 1}\right) = \frac{2017m^2}{m^2 + 1}
+\]
+
+El punt de projecció \(Q\) sobre la recta és \(Q\left(\frac{2017m}{m^2 + 1}, \frac{2017m^2}{m^2 + 1}\right)\).
+
+El punt simètric \(S\) respecte a la recta es troba a la mateixa distància de \(Q\) en la direcció oposada. Així, les coordenades del punt simètric \(S\) són:
+
+\[
+S\left(2 \cdot \frac{2017m}{m^2 + 1}, 2 \cdot \frac{2017m^2}{m^2 + 1} - 2017\right)
+\]
+
+Simplificant les coordenades de \(S\):
+
+\[
+S\left(\frac{4034m}{m^2 + 1}, \frac{4034m^2}{m^2 + 1} - 2017\right)
+\]
+
+Perquè \(S\) tingui coordenades enters, tant \(\frac{4034m}{m^2 + 1}\) com \(\frac{4034m^2}{m^2 + 1} - 2017\) han de ser enters.
+
+1. La primera coordenada \(\frac{4034m}{m^2 + 1}\) és un enter si \(m^2 + 1\) divideix \(4034m\). 
+2. La segona coordenada \(\frac{4034m^2}{m^2 + 1} - 2017\) és un enter si \(m^2 + 1\) divideix \(4034m^2 - 2017(m^2 + 1)\).
+
+Ambdues condicions impliquen que \(m^2 + 1\) ha de ser un divisor de \(4034m\) i \(4034m^2 - 2017m^2 - 2017\).
+
+El nombre de divisors positius de \(4034\) és limitat. Com que \(4034 = 2 \cdot 2017\), té 4 divisors positius: \(1, 2, 2017, 4034\). 
+
+Per tant, hi ha 4 valors possibles per a \(m\) que són enters positius.
+
+Resposta: D) Més de 3, però una quantitat finita.

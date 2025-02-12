@@ -1,0 +1,43 @@
+Raonament: Observem la sèrie \(1 + 2 - 3 - 4 + 5 + 6 - 7 - 8 + 9 + 10 - 11 - 12 + \cdots - 2015\). Podem agrupar els termes de quatre en quatre per facilitar el càlcul:
+
+\[
+(1 + 2 - 3 - 4) + (5 + 6 - 7 - 8) + (9 + 10 - 11 - 12) + \cdots
+\]
+
+Cada grup de quatre termes es pot simplificar:
+
+\[
+1 + 2 - 3 - 4 = -4 + 3 = -1
+\]
+\[
+5 + 6 - 7 - 8 = -8 + 11 = -1
+\]
+\[
+9 + 10 - 11 - 12 = -12 + 19 = -1
+\]
+
+Així, cada grup de quatre termes suma \(-1\).
+
+Ara, hem de determinar quants grups de quatre termes hi ha fins a \(2015\). El total de termes de la sèrie és \(2015\). Com que cada grup conté 4 termes, podem calcular el nombre de grups:
+
+\[
+\text{Nombre de grups} = \frac{2015}{4} = 503.75
+\]
+
+Això significa que hi ha \(503\) grups complets de quatre termes, i ens queda un terme addicional, que és \(2015\).
+
+El total de la suma dels grups complets és:
+
+\[
+503 \times (-1) = -503
+\]
+
+Ara, afegim el terme restant \(2015\):
+
+\[
+-503 + 2015 = 1512
+\]
+
+Per tant, el valor total de la sèrie és \(1512\).
+
+Resposta: B)

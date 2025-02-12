@@ -1,0 +1,27 @@
+Raonament: Primer, calculem el producte \(20182019 \times 20192018\). No necessitem el valor exacte del producte, sinó només el residu de la divisió per 9. Per fer-ho, podem aplicar la regla de divisibilitat per 9, que consisteix a sumar les xifres del número.
+
+Calculem el residu de cada número per separat:
+
+1. **Per a \(20182019\)**:
+   - Suma de les xifres: \(2 + 0 + 1 + 8 + 2 + 0 + 1 + 9 = 23\)
+   - Ara sumem les xifres de 23: \(2 + 3 = 5\)
+   - Per tant, \(20182019 \equiv 5 \mod 9\).
+
+2. **Per a \(20192018\)**:
+   - Suma de les xifres: \(2 + 0 + 1 + 9 + 2 + 0 + 1 + 8 = 23\)
+   - Igual que abans, sumem les xifres de 23: \(2 + 3 = 5\)
+   - Per tant, \(20192018 \equiv 5 \mod 9\).
+
+Ara calculem el producte dels residus:
+\[
+20182019 \times 20192018 \equiv 5 \times 5 = 25 \mod 9
+\]
+Calculem el residu de 25 dividit per 9:
+\[
+25 \div 9 = 2 \quad \text{(residu 7)}
+\]
+Per tant, \(25 \equiv 7 \mod 9\).
+
+Finalment, el residu de la divisió de \(20182019 \times 20192018\) per 9 és 7.
+
+Resposta: D)

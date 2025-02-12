@@ -1,0 +1,40 @@
+Raonament: Volem maximitzar l'expressió \((N + M) / (N - M)\). Per fer-ho, analitzem les condicions dels nombres \(M\) i \(N\):
+
+1. **Rang de \(N\)**: \(51 \leq N \leq 101\)
+2. **Rang de \(M\)**: \(19 \leq M \leq 49\)
+
+Per maximitzar \((N + M) / (N - M)\), és útil observar que:
+- \(N + M\) ha de ser tan gran com sigui possible.
+- \(N - M\) ha de ser tan petit com sigui possible, però ha de ser positiu per evitar divisió per zero.
+
+Per tant, per maximitzar l'expressió, escollim el valor més gran possible per \(N\) i el valor més petit possible per \(M\):
+- \(N = 101\) (màxim valor de \(N\))
+- \(M = 19\) (mínim valor de \(M\))
+
+Ara calculem l'expressió:
+\[
+N + M = 101 + 19 = 120
+\]
+\[
+N - M = 101 - 19 = 82
+\]
+Per tant, l'expressió es converteix en:
+\[
+\frac{N + M}{N - M} = \frac{120}{82} \approx 1.4634
+\]
+
+Ara provem amb altres combinacions per veure si podem obtenir un valor més gran. Si escollim \(N = 51\) (mínim valor de \(N\)) i \(M = 49\) (màxim valor de \(M\)):
+\[
+N + M = 51 + 49 = 100
+\]
+\[
+N - M = 51 - 49 = 2
+\]
+L'expressió es converteix en:
+\[
+\frac{N + M}{N - M} = \frac{100}{2} = 50
+\]
+
+Així que el valor més gran que hem trobat és 50. No hi ha altres combinacions que puguin superar aquest valor, ja que qualsevol increment en \(M\) o decrement en \(N\) reduirà el valor de l'expressió.
+
+Resposta: D)

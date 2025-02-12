@@ -1,0 +1,59 @@
+Raonament: Anomenem el nombre de tres xifres "XYZ", on "X" és la primera xifra, "Y" és la segona i "Z" és la tercera. Si llevem la primera xifra "X", ens queda el nombre "YZ", que és un nombre de dues xifres. Segons l'enunciat, "YZ" multiplicat per 7 ha de donar el nombre original "XYZ". 
+
+Podem expressar això matemàticament. El nombre "XYZ" es pot escriure com \(100X + 10Y + Z\) i el nombre "YZ" com \(10Y + Z\). L'equació que hem de resoldre és:
+
+\[
+7(10Y + Z) = 100X + 10Y + Z
+\]
+
+Desenvolupem l'equació:
+
+\[
+70Y + 7Z = 100X + 10Y + Z
+\]
+
+Reorganitzem per a simplificar:
+
+\[
+70Y + 7Z - 10Y - Z = 100X
+\]
+
+\[
+60Y + 6Z = 100X
+\]
+
+Dividim tota l'equació per 6:
+
+\[
+10Y + Z = \frac{100X}{6}
+\]
+
+\[
+10Y + Z = \frac{50X}{3}
+\]
+
+Perquè \(10Y + Z\) sigui un nombre enter, \(X\) ha de ser un múltiple de 3. Les possibles xifres per a \(X\) (1 a 9) que són múltiples de 3 són 3, 6 i 9. 
+
+Ara provem les opcions:
+
+1. Si \(X = 3\):
+   \[
+   10Y + Z = \frac{50 \cdot 3}{3} = 50 \implies YZ = 50
+   \]
+   (Y=5, Z=0) → 350 és el nombre original. 50 * 7 = 350. 
+
+2. Si \(X = 6\):
+   \[
+   10Y + Z = \frac{50 \cdot 6}{3} = 100 \implies YZ = 100
+   \]
+   (No és vàlid, ja que no pot ser un nombre de dues xifres).
+
+3. Si \(X = 9\):
+   \[
+   10Y + Z = \frac{50 \cdot 9}{3} = 150 \implies YZ = 150
+   \]
+   (No és vàlid, ja que no pot ser un nombre de dues xifres).
+
+Per tant, la única solució vàlida és quan \(X = 3\), llevant la xifra 3 del nombre original 350, que ens dóna 50, i 50 multiplicat per 7 és 350.
+
+Resposta: C) 3

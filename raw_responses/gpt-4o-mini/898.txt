@@ -1,0 +1,26 @@
+Raonament: El problema que planteges és un exemple clàssic de la seqüència de Fibonacci. Si considerem que Pere pot pujar l'escala de dues maneres: pujant un esglaó o pujant dos esglaons, podem establir una relació recursiva per calcular el nombre de maneres de pujar l'escala.
+
+Definim \( f(n) \) com el nombre de maneres de pujar una escala de \( n \) esglaons. Les dues opcions que té Pere per pujar l'escala són:
+
+1. Si puja un esglaó, li queden \( n-1 \) esglaons per pujar.
+2. Si puja dos esglaons, li queden \( n-2 \) esglaons per pujar.
+
+Així, podem expressar la relació recursiva com:
+\[ f(n) = f(n-1) + f(n-2) \]
+
+On les condicions inicials són:
+- \( f(1) = 1 \) (només pot pujar un esglaó)
+- \( f(2) = 2 \) (pot pujar dos esglaons d'una vegada o pujar un esglaó dues vegades)
+
+Ara, calculem \( f(n) \) per \( n = 3 \) fins a \( n = 8 \):
+
+- \( f(3) = f(2) + f(1) = 2 + 1 = 3 \)
+- \( f(4) = f(3) + f(2) = 3 + 2 = 5 \)
+- \( f(5) = f(4) + f(3) = 5 + 3 = 8 \)
+- \( f(6) = f(5) + f(4) = 8 + 5 = 13 \)
+- \( f(7) = f(6) + f(5) = 13 + 8 = 21 \)
+- \( f(8) = f(7) + f(6) = 21 + 13 = 34 \)
+
+Per tant, el nombre de maneres diferents que té Pere per pujar l'escala de 8 esglaons és \( f(8) = 34 \).
+
+Resposta: D) 34

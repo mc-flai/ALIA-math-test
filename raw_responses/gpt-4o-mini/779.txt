@@ -1,0 +1,28 @@
+Raonament: Primer, realitzem la resta entre els dos números: 11,11 - 1,111. Per fer-ho, alineem els decimals:
+
+```
+  11,110
+-  1,111
+---------
+```
+
+Ara restem cada columna de dreta a esquerra:
+
+1. En la columna de les mil·lèsimes: 0 - 1 no es pot fer, així que agafem 1 de la columna de les dècimes (que es converteix en 0) i afegim 10 a la columna de les mil·lèsimes, resultant en 10 - 1 = 9.
+2. En la columna de les dècimes: 0 - 1 no es pot fer, així que agafem 1 de la columna de les unitats (que es converteix en 0) i afegim 10 a la columna de les dècimes, resultant en 10 - 1 = 9.
+3. En la columna de les unitats: 0 - 1 no es pot fer, així que agafem 1 de la columna de les desenes (que es converteix en 1) i afegim 10 a la columna de les unitats, resultant en 10 - 1 = 9.
+4. En la columna de les desenes: 1 - 0 = 1.
+
+Així que el resultat de la resta és 9,999.
+
+Ara comparem aquest resultat amb les opcions de resposta:
+
+A) 9,009
+B) 9,0909
+C) 9,99
+D) 9,999
+E) altre valor
+
+Veiem que el resultat 9,999 coincideix amb l'opció D.
+
+Resposta: D)

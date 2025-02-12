@@ -1,0 +1,27 @@
+Raonament: Primer, analitzem el problema. Tenim el nombre \( a \) tal que \( a^2 = 2020^{20} \). Per trobar \( a \), hem de prendre l'arrel quadrada de \( 2020^{20} \):
+
+\[
+a = \sqrt{2020^{20}} = 2020^{20/2} = 2020^{10}
+\]
+
+A continuació, hem de multiplicar \( a \) pel cub del nombre \( 2020^{19} \):
+
+\[
+\text{Cub de } 2020^{19} = (2020^{19})^3 = 2020^{19 \cdot 3} = 2020^{57}
+\]
+
+Ara, multipliquem \( a \) i el cub de \( 2020^{19} \):
+
+\[
+a \cdot (2020^{19})^3 = 2020^{10} \cdot 2020^{57}
+\]
+
+Utilitzem la propietat de les potències que diu que \( x^m \cdot x^n = x^{m+n} \):
+
+\[
+2020^{10} \cdot 2020^{57} = 2020^{10 + 57} = 2020^{67}
+\]
+
+Per tant, el resultat final és \( 2020^{67} \).
+
+Resposta: B) 2020⁶⁷

@@ -1,0 +1,9 @@
+Raonament: Josep té quatre medalles: una d'or (E1), una d'or (E2), una de plata (P) i una de bronze (B). Com les dues medalles d'or han de ser juntes, podem considerar-les com un únic element o "bloc". Així, en comptes de tenir quatre elements (E1, E2, P, B), tenim tres elements: el bloc d'or (E1, E2), la medalla de plata (P) i la medalla de bronze (B).
+
+Així, els tres elements que hem de ordenar són: (E1, E2), P, B. Les possibles ordenacions d'aquests tres elements són 3! (factorial de 3), que és igual a 6.
+
+Ara, dins del bloc d'or (E1, E2), les dues medalles d'or poden ser ordenades de dues maneres (E1, E2) o (E2, E1). Per tant, per cada una de les 6 ordenacions dels tres elements, hi ha 2 maneres d'ordenar les medalles d'or.
+
+Per tant, el total d'ordenacions diferents que pot fer Josep és 6 (ordenacions dels blocs) × 2 (ordenacions dins del bloc d'or) = 12.
+
+Resposta: C) 12

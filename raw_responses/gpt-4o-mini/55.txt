@@ -1,0 +1,62 @@
+Raonament: Comencem amb l'equació donada \( a^2 + b^2 = 6ab \). Podem reorganitzar aquesta equació per obtenir:
+
+\[
+a^2 - 6ab + b^2 = 0
+\]
+
+Aquesta és una equació quadràtica en termes de \( a \). Utilitzem la fórmula general per resoldre l'equació quadràtica \( ax^2 + bx + c = 0 \), que és:
+
+\[
+a = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+En el nostre cas, \( a = 1 \), \( b = -6b \), i \( c = b^2 \). Així que substituïm:
+
+\[
+a = \frac{6b \pm \sqrt{(-6b)^2 - 4 \cdot 1 \cdot b^2}}{2 \cdot 1}
+\]
+
+Calculant el discriminant:
+
+\[
+(-6b)^2 - 4b^2 = 36b^2 - 4b^2 = 32b^2
+\]
+
+Per tant, tenim:
+
+\[
+a = \frac{6b \pm \sqrt{32b^2}}{2} = \frac{6b \pm 4\sqrt{2}b}{2} = 3b \pm 2\sqrt{2}b
+\]
+
+Així que les dues solucions per \( a \) són:
+
+\[
+a = (3 + 2\sqrt{2})b \quad \text{o} \quad a = (3 - 2\sqrt{2})b
+\]
+
+Com que \( 0 < b < a \), només considerarem la solució \( a = (3 + 2\sqrt{2})b \).
+
+Ara calculem \( \frac{a+b}{a-b} \):
+
+\[
+a + b = (3 + 2\sqrt{2})b + b = (4 + 2\sqrt{2})b
+\]
+\[
+a - b = (3 + 2\sqrt{2})b - b = (2 + 2\sqrt{2})b = 2(1 + \sqrt{2})b
+\]
+
+Per tant, tenim:
+
+\[
+\frac{a+b}{a-b} = \frac{(4 + 2\sqrt{2})b}{2(1 + \sqrt{2})b} = \frac{4 + 2\sqrt{2}}{2(1 + \sqrt{2})} = \frac{2 + \sqrt{2}}{1 + \sqrt{2}}
+\]
+
+Ara simplifiquem aquesta fracció multiplicant el numerador i el denominador per \( 1 - \sqrt{2} \):
+
+\[
+\frac{(2 + \sqrt{2})(1 - \sqrt{2})}{(1 + \sqrt{2})(1 - \sqrt{2})} = \frac{2 - 2\sqrt{2} + \sqrt{2} - 2}{1 - 2} = \frac{-\sqrt{2}}{-1} = \sqrt{2}
+\]
+
+Per tant, la resposta és:
+
+Resposta: B)

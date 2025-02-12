@@ -1,0 +1,23 @@
+Raonament: Tenim dos triangles, cada un amb 3 vèrtexs, el que ens dóna un total de 6 vèrtexs. La condició és que no hi ha 3 vèrtexs alineats, així que podem considerar les línies que es poden traçar entre els vèrtexs dels dos triangles. 
+
+Per dibuixar una línia recta que passi per un vèrtex de cada triangle, podem escollir un vèrtex del primer triangle i un vèrtex del segon triangle. Hi ha 3 vèrtexs en cada triangle, així que les combinacions possibles de vèrtexs són:
+
+1. Vèrtex A1 del triangle 1 amb vèrtex B1 del triangle 2
+2. Vèrtex A1 del triangle 1 amb vèrtex B2 del triangle 2
+3. Vèrtex A1 del triangle 1 amb vèrtex B3 del triangle 2
+4. Vèrtex A2 del triangle 1 amb vèrtex B1 del triangle 2
+5. Vèrtex A2 del triangle 1 amb vèrtex B2 del triangle 2
+6. Vèrtex A2 del triangle 1 amb vèrtex B3 del triangle 2
+7. Vèrtex A3 del triangle 1 amb vèrtex B1 del triangle 2
+8. Vèrtex A3 del triangle 1 amb vèrtex B2 del triangle 2
+9. Vèrtex A3 del triangle 1 amb vèrtex B3 del triangle 2
+
+Així, tenim un total de 3 (vèrtexs del triangle 1) x 3 (vèrtexs del triangle 2) = 9 combinacions possibles. No obstant això, no totes les línies traçades travessen almenys un dels triangles. 
+
+Per determinar quantes d'aquestes línies travessen almenys un dels triangles, hem de considerar que, com que no hi ha 3 vèrtexs alineats, cada línia traçada entre un vèrtex d'un triangle i un vèrtex de l'altre triangle travessarà almenys un dels triangles. 
+
+Per tant, cada combinació de vèrtexs donarà lloc a una línia que travessa almenys un dels triangles. Així que, en total, tenim 9 línies que compleixen la condició.
+
+No obstant això, si considerem que les línies que travessen ambdues triangles no es compten dues vegades, podem concloure que les línies que travessen almenys un dels triangles són 6, ja que cada línia que uneix un vèrtex d'un triangle amb un vèrtex de l'altre triangle travessa almenys un triangle.
+
+Resposta: D) 6.

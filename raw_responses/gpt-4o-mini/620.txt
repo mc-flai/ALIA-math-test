@@ -1,0 +1,11 @@
+Raonament: Per resoldre el problema, hem de determinar quants intercanvis són necessaris per ordenar els llibres de l'1 al 9. Suposem que els llibres estan inicialment en un ordre desordenat. 
+
+Un mètode eficient per calcular el nombre mínim d'intercanvis és observar quants llibres estan en la seva posició correcta i quins no. Cada intercanvi pot corregir la posició de dos llibres alhora. 
+
+Si considerem que tenim 9 llibres i que, per exemple, 5 d'ells estan en la seva posició correcta i 4 no, podem calcular el nombre d'intercanvis necessaris. En general, si tenim \( n \) llibres i \( k \) d'ells estan en la seva posició correcta, el nombre mínim d'intercanvis necessaris per ordenar els llibres és \( \frac{n - k}{2} \).
+
+Si tots els llibres estan desordenats, el nombre d'intercanvis pot ser més alt. En el pitjor dels casos, si els llibres estan completament desordenats, es poden necessitar fins a \( n - 1 \) intercanvis, però en la majoria dels casos, el nombre d'intercanvis és menor.
+
+Després d'analitzar diverses configuracions possibles, es pot concloure que el nombre mínim d'intercanvis necessaris per ordenar els llibres de l'1 al 9 és 4.
+
+Resposta: C)

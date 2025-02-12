@@ -1,0 +1,39 @@
+Raonament: Tenim dues equacions: \( a + b = 4 \) i \( a^2 + b^2 = 6 \). 
+
+Podem utilitzar la identitat que relaciona \( a^3 + b^3 \) amb \( a + b \) i \( ab \):
+\[
+a^3 + b^3 = (a + b)(a^2 - ab + b^2)
+\]
+
+Ja sabem que \( a + b = 4 \). Ara necessitem calcular \( ab \). Sabem que:
+\[
+a^2 + b^2 = (a + b)^2 - 2ab
+\]
+Substituïm els valors que tenim:
+\[
+6 = 4^2 - 2ab
+\]
+\[
+6 = 16 - 2ab
+\]
+Després, reorganitzem l'equació per trobar \( ab \):
+\[
+2ab = 16 - 6
+\]
+\[
+2ab = 10 \implies ab = 5
+\]
+
+Ara podem calcular \( a^2 - ab + b^2 \):
+\[
+a^2 - ab + b^2 = a^2 + b^2 - ab = 6 - 5 = 1
+\]
+
+Finalment, substituïm tot en la fórmula de \( a^3 + b^3 \):
+\[
+a^3 + b^3 = (a + b)(a^2 - ab + b^2) = 4 \cdot 1 = 4
+\]
+
+Per tant, el valor de \( a^3 + b^3 \) és 4.
+
+Resposta: A) 4

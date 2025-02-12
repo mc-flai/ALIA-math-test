@@ -1,0 +1,47 @@
+Raonament: Per trobar els subconjunts de 5 elements que formen una progressió aritmètica (PA) dins del conjunt de nombres naturals entre 1 i 17, hem de considerar les característiques d'una PA. Una PA de 5 termes es pot definir per un primer terme \( a \) i una raó \( d \). Els termes de la PA seran:
+
+1. \( a \)
+2. \( a + d \)
+3. \( a + 2d \)
+4. \( a + 3d \)
+5. \( a + 4d \)
+
+Perquè tots els termes estiguin dins del conjunt {1, 2, ..., 17}, hem de garantir que:
+
+- \( a \geq 1 \)
+- \( a + 4d \leq 17 \)
+
+Això implica que:
+
+\[ a \leq 17 - 4d \]
+
+Ara, per cada valor de \( d \), podem determinar els possibles valors de \( a \).
+
+1. **Si \( d = 1 \)**:
+   - \( a \) pot ser de 1 a 13 (ja que \( 17 - 4 \cdot 1 = 13 \)).
+   - Així, tenim 13 valors possibles per \( a \).
+
+2. **Si \( d = 2 \)**:
+   - \( a \) pot ser de 1 a 9 (ja que \( 17 - 4 \cdot 2 = 9 \)).
+   - Així, tenim 9 valors possibles per \( a \).
+
+3. **Si \( d = 3 \)**:
+   - \( a \) pot ser de 1 a 5 (ja que \( 17 - 4 \cdot 3 = 5 \)).
+   - Així, tenim 5 valors possibles per \( a \).
+
+4. **Si \( d = 4 \)**:
+   - \( a \) pot ser de 1 a 1 (ja que \( 17 - 4 \cdot 4 = 1 \)).
+   - Així, tenim 1 valor possible per \( a \).
+
+Ara sumem tots els valors possibles per cada \( d \):
+
+- Per \( d = 1 \): 13
+- Per \( d = 2 \): 9
+- Per \( d = 3 \): 5
+- Per \( d = 4 \): 1
+
+Total = \( 13 + 9 + 5 + 1 = 28 \).
+
+Per tant, el nombre total de subconjunts de 5 elements que formen una progressió aritmètica és 28.
+
+Resposta: E) 28

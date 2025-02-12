@@ -1,0 +1,48 @@
+Raonament: Comencem per aplicar la definició de l'operació "◊" a les dues expressions de la igualtat donada: (a◊b)◊c i a◊(b◊c).
+
+1. Calculem (a◊b):
+   \[
+   a◊b = b - a
+   \]
+
+2. Ara calculem (a◊b)◊c:
+   \[
+   (a◊b)◊c = (b - a)◊c = c - (b - a) = c - b + a
+   \]
+
+3. Ara calculem (b◊c):
+   \[
+   b◊c = c - b
+   \]
+
+4. Ara calculem a◊(b◊c):
+   \[
+   a◊(b◊c) = a◊(c - b) = (c - b) - a = c - b - a
+   \]
+
+5. Ara tenim les dues expressions:
+   \[
+   (a◊b)◊c = c - b + a
+   \]
+   \[
+   a◊(b◊c) = c - b - a
+   \]
+
+6. Igualem les dues expressions:
+   \[
+   c - b + a = c - b - a
+   \]
+
+7. Simplifiquem:
+   \[
+   a = -a
+   \]
+
+8. Això implica que:
+   \[
+   2a = 0 \implies a = 0
+   \]
+
+Per tant, la relació necessàriament certa és que \( a = 0 \).
+
+Resposta: D)

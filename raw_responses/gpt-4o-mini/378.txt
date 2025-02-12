@@ -1,0 +1,43 @@
+Raonament: 
+Sigui \( N \) el nombre de sis xifres que acaba en 4. Podem expressar \( N \) com \( N = 10x + 4 \), on \( x \) és un nombre de cinc xifres. Si movem el 4 al principi, el nou nombre es pot expressar com \( M = 4 \cdot 10^5 + x \). Segons l'enunciat, sabem que \( M = 4N \). 
+
+Substituïm \( N \) en l'equació:
+\[
+4 \cdot 10^5 + x = 4(10x + 4)
+\]
+Això es simplifica a:
+\[
+4 \cdot 10^5 + x = 40x + 16
+\]
+Reorganitzant l'equació, obtenim:
+\[
+4 \cdot 10^5 - 16 = 40x - x
+\]
+\[
+4 \cdot 10^5 - 16 = 39x
+\]
+Per tant, podem expressar \( x \) com:
+\[
+x = \frac{4 \cdot 10^5 - 16}{39}
+\]
+
+Ara calculem \( 4 \cdot 10^5 - 16 \):
+\[
+4 \cdot 10^5 = 400000
+\]
+\[
+400000 - 16 = 399984
+\]
+Per tant:
+\[
+x = \frac{399984}{39} = 10256
+\]
+
+Ara podem trobar \( N \):
+\[
+N = 10x + 4 = 10 \cdot 10256 + 4 = 102560 + 4 = 102564
+\]
+
+El tercer dígit de \( N \) (102564) és 2.
+
+Resposta: C) 2

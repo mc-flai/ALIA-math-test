@@ -1,0 +1,35 @@
+Raonament: Quan extraiem dos tiquets de la caixa, hi ha un total de \(2015 \times 2014\) combinacions possibles de tiquets, ja que el primer tiquet pot ser qualsevol dels 2015 i el segon pot ser qualsevol dels 2014 restants. 
+
+Per determinar quantes d'aquestes combinacions resulten en el segon tiquet sent més gran que el primer, podem observar que per a cada tiquet que extraiem com a primer, hi ha un nombre determinat de tiquets que poden ser seleccionats com a segon tiquet que són més grans. 
+
+Si el primer tiquet és \(k\) (on \(k\) pot ser qualsevol número entre 1 i 2015), els tiquets que poden ser seleccionats com a segon tiquet i que són més grans que \(k\) són els números \(k+1, k+2, \ldots, 2015\). Això significa que hi ha \(2015 - k\) tiquets que són més grans que \(k\).
+
+Per tant, la suma total de casos en què el segon tiquet és més gran que el primer es pot calcular com:
+
+\[
+\sum_{k=1}^{2015} (2015 - k) = (2015 - 1) + (2015 - 2) + \ldots + (2015 - 2015) = 2014 + 2013 + \ldots + 0
+\]
+
+Aquesta suma és una progressió aritmètica que pot ser calculada com:
+
+\[
+\text{Suma} = \frac{n(n + 1)}{2} = \frac{2014 \times 2015}{2} = 2031120
+\]
+
+Així, el nombre total de combinacions en què el segon tiquet és més gran que el primer és \(2031120\).
+
+Ara, el total de combinacions possibles és:
+
+\[
+2015 \times 2014 = 4068210
+\]
+
+Per tant, la probabilitat que el segon tiquet sigui més gran que el primer és:
+
+\[
+P(\text{segon > primer}) = \frac{2031120}{4068210} = \frac{1}{2}
+\]
+
+Això significa que la probabilitat és del 50%.
+
+Resposta: B)

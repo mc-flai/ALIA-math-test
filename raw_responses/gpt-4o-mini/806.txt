@@ -1,0 +1,14 @@
+Raonament: Per tal de tallar un rectangle de dimensions 6 × 7 en quadrats, hem de buscar la manera de minimitzar el nombre de quadrats utilitzats. Una estratègia és utilitzar el quadrat més gran possible en cada pas. 
+
+1. El quadrat més gran que podem utilitzar en un rectangle de 6 × 7 és un quadrat de 6 × 6. Tallant un quadrat de 6 × 6, ens queda un rectangle de 1 × 6.
+2. Ara, per tallar el rectangle restant de 1 × 6, podem utilitzar quadrats de 1 × 1. Necessitem 6 quadrats de 1 × 1 per cobrir aquest rectangle.
+
+Així, el total de quadrats utilitzats és:
+- 1 quadrat de 6 × 6
+- 6 quadrats de 1 × 1
+
+Per tant, el nombre total de quadrats és 1 + 6 = 7.
+
+No hi ha cap manera de tallar el rectangle de 6 × 7 en menys de 7 quadrats, ja que el quadrat de 6 × 6 és el més gran possible i el rectangle restant de 1 × 6 requereix 6 quadrats de 1 × 1.
+
+Resposta: C) 7

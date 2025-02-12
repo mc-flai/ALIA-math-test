@@ -1,0 +1,28 @@
+Raonament: Tenim tres cangurs amb pesos diferents que sumen un total de 97 kg. Si volem determinar el pes màxim del cangur més lleuger, hem de considerar que els altres dos cangurs han de pesar més que ell. Suposem que el pes del cangur més lleuger és \( x \) kg. Així, els altres dos cangurs pesaran \( y \) kg i \( z \) kg, amb \( y > x \) i \( z > x \). 
+
+La suma dels pesos és:
+\[ x + y + z = 97 \]
+
+Per tal de maximitzar \( x \), hem de minimitzar \( y + z \). Si considerem que \( y \) i \( z \) són els pesos més petits possibles que són diferents entre si i més grans que \( x \), podem suposar que \( y = x + 1 \) i \( z = x + 2 \) (ja que han de ser diferents i més grans que \( x \)). 
+
+Substituint en l'equació:
+\[ x + (x + 1) + (x + 2) = 97 \]
+\[ 3x + 3 = 97 \]
+\[ 3x = 94 \]
+\[ x = \frac{94}{3} \approx 31.33 \]
+
+Com que \( x \) ha de ser un nombre enter, el valor més alt que pot prendre és 31 kg. Si \( x = 31 \), llavors:
+\[ y = 32 \]
+\[ z = 33 \]
+Així, la suma seria:
+\[ 31 + 32 + 33 = 96 \]
+Però això no suma 97. Si provem amb \( x = 30 \):
+\[ y = 31 \]
+\[ z = 36 \]
+Així, la suma seria:
+\[ 30 + 31 + 36 = 97 \]
+Això és vàlid. 
+
+Per tant, el pes màxim del cangur més lleuger és 31 kg.
+
+Resposta: C)

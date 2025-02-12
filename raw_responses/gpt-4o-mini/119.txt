@@ -1,0 +1,19 @@
+Raonament: La mosca comença amb una velocitat de 1 m/s i dobla la seva velocitat cada metre recorregut. Això significa que la seva velocitat es converteix en 2 m/s després de 1 metre, 4 m/s després de 2 metres, 8 m/s després de 3 metres, i així successivament. La velocitat de la mosca en el metre n és de \( v_n = 2^n \) m/s.
+
+Per calcular el temps que tarda en recórrer cada metre, podem utilitzar la fórmula del temps, que és \( t = \frac{d}{v} \). En aquest cas, per cada metre recorregut, el temps que tarda és:
+
+- Per al primer metre: \( t_1 = \frac{1}{1} = 1 \) segon
+- Per al segon metre: \( t_2 = \frac{1}{2} = 0.5 \) segons
+- Per al tercer metre: \( t_3 = \frac{1}{4} = 0.25 \) segons
+- Per al quart metre: \( t_4 = \frac{1}{8} = 0.125 \) segons
+- I així successivament.
+
+El temps total per recórrer n metres és la suma dels temps per cada metre:
+
+\[
+T = t_1 + t_2 + t_3 + ... + t_n = 1 + 0.5 + 0.25 + 0.125 + ... + \frac{1}{2^{n-1}}
+\]
+
+Aquesta és una sèrie geomètrica que convergeix a 2 segons a mesura que n s'acosta a l'infinit. Per tant, la mosca, tot i que ha de recórrer 2500 km (o 2,500,000 metres), el temps total que trigarà a arribar a Londres és aproximadament 2 segons, ja que la major part del temps es concentra en els primers metres.
+
+Resposta: D) 2 segons.

@@ -1,0 +1,41 @@
+Raonament: Per trobar quantes parelles de cartes sumen 50, hem de buscar quins nombres enteros entre 1 i 100 poden formar aquestes parelles. Si considerem un nombre \( x \), la seva parella seria \( 50 - x \). 
+
+Els nombres \( x \) han de ser tal que \( 1 \leq x < 50 \) (ja que si \( x \) fos 50 o més, la seva parella seria 0 o negativa, cosa que no és possible amb les cartes numerades de l'1 al 100). Així, \( x \) pot prendre els valors de 1 a 49.
+
+Ara, per cada valor de \( x \) en aquest rang, podem calcular la seva parella:
+- Si \( x = 1 \), la parella és \( 49 \) (1 + 49 = 50)
+- Si \( x = 2 \), la parella és \( 48 \) (2 + 48 = 50)
+- ...
+- Si \( x = 24 \), la parella és \( 26 \) (24 + 26 = 50)
+- Si \( x = 25 \), la parella és \( 25 \) (25 + 25 = 50)
+
+Així, les parelles que sumen 50 són:
+- (1, 49)
+- (2, 48)
+- (3, 47)
+- (4, 46)
+- (5, 45)
+- (6, 44)
+- (7, 43)
+- (8, 42)
+- (9, 41)
+- (10, 40)
+- (11, 39)
+- (12, 38)
+- (13, 37)
+- (14, 36)
+- (15, 35)
+- (16, 34)
+- (17, 33)
+- (18, 32)
+- (19, 31)
+- (20, 30)
+- (21, 29)
+- (22, 28)
+- (23, 27)
+- (24, 26)
+- (25, 25)
+
+Com que cada parella es pot considerar com a un conjunt de dos nombres, i hem comptat fins a 25, la resposta correcta és que es poden formar 25 parelles.
+
+Resposta: C) 25

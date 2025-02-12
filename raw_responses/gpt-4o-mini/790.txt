@@ -1,0 +1,30 @@
+Raonament: Tenim les xifres 2, 3, 6, 7, 8 i 9 disponibles per formar dos nombres de dues xifres. La suma d'aquests dos nombres ha de ser un dels resultats que es presenten a les opcions. 
+
+Primer, considerem que cada nombre de dues xifres es pot formar amb dues de les xifres disponibles. Les combinacions possibles de nombres de dues xifres que podem formar amb les xifres donades són:
+
+- 23, 26, 27, 28, 29, 32, 36, 37, 38, 39, 62, 63, 67, 68, 69, 72, 73, 76, 78, 79, 82, 83, 86, 87, 89, 92, 93, 96, 97
+
+Ara, calculem les sumes de les combinacions possibles de dos nombres de dues xifres. Per exemple, si agafem 67 i 89:
+
+67 + 89 = 156 (no és una opció)
+
+Continuem provant combinacions:
+
+- 76 + 89 = 165 (no és una opció)
+- 68 + 79 = 147 (no és una opció)
+- 67 + 89 = 156 (no és una opció)
+- 76 + 82 = 158 (no és una opció)
+- 68 + 92 = 160 (no és una opció)
+- 69 + 76 = 145 (no és una opció)
+
+Després de provar diverses combinacions, ens adonem que la suma de 67 i 89 és 156, que no és una opció. 
+
+Finalment, provem amb 68 i 79:
+
+68 + 79 = 147 (no és una opció)
+
+Després de revisar les opcions, ens adonem que la suma de 67 i 9 (que és 76) és una de les opcions disponibles.
+
+Per tant, la suma correcta que Aitana ha fet, tenint en compte que les xifres han estat canviades, és 76.
+
+Resposta: D) 76

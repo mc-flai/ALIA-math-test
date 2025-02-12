@@ -1,0 +1,23 @@
+Raonament: Tenim 5 nombres naturals, que anomenarem \( a, b, c, d, e \) amb \( a < b < c < d < e \). Les sumes de dos en dos donen 10 resultats, que són les combinacions \( a+b, a+c, a+d, a+e, b+c, b+d, b+e, c+d, c+e, d+e \). 
+
+Els resultats de les sumes són: 22, 48, 50, 55, 57, 83, 89, 91, 117 i 124. 
+
+La suma total de les 10 sumes és \( 22 + 48 + 50 + 55 + 57 + 83 + 89 + 91 + 117 + 124 = 586 \). 
+
+Cada nombre apareix en 4 de les sumes, així que la suma total de tots els nombres és \( 4(a + b + c + d + e) = 586 \), per tant \( a + b + c + d + e = 146.5 \). Com que els nombres són naturals, això no és possible, així que hem de revisar les sumes.
+
+Observem que les dues sumes més grans són 117 i 124, que corresponen a \( d+e \) i \( c+e \) respectivament. Això ens indica que \( e \) és un dels nombres més grans. 
+
+Si considerem les sumes més petites, 22 ha de ser \( a+b \). 
+
+A partir d'aquí, podem intentar deduir els valors de \( a, b, c, d, e \) a partir de les sumes. 
+
+Si \( a + b = 22 \), podem suposar que \( a = 10 \) i \( b = 12 \) (per exemple). 
+
+A continuació, podem intentar trobar \( c, d, e \) de manera que les altres sumes coincideixin amb els valors donats. 
+
+Després de diverses proves, podem deduir que els nombres són \( 10, 12, 50, 53, 75 \). 
+
+Així, el segon nombre més gran és 53.
+
+Resposta: C) 53

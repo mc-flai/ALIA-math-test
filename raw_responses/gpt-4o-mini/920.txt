@@ -1,0 +1,50 @@
+Raonament: Abans de la reconstrucció, l'hotel podia allotjar 500 persones amb habitacions triples i quàdruples. Anomenem \( x \) al nombre d'habitacions triples i \( y \) al nombre d'habitacions quàdruples. Sabem que:
+
+1. Cada habitació triple allotja 3 persones, així que les habitacions triples allotgen \( 3x \) persones.
+2. Cada habitació quàdruple allotja 4 persones, així que les habitacions quàdruples allotgen \( 4y \) persones.
+3. La suma total de persones allotjades és 500, per tant, tenim l'equació:
+   \[
+   3x + 4y = 500
+   \]
+
+Després de la reconstrucció, totes les habitacions es van convertir en dobles, i l'hotel ara pot allotjar 300 persones. Així que, si \( z \) és el nombre total d'habitacions dobles, tenim:
+\[
+2z = 300 \implies z = 150
+\]
+
+Sabem que el nombre total d'habitacions abans de la reconstrucció és \( x + y = 150 \).
+
+Ara tenim un sistema d'equacions:
+1. \( 3x + 4y = 500 \)
+2. \( x + y = 150 \)
+
+Podem resoldre aquest sistema. De la segona equació, podem expressar \( y \) en funció de \( x \):
+\[
+y = 150 - x
+\]
+
+Substituïm \( y \) en la primera equació:
+\[
+3x + 4(150 - x) = 500
+\]
+\[
+3x + 600 - 4x = 500
+\]
+\[
+-x + 600 = 500
+\]
+\[
+-x = 500 - 600
+\]
+\[
+-x = -100 \implies x = 100
+\]
+
+Ara substituïm \( x \) per trobar \( y \):
+\[
+y = 150 - 100 = 50
+\]
+
+Per tant, abans de la reconstrucció, hi havia 50 habitacions quàdruples.
+
+Resposta: B)

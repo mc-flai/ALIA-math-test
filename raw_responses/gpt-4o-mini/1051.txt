@@ -1,0 +1,32 @@
+Raonament: Rita té tres peces, que podem suposar que són tres dígits. Si considerem que les peces són, per exemple, 5, 3 i 3, podem formar nombres de quatre xifres utilitzant aquestes peces. 
+
+Per formar un nombre de quatre xifres, podem repetir algunes de les peces. En aquest cas, el dígit 3 es pot repetir, ja que tenim dues peces de 3. 
+
+Per calcular el nombre de combinacions possibles, hem de considerar les diferents situacions:
+
+1. **Dos dígits 3 i dos dígits 5**: El nombre format seria 5333. Les combinacions possibles són:
+   - 5333
+   - 3533
+   - 3353
+   - 3335
+   (4 combinacions)
+
+2. **Tres dígits 3 i un dígit 5**: Les combinacions possibles són:
+   - 3335
+   - 3353
+   - 3533
+   - 5333
+   (ja les hem comptat abans, així que no les tornem a comptar)
+
+3. **Dos dígits 3 i dos dígits 5**: Combinacions possibles:
+   - 5533
+   - 5353
+   - 5335
+   (3 combinacions)
+
+Ara, sumem les combinacions:
+- 4 (dos 3 i un 5) + 3 (dos 5 i dos 3) = 7 combinacions.
+
+Per tant, Rita pot formar un total de 7 nombres diferents de quatre xifres.
+
+Resposta: E) 7

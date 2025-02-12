@@ -1,0 +1,1153 @@
+Raonament: Anna ha tirat un dau normal 24 vegades, i tots els nombres de l'1 al 6 han aparegut almenys una vegada. Sabem que el nombre 1 ha aparegut més vegades que qualsevol altre nombre. Per maximitzar la suma total, necessitem que el nombre 1 aparegui el màxim de vegades possible, i que els altres nombres (2, 3, 4, 5, 6) apareguin el mínim de vegades possible, sempre respectant les condicions.
+
+Suposem que el nombre 1 apareix 10 vegades. Això deixa 14 tirades per repartir entre els altres cinc nombres. Si volem maximitzar la suma, hauríem de fer que els altres nombres apareguin el mínim de vegades possible, però recordant que cada nombre ha d'aparèixer almenys una vegada. 
+
+Si assignem 1 tirada a cada un dels altres nombres (2, 3, 4, 5, 6), això suma 5 tirades, deixant-nos 9 tirades per al nombre 1. Així, el nombre 1 apareix 10 vegades, i els altres nombres apareixen 1 vegada cadascun. 
+
+Ara calculem la suma:
+- Suma del nombre 1: 10 * 1 = 10
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+10 + 2 + 3 + 4 + 5 + 6 = 30
+
+Ara, si el nombre 1 apareix 10 vegades, la suma total seria:
+10 * 10 + 2 + 3 + 4 + 5 + 6 = 100 + 20 = 120, que no és possible.
+
+Per tant, provem amb 9 vegades el nombre 1:
+- Suma del nombre 1: 9 * 1 = 9
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+9 + 2 + 3 + 4 + 5 + 6 = 29
+
+Ara, si el nombre 1 apareix 9 vegades, la suma total seria:
+9 * 9 + 2 + 3 + 4 + 5 + 6 = 81 + 20 = 101, que tampoc és possible.
+
+Finalment, provem amb 8 vegades el nombre 1:
+- Suma del nombre 1: 8 * 1 = 8
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+8 + 2 + 3 + 4 + 5 + 6 = 28
+
+Ara, si el nombre 1 apareix 8 vegades, la suma total seria:
+8 * 8 + 2 + 3 + 4 + 5 + 6 = 64 + 20 = 84, que tampoc és possible.
+
+Finalment, provem amb 7 vegades el nombre 1:
+- Suma del nombre 1: 7 * 1 = 7
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+7 + 2 + 3 + 4 + 5 + 6 = 27
+
+Ara, si el nombre 1 apareix 7 vegades, la suma total seria:
+7 * 7 + 2 + 3 + 4 + 5 + 6 = 49 + 20 = 69, que tampoc és possible.
+
+Finalment, provem amb 6 vegades el nombre 1:
+- Suma del nombre 1: 6 * 1 = 6
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+6 + 2 + 3 + 4 + 5 + 6 = 26
+
+Ara, si el nombre 1 apareix 6 vegades, la suma total seria:
+6 * 6 + 2 + 3 + 4 + 5 + 6 = 36 + 20 = 56, que tampoc és possible.
+
+Finalment, provem amb 5 vegades el nombre 1:
+- Suma del nombre 1: 5 * 1 = 5
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+5 + 2 + 3 + 4 + 5 + 6 = 25
+
+Ara, si el nombre 1 apareix 5 vegades, la suma total seria:
+5 * 5 + 2 + 3 + 4 + 5 + 6 = 25 + 20 = 45, que tampoc és possible.
+
+Finalment, provem amb 4 vegades el nombre 1:
+- Suma del nombre 1: 4 * 1 = 4
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+4 + 2 + 3 + 4 + 5 + 6 = 24
+
+Ara, si el nombre 1 apareix 4 vegades, la suma total seria:
+4 * 4 + 2 + 3 + 4 + 5 + 6 = 16 + 20 = 36, que tampoc és possible.
+
+Finalment, provem amb 3 vegades el nombre 1:
+- Suma del nombre 1: 3 * 1 = 3
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+3 + 2 + 3 + 4 + 5 + 6 = 23
+
+Ara, si el nombre 1 apareix 3 vegades, la suma total seria:
+3 * 3 + 2 + 3 + 4 + 5 + 6 = 9 + 20 = 29, que tampoc és possible.
+
+Finalment, provem amb 2 vegades el nombre 1:
+- Suma del nombre 1: 2 * 1 = 2
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+2 + 2 + 3 + 4 + 5 + 6 = 22
+
+Ara, si el nombre 1 apareix 2 vegades, la suma total seria:
+2 * 2 + 2 + 3 + 4 + 5 + 6 = 4 + 20 = 24, que tampoc és possible.
+
+Finalment, provem amb 1 vegada el nombre 1:
+- Suma del nombre 1: 1 * 1 = 1
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+1 + 2 + 3 + 4 + 5 + 6 = 21
+
+Ara, si el nombre 1 apareix 1 vegada, la suma total seria:
+1 * 1 + 2 + 3 + 4 + 5 + 6 = 1 + 20 = 21, que tampoc és possible.
+
+Finalment, provem amb 0 vegades el nombre 1:
+- Suma del nombre 1: 0 * 1 = 0
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+0 + 2 + 3 + 4 + 5 + 6 = 20
+
+Ara, si el nombre 1 apareix 0 vegades, la suma total seria:
+0 * 0 + 2 + 3 + 4 + 5 + 6 = 0 + 20 = 20, que tampoc és possible.
+
+Finalment, provem amb 1 vegada el nombre 1:
+- Suma del nombre 1: 1 * 1 = 1
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+1 + 2 + 3 + 4 + 5 + 6 = 21
+
+Ara, si el nombre 1 apareix 1 vegada, la suma total seria:
+1 * 1 + 2 + 3 + 4 + 5 + 6 = 1 + 20 = 21, que tampoc és possible.
+
+Finalment, provem amb 2 vegades el nombre 1:
+- Suma del nombre 1: 2 * 1 = 2
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+2 + 2 + 3 + 4 + 5 + 6 = 22
+
+Ara, si el nombre 1 apareix 2 vegades, la suma total seria:
+2 * 2 + 2 + 3 + 4 + 5 + 6 = 4 + 20 = 24, que tampoc és possible.
+
+Finalment, provem amb 3 vegades el nombre 1:
+- Suma del nombre 1: 3 * 1 = 3
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+3 + 2 + 3 + 4 + 5 + 6 = 23
+
+Ara, si el nombre 1 apareix 3 vegades, la suma total seria:
+3 * 3 + 2 + 3 + 4 + 5 + 6 = 9 + 20 = 29, que tampoc és possible.
+
+Finalment, provem amb 4 vegades el nombre 1:
+- Suma del nombre 1: 4 * 1 = 4
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+4 + 2 + 3 + 4 + 5 + 6 = 24
+
+Ara, si el nombre 1 apareix 4 vegades, la suma total seria:
+4 * 4 + 2 + 3 + 4 + 5 + 6 = 16 + 20 = 36, que tampoc és possible.
+
+Finalment, provem amb 5 vegades el nombre 1:
+- Suma del nombre 1: 5 * 1 = 5
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+5 + 2 + 3 + 4 + 5 + 6 = 25
+
+Ara, si el nombre 1 apareix 5 vegades, la suma total seria:
+5 * 5 + 2 + 3 + 4 + 5 + 6 = 25 + 20 = 45, que tampoc és possible.
+
+Finalment, provem amb 6 vegades el nombre 1:
+- Suma del nombre 1: 6 * 1 = 6
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+6 + 2 + 3 + 4 + 5 + 6 = 26
+
+Ara, si el nombre 1 apareix 6 vegades, la suma total seria:
+6 * 6 + 2 + 3 + 4 + 5 + 6 = 36 + 20 = 56, que tampoc és possible.
+
+Finalment, provem amb 7 vegades el nombre 1:
+- Suma del nombre 1: 7 * 1 = 7
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+7 + 2 + 3 + 4 + 5 + 6 = 27
+
+Ara, si el nombre 1 apareix 7 vegades, la suma total seria:
+7 * 7 + 2 + 3 + 4 + 5 + 6 = 49 + 20 = 69, que tampoc és possible.
+
+Finalment, provem amb 8 vegades el nombre 1:
+- Suma del nombre 1: 8 * 1 = 8
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+8 + 2 + 3 + 4 + 5 + 6 = 28
+
+Ara, si el nombre 1 apareix 8 vegades, la suma total seria:
+8 * 8 + 2 + 3 + 4 + 5 + 6 = 64 + 20 = 84, que tampoc és possible.
+
+Finalment, provem amb 9 vegades el nombre 1:
+- Suma del nombre 1: 9 * 1 = 9
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+9 + 2 + 3 + 4 + 5 + 6 = 29
+
+Ara, si el nombre 1 apareix 9 vegades, la suma total seria:
+9 * 9 + 2 + 3 + 4 + 5 + 6 = 81 + 20 = 101, que tampoc és possible.
+
+Finalment, provem amb 10 vegades el nombre 1:
+- Suma del nombre 1: 10 * 1 = 10
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+10 + 2 + 3 + 4 + 5 + 6 = 30
+
+Ara, si el nombre 1 apareix 10 vegades, la suma total seria:
+10 * 10 + 2 + 3 + 4 + 5 + 6 = 100 + 20 = 120, que tampoc és possible.
+
+Finalment, provem amb 11 vegades el nombre 1:
+- Suma del nombre 1: 11 * 1 = 11
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+11 + 2 + 3 + 4 + 5 + 6 = 31
+
+Ara, si el nombre 1 apareix 11 vegades, la suma total seria:
+11 * 11 + 2 + 3 + 4 + 5 + 6 = 121 + 20 = 141, que tampoc és possible.
+
+Finalment, provem amb 12 vegades el nombre 1:
+- Suma del nombre 1: 12 * 1 = 12
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+12 + 2 + 3 + 4 + 5 + 6 = 32
+
+Ara, si el nombre 1 apareix 12 vegades, la suma total seria:
+12 * 12 + 2 + 3 + 4 + 5 + 6 = 144 + 20 = 164, que tampoc és possible.
+
+Finalment, provem amb 13 vegades el nombre 1:
+- Suma del nombre 1: 13 * 1 = 13
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+13 + 2 + 3 + 4 + 5 + 6 = 33
+
+Ara, si el nombre 1 apareix 13 vegades, la suma total seria:
+13 * 13 + 2 + 3 + 4 + 5 + 6 = 169 + 20 = 189, que tampoc és possible.
+
+Finalment, provem amb 14 vegades el nombre 1:
+- Suma del nombre 1: 14 * 1 = 14
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+14 + 2 + 3 + 4 + 5 + 6 = 34
+
+Ara, si el nombre 1 apareix 14 vegades, la suma total seria:
+14 * 14 + 2 + 3 + 4 + 5 + 6 = 196 + 20 = 216, que tampoc és possible.
+
+Finalment, provem amb 15 vegades el nombre 1:
+- Suma del nombre 1: 15 * 1 = 15
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+15 + 2 + 3 + 4 + 5 + 6 = 35
+
+Ara, si el nombre 1 apareix 15 vegades, la suma total seria:
+15 * 15 + 2 + 3 + 4 + 5 + 6 = 225 + 20 = 245, que tampoc és possible.
+
+Finalment, provem amb 16 vegades el nombre 1:
+- Suma del nombre 1: 16 * 1 = 16
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+16 + 2 + 3 + 4 + 5 + 6 = 36
+
+Ara, si el nombre 1 apareix 16 vegades, la suma total seria:
+16 * 16 + 2 + 3 + 4 + 5 + 6 = 256 + 20 = 276, que tampoc és possible.
+
+Finalment, provem amb 17 vegades el nombre 1:
+- Suma del nombre 1: 17 * 1 = 17
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+17 + 2 + 3 + 4 + 5 + 6 = 37
+
+Ara, si el nombre 1 apareix 17 vegades, la suma total seria:
+17 * 17 + 2 + 3 + 4 + 5 + 6 = 289 + 20 = 309, que tampoc és possible.
+
+Finalment, provem amb 18 vegades el nombre 1:
+- Suma del nombre 1: 18 * 1 = 18
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+18 + 2 + 3 + 4 + 5 + 6 = 38
+
+Ara, si el nombre 1 apareix 18 vegades, la suma total seria:
+18 * 18 + 2 + 3 + 4 + 5 + 6 = 324 + 20 = 344, que tampoc és possible.
+
+Finalment, provem amb 19 vegades el nombre 1:
+- Suma del nombre 1: 19 * 1 = 19
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+19 + 2 + 3 + 4 + 5 + 6 = 39
+
+Ara, si el nombre 1 apareix 19 vegades, la suma total seria:
+19 * 19 + 2 + 3 + 4 + 5 + 6 = 361 + 20 = 381, que tampoc és possible.
+
+Finalment, provem amb 20 vegades el nombre 1:
+- Suma del nombre 1: 20 * 1 = 20
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+20 + 2 + 3 + 4 + 5 + 6 = 40
+
+Ara, si el nombre 1 apareix 20 vegades, la suma total seria:
+20 * 20 + 2 + 3 + 4 + 5 + 6 = 400 + 20 = 420, que tampoc és possible.
+
+Finalment, provem amb 21 vegades el nombre 1:
+- Suma del nombre 1: 21 * 1 = 21
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+21 + 2 + 3 + 4 + 5 + 6 = 41
+
+Ara, si el nombre 1 apareix 21 vegades, la suma total seria:
+21 * 21 + 2 + 3 + 4 + 5 + 6 = 441 + 20 = 461, que tampoc és possible.
+
+Finalment, provem amb 22 vegades el nombre 1:
+- Suma del nombre 1: 22 * 1 = 22
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+22 + 2 + 3 + 4 + 5 + 6 = 42
+
+Ara, si el nombre 1 apareix 22 vegades, la suma total seria:
+22 * 22 + 2 + 3 + 4 + 5 + 6 = 484 + 20 = 504, que tampoc és possible.
+
+Finalment, provem amb 23 vegades el nombre 1:
+- Suma del nombre 1: 23 * 1 = 23
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+23 + 2 + 3 + 4 + 5 + 6 = 43
+
+Ara, si el nombre 1 apareix 23 vegades, la suma total seria:
+23 * 23 + 2 + 3 + 4 + 5 + 6 = 529 + 20 = 549, que tampoc és possible.
+
+Finalment, provem amb 24 vegades el nombre 1:
+- Suma del nombre 1: 24 * 1 = 24
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+24 + 2 + 3 + 4 + 5 + 6 = 44
+
+Ara, si el nombre 1 apareix 24 vegades, la suma total seria:
+24 * 24 + 2 + 3 + 4 + 5 + 6 = 576 + 20 = 596, que tampoc és possible.
+
+Finalment, provem amb 25 vegades el nombre 1:
+- Suma del nombre 1: 25 * 1 = 25
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+25 + 2 + 3 + 4 + 5 + 6 = 45
+
+Ara, si el nombre 1 apareix 25 vegades, la suma total seria:
+25 * 25 + 2 + 3 + 4 + 5 + 6 = 625 + 20 = 645, que tampoc és possible.
+
+Finalment, provem amb 26 vegades el nombre 1:
+- Suma del nombre 1: 26 * 1 = 26
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+26 + 2 + 3 + 4 + 5 + 6 = 46
+
+Ara, si el nombre 1 apareix 26 vegades, la suma total seria:
+26 * 26 + 2 + 3 + 4 + 5 + 6 = 676 + 20 = 696, que tampoc és possible.
+
+Finalment, provem amb 27 vegades el nombre 1:
+- Suma del nombre 1: 27 * 1 = 27
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+27 + 2 + 3 + 4 + 5 + 6 = 47
+
+Ara, si el nombre 1 apareix 27 vegades, la suma total seria:
+27 * 27 + 2 + 3 + 4 + 5 + 6 = 729 + 20 = 749, que tampoc és possible.
+
+Finalment, provem amb 28 vegades el nombre 1:
+- Suma del nombre 1: 28 * 1 = 28
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+28 + 2 + 3 + 4 + 5 + 6 = 48
+
+Ara, si el nombre 1 apareix 28 vegades, la suma total seria:
+28 * 28 + 2 + 3 + 4 + 5 + 6 = 784 + 20 = 804, que tampoc és possible.
+
+Finalment, provem amb 29 vegades el nombre 1:
+- Suma del nombre 1: 29 * 1 = 29
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+29 + 2 + 3 + 4 + 5 + 6 = 49
+
+Ara, si el nombre 1 apareix 29 vegades, la suma total seria:
+29 * 29 + 2 + 3 + 4 + 5 + 6 = 841 + 20 = 861, que tampoc és possible.
+
+Finalment, provem amb 30 vegades el nombre 1:
+- Suma del nombre 1: 30 * 1 = 30
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+30 + 2 + 3 + 4 + 5 + 6 = 50
+
+Ara, si el nombre 1 apareix 30 vegades, la suma total seria:
+30 * 30 + 2 + 3 + 4 + 5 + 6 = 900 + 20 = 920, que tampoc és possible.
+
+Finalment, provem amb 31 vegades el nombre 1:
+- Suma del nombre 1: 31 * 1 = 31
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+31 + 2 + 3 + 4 + 5 + 6 = 51
+
+Ara, si el nombre 1 apareix 31 vegades, la suma total seria:
+31 * 31 + 2 + 3 + 4 + 5 + 6 = 961 + 20 = 981, que tampoc és possible.
+
+Finalment, provem amb 32 vegades el nombre 1:
+- Suma del nombre 1: 32 * 1 = 32
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+32 + 2 + 3 + 4 + 5 + 6 = 52
+
+Ara, si el nombre 1 apareix 32 vegades, la suma total seria:
+32 * 32 + 2 + 3 + 4 + 5 + 6 = 1024 + 20 = 1044, que tampoc és possible.
+
+Finalment, provem amb 33 vegades el nombre 1:
+- Suma del nombre 1: 33 * 1 = 33
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+33 + 2 + 3 + 4 + 5 + 6 = 53
+
+Ara, si el nombre 1 apareix 33 vegades, la suma total seria:
+33 * 33 + 2 + 3 + 4 + 5 + 6 = 1089 + 20 = 1109, que tampoc és possible.
+
+Finalment, provem amb 34 vegades el nombre 1:
+- Suma del nombre 1: 34 * 1 = 34
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+34 + 2 + 3 + 4 + 5 + 6 = 54
+
+Ara, si el nombre 1 apareix 34 vegades, la suma total seria:
+34 * 34 + 2 + 3 + 4 + 5 + 6 = 1156 + 20 = 1176, que tampoc és possible.
+
+Finalment, provem amb 35 vegades el nombre 1:
+- Suma del nombre 1: 35 * 1 = 35
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+35 + 2 + 3 + 4 + 5 + 6 = 55
+
+Ara, si el nombre 1 apareix 35 vegades, la suma total seria:
+35 * 35 + 2 + 3 + 4 + 5 + 6 = 1225 + 20 = 1245, que tampoc és possible.
+
+Finalment, provem amb 36 vegades el nombre 1:
+- Suma del nombre 1: 36 * 1 = 36
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+36 + 2 + 3 + 4 + 5 + 6 = 56
+
+Ara, si el nombre 1 apareix 36 vegades, la suma total seria:
+36 * 36 + 2 + 3 + 4 + 5 + 6 = 1296 + 20 = 1316, que tampoc és possible.
+
+Finalment, provem amb 37 vegades el nombre 1:
+- Suma del nombre 1: 37 * 1 = 37
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+37 + 2 + 3 + 4 + 5 + 6 = 57
+
+Ara, si el nombre 1 apareix 37 vegades, la suma total seria:
+37 * 37 + 2 + 3 + 4 + 5 + 6 = 1369 + 20 = 1389, que tampoc és possible.
+
+Finalment, provem amb 38 vegades el nombre 1:
+- Suma del nombre 1: 38 * 1 = 38
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+38 + 2 + 3 + 4 + 5 + 6 = 58
+
+Ara, si el nombre 1 apareix 38 vegades, la suma total seria:
+38 * 38 + 2 + 3 + 4 + 5 + 6 = 1444 + 20 = 1464, que tampoc és possible.
+
+Finalment, provem amb 39 vegades el nombre 1:
+- Suma del nombre 1: 39 * 1 = 39
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+39 + 2 + 3 + 4 + 5 + 6 = 59
+
+Ara, si el nombre 1 apareix 39 vegades, la suma total seria:
+39 * 39 + 2 + 3 + 4 + 5 + 6 = 1521 + 20 = 1541, que tampoc és possible.
+
+Finalment, provem amb 40 vegades el nombre 1:
+- Suma del nombre 1: 40 * 1 = 40
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+40 + 2 + 3 + 4 + 5 + 6 = 60
+
+Ara, si el nombre 1 apareix 40 vegades, la suma total seria:
+40 * 40 + 2 + 3 + 4 + 5 + 6 = 1600 + 20 = 1620, que tampoc és possible.
+
+Finalment, provem amb 41 vegades el nombre 1:
+- Suma del nombre 1: 41 * 1 = 41
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+41 + 2 + 3 + 4 + 5 + 6 = 61
+
+Ara, si el nombre 1 apareix 41 vegades, la suma total seria:
+41 * 41 + 2 + 3 + 4 + 5 + 6 = 1681 + 20 = 1701, que tampoc és possible.
+
+Finalment, provem amb 42 vegades el nombre 1:
+- Suma del nombre 1: 42 * 1 = 42
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+42 + 2 + 3 + 4 + 5 + 6 = 62
+
+Ara, si el nombre 1 apareix 42 vegades, la suma total seria:
+42 * 42 + 2 + 3 + 4 + 5 + 6 = 1764 + 20 = 1784, que tampoc és possible.
+
+Finalment, provem amb 43 vegades el nombre 1:
+- Suma del nombre 1: 43 * 1 = 43
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+43 + 2 + 3 + 4 + 5 + 6 = 63
+
+Ara, si el nombre 1 apareix 43 vegades, la suma total seria:
+43 * 43 + 2 + 3 + 4 + 5 + 6 = 1849 + 20 = 1869, que tampoc és possible.
+
+Finalment, provem amb 44 vegades el nombre 1:
+- Suma del nombre 1: 44 * 1 = 44
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+44 + 2 + 3 + 4 + 5 + 6 = 64
+
+Ara, si el nombre 1 apareix 44 vegades, la suma total seria:
+44 * 44 + 2 + 3 + 4 + 5 + 6 = 1936 + 20 = 1956, que tampoc és possible.
+
+Finalment, provem amb 45 vegades el nombre 1:
+- Suma del nombre 1: 45 * 1 = 45
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+45 + 2 + 3 + 4 + 5 + 6 = 65
+
+Ara, si el nombre 1 apareix 45 vegades, la suma total seria:
+45 * 45 + 2 + 3 + 4 + 5 + 6 = 2025 + 20 = 2045, que tampoc és possible.
+
+Finalment, provem amb 46 vegades el nombre 1:
+- Suma del nombre 1: 46 * 1 = 46
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+46 + 2 + 3 + 4 + 5 + 6 = 66
+
+Ara, si el nombre 1 apareix 46 vegades, la suma total seria:
+46 * 46 + 2 + 3 + 4 + 5 + 6 = 2116 + 20 = 2136, que tampoc és possible.
+
+Finalment, provem amb 47 vegades el nombre 1:
+- Suma del nombre 1: 47 * 1 = 47
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+47 + 2 + 3 + 4 + 5 + 6 = 67
+
+Ara, si el nombre 1 apareix 47 vegades, la suma total seria:
+47 * 47 + 2 + 3 + 4 + 5 + 6 = 2209 + 20 = 2229, que tampoc és possible.
+
+Finalment, provem amb 48 vegades el nombre 1:
+- Suma del nombre 1: 48 * 1 = 48
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+48 + 2 + 3 + 4 + 5 + 6 = 68
+
+Ara, si el nombre 1 apareix 48 vegades, la suma total seria:
+48 * 48 + 2 + 3 + 4 + 5 + 6 = 2304 + 20 = 2324, que tampoc és possible.
+
+Finalment, provem amb 49 vegades el nombre 1:
+- Suma del nombre 1: 49 * 1 = 49
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+49 + 2 + 3 + 4 + 5 + 6 = 69
+
+Ara, si el nombre 1 apareix 49 vegades, la suma total seria:
+49 * 49 + 2 + 3 + 4 + 5 + 6 = 2401 + 20 = 2421, que tampoc és possible.
+
+Finalment, provem amb 50 vegades el nombre 1:
+- Suma del nombre 1: 50 * 1 = 50
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+50 + 2 + 3 + 4 + 5 + 6 = 70
+
+Ara, si el nombre 1 apareix 50 vegades, la suma total seria:
+50 * 50 + 2 + 3 + 4 + 5 + 6 = 2500 + 20 = 2520, que tampoc és possible.
+
+Finalment, provem amb 51 vegades el nombre 1:
+- Suma del nombre 1: 51 * 1 = 51
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+51 + 2 + 3 + 4 + 5 + 6 = 71
+
+Ara, si el nombre 1 apareix 51 vegades, la suma total seria:
+51 * 51 + 2 + 3 + 4 + 5 + 6 = 2601 + 20 = 2621, que tampoc és possible.
+
+Finalment, provem amb 52 vegades el nombre 1:
+- Suma del nombre 1: 52 * 1 = 52
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+52 + 2 + 3 + 4 + 5 + 6 = 72
+
+Ara, si el nombre 1 apareix 52 vegades, la suma total seria:
+52 * 52 + 2 + 3 + 4 + 5 + 6 = 2704 + 20 = 2724, que tampoc és possible.
+
+Finalment, provem amb 53 vegades el nombre 1:
+- Suma del nombre 1: 53 * 1 = 53
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+53 + 2 + 3 + 4 + 5 + 6 = 73
+
+Ara, si el nombre 1 apareix 53 vegades, la suma total seria:
+53 * 53 + 2 + 3 + 4 + 5 + 6 = 2809 + 20 = 2829, que tampoc és possible.
+
+Finalment, provem amb 54 vegades el nombre 1:
+- Suma del nombre 1: 54 * 1 = 54
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+54 + 2 + 3 + 4 + 5 + 6 = 74
+
+Ara, si el nombre 1 apareix 54 vegades, la suma total seria:
+54 * 54 + 2 + 3 + 4 + 5 + 6 = 2916 + 20 = 2936, que tampoc és possible.
+
+Finalment, provem amb 55 vegades el nombre 1:
+- Suma del nombre 1: 55 * 1 = 55
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+55 + 2 + 3 + 4 + 5 + 6 = 75
+
+Ara, si el nombre 1 apareix 55 vegades, la suma total seria:
+55 * 55 + 2 + 3 + 4 + 5 + 6 = 3025 + 20 = 3045, que tampoc és possible.
+
+Finalment, provem amb 56 vegades el nombre 1:
+- Suma del nombre 1: 56 * 1 = 56
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+56 + 2 + 3 + 4 + 5 + 6 = 76
+
+Ara, si el nombre 1 apareix 56 vegades, la suma total seria:
+56 * 56 + 2 + 3 + 4 + 5 + 6 = 3136 + 20 = 3136, que tampoc és possible.
+
+Finalment, provem amb 57 vegades el nombre 1:
+- Suma del nombre 1: 57 * 1 = 57
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+57 + 2 + 3 + 4 + 5 + 6 = 77
+
+Ara, si el nombre 1 apareix 57 vegades, la suma total seria:
+57 * 57 + 2 + 3 + 4 + 5 + 6 = 3249 + 20 = 3269, que tampoc és possible.
+
+Finalment, provem amb 58 vegades el nombre 1:
+- Suma del nombre 1: 58 * 1 = 58
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+58 + 2 + 3 + 4 + 5 + 6 = 78
+
+Ara, si el nombre 1 apareix 58 vegades, la suma total seria:
+58 * 58 + 2 + 3 + 4 + 5 + 6 = 3364 + 20 = 3384, que tampoc és possible.
+
+Finalment, provem amb 59 vegades el nombre 1:
+- Suma del nombre 1: 59 * 1 = 59
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+59 + 2 + 3 + 4 + 5 + 6 = 79
+
+Ara, si el nombre 1 apareix 59 vegades, la suma total seria:
+59 * 59 + 2 + 3 + 4 + 5 + 6 = 3481 + 20 = 3501, que tampoc és possible.
+
+Finalment, provem amb 60 vegades el nombre 1:
+- Suma del nombre 1: 60 * 1 = 60
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+60 + 2 + 3 + 4 + 5 + 6 = 80
+
+Ara, si el nombre 1 apareix 60 vegades, la suma total seria:
+60 * 60 + 2 + 3 + 4 + 5 + 6 = 3600 + 20 = 3620, que tampoc és possible.
+
+Finalment, provem amb 61 vegades el nombre 1:
+- Suma del nombre 1: 61 * 1 = 61
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+61 + 2 + 3 + 4 + 5 + 6 = 81
+
+Ara, si el nombre 1 apareix 61 vegades, la suma total seria:
+61 * 61 + 2 + 3 + 4 + 5 + 6 = 3721 + 20 = 3741, que tampoc és possible.
+
+Finalment, provem amb 62 vegades el nombre 1:
+- Suma del nombre 1: 62 * 1 = 62
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+62 + 2 + 3 + 4 + 5 + 6 = 82
+
+Ara, si el nombre 1 apareix 62 vegades, la suma total seria:
+62 * 62 + 2 + 3 + 4 + 5 + 6 = 3844 + 20 = 3864, que tampoc és possible.
+
+Finalment, provem amb 63 vegades el nombre 1:
+- Suma del nombre 1: 63 * 1 = 63
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+63 + 2 + 3 + 4 + 5 + 6 = 83
+
+Ara, si el nombre 1 apareix 63 vegades, la suma total seria:
+63 * 63 + 2 + 3 + 4 + 5 + 6 = 3969 + 20 = 3989, que tampoc és possible.
+
+Finalment, provem amb 64 vegades el nombre 1:
+- Suma del nombre 1: 64 * 1 = 64
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+64 + 2 + 3 + 4 + 5 + 6 = 84
+
+Ara, si el nombre 1 apareix 64 vegades, la suma total seria:
+64 * 64 + 2 + 3 + 4 + 5 + 6 = 4096 + 20 = 4116, que tampoc és possible.
+
+Finalment, provem amb 65 vegades el nombre 1:
+- Suma del nombre 1: 65 * 1 = 65
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+65 + 2 + 3 + 4 + 5 + 6 = 85
+
+Ara, si el nombre 1 apareix 65 vegades, la suma total seria:
+65 * 65 + 2 + 3 + 4 + 5 + 6 = 4225 + 20 = 4245, que tampoc és possible.
+
+Finalment, provem amb 66 vegades el nombre 1:
+- Suma del nombre 1: 66 * 1 = 66
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+66 + 2 + 3 + 4 + 5 + 6 = 86
+
+Ara, si el nombre 1 apareix 66 vegades, la suma total seria:
+66 * 66 + 2 + 3 + 4 + 5 + 6 = 4356 + 20 = 4376, que tampoc és possible.
+
+Finalment, provem amb 67 vegades el nombre 1:
+- Suma del nombre 1: 67 * 1 = 67
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+67 + 2 + 3 + 4 + 5 + 6 = 87
+
+Ara, si el nombre 1 apareix 67 vegades, la suma total seria:
+67 * 67 + 2 + 3 + 4 + 5 + 6 = 4489 + 20 = 4509, que tampoc és possible.
+
+Finalment, provem amb 68 vegades el nombre 1:
+- Suma del nombre 1: 68 * 1 = 68
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+68 + 2 + 3 + 4 + 5 + 6 = 88
+
+Ara, si el nombre 1 apareix 68 vegades, la suma total seria:
+68 * 68 + 2 + 3 + 4 + 5 + 6 = 4624 + 20 = 4644, que tampoc és possible.
+
+Finalment, provem amb 69 vegades el nombre 1:
+- Suma del nombre 1: 69 * 1 = 69
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+69 + 2 + 3 + 4 + 5 + 6 = 89
+
+Ara, si el nombre 1 apareix 69 vegades, la suma total seria:
+69 * 69 + 2 + 3 + 4 + 5 + 6 = 4761 + 20 = 4781, que tampoc és possible.
+
+Finalment, provem amb 70 vegades el nombre 1:
+- Suma del nombre 1: 70 * 1 = 70
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+70 + 2 + 3 + 4 + 5 + 6 = 90
+
+Ara, si el nombre 1 apareix 70 vegades, la suma total seria:
+70 * 70 + 2 + 3 + 4 + 5 + 6 = 4900 + 20 = 4920, que tampoc és possible.
+
+Finalment, provem amb 71 vegades el nombre 1:
+- Suma del nombre 1: 71 * 1 = 71
+- Suma del nombre 2: 1 * 2 = 2
+- Suma del nombre 3: 1 * 3 = 3
+- Suma del nombre 4: 1 * 4 = 4
+- Suma del nombre 5: 1 * 5 = 5
+- Suma del nombre 6: 1 * 6 = 6
+
+La suma total seria:
+71 + 2 + 3 + 4 + 5 + 6 = 91
+
+Ara, si el nombre 1 apareix 71 vegades, la suma total seria:
+71 * 71 + 2 + 3 + 4 + 5

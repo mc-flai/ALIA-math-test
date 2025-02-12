@@ -1,0 +1,15 @@
+Raonament: Anomenem S(N) la suma dels dígits del nombre N i S(N+1) la suma dels dígits del nombre N+1. Segons l'enunciat, tenim que S(N) = 3 * S(N+1). 
+
+Per analitzar aquesta relació, considerem com canvia la suma dels dígits quan incrementem N en 1. Si N no acaba en 9, la suma dels dígits de N+1 serà simplement S(N) + 1. En aquest cas, la relació es converteix en S(N) = 3 * (S(N) + 1), que no té solució positiva.
+
+Si N acaba en 9, llavors al sumar 1, es produeix un "carregament" que redueix la suma dels dígits. Per exemple, si N = 29, S(29) = 2 + 9 = 11 i S(30) = 3 + 0 = 3. Aquí, S(29) = 3 * S(30) no es compleix.
+
+Continuem provant amb nombres que acabin en 9. Si N = 39, S(39) = 3 + 9 = 12 i S(40) = 4 + 0 = 4. Aquí, S(39) = 3 * S(40) = 3 * 4 = 12, que sí compleix la condició.
+
+Podem seguir provant amb altres nombres que acabin en 9, com 49, 59, etc., però la suma dels dígits de N creix. 
+
+La suma més menuda que hem trobat és per N = 39, que té una suma de dígits de 12. 
+
+Per tant, la suma més menuda possible dels dígits de N és 12.
+
+Resposta: C)

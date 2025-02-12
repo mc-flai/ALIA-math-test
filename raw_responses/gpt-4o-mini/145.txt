@@ -1,0 +1,78 @@
+Raonament: 
+Suposem que el nombre total de pomes és P i que cada xic rep p pomes. Així, podem escriure les següents equacions:
+
+1. Si hi ha N xics, cada un rep p pomes:
+   \[
+   P = N \cdot p
+   \]
+
+2. Si hi ha N - 2 xics, cada un rep p + 1 poma:
+   \[
+   P = (N - 2) \cdot (p + 1)
+   \]
+
+3. Si hi ha N - 3 xics, cada un rep p + 2 pomes:
+   \[
+   P = (N - 3) \cdot (p + 2)
+   \]
+
+Ara, igualem les dues primeres equacions:
+\[
+N \cdot p = (N - 2) \cdot (p + 1)
+\]
+Desenvolupem:
+\[
+N \cdot p = (N - 2) \cdot p + (N - 2)
+\]
+\[
+N \cdot p - (N - 2) \cdot p = N - 2
+\]
+\[
+2p = N - 2
+\]
+\[
+p = \frac{N - 2}{2}
+\]
+
+Ara, igualem la primera i la tercera equació:
+\[
+N \cdot p = (N - 3) \cdot (p + 2)
+\]
+Desenvolupem:
+\[
+N \cdot p = (N - 3) \cdot p + 2(N - 3)
+\]
+\[
+N \cdot p - (N - 3) \cdot p = 2(N - 3)
+\]
+\[
+3p = 2(N - 3)
+\]
+Substituïm p amb l'expressió que hem trobat anteriorment:
+\[
+3 \cdot \frac{N - 2}{2} = 2(N - 3)
+\]
+Multipliquem per 2 per eliminar el denominador:
+\[
+3(N - 2) = 4(N - 3)
+\]
+Desenvolupem:
+\[
+3N - 6 = 4N - 12
+\]
+Reorganitzem:
+\[
+12 - 6 = 4N - 3N
+\]
+\[
+6 = N
+\]
+
+Per tant, el valor de N és 6. Comprovem les condicions:
+- Si N = 6, p = (6 - 2) / 2 = 2. Així, P = 6 * 2 = 12.
+- Si hi ha 4 xics (N - 2), cada un rep 3 pomes (2 + 1).
+- Si hi ha 3 xics (N - 3), cada un rep 4 pomes (2 + 2).
+
+Totes les condicions es compleixen.
+
+Resposta: A) 6

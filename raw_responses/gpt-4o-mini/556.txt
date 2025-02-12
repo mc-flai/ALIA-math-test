@@ -1,0 +1,51 @@
+Raonament: 
+Sigui \( n \) el nombre de vèrtexs del polígon. En un polígon regular, el nombre de costats és igual al nombre de vèrtexs, és a dir, \( n \). El nombre de diagonals d'un polígon es pot calcular amb la fórmula:
+
+\[
+\text{Diagonals} = \frac{n(n-3)}{2}
+\]
+
+Segons l'enunciat, la suma del nombre de costats i el nombre de diagonals és 28:
+
+\[
+n + \frac{n(n-3)}{2} = 28
+\]
+
+Multipliquem tota l'equació per 2 per eliminar la fracció:
+
+\[
+2n + n(n-3) = 56
+\]
+
+Això es pot simplificar a:
+
+\[
+n^2 - 3n + 2n - 56 = 0
+\]
+
+O, simplificant més:
+
+\[
+n^2 - n - 56 = 0
+\]
+
+Ara, resolem aquesta equació quadràtica utilitzant la fórmula general \( n = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \), on \( a = 1 \), \( b = -1 \) i \( c = -56 \):
+
+\[
+b^2 - 4ac = (-1)^2 - 4 \cdot 1 \cdot (-56) = 1 + 224 = 225
+\]
+
+Per tant, la solució és:
+
+\[
+n = \frac{-(-1) \pm \sqrt{225}}{2 \cdot 1} = \frac{1 \pm 15}{2}
+\]
+
+Això ens dóna dues solucions:
+
+1. \( n = \frac{16}{2} = 8 \)
+2. \( n = \frac{-14}{2} = -7 \) (no és vàlida, ja que el nombre de vèrtexs no pot ser negatiu)
+
+Per tant, el nombre de vèrtexs del polígon és 8.
+
+Resposta: B)

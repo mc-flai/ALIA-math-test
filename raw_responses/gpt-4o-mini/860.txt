@@ -1,0 +1,13 @@
+Raonament: Per descompondre un rectangle de dimensions 6 × 7 en quadrats, hem de buscar la manera de cobrir tota l'àrea del rectangle (42 unitats quadrades) amb quadrats de costat enter. El mètode més eficient per fer-ho és utilitzar el quadrat més gran possible que encaixi en el rectangle. 
+
+El costat més llarg del rectangle és 7, així que podem començar amb un quadrat de 6 × 6, que ocupa 36 unitats quadrades. Això deixa un espai de 6 × 1 (6 unitats quadrades) que podem cobrir amb 6 quadrats de 1 × 1. 
+
+Així, la descomposició seria:
+- 1 quadrat de 6 × 6 (36 unitats quadrades)
+- 6 quadrats de 1 × 1 (6 unitats quadrades)
+
+En total, això suma 1 + 6 = 7 quadrats. No hi ha manera de cobrir el rectangle amb menys de 7 quadrats, ja que qualsevol intent de fer-ho amb quadrats més petits resultaria en un nombre igual o superior de quadrats.
+
+Per tant, el mínim nombre de quadrats amb què Pere pot descompondre el rectangle de 6 × 7 és 7.
+
+Resposta: C)

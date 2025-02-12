@@ -1,0 +1,24 @@
+Raonament: Anem a calcular cada part de l'expressió per separat.
+
+1. Comencem amb la primera part: \( \frac{1}{1 + \frac{1}{1 + 1}} \).
+   - Primer, calculem \( 1 + 1 = 2 \).
+   - Ara, substituïm: \( \frac{1}{1 + \frac{1}{2}} \).
+   - A continuació, calculem \( \frac{1}{2} \) i sumem: \( 1 + \frac{1}{2} = \frac{3}{2} \).
+   - Finalment, calculem \( \frac{1}{\frac{3}{2}} = \frac{2}{3} \).
+
+2. Ara, calculem la segona part: \( \frac{1}{1 + \frac{1}{1 + \frac{1}{1 + 1}}} \).
+   - Comencem amb la part interna: \( 1 + 1 = 2 \).
+   - Ara, substituïm: \( \frac{1}{1 + \frac{1}{2}} \).
+   - Com hem calculat anteriorment, \( 1 + \frac{1}{2} = \frac{3}{2} \), així que \( \frac{1}{\frac{3}{2}} = \frac{2}{3} \).
+   - Ara, substituïm en la part exterior: \( 1 + \frac{2}{3} = \frac{5}{3} \).
+   - Finalment, calculem \( \frac{1}{\frac{5}{3}} = \frac{3}{5} \).
+
+3. Ara sumem les dues parts que hem calculat:
+   - \( \frac{2}{3} + \frac{3}{5} \).
+   - Per sumar aquestes dues fraccions, necessitem un denominador comú. El mínim comú múltiple de 3 i 5 és 15.
+   - Convertim les fraccions: \( \frac{2}{3} = \frac{10}{15} \) i \( \frac{3}{5} = \frac{9}{15} \).
+   - Ara sumem: \( \frac{10}{15} + \frac{9}{15} = \frac{19}{15} \).
+
+Finalment, la resposta és \( \frac{19}{15} \).
+
+Resposta: C)

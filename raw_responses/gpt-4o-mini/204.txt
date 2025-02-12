@@ -1,0 +1,63 @@
+Raonament: Comencem per analitzar la funció \( f \) que compleix la relació \( f(2x + 1) = 4x^2 + 14x \). Per trobar una expressió per a \( f(y) \), on \( y = 2x + 1 \), podem expressar \( x \) en funció de \( y \):
+
+\[
+y = 2x + 1 \implies 2x = y - 1 \implies x = \frac{y - 1}{2}
+\]
+
+Substituïm \( x \) en l'equació original:
+
+\[
+f(y) = 4\left(\frac{y - 1}{2}\right)^2 + 14\left(\frac{y - 1}{2}\right)
+\]
+
+Calculant \( 4\left(\frac{y - 1}{2}\right)^2 \):
+
+\[
+4\left(\frac{y - 1}{2}\right)^2 = 4 \cdot \frac{(y - 1)^2}{4} = (y - 1)^2 = y^2 - 2y + 1
+\]
+
+Calculant \( 14\left(\frac{y - 1}{2}\right) \):
+
+\[
+14\left(\frac{y - 1}{2}\right) = 7(y - 1) = 7y - 7
+\]
+
+Ara sumem les dues parts:
+
+\[
+f(y) = (y^2 - 2y + 1) + (7y - 7) = y^2 + 5y - 6
+\]
+
+Per tant, tenim que:
+
+\[
+f(y) = y^2 + 5y - 6
+\]
+
+Ara, per trobar les solucions de l'equació \( f(x) = 0 \), resolem:
+
+\[
+x^2 + 5x - 6 = 0
+\]
+
+Utilitzem la fórmula quadràtica:
+
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = \frac{-5 \pm \sqrt{5^2 - 4 \cdot 1 \cdot (-6)}}{2 \cdot 1} = \frac{-5 \pm \sqrt{25 + 24}}{2} = \frac{-5 \pm \sqrt{49}}{2} = \frac{-5 \pm 7}{2}
+\]
+
+Així, les solucions són:
+
+\[
+x_1 = \frac{2}{2} = 1 \quad \text{i} \quad x_2 = \frac{-12}{2} = -6
+\]
+
+La suma de les solucions és:
+
+\[
+1 + (-6) = -5
+\]
+
+Per tant, la suma de les solucions reals de l'equació \( f(x) = 0 \) és \( -5 \).
+
+Resposta: B)

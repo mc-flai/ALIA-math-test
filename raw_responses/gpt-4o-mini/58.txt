@@ -1,0 +1,78 @@
+Raonament: 
+
+Sigui \( N \) un nombre natural que acaba en 6. Podem expressar \( N \) com \( N = 10k + 6 \), on \( k \) és un nombre natural que representa les xifres de \( N \) sense el 6 final. 
+
+Si esborrem el 6 i el passem a la primera xifra, obtenim \( M = 6 \cdot 10^d + k \), on \( d \) és el nombre de xifres de \( k \). 
+
+Segons l'enunciat, tenim que \( M = 4N \). Substituïm les expressions de \( M \) i \( N \):
+
+\[
+6 \cdot 10^d + k = 4(10k + 6)
+\]
+
+Desenvolupem l'equació:
+
+\[
+6 \cdot 10^d + k = 40k + 24
+\]
+
+Reorganitzem l'equació:
+
+\[
+6 \cdot 10^d = 40k - k + 24
+\]
+\[
+6 \cdot 10^d = 39k + 24
+\]
+
+Aïllem \( k \):
+
+\[
+39k = 6 \cdot 10^d - 24
+\]
+\[
+k = \frac{6 \cdot 10^d - 24}{39}
+\]
+
+Perquè \( k \) sigui un nombre natural, \( 6 \cdot 10^d - 24 \) ha de ser múltiple de 39. 
+
+Així que busquem el valor més petit de \( d \) tal que \( 6 \cdot 10^d - 24 \equiv 0 \mod 39 \):
+
+\[
+6 \cdot 10^d \equiv 24 \mod 39
+\]
+\[
+10^d \equiv 4 \mod 13 \quad (\text{ja que } 39 = 3 \cdot 13)
+\]
+
+Comprovem els valors de \( d \):
+
+- \( d = 1 \): \( 10^1 \equiv 10 \mod 13 \)
+- \( d = 2 \): \( 10^2 \equiv 9 \mod 13 \)
+- \( d = 3 \): \( 10^3 \equiv 12 \mod 13 \)
+- \( d = 4 \): \( 10^4 \equiv 3 \mod 13 \)
+- \( d = 5 \): \( 10^5 \equiv 4 \mod 13 \)
+
+Així, el valor més petit de \( d \) que compleix és \( d = 5 \).
+
+Substituïm \( d = 5 \) a l'equació de \( k \):
+
+\[
+k = \frac{6 \cdot 10^5 - 24}{39} = \frac{600000 - 24}{39} = \frac{599976}{39} = 15384
+\]
+
+Per tant, \( N \) és:
+
+\[
+N = 10k + 6 = 10 \cdot 15384 + 6 = 153840 + 6 = 153846
+\]
+
+Ara calculem la suma de les xifres de \( N \):
+
+\[
+1 + 5 + 3 + 8 + 4 + 6 = 27
+\]
+
+Per tant, la resposta correcta és:
+
+Resposta: D) 27

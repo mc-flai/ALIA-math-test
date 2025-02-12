@@ -1,0 +1,20 @@
+Raonament: L'estudiant ha estudiat 5 temes dels 10 disponibles. L'examen consisteix en 3 preguntes, cadascuna d'un tema diferent, triades aleatòriament entre els 10 temes. Per calcular la probabilitat que totes les preguntes siguin dels temes que l'estudiant ha estudiat, hem de considerar quantes combinacions possibles hi ha per escollir 3 temes dels 10 i quantes d'aquestes combinacions són temes que l'estudiant ha estudiat.
+
+1. **Combinacions totals de temes**: El nombre total de maneres de triar 3 temes dels 10 és donat per la combinació \( C(10, 3) \):
+   \[
+   C(10, 3) = \frac{10!}{3!(10-3)!} = \frac{10 \times 9 \times 8}{3 \times 2 \times 1} = 120
+   \]
+
+2. **Combinacions dels temes estudiats**: El nombre de maneres de triar 3 temes dels 5 que l'estudiant ha estudiat és donat per la combinació \( C(5, 3) \):
+   \[
+   C(5, 3) = \frac{5!}{3!(5-3)!} = \frac{5 \times 4}{2 \times 1} = 10
+   \]
+
+3. **Probabilitat**: La probabilitat que totes les preguntes siguin dels temes que l'estudiant ha estudiat és la proporció de les combinacions favorables sobre les combinacions totals:
+   \[
+   P(\text{totes estudiades}) = \frac{C(5, 3)}{C(10, 3)} = \frac{10}{120} = \frac{1}{12}
+   \]
+
+Per tant, la probabilitat que totes les preguntes siguin dels temes que l'estudiant ha estudiat és \( \frac{1}{12} \).
+
+Resposta: A)

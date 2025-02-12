@@ -1,0 +1,9 @@
+Raonament: Per deduir un nombre entre 1 i 15, podem utilitzar un enfocament de divisió per mitges. En cada pregunta, podem dividir l'interval de nombres possibles en dues parts. Si fem una pregunta que divideix l'interval en dues meitats, podem descartar una meitat basada en la resposta. 
+
+1. En la primera pregunta, podem preguntar si el nombre és menor o igual a 7. Això ens permetrà saber si el nombre és entre 1 i 7 o entre 8 i 15.
+2. En la segona pregunta, podem preguntar dins de la meitat que ha estat confirmada. Si el nombre és menor o igual a 7, podem preguntar si és menor o igual a 3. Si el nombre és entre 8 i 15, podem preguntar si és menor o igual a 11.
+3. En la tercera pregunta, podem fer una pregunta similar per reduir encara més l'interval.
+
+Amb aquest mètode, podem reduir l'interval de possibles nombres a un únic nombre en un màxim de 4 preguntes. Per tant, el mínim nombre de preguntes necessàries per estar segur de deduir el nombre és 4.
+
+Resposta: D)

@@ -1,0 +1,34 @@
+Raonament: En un polígon de k costats, la suma dels angles interiors es pot calcular amb la fórmula \( S = (k - 2) \times 180° \). Si cada angle interior és igual a 90° o 150°, podem definir \( x \) com el nombre d'angles de 90° i \( y \) com el nombre d'angles de 150°. Així, tenim les següents equacions:
+
+1. \( x + y = k \) (el nombre total d'angles)
+2. \( 90x + 150y = (k - 2) \times 180 \) (la suma dels angles interiors)
+
+Podem simplificar la segona equació:
+
+\( 90x + 150y = 180k - 360 \)
+
+Reorganitzant, obtenim:
+
+\( 90x + 150y - 180k + 360 = 0 \)
+
+Dividim tota l'equació per 30:
+
+\( 3x + 5y - 6k + 12 = 0 \)
+
+Ara, podem expressar \( y \) en funció de \( x \) i \( k \):
+
+\( y = \frac{6k - 12 - 3x}{5} \)
+
+Perquè \( y \) sigui un nombre natural, \( 6k - 12 - 3x \) ha de ser múltiple de 5. A més, \( x \) i \( y \) han de ser no negatius.
+
+Analitzem les opcions:
+
+- **A) k = 4**: \( 6(4) - 12 = 12 \), que és múltiple de 5. (Possible)
+- **B) k = 6**: \( 6(6) - 12 = 24 \), que no és múltiple de 5. (No possible)
+- **C) k = 8**: \( 6(8) - 12 = 36 \), que no és múltiple de 5. (No possible)
+- **D) k = 9**: \( 6(9) - 12 = 42 \), que no és múltiple de 5. (No possible)
+- **E) k = 10**: \( 6(10) - 12 = 48 \), que no és múltiple de 5. (No possible)
+
+D'aquesta manera, veiem que la única opció que no pot ser el valor de k és la B) 6, ja que no compleix la condició de ser múltiple de 5.
+
+Resposta: B)

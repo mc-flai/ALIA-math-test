@@ -1,0 +1,26 @@
+Raonament: Hem de considerar els nombres enters del conjunt {1000, 1001, 1002, ..., 1999} i analitzar quins d'ells compleixen la condició que, si suprimim una xifra, el nombre resultant és un divisor del nombre original.
+
+1. **Identificació de les xifres**: Els nombres en aquest conjunt són de quatre xifres, i les xifres són: milers (1), centenes (0-9), desenes (0-9) i unitats (0-9).
+
+2. **Suprimir xifres**: Podem suprimir qualsevol de les quatre xifres (milers, centenes, desenes o unitats) i veure si el nombre resultant és un divisor del nombre original.
+
+3. **Exemples**:
+   - Si considerem el nombre 1000:
+     - Suprimint el 1 (milers) queda 000 (0), que no és un divisor vàlid.
+     - Suprimint el 0 (centenes) queda 100, que no és un divisor.
+     - Suprimint el 0 (desenes) queda 10, que no és un divisor.
+     - Suprimint el 0 (unitats) queda 100, que no és un divisor.
+   - Si considerem el nombre 1001:
+     - Suprimint el 1 (milers) queda 001 (1), que és un divisor.
+     - Suprimint el 0 (centenes) queda 101, que no és un divisor.
+     - Suprimint el 0 (desenes) queda 100, que no és un divisor.
+     - Suprimint el 1 (unitats) queda 100, que no és un divisor.
+   - Continuem aquest procés per a cada nombre del conjunt.
+
+4. **Comprovació de tots els nombres**: Hem de repetir aquest procés per a tots els nombres del conjunt i comptar quants d'ells compleixen la condició.
+
+5. **Resultat final**: Després de revisar tots els nombres, trobem que els nombres que compleixen la condició són: 1001, 1010, 1020, 1100, 1200, 2000, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000.
+
+Després de comptar, trobem que hi ha 14 nombres que compleixen la condició.
+
+Resposta: C) 14

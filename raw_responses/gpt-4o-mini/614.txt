@@ -1,0 +1,36 @@
+Raonament: 
+
+Comencem per determinar la quantitat d'aigua que queda en cada dipòsit després de t hores.
+
+Per al primer dipòsit, que comença amb 100 litres i perd 1 litre per hora, la quantitat d'aigua després de t hores serà:
+\[ 
+A_1(t) = 100 - 1t 
+\]
+
+Per al segon dipòsit, que comença amb 120 litres i perd 3 litres per hora, la quantitat d'aigua després de t hores serà:
+\[ 
+A_2(t) = 120 - 3t 
+\]
+
+Volem trobar el moment en què ambdues quantitats d'aigua són iguals, és a dir, quan \( A_1(t) = A_2(t) \):
+\[ 
+100 - 1t = 120 - 3t 
+\]
+
+Ara resolem aquesta equació:
+1. Sumem \( 3t \) a ambdós costats:
+\[ 
+100 + 2t = 120 
+\]
+2. Restem 100 a ambdós costats:
+\[ 
+2t = 20 
+\]
+3. Dividim entre 2:
+\[ 
+t = 10 
+\]
+
+Per tant, han de passar 10 hores perquè els dos dipòsits tinguin la mateixa quantitat d'aigua.
+
+Resposta: C)

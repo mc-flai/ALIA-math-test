@@ -1,0 +1,55 @@
+Raonament: Per trobar quants triangles diferents podem formar amb costats de longituds naturals i un perímetre de 20, hem de considerar les condicions que han de complir els costats d'un triangle. Les longituds dels costats \(a\), \(b\) i \(c\) han de complir les següents condicions:
+
+1. \(a + b + c = 20\)
+2. \(a \leq b \leq c\) (per evitar comptar triangles que són iguals però amb costats en diferents ordres)
+3. La desigualtat triangular: \(a + b > c\)
+
+A partir de la primera condició, podem expressar \(c\) com \(c = 20 - a - b\). Substituint això a la desigualtat triangular, obtenim:
+
+\[
+a + b > 20 - a - b
+\]
+
+Simplificant, tenim:
+
+\[
+2a + 2b > 20 \implies a + b > 10
+\]
+
+Ara, com que \(c\) ha de ser el costat més llarg, també hem de tenir en compte que \(c \geq b\) i \(c \geq a\). Això implica que:
+
+\[
+20 - a - b \geq b \implies 20 - a \geq 2b \implies 20 \geq a + 2b
+\]
+
+Ara tenim dues desigualtats:
+
+1. \(a + b > 10\)
+2. \(a + 2b < 20\)
+
+Podem resoldre aquestes desigualtats per trobar les possibles combinacions de \(a\) i \(b\).
+
+Comencem a provar valors per \(a\):
+
+- Si \(a = 1\): \(b > 9\) i \(b < 9.5\) (no hi ha solucions naturals)
+- Si \(a = 2\): \(b > 8\) i \(b < 9\) (solució: \(b = 9\), \(c = 9\))
+- Si \(a = 3\): \(b > 7\) i \(b < 8.5\) (solució: \(b = 8\), \(c = 9\))
+- Si \(a = 4\): \(b > 6\) i \(b < 8\) (solucions: \(b = 7\), \(c = 9\))
+- Si \(a = 5\): \(b > 5\) i \(b < 7.5\) (solucions: \(b = 6\), \(c = 9\))
+- Si \(a = 6\): \(b > 4\) i \(b < 7\) (solucions: \(b = 5\), \(c = 9\))
+- Si \(a = 7\): \(b > 3\) i \(b < 6.5\) (solucions: \(b = 4\), \(c = 9\))
+- Si \(a = 8\): \(b > 2\) i \(b < 5\) (solucions: \(b = 3\), \(c = 9\))
+- Si \(a = 9\): \(b > 1\) i \(b < 4.5\) (solucions: \(b = 2\), \(c = 9\))
+
+Ara, resumint les solucions vàlides:
+
+1. (2, 9, 9)
+2. (3, 8, 9)
+3. (4, 7, 9)
+4. (5, 6, 9)
+5. (5, 5, 10)
+6. (6, 6, 8)
+
+Així, tenim un total de 6 triangles diferents.
+
+Resposta: A) 6

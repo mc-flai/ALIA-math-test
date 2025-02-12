@@ -1,0 +1,20 @@
+Raonament: Primer, hem de trobar tots els divisors de 1000. El número 1000 es pot descompondre en factors primers com segueix: \(1000 = 2^3 \times 5^3\). 
+
+Per trobar els divisors, utilitzem la fórmula que diu que si un número \(n\) té la forma \(p_1^{e_1} \times p_2^{e_2} \times ... \times p_k^{e_k}\), el nombre total de divisors \(d(n)\) és \((e_1 + 1)(e_2 + 1)...(e_k + 1)\). En el cas de 1000, tenim:
+
+- \(e_1 = 3\) (per al factor 2)
+- \(e_2 = 3\) (per al factor 5)
+
+Així que el nombre total de divisors és \((3 + 1)(3 + 1) = 4 \times 4 = 16\).
+
+Ara, per trobar els divisors parells, hem de considerar només aquells que contenen almenys un factor de 2. Els divisors de 1000 són: 1, 2, 4, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200, 250, 500, 1000. D'aquests, els divisors parells són: 2, 4, 8, 10, 20, 40, 50, 100, 200, 250, 500, 1000.
+
+Ara, sumem aquests divisors parells:
+
+\[
+2 + 4 + 8 + 10 + 20 + 40 + 50 + 100 + 200 + 250 + 500 + 1000 = 2184
+\]
+
+Per tant, la suma de tots els divisors parells de 1000 és 2184.
+
+Resposta: C)

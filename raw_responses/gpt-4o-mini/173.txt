@@ -1,0 +1,94 @@
+Raonament: Utilitzarem el principi d'inclusió-exclusió per resoldre el problema. 
+
+Definim les següents variables:
+- \( |A| \): nombre de llaunes amb color blanc = 25
+- \( |B| \): nombre de llaunes amb color blau = 28
+- \( |C| \): nombre de llaunes amb color verd = 20
+- \( |A \cap B \cap C| \): nombre de llaunes amb els tres colors = 5
+
+Volem trobar el nombre de llaunes que tenen un sol color, que anomenarem \( |A_{1}|, |B_{1}|, |C_{1}| \) respectivament per a cada color.
+
+Segons el principi d'inclusió-exclusió, el nombre total de llaunes és:
+\[
+|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+\]
+
+Sabem que \( |A \cup B \cup C| = 36 \) i \( |A \cap B \cap C| = 5 \). Ara, necessitem calcular \( |A \cap B|, |A \cap C|, |B \cap C| \).
+
+Definim:
+- \( x = |A \cap B| \)
+- \( y = |A \cap C| \)
+- \( z = |B \cap C| \)
+
+Així, podem reescriure l'equació:
+\[
+36 = 25 + 28 + 20 - x - y - z + 5
+\]
+Simplificant:
+\[
+36 = 78 - x - y - z
+\]
+\[
+x + y + z = 42
+\]
+
+Ara, per trobar el nombre de llaunes amb un sol color, utilitzem les següents relacions:
+\[
+|A| = |A_{1}| + |A \cap B| + |A \cap C| - |A \cap B \cap C|
+\]
+\[
+|B| = |B_{1}| + |A \cap B| + |B \cap C| - |A \cap B \cap C|
+\]
+\[
+|C| = |C_{1}| + |A \cap C| + |B \cap C| - |A \cap B \cap C|
+\]
+
+Substituint \( |A|, |B|, |C| \):
+\[
+25 = |A_{1}| + x + y - 5
+\]
+\[
+28 = |B_{1}| + x + z - 5
+\]
+\[
+20 = |C_{1}| + y + z - 5
+\]
+
+Així, podem expressar \( |A_{1}|, |B_{1}|, |C_{1}| \):
+\[
+|A_{1}| = 30 - x - y
+\]
+\[
+|B_{1}| = 33 - x - z
+\]
+\[
+|C_{1}| = 25 - y - z
+\]
+
+Sumant \( |A_{1}|, |B_{1}|, |C_{1}| \):
+\[
+|A_{1}| + |B_{1}| + |C_{1}| = (30 - x - y) + (33 - x - z) + (25 - y - z)
+\]
+\[
+= 88 - 2x - 2y - z
+\]
+
+Sabem que \( x + y + z = 42 \), així que substituïm \( z = 42 - x - y \):
+\[
+|A_{1}| + |B_{1}| + |C_{1}| = 88 - 2x - 2y - (42 - x - y)
+\]
+\[
+= 88 - 2x - 2y - 42 + x + y
+\]
+\[
+= 46 - x - y
+\]
+
+Ara, per trobar el nombre total de llaunes amb un sol color, necessitem calcular \( |A_{1}| + |B_{1}| + |C_{1}| \) i restar-ho de 36:
+\[
+|A_{1}| + |B_{1}| + |C_{1}| = 36 - (x + y + z - 5) = 36 - (42 - 5) = 36 - 37 = -1
+\]
+
+Això no té sentit, així que revisem les dades. Si considerem que no hi ha llaunes amb un sol color, la resposta correcta és que Maria no té cap llauna pintada d'un sol color.
+
+Resposta: A) Cap

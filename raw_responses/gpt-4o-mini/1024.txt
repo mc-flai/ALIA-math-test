@@ -1,0 +1,24 @@
+Raonament: Rita té les peces 3, 5, 3 i 3. Per formar nombres de quatre xifres, hem de tenir en compte que hi ha repeticions de la xifra 3. 
+
+El nombre total de permutacions d'un conjunt de n elements, on hi ha repeticions, es calcula amb la fórmula:
+
+\[
+\frac{n!}{n_1! \cdot n_2! \cdot ... \cdot n_k!}
+\]
+
+On \( n \) és el nombre total d'elements i \( n_1, n_2, ..., n_k \) són les quantitats de cada element repetit.
+
+En aquest cas, tenim:
+- Total d'elements (n) = 4 (3, 5, 3, 3)
+- Repeticions de 3 (n1) = 3
+- Repeticions de 5 (n2) = 1
+
+Per tant, la fórmula queda així:
+
+\[
+\frac{4!}{3! \cdot 1!} = \frac{24}{6 \cdot 1} = 4
+\]
+
+Així que Rita pot formar 4 nombres diferents de quatre xifres amb les peces que té.
+
+Resposta: B) 4

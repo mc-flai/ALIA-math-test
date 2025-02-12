@@ -1,0 +1,87 @@
+Raonament: Per resoldre l'equació \(x^2 + x - 7 = 0\), utilitzarem la fórmula general per a les equacions quadràtiques, que és:
+
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+On \(a = 1\), \(b = 1\) i \(c = -7\). Ara, calculem el discriminant:
+
+\[
+b^2 - 4ac = 1^2 - 4 \cdot 1 \cdot (-7) = 1 + 28 = 29
+\]
+
+Ara podem trobar les solucions \(a\) i \(b\):
+
+\[
+x = \frac{-1 \pm \sqrt{29}}{2}
+\]
+
+Així, les solucions són:
+
+\[
+a = \frac{-1 + \sqrt{29}}{2}, \quad b = \frac{-1 - \sqrt{29}}{2}
+\]
+
+Ara, hem de calcular \(3a^2 + 4b^2 + 2a + 3b + 1\). Primer, calculem \(a^2\) i \(b^2\):
+
+\[
+a^2 = \left(\frac{-1 + \sqrt{29}}{2}\right)^2 = \frac{(-1 + \sqrt{29})^2}{4} = \frac{1 - 2\sqrt{29} + 29}{4} = \frac{30 - 2\sqrt{29}}{4} = \frac{15 - \sqrt{29}}{2}
+\]
+
+\[
+b^2 = \left(\frac{-1 - \sqrt{29}}{2}\right)^2 = \frac{(-1 - \sqrt{29})^2}{4} = \frac{1 + 2\sqrt{29} + 29}{4} = \frac{30 + 2\sqrt{29}}{4} = \frac{15 + \sqrt{29}}{2}
+\]
+
+Ara, calculem \(3a^2\) i \(4b^2\):
+
+\[
+3a^2 = 3 \cdot \frac{15 - \sqrt{29}}{2} = \frac{45 - 3\sqrt{29}}{2}
+\]
+
+\[
+4b^2 = 4 \cdot \frac{15 + \sqrt{29}}{2} = \frac{60 + 4\sqrt{29}}{2} = 30 + 2\sqrt{29}
+\]
+
+Ara sumem \(3a^2\) i \(4b^2\):
+
+\[
+3a^2 + 4b^2 = \frac{45 - 3\sqrt{29}}{2} + (30 + 2\sqrt{29}) = \frac{45 - 3\sqrt{29} + 60 + 4\sqrt{29}}{2} = \frac{105 + \sqrt{29}}{2}
+\]
+
+Ara calculem \(2a + 3b\):
+
+\[
+2a = 2 \cdot \frac{-1 + \sqrt{29}}{2} = -1 + \sqrt{29}
+\]
+
+\[
+3b = 3 \cdot \frac{-1 - \sqrt{29}}{2} = \frac{-3 - 3\sqrt{29}}{2}
+\]
+
+Sumem \(2a\) i \(3b\):
+
+\[
+2a + 3b = (-1 + \sqrt{29}) + \frac{-3 - 3\sqrt{29}}{2} = -1 + \sqrt{29} - \frac{3}{2} - \frac{3\sqrt{29}}{2}
+\]
+
+Convertim a un denominador comú:
+
+\[
+= -\frac{2}{2} - \frac{3}{2} + \frac{2\sqrt{29}}{2} - \frac{3\sqrt{29}}{2} = -\frac{5}{2} - \frac{\sqrt{29}}{2}
+\]
+
+Ara sumem tot:
+
+\[
+3a^2 + 4b^2 + 2a + 3b + 1 = \frac{105 + \sqrt{29}}{2} + \left(-\frac{5 + \sqrt{29}}{2}\right) + 1
+\]
+
+Simplifiquem:
+
+\[
+= \frac{105 + \sqrt{29} - 5 - \sqrt{29}}{2} + 1 = \frac{100}{2} + 1 = 50 + 1 = 51
+\]
+
+Per tant, la resposta és:
+
+Resposta: B) 

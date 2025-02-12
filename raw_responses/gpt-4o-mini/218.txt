@@ -1,0 +1,64 @@
+Raonament: Tenim dues equacions:
+
+1. \( x^2 y z^3 = 7^3 \)
+2. \( x y^2 = 7^9 \)
+
+El nostre objectiu és trobar el valor de \( xyz \).
+
+Podem expressar \( xyz \) en funció de les dues equacions. Primer, a partir de la segona equació, podem expressar \( x \) en funció de \( y \):
+
+\[
+x = \frac{7^9}{y^2}
+\]
+
+Ara substituïm \( x \) en la primera equació:
+
+\[
+\left(\frac{7^9}{y^2}\right)^2 y z^3 = 7^3
+\]
+
+Això es simplifica a:
+
+\[
+\frac{7^{18}}{y^4} y z^3 = 7^3
+\]
+
+Simplificant, obtenim:
+
+\[
+\frac{7^{18}}{y^3} z^3 = 7^3
+\]
+
+Multiplicant amb \( y^3 \):
+
+\[
+7^{18} z^3 = 7^3 y^3
+\]
+
+Dividint amb \( 7^3 \):
+
+\[
+7^{15} z^3 = y^3
+\]
+
+Per tant, podem expressar \( z \) en funció de \( y \):
+
+\[
+z^3 = \frac{y^3}{7^{15}} \implies z = \frac{y}{7^5}
+\]
+
+Ara substituïm \( z \) en l'expressió de \( xyz \):
+
+\[
+xyz = x y z = x y \left(\frac{y}{7^5}\right) = x \frac{y^2}{7^5}
+\]
+
+Substituïm \( x \) de la segona equació:
+
+\[
+xyz = \left(\frac{7^9}{y^2}\right) \frac{y^2}{7^5} = \frac{7^9}{7^5} = 7^{9-5} = 7^4
+\]
+
+Per tant, el valor de \( xyz \) és \( 7^4 \).
+
+Resposta: A)

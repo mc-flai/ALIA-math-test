@@ -1,0 +1,43 @@
+Raonament: El cangur A salta 6 metres en cada salt, així que després de \( n \) salts, la distància recorreguda pel cangur A és \( 6n \) metres. 
+
+El cangur B salta distàncies que van augmentant en 1 metre amb cada salt: el primer salt és de 1 metre, el segon de 2 metres, el tercer de 3 metres, i així successivament. La distància total recorreguda pel cangur B després de \( m \) salts és la suma dels primers \( m \) números naturals, que es pot calcular amb la fórmula de la suma de la sèrie aritmètica:
+
+\[
+S_m = \frac{m(m + 1)}{2}
+\]
+
+Per tant, la distància recorreguda pel cangur B després de \( m \) salts és \( S_m = \frac{m(m + 1)}{2} \).
+
+Perquè el cangur B agafi el cangur A, les distàncies recorregudes han de ser iguals:
+
+\[
+6n = \frac{m(m + 1)}{2}
+\]
+
+On \( n \) és el nombre de salts del cangur A i \( m \) és el nombre de salts del cangur B. Com que els dos cangurs comencen al mateix temps, podem igualar \( n \) i \( m \) (ja que salten simultàniament), així que podem substituir \( n \) per \( m \):
+
+\[
+6m = \frac{m(m + 1)}{2}
+\]
+
+Multiplicant per 2 per eliminar la fracció:
+
+\[
+12m = m(m + 1)
+\]
+
+Reorganitzant l'equació:
+
+\[
+m^2 - 11m = 0
+\]
+
+Factoritzant:
+
+\[
+m(m - 11) = 0
+\]
+
+Així, \( m = 0 \) o \( m = 11 \). Ignorant la solució \( m = 0 \) (ja que no té sentit en aquest context), el cangur B ha de fer 11 salts per agafar el cangur A.
+
+Resposta: C) 11

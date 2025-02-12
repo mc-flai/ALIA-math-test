@@ -1,0 +1,21 @@
+Raonament: Primer, analitzem la descomposició en factors primers de N:
+
+N = 5² · 3⁴ · 2¹
+
+Perquè K · N sigui un cub perfecte, cada exponent en la seva descomposició ha de ser múltiple de 3. Ara, analitzem els exponents de N:
+
+- L'exponent de 5 és 2. Per convertir-lo en un múltiple de 3, necessitem sumar 1 (ja que 2 + 1 = 3).
+- L'exponent de 3 és 4. Per convertir-lo en un múltiple de 3, necessitem restar 1 (ja que 4 - 1 = 3).
+- L'exponent de 2 és 1. Per convertir-lo en un múltiple de 3, necessitem sumar 2 (ja que 1 + 2 = 3).
+
+Ara, calculem K:
+
+- Per 5, necessitem 5¹ (que és 5).
+- Per 3, necessitem 3⁰ (que és 1, no necessitem afegir res).
+- Per 2, necessitem 2² (que és 4).
+
+Per tant, K = 5¹ · 3⁰ · 2² = 5 · 1 · 4 = 20.
+
+Així, el menor nombre enter K que fa que K · N sigui un cub perfecte és 20.
+
+Resposta: B)

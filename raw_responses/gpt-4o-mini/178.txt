@@ -1,0 +1,64 @@
+Raonament: Comencem a analitzar les dues desigualtats donades:
+
+1. **Desigualtat 1:** \(|a + b| ≤ 1\)
+   Aquesta desigualtat implica que:
+   \(-1 ≤ a + b ≤ 1\)
+   Podem descompondre-la en dues parts:
+   - \(a + b ≥ -1\)  (1)
+   - \(a + b ≤ 1\)   (2)
+
+2. **Desigualtat 2:** \(|a - 3b| ≤ 2\)
+   Aquesta desigualtat implica que:
+   \(-2 ≤ a - 3b ≤ 2\)
+   També la podem descompondre en dues parts:
+   - \(a - 3b ≥ -2\)  (3)
+   - \(a - 3b ≤ 2\)   (4)
+
+Ara, analitzem les desigualtats (1) i (2) per a \(b\):
+- De (1): \(b ≥ -1 - a\)
+- De (2): \(b ≤ 1 - a\)
+
+Així, podem expressar \(b\) com:
+\(-1 - a ≤ b ≤ 1 - a\)
+
+Ara, analitzem les desigualtats (3) i (4) per a \(b\):
+- De (3): \(b ≤ \frac{a + 2}{3}\)
+- De (4): \(b ≥ \frac{a - 2}{3}\)
+
+Així, podem expressar \(b\) com:
+\(\frac{a - 2}{3} ≤ b ≤ \frac{a + 2}{3}\)
+
+Ara, per tal que existeixi un valor de \(b\) que satisfaci totes les desigualtats, hem de tenir en compte que els intervals per a \(b\) han de sobreposar-se. Això significa que hem de resoldre les següents dues desigualtats:
+
+1. \(-1 - a ≤ \frac{a + 2}{3}\)
+2. \(\frac{a - 2}{3} ≤ 1 - a\)
+
+Resolem la primera desigualtat:
+\(-1 - a ≤ \frac{a + 2}{3}\)
+Multipliquem per 3:
+\(-3 - 3a ≤ a + 2\)
+Reorganitzem:
+\(-4a ≤ 5\)
+\(a ≥ -\frac{5}{4}\)
+
+Ara resolem la segona desigualtat:
+\(\frac{a - 2}{3} ≤ 1 - a\)
+Multipliquem per 3:
+\(a - 2 ≤ 3 - 3a\)
+Reorganitzem:
+\(4a ≤ 5\)
+\(a ≤ \frac{5}{4}\)
+
+Per tant, hem trobat que:
+\(-\frac{5}{4} ≤ a ≤ \frac{5}{4}\)
+
+Ara, analitzem les opcions de resposta:
+A) \(-\frac{5}{4} ≤ a < \frac{5}{4}\) (correcta)
+B) \(-\frac{5}{4} ≤ a < 1\) (incorrecta, ja que \(a\) pot ser igual a \(\frac{5}{4}\))
+C) \(0 < a < \frac{5}{4}\) (incorrecta, ja que \(a\) pot ser menor que 0)
+D) \(-100 < a < 100\) (incorrecta, ja que no és tan ampli)
+E) \(-\infty < a < +\infty\) (incorrecta, ja que hi ha restriccions)
+
+Per tant, la resposta correcta és:
+
+Resposta: A)

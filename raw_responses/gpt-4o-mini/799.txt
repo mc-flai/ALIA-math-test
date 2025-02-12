@@ -1,0 +1,31 @@
+Raonament: Primer, calculem la suma total dels elements del conjunt {1, 2, 3, 4, 5, 6, 7}. La suma és:
+
+1 + 2 + 3 + 4 + 5 + 6 + 7 = 28.
+
+Per dividir aquest conjunt en dos subconjunts amb la mateixa suma, cada subconjunt ha de tenir una suma de 28 / 2 = 14.
+
+Ara, hem de trobar quins subconjunts de {1, 2, 3, 4, 5, 6, 7} sumen 14. Anem a buscar les combinacions possibles:
+
+1. {1, 2, 3, 4, 5} suma 15 (no és vàlid).
+2. {1, 2, 3, 4, 6} suma 16 (no és vàlid).
+3. {1, 2, 3, 5, 6} suma 17 (no és vàlid).
+4. {1, 2, 4, 5, 6} suma 18 (no és vàlid).
+5. {1, 3, 4, 5, 6} suma 19 (no és vàlid).
+6. {2, 3, 4, 5} suma 14 (vàlid).
+7. {1, 2, 3, 7} suma 13 (no és vàlid).
+8. {1, 2, 4, 7} suma 14 (vàlid).
+9. {1, 3, 5, 7} suma 16 (no és vàlid).
+10. {2, 3, 5, 4} suma 14 (vàlid).
+11. {1, 6, 7} suma 14 (vàlid).
+
+Després de revisar totes les combinacions, trobem que les combinacions vàlides que sumen 14 són:
+
+1. {2, 3, 4, 5}
+2. {1, 6, 7}
+3. {1, 2, 4, 7}
+
+Ara, cada combinació de subconjunts que hem trobat té un subconjunt complementari que també suma 14. Per tant, cada parell de subconjunts és únic i no es repeteix.
+
+Finalment, comptem les combinacions vàlides i veiem que hi ha 2 maneres de dividir el conjunt en dos subconjunts amb la mateixa suma.
+
+Resposta: B) 2.

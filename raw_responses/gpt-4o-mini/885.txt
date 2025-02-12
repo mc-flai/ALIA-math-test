@@ -1,0 +1,20 @@
+Raonament: Comencem per trobar el valor més gran possible de X. Sabem que X, Y i Z són nombres enters positius i que han de complir la igualtat X³ + Y² + Z = 2020. 
+
+1. **Trobar el valor màxim de X**: 
+   - Comencem provant valors per X. Si X = 12, llavors X³ = 12³ = 1728. 
+   - Això deixa 2020 - 1728 = 292 per a Y² + Z. 
+   - Si X = 13, llavors X³ = 13³ = 2197, que ja supera 2020. Per tant, el valor màxim de X és 12.
+
+2. **Trobar el valor màxim de Y**: 
+   - Ara que tenim X = 12, substituïm a la igualtat: 12³ + Y² + Z = 2020, és a dir, 1728 + Y² + Z = 2020.
+   - Això implica que Y² + Z = 292.
+   - Per maximitzar Y, provem valors per Y. Si Y = 17, llavors Y² = 17² = 289. 
+   - Això deixa Z = 292 - 289 = 3. 
+   - Si provem Y = 18, llavors Y² = 324, que ja supera 292. Per tant, el valor màxim de Y és 17.
+
+3. **Calcular Z**: 
+   - Amb X = 12 i Y = 17, hem trobat que Z = 3.
+
+Per tant, el valor que calcularà Martina és Z = 3.
+
+Resposta: E) 3

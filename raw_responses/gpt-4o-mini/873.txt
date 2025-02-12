@@ -1,0 +1,26 @@
+Raonament: Tenim tres tipus de fruites: taronges (T), pomes (P) i peres (R). La cistella conté 2 taronges, 3 pomes i 2 peres. Volem formar una bossa amb 3 fruites, i considerarem només el tipus de fruites, no la quantitat.
+
+Podem tenir les següents combinacions possibles de fruites:
+
+1. 3 fruites del mateix tipus:
+   - 3 pomes (PPP)
+
+2. 2 fruites d'un tipus i 1 d'un altre:
+   - 2 taronges i 1 poma (TT, P)
+   - 2 taronges i 1 pera (TT, R)
+   - 2 pomes i 1 taronga (PP, T)
+   - 2 pomes i 1 pera (PP, R)
+   - 2 peres i 1 taronga (RR, T)
+   - 2 peres i 1 poma (RR, P)
+
+3. 1 fruita de cada tipus:
+   - 1 taronga, 1 poma i 1 pera (T, P, R)
+
+Ara comptem les combinacions:
+- 1 combinació amb 3 fruites del mateix tipus (PPP).
+- 6 combinacions amb 2 fruites d'un tipus i 1 d'un altre (TT, P), (TT, R), (PP, T), (PP, R), (RR, T), (RR, P).
+- 1 combinació amb 1 fruita de cada tipus (T, P, R).
+
+Així que tenim un total de 1 + 6 + 1 = 8 combinacions diferents.
+
+Resposta: B)

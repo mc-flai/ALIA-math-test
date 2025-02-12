@@ -1,0 +1,51 @@
+Raonament: 
+
+Per formar nombres de tres xifres utilitzant només dígits imparells, considerem els dígits imparells disponibles: 1, 3, 5, 7, 9. Així, tenim 5 opcions per cada xifra del nombre.
+
+Un nombre de tres xifres es pot representar com \(abc\), on \(a\), \(b\) i \(c\) són les xifres del nombre. 
+
+1. **Càlcul del nombre total de combinacions**:
+   - La primera xifra \(a\) (centenes) pot ser qualsevol dels 5 dígits imparells (1, 3, 5, 7, 9).
+   - La segona xifra \(b\) (deu) també pot ser qualsevol dels 5 dígits imparells.
+   - La tercera xifra \(c\) (unitats) igualment pot ser qualsevol dels 5 dígits imparells.
+   
+   Així, el nombre total de nombres de tres xifres que podem formar és:
+   \[
+   5 \times 5 \times 5 = 125
+   \]
+
+2. **Càlcul de la suma de tots els nombres**:
+   - Cada xifra ocupa una posició específica (centenes, deu, unitats) i contribueix a la suma total de manera diferent.
+   - La contribució de cada xifra a la suma total es pot calcular per separat.
+
+   - **Contribució de les centenes**:
+     Cada dígit imparell apareix en la posició de les centenes en \(5 \times 5 = 25\) nombres (ja que hi ha 5 opcions per \(b\) i 5 per \(c\)). La suma dels dígits imparells és:
+     \[
+     1 + 3 + 5 + 7 + 9 = 25
+     \]
+     La contribució total de les centenes és:
+     \[
+     25 \times 100 \times 25 = 62500
+     \]
+
+   - **Contribució de les desenes**:
+     Cada dígit imparell apareix en la posició de les desenes en \(5 \times 5 = 25\) nombres. La contribució total de les desenes és:
+     \[
+     25 \times 10 \times 25 = 6250
+     \]
+
+   - **Contribució de les unitats**:
+     Cada dígit imparell apareix en la posició de les unitats en \(5 \times 5 = 25\) nombres. La contribució total de les unitats és:
+     \[
+     25 \times 1 \times 25 = 625
+     \]
+
+3. **Suma total**:
+   Ara sumem totes les contribucions:
+   \[
+   62500 + 6250 + 625 = 69375
+   \]
+
+Per tant, la suma de tots els nombres de tres xifres formats només amb dígits imparells és 69375.
+
+Resposta: A)

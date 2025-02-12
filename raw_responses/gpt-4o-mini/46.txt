@@ -1,0 +1,42 @@
+Raonament: 
+
+Per resoldre el problema, hem de trobar quants nombres de tres xifres (abc) compleixen la condició que a + 3b + c és múltiple de 3. 
+
+1. **Definició de les xifres**: 
+   - a és la xifra de les centenes i pot ser qualsevol número de 1 a 9 (9 opcions).
+   - b és la xifra de les desenes i pot ser qualsevol número de 0 a 9 (10 opcions).
+   - c és la xifra de les unitats i pot ser qualsevol número de 0 a 9 (10 opcions).
+
+2. **Total de nombres de tres xifres**: 
+   - El total de nombres de tres xifres és 9 (per a a) * 10 (per a b) * 10 (per a c) = 900.
+
+3. **Condició de múltiple de 3**: 
+   - Un número és múltiple de 3 si la suma de les seves xifres és múltiple de 3. En aquest cas, la suma és a + 3b + c.
+   - Observem que 3b és sempre múltiple de 3, així que la condició es redueix a que a + c ha de ser múltiple de 3.
+
+4. **Anàlisi de la suma a + c**:
+   - Les possibles sumes a + c poden variar entre 1 (si a=1 i c=0) i 18 (si a=9 i c=9).
+   - Les sumes que són múltiples de 3 en aquest rang són: 3, 6, 9, 12, 15, i 18.
+
+5. **Comptar les combinacions**:
+   - Per cada valor de a (1 a 9), podem calcular quants valors de c (0 a 9) fan que a + c sigui múltiple de 3.
+   - Si a = 1, c pot ser 2, 5, 8 (3 opcions).
+   - Si a = 2, c pot ser 1, 4, 7 (3 opcions).
+   - Si a = 3, c pot ser 0, 3, 6, 9 (4 opcions).
+   - Si a = 4, c pot ser 2, 5, 8 (3 opcions).
+   - Si a = 5, c pot ser 1, 4, 7 (3 opcions).
+   - Si a = 6, c pot ser 0, 3, 6, 9 (4 opcions).
+   - Si a = 7, c pot ser 2, 5, 8 (3 opcions).
+   - Si a = 8, c pot ser 1, 4, 7 (3 opcions).
+   - Si a = 9, c pot ser 0, 3, 6, 9 (4 opcions).
+
+   Ara, sumem les opcions:
+   - 3 + 3 + 4 + 3 + 3 + 4 + 3 + 3 + 4 = 30.
+
+6. **Opcions per b**:
+   - Per cada combinació de (a, c) que compleix la condició, b pot ser qualsevol dels 10 dígits (0 a 9), així que multiplicarem el total de combinacions de (a, c) per 10.
+
+7. **Total final**:
+   - Total = 30 (combinacions de a i c) * 10 (opcions per b) = 300.
+
+Resposta: B) 300.

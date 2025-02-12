@@ -1,0 +1,40 @@
+Raonament: Primer, calculem el valor de \(7! + 8! + 9!\).
+
+Sabem que:
+- \(8! = 8 \times 7!\)
+- \(9! = 9 \times 8! = 9 \times 8 \times 7!\)
+
+Per tant, podem expressar \(7! + 8! + 9!\) com:
+\[
+7! + 8! + 9! = 7! + 8 \times 7! + 9 \times 8 \times 7! = 7!(1 + 8 + 72) = 7!(81)
+\]
+
+Ara, calculem \(7!\):
+\[
+7! = 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 = 5040
+\]
+
+A continuació, calculem la potència de 3 en \(7!\) i en \(81\):
+- Per calcular la potència de 3 en \(7!\), utilitzem la fórmula de Legendre:
+\[
+\sum_{k=1}^{\infty} \left\lfloor \frac{n}{p^k} \right\rfloor
+\]
+on \(n = 7\) i \(p = 3\):
+\[
+\left\lfloor \frac{7}{3} \right\rfloor + \left\lfloor \frac{7}{9} \right\rfloor = 2 + 0 = 2
+\]
+Així que \(7!\) conté \(3^2\).
+
+- Ara calculem la potència de 3 en \(81\):
+\[
+81 = 3^4
+\]
+
+Finalment, sumem les potències de 3:
+\[
+7!(81) \text{ conté } 3^{2 + 4} = 3^6
+\]
+
+Per tant, la potència més alta de 3 que és un divisor de \(7! + 8! + 9!\) és \(3^6\).
+
+Resposta: D)

@@ -1,0 +1,20 @@
+Raonament: Busquem un nombre \( a \) que compleixi les següents condicions:
+
+1. \( a \) és múltiple de 1 (això és sempre cert per a qualsevol nombre).
+2. \( a + 1 \) és múltiple de 2, és a dir, \( a + 1 \equiv 0 \mod 2 \) o \( a \equiv 1 \mod 2 \) (a és un nombre senar).
+3. \( a + 2 \) és múltiple de 3, és a dir, \( a + 2 \equiv 0 \mod 3 \) o \( a \equiv 1 \mod 3 \).
+4. \( a + 3 \) és múltiple de 4, és a dir, \( a + 3 \equiv 0 \mod 4 \) o \( a \equiv 1 \mod 4 \).
+5. \( a + 4 \) és múltiple de 5, és a dir, \( a + 4 \equiv 0 \mod 5 \) o \( a \equiv 1 \mod 5 \).
+6. \( a + 5 \) no és múltiple de 6, és a dir, \( a + 5 \not\equiv 0 \mod 6 \).
+
+A partir de les condicions 2, 3, 4 i 5, podem deduir que \( a \equiv 1 \mod 2 \), \( a \equiv 1 \mod 3 \), \( a \equiv 1 \mod 4 \) i \( a \equiv 1 \mod 5 \). Això implica que \( a \equiv 1 \mod \text{lcm}(2, 3, 4, 5) \).
+
+La mínima múltiple comú (lcm) de 2, 3, 4 i 5 és 60. Per tant, \( a \equiv 1 \mod 60 \). Això significa que podem expressar \( a \) com \( a = 60k + 1 \) per a algun enter \( k \).
+
+Ara, considerem la condició 6: \( a + 5 \not\equiv 0 \mod 6 \). Això es tradueix en \( 60k + 6 \not\equiv 0 \mod 6 \), que és sempre cert, ja que \( 60k \equiv 0 \mod 6 \) i \( 6 \equiv 0 \mod 6 \). Per tant, \( a + 5 \equiv 0 \mod 6 \) no es pot complir.
+
+Per tant, hem de buscar el menor \( a \) que compleixi les condicions anteriors. Si \( k = 0 \), \( a = 1 \). Si \( k = 1 \), \( a = 61 \). Si \( k = 2 \), \( a = 121 \), i així successivament.
+
+El menor valor de \( a \) que compleix totes les condicions és \( 61 \), que té dues xifres.
+
+Resposta: B)

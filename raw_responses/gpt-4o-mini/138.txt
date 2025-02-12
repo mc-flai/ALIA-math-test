@@ -1,0 +1,42 @@
+Raonament: Per resoldre el problema, hem de buscar quines cartes podem escollir de la llista per tal que la seva suma sigui igual a 100. Les cartes disponibles són: 3, 8, 13, 18, 23, 28, 33, 38, 43, 48, 53, 58, 63 i 68.
+
+Comencem a provar combinacions de cartes per veure quines sumen 100. 
+
+1. Si escollim dues cartes, la suma màxima que podem obtenir és 68 + 58 = 126, que és superior a 100. No obstant això, no podem aconseguir 100 amb només dues cartes, ja que la suma mínima (3 + 8 = 11) és molt inferior a 100.
+
+2. Provem amb tres cartes. La suma màxima amb tres cartes és 68 + 58 + 53 = 179, i la mínima és 3 + 8 + 13 = 24. Així que és possible que amb tres cartes puguem aconseguir 100.
+
+   - Provem amb 3 cartes: 33 + 38 + 28 = 99 (molt a prop, però no és 100).
+   - 43 + 33 + 23 = 99 (també molt a prop).
+   - 48 + 18 + 33 = 99 (també molt a prop).
+   - 53 + 28 + 18 = 99 (també molt a prop).
+   - 58 + 38 + 3 = 99 (també molt a prop).
+
+3. Ara provem amb quatre cartes. La suma màxima amb quatre cartes és 68 + 63 + 58 + 53 = 242, i la mínima és 3 + 8 + 13 + 18 = 42. Així que és possible que amb quatre cartes puguem aconseguir 100.
+
+   - 3 + 8 + 23 + 66 = 100 (no existeix 66).
+   - 3 + 8 + 18 + 71 = 100 (no existeix 71).
+   - 3 + 8 + 28 + 61 = 100 (no existeix 61).
+   - 3 + 8 + 33 + 56 = 100 (no existeix 56).
+   - 3 + 8 + 38 + 51 = 100 (no existeix 51).
+   - 3 + 8 + 43 + 46 = 100 (no existeix 46).
+   - 3 + 8 + 48 + 41 = 100 (no existeix 41).
+   - 3 + 8 + 53 + 36 = 100 (no existeix 36).
+   - 3 + 8 + 58 + 31 = 100 (no existeix 31).
+   - 3 + 8 + 63 + 26 = 100 (no existeix 26).
+   - 3 + 8 + 68 + 21 = 100 (no existeix 21).
+
+4. Finalment, provem amb cinc cartes. La suma màxima amb cinc cartes és 68 + 63 + 58 + 53 + 48 = 288, i la mínima és 3 + 8 + 13 + 18 + 23 = 65. Així que és possible que amb cinc cartes puguem aconseguir 100.
+
+   - 3 + 8 + 13 + 18 + 23 + 35 = 100 (no existeix 35).
+   - 3 + 8 + 13 + 18 + 28 + 30 = 100 (no existeix 30).
+   - 3 + 8 + 13 + 18 + 33 + 25 = 100 (no existeix 25).
+   - 3 + 8 + 13 + 18 + 38 + 20 = 100 (no existeix 20).
+   - 3 + 8 + 13 + 18 + 43 + 15 = 100 (no existeix 15).
+   - 3 + 8 + 13 + 18 + 48 + 10 = 100 (no existeix 10).
+   - 3 + 8 + 13 + 18 + 53 + 5 = 100 (no existeix 5).
+   - 3 + 8 + 13 + 18 + 58 + 0 = 100 (no existeix 0).
+
+Després de revisar totes les combinacions possibles, no he trobat cap combinació de cartes que sumi exactament 100. Per tant, la resposta correcta és que és impossible aconseguir una suma de 100 amb les cartes disponibles.
+
+Resposta: E) És impossible fer-ho.

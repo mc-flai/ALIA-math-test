@@ -1,0 +1,32 @@
+Raonament: En un torneig amb 5 equips, cada equip es confronta amb els altres 4, per tant, el nombre total de partits jugats és de \( \frac{5 \times 4}{2} = 10 \) partits, ja que cada partit es compta per dos equips. 
+
+Cada partit pot acabar amb un guanyador (3 punts per guanyador, 0 per perdedor) o amb un empat (1 punt per cada equip). Si considerem que \( x \) és el nombre de partits que han acabat en empat, llavors el nombre de partits amb un guanyador és \( 10 - x \).
+
+El total de punts obtinguts pels equips és la suma dels punts de cada equip: \( 10 + 7 + 5 + 4 + 1 = 27 \) punts. 
+
+Si \( x \) partits han acabat en empat, llavors aquests partits aporten \( 2x \) punts (1 punt per cada equip). Els partits amb un guanyador aporten \( 3(10 - x) \) punts (3 punts per cada partit guanyat). 
+
+Per tant, podem establir l'equació següent per al total de punts:
+\[
+2x + 3(10 - x) = 27
+\]
+Desenvolupant l'equació:
+\[
+2x + 30 - 3x = 27
+\]
+\[
+30 - x = 27
+\]
+\[
+-x = 27 - 30
+\]
+\[
+-x = -3
+\]
+\[
+x = 3
+\]
+
+Així, el nombre de partits que han acabat en empat és 3.
+
+Resposta: A)

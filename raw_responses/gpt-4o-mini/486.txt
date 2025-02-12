@@ -1,0 +1,47 @@
+Raonament: 
+Sigui \( S \) el nombre de samarretes, \( P \) el nombre de pantalons i \( F \) el nombre de faldilles. 
+
+Segons la informació proporcionada:
+1. Emma pot combinar una samarreta i uns pantalons de 21 maneres diferents, per tant, podem escriure l'equació:
+   \[
+   S \times P = 21
+   \]
+2. Emma pot combinar una samarreta i una faldilla de 35 maneres diferents, així que tenim:
+   \[
+   S \times F = 35
+   \]
+
+Ara, podem expressar \( P \) i \( F \) en funció de \( S \):
+- De la primera equació, podem expressar \( P \):
+  \[
+  P = \frac{21}{S}
+  \]
+- De la segona equació, podem expressar \( F \):
+  \[
+  F = \frac{35}{S}
+  \]
+
+Ambdues \( P \) i \( F \) han de ser enters positius, així que \( S \) ha de ser un divisor comú de 21 i 35. 
+
+Els divisors de 21 són: 1, 3, 7, 21.
+Els divisors de 35 són: 1, 5, 7, 35.
+
+El divisor comú més gran és 7. Així que provem amb \( S = 7 \):
+- Si \( S = 7 \):
+  \[
+  P = \frac{21}{7} = 3
+  \]
+  \[
+  F = \frac{35}{7} = 5
+  \]
+
+Amb \( S = 7 \), \( P = 3 \) i \( F = 5 \) són tots enters positius. 
+
+Comprovem si hi ha altres valors possibles per \( S \):
+- Si \( S = 1 \): \( P = 21 \), \( F = 35 \) (possible, però no és una opció).
+- Si \( S = 3 \): \( P = 7 \), \( F = \frac{35}{3} \) (no és enter).
+- Si \( S = 21 \): \( P = 1 \), \( F = \frac{35}{21} \) (no és enter).
+
+Per tant, la única solució viable és \( S = 7 \).
+
+Resposta: D)

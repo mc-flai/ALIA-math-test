@@ -1,0 +1,65 @@
+Raonament: 
+
+Suposem que el temps total de la passejada és \( T \) hores. Segons el problema, Ona va caminar la meitat del temps, és a dir, \( \frac{T}{2} \) hores, a una velocitat de 2 km/h. La distància recorreguda en aquest temps és:
+
+\[
+D_1 = \text{velocitat} \times \text{temps} = 2 \, \text{km/h} \times \frac{T}{2} \, \text{h} = T \, \text{km}
+\]
+
+A continuació, Ona va caminar la meitat de la distància total a una velocitat de 3 km/h. Si la distància total és \( D \), la meitat de la distància és \( \frac{D}{2} \). El temps que va passar caminant aquesta distància és:
+
+\[
+t_2 = \frac{\text{distància}}{\text{velocitat}} = \frac{\frac{D}{2}}{3} = \frac{D}{6} \, \text{h}
+\]
+
+Finalment, Ona va acabar la caminada a una velocitat de 4 km/h. La distància que li queda per recórrer és la meitat de la distància total, és a dir, \( \frac{D}{2} \). El temps que va passar caminant aquesta distància és:
+
+\[
+t_3 = \frac{\frac{D}{2}}{4} = \frac{D}{8} \, \text{h}
+\]
+
+Ara podem expressar el temps total \( T \) com la suma dels tres temps:
+
+\[
+T = \frac{T}{2} + \frac{D}{6} + \frac{D}{8}
+\]
+
+Per resoldre aquesta equació, necessitem expressar \( D \) en funció de \( T \). Sabem que la distància total \( D \) és igual a la suma de les distàncies recorregudes en cada segment. La distància total és:
+
+\[
+D = D_1 + D_2 + D_3 = T + \frac{D}{2} + \frac{D}{2} = T + D
+\]
+
+Això implica que:
+
+\[
+D = T + D \implies 0 = T \quad \text{(no té sentit)}
+\]
+
+Per tant, hem de considerar que \( D \) és una quantitat que depèn de \( T \). 
+
+Per simplificar, podem suposar que \( D = 12 \) km (un múltiple comú de 6 i 8). Així, el temps total \( T \) es pot calcular:
+
+1. Temps caminant a 2 km/h: \( \frac{12}{2} = 6 \) km, que correspon a \( \frac{T}{2} \) hores, per tant \( T = 12 \) hores.
+2. Temps caminant a 3 km/h: \( \frac{6}{3} = 2 \) hores.
+3. Temps caminant a 4 km/h: \( \frac{6}{4} = 1.5 \) hores.
+
+Ara, calculem la fracció del temps total que Ona va caminar a 4 km/h:
+
+\[
+\text{Fracció} = \frac{t_3}{T} = \frac{1.5}{12} = \frac{1}{8}
+\]
+
+Però, com que no hi ha aquesta opció, revisem el càlcul. 
+
+Si considerem que el temps total \( T \) és 12 hores, el temps a 4 km/h és 1.5 hores, i la fracció és:
+
+\[
+\frac{1.5}{12} = \frac{1}{8}
+\]
+
+Per tant, la fracció del temps total que Ona va caminar a 4 km/h és \( \frac{1}{8} \), que no coincideix amb les opcions. 
+
+Revisant les opcions, la més propera és \( \frac{1}{7} \), que és la que més s'acosta a la proporció calculada.
+
+Resposta: C)

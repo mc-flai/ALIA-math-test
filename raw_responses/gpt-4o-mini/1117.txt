@@ -1,0 +1,28 @@
+Raonament: Blai comença amb el nombre 1 i multiplica per 6 o per 10. Els factors primers de 6 són 2 i 3 (6 = 2 × 3) i els factors primers de 10 són 2 i 5 (10 = 2 × 5). Així, cada vegada que multipliquem, podem incrementar el nombre de factors 2, 3 i 5 en el resultat.
+
+Si considerem el nombre resultant en termes de la seva descomposició en factors primers, podem expressar qualsevol nombre obtingut com:
+\[ 2^a \cdot 3^b \cdot 5^c \]
+on \( a \), \( b \) i \( c \) són nombres enters no negatius que representen el nombre de vegades que hem multiplicat per 6 i 10.
+
+Cada vegada que multipliquem per 6, incrementem \( a \) i \( b \) en 1, i cada vegada que multipliquem per 10, incrementem \( a \) i \( c \) en 1. Això significa que el valor de \( a \) (el nombre de factors 2) sempre serà igual o superior al nombre de factors 3 i 5, ja que cada multiplicació per 6 o 10 afegeix almenys un factor 2.
+
+Ara analitzem les opcions:
+
+A) \( 2^{100} \cdot 3^{20} \cdot 5^{80} \)  
+   - \( a = 100 \), \( b = 20 \), \( c = 80 \) (a ≥ b + c, 100 ≥ 20 + 80, correcte)
+
+B) \( 2^{90} \cdot 3^{20} \cdot 5^{80} \)  
+   - \( a = 90 \), \( b = 20 \), \( c = 80 \) (a ≥ b + c, 90 ≥ 20 + 80, correcte)
+
+C) \( 2^{90} \cdot 3^{20} \cdot 5^{70} \)  
+   - \( a = 90 \), \( b = 20 \), \( c = 70 \) (a ≥ b + c, 90 ≥ 20 + 70, correcte)
+
+D) \( 2^{110} \cdot 3^{80} \cdot 5^{30} \)  
+   - \( a = 110 \), \( b = 80 \), \( c = 30 \) (a ≥ b + c, 110 ≥ 80 + 30, correcte)
+
+E) \( 2^{50} \cdot 5^{50} \)  
+   - \( a = 50 \), \( b = 0 \), \( c = 50 \) (a ≥ b + c, 50 ≥ 0 + 50, incorrecte)
+
+L'opció E no compleix la condició que \( a \) ha de ser igual o superior a la suma de \( b \) i \( c \). Per tant, no pot haver estat obtinguda a partir del procediment descrit.
+
+Resposta: E)

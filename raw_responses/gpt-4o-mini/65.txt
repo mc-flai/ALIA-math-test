@@ -1,0 +1,19 @@
+Raonament: Comencem per calcular el benefici anual per cada any. El benefici del primer any és del 40%. Per als anys següents, el benefici es calcula com el 80% del benefici de l'any anterior.
+
+1. **Any 1**: Benefici = 40%
+2. **Any 2**: Benefici = 80% de 40% = 0.8 * 40% = 32%
+3. **Any 3**: Benefici = 80% de 32% = 0.8 * 32% = 25.6%
+4. **Any 4**: Benefici = 80% de 25.6% = 0.8 * 25.6% = 20.48%
+5. **Any 5**: Benefici = 80% de 20.48% = 0.8 * 20.48% = 16.384%
+6. **Any 6**: Benefici = 80% de 16.384% = 0.8 * 16.384% = 13.1072%
+7. **Any 7**: Benefici = 80% de 13.1072% = 0.8 * 13.1072% = 10.48576%
+8. **Any 8**: Benefici = 80% de 10.48576% = 0.8 * 10.48576% = 8.388608%
+
+Ara, busquem l'any en què el benefici anual és inferior al 15%. Observem que:
+
+- Any 5: 16.384% (més del 15%)
+- Any 6: 13.1072% (menys del 15%)
+
+Per tant, el primer any en què el benefici anual és inferior al 15% és el 6è any.
+
+Resposta: C)

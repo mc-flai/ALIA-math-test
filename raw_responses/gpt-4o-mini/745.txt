@@ -1,0 +1,38 @@
+Raonament: Considerem els vèrtexs d'un quadrat com a A, B, C i D, en ordre horari. Segons les condicions del problema, si A i B estan connectats per un costat, un ha de ser múltiple de l'altre. Això s'aplica també a B i C, C i D, i D i A. Per tant, podem establir les següents relacions:
+
+1. A és múltiple de B.
+2. B és múltiple de C.
+3. C és múltiple de D.
+4. D és múltiple de A.
+
+A més, si considerem els vèrtexs oposats (A i C, B i D), cap dels dos no ha de ser múltiple de l'altre.
+
+Per tal de trobar la suma més petita possible, comencem amb el nombre més petit, que és 1. Si assignem 1 a A, llavors B ha de ser un múltiple de 1, així que podem assignar 2 a B. Ara, C ha de ser un múltiple de 2, així que podem assignar 4 a C. Finalment, D ha de ser un múltiple de 4, així que podem assignar 8 a D.
+
+Ara verifiquem les condicions:
+- A (1) i B (2): 1 és múltiple de 2.
+- B (2) i C (4): 2 és múltiple de 4.
+- C (4) i D (8): 4 és múltiple de 8.
+- D (8) i A (1): 8 és múltiple de 1.
+
+Però, per les diagonals:
+- A (1) i C (4): 1 no és múltiple de 4.
+- B (2) i D (8): 2 no és múltiple de 8.
+
+Així que les condicions es compleixen. La suma és 1 + 2 + 4 + 8 = 15, que no és una de les opcions.
+
+Provem amb un altre conjunt de nombres. Si assignem 2 a A, llavors B pot ser 4, C pot ser 8, i D pot ser 16. La suma seria 2 + 4 + 8 + 16 = 30, que és una de les opcions.
+
+Verifiquem les condicions:
+- A (2) i B (4): 2 és múltiple de 4.
+- B (4) i C (8): 4 és múltiple de 8.
+- C (8) i D (16): 8 és múltiple de 16.
+- D (16) i A (2): 16 és múltiple de 2.
+
+Per les diagonals:
+- A (2) i C (8): 2 no és múltiple de 8.
+- B (4) i D (16): 4 no és múltiple de 16.
+
+Totes les condicions es compleixen. La suma mínima que hem trobat és 30.
+
+Resposta: C) 30

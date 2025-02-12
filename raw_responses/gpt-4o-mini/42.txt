@@ -1,0 +1,65 @@
+Raonament: Tenim les següents igualtats:
+
+1. \( a = b + 1 \)
+2. \( b = c + 2 \)
+3. \( c = d + 3 \)
+4. \( a + b + c + d + 4 = a \)
+
+Podem expressar \( b \), \( c \) i \( d \) en funció de \( a \):
+
+- De la primera equació, \( b = a - 1 \).
+- Substituïm \( b \) a la segona equació: \( a - 1 = c + 2 \) implica que \( c = a - 3 \).
+- Substituïm \( c \) a la tercera equació: \( a - 3 = d + 3 \) implica que \( d = a - 6 \).
+
+Ara tenim les quatre variables en funció de \( a \):
+
+- \( a = a \)
+- \( b = a - 1 \)
+- \( c = a - 3 \)
+- \( d = a - 6 \)
+
+Ara sumem \( a + b + c + d \):
+
+\[
+a + b + c + d = a + (a - 1) + (a - 3) + (a - 6) = 4a - 10
+\]
+
+Segons la quarta equació, \( a + b + c + d + 4 = a \):
+
+\[
+4a - 10 + 4 = a
+\]
+
+Això es simplifica a:
+
+\[
+4a - 6 = a
+\]
+
+Restem \( a \) de tots dos costats:
+
+\[
+3a - 6 = 0
+\]
+
+Això implica que:
+
+\[
+3a = 6 \implies a = 2
+\]
+
+Ara podem trobar \( b \), \( c \) i \( d \):
+
+- \( b = a - 1 = 2 - 1 = 1 \)
+- \( c = a - 3 = 2 - 3 = -1 \)
+- \( d = a - 6 = 2 - 6 = -4 \)
+
+Finalment, calculem \( a + b + c + d \):
+
+\[
+a + b + c + d = 2 + 1 - 1 - 4 = -2
+\]
+
+Per tant, la resposta correcta és:
+
+Resposta: B)

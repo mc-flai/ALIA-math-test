@@ -1,0 +1,55 @@
+Raonament: Anomenem \( t_a \) al temps que Pere va trigar a anar a la font i \( t_t \) al temps que va trigar a tornar. Segons el problema, sabem que:
+
+1. Pere va descansar durant 1 hora a la font.
+2. El camí de tornada el va fer un cinquè més lent, per tant, la seva velocitat de tornada és \( \frac{4}{5} \) de la velocitat d'anada.
+3. El temps de tornada és 1 hora més que el temps d'anada, és a dir, \( t_t = t_a + 1 \).
+
+Si considerem que la distància que va recórrer en el camí d'anada és \( d \), podem expressar el temps d'anada com:
+
+\[
+t_a = \frac{d}{v_a}
+\]
+
+On \( v_a \) és la velocitat d'anada. Per al camí de tornada, la distància és la mateixa \( d \), però la velocitat és \( v_t = \frac{4}{5} v_a \), així que el temps de tornada es pot expressar com:
+
+\[
+t_t = \frac{d}{v_t} = \frac{d}{\frac{4}{5} v_a} = \frac{5d}{4v_a}
+\]
+
+Ara, substituïm \( t_t \) en l'equació que relaciona els temps:
+
+\[
+\frac{5d}{4v_a} = \frac{d}{v_a} + 1
+\]
+
+Multiplicant per \( 4v_a \) per eliminar denominadors:
+
+\[
+5d = 4d + 4v_a
+\]
+
+Això simplifica a:
+
+\[
+d = 4v_a
+\]
+
+Ara podem substituir \( d \) en l'equació del temps d'anada:
+
+\[
+t_a = \frac{d}{v_a} = \frac{4v_a}{v_a} = 4 \text{ hores}
+\]
+
+Per tant, el temps de tornada és:
+
+\[
+t_t = t_a + 1 = 4 + 1 = 5 \text{ hores}
+\]
+
+Finalment, el temps total que Pere va estar fora de casa és:
+
+\[
+t_a + 1 + t_t = 4 + 1 + 5 = 10 \text{ hores}
+\]
+
+Resposta: E) 10

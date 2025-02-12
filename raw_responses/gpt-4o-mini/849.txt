@@ -1,0 +1,28 @@
+Raonament: 
+
+Per trobar el valor de \( x \), busquem el nombre natural més xicotet tal que \( 12x \) sigui un quadrat perfecte. Un quadrat perfecte és un nombre que es pot expressar com \( n^2 \) per a algun nombre natural \( n \). 
+
+El número 12 es pot descompondre en factors primers: \( 12 = 2^2 \cdot 3^1 \). Perquè \( 12x \) sigui un quadrat perfecte, tots els exponents en la seva descomposició en factors primers han de ser parells. 
+
+Si considerem \( x \) com \( 2^a \cdot 3^b \cdot k \), on \( k \) és un producte de factors primers diferents de 2 i 3, necessitem que:
+
+- L'exponent de 2 en \( 12x \) sigui parell: \( 2 + a \) ha de ser parell, així que \( a \) ha de ser parell (0, 2, ...).
+- L'exponent de 3 en \( 12x \) sigui parell: \( 1 + b \) ha de ser parell, així que \( b \) ha de ser senar (1, 3, ...).
+
+La combinació més xicoteta per a \( a \) és 0 i per a \( b \) és 1, així que \( x = 2^0 \cdot 3^1 = 3 \). 
+
+Per tant, \( x = 3 \).
+
+Ara, per trobar \( y \), busquem el nombre natural més xicotet tal que \( 24y \) sigui un cub perfecte. 
+
+El número 24 es pot descompondre en factors primers: \( 24 = 2^3 \cdot 3^1 \). Perquè \( 24y \) sigui un cub perfecte, tots els exponents en la seva descomposició en factors primers han de ser múltiples de 3.
+
+- L'exponent de 2 en \( 24y \) és \( 3 + a \), que ha de ser múltiple de 3. Això és satisfet per qualsevol \( a \) que sigui múltiple de 3 (0, 3, ...).
+- L'exponent de 3 en \( 24y \) és \( 1 + b \), que ha de ser múltiple de 3. Això és satisfet si \( b = 2 \) (ja que \( 1 + 2 = 3 \)).
+
+La combinació més xicoteta per a \( a \) és 0 i per a \( b \) és 2, així que \( y = 2^0 \cdot 3^2 = 9 \).
+
+Finalment, sumem \( x \) i \( y \):
+\[ x + y = 3 + 9 = 12 \]
+
+Resposta: B) 12

@@ -1,0 +1,23 @@
+Raonament: Per trobar quants rectangles diferents existeixen amb àrea igual a 60 cm² i amb costats que són nombres naturals, hem de buscar parelles de nombres naturals (largo i ample) que multiplicats donen 60. 
+
+Els factors de 60 són:
+1. 1 x 60
+2. 2 x 30
+3. 3 x 20
+4. 4 x 15
+5. 5 x 12
+6. 6 x 10
+
+Ara, hem de considerar que un rectangle amb costats (a, b) és el mateix que un rectangle amb costats (b, a). Per tant, només comptarem les parelles on a ≤ b per evitar duplicats.
+
+Les parelles que compleixen aquesta condició són:
+1. (1, 60)
+2. (2, 30)
+3. (3, 20)
+4. (4, 15)
+5. (5, 12)
+6. (6, 10)
+
+Totes aquestes parelles són diferents i no es repeteixen. Per tant, hi ha un total de 6 rectangles diferents amb àrea igual a 60 cm².
+
+Resposta: B) 6

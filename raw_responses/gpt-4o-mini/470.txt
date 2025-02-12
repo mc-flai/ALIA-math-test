@@ -1,0 +1,29 @@
+Raonament: Tenim quatre punts A, B, C i D en una línia recta amb les següents distàncies entre ells: 
+- A i B: 1 cm
+- B i C: 2 cm
+- C i D: 3 cm
+- D i A: 4 cm
+
+Podem representar els punts en una línia recta. Suposem que A està en la posició 0 cm. Així, B estaria a 1 cm (0 + 1), C estaria a 3 cm (1 + 2) i D estaria a 6 cm (3 + 3). Ara, comprovem la distància entre D i A: la distància és de 6 cm (D) - 0 cm (A) = 6 cm, que no coincideix amb la distància de 4 cm que se'ns ha donat. 
+
+Per tant, provem una altra configuració. Si col·loquem A a 0 cm, B a 1 cm, C a 3 cm, i D a 4 cm, la distància entre D i A seria de 4 cm, que sí coincideix. Ara, verifiquem les distàncies:
+- A a B: 1 cm
+- B a C: 2 cm
+- C a D: 1 cm
+- D a A: 4 cm
+
+Això no funciona. 
+
+Si col·loquem A a 0 cm, B a 1 cm, C a 3 cm, i D a 7 cm, la distància entre D i A seria de 7 cm, que tampoc coincideix. 
+
+Després de diverses proves, la configuració correcta és:
+- A a 0 cm
+- B a 1 cm
+- C a 3 cm
+- D a 6 cm
+
+Així, la distància entre D i A és de 6 cm, que no coincideix amb 4 cm. 
+
+Finalment, si considerem que A és el punt més a l'esquerra i D el més a la dreta, podem concloure que A i D són els extrems de la línia.
+
+Resposta: A) Ai D

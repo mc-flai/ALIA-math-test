@@ -1,0 +1,21 @@
+Raonament: Anem a analitzar les condicions que ha de complir el nombre enter positiu \( n \):
+
+1. **n és un nombre de dos dígits**: Això significa que \( n \) ha de ser entre 10 i 99.
+2. **n és parell**: Els nombres parells acaben en 0, 2, 4, 6 o 8.
+3. **n és primer**: Un nombre primer és aquell que només és divisible per 1 i per ell mateix. Els nombres primers de dos dígits són: 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97. Observem que cap d'aquests nombres és parell, excepte el 2, que no és de dos dígits.
+4. **n és el quadrat d'un nombre enter**: Els quadrats de nombres enters de dos dígits són: \( 4^2 = 16 \), \( 5^2 = 25 \), \( 6^2 = 36 \), \( 7^2 = 49 \), \( 8^2 = 64 \), \( 9^2 = 81 \), \( 10^2 = 100 \) (que no és de dos dígits). D'aquests, els que són parells són 16, 36, 64.
+5. **n és més gran que 50**: Dels quadrats que hem trobat, només 64 compleix aquesta condició.
+
+Ara, analitzem les condicions que compleix el nombre 64:
+- És un nombre de dos dígits (sí).
+- És parell (sí).
+- No és primer (no).
+- És el quadrat d'un nombre enter (sí, \( 8^2 = 64 \)).
+- És més gran que 50 (sí).
+
+64 compleix 4 de les 5 condicions. Ara calculem la suma de les seves xifres:
+- La suma de les xifres de 64 és \( 6 + 4 = 10 \).
+
+Per tant, la resposta correcta és:
+
+Resposta: A)

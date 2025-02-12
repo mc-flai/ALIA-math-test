@@ -1,0 +1,37 @@
+Raonament: Per trobar el dígit de les unitats del producte \(2014^{2015} \cdot 2016^{2017}\), només necessitem considerar els dígits de les unitats dels números base, és a dir, 2014 i 2016.
+
+1. El dígit de les unitats de 2014 és 4.
+2. El dígit de les unitats de 2016 és 6.
+
+Ara, hem de calcular el dígit de les unitats de \(4^{2015}\) i \(6^{2017}\):
+
+- **Dígits de les unitats de \(4^n\)**:
+  - \(4^1 = 4\) (unitats: 4)
+  - \(4^2 = 16\) (unitats: 6)
+  - \(4^3 = 64\) (unitats: 4)
+  - \(4^4 = 256\) (unitats: 6)
+  
+  Observem que els dígits de les unitats de \(4^n\) alternen entre 4 i 6. En concret:
+  - Si \(n\) és impar, el dígit de les unitats és 4.
+  - Si \(n\) és par, el dígit de les unitats és 6.
+
+  Com \(2015\) és impar, el dígit de les unitats de \(4^{2015}\) és 4.
+
+- **Dígits de les unitats de \(6^n\)**:
+  - \(6^1 = 6\) (unitats: 6)
+  - \(6^2 = 36\) (unitats: 6)
+  - \(6^3 = 216\) (unitats: 6)
+  
+  El dígit de les unitats de \(6^n\) és sempre 6, independentment del valor de \(n\).
+
+Ara, calculem el dígit de les unitats del producte \(4^{2015} \cdot 6^{2017}\):
+- El dígit de les unitats de \(4^{2015}\) és 4.
+- El dígit de les unitats de \(6^{2017}\) és 6.
+
+Finalment, calculem el dígit de les unitats del producte:
+\[
+4 \cdot 6 = 24
+\]
+El dígit de les unitats de 24 és 4.
+
+Resposta: C)

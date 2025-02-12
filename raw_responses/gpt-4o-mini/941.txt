@@ -1,0 +1,66 @@
+Raonament: Primer, calculem quantes pàgines va llegir Robert el primer dia. Si va llegir la tercera part de 630 pàgines, això és:
+
+\[ \frac{630}{3} = 210 \text{ pàgines} \]
+
+Així que, després del primer dia, li queden:
+
+\[ 630 - 210 = 420 \text{ pàgines} \]
+
+Ara, analitzem el que va passar l'endemà. La suma dels nombres de les pàgines que va llegir a l'endemà és 4410. Si considerem que va llegir les pàgines consecutivament, podem dir que va llegir les pàgines 211, 212, 213, ..., fins a una certa pàgina \( x \). La suma de les pàgines llegides des de la 211 fins a \( x \) es pot calcular amb la fórmula de la suma d'una sèrie aritmètica:
+
+\[ S = \frac{n}{2} \cdot (a + l) \]
+
+On:
+- \( n \) és el nombre de termes,
+- \( a \) és el primer terme (211),
+- \( l \) és l'últim terme (\( x \)).
+
+El nombre de termes \( n \) és \( x - 211 + 1 = x - 210 \).
+
+Per tant, la suma es pot expressar com:
+
+\[ S = \frac{x - 210}{2} \cdot (211 + x) = 4410 \]
+
+Multiplicant per 2 per eliminar la fracció:
+
+\[ (x - 210)(211 + x) = 8820 \]
+
+Ara, expandim i reorganitzem l'equació:
+
+\[ x^2 - 210x + 211x - 210 \cdot 211 = 8820 \]
+
+\[ x^2 + x - 44310 = 8820 \]
+
+\[ x^2 + x - 53130 = 0 \]
+
+Ara podem resoldre aquesta equació quadràtica utilitzant la fórmula general:
+
+\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]
+
+On \( a = 1 \), \( b = 1 \), i \( c = -53130 \):
+
+\[ x = \frac{-1 \pm \sqrt{1 + 4 \cdot 53130}}{2} \]
+
+\[ x = \frac{-1 \pm \sqrt{212521}}{2} \]
+
+Calculant la arrel quadrada:
+
+\[ \sqrt{212521} \approx 461.5 \]
+
+Així que:
+
+\[ x \approx \frac{-1 + 461.5}{2} \approx 230.25 \]
+
+Com que \( x \) ha de ser un nombre enter, provem amb \( x = 230 \) i \( x = 231 \) per veure quina suma ens dona 4410. 
+
+Si \( x = 230 \):
+
+\[ S = \frac{20}{2} \cdot (211 + 230) = 10 \cdot 441 = 4410 \]
+
+Així que va llegir de la pàgina 211 a la 230. Ara, calculem quantes pàgines li queden per llegir:
+
+\[ 630 - (210 + 20) = 630 - 230 = 400 \]
+
+Per tant, li queden 400 pàgines per llegir.
+
+Resposta: E) 400

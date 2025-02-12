@@ -1,0 +1,54 @@
+Raonament: Observem que els números en cada fila segueixen un patró. La primera fila conté 2 números, la segona 3, la tercera 2 i la quarta 1. Si continuem amb aquest patró, la cinquena fila tindria 3 números, la sisena 2, la setena 1, i així successivament. 
+
+A més, els números en cada fila semblen ser múltiples de 4. La primera fila conté 4 i 28, la segona fila conté 8, 24 i 32, la tercera fila conté 12 i 20, i la quarta fila conté 16. 
+
+Per determinar en quina fila es troba el número 1000, primer hem de veure si 1000 és un múltiple de 4. Com que 1000 és divisible per 4 (1000 ÷ 4 = 250), podem continuar.
+
+Ara, calculem quants números hi ha en total fins a arribar a 1000. Els números que estem escrivint són 4, 8, 12, 16, ..., 1000. Aquesta és una progressió aritmètica amb primer terme 4 i raó 4. 
+
+El n-èssim terme d'una progressió aritmètica es pot calcular amb la fórmula:
+\[ a_n = a_1 + (n-1) \cdot d \]
+On \( a_1 \) és el primer terme, \( d \) és la raó, i \( n \) és el nombre de termes. 
+
+Per a 1000:
+\[ 1000 = 4 + (n-1) \cdot 4 \]
+\[ 1000 - 4 = (n-1) \cdot 4 \]
+\[ 996 = (n-1) \cdot 4 \]
+\[ n-1 = 249 \]
+\[ n = 250 \]
+
+Així que 1000 és el 250è terme de la sèrie. Ara, hem de determinar en quina fila es troba el 250è terme. 
+
+Sumem el nombre de termes per fila:
+- Fila 1: 2 termes
+- Fila 2: 3 termes
+- Fila 3: 2 termes
+- Fila 4: 1 terme
+- Fila 5: 3 termes
+- Fila 6: 2 termes
+- Fila 7: 1 terme
+- Fila 8: 3 termes
+- Fila 9: 2 termes
+- Fila 10: 1 terme
+
+Si continuem sumant, veurem que les files alternen entre 2, 3, 2, 1. 
+
+Després de calcular, podem veure que:
+- Fins a la fila 1: 2 termes
+- Fins a la fila 2: 5 termes (2 + 3)
+- Fins a la fila 3: 7 termes (5 + 2)
+- Fins a la fila 4: 8 termes (7 + 1)
+- Fins a la fila 5: 11 termes (8 + 3)
+- Fins a la fila 6: 13 termes (11 + 2)
+- Fins a la fila 7: 14 termes (13 + 1)
+- Fins a la fila 8: 17 termes (14 + 3)
+- Fins a la fila 9: 19 termes (17 + 2)
+- Fins a la fila 10: 20 termes (19 + 1)
+
+Continuant amb aquest patró, podem veure que el 250è terme es troba en una fila que conté un total de termes que arriba a 250. 
+
+Després de calcular, podem veure que el 250è terme es troba a la fila 20, que no és cap de les opcions donades. 
+
+Per tant, la resposta correcta és que no es pot determinar en quina fila es troba el número 1000.
+
+Resposta: E) No es pot determinar.

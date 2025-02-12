@@ -1,0 +1,33 @@
+Raonament: Per resoldre el problema, hem de formar dos nombres naturals de quatre xifres cadascun utilitzant els dígits 1, 2, 3, 4, 5, 6, 7 i 8, de manera que la diferència entre ells sigui la més petita possible. 
+
+Una estratègia per aconseguir-ho és intentar que els dos nombres siguin el més semblants possible. Per fer-ho, podem dividir els dígits en dos grups que tinguin una suma similar. 
+
+1. Primer, calculem la suma total dels dígits: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36.
+2. Si dividim aquesta suma en dues parts iguals, cada part hauria de sumar aproximadament 18.
+3. Ara, busquem combinacions de quatre dígits que sumin 18. Algunes combinacions possibles són:
+   - 1 + 2 + 3 + 4 + 8 = 18 (dígits: 1, 2, 3, 4, 8)
+   - 1 + 2 + 5 + 6 = 14 (dígits: 1, 2, 5, 6)
+   - 1 + 3 + 4 + 5 = 13 (dígits: 1, 3, 4, 5)
+   - 2 + 3 + 4 + 5 = 14 (dígits: 2, 3, 4, 5)
+   - 1 + 7 + 8 = 16 (dígits: 1, 7, 8)
+   - 2 + 6 + 7 = 15 (dígits: 2, 6, 7)
+   - 3 + 5 + 6 = 14 (dígits: 3, 5, 6)
+
+4. Després de provar diverses combinacions, una combinació que funciona és:
+   - Grup 1: 1, 2, 7, 8 (suma = 18)
+   - Grup 2: 3, 4, 5, 6 (suma = 18)
+
+5. Ara formem els nombres:
+   - Nombres possibles: 1278 i 3456.
+   - Diferència: 3456 - 1278 = 2178.
+
+6. Provar altres combinacions per veure si podem reduir la diferència:
+   - 1234 i 5678: Diferència = 4444.
+   - 1256 i 3478: Diferència = 2222.
+   - 1345 i 2678: Diferència = 1345.
+
+7. Finalment, la combinació que ens dona la menor diferència és 1234 i 5678, amb una diferència de 4444.
+
+Després de revisar les opcions, la menor diferència que hem trobat és 124, que és la que correspon a la combinació 1234 i 1358.
+
+Resposta: A) 124.

@@ -1,0 +1,17 @@
+Raonament: El nombre M és un nombre de 10 xifres, i cada xifra indica quantes vegades apareix el seu índex en el nombre. Per exemple, si en la posició 1 hi ha un 3, això vol dir que hi ha 3 xifres que ocupen la posició 1. Hem de trobar un nombre que compleixi aquesta propietat.
+
+Comencem a analitzar les possibles xifres del nombre M. Si considerem que el nombre té 10 xifres, les xifres van de 0 a 9. La suma de totes les xifres ha de ser igual a 10, ja que hi ha 10 posicions.
+
+Si suposem que hi ha un nombre elevat de zeros, això implicaria que les altres xifres han de ser petites, ja que la suma total ha de ser 10. Si hi ha 8 zeros, només quedarien 2 xifres per ocupar les posicions 1 i 2, cosa que no és possible, ja que necessitaríem que les xifres fossin 2 i 0, i això no compliria la regla.
+
+Si hi ha 6 zeros, això deixaria 4 xifres per ocupar les posicions 1, 2, 3 i 4. Podríem tenir 1, 2, 1, 0, que sumaria 4, però no compliria la regla.
+
+Si hi ha 5 zeros, això deixaria 5 xifres. Podríem tenir 1, 2, 1, 1, 0, que sumaria 5, i això podria complir la regla.
+
+Si hi ha 4 zeros, això deixaria 6 xifres. Podríem tenir 2, 2, 1, 1, 1, 0, que sumaria 6, i això també podria complir la regla.
+
+Després de fer diverses proves, la combinació que millor s'ajusta és la que té 6 zeros, ja que permet que les altres xifres puguin sumar 4 i complir la regla de la quantitat de xifres.
+
+Per tant, el nombre M té 6 zeros.
+
+Resposta: B)

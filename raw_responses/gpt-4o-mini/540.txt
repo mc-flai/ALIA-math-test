@@ -1,0 +1,38 @@
+Raonament: Anem a analitzar l'expressió general que es dóna: \( n2018 + (n + 1)2017 \). 
+
+Podem escriure-ho de la següent manera:
+\[
+n2018 + (n + 1)2017 = n \cdot 2018 + (n + 1) \cdot 2017
+\]
+\[
+= n \cdot 2018 + n \cdot 2017 + 2017
+\]
+\[
+= n \cdot (2018 + 2017) + 2017
+\]
+\[
+= n \cdot 4035 + 2017
+\]
+
+Ara, per determinar si aquesta suma és parella o senar, hem de considerar les dues parts de l'expressió:
+
+1. \( n \cdot 4035 \): 
+   - Si \( n \) és parell, \( n \cdot 4035 \) és parell (ja que un nombre parell multiplicat per qualsevol nombre és parell).
+   - Si \( n \) és senar, \( n \cdot 4035 \) és senar (ja que un nombre senar multiplicat per un nombre senar és senar).
+
+2. \( 2017 \): 
+   - És un nombre senar.
+
+Ara, sumem les dues parts:
+- Si \( n \) és parell, \( n \cdot 4035 \) és parell i \( 2017 \) és senar, així que la suma és senar (parell + senar = senar).
+- Si \( n \) és senar, \( n \cdot 4035 \) és senar i \( 2017 \) és senar, així que la suma és parell (senar + senar = parell).
+
+Per tant, la suma \( n2018 + (n + 1)2017 \) és parell quan \( n \) és senar i senar quan \( n \) és parell. 
+
+Ara, considerem els valors de \( n \) que van de 1 a 100:
+- Hi ha 50 nombres senars (1, 3, 5, ..., 99).
+- Hi ha 50 nombres parells (2, 4, 6, ..., 100).
+
+Com que la suma és parell per a \( n \) senar i senar per a \( n \) parell, això significa que la meitat dels 100 nombres donats (50) produiran una suma parella.
+
+Resposta: B)

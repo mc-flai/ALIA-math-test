@@ -1,0 +1,36 @@
+Raonament: Anomenem \( P \) al nombre de peixos que pesca el fill de Pere (Carles). Com que Pere pesca tants peixos com el seu fill, Pere també pesca \( P \) peixos. Joan pesca tres vegades el nombre de peixos del seu fill, així que si anomenem \( J \) al nombre de peixos que pesca el fill de Joan, Joan pesca \( 3J \) peixos. 
+
+La suma total de peixos és:
+\[ P + P + 3J = 35 \]
+\[ 2P + 3J = 35 \]
+
+Ara, no sabem el valor de \( P \) ni de \( J \), però podem expressar \( J \) en funció de \( P \):
+\[ 3J = 35 - 2P \]
+\[ J = \frac{35 - 2P}{3} \]
+
+Perquè \( J \) sigui un nombre enter, \( 35 - 2P \) ha de ser múltiple de 3. Provem diferents valors per \( P \):
+
+- Si \( P = 0 \): \( J = \frac{35 - 0}{3} = \frac{35}{3} \) (no és enter)
+- Si \( P = 1 \): \( J = \frac{35 - 2}{3} = \frac{33}{3} = 11 \) (és enter)
+- Si \( P = 2 \): \( J = \frac{35 - 4}{3} = \frac{31}{3} \) (no és enter)
+- Si \( P = 3 \): \( J = \frac{35 - 6}{3} = \frac{29}{3} \) (no és enter)
+- Si \( P = 4 \): \( J = \frac{35 - 8}{3} = \frac{27}{3} = 9 \) (és enter)
+- Si \( P = 5 \): \( J = \frac{35 - 10}{3} = \frac{25}{3} \) (no és enter)
+- Si \( P = 6 \): \( J = \frac{35 - 12}{3} = \frac{23}{3} \) (no és enter)
+- Si \( P = 7 \): \( J = \frac{35 - 14}{3} = \frac{21}{3} = 7 \) (és enter)
+- Si \( P = 8 \): \( J = \frac{35 - 16}{3} = \frac{19}{3} \) (no és enter)
+- Si \( P = 9 \): \( J = \frac{35 - 18}{3} = \frac{17}{3} \) (no és enter)
+- Si \( P = 10 \): \( J = \frac{35 - 20}{3} = \frac{15}{3} = 5 \) (és enter)
+- Si \( P = 11 \): \( J = \frac{35 - 22}{3} = \frac{13}{3} \) (no és enter)
+- Si \( P = 12 \): \( J = \frac{35 - 24}{3} = \frac{11}{3} \) (no és enter)
+- Si \( P = 13 \): \( J = \frac{35 - 26}{3} = \frac{9}{3} = 3 \) (és enter)
+- Si \( P = 14 \): \( J = \frac{35 - 28}{3} = \frac{7}{3} \) (no és enter)
+- Si \( P = 15 \): \( J = \frac{35 - 30}{3} = \frac{5}{3} \) (no és enter)
+- Si \( P = 16 \): \( J = \frac{35 - 32}{3} = \frac{3}{3} = 1 \) (és enter)
+- Si \( P = 17 \): \( J = \frac{35 - 34}{3} = \frac{1}{3} \) (no és enter)
+
+Els valors possibles per \( P \) són 1, 4, 7, 10, 13, 16, i els corresponents \( J \) són 11, 9, 7, 5, 3, 1. 
+
+Per tant, el fill de Joan es diu Joan, ja que el nom del pare és el mateix que el del fill. 
+
+Resposta: B)

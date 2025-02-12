@@ -1,0 +1,24 @@
+Raonament: Primer, analitzem el producte \( a(a + 1)(a + 2) \). Aquest producte representa el producte de tres enters consecutius, que sempre contindrà un múltiple de 2 i un múltiple de 3. Per tant, necessitem assegurar-nos que el producte també contingui els factors necessaris per ser un múltiple de 84.
+
+Descomponem 84 en factors primers:
+\[ 84 = 2^2 \times 3 \times 7 \]
+
+Per tant, el producte \( a(a + 1)(a + 2) \) ha de contenir almenys dos factors de 2, un factor de 3 i un factor de 7.
+
+1. **Factors de 2**: Entre tres enters consecutius, sempre hi haurà almenys un múltiple de 2. Si \( a \) és parell, \( a \) aporta dos factors de 2. Si \( a \) és senar, \( a + 1 \) és parell i aporta dos factors de 2. Així que sempre tindrem els factors de 2 necessaris.
+
+2. **Factor de 3**: Entre tres enters consecutius, sempre hi haurà un múltiple de 3. Així que també tenim el factor de 3.
+
+3. **Factor de 7**: Ara hem de comprovar quins valors de \( a \) entre 1 i 25 fan que el producte contingui un factor de 7. Això significa que almenys un dels tres enters \( a \), \( a + 1 \) o \( a + 2 \) ha de ser múltiple de 7.
+
+Els múltiples de 7 entre 1 i 25 són: 7, 14, i 21.
+
+- Si \( a = 7 \): \( 7, 8, 9 \) (conté 7)
+- Si \( a = 14 \): \( 14, 15, 16 \) (conté 14)
+- Si \( a = 21 \): \( 21, 22, 23 \) (conté 21)
+
+Així que els valors de \( a \) que fan que el producte sigui un múltiple de 84 són 7, 14 i 21. Això ens dóna un total de 3 valors.
+
+Per tant, la resposta correcta és:
+
+Resposta: C) 2.

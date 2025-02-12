@@ -1,0 +1,35 @@
+Raonament: Per determinar quantes pàgines té el llibre, hem de calcular quantes xifres s'utilitzen per numerar les pàgines. 
+
+1. **Pàgines de 1 a 9**: Hi ha 9 pàgines i cada una utilitza 1 xifra. Així, per a les pàgines del 1 al 9, utilitzem:
+   \[
+   9 \text{ pàgines} \times 1 \text{ xifra/pàgina} = 9 \text{ xifres}
+   \]
+
+2. **Pàgines de 10 a 99**: Hi ha 90 pàgines (del 10 al 99) i cada una utilitza 2 xifres. Així, per a les pàgines del 10 al 99, utilitzem:
+   \[
+   90 \text{ pàgines} \times 2 \text{ xifres/pàgina} = 180 \text{ xifres}
+   \]
+
+3. **Pàgines de 100 en endavant**: A partir de la pàgina 100, cada pàgina utilitza 3 xifres. Ara, sumem les xifres utilitzades fins ara:
+   \[
+   9 \text{ xifres (pàgines 1-9)} + 180 \text{ xifres (pàgines 10-99)} = 189 \text{ xifres}
+   \]
+
+4. **Xifres restants**: Sabem que hem utilitzat un total de 231 xifres, així que calculem quantes xifres queden per a les pàgines a partir de 100:
+   \[
+   231 \text{ xifres totals} - 189 \text{ xifres utilitzades} = 42 \text{ xifres restants}
+   \]
+
+5. **Pàgines a partir de 100**: Cada pàgina a partir de 100 utilitza 3 xifres. Per tant, el nombre de pàgines que podem numerar amb les 42 xifres restants és:
+   \[
+   \frac{42 \text{ xifres}}{3 \text{ xifres/pàgina}} = 14 \text{ pàgines}
+   \]
+
+6. **Total de pàgines**: Ara sumem les pàgines que hem comptat:
+   \[
+   99 \text{ pàgines (fins a 99)} + 14 \text{ pàgines (de 100 a 113)} = 113 \text{ pàgines}
+   \]
+
+Per tant, el llibre té 113 pàgines.
+
+Resposta: B)

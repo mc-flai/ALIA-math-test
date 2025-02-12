@@ -1,0 +1,17 @@
+Raonament: Quan llancem dos daus, cada dau té 6 cares, així que el total de combinacions possibles és 6 x 6 = 36. Per obtenir un únic 6, hi ha dues situacions possibles: 
+
+1. El primer dau mostra un 6 i el segon dau mostra un número diferent de 6 (1, 2, 3, 4 o 5).
+2. El primer dau mostra un número diferent de 6 (1, 2, 3, 4 o 5) i el segon dau mostra un 6.
+
+En cada cas, hi ha 5 possibilitats per al dau que no mostra un 6. Així que tenim:
+
+- Situació 1: 1 dau amb 6 i 1 dau amb 5 opcions (5 combinacions).
+- Situació 2: 1 dau amb 5 opcions i 1 dau amb 6 (5 combinacions).
+
+Així que el total de combinacions que donen un únic 6 és 5 + 5 = 10. 
+
+Per tant, la probabilitat d'obtenir un únic 6 és el nombre de casos favorables (10) dividit pel nombre total de casos possibles (36):
+
+Probabilitat = 10 / 36 = 5 / 18.
+
+Resposta: E) 5/18.

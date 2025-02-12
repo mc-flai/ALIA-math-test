@@ -1,0 +1,20 @@
+Raonament: Primer, analitzem els nombres cangurils que tenim: 1, 3, 13, 31, 131. Aquests nombres són tots de la forma \(10^n - 1\) per a \(n = 1, 2, 3, 4, 5\) (1, 3, 13, 31, 131) i el nombre 1. 
+
+Per expressar 1362 com a suma de nombres cangurils, podem començar a descompondre 1362 en termes dels nombres cangurils disponibles. 
+
+1. **Descomposició inicial**: Comencem per veure quants cangurils podem utilitzar. El nombre més gran que podem utilitzar és 131. 
+   - Si utilitzem 10 cangurils de 131, obtindríem 1310, que és el més proper a 1362 sense passar-nos.
+   - Ara, necessitem sumar 52 (1362 - 1310 = 52).
+
+2. **Descomposició de 52**: Ara hem de veure com podem expressar 52 amb els cangurils disponibles.
+   - Podem utilitzar 4 cangurils de 13 (4 * 13 = 52).
+
+3. **Total de sumands**: Ara sumem els cangurils que hem utilitzat:
+   - 10 cangurils de 131
+   - 4 cangurils de 13
+
+Així, el total de sumands és 10 + 4 = 14.
+
+Per tant, la mínima quantitat de sumands que es necessiten per aconseguir 1362 és 14.
+
+Resposta: A)

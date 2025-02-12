@@ -1,0 +1,41 @@
+Raonament: 
+
+La suma que volem calcular és:
+
+\[
+S = \sum_{n=2}^{2016} \frac{1}{\sqrt{n} + \sqrt{n-1}}.
+\]
+
+Podem simplificar cada terme de la suma multiplicant el numerador i el denominador per \(\sqrt{n} - \sqrt{n-1}\):
+
+\[
+\frac{1}{\sqrt{n} + \sqrt{n-1}} \cdot \frac{\sqrt{n} - \sqrt{n-1}}{\sqrt{n} - \sqrt{n-1}} = \frac{\sqrt{n} - \sqrt{n-1}}{(\sqrt{n} + \sqrt{n-1})(\sqrt{n} - \sqrt{n-1})}.
+\]
+
+El denominador es pot simplificar:
+
+\[
+(\sqrt{n} + \sqrt{n-1})(\sqrt{n} - \sqrt{n-1}) = n - (n-1) = 1.
+\]
+
+Per tant, cada terme de la suma es redueix a:
+
+\[
+\frac{\sqrt{n} - \sqrt{n-1}}{1} = \sqrt{n} - \sqrt{n-1}.
+\]
+
+Així, la suma \(S\) es converteix en una suma telescòpica:
+
+\[
+S = (\sqrt{2} - \sqrt{1}) + (\sqrt{3} - \sqrt{2}) + (\sqrt{4} - \sqrt{3}) + \ldots + (\sqrt{2016} - \sqrt{2015}).
+\]
+
+En aquesta suma, la majoria dels termes es cancel·len, i ens queda:
+
+\[
+S = \sqrt{2016} - \sqrt{1} = \sqrt{2016} - 1.
+\]
+
+Per tant, la resposta correcta és:
+
+Resposta: E) √2016 - 1.

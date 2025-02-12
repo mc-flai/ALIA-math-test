@@ -1,0 +1,38 @@
+Raonament: Primer, considerem el rectangle \(ABCD\) amb les dimensions donades: \(AB = 36\) i \(BC = 25\). La diagonal \(AC\) es pot calcular utilitzant el teorema de Pitágoras:
+
+\[
+AC = \sqrt{AB^2 + BC^2} = \sqrt{36^2 + 25^2} = \sqrt{1296 + 625} = \sqrt{1921}.
+\]
+
+Aproximadament, \(AC \approx 43.8\).
+
+Ara, per determinar quants quadrats de costat 1 talla la línia \(AC\), podem utilitzar el teorema de Bresenham o el principi de comptar les interseccions de la línia amb les línies de la graella que divideix el rectangle en quadrats de costat 1.
+
+La fórmula per calcular el nombre de quadrats que talla una línia que va d'un punt \((x_1, y_1)\) a un punt \((x_2, y_2)\) és:
+
+\[
+\text{Quadrats tallats} = \Delta x + \Delta y - \gcd(\Delta x, \Delta y),
+\]
+
+on \(\Delta x = |x_2 - x_1|\) i \(\Delta y = |y_2 - y_1|\), i \(\gcd\) és el màxim comú divisor.
+
+En el nostre cas, podem considerar els punts \(A(0, 0)\) i \(C(36, 25)\):
+
+\[
+\Delta x = 36 - 0 = 36,
+\]
+\[
+\Delta y = 25 - 0 = 25.
+\]
+
+Ara, calculem el \(\gcd(36, 25)\). Els factors de 36 són \(1, 2, 3, 4, 6, 9, 12, 18, 36\) i els factors de 25 són \(1, 5, 25\). El màxim comú divisor és \(1\).
+
+Apliquem la fórmula:
+
+\[
+\text{Quadrats tallats} = 36 + 25 - 1 = 60.
+\]
+
+Per tant, la línia \(AC\) talla 60 quadrats de costat 1.
+
+Resposta: A) 60

@@ -1,0 +1,83 @@
+Raonament: 
+
+Els nombres a, b i c són de tres xifres i tenen la forma \( a = x y x \), \( b = z w z \) i \( c = p q p \), on \( x, y, z, w, p, q \) són dígits. La condició que la primera i la tercera xifra són iguals implica que els nombres a, b i c són simètrics.
+
+A més, tenim les relacions:
+1. \( b = 2a + 1 \)
+2. \( c = 2b + 1 \)
+
+Comencem a expressar a, b i c en funció de x i y:
+
+1. \( a = 100x + 10y + x = 101x + 10y \)
+2. \( b = 2a + 1 = 2(101x + 10y) + 1 = 202x + 20y + 1 \)
+3. \( c = 2b + 1 = 2(202x + 20y + 1) + 1 = 404x + 40y + 2 + 1 = 404x + 40y + 3 \)
+
+Ara, hem de garantir que b i c també són nombres de tres xifres, és a dir, que estan entre 100 i 999.
+
+Per a b:
+\[
+100 \leq 202x + 20y + 1 \leq 999
+\]
+Això implica:
+\[
+99 \leq 202x + 20y \leq 998
+\]
+Dividim per 2:
+\[
+49.5 \leq 101x + 10y \leq 499
+\]
+Com que x i y són dígits, \( 101x + 10y \) ha de ser un nombre enter, així que:
+\[
+50 \leq 101x + 10y \leq 499
+\]
+
+Per a c:
+\[
+100 \leq 404x + 40y + 3 \leq 999
+\]
+Això implica:
+\[
+97 \leq 404x + 40y \leq 996
+\]
+Dividim per 4:
+\[
+24.25 \leq 101x + 10y \leq 249
+\]
+De nou, com que x i y són dígits, hem de considerar:
+\[
+25 \leq 101x + 10y \leq 249
+\]
+
+Ara, hem de combinar les dues condicions:
+1. \( 50 \leq 101x + 10y \leq 499 \)
+2. \( 25 \leq 101x + 10y \leq 249 \)
+
+La intersecció d'aquestes dues condicions és:
+\[
+50 \leq 101x + 10y \leq 249
+\]
+
+Ara, considerem els valors possibles per a x (que pot ser de 1 a 9, ja que a és un nombre de tres xifres):
+
+- Si \( x = 1 \):
+  \[
+  50 \leq 101(1) + 10y \leq 249 \implies 50 \leq 101 + 10y \leq 249 \implies -51 \leq 10y \leq 148 \implies 0 \leq y \leq 14.8 \implies y = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \quad (10 \text{ valors})
+  \]
+
+- Si \( x = 2 \):
+  \[
+  50 \leq 101(2) + 10y \leq 249 \implies 50 \leq 202 + 10y \leq 249 \implies -152 \leq 10y \leq 47 \implies 0 \leq y \leq 4.7 \implies y = 0, 1, 2, 3, 4 \quad (5 \text{ valors})
+  \]
+
+- Si \( x = 3 \):
+  \[
+  50 \leq 101(3) + 10y \leq 249 \implies 50 \leq 303 + 10y \leq 249 \implies -253 \leq 10y \leq -54 \quad (0 \text{ valors})
+  \]
+
+Per tant, només els valors de \( x = 1 \) i \( x = 2 \) són vàlids. Així que, per a \( x = 1 \) tenim 10 valors possibles per a \( y \) i per a \( x = 2 \) tenim 5 valors possibles per a \( y \).
+
+Així, el nombre total de valors diferents que pot prendre el nombre a és 10 (per \( x = 1 \)) + 5 (per \( x = 2 \)) = 15.
+
+Per tant, la resposta correcta és que a pot prendre més de tres valors diferents.
+
+Resposta: E) Més de tres

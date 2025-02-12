@@ -1,0 +1,19 @@
+Raonament: Un cub de fusta es talla en 27 cubs menuts, el que significa que el cub gran es divideix en una matriu de 3x3x3. Cada costat del cub gran té una superfície pintada de color roig. 
+
+Cada cub menut té 6 cares, i els cubs que es troben en el centre de cada cara del cub gran tindran 1 cara no pintada. Els cubs que es troben a les arestes del cub gran tindran 2 cares no pintades, i els cubs que es troben a les cantonades tindran 3 cares no pintades.
+
+1. **Cantonades**: Hi ha 8 cantonades en un cub, i cada cantonada té 3 cares no pintades. Així que:  
+   \( 8 \text{ cantonades} \times 3 \text{ cares} = 24 \text{ cares no pintades} \)
+
+2. **Arestes**: Cada aresta del cub té 1 cub menut al centre que té 2 cares no pintades. Hi ha 12 arestes en un cub, així que:  
+   \( 12 \text{ arestes} \times 1 \text{ cub al centre} \times 2 \text{ cares} = 24 \text{ cares no pintades} \)
+
+3. **Centre**: Hi ha 1 cub al centre del cub gran que té 6 cares no pintades. Així que:  
+   \( 1 \text{ cub al centre} \times 6 \text{ cares} = 6 \text{ cares no pintades} \)
+
+Ara sumem totes les cares no pintades:
+\( 24 \text{ (cantonades)} + 24 \text{ (arestes)} + 6 \text{ (centre)} = 54 \text{ cares no pintades} \)
+
+Per tant, la resposta correcta és que hi ha 54 cares dels cubs menuts que no estan pintades de roig.
+
+Resposta: B)

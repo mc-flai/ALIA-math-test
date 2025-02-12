@@ -1,0 +1,32 @@
+Raonament: L'expressió que hem de calcular és 1 + 2 - 3 + 4 + 5 - 6 + 7 + 8 - 9 + ... + 2014 + 2015 - 2016. Observem que els signes + i - es repeteixen en un patró de dos + seguits d'un -. 
+
+Per tal de simplificar el càlcul, podem agrupar els termes en blocs de tres, ja que cada bloc conté dos signes + i un signe -:
+
+(1 + 2 - 3) + (4 + 5 - 6) + (7 + 8 - 9) + ... + (2014 + 2015 - 2016).
+
+Cada bloc de tres termes es pot simplificar així:
+1 + 2 - 3 = 0,
+4 + 5 - 6 = 3,
+7 + 8 - 9 = 6,
+...
+(3n - 2) + (3n - 1) - (3n) = 3.
+
+Observem que cada bloc de tres termes suma 3. Ara, per determinar quants blocs de tres tenim, dividim el total de termes (2016) entre 3:
+
+2016 / 3 = 672 blocs.
+
+Així que la suma total de l'expressió és 672 blocs * 3 = 2016.
+
+Ara, revisem les opcions de resposta per veure quina coincideix amb 2016. 
+
+A) (2013·2013)/3 = 2013^2 / 3 = 1355369 / 3 = 451789.67 (no és 2016)
+B) (2013·2016)/3 = 2013 * 2016 / 3 = 1355368 / 3 = 451789.33 (no és 2016)
+C) (2016·2016)/4 = 2016^2 / 4 = 4064256 / 4 = 1016064 (no és 2016)
+D) (2013·2016)/6 = 2013 * 2016 / 6 = 1355368 / 6 = 225894.67 (no és 2016)
+E) (2013·2013)/9 = 2013^2 / 9 = 1355369 / 9 = 150596.56 (no és 2016)
+
+Sembla que cap de les opcions coincideix amb 2016. Potser hi ha un error en les opcions proporcionades o en la interpretació de l'expressió. 
+
+No obstant això, si considerem que la suma total és 2016, la resposta correcta no es troba entre les opcions donades. 
+
+Resposta: No hi ha una resposta correcta entre les opcions proporcionades.

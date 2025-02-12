@@ -1,0 +1,40 @@
+Raonament: Anem a definir les posicions guanyades per cada jugador. Suposem que Clara ha guanyat la posició \(C\), Joan la posició \(J\), Pau la posició \(P\) i Sofia la posició \(S\). Sabem que les posicions són 1, 2, 3 i 4, i que la suma de les posicions de Clara, Joan i Sofia és 6:
+
+\[ C + J + S = 6 \]
+
+També sabem que la suma de les posicions de Joan i Pau és igual a 6:
+
+\[ J + P = 6 \]
+
+A més, sabem que Joan està millor situat que Clara, és a dir, \(J < C\).
+
+Ara, analitzem les possibles combinacions de les posicions. Les úniques combinacions de nombres que sumen 6 i que es poden obtenir amb les posicions 1, 2, 3 i 4 són:
+
+1. \(1 + 2 + 3 = 6\)
+2. \(2 + 3 + 1 = 6\)
+3. \(3 + 2 + 1 = 6\)
+
+Però, com que les posicions han de ser diferents, només podem considerar la combinació \(1 + 2 + 3 = 6\). Això implica que les posicions de Clara, Joan i Sofia han de ser 1, 2 i 3 en algun ordre.
+
+Si considerem que Joan ha guanyat la posició 2 (ja que ha de ser millor que Clara), Clara no pot tenir la posició 1, així que Clara ha de tenir la posició 3 i Sofia la posició 1. Això ens dóna:
+
+- Clara: 3
+- Joan: 2
+- Sofia: 1
+
+Ara, per trobar la posició de Pau, utilitzem la segona equació:
+
+\[ J + P = 6 \]
+\[ 2 + P = 6 \]
+\[ P = 4 \]
+
+Així que Pau ha guanyat la posició 4. Ara tenim:
+
+- Clara: 3
+- Joan: 2
+- Pau: 4
+- Sofia: 1
+
+Per tant, la persona que ha guanyat la primera posició és Sofia.
+
+Resposta: D)

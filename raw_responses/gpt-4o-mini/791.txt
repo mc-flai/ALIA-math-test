@@ -1,0 +1,43 @@
+Raonament: Per determinar si es pot construir un triangle amb tres longituds de segments, hem d'aplicar la desigualtat triangular. Aquesta estableix que, per a tres longituds \(a\), \(b\) i \(c\), s'han de complir les següents condicions:
+
+1. \(a + b > c\)
+2. \(a + c > b\)
+3. \(b + c > a\)
+
+Si alguna d'aquestes condicions no es compleix, no es pot formar un triangle.
+
+Analitzem cada opció:
+
+A) (2, 3, 4)
+- \(2 + 3 = 5 > 4\) (complert)
+- \(2 + 4 = 6 > 3\) (complert)
+- \(3 + 4 = 7 > 2\) (complert)
+=> Es pot construir un triangle.
+
+B) (5, 2, 8)
+- \(5 + 2 = 7 < 8\) (no complert)
+- \(5 + 8 = 13 > 2\) (complert)
+- \(2 + 8 = 10 > 5\) (complert)
+=> No es pot construir un triangle.
+
+C) (10, 1, 10)
+- \(10 + 1 = 11 > 10\) (complert)
+- \(10 + 10 = 20 > 1\) (complert)
+- \(1 + 10 = 11 > 10\) (complert)
+=> Es pot construir un triangle.
+
+D) (2, 2, 2)
+- \(2 + 2 = 4 > 2\) (complert)
+- \(2 + 2 = 4 > 2\) (complert)
+- \(2 + 2 = 4 > 2\) (complert)
+=> Es pot construir un triangle.
+
+E) (38, 17, 23)
+- \(38 + 17 = 55 > 23\) (complert)
+- \(38 + 23 = 61 > 17\) (complert)
+- \(17 + 23 = 40 > 38\) (complert)
+=> Es pot construir un triangle.
+
+Després d'analitzar totes les opcions, veiem que només l'opció B) (5, 2, 8) no compleix la desigualtat triangular, per tant, no es pot construir un triangle amb aquestes longituds.
+
+Resposta: B)

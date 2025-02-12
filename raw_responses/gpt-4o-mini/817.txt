@@ -1,0 +1,17 @@
+Raonament: Per determinar quants zeros hi ha al final del producte 1·2·3·4·5·6·7·8·9·10, hem de considerar quantes vegades el producte és divisible per 10. Un zero al final d'un número indica que és divisible per 10, i un 10 es pot descompondre en 2 i 5. Per tant, necessitem comptar quantes parelles de factors 2 i 5 hi ha en el producte.
+
+En el producte 1·2·3·4·5·6·7·8·9·10, els factors 5 són presents en els números 5 i 10. Així que hi ha 2 factors 5.
+
+Ara, comptem els factors 2. Els factors 2 són presents en els números 2, 4, 6, 8 i 10. 
+- 2 aporta 1 factor 2.
+- 4 aporta 2 factors 2 (4 = 2²).
+- 6 aporta 1 factor 2.
+- 8 aporta 3 factors 2 (8 = 2³).
+- 10 aporta 1 factor 2.
+
+Sumant tots els factors 2:
+1 (de 2) + 2 (de 4) + 1 (de 6) + 3 (de 8) + 1 (de 10) = 8 factors 2.
+
+Ara que tenim 2 factors 5 i 8 factors 2, el nombre de parelles de factors 2 i 5 que podem formar és limitat pel menor nombre, que en aquest cas és 2. Així que el producte 1·2·3·4·5·6·7·8·9·10 té 2 zeros al final.
+
+Resposta: B) 2

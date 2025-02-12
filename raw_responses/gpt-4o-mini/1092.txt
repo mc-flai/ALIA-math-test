@@ -1,0 +1,64 @@
+Raonament: 
+Sigui \( M \) l'edat actual de Maria, \( F \) l'edat actual de la seua filla, i \( N \) l'edat actual de la seua neta. Sabem que \( N = 0 \) (ja que la neta acaba de néixer). D'ací a dos anys, les edats seran:
+
+- Maria: \( M + 2 \)
+- Filla: \( F + 2 \)
+- Neta: \( N + 2 = 0 + 2 = 2 \)
+
+El producte de les edats d'ací a dos anys serà:
+
+\[
+(M + 2)(F + 2)(2) = 2024
+\]
+
+Simplificant, tenim:
+
+\[
+(M + 2)(F + 2) = \frac{2024}{2} = 1012
+\]
+
+Ara, busquem parells de nombres \( (M + 2) \) i \( (F + 2) \) que multiplicats donen 1012. 
+
+Descomponem 1012 en factors:
+
+\[
+1012 = 2^2 \times 253 = 2^2 \times 11 \times 23
+\]
+
+Els factors de 1012 són: 1, 2, 4, 11, 22, 23, 44, 46, 92, 101, 253, 506, 1012.
+
+Com que \( M \) i \( F \) han de ser nombres parells, \( M + 2 \) i \( F + 2 \) també han de ser parells. Això significa que hem de considerar només els factors parells de 1012:
+
+- 2
+- 4
+- 22
+- 44
+- 92
+- 506
+- 1012
+
+Ara, provem les combinacions de factors parells que donen 1012:
+
+1. \( (2, 506) \)
+2. \( (4, 253) \)
+3. \( (22, 46) \)
+4. \( (44, 23) \)
+5. \( (92, 11) \)
+
+Només considerem les combinacions que donen nombres parells per \( M + 2 \) i \( F + 2 \):
+
+- \( (22, 46) \): 
+  - Si \( M + 2 = 22 \) → \( M = 20 \) (no és parell)
+  - Si \( F + 2 = 46 \) → \( F = 44 \) (parell)
+
+- \( (46, 22) \):
+  - Si \( M + 2 = 46 \) → \( M = 44 \) (parell)
+  - Si \( F + 2 = 22 \) → \( F = 20 \) (no és parell)
+
+Per tant, la única combinació que ens dóna edats parelles és:
+
+- \( M + 2 = 46 \) i \( F + 2 = 22 \) → \( M = 44 \) i \( F = 20 \)
+
+Per tant, l'edat actual de Maria és 44 anys.
+
+Resposta: B) 44

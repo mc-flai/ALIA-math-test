@@ -1,0 +1,32 @@
+Raonament: En un conjunt de nombres, el producte de dos nombres és negatiu si un dels nombres és positiu i l'altre és negatiu. Si considerem que tenim \( p \) nombres positius, \( n \) nombres negatius i \( z \) zeros, podem establir que el total de nombres és \( p + n + z = 50 \).
+
+El nombre de multiplicacions que donen un resultat negatiu és igual al producte del nombre de nombres positius i el nombre de nombres negatius, és a dir, \( p \cdot n \). Segons l'enunciat, aquest producte ha de ser igual a 522:
+
+\[
+p \cdot n = 522
+\]
+
+Ara, per determinar quants zeros hi ha en el conjunt, hem de considerar les possibles combinacions de \( p \) i \( n \) que compleixin aquesta equació. 
+
+Els factors de 522 són: 
+- \( 1 \times 522 \)
+- \( 2 \times 261 \)
+- \( 3 \times 174 \)
+- \( 6 \times 87 \)
+- \( 9 \times 58 \)
+- \( 26 \times 21 \)
+
+A partir d'aquests factors, podem calcular el total de nombres \( p + n \) i deduir el nombre de zeros \( z \):
+
+1. \( p = 1, n = 522 \) → No és possible, ja que \( p + n > 50 \).
+2. \( p = 2, n = 261 \) → No és possible, ja que \( p + n > 50 \).
+3. \( p = 3, n = 174 \) → No és possible, ja que \( p + n > 50 \).
+4. \( p = 6, n = 87 \) → No és possible, ja que \( p + n > 50 \).
+5. \( p = 9, n = 58 \) → No és possible, ja que \( p + n > 50 \).
+6. \( p = 26, n = 21 \) → \( p + n = 47 \), així que \( z = 50 - 47 = 3 \).
+
+Així, la única combinació que compleix les condicions és \( p = 26 \), \( n = 21 \) i \( z = 3 \).
+
+Per tant, el nombre de zeros en el conjunt és 3.
+
+Resposta: B)

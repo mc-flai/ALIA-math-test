@@ -1,0 +1,21 @@
+Raonament: La promoció ofereix un descompte del n% per a un grup de n amics. Això significa que si un grup té n persones, cada membre del grup obté un descompte del n% en el preu de l'entrada. Si considerem que el preu normal d'una entrada és P, el descompte total per a n persones seria n * (n% de P) = n * (n/100) * P = (n^2 / 100) * P. 
+
+El problema indica que el màxim descompte per a tot el grup no pot superar el preu normal de 4 entrades, és a dir, 4P. Per tant, hem d'establir la següent desigualtat:
+
+(n^2 / 100) * P ≤ 4P.
+
+Podem simplificar aquesta desigualtat dividint amb P (suponint que P > 0):
+
+n^2 / 100 ≤ 4.
+
+Multiplicant amb 100, obtenim:
+
+n^2 ≤ 400.
+
+Ara, prenent l'arrel quadrada de tots dos costats, tenim:
+
+n ≤ 20.
+
+Així, el màxim nombre de persones en el grup per tal que el descompte no superi el preu de 4 entrades és 20.
+
+Resposta: B)

@@ -1,0 +1,25 @@
+Raonament: Tenim 60 pomes i 60 peres que hem de distribuir en caixes. Les condicions són que totes les caixes han de tenir el mateix nombre de pomes i que no pot haver-hi dues caixes amb la mateixa quantitat de peres.
+
+Suposem que cada caixa té \( x \) pomes. Com que hi ha 60 pomes en total, el nombre de caixes \( n \) ha de complir la condició \( n \cdot x = 60 \). Això implica que \( x \) ha de ser un divisor de 60. Els divisors de 60 són: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.
+
+Ara, per a cada valor de \( x \), el nombre de caixes \( n \) es pot calcular com \( n = \frac{60}{x} \). A més, per a cada caixa, hem de distribuir les 60 peres de manera que no hi hagi dues caixes amb la mateixa quantitat de peres. Si tenim \( n \) caixes, podem assignar a cada caixa una quantitat diferent de peres, que pot ser qualsevol nombre enter de 0 a \( n-1 \) (és a dir, 0, 1, 2, ..., \( n-1 \)). Això significa que podem tenir un total de \( n \) quantitats diferents de peres.
+
+Per tant, per a cada divisor \( x \) de 60, el nombre de caixes \( n \) ha de ser com a màxim 60, i a més, ha de ser menor o igual a 60, ja que no podem tenir més caixes que peres. 
+
+Ara, calculem \( n \) per cada divisor de 60:
+- Si \( x = 1 \), \( n = 60 \)
+- Si \( x = 2 \), \( n = 30 \)
+- Si \( x = 3 \), \( n = 20 \)
+- Si \( x = 4 \), \( n = 15 \)
+- Si \( x = 5 \), \( n = 12 \)
+- Si \( x = 6 \), \( n = 10 \)
+- Si \( x = 10 \), \( n = 6 \)
+- Si \( x = 12 \), \( n = 5 \)
+- Si \( x = 15 \), \( n = 4 \)
+- Si \( x = 20 \), \( n = 3 \)
+- Si \( x = 30 \), \( n = 2 \)
+- Si \( x = 60 \), \( n = 1 \)
+
+Per tant, el nombre màxim de caixes que podem tenir, respectant les condicions, és 20 (quan cada caixa té 3 pomes i les peres són 0, 1, 2, ..., 19).
+
+Resposta: A)

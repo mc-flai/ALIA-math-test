@@ -1,0 +1,17 @@
+Raonament: Primer, hem de considerar que els nombres de 4 xifres amb xifres que augmenten d'esquerra a dreta han de ser formats per xifres diferents i en ordre ascendent. Això significa que podem utilitzar les xifres de 1 a 9, i hem de seleccionar 4 d'aquestes xifres. 
+
+El nombre més gran que podem formar amb 4 xifres diferents en ordre ascendent és 7890. No obstant això, per ser múltiple de 6, el nombre ha de ser múltiple de 2 i de 3. 
+
+1. **Múltiple de 2**: El nombre ha de acabar en un número parell. En el nostre cas, les xifres disponibles són 0, 2, 4, 6, i 8. La xifra 0 és la que ens permet formar el nombre més gran, així que considerarem nombres que acabin en 0.
+   
+2. **Múltiple de 3**: La suma de les xifres ha de ser múltiple de 3. Si considerem el nombre 7890, la suma de les xifres és 7 + 8 + 9 + 0 = 24, que és múltiple de 3. 
+
+Per tant, el nombre 7890 és un candidat vàlid, però no és el que busquem, ja que no podem utilitzar 0 com a xifra final. 
+
+El següent nombre que podem considerar és 6789, que no és vàlid perquè no acaba en un número parell. 
+
+Continuem buscant. El següent nombre que podem formar és 6780. La suma de les xifres és 6 + 7 + 8 + 0 = 21, que és múltiple de 3, i acaba en 0, així que és múltiple de 2. 
+
+Per tant, el nombre 6780 és el més gran que compleix amb les condicions. Ara, hem de determinar la xifra de les centenes d'aquest nombre, que és 7.
+
+Resposta: A) 7

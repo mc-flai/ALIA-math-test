@@ -1,0 +1,41 @@
+Raonament: Comencem amb l'equació donada \( x^2 - y^2 = 105 \). Aquesta equació es pot factoritzar com \( (x - y)(x + y) = 105 \). 
+
+Ara, definim \( a = x - y \) i \( b = x + y \). Així, tenim que \( ab = 105 \). A més, podem expressar \( x \) i \( y \) en funció de \( a \) i \( b \):
+- \( x = \frac{a + b}{2} \)
+- \( y = \frac{b - a}{2} \)
+
+Perquè \( x \) i \( y \) siguin enters positius, tant \( a + b \) com \( b - a \) han de ser parells i \( b \) ha de ser més gran que \( a \).
+
+Ara, trobem les parelles de factors de 105. Els factors de 105 són:
+1. \( 1 \times 105 \)
+2. \( 3 \times 35 \)
+3. \( 5 \times 21 \)
+4. \( 7 \times 15 \)
+
+A partir d'aquests factors, considerem les parelles \( (a, b) \):
+1. \( (1, 105) \)
+2. \( (3, 35) \)
+3. \( (5, 21) \)
+4. \( (7, 15) \)
+
+Ara, comprovem quines d'aquestes parelles donen resultats positius per a \( x \) i \( y \):
+
+1. **Per \( (1, 105) \)**:
+   - \( x = \frac{1 + 105}{2} = 53 \)
+   - \( y = \frac{105 - 1}{2} = 52 \) → (53, 52) és vàlid.
+
+2. **Per \( (3, 35) \)**:
+   - \( x = \frac{3 + 35}{2} = 19 \)
+   - \( y = \frac{35 - 3}{2} = 16 \) → (19, 16) és vàlid.
+
+3. **Per \( (5, 21) \)**:
+   - \( x = \frac{5 + 21}{2} = 13 \)
+   - \( y = \frac{21 - 5}{2} = 8 \) → (13, 8) és vàlid.
+
+4. **Per \( (7, 15) \)**:
+   - \( x = \frac{7 + 15}{2} = 11 \)
+   - \( y = \frac{15 - 7}{2} = 4 \) → (11, 4) és vàlid.
+
+Totes les parelles \( (53, 52) \), \( (19, 16) \), \( (13, 8) \) i \( (11, 4) \) són vàlides i donen un total de 4 parelles ordenades de nombres enters positius.
+
+Resposta: E) 4

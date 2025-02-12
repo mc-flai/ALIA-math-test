@@ -1,0 +1,9 @@
+Raonament: Tenim quatre nombres positius \(a < b < c < d\). Si augmentem un d'aquests nombres en 1, el producte dels quatre nombres canviarà. El producte inicial és \(P = a \cdot b \cdot c \cdot d\). Si augmentem \(a\), el nou producte serà \((a + 1) \cdot b \cdot c \cdot d\). Si augmentem \(b\), el nou producte serà \(a \cdot (b + 1) \cdot c \cdot d\). Si augmentem \(c\), el nou producte serà \(a \cdot b \cdot (c + 1) \cdot d\). Finalment, si augmentem \(d\), el nou producte serà \(a \cdot b \cdot c \cdot (d + 1)\).
+
+Per tal de determinar quin increment resulta en el producte més petit, hem de considerar que, en general, augmentar un nombre més petit (en aquest cas, \(a\), \(b\) o \(c\)) tindrà un impacte més gran en el producte que augmentar un nombre més gran (com \(d\)). Això es deu al fet que el producte es multiplica per un nombre més gran, i per tant, el seu increment afecta menys al producte total.
+
+A més, si comparem augmentar \(b\) o \(c\), podem observar que augmentar \(b\) (el segon nombre més petit) pot ser més beneficiós que augmentar \(c\) (el tercer nombre), ja que \(b\) és més petit que \(c\) i, per tant, el seu increment pot reduir més el producte total.
+
+Per tant, la millor opció per minimitzar el producte és augmentar \(b\) o \(c\), ja que augmentar \(a\) també és una opció, però augmentar \(b\) o \(c\) és més efectiu. Així que la resposta correcta és que podem aconseguir el producte més petit augmentant \(b\) o \(c\).
+
+Resposta: E)

@@ -1,0 +1,35 @@
+Raonament: Tenim quatre punts A, B, C i D en una línia recta amb les següents distàncies: AB = 1 cm, BC = 2 cm, CD = 3 cm i DA = 4 cm. Anem a col·locar els punts en una línia recta i veure com es relacionen entre ells.
+
+1. Col·loquem el punt A en la posició 0 cm.
+2. El punt B estarà a 1 cm d'A, per tant, B estarà a 1 cm.
+3. El punt C estarà a 2 cm de B, així que C estarà a 1 cm + 2 cm = 3 cm.
+4. El punt D estarà a 3 cm de C, així que D estarà a 3 cm + 3 cm = 6 cm.
+5. Ara, hem de comprovar la distància entre D i A. La distància DA és de 4 cm, i com que A està a 0 cm i D a 6 cm, la distància DA és de 6 cm, no de 4 cm.
+
+Això significa que la col·locació inicial no és correcta. Probem una altra col·locació:
+
+1. Col·loquem A a 0 cm.
+2. Col·loquem B a 1 cm.
+3. Col·loquem C a 3 cm (1 cm + 2 cm).
+4. Col·loquem D a 6 cm (3 cm + 3 cm).
+
+Ara, comprovem la distància DA: A (0 cm) a D (6 cm) és de 6 cm, que no coincideix amb la distància que hem de tenir (4 cm). 
+
+Per tant, provem una altra col·locació:
+
+1. Col·loquem A a 0 cm.
+2. Col·loquem D a 4 cm (perquè DA ha de ser 4 cm).
+3. Col·loquem C a 1 cm (A a B) i B a 3 cm (B a C).
+
+Ara, comprovem les distàncies:
+- AB = 1 cm (correcte)
+- BC = 2 cm (C a B, 1 cm a 3 cm, correcte)
+- CD = 3 cm (C a D, 3 cm a 4 cm, incorrecte)
+
+Després de diverses proves, ens adonem que la col·locació no és coherent amb les distàncies donades. 
+
+Finalment, si considerem que A i D són els extrems, la distància entre 0 cm i 4 cm és de 4 cm, que és correcta. 
+
+Per tant, els extrems són A i D.
+
+Resposta: A) Ai D

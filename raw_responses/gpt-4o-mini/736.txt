@@ -1,0 +1,30 @@
+Raonament: 
+
+El número "aaabbbb" es pot expressar com \( 100000a + 10000a + 1000a + 100b + 10b + b = 111000a + 111b \). 
+
+La suma de les xifres del número "aaabbbb" és \( a + a + a + b + b + b + b = 3a + 4b \).
+
+Segons l'enunciat, aquesta suma de les xifres és igual al nombre de dues xifres "ab", que es pot expressar com \( 10a + b \).
+
+Per tant, podem establir l'equació:
+\[ 3a + 4b = 10a + b \]
+
+Reorganitzant l'equació, obtenim:
+\[ 3a + 4b - b = 10a \]
+\[ 3a + 3b = 10a \]
+\[ 3b = 10a - 3a \]
+\[ 3b = 7a \]
+\[ b = \frac{7a}{3} \]
+
+Això implica que \( a \) ha de ser un múltiple de 3 perquè \( b \) sigui un nombre enter. Les possibles valors per \( a \) (tenint en compte que és una xifra) són 0, 3, 6, i 9.
+
+1. Si \( a = 0 \), \( b = 0 \) (no és vàlid, ja que no podem tenir un número de dues xifres).
+2. Si \( a = 3 \), \( b = \frac{7 \cdot 3}{3} = 7 \).
+3. Si \( a = 6 \), \( b = \frac{7 \cdot 6}{3} = 14 \) (no és vàlid, ja que \( b \) ha de ser una xifra).
+4. Si \( a = 9 \), \( b = \frac{7 \cdot 9}{3} = 21 \) (no és vàlid, ja que \( b \) ha de ser una xifra).
+
+Per tant, la única solució vàlida és \( a = 3 \) i \( b = 7 \).
+
+Finalment, calculem \( a + b = 3 + 7 = 10 \).
+
+Resposta: C) 10

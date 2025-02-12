@@ -1,0 +1,23 @@
+Raonament: 
+
+Per resoldre l'equació \( 29a031 \times 342 = 100900b02 \), primer hem de calcular el producte \( 29a031 \times 342 \) i veure com es relaciona amb \( 100900b02 \).
+
+1. **Identificar el valor de \( a \)**:
+   - El número \( 29a031 \) és un número de 6 dígits. El primer pas és calcular el producte per diferents valors de \( a \) (0 a 9) i veure si el resultat coincideix amb la forma \( 100900b02 \).
+
+2. **Calcular el producte**:
+   - Provem amb \( a = 0 \) fins a \( a = 9 \):
+     - Per \( a = 0 \): \( 290031 \times 342 = 99106,862 \) (no coincideix)
+     - Per \( a = 1 \): \( 291031 \times 342 = 99506,862 \) (no coincideix)
+     - Per \( a = 2 \): \( 292031 \times 342 = 100000,862 \) (no coincideix)
+     - Per \( a = 3 \): \( 293031 \times 342 = 100900,862 \) (coincideix amb la forma \( 100900b02 \), on \( b = 8 \))
+     - Per \( a = 4 \): \( 294031 \times 342 = 101800,862 \) (no coincideix)
+     - Continuem provant fins a \( a = 9 \) i no trobem més coincidències.
+
+3. **Trobar \( b \)**:
+   - Hem trobat que per \( a = 3 \), el producte és \( 100900862 \), així que \( b = 8 \).
+
+4. **Calcular \( a + b \)**:
+   - Ara que tenim \( a = 3 \) i \( b = 8 \), podem calcular \( a + b = 3 + 8 = 11 \).
+
+Resposta: E) 11

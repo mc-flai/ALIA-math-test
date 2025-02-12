@@ -1,0 +1,22 @@
+Raonament: Sabem que els quatre paquets pesen un total de 20 kg i que el tercer paquet, quan els ordenem de menor a major pes, pesa 8 kg. Això significa que els pesos dels paquets han de ser menors que 8 kg per als dos primers i majors que 8 kg per al quart. 
+
+Anomenem els pesos dels paquets com a \(a\), \(b\), \(c\) i \(d\), on \(a < b < c < d\). Sabem que \(c = 8\) kg, així que podem escriure:
+
+\[ a + b + 8 + d = 20 \]
+
+Això es pot simplificar a:
+
+\[ a + b + d = 12 \]
+
+Com que \(a\) i \(b\) han de ser menors que 8 kg i han de ser nombres enters diferents, les possibles combinacions per \(a\) i \(b\) són limitades. Els valors possibles per \(a\) i \(b\) (tenint en compte que no poden ser iguals i han de ser menors que 8) són 1, 2, 3, 4, 5, 6, i 7.
+
+Probem amb les combinacions:
+
+1. Si \(a = 1\), llavors \(b + d = 11\). Les opcions per \(b\) podrien ser 2, 3, 4, 5, 6, 7, però cap d'elles permet que \(d\) sigui un nombre enter diferent i major que 8.
+2. Si \(a = 2\), llavors \(b + d = 10\). Les opcions per \(b\) podrien ser 3, 4, 5, 6, 7. Si \(b = 3\), llavors \(d = 7\) (que és vàlid). Així, tenim \(a = 2\), \(b = 3\), \(c = 8\), \(d = 7\). Aquesta combinació és vàlida.
+3. Si \(a = 3\), llavors \(b + d = 9\). Les opcions per \(b\) podrien ser 4, 5, 6, 7. Si \(b = 4\), llavors \(d = 5\) (que és vàlid). Així, tenim \(a = 3\), \(b = 4\), \(c = 8\), \(d = 5\). Aquesta combinació no és vàlida perquè \(d\) ha de ser més gran que \(c\).
+4. Si \(a = 4\), llavors \(b + d = 8\). Les opcions per \(b\) podrien ser 5, 6, 7, però cap d'elles permet que \(d\) sigui un nombre enter diferent i major que 8.
+
+Per tant, la única combinació vàlida és \(a = 2\), \(b = 3\), \(c = 8\), \(d = 7\). Així que el segon paquet pesa 3 kg.
+
+Resposta: B) 3kg

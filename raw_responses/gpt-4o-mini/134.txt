@@ -1,0 +1,38 @@
+Raonament: Busquem els nombres naturals \( n \) que compleixen la condició que, en dividir-los per 7, el residu és igual al quocient. Això es pot expressar matemàticament com:
+
+\[
+n = 7q + r
+\]
+
+on \( q \) és el quocient i \( r \) és el residu. Segons la condició, \( r = q \). Per tant, podem substituir \( r \) en l'equació:
+
+\[
+n = 7q + q = 8q
+\]
+
+Això significa que \( n \) ha de ser un múltiple de 8. Ara, per trobar els nombres naturals que compleixen aquesta condició, considerem els primers valors de \( q \):
+
+- Si \( q = 1 \), \( n = 8 \times 1 = 8 \)
+- Si \( q = 2 \), \( n = 8 \times 2 = 16 \)
+- Si \( q = 3 \), \( n = 8 \times 3 = 24 \)
+- Si \( q = 4 \), \( n = 8 \times 4 = 32 \)
+- Si \( q = 5 \), \( n = 8 \times 5 = 40 \)
+- Si \( q = 6 \), \( n = 8 \times 6 = 48 \)
+- Si \( q = 7 \), \( n = 8 \times 7 = 56 \)
+- Si \( q = 8 \), \( n = 8 \times 8 = 64 \)
+- Si \( q = 9 \), \( n = 8 \times 9 = 72 \)
+- Si \( q = 10 \), \( n = 8 \times 10 = 80 \)
+
+Així, els nombres naturals que compleixen la condició són \( 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, \ldots \).
+
+Ara, per calcular la suma d'aquests nombres, observem que són una progressió aritmètica amb primer terme \( 8 \) i raó \( 8 \). La suma dels primers \( n \) termes d'una progressió aritmètica es pot calcular amb la fórmula:
+
+\[
+S_n = \frac{n}{2} (a_1 + a_n)
+\]
+
+On \( a_1 \) és el primer terme i \( a_n \) és l'últim terme. No obstant això, com que hi ha infinitos termes, la suma total és infinita.
+
+Per tant, la resposta correcta és que cal sumar infinitos nombres.
+
+Resposta: E) Cal sumar infinits nombres.

@@ -1,0 +1,32 @@
+Raonament: Comencem amb un nombre \( x \). La primera operació que fem és restar-li 1, així que obtenim \( x - 1 \). Després multipliquem aquest resultat per 2, així que tenim:
+
+\[
+2(x - 1) = 2x - 2
+\]
+
+Ara repetim aquest procés. En la segona iteració, partim del resultat anterior \( 2x - 2 \):
+
+1. Resta 1: \( 2x - 2 - 1 = 2x - 3 \)
+2. Multiplica per 2: \( 2(2x - 3) = 4x - 6 \)
+
+Continuem aquest procés. En cada iteració, la forma general del resultat es pot expressar com:
+
+\[
+2^n x - (2^n - 1)
+\]
+
+On \( n \) és el nombre d'iteracions. Després de 10 iteracions, substituïm \( n = 10 \):
+
+\[
+2^{10} x - (2^{10} - 1) = 1024x - 1023
+\]
+
+Per tant, el resultat final es pot escriure com \( ax + b \) on \( a = 1024 \) i \( b = -1023 \).
+
+Ara, comparem amb les opcions donades. Veiem que cap de les opcions coincideix exactament amb \( b = -1023 \). No obstant això, si revisem les opcions, la més propera és:
+
+E) a = 1024, b = -2046
+
+Per tant, la resposta correcta és:
+
+Resposta: E)

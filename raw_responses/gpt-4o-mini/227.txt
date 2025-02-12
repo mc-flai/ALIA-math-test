@@ -1,0 +1,9 @@
+Raonament: La paraula "CANGUR" té 6 lletres, de les quals 2 són vocals (A, U) i 4 són consonants (C, N, G, R). Primer, calculem el total d'ordenacions possibles de les lletres sense cap restricció. Com que no hi ha lletres repetides, el nombre total d'ordenacions és 6! (factorial de 6), que és igual a 720.
+
+Ara, per trobar les ordenacions en què les dues vocals queden juntes, podem considerar les dues vocals (A i U) com una sola unitat o "bloc". Així, en comptes de tenir 6 lletres, ara tenim 5 unitats: (AU), C, N, G, R. El nombre d'ordenacions d'aquestes 5 unitats és 5!, que és igual a 120.
+
+Dins del bloc (AU), les vocals A i U es poden ordenar de 2 maneres (AU o UA). Per tant, el nombre total d'ordenacions en què les dues vocals queden juntes és 5! * 2 = 120 * 2 = 240.
+
+Finalment, per trobar el nombre d'ordenacions en què les dues vocals no queden juntes, restem el nombre d'ordenacions en què queden juntes del total d'ordenacions possibles: 720 - 240 = 480.
+
+Resposta: E) 480

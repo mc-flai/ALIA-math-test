@@ -1,0 +1,32 @@
+Raonament: Cada saltador salta una distància fixa en cada salt, i la seva distància de salt és la següent: 
+- Albert: 70 cm
+- Berta: 80 cm
+- Carles: 85 cm
+- David: 90 cm
+- Esther: 95 cm
+
+La pista circular té una longitud de 400 metres, que equival a 40,000 cm. Després de 10 voltes, cada saltador haurà saltat una distància total de:
+- Albert: 10 * 70 cm = 700 cm
+- Berta: 10 * 80 cm = 800 cm
+- Carles: 10 * 85 cm = 850 cm
+- David: 10 * 90 cm = 900 cm
+- Esther: 10 * 95 cm = 950 cm
+
+Ara, hem de calcular la posició final de cada saltador en la pista circular de 40,000 cm, tenint en compte que el forat ocupa 75 cm. La posició final es pot trobar calculant el residu de la distància total saltada dividida per la longitud de la pista (40,000 cm).
+
+- Albert: 700 cm % 40,000 cm = 700 cm (cau al forat, ja que 700 cm està dins del forat de 75 cm)
+- Berta: 800 cm % 40,000 cm = 800 cm (cau al forat, ja que 800 cm està dins del forat de 75 cm)
+- Carles: 850 cm % 40,000 cm = 850 cm (cau al forat, ja que 850 cm està dins del forat de 75 cm)
+- David: 900 cm % 40,000 cm = 900 cm (cau al forat, ja que 900 cm està dins del forat de 75 cm)
+- Esther: 950 cm % 40,000 cm = 950 cm (cau al forat, ja que 950 cm està dins del forat de 75 cm)
+
+Tots els saltadors cauen al forat, excepte el que salta una distància que no coincideix amb la posició del forat. Per tant, hem de calcular si algun d'ells salta una distància que els manté fora del forat.
+
+El forat ocupa 75 cm, així que hem de veure si la posició final de cada saltador és menor que 75 cm o si es troba en una posició que no coincideix amb el forat. 
+
+Després de revisar les distàncies, veiem que:
+- Albert, Berta, Carles, David i Esther cauen al forat.
+
+Per tant, la resposta correcta és que cap d'ells no ha caigut al forat, i la resposta correcta és la que no coincideix amb el forat.
+
+Resposta: C) Albert.

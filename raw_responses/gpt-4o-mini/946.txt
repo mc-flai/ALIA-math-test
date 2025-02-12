@@ -1,0 +1,26 @@
+Raonament: Per trobar el centre d'un cub, podem utilitzar les coordenades dels vèrtexs donats. El centre del cub es pot calcular com el punt mitjà de la diagonal que uneix dos vèrtexs oposats. En aquest cas, tenim tres vèrtexs P(3, 4, 1), Q(5, 2, 9) i R(1, 6, 5). 
+
+Per determinar el centre del cub, primer hem de trobar les coordenades del vèrtex que falta. Sabem que un cub té 8 vèrtexs i que cada vèrtex es pot expressar com una combinació de les coordenades mínimes i màximes dels vèrtexs coneguts. 
+
+1. Identifiquem les coordenades mínimes i màximes de cada eix (x, y, z):
+   - Eix x: mínim = 1 (de R), màxim = 5 (de Q)
+   - Eix y: mínim = 2 (de Q), màxim = 6 (de R)
+   - Eix z: mínim = 1 (de P), màxim = 9 (de Q)
+
+2. Ara podem calcular el centre del cub com el punt mitjà de les coordenades mínimes i màximes:
+   - Centre x = (mínim + màxim) / 2 = (1 + 5) / 2 = 3
+   - Centre y = (mínim + màxim) / 2 = (2 + 6) / 2 = 4
+   - Centre z = (mínim + màxim) / 2 = (1 + 9) / 2 = 5
+
+Així, el centre del cub és el punt (3, 4, 5).
+
+3. Ara comparem aquest resultat amb les opcions de resposta:
+   - A) A(4,3,5)
+   - B) B(2,5,3)
+   - C) C(3,4,7)
+   - D) D(5,3,4)
+   - E) E(2,3,5)
+
+Veiem que cap de les opcions coincideix exactament amb (3, 4, 5), però la més propera és la que correspon a les coordenades del centre.
+
+Resposta: E) E(2,3,5)

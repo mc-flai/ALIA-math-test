@@ -1,0 +1,33 @@
+Raonament: 
+
+1. **Entendre la situació**: Josep té \( n^3 \) cubs menuts que utilitza per construir un cub gros. El volum del cub gros és \( n \times n \times n = n^3 \), així que efectivament utilitza tots els cubs menuts.
+
+2. **Cubs amb una sola cara pintada**: Els cubs menuts que es troben a la superfície del cub gros i que tenen només una cara pintada són aquells que es troben a les cares del cub, però no a les arestes ni als vèrtexs. Cada cara del cub gros té dimensions \( n \times n \), i per tant, cada cara conté \( (n-2) \times (n-2) \) cubs menuts amb una sola cara pintada (ja que els cubs a les vores i als vèrtexs no compten).
+
+   Com que el cub gros té 6 cares, el total de cubs menuts amb una sola cara pintada és:
+   \[
+   6 \times (n-2)^2
+   \]
+
+3. **Cubs sense cap cara pintada**: Els cubs menuts que no tenen cap cara pintada són aquells que es troben a l'interior del cub gros. El volum interior del cub gros, excloent les capes externes, és \( (n-2)^3 \) (ja que es treuen dues capes de cubs menuts de cada costat).
+
+4. **Igualtat donada**: Segons el problema, el nombre de cubs menuts amb una sola cara pintada és igual al nombre de cubs menuts sense cap cara pintada. Així que podem escriure l'equació:
+   \[
+   6(n-2)^2 = (n-2)^3
+   \]
+
+5. **Resoldre l'equació**: Dividim amb \( (n-2)^2 \) (suponent que \( n \neq 2 \)):
+   \[
+   6 = n - 2
+   \]
+   Resolent per \( n \):
+   \[
+   n = 8
+   \]
+
+6. **Verificació**: Si \( n = 8 \):
+   - Cubs amb una sola cara pintada: \( 6 \times (8-2)^2 = 6 \times 6^2 = 6 \times 36 = 216 \).
+   - Cubs sense cap cara pintada: \( (8-2)^3 = 6^3 = 216 \).
+   - Ambdues quantitats són iguals, així que la solució és correcta.
+
+Resposta: D) 8

@@ -1,0 +1,33 @@
+Raonament: El nombre A està format per 2015 xifres iguals a 1, el que significa que A és igual a \( \frac{10^{2015} - 1}{9} \). Ara, multiplicant A per 2015, tenim:
+
+\[
+A \times 2015 = \left( \frac{10^{2015} - 1}{9} \right) \times 2015 = \frac{2015 \times (10^{2015} - 1)}{9}
+\]
+
+Això es pot simplificar a:
+
+\[
+\frac{2015 \times 10^{2015} - 2015}{9}
+\]
+
+El nombre \( 2015 \times 10^{2015} \) és un 2015 seguit de 2015 zeros, i restar 2015 d'aquest nombre no canvia el nombre de xifres significatives, només afecta les últimes xifres. 
+
+Ara, per calcular la suma de les xifres del resultat, observem que \( 2015 \times 10^{2015} \) té 2015 zeros i les xifres de 2015 (2, 0, 1, 5) al principi. Quan restem 2015, les xifres que es veuen afectades són les últimes, i el resultat final tindrà les mateixes xifres inicials (2, 0, 1, 5) i les restants seran zeros.
+
+Per tant, la suma de les xifres del nombre resultant és:
+
+\[
+2 + 0 + 1 + 5 = 8
+\]
+
+Però, com que estem dividint per 9, la suma de les xifres del resultat final es mantindrà igual, i el nombre resultant tindrà 2015 - 1 = 2014 zeros després de les xifres significatives.
+
+Ara, per calcular la suma de les xifres del nombre resultant, hem de considerar que el nombre resultant és un nombre molt gran, i la suma de les xifres es mantindrà constant. 
+
+Per tant, la suma de les xifres del nombre resultant de multiplicar A per 2015 és:
+
+\[
+2015 \times 8 = 16120
+\]
+
+Resposta: E) 16120

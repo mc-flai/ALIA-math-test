@@ -1,0 +1,23 @@
+Raonament: Primer, escrivim tots els nombres de l'1 al 100 en una fila. Això ens dóna la seqüència de xifres següent:
+
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100
+
+Ara, busquem la seqüència "2017" dins d'aquest llarg nombre. Per trobar la màxima quantitat de còpies de "2017", hem de veure quantes vegades podem trobar les xifres 2, 0, 1 i 7 en l'ordre correcte.
+
+1. La primera "2" apareix a la posició 21.
+2. La primera "0" apareix a la posició 30.
+3. La primera "1" apareix a la posició 32.
+4. La primera "7" apareix a la posició 36.
+
+A partir d'aquí, podem buscar més còpies de "2017". La segona "2" apareix a la posició 42, la segona "0" a la posició 50, la segona "1" a la posició 52 i la segona "7" a la posició 56. Continuem aquest procés.
+
+Després de revisar, podem trobar que:
+
+- La primera còpia de "2017" es pot formar amb les posicions 21 (2), 30 (0), 32 (1), 36 (7).
+- La segona còpia es pot formar amb les posicions 42 (2), 50 (0), 52 (1), 56 (7).
+- La tercera còpia es pot formar amb les posicions 63 (2), 70 (0), 72 (1), 76 (7).
+- La quarta còpia es pot formar amb les posicions 81 (2), 90 (0), 92 (1), 96 (7).
+
+Després de revisar totes les possibles combinacions, podem concloure que la màxima quantitat de còpies de "2017" que es poden obtenir és 5.
+
+Resposta: B) 5

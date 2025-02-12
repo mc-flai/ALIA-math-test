@@ -1,0 +1,49 @@
+Raonament: Per determinar durant quants minuts un rellotge electrònic mostra exactament 3 zeros, hem de considerar les hores i minuts que contenen la combinació "00:00" a "23:59". 
+
+1. **Format del rellotge**: El rellotge mostra hores i minuts en format 24 hores, és a dir, de "00:00" a "23:59".
+2. **Casos amb 3 zeros**: Hem de buscar les combinacions que contenen exactament tres zeros. Les possibles combinacions són:
+   - "00:00" (1 minut)
+   - "00:01" (1 minut)
+   - "00:02" (1 minut)
+   - "00:03" (1 minut)
+   - "00:04" (1 minut)
+   - "00:05" (1 minut)
+   - "00:06" (1 minut)
+   - "00:07" (1 minut)
+   - "00:08" (1 minut)
+   - "00:09" (1 minut)
+   - "01:00" (1 minut)
+   - "02:00" (1 minut)
+   - "03:00" (1 minut)
+   - "04:00" (1 minut)
+   - "05:00" (1 minut)
+   - "06:00" (1 minut)
+   - "07:00" (1 minut)
+   - "08:00" (1 minut)
+   - "09:00" (1 minut)
+   - "10:00" (1 minut)
+   - "20:00" (1 minut)
+   - "21:00" (1 minut)
+   - "22:00" (1 minut)
+   - "23:00" (1 minut)
+
+3. **Total de minuts**: Ara comptem els minuts:
+   - "00:00" a "00:09" = 10 minuts
+   - "01:00" = 1 minut
+   - "02:00" = 1 minut
+   - "03:00" = 1 minut
+   - "04:00" = 1 minut
+   - "05:00" = 1 minut
+   - "06:00" = 1 minut
+   - "07:00" = 1 minut
+   - "08:00" = 1 minut
+   - "09:00" = 1 minut
+   - "10:00" = 1 minut
+   - "20:00" = 1 minut
+   - "21:00" = 1 minut
+   - "22:00" = 1 minut
+   - "23:00" = 1 minut
+
+Sumant tots aquests minuts, obtenim un total de 22 minuts.
+
+Resposta: C) 22

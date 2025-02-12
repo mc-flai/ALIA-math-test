@@ -1,0 +1,58 @@
+Raonament: 
+Sigui N un nombre de dues xifres, que podem expressar com \( N = 10a + b \), on \( a \) és la xifra de les desenes i \( b \) és la xifra de les unitats. La suma de les seues xifres és \( a + b \). Segons l'enunciat, el quocient del nombre N entre la suma de les seues xifres és 8, és a dir:
+
+\[
+\frac{N}{a + b} = 8
+\]
+
+Substituïm N:
+
+\[
+\frac{10a + b}{a + b} = 8
+\]
+
+Multiplicant amb \( a + b \) per eliminar el denominador, obtenim:
+
+\[
+10a + b = 8(a + b)
+\]
+
+Desenvolupant l'equació:
+
+\[
+10a + b = 8a + 8b
+\]
+
+Reorganitzant els termes:
+
+\[
+10a - 8a = 8b - b
+\]
+
+Això simplifica a:
+
+\[
+2a = 7b
+\]
+
+Per tant, podem expressar \( a \) en funció de \( b \):
+
+\[
+a = \frac{7b}{2}
+\]
+
+Com que \( a \) i \( b \) han de ser xifres (0-9), \( 7b \) ha de ser un nombre parell perquè \( a \) sigui un nombre enter. Això implica que \( b \) ha de ser un nombre parell. Les opcions per \( b \) són 0, 2, 4, 6, o 8.
+
+Avaluem cada opció:
+
+1. Si \( b = 0 \): \( a = \frac{7 \cdot 0}{2} = 0 \) (no és vàlid, no és un nombre de dues xifres).
+2. Si \( b = 2 \): \( a = \frac{7 \cdot 2}{2} = 7 \) (nombre vàlid: 72).
+3. Si \( b = 4 \): \( a = \frac{7 \cdot 4}{2} = 14 \) (no és vàlid, \( a \) ha de ser una xifra).
+4. Si \( b = 6 \): \( a = \frac{7 \cdot 6}{2} = 21 \) (no és vàlid).
+5. Si \( b = 8 \): \( a = \frac{7 \cdot 8}{2} = 28 \) (no és vàlid).
+
+Només la combinació \( a = 7 \) i \( b = 2 \) és vàlida, resultant en el nombre 72. 
+
+Per tant, la xifra de les unitats del nombre N és 2.
+
+Resposta: B)

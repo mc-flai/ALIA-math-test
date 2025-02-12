@@ -1,0 +1,67 @@
+Raonament: Tenim dues equacions:
+
+1. \( w + x = 3 \)
+2. \( \frac{1}{w} + \frac{1}{x} = 1 \)
+
+Podem reescriure la segona equació com:
+
+\[
+\frac{x + w}{wx} = 1
+\]
+
+Substituïm \( w + x \) de la primera equació:
+
+\[
+\frac{3}{wx} = 1
+\]
+
+Això implica que:
+
+\[
+wx = 3
+\]
+
+Ara tenim un sistema d'equacions:
+
+1. \( w + x = 3 \)
+2. \( wx = 3 \)
+
+Podem considerar \( w \) i \( x \) com les arrels d'un polinomi quadràtic. Si \( w \) i \( x \) són les arrels, el polinomi és:
+
+\[
+t^2 - (w + x)t + wx = 0
+\]
+
+Substituint les nostres equacions:
+
+\[
+t^2 - 3t + 3 = 0
+\]
+
+Ara, utilitzem la fórmula quadràtica per trobar les arrels:
+
+\[
+t = \frac{3 \pm \sqrt{3^2 - 4 \cdot 1 \cdot 3}}{2 \cdot 1} = \frac{3 \pm \sqrt{9 - 12}}{2} = \frac{3 \pm \sqrt{-3}}{2}
+\]
+
+Les arrels són complexes, però podem continuar amb el càlcul de \( \frac{x}{w} + \frac{w}{x} \):
+
+\[
+\frac{x}{w} + \frac{w}{x} = \frac{x^2 + w^2}{wx}
+\]
+
+Sabem que \( wx = 3 \) i podem trobar \( x^2 + w^2 \) utilitzant la identitat:
+
+\[
+x^2 + w^2 = (w + x)^2 - 2wx = 3^2 - 2 \cdot 3 = 9 - 6 = 3
+\]
+
+Per tant:
+
+\[
+\frac{x^2 + w^2}{wx} = \frac{3}{3} = 1
+\]
+
+Així que la resposta és:
+
+Resposta: B)

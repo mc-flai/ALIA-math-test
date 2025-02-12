@@ -1,0 +1,61 @@
+Raonament: Comencem per reorganitzar l'equació donada \( xy + 4x - 13 = x^2 \). Podem reescriure-la com:
+
+\[
+xy - x^2 + 4x - 13 = 0
+\]
+
+Això és una equació lineal en \( y \) per a un valor fix de \( x \):
+
+\[
+y = \frac{x^2 - 4x + 13}{x}
+\]
+
+Ara, analitzem el numerador \( x^2 - 4x + 13 \). Aquesta és una funció quadràtica que podem estudiar per veure si pot ser divisible per \( x \) per obtenir un valor enter per a \( y \).
+
+El discriminant d'aquesta funció quadràtica és:
+
+\[
+D = b^2 - 4ac = (-4)^2 - 4 \cdot 1 \cdot 13 = 16 - 52 = -36
+\]
+
+Com que el discriminant és negatiu, la funció quadràtica no té arrels reals, la qual cosa significa que no es pot igualar a zero per a cap valor de \( x \). Això implica que el numerador \( x^2 - 4x + 13 \) és sempre positiu per a tots els valors de \( x \).
+
+Ara, per a que \( y \) sigui un nombre enter, el numerador ha de ser divisible per \( x \). Això només pot passar si \( x \) és un divisor de \( x^2 - 4x + 13 \). 
+
+Analitzem els valors possibles de \( x \):
+
+1. Si \( x = 1 \):
+   \[
+   y = \frac{1^2 - 4 \cdot 1 + 13}{1} = \frac{1 - 4 + 13}{1} = 10 \quad \text{(satisfà)}
+   \]
+
+2. Si \( x = -1 \):
+   \[
+   y = \frac{(-1)^2 - 4 \cdot (-1) + 13}{-1} = \frac{1 + 4 + 13}{-1} = -18 \quad \text{(satisfà)}
+   \]
+
+3. Si \( x = 2 \):
+   \[
+   y = \frac{2^2 - 4 \cdot 2 + 13}{2} = \frac{4 - 8 + 13}{2} = \frac{9}{2} \quad \text{(no satisfà)}
+   \]
+
+4. Si \( x = -2 \):
+   \[
+   y = \frac{(-2)^2 - 4 \cdot (-2) + 13}{-2} = \frac{4 + 8 + 13}{-2} = -12.5 \quad \text{(no satisfà)}
+   \]
+
+5. Si \( x = 3 \):
+   \[
+   y = \frac{3^2 - 4 \cdot 3 + 13}{3} = \frac{9 - 12 + 13}{3} = \frac{10}{3} \quad \text{(no satisfà)}
+   \]
+
+6. Si \( x = -3 \):
+   \[
+   y = \frac{(-3)^2 - 4 \cdot (-3) + 13}{-3} = \frac{9 + 12 + 13}{-3} = -34/3 \quad \text{(no satisfà)}
+   \]
+
+Continuant amb aquest procés, podem veure que només hem trobat dues solucions enteres: \( (1, 10) \) i \( (-1, -18) \).
+
+Per tant, el nombre total de parells \( (x, y) \) que satisfan l'equació és 2.
+
+Resposta: C)

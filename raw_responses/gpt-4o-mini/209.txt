@@ -1,0 +1,74 @@
+Raonament: Per resoldre la fracció \( A = \frac{N}{D} \), on \( N \) és el numerador i \( D \) és el denominador, analitzem primer els termes de cada suma.
+
+**Numerador \( N \)**:
+Els termes del numerador són de la forma \( n \cdot (5n) \cdot (25n) \), on \( n \) varia de 1 a 2016. Així, podem escriure:
+
+\[
+N = \sum_{n=1}^{2016} n \cdot (5n) \cdot (25n) = \sum_{n=1}^{2016} 125n^3 = 125 \sum_{n=1}^{2016} n^3
+\]
+
+Sabem que la suma dels cubs dels primers \( m \) nombres naturals és:
+
+\[
+\sum_{k=1}^{m} k^3 = \left( \frac{m(m+1)}{2} \right)^2
+\]
+
+Per tant, per \( m = 2016 \):
+
+\[
+\sum_{n=1}^{2016} n^3 = \left( \frac{2016 \cdot 2017}{2} \right)^2
+\]
+
+Calculant:
+
+\[
+\frac{2016 \cdot 2017}{2} = 2033136
+\]
+
+Així que:
+
+\[
+\sum_{n=1}^{2016} n^3 = (2033136)^2
+\]
+
+Per tant, el numerador \( N \) és:
+
+\[
+N = 125 \cdot (2033136)^2
+\]
+
+**Denominador \( D \)**:
+Els termes del denominador són de la forma \( n \cdot (2n) \cdot (4n) \), així que podem escriure:
+
+\[
+D = \sum_{n=1}^{2016} n \cdot (2n) \cdot (4n) = \sum_{n=1}^{2016} 8n^3 = 8 \sum_{n=1}^{2016} n^3
+\]
+
+Per tant, el denominador \( D \) és:
+
+\[
+D = 8 \cdot (2033136)^2
+\]
+
+**Fracció \( A \)**:
+Ara podem escriure la fracció \( A \):
+
+\[
+A = \frac{N}{D} = \frac{125 \cdot (2033136)^2}{8 \cdot (2033136)^2} = \frac{125}{8}
+\]
+
+Simplificant:
+
+\[
+A = 15.625
+\]
+
+Sabem que \( A \) és el cub d'un nombre racional. Comprovem si \( 15.625 \) és un cub perfecte:
+
+\[
+15.625 = \left( \frac{25}{2} \right)^3
+\]
+
+Per tant, \( A \) és efectivament el cub d'un nombre racional.
+
+**Resposta**: D) 15,625

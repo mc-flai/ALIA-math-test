@@ -1,0 +1,13 @@
+Raonament: Tenim una funció \( f: \mathbb{Z} \to \mathbb{Z} \) que és estrictament creixent, és a dir, si \( m > n \) llavors \( f(m) > f(n) \). També se'ns dóna que \( f(f(k)) \leq f(k + 1) \) per a cada \( k \in \mathbb{Z} \) i que \( f(1000) = 1000 \).
+
+Com que \( f \) és estrictament creixent, podem deduir que \( f(k) \) no pot ser menor que \( k \) per a cap \( k \) que sigui menor que 1000, ja que si \( k < 1000 \), llavors \( f(k) < f(1000) = 1000 \) i, per tant, \( f(k) \) hauria de ser un nombre enter menor que 1000, cosa que no pot passar si \( f(k) \) ha de ser estrictament creixent i no pot repetir valors.
+
+Per tant, per a \( k < 1000 \), \( f(k) \) ha de ser almenys 1000, cosa que és impossible. Així, per a \( k < 1000 \), \( f(k) \) ha de ser igual a \( k \) o superior.
+
+Ara, considerem \( k = 1000 \). Sabem que \( f(1000) = 1000 \). Si considerem \( k = 1001 \), per la propietat de creixement estricte, \( f(1001) \) ha de ser major que 1000, així que \( f(1001) \geq 1001 \).
+
+Si continuem amb \( k = 2017 \), per la mateixa raó, \( f(2017) \) ha de ser major que 2016, i com que \( f \) és estrictament creixent, \( f(2017) \) ha de ser almenys 2017. No obstant això, no podem assegurar que \( f(2017) \) sigui exactament 2017, ja que podria ser 2018 o un valor més gran, depenent de la forma exacta de la funció \( f \).
+
+Per tant, la resposta correcta és que no es pot determinar amb certesa si \( f(2017) \) és igual a 2017 o 2018, però sabem que no pot ser menor que 2017.
+
+Resposta: D)

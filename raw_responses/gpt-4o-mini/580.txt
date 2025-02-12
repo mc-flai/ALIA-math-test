@@ -1,0 +1,20 @@
+Raonament: Si un nombre enter positiu \( N \) es divideix per 6 i el residu és 5, podem expressar \( N \) de la següent manera:
+
+\[ N = 6k + 5 \]
+
+on \( k \) és un nombre enter. Ara, per trobar el residu de \( N^2 \) quan es divideix per 12, primer calculem \( N^2 \):
+
+\[ N^2 = (6k + 5)^2 = 36k^2 + 60k + 25 \]
+
+Ara, analitzem el residu de \( N^2 \) quan es divideix per 12. Podem simplificar \( N^2 \) en termes de 12:
+
+1. El terme \( 36k^2 \) és múltiple de 12, així que el seu residu és 0.
+2. El terme \( 60k \) també és múltiple de 12, així que el seu residu és 0.
+3. Ara, calculem el residu de 25 quan es divideix per 12:
+
+\[ 25 \div 12 = 2 \quad \text{(quocient)} \]
+\[ 25 - 12 \times 2 = 25 - 24 = 1 \quad \text{(residu)} \]
+
+Per tant, el residu de \( N^2 \) quan es divideix per 12 és 1.
+
+Resposta: A)

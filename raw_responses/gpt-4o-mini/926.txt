@@ -1,0 +1,47 @@
+Raonament: Per resoldre el problema, hem de trobar sis nombres enters positius, amb el més gran sent n, de manera que només hi hagi una parella (a, b) amb a < b on a no sigui divisor de b. 
+
+Comencem a analitzar les opcions de resposta:
+
+1. **Opció A) 9**: Si considerem els nombres 1, 2, 3, 4, 5, 9, podem veure que:
+   - 1 és divisor de tots.
+   - 2 és divisor de 4.
+   - 3 és divisor de 9.
+   - 4 és divisor de 8 (si el considerem).
+   - 5 no és divisor de cap dels altres.
+   - La parella (5, 9) compleix que 5 no és divisor de 9, però hi ha altres parelles que no compleixen la condició. Per tant, no és vàlid.
+
+2. **Opció B) 12**: Considerem els nombres 1, 2, 3, 4, 6, 12:
+   - 1 és divisor de tots.
+   - 2 és divisor de 4 i 6.
+   - 3 és divisor de 6 i 12.
+   - 4 és divisor de 12.
+   - 6 és divisor de 12.
+   - La parella (4, 12) compleix que 4 no és divisor de 12, però hi ha altres parelles que no compleixen la condició. Per tant, no és vàlid.
+
+3. **Opció C) 24**: Considerem els nombres 1, 2, 3, 4, 6, 24:
+   - 1 és divisor de tots.
+   - 2 és divisor de 4 i 6.
+   - 3 és divisor de 6 i 24.
+   - 4 és divisor de 24.
+   - 6 és divisor de 24.
+   - La parella (6, 24) compleix que 6 no és divisor de 24, però hi ha altres parelles que no compleixen la condició. Per tant, no és vàlid.
+
+4. **Opció D) 36**: Considerem els nombres 1, 2, 3, 4, 6, 36:
+   - 1 és divisor de tots.
+   - 2 és divisor de 4 i 6.
+   - 3 és divisor de 6 i 36.
+   - 4 és divisor de 36.
+   - 6 és divisor de 36.
+   - La parella (6, 36) compleix que 6 no és divisor de 36, però hi ha altres parelles que no compleixen la condició. Per tant, no és vàlid.
+
+5. **Opció E) 45**: Considerem els nombres 1, 3, 5, 9, 15, 45:
+   - 1 és divisor de tots.
+   - 3 és divisor de 9 i 45.
+   - 5 és divisor de 45.
+   - 9 és divisor de 45.
+   - 15 és divisor de 45.
+   - La parella (5, 9) compleix que 5 no és divisor de 9, i no hi ha altres parelles que compleixin la condició. Per tant, és vàlid.
+
+Després d'analitzar totes les opcions, la menor n que compleix la condició és 45.
+
+Resposta: E)

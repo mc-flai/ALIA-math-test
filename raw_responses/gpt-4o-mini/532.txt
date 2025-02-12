@@ -1,0 +1,32 @@
+Raonament: Comencem per identificar els nombres enters positius que compleixen les condicions donades. 
+
+1. **Producte dels dos més menuts**: El producte és 16. Els parells de nombres enters positius que donen 16 són:
+   - (1, 16)
+   - (2, 8)
+   - (4, 4) (no és vàlid perquè els nombres han de ser distints)
+
+   Així que les possibles combinacions per als dos més menuts són (1, 16) i (2, 8).
+
+2. **Producte dels dos més grans**: El producte és 225. Els parells de nombres enters positius que donen 225 són:
+   - (1, 225)
+   - (3, 75)
+   - (5, 45)
+   - (9, 25)
+   - (15, 15) (no és vàlid perquè els nombres han de ser distints)
+
+   Així que les possibles combinacions per als dos més grans són (1, 225), (3, 75), (5, 45), (9, 25).
+
+Ara, hem de combinar les opcions dels dos més menuts amb les dels dos més grans, assegurant-nos que tots els nombres siguin distints.
+
+- Si considerem (2, 8) com els dos més menuts, hem de buscar dos nombres més grans que multiplicats donin 225 i que no siguin 2 ni 8. 
+  - Provem amb (9, 25): 2, 8, 9, 25 són tots distints i compleixen les condicions.
+  
+  Ara calculem la suma: 
+  \( 2 + 8 + 9 + 25 = 44 \).
+
+- Si considerem (1, 16) com els dos més menuts, hem de buscar dos nombres més grans que multiplicats donin 225 i que no siguin 1 ni 16. 
+  - No podem trobar una combinació que compleixi les condicions, ja que 1 i 16 no permeten que els altres nombres siguin distints i positius.
+
+Per tant, la única combinació vàlida és (2, 8) i (9, 25), que ens dona una suma de 44.
+
+Resposta: C) 44.

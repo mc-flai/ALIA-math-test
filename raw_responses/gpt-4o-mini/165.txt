@@ -1,0 +1,46 @@
+Raonament: 
+
+Per trobar els nombres de dues xifres que són múltiples de 3 i que compleixen que el valor absolut de la diferència entre les seves xifres és 3, seguirem els següents passos:
+
+1. **Definició de les xifres**: Considerem un nombre de dues xifres que podem representar com \( ab \), on \( a \) és la xifra de les desenes i \( b \) és la xifra de les unitats. Així, el nombre es pot expressar com \( 10a + b \).
+
+2. **Condició de la diferència**: La condició que el valor absolut de la diferència entre les dues xifres és 3 es pot expressar com:
+   \[
+   |a - b| = 3
+   \]
+   Això implica dues possibilitats:
+   - \( a - b = 3 \) (1)
+   - \( b - a = 3 \) (2)
+
+3. **Solució de les equacions**:
+   - De (1): \( a = b + 3 \)
+   - De (2): \( b = a + 3 \)
+
+   Ara, considerem les dues possibilitats:
+
+   **Per a \( a = b + 3 \)**:
+   - \( a \) pot ser 3, 4, 5, 6, 7, 8, 9 (ja que \( a \) ha de ser una xifra de dues xifres).
+   - Això implica que \( b \) pot ser 0, 1, 2, 3, 4, 5, 6 (respectivament).
+   - Els nombres que obtenim són: 30, 41, 52, 63, 74, 85, 96.
+
+   **Per a \( b = a + 3 \)**:
+   - \( b \) pot ser 3, 4, 5, 6, 7, 8, 9 (ja que \( b \) ha de ser una xifra de dues xifres).
+   - Això implica que \( a \) pot ser 0, 1, 2, 3, 4, 5, 6 (respectivament).
+   - Els nombres que obtenim són: 13, 24, 35, 46, 57, 68, 79.
+
+4. **Filtrar els múltiples de 3**: Ara, hem de verificar quins d'aquests nombres són múltiples de 3:
+   - Nombres de la primera llista: 30 (sí), 41 (no), 52 (no), 63 (sí), 74 (no), 85 (no), 96 (sí).
+   - Nombres de la segona llista: 13 (no), 24 (sí), 35 (no), 46 (no), 57 (sí), 68 (no), 79 (no).
+
+   Els nombres que són múltiples de 3 són: 30, 63, 96, 24, 57.
+
+5. **Comptar els nombres**: Ara comptem els nombres que hem trobat:
+   - 30
+   - 63
+   - 96
+   - 24
+   - 57
+
+   En total, tenim 5 nombres.
+
+Resposta: D) 5

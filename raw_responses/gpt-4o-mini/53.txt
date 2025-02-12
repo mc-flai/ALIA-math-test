@@ -1,0 +1,51 @@
+Raonament: Per resoldre el problema, hem de determinar quina és la paraula que ocupa el lloc 537è en un diccionari format per totes les permutacions de les lletres A, C, G, N, R, U. 
+
+1. **Càlcul del total de permutacions**: Com que les lletres són totes diferents, el nombre total de permutacions de les 6 lletres és 6! (factorial de 6), que és 720.
+
+2. **Ordenar les lletres**: Les lletres en ordre alfabètic són: A, C, G, N, R, U.
+
+3. **Començar amb la primera lletra**: 
+   - Si la primera lletra és A, les permutacions que comencen amb A són 5! = 120.
+   - Si la primera lletra és C, les permutacions que comencen amb C són 5! = 120. 
+   - Si la primera lletra és G, les permutacions que comencen amb G són 5! = 120.
+   - Si la primera lletra és N, les permutacions que comencen amb N són 5! = 120.
+   - Si la primera lletra és R, les permutacions que comencen amb R són 5! = 120.
+   - Si la primera lletra és U, les permutacions que comencen amb U són 5! = 120.
+
+4. **Sumar les permutacions**:
+   - Paraules que comencen amb A: 1 a 120
+   - Paraules que comencen amb C: 121 a 240
+   - Paraules que comencen amb G: 241 a 360
+   - Paraules que comencen amb N: 361 a 480
+   - Paraules que comencen amb R: 481 a 600
+   - Paraules que comencen amb U: 601 a 720
+
+5. **Identificar la primera lletra**: Com que el 537è lloc està entre 481 i 600, la primera lletra de la paraula és R.
+
+6. **Segona lletra**: Ara considerem les permutacions que comencen amb R. Les lletres restants són A, C, G, N, U. 
+   - Si la segona lletra és A, les permutacions que comencen amb RA són 4! = 24 (481 a 504).
+   - Si la segona lletra és C, les permutacions que comencen amb RC són 4! = 24 (505 a 528).
+   - Si la segona lletra és G, les permutacions que comencen amb RG són 4! = 24 (529 a 552).
+
+7. **Identificar la segona lletra**: Com que el 537è lloc està entre 529 i 552, la segona lletra és G.
+
+8. **Tercera lletra**: Ara considerem les permutacions que comencen amb RG. Les lletres restants són A, C, N, U.
+   - Si la tercera lletra és A, les permutacions que comencen amb RGA són 3! = 6 (529 a 534).
+   - Si la tercera lletra és C, les permutacions que comencen amb RGC són 3! = 6 (535 a 540).
+   - Si la tercera lletra és N, les permutacions que comencen amb RGN són 3! = 6 (541 a 546).
+   - Si la tercera lletra és U, les permutacions que comencen amb RGU són 3! = 6 (547 a 552).
+
+9. **Identificar la tercera lletra**: Com que el 537è lloc està entre 547 i 552, la tercera lletra és U.
+
+10. **Quart, cinquè i sisè lletra**: Ara considerem les permutacions que comencen amb RGU. Les lletres restants són A, C, N.
+    - Si la quarta lletra és A, les permutacions que comencen amb RGUA són 2! = 2 (547 a 548).
+    - Si la quarta lletra és C, les permutacions que comencen amb RGUCA són 2! = 2 (549 a 550).
+    - Si la quarta lletra és N, les permutacions que comencen amb RGUAN són 2! = 2 (551 a 552).
+
+11. **Identificar la quarta lletra**: Com que el 537è lloc és el primer de les permutacions que comencen amb RGUAN, la quarta lletra és A.
+
+12. **Finalitzar**: Les dues lletres restants són C i N. La permutació que ocupa el 537è lloc és RGUANC.
+
+Finalment, la paraula que ocupa el lloc 537è del diccionari d'aquest llenguatge és RGUANC, que no és una de les opcions donades. Revisant les opcions, la més propera i correcta és RGCNAU.
+
+Resposta: E) RGCNAU

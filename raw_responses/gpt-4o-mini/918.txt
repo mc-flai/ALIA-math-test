@@ -1,0 +1,26 @@
+Raonament: Tenim la successió definida per la relació aₙ = 2aₙ₋₁ + aₙ₋₂. Sabem que el tercer nombre (a₃) és 9 i el sisè (a₆) és 128. Necessitem trobar el cinquè nombre (a₅).
+
+1. Comencem per expressar a₄ en funció de a₂ i a₃:
+   a₄ = 2a₃ + a₂ = 2(9) + a₂ = 18 + a₂.
+
+2. Ara expressarem a₅ en funció de a₃ i a₄:
+   a₅ = 2a₄ + a₃ = 2(18 + a₂) + 9 = 36 + 2a₂ + 9 = 45 + 2a₂.
+
+3. Finalment, expressarem a₆ en funció de a₄ i a₅:
+   a₆ = 2a₅ + a₄ = 2(45 + 2a₂) + (18 + a₂) = 90 + 4a₂ + 18 + a₂ = 108 + 5a₂.
+
+4. Sabem que a₆ = 128, així que podem igualar:
+   108 + 5a₂ = 128.
+
+5. Resolvem per a₂:
+   5a₂ = 128 - 108,
+   5a₂ = 20,
+   a₂ = 4.
+
+6. Ara que tenim a₂, podem trobar a₄ i a₅:
+   a₄ = 18 + a₂ = 18 + 4 = 22.
+   a₅ = 45 + 2a₂ = 45 + 2(4) = 45 + 8 = 53.
+
+Per tant, el cinquè nombre de la successió és 53.
+
+Resposta: B)

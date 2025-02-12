@@ -1,0 +1,46 @@
+Raonament: Per resoldre el problema, primer hem de comprendre com funciona l'operació que realitza el robot. Donat un nombre natural \( n \), el robot retorna la suma \( n + k \), on \( k \) és el major divisor de \( n \) diferent de \( n \) mateix.
+
+1. **Identificació del major divisor**: Si \( m \) és un nombre parell que no és divisible per 4, el major divisor de \( m \) diferent de \( m \) és \( \frac{m}{2} \) (ja que \( m \) és parell i no divisible per 4, el divisor més gran que no sigui \( m \) és la seva meitat).
+
+2. **Primera iteració**:
+   - \( n = m \)
+   - \( k = \frac{m}{2} \)
+   - Retornem \( m + \frac{m}{2} = \frac{3m}{2} \)
+
+3. **Segona iteració**:
+   - \( n = \frac{3m}{2} \)
+   - El major divisor de \( \frac{3m}{2} \) diferent de \( \frac{3m}{2} \) és \( \frac{3m}{4} \) (ja que \( \frac{3m}{2} \) és parell i no divisible per 4).
+   - Retornem \( \frac{3m}{2} + \frac{3m}{4} = \frac{3m}{2} + \frac{3m}{4} = \frac{6m}{4} + \frac{3m}{4} = \frac{9m}{4} \)
+
+4. **Tercera iteració**:
+   - \( n = \frac{9m}{4} \)
+   - El major divisor de \( \frac{9m}{4} \) diferent de \( \frac{9m}{4} \) és \( \frac{9m}{8} \).
+   - Retornem \( \frac{9m}{4} + \frac{9m}{8} = \frac{18m}{8} + \frac{9m}{8} = \frac{27m}{8} \)
+
+5. **Quarta iteració**:
+   - \( n = \frac{27m}{8} \)
+   - El major divisor de \( \frac{27m}{8} \) diferent de \( \frac{27m}{8} \) és \( \frac{27m}{16} \).
+   - Retornem \( \frac{27m}{8} + \frac{27m}{16} = \frac{54m}{16} + \frac{27m}{16} = \frac{81m}{16} \)
+
+6. **Cinquena iteració**:
+   - \( n = \frac{81m}{16} \)
+   - El major divisor de \( \frac{81m}{16} \) diferent de \( \frac{81m}{16} \) és \( \frac{81m}{32} \).
+   - Retornem \( \frac{81m}{16} + \frac{81m}{32} = \frac{162m}{32} + \frac{81m}{32} = \frac{243m}{32} \)
+
+7. **Sisena iteració**:
+   - \( n = \frac{243m}{32} \)
+   - El major divisor de \( \frac{243m}{32} \) diferent de \( \frac{243m}{32} \) és \( \frac{243m}{64} \).
+   - Retornem \( \frac{243m}{32} + \frac{243m}{64} = \frac{486m}{64} + \frac{243m}{64} = \frac{729m}{64} \)
+
+Després de 6 iteracions, el robot retorna \( \frac{729m}{64} \).
+
+Ara, analitzem les opcions de resposta:
+A) \( 6m \)  
+B) \( \frac{81m}{32} \)  
+C) \( \frac{9m}{2} \)  
+D) \( 9m \)  
+E) Depèn d'altres divisors de \( m \).
+
+La resposta no coincideix amb cap de les opcions donades, així que la resposta correcta és:
+
+Resposta: E)

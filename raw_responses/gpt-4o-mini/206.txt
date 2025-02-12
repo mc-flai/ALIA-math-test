@@ -1,0 +1,40 @@
+Raonament: 
+
+Per resoldre el problema, hem de trobar nombres enters positius de tres xifres (N = abc) que compleixin les condicions següents:
+
+1. \( a > b > c \)
+2. \( N \) és divisible per 9.
+
+Un nombre és divisible per 9 si la suma de les seves xifres és divisible per 9. Així que hem de considerar la suma \( S = a + b + c \).
+
+Com que \( a \), \( b \) i \( c \) són dígits (0-9) i \( a \) ha de ser almenys 1 (perquè N és un nombre de tres xifres), les possibles combinacions de \( a \), \( b \) i \( c \) han de ser triades de manera que \( a > b > c \).
+
+Els valors possibles per \( a \) són de 1 a 9. Per cada valor de \( a \), hem de trobar valors de \( b \) i \( c \) que siguin menors que \( a \) i que compleixin \( b > c \).
+
+Anem a considerar les possibles combinacions:
+
+1. Si \( a = 3 \): \( b \) pot ser 2, 1; \( c \) pot ser 1, 0. Les combinacions són (3,2,1) i (3,1,0).
+2. Si \( a = 4 \): \( b \) pot ser 3, 2, 1; \( c \) pot ser 2, 1, 0. Les combinacions són (4,3,2), (4,3,1), (4,3,0), (4,2,1), (4,2,0), (4,1,0).
+3. Si \( a = 5 \): \( b \) pot ser 4, 3, 2, 1; \( c \) pot ser 3, 2, 1, 0. Les combinacions són (5,4,3), (5,4,2), (5,4,1), (5,4,0), (5,3,2), (5,3,1), (5,3,0), (5,2,1), (5,2,0), (5,1,0).
+4. Si \( a = 6 \): \( b \) pot ser 5, 4, 3, 2, 1; \( c \) pot ser 4, 3, 2, 1, 0. Les combinacions són (6,5,4), (6,5,3), (6,5,2), (6,5,1), (6,5,0), (6,4,3), (6,4,2), (6,4,1), (6,4,0), (6,3,2), (6,3,1), (6,3,0), (6,2,1), (6,2,0), (6,1,0).
+5. Si \( a = 7 \): \( b \) pot ser 6, 5, 4, 3, 2, 1; \( c \) pot ser 5, 4, 3, 2, 1, 0. Les combinacions són (7,6,5), (7,6,4), (7,6,3), (7,6,2), (7,6,1), (7,6,0), (7,5,4), (7,5,3), (7,5,2), (7,5,1), (7,5,0), (7,4,3), (7,4,2), (7,4,1), (7,4,0), (7,3,2), (7,3,1), (7,3,0), (7,2,1), (7,2,0), (7,1,0).
+6. Si \( a = 8 \): \( b \) pot ser 7, 6, 5, 4, 3, 2, 1; \( c \) pot ser 6, 5, 4, 3, 2, 1, 0. Les combinacions són (8,7,6), (8,7,5), (8,7,4), (8,7,3), (8,7,2), (8,7,1), (8,7,0), (8,6,5), (8,6,4), (8,6,3), (8,6,2), (8,6,1), (8,6,0), (8,5,4), (8,5,3), (8,5,2), (8,5,1), (8,5,0), (8,4,3), (8,4,2), (8,4,1), (8,4,0), (8,3,2), (8,3,1), (8,3,0), (8,2,1), (8,2,0), (8,1,0).
+7. Si \( a = 9 \): \( b \) pot ser 8, 7, 6, 5, 4, 3, 2, 1; \( c \) pot ser 7, 6, 5, 4, 3, 2, 1, 0. Les combinacions són (9,8,7), (9,8,6), (9,8,5), (9,8,4), (9,8,3), (9,8,2), (9,8,1), (9,8,0), (9,7,6), (9,7,5), (9,7,4), (9,7,3), (9,7,2), (9,7,1), (9,7,0), (9,6,5), (9,6,4), (9,6,3), (9,6,2), (9,6,1), (9,6,0), (9,5,4), (9,5,3), (9,5,2), (9,5,1), (9,5,0), (9,4,3), (9,4,2), (9,4,1), (9,4,0), (9,3,2), (9,3,1), (9,3,0), (9,2,1), (9,2,0), (9,1,0).
+
+Ara, hem de comptar quantes d'aquestes combinacions tenen una suma \( S = a + b + c \) que sigui divisible per 9. 
+
+Després de revisar les combinacions, podem trobar que les que compleixen les condicions són:
+
+- (3,2,1) → 6
+- (4,3,2) → 9
+- (5,4,3) → 12
+- (6,5,4) → 15
+- (7,6,5) → 18
+- (8,7,6) → 21
+- (9,8,7) → 24
+
+Només les combinacions (4,3,2), (6,5,4), (7,6,5), (8,7,6) i (9,8,7) són les que sumen 9, 18, 21 i 24 respectivament, que són divisibles per 9.
+
+Finalment, comptant les combinacions vàlides, trobem que hi ha 9 nombres que compleixen les condicions.
+
+Resposta: E) 9

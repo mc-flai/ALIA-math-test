@@ -1,0 +1,31 @@
+Raonament: Tenim un tren amb 11 vagons i un total de 350 passatgers. Sabem que en cada tres vagons consecutius hi ha 99 passatgers. 
+
+Podem dividir els 11 vagons en grups de tres vagons consecutius. Els grups serien:
+- Vagon 1, 2, 3
+- Vagon 4, 5, 6
+- Vagon 7, 8, 9
+- Vagon 10, 11
+
+Això ens dóna 4 grups de tres vagons, però el grup de vagons 10 i 11 no està complet, així que només considerarem els primers tres grups per calcular el nombre de passatgers.
+
+Cada grup de tres vagons té 99 passatgers, així que:
+- Passatgers en els vagons 1, 2, 3: 99
+- Passatgers en els vagons 4, 5, 6: 99
+- Passatgers en els vagons 7, 8, 9: 99
+
+Això suma un total de 297 passatgers en els 9 vagons. Ara, restem aquest total del total de passatgers per saber quants passatgers hi ha en els vagons 10 i 11:
+350 - 297 = 53 passatgers.
+
+Ara, per distribuir els 53 passatgers entre els vagons 10 i 11, podem suposar que el nombre de passatgers en el vagó 10 és igual al del vagó 11, ja que no tenim més informació. Així que si anomenem x al nombre de passatgers en el vagó 10, tindrem:
+x + x = 53
+2x = 53
+x = 26.5
+
+Això no és possible, així que hem de considerar que el vagó 10 pot tenir un nombre diferent de passatgers que el vagó 11. 
+
+Però, per trobar el nombre de passatgers en el vagó 6, podem observar que el vagó 6 forma part del segon grup de tres vagons (4, 5, 6), que té 99 passatgers. Si distribuïm els passatgers de manera equitativa entre els tres vagons, tindrem:
+99 / 3 = 33 passatgers per vagó.
+
+Per tant, el vagó 6 tindrà 33 passatgers.
+
+Resposta: B) 33

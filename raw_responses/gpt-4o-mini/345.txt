@@ -1,0 +1,16 @@
+Raonament: Observem el producte \( A = (2017 - 1)(2016 - 2)(2015 - 3) \ldots (3 - 2015)(2 - 2016)(1 - 2017) \). Si analitzem els termes del producte, podem reescriure'ls de la següent manera:
+
+- El primer terme és \( 2017 - 1 = 2016 \)
+- El segon terme és \( 2016 - 2 = 2014 \)
+- El tercer terme és \( 2015 - 3 = 2012 \)
+- ...
+- El penúltim terme és \( 2 - 2016 = -2014 \)
+- L'últim terme és \( 1 - 2017 = -2016 \)
+
+En total, tenim 2017 termes, i podem observar que hi ha un patró en els valors que s'estan restant. En particular, el terme \( (1009 - 1008) \) apareix en el producte, que és igual a \( 1 \). 
+
+A més, hi ha termes que són negatius, com \( (2 - 2016) \) i \( (1 - 2017) \), que contribueixen a fer que el producte total sigui zero. De fet, el terme \( (1009 - 1008) = 1 \) no afecta el producte, però el terme \( (1 - 2017) = -2016 \) i altres termes negatius faran que el producte sigui zero.
+
+Per tant, el producte total \( A \) és igual a zero.
+
+Resposta: D)

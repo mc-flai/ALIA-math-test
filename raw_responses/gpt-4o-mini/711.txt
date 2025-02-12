@@ -1,0 +1,32 @@
+Raonament: 
+
+El nombre "aaabbbb" es pot expressar com \( 1000a + 100a + 10a + b + b + b + b \), que simplificat és \( 1110a + 4b \). 
+
+El nombre "ab" es pot expressar com \( 10a + b \).
+
+Segons l'enunciat, la suma de les xifres del nombre "aaabbbb" és igual al nombre de dues xifres "ab". Les xifres del nombre "aaabbbb" són tres "a" i quatre "b", així que la suma de les xifres és \( a + a + a + b + b + b + b = 3a + 4b \).
+
+Per tant, tenim la igualtat:
+
+\[ 3a + 4b = 10a + b \]
+
+Ara, podem reorganitzar l'equació:
+
+\[ 3a + 4b - b = 10a \]
+\[ 3a + 3b = 10a \]
+\[ 3b = 10a - 3a \]
+\[ 3b = 7a \]
+\[ b = \frac{7a}{3} \]
+
+Això implica que \( a \) ha de ser un múltiple de 3 perquè \( b \) sigui un nombre enter. Les possibles valors per \( a \) (tenint en compte que \( a \) i \( b \) han de ser dígits, és a dir, entre 0 i 9) són 0, 3, 6, i 9.
+
+1. Si \( a = 0 \), \( b = 0 \) (no és vàlid, ja que no podem tenir "ab" com a nombre de dues xifres).
+2. Si \( a = 3 \), \( b = \frac{7 \cdot 3}{3} = 7 \).
+3. Si \( a = 6 \), \( b = \frac{7 \cdot 6}{3} = 14 \) (no és vàlid, ja que \( b \) ha de ser un dígit).
+4. Si \( a = 9 \), \( b = \frac{7 \cdot 9}{3} = 21 \) (no és vàlid, ja que \( b \) ha de ser un dígit).
+
+Per tant, la única solució vàlida és \( a = 3 \) i \( b = 7 \).
+
+Finalment, calculem \( a + b = 3 + 7 = 10 \).
+
+Resposta: C) 10

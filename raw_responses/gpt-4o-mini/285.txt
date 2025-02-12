@@ -1,0 +1,55 @@
+Raonament: Per resoldre el problema, primer analitzem les dues sumes \(a\) i \(b\).
+
+1. **Càlcul de \(a\)**:
+   \[
+   a = \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{2017}
+   \]
+   Aquesta suma és la suma dels inversos dels nombres enters des de 2 fins a 2017. No hi ha una fórmula tancada per a aquesta suma, però podem expressar-la com:
+   \[
+   a = H_{2017} - 1
+   \]
+   on \(H_n\) és el n-èssim nombre harmònic, que és la suma dels inversos dels nombres enters fins a \(n\).
+
+2. **Càlcul de \(b\)**:
+   \[
+   b = \frac{3}{2} + \frac{5}{3} + \frac{7}{4} + \cdots + \frac{4033}{2017}
+   \]
+   Observem que el numerador de cada terme és una successió d'impares que comença en 3 i acaba en 4033. El numerador pot ser expressat com \(2n + 1\) per \(n\) que va de 1 a 2017. Així, podem reescriure \(b\) com:
+   \[
+   b = \sum_{n=1}^{2017} \frac{2n + 1}{n + 1}
+   \]
+   Separant els termes, tenim:
+   \[
+   b = \sum_{n=1}^{2017} \left( \frac{2n}{n + 1} + \frac{1}{n + 1} \right)
+   \]
+   Simplificant el primer terme:
+   \[
+   \frac{2n}{n + 1} = 2 - \frac{2}{n + 1}
+   \]
+   Així que:
+   \[
+   b = \sum_{n=1}^{2017} \left( 2 - \frac{2}{n + 1} + \frac{1}{n + 1} \right) = \sum_{n=1}^{2017} 2 - \sum_{n=1}^{2017} \frac{2}{n + 1} + \sum_{n=1}^{2017} \frac{1}{n + 1}
+   \]
+   La suma de \(2\) per \(2017\) termes és \(2 \cdot 2017 = 4034\). Les dues últimes sumes són:
+   \[
+   -2 \sum_{n=2}^{2018} \frac{1}{n} + \sum_{n=2}^{2018} \frac{1}{n} = -\sum_{n=2}^{2018} \frac{1}{n}
+   \]
+   Així que:
+   \[
+   b = 4034 - \left( H_{2018} - 1 \right) = 4034 - H_{2018} + 1 = 4035 - H_{2018}
+   \]
+
+3. **Càlcul de \(a + b\)**:
+   Ara sumem \(a\) i \(b\):
+   \[
+   a + b = (H_{2017} - 1) + (4035 - H_{2018})
+   \]
+   Sabem que \(H_{2018} = H_{2017} + \frac{1}{2018}\), així que:
+   \[
+   a + b = (H_{2017} - 1) + (4035 - (H_{2017} + \frac{1}{2018})) = 4035 - 1 - \frac{1}{2018} = 4034 - \frac{1}{2018}
+   \]
+   Com que \(-\frac{1}{2018}\) és un valor molt petit, podem aproximar \(a + b\) a \(4034\).
+
+Finalment, la resposta correcta és:
+
+Resposta: B)

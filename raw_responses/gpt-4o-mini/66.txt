@@ -1,0 +1,43 @@
+Raonament: Per resoldre el problema, hem de calcular el residu de \(20! + 520\) quan es divideix per \(2^9\).
+
+**Pas 1: Calcular \(20!\) mod \(2^9\)**
+
+Primer, calculem quants factors de 2 té \(20!\). Utilitzem la fórmula per comptar els factors de 2 en \(n!\):
+
+\[
+\sum_{k=1}^{\infty} \left\lfloor \frac{n}{2^k} \right\rfloor
+\]
+
+Per \(n = 20\):
+
+\[
+\left\lfloor \frac{20}{2} \right\rfloor + \left\lfloor \frac{20}{4} \right\rfloor + \left\lfloor \frac{20}{8} \right\rfloor + \left\lfloor \frac{20}{16} \right\rfloor = 10 + 5 + 2 + 1 = 18
+\]
+
+Això significa que \(20!\) té 18 factors de 2, per tant, \(20!\) és múltiple de \(2^9\) (ja que \(18 > 9\)). Això implica que:
+
+\[
+20! \equiv 0 \mod 2^9
+\]
+
+**Pas 2: Calcular \(520\) mod \(2^9\)**
+
+Ara calculem \(520\) mod \(2^9\). Primer, calculem \(2^9 = 512\).
+
+Ara, calculem el residu de \(520\) quan es divideix per \(512\):
+
+\[
+520 \mod 512 = 520 - 512 = 8
+\]
+
+**Pas 3: Combinar els resultats**
+
+Ara podem combinar els resultats:
+
+\[
+20! + 520 \equiv 0 + 8 \equiv 8 \mod 2^9
+\]
+
+Per tant, el residu de dividir \(20! + 520\) entre \(2^9\) és \(8\).
+
+**Resposta:** B) 8

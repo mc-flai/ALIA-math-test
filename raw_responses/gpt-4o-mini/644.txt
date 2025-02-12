@@ -1,0 +1,36 @@
+Raonament: Per trobar el nombre natural més xicotet que és divisible per tots els nombres naturals de l'1 al 9, hem de calcular el mínim comú múltiple (MCM) d'aquests nombres. Els nombres de l'1 al 9 són: 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+Per calcular el MCM, hem de considerar els factors primers de cada nombre:
+
+- 1: no aporta factors.
+- 2: \(2\)
+- 3: \(3\)
+- 4: \(2^2\)
+- 5: \(5\)
+- 6: \(2 \cdot 3\)
+- 7: \(7\)
+- 8: \(2^3\)
+- 9: \(3^2\)
+
+Ara, per trobar el MCM, agafem el màxim exponent de cada factor primer:
+
+- Per al factor \(2\), el màxim exponent és \(3\) (de \(8\)).
+- Per al factor \(3\), el màxim exponent és \(2\) (de \(9\)).
+- Per al factor \(5\), el màxim exponent és \(1\) (de \(5\)).
+- Per al factor \(7\), el màxim exponent és \(1\) (de \(7\)).
+
+Per tant, el MCM és:
+
+\[
+MCM = 2^3 \cdot 3^2 \cdot 5^1 \cdot 7^1 = 8 \cdot 9 \cdot 5 \cdot 7
+\]
+
+Calculant pas a pas:
+
+1. \(8 \cdot 9 = 72\)
+2. \(72 \cdot 5 = 360\)
+3. \(360 \cdot 7 = 2520\)
+
+Així, el MCM de l'1 al 9 és \(2520\). Ara, hem de trobar la primera xifra de l'esquerra d'aquest nombre. La primera xifra de \(2520\) és \(2\).
+
+Resposta: B)

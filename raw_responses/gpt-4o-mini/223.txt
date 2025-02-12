@@ -1,0 +1,68 @@
+Raonament: 
+Sigui \( P \) el nombre total de pomes i \( N \) el nombre de xiquets. Si els xiquets es reparteixen equitativament les pomes, a cada xiquet li corresponen \( \frac{P}{N} \) pomes. 
+
+Segons el problema, si hi haguera \( N-2 \) xiquets, a cada un li correspondria una poma més, és a dir:
+\[
+\frac{P}{N-2} = \frac{P}{N} + 1
+\]
+Multiplicant per \( N(N-2) \) per eliminar denominadors, obtenim:
+\[
+P \cdot N = P \cdot (N-2) + N(N-2)
+\]
+Simplificant, tenim:
+\[
+P \cdot N = P \cdot N - 2P + N^2 - 2N
+\]
+Això implica:
+\[
+2P = N^2 - 2N \quad \text{(1)}
+\]
+
+Ara, si hi haguera \( N-3 \) xiquets, a cada un li tocarien dues pomes més:
+\[
+\frac{P}{N-3} = \frac{P}{N} + 2
+\]
+Multiplicant per \( N(N-3) \):
+\[
+P \cdot N = P \cdot (N-3) + 2N(N-3)
+\]
+Simplificant, obtenim:
+\[
+P \cdot N = P \cdot N - 3P + 2N^2 - 6N
+\]
+Això implica:
+\[
+3P = 2N^2 - 6N \quad \text{(2)}
+\]
+
+Ara tenim dues equacions:
+1. \( 2P = N^2 - 2N \)
+2. \( 3P = 2N^2 - 6N \)
+
+Podem expressar \( P \) en funció de \( N \) a partir de la primera equació:
+\[
+P = \frac{N^2 - 2N}{2}
+\]
+Substituïm \( P \) en la segona equació:
+\[
+3 \left( \frac{N^2 - 2N}{2} \right) = 2N^2 - 6N
+\]
+Multiplicant per 2 per eliminar el denominador:
+\[
+3(N^2 - 2N) = 4N^2 - 12N
+\]
+Això es simplifica a:
+\[
+3N^2 - 6N = 4N^2 - 12N
+\]
+Reorganitzant:
+\[
+0 = N^2 - 6N
+\]
+Factoritzant:
+\[
+N(N - 6) = 0
+\]
+Així, \( N = 0 \) o \( N = 6 \). Com que no podem tenir 0 xiquets, la solució és \( N = 6 \).
+
+Resposta: A) 6

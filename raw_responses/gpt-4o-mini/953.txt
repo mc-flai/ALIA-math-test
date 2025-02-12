@@ -1,0 +1,45 @@
+Raonament: 
+
+1. Primer, situem el quadrat ABCD en un sistema de coordenades. Podem assignar les següents coordenades als punts:
+   - A(0, 0)
+   - B(2, 0)
+   - C(2, 2)
+   - D(0, 2)
+
+2. Ara, trobem les coordenades dels punts E i F, que són els punts mitjans dels segments AB i AD, respectivament:
+   - E és el punt mitjà de AB: E = ((0 + 2)/2, (0 + 0)/2) = (1, 0)
+   - F és el punt mitjà de AD: F = ((0 + 0)/2, (0 + 2)/2) = (0, 1)
+
+3. A continuació, considerem el punt G que es troba en el segment CF. Sabem que 3CG = 2GF, el que implica que G divideix el segment CF en una proporció de 3:2. 
+
+   Per trobar les coordenades de G, primer calculem les coordenades de C i F:
+   - C(2, 2)
+   - F(0, 1)
+
+   La longitud del segment CF és:
+   \[
+   CF = \sqrt{(2 - 0)^2 + (2 - 1)^2} = \sqrt{4 + 1} = \sqrt{5}
+   \]
+
+   La proporció 3:2 significa que G es troba a 3/5 de la distància de C a F. Per tant, podem calcular les coordenades de G utilitzant la fórmula de la divisió de segments:
+   \[
+   G = \left( \frac{2 \cdot 0 + 3 \cdot 2}{3 + 2}, \frac{2 \cdot 1 + 3 \cdot 2}{3 + 2} \right) = \left( \frac{0 + 6}{5}, \frac{2 + 6}{5} \right) = \left( \frac{6}{5}, \frac{8}{5} \right)
+   \]
+
+4. Ara que tenim les coordenades dels punts B(2, 0), E(1, 0) i G(6/5, 8/5), podem calcular l'àrea del triangle BEG utilitzant la fórmula de l'àrea d'un triangle amb coordenades:
+   \[
+   \text{Àrea} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|
+   \]
+   On (x1, y1) = B(2, 0), (x2, y2) = E(1, 0), (x3, y3) = G(6/5, 8/5).
+
+   Substituïm les coordenades:
+   \[
+   \text{Àrea} = \frac{1}{2} \left| 2(0 - \frac{8}{5}) + 1(\frac{8}{5} - 0) + \frac{6}{5}(0 - 0) \right|
+   \]
+   \[
+   = \frac{1}{2} \left| 2 \cdot -\frac{8}{5} + \frac{8}{5} \right| = \frac{1}{2} \left| -\frac{16}{5} + \frac{8}{5} \right| = \frac{1}{2} \left| -\frac{8}{5} \right| = \frac{4}{5}
+   \]
+
+5. Per tant, l'àrea del triangle BEG és \(\frac{4}{5}\).
+
+Resposta: B)

@@ -1,0 +1,27 @@
+Raonament: Comencem amb la informació donada: \( n^n = m \). Volem calcular \( n^{(n^{(n+1)})} \).
+
+Podem reescriure \( n^{(n^{(n+1)})} \) com \( n^{(n^n \cdot n)} \) perquè \( n^{(n+1)} = n^n \cdot n \). Així que tenim:
+
+\[
+n^{(n^{(n+1)})} = n^{(n^n \cdot n)} = n^{(m \cdot n)}
+\]
+
+Utilitzant la propietat de les potències, podem reescriure això com:
+
+\[
+n^{(m \cdot n)} = (n^m)^n
+\]
+
+Sabem que \( n^n = m \), així que podem substituir \( n^m \) per \( m^{(n)} \):
+
+\[
+(n^m)^n = (m^{(n)})^n = m^{(n \cdot n)} = m^{(n^2)}
+\]
+
+Ara, recordem que \( n^n = m \), així que \( n^2 = n \cdot n = n^{(n)} \). Això significa que \( n^2 = m \) i, per tant, \( n^{(n^2)} = m^m \).
+
+Per tant, \( n^{(n^{(n+1)})} = m^{(m)} \).
+
+La resposta correcta és, per tant, \( m^m \).
+
+Resposta: D)

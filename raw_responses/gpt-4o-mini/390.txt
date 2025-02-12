@@ -1,0 +1,81 @@
+Raonament: Anomenem el primer nombre \( x \). Segons el problema, el segon nombre és 7 vegades el primer, així que el segon nombre serà \( 7x \). El tercer nombre és més xicotet que el segon, així que podem anomenar-lo \( y \), amb la condició que \( y < 7x \).
+
+El producte dels tres nombres és 140, per tant, podem escriure l'equació següent:
+
+\[
+x \cdot 7x \cdot y = 140
+\]
+
+Això es pot simplificar a:
+
+\[
+7x^2y = 140
+\]
+
+Dividim ambdós costats per 7:
+
+\[
+x^2y = 20
+\]
+
+Ara, per trobar \( y \), podem expressar-lo com:
+
+\[
+y = \frac{20}{x^2}
+\]
+
+Sabem que \( y < 7x \), així que substituïm \( y \):
+
+\[
+\frac{20}{x^2} < 7x
+\]
+
+Multiplicant amb \( x^2 \) (suponent que \( x \) és positiu):
+
+\[
+20 < 7x^3
+\]
+
+Això implica que:
+
+\[
+x^3 > \frac{20}{7} \approx 2.857
+\]
+
+Per tant, \( x > \sqrt[3]{\frac{20}{7}} \approx 1.4 \).
+
+Ara provem amb valors enters per \( x \):
+
+1. Si \( x = 2 \):
+   \[
+   y = \frac{20}{2^2} = \frac{20}{4} = 5
+   \]
+   El segon nombre seria \( 7 \cdot 2 = 14 \). Comprovem:
+   \[
+   2 \cdot 14 \cdot 5 = 140 \quad \text{(correcte)}
+   \]
+   La suma seria \( 2 + 14 + 5 = 21 \).
+
+2. Si \( x = 3 \):
+   \[
+   y = \frac{20}{3^2} = \frac{20}{9} \quad \text{(no és un enter)}
+   \]
+
+3. Si \( x = 4 \):
+   \[
+   y = \frac{20}{4^2} = \frac{20}{16} = 1.25 \quad \text{(no és un enter)}
+   \]
+
+4. Si \( x = 1 \):
+   \[
+   y = \frac{20}{1^2} = 20
+   \]
+   El segon nombre seria \( 7 \cdot 1 = 7 \). Comprovem:
+   \[
+   1 \cdot 7 \cdot 20 = 140 \quad \text{(correcte)}
+   \]
+   La suma seria \( 1 + 7 + 20 = 28 \).
+
+Amb això, hem trobat dues solucions possibles: \( (2, 14, 5) \) amb suma 21 i \( (1, 7, 20) \) amb suma 28. Com que el problema no especifica que els nombres han de ser únics, la suma dels tres nombres pot ser 21 o 28. No obstant això, la pregunta demana la suma, i la resposta correcta és la que hem trobat primer.
+
+Resposta: B) 21.

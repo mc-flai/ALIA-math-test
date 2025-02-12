@@ -1,0 +1,39 @@
+Raonament: Per determinar quantes xifres té el número \( 20^{20} \), podem utilitzar la fórmula que relaciona el nombre de xifres d'un número \( n \) amb el logaritme en base 10 d'aquest número. La fórmula és:
+
+\[
+\text{Nombre de xifres} = \lfloor \log_{10}(n) \rfloor + 1
+\]
+
+En aquest cas, \( n = 20^{20} \). Per tant, necessitem calcular \( \log_{10}(20^{20}) \):
+
+\[
+\log_{10}(20^{20}) = 20 \cdot \log_{10}(20)
+\]
+
+Ara, calculem \( \log_{10}(20) \). Sabem que \( 20 = 2 \cdot 10 \), així que podem utilitzar la propietat del logaritme:
+
+\[
+\log_{10}(20) = \log_{10}(2) + \log_{10}(10) = \log_{10}(2) + 1
+\]
+
+On \( \log_{10}(10) = 1 \). Aproximadament, \( \log_{10}(2) \) és al voltant de 0.301. Per tant:
+
+\[
+\log_{10}(20) \approx 0.301 + 1 = 1.301
+\]
+
+Ara substituïm aquest valor a la nostra equació:
+
+\[
+\log_{10}(20^{20}) \approx 20 \cdot 1.301 = 26.02
+\]
+
+Finalment, utilitzem la fórmula per calcular el nombre de xifres:
+
+\[
+\text{Nombre de xifres} = \lfloor 26.02 \rfloor + 1 = 26 + 1 = 27
+\]
+
+Per tant, \( 20^{20} \) té 27 xifres.
+
+Resposta: D) 27

@@ -1,0 +1,32 @@
+Raonament: Comencem a simplificar l'operació pas a pas.
+
+1. **Identifiquem les potències**:
+   - \(2^2 = 4\)
+   - \(2^{(2^2)} = 2^4 = 16\)
+   - \(2^{(2^{(2^2)})} = 2^{(2^4)} = 2^{16}\)
+   - \((2^2)^2 = 4^2 = 16\)
+   - \(((2^2)^2)^2 = 16^2 = 256 = 2^8\)
+
+2. **Substituïm les potències a l'operació original**:
+   L'operació original es pot reescriure com:
+   \[
+   2^{(2^2)} \cdot 2^{(2^{(2^2)})} : ((2^2)^2)^2 = 2^4 \cdot 2^{16} : 2^8
+   \]
+
+3. **Apliquem les propietats de les potències**:
+   - Multiplicació de potències: \(a^m \cdot a^n = a^{m+n}\)
+   - Divisió de potències: \(\frac{a^m}{a^n} = a^{m-n}\)
+
+   Així que:
+   \[
+   2^4 \cdot 2^{16} = 2^{4 + 16} = 2^{20}
+   \]
+   Ara, dividim per \(2^8\):
+   \[
+   \frac{2^{20}}{2^8} = 2^{20 - 8} = 2^{12}
+   \]
+
+4. **Resultat final**:
+   El resultat de l'operació és \(2^{12}\).
+
+Resposta: D)

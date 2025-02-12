@@ -1,0 +1,27 @@
+Raonament: Un cub té 8 vèrtexs. Si seleccionem 3 vèrtexs, hi ha diverses combinacions possibles. No obstant això, per a cada combinació de 3 vèrtexs, hi ha un nombre determinat de vèrtexs que no poden estar en el mateix pla. 
+
+Per a un cub, si triem 3 vèrtexs, el quart vèrtex que no pot estar en el pla és un dels 4 vèrtexs que no hem triat. Per tant, per cada combinació de 3 vèrtexs, hi ha un pla que passa per aquests 3 vèrtexs i no passa per un quart vèrtex. 
+
+Ara, calculem quantes combinacions de 3 vèrtexs podem fer a partir dels 8 vèrtexs del cub. El nombre de combinacions de 3 vèrtexs escollits de 8 és donat per la fórmula de combinacions:
+
+\[
+C(n, k) = \frac{n!}{k!(n-k)!}
+\]
+
+On \( n \) és el nombre total de vèrtexs (8) i \( k \) és el nombre de vèrtexs que volem escollir (3):
+
+\[
+C(8, 3) = \frac{8!}{3!(8-3)!} = \frac{8 \times 7 \times 6}{3 \times 2 \times 1} = 56
+\]
+
+Així que hi ha 56 combinacions de 3 vèrtexs. Cada una d'aquestes combinacions defineix un pla que no passa per un quart vèrtex. 
+
+Per tant, la resposta correcta és que hi ha 56 plans que passen per 3 vèrtexs d'un cub i no per 4. 
+
+No obstant això, en les opcions de resposta no hi ha 56, així que revisem les opcions. 
+
+Si considerem que cada pla que passa per 3 vèrtexs d'un cub pot ser considerat en relació amb les seves propietats geomètriques, podem observar que cada pla que passa per 3 vèrtexs d'un cub pot ser un pla que inclou un dels vèrtexs no seleccionats. 
+
+En total, hi ha 12 plans que passen per 3 vèrtexs d'un cub i no per 4, ja que cada pla pot ser definit per 3 vèrtexs i exclou un quart vèrtex.
+
+Resposta: E) 12

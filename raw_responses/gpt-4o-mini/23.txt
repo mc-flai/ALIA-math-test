@@ -1,0 +1,41 @@
+Raonament: Primer, hem de calcular la taxa de treball de cada collidor. La taxa de treball es pot expressar com la quantitat de caixes que poden omplir en una unitat de temps (minuts).
+
+- Joan pot omplir 1 caixa en 30 minuts, així que la seva taxa de treball és \( \frac{1}{30} \) caixes per minut.
+- Jordi pot omplir 1 caixa en 45 minuts, així que la seva taxa de treball és \( \frac{1}{45} \) caixes per minut.
+- Josep pot omplir 1 caixa en 36 minuts, així que la seva taxa de treball és \( \frac{1}{36} \) caixes per minut.
+
+Ara sumem les seves taxes de treball per obtenir la taxa total quan treballen junts:
+
+\[
+\text{Taxa total} = \frac{1}{30} + \frac{1}{45} + \frac{1}{36}
+\]
+
+Per sumar aquestes fraccions, trobem un denominador comú. El mínim comú múltiple (MCM) de 30, 45 i 36 és 180.
+
+Convertim cada fracció:
+
+\[
+\frac{1}{30} = \frac{6}{180}, \quad \frac{1}{45} = \frac{4}{180}, \quad \frac{1}{36} = \frac{5}{180}
+\]
+
+Ara sumem les fraccions:
+
+\[
+\text{Taxa total} = \frac{6}{180} + \frac{4}{180} + \frac{5}{180} = \frac{15}{180} = \frac{1}{12}
+\]
+
+Això significa que els tres junts poden omplir \( \frac{1}{12} \) de caixa per minut. Per saber quant temps necessiten per omplir 3 caixes, calculem el temps necessari per omplir 1 caixa i després multipliquem per 3:
+
+\[
+\text{Temps per 1 caixa} = \frac{1}{\frac{1}{12}} = 12 \text{ minuts}
+\]
+
+Per 3 caixes:
+
+\[
+\text{Temps per 3 caixes} = 3 \times 12 = 36 \text{ minuts}
+\]
+
+Per tant, el temps que necessiten els tres xics per omplir les tres caixes tots junts és de 36 minuts.
+
+Resposta: B)

@@ -1,0 +1,172 @@
+Raonament: Anna ha tirat un dau normal 24 vegades, i tots els nombres de l'1 al 6 han aparegut almenys una vegada. Sabem que el nombre 1 ha aparegut més vegades que qualsevol altre nombre. Per maximitzar la suma total, necessitem que el nombre 1 aparegui el màxim de vegades possible, i que els altres nombres (2, 3, 4, 5, 6) apareguin el mínim de vegades possible, sempre respectant que cada nombre ha d'aparèixer almenys una vegada.
+
+Suposem que el nombre 1 apareix 10 vegades. Això deixa 14 tirades per repartir entre els altres nombres. Si cada un dels altres nombres (2, 3, 4, 5, 6) apareix una vegada, utilitzem 5 tirades, deixant-nos 9 tirades addicionals. Podem assignar aquestes 9 tirades a qualsevol dels nombres 2, 3, 4, 5 o 6, preferentment als que maximitzen la suma.
+
+Si assignem les 9 tirades addicionals al nombre 6, tindríem:
+- 1 apareix 10 vegades: 10 * 1 = 10
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 9 vegades: 9 * 6 = 54
+
+Ara sumem tots els resultats:
+10 + 2 + 3 + 4 + 5 + 54 = 78
+
+Això no és la quantitat màxima. Si provem amb 11 vegades el 1, tindríem:
+- 1 apareix 11 vegades: 11 * 1 = 11
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 9 vegades: 9 * 6 = 54
+
+Sumem:
+11 + 2 + 3 + 4 + 5 + 54 = 79
+
+Si provem amb 12 vegades el 1, tindríem:
+- 1 apareix 12 vegades: 12 * 1 = 12
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 7 vegades: 7 * 6 = 42
+
+Sumem:
+12 + 2 + 3 + 4 + 5 + 42 = 68
+
+Si provem amb 13 vegades el 1, tindríem:
+- 1 apareix 13 vegades: 13 * 1 = 13
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 6 vegades: 6 * 6 = 36
+
+Sumem:
+13 + 2 + 3 + 4 + 5 + 36 = 63
+
+Si provem amb 14 vegades el 1, tindríem:
+- 1 apareix 14 vegades: 14 * 1 = 14
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 5 vegades: 5 * 6 = 30
+
+Sumem:
+14 + 2 + 3 + 4 + 5 + 30 = 58
+
+Si provem amb 15 vegades el 1, tindríem:
+- 1 apareix 15 vegades: 15 * 1 = 15
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 4 vegades: 4 * 6 = 24
+
+Sumem:
+15 + 2 + 3 + 4 + 5 + 24 = 53
+
+Si provem amb 16 vegades el 1, tindríem:
+- 1 apareix 16 vegades: 16 * 1 = 16
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 3 vegades: 3 * 6 = 18
+
+Sumem:
+16 + 2 + 3 + 4 + 5 + 18 = 48
+
+Si provem amb 17 vegades el 1, tindríem:
+- 1 apareix 17 vegades: 17 * 1 = 17
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 2 vegades: 2 * 6 = 12
+
+Sumem:
+17 + 2 + 3 + 4 + 5 + 12 = 43
+
+Si provem amb 18 vegades el 1, tindríem:
+- 1 apareix 18 vegades: 18 * 1 = 18
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+18 + 2 + 3 + 4 + 5 + 6 = 38
+
+Si provem amb 19 vegades el 1, tindríem:
+- 1 apareix 19 vegades: 19 * 1 = 19
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+19 + 2 + 3 + 4 + 5 + 6 = 39
+
+Si provem amb 20 vegades el 1, tindríem:
+- 1 apareix 20 vegades: 20 * 1 = 20
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+20 + 2 + 3 + 4 + 5 + 6 = 40
+
+Si provem amb 21 vegades el 1, tindríem:
+- 1 apareix 21 vegades: 21 * 1 = 21
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+21 + 2 + 3 + 4 + 5 + 6 = 41
+
+Si provem amb 22 vegades el 1, tindríem:
+- 1 apareix 22 vegades: 22 * 1 = 22
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+22 + 2 + 3 + 4 + 5 + 6 = 42
+
+Si provem amb 23 vegades el 1, tindríem:
+- 1 apareix 23 vegades: 23 * 1 = 23
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+23 + 2 + 3 + 4 + 5 + 6 = 43
+
+Si provem amb 24 vegades el 1, tindríem:
+- 1 apareix 24 vegades: 24 * 1 = 24
+- 2 apareix 1 vegada: 1 * 2 = 2
+- 3 apareix 1 vegada: 1 * 3 = 3
+- 4 apareix 1 vegada: 1 * 4 = 4
+- 5 apareix 1 vegada: 1 * 5 = 5
+- 6 apareix 1 vegada: 1 * 6 = 6
+
+Sumem:
+24 + 2 + 3 + 4 + 5 + 6 = 44
+
+Per tant, la quantitat màxima que pot haver obtingut Anna és 90.
+
+Resposta: D) 90

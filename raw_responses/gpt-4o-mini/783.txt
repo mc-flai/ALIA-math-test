@@ -1,0 +1,30 @@
+Raonament: Primer, hem de determinar quins nombres entre 100 i 200 són divisibles tant per 2 com per 3. Un nombre que és divisible per 2 i per 3 també és divisible per 6 (ja que 6 és el mínim comú múltiple de 2 i 3).
+
+Ara, busquem els nombres entre 100 i 200 que són divisibles per 6. 
+
+El primer nombre que és divisible per 6 en aquest rang és 102 (ja que 100 no és divisible per 6, però 102 sí). El darrer nombre que és divisible per 6 en aquest rang és 198 (ja que 200 no és divisible per 6, però 198 sí).
+
+Ara, podem trobar quants nombres hi ha entre 102 i 198 que són divisibles per 6. Els nombres que són divisibles per 6 formen una progressió aritmètica on el primer terme és 102 i l'últim terme és 198, amb una diferència de 6.
+
+Podem calcular el nombre de termes d'aquesta progressió aritmètica amb la fórmula del terme general d'una progressió aritmètica:
+
+\[ a_n = a_1 + (n-1) \cdot d \]
+
+On:
+- \( a_n \) és l'últim terme (198),
+- \( a_1 \) és el primer terme (102),
+- \( d \) és la diferència (6),
+- \( n \) és el nombre de termes.
+
+Reorganitzant la fórmula per trobar \( n \):
+
+\[ 198 = 102 + (n-1) \cdot 6 \]
+\[ 198 - 102 = (n-1) \cdot 6 \]
+\[ 96 = (n-1) \cdot 6 \]
+\[ n-1 = \frac{96}{6} \]
+\[ n-1 = 16 \]
+\[ n = 17 \]
+
+Per tant, hi ha 17 nombres entre 100 i 200 que són divisibles per 2 i per 3.
+
+Resposta: C)

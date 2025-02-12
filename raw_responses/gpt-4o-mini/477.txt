@@ -1,0 +1,26 @@
+Raonament: Per determinar el nombre de divisors naturals del nombre 4242, primer hem de factoritzar-lo en els seus factors primers. 
+
+Comencem per dividir 4242 entre 2, ja que és un nombre parell:
+4242 ÷ 2 = 2121
+
+Ara, continuem amb 2121. Comprovem si és divisible per 3 sumant els dígits (2 + 1 + 2 + 1 = 6), que és divisible per 3:
+2121 ÷ 3 = 707
+
+Ara, factoritzem 707. Comprovem si és divisible per 7:
+707 ÷ 7 = 101
+
+Finalment, 101 és un nombre primer. 
+
+Per tant, la factorització completa de 4242 és:
+4242 = 2^1 × 3^1 × 7^1 × 101^1
+
+Per calcular el nombre de divisors d'un nombre a partir de la seva factorització, utilitzem la fórmula:
+Si un nombre \( n \) es pot expressar com \( p_1^{e_1} × p_2^{e_2} × ... × p_k^{e_k} \), on \( p_i \) són els factors primers i \( e_i \) són els seus exponents, el nombre total de divisors \( d(n) \) es calcula com:
+\( d(n) = (e_1 + 1)(e_2 + 1)...(e_k + 1) \)
+
+Aplicant aquesta fórmula a la nostra factorització:
+\( d(4242) = (1 + 1)(1 + 1)(1 + 1)(1 + 1) = 2 × 2 × 2 × 2 = 16 \)
+
+Per tant, el nombre 4242 té 16 divisors naturals.
+
+Resposta: A)

@@ -1,0 +1,88 @@
+Raonament: 
+
+Tenim una corda de longitud total de 40 m que es divideix en dues parts, \( x \) i \( y \), on \( x + y = 40 \). Amb aquestes dues cordes, formem dos quadrats amb longituds de costat \( a \) i \( b \), respectivament. La longitud de cada corda es relaciona amb el costat del quadrat de la següent manera:
+
+- La corda de longitud \( x \) forma un quadrat amb costat \( a \), així que \( 4a = x \) i per tant \( a = \frac{x}{4} \).
+- La corda de longitud \( y \) forma un quadrat amb costat \( b \), així que \( 4b = y \) i per tant \( b = \frac{y}{4} \).
+
+Les àrees dels quadrats són:
+
+- Àrea del primer quadrat: \( A_1 = a^2 = \left(\frac{x}{4}\right)^2 = \frac{x^2}{16} \)
+- Àrea del segon quadrat: \( A_2 = b^2 = \left(\frac{y}{4}\right)^2 = \frac{y^2}{16} \)
+
+La suma de les àrees és:
+
+\[
+A_1 + A_2 = \frac{x^2}{16} + \frac{y^2}{16} = \frac{x^2 + y^2}{16}
+\]
+
+Sabem que \( A_1 + A_2 = 68 \), així que:
+
+\[
+\frac{x^2 + y^2}{16} = 68
+\]
+
+Multiplicant per 16:
+
+\[
+x^2 + y^2 = 1088
+\]
+
+Utilitzant la identitat \( (x + y)^2 = x^2 + y^2 + 2xy \) i substituint \( x + y = 40 \):
+
+\[
+40^2 = x^2 + y^2 + 2xy
+\]
+\[
+1600 = 1088 + 2xy
+\]
+\[
+2xy = 1600 - 1088 = 512
+\]
+\[
+xy = 256
+\]
+
+Ara tenim un sistema d'equacions:
+
+1. \( x + y = 40 \)
+2. \( xy = 256 \)
+
+Podem resoldre aquest sistema considerant \( y = 40 - x \) i substituint:
+
+\[
+x(40 - x) = 256
+\]
+\[
+40x - x^2 = 256
+\]
+\[
+x^2 - 40x + 256 = 0
+\]
+
+Resolem aquesta equació quadràtica utilitzant la fórmula general:
+
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = \frac{40 \pm \sqrt{1600 - 1024}}{2} = \frac{40 \pm \sqrt{576}}{2} = \frac{40 \pm 24}{2}
+\]
+
+Així obtenim dues solucions:
+
+\[
+x = \frac{64}{2} = 32 \quad \text{o} \quad x = \frac{16}{2} = 8
+\]
+
+Per tant, les dues cordes són \( x = 32 \) i \( y = 8 \) (o viceversa).
+
+Ara calculem les àrees:
+
+- Si \( x = 32 \), \( a = \frac{32}{4} = 8 \) i \( A_1 = 8^2 = 64 \).
+- Si \( y = 8 \), \( b = \frac{8}{4} = 2 \) i \( A_2 = 2^2 = 4 \).
+
+La diferència entre les àrees és:
+
+\[
+|A_1 - A_2| = |64 - 4| = 60 \, m²
+\]
+
+Resposta: E) 60 m²

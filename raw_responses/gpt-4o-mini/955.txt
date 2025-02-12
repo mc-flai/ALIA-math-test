@@ -1,0 +1,45 @@
+Raonament: El llibre té 180 pàgines, numerades de la següent manera: les pàgines 3 i 4 són el primer full, les pàgines 5 i 6 són el segon, i així successivament. Per tant, les pàgines del llibre són: 3, 4, 5, 6, ..., 181, 182. 
+
+Cada full té dues pàgines, així que podem calcular la suma de les dues pàgines de cada full. La suma de les pàgines del nèssim full (n) és:
+
+Suma = (2n + 1) + (2n + 2) = 4n + 3
+
+On n varia de 1 a 90, ja que hi ha 90 fulls en total (180 pàgines / 2).
+
+Ara, hem de determinar quins valors de n fan que 4n + 3 sigui un quadrat perfecte o un cub perfecte.
+
+1. **Quadrats perfectes**: Els quadrats perfectes menors que 4*90 + 3 = 363 són: 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361. 
+   - Busquem quins d'aquests quadrats perfectes es poden expressar com 4n + 3:
+     - 1: 4n + 3 = 1 → 4n = -2 (no és vàlid)
+     - 4: 4n + 3 = 4 → 4n = 1 (no és vàlid)
+     - 9: 4n + 3 = 9 → 4n = 6 → n = 1.5 (no és vàlid)
+     - 16: 4n + 3 = 16 → 4n = 13 → n = 3.25 (no és vàlid)
+     - 25: 4n + 3 = 25 → 4n = 22 → n = 5.5 (no és vàlid)
+     - 36: 4n + 3 = 36 → 4n = 33 → n = 8.25 (no és vàlid)
+     - 49: 4n + 3 = 49 → 4n = 46 → n = 11.5 (no és vàlid)
+     - 64: 4n + 3 = 64 → 4n = 61 → n = 15.25 (no és vàlid)
+     - 81: 4n + 3 = 81 → 4n = 78 → n = 19.5 (no és vàlid)
+     - 100: 4n + 3 = 100 → 4n = 97 → n = 24.25 (no és vàlid)
+     - 121: 4n + 3 = 121 → 4n = 118 → n = 29.5 (no és vàlid)
+     - 144: 4n + 3 = 144 → 4n = 141 → n = 35.25 (no és vàlid)
+     - 169: 4n + 3 = 169 → 4n = 166 → n = 41.5 (no és vàlid)
+     - 196: 4n + 3 = 196 → 4n = 193 → n = 48.25 (no és vàlid)
+     - 225: 4n + 3 = 225 → 4n = 222 → n = 55.5 (no és vàlid)
+     - 256: 4n + 3 = 256 → 4n = 253 → n = 63.25 (no és vàlid)
+     - 289: 4n + 3 = 289 → 4n = 286 → n = 71.5 (no és vàlid)
+     - 324: 4n + 3 = 324 → 4n = 321 → n = 80.25 (no és vàlid)
+     - 361: 4n + 3 = 361 → 4n = 358 → n = 89.5 (no és vàlid)
+
+2. **Cub perfectes**: Els cubs perfectes menors que 363 són: 0, 1, 8, 27, 64, 125, 216, 343.
+   - Busquem quins d'aquests cubs perfectes es poden expressar com 4n + 3:
+     - 1: 4n + 3 = 1 → 4n = -2 (no és vàlid)
+     - 8: 4n + 3 = 8 → 4n = 5 → n = 1.25 (no és vàlid)
+     - 27: 4n + 3 = 27 → 4n = 24 → n = 6 (vàlid)
+     - 64: 4n + 3 = 64 → 4n = 61 → n = 15.25 (no és vàlid)
+     - 125: 4n + 3 = 125 → 4n = 122 → n = 30.5 (no és vàlid)
+     - 216: 4n + 3 = 216 → 4n = 213 → n = 53.25 (no és vàlid)
+     - 343: 4n + 3 = 343 → 4n = 340 → n = 85 (vàlid)
+
+Finalment, els valors vàlids de n que hem trobat són 6 i 85. Això significa que Francesc resoldrà problemes en 2 fulls.
+
+Resposta: B) 2

@@ -1,0 +1,22 @@
+Raonament: Quan llancem dos daus, cada dau té 6 cares, així que el nombre total de combinacions possibles és 6 × 6 = 36. Ara, hem de determinar quantes d'aquestes combinacions donen com a resultat dos números consecutius. 
+
+Els números consecutius possibles en el rang de 1 a 6 són:
+- (1, 2)
+- (2, 3)
+- (3, 4)
+- (4, 5)
+- (5, 6)
+
+A més, cada parell pot aparèixer en dues ordres (per exemple, (1, 2) i (2, 1)). Així que per cada parell de números consecutius, tenim dues combinacions. Això ens dóna:
+- (1, 2) i (2, 1) → 2 combinacions
+- (2, 3) i (3, 2) → 2 combinacions
+- (3, 4) i (4, 3) → 2 combinacions
+- (4, 5) i (5, 4) → 2 combinacions
+- (5, 6) i (6, 5) → 2 combinacions
+
+Així que el total de combinacions que donen números consecutius és 5 parells × 2 = 10 combinacions.
+
+Per tant, la probabilitat d'obtenir dos números consecutius és el nombre de combinacions favorables (10) dividit pel nombre total de combinacions (36):
+Probabilitat = 10 / 36 = 5 / 18.
+
+Resposta: C)

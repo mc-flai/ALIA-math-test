@@ -1,0 +1,99 @@
+Raonament: La suma dels nombres naturals des de 1 fins a n es pot calcular amb la fórmula \( S = \frac{n(n + 1)}{2} \). Volem que aquesta suma sigui un nombre de tres xifres, totes elles iguals. Els nombres de tres xifres que compleixen aquesta condició són 111, 222, 333, 444, 555, 666, 777, 888 i 999.
+
+Així que, hem de buscar n tal que \( S = \frac{n(n + 1)}{2} \) sigui igual a un d'aquests nombres. 
+
+1. **Per a 111:**
+   \[
+   \frac{n(n + 1)}{2} = 111 \implies n(n + 1) = 222
+   \]
+   Resolvint l'equació quadràtica \( n^2 + n - 222 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 888}}{2} = \frac{-1 \pm 29}{2}
+   \]
+   Això dóna \( n = 14 \) (la solució positiva).
+
+2. **Per a 222:**
+   \[
+   \frac{n(n + 1)}{2} = 222 \implies n(n + 1) = 444
+   \]
+   Resolvint \( n^2 + n - 444 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 1776}}{2} = \frac{-1 \pm 43}{2}
+   \]
+   Això dóna \( n = 21 \).
+
+3. **Per a 333:**
+   \[
+   \frac{n(n + 1)}{2} = 333 \implies n(n + 1) = 666
+   \]
+   Resolvint \( n^2 + n - 666 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 2664}}{2} = \frac{-1 \pm 52}{2}
+   \]
+   Això dóna \( n = 25 \).
+
+4. **Per a 444:**
+   \[
+   \frac{n(n + 1)}{2} = 444 \implies n(n + 1) = 888
+   \]
+   Resolvint \( n^2 + n - 888 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 3552}}{2} = \frac{-1 \pm 60}{2}
+   \]
+   Això dóna \( n = 29 \).
+
+5. **Per a 555:**
+   \[
+   \frac{n(n + 1)}{2} = 555 \implies n(n + 1) = 1110
+   \]
+   Resolvint \( n^2 + n - 1110 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 4440}}{2} = \frac{-1 \pm 67}{2}
+   \]
+   Això dóna \( n = 33 \).
+
+6. **Per a 666:**
+   \[
+   \frac{n(n + 1)}{2} = 666 \implies n(n + 1) = 1332
+   \]
+   Resolvint \( n^2 + n - 1332 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 5328}}{2} = \frac{-1 \pm 73}{2}
+   \]
+   Això dóna \( n = 36 \).
+
+7. **Per a 777:**
+   \[
+   \frac{n(n + 1)}{2} = 777 \implies n(n + 1) = 1554
+   \]
+   Resolvint \( n^2 + n - 1554 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 6216}}{2} = \frac{-1 \pm 79}{2}
+   \]
+   Això dóna \( n = 39 \).
+
+8. **Per a 888:**
+   \[
+   \frac{n(n + 1)}{2} = 888 \implies n(n + 1) = 1776
+   \]
+   Resolvint \( n^2 + n - 1776 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 7104}}{2} = \frac{-1 \pm 85}{2}
+   \]
+   Això dóna \( n = 42 \).
+
+9. **Per a 999:**
+   \[
+   \frac{n(n + 1)}{2} = 999 \implies n(n + 1) = 1998
+   \]
+   Resolvint \( n^2 + n - 1998 = 0 \):
+   \[
+   n = \frac{-1 \pm \sqrt{1 + 7992}}{2} = \frac{-1 \pm 89}{2}
+   \]
+   Això dóna \( n = 44 \).
+
+Ara, resumint els valors de n que hem trobat: 14, 21, 25, 29, 33, 36, 39. 
+
+Així que, els valors de n que fan que la suma sigui un nombre de tres xifres iguals són 14, 21, 25, 29, 33, 36, i 39, que són un total de 7 valors.
+
+Resposta: C) 39.

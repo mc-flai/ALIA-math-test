@@ -1,0 +1,37 @@
+Raonament: Per determinar quants triangles amb perímetre 12 podem formar amb costats de longitud natural, hem de considerar que els costats d'un triangle han de complir la desigualtat triangular. Això significa que la suma de les longituds de dos costats ha de ser sempre major que la longitud del tercer costat.
+
+Anomenem els costats del triangle com \(a\), \(b\) i \(c\), amb \(a \leq b \leq c\). Sabem que:
+
+1. \(a + b + c = 12\)
+2. \(a + b > c\)
+
+A partir de la primera equació, podem expressar \(c\) com \(c = 12 - a - b\). Substituint això a la desigualtat triangular, obtenim:
+
+\[ a + b > 12 - a - b \]
+
+Això es pot simplificar a:
+
+\[ 2(a + b) > 12 \]
+\[ a + b > 6 \]
+
+Ara, com que \(c\) és el costat més llarg, també hem de tenir en compte que \(c\) ha de ser almenys un terç del perímetre, és a dir, \(c < 12/2 = 6\). Això implica que \(c\) pot ser 1, 2, 3, 4 o 5.
+
+Anem a considerar cada valor possible de \(c\):
+
+- Si \(c = 5\): \(a + b = 12 - 5 = 7\). Les combinacions possibles són (2, 5), (3, 4), (4, 3), (5, 2) i (6, 1). Només (2, 5) i (3, 4) són vàlides, donant 2 triangles: (2, 5, 5) i (3, 4, 5).
+  
+- Si \(c = 4\): \(a + b = 12 - 4 = 8\). Les combinacions possibles són (4, 4) i (3, 5). Només (4, 4) és vàlida, donant 1 triangle: (4, 4, 4).
+
+- Si \(c = 3\): \(a + b = 12 - 3 = 9\). No hi ha combinacions de nombres naturals que compleixin \(a + b = 9\) amb \(a \leq b \leq 3\).
+
+- Si \(c = 2\) o \(c = 1\): No es poden formar triangles amb costats naturals.
+
+Per tant, les combinacions vàlides són:
+
+1. (2, 5, 5)
+2. (3, 4, 5)
+3. (4, 4, 4)
+
+Així que hi ha un total de 3 triangles possibles.
+
+Resposta: C) 3

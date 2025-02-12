@@ -1,0 +1,58 @@
+Raonament: Tenim les dues equacions:
+
+1. \( y^2 = 2017 + x \)
+2. \( x^2 = 2017 + y \)
+
+Podem reescriure aquestes equacions per a aïllar \( x \) i \( y \):
+
+De la primera equació, podem expressar \( x \):
+\[ x = y^2 - 2017 \]
+
+De la segona equació, podem expressar \( y \):
+\[ y = x^2 - 2017 \]
+
+Ara substituïm l'expressió de \( x \) en la segona equació:
+\[ y = (y^2 - 2017)^2 - 2017 \]
+
+Això ens dóna una equació en termes de \( y \). Simplifiquem:
+\[ y = (y^4 - 2 \cdot 2017 \cdot y^2 + 2017^2) - 2017 \]
+\[ y = y^4 - 2 \cdot 2017 \cdot y^2 + 2017^2 - 2017 \]
+\[ 0 = y^4 - 2 \cdot 2017 \cdot y^2 + 2017^2 - 2017 - y \]
+
+Ara, per trobar el producte \( xy \), podem multiplicar les dues equacions originals:
+\[ (2017 + x)(2017 + y) = y^2 x^2 \]
+
+Desenvolupem el costat esquerre:
+\[ 2017^2 + 2017x + 2017y + xy = y^2 x^2 \]
+
+Ara, substituïm \( y = x^2 - 2017 \) en aquesta equació:
+\[ 2017^2 + 2017x + 2017(x^2 - 2017) + x(x^2 - 2017) = (x^2 - 2017)^2 x^2 \]
+
+Aquesta equació es pot simplificar, però és més fàcil resoldre les dues equacions originals per a \( x \) i \( y \) directament. 
+
+Si restem les dues equacions:
+\[ y^2 - x^2 = x - y \]
+\[ (y - x)(y + x) = x - y \]
+\[ (y - x)(y + x + 1) = 0 \]
+
+Com \( x \) i \( y \) són diferents, \( y - x \neq 0 \), així que:
+\[ y + x + 1 = 0 \]
+\[ y + x = -1 \]
+
+Ara, substituïm \( y = -1 - x \) en una de les equacions originals:
+\[ 2017 + x = (-1 - x)^2 \]
+\[ 2017 + x = 1 + 2x + x^2 \]
+\[ x^2 + x - 2016 = 0 \]
+
+Resolem aquesta equació quadràtica:
+\[ x = \frac{-1 \pm \sqrt{1 + 4 \cdot 2016}}{2} \]
+\[ x = \frac{-1 \pm \sqrt{8065}}{2} \]
+
+Ara, calculem el producte \( xy \):
+\[ xy = x(-1 - x) = -x - x^2 \]
+
+Utilitzant la solució de l'equació quadràtica, podem trobar el producte \( xy \) directament. Sabem que la suma de les arrels és \( -1 \) i el producte és \( -2016 \) (per la forma de l'equació quadràtica).
+
+Per tant, el producte \( xy = -2016 \).
+
+Resposta: B) -2016

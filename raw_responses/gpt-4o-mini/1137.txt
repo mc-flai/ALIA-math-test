@@ -1,0 +1,23 @@
+Raonament: Tenim 12 punts marcats en una circumferència, que divideixen la circumferència en 12 arcs iguals. Cada arc correspon a un angle central de 30° (360°/12). Un triangle format per tres punts de la circumferència tindrà un angle de 45° si la diferència entre les posicions dels punts escollits és tal que un dels angles del triangle és de 45°.
+
+Per tal que un triangle tingui un angle de 45°, necessitem que la distància angular entre dos dels punts escollits sigui de 3 arcs (3 * 30° = 90°), ja que l'angle oposat a aquest arc serà de 45°. Això significa que si escollim un punt, el segon punt ha d'estar a 3 arcs de distància en una direcció, i el tercer punt pot estar en qualsevol de les dues direccions (en sentit horari o antihorari).
+
+Per cada punt escollit, hi ha 2 opcions per escollir el tercer punt (una en cada direcció). Com que hi ha 12 punts, el nombre total de triangles que podem formar és:
+
+12 (punts) * 2 (direccions) = 24 triangles.
+
+No obstant això, cada triangle es pot formar de dues maneres (per exemple, el triangle format pels punts A, B i C és el mateix que el triangle format per B, C i A), així que hem comptat cada triangle dues vegades. Per tant, hem de dividir el total per 2:
+
+24 / 2 = 12 triangles.
+
+Ara, hem de considerar que cada triangle pot tenir un angle de 45° en dues orientacions (una per cada parell de punts que formen l'angle de 45°). Així que multiplicarem el nombre de triangles per 2:
+
+12 * 2 = 24 triangles amb un angle de 45°.
+
+Però, com que hem de considerar que cada triada de punts pot formar un triangle amb un angle de 45° en dues orientacions, el total de triangles amb angles de 45° és:
+
+24 * 2 = 48.
+
+Per tant, el nombre total de triangles que es poden formar amb algun angle de 45° és 48.
+
+Resposta: A)

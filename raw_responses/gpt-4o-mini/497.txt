@@ -1,0 +1,26 @@
+Raonament: En l'operació TALENT·X = 746136, cada lletra representa una xifra diferent. Hem de determinar el valor de la lletra L. 
+
+Primer, analitzem el número 746136. Les xifres que apareixen en aquest número són 7, 4, 6, 1, 3 i 6. Observem que la xifra 6 es repeteix, així que no la podem assignar a dues lletres diferents. Això significa que les lletres T, A, L, E, N i X han de ser assignades a les xifres 7, 4, 1, 3 i una de les xifres ha de ser 6.
+
+Ara, considerem que T, A, L, E, N i X són 6 lletres, però només tenim 5 xifres úniques (7, 4, 6, 1, 3). Això implica que una de les lletres ha de ser igual a 6. 
+
+Si assignem les xifres de la següent manera:
+- T = 7
+- A = 4
+- L = 1
+- E = 3
+- N = 6
+- X = 6 (no pot ser, ja que X ha de ser diferent)
+
+Per tant, provem una altra combinació. Si considerem que L pot ser 2, 5, 6, 8 o 9, i que hem de mantenir les xifres úniques, podem veure que:
+- Si L = 2, les altres lletres podrien ser 7, 4, 6, 1, 3, i X podria ser 5.
+- Si L = 5, les altres lletres podrien ser 7, 4, 6, 1, 3, i X podria ser 2.
+- Si L = 6, no és possible, ja que 6 ja està ocupat.
+- Si L = 8, les altres lletres podrien ser 7, 4, 6, 1, 3, i X podria ser 2 o 5.
+- Si L = 9, les altres lletres podrien ser 7, 4, 6, 1, 3, i X podria ser 2 o 5.
+
+Després d'analitzar les opcions, veiem que L = 2 és una opció viable, ja que no hi ha conflicte amb les altres xifres. 
+
+Per tant, el valor de L és 2.
+
+Resposta: A) 2

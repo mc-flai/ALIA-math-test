@@ -1,0 +1,35 @@
+Raonament: Anem a definir les variables per a resoldre el problema. 
+
+- Sigui \( b \) el nombre de germans de Joan.
+- Sigui \( g \) el nombre de germanes de Joan.
+
+Segons el problema, Joan té el mateix nombre de germans que de germanes, per tant:
+\[ b = g \]
+
+Anna és una germana de Joan, així que el nombre de germans d'Anna és \( b \) i el nombre de germanes és \( g - 1 \) (ja que Anna no es compta a si mateixa). Segons el problema, Anna té el doble de germans que de germanes, per tant:
+\[ b = 2(g - 1) \]
+
+Ara tenim dues equacions:
+1. \( b = g \)
+2. \( b = 2(g - 1) \)
+
+Substituïm la primera equació a la segona:
+\[ g = 2(g - 1) \]
+\[ g = 2g - 2 \]
+\[ 2 = 2g - g \]
+\[ g = 2 \]
+
+Ara que sabem que \( g = 2 \), podem trobar \( b \):
+\[ b = g = 2 \]
+
+Per tant, Joan té 2 germans i 2 germanes. Ara calculem el nombre total de xiques i xics en la família:
+- Germans: 2
+- Germanes: 2
+- Joan: 1
+
+Total:
+\[ 2 + 2 + 1 = 5 \]
+
+Per tant, el nombre total de xiques i xics que hi ha en la família és 5.
+
+Resposta: C)

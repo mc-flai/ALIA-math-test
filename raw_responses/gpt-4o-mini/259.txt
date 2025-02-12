@@ -1,0 +1,28 @@
+Raonament: Dani té 21 monedes que poden ser de 2 o 5 cèntims. Anomenem \( x \) al nombre de monedes de 2 cèntims i \( y \) al nombre de monedes de 5 cèntims. Sabem que:
+
+1. \( x + y = 21 \) (total de monedes)
+2. El valor total en cèntims és \( 2x + 5y \).
+
+Podem expressar \( y \) en funció de \( x \):
+
+\[ y = 21 - x \]
+
+Substituïm \( y \) a l'equació del valor total:
+
+\[ 2x + 5(21 - x) = 2x + 105 - 5x = 105 - 3x \]
+
+Així, el valor total en cèntims és \( 105 - 3x \). Ara, per determinar quins valors pot prendre \( 105 - 3x \), hem de considerar que \( x \) pot ser qualsevol nombre enter entre 0 i 21. 
+
+El valor \( 105 - 3x \) serà un múltiple de 3, ja que \( 105 \) és un múltiple de 3 i \( 3x \) també ho és. Per tant, el valor total ha de ser congruent a \( 0 \mod 3 \).
+
+Ara comprovem les opcions:
+
+A) 45: \( 45 \mod 3 = 0 \) (possible)
+B) 60: \( 60 \mod 3 = 0 \) (possible)
+C) 70: \( 70 \mod 3 = 1 \) (no possible)
+D) 81: \( 81 \mod 3 = 0 \) (possible)
+E) 102: \( 102 \mod 3 = 0 \) (possible)
+
+Per tant, el valor que no pot ser el total en cèntims de totes les monedes és 70, ja que no és un múltiple de 3.
+
+Resposta: C)

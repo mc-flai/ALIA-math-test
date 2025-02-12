@@ -1,0 +1,40 @@
+Raonament: Dani escriu els dígits en un patró alternant entre avançar i retrocedir. El patró complet d'escriptura és el següent:
+
+1. Primer escriu de 0 a 9: `0123456789` (10 dígits).
+2. Després escriu de 9 a 0: `9876543210` (10 dígits).
+3. Torna a escriure de 0 a 9: `0123456789` (10 dígits).
+4. Torna a escriure de 9 a 0: `9876543210` (10 dígits).
+
+Així, cada cicle complet (de 0 a 9 i de 9 a 0) conté 20 dígits. 
+
+Ara, calculem quants cicles complets de 20 dígits hi ha en 2018 dígits:
+\[ 2018 \div 20 = 100 \text{ cicles complets} \text{ amb un residu de } 18. \]
+
+Això significa que Dani ha escrit 100 cicles complets de 20 dígits, que sumen 2000 dígits, i després ha escrit 18 dígits més.
+
+Després de 100 cicles complets, l'últim dígit escrit és el 0 (ja que acaba amb el cicle de 9 a 0). Ara, escriurà 18 dígits més començant de nou amb el patró:
+
+1. 0
+2. 1
+3. 2
+4. 3
+5. 4
+6. 5
+7. 6
+8. 7
+9. 8
+10. 9
+11. 9
+12. 8
+13. 7
+14. 6
+15. 5
+16. 4
+17. 3
+18. 2
+
+L'últim dígit que escriu és el 2.
+
+Per tant, l'últim dígit que ha escrit Dani no és cap de les opcions proporcionades.
+
+Resposta: E) Cap dels anteriors.

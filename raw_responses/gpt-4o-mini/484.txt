@@ -1,0 +1,49 @@
+Raonament: Per escriure el nombre 13 com a suma de 5 nombres imparells, podem utilitzar la següent estratègia. Primer, recordem que la suma de 5 nombres imparells sempre serà imparell, i 13 és un nombre imparell, així que és possible. 
+
+Podem representar els 5 nombres imparells com \( x_1, x_2, x_3, x_4, x_5 \), on cada \( x_i \) és un nombre imparell. La suma que volem és:
+
+\[ x_1 + x_2 + x_3 + x_4 + x_5 = 13 \]
+
+Per simplificar el problema, podem expressar cada nombre imparell com \( x_i = 2y_i + 1 \), on \( y_i \) és un nombre enter no negatiu. Així, la suma es converteix en:
+
+\[ (2y_1 + 1) + (2y_2 + 1) + (2y_3 + 1) + (2y_4 + 1) + (2y_5 + 1) = 13 \]
+
+Simplificant, obtenim:
+
+\[ 2(y_1 + y_2 + y_3 + y_4 + y_5) + 5 = 13 \]
+
+Això implica que:
+
+\[ 2(y_1 + y_2 + y_3 + y_4 + y_5) = 8 \]
+
+Per tant:
+
+\[ y_1 + y_2 + y_3 + y_4 + y_5 = 4 \]
+
+Ara, hem de comptar les solucions no negatives de l'equació \( y_1 + y_2 + y_3 + y_4 + y_5 = 4 \). Utilitzem el teorema de combinacions amb repetició, que ens diu que el nombre de solucions no negatives de l'equació \( x_1 + x_2 + ... + x_k = n \) és donat per:
+
+\[ \binom{n + k - 1}{k - 1} \]
+
+En el nostre cas, \( n = 4 \) i \( k = 5 \):
+
+\[ \binom{4 + 5 - 1}{5 - 1} = \binom{8}{4} \]
+
+Calculant \( \binom{8}{4} \):
+
+\[ \binom{8}{4} = \frac{8 \times 7 \times 6 \times 5}{4 \times 3 \times 2 \times 1} = 70 \]
+
+Això ens dóna el nombre total de solucions, però hem de tenir en compte que les sumes que són permutacions de les mateixes quantitats no es consideren diferents. 
+
+Per tant, hem de dividir les solucions per les permutacions de les quantitats repetides. En aquest cas, les solucions són diverses combinacions de nombres imparells que sumen 13, i hem de considerar les repeticions.
+
+Després de revisar les combinacions possibles, podem trobar que les sumes que compleixen la condició són:
+
+1. \( 1 + 1 + 1 + 1 + 9 \)
+2. \( 1 + 1 + 1 + 3 + 7 \)
+3. \( 1 + 1 + 3 + 3 + 5 \)
+4. \( 1 + 3 + 3 + 3 + 3 \)
+5. \( 3 + 3 + 3 + 3 + 1 \)
+
+Així que, al final, trobem que hi ha 5 combinacions úniques.
+
+Resposta: B) 5

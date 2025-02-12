@@ -1,0 +1,22 @@
+Raonament: Per determinar quan \(10^n + 1\) és un múltiple de 11, hem de considerar el valor de \(10^n\) en relació amb 11. Primer, calculem \(10^n \mod 11\).
+
+Observem que \(10 \equiv -1 \mod 11\). Això significa que:
+
+- Si \(n\) és parell, \(10^n \equiv (-1)^n \equiv 1 \mod 11\).
+- Si \(n\) és senar, \(10^n \equiv (-1)^n \equiv -1 \mod 11\).
+
+Ara, analitzem \(10^n + 1\):
+
+1. Si \(n\) és parell:
+   \[
+   10^n + 1 \equiv 1 + 1 \equiv 2 \mod 11 \quad (\text{no és múltiple de } 11)
+   \]
+
+2. Si \(n\) és senar:
+   \[
+   10^n + 1 \equiv -1 + 1 \equiv 0 \mod 11 \quad (\text{sí és múltiple de } 11)
+   \]
+
+Per tant, \(10^n + 1\) és un múltiple de 11 si \(n\) és senar. Això es pot expressar com \(n = 2m + 1\), on \(m\) és un enter.
+
+Resposta: B)

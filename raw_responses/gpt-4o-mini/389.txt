@@ -1,0 +1,44 @@
+Raonament: Anomenem \( D \) al nombre de llibres de detectius, \( G \) al nombre de guies de viatge i \( C \) al nombre de llibres de ciència ficció. Segons la informació proporcionada:
+
+1. Tres llibres no són de detectius, per tant, \( G + C = 3 \).
+2. Quatre llibres no són guies de viatge, per tant, \( D + C = 4 \).
+3. Cinc llibres no són de ciència ficció, per tant, \( D + G = 5 \).
+
+Ara tenim un sistema d'equacions:
+
+1. \( G + C = 3 \)  (1)
+2. \( D + C = 4 \)  (2)
+3. \( D + G = 5 \)  (3)
+
+Podem resoldre aquest sistema d'equacions. 
+
+De l'equació (1), podem expressar \( C \) en funció de \( G \):
+\[ C = 3 - G \]
+
+Substituïm \( C \) a l'equació (2):
+\[ D + (3 - G) = 4 \]
+\[ D - G = 1 \]
+\[ D = G + 1 \]  (4)
+
+Ara substituïm \( D \) a l'equació (3):
+\[ (G + 1) + G = 5 \]
+\[ 2G + 1 = 5 \]
+\[ 2G = 4 \]
+\[ G = 2 \]
+
+Ara que tenim \( G \), podem trobar \( C \) i \( D \):
+Substituïm \( G \) a l'equació (1):
+\[ C = 3 - 2 = 1 \]
+
+Substituïm \( G \) a l'equació (4):
+\[ D = 2 + 1 = 3 \]
+
+Ara tenim:
+- \( D = 3 \) (llibres de detectius)
+- \( G = 2 \) (guies de viatge)
+- \( C = 1 \) (llibres de ciència ficció)
+
+Per tant, el nombre total de llibres que té Josep és:
+\[ D + G + C = 3 + 2 + 1 = 6 \]
+
+Resposta: E) 6

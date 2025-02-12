@@ -1,0 +1,23 @@
+Raonament: Tenim 7 alumnes, cadascun nascut en un mes diferent. Necessitem formar dos equips de 3 alumnes cadascun, de manera que la persona més gran del primer equip siga més jove que la persona més jove del segon equip. 
+
+Per aconseguir això, primer hem de seleccionar 6 alumnes dels 7 disponibles, ja que un d'ells quedarà fora. Dels 6 alumnes seleccionats, formarem els dos equips. La persona més gran del primer equip ha de ser més jove que la persona més jove del segon equip, el que implica que hem de dividir els 6 alumnes seleccionats en dos grups de 3, de tal manera que el grup amb els alumnes més joves (el primer equip) estigui format per alumnes que són més joves que els del segon equip.
+
+1. **Seleccionar 6 alumnes de 7**: Hi ha \( \binom{7}{6} = 7 \) maneres de fer-ho.
+2. **Dividir els 6 alumnes en dos equips de 3**: Un cop seleccionats els 6 alumnes, podem dividir-los en dos equips de 3. La manera de fer-ho és calcular les combinacions de 3 alumnes del grup de 6, i després dividir per 2 (ja que l'ordre dels equips no importa). Això es calcula com:
+   \[
+   \text{Combinacions} = \frac{\binom{6}{3}}{2} = \frac{20}{2} = 10
+   \]
+
+3. **Condició de l'edat**: La condició que la persona més gran del primer equip siga més jove que la persona més jove del segon equip es compleix automàticament si seleccionem els alumnes de manera que el primer equip conté els 3 més joves dels 6 seleccionats.
+
+Finalment, multiplicant les maneres de seleccionar els alumnes per les maneres de dividir-los en equips, tenim:
+\[
+7 \times 10 = 70
+\]
+No obstant això, hem de considerar que la pregunta demana les maneres de fer la selecció de dos equips de 3 alumnes, i no el total de combinacions. 
+
+Per tant, la resposta correcta és que hi ha 7 maneres de seleccionar 6 alumnes, i per cada selecció, hi ha 10 maneres de dividir-los en equips, però la condició d'edat redueix les combinacions vàlides. 
+
+Després de revisar les opcions, la resposta correcta és que hi ha 7 maneres de fer la selecció de dos equips de 3 alumnes cadascun, de manera que la persona més gran del primer equip siga més jove que la persona més jove del segon equip.
+
+Resposta: C) 7

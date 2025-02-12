@@ -1,0 +1,45 @@
+Raonament: Per trobar quants nombres naturals de tres xifres són divisibles per 2, 3 o per ambdós, podem utilitzar el principi d'inclusió-exclusió.
+
+1. **Nombres de tres xifres**: Els nombres de tres xifres van del 100 al 999. Així que hi ha un total de 999 - 100 + 1 = 900 nombres de tres xifres.
+
+2. **Divisibles per 2**: Els nombres divisibles per 2 entre 100 i 999 són 100, 102, ..., 998. Aquesta és una progressió aritmètica on:
+   - Primer terme (a) = 100
+   - Últim terme (l) = 998
+   - Raó (d) = 2
+
+   El nombre de termes (n) es pot calcular amb la fórmula:
+   \[
+   n = \frac{l - a}{d} + 1 = \frac{998 - 100}{2} + 1 = \frac{898}{2} + 1 = 449 + 1 = 450
+   \]
+
+3. **Divisibles per 3**: Els nombres divisibles per 3 entre 100 i 999 són 102, 105, ..., 999. Aquesta és una altra progressió aritmètica on:
+   - Primer terme (a) = 102
+   - Últim terme (l) = 999
+   - Raó (d) = 3
+
+   El nombre de termes (n) es pot calcular amb la fórmula:
+   \[
+   n = \frac{l - a}{d} + 1 = \frac{999 - 102}{3} + 1 = \frac{897}{3} + 1 = 299 + 1 = 300
+   \]
+
+4. **Divisibles per 6 (2 i 3 alhora)**: Els nombres divisibles per 6 entre 100 i 999 són 102, 108, ..., 996. Aquesta és una progressió aritmètica on:
+   - Primer terme (a) = 102
+   - Últim terme (l) = 996
+   - Raó (d) = 6
+
+   El nombre de termes (n) es pot calcular amb la fórmula:
+   \[
+   n = \frac{l - a}{d} + 1 = \frac{996 - 102}{6} + 1 = \frac{894}{6} + 1 = 149 + 1 = 150
+   \]
+
+5. **Aplicant el principi d'inclusió-exclusió**:
+   \[
+   \text{Total} = (\text{Divisible per 2}) + (\text{Divisible per 3}) - (\text{Divisible per 6})
+   \]
+   \[
+   \text{Total} = 450 + 300 - 150 = 600
+   \]
+
+Per tant, el nombre total de nombres naturals de tres xifres que són divisibles per 2 o per 3 o per ambdós és 600.
+
+Resposta: A)

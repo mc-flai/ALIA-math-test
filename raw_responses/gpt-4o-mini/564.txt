@@ -1,0 +1,29 @@
+Raonament: 
+
+Tenim un total de 10 punts. Volem calcular quantes rectes podem formar unint almenys 2 d'aquests punts. 
+
+1. **Càlcul de les combinacions de 2 punts**: 
+   La fórmula per calcular el nombre de combinacions de \( n \) elements agafats de \( k \) en \( k \) és \( C(n, k) = \frac{n!}{k!(n-k)!} \). En aquest cas, volem calcular \( C(10, 2) \):
+   \[
+   C(10, 2) = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2 \times 1} = 45
+   \]
+   Això significa que podem formar 45 rectes amb qualsevol parell de punts dels 10.
+
+2. **Consideració dels punts colineals**: 
+   Sabem que 4 dels 10 punts són colineals. Quan tenim 4 punts en una recta, només podem formar una recta amb aquests 4 punts. Per tant, hem comptat 4 rectes (una per cada parell de punts) que en realitat són la mateixa recta. 
+
+   El nombre de combinacions de 2 punts entre aquests 4 punts colineals és:
+   \[
+   C(4, 2) = \frac{4!}{2!(4-2)!} = \frac{4 \times 3}{2 \times 1} = 6
+   \]
+   Així que hem comptat 6 rectes, però en realitat només hi ha 1 recta que passa per aquests 4 punts.
+
+3. **Ajustament del total**: 
+   Hem comptat 45 rectes inicialment, però hem de restar les 5 rectes addicionals que hem comptat per error (6 - 1 = 5). Així que el total de rectes és:
+   \[
+   45 - 5 = 40
+   \]
+
+Per tant, el nombre total de rectes que podem formar unint almenys 2 dels 10 punts és 40.
+
+Resposta: B)

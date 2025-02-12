@@ -1,0 +1,59 @@
+Raonament: 
+Tenim un total de 27 estudiants a la classe. Suposem que hi ha \( x \) xics i \( y \) xiques, amb la relació \( x + y = 27 \).
+
+Segons el problema, les dues terceres parts dels xics van repetir l'examen, és a dir, \( \frac{2}{3}x \), i els tres quints de les xiques, és a dir, \( \frac{3}{5}y \).
+
+Ara, calculem quants estudiants van repetir l'examen:
+
+1. **Xics**: \( \frac{2}{3}x \)
+2. **Xiques**: \( \frac{3}{5}y \)
+
+El total d'estudiants que van repetir l'examen és:
+\[
+\frac{2}{3}x + \frac{3}{5}y
+\]
+
+Per poder treballar amb aquestes fraccions, busquem un denominador comú. El mínim comú múltiple de 3 i 5 és 15. Així que reescrivim les fraccions:
+
+\[
+\frac{2}{3}x = \frac{10}{15}x
+\]
+\[
+\frac{3}{5}y = \frac{9}{15}y
+\]
+
+Per tant, el total d'estudiants que van repetir l'examen és:
+\[
+\frac{10}{15}x + \frac{9}{15}y = \frac{10x + 9y}{15}
+\]
+
+Ara, substituïm \( y \) per \( 27 - x \):
+\[
+\frac{10x + 9(27 - x)}{15} = \frac{10x + 243 - 9x}{15} = \frac{x + 243}{15}
+\]
+
+Ara, per saber quants no van repetir l'examen, restem el total d'estudiants que van repetir de 27:
+\[
+27 - \left(\frac{x + 243}{15}\right)
+\]
+
+Però, per simplificar el càlcul, calculem directament quants van repetir l'examen. Sabem que \( x + y = 27 \) i que \( \frac{2}{3}x + \frac{3}{5}y \) ha de ser un nombre enter. 
+
+Per tant, provem amb valors per \( x \) i \( y \) que compleixin \( x + y = 27 \) i que \( \frac{2}{3}x \) i \( \frac{3}{5}y \) siguin enters.
+
+Si \( x = 15 \) (xics) i \( y = 12 \) (xiques):
+- Xics que repeteixen: \( \frac{2}{3} \cdot 15 = 10 \)
+- Xiques que repeteixen: \( \frac{3}{5} \cdot 12 = 7.2 \) (no és enter)
+
+Si \( x = 12 \) (xics) i \( y = 15 \) (xiques):
+- Xics que repeteixen: \( \frac{2}{3} \cdot 12 = 8 \)
+- Xiques que repeteixen: \( \frac{3}{5} \cdot 15 = 9 \)
+
+Total que repeteixen: \( 8 + 9 = 17 \)
+
+Per tant, els que no repeteixen són:
+\[
+27 - 17 = 10
+\]
+
+Resposta: D) 10

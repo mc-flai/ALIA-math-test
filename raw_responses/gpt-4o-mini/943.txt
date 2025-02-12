@@ -1,0 +1,39 @@
+Raonament: Comencem resolent l'equació |x - 2019| + |x - 2020| = 3. Aquesta equació implica que hem de considerar diferents casos en funció del valor de x, ja que les funcions valor absolut canvien de comportament en els punts 2019 i 2020.
+
+1. **Cas 1: x < 2019**
+   En aquest cas, tant |x - 2019| com |x - 2020| es poden escriure sense el valor absolut:
+   \[
+   |x - 2019| = 2019 - x \quad \text{i} \quad |x - 2020| = 2020 - x
+   \]
+   Així, l'equació es converteix en:
+   \[
+   (2019 - x) + (2020 - x) = 3 \implies 4039 - 2x = 3 \implies 2x = 4036 \implies x = 2018
+   \]
+
+2. **Cas 2: 2019 ≤ x < 2020**
+   En aquest interval, tenim:
+   \[
+   |x - 2019| = x - 2019 \quad \text{i} \quad |x - 2020| = 2020 - x
+   \]
+   L'equació es converteix en:
+   \[
+   (x - 2019) + (2020 - x) = 3 \implies 1 = 3
+   \]
+   Aquesta equació no té solució en aquest interval.
+
+3. **Cas 3: x ≥ 2020**
+   Aquí, ambdós valors absoluts es poden escriure sense el valor absolut:
+   \[
+   |x - 2019| = x - 2019 \quad \text{i} \quad |x - 2020| = x - 2020
+   \]
+   L'equació es converteix en:
+   \[
+   (x - 2019) + (x - 2020) = 3 \implies 2x - 4039 = 3 \implies 2x = 4042 \implies x = 2021
+   \]
+
+Ara hem trobat dues solucions: x = 2018 i x = 2021. La suma d'aquestes solucions és:
+\[
+2018 + 2021 = 4039
+\]
+
+Resposta: E) 4039

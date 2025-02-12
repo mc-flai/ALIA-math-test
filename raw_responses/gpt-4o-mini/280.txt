@@ -1,0 +1,20 @@
+Raonament: Per determinar quants zeros hi ha al final del producte \(1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot \ldots \cdot 20\), que és igual a \(20!\), hem de comptar quantes vegades el producte conté el factor \(10\). Cada \(10\) es forma a partir d'un \(2\) i un \(5\). 
+
+En el producte de \(1\) a \(20\), hi ha més factors de \(2\) que de \(5\), així que el nombre de zeros al final del producte dependrà del nombre de factors de \(5\).
+
+Per comptar els factors de \(5\) en \(20!\), utilitzem la fórmula:
+
+\[
+\text{Nombre de factors de } 5 = \left\lfloor \frac{20}{5} \right\rfloor + \left\lfloor \frac{20}{25} \right\rfloor
+\]
+
+Calculant:
+
+1. \(\left\lfloor \frac{20}{5} \right\rfloor = \left\lfloor 4 \right\rfloor = 4\)
+2. \(\left\lfloor \frac{20}{25} \right\rfloor = \left\lfloor 0.8 \right\rfloor = 0\)
+
+Així que el total de factors de \(5\) en \(20!\) és \(4 + 0 = 4\).
+
+Per tant, el producte \(1 \cdot 2 \cdot 3 \cdot \ldots \cdot 20\) té \(4\) zeros al final.
+
+Resposta: D)

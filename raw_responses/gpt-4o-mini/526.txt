@@ -1,0 +1,16 @@
+Raonament: Per trobar la suma més gran possible de dos nombres enters de tres dígits formats pels dígits 1, 2, 3, 4, 5 i 6, hem de distribuir els dígits de manera que els dos nombres resultants siguin el més grans possibles. 
+
+1. Primer, ordenem els dígits de major a menor: 6, 5, 4, 3, 2, 1.
+2. Per maximitzar la suma, podem formar dos nombres de tres dígits. Una estratègia és combinar els dígits més grans amb els dígits mitjans.
+3. Una combinació que sembla prometedora és:
+   - Primer nombre: 654
+   - Segon nombre: 321
+4. Ara calculem la suma: 654 + 321 = 975.
+
+Comprovem si hi ha altres combinacions que podrien donar una suma més gran:
+- Si provem amb 653 i 421, la suma seria 653 + 421 = 1074, que és menor que 975.
+- Altres combinacions com 642 i 531 o 631 i 542 també donen sumes inferiors.
+
+Per tant, la suma més gran que podem obtenir amb els dígits 1, 2, 3, 4, 5 i 6, utilitzant cada dígit una sola vegada, és 975.
+
+Resposta: A) 975

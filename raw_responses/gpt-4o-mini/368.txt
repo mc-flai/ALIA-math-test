@@ -1,0 +1,24 @@
+Raonament: Per trobar els nombres enters positius \( n \) tal que el residu de dividir 141 entre \( n \) és 15, hem d'utilitzar la definició de residu. Això significa que podem escriure:
+
+\[ 141 = k \cdot n + 15 \]
+
+on \( k \) és un enter. Rearreglant aquesta equació, obtenim:
+
+\[ 141 - 15 = k \cdot n \]
+\[ 126 = k \cdot n \]
+
+Això implica que \( n \) ha de ser un divisor de 126. A més, com que el residu és 15, hem de tenir en compte que \( n \) ha de ser més gran que 15 (ja que el residu ha de ser menor que el divisor).
+
+Ara, trobem els divisors de 126. Els divisors de 126 són:
+
+1, 2, 3, 6, 7, 9, 14, 18, 21, 42, 63, 126.
+
+D'entre aquests, els que són majors que 15 són: 18, 21, 42, 63, i 126.
+
+Ara sumem aquests nombres:
+
+\[ 18 + 21 + 42 + 63 + 126 = 270. \]
+
+Per tant, la suma de tots els nombres enters positius \( n \) que compleixen la condició és 270.
+
+Resposta: E) 270.

@@ -1,0 +1,53 @@
+Raonament: La suma dels nombres enters positius des de 1 fins a n es pot calcular amb la fórmula de la suma d'una sèrie aritmètica: \( S = \frac{n(n + 1)}{2} \). Si Joan ha sumat dues vegades un nombre \( x \), la suma que ha obtingut és \( S + x = 857 \). Així que podem escriure l'equació:
+
+\[
+\frac{n(n + 1)}{2} + x = 857
+\]
+
+Per trobar el valor de \( n \), primer hem de determinar un valor aproximat per a \( n \) tal que \( \frac{n(n + 1)}{2} \) estigui a prop de 857. 
+
+Resolent \( \frac{n(n + 1)}{2} \approx 857 \):
+
+\[
+n(n + 1) \approx 1714
+\]
+
+Busquem un valor de \( n \) que satisfaci aquesta equació. Probem amb \( n = 41 \):
+
+\[
+41 \cdot 42 = 1722 \quad (\text{massa gran})
+\]
+
+Probem amb \( n = 40 \):
+
+\[
+40 \cdot 41 = 1640 \quad (\text{massa petit})
+\]
+
+Probem amb \( n = 41 \) de nou:
+
+\[
+\frac{41 \cdot 42}{2} = 861
+\]
+
+Ara, substituïm a l'equació original:
+
+\[
+861 + x = 857 \implies x = 857 - 861 = -4 \quad (\text{no és vàlid})
+\]
+
+Probem amb \( n = 40 \):
+
+\[
+\frac{40 \cdot 41}{2} = 820
+\]
+
+Substituïm:
+
+\[
+820 + x = 857 \implies x = 857 - 820 = 37
+\]
+
+Per tant, el nombre que Joan ha sumat dues vegades és 37.
+
+Resposta: D)

@@ -1,0 +1,88 @@
+Raonament: Tenim dues equacions:
+
+1) \( \frac{600}{y} + \frac{x}{5} = 11 \)  
+2) \( \frac{600}{x} + \frac{y}{5} = 44 \)
+
+Podem expressar \( x \) en funció de \( y \) a partir de la primera equació. Reorganitzem la primera equació:
+
+\[
+\frac{x}{5} = 11 - \frac{600}{y}
+\]
+\[
+x = 5 \left( 11 - \frac{600}{y} \right) = 55 - \frac{3000}{y}
+\]
+
+Ara substituïm \( x \) en la segona equació:
+
+\[
+\frac{600}{55 - \frac{3000}{y}} + \frac{y}{5} = 44
+\]
+
+Multipliquem tot per \( 5 \left( 55 - \frac{3000}{y} \right) \) per eliminar els denominadors:
+
+\[
+5 \cdot 600 + y \left( 55 - \frac{3000}{y} \right) = 44 \cdot 5 \left( 55 - \frac{3000}{y} \right)
+\]
+
+Simplifiquem:
+
+\[
+3000 + 55y - 3000 = 2200 - 66000/y
+\]
+\[
+55y = 2200 - 66000/y
+\]
+
+Multipliquem per \( y \) per eliminar el denominador:
+
+\[
+55y^2 = 2200y - 66000
+\]
+\[
+55y^2 - 2200y + 66000 = 0
+\]
+
+Dividim tota l'equació per 5:
+
+\[
+11y^2 - 440y + 13200 = 0
+\]
+
+Ara utilitzem la fórmula quadràtica \( y = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \):
+
+On \( a = 11 \), \( b = -440 \), i \( c = 13200 \):
+
+\[
+b^2 - 4ac = (-440)^2 - 4 \cdot 11 \cdot 13200
+\]
+\[
+= 193600 - 580800 = -387200
+\]
+
+Com que el discriminant és negatiu, no hi ha solucions reals per a \( y \) en aquesta equació. Això indica que hem comès un error en la simplificació o en la substitució. 
+
+Revisem les equacions originals i provem amb valors de les opcions donades per veure quina d'elles satisfà les dues equacions.
+
+Provem amb les opcions:
+
+1. **Si \( y = 20 \)**:
+   - \( \frac{600}{20} + \frac{x}{5} = 11 \) → \( 30 + \frac{x}{5} = 11 \) → \( \frac{x}{5} = -19 \) (no és vàlid)
+   
+2. **Si \( y = 40 \)**:
+   - \( \frac{600}{40} + \frac{x}{5} = 11 \) → \( 15 + \frac{x}{5} = 11 \) → \( \frac{x}{5} = -4 \) (no és vàlid)
+   
+3. **Si \( y = 60 \)**:
+   - \( \frac{600}{60} + \frac{x}{5} = 11 \) → \( 10 + \frac{x}{5} = 11 \) → \( \frac{x}{5} = 1 \) → \( x = 5 \)
+   - Comprovem la segona equació: \( \frac{600}{5} + \frac{60}{5} = 44 \) → \( 120 + 12 = 132 \) (no és vàlid)
+   
+4. **Si \( y = 80 \)**:
+   - \( \frac{600}{80} + \frac{x}{5} = 11 \) → \( 7.5 + \frac{x}{5} = 11 \) → \( \frac{x}{5} = 3.5 \) → \( x = 17.5 \)
+   - Comprovem la segona equació: \( \frac{600}{17.5} + \frac{80}{5} = 44 \) → \( 34.2857 + 16 = 50.2857 \) (no és vàlid)
+   
+5. **Si \( y = 100 \)**:
+   - \( \frac{600}{100} + \frac{x}{5} = 11 \) → \( 6 + \frac{x}{5} = 11 \) → \( \frac{x}{5} = 5 \) → \( x = 25 \)
+   - Comprovem la segona equació: \( \frac{600}{25} + \frac{100}{5} = 44 \) → \( 24 + 20 = 44 \) (és vàlid)
+
+Per tant, el valor mínim de \( y \) que verifica les dues relacions és 100.
+
+Resposta: E) 100

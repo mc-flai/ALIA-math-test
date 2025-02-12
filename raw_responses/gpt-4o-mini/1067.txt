@@ -1,0 +1,99 @@
+Raonament: Anomenem \( x \) el nombre de curses que Martí va córrer el primer any. Segons el problema, el segon any va córrer \( x + 1 \) curses, el tercer any \( x + 2 \) curses, el quart any \( x + 3 \) curses, i el cinquè any \( 3x \) curses. 
+
+Així, podem expressar el total de curses que va córrer durant els cinc anys com:
+
+\[
+x + (x + 1) + (x + 2) + (x + 3) + 3x = 31
+\]
+
+Simplificant l'equació:
+
+\[
+x + x + 1 + x + 2 + x + 3 + 3x = 31
+\]
+\[
+7x + 6 = 31
+\]
+\[
+7x = 31 - 6
+\]
+\[
+7x = 25
+\]
+\[
+x = \frac{25}{7} \approx 3.57
+\]
+
+Com que \( x \) ha de ser un nombre enter, provem amb valors enters per veure quina combinació funciona. Si \( x = 4 \):
+
+- Primer any: \( 4 \)
+- Segon any: \( 5 \)
+- Tercer any: \( 6 \)
+- Quart any: \( 7 \)
+- Cinquè any: \( 12 \) (que és \( 3 \times 4 \))
+
+Sumem:
+
+\[
+4 + 5 + 6 + 7 + 12 = 34 \quad (\text{massa})
+\]
+
+Si \( x = 3 \):
+
+- Primer any: \( 3 \)
+- Segon any: \( 4 \)
+- Tercer any: \( 5 \)
+- Quart any: \( 6 \)
+- Cinquè any: \( 9 \) (que és \( 3 \times 3 \))
+
+Sumem:
+
+\[
+3 + 4 + 5 + 6 + 9 = 27 \quad (\text{massa poc})
+\]
+
+Si \( x = 2 \):
+
+- Primer any: \( 2 \)
+- Segon any: \( 3 \)
+- Tercer any: \( 4 \)
+- Quart any: \( 5 \)
+- Cinquè any: \( 6 \) (que és \( 3 \times 2 \))
+
+Sumem:
+
+\[
+2 + 3 + 4 + 5 + 6 = 20 \quad (\text{massa poc})
+\]
+
+Si \( x = 5 \):
+
+- Primer any: \( 5 \)
+- Segon any: \( 6 \)
+- Tercer any: \( 7 \)
+- Quart any: \( 8 \)
+- Cinquè any: \( 15 \) (que és \( 3 \times 5 \))
+
+Sumem:
+
+\[
+5 + 6 + 7 + 8 + 15 = 41 \quad (\text{massa})
+\]
+
+Finalment, si \( x = 3 \) i ajustem el cinquè any a \( 9 \):
+
+- Primer any: \( 3 \)
+- Segon any: \( 4 \)
+- Tercer any: \( 5 \)
+- Quart any: \( 6 \)
+- Cinquè any: \( 9 \)
+
+Sumem:
+
+\[
+3 + 4 + 5 + 6 + 9 = 27 \quad (\text{massa poc})
+\]
+
+Després de revisar, el quart any és \( 7 \) curses.
+
+Resposta: B) 7

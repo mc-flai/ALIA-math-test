@@ -1,0 +1,63 @@
+Raonament: 
+Suposem que hi ha \( h \) homes i \( d \) dones a la sala. Segons el problema, tenim que \( h + d \leq 50 \). En un moment determinat, 3/4 dels homes estan ballant, és a dir, \( \frac{3}{4}h \), i 4/5 de les dones estan ballant, és a dir, \( \frac{4}{5}d \).
+
+La quantitat total de persones que estan ballant en aquell moment és la suma dels homes i dones que ballen:
+\[
+\text{Total ballant} = \frac{3}{4}h + \frac{4}{5}d
+\]
+
+Per tal de poder calcular aquesta quantitat, necessitem expressar \( h \) i \( d \) en termes de nombres enters. Per fer-ho, podem buscar un múltiple comú per les fraccions \( \frac{3}{4} \) i \( \frac{4}{5} \). El mínim comú múltiple de 4 i 5 és 20.
+
+Així, podem expressar \( h \) i \( d \) com:
+- \( h = 4k \) (on \( k \) és un enter)
+- \( d = 5m \) (on \( m \) és un enter)
+
+Ara substituïm \( h \) i \( d \) a la suma:
+\[
+\text{Total ballant} = \frac{3}{4}(4k) + \frac{4}{5}(5m) = 3k + 4m
+\]
+
+Ara, per assegurar-nos que \( h + d \leq 50 \):
+\[
+4k + 5m \leq 50
+\]
+
+Per trobar quants homes i dones ballen, busquem valors de \( k \) i \( m \) que compleixin aquesta desigualtat. Probem amb \( k = 5 \) i \( m = 4 \):
+\[
+4(5) + 5(4) = 20 + 20 = 40 \quad (\text{que és } \leq 50)
+\]
+Ara calculem el total de persones ballant:
+\[
+\text{Total ballant} = 3(5) + 4(4) = 15 + 16 = 31
+\]
+
+Probem amb \( k = 6 \) i \( m = 4 \):
+\[
+4(6) + 5(4) = 24 + 20 = 44 \quad (\text{que és } \leq 50)
+\]
+Total ballant:
+\[
+\text{Total ballant} = 3(6) + 4(4) = 18 + 16 = 34
+\]
+
+Probem amb \( k = 5 \) i \( m = 5 \):
+\[
+4(5) + 5(5) = 20 + 25 = 45 \quad (\text{que és } \leq 50)
+\]
+Total ballant:
+\[
+\text{Total ballant} = 3(5) + 4(5) = 15 + 20 = 35
+\]
+
+Finalment, provem amb \( k = 4 \) i \( m = 5 \):
+\[
+4(4) + 5(5) = 16 + 25 = 41 \quad (\text{que és } \leq 50)
+\]
+Total ballant:
+\[
+\text{Total ballant} = 3(4) + 4(5) = 12 + 20 = 32
+\]
+
+Així, la quantitat total de persones que ballaven en aquell moment és 32.
+
+Resposta: D)

@@ -1,0 +1,29 @@
+Raonament: Un nombre de tres xifres es pot representar com \(abc\), on \(a\), \(b\) i \(c\) són les xifres del nombre. Segons la definició, un nombre és bonic si \(b > a + c\). 
+
+Per trobar la quantitat més gran de nombres bonics consecutius, hem de considerar les possibles combinacions de \(a\), \(b\) i \(c\) que compleixin aquesta condició. 
+
+1. **Xifres possibles**: 
+   - \(a\) pot ser de 1 a 9 (no pot ser 0 perquè és un nombre de tres xifres).
+   - \(b\) pot ser de 0 a 9.
+   - \(c\) pot ser de 0 a 9.
+
+2. **Condició de bonic**: 
+   - Per a cada valor de \(b\), hem de trobar quins valors de \(a\) i \(c\) compleixen \(b > a + c\).
+
+3. **Anàlisi de valors de \(b\)**:
+   - Si \(b = 1\): \(1 > a + c\) no té solucions perquè \(a\) mínim és 1.
+   - Si \(b = 2\): \(2 > a + c\) implica que \(a + c\) pot ser 0 o 1, per tant, les combinacions són (1,0) i (0,1) (no vàlid perquè \(a\) no pot ser 0).
+   - Si \(b = 3\): \(3 > a + c\) implica que \(a + c\) pot ser 0, 1 o 2. Les combinacions vàlides són (1,0), (0,1), (2,0), (0,2) i (1,1).
+   - Continuem així fins a \(b = 9\).
+
+4. **Comprovació de nombres consecutius**:
+   - Si analitzem els nombres consecutius, podem veure que per a \(b = 5\) (5,0), (4,1), (3,2), (2,3), (1,4) i (0,5) són vàlids.
+   - Si continuem, podem trobar que per a \(b = 6\) (6,0), (5,1), (4,2), (3,3) són vàlids.
+   - I així successivament fins a \(b = 9\).
+
+5. **Nombres consecutius**:
+   - Si analitzem les combinacions, podem trobar que podem tenir fins a 7 nombres consecutius que compleixen la condició de bonic.
+
+Per tant, la quantitat més gran de nombres bonics consecutius que podem trobar és 7.
+
+Resposta: D) 7

@@ -1,0 +1,36 @@
+Raonament: Per trobar la xifra de les unitats del nombre \(S = 1^2 + 2^2 + 3^2 + \cdots + 2017^2\), podem calcular la suma dels quadrats dels nombres de 1 a 2017 i observar la xifra de les unitats del resultat. 
+
+Una manera més senzilla de fer-ho és observar la xifra de les unitats dels quadrats dels nombres del 1 al 10, ja que les xifres de les unitats dels quadrats es repeteixen cada 10 nombres. 
+
+Els quadrats dels nombres del 1 al 10 són:
+- \(1^2 = 1\) (unitat: 1)
+- \(2^2 = 4\) (unitat: 4)
+- \(3^2 = 9\) (unitat: 9)
+- \(4^2 = 16\) (unitat: 6)
+- \(5^2 = 25\) (unitat: 5)
+- \(6^2 = 36\) (unitat: 6)
+- \(7^2 = 49\) (unitat: 9)
+- \(8^2 = 64\) (unitat: 4)
+- \(9^2 = 81\) (unitat: 1)
+- \(10^2 = 100\) (unitat: 0)
+
+Ara, sumem les unitats:
+- \(1 + 4 + 9 + 6 + 5 + 6 + 9 + 4 + 1 + 0 = 45\)
+
+La xifra de les unitats de 45 és 5. 
+
+Com que els quadrats dels nombres es repeteixen cada 10, podem multiplicar aquesta suma per 201, que és el nombre de grups de 10 que hi ha en 2017, i afegir la suma de les unitats dels quadrats dels nombres del 1 al 7 (ja que 2017 = 2010 + 7).
+
+La suma de les unitats dels quadrats dels nombres del 1 al 7 és:
+- \(1 + 4 + 9 + 6 + 5 + 6 + 9 = 40\)
+
+La xifra de les unitats de 40 és 0. 
+
+Ara, sumem les unitats:
+- \(45 \times 201 + 0\)
+
+La xifra de les unitats de \(45 \times 201\) és la mateixa que la de \(45\) (ja que \(201\) acaba en 1, no afecta la xifra de les unitats). 
+
+Per tant, la xifra de les unitats de \(S\) és 5.
+
+Resposta: B) 5

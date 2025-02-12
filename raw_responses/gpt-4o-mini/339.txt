@@ -1,0 +1,26 @@
+Raonament: Primer, hem de determinar les condicions que han de complir les arestes dels cubs. Sabem que el volum d'un cub es calcula com \( V = a^3 \), on \( a \) és la longitud de l'aresta del cub. 
+
+1. **Volum mínim**: El volum mínim és de 1 decímetre cúbic, que equival a 1000 centímetres cúbics. Això significa que:
+   \[
+   a^3 \geq 1000 \implies a \geq 10 \text{ cm}
+   \]
+
+2. **Volum màxim**: El volum màxim és de 1 metre cúbic, que equival a 1000000 centímetres cúbics. Això significa que:
+   \[
+   a^3 \leq 1000000 \implies a \leq 100 \text{ cm}
+   \]
+
+3. **Rang de valors per a \( a \)**: Ara sabem que la longitud de l'aresta \( a \) ha de ser un nombre enter entre 10 cm i 100 cm, incloent ambdós extrems. 
+
+4. **Càlcul de les grandàries possibles**: Els valors possibles per a \( a \) són:
+   \[
+   10, 11, 12, \ldots, 100
+   \]
+   Per calcular quants valors hi ha, podem restar el valor mínim del valor màxim i sumar 1 (ja que ambdós extrems són inclusius):
+   \[
+   100 - 10 + 1 = 91
+   \]
+
+Per tant, hi ha 91 grandàries diferents possibles per als cubs de plàstic que es fabriquen en aquesta fàbrica.
+
+Resposta: D) 91

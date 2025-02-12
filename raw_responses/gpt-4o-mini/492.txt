@@ -1,0 +1,17 @@
+Raonament: Tenim 5 vagons en un tren, i cada passatger té un nombre determinat de veïns: exactament 5 o exactament 10. 
+
+1. **Veïns en un vagó**: Cada vagó té almenys un passatger, i els passatgers d'un mateix vagó són veïns entre ells. Si un passatger té 5 veïns, això pot significar que hi ha 6 passatgers en el seu vagó (5 veïns + ell mateix). Si un passatger té 10 veïns, això pot significar que hi ha 11 passatgers en el seu vagó.
+
+2. **Veïns entre vagons veïns**: A més dels passatgers del seu vagó, un passatger pot tenir veïns en els vagons adjacents. Si considerem que un passatger en el primer vagó pot tenir veïns només en el seu vagó i en el segon, i així successivament, podem deduir que el nombre de veïns dependrà de la distribució dels passatgers entre els vagons.
+
+3. **Anàlisi de casos**: 
+   - Si tots els passatgers en un vagó són veïns entre ells, i si un passatger té 10 veïns, això implica que pot haver-hi passatgers en els vagons adjacents. 
+   - Si considerem que hi ha un nombre total de passatgers \( P \), i que cada passatger té 5 o 10 veïns, podem establir que la suma total de veïns ha de ser consistent amb el nombre total de passatgers.
+
+4. **Càlcul de veïns**: Si un passatger té 5 veïns, això implica que pot haver-hi 6 passatgers en el seu vagó. Si un passatger té 10 veïns, això implica que pot haver-hi 11 passatgers en el seu vagó o que els veïns provenen de vagons adjacents. 
+
+5. **Distribució**: Si considerem que hi ha un nombre total de passatgers \( P \) que es distribueixen entre els 5 vagons, i que cada passatger té veïns que sumen 5 o 10, podem deduir que el nombre total de passatgers ha de ser un múltiple de 5, ja que cada vagó ha de tenir almenys un passatger.
+
+6. **Solució**: Després d'analitzar les opcions, podem veure que si hi ha 15 passatgers, és possible que alguns tinguin 5 veïns i altres 10, depenent de la seva distribució entre els vagons. Així, la resposta correcta és que hi ha 15 passatgers.
+
+Resposta: B) 15

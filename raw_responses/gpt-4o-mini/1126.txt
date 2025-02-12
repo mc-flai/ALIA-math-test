@@ -1,0 +1,16 @@
+Raonament: Primer, calculem el total de nombres de tres xifres possibles. Els nombres de tres xifres van del 100 al 999, així que hi ha 999 - 100 + 1 = 900 nombres de tres xifres.
+
+A continuació, utilitzem el principi de complement per calcular quants nombres de tres xifres no contenen cap dels dígits 1, 2 o 3. Els dígits que podem utilitzar són 0, 4, 5, 6, 7, 8 i 9. Això ens dóna un total de 7 dígits disponibles.
+
+Per formar un nombre de tres xifres:
+- La primera xifra (centenes) no pot ser 0, així que només podem utilitzar 4, 5, 6, 7, 8 o 9. Això ens dóna 6 opcions.
+- La segona xifra (deu) pot ser qualsevol dels 7 dígits (0, 4, 5, 6, 7, 8, 9), així que tenim 7 opcions.
+- La tercera xifra (unitats) també pot ser qualsevol dels 7 dígits, així que tenim 7 opcions.
+
+Per tant, el nombre total de nombres de tres xifres que no contenen 1, 2 o 3 és:
+6 (centenes) * 7 (deu) * 7 (unitats) = 294.
+
+Finalment, per trobar quants nombres de tres xifres contenen com a mínim un dels dígits 1, 2 o 3, restem el nombre de nombres que no contenen aquests dígits del total de nombres de tres xifres:
+900 (total) - 294 (sense 1, 2 o 3) = 606.
+
+Resposta: E) 606.

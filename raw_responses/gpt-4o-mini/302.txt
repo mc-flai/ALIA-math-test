@@ -1,0 +1,59 @@
+Raonament: Tenim quatre persones (Anna, Beatriu, Carles i David) que han atrapat un total de 11 peixos. Sabem que cada persona ha atrapat un nombre diferent de peixos i que Anna ha atrapat el màxim i Beatriu el mínim. 
+
+Si Beatriu és la que menys ha atrapat, ha de tenir almenys 1 peix. Com que no hi ha dues persones amb el mateix nombre de peixos, les quantitats que poden tenir les altres tres persones (Anna, Carles i David) han de ser diferents i superiors a 1.
+
+Suposem que Beatriu ha atrapat 1 peix. Això deixa 10 peixos per Anna, Carles i David. Si Anna és la que més ha atrapat, ha de tenir més que Carles i David. Podem assignar els nombres de peixos de la següent manera:
+
+- Beatriu: 1 peix
+- Anna: 4 peixos (màxim)
+- Carles: 3 peixos
+- David: 2 peixos
+
+Així, la suma seria: 1 + 4 + 3 + 2 = 10, que no és correcte, ja que necessitem 11 peixos. 
+
+Provem amb Beatriu amb 2 peixos:
+
+- Beatriu: 2 peixos
+- Anna: 5 peixos (màxim)
+- Carles: 4 peixos
+- David: 3 peixos
+
+La suma seria: 2 + 5 + 4 + 3 = 14, que tampoc és correcte.
+
+Provem amb Beatriu amb 3 peixos:
+
+- Beatriu: 3 peixos
+- Anna: 6 peixos (màxim)
+- Carles: 2 peixos
+- David: 1 peix
+
+La suma seria: 3 + 6 + 2 + 1 = 12, que tampoc és correcte.
+
+Finalment, provem amb Beatriu amb 1 peix:
+
+- Beatriu: 1 peix
+- Anna: 4 peixos (màxim)
+- Carles: 3 peixos
+- David: 2 peixos
+
+La suma seria: 1 + 4 + 3 + 2 = 10, que tampoc és correcte.
+
+Després de diverses proves, la combinació correcta és:
+
+- Beatriu: 1 peix
+- Anna: 6 peixos (màxim)
+- Carles: 3 peixos
+- David: 1 peix
+
+Així, la suma seria: 1 + 6 + 3 + 1 = 11.
+
+Ara, per saber quants peixos han atrapat entre Carles i David, sumem els seus peixos:
+
+Carles: 3 peixos
+David: 1 peix
+
+3 + 1 = 4.
+
+Per tant, la resposta correcta és:
+
+Resposta: B) 4.

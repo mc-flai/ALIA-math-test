@@ -1,0 +1,54 @@
+Raonament: Tenim la funció \( f(x) = ax^{2015} + bx - 1010 \). Sabem que \( f(-5) = 5 \). Això implica que substituint \( x = -5 \) a la funció, obtenim:
+
+\[
+f(-5) = a(-5)^{2015} + b(-5) - 1010 = 5.
+\]
+
+Com que \( (-5)^{2015} \) és un nombre negatiu (ja que 2015 és un exponent impar), podem escriure:
+
+\[
+f(-5) = -a \cdot 5^{2015} - 5b - 1010 = 5.
+\]
+
+Reorganitzant l'equació, tenim:
+
+\[
+-a \cdot 5^{2015} - 5b = 5 + 1010,
+\]
+\[
+-a \cdot 5^{2015} - 5b = 1015.
+\]
+
+Ara, calculem \( f(5) \):
+
+\[
+f(5) = a(5)^{2015} + b(5) - 1010.
+\]
+
+Observem que \( f(5) \) i \( f(-5) \) són simètrics respecte a l'efecte de \( a \) i \( b \) en la funció. En particular, podem veure que:
+
+\[
+f(5) + f(-5) = (a(5)^{2015} + b(5) - 1010) + (-a(5)^{2015} - 5b - 1010).
+\]
+
+Simplificant, obtenim:
+
+\[
+f(5) + f(-5) = (a(5)^{2015} - a(5)^{2015}) + (b(5) - 5b) - 2020 = -4b - 2020.
+\]
+
+Sabem que \( f(-5) = 5 \), així que substituïm:
+
+\[
+f(5) + 5 = -4b - 2020.
+\]
+
+Reorganitzant, tenim:
+
+\[
+f(5) = -4b - 2025.
+\]
+
+Per tant, el valor de \( f(5) \) depèn del valor de \( b \). Com que no tenim informació addicional sobre \( b \), no podem determinar un valor concret per a \( f(5) \).
+
+Resposta: E) Depén dels valors de a i de b.

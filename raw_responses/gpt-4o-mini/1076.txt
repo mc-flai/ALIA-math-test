@@ -1,0 +1,22 @@
+Raonament: El producte de les xifres d'un nombre és igual a \(2^{2024}\). Per tal de trobar el nombre més menut amb aquest producte, hem de considerar quines xifres podem utilitzar. Les xifres que podem utilitzar són del 1 al 9, i el producte de les xifres ha de ser igual a \(2^{2024}\).
+
+Les xifres que contenen factors de 2 són: 
+- 2 (que aporta un factor de \(2^1\))
+- 4 (que aporta un factor de \(2^2\))
+- 6 (que aporta un factor de \(2^1\) i \(3^1\))
+- 8 (que aporta un factor de \(2^3\))
+
+Per tal de minimitzar el nombre, hem de prioritzar l'ús de les xifres més petites que contenen factors de 2. La xifra 8 és la que aporta més factors de 2, així que la utilitzarem tant com sigui possible.
+
+1. Si utilitzem \(n\) xifres de 8, el producte serà \(8^n = (2^3)^n = 2^{3n}\).
+2. Necessitem que \(3n \geq 2024\), per tant, \(n \geq \frac{2024}{3} \approx 674.67\). Això significa que necessitem almenys 675 xifres de 8 per aconseguir un producte que sigui igual o superior a \(2^{2024}\).
+
+3. Si utilitzem 675 xifres de 8, el producte serà \(8^{675} = 2^{2025}\), que és més gran que \(2^{2024}\). Per tant, podem substituir una de les xifres de 8 per una xifra de menor valor que també contingui factors de 2, com ara 4, per ajustar el producte.
+
+4. Si substituïm una xifra de 8 per una de 4, el producte es convertirà en \(8^{674} \times 4^1 = 2^{2022} \times 2^2 = 2^{2024}\), que és exactament el que necessitem.
+
+5. Així, el nombre més menut que podem formar amb 674 xifres de 8 i 1 xifra de 4 és 4 seguit de 674 xifres de 8, que és un nombre amb un total de \(674 + 1 = 675\) xifres.
+
+Per tant, el nombre més menut amb un producte de les xifres igual a \(2^{2024}\) té 675 xifres.
+
+Resposta: C) 675

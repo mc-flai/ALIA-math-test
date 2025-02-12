@@ -1,0 +1,44 @@
+Raonament: Per trobar l'última xifra no nul·la del nombre \(2^{257} \cdot 3^4 \cdot 5^{53} \cdot 4\), primer hem de simplificar l'expressió. Observem que \(4\) es pot escriure com \(2^2\), així que podem reescriure el producte:
+
+\[
+2^{257} \cdot 3^4 \cdot 5^{53} \cdot 4 = 2^{257} \cdot 3^4 \cdot 5^{53} \cdot 2^2 = 2^{259} \cdot 3^4 \cdot 5^{53}
+\]
+
+Ara, per trobar l'última xifra no nul·la, hem de considerar el producte de les potències de 2, 3 i 5. L'última xifra d'un nombre es pot determinar a partir de la seva forma en base 10, que depèn de les potències de 2 i 5, ja que \(10 = 2 \cdot 5\).
+
+En aquest cas, tenim:
+
+- \(2^{259}\) aporta 259 factors de 2.
+- \(5^{53}\) aporta 53 factors de 5.
+
+El nombre de factors de 10 que podem formar és el mínim entre els factors de 2 i 5, que és \(53\). Això significa que podem formar \(10^{53}\), que contribueix amb 53 zeros al final del producte. 
+
+Ara, per trobar l'última xifra no nul·la, hem de considerar el que queda després de treure \(10^{53}\) del producte. Això es pot fer calculant el producte restant:
+
+\[
+2^{259 - 53} \cdot 3^4 = 2^{206} \cdot 3^4
+\]
+
+Ara calculem \(2^{206} \cdot 3^4\) i busquem l'última xifra no nul·la. Primer, calculem \(3^4\):
+
+\[
+3^4 = 81
+\]
+
+Ara, calculem l'última xifra de \(2^{206}\). Les últimes xifres de les potències de 2 segueixen un patró cíclic de 4: \(2, 4, 8, 6\). Per tant, hem de calcular \(206 \mod 4\):
+
+\[
+206 \mod 4 = 2
+\]
+
+Això significa que l'última xifra de \(2^{206}\) és \(4\).
+
+Ara, multipliquem les últimes xifres:
+
+\[
+4 \cdot 1 = 4
+\]
+
+Per tant, l'última xifra no nul·la del producte \(2^{259} \cdot 3^4 \cdot 5^{53} \cdot 4\) és \(4\).
+
+Resposta: C) 4

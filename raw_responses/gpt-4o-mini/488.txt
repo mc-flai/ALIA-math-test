@@ -1,0 +1,54 @@
+Raonament: Per resoldre el problema, analitzem les prediccions de cada participant i comptem quantes vegades cada ciclista apareix en cada posició. Sabem que cada ciclista ha estat situat correctament com a mínim dues vegades. 
+
+Les prediccions són les següents:
+1. Sergi: CDBEA
+2. Pere: ABDEC
+3. Joana: EADBC
+4. Maria: CEADB
+5. Jordi: DAECB
+6. Lluïsa: BACED
+
+Ara, comptem les aparicions de cada ciclista en cada posició:
+
+- **Posició 1**:
+  - C: 1 (Sergi)
+  - A: 2 (Pere, Lluïsa)
+  - E: 1 (Joana)
+  - D: 1 (Maria)
+
+- **Posició 2**:
+  - D: 2 (Sergi, Maria)
+  - B: 2 (Pere, Lluïsa)
+  - A: 1 (Joana)
+  - A: 1 (Jordi)
+
+- **Posició 3**:
+  - B: 2 (Sergi, Lluïsa)
+  - D: 1 (Pere)
+  - A: 2 (Joana, Maria)
+  - C: 1 (Jordi)
+
+- **Posició 4**:
+  - E: 1 (Sergi)
+  - C: 2 (Pere, Joana)
+  - B: 1 (Maria)
+  - E: 1 (Jordi)
+
+- **Posició 5**:
+  - A: 2 (Sergi, Pere)
+  - C: 1 (Joana)
+  - D: 1 (Maria)
+  - B: 1 (Jordi)
+
+Ara, analitzem quines posicions podrien ser correctes per a cada ciclista, tenint en compte que cada ciclista ha d'estar en la seva posició correcta almenys dues vegades. 
+
+Després de revisar les aparicions, podem deduir que:
+- A ha d'estar en la posició 1 o 5 (apareix dues vegades en la posició 5).
+- B ha d'estar en la posició 2 o 3 (apareix dues vegades en la posició 2).
+- C ha d'estar en la posició 3 o 4 (apareix dues vegades en la posició 4).
+- D ha d'estar en la posició 1 o 2 (apareix dues vegades en la posició 2).
+- E ha d'estar en la posició 1 o 4 (apareix dues vegades en la posició 4).
+
+Després de revisar les opcions de resposta, la que millor s'ajusta a les condicions és la **B) CADEB**. 
+
+Resposta: B)

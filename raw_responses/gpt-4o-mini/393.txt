@@ -1,0 +1,34 @@
+Raonament: Sara té un total de 5 cubs (3 rojos i 2 blancs). Per calcular el nombre de torres diferents que pot construir, hem de considerar que els cubs de color roig són indistinguibles entre si, així com els cubs de color blanc. 
+
+El nombre total de maneres de disposar els cubs es pot calcular utilitzant la fórmula de combinacions per a permutacions de elements indistinguibles:
+
+\[
+\text{Nombre de torres} = \frac{n!}{n_1! \cdot n_2!}
+\]
+
+On:
+- \( n \) és el nombre total de cubs (5 en aquest cas),
+- \( n_1 \) és el nombre de cubs rojos (3),
+- \( n_2 \) és el nombre de cubs blancs (2).
+
+Així que substituïm:
+
+\[
+\text{Nombre de torres} = \frac{5!}{3! \cdot 2!}
+\]
+
+Calculant els factorials:
+
+- \( 5! = 120 \)
+- \( 3! = 6 \)
+- \( 2! = 2 \)
+
+Per tant:
+
+\[
+\text{Nombre de torres} = \frac{120}{6 \cdot 2} = \frac{120}{12} = 10
+\]
+
+Així que Sara pot construir 10 torres diferents amb els seus cubs.
+
+Resposta: D) 10

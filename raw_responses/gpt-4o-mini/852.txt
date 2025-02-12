@@ -1,0 +1,11 @@
+Raonament: Quan Susanna fa talls en el pastís, cada tall que va d'un costat a un altre del pastís divideix el pastís en trossos. Si fa 7 talls, hem de considerar com es distribueixen aquests talls. 
+
+Si tots els talls són paral·lels a un costat del rectangle, per exemple, si tots són talls horitzontals, cada tall afegeix un tros més al pastís. En aquest cas, amb 7 talls horitzontals, obtindríem 8 trossos (1 més que el nombre de talls).
+
+Si, en canvi, Susanna alterna els talls, per exemple, fa 3 talls horitzontals i 4 talls verticals, el nombre de trossos es calcula amb la fórmula (n + 1) * (m + 1), on n és el nombre de talls horitzontals i m és el nombre de talls verticals. En aquest cas, tindríem (3 + 1) * (4 + 1) = 4 * 5 = 20 trossos.
+
+Però, si considerem que no és possible que li quedin trossos que no siguin sencers, el nombre de trossos que no és possible que li quedin és el que no es pot obtenir amb 7 talls. 
+
+Amb 7 talls, el màxim que pot obtenir és 20 trossos, i el mínim és 8 trossos. Així que, per tant, no és possible que li quedin 12, 14, 18 o 20 trossos, ja que aquests números no es poden obtenir amb 7 talls.
+
+Resposta: B) 12 trossos.

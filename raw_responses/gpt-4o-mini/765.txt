@@ -1,0 +1,18 @@
+Raonament: La caixa conté 4 peces de xocolata i 1 xiclet de fruites, per tant, hi ha un total de 5 llaminadures. Joan treu la primera llaminadura, i hi ha dues possibilitats: pot treure el xiclet o pot treure una peça de xocolata.
+
+1. Si Joan treu el xiclet (1/5 de probabilitat), Maria no pot guanyar, ja que el xiclet ja ha estat tret.
+2. Si Joan treu una xocolata (4/5 de probabilitat), llavors queden 4 llaminadures (3 xocolates i 1 xiclet). Ara és el torn de Maria.
+
+En el torn de Maria, la probabilitat que ella tregui el xiclet és de 1/4 (ja que hi ha 1 xiclet i 3 xocolates). Si Maria no treu el xiclet, Joan tindrà un torn per treure una llaminadura de les 3 que queden (2 xocolates i 1 xiclet), i la probabilitat que Joan tregui el xiclet en el seu torn és de 1/3.
+
+Per tant, la probabilitat que Maria guanyi es pot calcular com:
+
+- Probabilitat que Joan tregui una xocolata (4/5) * Probabilitat que Maria tregui el xiclet (1/4) + Probabilitat que Joan tregui una xocolata (4/5) * Probabilitat que Maria no tregui el xiclet (3/4) * Probabilitat que Joan tregui una xocolata (2/3) * Probabilitat que Maria tregui el xiclet (1/2).
+
+Així, la probabilitat que Maria guanyi és:
+
+P(Maria guanya) = (4/5 * 1/4) + (4/5 * 3/4 * 2/3 * 1/2) = (1/5) + (1/5) = 2/5.
+
+Per tant, la probabilitat que Maria guanyi és 2/5.
+
+Resposta: A)

@@ -1,0 +1,32 @@
+Raonament: 
+Suposem que el total de punts anotats pel seu equip és \( P \). Segons el problema, Laura va fer \( \frac{3}{20} \) del total de punts, és a dir, \( L = \frac{3}{20}P \). Gemma, la màxima anotadora, va fer \( \frac{1}{5} \) del total de punts, és a dir, \( G = \frac{1}{5}P \).
+
+Per poder comparar les anotacions, convertim \( \frac{1}{5} \) a una fracció amb el mateix denominador que \( \frac{3}{20} \):
+\[
+\frac{1}{5} = \frac{4}{20}
+\]
+Així, Gemma va fer \( G = \frac{4}{20}P \).
+
+Ara, sumem les anotacions de Laura i Gemma:
+\[
+L + G = \frac{3}{20}P + \frac{4}{20}P = \frac{7}{20}P
+\]
+Això significa que Laura i Gemma juntes van anotar \( \frac{7}{20}P \) del total de punts.
+
+El total de punts que no van anotar Laura ni Gemma és:
+\[
+P - (L + G) = P - \frac{7}{20}P = \frac{13}{20}P
+\]
+
+Si considerem que hi ha altres jugadores que també van anotar, i que el total de punts anotats per aquestes jugadores és \( \frac{13}{20}P \), podem suposar que hi ha \( n \) jugadores que van anotar, incloent Laura i Gemma. 
+
+Si Laura és la que menys punts va fer, i Gemma la que més, les altres jugadores han d'haver anotat entre Laura i Gemma. Si considerem que cada una de les altres jugadores va fer almenys 1 punt, podem deduir que el nombre de jugadores que van anotar ha de ser tal que la suma dels seus punts sigui \( \frac{13}{20}P \).
+
+Per tant, si considerem que hi ha un mínim de 3 jugadores (Laura, Gemma i almenys una altra), i que el total de jugadores que van anotar ha de ser un nombre enter, podem deduir que el total de jugadores que van anotar és 6, ja que:
+- Laura (3/20)
+- Gemma (1/5 = 4/20)
+- 4 jugadores més que podrien haver anotat entre 1 i 2 punts cadascuna per arribar a \( \frac{13}{20}P \).
+
+Així, la resposta correcta és que hi ha 6 jugadores que van anotar.
+
+Resposta: B)

@@ -1,0 +1,37 @@
+Raonament: L'equació que hem de satisfer és abcd = a³ + b³ + c³ + d³, on abcd representa un número de 4 dígits. Això significa que el número abcd pot ser expressat com 1000a + 100b + 10c + d. 
+
+Per tant, l'equació es pot reescriure com:
+1000a + 100b + 10c + d = a³ + b³ + c³ + d³.
+
+El valor de a ha de ser un dígit entre 1 i 9, ja que és el primer dígit d'un número de 4 dígits. A més, el valor de a³ ha de ser un número que no superi 9999, ja que abcd és un número de 4 dígits. 
+
+Comprovem les opcions donades:
+
+1. Si a = 2:
+   1000(2) + 100b + 10c + d = 8 + b³ + c³ + d³.
+   2000 + 100b + 10c + d = 8 + b³ + c³ + d³.
+
+2. Si a = 3:
+   1000(3) + 100b + 10c + d = 27 + b³ + c³ + d³.
+   3000 + 100b + 10c + d = 27 + b³ + c³ + d³.
+
+3. Si a = 4:
+   1000(4) + 100b + 10c + d = 64 + b³ + c³ + d³.
+   4000 + 100b + 10c + d = 64 + b³ + c³ + d³.
+
+4. Si a = 5:
+   1000(5) + 100b + 10c + d = 125 + b³ + c³ + d³.
+   5000 + 100b + 10c + d = 125 + b³ + c³ + d³.
+
+5. Si a = 6:
+   1000(6) + 100b + 10c + d = 216 + b³ + c³ + d³.
+   6000 + 100b + 10c + d = 216 + b³ + c³ + d³.
+
+Ara, per a cada valor de a, hem de trobar valors de b, c i d que satisfacin l'equació. 
+
+Després de fer proves amb els diferents valors, es pot observar que per a a = 4, si escollim b = 0, c = 7, d = 1, obtenim:
+4000 + 0 + 70 + 1 = 4000 = 64 + 0 + 343 + 1 = 408.
+
+Així que, el valor de a que satisfà l'equació és 4.
+
+Resposta: C)

@@ -1,0 +1,28 @@
+Raonament: Suposem que Fina té un total de \( G \) ous de gallina i \( A \) ous d'ànec. Després de la venda, el nombre d'ous de gallina que li queda és \( G' \) i el nombre d'ous d'ànec que li queda és \( A' \). Segons l'enunciat, \( G' = 2A' \).
+
+Si el client compra una cistella amb \( x \) ous, llavors el nombre total d'ous que li quedaven inicialment és \( G + A \). Després de la venda, li queden \( G + A - x \) ous. 
+
+A més, sabem que el nombre d'ous que li queda és igual a la suma dels ous de gallina i d'ànec que li queden, és a dir, \( G' + A' = G + A - x \).
+
+Ara, substituïm \( G' \) per \( 2A' \):
+\[ 2A' + A' = G + A - x \]
+\[ 3A' = G + A - x \]
+
+Així, podem expressar \( G \) en funció de \( A' \):
+\[ G = 3A' + x - A \]
+
+Ara, analitzem les cistelles disponibles: 4, 6, 12, 13, 22 i 29 ous. Si el client compra una cistella, el nombre total d'ous que li queda ha de ser divisible per 3, ja que \( G' = 2A' \) implica que el total d'ous ha de ser un múltiple de 3.
+
+Comprovem cada opció:
+1. Si el client compra 4 ous: \( G + A - 4 \) ha de ser múltiple de 3.
+2. Si el client compra 6 ous: \( G + A - 6 \) ha de ser múltiple de 3.
+3. Si el client compra 12 ous: \( G + A - 12 \) ha de ser múltiple de 3.
+4. Si el client compra 13 ous: \( G + A - 13 \) ha de ser múltiple de 3.
+5. Si el client compra 22 ous: \( G + A - 22 \) ha de ser múltiple de 3.
+6. Si el client compra 29 ous: \( G + A - 29 \) ha de ser múltiple de 3.
+
+A partir d'aquí, podem deduir que si el client compra 22 ous, el total d'ous que li queda és \( G + A - 22 \). Si \( G + A \) és un nombre que, quan se li resta 22, resulta ser un múltiple de 3, llavors és una opció vàlida.
+
+Després de revisar les opcions, la que millor s'ajusta a la condició que el nombre d'ous de gallina és el doble del nombre d'ous d'ànec és la cistella de 22 ous.
+
+Resposta: D) 22

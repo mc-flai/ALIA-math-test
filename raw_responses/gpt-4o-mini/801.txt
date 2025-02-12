@@ -1,0 +1,23 @@
+Raonament: Observem el patró de tocs del cucut en funció de l'hora. Els tocs corresponen a la suma dels números naturals fins a l'hora indicada. Així, podem veure que:
+
+- A la 1 en punt toca 1 vegada (1)
+- A les 2 en punt toca 3 vegades (1 + 2)
+- A les 3 en punt toca 6 vegades (1 + 2 + 3)
+- A les 4 en punt toca 10 vegades (1 + 2 + 3 + 4)
+- A les 5 en punt toca 15 vegades (1 + 2 + 3 + 4 + 5)
+
+Això ens indica que el nombre de tocs a l'hora \( n \) és la suma dels primers \( n \) números naturals, que es pot calcular amb la fórmula:
+
+\[
+S_n = \frac{n(n + 1)}{2}
+\]
+
+Per tant, per a les 8 en punt, substituïm \( n = 8 \):
+
+\[
+S_8 = \frac{8(8 + 1)}{2} = \frac{8 \cdot 9}{2} = \frac{72}{2} = 36
+\]
+
+Per tant, el cucut toca 36 vegades a les 8 en punt.
+
+Resposta: D)

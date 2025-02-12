@@ -1,0 +1,63 @@
+Raonament: Anomenem els cinc nombres de la llista com a \( a, b, c, d, e \). Segons les condicions donades:
+
+1. La suma dels primers tres nombres és 100: \( a + b + c = 100 \)
+2. La suma dels tres que estan al mig és 200: \( b + c + d = 200 \)
+3. La suma dels tres últims nombres és 300: \( c + d + e = 300 \)
+
+Podem resoldre aquest sistema d'equacions per trobar el valor de \( c \), que és el nombre al centre de la llista.
+
+A partir de la primera equació, podem expressar \( a \) en funció de \( b \) i \( c \):
+\[ a = 100 - b - c \]
+
+A partir de la segona equació, podem expressar \( d \) en funció de \( b \) i \( c \):
+\[ d = 200 - b - c \]
+
+A partir de la tercera equació, podem expressar \( e \) en funció de \( c \) i \( d \):
+\[ e = 300 - c - d \]
+Substituïm \( d \) en aquesta equació:
+\[ e = 300 - c - (200 - b - c) \]
+\[ e = 300 - c - 200 + b + c \]
+\[ e = 100 + b \]
+
+Ara tenim les següents expressions:
+- \( a = 100 - b - c \)
+- \( d = 200 - b - c \)
+- \( e = 100 + b \)
+
+Ara podem sumar les tres equacions per eliminar \( a, d, e \):
+1. \( a + b + c = 100 \)
+2. \( b + c + d = 200 \)
+3. \( c + d + e = 300 \)
+
+Sumant les tres equacions:
+\[ (a + b + c) + (b + c + d) + (c + d + e) = 100 + 200 + 300 \]
+\[ a + 2b + 3c + 2d + e = 600 \]
+
+Substituïm \( a, d, e \) en funció de \( b \) i \( c \):
+\[ (100 - b - c) + 2b + 3c + 2(200 - b - c) + (100 + b) = 600 \]
+\[ 100 - b - c + 2b + 3c + 400 - 2b - 2c + 100 + b = 600 \]
+\[ 600 - c = 600 \]
+\[ c = 0 \]
+
+Però això no té sentit en el context del problema. Tornem a revisar les equacions. 
+
+Si restem les equacions:
+1. De la segona a la primera: \( (b + c + d) - (a + b + c) = 200 - 100 \) implica \( d - a = 100 \) o \( d = a + 100 \).
+2. De la tercera a la segona: \( (c + d + e) - (b + c + d) = 300 - 200 \) implica \( e - b = 100 \) o \( e = b + 100 \).
+
+Ara, substituïm \( d \) i \( e \) en funció de \( a \) i \( b \):
+- \( d = a + 100 \)
+- \( e = b + 100 \)
+
+Amb aquestes relacions, podem deduir que \( c \) ha de ser un valor que equilibri les sumes. Si provem amb les opcions donades, podem veure que si \( c = 100 \), llavors:
+- \( a + b + 100 = 100 \) implica \( a + b = 0 \) (no és possible).
+- Si \( c = 60 \), llavors \( a + b = 40 \), \( b + 60 + d = 200 \) implica \( d = 200 - b - 60 = 140 - b \) i \( 60 + d + e = 300 \) implica \( e = 300 - 60 - (140 - b) = 100 + b \).
+
+Finalment, provant amb \( c = 70 \):
+- \( a + b + 70 = 100 \) implica \( a + b = 30 \).
+- \( b + 70 + d = 200 \) implica \( d = 130 - b \).
+- \( 70 + d + e = 300 \) implica \( e = 300 - 70 - (130 - b) = 100 + b \).
+
+Així que el valor central \( c = 70 \) és consistent amb les condicions.
+
+Resposta: C) 70

@@ -1,0 +1,66 @@
+Raonament: Tenim l'equació \( A \cdot B = 10 + A \). Podem reorganitzar aquesta equació per a trobar una relació entre A i B:
+
+1. Restem A a ambdós costats de l'equació:
+   \[
+   A \cdot B - A = 10
+   \]
+2. Factoritzem A:
+   \[
+   A(B - 1) = 10
+   \]
+3. Ara, per a que \( A(B - 1) = 10 \), hem de considerar els factors de 10. Els factors de 10 són: \( 1 \times 10 \), \( 2 \times 5 \), \( 5 \times 2 \), i \( 10 \times 1 \).
+
+Com que A i B són nombres d'un sol dígit, A pot ser 1, 2, 3, 4, 5, 6, 7, 8 o 9. Anem a veure quins valors de A ens donen un B que també sigui un nombre d'un sol dígit i diferent d'A.
+
+- Si \( A = 1 \):
+  \[
+  1(B - 1) = 10 \implies B - 1 = 10 \implies B = 11 \quad (\text{no és un sol dígit})
+  \]
+  
+- Si \( A = 2 \):
+  \[
+  2(B - 1) = 10 \implies B - 1 = 5 \implies B = 6 \quad (\text{valido})
+  \]
+  
+- Si \( A = 3 \):
+  \[
+  3(B - 1) = 10 \implies B - 1 = \frac{10}{3} \quad (\text{no és un enter})
+  \]
+  
+- Si \( A = 4 \):
+  \[
+  4(B - 1) = 10 \implies B - 1 = 2.5 \quad (\text{no és un enter})
+  \]
+  
+- Si \( A = 5 \):
+  \[
+  5(B - 1) = 10 \implies B - 1 = 2 \implies B = 3 \quad (\text{valido})
+  \]
+  
+- Si \( A = 6 \):
+  \[
+  6(B - 1) = 10 \implies B - 1 = \frac{10}{6} \quad (\text{no és un enter})
+  \]
+  
+- Si \( A = 7 \):
+  \[
+  7(B - 1) = 10 \implies B - 1 = \frac{10}{7} \quad (\text{no és un enter})
+  \]
+  
+- Si \( A = 8 \):
+  \[
+  8(B - 1) = 10 \implies B - 1 = \frac{10}{8} \quad (\text{no és un enter})
+  \]
+  
+- Si \( A = 9 \):
+  \[
+  9(B - 1) = 10 \implies B - 1 = \frac{10}{9} \quad (\text{no és un enter})
+  \]
+
+Després d'analitzar tots els valors possibles de A, hem trobat que els valors vàlids de B són:
+- Quan \( A = 2 \), \( B = 6 \)
+- Quan \( A = 5 \), \( B = 3 \)
+
+Així que els possibles valors de B que compleixen la condició són 2 (B = 6 i B = 3).
+
+Resposta: C) 2

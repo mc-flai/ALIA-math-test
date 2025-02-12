@@ -1,0 +1,33 @@
+Raonament: Comencem a simplificar l'expressió \( x = \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20}}}}} \). Observem que l'expressió és recursiva, així que podem suposar que \( x \) és igual a \( \sqrt{20 + x} \). 
+
+Així, podem plantejar l'equació:
+\[
+x = \sqrt{20 + x}
+\]
+
+Ara, elevem al quadrat ambdues parts per eliminar la arrel:
+\[
+x^2 = 20 + x
+\]
+
+Reorganitzem l'equació:
+\[
+x^2 - x - 20 = 0
+\]
+
+Ara, utilitzem la fórmula quadràtica per resoldre aquesta equació:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} = \frac{1 \pm \sqrt{1 + 80}}{2} = \frac{1 \pm \sqrt{81}}{2} = \frac{1 \pm 9}{2}
+\]
+
+Això ens dóna dues solucions:
+\[
+x = \frac{10}{2} = 5 \quad \text{(solució positiva)}
+\]
+\[
+x = \frac{-8}{2} = -4 \quad \text{(solució negativa, no vàlida)}
+\]
+
+Per tant, la solució positiva és \( x = 5 \). Ara, per trobar la part entera de \( x \), que és 5, podem concloure que la part entera de \( \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20 + \sqrt{20}}}}} \) és 5.
+
+Resposta: B)

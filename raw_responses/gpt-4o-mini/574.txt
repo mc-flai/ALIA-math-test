@@ -1,0 +1,37 @@
+Raonament: Comencem amb un rectangle de 10 × 9, que conté un total de 90 quadrats unitaris. Els costats del rectangle són rojos, així que analitzem quins quadrats unitaris es veuen afectats.
+
+1. **Quadrats amb costat roig**: Els quadrats que estan a la vora del rectangle (costats) són els que tenen almenys un costat roig. En un rectangle de 10 × 9, els quadrats que toquen els costats rojos són:
+   - La fila superior (10 quadrats)
+   - La fila inferior (10 quadrats)
+   - La columna esquerra (9 quadrats, però ja hem comptat els quadrats de les files superior i inferior)
+   - La columna dreta (9 quadrats, igual que abans)
+
+   Així que, comptant els quadrats únicament:
+   - Fila superior: 10
+   - Fila inferior: 10
+   - Columna esquerra: 7 (9 - 2, ja que els quadrats de les files superior i inferior ja estan comptats)
+   - Columna dreta: 7 (igual que abans)
+
+   Total de quadrats amb costat roig = 10 + 10 + 7 + 7 = 34 quadrats.
+
+2. **Quadrats pintats de verd**: Ara, pintem de verd els quadrats que comparteixen almenys un costat amb els quadrats rojos. Els quadrats rojos estan en les vores, així que els quadrats adjacents a aquests seran:
+   - A la fila superior, els quadrats adjacents a la fila superior (10 quadrats) i a la fila inferior (10 quadrats).
+   - A les columnes esquerra i dreta, els quadrats adjacents a les columnes (7 quadrats a cada costat).
+
+   Els quadrats que es pinten de verd seran:
+   - Els quadrats de la fila 2 (10 quadrats)
+   - Els quadrats de la fila 8 (10 quadrats)
+   - Els quadrats de la columna 1 (7 quadrats, excloent els de les files superior i inferior)
+   - Els quadrats de la columna 10 (7 quadrats, igual que abans)
+
+   Total de quadrats pintats de verd = 10 + 10 + 7 + 7 = 34 quadrats.
+
+3. **Quadrats blancs restants**: Ara, sumem els quadrats rojos i verds. Tenim 34 quadrats rojos i 34 quadrats verds, però hem de tenir en compte que alguns quadrats poden estar comptats dues vegades (aquells que són tant rojos com verds). 
+
+   Els quadrats que són tant rojos com verds són els que estan a les vores, així que:
+   - Total de quadrats rojos i verds = 34 (rojos) + 34 (verds) - 34 (rojos i verds) = 34.
+
+   Així que, la quantitat de quadrats blancs que resten és:
+   90 (total de quadrats) - 34 (quadrats pintats) = 56 quadrats blancs.
+
+Resposta: D) 56

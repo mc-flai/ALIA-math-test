@@ -1,0 +1,38 @@
+Raonament: Per calcular el nombre de possibilitats d'apilar els 6 cilindres de fusta amb colors repetits, podem utilitzar la fórmula de permutacions de multíples. La fórmula general per calcular les permutacions de n elements on hi ha grups d'elements iguals és:
+
+\[
+\frac{n!}{n_1! \cdot n_2! \cdot n_3!}
+\]
+
+On:
+- \( n \) és el nombre total d'elements.
+- \( n_1, n_2, n_3 \) són les quantitats d'elements de cada grup.
+
+En el nostre cas:
+- \( n = 6 \) (total de cilindres)
+- \( n_1 = 3 \) (cilindres blaus)
+- \( n_2 = 2 \) (cilindres verds)
+- \( n_3 = 1 \) (cilindre groc)
+
+Així que substituïm a la fórmula:
+
+\[
+\frac{6!}{3! \cdot 2! \cdot 1!}
+\]
+
+Calculant els factorials:
+
+- \( 6! = 720 \)
+- \( 3! = 6 \)
+- \( 2! = 2 \)
+- \( 1! = 1 \)
+
+Ara substituïm:
+
+\[
+\frac{720}{6 \cdot 2 \cdot 1} = \frac{720}{12} = 60
+\]
+
+Per tant, el nombre de possibilitats diferents d'apilar els 6 cilindres és 60.
+
+Resposta: B)

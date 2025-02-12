@@ -1,0 +1,29 @@
+Raonament: Per determinar quan es tornaran a veure els tres conductors dels autobusos, hem de calcular el mínim comú múltiple (MCM) dels temps que tarda cada autobús en completar el seu trajecte. Els temps són:
+
+- Autobús 1: 20 minuts
+- Autobús 2: 30 minuts
+- Autobús 3: 24 minuts
+
+Primer, descomponem cada número en factors primers:
+
+- 20 = 2^2 * 5
+- 30 = 2 * 3 * 5
+- 24 = 2^3 * 3
+
+Ara, per calcular el MCM, prenem el màxim exponent de cada factor:
+
+- 2: el màxim exponent és 3 (de 24)
+- 3: el màxim exponent és 1 (de 30 i 24)
+- 5: el màxim exponent és 1 (de 20 i 30)
+
+Per tant, el MCM és:
+
+MCM = 2^3 * 3^1 * 5^1 = 8 * 3 * 5 = 120
+
+Això significa que els tres autobusos es tornaran a trobar després de 120 minuts. Comencen a les 8:00, així que sumem 120 minuts (2 hores) a aquesta hora:
+
+8:00 + 2 hores = 10:00
+
+Per tant, els tres conductors es tornaran a veure per primera vegada a les 10:00 del matí.
+
+Resposta: B)

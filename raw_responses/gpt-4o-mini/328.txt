@@ -1,0 +1,60 @@
+Raonament: 
+Els cubs i els tetràedres són poliedres amb un nombre determinat de vèrtexs i cares. Un cub té 8 vèrtexs i 6 cares, mentre que un tetràedre té 4 vèrtexs i 4 cares. 
+
+Anomenem \( c \) al nombre de cubs i \( t \) al nombre de tetràedres. 
+
+Podem establir les següents equacions basades en la informació proporcionada:
+
+1. Per als vèrtexs:
+   \[
+   8c + 4t = 52
+   \]
+
+2. Per a les cares:
+   \[
+   6c + 4t = 42
+   \]
+
+Ara, podem simplificar la segona equació dividint tot per 2:
+\[
+3c + 2t = 21
+\]
+
+Ara tenim el sistema d'equacions:
+1. \( 8c + 4t = 52 \)
+2. \( 3c + 2t = 21 \)
+
+Podem resoldre aquest sistema. De la segona equació, podem expressar \( t \) en funció de \( c \):
+\[
+2t = 21 - 3c \implies t = \frac{21 - 3c}{2}
+\]
+
+Substituïm \( t \) en la primera equació:
+\[
+8c + 4\left(\frac{21 - 3c}{2}\right) = 52
+\]
+Multipliquem per 2 per eliminar el denominador:
+\[
+16c + 4(21 - 3c) = 104
+\]
+Desenvolupem:
+\[
+16c + 84 - 12c = 104
+\]
+Simplifiquem:
+\[
+4c + 84 = 104
+\]
+Restem 84 a ambdós costats:
+\[
+4c = 20 \implies c = 5
+\]
+
+Ara substituïm \( c = 5 \) en l'equació per a \( t \):
+\[
+t = \frac{21 - 3(5)}{2} = \frac{21 - 15}{2} = \frac{6}{2} = 3
+\]
+
+Per tant, el nombre de tetràedres és \( t = 3 \).
+
+Resposta: B)

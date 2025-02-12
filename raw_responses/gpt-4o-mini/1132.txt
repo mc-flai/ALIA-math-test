@@ -1,0 +1,33 @@
+Raonament: 
+Sigui \( n \) el nombre de daus que té Agnès. La probabilitat que només surti un 12 quan es tiren \( n \) daus es pot calcular de la següent manera:
+
+1. La probabilitat que un dau mostri un 12 és \( \frac{1}{12} \).
+2. La probabilitat que un dau no mostri un 12 és \( \frac{11}{12} \).
+
+Per tant, la probabilitat que exactament un dau mostri un 12 i els altres \( n-1 \) daus no mostrin un 12 és:
+
+\[
+P(\text{exactament un 12}) = \binom{n}{1} \left(\frac{1}{12}\right)^1 \left(\frac{11}{12}\right)^{n-1} = n \cdot \frac{1}{12} \cdot \left(\frac{11}{12}\right)^{n-1}
+\]
+
+D'altra banda, la probabilitat que no surti cap 12 és:
+
+\[
+P(\text{cap 12}) = \left(\frac{11}{12}\right)^n
+\]
+
+Segons l'enunciat, aquestes dues probabilitats són iguals:
+
+\[
+n \cdot \frac{1}{12} \cdot \left(\frac{11}{12}\right)^{n-1} = \left(\frac{11}{12}\right)^n
+\]
+
+Podem simplificar aquesta equació multiplicant amb \( 12 \) i dividint per \( \left(\frac{11}{12}\right)^{n-1} \):
+
+\[
+n = 12 \cdot \frac{11}{12} = 11
+\]
+
+Per tant, Agnès té 11 daus.
+
+Resposta: D)

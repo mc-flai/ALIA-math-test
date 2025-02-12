@@ -1,0 +1,63 @@
+Raonament: 
+
+Anomenem \( L \) la longitud inicial de les dues espelmes. La primera espelma es crema en 4 hores, així que el seu ritme de cremada és \( \frac{L}{4} \) per hora. La segona espelma es crema en 5 hores, així que el seu ritme de cremada és \( \frac{L}{5} \) per hora.
+
+Si deixem que les espelmes cremin durant \( t \) hores, la longitud que queda de cada espelma es pot calcular de la següent manera:
+
+- Longitud de la primera espelma després de \( t \) hores:
+  \[
+  L_1 = L - \frac{L}{4}t = L\left(1 - \frac{t}{4}\right)
+  \]
+
+- Longitud de la segona espelma després de \( t \) hores:
+  \[
+  L_2 = L - \frac{L}{5}t = L\left(1 - \frac{t}{5}\right)
+  \]
+
+Volem trobar el temps \( t \) en què la longitud de la segona espelma (que dura més) és el triple de la longitud de la primera espelma. Això es pot expressar amb la següent equació:
+\[
+L_2 = 3L_1
+\]
+
+Substituïm les expressions de \( L_1 \) i \( L_2 \):
+\[
+L\left(1 - \frac{t}{5}\right) = 3L\left(1 - \frac{t}{4}\right)
+\]
+
+Podem simplificar \( L \) (ja que és diferent de zero):
+\[
+1 - \frac{t}{5} = 3\left(1 - \frac{t}{4}\right)
+\]
+
+Desenvolupem l'equació:
+\[
+1 - \frac{t}{5} = 3 - \frac{3t}{4}
+\]
+
+Ara, portem tots els termes amb \( t \) a un costat i els constants a l'altre:
+\[
+\frac{3t}{4} - \frac{t}{5} = 3 - 1
+\]
+\[
+\frac{3t}{4} - \frac{t}{5} = 2
+\]
+
+Per resoldre aquesta equació, trobem un denominador comú, que és 20:
+\[
+\frac{15t}{20} - \frac{4t}{20} = 2
+\]
+\[
+\frac{11t}{20} = 2
+\]
+
+Multipliquem amb 20 per eliminar el denominador:
+\[
+11t = 40
+\]
+\[
+t = \frac{40}{11}
+\]
+
+Per tant, el temps que hauran d'estar cremant les espelmes perquè la que dura més tinga el triple de longitud que l'altra és \( \frac{40}{11} \) hores.
+
+Resposta: A)

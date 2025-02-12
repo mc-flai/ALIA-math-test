@@ -1,0 +1,43 @@
+Raonament: El problema ens demana trobar un nombre de tres xifres \( ab0 \) (on \( a \) és la xifra de les centenes, \( b \) és la de les desenes i \( 0 \) és la de les unitats) que sigui igual a la suma dels cubs de les seues xifres. Això es pot expressar matemàticament com:
+
+\[
+100a + 10b + 0 = a^3 + b^3 + 0^3
+\]
+
+Simplificant, tenim:
+
+\[
+100a + 10b = a^3 + b^3
+\]
+
+Per tant, hem de buscar valors de \( a \) i \( b \) (on \( a \) pot ser de 1 a 9 i \( b \) de 0 a 9) que satisfacin aquesta equació.
+
+A partir d'aquí, podem provar les opcions de resposta per veure quina d'elles pot satisfer l'equació. 
+
+1. **Opció A: \( a, 0, b \)**  
+   \( 100a + 0 + b = a^3 + 0 + b^3 \)  
+   No és vàlida, ja que no coincideix amb la forma \( ab0 \).
+
+2. **Opció B: \( a-1, b, 0 \)**  
+   \( 100(a-1) + 10b + 0 = (a-1)^3 + b^3 \)  
+   No és vàlida, ja que no coincideix amb la forma \( ab0 \).
+
+3. **Opció C: \( a, b-1, 0 \)**  
+   \( 100a + 10(b-1) + 0 = a^3 + (b-1)^3 \)  
+   No és vàlida, ja que no coincideix amb la forma \( ab0 \).
+
+4. **Opció D: \( a, b, 1 \)**  
+   \( 100a + 10b + 1 = a^3 + b^3 + 1 \)  
+   No és vàlida, ja que no coincideix amb la forma \( ab0 \).
+
+5. **Opció E: \( a, 1, b \)**  
+   \( 100a + 10(1) + b = a^3 + 1^3 + b^3 \)  
+   \( 100a + 10 + b = a^3 + 1 + b^3 \)  
+   Simplificant, \( 100a + 10 + b = a^3 + b^3 + 1 \)  
+   \( 100a + 10 + b - 1 = a^3 + b^3 \)  
+   \( 100a + 9 + b = a^3 + b^3 \)  
+   Aquesta opció pot ser vàlida, ja que pot satisfer l'equació.
+
+Després de revisar les opcions, l'única que pot coincidir amb la suma dels cubs de les xifres és l'opció E.
+
+Resposta: E)

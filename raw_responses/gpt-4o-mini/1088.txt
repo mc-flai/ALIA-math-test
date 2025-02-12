@@ -1,0 +1,20 @@
+Raonament: Per resoldre el problema, hem de trobar dos nombres primers que, sumats, donin la meitat del perímetre de la parcel·la, que és de 40 m. Això significa que la suma de les longituds dels costats (l'amplada i la longitud) ha de ser 20 m, ja que el perímetre d'un rectangle és P = 2(l + a).
+
+Busquem parelles de nombres primers que sumin 20:
+
+1. 2 + 18 (18 no és primer)
+2. 3 + 17 (3 * 17 = 51 m²)
+3. 5 + 15 (15 no és primer)
+4. 7 + 13 (7 * 13 = 91 m²)
+5. 11 + 9 (9 no és primer)
+6. 13 + 7 (ja s'ha considerat)
+7. 17 + 3 (ja s'ha considerat)
+
+Ara calculem les àrees per les parelles de nombres primers vàlids:
+
+- Per a 3 i 17: Àrea = 3 * 17 = 51 m²
+- Per a 7 i 13: Àrea = 7 * 13 = 91 m²
+
+La màxima àrea que podem obtenir és 91 m².
+
+Resposta: C)

@@ -1,0 +1,27 @@
+Raonament: 
+
+Per determinar els valors de X i Y en el número 24X8Y, hem de garantir que el número resultant sigui divisible per 4, 5 i 9.
+
+1. **Divisibilitat per 5**: Un número és divisible per 5 si acaba en 0 o 5. Així que Y ha de ser 0 o 5.
+
+2. **Divisibilitat per 4**: Un número és divisible per 4 si els seus dos últims dígits formen un número que és divisible per 4. Els dos últims dígits del nostre número són 8Y. 
+   - Si Y = 0, els dos últims dígits són 80, que és divisible per 4.
+   - Si Y = 5, els dos últims dígits són 85, que no és divisible per 4.
+
+   Per tant, Y ha de ser 0.
+
+3. **Divisibilitat per 9**: Un número és divisible per 9 si la suma dels seus dígits és divisible per 9. La suma dels dígits del número 24X80 és 2 + 4 + X + 8 + 0 = 14 + X. 
+
+   Ara, hem de trobar un valor de X tal que 14 + X sigui divisible per 9. 
+   - Si X = 4, la suma és 14 + 4 = 18, que és divisible per 9.
+   - Si X = 5, la suma és 14 + 5 = 19, que no és divisible per 9.
+   - Si X = 6, la suma és 14 + 6 = 20, que no és divisible per 9.
+   - Si X = 7, la suma és 14 + 7 = 21, que no és divisible per 9.
+   - Si X = 8, la suma és 14 + 8 = 22, que no és divisible per 9.
+   - Si X = 9, la suma és 14 + 9 = 23, que no és divisible per 9.
+
+   Per tant, la única opció vàlida és X = 4 i Y = 0.
+
+Finalment, la suma X + Y = 4 + 0 = 4.
+
+Resposta: E) 4.

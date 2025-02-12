@@ -1,0 +1,59 @@
+Raonament: Quan dues esferes de mercuri es fusionen en una sola esfera, el volum total de mercuri es conserva. La superfície d'una esfera es calcula amb la fórmula \( S = 4\pi r^2 \), on \( r \) és el radi de l'esfera. 
+
+Primer, calculem el radi de les dues esferes inicials. Sabem que la superfície de cada esfera és de 2 mm². Per trobar el radi, podem reorganitzar la fórmula de la superfície:
+
+\[
+S = 4\pi r^2 \implies r^2 = \frac{S}{4\pi} \implies r = \sqrt{\frac{S}{4\pi}}
+\]
+
+Per a una esfera amb superfície de 2 mm²:
+
+\[
+r_1 = \sqrt{\frac{2}{4\pi}} = \sqrt{\frac{1}{2\pi}}
+\]
+
+Així, el volum d'una esfera es calcula amb la fórmula \( V = \frac{4}{3}\pi r^3 \). El volum de cada esfera és:
+
+\[
+V_1 = \frac{4}{3}\pi \left(\sqrt{\frac{1}{2\pi}}\right)^3 = \frac{4}{3}\pi \cdot \frac{1}{(2\pi)^{3/2}} = \frac{4}{3} \cdot \frac{1}{2^{3/2} \cdot \pi} = \frac{4}{3 \cdot 2^{3/2} \cdot \pi}
+\]
+
+Com que tenim dues esferes, el volum total \( V_{total} \) és:
+
+\[
+V_{total} = 2 \cdot V_1 = 2 \cdot \frac{4}{3 \cdot 2^{3/2} \cdot \pi} = \frac{8}{3 \cdot 2^{3/2} \cdot \pi}
+\]
+
+Ara, per trobar el radi de la nova esfera \( r_{total} \), utilitzem la fórmula del volum:
+
+\[
+V_{total} = \frac{4}{3}\pi r_{total}^3 \implies r_{total}^3 = \frac{V_{total} \cdot 3}{4\pi}
+\]
+
+Substituïm \( V_{total} \):
+
+\[
+r_{total}^3 = \frac{\left(\frac{8}{3 \cdot 2^{3/2} \cdot \pi}\right) \cdot 3}{4\pi} = \frac{8}{4 \cdot 2^{3/2}} = \frac{2}{2^{3/2}} = \frac{2}{2^{1.5}} = 2^{1 - 1.5} = 2^{-0.5} = \frac{1}{\sqrt{2}}
+\]
+
+Ara, per trobar la nova superfície \( S_{total} \):
+
+\[
+S_{total} = 4\pi r_{total}^2
+\]
+
+On \( r_{total} = \left(\frac{1}{\sqrt{2}}\right)^{1/3} = 2^{-1/6} \):
+
+\[
+S_{total} = 4\pi \left(2^{-1/6}\right)^2 = 4\pi \cdot 2^{-1/3}
+\]
+
+Per tant, la nova superfície és proporcional a la superfície inicial, i com que hem fusionat dues esferes, la nova superfície és:
+
+\[
+S_{total} = 2 \cdot 2 \text{ mm}^2 = 4 \text{ mm}^2
+\]
+
+Per tant, la resposta correcta és:
+
+Resposta: C)

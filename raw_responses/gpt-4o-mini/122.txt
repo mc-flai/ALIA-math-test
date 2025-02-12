@@ -1,0 +1,7 @@
+Raonament: Un cub té 8 vèrtexs i cada vèrtex està connectat a 3 altres vèrtexs per arestes. Això significa que cada vèrtex té 3 veïns immediats. Per tal de colorir els vèrtexs de manera que cap vèrtex i els seus veïns tinguin el mateix color, podem utilitzar un esquema de coloració que asseguri que els colors siguin diferents per a vèrtexs adjacents.
+
+Podem observar que un cub és un grafo bipartit, el que significa que podem dividir els seus vèrtexs en dues parts on no hi ha arestes que connectin vèrtexs de la mateixa part. En el cas del cub, podem dividir els vèrtexs en dos grups: un grup amb 4 vèrtexs i un altre grup amb els altres 4 vèrtexs. Cada vèrtex d'un grup només està connectat a vèrtexs de l'altre grup.
+
+Per tant, només necessitem 2 colors per colorir els vèrtexs del cub, un color per a cada grup. Així, cada vèrtex i els seus veïns immediats tindran colors diferents.
+
+Resposta: A) 2

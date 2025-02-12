@@ -1,0 +1,12 @@
+Raonament: Per trobar els nombres de tres xifres amb la suma de les xifres igual a 8, hem de considerar que un nombre de tres xifres es pot representar com \(abc\), on \(a\), \(b\) i \(c\) són les xifres del nombre. La condició que \(a + b + c = 8\) ha de complir-se, i a més, \(a\) no pot ser 0, ja que és la primera xifra d'un nombre de tres xifres.
+
+1. **Trobar el nombre més gran**: Per obtenir el nombre més gran, hem de maximitzar la xifra més significativa, que és \(a\). Si \(a = 8\), llavors \(b\) i \(c\) han de ser 0, resultant en el nombre 800. Si \(a = 7\), llavors \(b + c = 1\), i el nombre més gran seria 710. Si \(a = 6\), llavors \(b + c = 2\), i el nombre més gran seria 620. Continuant així, el nombre més gran amb la suma de les xifres igual a 8 és 800.
+
+2. **Trobar el nombre més petit**: Per obtenir el nombre més petit, hem de minimitzar la xifra més significativa \(a\). Si \(a = 1\), llavors \(b + c = 7\). El nombre més petit seria 107 (amb \(b = 0\) i \(c = 7\)). Si \(a = 2\), llavors \(b + c = 6\), i el nombre més petit seria 206. Continuant així, el nombre més petit amb la suma de les xifres igual a 8 és 107.
+
+3. **Calcular la suma**: Ara que tenim el nombre més gran (800) i el més petit (107), calculem la seva suma:
+   \[
+   800 + 107 = 907
+   \]
+
+Resposta: B) 907

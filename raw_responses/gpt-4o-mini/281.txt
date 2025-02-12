@@ -1,0 +1,25 @@
+Raonament: Per trobar quants nombres de 3 xifres tenen el producte de totes les xifres igual a 9, hem de considerar les combinacions de xifres que, multiplicades entre si, donen com a resultat 9. 
+
+Les xifres que podem utilitzar són del 0 al 9, però com que busquem nombres de 3 xifres, no podem tenir 0 com a xifra. A més, les xifres han de ser enteres i no negatives.
+
+El número 9 es pot descompondre en factors de les següents maneres:
+1. \(9 = 9 \times 1 \times 1\)
+2. \(9 = 3 \times 3 \times 1\)
+
+Ara, analitzem cada cas:
+
+1. **Per a \(9 \times 1 \times 1\)**:
+   - Les combinacions de les xifres 9, 1, 1 són: 911, 191, 119. 
+   - Així que tenim 3 nombres.
+
+2. **Per a \(3 \times 3 \times 1\)**:
+   - Les combinacions de les xifres 3, 3, 1 són: 331, 313, 133.
+   - Així que tenim 3 nombres.
+
+Ara sumem els nombres que hem trobat:
+- De \(9 \times 1 \times 1\) tenim 3 nombres.
+- De \(3 \times 3 \times 1\) també tenim 3 nombres.
+
+Per tant, el total de nombres de 3 xifres amb el producte de les xifres igual a 9 és \(3 + 3 = 6\).
+
+Resposta: E) 6

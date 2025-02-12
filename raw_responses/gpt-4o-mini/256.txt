@@ -1,0 +1,69 @@
+Raonament: Anomenem \( x \) el nombre de xiquets que van arribar en el primer autobús, \( y \) el nombre de xiquets en el segon autobús, i \( z \) el nombre de xiquets en el tercer autobús. Sabem que:
+
+1. \( x + y + z = 99 \) (el total de xiquets).
+2. Si tres xiquets del primer autobús es pugen al tercer autobús, el nou nombre de xiquets en cada autobús seria:
+   - Primer autobús: \( x - 3 \)
+   - Segon autobús: \( y \)
+   - Tercer autobús: \( z + 3 \)
+
+Després del canvi, volem que el nombre de xiquets en els tres autobusos sigui igual, és a dir:
+
+\[
+x - 3 = y = z + 3
+\]
+
+Això ens dóna dues equacions:
+
+1. \( x - 3 = y \) (1)
+2. \( y = z + 3 \) (2)
+
+Substituïm (1) en (2):
+
+\[
+x - 3 = z + 3 \implies x - z = 6 \implies z = x - 6
+\]
+
+Ara substituïm \( y \) i \( z \) en la primera equació \( x + y + z = 99 \):
+
+\[
+x + (x - 3) + (x - 6) = 99
+\]
+
+Simplificant:
+
+\[
+3x - 9 = 99
+\]
+
+Afegim 9 a ambdós costats:
+
+\[
+3x = 108
+\]
+
+Dividim entre 3:
+
+\[
+x = 36
+\]
+
+Per tant, el nombre de xiquets que van arribar en el primer autobús és 36. Comprovem:
+
+- \( y = x - 3 = 36 - 3 = 33 \)
+- \( z = x - 6 = 36 - 6 = 30 \)
+
+Comprovem el total:
+
+\[
+36 + 33 + 30 = 99
+\]
+
+I després del canvi:
+
+- Primer autobús: \( 36 - 3 = 33 \)
+- Segon autobús: \( 33 \)
+- Tercer autobús: \( 30 + 3 = 33 \)
+
+Tots els autobusos tenen 33 xiquets. Així que la solució és correcta.
+
+Resposta: C) 36

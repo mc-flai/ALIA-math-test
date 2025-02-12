@@ -1,0 +1,18 @@
+Raonament: Si cada ciutadà assegut al voltant de la foguera diu «Estic assegut entre dos mentiders!», analitzem les implicacions d'aquesta afirmació. 
+
+1. Si un ciutadà és un cavaller (que sempre diu la veritat), llavors la seva afirmació ha de ser certa. Això significa que efectivament està assegut entre dos mentiders.
+2. Si un ciutadà és un mentider (que sempre menteix), llavors la seva afirmació és falsa. Això vol dir que no està assegut entre dos mentiders, per tant, almenys un dels seus veïns ha de ser un cavaller.
+
+Ara, considerem el nombre de mentiders possibles:
+
+- Si hi ha 0 mentiders, tots serien cavallers, i la seva afirmació seria falsa, ja que no estarien asseguts entre mentiders.
+- Si hi ha 1 mentider, aquest mentider diria que està entre dos mentiders, cosa que no és possible, ja que només hi ha un mentider.
+- Si hi ha 2 mentiders, cada mentider diria que està entre dos mentiders, cosa que no és possible, ja que només hi ha un mentider a cada costat d'un cavaller.
+- Si hi ha 3 mentiders, un dels mentiders podria estar entre dos mentiders, però els altres mentiders no podrien fer la mateixa afirmació, ja que estarien asseguts entre cavallers.
+- Si hi ha 4 mentiders, la situació es torna més complicada, ja que alguns mentiders podrien estar entre cavallers, però no tots podrien fer la mateixa afirmació.
+- Si hi ha 5 mentiders, la situació es fa impossible, ja que no hi hauria suficients cavallers per assegurar que cada mentider estigui entre dos mentiders.
+- Si hi ha 6 mentiders, només quedaria un cavaller, i aquest cavaller no podria estar assegut entre dos mentiders, ja que només tindria un mentider a cada costat.
+
+Per tant, la única configuració que permet que tots diguin la mateixa afirmació és si hi ha 3 mentiders i 4 cavallers. En aquest cas, els mentiders podrien estar asseguts entre cavallers, i els cavallers podrien estar asseguts entre mentiders.
+
+Resposta: A) 3

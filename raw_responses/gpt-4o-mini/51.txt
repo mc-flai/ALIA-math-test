@@ -1,0 +1,29 @@
+Raonament: Per resoldre el problema, hem de trobar els triangles amb perímetre 21 i costats que compleixin les condicions especificades. Anomenem els costats del triangle \(a\), \(b\) i \(c\) amb \(a \leq b \leq c\). Així, tenim:
+
+1. \(a + b + c = 21\)
+2. \(a\), \(b\) i \(c\) són nombres naturals.
+3. Les longituds dels costats han de complir que, per cada parell de costats, o bé són iguals o bé un és divisible per l'altre.
+
+Comencem a explorar les possibilitats:
+
+- Si \(a = b\), llavors \(2a + c = 21\) implica que \(c = 21 - 2a\). Perquè \(c\) sigui un nombre natural, \(2a\) ha de ser menor que 21, així que \(a\) pot ser com a màxim 10.5, per tant \(a\) pot ser com a màxim 10. Així, les possibles combinacions són:
+  - \(a = 1\), \(b = 1\), \(c = 19\) (no és un triangle)
+  - \(a = 2\), \(b = 2\), \(c = 17\) (no és un triangle)
+  - \(a = 3\), \(b = 3\), \(c = 15\) (no és un triangle)
+  - \(a = 4\), \(b = 4\), \(c = 13\) (no és un triangle)
+  - \(a = 5\), \(b = 5\), \(c = 11\) (no és un triangle)
+  - \(a = 6\), \(b = 6\), \(c = 9\) (sí, és un triangle)
+  - \(a = 7\), \(b = 7\), \(c = 7\) (sí, és un triangle)
+
+- Si \(a\) i \(b\) no són iguals, hem de considerar les combinacions on un costat és divisible per l'altre. Per exemple, si \(a\) és un divisor de \(b\) i \(c\), hem de buscar combinacions que compleixin aquestes condicions.
+
+Explorant les combinacions possibles, trobem que:
+
+1. \( (6, 6, 9) \) és vàlid.
+2. \( (7, 7, 7) \) és vàlid.
+
+No hi ha més combinacions que compleixin les condicions donades, ja que qualsevol altra combinació de costats no satisfà les condicions de divisibilitat o igualtat.
+
+Per tant, les combinacions vàlides són només dues: \( (6, 6, 9) \) i \( (7, 7, 7) \).
+
+Resposta: C) 2

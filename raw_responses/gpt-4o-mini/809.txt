@@ -1,0 +1,19 @@
+Raonament: Per transformar el nombre 13542 en 12345, hem de comparar les dues seqüències de dígits i identificar quins dígits estan fora de lloc. 
+
+- El primer dígit és 1 en ambdós nombres, així que està correcte.
+- El segon dígit és 3 en 13542 i 2 en 12345. Aquí hi ha un error.
+- El tercer dígit és 5 en 13542 i 3 en 12345. Aquí també hi ha un error.
+- El quart dígit és 4 en 13542 i 4 en 12345. Aquest és correcte.
+- El cinquè dígit és 2 en 13542 i 5 en 12345. Aquí hi ha un error.
+
+Ara, resumint els errors: 
+- 3 ha de ser intercanviat amb 2.
+- 5 ha de ser intercanviat amb 4.
+
+Per tant, podem fer els següents intercanvis:
+1. Intercanviem 3 i 2 (13542 → 12543).
+2. Intercanviem 5 i 4 (12543 → 12345).
+
+Així, necessitem un total de 2 intercanvis per transformar 13542 en 12345.
+
+Resposta: B) 2

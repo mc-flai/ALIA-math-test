@@ -1,0 +1,24 @@
+Per determinar quants dels 100 nombres de la forma \( n^{2018} + (n + 1)^{2017} \) són parells, analitzem l'expressió per a \( n \) parell i imparell.
+
+1. **Cas 1: \( n \) és parell.**
+   - Si \( n \) és parell, llavors \( n^{2018} \) és parell (ja que un nombre parell elevat a qualsevol potència és parell).
+   - \( n + 1 \) és imparell, així que \( (n + 1)^{2017} \) és imparell (un nombre imparell elevat a qualsevol potència és imparell).
+   - La suma d'un nombre parell i un nombre imparell és imparell.
+
+2. **Cas 2: \( n \) és imparell.**
+   - Si \( n \) és imparell, llavors \( n^{2018} \) és imparell (un nombre imparell elevat a qualsevol potència és imparell).
+   - \( n + 1 \) és parell, així que \( (n + 1)^{2017} \) és parell.
+   - La suma d'un nombre imparell i un nombre parell és imparell.
+
+Així, en ambdós casos, \( n^{2018} + (n + 1)^{2017} \) és imparell tant si \( n \) és parell com si és imparell.
+
+Ara, considerem els valors de \( n \) que anem a utilitzar:
+- \( n \) pot prendre valors de 1 a 100, és a dir, 100 valors en total.
+
+Com que hem determinat que per a qualsevol valor de \( n \) (ja sigui parell o imparell), l'expressió \( n^{2018} + (n + 1)^{2017} \) és sempre imparell, podem concloure que cap dels 100 nombres és parell.
+
+Per tant, la resposta correcta és:
+
+Raonament: Hem analitzat l'expressió \( n^{2018} + (n + 1)^{2017} \) per a \( n \) parell i imparell, i hem trobat que en ambdós casos la suma és imparell. Així, cap dels 100 nombres és parell.
+
+Resposta: A) Cap

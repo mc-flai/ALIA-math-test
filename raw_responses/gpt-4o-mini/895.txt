@@ -1,0 +1,39 @@
+Raonament: Primer, calculem la suma total de l'expressió original, que és la suma dels números de 1 a 66. Aquesta suma es pot calcular amb la fórmula de la suma d'una sèrie aritmètica:
+
+\[
+S = \frac{n(n + 1)}{2}
+\]
+
+On \( n \) és l'últim número de la sèrie. En aquest cas, \( n = 66 \):
+
+\[
+S = \frac{66 \times 67}{2} = 2211
+\]
+
+Ara, volem que el resultat de la nova expressió siga 2020. Si canviem \( k \) signes + per signes -, el nou resultat es pot expressar com:
+
+\[
+2211 - 2 \times (suma \ dels \ k \ \text{números}) = 2020
+\]
+
+Així que podem reescriure l'equació:
+
+\[
+2211 - 2020 = 2 \times (suma \ dels \ k \ \text{números})
+\]
+
+Això implica que:
+
+\[
+191 = 2 \times (suma \ dels \ k \ \text{números})
+\]
+
+Per tant, la suma dels \( k \) números ha de ser:
+
+\[
+suma \ dels \ k \ \text{números} = \frac{191}{2} = 95.5
+\]
+
+Com que la suma dels números ha de ser un enter, no és possible aconseguir que la suma dels \( k \) números siga 95.5. Així que no podem aconseguir el resultat desitjat canviant signes + per signes -.
+
+Resposta: E) No és possible aconseguir el que demana l'enunciat.

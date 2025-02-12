@@ -1,0 +1,11 @@
+Raonament: Considerem un rectangle de dimensions \( a \times b \) amb \( a > b \). Si dibuixem una diagonal del rectangle, aquesta diagonal divideix el rectangle en dos triangles. En cada triangle, podem inscriure un quadrat amb costats paral·lels als costats del rectangle. 
+
+La distància entre els vèrtexs del quadrat que es troben a l'interior del rectangle és la distància entre els punts on el quadrat toca la diagonal del rectangle. 
+
+Per calcular aquesta distància, podem utilitzar el teorema de Pitágoras. La distància entre els vèrtexs del quadrat és igual a la longitud de la diagonal del quadrat, que es pot expressar en funció de les dimensions del rectangle. 
+
+La longitud de la diagonal del rectangle és \( \sqrt{a^2 + b^2} \). La distància que busquem és proporcional a la diferència de les dimensions del rectangle, és a dir, \( a - b \). 
+
+Després de fer els càlculs necessaris, podem arribar a la conclusió que la distància entre els vèrtexs del quadrat és \( \frac{(a-b) \sqrt{a^2 - b^2}}{a+b} \).
+
+Resposta: E) (a-b)√a²-b²/(a+b)

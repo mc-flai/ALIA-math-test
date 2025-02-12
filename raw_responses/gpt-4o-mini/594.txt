@@ -1,0 +1,45 @@
+Raonament: Suposem que el matemàtic va néixer l'any \( x \). Segons la informació proporcionada, l'any 1955 la seva edat era igual a la suma dels dígits de l'any en què va néixer. Així, podem expressar l'edat del matemàtic l'any 1955 com \( 1955 - x \). 
+
+La suma dels dígits de l'any de naixement \( x \) es pot calcular. Si considerem que \( x \) és un any del segle XX, podem escriure \( x = 19ab \), on \( a \) i \( b \) són els dígits que completen l'any. La suma dels dígits seria \( 1 + 9 + a + b = 10 + a + b \).
+
+Per tant, podem establir l'equació:
+\[
+1955 - x = 10 + a + b
+\]
+Substituint \( x \) per \( 1900 + 10a + b \):
+\[
+1955 - (1900 + 10a + b) = 10 + a + b
+\]
+Simplificant:
+\[
+55 - 10a - b = 10 + a + b
+\]
+Reorganitzant:
+\[
+55 - 10 = 10a + b + a + b
+\]
+\[
+45 = 11a + 2b
+\]
+
+Ara, busquem valors enter per \( a \) i \( b \) que satisfacin aquesta equació. Probem amb \( a = 4 \):
+\[
+45 = 11(4) + 2b \implies 45 = 44 + 2b \implies 2b = 1 \implies b = 0.5 \quad \text{(no és vàlid)}
+\]
+Probem amb \( a = 3 \):
+\[
+45 = 11(3) + 2b \implies 45 = 33 + 2b \implies 2b = 12 \implies b = 6 \quad \text{(vàlid)}
+\]
+Així, l'any de naixement del matemàtic és \( 1936 \) (ja que \( a = 3 \) i \( b = 6 \)).
+
+Ara, calculem l'any en què va complir 50 anys:
+\[
+1936 + 50 = 1986
+\]
+
+Finalment, calculem la suma dels dígits de l'any 1986:
+\[
+1 + 9 + 8 + 6 = 24
+\]
+
+Resposta: D) 24

@@ -1,0 +1,55 @@
+Raonament: Primer, hem de trobar els nombres enters de dues xifres que són múltiples de 3 i que la diferència absoluta entre les seues xifres és 3. 
+
+Els nombres de dues xifres es poden representar com \( ab \), on \( a \) és la xifra de les desenes i \( b \) és la xifra de les unitats. La diferència absoluta entre les xifres és \( |a - b| = 3 \). Això ens dóna dues possibilitats:
+
+1. \( a - b = 3 \) 
+2. \( b - a = 3 \)
+
+A partir d'aquí, podem expressar les dues situacions:
+
+1. Si \( a - b = 3 \), llavors \( a = b + 3 \). Com que \( a \) ha de ser una xifra (entre 1 i 9) i \( b \) també (entre 0 i 9), les possibles combinacions són:
+   - Si \( b = 0 \), \( a = 3 \) → 30
+   - Si \( b = 1 \), \( a = 4 \) → 41
+   - Si \( b = 2 \), \( a = 5 \) → 52
+   - Si \( b = 3 \), \( a = 6 \) → 63
+   - Si \( b = 4 \), \( a = 7 \) → 74
+   - Si \( b = 5 \), \( a = 8 \) → 85
+   - Si \( b = 6 \), \( a = 9 \) → 96
+
+2. Si \( b - a = 3 \), llavors \( b = a + 3 \). Les possibles combinacions són:
+   - Si \( a = 1 \), \( b = 4 \) → 14
+   - Si \( a = 2 \), \( b = 5 \) → 25
+   - Si \( a = 3 \), \( b = 6 \) → 36
+   - Si \( a = 4 \), \( b = 7 \) → 47
+   - Si \( a = 5 \), \( b = 8 \) → 58
+   - Si \( a = 6 \), \( b = 9 \) → 69
+
+Ara, hem de comprovar quins d'aquests nombres són múltiples de 3:
+
+- De la primera llista: 
+  - 30 (sí)
+  - 41 (no)
+  - 52 (no)
+  - 63 (sí)
+  - 74 (no)
+  - 85 (no)
+  - 96 (sí)
+
+- De la segona llista:
+  - 14 (no)
+  - 25 (no)
+  - 36 (sí)
+  - 47 (no)
+  - 58 (no)
+  - 69 (sí)
+
+Ara, resumim els nombres que són múltiples de 3 i compleixen la condició de la diferència de 3:
+- 30
+- 63
+- 96
+- 36
+- 69
+
+Així que tenim un total de 5 nombres que compleixen les condicions.
+
+Resposta: D) 5

@@ -1,0 +1,18 @@
+Raonament: En el llibre, les pàgines que es van numerar són totes les pàgines excepte les que són múltiples de 3. Això vol dir que hem de comptar quantes pàgines hi ha del 1 al 92 i restar les que són múltiples de 3.
+
+Primer, comptem el total de pàgines del llibre, que és 92. Ara, hem de determinar quantes pàgines són múltiples de 3 en aquest rang. Els múltiples de 3 entre 1 i 92 són: 3, 6, 9, 12, ..., 90. 
+
+Podem trobar el nombre de múltiples de 3 dividint 92 entre 3 i arrodonint cap avall:
+\[ 
+\lfloor 92 / 3 \rfloor = \lfloor 30.67 \rfloor = 30 
+\]
+Així que hi ha 30 pàgines que són múltiples de 3.
+
+Ara, restem aquest nombre del total de pàgines:
+\[ 
+92 - 30 = 62 
+\]
+
+Per tant, el llibre té veritablement 62 pàgines numerades.
+
+Resposta: D) 62

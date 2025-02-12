@@ -1,0 +1,16 @@
+Raonament: Eva vol crear una contrasenya de sis caràcters, on els tres primers caràcters són el seu nom. Suposant que el seu nom és "Eva", els tres primers caràcters seran "E", "v" i "a". Com que pot utilitzar lletres majúscules i minúscules, cada lletra del seu nom pot ser en majúscula o minúscula. Això significa que:
+
+- "E" pot ser "E" o "e" (2 opcions)
+- "v" pot ser "V" o "v" (2 opcions)
+- "a" pot ser "A" o "a" (2 opcions)
+
+Per tant, el nombre total de combinacions per a les tres primeres lletres és:
+2 (E) * 2 (v) * 2 (a) = 2^3 = 8 combinacions.
+
+Per als tres darrers caràcters, Eva ha decidit utilitzar números. Hi ha 10 dígits possibles (0-9) per a cada una de les tres posicions. Així que el nombre total de combinacions per als tres darrers caràcters és:
+10 (per al primer número) * 10 (per al segon número) * 10 (per al tercer número) = 10^3 = 1000 combinacions.
+
+Finalment, per trobar el nombre total de contrasenyes possibles, multipliquem les combinacions de les lletres per les combinacions dels números:
+8 (combinacions de lletres) * 1000 (combinacions de números) = 8000.
+
+Resposta: D) 8000

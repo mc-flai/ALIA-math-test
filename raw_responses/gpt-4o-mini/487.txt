@@ -1,0 +1,30 @@
+Raonament: Si Sílvia ha pintat els quadradets interiors que toquen els costats del rectangle i encara queden 16 quadradets interiors sense pintar, això vol dir que els quadradets interiors que ha pintat són els que estan immediatament al voltant del perímetre del rectangle. 
+
+Si considerem que el rectangle té dimensions \(m\) (ample) i \(n\) (alt), el nombre total de quadradets interiors és \((m-2) \times (n-2)\), ja que hem de restar els quadradets de les vores. 
+
+A més, si ha pintat els quadradets que toquen els costats, el nombre de quadradets pintats és igual a la suma dels quadradets de les vores, que és \(2(m + n - 2)\) (ja que cada costat del rectangle té quadradets que toquen el costat). 
+
+Per tant, el nombre total de quadradets interiors és igual al nombre de quadradets pintats més els que queden sense pintar, és a dir:
+\[
+(m-2)(n-2) + 16
+\]
+
+Ara, per trobar el màxim nombre de quadradets interiors, hem de considerar les opcions donades. 
+
+1. Si el rectangle té 25 quadradets, llavors \((m-2)(n-2) = 25 - 16 = 9\).
+2. Si el rectangle té 36 quadradets, llavors \((m-2)(n-2) = 36 - 16 = 20\).
+3. Si el rectangle té 40 quadradets, llavors \((m-2)(n-2) = 40 - 16 = 24\).
+4. Si el rectangle té 54 quadradets, llavors \((m-2)(n-2) = 54 - 16 = 38\).
+5. Si el rectangle té 64 quadradets, llavors \((m-2)(n-2) = 64 - 16 = 48\).
+
+Ara, hem de veure quins valors de \(m\) i \(n\) poden satisfer aquestes equacions. 
+
+- Per 25 quadradets: \(m-2\) i \(n-2\) han de ser factors de 9 (1, 9), (3, 3).
+- Per 36 quadradets: \(m-2\) i \(n-2\) han de ser factors de 20 (1, 20), (2, 10), (4, 5).
+- Per 40 quadradets: \(m-2\) i \(n-2\) han de ser factors de 24 (1, 24), (2, 12), (3, 8), (4, 6).
+- Per 54 quadradets: \(m-2\) i \(n-2\) han de ser factors de 38 (1, 38), (2, 19).
+- Per 64 quadradets: \(m-2\) i \(n-2\) han de ser factors de 48 (1, 48), (2, 24), (3, 16), (4, 12), (6, 8).
+
+D'entre totes les opcions, la que permet més combinacions de \(m\) i \(n\) i que és factible és 64 quadradets, ja que permet més variacions en les dimensions del rectangle.
+
+Resposta: E)

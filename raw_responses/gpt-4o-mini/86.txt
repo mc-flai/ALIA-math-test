@@ -1,0 +1,55 @@
+Raonament: Per resoldre el problema, hem de trobar el nombre de combinacions possibles de monedes de 50 cèntims, 1 euro i 2 euros que sumin un total de 100 euros. 
+
+1. **Definició de variables**:
+   - Sigui \( x \) el nombre de monedes de 50 cèntims.
+   - Sigui \( y \) el nombre de monedes d'1 euro.
+   - Sigui \( z \) el nombre de monedes de 2 euros.
+
+2. **Equació**:
+   La suma total de les monedes ha de ser igual a 100 euros, que es pot expressar en cèntims com 10,000 cèntims. Així, tenim l'equació:
+   \[
+   50x + 100y + 200z = 10000
+   \]
+   Simplificant, podem dividir tota l'equació per 50:
+   \[
+   x + 2y + 4z = 200
+   \]
+
+3. **Solució de l'equació**:
+   Ara hem de comptar les solucions no negatives de l'equació \( x + 2y + 4z = 200 \). Per fer-ho, podem fixar un valor per \( z \) i resoldre per \( x \) i \( y \).
+
+   - Si fixem \( z = k \), llavors l'equació es converteix en:
+   \[
+   x + 2y = 200 - 4k
+   \]
+   On \( k \) pot prendre valors de 0 fins a 50 (ja que \( 4 \times 50 = 200 \)).
+
+4. **Comptar solucions per a cada \( z \)**:
+   Per a cada valor de \( k \), l'equació \( x + 2y = 200 - 4k \) té solucions no negatives. El nombre de solucions no negatives de l'equació \( x + 2y = n \) és igual a \( \left\lfloor \frac{n}{2} \right\rfloor + 1 \).
+
+   - Per tant, per a cada \( k \):
+   \[
+   n = 200 - 4k
+   \]
+   El nombre de solucions és:
+   \[
+   \left\lfloor \frac{200 - 4k}{2} \right\rfloor + 1 = 100 - 2k + 1 = 101 - 2k
+   \]
+
+5. **Sumar les solucions**:
+   Ara sumem les solucions per a cada valor de \( k \) de 0 a 50:
+   \[
+   \sum_{k=0}^{50} (101 - 2k)
+   \]
+   Aquesta és una sèrie aritmètica on el primer terme és 101 i l'últim terme és 1 (quan \( k = 50 \)). El nombre de termes és 51.
+
+   La suma d'una sèrie aritmètica es calcula com:
+   \[
+   S = \frac{n}{2} \times (a + l)
+   \]
+   On \( n \) és el nombre de termes, \( a \) és el primer terme i \( l \) és l'últim terme:
+   \[
+   S = \frac{51}{2} \times (101 + 1) = \frac{51}{2} \times 102 = 51 \times 51 = 2601
+   \]
+
+Resposta: C) 2601

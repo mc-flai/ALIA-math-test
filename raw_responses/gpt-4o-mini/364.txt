@@ -1,0 +1,20 @@
+Raonament: Per determinar la mínima diferència entre un nombre natural que compleix la condició que la suma dels seus dígits és divisible per 5 i el seu anterior, hem de considerar com es poden generar aquests nombres. 
+
+Els nombres que hem enumerat (5, 14, 19, 23, 28, ...) són aquells que, quan sumem els seus dígits, el resultat és divisible per 5. 
+
+Comencem a analitzar les diferències entre els nombres consecutius:
+
+- Entre 5 i 14, la diferència és 9.
+- Entre 14 i 19, la diferència és 5.
+- Entre 19 i 23, la diferència és 4.
+- Entre 23 i 28, la diferència és 5.
+
+Ara, per trobar la mínima diferència, hem de considerar si és possible que hi hagi una diferència menor a 4. Si considerem nombres consecutius, la suma dels seus dígits ha de canviar de manera que la nova suma sigui divisible per 5. 
+
+Per exemple, si tenim un nombre n i volem trobar n+1, la suma dels dígits de n+1 pot no ser divisible per 5, i per tant, no seria un nombre vàlid. Això implica que, en general, les diferències entre nombres vàlids poden ser més grans que 1, 2 o 3, ja que la suma dels dígits ha de complir la condició de divisibilitat.
+
+Després d'analitzar les diferències que hem trobat, la mínima diferència que hem observat és 4 (entre 19 i 23). No hem trobat cap diferència de 1, 2 o 3 en els nombres que hem considerat.
+
+Per tant, la mínima diferència entre un d'aquests nombres i el seu anterior és 4.
+
+Resposta: D) 4

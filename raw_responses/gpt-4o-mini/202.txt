@@ -1,0 +1,9 @@
+Raonament: Per determinar un nombre entre 1 i 15, podem utilitzar un enfocament de divisió per mitges. En cada pregunta, podem dividir el conjunt de nombres en dues parts i preguntar si el nombre que has triat pertany a una d'aquestes parts. 
+
+1. En la primera pregunta, podem preguntar si el nombre és menor o igual a 7. Això ens permet dividir el conjunt en dos: 1-7 i 8-15. Amb aquesta pregunta, podem reduir el conjunt a la meitat.
+2. En la segona pregunta, si el nombre és menor o igual a 7, podem preguntar si és menor o igual a 3. Això ens permet dividir el conjunt 1-7 en 1-3 i 4-7. Si el nombre és més gran que 7, podem preguntar si és menor o igual a 11, dividint el conjunt 8-15 en 8-11 i 12-15.
+3. En la tercera pregunta, si hem arribat a un conjunt de 3 nombres (per exemple, 1-3), podem preguntar directament per un dels nombres (per exemple, si és 1). Si el nombre és més gran que 7 i hem arribat a un conjunt de 4 nombres (per exemple, 8-11), podem preguntar per un dels nombres (per exemple, si és 8).
+
+Amb aquest mètode, podem determinar el nombre en un màxim de 4 preguntes. Per tant, el mínim nombre de preguntes necessàries per estar segur del nombre és 4.
+
+Resposta: D)

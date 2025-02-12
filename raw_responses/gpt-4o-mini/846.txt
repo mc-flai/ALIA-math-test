@@ -1,0 +1,49 @@
+Raonament: Joan va menjar un total de 50 galetes, i cada dia menjava 5 galetes més que el dia anterior. Si anomenem \( x \) al nombre de galetes que va menjar el primer dia, el segon dia menjarà \( x + 5 \), el tercer dia \( x + 10 \), i així successivament. Si considerem que va menjar durant \( n \) dies, la quantitat total de galetes que va menjar es pot expressar com:
+
+\[
+x + (x + 5) + (x + 10) + ... + (x + 5(n-1)) = 50
+\]
+
+Aquesta suma és una progressió aritmètica. La suma de \( n \) termes d'una progressió aritmètica es pot calcular amb la fórmula:
+
+\[
+S_n = \frac{n}{2} \cdot (2a + (n-1)d)
+\]
+
+On \( a \) és el primer terme, \( d \) és la diferència entre els termes (en aquest cas, 5), i \( n \) és el nombre de termes. En el nostre cas, \( a = x \) i \( d = 5 \).
+
+Per simplificar, podem expressar la suma com:
+
+\[
+n \cdot x + 5 \cdot \frac{(n-1)n}{2} = 50
+\]
+
+Ara, provem amb diferents valors de \( n \) per veure quants dies podria haver menjat galetes.
+
+1. Si \( n = 5 \):
+   \[
+   5x + 5 \cdot \frac{4 \cdot 5}{2} = 5x + 50 = 50 \implies 5x = 0 \implies x = 0
+   \]
+   (No és possible, ja que no pot menjar 0 galetes el primer dia).
+
+2. Si \( n = 4 \):
+   \[
+   4x + 5 \cdot \frac{3 \cdot 4}{2} = 4x + 30 = 50 \implies 4x = 20 \implies x = 5
+   \]
+   (Primer dia: 5, segon dia: 10, tercer dia: 15, quart dia: 20. Total: 5 + 10 + 15 + 20 = 50).
+
+3. Si \( n = 3 \):
+   \[
+   3x + 5 \cdot \frac{2 \cdot 3}{2} = 3x + 15 = 50 \implies 3x = 35 \implies x = \frac{35}{3} \approx 11.67
+   \]
+   (No és un nombre enter).
+
+4. Si \( n = 2 \):
+   \[
+   2x + 5 \cdot \frac{1 \cdot 2}{2} = 2x + 5 = 50 \implies 2x = 45 \implies x = 22.5
+   \]
+   (No és un nombre enter).
+
+Per tant, la solució viable és \( n = 4 \) amb \( x = 5 \). Així, el darrer dia va menjar 20 galetes.
+
+Resposta: A) 20

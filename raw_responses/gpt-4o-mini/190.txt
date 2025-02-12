@@ -1,0 +1,23 @@
+Raonament: En el llibre, les pàgines que són múltiples de 3 no es numeraran. Així que, per determinar quina és la darrera pàgina numerada, hem de comptar quantes pàgines es numeraran fins arribar a les 88 pàgines que no són múltiples de 3.
+
+Per fer-ho, podem calcular quantes pàgines del llibre són múltiples de 3. Si el llibre té 88 pàgines, el nombre de pàgines que són múltiples de 3 es pot calcular com:
+
+\[ \text{Múltiples de 3} = \left\lfloor \frac{88}{3} \right\rfloor = 29 \]
+
+Això vol dir que hi ha 29 pàgines que no es numeraran. Per tant, el nombre total de pàgines numerades serà:
+
+\[ \text{Pàgines numerades} = 88 - 29 = 59 \]
+
+Ara, per trobar el número de la darrera pàgina numerada, hem de considerar que les pàgines numerades són totes les pàgines excepte les que són múltiples de 3. Així que, per trobar la darrera pàgina numerada, hem de sumar les pàgines numerades (59) amb el nombre de pàgines que són múltiples de 3 fins a la darrera pàgina.
+
+Si considerem que les pàgines numerades són 1, 2, 4, 5, 7, 8, 10, 11, etc., podem veure que les pàgines que no es numeraran són 3, 6, 9, 12, ..., 87. La darrera pàgina del llibre és 88, i la darrera pàgina numerada serà 88 + 29 (ja que hi ha 29 pàgines que no es numeraran).
+
+Per tant, la darrera pàgina numerada serà:
+
+\[ 88 + 29 = 117 \]
+
+Però, com que hem de trobar el número de la darrera pàgina amb la numeració que no inclou les múltiples de 3, hem de continuar sumant fins que arribem a 88 pàgines numerades. 
+
+Si seguim aquest patró, la darrera pàgina numerada que correspon a la numeració real del llibre és 131, ja que 131 és la darrera pàgina que no és múltiple de 3.
+
+Resposta: B) 131

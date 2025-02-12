@@ -1,0 +1,15 @@
+Raonament: L'operació que volem resoldre és 1 – 2 + 3 – 4 + 5 – · · · + 2015 – 2016. Podem agrupar els termes de manera que cada parell de termes consecutius es pugui simplificar. 
+
+Si agrupem els termes de la següent manera:
+(1 - 2) + (3 - 4) + (5 - 6) + ... + (2015 - 2016)
+
+Cada parell de termes (n - (n + 1)) resulta en -1. Ara, hem de determinar quants parells de termes hi ha en la sèrie.
+
+Els nombres que estem sumant van de 1 a 2016, que són 2016 termes en total. Com que estem agrupant en parells, el nombre de parells és 2016 / 2 = 1008.
+
+Per tant, la suma total de tots els parells és:
+1008 * (-1) = -1008.
+
+Així, el resultat de l'operació és -1008.
+
+Resposta: B) -1008.

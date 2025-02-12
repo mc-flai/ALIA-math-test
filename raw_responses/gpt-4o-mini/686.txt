@@ -1,0 +1,45 @@
+Raonament: Cada equip té 3 jugadors, i cada jugador d'un equip juga contra tots els jugadors dels altres equips. Si hi ha \( n \) equips, el nombre total de jugadors és \( 3n \). Cada jugador jugarà contra \( 3(n - 1) \) jugadors (ja que no jugarà contra els seus companys d'equip). Així, el nombre total de partides jugades és:
+
+\[
+\text{Total de partides} = \frac{3n \cdot 3(n - 1)}{2}
+\]
+
+El factor \( \frac{1}{2} \) es fa servir perquè cada partida es compta dues vegades (una per cada jugador). Simplificant l'expressió, obtenim:
+
+\[
+\text{Total de partides} = \frac{9n(n - 1)}{2}
+\]
+
+Per tal que el nombre total de partides no superi 250, hem d'establir la següent desigualtat:
+
+\[
+\frac{9n(n - 1)}{2} \leq 250
+\]
+
+Multiplicant per 2 per eliminar la fracció, obtenim:
+
+\[
+9n(n - 1) \leq 500
+\]
+
+Dividint per 9:
+
+\[
+n(n - 1) \leq \frac{500}{9} \approx 55.56
+\]
+
+Ara, busquem el valor màxim de \( n \) que satisfà aquesta desigualtat. Probem amb valors sencers:
+
+- Si \( n = 1 \): \( 1(1 - 1) = 0 \) (valida)
+- Si \( n = 2 \): \( 2(2 - 1) = 2 \) (valida)
+- Si \( n = 3 \): \( 3(3 - 1) = 6 \) (valida)
+- Si \( n = 4 \): \( 4(4 - 1) = 12 \) (valida)
+- Si \( n = 5 \): \( 5(5 - 1) = 20 \) (valida)
+- Si \( n = 6 \): \( 6(6 - 1) = 30 \) (valida)
+- Si \( n = 7 \): \( 7(7 - 1) = 42 \) (valida)
+- Si \( n = 8 \): \( 8(8 - 1) = 56 \) (no valida, ja que supera 55.56)
+- Si \( n = 9 \): \( 9(9 - 1) = 72 \) (no valida)
+
+Per tant, el valor màxim de \( n \) que compleix la desigualtat és 7.
+
+Resposta: E) 7

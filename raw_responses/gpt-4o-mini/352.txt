@@ -1,0 +1,19 @@
+Raonament: Un nombre palindròmic de sis dígits té la forma ABC CBA, on A, B i C són dígits. Això significa que el nombre es pot escriure com:
+
+\[ N = 100000A + 10000B + 1000C + 100C + 10B + A = 100001A + 10010B + 1100C \]
+
+Per trobar el màxim comú divisor (MCD) de tots els nombres palindròmics de sis dígits, hem de considerar els coeficients de A, B i C. Els coeficients són 100001, 10010 i 1100.
+
+Ara, calculem el MCD d'aquests tres números:
+
+1. **MCD(100001, 10010)**:
+   - 100001 és un nombre primer, ja que no té divisors més enllà de 1 i ell mateix.
+   - 10010 es pot descompondre en factors: \( 10010 = 2 \times 5 \times 1001 = 2 \times 5 \times 7 \times 11 \times 13 \).
+   - Com que 100001 no comparteix cap factor amb 10010, el MCD(100001, 10010) = 1.
+
+2. **MCD(1, 1100)**:
+   - El MCD de qualsevol nombre amb 1 és 1.
+
+Per tant, el MCD de 100001, 10010 i 1100 és 1. Això significa que el màxim comú divisor de tots els nombres palindròmics de sis dígits és 1.
+
+Resposta: A)

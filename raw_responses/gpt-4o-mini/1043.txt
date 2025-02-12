@@ -1,0 +1,41 @@
+Raonament: Tenim 50 estudiants asseguts en cercle i la pilota es passa a l'estudiant que està assegut 6 llocs més a la dreta. Això significa que cada cop que un estudiant rep la pilota, la seva posició es pot representar matemàticament com un increment de 6 en el seu número de posició, que es calcula en mòdul 50 (ja que hi ha 50 estudiants). 
+
+Si considerem que Frida és l'estudiant en la posició 0, les posicions dels estudiants que reben la pilota es poden calcular com:
+
+- 0 (Frida)
+- 6 (1a passada)
+- 12 (2a passada)
+- 18 (3a passada)
+- 24 (4a passada)
+- 30 (5a passada)
+- 36 (6a passada)
+- 42 (7a passada)
+- 48 (8a passada)
+- 4 (9a passada)
+- 10 (10a passada)
+- 16 (11a passada)
+- 22 (12a passada)
+- 28 (13a passada)
+- 34 (14a passada)
+- 40 (15a passada)
+- 46 (16a passada)
+- 2 (17a passada)
+- 8 (18a passada)
+- 14 (19a passada)
+- 20 (20a passada)
+- 26 (21a passada)
+- 32 (22a passada)
+- 38 (23a passada)
+- 44 (24a passada)
+- 50 (0, torna a Frida, 25a passada)
+- ...
+
+Així, podem veure que les posicions que reben la pilota són múltiplos de 6, és a dir, 0, 6, 12, 18, 24, 30, 36, 42, 48, 4, 10, 16, 22, 28, 34, 40, 46, 2, 8, 14, 20, 26, 32, 38, 44, 50 (que és 0). 
+
+Ara, si analitzem quins estudiants no han rebut la pilota, podem veure que els estudiants que no han rebut la pilota són aquells que no són múltiplos de 6. Els números del 0 al 49 que no són múltiplos de 6 són:
+
+1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49.
+
+Això ens dóna un total de 40 estudiants que no han rebut la pilota.
+
+Resposta: E) 40

@@ -1,0 +1,52 @@
+Raonament: 
+
+Per calcular la suma de tots els nombres enters de quatre xifres que es poden formar amb les xifres 1, 2, 3 i 4 sense repeticions, primer hem de determinar quants nombres diferents podem formar. 
+
+Amb les xifres 1, 2, 3 i 4, podem formar un total de \(4!\) (factorial de 4) nombres, que és igual a 24. Aquests nombres són:
+
+- 1234
+- 1234
+- 1243
+- 1324
+- 1342
+- 1423
+- 1432
+- 2134
+- 2143
+- 2314
+- 2341
+- 2413
+- 2431
+- 3124
+- 3142
+- 3214
+- 3241
+- 3412
+- 3421
+- 4123
+- 4132
+- 4213
+- 4231
+- 4312
+- 4321
+
+Ara, per calcular la suma de tots aquests nombres, podem observar que cada xifra (1, 2, 3, 4) apareix en cada posició (milers, centenes, desenes, unitats) un nombre igual de vegades. 
+
+Cada xifra apareix en cada posició \( \frac{24}{4} = 6 \) vegades. 
+
+Així, la contribució de cada xifra a la suma total és:
+
+- Per la posició de milers: \( (1 + 2 + 3 + 4) \times 1000 \times 6 = 10 \times 1000 \times 6 = 60000 \)
+- Per la posició de centenes: \( (1 + 2 + 3 + 4) \times 100 \times 6 = 10 \times 100 \times 6 = 6000 \)
+- Per la posició de desenes: \( (1 + 2 + 3 + 4) \times 10 \times 6 = 10 \times 10 \times 6 = 600 \)
+- Per la posició d'unitats: \( (1 + 2 + 3 + 4) \times 1 \times 6 = 10 \times 1 \times 6 = 60 \)
+
+Ara sumem totes aquestes contribucions:
+
+\[
+60000 + 6000 + 600 + 60 = 66660
+\]
+
+Per tant, la suma de tots els nombres enters de quatre xifres que es poden escriure amb les xifres 1, 2, 3 i 4 sense repeticions és 66660.
+
+Resposta: A)

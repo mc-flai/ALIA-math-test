@@ -1,0 +1,27 @@
+Raonament: Comencem amb l'equació donada:
+
+\[
+\log_n(2^n) = \frac{n}{4}
+\]
+
+Podem aplicar la propietat del logaritme que diu que \(\log_b(a^c) = c \cdot \log_b(a)\). Així, podem reescriure l'equació com:
+
+\[
+n \cdot \log_n(2) = \frac{n}{4}
+\]
+
+Ara, podem dividir amb \(n\) (suponent que \(n \neq 0\)):
+
+\[
+\log_n(2) = \frac{1}{4}
+\]
+
+Aquesta equació ens indica que \(n^{1/4} = 2\). Elevant al quart ambdues parts, obtenim:
+
+\[
+n = 2^4 = 16
+\]
+
+Per tant, el valor de \(n\) que satisfà l'equació original és 16.
+
+Resposta: D)

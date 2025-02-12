@@ -1,0 +1,17 @@
+Raonament: El problema ens demana quants nombres de 6 xifres formats només pels dígits 1 i 2 poden aparèixer en el odòmetre després de recórrer 9 km. 
+
+Primer, calculem quants nombres de 6 xifres podem formar amb els dígits 1 i 2. Cada xifra del nombre pot ser 1 o 2, així que per a cada una de les 6 posicions del nombre, tenim 2 opcions. Això ens dóna un total de \(2^6 = 64\) nombres possibles.
+
+Ara, considerem que el conductor ha recorregut 9 km. En un odòmetre, cada xifra representa un dígit en una base 10, però aquí estem treballant amb un sistema binari (1 i 2). Per tant, hem de veure quins nombres de 6 xifres es poden obtenir sumant 9 a un nombre de 6 xifres format per 1s i 2s.
+
+El nombre 9 en binari és 1001, que en decimal és 9. Això significa que, al sumar 9, podem afectar fins a 4 dígits del nombre original. Hem de considerar les combinacions de 1s i 2s que es poden produir en sumar 9 a un nombre de 6 xifres.
+
+Per a cada combinació de 1s i 2s, podem tenir les següents possibilitats:
+- Si el nombre original acaba en 1, al sumar 9, pot convertir-se en 2 o 3 (en el context de 1s i 2s, 3 no és vàlid, així que només es pot convertir en 2).
+- Si el nombre original acaba en 2, al sumar 9, pot convertir-se en 1 (perquè 2 + 9 = 11, que no és vàlid, així que només es pot convertir en 1).
+
+Així, cada combinació de 1s i 2s pot donar lloc a 4 variacions (perquè podem canviar 4 dígits). 
+
+Per tant, el nombre total de combinacions que es poden produir és \(2^4 = 16\).
+
+Resposta: C) 16

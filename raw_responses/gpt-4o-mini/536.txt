@@ -1,0 +1,71 @@
+Per resoldre el problema, comencem per analitzar l'equació donada:
+
+\[
+\frac{a}{b+1} + \frac{b}{a+1} = 1.
+\]
+
+Multiplicant tots dos costats per \((b+1)(a+1)\) per eliminar les fraccions, obtenim:
+
+\[
+a(a+1) + b(b+1) = (b+1)(a+1).
+\]
+
+Desenvolupant els termes, tenim:
+
+\[
+a^2 + a + b^2 + b = ab + a + b + 1.
+\]
+
+Simplificant, podem cancel·lar \(a\) i \(b\) dels dos costats:
+
+\[
+a^2 + b^2 = ab + 1.
+\]
+
+Reorganitzant, obtenim:
+
+\[
+a^2 + b^2 - ab = 1.
+\]
+
+Ara, volem analitzar l'expressió:
+
+\[
+\frac{a}{b} + \frac{b}{a} - ab.
+\]
+
+Podem reescriure \(\frac{a}{b} + \frac{b}{a}\) com:
+
+\[
+\frac{a^2 + b^2}{ab}.
+\]
+
+Per tant, l'expressió es converteix en:
+
+\[
+\frac{a^2 + b^2}{ab} - ab.
+\]
+
+Substituïm \(a^2 + b^2\) per \(ab + 1\) (de l'equació anterior):
+
+\[
+\frac{ab + 1}{ab} - ab = \frac{1}{ab}.
+\]
+
+Així que l'expressió que volem analitzar és:
+
+\[
+\frac{1}{ab}.
+\]
+
+Ara, per determinar els valors que pot prendre \(\frac{1}{ab}\), hem de considerar que \(ab\) no pot ser zero (ja que \(a\) i \(b\) no poden ser simultàniament zero per a que l'equació original tingui sentit). 
+
+Si \(ab > 0\), llavors \(\frac{1}{ab} > 0\). Si \(ab < 0\), llavors \(\frac{1}{ab} < 0\). No obstant això, l'equació \(a^2 + b^2 - ab = 1\) implica que \(a\) i \(b\) no poden ser massa grans en valor absolut, ja que això faria que \(a^2 + b^2\) superés 1, i per tant \(ab\) no pot ser massa petit.
+
+Per tant, \(ab\) ha de ser un valor positiu, i per tant \(\frac{1}{ab}\) pot prendre valors en l'interval \((0, \infty)\). No obstant això, per a l'equació original, \(ab\) no pot ser massa gran, així que \(\frac{1}{ab}\) pot estar limitat a un interval finit.
+
+Després d'analitzar les opcions, la millor opció que s'ajusta a la nostra conclusió és que \(\frac{1}{ab}\) pot prendre valors en l'interval \((0, 1]\).
+
+Raonament: Hem demostrat que l'expressió \(\frac{a}{b} + \frac{b}{a} - ab\) es redueix a \(\frac{1}{ab}\), i hem analitzat que \(ab\) ha de ser positiu i limitat, per tant, \(\frac{1}{ab}\) pot prendre valors en l'interval \((0, 1]\).
+
+Resposta: A)

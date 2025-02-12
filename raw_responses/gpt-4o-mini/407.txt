@@ -1,0 +1,31 @@
+Raonament: Per calcular la probabilitat que Judit guanye el partit, hem de considerar les diferents maneres en què pot guanyar dos sets abans que Susanna. Judit pot guanyar el partit en tres escenaris:
+
+1. Judit guanya els dos primers sets (J, J).
+2. Judit guanya el primer set, Susanna guanya el segon, i Judit guanya el tercer (J, S, J).
+3. Judit perd el primer set, guanya els dos següents (S, J, J).
+
+Anem a calcular la probabilitat de cada escenari:
+
+1. **Escenari 1 (J, J)**: La probabilitat que Judit guanye els dos primers sets és:
+   \[
+   P(J, J) = P(J) \cdot P(J) = 0.6 \cdot 0.6 = 0.36
+   \]
+
+2. **Escenari 2 (J, S, J)**: La probabilitat que Judit guanye el primer set, Susanna guanye el segon, i Judit guanye el tercer és:
+   \[
+   P(J, S, J) = P(J) \cdot P(S) \cdot P(J) = 0.6 \cdot 0.4 \cdot 0.6 = 0.144
+   \]
+
+3. **Escenari 3 (S, J, J)**: La probabilitat que Susanna guanye el primer set, i Judit guanye els dos següents és:
+   \[
+   P(S, J, J) = P(S) \cdot P(J) \cdot P(J) = 0.4 \cdot 0.6 \cdot 0.6 = 0.144
+   \]
+
+Ara sumem les probabilitats dels tres escenaris per obtenir la probabilitat total que Judit guanye el partit:
+\[
+P(Judit guanya) = P(J, J) + P(J, S, J) + P(S, J, J) = 0.36 + 0.144 + 0.144 = 0.648
+\]
+
+Per tant, la probabilitat que Judit guanye el partit és 0.648.
+
+Resposta: B)

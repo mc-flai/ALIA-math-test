@@ -1,0 +1,30 @@
+Raonament: Per aplicar una rotació d'un punt al voltant de l'origen, utilitzem les següents fórmules de rotació:
+
+Si un punt \( (x, y) \) es rota un angle \( \theta \) en sentit antihorari, les noves coordenades \( (x', y') \) es calculen com:
+
+\[
+x' = x \cdot \cos(\theta) - y \cdot \sin(\theta)
+\]
+\[
+y' = x \cdot \sin(\theta) + y \cdot \cos(\theta)
+\]
+
+En aquest cas, el punt original és \( (7, 2) \) i l'angle de rotació és \( 45° \). Primer, calculem els valors de \( \cos(45°) \) i \( \sin(45°) \):
+
+\[
+\cos(45°) = \sin(45°) = \frac{\sqrt{2}}{2}
+\]
+
+Ara substituïm \( x = 7 \), \( y = 2 \), \( \cos(45°) \) i \( \sin(45°) \) en les fórmules:
+
+\[
+x' = 7 \cdot \frac{\sqrt{2}}{2} - 2 \cdot \frac{\sqrt{2}}{2} = \frac{7\sqrt{2}}{2} - \frac{2\sqrt{2}}{2} = \frac{5\sqrt{2}}{2}
+\]
+
+\[
+y' = 7 \cdot \frac{\sqrt{2}}{2} + 2 \cdot \frac{\sqrt{2}}{2} = \frac{7\sqrt{2}}{2} + \frac{2\sqrt{2}}{2} = \frac{9\sqrt{2}}{2}
+\]
+
+Per tant, les noves coordenades després de la rotació són \( \left( \frac{5\sqrt{2}}{2}, \frac{9\sqrt{2}}{2} \right) \).
+
+Resposta: A) \(\left( \frac{5\sqrt{2}}{2}, \frac{9\sqrt{2}}{2} \right)\)

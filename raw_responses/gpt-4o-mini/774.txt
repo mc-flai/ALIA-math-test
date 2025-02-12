@@ -1,0 +1,23 @@
+Raonament: Comencem per analitzar l'expressió |n² – 2n - 3|. Podem reescriure l'expressió com |(n - 3)(n + 1)|, que és el producte de dos factors. Perquè aquesta expressió sigui un nombre primer, ha de ser igual a p o a -p, on p és un nombre primer. Això implica que un dels factors ha de ser 1 o -1, ja que un nombre primer només té dos divisors: 1 i ell mateix.
+
+1. **Cas 1: (n - 3) = 1**
+   - n - 3 = 1 → n = 4
+   - |(4 - 3)(4 + 1)| = |1 * 5| = 5 (que és primer)
+
+2. **Cas 2: (n - 3) = -1**
+   - n - 3 = -1 → n = 2
+   - |(2 - 3)(2 + 1)| = |-1 * 3| = 3 (que és primer)
+
+3. **Cas 3: (n + 1) = 1**
+   - n + 1 = 1 → n = 0
+   - |(0 - 3)(0 + 1)| = |-3 * 1| = 3 (que és primer)
+
+4. **Cas 4: (n + 1) = -1**
+   - n + 1 = -1 → n = -2
+   - |(-2 - 3)(-2 + 1)| = |-5 * -1| = 5 (que és primer)
+
+Ara hem trobat quatre valors de n que fan que |n² – 2n - 3| sigui un nombre primer: n = 4, n = 2, n = 0, i n = -2. 
+
+Per tant, hi ha un total de 4 nombres enters n que compleixen la condició.
+
+Resposta: D) 4

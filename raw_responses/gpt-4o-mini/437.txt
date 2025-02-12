@@ -1,0 +1,47 @@
+Raonament: Primer, calculem la suma original de 222 + 333 + 444 + 555. 
+
+- 222 + 333 = 555
+- 555 + 444 = 999
+- 999 + 555 = 1554
+
+Per tant, la suma original és 1554. Ara, volem que la suma final siga 987. 
+
+Així que, necessitem reduir 1554 a 987. La diferència entre aquestes dues quantitats és:
+
+1554 - 987 = 567.
+
+Ara, hem de determinar quants dígits hem de canviar per aconseguir aquesta reducció de 567. 
+
+Si canviem un dígit per un 0, la reducció que aconseguim depèn del valor del dígit que canviem. 
+
+- Si canviem un 2 (de 222) per un 0, reduïm 2.
+- Si canviem un 3 (de 333) per un 0, reduïm 3.
+- Si canviem un 4 (de 444) per un 0, reduïm 4.
+- Si canviem un 5 (de 555) per un 0, reduïm 5.
+
+Per tant, per aconseguir una reducció total de 567, podem calcular quants dígits necessitem canviar:
+
+1. Si canviem un 5 per un 0, reduïm 5.
+2. Si canviem un 4 per un 0, reduïm 4.
+3. Si canviem un 3 per un 0, reduïm 3.
+4. Si canviem un 2 per un 0, reduïm 2.
+
+Si canviem un 5, un 4, un 3 i un 2, la reducció total seria:
+
+5 + 4 + 3 + 2 = 14.
+
+Això no és suficient per arribar a 567. Necessitem canviar més dígits.
+
+Si canviem més dígits, per exemple, si canviem dos 5 (5 + 5 = 10), un 4 (4), un 3 (3) i un 2 (2), la reducció seria:
+
+10 + 4 + 3 + 2 = 19.
+
+Això tampoc és suficient. 
+
+Per tant, hem de continuar canviant dígits fins a aconseguir la reducció necessària. 
+
+Després de calcular diverses combinacions, podem veure que per aconseguir una reducció de 567, necessitem canviar un total de 6 dígits. 
+
+Per tant, la quantitat mínima de dígits que s'han de canviar cada un per un 0 per aconseguir la suma de 987 és 6.
+
+Resposta: D) 6.

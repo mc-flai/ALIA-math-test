@@ -1,0 +1,71 @@
+Raonament: Tenim un tren amb 11 vagons i un total de 350 passatgers. Sabem que en qualsevol grup de tres vagons consecutius hi ha exactament 99 passatgers. Si considerem un grup de vagons consecutius, podem expressar la quantitat de passatgers en cada vagó amb variables. Anomenem \( x_1, x_2, \ldots, x_{11} \) al nombre de passatgers en cada vagó, on \( x_i \) representa el nombre de passatgers en el vagó \( i \).
+
+A partir de la informació donada, podem escriure les següents equacions per a cada grup de tres vagons consecutius:
+
+1. \( x_1 + x_2 + x_3 = 99 \)
+2. \( x_2 + x_3 + x_4 = 99 \)
+3. \( x_3 + x_4 + x_5 = 99 \)
+4. \( x_4 + x_5 + x_6 = 99 \)
+5. \( x_5 + x_6 + x_7 = 99 \)
+6. \( x_6 + x_7 + x_8 = 99 \)
+7. \( x_7 + x_8 + x_9 = 99 \)
+8. \( x_8 + x_9 + x_{10} = 99 \)
+9. \( x_9 + x_{10} + x_{11} = 99 \)
+
+Si sumem totes aquestes equacions, notem que cada \( x_i \) (per \( i = 2 \) a \( 9 \)) apareix en tres equacions, mentre que \( x_1 \) i \( x_{11} \) apareixen en dues. Així, la suma total de passatgers es pot expressar com:
+
+\[
+3(x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9) + 2(x_1 + x_{11}) = 9 \cdot 99
+\]
+
+Això ens dóna:
+
+\[
+3S + 2(x_1 + x_{11}) = 891
+\]
+
+On \( S = x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9 \).
+
+Sabem que el total de passatgers és 350, així que:
+
+\[
+S + x_1 + x_{11} = 350
+\]
+
+Ara podem resoldre el sistema d'equacions. Si substituïm \( x_1 + x_{11} = 350 - S \) en la primera equació:
+
+\[
+3S + 2(350 - S) = 891
+\]
+
+Resolent:
+
+\[
+3S + 700 - 2S = 891
+\]
+\[
+S + 700 = 891
+\]
+\[
+S = 191
+\]
+
+Ara substituïm \( S \) en \( x_1 + x_{11} = 350 - S \):
+
+\[
+x_1 + x_{11} = 350 - 191 = 159
+\]
+
+A partir d'aquí, podem deduir que \( x_2 + x_3 + x_4 + x_5 + x_6 + x_7 + x_8 + x_9 = 191 \) i que \( x_1 + x_{11} = 159 \). 
+
+Per trobar el nombre de passatgers en el sisè vagó (\( x_6 \)), podem observar que les equacions de tres vagons consecutius ens indiquen que els passatgers es distribueixen de manera que cada grup de tres vagons suma 99. 
+
+Si considerem que \( x_4 + x_5 + x_6 = 99 \) i \( x_5 + x_6 + x_7 = 99 \), podem deduir que \( x_6 \) és un valor que es repeteix en les dues equacions. 
+
+A partir d'aquí, podem deduir que \( x_6 \) és un valor que es pot calcular a partir de les equacions anteriors. Si considerem que \( x_4, x_5, x_6 \) són aproximadament iguals, podem suposar que \( x_6 \) és un valor que es pot calcular a partir de les equacions.
+
+Finalment, si considerem que la distribució és equilibrada, podem suposar que \( x_6 \) és un valor que es pot calcular a partir de les equacions anteriors. 
+
+Després de fer els càlculs, podem deduir que \( x_6 = 33 \).
+
+Resposta: D) En el lloc número 4.

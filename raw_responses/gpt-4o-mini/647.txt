@@ -1,0 +1,11 @@
+Raonament: Un nombre de tres xifres es pot representar com \(abc\), on \(a\), \(b\) i \(c\) són les xifres del nombre. La suma de les xifres és \(a + b + c = 26\). Tenint en compte que \(a\) és la xifra de les centenes, ha de ser un nombre entre 1 i 9, i tant \(b\) com \(c\) han de ser xifres entre 0 i 9. 
+
+Si sumem les màximes xifres possibles per \(b\) i \(c\) (9 + 9 = 18), el màxim que pot sumar \(a\) és 8 (ja que 8 + 18 = 26). Així, les possibles combinacions de \(a\), \(b\) i \(c\) que compleixen \(a + b + c = 26\) són limitades.
+
+Les combinacions possibles són:
+- Si \(a = 8\), llavors \(b + c = 18\). Les possibles combinacions són \(b = 9\) i \(c = 9\) (8 + 9 + 9 = 26).
+- Si \(a = 9\), llavors \(b + c = 17\), però no és possible perquè \(b\) i \(c\) no poden ser més de 9.
+
+Per tant, la única combinació vàlida és \(a = 8\), \(b = 9\), \(c = 9\). Ara calculem el producte de les xifres: \(8 \times 9 \times 9 = 648\).
+
+Resposta: D) 648

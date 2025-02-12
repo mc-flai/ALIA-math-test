@@ -1,0 +1,41 @@
+Raonament: Un nombre enter positiu de 2 dígits es pot representar com \(10a + b\), on \(a\) és el dígit de les desenes (1 a 9) i \(b\) és el dígit de les unitats (0 a 9). Segons el problema, aquest nombre ha de ser igual a 4 vegades la suma dels seus dígits, és a dir:
+
+\[
+10a + b = 4(a + b)
+\]
+
+Desenvolupem l'equació:
+
+\[
+10a + b = 4a + 4b
+\]
+
+Reorganitzem els termes:
+
+\[
+10a - 4a = 4b - b
+\]
+
+Això simplifica a:
+
+\[
+6a = 3b
+\]
+
+Dividim per 3:
+
+\[
+2a = b
+\]
+
+Això significa que el dígit de les unitats \(b\) és el doble del dígit de les desenes \(a\). Ara, considerem els valors possibles per \(a\):
+
+- Si \(a = 1\), llavors \(b = 2\) (nombre: 12)
+- Si \(a = 2\), llavors \(b = 4\) (nombre: 24)
+- Si \(a = 3\), llavors \(b = 6\) (nombre: 36)
+- Si \(a = 4\), llavors \(b = 8\) (nombre: 48)
+- Si \(a = 5\), llavors \(b = 10\) (no és vàlid, ja que \(b\) ha de ser un dígit)
+
+Per tant, els nombres que compleixen la condició són: 12, 24, 36 i 48. Així que hi ha un total de 4 nombres enters positius de 2 dígits que compleixen la condició.
+
+Resposta: D)

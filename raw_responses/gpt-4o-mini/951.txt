@@ -1,0 +1,72 @@
+Raonament: Anem a analitzar el sistema d'equacions donat:
+
+1. **Equació 1:** \(|x| + |y| = 1\) representa un quadrat en el pla XY amb vèrtexs en (1,0), (0,1), (-1,0) i (0,-1). Aquesta equació té quatre segments de línia que es poden descriure com:
+   - \(y = 1 - x\) per \(0 \leq x \leq 1\)
+   - \(y = -1 - x\) per \(-1 \leq x < 0\)
+   - \(y = x - 1\) per \(-1 < x < 0\)
+   - \(y = -x + 1\) per \(0 < x \leq 1\)
+
+2. **Equació 2:** \(x^2 - y^2 = 1\) és una hipèrbola. Aquesta equació es pot reescriure com \((x - y)(x + y) = 1\). La hipèrbola té dues branques, que s'estenen cap a la dreta i cap a l'esquerra.
+
+Ara, hem de trobar les interseccions entre la hipèrbola i el quadrat. 
+
+- **Intersecció amb el segment \(y = 1 - x\):**
+  Substituïm \(y\) en l'equació de la hipèrbola:
+  \[
+  x^2 - (1 - x)^2 = 1
+  \]
+  Simplificant:
+  \[
+  x^2 - (1 - 2x + x^2) = 1 \implies 2x - 1 = 1 \implies 2x = 2 \implies x = 1
+  \]
+  Substituint \(x = 1\) en \(y = 1 - x\):
+  \[
+  y = 1 - 1 = 0 \implies (1, 0)
+  \]
+
+- **Intersecció amb el segment \(y = -1 - x\):**
+  \[
+  x^2 - (-1 - x)^2 = 1
+  \]
+  Simplificant:
+  \[
+  x^2 - (1 + 2x + x^2) = 1 \implies -2x - 1 = 1 \implies -2x = 2 \implies x = -1
+  \]
+  Substituint \(x = -1\):
+  \[
+  y = -1 - (-1) = 0 \implies (-1, 0)
+  \]
+
+- **Intersecció amb el segment \(y = x - 1\):**
+  \[
+  x^2 - (x - 1)^2 = 1
+  \]
+  Simplificant:
+  \[
+  x^2 - (x^2 - 2x + 1) = 1 \implies 2x - 1 = 1 \implies 2x = 2 \implies x = 1
+  \]
+  Substituint \(x = 1\):
+  \[
+  y = 1 - 1 = 0 \implies (1, 0)
+  \]
+
+- **Intersecció amb el segment \(y = -x + 1\):**
+  \[
+  x^2 - (-x + 1)^2 = 1
+  \]
+  Simplificant:
+  \[
+  x^2 - (x^2 - 2x + 1) = 1 \implies 2x - 1 = 1 \implies 2x = 2 \implies x = 1
+  \]
+  Substituint \(x = 1\):
+  \[
+  y = -1 + 1 = 0 \implies (1, 0)
+  \]
+
+Després d'analitzar tots els segments, trobem que les solucions són:
+1. \((1, 0)\)
+2. \((-1, 0)\)
+
+Per tant, el sistema d'equacions té **2 solucions**.
+
+Resposta: B)

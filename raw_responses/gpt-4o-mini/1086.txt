@@ -1,0 +1,49 @@
+Raonament: Un capicua de tres xifres té la forma aba, on a i b són dígits. El capicua més gran de tres xifres és 999, però hem de trobar el més gran que sigui múltiple de 6. Un nombre és múltiple de 6 si és múltiple de 2 i de 3. 
+
+1. **Múltiple de 2**: Un nombre és múltiple de 2 si el seu darrer dígit és parell. En el cas d'un capicua aba, el darrer dígit és a, així que a ha de ser un dígit parell. Els dígits parells possibles són 0, 2, 4, 6, 8.
+
+2. **Múltiple de 3**: Un nombre és múltiple de 3 si la suma dels seus dígits és múltiple de 3. La suma dels dígits d'un capicua aba és a + b + a = 2a + b.
+
+Comencem a buscar el capicua més gran que sigui múltiple de 6, començant per 999 i baixant:
+
+- **989**: 9 + 8 + 9 = 26 (no és múltiple de 3)
+- **979**: 9 + 7 + 9 = 25 (no és múltiple de 3)
+- **969**: 9 + 6 + 9 = 24 (múltiple de 3) i 9 és parell (múltiple de 2). Per tant, 969 és múltiple de 6.
+
+Comprovem si hi ha un capicua més gran que 969 que sigui múltiple de 6:
+
+- **959**: 9 + 5 + 9 = 23 (no és múltiple de 3)
+- **949**: 9 + 4 + 9 = 22 (no és múltiple de 3)
+- **939**: 9 + 3 + 9 = 21 (no és múltiple de 3)
+- **929**: 9 + 2 + 9 = 20 (no és múltiple de 3)
+- **919**: 9 + 1 + 9 = 19 (no és múltiple de 3)
+- **909**: 9 + 0 + 9 = 18 (múltiple de 3) i 9 és parell (múltiple de 2). Per tant, 909 és múltiple de 6.
+
+Continuem buscant:
+
+- **898**: 8 + 9 + 8 = 25 (no és múltiple de 3)
+- **888**: 8 + 8 + 8 = 24 (múltiple de 3) i 8 és parell (múltiple de 2). Per tant, 888 és múltiple de 6.
+
+Comprovem si hi ha un capicua més gran que 888 que sigui múltiple de 6:
+
+- **878**: 8 + 7 + 8 = 23 (no és múltiple de 3)
+- **868**: 8 + 6 + 8 = 22 (no és múltiple de 3)
+- **858**: 8 + 5 + 8 = 21 (no és múltiple de 3)
+- **848**: 8 + 4 + 8 = 20 (no és múltiple de 3)
+- **838**: 8 + 3 + 8 = 19 (no és múltiple de 3)
+- **828**: 8 + 2 + 8 = 18 (múltiple de 3) i 8 és parell (múltiple de 2). Per tant, 828 és múltiple de 6.
+
+Continuem buscant:
+
+- **818**: 8 + 1 + 8 = 17 (no és múltiple de 3)
+- **808**: 8 + 0 + 8 = 16 (no és múltiple de 3)
+- **797**: 7 + 9 + 7 = 23 (no és múltiple de 3)
+- **787**: 7 + 8 + 7 = 22 (no és múltiple de 3)
+- **777**: 7 + 7 + 7 = 21 (no és múltiple de 3)
+- **767**: 7 + 6 + 7 = 20 (no és múltiple de 3)
+- **757**: 7 + 5 + 7 = 19 (no és múltiple de 3)
+- **747**: 7 + 4 + 7 = 18 (múltiple de 3) i 7 és parell (múltiple de 2). Per tant, 747 és múltiple de 6.
+
+Finalment, el capicua més gran de tres xifres que és múltiple de 6 és 888. La suma de les seves xifres és 8 + 8 + 8 = 24.
+
+Resposta: E) 24

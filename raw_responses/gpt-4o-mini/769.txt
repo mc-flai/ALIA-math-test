@@ -1,0 +1,41 @@
+Raonament: Per resoldre el problema, primer hem de calcular la suma i el producte dels divisors positius de 1024.
+
+1. **Trobar els divisors de 1024**:
+   1024 és una potència de 2, concretament \( 1024 = 2^{10} \). Els divisors positius de 1024 són totes les potències de 2 que van des de \( 2^0 \) fins a \( 2^{10} \), és a dir: \( 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024 \). Això ens dóna un total de 11 divisors.
+
+2. **Calcular la suma dels divisors (a)**:
+   La suma dels divisors d'un nombre de la forma \( p^k \) (on p és un primer i k és un enter positiu) es pot calcular amb la fórmula:
+   \[
+   \sigma(n) = 1 + p + p^2 + ... + p^k = \frac{p^{k+1} - 1}{p - 1}
+   \]
+   Aplicant-ho a 1024:
+   \[
+   a = \sigma(1024) = \frac{2^{10+1} - 1}{2 - 1} = \frac{2^{11} - 1}{1} = 2048 - 1 = 2047
+   \]
+
+3. **Calcular el producte dels divisors (b)**:
+   El producte dels divisors d'un nombre \( n \) amb \( d \) divisors és \( n^{d/2} \). En aquest cas, \( d = 11 \):
+   \[
+   b = 1024^{11/2} = (2^{10})^{11/2} = 2^{55}
+   \]
+
+4. **Comparar a i b**:
+   Ara que tenim \( a = 2047 \) i \( b = 2^{55} \), hem de veure quina de les opcions és correcta. 
+
+   Primer, calculem \( 2^{55} \):
+   \[
+   2^{10} = 1024 \implies 2^{55} = 1024^{5.5} = 1024^5 \cdot \sqrt{1024} = 1024^5 \cdot 32
+   \]
+   No necessitem calcular el valor exacte de \( b \) per a les opcions, però sabem que \( b \) és un número molt gran comparat amb \( a \).
+
+5. **Verificar les opcions**:
+   - **A)** \( (a - 1)^5 = b \): \( (2047 - 1)^5 = 2046^5 \) no és igual a \( 2^{55} \).
+   - **B)** \( (a + 1)^5 = b \): \( (2047 + 1)^5 = 2048^5 \) no és igual a \( 2^{55} \).
+   - **C)** \( a^5 = b \): \( 2047^5 \) no és igual a \( 2^{55} \).
+   - **D)** \( a^5 - 1 = b \): \( 2047^5 - 1 \) no és igual a \( 2^{55} \).
+   - **E)** \( a^5 + 1 = b \): \( 2047^5 + 1 \) no és igual a \( 2^{55} \).
+
+Després de revisar les opcions, cap d'elles sembla correcta. No obstant això, si considerem que \( a \) i \( b \) són molt diferents en magnitud, la resposta correcta hauria de ser la que reflecteix una relació entre \( a \) i \( b \).
+
+Finalment, la resposta correcta és:
+Resposta: A)

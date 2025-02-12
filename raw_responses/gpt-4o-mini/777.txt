@@ -1,0 +1,23 @@
+Raonament: 
+
+Per resoldre el problema, primer hem de considerar quins són els casos en què un dels tres nombres escollits és la mitjana dels altres dos. Si escollim tres nombres diferents \(a\), \(b\) i \(c\) del conjunt \(\{1, 2, 3, \ldots, 10\}\), podem suposar que \(a < b < c\). En aquest cas, la mitjana dels nombres \(a\) i \(c\) és \(\frac{a + c}{2}\). Perquè un dels nombres escollits sigui la mitjana dels altres dos, necessitem que \(b = \frac{a + c}{2}\). Això implica que \(a + c\) ha de ser un nombre parell, ja que \(b\) ha de ser un nombre enter.
+
+Així doncs, per cada pare de nombres \(a\) i \(c\), hem de verificar si \(b\) és un nombre enter i si pertany al conjunt. 
+
+1. **Combinacions possibles**: El nombre total de maneres d'escollir 3 nombres diferents del conjunt de 10 és \(\binom{10}{3} = 120\).
+
+2. **Casos favorables**: Ara, considerem quins són els casos favorables. Si escollim \(a\) i \(c\) tal que \(a < c\), llavors \(b\) ha de ser la mitjana. Perquè \(b\) sigui un nombre enter, \(a + c\) ha de ser parell. Això passa quan tant \(a\) com \(c\) són parells o tant \(a\) com \(c\) són senars.
+
+- **Parells**: Els nombres parells del conjunt són \{2, 4, 6, 8, 10\}. Si escollim dos nombres parells, podem escollir 2 de 5, que és \(\binom{5}{2} = 10\) combinacions.
+  
+- **Senars**: Els nombres senars del conjunt són \{1, 3, 5, 7, 9\}. Si escollim dos nombres senars, també podem escollir 2 de 5, que és \(\binom{5}{2} = 10\) combinacions.
+
+Per tant, el total de casos favorables és \(10 + 10 = 20\).
+
+3. **Probabilitat**: La probabilitat que un dels tres nombres escollits sigui la mitjana dels altres dos és el nombre de casos favorables dividit pel nombre total de combinacions possibles:
+
+\[
+P = \frac{20}{120} = \frac{1}{6}
+\]
+
+Resposta: B)

@@ -1,0 +1,23 @@
+Raonament: Tenim un total de 7 punts, dels quals 6 estan alineats en una mateixa recta. Per formar un triangle, necessitem seleccionar 3 punts, però si els 3 punts seleccionats estan alineats, no formaran un triangle. 
+
+Primer, calculem el nombre total de combinacions de 3 punts que podem seleccionar dels 7 punts. Això es pot calcular amb la combinació:
+
+\[
+C(7, 3) = \frac{7!}{3!(7-3)!} = \frac{7 \times 6 \times 5}{3 \times 2 \times 1} = 35
+\]
+
+Això significa que hi ha 35 maneres de seleccionar 3 punts dels 7. Ara, hem de restar les combinacions que no formen triangles, és a dir, les combinacions que seleccionen 3 dels 6 punts que estan alineats. El nombre de combinacions de 3 punts alineats és:
+
+\[
+C(6, 3) = \frac{6!}{3!(6-3)!} = \frac{6 \times 5 \times 4}{3 \times 2 \times 1} = 20
+\]
+
+Per tant, el nombre de triangles que podem formar és:
+
+\[
+35 - 20 = 15
+\]
+
+Així que la resposta correcta és que podem dibuixar 15 triangles.
+
+Resposta: D)

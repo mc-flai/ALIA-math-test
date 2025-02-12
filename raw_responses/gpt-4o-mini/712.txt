@@ -1,0 +1,20 @@
+Raonament: La igualtat que es presenta és ONE + ONE + ... + ONE = 2331, on ONE representa un nombre de tres xifres. Si considerem que ONE es repeteix 'n' vegades, podem expressar la igualtat com n * ONE = 2331. Per trobar quantes vegades apareix la paraula ONE, hem de calcular n = 2331 / ONE.
+
+Per determinar el valor de ONE, hem de considerar que és un nombre de tres xifres diferents. A més, hem de trobar un valor de ONE que sigui un divisor de 2331. 
+
+Descomponem 2331 en factors:
+2331 = 3 * 777 = 3 * 3 * 259 = 3^2 * 7 * 37.
+
+Ara, busquem els divisors de 2331 que siguin nombres de tres xifres. Els divisors de 2331 són: 1, 3, 7, 9, 21, 37, 63, 111, 259, 777, 2331. D'entre aquests, els que són de tres xifres són: 111, 259, i 777.
+
+Comprovem si algun d'aquests números pot ser representat com ONE amb xifres diferents:
+- 111 no és vàlid (tots els dígits són iguals).
+- 259 és vàlid (2, 5, 9 són diferents).
+- 777 no és vàlid (tots els dígits són iguals).
+
+Per tant, ONE = 259. Ara calculem quantes vegades apareix ONE en la igualtat:
+n = 2331 / 259 = 9.
+
+Per tant, la paraula ONE apareix 9 vegades en la igualtat.
+
+Resposta: B) 9.

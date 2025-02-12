@@ -1,0 +1,26 @@
+Raonament: Primer, analitzem el conjunt de nombres {10, 20, 30, 40, 50, 60, 70, 80, 90}. Cada nombre es pot descompondre en factors primers:
+
+- 10 = 2 × 5
+- 20 = 2² × 5
+- 30 = 2 × 3 × 5
+- 40 = 2³ × 5
+- 50 = 2 × 5²
+- 60 = 2² × 3 × 5
+- 70 = 2 × 5 × 7
+- 80 = 2⁴ × 5
+- 90 = 2 × 3² × 5
+
+Perquè el producte dels nombres restants sigui un quadrat perfecte, cada exponent en la descomposició en factors primers ha de ser parell. Ara, calculem la suma dels exponents de cada factor primer en el conjunt:
+
+- Factor 2: 1 (10) + 2 (20) + 1 (30) + 3 (40) + 1 (50) + 2 (60) + 1 (70) + 4 (80) + 1 (90) = 16 (que és parell)
+- Factor 3: 0 (10) + 0 (20) + 1 (30) + 0 (40) + 0 (50) + 1 (60) + 0 (70) + 0 (80) + 2 (90) = 4 (que és parell)
+- Factor 5: 1 (10) + 1 (20) + 1 (30) + 1 (40) + 2 (50) + 1 (60) + 1 (70) + 1 (80) + 1 (90) = 10 (que és parell)
+- Factor 7: 0 (10) + 0 (20) + 0 (30) + 0 (40) + 0 (50) + 0 (60) + 1 (70) + 0 (80) + 0 (90) = 1 (que és senar)
+
+El factor 7 és el que ens causa problemes, ja que el seu exponent és senar. Per fer que el producte sigui un quadrat perfecte, necessitem eliminar el nombre que conté el factor 7, que és 70. 
+
+Després d'eliminar 70, els exponents de tots els factors seran parells, i per tant, el producte dels nombres restants serà un quadrat perfecte. 
+
+Per tant, la quantitat més xicoteta de nombres que es poden suprimir és 1.
+
+Resposta: A)

@@ -1,0 +1,26 @@
+Raonament: Tenim 100 participants i sabem que 90 van resoldre el primer problema, 80 el segon, 70 el tercer i 60 el quart. A més, cap participant va resoldre els quatre problemes, el que implica que no hi ha interseccions entre els que van resoldre els problemes. 
+
+Per determinar quants participants van resoldre tant el tercer com el quart problema, podem utilitzar el principi d'inclusió-exclusió. Sabem que:
+
+- Participants que van resoldre el primer problema: 90
+- Participants que van resoldre el segon problema: 80
+- Participants que van resoldre el tercer problema: 70
+- Participants que van resoldre el quart problema: 60
+
+Si sumem tots els participants que van resoldre almenys un problema, obtindrem:
+
+90 (primer) + 80 (segon) + 70 (tercer) + 60 (quart) = 300
+
+No obstant això, com que només hi ha 100 participants, això significa que hi ha moltes interseccions. 
+
+Si considerem que cap participant va resoldre els quatre problemes, podem deduir que els participants que van resoldre el tercer i quart problema són aquells que no van resoldre ni el primer ni el segon. 
+
+Per tant, per trobar el nombre de guanyadors (que són els que van resoldre el tercer i quart problema), podem restar el total de participants que van resoldre els altres problemes:
+
+Total de participants que no van resoldre el primer i segon problema = 100 - (90 + 80 - x), on x és el nombre de participants que van resoldre tant el primer com el segon problema. 
+
+Però, com que no tenim informació sobre x, no podem determinar exactament quants participants van resoldre el tercer i quart problema. 
+
+Per tant, la resposta és que no podem determinar el nombre exacte de guanyadors.
+
+Resposta: E) Impossible de determinar.

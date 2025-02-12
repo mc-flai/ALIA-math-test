@@ -1,0 +1,53 @@
+Raonament: Tenim nou nombres ordenats en ordre ascendent, i el nombre del mig és la mitjana aritmètica dels nou nombres. Això vol dir que el cinquè nombre (el del mig) és igual a la mitjana de tots els nou nombres.
+
+Sabem que la mitjana aritmètica dels cinc nombres més grans és 68. Això vol dir que la suma dels cinc nombres més grans és \(5 \times 68 = 340\).
+
+També sabem que la mitjana aritmètica dels cinc nombres més petits és 44. Això vol dir que la suma dels cinc nombres més petits és \(5 \times 44 = 220\).
+
+Ara, si sumem les dues sumes, obtindrem la suma total dels nou nombres, però hem de tenir en compte que el cinquè nombre (que és el nombre del mig) s'ha comptat dues vegades (una en cada suma). Per tant, la suma total dels nou nombres és:
+
+\[
+\text{Suma total} = \text{Suma dels 5 més grans} + \text{Suma dels 5 més petits} - \text{Cinquè nombre}
+\]
+
+Denotem el cinquè nombre com \(x\). Així, la suma total és:
+
+\[
+\text{Suma total} = 340 + 220 - x
+\]
+
+A més, sabem que el cinquè nombre \(x\) és igual a la mitjana aritmètica dels nou nombres. La suma total dels nou nombres és \(S\), i la mitjana aritmètica és \(S/9\). Així, podem escriure:
+
+\[
+x = \frac{S}{9}
+\]
+
+Substituïm \(x\) en l'equació de la suma total:
+
+\[
+S = 340 + 220 - \frac{S}{9}
+\]
+
+Això es pot simplificar a:
+
+\[
+S + \frac{S}{9} = 560
+\]
+
+Multiplicant per 9 per eliminar la fracció:
+
+\[
+9S + S = 5040
+\]
+
+\[
+10S = 5040
+\]
+
+\[
+S = 504
+\]
+
+Per tant, la suma dels nou nombres és 504.
+
+Resposta: C) 504

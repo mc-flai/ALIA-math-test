@@ -1,0 +1,16 @@
+Raonament: Per trobar el valor màxim possible del producte de 5 nombres enters positius diferents que sumen 17, hem de considerar que, per a un producte fix, la suma dels factors hauria de ser equilibrada. Això significa que els nombres han de ser el més propers possibles entre si.
+
+Com que busquem 5 nombres enters positius diferents, comencem amb els nombres més petits. Si considerem els nombres 1, 2, 3, 4 i 5, la seva suma és 1 + 2 + 3 + 4 + 5 = 15, que és inferior a 17. Si afegim un 6, la suma seria 1 + 2 + 3 + 4 + 6 = 16, i si afegim un 7, la suma seria 1 + 2 + 3 + 5 + 6 = 17. 
+
+Ara calculem el producte per a les combinacions que sumen 17:
+
+1. 1, 2, 3, 5, 6: Producte = 1 * 2 * 3 * 5 * 6 = 180
+2. 1, 2, 4, 5, 5: No és vàlid perquè no són diferents.
+3. 1, 3, 4, 5, 4: No és vàlid perquè no són diferents.
+4. 2, 3, 4, 5, 3: No és vàlid perquè no són diferents.
+
+La combinació vàlida que hem trobat és 1, 2, 3, 5, 6, que dóna un producte de 180. 
+
+Per tant, el valor màxim possible del producte és 180.
+
+Resposta: E) 180

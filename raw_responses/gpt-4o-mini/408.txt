@@ -1,0 +1,27 @@
+Raonament: Per resoldre l'expressió \( 2^{(\log_4 9)} \), podem utilitzar la propietat del canvi de base del logaritme. Sabem que:
+
+\[
+\log_4 9 = \frac{\log_2 9}{\log_2 4}
+\]
+
+On \( \log_2 4 = 2 \) (ja que \( 4 = 2^2 \)). Així que podem substituir:
+
+\[
+\log_4 9 = \frac{\log_2 9}{2}
+\]
+
+Ara substituïm això a l'expressió original:
+
+\[
+2^{(\log_4 9)} = 2^{\left(\frac{\log_2 9}{2}\right)}
+\]
+
+Utilitzant la propietat de les potències, podem reescriure l'expressió:
+
+\[
+2^{\left(\frac{\log_2 9}{2}\right)} = (2^{\log_2 9})^{\frac{1}{2}} = 9^{\frac{1}{2}} = \sqrt{9} = 3
+\]
+
+Per tant, el valor de l'expressió \( 2^{(\log_4 9)} \) és igual a 3.
+
+Resposta: B)

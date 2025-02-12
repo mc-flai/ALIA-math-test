@@ -1,0 +1,21 @@
+Raonament: Si les reserves de petroli s'esgotaran d'ací a 50 anys amb una despesa constant, això implica que cada any s'està consumint una quantitat fixa de petroli. Si volem que les reserves no s'esgoten mai, necessitem reduir la despesa anual de manera que la quantitat total consumida mai arribi a les reserves totals disponibles.
+
+Si reduïm la despesa anual en un percentatge fix, la despesa cada any es convertirà en una sèrie geomètrica. La suma d'una sèrie geomètrica infinita es pot calcular amb la fórmula:
+
+\[ S = \frac{a}{1 - r} \]
+
+On \( S \) és la suma total, \( a \) és el primer terme (la despesa del primer any) i \( r \) és la raó de la sèrie (1 - percentatge de reducció). Perquè les reserves no s'esgotin, la suma total de la despesa ha de ser menor que les reserves totals disponibles.
+
+Si considerem que la despesa anual inicial és \( a \) i el percentatge de reducció és \( p \), llavors \( r = 1 - p \). Perquè la suma total sigui menor que les reserves, necessitem que:
+
+\[ \frac{a}{1 - (1 - p)} < R \]
+
+On \( R \) és la quantitat total de reserves. Simplificant, necessitem que:
+
+\[ \frac{a}{p} < R \]
+
+Això implica que \( p > \frac{a}{R} \). Si considerem que la despesa constant actual es manté durant 50 anys, podem deduir que \( a \) és equivalent a la quantitat de petroli que es consumiria en 50 anys. Si la despesa anual és constant, llavors \( R \) ha de ser superior a la suma de la despesa anual durant 50 anys.
+
+Per tant, per evitar l'esgotament de les reserves, el percentatge de reducció ha de ser suficientment alt. En general, un percentatge de reducció del 2% anual és un valor que s'ha estudiat i que permetria que les reserves no s'esgotin mai, ja que la reducció constant permetria que la despesa anual disminuïsca gradualment, mantenint les reserves.
+
+Resposta: D) 2%

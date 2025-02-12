@@ -1,0 +1,38 @@
+Raonament: 
+
+1. Comencem calculant la puntuació total dels 34 primers jugadors. Si la mitjana és de 9 punts, la puntuació total és:
+   \[
+   34 \text{ jugadors} \times 9 \text{ punts} = 306 \text{ punts}
+   \]
+
+2. La mitjana dels 40 jugadors és de 8,9 punts, així que la puntuació total dels 40 jugadors és:
+   \[
+   40 \text{ jugadors} \times 8,9 \text{ punts} = 356 \text{ punts}
+   \]
+
+3. Ara podem calcular la puntuació total dels últims 6 jugadors:
+   \[
+   \text{Puntuació total dels últims 6 jugadors} = 356 \text{ punts} - 306 \text{ punts} = 50 \text{ punts}
+   \]
+
+4. Sabem que cada un dels últims 6 jugadors ha obtingut almenys 7 punts. Si considerem que \( x \) és el nombre de jugadors que han obtingut 10 punts, llavors els altres \( 6 - x \) jugadors han obtingut almenys 7 punts. La puntuació total dels últims 6 jugadors es pot expressar com:
+   \[
+   10x + 7(6 - x) \leq 50
+   \]
+   Simplificant l'equació:
+   \[
+   10x + 42 - 7x \leq 50
+   \]
+   \[
+   3x + 42 \leq 50
+   \]
+   \[
+   3x \leq 8
+   \]
+   \[
+   x \leq \frac{8}{3} \approx 2.67
+   \]
+
+5. Com \( x \) ha de ser un nombre enter, això significa que \( x \) pot ser com a màxim 2. Per tant, el màxim nombre de jugadors dels últims 6 que poden haver obtingut 10 punts és 2.
+
+Resposta: B) 2

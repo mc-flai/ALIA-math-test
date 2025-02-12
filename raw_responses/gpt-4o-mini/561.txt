@@ -1,0 +1,61 @@
+Raonament: Primer, hem de calcular el valor de \(2^{16} - 1\). Utilitzant la identitat de la diferència de quadrats, podem escriure:
+
+\[
+2^{16} - 1 = (2^8 - 1)(2^8 + 1)
+\]
+
+Calculant \(2^8 - 1\) i \(2^8 + 1\):
+
+\[
+2^8 - 1 = 255 = 3 \times 5 \times 17
+\]
+\[
+2^8 + 1 = 257
+\]
+
+El número 257 és un primer. Ara podem expressar \(2^{16} - 1\) com:
+
+\[
+2^{16} - 1 = (3 \times 5 \times 17) \times 257
+\]
+
+Ara, per trobar els divisors positius de \(2^{16} - 1\), hem de considerar la seva descomposició en factors primers. La descomposició és:
+
+\[
+2^{16} - 1 = 3^1 \times 5^1 \times 17^1 \times 257^1
+\]
+
+Per calcular el nombre total de divisors d'un número a partir de la seva descomposició en factors primers, utilitzem la fórmula:
+
+\[
+(d_1 + 1)(d_2 + 1)(d_3 + 1)(d_4 + 1)
+\]
+
+On \(d_i\) són els exponents dels factors primers. En aquest cas, tenim:
+
+\[
+(1 + 1)(1 + 1)(1 + 1)(1 + 1) = 2 \times 2 \times 2 \times 2 = 16
+\]
+
+Ara, hem de comptar quants d'aquests divisors són enters positius de dues xifres. Els divisors de \(2^{16} - 1\) són:
+
+1. 1
+2. 3
+3. 5
+4. 15
+5. 17
+6. 51
+7. 85
+8. 255
+9. 257
+10. 771
+11. 1285
+12. 4285
+13. 4353
+14. 12855
+15. 171
+16. 3 \times 5 \times 17 \times 257 = 2^{16} - 1
+
+Els divisors de dues xifres són: 15, 17, 51, 85. Així que hi ha 4 divisors de dues xifres.
+
+Resposta: D) 4

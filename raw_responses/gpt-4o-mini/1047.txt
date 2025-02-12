@@ -1,0 +1,44 @@
+Raonament: 
+
+1. **Definició de velocitats**: Suposem que la velocitat de Baldiri és \( v \). Així, la velocitat d'Ariadna és \( 3v \).
+
+2. **Temps fins al primer encontre**: Sabem que es troben per primera vegada 15 minuts després de començar. En aquest temps, Ariadna ha recorregut una distància de \( 3v \times \frac{15}{60} = \frac{3v}{4} \) (ja que 15 minuts és un quart d'hora) i Baldiri ha recorregut \( v \times \frac{15}{60} = \frac{v}{4} \).
+
+3. **Distància total**: Quan es troben, la suma de les distàncies recorregudes per ambdós és igual a la distància entre A i B. Així, tenim:
+   \[
+   \frac{3v}{4} + \frac{v}{4} = d
+   \]
+   On \( d \) és la distància entre A i B. Simplificant, obtenim:
+   \[
+   d = \frac{4v}{4} = v
+   \]
+
+4. **Cicle complet**: Ara, considerem el temps que triga cada un a fer un viatge complet d'anada i tornada. 
+   - Ariadna triga \( \frac{d}{3v} + \frac{d}{3v} = \frac{2d}{3v} \).
+   - Baldiri triga \( \frac{d}{v} + \frac{d}{v} = \frac{2d}{v} \).
+
+5. **Temps fins al segon encontre**: Després del primer encontre, Ariadna continuarà el seu viatge cap a B, i Baldiri cap a A. La distància que queda per recórrer per Ariadna és \( d - \frac{3v}{4} \) i per Baldiri és \( d - \frac{v}{4} \).
+
+   - El temps que triga Ariadna a arribar a B des del primer encontre és:
+   \[
+   \frac{d - \frac{3v}{4}}{3v} = \frac{v - \frac{3v}{4}}{3v} = \frac{\frac{v}{4}}{3v} = \frac{1}{12} \text{ hores} = 5 \text{ minuts}
+   \]
+
+   - El temps que triga Baldiri a arribar a A des del primer encontre és:
+   \[
+   \frac{d - \frac{v}{4}}{v} = \frac{v - \frac{v}{4}}{v} = \frac{\frac{3v}{4}}{v} = \frac{3}{4} \text{ hores} = 45 \text{ minuts}
+   \]
+
+6. **Temps total fins al segon encontre**: Després de 15 minuts, Ariadna triga 5 minuts més per arribar a B, i Baldiri triga 45 minuts per arribar a A. Així, el temps total fins al segon encontre és:
+   \[
+   15 + 5 + 45 = 65 \text{ minuts}
+   \]
+
+   Ara, com que el segon encontre es produirà quan tornin a estar a la mateixa distància, el temps que triga a tornar a trobar-se és la meitat del temps total, ja que es troben en el camí de tornada. Així, el temps fins al segon encontre és:
+   \[
+   65 - 15 = 50 \text{ minuts}
+   \]
+
+   Com que el primer encontre va ser a 15 minuts, el segon encontre serà a 30 minuts.
+
+Resposta: C) 30 min

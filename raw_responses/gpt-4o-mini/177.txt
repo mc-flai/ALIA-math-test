@@ -1,0 +1,75 @@
+Raonament: Per determinar quants grups de nombres primers són «especialment amics», hem de trobar tres nombres primers \( p_1, p_2, p_3 \) que compleixin la condició següent:
+
+\[
+p_1 \times p_2 \times p_3 = 5 \times (p_1 + p_2 + p_3)
+\]
+
+Reorganitzant l'equació, obtenim:
+
+\[
+p_1 \times p_2 \times p_3 - 5 \times (p_1 + p_2 + p_3) = 0
+\]
+
+Aquesta equació és difícil de resoldre directament, així que provarem amb alguns conjunts de nombres primers petits. Els nombres primers més petits són 2, 3, 5, 7, 11, 13, etc.
+
+1. **Prova amb \( p_1 = 2, p_2 = 3, p_3 = 5 \)**:
+   \[
+   2 \times 3 \times 5 = 30
+   \]
+   \[
+   5 \times (2 + 3 + 5) = 5 \times 10 = 50 \quad \text{(no és vàlid)}
+   \]
+
+2. **Prova amb \( p_1 = 2, p_2 = 3, p_3 = 7 \)**:
+   \[
+   2 \times 3 \times 7 = 42
+   \]
+   \[
+   5 \times (2 + 3 + 7) = 5 \times 12 = 60 \quad \text{(no és vàlid)}
+   \]
+
+3. **Prova amb \( p_1 = 2, p_2 = 5, p_3 = 7 \)**:
+   \[
+   2 \times 5 \times 7 = 70
+   \]
+   \[
+   5 \times (2 + 5 + 7) = 5 \times 14 = 70 \quad \text{(vàlid)}
+   \]
+
+4. **Prova amb \( p_1 = 3, p_2 = 5, p_3 = 7 \)**:
+   \[
+   3 \times 5 \times 7 = 105
+   \]
+   \[
+   5 \times (3 + 5 + 7) = 5 \times 15 = 75 \quad \text{(no és vàlid)}
+   \]
+
+5. **Prova amb \( p_1 = 3, p_2 = 5, p_3 = 11 \)**:
+   \[
+   3 \times 5 \times 11 = 165
+   \]
+   \[
+   5 \times (3 + 5 + 11) = 5 \times 19 = 95 \quad \text{(no és vàlid)}
+   \]
+
+6. **Prova amb \( p_1 = 3, p_2 = 7, p_3 = 11 \)**:
+   \[
+   3 \times 7 \times 11 = 231
+   \]
+   \[
+   5 \times (3 + 7 + 11) = 5 \times 21 = 105 \quad \text{(no és vàlid)}
+   \]
+
+7. **Prova amb \( p_1 = 5, p_2 = 7, p_3 = 11 \)**:
+   \[
+   5 \times 7 \times 11 = 385
+   \]
+   \[
+   5 \times (5 + 7 + 11) = 5 \times 23 = 115 \quad \text{(no és vàlid)}
+   \]
+
+Després de provar diverses combinacions, només hem trobat un grup de nombres primers que compleix la condició, que és \( (2, 5, 7) \).
+
+Per tant, la resposta és que hi ha un sol grup de nombres primers especialment amics.
+
+Resposta: B)

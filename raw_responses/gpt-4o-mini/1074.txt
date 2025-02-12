@@ -1,0 +1,47 @@
+Raonament: Anomenem \( a \), \( b \), \( c \) i \( d \) al nombre de caramels en els pots 1, 2, 3 i 4 respectivament. Segons el problema, tenim les següents relacions:
+
+1. \( a \) és igual al nombre de pots amb un sol caramel.
+2. \( b \) és igual al nombre de pots amb dos caramels.
+3. \( c \) és igual al nombre de pots amb tres caramels.
+4. \( d \) és igual al nombre de pots que no tenen cap caramel.
+
+Com que hi ha 4 pots, la suma dels pots amb caramels ha de ser igual a 4. Ara analitzem les possibles combinacions:
+
+- Si \( d \) és el nombre de pots sense caramels, llavors \( d \) pot ser 0, 1, 2, 3 o 4.
+- Si \( d = 0 \), tots els pots tenen caramels, però això no és possible perquè no hi ha pots sense caramels.
+- Si \( d = 1 \), hi ha un pot sense caramels. Això implica que \( a + b + c = 3 \) (ja que hi ha 3 pots amb caramels). 
+- Si \( d = 2 \), hi ha 2 pots sense caramels, així que \( a + b + c = 2 \).
+- Si \( d = 3 \), hi ha 3 pots sense caramels, així que \( a + b + c = 1 \).
+- Si \( d = 4 \), tots els pots estan buits, cosa que no és possible.
+
+Anem a considerar el cas \( d = 1 \):
+- Si \( d = 1 \), llavors \( a + b + c = 3 \).
+- Si \( a = 1 \) (un pot amb un caramel), llavors hi ha 1 pot amb un caramel.
+- Si \( b = 1 \) (un pot amb dos caramels), llavors hi ha 1 pot amb dos caramels.
+- Si \( c = 1 \) (un pot amb tres caramels), llavors hi ha 1 pot amb tres caramels.
+
+Això no és possible, ja que no podem tenir un pot amb 1 caramel, un pot amb 2 caramels i un pot amb 3 caramels alhora.
+
+Ara considerem el cas \( d = 2 \):
+- Si \( d = 2 \), llavors \( a + b + c = 2 \).
+- Si \( a = 0 \) (cap pot amb un caramel), llavors no hi ha pots amb un caramel.
+- Si \( b = 1 \) (un pot amb dos caramels), llavors hi ha 1 pot amb dos caramels.
+- Si \( c = 1 \) (un pot amb tres caramels), llavors hi ha 1 pot amb tres caramels.
+
+Això és possible si tenim:
+- 0 pots amb 1 caramel,
+- 1 pot amb 2 caramels,
+- 1 pot amb 3 caramels,
+- 2 pots sense caramels.
+
+Així que la distribució seria:
+- Pot 1: 0 caramels
+- Pot 2: 2 caramels
+- Pot 3: 3 caramels
+- Pot 4: 0 caramels
+
+Això ens dóna un total de \( 0 + 2 + 3 + 0 = 5 \) caramels.
+
+Per tant, la resposta correcta és:
+
+Resposta: D) 5

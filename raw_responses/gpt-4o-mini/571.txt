@@ -1,0 +1,41 @@
+Raonament: Tenim les igualtats a + 2 = b - 2 = c · 2 = d / 2. Anomenem a aquesta constant k, de manera que podem expressar a, b, c i d en funció de k:
+
+1. a + 2 = k  → a = k - 2
+2. b - 2 = k  → b = k + 2
+3. c · 2 = k  → c = k / 2
+4. d / 2 = k  → d = 2k
+
+Ara, substituïm k en les expressions per a, b, c i d:
+
+- a = k - 2
+- b = k + 2
+- c = k / 2
+- d = 2k
+
+Per determinar quin és el nombre més gran, comparem les expressions:
+
+- b = k + 2 és sempre més gran que a = k - 2, ja que b és a + 4.
+- d = 2k és més gran que b = k + 2 si k > 2, ja que 2k - (k + 2) = k - 2 > 0.
+- c = k / 2 és més petit que a = k - 2 si k > 4, ja que k/2 - (k - 2) = -k/2 + 2 < 0.
+
+Per tant, si k > 4, d és el més gran. Si 2 < k ≤ 4, b és el més gran. 
+
+Com que a, b, c, d són nombres enters positius, k ha de ser un enter positiu. Si considerem k = 5, obtenim:
+
+- a = 3
+- b = 7
+- c = 2.5 (no és enter)
+- d = 10
+
+Si considerem k = 6, obtenim:
+
+- a = 4
+- b = 8
+- c = 3
+- d = 12
+
+En aquest cas, d és el més gran. 
+
+Per tant, el nombre més gran dels quatre nombres a, b, c, d és d, independentment del valor de k, sempre que sigui un enter positiu.
+
+Resposta: D) d

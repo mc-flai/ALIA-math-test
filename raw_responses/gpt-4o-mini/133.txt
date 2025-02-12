@@ -1,0 +1,15 @@
+Raonament: Primer, calculem el valor de \(10^{101} - 9\). El número \(10^{101}\) és un 1 seguit de 101 zeros, és a dir, \(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\). Si restem 9 d'aquest número, el resultat serà un número que té un 9 en la posició de les unitats i 100 zeros a la seva esquerra. Així, el resultat és:
+
+\[
+10^{101} - 9 = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999991
+\]
+
+Això significa que el número resultant té 100 nines (9) i un 1 al final. Ara, per calcular la suma de les xifres d'aquest número, sumem les nines i el 1:
+
+\[
+9 \times 100 + 1 = 900 + 1 = 901
+\]
+
+Per tant, la suma de les xifres del nombre \(10^{101} - 9\) és 901.
+
+Resposta: B)

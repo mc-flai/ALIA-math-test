@@ -1,0 +1,37 @@
+Raonament: Un rectangle té dos costats de la mateixa longitud i dos costats de l'altra longitud. Si sumem les longituds de tres dels costats, podem considerar dues possibilitats:
+
+1. Si sumem dos costats de la longitud \(a\) i un costat de la longitud \(b\), la suma seria \(2a + b\).
+2. Si sumem un costat de la longitud \(a\) i dos costats de la longitud \(b\), la suma seria \(a + 2b\).
+
+En ambdós casos, el perímetre \(P\) del rectangle es calcula com \(P = 2a + 2b\).
+
+Si la suma de tres costats és 20, podem escriure dues equacions:
+
+1. \(2a + b = 20\) o \(a + 2b = 20\)
+2. \(2a + b = 22\) o \(a + 2b = 22\)
+
+A partir d'aquestes equacions, podem expressar \(b\) en funció de \(a\) i viceversa. 
+
+Per exemple, si considerem \(2a + b = 20\):
+- \(b = 20 - 2a\)
+
+Substituint en el perímetre:
+\[ P = 2a + 2(20 - 2a) = 2a + 40 - 4a = 40 - 2a \]
+
+Per tant, el perímetre depèn de \(a\). Si \(2a + b = 22\):
+- \(b = 22 - 2a\)
+
+Substituint en el perímetre:
+\[ P = 2a + 2(22 - 2a) = 2a + 44 - 4a = 44 - 2a \]
+
+Ara, per a ambdues equacions, el perímetre és \(40 - 2a\) o \(44 - 2a\). 
+
+Per a trobar el perímetre, hem de considerar que \(a\) i \(b\) han de ser valors positius. Si \(2a + b = 20\), el perímetre màxim es produirà quan \(a\) sigui mínim. Si \(a = 0\), \(b = 20\) i el perímetre seria \(40\). Si \(a = 10\), \(b = 0\) i el perímetre seria \(20\). 
+
+Per tant, el perímetre pot ser 28, que és una opció viable. 
+
+Finalment, si considerem \(2a + b = 22\), el perímetre màxim seria 44, i el mínim seria 22. 
+
+En resum, el perímetre del rectangle pot ser 28, que és una opció viable.
+
+Resposta: C) 28

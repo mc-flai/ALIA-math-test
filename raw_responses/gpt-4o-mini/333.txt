@@ -1,0 +1,53 @@
+Raonament: 
+
+Per trobar la fracció més gran possible que compleixi les condicions donades, hem de considerar que el numerador \( n \) i el denominador \( d \) són nombres enters positius, i que \( n + d \leq 103 \) i \( \frac{n}{d} < 3 \). 
+
+Això implica que \( n < 3d \). 
+
+Per tant, podem expressar \( n \) com \( n = 3d - k \), on \( k \) és un nombre enter positiu. Així, la suma \( n + d \) es converteix en:
+
+\[
+(3d - k) + d = 4d - k \leq 103
+\]
+
+D'aquí, podem deduir que:
+
+\[
+4d - k \leq 103 \implies k \geq 4d - 103
+\]
+
+Per tal de maximitzar la fracció \( \frac{n}{d} = \frac{3d - k}{d} = 3 - \frac{k}{d} \), necessitem que \( k \) sigui el més petit possible. Així, per a cada valor de \( d \), podem calcular el valor mínim de \( k \) i, per tant, el valor de \( n \).
+
+Comencem provant valors de \( d \) i calculant \( n \):
+
+1. Si \( d = 25 \):
+   \[
+   k \geq 4(25) - 103 = 100 - 103 = -3 \quad (\text{no és un enter positiu})
+   \]
+   Prova \( d = 26 \):
+   \[
+   k \geq 4(26) - 103 = 104 - 103 = 1 \implies n = 3(26) - 1 = 78 - 1 = 77
+   \]
+   La fracció és \( \frac{77}{26} \approx 2.96 \) (menor que 3).
+
+2. Si \( d = 76 \):
+   \[
+   k \geq 4(76) - 103 = 304 - 103 = 201 \implies n = 3(76) - 201 = 228 - 201 = 27
+   \]
+   La fracció és \( \frac{27}{76} \approx 0.355 \) (molt menor que 3).
+
+3. Si \( d = 77 \):
+   \[
+   k \geq 4(77) - 103 = 308 - 103 = 205 \implies n = 3(77) - 205 = 231 - 205 = 26
+   \]
+   La fracció és \( \frac{26}{77} \approx 0.337 \) (molt menor que 3).
+
+4. Si \( d = 75 \):
+   \[
+   k \geq 4(75) - 103 = 300 - 103 = 197 \implies n = 3(75) - 197 = 225 - 197 = 28
+   \]
+   La fracció és \( \frac{28}{75} \approx 0.373 \) (molt menor que 3).
+
+Després de revisar les opcions donades, la fracció més gran que compleix les condicions és \( \frac{26}{77} \).
+
+Resposta: B)

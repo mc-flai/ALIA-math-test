@@ -1,0 +1,49 @@
+Per resoldre la fracció \( A = \frac{N}{D} \), on \( N \) és el numerador i \( D \) és el denominador, hem de calcular ambdues sumes.
+
+**Numerador \( N \)**:
+El numerador és la suma de termes de la forma \( n \cdot (5n) \cdot (25n) \):
+\[
+N = \sum_{n=1}^{2017} n \cdot (5n) \cdot (25n) = \sum_{n=1}^{2017} 125n^3 = 125 \sum_{n=1}^{2017} n^3
+\]
+Sabem que la suma dels cubs dels primers \( m \) nombres naturals és:
+\[
+\left( \frac{m(m+1)}{2} \right)^2
+\]
+Per tant, per \( m = 2017 \):
+\[
+\sum_{n=1}^{2017} n^3 = \left( \frac{2017 \cdot 2018}{2} \right)^2
+\]
+Així que:
+\[
+N = 125 \cdot \left( \frac{2017 \cdot 2018}{2} \right)^2
+\]
+
+**Denominador \( D \)**:
+El denominador és la suma de termes de la forma \( n \cdot (2n) \cdot (4n) \):
+\[
+D = \sum_{n=1}^{2017} n \cdot (2n) \cdot (4n) = \sum_{n=1}^{2017} 8n^3 = 8 \sum_{n=1}^{2017} n^3
+\]
+Per tant:
+\[
+D = 8 \cdot \left( \frac{2017 \cdot 2018}{2} \right)^2
+\]
+
+**Fracció \( A \)**:
+Ara podem calcular \( A \):
+\[
+A = \frac{N}{D} = \frac{125 \cdot \left( \frac{2017 \cdot 2018}{2} \right)^2}{8 \cdot \left( \frac{2017 \cdot 2018}{2} \right)^2} = \frac{125}{8} = 15.625
+\]
+
+**Cub del nombre racional \( X \)**:
+Si \( A = X^3 \), llavors:
+\[
+X^3 = 15.625
+\]
+Per trobar \( X \), calculem la arrel cúbica:
+\[
+X = \sqrt[3]{15.625} = 2.5
+\]
+
+**Resposta**:
+Raonament: He calculat el numerador i el denominador de la fracció \( A \) i he trobat que \( A = 15.625 \). Després, he trobat que \( X \) és la arrel cúbica de \( A \), que és \( 2.5 \).
+Resposta: A) 2,5

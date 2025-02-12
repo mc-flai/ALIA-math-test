@@ -1,0 +1,39 @@
+Raonament: 
+
+El cangur A salta 6 metres en cada salt. Per tant, després de \( n \) salts, la distància recorreguda pel cangur A és:
+
+\[ D_A = 6n \]
+
+El cangur B salta distàncies que van augmentant en 1 metre amb cada salt. Així, la distància recorreguda pel cangur B després de \( m \) salts és la suma dels primers \( m \) números naturals:
+
+\[ D_B = 1 + 2 + 3 + ... + m = \frac{m(m + 1)}{2} \]
+
+Per a que el cangur B agafi al cangur A, les distàncies recorregudes han de ser iguals:
+
+\[ 6n = \frac{m(m + 1)}{2} \]
+
+Ara, per trobar la relació entre \( n \) i \( m \), podem expressar \( n \) en funció de \( m \):
+
+\[ 12n = m(m + 1) \]
+
+Això implica que \( m(m + 1) \) ha de ser múltiple de 12. Anem provant valors de \( m \) per veure quan \( 12n \) és un nombre enter.
+
+1. Si \( m = 1 \): \( 1(1 + 1) = 2 \) (no és múltiple de 12)
+2. Si \( m = 2 \): \( 2(2 + 1) = 6 \) (no és múltiple de 12)
+3. Si \( m = 3 \): \( 3(3 + 1) = 12 \) (sí, \( n = 1 \))
+4. Si \( m = 4 \): \( 4(4 + 1) = 20 \) (no és múltiple de 12)
+5. Si \( m = 5 \): \( 5(5 + 1) = 30 \) (no és múltiple de 12)
+6. Si \( m = 6 \): \( 6(6 + 1) = 42 \) (no és múltiple de 12)
+7. Si \( m = 7 \): \( 7(7 + 1) = 56 \) (no és múltiple de 12)
+8. Si \( m = 8 \): \( 8(8 + 1) = 72 \) (sí, \( n = 6 \))
+9. Si \( m = 9 \): \( 9(9 + 1) = 90 \) (no és múltiple de 12)
+10. Si \( m = 10 \): \( 10(10 + 1) = 110 \) (no és múltiple de 12)
+11. Si \( m = 11 \): \( 11(11 + 1) = 132 \) (sí, \( n = 11 \))
+12. Si \( m = 12 \): \( 12(12 + 1) = 156 \) (no és múltiple de 12)
+13. Si \( m = 13 \): \( 13(13 + 1) = 182 \) (no és múltiple de 12)
+
+Per tant, el primer valor de \( m \) que fa que \( n \) sigui un enter és \( m = 3 \) (1 salt) i el següent és \( m = 8 \) (6 salts). El següent valor és \( m = 11 \) (11 salts).
+
+Per tant, el cangur B ha de fer 11 salts per agafar al cangur A.
+
+Resposta: C) 11

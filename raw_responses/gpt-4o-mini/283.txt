@@ -1,0 +1,13 @@
+Raonament: Sabem que la primera pàgina de la part trencada és la 387. Necessitem trobar un número que tingui les mateixes xifres (3, 8, 7) però en un ordre diferent per determinar l'última pàgina de la part trencada. Les combinacions possibles de les xifres 3, 8 i 7 són: 378, 387, 738, 783, 837, i 873. D'entre aquestes, només 738 és un número que pot ser l'última pàgina, ja que 378 és menor que 387 i 387 no pot ser l'última pàgina.
+
+Ara, per calcular quants fulls van caure, hem de considerar que cada full conté dues pàgines. Si la part trencada va de la pàgina 387 a la pàgina 738, podem calcular el nombre total de pàgines trencades:
+
+Pàgines trencades = 738 - 387 + 1 = 352.
+
+Com que cada full conté dues pàgines, el nombre de fulls que van caure és:
+
+Fulls caiguts = 352 / 2 = 176.
+
+Per tant, la resposta correcta és que van caure 176 fulls.
+
+Resposta: B)

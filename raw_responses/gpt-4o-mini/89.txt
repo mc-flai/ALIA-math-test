@@ -1,0 +1,53 @@
+Raonament: Primer, calculem els factorials dels nombres petits i observem les desenes dels resultats:
+
+- \(1! = 1\) (desenes: 0)
+- \(2! = 2\) (desenes: 0)
+- \(3! = 6\) (desenes: 0)
+- \(4! = 24\) (desenes: 2)
+- \(5! = 120\) (desenes: 2)
+- \(6! = 720\) (desenes: 2)
+- \(7! = 5040\) (desenes: 4)
+- \(8! = 40320\) (desenes: 2)
+- \(9! = 362880\) (desenes: 8)
+- \(10! = 3628800\) (desenes: 8)
+
+A partir de \(5!\), els factorials comencen a tenir desenes que no són zero. A més, a partir de \(10!\), cada factorial conté almenys dos factors de 5 i dos factors de 2, el que significa que tots els factorials a partir de \(10!\) acabaran amb almenys dos zeros, i per tant, no contribuiran a la suma de les desenes.
+
+Ara, sumem els factorials fins a \(9!\):
+
+\[
+1! + 2! + 3! + 4! + 5! + 6! + 7! + 8! + 9! = 1 + 2 + 6 + 24 + 120 + 720 + 5040 + 40320 + 362880
+\]
+
+Calculant la suma:
+
+\[
+1 + 2 = 3
+\]
+\[
+3 + 6 = 9
+\]
+\[
+9 + 24 = 33
+\]
+\[
+33 + 120 = 153
+\]
+\[
+153 + 720 = 873
+\]
+\[
+873 + 5040 = 5913
+\]
+\[
+5913 + 40320 = 46233
+\]
+\[
+46233 + 362880 = 409113
+\]
+
+Ara, analitzem el resultat \(409113\) per trobar la xifra de les desenes. La xifra de les desenes és \(1\).
+
+Per tant, la suma de \(1! + 2! + 3! + 4! + 5! + \cdots + 2015!\) té la xifra de les desenes igual a \(1\).
+
+Resposta: B)

@@ -1,0 +1,18 @@
+Raonament: Tenim sis nombres enters positius distints que sumen 24. Anem a considerar la forma en què podem distribuir aquesta suma entre els sis nombres. 
+
+Els nombres han de ser positius i distints, així que comencem amb els nombres més petits possibles: 1, 2, 3, 4, 5, i 6. La suma d'aquests nombres és 1 + 2 + 3 + 4 + 5 + 6 = 21, que és inferior a 24. Si afegim un nombre més gran, per exemple, substituint el 6 per un 9, obtindríem 1 + 2 + 3 + 4 + 5 + 9 = 24. El producte d'aquests nombres seria 1 * 2 * 3 * 4 * 5 * 9 = 1080.
+
+Podem explorar altres combinacions. Si, per exemple, substituïm el 5 per un 7, tindríem 1 + 2 + 3 + 4 + 7 + 8 = 25, que és massa. Si provem amb 1, 2, 3, 4, 6 i 8, la suma és 24 i el producte és 1 * 2 * 3 * 4 * 6 * 8 = 576. 
+
+Continuant amb aquest procés, podem trobar altres combinacions que sumen 24, com ara 1, 2, 3, 5, 6, 7 (suma 24, producte 1260) o 1, 2, 4, 5, 6, 6 (no vàlid perquè no són distints). 
+
+Després de revisar les combinacions possibles, podem veure que el producte pot variar depenent de quins nombres escollim, però no hi ha moltes combinacions que compleixin les condicions. 
+
+Finalment, les combinacions vàlides que hem trobat són:
+1. 1, 2, 3, 4, 5, 9 (producte 1080)
+2. 1, 2, 3, 4, 6, 8 (producte 576)
+3. 1, 2, 3, 5, 6, 7 (producte 1260)
+
+Així que hem trobat 3 productes diferents. 
+
+Resposta: C) 3

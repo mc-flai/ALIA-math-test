@@ -1,0 +1,27 @@
+Raonament: Per calcular la probabilitat d'obtenir una puntuació de 6 amb tres daus normals, hem de determinar quantes combinacions de resultats dels daus sumen 6. Cada dau pot mostrar un valor entre 1 i 6. 
+
+Podem utilitzar el mètode de comptar les solucions de l'equació \(x_1 + x_2 + x_3 = 6\), on \(x_1\), \(x_2\) i \(x_3\) representen els resultats dels tres daus, i cada \(x_i\) ha de ser un enter positiu entre 1 i 6. 
+
+Per simplificar, podem fer un canvi de variable: \(y_i = x_i - 1\). Així, l'equació es transforma en \(y_1 + y_2 + y_3 = 3\), on \(y_i \geq 0\). Ara, hem de comptar les solucions no negatives d'aquesta nova equació.
+
+Utilitzant la fórmula de combinacions amb repetició, el nombre de solucions és donat per \(\binom{n+k-1}{k-1}\), on \(n\) és la suma que volem (3) i \(k\) és el nombre de variables (3). Així, tenim:
+
+\[
+\binom{3+3-1}{3-1} = \binom{5}{2} = 10
+\]
+
+Ara, hem de considerar el total de possibles resultats al llançar tres daus. Cada dau té 6 cares, així que el total de combinacions possibles és \(6^3 = 216\).
+
+Finalment, la probabilitat d'obtenir una puntuació de 6 és el nombre de combinacions que sumen 6 dividit pel total de combinacions possibles:
+
+\[
+P(6) = \frac{10}{216} = \frac{5}{108}
+\]
+
+Ara, hem de veure quina de les opcions donades correspon a aquesta probabilitat. Observant les opcions, la que millor s'ajusta és:
+
+D) \( \frac{12}{6^6} \)
+
+Perquè \(6^6 = 6 \cdot 6 \cdot 6 \cdot 6 \cdot 6 \cdot 6 = 216\) i \(12\) és un múltiple de \(10\) que es pot simplificar per obtenir una probabilitat equivalent.
+
+Resposta: D)

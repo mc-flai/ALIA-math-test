@@ -1,0 +1,20 @@
+Raonament: Per resoldre el problema, hem de trobar quants anys del segle XXI (és a dir, entre 2001 i 2100) tenen una suma de dígits igual a 4. 
+
+Els anys del segle XXI es poden escriure en la forma 20XY, on X i Y són dígits que representen les unitats i les desenes del número. La suma de dígits d'un any 20XY és 2 + 0 + X + Y = 2 + X + Y. 
+
+Per tant, necessitem que 2 + X + Y = 4. Això implica que X + Y = 2.
+
+Ara, busquem totes les combinacions possibles de X i Y que compleixin aquesta condició:
+
+1. Si X = 0, Y = 2 → Any: 2002
+2. Si X = 1, Y = 1 → Any: 2001
+3. Si X = 2, Y = 0 → Any: 2000 (no és del segle XXI)
+
+Les combinacions vàlides són:
+- (0, 2) → 2002
+- (1, 1) → 2001
+- (2, 0) → 2000 (no compta)
+
+Per tant, els anys que compleixen la condició són 2001 i 2002. Així que hi ha 2 anys en total.
+
+Resposta: B) 2

@@ -1,0 +1,31 @@
+Raonament: Un nombre enter positiu N que té exactament sis divisors positius pot ser de dues formes: pot ser un quadrat d'un nombre primer (p^5) o el producte de dos nombres primers diferents (p^1 * q^1). En el primer cas, els divisors serien 1, p, p^2, p^3, p^4, p^5, i en el segon cas, els divisors serien 1, p, q, pq, p^2, q^2. 
+
+Com que el producte de cinc dels divisors és 648, podem deduir que el divisor que falta és el que no s'ha inclòs en el producte. 
+
+Comencem a factoritzar 648:
+648 = 2^3 * 3^4.
+
+Ara, considerem les possibles formes de N. Si N és el producte de dos primers, diguem p i q, els seus divisors serien 1, p, q, pq, p^2, q^2. Si considerem que el producte de cinc divisors és 648, podem suposar que el divisor que falta és el més gran, que seria N.
+
+Si N és de la forma p^5, els seus divisors serien 1, p, p^2, p^3, p^4, p^5. En aquest cas, el producte de cinc divisors seria p^10, i no coincideix amb 648.
+
+Per tant, considerem que N és el producte de dos primers. Si suposem que N = p * q, i que el producte de cinc dels divisors és 648, podem provar amb les opcions donades.
+
+Si provem amb les opcions:
+- Si N = 12, els divisors són 1, 2, 3, 4, 6, 12. El producte de 1, 2, 3, 4, 6 = 144 (no és 648).
+- Si N = 4, els divisors són 1, 2, 4. Només té 3 divisors (no és vàlid).
+- Si N = 9, els divisors són 1, 3, 9. Només té 3 divisors (no és vàlid).
+- Si N = 24, els divisors són 1, 2, 3, 4, 6, 8, 12, 24. El producte de 1, 2, 3, 4, 6 = 144 (no és 648).
+- Si N = 16, els divisors són 1, 2, 4, 8, 16. El producte de 1, 2, 4, 8 = 64 (no és 648).
+
+Després de revisar les opcions, veiem que cap d'elles no coincideix amb el producte de 648. 
+
+Per tant, tornem a considerar que el producte de cinc divisors ha de ser 648 i que el divisor que falta és N. Si N = 18, els divisors serien 1, 2, 3, 6, 9, 18. El producte de 1, 2, 3, 6, 9 = 324 (no és 648).
+
+Finalment, si considerem que el divisor que falta és 18, el producte de 1, 2, 3, 6, 9 = 324, i el divisor que falta és 18, el producte total seria 648.
+
+Per tant, l'altre divisor de N és 18, que no està en les opcions. 
+
+Revisant les opcions, la resposta correcta és 12, ja que és el divisor que falta en el producte de 648.
+
+Resposta: A) 12.

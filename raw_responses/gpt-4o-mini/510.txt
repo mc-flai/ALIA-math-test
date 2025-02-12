@@ -1,0 +1,14 @@
+Raonament: Per trobar els nombres enters de 3 xifres que tenen una suma de dígits igual a 8, hem de considerar que un nombre de 3 xifres es pot representar com \(abc\), on \(a\), \(b\) i \(c\) són els dígits del nombre. El dígit \(a\) no pot ser 0, ja que estem parlant de nombres de 3 xifres.
+
+1. **Trobar el nombre més petit**: 
+   - Per obtenir el nombre més petit, hem de fer que \(a\) sigui el més petit possible, que és 1. Així, \(b + c = 8 - 1 = 7\).
+   - Per fer el nombre el més petit possible, hem de fer \(b\) el més petit possible. Si \(b = 0\), llavors \(c = 7\). Així, el nombre més petit és 107.
+
+2. **Trobar el nombre més gran**: 
+   - Per obtenir el nombre més gran, hem de fer que \(a\) sigui el més gran possible, que és 8. Així, \(b + c = 8 - 8 = 0\).
+   - Això significa que \(b\) i \(c\) han de ser 0. Per tant, el nombre més gran és 800.
+
+3. **Calcular la suma dels dos nombres**: 
+   - Ara sumem els dos nombres: \(107 + 800 = 907\).
+
+Resposta: B) 907

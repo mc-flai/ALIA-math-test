@@ -1,0 +1,25 @@
+Raonament: Primer, calculem el volum de la bola sòlida que volem fer. La fórmula per calcular el volum d'una esfera és \( V = \frac{4}{3} \pi r^3 \), on \( r \) és el radi. El diàmetre de la bola sòlida és de 20 cm, així que el radi serà de 10 cm.
+
+\[ V_{\text{sòlida}} = \frac{4}{3} \pi (10)^3 = \frac{4}{3} \pi (1000) = \frac{4000}{3} \pi \, \text{cm}^3 \]
+
+Ara calculem el volum d'una bola d'acer buida. El diàmetre exterior és de 20 cm, així que el radi exterior és de 10 cm. El gruix de la bola és de 1 cm, així que el radi interior és de 9 cm.
+
+El volum de la bola exterior (volum de la bola buida) és:
+
+\[ V_{\text{exterior}} = \frac{4}{3} \pi (10)^3 = \frac{4000}{3} \pi \, \text{cm}^3 \]
+
+El volum de la bola interior (l'espai buit) és:
+
+\[ V_{\text{interior}} = \frac{4}{3} \pi (9)^3 = \frac{4}{3} \pi (729) = \frac{2916}{3} \pi \, \text{cm}^3 \]
+
+Ara, calculem el volum de material d'acer que tenim en una bola buida:
+
+\[ V_{\text{acer}} = V_{\text{exterior}} - V_{\text{interior}} = \left(\frac{4000}{3} \pi - \frac{2916}{3} \pi\right) = \frac{1084}{3} \pi \, \text{cm}^3 \]
+
+Ara que tenim el volum d'acer d'una bola buida, podem calcular quantes boles buides necessitem per obtenir el volum de la bola sòlida:
+
+\[ \text{Nombre de boles} = \frac{V_{\text{sòlida}}}{V_{\text{acer}}} = \frac{\frac{4000}{3} \pi}{\frac{1084}{3} \pi} = \frac{4000}{1084} \approx 3.69 \]
+
+Com que no podem tenir una fracció de bola, necessitem 4 boles buides per obtenir suficient material per fer la bola sòlida.
+
+Resposta: B)

@@ -1,0 +1,35 @@
+Raonament: 
+
+1. **Anàlisi del moviment del robot**:
+   - Si el dau vermell és parell (2, 4, 6), el robot avança una unitat cap a la dreta (+1 en l'eix x).
+   - Si el dau vermell és senar (1, 3, 5), el robot avança una unitat cap a l'esquerra (-1 en l'eix x).
+   - Si el dau blau és parell (2, 4, 6), el robot avança una unitat cap amunt (+1 en l'eix y).
+   - Si el dau blau és senar (1, 3, 5), el robot avança una unitat cap avall (-1 en l'eix y).
+
+2. **Condicions per tornar a l'origen**:
+   - Per tornar a l'origen (0, 0) després de dos llançaments, el robot ha de fer un moviment que cancel·li els anteriors. Això significa que el total de moviments en l'eix x ha de ser 0 i el total de moviments en l'eix y també ha de ser 0.
+
+3. **Moviments possibles**:
+   - En el primer llançament, el robot pot avançar:
+     - (+1, +1) si el dau vermell és parell i el blau és parell.
+     - (+1, -1) si el dau vermell és parell i el blau és senar.
+     - (-1, +1) si el dau vermell és senar i el blau és parell.
+     - (-1, -1) si el dau vermell és senar i el blau és senar.
+
+4. **Com tornar a l'origen**:
+   - Per tornar a l'origen després de dos llançaments, les combinacions de moviments han de ser:
+     - (+1, +1) en el primer llançament i (-1, -1) en el segon.
+     - (+1, -1) en el primer llançament i (-1, +1) en el segon.
+     - (-1, +1) en el primer llançament i (+1, -1) en el segon.
+     - (-1, -1) en el primer llançament i (+1, +1) en el segon.
+
+5. **Probabilitat de cada moviment**:
+   - Cada dau té 6 cares, per tant, hi ha 36 combinacions possibles en total (6 x 6).
+   - Cada moviment té una probabilitat de 1/2 de ser parell o senar, així que:
+     - La probabilitat de cada combinació que permet tornar a l'origen és 1/4 (1/2 per cada dau).
+
+6. **Combinacions que tornen a l'origen**:
+   - Hi ha 4 combinacions que tornen a l'origen, i cada una té una probabilitat de 1/36 (1/6 per cada dau).
+   - Així que la probabilitat total de tornar a l'origen és 4 * (1/36) = 4/36 = 1/9.
+
+Resposta: C) 1/9

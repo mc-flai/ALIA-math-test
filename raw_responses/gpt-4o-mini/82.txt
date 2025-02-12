@@ -1,0 +1,22 @@
+Raonament: Per trobar quants nombres enters positius menors que 2015 són divisibles per 2, 3 i 5, primer hem de determinar el mínim comú múltiple (mcm) d'aquests tres nombres. 
+
+1. **Trobar el mcm de 2, 3 i 5**:
+   - Els factors primers són:
+     - 2: \(2^1\)
+     - 3: \(3^1\)
+     - 5: \(5^1\)
+   - El mcm és el producte de tots els factors primers amb el seu màxim exponent:
+     \[
+     mcm(2, 3, 5) = 2^1 \times 3^1 \times 5^1 = 30
+     \]
+
+2. **Trobar quants nombres enters positius menors que 2015 són divisibles per 30**:
+   - Ara hem de calcular quants múltiplos de 30 hi ha per sota de 2015. Això es pot fer dividint 2015 per 30 i prenent la part sencera del resultat:
+     \[
+     \frac{2015}{30} \approx 67.1667
+     \]
+   - La part sencera és 67, així que hi ha 67 nombres enters positius menors que 2015 que són divisibles per 30.
+
+Per tant, la resposta correcta és que hi ha 67 nombres enters positius menors que 2015 que són divisibles per 2, 3 i 5.
+
+Resposta: B)

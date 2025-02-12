@@ -1,0 +1,42 @@
+Raonament: 
+
+1. **Caselles de la quadrícula**: La quadrícula té 21 columnes i 33 files, per tant, el total de caselles és:
+   \[
+   21 \times 33 = 693
+   \]
+
+2. **Caselles pintades de negre per files**: Pintem de negre les caselles de les files que no són múltiples de 3. Les files que són múltiples de 3 entre 1 i 33 són: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33. Això ens dóna un total de 11 files que no es pinten. Per tant, les files que es pinten són:
+   \[
+   33 - 11 = 22 \text{ files}
+   \]
+   Cada una d'aquestes files té 21 caselles, així que el total de caselles pintades per files és:
+   \[
+   22 \times 21 = 462
+   \]
+
+3. **Caselles pintades de negre per columnes**: Pintem de negre les caselles de les columnes que són parelles. Les columnes parelles entre 1 i 21 són: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Això ens dóna un total de 10 columnes que es pinten. Cada una d'aquestes columnes té 33 caselles, així que el total de caselles pintades per columnes és:
+   \[
+   10 \times 33 = 330
+   \]
+
+4. **Caselles pintades dues vegades**: Ara hem pintat caselles tant per files com per columnes. Les caselles que han estat pintades dues vegades són aquelles que pertanyen a files que no són múltiples de 3 i a columnes que són parelles. 
+
+   - Les files que no són múltiples de 3 són 22 (com hem calculat anteriorment).
+   - Les columnes parelles són 10.
+
+   Per tant, el total de caselles pintades dues vegades és:
+   \[
+   22 \times 10 = 220
+   \]
+
+5. **Total de caselles pintades**: Ara podem calcular el total de caselles pintades:
+   \[
+   462 + 330 - 220 = 572
+   \]
+
+6. **Caselles sense pintar**: Finalment, per trobar el nombre de caselles que queden sense pintar, restem el total de caselles pintades del total de caselles de la quadrícula:
+   \[
+   693 - 572 = 121
+   \]
+
+Resposta: B) 121

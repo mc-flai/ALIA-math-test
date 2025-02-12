@@ -1,0 +1,40 @@
+Raonament: Anem a analitzar les afirmacions de cada persona per determinar quins nombres han agafat.
+
+1. **Alèxia** diu que els seus nombres sumen 6. Les possibles combinacions de nombres de l'1 al 9 que sumen 6 són:
+   - (1, 5)
+   - (2, 4)
+   - (3, 3)
+
+2. **Bru** diu que la diferència entre els seus nombres és 5. Les possibles combinacions de nombres de l'1 al 9 que tenen una diferència de 5 són:
+   - (1, 6)
+   - (2, 7)
+   - (3, 8)
+   - (4, 9)
+
+3. **Clara** diu que el producte dels seus nombres és 18. Les possibles combinacions de nombres de l'1 al 9 que donen un producte de 18 són:
+   - (2, 9)
+   - (3, 6)
+
+4. **Diana** diu que un dels seus nombres és el doble de l'altre. Les possibles combinacions de nombres de l'1 al 9 que compleixen aquesta condició són:
+   - (1, 2)
+   - (2, 4)
+   - (3, 6)
+   - (4, 8)
+
+Ara, hem de buscar una solució que no repeteixi nombres i que compleixi totes les condicions.
+
+- Si Alèxia té (2, 4), Bru no pot tenir (1, 6) ni (2, 7) ni (3, 8) ni (4, 9) perquè 4 ja està ocupat. 
+- Si Alèxia té (1, 5), Bru pot tenir (6, 1) o (7, 2) o (8, 3) o (9, 4), però això no funciona amb les altres condicions.
+- Si Alèxia té (3, 3), Bru no pot tenir cap combinació que funcioni.
+
+Provem amb les combinacions que hem trobat:
+
+- Si Alèxia té (2, 4), Bru no pot tenir (1, 6) ni (3, 8) ni (4, 9) perquè 4 ja està ocupat. 
+- Si Alèxia té (1, 5), Bru pot tenir (6, 1) o (7, 2) o (8, 3) o (9, 4), però això no funciona amb les altres condicions.
+- Si Alèxia té (3, 3), Bru no pot tenir cap combinació que funcioni.
+
+Finalment, si Clara té (2, 9) o (3, 6), i Diana té (3, 6) o (4, 8), podem veure que si Diana té (4, 8), Bru pot tenir (3, 8) i Alèxia (1, 5).
+
+Després de revisar totes les combinacions, la única que funciona és que Alèxia té (2, 4), Bru té (1, 6), Clara té (2, 9) i Diana té (4, 8). Això deixa el 3 sobre la taula.
+
+Resposta: A) 3

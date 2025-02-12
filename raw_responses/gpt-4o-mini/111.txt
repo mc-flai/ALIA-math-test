@@ -1,0 +1,71 @@
+Raonament: Primer, hem de convertir els números de la base b a decimal per poder verificar si la igualtat és correcta. 
+
+1. Convertim \( 14_b \) a decimal:
+   \[
+   14_b = 1 \cdot b^1 + 4 \cdot b^0 = b + 4
+   \]
+
+2. Convertim \( 25_b \) a decimal:
+   \[
+   25_b = 2 \cdot b^1 + 5 \cdot b^0 = 2b + 5
+   \]
+
+3. Ara, multipliquem els dos resultats:
+   \[
+   (b + 4)(2b + 5) = 2b^2 + 5b + 8b + 20 = 2b^2 + 13b + 20
+   \]
+
+4. Convertim \( 416_b \) a decimal:
+   \[
+   416_b = 4 \cdot b^2 + 1 \cdot b^1 + 6 \cdot b^0 = 4b^2 + b + 6
+   \]
+
+5. Ara, igualem les dues expressions:
+   \[
+   2b^2 + 13b + 20 = 4b^2 + b + 6
+   \]
+
+6. Reorganitzem l'equació:
+   \[
+   0 = 4b^2 - 2b^2 + b - 13b + 6 - 20
+   \]
+   \[
+   0 = 2b^2 - 12b - 14
+   \]
+
+7. Simplifiquem l'equació:
+   \[
+   0 = b^2 - 6b - 7
+   \]
+
+8. Ara, resolem l'equació quadràtica utilitzant la fórmula:
+   \[
+   b = \frac{-(-6) \pm \sqrt{(-6)^2 - 4 \cdot 1 \cdot (-7)}}{2 \cdot 1}
+   \]
+   \[
+   b = \frac{6 \pm \sqrt{36 + 28}}{2}
+   \]
+   \[
+   b = \frac{6 \pm \sqrt{64}}{2}
+   \]
+   \[
+   b = \frac{6 \pm 8}{2}
+   \]
+
+   Això ens dóna dues solucions:
+   \[
+   b = \frac{14}{2} = 7 \quad \text{(solució positiva)}
+   \]
+   \[
+   b = \frac{-2}{2} = -1 \quad \text{(no vàlida)}
+   \]
+
+9. Comprovem si \( b = 7 \) és vàlid:
+   - \( 14_7 = 1 \cdot 7 + 4 = 11 \)
+   - \( 25_7 = 2 \cdot 7 + 5 = 19 \)
+   - \( 416_7 = 4 \cdot 49 + 1 \cdot 7 + 6 = 196 + 7 + 6 = 209 \)
+   - Comprovem la multiplicació: \( 11 \cdot 19 = 209 \), que és correcte.
+
+Per tant, la base b és 7.
+
+Resposta: A)
